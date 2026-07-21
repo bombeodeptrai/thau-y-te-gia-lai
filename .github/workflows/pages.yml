@@ -29,6 +29,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Khôi phục bộ nhớ đệm dữ liệu chi tiết
+        uses: actions/cache@v4
+        with:
+          path: data/tenders.json
+          key: tender-data-${{ github.run_id }}
+          restore-keys: |
+            tender-data-
       - name: Lấy dữ liệu công khai mới nhất
         run: node scripts/fetch-data.mjs
       - name: Tạo bản tĩnh

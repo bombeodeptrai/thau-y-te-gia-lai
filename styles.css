@@ -664,6 +664,49 @@ select:focus-visible {
   border-radius: 8px;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 18px 0 10px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.pagination[hidden] { display: none; }
+
+.pagination button {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 9px;
+  color: var(--forest);
+  font-size: 11px;
+  font-weight: 700;
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination button:hover,
+.pagination button.selected {
+  color: white;
+  background: var(--forest);
+  border-color: var(--forest);
+}
+
+.pagination button:disabled {
+  color: #aaa99f;
+  background: #f2f0ea;
+  cursor: not-allowed;
+}
+
+.pagination > span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .tender-row {
   display: grid;
   grid-template-columns: 36px minmax(0, 1fr) 138px 110px 92px;

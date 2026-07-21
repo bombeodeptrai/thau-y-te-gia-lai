@@ -1,5 +1,6 @@
 const DATA_URL = "./data/tenders.json";
 const SAVED_KEY = "gia-lai-medical-tender-watchlist";
+const TENDERS_PER_PAGE = 10;
 
 const state = {
   tenders: [],
@@ -9,7 +10,10 @@ const state = {
   category: "all",
   days: 30,
   status: "all",
+  page: 1,
   expandedId: null,
+  detailLoading: null,
+  detailErrors: {},
   saved: loadSaved(),
 };
 
@@ -28,6 +32,7 @@ const elements = {
   days: document.querySelector("#days"),
   statusFilter: document.querySelector("#status-filter"),
   list: document.querySelector("#tender-list"),
+  pagination: document.querySelector("#pagination"),
   resultCount: document.querySelector("#result-count"),
   refresh: document.querySelector("#refresh-button"),
   dataState: document.querySelector("#data-state"),
@@ -186,15 +191,46 @@ function equipmentMarkup(detail) {
 function detailMarkup(tender) {
   const detail = state.detailsByNotifyNo[tender.notifyNo];
   const winners = tender.winnerNames?.length ? tender.winnerNames.join("; ") : "Chưa công bố kết quả";
+  let detailBody = equipmentMarkup(detail);
+  if (state.detailLoading === tender.id) {
+    detailBody = '<div class="detail-loading"><span></span>Đang tải toàn bộ danh mục thiết bị và hồ sơ kỹ thuật…</div>';
+  } else if (state.detailErrors[tender.id]) {
+    detailBody = `<div class="detail-notice error">${escapeHtml(state.detailErrors[tender.id])}</div>`;
+  }
   return `<section class="tender-detail-panel" id="detail-${escapeHtml(tender.id)}">
     <div class="result-summary">
       <div><span>Đơn vị trúng thầu</span><strong>${escapeHtml(winners)}</strong></div>
       <div><span>Giá trúng thầu</span><strong>${escapeHtml(formatMoney(tender.winningPrice))}</strong></div>
       <div><span>Ngày quyết định</span><strong>${escapeHtml(formatDate(tender.decisionDate))}</strong></div>
     </div>
-    ${equipmentMarkup(detail)}
+    ${detailBody}
     <div class="detail-footer"><span>Dữ liệu kỹ thuật chỉ hiển thị khi đã được công bố công khai.</span><a href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xem hồ sơ chính thức ↗</a></div>
   </section>`;
+}
+
+async function toggleDetails(tender) {
+  if (state.expandedId === tender.id) {
+    state.expandedId = null;
+    render();
+    return;
+  }
+  state.expandedId = tender.id;
+  render();
+  if (!tender.hasResult || state.detailsByNotifyNo[tender.notifyNo]) return;
+
+  state.detailLoading = tender.id;
+  delete state.detailErrors[tender.id];
+  render();
+  try {
+    const response = await fetch(`./data/details/${encodeURIComponent(tender.notifyNo)}.json`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    state.detailsByNotifyNo[tender.notifyNo] = await response.json();
+  } catch {
+    state.detailErrors[tender.id] = "Chưa tải được dữ liệu chi tiết của gói này. Vui lòng thử lại sau.";
+  } finally {
+    state.detailLoading = null;
+    render();
+  }
 }
 
 function tenderMarkup(tender) {
@@ -212,14 +248,33 @@ function tenderMarkup(tender) {
   </article>`;
 }
 
+function paginationMarkup(currentPage, totalPages) {
+  const pages = new Set([1, totalPages, currentPage - 2, currentPage - 1, currentPage, currentPage + 1, currentPage + 2]);
+  const visible = [...pages].filter((page) => page >= 1 && page <= totalPages).sort((a, b) => a - b);
+  const parts = [];
+  parts.push(`<button type="button" data-page="${currentPage - 1}" ${currentPage === 1 ? "disabled" : ""} aria-label="Trang trước">‹</button>`);
+  visible.forEach((page, index) => {
+    if (index > 0 && page - visible[index - 1] > 1) parts.push('<span aria-hidden="true">…</span>');
+    parts.push(`<button type="button" data-page="${page}" class="${page === currentPage ? "selected" : ""}" ${page === currentPage ? 'aria-current="page"' : ""}>${page}</button>`);
+  });
+  parts.push(`<button type="button" data-page="${currentPage + 1}" ${currentPage === totalPages ? "disabled" : ""} aria-label="Trang sau">›</button>`);
+  return parts.join("");
+}
+
 function render() {
   renderMetrics();
   const tenders = filteredTenders();
-  elements.resultCount.textContent = `${tenders.length} kết quả`;
+  const totalPages = Math.max(1, Math.ceil(tenders.length / TENDERS_PER_PAGE));
+  state.page = Math.min(Math.max(1, state.page), totalPages);
+  const firstIndex = (state.page - 1) * TENDERS_PER_PAGE;
+  const visibleTenders = tenders.slice(firstIndex, firstIndex + TENDERS_PER_PAGE);
+  elements.resultCount.textContent = `${tenders.length} kết quả · trang ${state.page}/${totalPages}`;
   elements.list.innerHTML = tenders.length
-    ? tenders.slice(0, 30).map(tenderMarkup).join("")
+    ? visibleTenders.map(tenderMarkup).join("")
     : '<div class="empty-state"><span class="icon-text">⌕</span><h3>Chưa tìm thấy gói thầu phù hợp</h3><p>Hãy thử từ khóa ngắn hơn hoặc mở rộng khoảng thời gian.</p></div>';
   elements.list.setAttribute("aria-busy", "false");
+  elements.pagination.hidden = !tenders.length;
+  elements.pagination.innerHTML = tenders.length ? paginationMarkup(state.page, totalPages) : "";
 }
 
 async function loadData(cacheBust = false) {
@@ -236,6 +291,7 @@ async function loadData(cacheBust = false) {
     state.tenders = data.tenders;
     state.detailsByNotifyNo = data.detailsByNotifyNo || {};
     state.fetchedAt = data.fetchedAt || "";
+    state.page = 1;
     elements.dataState.dataset.state = "live";
     elements.sourceLabel.textContent = "Dữ liệu đã đồng bộ";
     elements.updatedLabel.textContent = state.fetchedAt
@@ -249,6 +305,7 @@ async function loadData(cacheBust = false) {
     elements.warning.hidden = false;
     elements.warning.textContent = `Không đọc được bản dữ liệu đã đồng bộ (${error.message}).`;
     elements.list.innerHTML = '<div class="empty-state"><h3>Nguồn dữ liệu tạm thời chưa sẵn sàng</h3><p>Vui lòng bấm cập nhật hoặc quay lại sau.</p></div>';
+    elements.pagination.hidden = true;
   } finally {
     elements.refresh.disabled = false;
   }
@@ -257,18 +314,22 @@ async function loadData(cacheBust = false) {
 elements.form.addEventListener("submit", (event) => {
   event.preventDefault();
   state.query = elements.keyword.value;
+  state.page = 1;
+  state.expandedId = null;
   render();
   document.querySelector("#goi-thau")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 elements.category.addEventListener("change", () => {
   state.category = elements.category.value;
+  state.page = 1;
   state.expandedId = null;
   render();
 });
 
 elements.days.addEventListener("change", () => {
   state.days = Number(elements.days.value) || 30;
+  state.page = 1;
   state.expandedId = null;
   render();
 });
@@ -277,6 +338,7 @@ elements.statusFilter.addEventListener("click", (event) => {
   const button = event.target.closest("button[data-status]");
   if (!button) return;
   state.status = button.dataset.status;
+  state.page = 1;
   state.expandedId = null;
   elements.statusFilter.querySelectorAll("button[data-status]").forEach((item) => {
     item.classList.toggle("selected", item === button);
@@ -292,9 +354,20 @@ elements.list.addEventListener("click", (event) => {
     state.saved = state.saved.includes(id) ? state.saved.filter((item) => item !== id) : [...state.saved, id];
     localStorage.setItem(SAVED_KEY, JSON.stringify(state.saved));
   } else if (button.dataset.action === "expand") {
-    state.expandedId = state.expandedId === id ? null : id;
+    const tender = state.tenders.find((item) => String(item.id) === id);
+    if (tender) void toggleDetails(tender);
+    return;
   }
   render();
+});
+
+elements.pagination.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-page]");
+  if (!button || button.disabled) return;
+  state.page = Number(button.dataset.page) || 1;
+  state.expandedId = null;
+  render();
+  document.querySelector("#goi-thau")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 elements.refresh.addEventListener("click", () => loadData(true));

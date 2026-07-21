@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -6,20 +6,52 @@ const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/sma
 const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
 const PROVINCE_CODE = "52";
 const DAYS = 90;
+const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
-const MAX_PAGES = 3;
-const DETAIL_TENDER_LIMIT = 25;
+const DETAIL_PAGE_SIZE = 20;
+const SEARCH_KEYWORDS = [
+  "y tế",
+  "bệnh viện",
+  "trung tâm y tế",
+  "thiết bị y tế",
+  "vật tư tiêu hao",
+  "vật tư y tế",
+  "dụng cụ y tế",
+  "hóa chất",
+  "sinh phẩm",
+  "xét nghiệm",
+  "thuốc",
+  "dược phẩm",
+  "phẫu thuật",
+  "chẩn đoán",
+  "hồi sức",
+  "nha khoa",
+];
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "data/tenders.json");
+const detailsDir = resolve(root, "data/details");
 
-function startOfWindow() {
-  const date = new Date();
-  date.setUTCDate(date.getUTCDate() - DAYS);
-  date.setUTCHours(0, 0, 0, 0);
-  return date.toISOString();
+function normalizeText(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "D")
+    .toLowerCase();
 }
 
-function searchPayload(keyword, pageNumber) {
+function dateWindows() {
+  const now = new Date();
+  const windows = [];
+  for (let offset = 0; offset < DAYS; offset += WINDOW_DAYS) {
+    const to = new Date(now.getTime() - offset * 86_400_000);
+    const from = new Date(now.getTime() - Math.min(offset + WINDOW_DAYS, DAYS) * 86_400_000);
+    windows.push({ from: from.toISOString(), to: to.toISOString() });
+  }
+  return windows;
+}
+
+function searchPayload(pageNumber, from, to) {
   return [{
     pageSize: PAGE_SIZE,
     pageNumber,
@@ -27,49 +59,135 @@ function searchPayload(keyword, pageNumber) {
     sortType: "DESC",
     query: [{
       index: "es-contractor-selection",
-      keyWord: keyword,
+      keyWord: "",
       matchType: "exact",
       matchFields: ["notifyNo", "bidName", "investorName"],
       filters: [
         { fieldName: "type", searchType: "in", fieldValues: ["es-notify-contractor"] },
         { fieldName: "locations.provCode", searchType: "in", fieldValues: [PROVINCE_CODE] },
-        { fieldName: "publicDate", searchType: "range", from: startOfWindow(), to: new Date().toISOString() },
+        { fieldName: "publicDate", searchType: "range", from, to },
       ],
     }],
   }];
 }
 
-async function postJson(url, body, timeoutMs = 20_000) {
-  const response = await fetch(url, {
-    method: "POST",
-    headers: { Accept: "application/json", "Content-Type": "application/json", "User-Agent": "thau-y-te-gia-lai-public-data/1.0" },
-    body: JSON.stringify(body),
-    signal: AbortSignal.timeout(timeoutMs),
-  });
-  if (!response.ok) throw new Error(`${url} phản hồi HTTP ${response.status}`);
-  const text = await response.text();
-  if (!text.trim().startsWith("{")) throw new Error(`${url} không trả về JSON`);
-  return JSON.parse(text);
+function delay(ms) {
+  return new Promise((resolveDelay) => setTimeout(resolveDelay, ms));
 }
 
-async function fetchKeyword(keyword) {
-  const first = await postJson(SEARCH_URL, searchPayload(keyword, 0));
-  const totalPages = Math.min(first.page?.totalPages || 1, MAX_PAGES);
-  const remaining = await Promise.all(
-    Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => postJson(SEARCH_URL, searchPayload(keyword, index + 1))),
+async function postJson(url, body, timeoutMs = 25_000) {
+  let lastError;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "User-Agent": "thau-y-te-gia-lai-public-data/2.0",
+        },
+        body: JSON.stringify(body),
+        signal: AbortSignal.timeout(timeoutMs),
+      });
+      if (!response.ok) throw new Error(`${url} phản hồi HTTP ${response.status}`);
+      const text = await response.text();
+      if (!text.trim().startsWith("{")) throw new Error(`${url} không trả về JSON`);
+      return JSON.parse(text);
+    } catch (error) {
+      lastError = error;
+      if (attempt < 3) await delay(attempt * 750);
+    }
+  }
+  throw lastError;
+}
+
+async function mapLimited(values, concurrency, mapper) {
+  const results = new Array(values.length);
+  let cursor = 0;
+  async function worker() {
+    while (cursor < values.length) {
+      const index = cursor++;
+      results[index] = await mapper(values[index], index);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, values.length) }, worker));
+  return results;
+}
+
+async function fetchWindow(window, windowIndex) {
+  const first = await postJson(SEARCH_URL, searchPayload(0, window.from, window.to));
+  const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
+  const pageNumbers = Array.from({ length: totalPages - 1 }, (_, index) => index + 1);
+  const remaining = await mapLimited(pageNumbers, 3, (pageNumber) =>
+    postJson(SEARCH_URL, searchPayload(pageNumber, window.from, window.to)),
   );
-  return [first, ...remaining].flatMap((payload) => payload.page?.content || []);
+  const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
+  process.stdout.write(
+    `Khoảng ${windowIndex + 1}/${dateWindows().length}: ${items.length} bản ghi, ${totalPages} trang\n`,
+  );
+  return items;
 }
 
 function isMedical(item) {
-  const title = item.bidName?.join(" ") || "";
-  return /(thi[eế]t b[iị]|v[aậ]t t[uư]|d[uụ]ng c[uụ]|x[eé]t nghi[eệ]m|h[oó]a ch[aấ]t|ho[aá] ch[aấ]t|sinh ph[aẩ]m|m[aá]y\s|h[eệ] th[oố]ng|ct scanner|mri|x-?quang|n[oộ]i soi|si[eê]u [aâ]m|ch[aẩ]n [dđ]o[aá]n|ph[oò]ng m[oổ]|t[aạ]o nh[iị]p|thu[oố]c|d[uư][oợ]c|oxy|y t[eế]|[dđ]inh|n[eẹ]p|v[ií]t|kh[oớ]p|ph[aẫ]u thu[aậ]t)/i.test(title);
+  const originalTitle = String(item.bidName?.join(" ") || "").toLocaleLowerCase("vi-VN");
+  const title = normalizeText(originalTitle);
+  const investor = normalizeText(item.investorName);
+  const obviousNonMedical = [
+    "xay lap", "xay dung", "cai tao", "sua chua nha", "suat an", "thuc pham", "bao ve",
+    "ve sinh cong nghiep", "van phong pham", "xang dau", "o to", "cay xanh", "dien nuoc",
+    "rac thai sinh hoat", "in an", "may tinh", "may in", "tin hoc", "cong nghe thong tin",
+    "may chu", "thang may", "may phat dien", "dieu hoa", "dieu hoa khong khi",
+  ];
+  if (obviousNonMedical.some((term) => title.includes(term))) return false;
+  const exactTerms = [
+    ...SEARCH_KEYWORDS,
+    "vắc xin", "vaccine", "oxy", "khí y tế", "nội soi", "siêu âm", "x quang", "x-quang",
+    "ct scanner", "mri", "phòng mổ", "gây mê", "lọc máu", "chạy thận", "cấp cứu",
+    "phục hồi chức năng", "kiểm soát nhiễm khuẩn", "tiệt khuẩn", "răng hàm mặt",
+    "máy thở", "máy xét nghiệm", "máy chụp", "máy siêu âm", "máy điện tim", "monitor",
+    "tủ bảo quản máu", "kim tiêm", "bơm tiêm", "dây truyền", "catheter", "stent", "implant",
+    "đinh", "nẹp", "vít", "khớp", "bông gạc", "găng tay", "khẩu trang", "kit test",
+    "test nhanh", "bệnh phẩm", "huyết học", "sinh hóa", "vi sinh", "chấn thương chỉnh hình",
+    "chăm sóc sức khỏe", "khám chữa bệnh", "vật tư phẫu thuật",
+  ];
+  if (exactTerms.some((term) => originalTitle.includes(term))) return true;
+
+  const unambiguousNormalizedTerms = [
+    "y te", "benh vien", "trung tam y te", "thiet bi y te", "vat tu tieu hao", "vat tu y te",
+    "dung cu y te", "hoa chat", "sinh pham", "xet nghiem", "duoc pham", "phau thuat",
+    "chan doan", "hoi suc", "nha khoa", "vac xin", "vaccine", "khi y te", "noi soi",
+    "sieu am", "x quang", "ct scanner", "phong mo", "gay me", "loc mau", "chay than",
+    "cap cuu", "phuc hoi chuc nang", "kiem soat nhiem khuan", "tiet khuan", "rang ham mat",
+    "may tho", "may xet nghiem", "may chup", "may sieu am", "may dien tim", "tu bao quan mau",
+    "kim tiem", "bom tiem", "day truyen", "bong gac", "gang tay", "khau trang", "kit test",
+    "test nhanh", "benh pham", "huyet hoc", "sinh hoa", "vi sinh", "chan thuong chinh hinh",
+    "cham soc suc khoe", "kham chua benh", "vat tu phau thuat",
+  ];
+  if (originalTitle === title && unambiguousNormalizedTerms.some((term) => title.includes(term))) return true;
+  if (originalTitle === title && ["thuoc", "dinh", "nep", "vit", "khop"].some((term) => title.includes(term))) return true;
+
+  const medicalInvestors = [
+    "so y te", "benh vien", "trung tam y te", "tram y te", "trung tam kiem soat benh tat",
+    "cdc", "phong kham", "benh xa", "y khoa", "y duoc", "da khoa", "chuyen khoa",
+    "trung tam phap y", "trung tam kiem nghiem",
+  ];
+  const procurementTerms = [
+    "mua sam", "cung cap", "thue", "bao tri", "bao duong", "sua chua", "hieu chuan",
+    "kiem dinh", "hang hoa", "dich vu ky thuat", "phan mem", "may", "thiet bi", "vat tu",
+  ];
+  return medicalInvestors.some((term) => investor.includes(term))
+    && procurementTerms.some((term) => title.includes(term));
 }
 
 function categoryOf(name) {
-  if (/(b[aả]o tr[iì]|b[aả]o d[uư][oỡ]ng|s[uử]a ch[uữ]a|hi[eệ]u chu[aẩ]n)/i.test(name)) return "Dịch vụ kỹ thuật";
-  if (/(thu[oố]c|d[uư][oợ]c ph[aẩ]m)/i.test(name)) return "Dược phẩm";
-  if (/(v[aậ]t t[uư]|h[oó]a ch[aấ]t|ho[aá] ch[aấ]t|sinh ph[aẩ]m|d[uụ]ng c[uụ]|[dđ]inh|n[eẹ]p|v[ií]t)/i.test(name)) return "Vật tư & hóa chất";
+  const original = String(name || "").toLocaleLowerCase("vi-VN");
+  const normalized = normalizeText(original);
+  if (["bảo trì", "bảo dưỡng", "sửa chữa", "hiệu chuẩn", "kiểm định"].some((term) => original.includes(term))) return "Dịch vụ kỹ thuật";
+  if (["thuốc", "dược phẩm", "vắc xin", "vaccine"].some((term) => original.includes(term))) return "Dược phẩm";
+  if (["vật tư", "hóa chất", "hoá chất", "sinh phẩm", "dụng cụ", "đinh", "nẹp", "vít", "bông gạc", "găng tay"].some((term) => original.includes(term))) return "Vật tư & hóa chất";
+  if (original === normalized && ["bao tri", "bao duong", "sua chua", "hieu chuan", "kiem dinh"].some((term) => normalized.includes(term))) return "Dịch vụ kỹ thuật";
+  if (original === normalized && ["thuoc", "duoc pham", "vac xin", "vaccine"].some((term) => normalized.includes(term))) return "Dược phẩm";
+  if (original === normalized && ["vat tu", "hoa chat", "sinh pham", "dung cu", "dinh", "nep", "vit", "bong gac", "gang tay"].some((term) => normalized.includes(term))) return "Vật tư & hóa chất";
   return "Thiết bị y tế";
 }
 
@@ -132,10 +250,10 @@ function normalizeTender(item) {
   };
 }
 
-function pricingQuery(notifyNo, tab) {
+function pricingQuery(notifyNo, tab, pageNumber) {
   return {
-    pageSize: 20,
-    pageNumber: 0,
+    pageSize: DETAIL_PAGE_SIZE,
+    pageNumber,
     query: [{
       index: "es-smart-pricing",
       keyWord: "",
@@ -171,50 +289,83 @@ function normalizeEquipment(item) {
   };
 }
 
+async function fetchDetailPage(notifyNo, pageNumber) {
+  return postJson(
+    WINNING_PRICE_URL,
+    [pricingQuery(notifyNo, "THIET_BI_VAT_TU_Y_TE", pageNumber), pricingQuery(notifyNo, "HANG_HOA", pageNumber)],
+    30_000,
+  );
+}
+
 async function fetchDetails(notifyNo) {
-  const payload = await postJson(WINNING_PRICE_URL, [pricingQuery(notifyNo, "THIET_BI_VAT_TU_Y_TE"), pricingQuery(notifyNo, "HANG_HOA")]);
-  const items = (payload.page?.content || []).map(normalizeEquipment);
-  return { total: payload.page?.totalElements || items.length, items, fetchedAt: new Date().toISOString() };
+  const first = await fetchDetailPage(notifyNo, 0);
+  const total = Number(first.page?.totalElements) || (first.page?.content || []).length;
+  const totalPages = Number(first.page?.totalPages) || Math.max(1, Math.ceil(total / DETAIL_PAGE_SIZE));
+  const pageNumbers = Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => index + 1);
+  const remaining = await mapLimited(pageNumbers, 2, (pageNumber) => fetchDetailPage(notifyNo, pageNumber));
+  const unique = new Map();
+  [first, ...remaining].flatMap((payload) => payload.page?.content || []).forEach((item) => {
+    const key = item.id || `${item.tenThietBi || item.danhMucHangHoa}-${item.donGia || item.donGiaDuThau}`;
+    unique.set(key, item);
+  });
+  const items = [...unique.values()].map(normalizeEquipment);
+  return { total: Math.max(total, items.length), items, fetchedAt: new Date().toISOString() };
 }
 
 async function previousData() {
   try {
-    return JSON.parse(await readFile(outputPath, "utf8"));
+    const manifest = JSON.parse(await readFile(outputPath, "utf8"));
+    const detailsByNotifyNo = { ...(manifest.detailsByNotifyNo || {}) };
+    try {
+      const files = (await readdir(detailsDir)).filter((name) => /^IB\d{10}\.json$/.test(name));
+      await mapLimited(files, 10, async (name) => {
+        detailsByNotifyNo[name.replace(/\.json$/, "")] = JSON.parse(await readFile(resolve(detailsDir, name), "utf8"));
+      });
+    } catch {
+      // Bản dữ liệu cũ có thể chưa được tách thành từng tệp chi tiết.
+    }
+    return { ...manifest, detailsByNotifyNo };
   } catch {
     return { tenders: [], detailsByNotifyNo: {} };
   }
 }
 
-async function mapLimited(values, concurrency, mapper) {
-  const results = new Array(values.length);
-  let cursor = 0;
-  async function worker() {
-    while (cursor < values.length) {
-      const index = cursor++;
-      results[index] = await mapper(values[index], index);
-    }
-  }
-  await Promise.all(Array.from({ length: Math.min(concurrency, values.length) }, worker));
-  return results;
+function shouldRefreshDetails(tender, cached) {
+  if (!cached) return true;
+  const fetchedAt = new Date(cached.fetchedAt || 0).getTime();
+  if (!fetchedAt) return true;
+  const resultPublishedAt = new Date(tender.resultPublishedDate || 0).getTime();
+  if (resultPublishedAt > fetchedAt) return true;
+  const refreshAfter = cached.items?.length ? 24 * 60 * 60 * 1000 : 6 * 60 * 60 * 1000;
+  return Date.now() - fetchedAt >= refreshAfter;
 }
 
 async function main() {
   const previous = await previousData();
-  const searches = await Promise.allSettled(["y tế", "bệnh viện", "xét nghiệm"].map(fetchKeyword));
-  const successful = searches.filter((result) => result.status === "fulfilled");
-  if (!successful.length) throw new Error(searches.map((result) => result.reason?.message).filter(Boolean).join("; ") || "Không tải được dữ liệu");
-
-  const unique = new Map();
-  successful.flatMap((result) => result.value).filter(isMedical).forEach((item) => {
+  const windows = dateWindows();
+  const allItems = (await mapLimited(windows, 2, fetchWindow)).flat();
+  const allUnique = new Map();
+  allItems.forEach((item) => {
     const key = item.notifyId || item.id || item.notifyNo;
-    if (key) unique.set(key, item);
+    if (key) allUnique.set(key, item);
   });
-  const tenders = [...unique.values()].map(normalizeTender).sort((a, b) => new Date(b.publicDate) - new Date(a.publicDate));
+
+  const medicalUnique = new Map();
+  [...allUnique.values()].filter(isMedical).forEach((item) => {
+    const key = item.notifyId || item.id || item.notifyNo;
+    if (key) medicalUnique.set(key, item);
+  });
+  const tenders = [...medicalUnique.values()]
+    .map(normalizeTender)
+    .sort((a, b) => new Date(b.publicDate) - new Date(a.publicDate));
   if (!tenders.length && previous.tenders?.length) throw new Error("Nguồn trả về 0 gói; giữ nguyên bản dữ liệu gần nhất");
+  process.stdout.write(`Đã rà ${allUnique.size} gói toàn tỉnh, giữ ${tenders.length} gói y tế\n`);
 
   const detailsByNotifyNo = { ...(previous.detailsByNotifyNo || {}) };
-  const awarded = tenders.filter((tender) => tender.hasResult).slice(0, DETAIL_TENDER_LIMIT);
-  await mapLimited(awarded, 3, async (tender) => {
+  const awarded = tenders.filter((tender) => tender.hasResult);
+  const detailsToRefresh = awarded.filter((tender) => shouldRefreshDetails(tender, detailsByNotifyNo[tender.notifyNo]));
+  process.stdout.write(`Chi tiết: làm mới ${detailsToRefresh.length}/${awarded.length} gói đã có kết quả\n`);
+  await mapLimited(detailsToRefresh, 3, async (tender) => {
     try {
       detailsByNotifyNo[tender.notifyNo] = await fetchDetails(tender.notifyNo);
       process.stdout.write(`Chi tiết ${tender.notifyNo}: ${detailsByNotifyNo[tender.notifyNo].items.length} mặt hàng\n`);
@@ -229,12 +380,23 @@ async function main() {
   }
   const payload = {
     tenders,
-    detailsByNotifyNo,
     fetchedAt: new Date().toISOString(),
     source: "muasamcong-public-api",
     provinceCode: PROVINCE_CODE,
+    detailTenderCount: Object.keys(detailsByNotifyNo).length,
+    collection: {
+      days: DAYS,
+      strategy: "all-province-date-windows",
+      scannedTenderCount: allUnique.size,
+      keywords: SEARCH_KEYWORDS,
+    },
   };
   await mkdir(dirname(outputPath), { recursive: true });
+  await rm(detailsDir, { recursive: true, force: true });
+  await mkdir(detailsDir, { recursive: true });
+  await mapLimited(Object.entries(detailsByNotifyNo), 10, ([notifyNo, detail]) =>
+    writeFile(resolve(detailsDir, `${notifyNo}.json`), `${JSON.stringify(detail, null, 2)}\n`),
+  );
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
   process.stdout.write(`Đã lưu ${tenders.length} gói thầu vào ${outputPath}\n`);
 }
