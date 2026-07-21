@@ -10,22 +10,17 @@ const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
 const DETAIL_PAGE_SIZE = 20;
 const SEARCH_KEYWORDS = [
-  "y tế",
-  "bệnh viện",
-  "trung tâm y tế",
   "thiết bị y tế",
   "vật tư tiêu hao",
   "vật tư y tế",
   "dụng cụ y tế",
-  "hóa chất",
-  "sinh phẩm",
-  "xét nghiệm",
-  "thuốc",
-  "dược phẩm",
-  "phẫu thuật",
-  "chẩn đoán",
-  "hồi sức",
-  "nha khoa",
+  "vật tư phẫu thuật",
+  "hóa chất xét nghiệm",
+  "sinh phẩm chẩn đoán",
+  "chẩn đoán in vitro",
+  "máy xét nghiệm",
+  "máy siêu âm",
+  "máy thở",
 ];
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "data/tenders.json");
@@ -132,62 +127,99 @@ function isMedical(item) {
   const originalTitle = String(item.bidName?.join(" ") || "").toLocaleLowerCase("vi-VN");
   const title = normalizeText(originalTitle);
   const investor = normalizeText(item.investorName);
-  const obviousNonMedical = [
+  const excludedTerms = [
+    // Xây dựng, vận hành và mua sắm hành chính.
     "xay lap", "xay dung", "cai tao", "sua chua nha", "suat an", "thuc pham", "bao ve",
-    "ve sinh cong nghiep", "van phong pham", "xang dau", "o to", "cay xanh", "dien nuoc",
-    "rac thai sinh hoat", "in an", "may tinh", "may in", "tin hoc", "cong nghe thong tin",
-    "may chu", "thang may", "may phat dien", "dieu hoa", "dieu hoa khong khi",
+    "ve sinh cong nghiep", "van phong pham", "xang dau", "cay xanh", "rac thai", "chat thai",
+    "in an", "bien ten", "trang phuc", "bao ho lao dong", "giay bao ho", "quan ao", "drap",
+    "boi duong doc hai", "boi duong hien vat", "hang hoa thuc hien che do", "phu cap doc hai",
+    "ban, ghe", "ban ghe", "tu dung ho so", "xe ban tai", "xe day sieu thi", "bao hiem",
+    "binh ac quy", "vat tu dien", "vat tu nuoc", "dien, nuoc", "dien nuoc",
+    "dich vu sua chua", "sua chua", "dich vu bao tri", "bao tri, bao duong",
+    "dich vu kiem dinh", "kiem dinh, hieu chuan", "kiem dinh va hieu chuan",
+    // Công nghệ thông tin và thiết bị hạ tầng không phải thiết bị y tế.
+    "may tinh", "may in", "tin hoc", "cong nghe thong tin", "may chu", "thiet bi tuong lua",
+    "bao mat du lieu", "luu tru san", "thang may", "may phat dien", "dieu hoa khong khi",
+    // Nông nghiệp, cao su và thú y.
+    "phan bon", "thuoc bvtv", "bao ve thuc vat", "vuon cay", "cay cao su", "cay ca phe",
+    "kich thich mu", "phun thuoc", "thuoc phong tri", "thuoc phun tri", "benh dong vat",
+    "trau, bo", "cho, meo", "gia cam", "lo mom long mong", "viem da noi cuc",
+    "phuc vu che bien", "san xuat phan vi sinh",
   ];
-  if (obviousNonMedical.some((term) => title.includes(term))) return false;
-  const exactTerms = [
+  if (excludedTerms.some((term) => title.includes(term))) return false;
+
+  // Chỉ các cụm từ tự thân xác định rõ thiết bị/vật tư y tế mới được giữ lại.
+  const explicitMedicalTerms = [
     ...SEARCH_KEYWORDS,
-    "vắc xin", "vaccine", "oxy", "khí y tế", "nội soi", "siêu âm", "x quang", "x-quang",
-    "ct scanner", "mri", "phòng mổ", "gây mê", "lọc máu", "chạy thận", "cấp cứu",
-    "phục hồi chức năng", "kiểm soát nhiễm khuẩn", "tiệt khuẩn", "răng hàm mặt",
-    "máy thở", "máy xét nghiệm", "máy chụp", "máy siêu âm", "máy điện tim", "monitor",
-    "tủ bảo quản máu", "kim tiêm", "bơm tiêm", "dây truyền", "catheter", "stent", "implant",
-    "đinh", "nẹp", "vít", "khớp", "bông gạc", "găng tay", "khẩu trang", "kit test",
-    "test nhanh", "bệnh phẩm", "huyết học", "sinh hóa", "vi sinh", "chấn thương chỉnh hình",
-    "chăm sóc sức khỏe", "khám chữa bệnh", "vật tư phẫu thuật",
+    "trang thiết bị y tế", "y cụ", "y dụng cụ", "hóa chất y tế", "hoá chất y tế",
+    "sinh phẩm y tế", "sinh phẩm xét nghiệm", "khí y tế", "oxy y tế",
+    "hóa chất khử khuẩn", "hoá chất khử khuẩn", "hóa chất định nhóm máu",
+    "hoá chất định nhóm máu", "vật tư xét nghiệm", "vật tư nha khoa",
   ];
-  if (exactTerms.some((term) => originalTitle.includes(term))) return true;
+  if (explicitMedicalTerms.some((term) => originalTitle.includes(term))) return true;
 
-  const unambiguousNormalizedTerms = [
-    "y te", "benh vien", "trung tam y te", "thiet bi y te", "vat tu tieu hao", "vat tu y te",
-    "dung cu y te", "hoa chat", "sinh pham", "xet nghiem", "duoc pham", "phau thuat",
-    "chan doan", "hoi suc", "nha khoa", "vac xin", "vaccine", "khi y te", "noi soi",
-    "sieu am", "x quang", "ct scanner", "phong mo", "gay me", "loc mau", "chay than",
-    "cap cuu", "phuc hoi chuc nang", "kiem soat nhiem khuan", "tiet khuan", "rang ham mat",
-    "may tho", "may xet nghiem", "may chup", "may sieu am", "may dien tim", "tu bao quan mau",
-    "kim tiem", "bom tiem", "day truyen", "bong gac", "gang tay", "khau trang", "kit test",
-    "test nhanh", "benh pham", "huyet hoc", "sinh hoa", "vi sinh", "chan thuong chinh hinh",
-    "cham soc suc khoe", "kham chua benh", "vat tu phau thuat",
+  // Tên riêng của máy móc, vật tư và sinh phẩm chuyên môn.
+  const medicalProductTerms = [
+    "máy thở", "máy siêu âm", "đầu dò siêu âm", "máy điện tim", "máy theo dõi bệnh nhân",
+    "monitor bệnh nhân", "máy hút dịch", "bơm tiêm điện", "máy tim phổi", "máy lọc máu",
+    "máy chạy thận", "máy xét nghiệm", "máy phân tích huyết học", "máy sinh hóa",
+    "máy sinh hoá", "máy chụp", "x-quang", "x quang", "ct scanner", "mri",
+    "máy hấp nhiệt độ thấp", "máy tiệt khuẩn", "máy tập cơ sàn chậu", "micropipet",
+    "tủ bảo quản máu", "bình nitơ lưu trữ mẫu", "lọc nước ro cho phòng xét nghiệm",
+    "dụng cụ phẫu thuật", "dao phẫu thuật", "gạc phẫu thuật", "găng tay phẫu thuật",
+    "bơm tiêm", "kim tiêm", "kim nha khoa", "kim châm cứu", "dây truyền dịch",
+    "truyền máu", "catheter", "stent", "implant", "đinh, nẹp, vít", "đinh nẹp vít",
+    "nẹp chấn thương", "khớp gối", "khớp háng", "nội soi", "dây dao siêu âm",
+    "bộ bơm cản quang", "máy bơm cản quang", "ampu bóp bóng", "túi đựng oxy",
+    "bông y tế", "găng tay y tế", "khẩu trang y tế", "test nhanh chẩn đoán",
+    "kit test", "dịch nhầy dùng trong phẫu thuật mắt", "chẩn thương chỉnh hình",
+    "chấn thương chỉnh hình", "lọc máu liên tục", "chạy thận nhân tạo",
+    "vật tư thận niệu", "vật tư tim mạch can thiệp", "vật tư can thiệp mạch não",
+    "áo, khăn phẫu thuật", "que đè lưỡi", "dây garo",
   ];
-  if (originalTitle === title && unambiguousNormalizedTerms.some((term) => title.includes(term))) return true;
-  if (originalTitle === title && ["thuoc", "dinh", "nep", "vit", "khop"].some((term) => title.includes(term))) return true;
+  if (medicalProductTerms.some((term) => originalTitle.includes(term))) return true;
 
+  // Hóa chất/sinh phẩm chỉ được giữ khi gắn với xét nghiệm hoặc chẩn đoán y khoa.
+  const laboratoryTerms = [
+    "xét nghiệm", "chẩn đoán", "in vitro", "huyết học", "sinh hóa", "sinh hoá",
+    "vi sinh", "bệnh phẩm", "định nhóm máu", "máy huyết học", "máy sinh hóa", "máy sinh hoá",
+  ];
+  const laboratorySupplies = ["hóa chất", "hoá chất", "sinh phẩm", "vật tư", "chủng vi sinh"];
+  if (laboratoryTerms.some((term) => originalTitle.includes(term))
+    && laboratorySupplies.some((term) => originalTitle.includes(term))) return true;
+
+  // Tiêu đề chung chỉ được nhận khi vừa có vật tư/hóa chất, vừa có ngữ cảnh khám chữa bệnh,
+  // và chủ đầu tư rõ ràng là cơ sở y tế. Không dùng tên chủ đầu tư làm điều kiện duy nhất.
   const medicalInvestors = [
     "so y te", "benh vien", "trung tam y te", "tram y te", "trung tam kiem soat benh tat",
     "cdc", "phong kham", "benh xa", "y khoa", "y duoc", "da khoa", "chuyen khoa",
     "trung tam phap y", "trung tam kiem nghiem",
   ];
-  const procurementTerms = [
-    "mua sam", "cung cap", "thue", "bao tri", "bao duong", "sua chua", "hieu chuan",
-    "kiem dinh", "hang hoa", "dich vu ky thuat", "phan mem", "may", "thiet bi", "vat tu",
-  ];
+  const genericSupplyTerms = ["vat tu", "hoa chat", "sinh pham", "dung cu"];
+  const clinicalTerms = ["kham chua benh", "kham benh", "chua benh", "dieu tri", "phong mo"];
   return medicalInvestors.some((term) => investor.includes(term))
-    && procurementTerms.some((term) => title.includes(term));
+    && genericSupplyTerms.some((term) => title.includes(term))
+    && clinicalTerms.some((term) => title.includes(term));
 }
 
 function categoryOf(name) {
   const original = String(name || "").toLocaleLowerCase("vi-VN");
   const normalized = normalizeText(original);
-  if (["bảo trì", "bảo dưỡng", "sửa chữa", "hiệu chuẩn", "kiểm định"].some((term) => original.includes(term))) return "Dịch vụ kỹ thuật";
-  if (["thuốc", "dược phẩm", "vắc xin", "vaccine"].some((term) => original.includes(term))) return "Dược phẩm";
-  if (["vật tư", "hóa chất", "hoá chất", "sinh phẩm", "dụng cụ", "đinh", "nẹp", "vít", "bông gạc", "găng tay"].some((term) => original.includes(term))) return "Vật tư & hóa chất";
-  if (original === normalized && ["bao tri", "bao duong", "sua chua", "hieu chuan", "kiem dinh"].some((term) => normalized.includes(term))) return "Dịch vụ kỹ thuật";
-  if (original === normalized && ["thuoc", "duoc pham", "vac xin", "vaccine"].some((term) => normalized.includes(term))) return "Dược phẩm";
-  if (original === normalized && ["vat tu", "hoa chat", "sinh pham", "dung cu", "dinh", "nep", "vit", "bong gac", "gang tay"].some((term) => normalized.includes(term))) return "Vật tư & hóa chất";
+  const supplyTerms = [
+    "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "dụng cụ", "đinh", "nẹp", "vít",
+    "gạc", "găng tay", "bộ bơm tiêm", "bơm tiêm các loại", "dây nối bơm tiêm", "kim ",
+    "dây truyền", "stent", "khớp", "test nhanh", "dao phẫu thuật", "dây garo",
+    "áo, khăn phẫu thuật", "bông y tế", "khẩu trang", "hơi oxy y tế", "oxy y tế",
+    "dịch nhầy", "chuẩn đối chiếu", "chủng vi sinh", "tay dao", "dây dao", "ampu bóp bóng",
+  ];
+  if (supplyTerms.some((term) => original.includes(term))) return "Vật tư & hóa chất";
+  if (original === normalized && [
+    "vat tu", "hoa chat", "sinh pham", "dung cu", "dinh", "nep", "vit", "gac",
+    "gang tay", "bo bom tiem", "bom tiem cac loai", "day noi bom tiem", "kim ",
+    "day truyen", "stent", "khop", "test nhanh", "dao phau thuat", "day garo",
+    "ao, khan phau thuat", "bong y te", "khau trang", "hoi oxy y te", "oxy y te",
+    "dich nhay", "chuan doi chieu", "chung vi sinh", "tay dao", "day dao", "ampu bop bong",
+  ].some((term) => normalized.includes(term))) return "Vật tư & hóa chất";
   return "Thiết bị y tế";
 }
 

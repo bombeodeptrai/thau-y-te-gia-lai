@@ -1,6 +1,6 @@
 # Thầu Y tế Gia Lai
 
-Trang tổng hợp dữ liệu đấu thầu công khai về thiết bị, vật tư, hóa chất và dịch vụ y tế tại Gia Lai.
+Trang tổng hợp dữ liệu đấu thầu công khai về thiết bị y tế, vật tư tiêu hao và hóa chất xét nghiệm tại Gia Lai.
 
 Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 
@@ -8,7 +8,8 @@ Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 
 - Nguồn: API tìm kiếm công khai của Hệ thống mạng đấu thầu quốc gia.
 - Phạm vi: toàn bộ gói thuộc mã tỉnh Gia Lai `52` trong 90 ngày gần nhất, được chia thành các cửa sổ 7 ngày và quét hết mọi trang API trước khi lọc y tế.
-- Bộ nhận diện dùng các cụm `y tế`, `bệnh viện`, `trung tâm y tế`, `thiết bị y tế`, `vật tư tiêu hao` cùng danh sách thuật ngữ thiết bị, vật tư, xét nghiệm, dược phẩm và kỹ thuật y khoa mở rộng.
+- Bộ lọc yêu cầu tiêu đề gói thầu phải nêu rõ thiết bị/vật tư y tế, vật tư tiêu hao, hóa chất xét nghiệm hoặc tên một mặt hàng chuyên môn. Tên bệnh viện/trung tâm y tế không còn là điều kiện đủ.
+- Loại khỏi danh sách chính các gói thuốc, vắc xin, xây dựng, CNTT, xe, bàn ghế, đồng phục, xử lý rác, dịch vụ sửa chữa/bảo trì và vật tư nông nghiệp.
 - Có thể hiển thị kết quả lựa chọn nhà thầu, đơn vị trúng, giá trúng, danh mục hàng hóa, model, hãng, xuất xứ, đơn giá và cấu hình kỹ thuật nếu nguồn chính thức đã công bố.
 - Danh sách được phân trang; dữ liệu hàng hóa trúng thầu cũng được lấy hết các trang thay vì chỉ 20 mặt hàng đầu.
 - Không vượt CAPTCHA, không dùng tài khoản và không truy cập dữ liệu hạn chế.
