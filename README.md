@@ -17,6 +17,10 @@ Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 
 GitHub Actions cập nhật dữ liệu mỗi giờ và triển khai lại GitHub Pages. Dữ liệu được lưu dưới dạng JSON tĩnh, không sử dụng máy chủ cơ sở dữ liệu. Trang này không phải website chính thức của cơ quan quản lý đấu thầu.
 
+## Google Sheets và Gmail
+
+Thư mục [`google-apps-script`](./google-apps-script) chứa mã cài đặt cho một Google Sheet tự đồng bộ mỗi giờ và gửi Gmail khi phát hiện mã TBMT mới.
+
 ## Chạy thử tại máy
 
 ```bash
