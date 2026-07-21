@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Theo dõi kết quả đấu thầu thiết bị, vật tư và hóa chất y tế tại Gia Lai." />
+    <title>Thầu Y tế Gia Lai</title>
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Thầu Y tế Gia Lai - về đầu trang">
+          <span class="brand-mark"><span></span></span>
+          <span>THẦU Y TẾ GIA LAI</span>
+        </a>
+        <nav aria-label="Điều hướng chính">
+          <a class="active" href="#top">Tổng quan</a>
+          <a href="#goi-thau">Gói thầu</a>
+          <a href="#chu-dau-tu">Chủ đầu tư</a>
+          <a href="#canh-bao">Quan tâm</a>
+        </nav>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">CỔNG THÔNG TIN ĐẤU THẦU</p>
+          <h1>Theo dõi cơ hội thầu<br />thiết bị y tế tại Gia Lai</h1>
+          <p class="hero-note">Tổng hợp dữ liệu công khai, kết quả lựa chọn nhà thầu, model, hãng sản xuất, đơn giá và cấu hình kỹ thuật.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="./assets/hero-medical-gialai.webp" alt="" width="1600" height="533" />
+        </div>
+
+        <form class="search-panel" id="search-form">
+          <label class="search-field search-keyword">
+            <span class="sr-only">Từ khóa</span><span class="icon-text">⌕</span>
+            <input id="keyword" placeholder="Tên gói thầu, chủ đầu tư, mã TBMT..." />
+          </label>
+          <div class="search-field fixed-field" aria-label="Địa bàn Gia Lai">
+            <span class="icon-text">⌖</span><span>Gia Lai</span><span class="field-note">sau sáp nhập</span>
+          </div>
+          <label class="search-field select-field">
+            <span class="icon-text">▣</span><span class="sr-only">Nhóm dữ liệu</span>
+            <select id="category">
+              <option value="all">Tất cả nhóm y tế</option>
+              <option value="Thiết bị y tế">Thiết bị y tế</option>
+              <option value="Vật tư &amp; hóa chất">Vật tư &amp; hóa chất</option>
+              <option value="Dược phẩm">Dược phẩm</option>
+              <option value="Dịch vụ kỹ thuật">Dịch vụ kỹ thuật</option>
+            </select>
+            <span>⌄</span>
+          </label>
+          <label class="search-field select-field compact-select">
+            <span class="icon-text">◫</span><span class="sr-only">Khoảng thời gian</span>
+            <select id="days">
+              <option value="7">7 ngày</option>
+              <option value="30" selected>30 ngày</option>
+              <option value="90">90 ngày</option>
+            </select>
+            <span>⌄</span>
+          </label>
+          <button class="primary-button" type="submit"><span>Tìm kiếm</span><span>⌕</span></button>
+        </form>
+      </section>
+
+      <section class="content-wrap stats-grid" aria-label="Thống kê nhanh">
+        <article class="stat-card"><span class="stat-icon green">▧</span><div><strong id="metric-total">—</strong><span>Gói thầu phù hợp</span></div><div class="sparkline green-line" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article class="stat-card"><span class="stat-icon sage">⌑</span><div><strong id="metric-open">—</strong><span>Đang mở</span></div><div class="barline" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article class="stat-card urgent-card"><span class="stat-icon coral">◷</span><div><strong id="metric-urgent">—</strong><span>Sắp đóng trong 3 ngày</span></div><div class="sparkline coral-line" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article class="stat-card"><span class="stat-icon gold">◉</span><div><strong class="money-stat" id="metric-value">—</strong><span>Tổng giá trị dự toán</span></div><div class="barline gold-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+      </section>
+
+      <section class="content-wrap dashboard-grid" id="goi-thau">
+        <div class="tender-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow small">DANH SÁCH THEO DÕI</p><h2>Gói thầu đáng chú ý</h2></div>
+            <div class="data-state" data-state="loading" id="data-state">
+              <span class="live-dot"></span>
+              <div><strong id="source-label">Đang tải dữ liệu</strong><span id="updated-label">Từ Hệ thống mạng đấu thầu quốc gia</span></div>
+              <button type="button" id="refresh-button" aria-label="Cập nhật dữ liệu">↻</button>
+            </div>
+          </div>
+
+          <div class="filter-row" aria-label="Lọc trạng thái" id="status-filter">
+            <button class="selected" data-status="all" type="button">Tất cả</button>
+            <button data-status="open" type="button">Đang mở</button>
+            <button data-status="urgent" type="button">Sắp đóng</button>
+            <button data-status="closed" type="button">Đã đóng</button>
+            <button data-status="awarded" type="button">Đã có kết quả</button>
+            <span id="result-count">0 kết quả</span>
+          </div>
+
+          <div class="source-warning" id="source-warning" role="status" hidden></div>
+          <div class="tender-list" id="tender-list" aria-live="polite" aria-busy="true">
+            <div class="loading-copy">Đang đọc dữ liệu đấu thầu công khai…</div>
+          </div>
+        </div>
+
+        <aside class="insight-panel" id="chu-dau-tu">
+          <div class="panel-heading compact"><div><p class="eyebrow small">PHÂN TÍCH NHANH</p><h2>Góc nhìn thị trường</h2></div><span>↗</span></div>
+          <div class="insight-hero"><span class="insight-icon">↗</span><div><strong id="open-percent">0%</strong><span>gói thầu còn mở</span></div></div>
+          <div class="insight-item"><span class="insight-icon gold">◉</span><div><strong id="average-value">—</strong><span>Giá trị trung bình mỗi gói</span></div></div>
+          <div class="investor-list"><p>Chủ đầu tư hoạt động nhiều</p><div id="investor-ranking"></div></div>
+        </aside>
+      </section>
+
+      <section class="content-wrap alert-section" id="canh-bao">
+        <div class="alert-copy"><span class="alert-icon">♧</span><div><p class="eyebrow small">DANH SÁCH QUAN TÂM</p><h2>Theo dõi các gói thầu quan trọng</h2><p>Gói thầu được đánh dấu sao sẽ lưu trên thiết bị này để quay lại xem nhanh.</p></div></div>
+        <div class="saved-count"><strong id="saved-count">0</strong><span>gói đã lưu</span></div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="source-line"><span>✓</span><span>Dữ liệu công khai từ Hệ thống mạng đấu thầu quốc gia; GitHub Actions tự động cập nhật định kỳ.</span></div>
+        <p>Không phải website chính thức của cơ quan quản lý đấu thầu.</p>
+      </footer>
+    </main>
+  </body>
+</html>

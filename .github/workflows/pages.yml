@@ -1,0 +1,44 @@
+name: Cập nhật dữ liệu và triển khai GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v4
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Lấy dữ liệu công khai mới nhất
+        run: node scripts/fetch-data.mjs
+      - name: Tạo bản tĩnh
+        run: node scripts/build-pages.mjs
+      - name: Cấu hình Pages
+        uses: actions/configure-pages@v5
+      - name: Tải bản tĩnh lên Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist-pages
+      - name: Triển khai
+        id: deployment
+        uses: actions/deploy-pages@v4
