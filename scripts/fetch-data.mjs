@@ -5,7 +5,8 @@ import { fileURLToPath } from "node:url";
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
 const PROVINCE_CODE = "52";
-const DAYS = 90;
+const DAYS = 365;
+const INCREMENTAL_DAYS = 14;
 const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
 const DETAIL_PAGE_SIZE = 20;
@@ -35,12 +36,12 @@ function normalizeText(value) {
     .toLowerCase();
 }
 
-function dateWindows() {
+function dateWindows(days = DAYS) {
   const now = new Date();
   const windows = [];
-  for (let offset = 0; offset < DAYS; offset += WINDOW_DAYS) {
+  for (let offset = 0; offset < days; offset += WINDOW_DAYS) {
     const to = new Date(now.getTime() - offset * 86_400_000);
-    const from = new Date(now.getTime() - Math.min(offset + WINDOW_DAYS, DAYS) * 86_400_000);
+    const from = new Date(now.getTime() - Math.min(offset + WINDOW_DAYS, days) * 86_400_000);
     windows.push({ from: from.toISOString(), to: to.toISOString() });
   }
   return windows;
@@ -109,7 +110,7 @@ async function mapLimited(values, concurrency, mapper) {
   return results;
 }
 
-async function fetchWindow(window, windowIndex) {
+async function fetchWindow(window, windowIndex, totalWindows) {
   const first = await postJson(SEARCH_URL, searchPayload(0, window.from, window.to));
   const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
   const pageNumbers = Array.from({ length: totalPages - 1 }, (_, index) => index + 1);
@@ -118,7 +119,7 @@ async function fetchWindow(window, windowIndex) {
   );
   const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
   process.stdout.write(
-    `Khoảng ${windowIndex + 1}/${dateWindows().length}: ${items.length} bản ghi, ${totalPages} trang\n`,
+    `Khoảng ${windowIndex + 1}/${totalWindows}: ${items.length} bản ghi, ${totalPages} trang\n`,
   );
   return items;
 }
@@ -368,14 +369,21 @@ function shouldRefreshDetails(tender, cached) {
   if (!fetchedAt) return true;
   const resultPublishedAt = new Date(tender.resultPublishedDate || 0).getTime();
   if (resultPublishedAt > fetchedAt) return true;
-  const refreshAfter = cached.items?.length ? 24 * 60 * 60 * 1000 : 6 * 60 * 60 * 1000;
+  const refreshAfter = cached.items?.length ? 7 * 24 * 60 * 60 * 1000 : 24 * 60 * 60 * 1000;
   return Date.now() - fetchedAt >= refreshAfter;
 }
 
 async function main() {
   const previous = await previousData();
-  const windows = dateWindows();
-  const allItems = (await mapLimited(windows, 2, fetchWindow)).flat();
+  const previousDays = Number(previous.collection?.days) || 0;
+  const fullRefresh = !previous.tenders?.length || previousDays < DAYS;
+  const scanDays = fullRefresh ? DAYS : INCREMENTAL_DAYS;
+  const windows = dateWindows(scanDays);
+  process.stdout.write(fullRefresh
+    ? `Quét bù toàn bộ ${DAYS} ngày lần đầu\n`
+    : `Cập nhật tăng dần ${INCREMENTAL_DAYS} ngày gần nhất\n`);
+  const allItems = (await mapLimited(windows, 2, (window, index) =>
+    fetchWindow(window, index, windows.length))).flat();
   const allUnique = new Map();
   allItems.forEach((item) => {
     const key = item.notifyId || item.id || item.notifyNo;
@@ -387,11 +395,34 @@ async function main() {
     const key = item.notifyId || item.id || item.notifyNo;
     if (key) medicalUnique.set(key, item);
   });
-  const tenders = [...medicalUnique.values()]
-    .map(normalizeTender)
+  const freshTenders = [...medicalUnique.values()].map(normalizeTender);
+  const now = Date.now();
+  const cutoff = now - DAYS * 86_400_000;
+  const refreshedFrom = now - scanDays * 86_400_000;
+  const historicalTenders = fullRefresh ? [] : (previous.tenders || [])
+    .filter((tender) => {
+      const publishedAt = new Date(tender.publicDate || 0).getTime();
+      return publishedAt >= cutoff && publishedAt < refreshedFrom;
+    })
+    .map((tender) => ({
+      ...tender,
+      category: categoryOf(tender.name),
+      status: statusOf({
+        status: tender.status === "cancelled" ? "CANCEL_BID" : "",
+        bidCloseDate: tender.closeDate,
+      }),
+    }));
+  const mergedTenders = new Map();
+  [...historicalTenders, ...freshTenders].forEach((tender) => {
+    const key = tender.notifyNo || tender.id;
+    if (key) mergedTenders.set(key, tender);
+  });
+  const tenders = [...mergedTenders.values()]
     .sort((a, b) => new Date(b.publicDate) - new Date(a.publicDate));
   if (!tenders.length && previous.tenders?.length) throw new Error("Nguồn trả về 0 gói; giữ nguyên bản dữ liệu gần nhất");
-  process.stdout.write(`Đã rà ${allUnique.size} gói toàn tỉnh, giữ ${tenders.length} gói y tế\n`);
+  process.stdout.write(
+    `Đã rà ${allUnique.size} gói trong ${scanDays} ngày cập nhật, đang lưu ${tenders.length} gói y tế/${DAYS} ngày\n`,
+  );
 
   const detailsByNotifyNo = { ...(previous.detailsByNotifyNo || {}) };
   const awarded = tenders.filter((tender) => tender.hasResult);
@@ -418,8 +449,13 @@ async function main() {
     detailTenderCount: Object.keys(detailsByNotifyNo).length,
     collection: {
       days: DAYS,
-      strategy: "all-province-date-windows",
-      scannedTenderCount: allUnique.size,
+      strategy: "incremental-province-date-windows",
+      refreshDays: INCREMENTAL_DAYS,
+      lastScanDays: scanDays,
+      lastScanTenderCount: allUnique.size,
+      scannedTenderCount: fullRefresh
+        ? allUnique.size
+        : (Number(previous.collection?.scannedTenderCount) || allUnique.size),
       keywords: SEARCH_KEYWORDS,
     },
   };

@@ -7,14 +7,15 @@ Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 ## Dữ liệu
 
 - Nguồn: API tìm kiếm công khai của Hệ thống mạng đấu thầu quốc gia.
-- Phạm vi: toàn bộ gói thuộc mã tỉnh Gia Lai `52` trong 90 ngày gần nhất, được chia thành các cửa sổ 7 ngày và quét hết mọi trang API trước khi lọc y tế.
+- Phạm vi lưu trữ: toàn bộ gói thuộc mã tỉnh Gia Lai `52` trong 365 ngày gần nhất.
+- Lần đầu hệ thống quét bù đủ 365 ngày theo các cửa sổ 7 ngày. Các lần chạy sau chỉ quét lại 14 ngày mới nhất, ghép với dữ liệu cũ và tự xóa bản ghi quá 365 ngày.
 - Bộ lọc yêu cầu tiêu đề gói thầu phải nêu rõ thiết bị/vật tư y tế, vật tư tiêu hao, hóa chất xét nghiệm hoặc tên một mặt hàng chuyên môn. Tên bệnh viện/trung tâm y tế không còn là điều kiện đủ.
 - Loại khỏi danh sách chính các gói thuốc, vắc xin, xây dựng, CNTT, xe, bàn ghế, đồng phục, xử lý rác, dịch vụ sửa chữa/bảo trì và vật tư nông nghiệp.
 - Có thể hiển thị kết quả lựa chọn nhà thầu, đơn vị trúng, giá trúng, danh mục hàng hóa, model, hãng, xuất xứ, đơn giá và cấu hình kỹ thuật nếu nguồn chính thức đã công bố.
 - Danh sách được phân trang; dữ liệu hàng hóa trúng thầu cũng được lấy hết các trang thay vì chỉ 20 mặt hàng đầu.
 - Không vượt CAPTCHA, không dùng tài khoản và không truy cập dữ liệu hạn chế.
 
-GitHub Actions cập nhật dữ liệu mỗi giờ và triển khai lại GitHub Pages. Trang này không phải website chính thức của cơ quan quản lý đấu thầu.
+GitHub Actions cập nhật dữ liệu mỗi giờ và triển khai lại GitHub Pages. Dữ liệu được lưu dưới dạng JSON tĩnh, không sử dụng máy chủ cơ sở dữ liệu. Trang này không phải website chính thức của cơ quan quản lý đấu thầu.
 
 ## Chạy thử tại máy
 

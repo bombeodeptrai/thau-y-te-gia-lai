@@ -8,7 +8,7 @@ const state = {
   fetchedAt: "",
   query: "",
   category: "all",
-  days: 30,
+  days: 365,
   status: "all",
   page: 1,
   expandedId: null,
