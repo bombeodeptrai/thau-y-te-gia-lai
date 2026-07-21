@@ -36,7 +36,7 @@ jobs:
       - name: Cấu hình Pages
         uses: actions/configure-pages@v5
       - name: Tải bản tĩnh lên Pages
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist-pages
       - name: Triển khai
