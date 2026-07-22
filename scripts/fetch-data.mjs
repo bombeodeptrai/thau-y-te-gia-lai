@@ -10,7 +10,7 @@ const CONTRACTOR_RESULT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contra
 const PROVINCE_CODE = "52";
 const DAYS = 3 * 365;
 const INCREMENTAL_DAYS = 14;
-const STATUS_SCHEMA_VERSION = 3;
+const STATUS_SCHEMA_VERSION = 4;
 const DETAIL_SCHEMA_VERSION = 2;
 const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
@@ -27,6 +27,23 @@ const SEARCH_KEYWORDS = [
   "máy xét nghiệm",
   "máy siêu âm",
   "máy thở",
+];
+// Hồ sơ cũ trước đợt thay đổi địa giới thường không còn trường locations.provCode.
+// Khi quét bù 3 năm, tìm giao giữa địa danh trong tên đơn vị và từ khóa trong tên gói,
+// sau đó vẫn chạy bộ lọc y tế chặt chẽ ở isMedical().
+const HISTORICAL_LOCATION_TERMS = [
+  "Gia Lai", "Bình Định",
+  "Pleiku", "An Khê", "Ayun Pa", "Chư Păh", "Chư Prông", "Chư Sê", "Chư Pưh",
+  "Đak Đoa", "Đăk Đoa", "Đak Pơ", "Đăk Pơ", "Đức Cơ", "Ia Grai", "Ia Pa", "Kbang",
+  "Kông Chro", "Krông Pa", "Mang Yang", "Phú Thiện",
+  "Quy Nhơn", "An Nhơn", "Hoài Nhơn", "Tuy Phước", "Phù Cát", "Phù Mỹ", "Tây Sơn",
+  "Vân Canh", "Vĩnh Thạnh", "An Lão", "Hoài Ân",
+];
+const HISTORICAL_TITLE_TERMS = [
+  "thiết bị", "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "dụng cụ", "y cụ", "máy",
+  "xét nghiệm", "chẩn đoán", "phẫu thuật", "nha khoa", "lọc máu", "chạy thận",
+  "kit", "test", "stent", "catheter", "implant", "bơm tiêm", "kim", "găng",
+  "khẩu trang", "bông", "gạc", "oxy", "khí y tế",
 ];
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "data/tenders.json");
@@ -71,6 +88,35 @@ function searchPayload(pageNumber, from, to) {
         { fieldName: "publicDate", searchType: "range", from, to },
       ],
     }],
+  }];
+}
+
+function historicalSearchPayload(pageNumber, from, to, locationTerm, titleTerm) {
+  const filters = [
+    { fieldName: "type", searchType: "in", fieldValues: ["es-notify-contractor"] },
+    { fieldName: "publicDate", searchType: "range", from, to },
+  ];
+  return [{
+    pageSize: PAGE_SIZE,
+    pageNumber,
+    sortBy: "publicDate",
+    sortType: "DESC",
+    query: [
+      {
+        index: "es-contractor-selection",
+        keyWord: titleTerm,
+        matchType: "exact",
+        matchFields: ["bidName"],
+        filters,
+      },
+      {
+        index: "es-contractor-selection",
+        keyWord: locationTerm,
+        matchType: "exact",
+        matchFields: ["investorName", "procuringEntityName"],
+        filters,
+      },
+    ],
   }];
 }
 
@@ -135,6 +181,39 @@ async function fetchWindow(window, windowIndex, totalWindows) {
     `Khoảng ${windowIndex + 1}/${totalWindows}: ${items.length} bản ghi, ${totalPages} trang\n`,
   );
   return items;
+}
+
+async function fetchHistoricalPair(pair, pairIndex, totalPairs, from, to) {
+  const { locationTerm, titleTerm } = pair;
+  const first = await postJson(
+    SEARCH_URL,
+    historicalSearchPayload(0, from, to, locationTerm, titleTerm),
+  );
+  const totalPages = Math.max(0, Number(first.page?.totalPages) || 0);
+  const pageNumbers = Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => index + 1);
+  const remaining = await mapLimited(pageNumbers, 2, (pageNumber) =>
+    postJson(SEARCH_URL, historicalSearchPayload(pageNumber, from, to, locationTerm, titleTerm)),
+  );
+  const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
+  if (items.length || (pairIndex + 1) % 50 === 0 || pairIndex + 1 === totalPairs) {
+    process.stdout.write(
+      `Bù địa bàn ${pairIndex + 1}/${totalPairs}: ${locationTerm} + ${titleTerm} = ${items.length}\n`,
+    );
+  }
+  return items;
+}
+
+async function fetchHistoricalFallback() {
+  const now = new Date();
+  const from = new Date(now.getTime() - DAYS * 86_400_000).toISOString();
+  const to = now.toISOString();
+  const pairs = HISTORICAL_LOCATION_TERMS.flatMap((locationTerm) =>
+    HISTORICAL_TITLE_TERMS.map((titleTerm) => ({ locationTerm, titleTerm })));
+  process.stdout.write(
+    `Quét bù hồ sơ cũ thiếu mã tỉnh bằng ${pairs.length} cặp địa danh/từ khóa\n`,
+  );
+  return (await mapLimited(pairs, 3, (pair, index) =>
+    fetchHistoricalPair(pair, index, pairs.length, from, to))).flat();
 }
 
 function isMedical(item) {
@@ -622,8 +701,10 @@ async function main() {
     ? `Quét bù toàn bộ ${DAYS} ngày lần đầu\n`
     : `Cập nhật tăng dần ${INCREMENTAL_DAYS} ngày gần nhất\n`);
   const windowConcurrency = fullRefresh ? 1 : 2;
-  const allItems = (await mapLimited(windows, windowConcurrency, (window, index) =>
+  const provinceItems = (await mapLimited(windows, windowConcurrency, (window, index) =>
     fetchWindow(window, index, windows.length))).flat();
+  const historicalFallbackItems = fullRefresh ? await fetchHistoricalFallback() : [];
+  const allItems = [...provinceItems, ...historicalFallbackItems];
   const allUnique = new Map();
   allItems.forEach((item) => {
     const key = item.notifyId || item.id || item.notifyNo;
@@ -712,11 +793,13 @@ async function main() {
     detailTenderCount: Object.keys(detailsByNotifyNo).length,
     collection: {
       days: DAYS,
-      strategy: "incremental-province-date-windows",
+      strategy: "incremental-province-plus-historical-entity-keywords",
       refreshDays: INCREMENTAL_DAYS,
       statusSchemaVersion: STATUS_SCHEMA_VERSION,
       lastScanDays: scanDays,
       lastScanTenderCount: allUnique.size,
+      lastProvinceTenderCount: provinceItems.length,
+      lastHistoricalFallbackTenderCount: historicalFallbackItems.length,
       scannedTenderCount: fullRefresh
         ? allUnique.size
         : (Number(previous.collection?.scannedTenderCount) || allUnique.size),
