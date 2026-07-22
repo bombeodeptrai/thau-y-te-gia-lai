@@ -59,9 +59,9 @@ function syncTenders() {
       ? tenders.filter((tender) => !knownIds.has(String(tender.notifyNo || tender.id || "")))
       : [];
 
-    writeTenderSheet_(tenders, equipment, payload.fetchedAt);
+    const equipmentIndex = writeEquipmentSheet_(equipment, payload.fetchedAt);
+    writeTenderSheet_(tenders, equipment, equipmentIndex, payload.fetchedAt);
     writeBidderSheet_(bidders, payload.fetchedAt);
-    writeEquipmentSheet_(equipment, payload.fetchedAt);
     properties.setProperty(KNOWN_IDS_KEY, JSON.stringify(currentIds));
     properties.setProperty(INITIALIZED_KEY, "1");
     updateLastSync_(payload.fetchedAt, tenders.length, newTenders.length);
@@ -71,7 +71,7 @@ function syncTenders() {
   }
 }
 
-function writeTenderSheet_(tenders, equipment, fetchedAt) {
+function writeTenderSheet_(tenders, equipment, equipmentIndex, fetchedAt) {
   const spreadsheet = SpreadsheetApp.getActive();
   let sheet = spreadsheet.getSheetByName(TENDER_SHEET);
   const isNewSheet = !sheet;
@@ -134,6 +134,19 @@ function writeTenderSheet_(tenders, equipment, fetchedAt) {
   sheet.getRange(TENDER_HEADER_ROW, 1, 1, headers.length).setValues([headers]);
   if (rows.length) {
     sheet.getRange(TENDER_DATA_START_ROW, 1, rows.length, headers.length).setValues(rows);
+    const spreadsheetUrl = spreadsheet.getUrl();
+    const modelLinks = tenders.map((tender, index) => {
+      const text = String(rows[index][13] || "");
+      const target = equipmentIndex[String(tender.notifyNo || "")];
+      const richText = SpreadsheetApp.newRichTextValue().setText(text);
+      if (text && target) {
+        richText.setLinkUrl(
+          `${spreadsheetUrl}#gid=${target.sheetId}&range=A${target.startRow}:Q${target.endRow}`,
+        );
+      }
+      return [richText.build()];
+    });
+    sheet.getRange(TENDER_DATA_START_ROW, 14, rows.length, 1).setRichTextValues(modelLinks);
   }
 
   const lastRow = Math.max(TENDER_DATA_START_ROW, rows.length + TENDER_HEADER_ROW);
@@ -214,7 +227,10 @@ function writeEquipmentSheet_(equipment, fetchedAt) {
     "Thông số kỹ thuật", "Đơn vị tính", "Số lượng", "Đơn giá", "Thành tiền",
     "Nguồn chính thức", "Dữ liệu cập nhật lúc",
   ];
-  const rows = equipment.map((item) => [
+  const sortedEquipment = [...equipment].sort((left, right) =>
+    String(left.notifyNo || "").localeCompare(String(right.notifyNo || ""), "vi")
+      || String(left.name || "").localeCompare(String(right.name || ""), "vi"));
+  const rows = sortedEquipment.map((item) => [
     item.notifyNo || "",
     item.tenderName || "",
     (item.winnerNames || []).join("; "),
@@ -233,7 +249,19 @@ function writeEquipmentSheet_(equipment, fetchedAt) {
     item.sourceUrl || "",
     toDate_(fetchedAt),
   ]);
-  writeManagedSheet_(EQUIPMENT_SHEET, headers, rows, [2, 3, 5, 6, 7, 8, 11]);
+  const sheet = writeManagedSheet_(EQUIPMENT_SHEET, headers, rows, [2, 3, 5, 6, 7, 8, 11]);
+  const index = {};
+  sortedEquipment.forEach((item, itemIndex) => {
+    const notifyNo = String(item.notifyNo || "");
+    if (!notifyNo) return;
+    const row = itemIndex + 2;
+    if (!index[notifyNo]) {
+      index[notifyNo] = { sheetId: sheet.getSheetId(), startRow: row, endRow: row };
+    } else {
+      index[notifyNo].endRow = row;
+    }
+  });
+  return index;
 }
 
 function writeManagedSheet_(sheetName, headers, rows, wrapColumns) {
@@ -254,6 +282,7 @@ function writeManagedSheet_(sheetName, headers, rows, wrapColumns) {
   sheet.getRange(1, 1, lastRow, headers.length).createFilter();
   sheet.setFrozenRows(1);
   sheet.setFrozenColumns(1);
+  return sheet;
 }
 
 function ensureConfigSheet_() {
