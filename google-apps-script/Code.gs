@@ -1,5 +1,9 @@
 const TENDER_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/tenders.json";
+const BIDDER_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/bidders.json";
+const EQUIPMENT_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/equipment.json";
 const TENDER_SHEET = "Gói thầu";
+const BIDDER_SHEET = "Nhà thầu";
+const EQUIPMENT_SHEET = "Danh mục thiết bị";
 const CONFIG_SHEET = "Cấu hình";
 const KNOWN_IDS_KEY = "KNOWN_TENDER_IDS";
 const INITIALIZED_KEY = "INITIALIZED";
@@ -29,15 +33,24 @@ function syncTenders() {
   const lock = LockService.getScriptLock();
   if (!lock.tryLock(30000)) return;
   try {
-    const response = UrlFetchApp.fetch(`${TENDER_DATA_URL}?v=${Date.now()}`, {
+    const version = Date.now();
+    const urls = [TENDER_DATA_URL, BIDDER_DATA_URL, EQUIPMENT_DATA_URL];
+    const responses = UrlFetchApp.fetchAll(urls.map((url) => ({
+      url: `${url}?v=${version}`,
       muteHttpExceptions: true,
       headers: { Accept: "application/json" },
+    })));
+    responses.forEach((response, index) => {
+      if (response.getResponseCode() !== 200) {
+        throw new Error(`${urls[index]} phản hồi HTTP ${response.getResponseCode()}`);
+      }
     });
-    if (response.getResponseCode() !== 200) {
-      throw new Error(`Nguồn dữ liệu phản hồi HTTP ${response.getResponseCode()}`);
-    }
-    const payload = JSON.parse(response.getContentText());
+    const payload = JSON.parse(responses[0].getContentText());
+    const bidderPayload = JSON.parse(responses[1].getContentText());
+    const equipmentPayload = JSON.parse(responses[2].getContentText());
     const tenders = Array.isArray(payload.tenders) ? payload.tenders : [];
+    const bidders = Array.isArray(bidderPayload.bidders) ? bidderPayload.bidders : [];
+    const equipment = Array.isArray(equipmentPayload.equipment) ? equipmentPayload.equipment : [];
     const properties = PropertiesService.getScriptProperties();
     const initialized = properties.getProperty(INITIALIZED_KEY) === "1";
     const knownIds = new Set(JSON.parse(properties.getProperty(KNOWN_IDS_KEY) || "[]"));
@@ -47,6 +60,8 @@ function syncTenders() {
       : [];
 
     writeTenderSheet_(tenders, payload.fetchedAt);
+    writeBidderSheet_(bidders, payload.fetchedAt);
+    writeEquipmentSheet_(equipment, payload.fetchedAt);
     properties.setProperty(KNOWN_IDS_KEY, JSON.stringify(currentIds));
     properties.setProperty(INITIALIZED_KEY, "1");
     updateLastSync_(payload.fetchedAt, tenders.length, newTenders.length);
@@ -64,8 +79,9 @@ function writeTenderSheet_(tenders, fetchedAt) {
   const headers = [
     "Mã TBMT", "Ngày đăng", "Tên gói thầu", "Nhóm", "Chủ đầu tư", "Địa điểm",
     "Giá dự toán", "Hạn đóng thầu", "Trạng thái", "Số nhà thầu tham dự",
-    "Đơn vị trúng thầu", "Giá trúng thầu", "Ngày quyết định", "Có kết quả",
-    "Nguồn chính thức", "Dữ liệu cập nhật lúc",
+    "Nhà thầu tham dự", "Đơn vị trúng thầu", "Nhà thầu không trúng",
+    "Model/loại máy trúng", "Model bên không trúng", "Giá trúng thầu",
+    "Ngày quyết định", "Có kết quả", "Nguồn chính thức", "Dữ liệu cập nhật lúc",
   ];
   const rows = tenders.map((tender) => [
     tender.notifyNo || "",
@@ -78,7 +94,12 @@ function writeTenderSheet_(tenders, fetchedAt) {
     toDate_(tender.closeDate),
     statusLabel_(tender.status),
     tender.bidderCount === null || tender.bidderCount === undefined ? "" : Number(tender.bidderCount),
+    (tender.participantNames || []).join("; "),
     (tender.winnerNames || []).join("; "),
+    (tender.loserDetails || []).map((item) =>
+      `${item.contractorName || ""}${item.reason ? ` (${item.reason})` : ""}`).join("; "),
+    (tender.winningModels || []).join("; "),
+    (tender.losingModels || []).join("; ") || tender.losingModelDisclosure || "",
     Number(tender.winningPrice) || 0,
     toDate_(tender.decisionDate),
     tender.hasResult ? "Có" : "Chưa",
@@ -143,12 +164,90 @@ function initializeTenderSheet_(sheet, columnCount) {
   sheet.setColumnWidth(8, 135);
   sheet.setColumnWidth(9, 110);
   sheet.setColumnWidth(10, 125);
-  sheet.setColumnWidth(11, 260);
-  sheet.setColumnWidth(12, 135);
-  sheet.setColumnWidth(13, 120);
-  sheet.setColumnWidth(14, 100);
+  sheet.setColumnWidth(11, 320);
+  sheet.setColumnWidth(12, 280);
+  sheet.setColumnWidth(13, 320);
+  sheet.setColumnWidth(14, 300);
   sheet.setColumnWidth(15, 280);
-  sheet.setColumnWidth(16, 145);
+  sheet.setColumnWidth(16, 135);
+  sheet.setColumnWidth(17, 120);
+  sheet.setColumnWidth(18, 100);
+  sheet.setColumnWidth(19, 280);
+  sheet.setColumnWidth(20, 145);
+}
+
+function writeBidderSheet_(bidders, fetchedAt) {
+  const headers = [
+    "Mã TBMT", "Tên gói thầu", "Tên nhà thầu", "Mã nhà thầu", "Mã số thuế",
+    "Lô/phần", "Trạng thái", "Giá dự thầu", "Giá sau giảm", "Giá trúng thầu",
+    "Lý do không trúng", "Model/loại máy", "Nguồn chính thức", "Dữ liệu cập nhật lúc",
+  ];
+  const rows = bidders.map((bidder) => [
+    bidder.notifyNo || "",
+    bidder.tenderName || "",
+    bidder.contractorName || "",
+    bidder.contractorCode || "",
+    bidder.taxCode || "",
+    bidder.lotName || bidder.lotNo || "",
+    bidderStatusLabel_(bidder.status),
+    Number(bidder.bidPrice) || 0,
+    Number(bidder.finalPrice) || 0,
+    Number(bidder.winningPrice) || 0,
+    bidder.reason || "",
+    (bidder.models || []).join("; ") || (bidder.status === "lost" ? "Nguồn công khai chưa công bố" : ""),
+    bidder.sourceUrl || "",
+    toDate_(fetchedAt),
+  ]);
+  writeManagedSheet_(BIDDER_SHEET, headers, rows, [2, 3, 6, 11, 12]);
+}
+
+function writeEquipmentSheet_(equipment, fetchedAt) {
+  const headers = [
+    "Mã TBMT", "Tên gói thầu", "Nhà thầu trúng", "Lô/phần", "Tên thiết bị/hàng hóa",
+    "Model/ký mã", "Nhãn hiệu", "Hãng sản xuất", "Xuất xứ", "Năm sản xuất",
+    "Thông số kỹ thuật", "Đơn vị tính", "Số lượng", "Đơn giá", "Thành tiền",
+    "Nguồn chính thức", "Dữ liệu cập nhật lúc",
+  ];
+  const rows = equipment.map((item) => [
+    item.notifyNo || "",
+    item.tenderName || "",
+    (item.winnerNames || []).join("; "),
+    item.lotNo || "",
+    item.name || "",
+    item.model || "",
+    item.brand || "",
+    item.manufacturer || "",
+    item.origin || "",
+    item.manufactureYear || "",
+    item.specification || "",
+    item.unit || "",
+    Number(item.quantity) || 0,
+    Number(item.unitPrice) || 0,
+    Number(item.amount) || 0,
+    item.sourceUrl || "",
+    toDate_(fetchedAt),
+  ]);
+  writeManagedSheet_(EQUIPMENT_SHEET, headers, rows, [2, 3, 5, 6, 7, 8, 11]);
+}
+
+function writeManagedSheet_(sheetName, headers, rows, wrapColumns) {
+  const spreadsheet = SpreadsheetApp.getActive();
+  const sheet = spreadsheet.getSheetByName(sheetName) || spreadsheet.insertSheet(sheetName);
+  const filter = sheet.getFilter();
+  if (filter) filter.remove();
+  const oldLastRow = sheet.getLastRow();
+  if (oldLastRow) sheet.getRange(1, 1, oldLastRow, headers.length).clearContent();
+  sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
+  if (rows.length) sheet.getRange(2, 1, rows.length, headers.length).setValues(rows);
+  sheet.getRange(1, 1, 1, headers.length)
+    .setBackground("#0f513f").setFontColor("#ffffff").setFontWeight("bold");
+  wrapColumns.forEach((column) => {
+    sheet.getRange(2, column, Math.max(1, rows.length), 1).setWrap(true).setVerticalAlignment("top");
+  });
+  const lastRow = Math.max(2, rows.length + 1);
+  sheet.getRange(1, 1, lastRow, headers.length).createFilter();
+  sheet.setFrozenRows(1);
+  sheet.setFrozenColumns(1);
 }
 
 function ensureConfigSheet_() {
@@ -224,6 +323,14 @@ function statusLabel_(status) {
     no_bidder: "Đã đóng – không có nhà thầu",
     cancelled: "Đã hủy/không lựa chọn",
     awarded: "Đã có kết quả",
+  })[status] || status || "";
+}
+
+function bidderStatusLabel_(status) {
+  return ({
+    participating: "Đang tham dự/đang xét",
+    won: "Trúng thầu",
+    lost: "Không trúng thầu",
   })[status] || status || "";
 }
 
