@@ -11,6 +11,7 @@ Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 - Lần đầu hệ thống quét bù đủ 365 ngày theo các cửa sổ 7 ngày. Các lần chạy sau chỉ quét lại 14 ngày mới nhất, ghép với dữ liệu cũ và tự xóa bản ghi quá 365 ngày.
 - Bộ lọc yêu cầu tiêu đề gói thầu phải nêu rõ thiết bị/vật tư y tế, vật tư tiêu hao, hóa chất xét nghiệm hoặc tên một mặt hàng chuyên môn. Tên bệnh viện/trung tâm y tế không còn là điều kiện đủ.
 - Loại khỏi danh sách chính các gói thuốc, vắc xin, xây dựng, CNTT, xe, bàn ghế, đồng phục, xử lý rác, dịch vụ sửa chữa/bảo trì và vật tư nông nghiệp.
+- Trạng thái lấy từ mã chính thức của nguồn để phân biệt `Đang xét thầu`, `Đã đóng – chưa có kết quả`, `Đã có kết quả` và `Đã hủy/không lựa chọn`; không chỉ suy đoán từ hạn đóng thầu.
 - Có thể hiển thị kết quả lựa chọn nhà thầu, đơn vị trúng, giá trúng, danh mục hàng hóa, model, hãng, xuất xứ, đơn giá và cấu hình kỹ thuật nếu nguồn chính thức đã công bố.
 - Danh sách được phân trang; dữ liệu hàng hóa trúng thầu cũng được lấy hết các trang thay vì chỉ 20 mặt hàng đầu.
 - Không vượt CAPTCHA, không dùng tài khoản và không truy cập dữ liệu hạn chế.

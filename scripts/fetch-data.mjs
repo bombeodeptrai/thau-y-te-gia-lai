@@ -7,6 +7,7 @@ const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bi
 const PROVINCE_CODE = "52";
 const DAYS = 365;
 const INCREMENTAL_DAYS = 14;
+const STATUS_SCHEMA_VERSION = 2;
 const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
 const DETAIL_PAGE_SIZE = 20;
@@ -225,8 +226,19 @@ function categoryOf(name) {
 }
 
 function statusOf(item) {
-  if (item.status === "CANCEL_BID") return "cancelled";
-  const remaining = new Date(item.bidCloseDate || 0).getTime() - Date.now();
+  const sourceStatus = String(item.sourceStatus || item.status || "").toUpperCase();
+  const notifyStatus = String(item.statusForNotify || "").toUpperCase();
+  const hasResult = Boolean(
+    item.hasResult || item.inputResultId || item.contractorName?.length || item.winnerNames?.length,
+  );
+  if (sourceStatus === "CANCEL_BID" || ["DHT", "DHTBMT"].includes(notifyStatus)) return "cancelled";
+  if (hasResult || notifyStatus === "CNTTT") return "awarded";
+  if (notifyStatus === "DXT" || sourceStatus === "OPEN_BID") return "evaluating";
+  const closeDate = item.bidCloseDate || item.closeDate || 0;
+  const remaining = new Date(closeDate).getTime() - Date.now();
+  const rawBidderCount = item.numBidderJoin ?? item.bidderCount;
+  if (remaining <= 0 && rawBidderCount !== null && rawBidderCount !== undefined
+    && Number(rawBidderCount) === 0) return "no_bidder";
   if (remaining <= 0) return "closed";
   if (remaining <= 3 * 86_400_000) return "urgent";
   return "open";
@@ -263,6 +275,9 @@ function sourceUrl(item) {
 
 function normalizeTender(item) {
   const name = (item.bidName?.join(" ") || "Gói thầu chưa có tên").replace(/\s+/g, " ").trim();
+  const bidderCount = item.numBidderJoin === null || item.numBidderJoin === undefined
+    ? null
+    : Number(item.numBidderJoin);
   return {
     id: item.notifyId || item.id || item.notifyNo,
     notifyNo: item.notifyNo || "—",
@@ -274,6 +289,9 @@ function normalizeTender(item) {
     price: (item.bidPrice || []).reduce((sum, value) => sum + (Number(value) || 0), 0),
     category: categoryOf(name),
     status: statusOf(item),
+    sourceStatus: item.status || "",
+    statusForNotify: item.statusForNotify || "",
+    bidderCount: Number.isFinite(bidderCount) ? bidderCount : null,
     sourceUrl: sourceUrl(item),
     winnerNames: [...new Set((item.contractorName || []).filter(Boolean))],
     winningPrice: (item.bidWinningPrice || []).reduce((sum, value) => sum + (Number(value) || 0), 0),
@@ -376,7 +394,10 @@ function shouldRefreshDetails(tender, cached) {
 async function main() {
   const previous = await previousData();
   const previousDays = Number(previous.collection?.days) || 0;
-  const fullRefresh = !previous.tenders?.length || previousDays < DAYS;
+  const previousStatusSchema = Number(previous.collection?.statusSchemaVersion) || 0;
+  const fullRefresh = !previous.tenders?.length
+    || previousDays < DAYS
+    || previousStatusSchema < STATUS_SCHEMA_VERSION;
   const scanDays = fullRefresh ? DAYS : INCREMENTAL_DAYS;
   const windows = dateWindows(scanDays);
   process.stdout.write(fullRefresh
@@ -407,10 +428,7 @@ async function main() {
     .map((tender) => ({
       ...tender,
       category: categoryOf(tender.name),
-      status: statusOf({
-        status: tender.status === "cancelled" ? "CANCEL_BID" : "",
-        bidCloseDate: tender.closeDate,
-      }),
+      status: statusOf(tender),
     }));
   const mergedTenders = new Map();
   [...historicalTenders, ...freshTenders].forEach((tender) => {
@@ -451,6 +469,7 @@ async function main() {
       days: DAYS,
       strategy: "incremental-province-date-windows",
       refreshDays: INCREMENTAL_DAYS,
+      statusSchemaVersion: STATUS_SCHEMA_VERSION,
       lastScanDays: scanDays,
       lastScanTenderCount: allUnique.size,
       scannedTenderCount: fullRefresh

@@ -59,8 +59,9 @@ function writeTenderSheet_(tenders, fetchedAt) {
   const sheet = spreadsheet.getSheetByName(TENDER_SHEET) || spreadsheet.insertSheet(TENDER_SHEET);
   const headers = [
     "Mã TBMT", "Ngày đăng", "Tên gói thầu", "Nhóm", "Chủ đầu tư", "Địa điểm",
-    "Giá dự toán", "Hạn đóng thầu", "Trạng thái", "Đơn vị trúng thầu", "Giá trúng thầu",
-    "Ngày quyết định", "Có kết quả", "Nguồn chính thức", "Dữ liệu cập nhật lúc",
+    "Giá dự toán", "Hạn đóng thầu", "Trạng thái", "Số nhà thầu tham dự",
+    "Đơn vị trúng thầu", "Giá trúng thầu", "Ngày quyết định", "Có kết quả",
+    "Nguồn chính thức", "Dữ liệu cập nhật lúc",
   ];
   const rows = tenders.map((tender) => [
     tender.notifyNo || "",
@@ -72,6 +73,7 @@ function writeTenderSheet_(tenders, fetchedAt) {
     Number(tender.price) || 0,
     toDate_(tender.closeDate),
     statusLabel_(tender.status),
+    tender.bidderCount === null || tender.bidderCount === undefined ? "" : Number(tender.bidderCount),
     (tender.winnerNames || []).join("; "),
     Number(tender.winningPrice) || 0,
     toDate_(tender.decisionDate),
@@ -94,10 +96,10 @@ function writeTenderSheet_(tenders, fetchedAt) {
   sheet.getRange(1, 1, lastRow, headers.length).createFilter();
   sheet.getRange(2, 2, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
   sheet.getRange(2, 8, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
-  sheet.getRange(2, 12, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy");
-  sheet.getRange(2, 15, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
+  sheet.getRange(2, 13, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy");
+  sheet.getRange(2, 16, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
   sheet.getRange(2, 7, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
-  sheet.getRange(2, 11, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
+  sheet.getRange(2, 12, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
   sheet.getRange(2, 3, Math.max(1, rows.length), 4).setWrap(true).setVerticalAlignment("top");
   sheet.setColumnWidth(1, 125);
   sheet.setColumnWidth(2, 135);
@@ -108,12 +110,13 @@ function writeTenderSheet_(tenders, fetchedAt) {
   sheet.setColumnWidth(7, 135);
   sheet.setColumnWidth(8, 135);
   sheet.setColumnWidth(9, 110);
-  sheet.setColumnWidth(10, 260);
-  sheet.setColumnWidth(11, 135);
-  sheet.setColumnWidth(12, 120);
-  sheet.setColumnWidth(13, 100);
-  sheet.setColumnWidth(14, 280);
-  sheet.setColumnWidth(15, 145);
+  sheet.setColumnWidth(10, 125);
+  sheet.setColumnWidth(11, 260);
+  sheet.setColumnWidth(12, 135);
+  sheet.setColumnWidth(13, 120);
+  sheet.setColumnWidth(14, 100);
+  sheet.setColumnWidth(15, 280);
+  sheet.setColumnWidth(16, 145);
 }
 
 function ensureConfigSheet_() {
@@ -180,7 +183,15 @@ function sendTestEmail() {
 }
 
 function statusLabel_(status) {
-  return ({ open: "Đang mở", urgent: "Sắp đóng", closed: "Đã đóng", cancelled: "Đã hủy" })[status] || status || "";
+  return ({
+    open: "Đang mở",
+    urgent: "Sắp đóng",
+    evaluating: "Đang xét thầu",
+    closed: "Đã đóng – chưa có kết quả",
+    no_bidder: "Đã đóng – không có nhà thầu",
+    cancelled: "Đã hủy/không lựa chọn",
+    awarded: "Đã có kết quả",
+  })[status] || status || "";
 }
 
 function toDate_(value) {

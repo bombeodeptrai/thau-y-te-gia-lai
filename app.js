@@ -20,8 +20,10 @@ const state = {
 const statusLabels = {
   open: "Đang mở",
   urgent: "Sắp đóng",
-  closed: "Đã đóng",
-  cancelled: "Đã hủy",
+  evaluating: "Đang xét thầu",
+  closed: "Đã đóng – chưa có KQ",
+  no_bidder: "Không có nhà thầu",
+  cancelled: "Đã hủy/không lựa chọn",
   awarded: "Đã có kết quả",
 };
 
