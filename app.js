@@ -154,9 +154,48 @@ function renderMetrics() {
   elements.savedCount.textContent = String(state.saved.length);
 }
 
-function equipmentMarkup(detail) {
+function bidderMarkup(detail, tender) {
+  const bidders = detail?.bidders || [];
+  if (!bidders.length) {
+    const message = ["open", "urgent"].includes(tender.status)
+      ? "Tên nhà thầu chỉ được công bố sau thời điểm mở thầu."
+      : "Nguồn công khai chưa trả danh sách nhà thầu của gói này.";
+    return `<div class="detail-notice">${escapeHtml(message)}</div>`;
+  }
+
+  const statusText = {
+    participating: "Đang tham dự",
+    won: "Trúng thầu",
+    lost: "Không trúng",
+  };
+  const rows = bidders.map((bidder, index) => {
+    const models = bidder.models?.length
+      ? bidder.models.join("; ")
+      : (bidder.status === "lost"
+        ? "Nguồn công khai chưa công bố model của hồ sơ không trúng"
+        : (bidder.status === "participating" ? "Chờ công bố sau khi có kết quả" : "Chưa công bố"));
+    const price = Number(bidder.winningPrice) || Number(bidder.finalPrice) || Number(bidder.bidPrice) || 0;
+    const facts = [
+      bidder.lotName ? `<span><b>Lô/phần:</b> ${escapeHtml(bidder.lotName)}</span>` : "",
+      bidder.reason ? `<span><b>Lý do:</b> ${escapeHtml(bidder.reason)}</span>` : "",
+      `<span><b>Model/loại máy:</b> ${escapeHtml(models)}</span>`,
+    ].filter(Boolean).join("");
+    return `<article class="bidder-item">
+      <span class="equipment-index">${index + 1}</span>
+      <div class="bidder-copy"><div class="bidder-title"><h4>${escapeHtml(bidder.contractorName)}</h4><span class="bidder-status ${escapeHtml(bidder.status)}">${escapeHtml(statusText[bidder.status] || bidder.status)}</span></div><div class="bidder-facts">${facts}</div></div>
+      <div class="bidder-price"><strong title="${escapeHtml(formatMoney(price, false))}">${escapeHtml(formatMoney(price))}</strong><span>${bidder.status === "won" ? "Giá trúng" : "Giá dự thầu/sau giảm"}</span></div>
+    </article>`;
+  }).join("");
+  const uniqueCount = new Set(bidders.map((bidder) => bidder.contractorCode || bidder.contractorName)).size;
+  return `<div class="bidder-list"><div class="equipment-heading"><div><span>DANH SÁCH NHÀ THẦU</span><strong>${uniqueCount} nhà thầu được công bố</strong></div><span>Trạng thái và giá dự thầu</span></div>${rows}</div>`;
+}
+
+function equipmentMarkup(detail, tender) {
   if (!detail?.items?.length) {
-    return '<div class="detail-notice">Chưa có danh mục đơn giá chi tiết trong dữ liệu công khai. Kết quả có thể được bổ sung sau.</div>';
+    const message = tender.status === "evaluating"
+      ? "Model và cấu hình chào thầu thường chỉ được nguồn công khai công bố sau khi có kết quả lựa chọn nhà thầu."
+      : "Chưa có danh mục model/đơn giá chi tiết trong dữ liệu công khai. Kết quả có thể được bổ sung sau.";
+    return `<div class="detail-notice">${escapeHtml(message)}</div>`;
   }
 
   const items = detail.items.map((item, index) => {
@@ -193,17 +232,29 @@ function equipmentMarkup(detail) {
 function detailMarkup(tender) {
   const detail = state.detailsByNotifyNo[tender.notifyNo];
   const winners = tender.winnerNames?.length ? tender.winnerNames.join("; ") : "Chưa công bố kết quả";
-  let detailBody = equipmentMarkup(detail);
+  const bidders = detail?.bidders || [];
+  const uniqueBidderCount = new Set(bidders.map((bidder) => bidder.contractorCode || bidder.contractorName)).size
+    || Number(tender.bidderCount) || 0;
+  const lowestBid = bidders.reduce((lowest, bidder) => {
+    const price = Number(bidder.finalPrice) || Number(bidder.bidPrice) || 0;
+    return price && (!lowest || price < lowest) ? price : lowest;
+  }, 0);
+  const summary = tender.hasResult
+    ? `<div><span>Đơn vị trúng thầu</span><strong>${escapeHtml(winners)}</strong></div>
+      <div><span>Giá trúng thầu</span><strong>${escapeHtml(formatMoney(tender.winningPrice))}</strong></div>
+      <div><span>Ngày quyết định</span><strong>${escapeHtml(formatDate(tender.decisionDate))}</strong></div>`
+    : `<div><span>Nhà thầu tham dự</span><strong>${uniqueBidderCount ? `${uniqueBidderCount} nhà thầu` : "Chưa công bố"}</strong></div>
+      <div><span>Giá dự thầu thấp nhất</span><strong>${escapeHtml(formatMoney(lowestBid))}</strong></div>
+      <div><span>Giai đoạn</span><strong>${escapeHtml(statusLabels[tender.status] || tender.status)}</strong></div>`;
+  let detailBody = `${bidderMarkup(detail, tender)}${equipmentMarkup(detail, tender)}`;
   if (state.detailLoading === tender.id) {
-    detailBody = '<div class="detail-loading"><span></span>Đang tải toàn bộ danh mục thiết bị và hồ sơ kỹ thuật…</div>';
+    detailBody = '<div class="detail-loading"><span></span>Đang tải danh sách nhà thầu, model thiết bị và kết quả đánh giá…</div>';
   } else if (state.detailErrors[tender.id]) {
     detailBody = `<div class="detail-notice error">${escapeHtml(state.detailErrors[tender.id])}</div>`;
   }
   return `<section class="tender-detail-panel" id="detail-${escapeHtml(tender.id)}">
     <div class="result-summary">
-      <div><span>Đơn vị trúng thầu</span><strong>${escapeHtml(winners)}</strong></div>
-      <div><span>Giá trúng thầu</span><strong>${escapeHtml(formatMoney(tender.winningPrice))}</strong></div>
-      <div><span>Ngày quyết định</span><strong>${escapeHtml(formatDate(tender.decisionDate))}</strong></div>
+      ${summary}
     </div>
     ${detailBody}
     <div class="detail-footer"><span>Dữ liệu kỹ thuật chỉ hiển thị khi đã được công bố công khai.</span><a href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xem hồ sơ chính thức ↗</a></div>
@@ -218,7 +269,8 @@ async function toggleDetails(tender) {
   }
   state.expandedId = tender.id;
   render();
-  if (!tender.hasResult || state.detailsByNotifyNo[tender.notifyNo]) return;
+  const hasPublicDetail = tender.hasResult || ["evaluating", "closed"].includes(tender.status);
+  if (!hasPublicDetail || state.detailsByNotifyNo[tender.notifyNo]) return;
 
   state.detailLoading = tender.id;
   delete state.detailErrors[tender.id];
@@ -242,7 +294,7 @@ function tenderMarkup(tender) {
   const price = Number(tender.winningPrice) || Number(tender.price) || 0;
   return `<article class="tender-row">
     <button class="save-button${saved ? " saved" : ""}" data-action="save" data-id="${escapeHtml(tender.id)}" type="button" aria-label="${saved ? "Bỏ lưu" : "Lưu"} gói thầu">${saved ? "★" : "☆"}</button>
-    <div class="tender-main"><div class="tender-meta"><span>${escapeHtml(tender.notifyNo)}</span><span>${escapeHtml(tender.category)}</span>${hasResult ? '<span class="result-meta">Có kết quả</span>' : ""}</div><h3>${escapeHtml(tender.name)}</h3><p>${escapeHtml(tender.investor)} · ${escapeHtml(tender.location)}</p></div>
+    <div class="tender-main"><div class="tender-meta"><span>${escapeHtml(tender.notifyNo)}</span><span>${escapeHtml(tender.category)}</span>${hasResult ? '<span class="result-meta">Có kết quả</span>' : ""}${Number(tender.bidderCount) ? `<span>${escapeHtml(tender.bidderCount)} nhà thầu</span>` : ""}</div><h3>${escapeHtml(tender.name)}</h3><p>${escapeHtml(tender.investor)} · ${escapeHtml(tender.location)}</p></div>
     <div class="tender-status"><span class="status-pill ${escapeHtml(tender.status)}">${escapeHtml(statusLabels[tender.status] || tender.status)}</span><span>Đóng ${escapeHtml(formatDate(tender.closeDate, true))}</span></div>
     <div class="tender-price"><strong title="${escapeHtml(formatMoney(price, false))}">${escapeHtml(formatMoney(price))}</strong><span>${tender.winningPrice ? "Giá trúng thầu" : "Giá dự toán"}</span></div>
     <div class="tender-actions"><button class="expand-button${expanded ? " expanded" : ""}" data-action="expand" data-id="${escapeHtml(tender.id)}" type="button" aria-expanded="${expanded}"><span>${expanded ? "Thu gọn" : "Mở rộng"}</span><span>⌄</span></button><a class="detail-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer"><span>↗</span><span>Nguồn</span></a></div>
