@@ -1190,15 +1190,28 @@ select:focus-visible {
   text-transform: uppercase;
 }
 
-.investor-list #investor-ranking > div {
+.investor-list #investor-ranking > button {
   display: grid;
+  width: 100%;
   grid-template-columns: 24px 1fr 24px;
   align-items: center;
   gap: 8px;
   padding: 9px 0;
+  color: inherit;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.investor-list #investor-ranking > div > span {
+.investor-list #investor-ranking > button:hover,
+.investor-list #investor-ranking > button.selected {
+  padding-inline: 7px;
+  background: var(--sage-light);
+}
+
+.investor-list #investor-ranking > button > span {
   display: grid;
   width: 23px;
   height: 23px;
@@ -1229,12 +1242,16 @@ select:focus-visible {
 }
 
 .alert-section {
+  display: block;
+  padding: 24px 28px;
+  margin-top: 18px;
+}
+
+.alert-summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 24px 28px;
-  margin-top: 18px;
 }
 
 .alert-copy {
@@ -1268,6 +1285,75 @@ select:focus-visible {
 .saved-count span {
   color: var(--muted);
   font-size: 10px;
+}
+
+.saved-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+  border-top: 1px solid var(--border-soft);
+  padding-top: 14px;
+}
+
+.saved-tender {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  background: rgba(231, 238, 229, 0.48);
+  border: 1px solid #dfe7dc;
+  border-radius: 9px;
+}
+
+.saved-tender div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.saved-tender div > span {
+  color: var(--forest-2);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.saved-tender strong {
+  overflow: hidden;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.saved-tender small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.saved-tender button {
+  padding: 9px 12px;
+  color: var(--forest);
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.saved-tender button:hover {
+  background: var(--gold-light);
+  border-color: #e4cca0;
+}
+
+.saved-empty {
+  padding: 16px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
 }
 
 .site-footer {
@@ -1349,9 +1435,11 @@ select:focus-visible {
   .detail-footer { align-items: flex-start; flex-direction: column; }
   .insight-panel { grid-template-columns: 1fr; }
   .insight-hero, .insight-item { border-right: 0; border-bottom: 1px dashed var(--border); }
-  .alert-section { align-items: flex-start; flex-direction: column; }
+  .alert-summary { align-items: flex-start; flex-direction: column; }
   .alert-copy { align-items: flex-start; }
   .saved-count { width: 100%; padding: 14px 0 0; border-top: 1px solid var(--border); border-left: 0; }
+  .saved-tender { grid-template-columns: 1fr; }
+  .saved-tender button { width: 100%; }
   .site-footer { align-items: flex-start; flex-direction: column; padding-inline: 18px; }
 }
 

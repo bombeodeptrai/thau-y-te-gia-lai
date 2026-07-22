@@ -55,6 +55,7 @@
               <option value="90">90 ngày</option>
               <option value="180">180 ngày</option>
               <option value="365" selected>1 năm</option>
+              <option value="3650">Toàn bộ dữ liệu</option>
             </select>
             <span>⌄</span>
           </label>
@@ -103,13 +104,16 @@
           <div class="panel-heading compact"><div><p class="eyebrow small">PHÂN TÍCH NHANH</p><h2>Góc nhìn thị trường</h2></div><span>↗</span></div>
           <div class="insight-hero"><span class="insight-icon">↗</span><div><strong id="open-percent">0%</strong><span>gói thầu còn mở</span></div></div>
           <div class="insight-item"><span class="insight-icon gold">◉</span><div><strong id="average-value">—</strong><span>Giá trị trung bình mỗi gói</span></div></div>
-          <div class="investor-list"><p>Chủ đầu tư hoạt động nhiều</p><div id="investor-ranking"></div></div>
+          <div class="investor-list"><p>Chủ đầu tư hoạt động nhiều · bấm để lọc</p><div id="investor-ranking"></div></div>
         </aside>
       </section>
 
       <section class="content-wrap alert-section" id="canh-bao">
-        <div class="alert-copy"><span class="alert-icon">♧</span><div><p class="eyebrow small">DANH SÁCH QUAN TÂM</p><h2>Theo dõi các gói thầu quan trọng</h2><p>Gói thầu được đánh dấu sao sẽ lưu trên thiết bị này để quay lại xem nhanh.</p></div></div>
-        <div class="saved-count"><strong id="saved-count">0</strong><span>gói đã lưu</span></div>
+        <div class="alert-summary">
+          <div class="alert-copy"><span class="alert-icon">♧</span><div><p class="eyebrow small">DANH SÁCH QUAN TÂM</p><h2>Theo dõi các gói thầu quan trọng</h2><p>Bấm “Mở gói thầu” để quay lại đúng hồ sơ đã đánh dấu sao.</p></div></div>
+          <div class="saved-count"><strong id="saved-count">0</strong><span>gói đã lưu</span></div>
+        </div>
+        <div class="saved-list" id="saved-list"></div>
       </section>
 
       <footer class="site-footer">

@@ -10,6 +10,7 @@ const state = {
   category: "all",
   days: 365,
   status: "all",
+  investor: "",
   page: 1,
   expandedId: null,
   detailLoading: null,
@@ -49,6 +50,7 @@ const elements = {
   averageValue: document.querySelector("#average-value"),
   investorRanking: document.querySelector("#investor-ranking"),
   savedCount: document.querySelector("#saved-count"),
+  savedList: document.querySelector("#saved-list"),
 };
 
 function escapeHtml(value) {
@@ -126,8 +128,26 @@ function filteredTenders() {
       (state.status === "awarded"
         ? Boolean(tender.hasResult || tender.winnerNames?.length)
         : tender.status === state.status);
-    return (!query || haystack.includes(query)) && statusMatches;
+    const investorMatches = !state.investor || tender.investor === state.investor;
+    return (!query || haystack.includes(query)) && statusMatches && investorMatches;
   });
+}
+
+function savedTenderMarkup(tender) {
+  return `<article class="saved-tender">
+    <div><span>${escapeHtml(tender.notifyNo)}</span><strong>${escapeHtml(tender.name)}</strong><small>${escapeHtml(tender.investor)} · ${escapeHtml(statusLabels[tender.status] || tender.status)}</small></div>
+    <button type="button" data-saved-open="${escapeHtml(tender.id)}">Mở gói thầu <span>→</span></button>
+  </article>`;
+}
+
+function renderSavedList() {
+  const savedTenders = state.saved
+    .map((id) => state.tenders.find((tender) => String(tender.id) === id))
+    .filter(Boolean);
+  elements.savedCount.textContent = String(savedTenders.length);
+  elements.savedList.innerHTML = savedTenders.length
+    ? savedTenders.map(savedTenderMarkup).join("")
+    : '<div class="saved-empty">Chưa có gói thầu nào được lưu. Bấm dấu ☆ tại một gói để thêm vào đây.</div>';
 }
 
 function renderMetrics() {
@@ -148,10 +168,10 @@ function renderMetrics() {
   }
   elements.investorRanking.innerHTML = [...investors.entries()]
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 3)
-    .map(([name, count], index) => `<div><span>${index + 1}</span><p>${escapeHtml(name)}</p><strong>${count}</strong></div>`)
+    .slice(0, 5)
+    .map(([name, count], index) => `<button type="button" data-investor="${escapeHtml(name)}" class="${state.investor === name ? "selected" : ""}" aria-pressed="${state.investor === name}"><span>${index + 1}</span><p>${escapeHtml(name)}</p><strong>${count}</strong></button>`)
     .join("");
-  elements.savedCount.textContent = String(state.saved.length);
+  renderSavedList();
 }
 
 function bidderMarkup(detail, tender) {
@@ -322,7 +342,7 @@ function render() {
   state.page = Math.min(Math.max(1, state.page), totalPages);
   const firstIndex = (state.page - 1) * TENDERS_PER_PAGE;
   const visibleTenders = tenders.slice(firstIndex, firstIndex + TENDERS_PER_PAGE);
-  elements.resultCount.textContent = `${tenders.length} kết quả · trang ${state.page}/${totalPages}`;
+  elements.resultCount.textContent = `${tenders.length} kết quả · trang ${state.page}/${totalPages}${state.investor ? ` · ${state.investor}` : ""}`;
   elements.list.innerHTML = tenders.length
     ? visibleTenders.map(tenderMarkup).join("")
     : '<div class="empty-state"><span class="icon-text">⌕</span><h3>Chưa tìm thấy gói thầu phù hợp</h3><p>Hãy thử từ khóa ngắn hơn hoặc mở rộng khoảng thời gian.</p></div>';
@@ -370,6 +390,7 @@ elements.form.addEventListener("submit", (event) => {
   state.query = elements.keyword.value;
   state.page = 1;
   state.expandedId = null;
+  state.investor = "";
   render();
   document.querySelector("#goi-thau")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
@@ -398,6 +419,42 @@ elements.statusFilter.addEventListener("click", (event) => {
     item.classList.toggle("selected", item === button);
   });
   render();
+});
+
+elements.investorRanking.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-investor]");
+  if (!button) return;
+  state.investor = state.investor === button.dataset.investor ? "" : button.dataset.investor;
+  state.query = "";
+  elements.keyword.value = "";
+  state.page = 1;
+  state.expandedId = null;
+  render();
+  document.querySelector("#goi-thau")?.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+elements.savedList.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-saved-open]");
+  if (!button) return;
+  const tender = state.tenders.find((item) => String(item.id) === button.dataset.savedOpen);
+  if (!tender) return;
+  state.query = "";
+  state.category = "all";
+  state.days = 3650;
+  state.status = "all";
+  state.investor = "";
+  state.page = 1;
+  state.expandedId = null;
+  elements.keyword.value = "";
+  elements.category.value = "all";
+  elements.days.value = "3650";
+  elements.statusFilter.querySelectorAll("button[data-status]").forEach((item) => {
+    item.classList.toggle("selected", item.dataset.status === "all");
+  });
+  const tenderIndex = filteredTenders().findIndex((item) => item.id === tender.id);
+  state.page = Math.floor(Math.max(0, tenderIndex) / TENDERS_PER_PAGE) + 1;
+  void toggleDetails(tender);
+  document.querySelector("#goi-thau")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 elements.list.addEventListener("click", (event) => {
