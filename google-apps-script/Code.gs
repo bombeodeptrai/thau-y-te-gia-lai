@@ -59,7 +59,7 @@ function syncTenders() {
       ? tenders.filter((tender) => !knownIds.has(String(tender.notifyNo || tender.id || "")))
       : [];
 
-    writeTenderSheet_(tenders, payload.fetchedAt);
+    writeTenderSheet_(tenders, equipment, payload.fetchedAt);
     writeBidderSheet_(bidders, payload.fetchedAt);
     writeEquipmentSheet_(equipment, payload.fetchedAt);
     properties.setProperty(KNOWN_IDS_KEY, JSON.stringify(currentIds));
@@ -71,7 +71,7 @@ function syncTenders() {
   }
 }
 
-function writeTenderSheet_(tenders, fetchedAt) {
+function writeTenderSheet_(tenders, equipment, fetchedAt) {
   const spreadsheet = SpreadsheetApp.getActive();
   let sheet = spreadsheet.getSheetByName(TENDER_SHEET);
   const isNewSheet = !sheet;
@@ -83,6 +83,12 @@ function writeTenderSheet_(tenders, fetchedAt) {
     "Model/loại máy trúng", "Model bên không trúng", "Giá trúng thầu",
     "Ngày quyết định", "Có kết quả", "Nguồn chính thức", "Dữ liệu cập nhật lúc",
   ];
+  const equipmentByTender = equipment.reduce((groups, item) => {
+    const key = String(item.notifyNo || "");
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(item);
+    return groups;
+  }, {});
   const rows = tenders.map((tender) => [
     tender.notifyNo || "",
     toDate_(tender.publicDate),
@@ -98,9 +104,9 @@ function writeTenderSheet_(tenders, fetchedAt) {
     (tender.winnerNames || []).join("; "),
     (tender.loserDetails || []).map((item) =>
       `${item.contractorName || ""}${item.reason ? ` (${item.reason})` : ""}`).join("; "),
-    (tender.winningModels || []).join("; "),
+    summarizeWinningEquipment_(equipmentByTender[String(tender.notifyNo || "")] || [], tender.winningModels || []),
     (tender.losingModels || []).join("; ") || tender.losingModelDisclosure || "",
-    Number(tender.winningPrice) || 0,
+    moneyText_(tender.winningPrice),
     toDate_(tender.decisionDate),
     tender.hasResult ? "Có" : "Chưa",
     tender.sourceUrl || "",
@@ -190,11 +196,11 @@ function writeBidderSheet_(bidders, fetchedAt) {
     bidder.taxCode || "",
     bidder.lotName || bidder.lotNo || "",
     bidderStatusLabel_(bidder.status),
-    Number(bidder.bidPrice) || 0,
-    Number(bidder.finalPrice) || 0,
-    Number(bidder.winningPrice) || 0,
+    optionalNumber_(bidder.bidPrice),
+    optionalNumber_(bidder.finalPrice),
+    optionalNumber_(bidder.winningPrice),
     bidder.reason || "",
-    (bidder.models || []).join("; ") || (bidder.status === "lost" ? "Nguồn công khai chưa công bố" : ""),
+    summarizeModelList_(bidder.models || []) || (bidder.status === "lost" ? "Nguồn công khai chưa công bố" : ""),
     bidder.sourceUrl || "",
     toDate_(fetchedAt),
   ]);
@@ -221,9 +227,9 @@ function writeEquipmentSheet_(equipment, fetchedAt) {
     item.manufactureYear || "",
     item.specification || "",
     item.unit || "",
-    Number(item.quantity) || 0,
-    Number(item.unitPrice) || 0,
-    Number(item.amount) || 0,
+    optionalNumber_(item.quantity),
+    optionalNumber_(item.unitPrice),
+    optionalNumber_(item.amount),
     item.sourceUrl || "",
     toDate_(fetchedAt),
   ]);
@@ -332,6 +338,56 @@ function bidderStatusLabel_(status) {
     won: "Trúng thầu",
     lost: "Không trúng thầu",
   })[status] || status || "";
+}
+
+function optionalNumber_(value) {
+  if (value === "" || value === null || value === undefined) return "";
+  const number = Number(value);
+  return Number.isFinite(number) && number !== 0 ? number : "";
+}
+
+function moneyText_(value) {
+  const number = optionalNumber_(value);
+  return number === "" ? "" : `${Number(number).toLocaleString("vi-VN")} đ`;
+}
+
+function summarizeModelList_(models) {
+  const unique = [...new Set((models || [])
+    .map((model) => String(model || "").replace(/\s+/g, " ").trim())
+    .filter(Boolean))];
+  const visible = unique.slice(0, 4).map((model) =>
+    model.length > 160 ? `${model.slice(0, 157)}…` : model);
+  const remainder = unique.length - visible.length;
+  return `${visible.join("; ")}${remainder > 0 ? `; … còn ${remainder} model (xem tab Danh mục thiết bị)` : ""}`;
+}
+
+function summarizeWinningEquipment_(items, fallbackModels) {
+  const unique = [];
+  const seen = new Set();
+  items.forEach((item) => {
+    const name = String(item.name || "").replace(/\s+/g, " ").trim();
+    const model = String(item.model || "").replace(/\s+/g, " ").trim();
+    const shortName = name.length > 90 ? `${name.slice(0, 87)}…` : name;
+    const shortModel = model.length > 160 ? `${model.slice(0, 157)}…` : model;
+    const text = [shortName, shortModel].filter(Boolean).join(" — ");
+    if (text && !seen.has(text)) {
+      seen.add(text);
+      unique.push(text);
+    }
+  });
+  if (!unique.length) {
+    (fallbackModels || []).forEach((model) => {
+      const text = String(model || "").replace(/\s+/g, " ").trim();
+      if (text && !seen.has(text)) {
+        seen.add(text);
+        unique.push(text);
+      }
+    });
+  }
+  if (!unique.length) return "";
+  const visible = unique.slice(0, 3);
+  const remainder = unique.length - visible.length;
+  return `${visible.join("; ")}${remainder > 0 ? `; … còn ${remainder} mặt hàng (xem tab Danh mục thiết bị)` : ""}`;
 }
 
 function toDate_(value) {

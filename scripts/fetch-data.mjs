@@ -442,7 +442,8 @@ function normalizeBidder(item, status) {
     bidPrice,
     finalPrice,
     winningPrice: status === "won"
-      ? numberOrZero(item.bidWiningPrice ?? item.succBidderPrice ?? item.lotFinalPrice)
+      ? numberOrZero(item.bidWiningPrice ?? item.bidWinningPrice
+        ?? item.succBidderPrice ?? item.lotFinalPrice ?? item.bidFinalPrice ?? item.bidPrice)
       : 0,
     reason: compactText(item.reason || item.noPassedRson || item.noSuccBidderRson),
     submittedAt: item.createdDateBidOpen || item.createdDate || "",
@@ -591,6 +592,9 @@ function enrichTender(tender, detail) {
     return [`${value.contractorName}|${value.reason}`, value];
   })).values()];
   const uniqueBidderCodes = new Set(bidders.map((bidder) => bidder.contractorCode || bidder.contractorName));
+  const detailedWinningPrice = winners.reduce((sum, bidder) => sum + numberOrZero(
+    bidder.winningPrice || bidder.finalPrice || bidder.bidPrice,
+  ), 0);
   return {
     ...tender,
     bidderCount: uniqueBidderCodes.size || tender.bidderCount,
@@ -601,6 +605,7 @@ function enrichTender(tender, detail) {
     winningModels,
     losingModels,
     losingModelDisclosure: losers.length && !losingModels.length ? "Nguồn công khai chưa công bố" : "",
+    winningPrice: numberOrZero(tender.winningPrice) || detailedWinningPrice,
   };
 }
 
