@@ -4,10 +4,14 @@ import { fileURLToPath } from "node:url";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
+const BID_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/bid-open?token=public";
+const LOT_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/lotOpenDetail?token=public";
+const CONTRACTOR_RESULT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=public";
 const PROVINCE_CODE = "52";
 const DAYS = 365;
 const INCREMENTAL_DAYS = 14;
-const STATUS_SCHEMA_VERSION = 2;
+const STATUS_SCHEMA_VERSION = 3;
+const DETAIL_SCHEMA_VERSION = 2;
 const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
 const DETAIL_PAGE_SIZE = 20;
@@ -26,6 +30,8 @@ const SEARCH_KEYWORDS = [
 ];
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "data/tenders.json");
+const biddersOutputPath = resolve(root, "data/bidders.json");
+const equipmentOutputPath = resolve(root, "data/equipment.json");
 const detailsDir = resolve(root, "data/details");
 
 function normalizeText(value) {
@@ -92,7 +98,7 @@ async function postJson(url, body, timeoutMs = 25_000) {
       });
       if (!response.ok) throw new Error(`${url} phản hồi HTTP ${response.status}`);
       const text = await response.text();
-      if (!text.trim().startsWith("{")) {
+      if (!text.trim().startsWith("{") && !text.trim().startsWith("[")) {
         throw new Error(`${url} không trả về JSON (lần ${attempt}/${maxAttempts})`);
       }
       return JSON.parse(text);
@@ -286,6 +292,10 @@ function normalizeTender(item) {
     : Number(item.numBidderJoin);
   return {
     id: item.notifyId || item.id || item.notifyNo,
+    notifyId: item.notifyId || item.id || "",
+    bidId: item.bidId || "",
+    bidOpenId: item.bidOpenId || "",
+    inputResultId: item.inputResultId || "",
     notifyNo: item.notifyNo || "—",
     name,
     investor: item.investorName || "Chưa công bố",
@@ -346,7 +356,7 @@ function normalizeEquipment(item) {
   };
 }
 
-async function fetchDetailPage(notifyNo, pageNumber) {
+async function fetchPricingDetailPage(notifyNo, pageNumber) {
   return postJson(
     WINNING_PRICE_URL,
     [pricingQuery(notifyNo, "THIET_BI_VAT_TU_Y_TE", pageNumber), pricingQuery(notifyNo, "HANG_HOA", pageNumber)],
@@ -354,12 +364,12 @@ async function fetchDetailPage(notifyNo, pageNumber) {
   );
 }
 
-async function fetchDetails(notifyNo) {
-  const first = await fetchDetailPage(notifyNo, 0);
+async function fetchPricingDetails(notifyNo) {
+  const first = await fetchPricingDetailPage(notifyNo, 0);
   const total = Number(first.page?.totalElements) || (first.page?.content || []).length;
   const totalPages = Number(first.page?.totalPages) || Math.max(1, Math.ceil(total / DETAIL_PAGE_SIZE));
   const pageNumbers = Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => index + 1);
-  const remaining = await mapLimited(pageNumbers, 2, (pageNumber) => fetchDetailPage(notifyNo, pageNumber));
+  const remaining = await mapLimited(pageNumbers, 2, (pageNumber) => fetchPricingDetailPage(notifyNo, pageNumber));
   const unique = new Map();
   [first, ...remaining].flatMap((payload) => payload.page?.content || []).forEach((item) => {
     const key = item.id || `${item.tenThietBi || item.danhMucHangHoa}-${item.donGia || item.donGiaDuThau}`;
@@ -367,6 +377,169 @@ async function fetchDetails(notifyNo) {
   });
   const items = [...unique.values()].map(normalizeEquipment);
   return { total: Math.max(total, items.length), items, fetchedAt: new Date().toISOString() };
+}
+
+function numberOrZero(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : 0;
+}
+
+function compactText(value) {
+  return String(value || "").replace(/\s+/g, " ").trim();
+}
+
+function parseFormValue(value) {
+  if (Array.isArray(value)) return value;
+  if (!value) return [];
+  try {
+    const parsed = JSON.parse(value);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function normalizeResultEquipment(item, parent, root) {
+  const requestedCode = compactText(item.code);
+  const model = item.codeGood || item.kyMaHieu
+    || (!/^không yêu cầu$/i.test(requestedCode) ? requestedCode : "");
+  return {
+    id: String(item.id || crypto.randomUUID()),
+    name: compactText(item.name || item.tenThietBi || item.danhMucHangHoa) || "Hàng hóa chưa có tên",
+    model: compactText(model),
+    brand: compactText(item.labelGood || item.nhanHieu || item.brand),
+    manufacturer: compactText(item.manufacturer || item.hangSanXuat || item.manufacture),
+    origin: compactText(item.origin || item.xuatXu || item.nuocSanXuat || item.goodsOrigin),
+    manufactureYear: compactText(item.yearManufacture || item.namSanXuat || item.manufactureYear),
+    specification: String(item.feature || item.cauHinh || item.specification || "").trim(),
+    unit: item.uom || item.donViTinh || "",
+    quantity: numberOrZero(item.qty ?? item.quantity ?? item.khoiLuongDouble),
+    unitPrice: numberOrZero(item.unitPrice ?? item.donGia ?? item.donGiaDuThau),
+    amount: numberOrZero(item.subTotal ?? item.amount ?? item.totalM),
+    contractorCode: parent.contractorCode || "",
+    winnerNames: [parent.contractorName].filter(Boolean),
+    lotNo: item.lotNo || parent.lotNo || "",
+    decisionNo: root.decisionNo || "",
+    decisionDate: root.decisionDate || "",
+    resultPublishedDate: root.publicDate || "",
+  };
+}
+
+function normalizeBidder(item, status) {
+  const bidPrice = numberOrZero(
+    item.lotOpenPrice ?? item.bidFinalPrice ?? item.lotFinalPrice ?? item.lotPrice ?? item.bidPrice,
+  );
+  const finalPrice = numberOrZero(item.lotFinalPrice ?? item.bidFinalPrice ?? item.bidPrice);
+  return {
+    id: item.id || crypto.randomUUID(),
+    contractorCode: item.orgCode || item.contractorCode || item.taxCode || "",
+    taxCode: item.taxCode || "",
+    contractorName: compactText(item.orgFullname || item.contractorName || item.newContractorName
+      || item.ventureName) || "Chưa công bố tên nhà thầu",
+    status,
+    lotNo: item.lotNo || item.bidNo || "",
+    lotName: compactText(item.lotName),
+    bidPrice,
+    finalPrice,
+    winningPrice: status === "won"
+      ? numberOrZero(item.bidWiningPrice ?? item.succBidderPrice ?? item.lotFinalPrice)
+      : 0,
+    reason: compactText(item.reason || item.noPassedRson || item.noSuccBidderRson),
+    submittedAt: item.createdDateBidOpen || item.createdDate || "",
+    models: [],
+  };
+}
+
+function resultDetails(payload) {
+  const root = payload?.bideContractorInputResultDTO || {};
+  const versions = Array.isArray(root.decisionVersions) ? [...root.decisionVersions].reverse() : [];
+  const latest = versions.find((version) => version?.lotResultDTO?.length || version?.lotResultItems?.length) || {};
+  const lots = root.lotResultDTO?.length ? root.lotResultDTO : (latest.lotResultDTO || []);
+  const lotItems = root.lotResultItems?.length ? root.lotResultItems : (latest.lotResultItems || []);
+  const equipment = lotItems.flatMap((parent) =>
+    parseFormValue(parent.formValue).map((item) => normalizeResultEquipment(item, parent, root)),
+  );
+  const bidders = lots.flatMap((lot) => (lot.contractorList || []).map((contractor) => {
+    const status = Number(contractor.bidResult) === 1 ? "won" : "lost";
+    const bidder = normalizeBidder({ ...contractor, lotNo: lot.lotNo, lotName: lot.lotName }, status);
+    bidder.models = [...new Set(equipment
+      .filter((item) => item.contractorCode && item.contractorCode === bidder.contractorCode)
+      .map((item) => item.model || item.name)
+      .filter(Boolean))];
+    return bidder;
+  }));
+  return { bidders, items: equipment };
+}
+
+function openingDetails(bidOpenPayload, lotOpenPayload) {
+  const submissions = bidOpenPayload?.bidSubmissionByContractorViewResponse?.bidSubmissionDTOList || [];
+  const lots = Array.isArray(lotOpenPayload) ? lotOpenPayload : [];
+  const rows = lots.length
+    ? lots.map((lot) => ({
+      ...(submissions.find((submission) => submission.contractorCode === lot.contractorCode
+        || submission.id === lot.bidOpenId) || {}),
+      ...lot,
+    }))
+    : submissions;
+  const unique = new Map();
+  rows.forEach((row) => {
+    const bidder = normalizeBidder(row, "participating");
+    const key = `${bidder.contractorCode || bidder.contractorName}|${bidder.lotNo}`;
+    unique.set(key, bidder);
+  });
+  return [...unique.values()];
+}
+
+async function fetchTenderDetails(tender) {
+  let bidders = [];
+  let items = [];
+  let pricingTotal = 0;
+
+  if (tender.inputResultId) {
+    const [resultResponse, pricingResponse] = await Promise.allSettled([
+      postJson(CONTRACTOR_RESULT_URL, { id: tender.inputResultId }, 35_000),
+      fetchPricingDetails(tender.notifyNo),
+    ]);
+    if (resultResponse.status === "fulfilled") {
+      const detail = resultDetails(resultResponse.value);
+      bidders = detail.bidders;
+      items = detail.items;
+    }
+    if (pricingResponse.status === "fulfilled") {
+      pricingTotal = pricingResponse.value.total;
+      if (!items.length) items = pricingResponse.value.items;
+    }
+  } else if (["evaluating", "closed"].includes(tender.status)) {
+    const request = {
+      notifyNo: tender.notifyNo,
+      notifyId: tender.notifyId || tender.id,
+      type: "TBMT",
+      packType: 0,
+    };
+    const [bidOpenResponse, lotOpenResponse] = await Promise.allSettled([
+      postJson(BID_OPEN_URL, request, 35_000),
+      postJson(LOT_OPEN_URL, request, 35_000),
+    ]);
+    bidders = openingDetails(
+      bidOpenResponse.status === "fulfilled" ? bidOpenResponse.value : {},
+      lotOpenResponse.status === "fulfilled" ? lotOpenResponse.value : [],
+    );
+  } else if (tender.hasResult) {
+    const pricing = await fetchPricingDetails(tender.notifyNo);
+    pricingTotal = pricing.total;
+    items = pricing.items;
+  }
+
+  return {
+    schemaVersion: DETAIL_SCHEMA_VERSION,
+    total: Math.max(pricingTotal, items.length),
+    bidders,
+    items,
+    modelDisclosure: bidders.some((bidder) => bidder.status === "lost")
+      ? "winning-bidders-only"
+      : "as-published",
+    fetchedAt: new Date().toISOString(),
+  };
 }
 
 async function previousData() {
@@ -389,12 +562,46 @@ async function previousData() {
 
 function shouldRefreshDetails(tender, cached) {
   if (!cached) return true;
+  if (Number(cached.schemaVersion || 0) < DETAIL_SCHEMA_VERSION) return true;
   const fetchedAt = new Date(cached.fetchedAt || 0).getTime();
   if (!fetchedAt) return true;
   const resultPublishedAt = new Date(tender.resultPublishedDate || 0).getTime();
   if (resultPublishedAt > fetchedAt) return true;
-  const refreshAfter = cached.items?.length ? 7 * 24 * 60 * 60 * 1000 : 24 * 60 * 60 * 1000;
+  const refreshAfter = tender.status === "evaluating"
+    ? 60 * 60 * 1000
+    : (cached.items?.length ? 7 * 24 * 60 * 60 * 1000 : 24 * 60 * 60 * 1000);
   return Date.now() - fetchedAt >= refreshAfter;
+}
+
+function enrichTender(tender, detail) {
+  const bidders = detail?.bidders || [];
+  const participantNames = [...new Set(bidders.map((bidder) => bidder.contractorName).filter(Boolean))];
+  const winners = bidders.filter((bidder) => bidder.status === "won");
+  const losers = bidders.filter((bidder) => bidder.status === "lost");
+  const publishedWinners = [...new Set([
+    ...(tender.winnerNames || []),
+    ...winners.map((bidder) => bidder.contractorName),
+  ].filter(Boolean))];
+  const winningModels = [...new Set((detail?.items || [])
+    .map((item) => item.model || item.name)
+    .filter(Boolean))];
+  const losingModels = [...new Set(losers.flatMap((bidder) => bidder.models || []).filter(Boolean))];
+  const loserDetails = [...new Map(losers.map((bidder) => {
+    const value = { contractorName: bidder.contractorName, reason: bidder.reason || "" };
+    return [`${value.contractorName}|${value.reason}`, value];
+  })).values()];
+  const uniqueBidderCodes = new Set(bidders.map((bidder) => bidder.contractorCode || bidder.contractorName));
+  return {
+    ...tender,
+    bidderCount: uniqueBidderCodes.size || tender.bidderCount,
+    participantNames,
+    winnerNames: publishedWinners,
+    loserNames: [...new Set(losers.map((bidder) => bidder.contractorName).filter(Boolean))],
+    loserDetails,
+    winningModels,
+    losingModels,
+    losingModelDisclosure: losers.length && !losingModels.length ? "Nguồn công khai chưa công bố" : "",
+  };
 }
 
 async function main() {
@@ -450,13 +657,18 @@ async function main() {
   );
 
   const detailsByNotifyNo = { ...(previous.detailsByNotifyNo || {}) };
-  const awarded = tenders.filter((tender) => tender.hasResult);
-  const detailsToRefresh = awarded.filter((tender) => shouldRefreshDetails(tender, detailsByNotifyNo[tender.notifyNo]));
-  process.stdout.write(`Chi tiết: làm mới ${detailsToRefresh.length}/${awarded.length} gói đã có kết quả\n`);
+  const detailCandidates = tenders.filter((tender) =>
+    tender.hasResult || ["evaluating", "closed"].includes(tender.status));
+  const detailsToRefresh = detailCandidates
+    .filter((tender) => shouldRefreshDetails(tender, detailsByNotifyNo[tender.notifyNo]));
+  process.stdout.write(`Chi tiết: làm mới ${detailsToRefresh.length}/${detailCandidates.length} gói có mở thầu/kết quả\n`);
   await mapLimited(detailsToRefresh, 3, async (tender) => {
     try {
-      detailsByNotifyNo[tender.notifyNo] = await fetchDetails(tender.notifyNo);
-      process.stdout.write(`Chi tiết ${tender.notifyNo}: ${detailsByNotifyNo[tender.notifyNo].items.length} mặt hàng\n`);
+      detailsByNotifyNo[tender.notifyNo] = await fetchTenderDetails(tender);
+      const detail = detailsByNotifyNo[tender.notifyNo];
+      process.stdout.write(
+        `Chi tiết ${tender.notifyNo}: ${detail.bidders.length} nhà thầu, ${detail.items.length} mặt hàng\n`,
+      );
     } catch (error) {
       process.stderr.write(`Bỏ qua chi tiết ${tender.notifyNo}: ${error.message}\n`);
     }
@@ -466,8 +678,29 @@ async function main() {
   for (const notifyNo of Object.keys(detailsByNotifyNo)) {
     if (!activeNumbers.has(notifyNo)) delete detailsByNotifyNo[notifyNo];
   }
+  const enrichedTenders = tenders.map((tender) =>
+    enrichTender(tender, detailsByNotifyNo[tender.notifyNo]));
+  const tenderByNotifyNo = new Map(enrichedTenders.map((tender) => [tender.notifyNo, tender]));
+  const bidders = Object.entries(detailsByNotifyNo).flatMap(([notifyNo, detail]) => {
+    const tender = tenderByNotifyNo.get(notifyNo);
+    return (detail.bidders || []).map((bidder) => ({
+      notifyNo,
+      tenderName: tender?.name || "",
+      sourceUrl: tender?.sourceUrl || "",
+      ...bidder,
+    }));
+  });
+  const equipment = Object.entries(detailsByNotifyNo).flatMap(([notifyNo, detail]) => {
+    const tender = tenderByNotifyNo.get(notifyNo);
+    return (detail.items || []).map((item) => ({
+      notifyNo,
+      tenderName: tender?.name || "",
+      sourceUrl: tender?.sourceUrl || "",
+      ...item,
+    }));
+  });
   const payload = {
-    tenders,
+    tenders: enrichedTenders,
     fetchedAt: new Date().toISOString(),
     source: "muasamcong-public-api",
     provinceCode: PROVINCE_CODE,
@@ -491,8 +724,12 @@ async function main() {
   await mapLimited(Object.entries(detailsByNotifyNo), 10, ([notifyNo, detail]) =>
     writeFile(resolve(detailsDir, `${notifyNo}.json`), `${JSON.stringify(detail, null, 2)}\n`),
   );
+  await writeFile(biddersOutputPath, `${JSON.stringify({ bidders, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
+  await writeFile(equipmentOutputPath, `${JSON.stringify({ equipment, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
-  process.stdout.write(`Đã lưu ${tenders.length} gói thầu vào ${outputPath}\n`);
+  process.stdout.write(
+    `Đã lưu ${enrichedTenders.length} gói, ${bidders.length} dòng nhà thầu và ${equipment.length} mặt hàng\n`,
+  );
 }
 
 await main();
