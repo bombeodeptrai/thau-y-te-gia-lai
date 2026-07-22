@@ -73,6 +73,7 @@ function normalizeSearch(value) {
     .replace(/Đ/g, "D")
     .toLocaleLowerCase("vi-VN")
     .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\bx\s+quang\b/g, "xquang")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -85,6 +86,32 @@ function textIncludesTerm(text, term) {
   return term.length <= 2
     ? ` ${text} `.includes(` ${term} `)
     : text.includes(term);
+}
+
+function orderedTermsWithin(text, terms, maxGap = 2) {
+  const tokens = text.split(" ").filter(Boolean);
+  let previousIndex = -1;
+  for (const term of terms) {
+    const start = previousIndex + 1;
+    const end = previousIndex < 0 ? tokens.length : Math.min(tokens.length, start + maxGap + 1);
+    let foundIndex = -1;
+    for (let index = start; index < end; index += 1) {
+      const matches = term.length <= 2 ? tokens[index] === term : tokens[index].includes(term);
+      if (matches) {
+        foundIndex = index;
+        break;
+      }
+    }
+    if (foundIndex < 0) return false;
+    previousIndex = foundIndex;
+  }
+  return true;
+}
+
+function searchTextMatches(text, terms) {
+  if (!terms.length) return true;
+  if (terms[0] === "may" && terms.length > 1) return orderedTermsWithin(text, terms);
+  return terms.every((term) => textIncludesTerm(text, term));
 }
 
 function equipmentSearchText(item) {
@@ -120,12 +147,17 @@ function tenderSearchText(tender) {
     tender.investor,
     tender.notifyNo,
     tender.location,
-    ...asList(tender.winningModels),
-    ...asList(tender.losingModels),
     ...asList(tender.winnerNames),
     ...asList(tender.loserNames),
     ...asList(tender.participantNames),
   ].filter(Boolean).join(" "));
+}
+
+function tenderModelSearchTexts(tender) {
+  return [
+    ...asList(tender.winningModels),
+    ...asList(tender.losingModels),
+  ].map(normalizeSearch).filter(Boolean);
 }
 
 function officialUrl(value) {
@@ -191,19 +223,14 @@ function filteredTenders() {
   return periodTenders().filter((tender) => {
     const tenderText = tenderSearchText(tender);
     const equipment = state.equipmentByNotifyNo.get(tender.notifyNo) || [];
-    const itemOnlyMatches = terms.length
-      ? equipment.filter((item) =>
-        terms.every((term) => textIncludesTerm(item.searchText, term)))
+    const equipmentMatches = terms.length
+      ? equipment.filter((item) => searchTextMatches(item.searchText, terms))
       : [];
-    const mixedEquipmentMatches = terms.length
-      ? equipment.filter((item) =>
-        terms.every((term) =>
-          textIncludesTerm(tenderText, term) || textIncludesTerm(item.searchText, term))
-        && terms.some((term) => textIncludesTerm(item.searchText, term)))
-      : [];
-    const equipmentMatches = itemOnlyMatches.length ? itemOnlyMatches : mixedEquipmentMatches;
+    const modelMatches = terms.length
+      && tenderModelSearchTexts(tender).some((modelText) => searchTextMatches(modelText, terms));
     const queryMatches = !terms.length
-      || terms.every((term) => textIncludesTerm(tenderText, term))
+      || searchTextMatches(tenderText, terms)
+      || modelMatches
       || equipmentMatches.length > 0;
     const statusMatches =
       state.status === "all" ||
