@@ -25,7 +25,7 @@ function setupAutomation() {
 
 function syncTenders() {
   const lock = LockService.getScriptLock();
-  if (!lock.tryLock(30_000)) return;
+  if (!lock.tryLock(30000)) return;
   try {
     const response = UrlFetchApp.fetch(`${TENDER_DATA_URL}?v=${Date.now()}`, {
       muteHttpExceptions: true,
