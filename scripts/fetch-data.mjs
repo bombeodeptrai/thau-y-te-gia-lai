@@ -74,13 +74,17 @@ function delay(ms) {
 
 async function postJson(url, body, timeoutMs = 25_000) {
   let lastError;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  const maxAttempts = 6;
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
     try {
       const response = await fetch(url, {
         method: "POST",
         headers: {
           Accept: "application/json",
+          "Accept-Language": "vi-VN,vi;q=0.9",
           "Content-Type": "application/json",
+          Origin: "https://muasamcong.mpi.gov.vn",
+          Referer: "https://muasamcong.mpi.gov.vn/",
           "User-Agent": "thau-y-te-gia-lai-public-data/2.0",
         },
         body: JSON.stringify(body),
@@ -88,11 +92,13 @@ async function postJson(url, body, timeoutMs = 25_000) {
       });
       if (!response.ok) throw new Error(`${url} phản hồi HTTP ${response.status}`);
       const text = await response.text();
-      if (!text.trim().startsWith("{")) throw new Error(`${url} không trả về JSON`);
+      if (!text.trim().startsWith("{")) {
+        throw new Error(`${url} không trả về JSON (lần ${attempt}/${maxAttempts})`);
+      }
       return JSON.parse(text);
     } catch (error) {
       lastError = error;
-      if (attempt < 3) await delay(attempt * 750);
+      if (attempt < maxAttempts) await delay(attempt * 2_000);
     }
   }
   throw lastError;
@@ -115,7 +121,7 @@ async function fetchWindow(window, windowIndex, totalWindows) {
   const first = await postJson(SEARCH_URL, searchPayload(0, window.from, window.to));
   const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
   const pageNumbers = Array.from({ length: totalPages - 1 }, (_, index) => index + 1);
-  const remaining = await mapLimited(pageNumbers, 3, (pageNumber) =>
+  const remaining = await mapLimited(pageNumbers, 2, (pageNumber) =>
     postJson(SEARCH_URL, searchPayload(pageNumber, window.from, window.to)),
   );
   const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
@@ -403,7 +409,8 @@ async function main() {
   process.stdout.write(fullRefresh
     ? `Quét bù toàn bộ ${DAYS} ngày lần đầu\n`
     : `Cập nhật tăng dần ${INCREMENTAL_DAYS} ngày gần nhất\n`);
-  const allItems = (await mapLimited(windows, 2, (window, index) =>
+  const windowConcurrency = fullRefresh ? 1 : 2;
+  const allItems = (await mapLimited(windows, windowConcurrency, (window, index) =>
     fetchWindow(window, index, windows.length))).flat();
   const allUnique = new Map();
   allItems.forEach((item) => {
