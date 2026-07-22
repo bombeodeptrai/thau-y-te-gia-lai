@@ -54,9 +54,23 @@ function syncTenders() {
     const properties = PropertiesService.getScriptProperties();
     const initialized = properties.getProperty(INITIALIZED_KEY) === "1";
     const knownIds = new Set(JSON.parse(properties.getProperty(KNOWN_IDS_KEY) || "[]"));
-    const currentIds = tenders.map((tender) => String(tender.notifyNo || tender.id || "")).filter(Boolean);
+    // Chỉ lưu mã gần đây để không vượt giới hạn dung lượng Script Properties
+    // khi website mở rộng phạm vi lịch sử lên nhiều năm.
+    const knownWindowCutoff = Date.now() - 45 * 86_400_000;
+    const currentIds = tenders
+      .filter((tender) => {
+        const publishedAt = new Date(tender.publicDate || 0).getTime();
+        return publishedAt && publishedAt >= knownWindowCutoff;
+      })
+      .map((tender) => String(tender.notifyNo || tender.id || ""))
+      .filter(Boolean);
+    const alertCutoff = Date.now() - 72 * 60 * 60 * 1000;
     const newTenders = initialized
-      ? tenders.filter((tender) => !knownIds.has(String(tender.notifyNo || tender.id || "")))
+      ? tenders.filter((tender) => {
+        const id = String(tender.notifyNo || tender.id || "");
+        const publishedAt = new Date(tender.publicDate || 0).getTime();
+        return id && !knownIds.has(id) && publishedAt && publishedAt >= alertCutoff;
+      })
       : [];
 
     const equipmentIndex = writeEquipmentSheet_(equipment, payload.fetchedAt);
@@ -119,6 +133,10 @@ function writeTenderSheet_(tenders, equipment, equipmentIndex, fetchedAt) {
     sheet.insertRowBefore(1);
   }
   if (isNewSheet) initializeTenderSheet_(sheet, headers.length);
+  const titleCell = sheet.getRange(1, 1);
+  if (/^Bảng tổng hợp gói thầu thiết bị y tế/i.test(String(titleCell.getValue() || ""))) {
+    titleCell.setValue("Bảng tổng hợp gói thầu thiết bị y tế khu vực Gia Lai trong 3 năm gần nhất");
+  }
 
   const filter = sheet.getFilter();
   if (filter) filter.remove();
@@ -162,7 +180,7 @@ function initializeTenderSheet_(sheet, columnCount) {
   sheet.getRange(1, 1, 1, columnCount).merge();
   sheet
     .getRange(1, 1)
-    .setValue("Bảng tổng hợp gói thầu thiết bị y tế khu vực Gia Lai năm 2025-2026")
+    .setValue("Bảng tổng hợp gói thầu thiết bị y tế khu vực Gia Lai trong 3 năm gần nhất")
     .setHorizontalAlignment("center")
     .setVerticalAlignment("middle")
     .setFontWeight("bold")

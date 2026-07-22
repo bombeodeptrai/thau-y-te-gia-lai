@@ -8,7 +8,7 @@ const BID_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-sele
 const LOT_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/lotOpenDetail?token=public";
 const CONTRACTOR_RESULT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=public";
 const PROVINCE_CODE = "52";
-const DAYS = 365;
+const DAYS = 3 * 365;
 const INCREMENTAL_DAYS = 14;
 const STATUS_SCHEMA_VERSION = 3;
 const DETAIL_SCHEMA_VERSION = 2;
