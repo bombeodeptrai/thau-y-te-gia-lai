@@ -926,7 +926,78 @@ select:focus-visible {
 
 .detail-notice.error { color: #a24f31; }
 
+.bidder-list,
 .equipment-list { padding-top: 14px; }
+
+.bidder-item {
+  display: grid;
+  grid-template-columns: 25px minmax(0, 1fr) 132px;
+  gap: 10px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.bidder-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bidder-title h4 {
+  margin: 0 0 7px;
+  color: #2e302b;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.bidder-status {
+  flex: 0 0 auto;
+  padding: 3px 7px;
+  color: #456456;
+  font-size: 8px;
+  font-weight: 800;
+  background: #e7f0e6;
+  border-radius: 5px;
+}
+
+.bidder-status.won { color: #246444; background: #dcefe3; }
+.bidder-status.lost { color: #8a4f3d; background: #f5e5df; }
+.bidder-status.participating { color: #8a611e; background: #f7edd6; }
+
+.bidder-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.bidder-facts span {
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.bidder-facts b { color: #4d514b; }
+
+.bidder-price {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+.bidder-price strong {
+  color: var(--forest);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bidder-price span {
+  color: var(--muted);
+  font-size: 9px;
+}
 
 .equipment-heading {
   display: flex;
@@ -1270,6 +1341,8 @@ select:focus-visible {
   .tender-actions { grid-column: 3 / 4; grid-row: 1 / 4; align-self: center; }
   .tender-detail-panel { margin-left: 0; padding: 13px; }
   .result-summary { grid-template-columns: 1fr; }
+  .bidder-item { grid-template-columns: 25px minmax(0, 1fr); }
+  .bidder-price { grid-column: 2 / 3; align-items: flex-start; text-align: left; }
   .equipment-item { grid-template-columns: 25px minmax(0, 1fr); }
   .equipment-price { grid-column: 2 / 3; align-items: flex-start; text-align: left; }
   .detail-footer { align-items: flex-start; flex-direction: column; }
