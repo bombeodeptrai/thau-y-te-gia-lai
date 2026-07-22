@@ -113,12 +113,8 @@ function writeTenderSheet_(tenders, fetchedAt) {
   sheet.setFrozenRows(TENDER_HEADER_ROW);
   sheet.setFrozenColumns(2);
   sheet.getRange(TENDER_HEADER_ROW, 1, lastRow - TENDER_HEADER_ROW + 1, headers.length).createFilter();
-  sheet.getRange(TENDER_DATA_START_ROW, 2, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
-  sheet.getRange(TENDER_DATA_START_ROW, 8, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
-  sheet.getRange(TENDER_DATA_START_ROW, 13, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy");
-  sheet.getRange(TENDER_DATA_START_ROW, 16, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
-  sheet.getRange(TENDER_DATA_START_ROW, 7, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
-  sheet.getRange(TENDER_DATA_START_ROW, 12, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
+  // Không ép định dạng số tại đây. Google Sheets Table có cột được định kiểu
+  // sẽ báo lỗi nếu Apps Script đổi định dạng của một phần cột.
   sheet.getRange(TENDER_DATA_START_ROW, 3, Math.max(1, rows.length), 4).setWrap(true).setVerticalAlignment("top");
 }
 
@@ -178,7 +174,8 @@ function ensureConfigSheet_() {
 
 function updateLastSync_(fetchedAt, total, newCount) {
   const sheet = ensureConfigSheet_();
-  sheet.getRange("B5").setValue(toDate_(fetchedAt) || new Date()).setNumberFormat("dd/mm/yyyy hh:mm:ss");
+  const syncedAt = toDate_(fetchedAt) || new Date();
+  sheet.getRange("B5").setValue(Utilities.formatDate(syncedAt, "Asia/Ho_Chi_Minh", "dd/MM/yyyy HH:mm:ss"));
   sheet.getRange("B6").setValue(`Đang lưu ${total} gói; phát hiện ${newCount} gói mới trong lần này`);
 }
 
