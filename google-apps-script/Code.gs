@@ -3,6 +3,8 @@ const TENDER_SHEET = "Gói thầu";
 const CONFIG_SHEET = "Cấu hình";
 const KNOWN_IDS_KEY = "KNOWN_TENDER_IDS";
 const INITIALIZED_KEY = "INITIALIZED";
+const TENDER_HEADER_ROW = 2;
+const TENDER_DATA_START_ROW = 3;
 
 function onOpen() {
   SpreadsheetApp.getUi()
@@ -56,7 +58,9 @@ function syncTenders() {
 
 function writeTenderSheet_(tenders, fetchedAt) {
   const spreadsheet = SpreadsheetApp.getActive();
-  const sheet = spreadsheet.getSheetByName(TENDER_SHEET) || spreadsheet.insertSheet(TENDER_SHEET);
+  let sheet = spreadsheet.getSheetByName(TENDER_SHEET);
+  const isNewSheet = !sheet;
+  if (isNewSheet) sheet = spreadsheet.insertSheet(TENDER_SHEET);
   const headers = [
     "Mã TBMT", "Ngày đăng", "Tên gói thầu", "Nhóm", "Chủ đầu tư", "Địa điểm",
     "Giá dự toán", "Hạn đóng thầu", "Trạng thái", "Số nhà thầu tham dự",
@@ -82,25 +86,57 @@ function writeTenderSheet_(tenders, fetchedAt) {
     toDate_(fetchedAt),
   ]);
 
+  // Các bản cũ đặt tiêu đề cột ở hàng 1. Chỉ chèn thêm hàng tiêu đề lớn
+  // khi chưa có bố cục hai hàng, tránh đụng vào trang đã được chỉnh tay.
+  if (!isNewSheet && String(sheet.getRange(1, 1).getValue()).trim() === "Mã TBMT") {
+    sheet.insertRowBefore(1);
+  }
+  if (isNewSheet) initializeTenderSheet_(sheet, headers.length);
+
   const filter = sheet.getFilter();
   if (filter) filter.remove();
-  sheet.clearContents();
-  sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
-  if (rows.length) sheet.getRange(2, 1, rows.length, headers.length).setValues(rows);
 
-  const lastRow = Math.max(2, rows.length + 1);
-  const header = sheet.getRange(1, 1, 1, headers.length);
-  header.setBackground("#0f513f").setFontColor("#ffffff").setFontWeight("bold");
-  sheet.setFrozenRows(1);
+  // Chỉ xóa vùng dữ liệu do script quản lý. Hàng tiêu đề lớn, định dạng,
+  // độ rộng cột, đường viền và các cột ghi chú bên phải vẫn được giữ nguyên.
+  const oldLastRow = sheet.getLastRow();
+  if (oldLastRow >= TENDER_DATA_START_ROW) {
+    sheet
+      .getRange(TENDER_DATA_START_ROW, 1, oldLastRow - TENDER_DATA_START_ROW + 1, headers.length)
+      .clearContent();
+  }
+  sheet.getRange(TENDER_HEADER_ROW, 1, 1, headers.length).setValues([headers]);
+  if (rows.length) {
+    sheet.getRange(TENDER_DATA_START_ROW, 1, rows.length, headers.length).setValues(rows);
+  }
+
+  const lastRow = Math.max(TENDER_DATA_START_ROW, rows.length + TENDER_HEADER_ROW);
+  sheet.setFrozenRows(TENDER_HEADER_ROW);
   sheet.setFrozenColumns(2);
-  sheet.getRange(1, 1, lastRow, headers.length).createFilter();
-  sheet.getRange(2, 2, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
-  sheet.getRange(2, 8, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
-  sheet.getRange(2, 13, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy");
-  sheet.getRange(2, 16, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
-  sheet.getRange(2, 7, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
-  sheet.getRange(2, 12, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
-  sheet.getRange(2, 3, Math.max(1, rows.length), 4).setWrap(true).setVerticalAlignment("top");
+  sheet.getRange(TENDER_HEADER_ROW, 1, lastRow - TENDER_HEADER_ROW + 1, headers.length).createFilter();
+  sheet.getRange(TENDER_DATA_START_ROW, 2, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
+  sheet.getRange(TENDER_DATA_START_ROW, 8, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
+  sheet.getRange(TENDER_DATA_START_ROW, 13, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy");
+  sheet.getRange(TENDER_DATA_START_ROW, 16, Math.max(1, rows.length), 1).setNumberFormat("dd/mm/yyyy hh:mm");
+  sheet.getRange(TENDER_DATA_START_ROW, 7, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
+  sheet.getRange(TENDER_DATA_START_ROW, 12, Math.max(1, rows.length), 1).setNumberFormat("#,##0 [$₫-vi-VN]");
+  sheet.getRange(TENDER_DATA_START_ROW, 3, Math.max(1, rows.length), 4).setWrap(true).setVerticalAlignment("top");
+}
+
+function initializeTenderSheet_(sheet, columnCount) {
+  sheet.getRange(1, 1, 1, columnCount).merge();
+  sheet
+    .getRange(1, 1)
+    .setValue("Bảng tổng hợp gói thầu thiết bị y tế khu vực Gia Lai năm 2025-2026")
+    .setHorizontalAlignment("center")
+    .setVerticalAlignment("middle")
+    .setFontWeight("bold")
+    .setFontSize(16);
+  sheet.setRowHeight(1, 34);
+  sheet
+    .getRange(TENDER_HEADER_ROW, 1, 1, columnCount)
+    .setBackground("#0f513f")
+    .setFontColor("#ffffff")
+    .setFontWeight("bold");
   sheet.setColumnWidth(1, 125);
   sheet.setColumnWidth(2, 135);
   sheet.setColumnWidth(3, 430);
