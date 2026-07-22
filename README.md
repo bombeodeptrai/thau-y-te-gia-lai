@@ -7,8 +7,8 @@ Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 ## Dữ liệu
 
 - Nguồn: API tìm kiếm công khai của Hệ thống mạng đấu thầu quốc gia.
-- Phạm vi lưu trữ: toàn bộ gói thuộc mã tỉnh Gia Lai `52` trong 1.095 ngày (3 năm) gần nhất.
-- Lần đầu hệ thống quét bù đủ 3 năm theo các cửa sổ 7 ngày. Các lần chạy sau chỉ quét lại 14 ngày mới nhất, ghép với dữ liệu cũ và tự xóa bản ghi quá 3 năm.
+- Phạm vi lưu trữ: các gói thiết bị/vật tư y tế thuộc Gia Lai hiện nay (gồm địa bàn Gia Lai và Bình Định cũ) trong 1.095 ngày, tức 3 năm gần nhất.
+- Lần đầu hệ thống quét bù đủ 3 năm theo mã tỉnh và theo giao giữa địa danh với từ khóa y tế. Nhánh thứ hai khôi phục hồ sơ cũ không còn trường mã tỉnh trong API. Các lần chạy sau quét lại 14 ngày mới nhất, ghép với dữ liệu cũ và tự xóa bản ghi quá 3 năm.
 - Bộ lọc yêu cầu tiêu đề gói thầu phải nêu rõ thiết bị/vật tư y tế, vật tư tiêu hao, hóa chất xét nghiệm hoặc tên một mặt hàng chuyên môn. Tên bệnh viện/trung tâm y tế không còn là điều kiện đủ.
 - Loại khỏi danh sách chính các gói thuốc, vắc xin, xây dựng, CNTT, xe, bàn ghế, đồng phục, xử lý rác, dịch vụ sửa chữa/bảo trì và vật tư nông nghiệp.
 - Trạng thái lấy từ mã chính thức của nguồn để phân biệt `Đang xét thầu`, `Đã đóng – chưa có kết quả`, `Đã có kết quả` và `Đã hủy/không lựa chọn`; không chỉ suy đoán từ hạn đóng thầu.
