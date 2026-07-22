@@ -792,6 +792,64 @@ select:focus-visible {
   line-height: 1.4;
 }
 
+.equipment-search-match {
+  display: grid;
+  gap: 6px;
+  padding: 8px 10px;
+  margin-top: 9px;
+  background: #f2f7f1;
+  border: 1px solid #dbe8db;
+  border-left: 3px solid #4f8569;
+  border-radius: 7px;
+}
+
+.equipment-search-match-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--forest-2);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.equipment-search-match-heading b {
+  flex: 0 0 auto;
+  color: #557064;
+  font-size: 9px;
+}
+
+.equipment-search-match-item {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  min-width: 0;
+}
+
+.equipment-search-match-item strong {
+  overflow: hidden;
+  color: #2d4338;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.equipment-search-match-item span,
+.equipment-search-more {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.equipment-search-more {
+  color: #47745d;
+  font-weight: 700;
+}
+
 .tender-status,
 .tender-price {
   display: flex;
@@ -1491,6 +1549,12 @@ select:focus-visible {
   .tender-main { min-width: 0; }
   .tender-main h3 { font-size: 14px; -webkit-line-clamp: 3; }
   .tender-main p { font-size: 11px; overflow-wrap: anywhere; }
+  .equipment-search-match { padding: 9px; }
+  .equipment-search-match-heading { align-items: flex-start; flex-direction: column; gap: 3px; }
+  .equipment-search-match-item { align-items: flex-start; flex-direction: column; gap: 2px; }
+  .equipment-search-match-item strong,
+  .equipment-search-match-item span,
+  .equipment-search-more { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
   .tender-meta { flex-wrap: wrap; }
   .tender-status {
     grid-column: 2 / 3;

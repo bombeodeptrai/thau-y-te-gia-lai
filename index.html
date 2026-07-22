@@ -33,7 +33,15 @@
         <form class="search-panel" id="search-form">
           <label class="search-field search-keyword">
             <span class="sr-only">Từ khóa</span><span class="icon-text">⌕</span>
-            <input id="keyword" placeholder="Tên gói thầu, chủ đầu tư, mã TBMT..." />
+            <input id="keyword" list="equipment-search-suggestions" placeholder="Tên gói, loại máy, model, hãng..." title="Tra cứu tên gói thầu, mã TBMT, tên thiết bị, model, nhãn hiệu hoặc hãng sản xuất" />
+            <datalist id="equipment-search-suggestions">
+              <option value="Máy siêu âm"></option>
+              <option value="Máy xét nghiệm"></option>
+              <option value="Máy điện tim"></option>
+              <option value="Máy thở"></option>
+              <option value="Máy nội soi"></option>
+              <option value="Mindray"></option>
+            </datalist>
           </label>
           <div class="search-field fixed-field" aria-label="Địa bàn Gia Lai">
             <span class="icon-text">⌖</span><span>Gia Lai</span><span class="field-note">sau sáp nhập</span>
