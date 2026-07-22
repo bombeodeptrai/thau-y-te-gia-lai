@@ -230,6 +230,10 @@ function isMedical(item) {
     "binh ac quy", "vat tu dien", "vat tu nuoc", "dien, nuoc", "dien nuoc",
     "dich vu sua chua", "sua chua", "dich vu bao tri", "bao tri, bao duong",
     "dich vu kiem dinh", "kiem dinh, hieu chuan", "kiem dinh va hieu chuan",
+    "tu van", "tham dinh", "lap e-hsmt", "danh gia e-hsdt", "lap ho so moi thau",
+    "danh gia ho so du thau", "lap du toan", "giam sat thi cong", "quan ly du an",
+    "di doi va lap dat lai", "thao do va lap dat lai", "gia cong, lap dat tu",
+    "tu de ho so", "ke de vat tu",
     // Công nghệ thông tin và thiết bị hạ tầng không phải thiết bị y tế.
     "may tinh", "may in", "tin hoc", "cong nghe thong tin", "may chu", "thiet bi tuong lua",
     "bao mat du lieu", "luu tru san", "thang may", "may phat dien", "dieu hoa khong khi",
@@ -293,6 +297,13 @@ function isMedical(item) {
   return medicalInvestors.some((term) => investor.includes(term))
     && genericSupplyTerms.some((term) => title.includes(term))
     && clinicalTerms.some((term) => title.includes(term));
+}
+
+function isStoredTenderMedical(tender) {
+  return isMedical({
+    bidName: [tender.name],
+    investorName: tender.investor,
+  });
 }
 
 function categoryOf(name) {
@@ -723,7 +734,9 @@ async function main() {
   const historicalTenders = fullRefresh ? [] : (previous.tenders || [])
     .filter((tender) => {
       const publishedAt = new Date(tender.publicDate || 0).getTime();
-      return publishedAt >= cutoff && publishedAt < refreshedFrom;
+      return publishedAt >= cutoff
+        && publishedAt < refreshedFrom
+        && isStoredTenderMedical(tender);
     })
     .map((tender) => ({
       ...tender,
