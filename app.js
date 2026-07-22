@@ -72,12 +72,19 @@ function normalizeSearch(value) {
     .replace(/đ/g, "d")
     .replace(/Đ/g, "D")
     .toLocaleLowerCase("vi-VN")
+    .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
 
 function searchTerms(value) {
   return normalizeSearch(value).split(" ").filter(Boolean);
+}
+
+function textIncludesTerm(text, term) {
+  return term.length <= 2
+    ? ` ${text} `.includes(` ${term} `)
+    : text.includes(term);
 }
 
 function equipmentSearchText(item) {
@@ -184,13 +191,19 @@ function filteredTenders() {
   return periodTenders().filter((tender) => {
     const tenderText = tenderSearchText(tender);
     const equipment = state.equipmentByNotifyNo.get(tender.notifyNo) || [];
-    const equipmentMatches = terms.length
+    const itemOnlyMatches = terms.length
       ? equipment.filter((item) =>
-        terms.every((term) => tenderText.includes(term) || item.searchText.includes(term))
-        && terms.some((term) => item.searchText.includes(term)))
+        terms.every((term) => textIncludesTerm(item.searchText, term)))
       : [];
+    const mixedEquipmentMatches = terms.length
+      ? equipment.filter((item) =>
+        terms.every((term) =>
+          textIncludesTerm(tenderText, term) || textIncludesTerm(item.searchText, term))
+        && terms.some((term) => textIncludesTerm(item.searchText, term)))
+      : [];
+    const equipmentMatches = itemOnlyMatches.length ? itemOnlyMatches : mixedEquipmentMatches;
     const queryMatches = !terms.length
-      || terms.every((term) => tenderText.includes(term))
+      || terms.every((term) => textIncludesTerm(tenderText, term))
       || equipmentMatches.length > 0;
     const statusMatches =
       state.status === "all" ||
