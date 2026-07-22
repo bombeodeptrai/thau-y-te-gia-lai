@@ -14,7 +14,8 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Lượt quét bù 3 năm có thể kéo dài qua mốc chạy kế tiếp; không hủy giữa chừng.
+  cancel-in-progress: false
 
 jobs:
   deploy:
