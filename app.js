@@ -263,8 +263,7 @@ function renderSavedList() {
     : '<div class="saved-empty">Chưa có gói thầu nào được lưu. Bấm dấu ☆ tại một gói để thêm vào đây.</div>';
 }
 
-function renderMetrics() {
-  const tenders = periodTenders();
+function renderMetrics(tenders = periodTenders()) {
   const open = tenders.filter((tender) => tender.status === "open" || tender.status === "urgent").length;
   const urgent = tenders.filter((tender) => tender.status === "urgent").length;
   const totalValue = tenders.reduce((sum, tender) => sum + (Number(tender.price) || 0), 0);
@@ -472,8 +471,8 @@ function paginationMarkup(currentPage, totalPages) {
 }
 
 function render() {
-  renderMetrics();
   const tenders = filteredTenders();
+  renderMetrics(tenders);
   const totalPages = Math.max(1, Math.ceil(tenders.length / TENDERS_PER_PAGE));
   state.page = Math.min(Math.max(1, state.page), totalPages);
   const firstIndex = (state.page - 1) * TENDERS_PER_PAGE;
