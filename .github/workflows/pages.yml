@@ -37,6 +37,8 @@ jobs:
           key: tender-data-${{ github.run_id }}
           restore-keys: |
             tender-data-
+      - name: Kiểm tra bộ trích thông số e-HSMT
+        run: node --test scripts/technical-requirements.test.mjs
       - name: Lấy dữ liệu công khai mới nhất
         run: node scripts/fetch-data.mjs
       - name: Tạo bản tĩnh
