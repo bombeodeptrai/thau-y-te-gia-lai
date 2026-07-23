@@ -48,6 +48,12 @@ const HISTORICAL_TITLE_TERMS = [
   "kit", "test", "stent", "catheter", "implant", "bơm tiêm", "kim", "găng",
   "khẩu trang", "bông", "gạc", "oxy", "khí y tế",
 ];
+// Các gói thuộc phạm vi Gia Lai nhưng có thể bị nguồn
+// gán mã tỉnh hoặc địa giới chưa đồng nhất.
+const FORCED_NOTIFY_NOS = [
+  "IB2600391963",
+  "IB2600384538",
+];
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "data/tenders.json");
 const biddersOutputPath = resolve(root, "data/bidders.json");
@@ -124,6 +130,27 @@ function historicalSearchPayload(pageNumber, from, to, locationTerm, titleTerm) 
     ],
   }];
 }
+function notifyNoSearchPayload(notifyNo) {
+  return [{
+    pageSize: PAGE_SIZE,
+    pageNumber: 0,
+    sortBy: "publicDate",
+    sortType: "DESC",
+    query: [{
+      index: "es-contractor-selection",
+      keyWord: notifyNo,
+      matchType: "exact",
+      matchFields: ["notifyNo"],
+      filters: [
+        {
+          fieldName: "type",
+          searchType: "in",
+          fieldValues: ["es-notify-contractor"],
+        },
+      ],
+    }],
+  }];
+}
 
 function delay(ms) {
   return new Promise((resolveDelay) => setTimeout(resolveDelay, ms));
@@ -172,6 +199,36 @@ async function mapLimited(values, concurrency, mapper) {
   }
   await Promise.all(Array.from({ length: Math.min(concurrency, values.length) }, worker));
   return results;
+}
+async function fetchForcedNotifyNos() {
+  const results = await mapLimited(
+    FORCED_NOTIFY_NOS,
+    2,
+    async (notifyNo) => {
+      try {
+        const payload = await postJson(
+          SEARCH_URL,
+          notifyNoSearchPayload(notifyNo),
+        );
+
+        const items = payload.page?.content || [];
+
+        process.stdout.write(
+          `Tìm trực tiếp ${notifyNo}: ${items.length} bản ghi\n`,
+        );
+
+        return items;
+      } catch (error) {
+        process.stderr.write(
+          `Không tìm được ${notifyNo}: ${error.message}\n`,
+        );
+
+        return [];
+      }
+    },
+  );
+
+  return results.flat();
 }
 
 async function fetchWindow(window, windowIndex, totalWindows) {
@@ -292,16 +349,60 @@ function isMedical(item) {
 
   // Tiêu đề chung chỉ được nhận khi vừa có vật tư/hóa chất, vừa có ngữ cảnh khám chữa bệnh,
   // và chủ đầu tư rõ ràng là cơ sở y tế. Không dùng tên chủ đầu tư làm điều kiện duy nhất.
-  const medicalInvestors = [
-    "so y te", "benh vien", "trung tam y te", "tram y te", "trung tam kiem soat benh tat",
-    "cdc", "phong kham", "benh xa", "y khoa", "y duoc", "da khoa", "chuyen khoa",
-    "trung tam phap y", "trung tam kiem nghiem",
-  ];
-  const genericSupplyTerms = ["vat tu", "hoa chat", "sinh pham", "dung cu"];
-  const clinicalTerms = ["kham chua benh", "kham benh", "chua benh", "dieu tri", "phong mo"];
-  return medicalInvestors.some((term) => investor.includes(term))
-    && genericSupplyTerms.some((term) => title.includes(term))
-    && clinicalTerms.some((term) => title.includes(term));
+ const medicalInvestors = [
+  "so y te",
+  "benh vien",
+  "trung tam y te",
+  "tram y te",
+  "trung tam kiem soat benh tat",
+  "cdc",
+  "phong kham",
+  "benh xa",
+  "y khoa",
+  "y duoc",
+  "da khoa",
+  "chuyen khoa",
+  "trung tam phap y",
+  "trung tam kiem nghiem",
+];
+
+const genericSupplyTerms = [
+  "vat tu",
+  "hoa chat",
+  "sinh pham",
+  "dung cu",
+];
+
+const clinicalTerms = [
+  "kham chua benh",
+  "kham benh",
+  "chua benh",
+  "dieu tri",
+  "phong mo",
+];
+
+const isMedicalInvestor = medicalInvestors.some(
+  (term) => investor.includes(term),
+);
+
+const hasGenericSupply = genericSupplyTerms.some(
+  (term) => title.includes(term),
+);
+
+const hasClinicalContext = clinicalTerms.some(
+  (term) => title.includes(term),
+);
+
+const hasMedicalSupplyBundle =
+  (title.includes("mua sam") || title.includes("danh muc"))
+  && title.includes("vat tu")
+  && title.includes("hoa chat");
+
+return isMedicalInvestor
+  && (
+    hasMedicalSupplyBundle
+    || (hasGenericSupply && hasClinicalContext)
+  );
 }
 
 function isStoredTenderMedical(tender) {
@@ -800,8 +901,16 @@ async function main() {
   const windowConcurrency = fullRefresh ? 1 : 2;
   const provinceItems = (await mapLimited(windows, windowConcurrency, (window, index) =>
     fetchWindow(window, index, windows.length))).flat();
-  const historicalFallbackItems = fullRefresh ? await fetchHistoricalFallback() : [];
-  const allItems = [...provinceItems, ...historicalFallbackItems];
+const historicalFallbackItems =
+  fullRefresh ? await fetchHistoricalFallback() : [];
+
+const forcedNotifyItems = await fetchForcedNotifyNos();
+
+const allItems = [
+  ...provinceItems,
+  ...historicalFallbackItems,
+  ...forcedNotifyItems,
+];
   const allUnique = new Map();
   allItems.forEach((item) => {
     const key = item.notifyId || item.id || item.notifyNo;
