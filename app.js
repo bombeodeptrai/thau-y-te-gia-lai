@@ -207,46 +207,101 @@ function formatDate(value, withTime = false) {
   }).format(date);
 }
 
-function csvCell(value) {
-  return `"${String(value ?? "").replaceAll('"', '""')}"`;
+// ==========================================
+// CẬP NHẬT: XUẤT FILE EXCEL (.xlsx)
+// Đã thay thế chức năng tải file CSV bằng thư viện ExcelJS
+// File Excel xuất ra chỉ gồm 4 cột: Số lượng máy, Tên loại máy, Thông số kỹ thuật, Đơn vị sử dụng.
+// Có định dạng kẻ ô, font Times New Roman, wrap text và cố định hàng tiêu đề.
+// ==========================================
+function loadExcelJS() {
+  if (window.ExcelJS) return Promise.resolve(window.ExcelJS);
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js";
+    script.onload = () => resolve(window.ExcelJS);
+    script.onerror = () => reject(new Error("Không tải được thư viện ExcelJS"));
+    document.head.appendChild(script);
+  });
 }
 
-function downloadTechnicalCsv(tender) {
+async function downloadTechnicalXlsx(tender, button) {
   const items = state.detailsByNotifyNo[tender.notifyNo]?.technicalRequirements?.items || [];
   if (!items.length) return;
-  const columns = [
-    ["Mã TBMT", () => tender.notifyNo],
-    ["Tên gói thầu", () => tender.name],
-    ["Mã phần/lô", (item) => item.lotNo],
-    ["Tên phần/lô", (item) => item.lotName],
-    ["STT e-HSMT", (item) => item.position],
-    ["Tên hàng hóa/thiết bị", (item) => item.name],
-    ["Đơn vị tính", (item) => item.unit],
-    ["Khối lượng", (item) => item.quantity || ""],
-    ["Mã/Ký hiệu", (item) => item.code],
-    ["Nhãn hiệu", (item) => item.brand],
-    ["Hãng sản xuất", (item) => item.manufacturer],
-    ["Xuất xứ", (item) => item.origin],
-    ["Năm sản xuất", (item) => item.manufactureYear],
-    ["Thông số kỹ thuật", (item) => item.specification],
-    ["Yêu cầu khác", (item) => item.otherRequirement],
-    ["Nơi thực hiện", (item) => item.projectPlace],
-    ["Thời gian giao sớm", (item) => item.earliestDeliveryDate],
-    ["Thời gian giao muộn", (item) => item.latestDeliveryDate],
-  ];
-  const lines = [
-    columns.map(([label]) => csvCell(label)).join(";"),
-    ...items.map((item) => columns.map(([, value]) => csvCell(value(item))).join(";")),
-  ];
-  const blob = new Blob([`\uFEFF${lines.join("\r\n")}`], { type: "text/csv;charset=utf-8" });
-  const href = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = href;
-  link.download = `${tender.notifyNo}-thong-so-ky-thuat-e-HSMT.csv`;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  setTimeout(() => URL.revokeObjectURL(href), 0);
+  
+  const originalText = button.textContent;
+  button.textContent = "Đang tạo file...";
+  button.disabled = true;
+
+  try {
+    const ExcelJS = await loadExcelJS();
+    const workbook = new ExcelJS.Workbook();
+    const sheet = workbook.addWorksheet("Thong_so_ky_thuat");
+    
+    // Cố định hàng tiêu đề
+    sheet.views = [{ state: 'frozen', xSplit: 0, ySplit: 1 }];
+    
+    // Khai báo cột
+    sheet.columns = [
+      { header: "Số lượng máy", key: "quantity", width: 15 },
+      { header: "Tên loại máy", key: "name", width: 30 },
+      { header: "Thông số kỹ thuật", key: "specification", width: 70 },
+      { header: "Đơn vị sử dụng", key: "place", width: 30 }
+    ];
+    
+    // Bật Auto Filter cho toàn bộ vùng
+    sheet.autoFilter = 'A1:D1';
+    
+    const borderStyle = {
+      top: { style: 'thin' },
+      left: { style: 'thin' },
+      bottom: { style: 'thin' },
+      right: { style: 'thin' }
+    };
+    const fontStyle = { name: 'Times New Roman', size: 12 };
+
+    // Header style
+    const headerRow = sheet.getRow(1);
+    headerRow.font = { name: 'Times New Roman', size: 12, bold: true };
+    headerRow.alignment = { vertical: 'middle', horizontal: 'center' };
+    headerRow.eachCell((cell) => {
+      cell.border = borderStyle;
+    });
+    
+    // Đổ dữ liệu toàn bộ item (không giới hạn 40 dòng)
+    items.forEach(item => {
+      const row = sheet.addRow({
+        quantity: item.quantity || "",
+        name: item.name || "",
+        specification: item.specification || "",
+        place: item.projectPlace || tender.investor || ""
+      });
+      row.eachCell((cell, colNumber) => {
+        cell.font = fontStyle;
+        cell.border = borderStyle;
+        cell.alignment = colNumber === 3 
+          ? { wrapText: true, vertical: 'top' } 
+          : { vertical: 'top' };
+      });
+    });
+    
+    // Generate and download
+    const buffer = await workbook.xlsx.writeBuffer();
+    const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+    const href = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = href;
+    link.download = `${tender.notifyNo}-thong-so-ky-thuat.xlsx`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(href), 100);
+  } catch (error) {
+    alert("Có lỗi xảy ra khi tạo file Excel. Vui lòng thử lại.");
+    console.error(error);
+  } finally {
+    button.textContent = originalText;
+    button.disabled = false;
+  }
 }
 
 function withinDays(tender) {
@@ -475,9 +530,9 @@ function technicalRequirementsMarkup(detail, tender) {
     </article>`;
   }).join("");
   const limitNote = items.length > visibleItems.length
-    ? `<p class="result-limit-note">Đang hiển thị nhanh ${visibleItems.length}/${items.length} mặt hàng. Tệp CSV chứa đầy đủ toàn bộ dữ liệu.</p>`
+    ? `<p class="result-limit-note">Đang hiển thị nhanh ${visibleItems.length}/${items.length} mặt hàng. Tệp Excel chứa đầy đủ toàn bộ dữ liệu.</p>`
     : "";
-  return `<div class="technical-requirements-list"><div class="equipment-heading"><div><span>THÔNG SỐ KỸ THUẬT E-HSMT</span><strong>${items.length} mặt hàng trích trực tiếp từ biểu mẫu công khai</strong></div><button class="technical-download-button" data-action="download-tech" data-id="${escapeHtml(tender.id)}" type="button">Tải bảng CSV ↧</button></div><p class="technical-source-note">Có thể mở tệp CSV bằng Excel. Dữ liệu gồm mã hàng, nhãn hiệu, hãng, xuất xứ, số lượng và toàn bộ nội dung thông số do bên mời thầu công bố.</p>${rows}${limitNote}</div>`;
+  return `<div class="technical-requirements-list"><div class="equipment-heading"><div><span>THÔNG SỐ KỸ THUẬT E-HSMT</span><strong>${items.length} mặt hàng trích trực tiếp từ biểu mẫu công khai</strong></div><button class="technical-download-button" data-action="download-tech" data-id="${escapeHtml(tender.id)}" type="button">Tải bảng Excel ↧</button></div><p class="technical-source-note">Tệp XLSX cố định hàng tiêu đề, wrap text thông số và có thể lọc dữ liệu. Bao gồm số lượng, tên máy, thông số kỹ thuật và đơn vị sử dụng.</p>${rows}${limitNote}</div>`;
 }
 
 function detailMarkup(tender) {
@@ -745,7 +800,7 @@ elements.list.addEventListener("click", (event) => {
     localStorage.setItem(SAVED_KEY, JSON.stringify(state.saved));
   } else if (button.dataset.action === "download-tech") {
     const tender = state.tenders.find((item) => String(item.id) === id);
-    if (tender) downloadTechnicalCsv(tender);
+    if (tender) downloadTechnicalXlsx(tender, button);
     return;
   } else if (button.dataset.action === "expand") {
     const tender = state.tenders.find((item) => String(item.id) === id);
