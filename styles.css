@@ -988,7 +988,8 @@ select:focus-visible {
 
 .bidder-list,
 .equipment-list,
-.requirements-list { padding-top: 14px; }
+.requirements-list,
+.technical-requirements-list { padding-top: 14px; }
 
 .bidder-item {
   display: grid;
@@ -1099,6 +1100,47 @@ select:focus-visible {
   color: white;
   background: var(--forest);
   border-color: var(--forest);
+}
+
+.technical-download-button {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  color: white;
+  font: inherit;
+  font-size: 9px;
+  font-weight: 800;
+  background: var(--forest);
+  border: 1px solid var(--forest);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.technical-download-button:hover {
+  color: var(--forest);
+  background: white;
+}
+
+.technical-source-note {
+  padding: 9px 11px;
+  margin: 8px 0 2px;
+  color: #456456;
+  font-size: 9px;
+  line-height: 1.55;
+  background: #edf6ed;
+  border-left: 2px solid var(--forest);
+  border-radius: 0 6px 6px 0;
+}
+
+.technical-requirement-item .equipment-index {
+  color: white;
+  background: var(--forest);
+}
+
+.technical-quantity strong {
+  color: var(--forest);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 800;
 }
 
 .requirement-summary,
@@ -1620,6 +1662,8 @@ select:focus-visible {
   .result-summary { grid-template-columns: 1fr; }
   .result-summary strong { overflow-wrap: anywhere; }
   .equipment-heading { align-items: flex-start; flex-direction: column; }
+  .official-document-link,
+  .technical-download-button { width: 100%; min-height: 42px; text-align: center; }
   .bidder-item { grid-template-columns: 25px minmax(0, 1fr); }
   .bidder-copy,
   .equipment-copy { min-width: 0; overflow-wrap: anywhere; }
