@@ -121,6 +121,7 @@ function equipmentSearchText(item) {
     item.brand,
     item.manufacturer,
     item.origin,
+    item.lotNo,
   ].filter(Boolean).join(" "));
 }
 
@@ -324,7 +325,9 @@ function bidderMarkup(detail, tender) {
 
 function equipmentMarkup(detail, tender) {
   if (!detail?.items?.length) {
-    const message = tender.status === "evaluating"
+    const message = ["open", "urgent"].includes(tender.status)
+      ? "Model, hãng và đơn giá trúng thầu sẽ được bổ sung sau khi có kết quả lựa chọn nhà thầu. Danh mục đang mời được hiển thị phía trên."
+      : tender.status === "evaluating"
       ? "Model và cấu hình chào thầu thường chỉ được nguồn công khai công bố sau khi có kết quả lựa chọn nhà thầu."
       : "Chưa có danh mục model/đơn giá chi tiết trong dữ liệu công khai. Kết quả có thể được bổ sung sau.";
     return `<div class="detail-notice">${escapeHtml(message)}</div>`;
@@ -361,6 +364,37 @@ function equipmentMarkup(detail, tender) {
   return `<div class="equipment-list"><div class="equipment-heading"><div><span>HÀNG HÓA TRÚNG THẦU</span><strong>${detail.total} mặt hàng được công bố</strong></div><span>Đơn giá đã công bố</span></div>${items}${limitNote}</div>`;
 }
 
+function requirementsMarkup(detail, tender) {
+  const requirements = detail?.requirements;
+  const items = requirements?.items || [];
+  if (!items.length) {
+    if (!["open", "urgent", "evaluating"].includes(tender.status)) return "";
+    const message = requirements?.disclosure === "temporarily-unavailable"
+      ? "Tạm thời chưa tải được danh mục phần/lô mời thầu từ dữ liệu kế hoạch công khai. Hệ thống sẽ tự thử lại ở lần cập nhật tiếp theo."
+      : "Nguồn kế hoạch chưa tách danh mục phần/lô cho gói này. Hãy mở E-HSMT chính thức để xem yêu cầu kỹ thuật chi tiết.";
+    return `<div class="requirements-list"><div class="equipment-heading"><div><span>DANH MỤC MỜI THẦU</span><strong>Yêu cầu kỹ thuật và thiết bị được mời</strong></div><a class="official-document-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Mở E-HSMT ↗</a></div><div class="detail-notice">${escapeHtml(message)}</div></div>`;
+  }
+
+  const rows = items.map((item, index) => {
+    const facts = [
+      item.lotNo ? `<span><b>Mã phần/lô:</b> ${escapeHtml(item.lotNo)}</span>` : "",
+      Number(item.quantity) ? `<span><b>Khối lượng:</b> ${escapeHtml(new Intl.NumberFormat("vi-VN").format(item.quantity))} ${escapeHtml(item.unit || "")}</span>` : "",
+    ].filter(Boolean).join("");
+    const specification = item.specification
+      ? `<details class="technical-spec"><summary>Yêu cầu/tiêu chuẩn kỹ thuật</summary><p>${escapeHtml(item.specification)}</p></details>`
+      : "";
+    return `<article class="equipment-item requirement-item">
+      <span class="equipment-index">${index + 1}</span>
+      <div class="equipment-copy"><h4>${escapeHtml(item.name)}</h4><div class="equipment-facts">${facts}</div>${specification}</div>
+      <div class="equipment-price requirement-price"><strong title="${escapeHtml(formatMoney(item.plannedPrice, false))}">${escapeHtml(formatMoney(item.plannedPrice))}</strong><span>Giá kế hoạch phần/lô</span></div>
+    </article>`;
+  }).join("");
+  const summary = requirements.summary
+    ? `<p class="requirement-summary"><b>Phạm vi:</b> ${escapeHtml(requirements.summary)}</p>`
+    : "";
+  return `<div class="requirements-list"><div class="equipment-heading"><div><span>DANH MỤC MỜI THẦU</span><strong>${items.length} phần/lô từ kế hoạch công khai</strong></div><a class="official-document-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Mở E-HSMT ↗</a></div>${summary}${rows}<p class="requirement-source-note">Tên phần/lô và giá kế hoạch lấy từ KHLCNT công khai. Cấu hình chi tiết chỉ hiển thị khi nguồn chính thức công bố không qua CAPTCHA; E-HSMT vẫn là tài liệu đối chiếu cuối cùng.</p></div>`;
+}
+
 function detailMarkup(tender) {
   const detail = state.detailsByNotifyNo[tender.notifyNo];
   const winners = tender.winnerNames?.length ? tender.winnerNames.join("; ") : "Chưa công bố kết quả";
@@ -371,16 +405,17 @@ function detailMarkup(tender) {
     const price = Number(bidder.finalPrice) || Number(bidder.bidPrice) || 0;
     return price && (!lowest || price < lowest) ? price : lowest;
   }, 0);
+  const invitedCount = Number(detail?.requirements?.total) || detail?.requirements?.items?.length || 0;
   const summary = tender.hasResult
     ? `<div><span>Đơn vị trúng thầu</span><strong>${escapeHtml(winners)}</strong></div>
       <div><span>Giá trúng thầu</span><strong>${escapeHtml(formatMoney(tender.winningPrice))}</strong></div>
       <div><span>Ngày quyết định</span><strong>${escapeHtml(formatDate(tender.decisionDate))}</strong></div>`
-    : `<div><span>Nhà thầu tham dự</span><strong>${uniqueBidderCount ? `${uniqueBidderCount} nhà thầu` : "Chưa công bố"}</strong></div>
+    : `<div><span>Danh mục mời thầu</span><strong>${invitedCount ? `${invitedCount} phần/lô` : "Chưa tách danh mục"}</strong></div>
       <div><span>Giá dự thầu thấp nhất</span><strong>${escapeHtml(formatMoney(lowestBid))}</strong></div>
       <div><span>Giai đoạn</span><strong>${escapeHtml(statusLabels[tender.status] || tender.status)}</strong></div>`;
-  let detailBody = `${bidderMarkup(detail, tender)}${equipmentMarkup(detail, tender)}`;
+  let detailBody = `${requirementsMarkup(detail, tender)}${bidderMarkup(detail, tender)}${equipmentMarkup(detail, tender)}`;
   if (state.detailLoading === tender.id) {
-    detailBody = '<div class="detail-loading"><span></span>Đang tải danh sách nhà thầu, model thiết bị và kết quả đánh giá…</div>';
+    detailBody = '<div class="detail-loading"><span></span>Đang tải danh mục mời thầu, yêu cầu kỹ thuật, nhà thầu và kết quả…</div>';
   } else if (state.detailErrors[tender.id]) {
     detailBody = `<div class="detail-notice error">${escapeHtml(state.detailErrors[tender.id])}</div>`;
   }
@@ -389,7 +424,7 @@ function detailMarkup(tender) {
       ${summary}
     </div>
     ${detailBody}
-    <div class="detail-footer"><span>Dữ liệu kỹ thuật chỉ hiển thị khi đã được công bố công khai.</span><a href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xem hồ sơ chính thức ↗</a></div>
+    <div class="detail-footer"><span>Dữ liệu được đối chiếu từ KHLCNT, biên bản mở thầu và kết quả công khai.</span><a href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xem hồ sơ chính thức ↗</a></div>
   </section>`;
 }
 
@@ -401,7 +436,7 @@ async function toggleDetails(tender) {
   }
   state.expandedId = tender.id;
   render();
-  const hasPublicDetail = tender.hasResult || ["evaluating", "closed"].includes(tender.status);
+  const hasPublicDetail = tender.hasResult || ["open", "urgent", "evaluating", "closed"].includes(tender.status);
   if (!hasPublicDetail || state.detailsByNotifyNo[tender.notifyNo]) return;
 
   state.detailLoading = tender.id;
@@ -431,7 +466,8 @@ function equipmentSearchMatchMarkup(tender) {
   const visible = matches.slice(0, 2).map((item) => {
     const model = displayEquipmentValue(item.model);
     const brand = displayEquipmentValue(item.brand);
-    const facts = [model ? `Model: ${model}` : "", brand ? `Nhãn hiệu: ${brand}` : ""]
+    const stage = item.stage === "invitation" ? "Đang mời thầu" : "Đã có kết quả";
+    const facts = [stage, item.lotNo ? `Lô: ${item.lotNo}` : "", model ? `Model: ${model}` : "", brand ? `Nhãn hiệu: ${brand}` : ""]
       .filter(Boolean)
       .join(" · ");
     return `<div class="equipment-search-match-item"><strong>${escapeHtml(displayEquipmentValue(item.name) || "Mặt hàng thiết bị")}</strong>${facts ? `<span>${escapeHtml(facts)}</span>` : ""}</div>`;
@@ -439,7 +475,7 @@ function equipmentSearchMatchMarkup(tender) {
   const remainder = matches.length > 2
     ? `<span class="equipment-search-more">+${matches.length - 2} mặt hàng khác</span>`
     : "";
-  return `<div class="equipment-search-match"><div class="equipment-search-match-heading"><span>Khớp danh mục thiết bị/model</span><b>${matches.length} mặt hàng</b></div>${visible}${remainder}</div>`;
+  return `<div class="equipment-search-match"><div class="equipment-search-match-heading"><span>Khớp danh mục mời thầu/thiết bị/model</span><b>${matches.length} mặt hàng</b></div>${visible}${remainder}</div>`;
 }
 
 function tenderMarkup(tender) {

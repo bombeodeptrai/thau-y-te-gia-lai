@@ -7,6 +7,7 @@ const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bi
 const BID_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/bid-open?token=public";
 const LOT_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/lotOpenDetail?token=public";
 const CONTRACTOR_RESULT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=public";
+const PLAN_BID_DETAIL_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt/bid-po-bidp-plan-project-view/get-bidp-plan-detail-by-id?token=public";
 const PROVINCE_CODE = "52";
 const DAYS = 3 * 365;
 const INCREMENTAL_DAYS = 14;
@@ -49,6 +50,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "data/tenders.json");
 const biddersOutputPath = resolve(root, "data/bidders.json");
 const equipmentOutputPath = resolve(root, "data/equipment.json");
+const requirementsOutputPath = resolve(root, "data/requirements.json");
 const detailsDir = resolve(root, "data/details");
 
 function normalizeText(value) {
@@ -581,10 +583,56 @@ function openingDetails(bidOpenPayload, lotOpenPayload) {
   return [...unique.values()];
 }
 
+function normalizeRequirement(item) {
+  return {
+    id: String(item.id || crypto.randomUUID()),
+    lotNo: compactText(item.lotNo),
+    name: compactText(item.lotName || item.tenThuoc || item.bidName) || "Phần/lô chưa có tên",
+    quantity: numberOrZero(item.quantity),
+    unit: compactText(item.uom),
+    plannedPrice: numberOrZero(item.lotPrice ?? item.lotEstimatePrice ?? item.pricePlan),
+    specification: compactText(item.qualityStandards),
+    sourceStage: "invitation",
+  };
+}
+
+async function fetchTenderRequirements(tender) {
+  if (!tender.bidId) {
+    return {
+      total: 0,
+      items: [],
+      summary: "",
+      disclosure: "missing-plan-detail-id",
+    };
+  }
+  const payload = await postJson(PLAN_BID_DETAIL_URL, { id: tender.bidId }, 35_000);
+  const lots = Array.isArray(payload?.bidpBidLotList) ? payload.bidpBidLotList : [];
+  const unique = new Map();
+  lots.forEach((item) => {
+    const normalized = normalizeRequirement(item);
+    const key = normalized.id || `${normalized.lotNo}|${normalized.name}`;
+    unique.set(key, normalized);
+  });
+  const items = [...unique.values()];
+  return {
+    total: items.length,
+    items,
+    summary: compactText(payload?.generalTasks),
+    disclosure: items.length ? "public-plan-lots" : "plan-summary-only",
+  };
+}
+
 async function fetchTenderDetails(tender) {
   let bidders = [];
   let items = [];
   let pricingTotal = 0;
+  const requirementsPromise = fetchTenderRequirements(tender).catch((error) => ({
+    total: 0,
+    items: [],
+    summary: "",
+    disclosure: "temporarily-unavailable",
+    error: error.message,
+  }));
 
   if (tender.inputResultId) {
     const [resultResponse, pricingResponse] = await Promise.allSettled([
@@ -621,11 +669,14 @@ async function fetchTenderDetails(tender) {
     items = pricing.items;
   }
 
+  const requirements = await requirementsPromise;
+
   return {
     schemaVersion: DETAIL_SCHEMA_VERSION,
     total: Math.max(pricingTotal, items.length),
     bidders,
     items,
+    requirements,
     modelDisclosure: bidders.some((bidder) => bidder.status === "lost")
       ? "winning-bidders-only"
       : "as-published",
@@ -654,11 +705,13 @@ async function previousData() {
 function shouldRefreshDetails(tender, cached) {
   if (!cached) return true;
   if (Number(cached.schemaVersion || 0) < DETAIL_SCHEMA_VERSION) return true;
+  if (["open", "urgent"].includes(tender.status)
+    && cached.requirements?.disclosure !== "public-plan-lots") return true;
   const fetchedAt = new Date(cached.fetchedAt || 0).getTime();
   if (!fetchedAt) return true;
   const resultPublishedAt = new Date(tender.resultPublishedDate || 0).getTime();
   if (resultPublishedAt > fetchedAt) return true;
-  const refreshAfter = tender.status === "evaluating"
+  const refreshAfter = ["open", "urgent", "evaluating"].includes(tender.status)
     ? 60 * 60 * 1000
     : (cached.items?.length ? 7 * 24 * 60 * 60 * 1000 : 24 * 60 * 60 * 1000);
   return Date.now() - fetchedAt >= refreshAfter;
@@ -757,16 +810,16 @@ async function main() {
 
   const detailsByNotifyNo = { ...(previous.detailsByNotifyNo || {}) };
   const detailCandidates = tenders.filter((tender) =>
-    tender.hasResult || ["evaluating", "closed"].includes(tender.status));
+    tender.hasResult || ["open", "urgent", "evaluating", "closed"].includes(tender.status));
   const detailsToRefresh = detailCandidates
     .filter((tender) => shouldRefreshDetails(tender, detailsByNotifyNo[tender.notifyNo]));
-  process.stdout.write(`Chi tiết: làm mới ${detailsToRefresh.length}/${detailCandidates.length} gói có mở thầu/kết quả\n`);
+  process.stdout.write(`Chi tiết: làm mới ${detailsToRefresh.length}/${detailCandidates.length} gói mời thầu/mở thầu/kết quả\n`);
   await mapLimited(detailsToRefresh, 3, async (tender) => {
     try {
       detailsByNotifyNo[tender.notifyNo] = await fetchTenderDetails(tender);
       const detail = detailsByNotifyNo[tender.notifyNo];
       process.stdout.write(
-        `Chi tiết ${tender.notifyNo}: ${detail.bidders.length} nhà thầu, ${detail.items.length} mặt hàng\n`,
+        `Chi tiết ${tender.notifyNo}: ${detail.requirements?.items?.length || 0} phần/lô mời, ${detail.bidders.length} nhà thầu, ${detail.items.length} mặt hàng trúng\n`,
       );
     } catch (error) {
       process.stderr.write(`Bỏ qua chi tiết ${tender.notifyNo}: ${error.message}\n`);
@@ -792,6 +845,15 @@ async function main() {
   const equipment = Object.entries(detailsByNotifyNo).flatMap(([notifyNo, detail]) => {
     const tender = tenderByNotifyNo.get(notifyNo);
     return (detail.items || []).map((item) => ({
+      notifyNo,
+      tenderName: tender?.name || "",
+      sourceUrl: tender?.sourceUrl || "",
+      ...item,
+    }));
+  });
+  const requirements = Object.entries(detailsByNotifyNo).flatMap(([notifyNo, detail]) => {
+    const tender = tenderByNotifyNo.get(notifyNo);
+    return (detail.requirements?.items || []).map((item) => ({
       notifyNo,
       tenderName: tender?.name || "",
       sourceUrl: tender?.sourceUrl || "",
@@ -827,9 +889,10 @@ async function main() {
   );
   await writeFile(biddersOutputPath, `${JSON.stringify({ bidders, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
   await writeFile(equipmentOutputPath, `${JSON.stringify({ equipment, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
+  await writeFile(requirementsOutputPath, `${JSON.stringify({ requirements, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
   process.stdout.write(
-    `Đã lưu ${enrichedTenders.length} gói, ${bidders.length} dòng nhà thầu và ${equipment.length} mặt hàng\n`,
+    `Đã lưu ${enrichedTenders.length} gói, ${requirements.length} phần/lô mời, ${bidders.length} dòng nhà thầu và ${equipment.length} mặt hàng trúng\n`,
   );
 }
 

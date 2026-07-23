@@ -13,6 +13,8 @@ Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 - Loại khỏi danh sách chính các gói thuốc, vắc xin, xây dựng, CNTT, xe, bàn ghế, đồng phục, xử lý rác, dịch vụ sửa chữa/bảo trì và vật tư nông nghiệp.
 - Trạng thái lấy từ mã chính thức của nguồn để phân biệt `Đang xét thầu`, `Đã đóng – chưa có kết quả`, `Đã có kết quả` và `Đã hủy/không lựa chọn`; không chỉ suy đoán từ hạn đóng thầu.
 - Sau mở thầu, hệ thống lấy tên các nhà thầu tham dự và giá dự thầu từ biên bản mở thầu công khai.
+- Với gói mới/đang mời thầu, hệ thống lấy danh sách phần/lô, tên thiết bị/vật tư và giá kế hoạch từ dữ liệu KHLCNT công khai; danh mục này cũng được đưa vào chỉ mục tìm kiếm.
+- Cấu hình E-HSMT chi tiết chỉ được liên kết về trang chính thức khi cổng nguồn yêu cầu reCAPTCHA. Hệ thống không tự giải hoặc vượt CAPTCHA và không suy đoán thông số kỹ thuật.
 - Khi có kết quả, hệ thống phân biệt nhà thầu trúng/không trúng, giá, lý do không trúng; đồng thời lấy danh mục hàng hóa trúng thầu, model, hãng, xuất xứ, đơn giá và cấu hình kỹ thuật nếu nguồn chính thức đã công bố.
 - Nguồn công khai hiện không trả model của hồ sơ không trúng. Giao diện ghi rõ `Nguồn công khai chưa công bố` thay vì suy đoán.
 - Danh sách được phân trang; dữ liệu hàng hóa trúng thầu cũng được lấy hết các trang thay vì chỉ 20 mặt hàng đầu.

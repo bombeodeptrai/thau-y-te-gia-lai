@@ -987,7 +987,8 @@ select:focus-visible {
 .detail-notice.error { color: #a24f31; }
 
 .bidder-list,
-.equipment-list { padding-top: 14px; }
+.equipment-list,
+.requirements-list { padding-top: 14px; }
 
 .bidder-item {
   display: grid;
@@ -1081,6 +1082,45 @@ select:focus-visible {
 }
 
 .equipment-heading strong { color: var(--forest); font-size: 12px; }
+
+.official-document-link {
+  flex: 0 0 auto;
+  padding: 6px 9px;
+  color: var(--forest);
+  font-size: 9px;
+  font-weight: 800;
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.official-document-link:hover {
+  color: white;
+  background: var(--forest);
+  border-color: var(--forest);
+}
+
+.requirement-summary,
+.requirement-source-note {
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.requirement-summary {
+  padding: 9px 11px;
+  margin: 8px 0 2px;
+  background: #f2f7f1;
+  border-left: 2px solid var(--sage);
+  border-radius: 0 6px 6px 0;
+}
+
+.requirement-summary b { color: var(--forest-2); }
+
+.requirement-price strong { color: var(--forest); }
+
+.requirement-source-note { margin: 10px 0 0; }
 
 .equipment-item {
   display: grid;
