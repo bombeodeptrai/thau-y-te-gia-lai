@@ -122,6 +122,7 @@ function equipmentSearchText(item) {
     item.manufacturer,
     item.origin,
     item.lotNo,
+    item.lotName,
   ].filter(Boolean).join(" "));
 }
 
@@ -204,6 +205,48 @@ function formatDate(value, withTime = false) {
     year: "numeric",
     ...(withTime ? { hour: "2-digit", minute: "2-digit" } : {}),
   }).format(date);
+}
+
+function csvCell(value) {
+  return `"${String(value ?? "").replaceAll('"', '""')}"`;
+}
+
+function downloadTechnicalCsv(tender) {
+  const items = state.detailsByNotifyNo[tender.notifyNo]?.technicalRequirements?.items || [];
+  if (!items.length) return;
+  const columns = [
+    ["Mã TBMT", () => tender.notifyNo],
+    ["Tên gói thầu", () => tender.name],
+    ["Mã phần/lô", (item) => item.lotNo],
+    ["Tên phần/lô", (item) => item.lotName],
+    ["STT e-HSMT", (item) => item.position],
+    ["Tên hàng hóa/thiết bị", (item) => item.name],
+    ["Đơn vị tính", (item) => item.unit],
+    ["Khối lượng", (item) => item.quantity || ""],
+    ["Mã/Ký hiệu", (item) => item.code],
+    ["Nhãn hiệu", (item) => item.brand],
+    ["Hãng sản xuất", (item) => item.manufacturer],
+    ["Xuất xứ", (item) => item.origin],
+    ["Năm sản xuất", (item) => item.manufactureYear],
+    ["Thông số kỹ thuật", (item) => item.specification],
+    ["Yêu cầu khác", (item) => item.otherRequirement],
+    ["Nơi thực hiện", (item) => item.projectPlace],
+    ["Thời gian giao sớm", (item) => item.earliestDeliveryDate],
+    ["Thời gian giao muộn", (item) => item.latestDeliveryDate],
+  ];
+  const lines = [
+    columns.map(([label]) => csvCell(label)).join(";"),
+    ...items.map((item) => columns.map(([, value]) => csvCell(value(item))).join(";")),
+  ];
+  const blob = new Blob([`\uFEFF${lines.join("\r\n")}`], { type: "text/csv;charset=utf-8" });
+  const href = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = href;
+  link.download = `${tender.notifyNo}-thong-so-ky-thuat-e-HSMT.csv`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(href), 0);
 }
 
 function withinDays(tender) {
@@ -395,6 +438,48 @@ function requirementsMarkup(detail, tender) {
   return `<div class="requirements-list"><div class="equipment-heading"><div><span>DANH MỤC MỜI THẦU</span><strong>${items.length} phần/lô từ kế hoạch công khai</strong></div><a class="official-document-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Mở E-HSMT ↗</a></div>${summary}${rows}<p class="requirement-source-note">Tên phần/lô và giá kế hoạch lấy từ KHLCNT công khai. Cấu hình chi tiết chỉ hiển thị khi nguồn chính thức công bố không qua CAPTCHA; E-HSMT vẫn là tài liệu đối chiếu cuối cùng.</p></div>`;
 }
 
+function technicalRequirementsMarkup(detail, tender) {
+  const technical = detail?.technicalRequirements;
+  const items = technical?.items || [];
+  if (!items.length) {
+    if (!["open", "urgent", "evaluating"].includes(tender.status)) return "";
+    const message = technical?.disclosure === "temporarily-unavailable"
+      ? "Nguồn biểu mẫu e-HSMT đang tạm thời chưa phản hồi; hệ thống sẽ tự thử lại ở lần cập nhật tiếp theo."
+      : "Gói này yêu cầu xác nhận reCAPTCHA trên cổng chính thức trước khi xem toàn bộ biểu mẫu e-HSMT. Website không tự giải CAPTCHA.";
+    return `<div class="technical-requirements-list"><div class="equipment-heading"><div><span>THÔNG SỐ KỸ THUẬT E-HSMT</span><strong>Hồ sơ đầy đủ trên nguồn chính thức</strong></div><a class="official-document-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xác nhận và mở hồ sơ ↗</a></div><div class="detail-notice">${escapeHtml(message)}</div></div>`;
+  }
+
+  const visibleItems = items.slice(0, 40);
+  const rows = visibleItems.map((item, index) => {
+    const facts = [
+      item.lotName ? `<span><b>Phần/lô:</b> ${escapeHtml(item.lotName)}</span>` : "",
+      item.code ? `<span><b>Mã/Ký hiệu:</b> ${escapeHtml(item.code)}</span>` : "",
+      item.brand ? `<span><b>Nhãn hiệu:</b> ${escapeHtml(item.brand)}</span>` : "",
+      item.manufacturer ? `<span><b>Hãng:</b> ${escapeHtml(item.manufacturer)}</span>` : "",
+      item.origin ? `<span><b>Xuất xứ:</b> ${escapeHtml(item.origin)}</span>` : "",
+      item.manufactureYear ? `<span><b>Năm SX:</b> ${escapeHtml(item.manufactureYear)}</span>` : "",
+    ].filter(Boolean).join("");
+    const specification = item.specification
+      ? `<details class="technical-spec"><summary>Xem thông số kỹ thuật</summary><p>${escapeHtml(item.specification)}</p></details>`
+      : "";
+    const otherRequirement = item.otherRequirement
+      ? `<details class="technical-spec"><summary>Yêu cầu khác</summary><p>${escapeHtml(item.otherRequirement)}</p></details>`
+      : "";
+    const quantity = Number(item.quantity)
+      ? `${new Intl.NumberFormat("vi-VN").format(item.quantity)} ${escapeHtml(item.unit || "")}`
+      : escapeHtml(item.unit || "Chưa nêu");
+    return `<article class="equipment-item technical-requirement-item">
+      <span class="equipment-index">${index + 1}</span>
+      <div class="equipment-copy"><h4>${escapeHtml(item.name)}</h4><div class="equipment-facts">${facts}</div>${specification}${otherRequirement}</div>
+      <div class="equipment-price technical-quantity"><strong>${quantity}</strong><span>${escapeHtml(item.position ? `STT ${item.position}` : "Khối lượng mời thầu")}</span></div>
+    </article>`;
+  }).join("");
+  const limitNote = items.length > visibleItems.length
+    ? `<p class="result-limit-note">Đang hiển thị nhanh ${visibleItems.length}/${items.length} mặt hàng. Tệp CSV chứa đầy đủ toàn bộ dữ liệu.</p>`
+    : "";
+  return `<div class="technical-requirements-list"><div class="equipment-heading"><div><span>THÔNG SỐ KỸ THUẬT E-HSMT</span><strong>${items.length} mặt hàng trích trực tiếp từ biểu mẫu công khai</strong></div><button class="technical-download-button" data-action="download-tech" data-id="${escapeHtml(tender.id)}" type="button">Tải bảng CSV ↧</button></div><p class="technical-source-note">Có thể mở tệp CSV bằng Excel. Dữ liệu gồm mã hàng, nhãn hiệu, hãng, xuất xứ, số lượng và toàn bộ nội dung thông số do bên mời thầu công bố.</p>${rows}${limitNote}</div>`;
+}
+
 function detailMarkup(tender) {
   const detail = state.detailsByNotifyNo[tender.notifyNo];
   const winners = tender.winnerNames?.length ? tender.winnerNames.join("; ") : "Chưa công bố kết quả";
@@ -413,7 +498,7 @@ function detailMarkup(tender) {
     : `<div><span>Danh mục mời thầu</span><strong>${invitedCount ? `${invitedCount} phần/lô` : "Chưa tách danh mục"}</strong></div>
       <div><span>Giá dự thầu thấp nhất</span><strong>${escapeHtml(formatMoney(lowestBid))}</strong></div>
       <div><span>Giai đoạn</span><strong>${escapeHtml(statusLabels[tender.status] || tender.status)}</strong></div>`;
-  let detailBody = `${requirementsMarkup(detail, tender)}${bidderMarkup(detail, tender)}${equipmentMarkup(detail, tender)}`;
+  let detailBody = `${requirementsMarkup(detail, tender)}${technicalRequirementsMarkup(detail, tender)}${bidderMarkup(detail, tender)}${equipmentMarkup(detail, tender)}`;
   if (state.detailLoading === tender.id) {
     detailBody = '<div class="detail-loading"><span></span>Đang tải danh mục mời thầu, yêu cầu kỹ thuật, nhà thầu và kết quả…</div>';
   } else if (state.detailErrors[tender.id]) {
@@ -424,7 +509,7 @@ function detailMarkup(tender) {
       ${summary}
     </div>
     ${detailBody}
-    <div class="detail-footer"><span>Dữ liệu được đối chiếu từ KHLCNT, biên bản mở thầu và kết quả công khai.</span><a href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xem hồ sơ chính thức ↗</a></div>
+    <div class="detail-footer"><span>Dữ liệu được đối chiếu từ KHLCNT, biểu mẫu e-HSMT, biên bản mở thầu và kết quả công khai.</span><a href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xem hồ sơ chính thức ↗</a></div>
   </section>`;
 }
 
@@ -466,7 +551,9 @@ function equipmentSearchMatchMarkup(tender) {
   const visible = matches.slice(0, 2).map((item) => {
     const model = displayEquipmentValue(item.model);
     const brand = displayEquipmentValue(item.brand);
-    const stage = item.stage === "invitation" ? "Đang mời thầu" : "Đã có kết quả";
+    const stage = item.stage === "invitation-technical"
+      ? "Thông số e-HSMT"
+      : (item.stage === "invitation" ? "Đang mời thầu" : "Đã có kết quả");
     const facts = [stage, item.lotNo ? `Lô: ${item.lotNo}` : "", model ? `Model: ${model}` : "", brand ? `Nhãn hiệu: ${brand}` : ""]
       .filter(Boolean)
       .join(" · ");
@@ -475,7 +562,7 @@ function equipmentSearchMatchMarkup(tender) {
   const remainder = matches.length > 2
     ? `<span class="equipment-search-more">+${matches.length - 2} mặt hàng khác</span>`
     : "";
-  return `<div class="equipment-search-match"><div class="equipment-search-match-heading"><span>Khớp danh mục mời thầu/thiết bị/model</span><b>${matches.length} mặt hàng</b></div>${visible}${remainder}</div>`;
+  return `<div class="equipment-search-match"><div class="equipment-search-match-heading"><span>Khớp danh mục e-HSMT/thiết bị/model</span><b>${matches.length} mặt hàng</b></div>${visible}${remainder}</div>`;
 }
 
 function tenderMarkup(tender) {
@@ -656,6 +743,10 @@ elements.list.addEventListener("click", (event) => {
   if (button.dataset.action === "save") {
     state.saved = state.saved.includes(id) ? state.saved.filter((item) => item !== id) : [...state.saved, id];
     localStorage.setItem(SAVED_KEY, JSON.stringify(state.saved));
+  } else if (button.dataset.action === "download-tech") {
+    const tender = state.tenders.find((item) => String(item.id) === id);
+    if (tender) downloadTechnicalCsv(tender);
+    return;
   } else if (button.dataset.action === "expand") {
     const tender = state.tenders.find((item) => String(item.id) === id);
     if (tender) void toggleDetails(tender);

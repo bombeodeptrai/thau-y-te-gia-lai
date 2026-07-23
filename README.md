@@ -14,7 +14,8 @@ Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 - Trạng thái lấy từ mã chính thức của nguồn để phân biệt `Đang xét thầu`, `Đã đóng – chưa có kết quả`, `Đã có kết quả` và `Đã hủy/không lựa chọn`; không chỉ suy đoán từ hạn đóng thầu.
 - Sau mở thầu, hệ thống lấy tên các nhà thầu tham dự và giá dự thầu từ biên bản mở thầu công khai.
 - Với gói mới/đang mời thầu, hệ thống lấy danh sách phần/lô, tên thiết bị/vật tư và giá kế hoạch từ dữ liệu KHLCNT công khai; danh mục này cũng được đưa vào chỉ mục tìm kiếm.
-- Cấu hình E-HSMT chi tiết chỉ được liên kết về trang chính thức khi cổng nguồn yêu cầu reCAPTCHA. Hệ thống không tự giải hoặc vượt CAPTCHA và không suy đoán thông số kỹ thuật.
+- Với gói chào giá trực tuyến có biểu mẫu công khai, hệ thống trích trực tiếp danh mục hàng hóa và toàn bộ trường mã/ký hiệu, nhãn hiệu, hãng, xuất xứ, số lượng, thông số kỹ thuật; giao diện cho tải CSV UTF-8 để mở bằng Excel.
+- Với gói đấu thầu thông thường mà cổng nguồn yêu cầu reCAPTCHA, hệ thống liên kết về trang chính thức để người dùng xác nhận. Hệ thống không tự giải hoặc vượt CAPTCHA và không suy đoán thông số kỹ thuật.
 - Khi có kết quả, hệ thống phân biệt nhà thầu trúng/không trúng, giá, lý do không trúng; đồng thời lấy danh mục hàng hóa trúng thầu, model, hãng, xuất xứ, đơn giá và cấu hình kỹ thuật nếu nguồn chính thức đã công bố.
 - Nguồn công khai hiện không trả model của hồ sơ không trúng. Giao diện ghi rõ `Nguồn công khai chưa công bố` thay vì suy đoán.
 - Danh sách được phân trang; dữ liệu hàng hóa trúng thầu cũng được lấy hết các trang thay vì chỉ 20 mặt hàng đầu.
@@ -29,6 +30,7 @@ Thư mục [`google-apps-script`](./google-apps-script) chứa mã cài đặt c
 ## Chạy thử tại máy
 
 ```bash
+node --test scripts/technical-requirements.test.mjs
 node scripts/fetch-data.mjs
 node scripts/build-pages.mjs
 python3 -m http.server 4175 --directory dist-pages

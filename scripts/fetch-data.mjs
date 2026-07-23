@@ -1,6 +1,7 @@
 import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
@@ -8,11 +9,12 @@ const BID_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-sele
 const LOT_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/lotOpenDetail?token=public";
 const CONTRACTOR_RESULT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=public";
 const PLAN_BID_DETAIL_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt/bid-po-bidp-plan-project-view/get-bidp-plan-detail-by-id?token=public";
+const ONLINE_REOFFER_HSMT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt_tbmcgtt_hsmt";
 const PROVINCE_CODE = "52";
 const DAYS = 3 * 365;
 const INCREMENTAL_DAYS = 14;
 const STATUS_SCHEMA_VERSION = 4;
-const DETAIL_SCHEMA_VERSION = 2;
+const DETAIL_SCHEMA_VERSION = 3;
 const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
 const DETAIL_PAGE_SIZE = 20;
@@ -51,6 +53,7 @@ const outputPath = resolve(root, "data/tenders.json");
 const biddersOutputPath = resolve(root, "data/bidders.json");
 const equipmentOutputPath = resolve(root, "data/equipment.json");
 const requirementsOutputPath = resolve(root, "data/requirements.json");
+const technicalRequirementsOutputPath = resolve(root, "data/technical-requirements.json");
 const detailsDir = resolve(root, "data/details");
 
 function normalizeText(value) {
@@ -388,6 +391,9 @@ function normalizeTender(item) {
     bidId: item.bidId || "",
     bidOpenId: item.bidOpenId || "",
     inputResultId: item.inputResultId || "",
+    bidForm: item.bidForm || "",
+    processApply: item.processApply || "LDT",
+    stepCode: item.stepCode || "",
     notifyNo: item.notifyNo || "—",
     name,
     investor: item.investorName || "Chưa công bố",
@@ -622,6 +628,23 @@ async function fetchTenderRequirements(tender) {
   };
 }
 
+async function fetchTenderTechnicalRequirements(tender) {
+  if (tender.bidForm !== "CGTTRG") {
+    return {
+      total: 0,
+      items: [],
+      chapters: [],
+      files: [],
+      disclosure: "official-captcha-required",
+    };
+  }
+  const payload = await postJson(ONLINE_REOFFER_HSMT_URL, {
+    id: tender.notifyId || tender.id,
+    processApply: tender.processApply || "LDT",
+  }, 45_000);
+  return extractOnlineReofferTechnicalRequirements(payload);
+}
+
 async function fetchTenderDetails(tender) {
   let bidders = [];
   let items = [];
@@ -630,6 +653,14 @@ async function fetchTenderDetails(tender) {
     total: 0,
     items: [],
     summary: "",
+    disclosure: "temporarily-unavailable",
+    error: error.message,
+  }));
+  const technicalRequirementsPromise = fetchTenderTechnicalRequirements(tender).catch((error) => ({
+    total: 0,
+    items: [],
+    chapters: [],
+    files: [],
     disclosure: "temporarily-unavailable",
     error: error.message,
   }));
@@ -670,6 +701,7 @@ async function fetchTenderDetails(tender) {
   }
 
   const requirements = await requirementsPromise;
+  const technicalRequirements = await technicalRequirementsPromise;
 
   return {
     schemaVersion: DETAIL_SCHEMA_VERSION,
@@ -677,6 +709,7 @@ async function fetchTenderDetails(tender) {
     bidders,
     items,
     requirements,
+    technicalRequirements,
     modelDisclosure: bidders.some((bidder) => bidder.status === "lost")
       ? "winning-bidders-only"
       : "as-published",
@@ -819,7 +852,7 @@ async function main() {
       detailsByNotifyNo[tender.notifyNo] = await fetchTenderDetails(tender);
       const detail = detailsByNotifyNo[tender.notifyNo];
       process.stdout.write(
-        `Chi tiết ${tender.notifyNo}: ${detail.requirements?.items?.length || 0} phần/lô mời, ${detail.bidders.length} nhà thầu, ${detail.items.length} mặt hàng trúng\n`,
+        `Chi tiết ${tender.notifyNo}: ${detail.requirements?.items?.length || 0} phần/lô mời, ${detail.technicalRequirements?.items?.length || 0} dòng kỹ thuật, ${detail.bidders.length} nhà thầu, ${detail.items.length} mặt hàng trúng\n`,
       );
     } catch (error) {
       process.stderr.write(`Bỏ qua chi tiết ${tender.notifyNo}: ${error.message}\n`);
@@ -860,6 +893,15 @@ async function main() {
       ...item,
     }));
   });
+  const technicalRequirements = Object.entries(detailsByNotifyNo).flatMap(([notifyNo, detail]) => {
+    const tender = tenderByNotifyNo.get(notifyNo);
+    return (detail.technicalRequirements?.items || []).map((item) => ({
+      notifyNo,
+      tenderName: tender?.name || "",
+      sourceUrl: tender?.sourceUrl || "",
+      ...item,
+    }));
+  });
   const payload = {
     tenders: enrichedTenders,
     fetchedAt: new Date().toISOString(),
@@ -890,9 +932,10 @@ async function main() {
   await writeFile(biddersOutputPath, `${JSON.stringify({ bidders, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
   await writeFile(equipmentOutputPath, `${JSON.stringify({ equipment, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
   await writeFile(requirementsOutputPath, `${JSON.stringify({ requirements, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
+  await writeFile(technicalRequirementsOutputPath, `${JSON.stringify({ technicalRequirements, fetchedAt: new Date().toISOString() }, null, 2)}\n`);
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
   process.stdout.write(
-    `Đã lưu ${enrichedTenders.length} gói, ${requirements.length} phần/lô mời, ${bidders.length} dòng nhà thầu và ${equipment.length} mặt hàng trúng\n`,
+    `Đã lưu ${enrichedTenders.length} gói, ${requirements.length} phần/lô mời, ${technicalRequirements.length} dòng kỹ thuật, ${bidders.length} dòng nhà thầu và ${equipment.length} mặt hàng trúng\n`,
   );
 }
 
