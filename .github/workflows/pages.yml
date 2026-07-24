@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: pages
-  # Lượt quét bù 3 năm có thể kéo dài qua mốc chạy kế tiếp; không hủy giữa chừng.
+  # Không hủy lượt quét dữ liệu đang chạy giữa chừng.
   cancel-in-progress: false
 
 jobs:
@@ -39,10 +39,17 @@ jobs:
             tender-data-
       - name: Kiểm tra bộ trích thông số e-HSMT
         run: node --test scripts/technical-requirements.test.mjs
+
+      # Khi chỉ sửa giao diện/mã nguồn và push lên main, dùng ngay dữ liệu gần nhất
+      # từ cache để triển khai nhanh. Việc quét nguồn công khai tiếp tục chạy theo
+      # lịch 15 phút hoặc khi bấm Run workflow thủ công.
       - name: Lấy dữ liệu công khai mới nhất
+        if: github.event_name != 'push'
         run: node scripts/fetch-data.mjs
       - name: Quét bù nhanh gói mới theo địa danh
+        if: github.event_name != 'push'
         run: node scripts/fetch-recent-location-fallback.mjs
+
       - name: Áp dụng dữ liệu thiết bị đã xác minh
         run: node scripts/apply-manual-equipment-overrides.mjs
       - name: Tạo bản tĩnh
