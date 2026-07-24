@@ -15,6 +15,14 @@ const DAYS = 3 * 365;
 const INCREMENTAL_DAYS = 14;
 const STATUS_SCHEMA_VERSION = 4;
 const DETAIL_SCHEMA_VERSION = 3;
+// Phiên bản bộ đọc mặt hàng kết quả trúng thầu.
+const RESULT_ITEM_PARSER_VERSION = 2;
+
+// Các gói cache cũ cần được làm mới một lần
+// sau khi nâng cấp parser.
+const FORCE_RESULT_ITEM_REFRESH_NOS = new Set([
+  "IB2600079212",
+]);
 const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
 const DETAIL_PAGE_SIZE = 20;
@@ -548,7 +556,15 @@ function normalizeEquipment(item) {
     unit: item.donViTinh || "",
     quantity: Number(item.khoiLuongDouble) || 0,
     unitPrice: Number(item.donGia ?? item.donGiaDuThau) || 0,
-    winnerNames: [...new Set((item.winningName || []).filter(Boolean))],
+    winnerNames: [
+  ...new Set(
+    (
+      Array.isArray(item.winningName)
+        ? item.winningName
+        : [item.winningName]
+    ).filter(Boolean),
+  ),
+],
     decisionNo: item.soQuyetDinh || "",
     decisionDate: item.ngayBanHanhQuyetDinh || "",
     resultPublishedDate: item.ngayDangTaiKqlcnt || "",
@@ -563,21 +579,175 @@ async function fetchPricingDetailPage(notifyNo, pageNumber) {
   );
 }
 
-async function fetchPricingDetails(notifyNo) {
-  const first = await fetchPricingDetailPage(notifyNo, 0);
-  const total = Number(first.page?.totalElements) || (first.page?.content || []).length;
-  const totalPages = Number(first.page?.totalPages) || Math.max(1, Math.ceil(total / DETAIL_PAGE_SIZE));
-  const pageNumbers = Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => index + 1);
-  const remaining = await mapLimited(pageNumbers, 2, (pageNumber) => fetchPricingDetailPage(notifyNo, pageNumber));
-  const unique = new Map();
-  [first, ...remaining].flatMap((payload) => payload.page?.content || []).forEach((item) => {
-    const key = item.id || `${item.tenThietBi || item.danhMucHangHoa}-${item.donGia || item.donGiaDuThau}`;
-    unique.set(key, item);
-  });
-  const items = [...unique.values()].map(normalizeEquipment);
-  return { total: Math.max(total, items.length), items, fetchedAt: new Date().toISOString() };
+function extractPricingResponse(payload) {
+  const items = [];
+  const totals = [];
+  const pageCounts = [];
+
+  const visit = (value) => {
+    if (!value) return;
+
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+
+    if (typeof value !== "object") return;
+
+    if (Array.isArray(value.page)) {
+      visit(value.page);
+    } else if (
+      value.page
+      && typeof value.page === "object"
+    ) {
+      const page = value.page;
+
+      if (Array.isArray(page.content)) {
+        items.push(...page.content);
+      }
+
+      totals.push(
+        Number(page.totalElements) || 0,
+      );
+
+      pageCounts.push(
+        Number(page.totalPages) || 0,
+      );
+    } else if (Array.isArray(value.content)) {
+      items.push(...value.content);
+
+      totals.push(
+        Number(value.totalElements)
+        || value.content.length,
+      );
+
+      pageCounts.push(
+        Number(value.totalPages) || 1,
+      );
+    } else if (
+      value.tenThietBi
+      || value.danhMucHangHoa
+      || value.kyMaHieu
+      || value.nhanHieu
+      || value.hangSanXuat
+    ) {
+      // Trường hợp API trả trực tiếp mảng hàng hóa.
+      items.push(value);
+    }
+
+    const wrapperKeys = [
+      "data",
+      "result",
+      "results",
+      "responses",
+      "body",
+    ];
+
+    wrapperKeys.forEach((key) => {
+      if (value[key] !== undefined) {
+        visit(value[key]);
+      }
+    });
+  };
+
+  visit(payload);
+
+  return {
+    items,
+    total: Math.max(
+      0,
+      ...totals,
+      items.length,
+    ),
+    totalPages: Math.max(
+      1,
+      ...pageCounts,
+    ),
+  };
 }
 
+async function fetchPricingDetails(notifyNo) {
+  const firstPayload =
+    await fetchPricingDetailPage(
+      notifyNo,
+      0,
+    );
+
+  const firstResult =
+    extractPricingResponse(firstPayload);
+
+  const pageNumbers = Array.from(
+    {
+      length: Math.max(
+        0,
+        firstResult.totalPages - 1,
+      ),
+    },
+    (_, index) => index + 1,
+  );
+
+  const remainingPayloads =
+    await mapLimited(
+      pageNumbers,
+      2,
+      (pageNumber) =>
+        fetchPricingDetailPage(
+          notifyNo,
+          pageNumber,
+        ),
+    );
+
+  const extractedResults = [
+    firstPayload,
+    ...remainingPayloads,
+  ].map(extractPricingResponse);
+
+  const rawItems = extractedResults.flatMap(
+    (result) => result.items,
+  );
+
+  const total = Math.max(
+    rawItems.length,
+    ...extractedResults.map(
+      (result) => result.total,
+    ),
+  );
+
+  const unique = new Map();
+
+  rawItems.forEach((item) => {
+    const key =
+      item.id
+      || [
+        item.tenThietBi
+          || item.danhMucHangHoa
+          || "",
+        item.kyMaHieu || "",
+        item.nhanHieu || "",
+        item.donGia
+          || item.donGiaDuThau
+          || "",
+      ].join("|");
+
+    unique.set(key, item);
+  });
+
+  const items = [
+    ...unique.values(),
+  ].map(normalizeEquipment);
+
+  process.stdout.write(
+    `Bảng giá ${notifyNo}: `
+    + `${rawItems.length} bản ghi thô, `
+    + `${items.length} mặt hàng chuẩn hóa\n`,
+  );
+
+  return {
+    total: Math.max(total, items.length),
+    items,
+    fetchedAt: new Date().toISOString(),
+  };
+}
 function numberOrZero(value) {
   const number = Number(value);
   return Number.isFinite(number) ? number : 0;
@@ -587,15 +757,115 @@ function compactText(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
 }
 
-function parseFormValue(value) {
-  if (Array.isArray(value)) return value;
-  if (!value) return [];
-  try {
-    const parsed = JSON.parse(value);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
+function looksLikeResultEquipment(value) {
+  if (
+    !value
+    || typeof value !== "object"
+    || Array.isArray(value)
+  ) {
+    return false;
+  }
+
+  const equipmentFields = [
+    "name",
+    "tenThietBi",
+    "danhMucHangHoa",
+    "codeGood",
+    "kyMaHieu",
+    "labelGood",
+    "nhanHieu",
+    "manufacturer",
+    "hangSanXuat",
+    "origin",
+    "xuatXu",
+  ];
+
+  return equipmentFields.some((field) => {
+    const fieldValue = value[field];
+
+    return fieldValue !== undefined
+      && fieldValue !== null
+      && String(fieldValue).trim() !== "";
+  });
+}
+
+function parseFormValue(value, depth = 0) {
+  if (!value || depth > 6) return [];
+
+  let parsed = value;
+
+  // Một số hồ sơ lưu JSON dưới dạng chuỗi,
+  // thậm chí chuỗi JSON lồng nhiều lớp.
+  if (typeof parsed === "string") {
+    const text = parsed.trim();
+
+    if (!text) return [];
+
+    try {
+      parsed = JSON.parse(text);
+    } catch {
+      return [];
+    }
+
+    if (typeof parsed === "string") {
+      return parseFormValue(
+        parsed,
+        depth + 1,
+      );
+    }
+  }
+
+  if (looksLikeResultEquipment(parsed)) {
+    return [parsed];
+  }
+
+  if (Array.isArray(parsed)) {
+    return parsed.flatMap((item) =>
+      parseFormValue(
+        item,
+        depth + 1,
+      ));
+  }
+
+  if (
+    !parsed
+    || typeof parsed !== "object"
+  ) {
     return [];
   }
+
+  const preferredKeys = [
+    "items",
+    "rows",
+    "goods",
+    "data",
+    "value",
+    "formValue",
+    "formData",
+    "lotResultItems",
+    "danhMucHangHoa",
+    "hangHoa",
+  ];
+
+  // Ưu tiên các trường thường chứa danh sách hàng hóa.
+  for (const key of preferredKeys) {
+    if (parsed[key] === undefined) continue;
+
+    const items = parseFormValue(
+      parsed[key],
+      depth + 1,
+    );
+
+    if (items.length) return items;
+  }
+
+  // Phương án dự phòng cho cấu trúc lịch sử
+  // có tên trường khác với phiên bản hiện tại.
+  return Object.values(parsed).flatMap((item) =>
+    parseFormValue(
+      item,
+      depth + 1,
+    ));
 }
 
 function normalizeResultEquipment(item, parent, root) {
@@ -623,7 +893,75 @@ function normalizeResultEquipment(item, parent, root) {
     resultPublishedDate: root.publicDate || "",
   };
 }
+function mergeEquipmentItems(...groups) {
+  const unique = new Map();
 
+  groups
+    .flat()
+    .filter(Boolean)
+    .forEach((item) => {
+      const lotKey = normalizeText(
+        item.lotNo || "",
+      );
+
+      const nameKey = normalizeText(
+        item.name
+        || item.model
+        || item.id
+        || "",
+      );
+
+      const key =
+        `${lotKey}|${nameKey}`
+        || String(item.id || crypto.randomUUID());
+
+      const previous = unique.get(key);
+
+      if (!previous) {
+        unique.set(key, { ...item });
+        return;
+      }
+
+      const merged = {
+        ...previous,
+        ...item,
+      };
+
+      // Không để giá trị rỗng từ nguồn sau
+      // ghi đè dữ liệu đầy đủ của nguồn trước.
+      Object.keys(previous).forEach((field) => {
+        const value = merged[field];
+
+        const isEmpty =
+          value === ""
+          || value === null
+          || value === undefined
+          || (
+            Array.isArray(value)
+            && value.length === 0
+          )
+          || (
+            typeof value === "number"
+            && value === 0
+          );
+
+        if (isEmpty) {
+          merged[field] = previous[field];
+        }
+      });
+
+      merged.winnerNames = [
+        ...new Set([
+          ...(previous.winnerNames || []),
+          ...(item.winnerNames || []),
+        ]),
+      ];
+
+      unique.set(key, merged);
+    });
+
+  return [...unique.values()];
+}
 function normalizeBidder(item, status) {
   const bidPrice = numberOrZero(
     item.lotOpenPrice ?? item.bidFinalPrice ?? item.lotFinalPrice ?? item.lotPrice ?? item.bidPrice,
@@ -652,25 +990,128 @@ function normalizeBidder(item, status) {
 
 function resultDetails(payload) {
   const root = payload?.bideContractorInputResultDTO || {};
-  const versions = Array.isArray(root.decisionVersions) ? [...root.decisionVersions].reverse() : [];
-  const latest = versions.find((version) => version?.lotResultDTO?.length || version?.lotResultItems?.length) || {};
-  const lots = root.lotResultDTO?.length ? root.lotResultDTO : (latest.lotResultDTO || []);
-  const lotItems = root.lotResultItems?.length ? root.lotResultItems : (latest.lotResultItems || []);
-  const equipment = lotItems.flatMap((parent) =>
-    parseFormValue(parent.formValue).map((item) => normalizeResultEquipment(item, parent, root)),
-  );
-  const bidders = lots.flatMap((lot) => (lot.contractorList || []).map((contractor) => {
-    const status = Number(contractor.bidResult) === 1 ? "won" : "lost";
-    const bidder = normalizeBidder({ ...contractor, lotNo: lot.lotNo, lotName: lot.lotName }, status);
-    bidder.models = [...new Set(equipment
-      .filter((item) => item.contractorCode && item.contractorCode === bidder.contractorCode)
-      .map((item) => item.model || item.name)
-      .filter(Boolean))];
-    return bidder;
-  }));
-  return { bidders, items: equipment };
-}
 
+  const versions = Array.isArray(root.decisionVersions)
+    ? [...root.decisionVersions].reverse()
+    : [];
+
+  const latest = versions.find(
+    (version) =>
+      version?.lotResultDTO?.length
+      || version?.lotResultItems?.length,
+  ) || {};
+
+  const lots = root.lotResultDTO?.length
+    ? root.lotResultDTO
+    : (latest.lotResultDTO || []);
+
+  // Thu thập mặt hàng ở cả bản chính, phiên bản quyết định
+  // và các phần/lô bên trong.
+  const rawLotItems = [
+    ...(Array.isArray(root.lotResultItems)
+      ? root.lotResultItems
+      : []),
+
+    ...(Array.isArray(latest.lotResultItems)
+      ? latest.lotResultItems
+      : []),
+
+    ...lots.flatMap((lot) => [
+      ...(Array.isArray(lot.lotResultItems)
+        ? lot.lotResultItems
+        : []),
+
+      ...(Array.isArray(lot.items)
+        ? lot.items
+        : []),
+    ]),
+  ];
+
+  const uniqueLotItems = [
+    ...new Map(
+      rawLotItems.map((item, index) => [
+        String(
+          item.id
+          || `${item.lotNo || ""}|${item.contractorCode || ""}|${index}`,
+        ),
+        item,
+      ]),
+    ).values(),
+  ];
+
+  const metadataRoot = {
+    decisionNo:
+      root.decisionNo
+      || latest.decisionNo
+      || "",
+
+    decisionDate:
+      root.decisionDate
+      || latest.decisionDate
+      || "",
+
+    publicDate:
+      root.publicDate
+      || latest.publicDate
+      || "",
+  };
+
+  const equipment = uniqueLotItems.flatMap((parent) => {
+    const formItems = parseFormValue(
+      parent.formValue
+      ?? parent.formData
+      ?? parent,
+    );
+
+    return formItems.map((item) =>
+      normalizeResultEquipment(
+        item,
+        parent,
+        metadataRoot,
+      ));
+  });
+
+  const bidders = lots.flatMap((lot) =>
+    (lot.contractorList || []).map((contractor) => {
+      const status =
+        Number(contractor.bidResult) === 1
+          ? "won"
+          : "lost";
+
+      const bidder = normalizeBidder(
+        {
+          ...contractor,
+          lotNo: lot.lotNo,
+          lotName: lot.lotName,
+        },
+        status,
+      );
+
+      bidder.models = [
+        ...new Set(
+          equipment
+            .filter(
+              (item) =>
+                item.contractorCode
+                && item.contractorCode
+                  === bidder.contractorCode,
+            )
+            .map(
+              (item) =>
+                item.model || item.name,
+            )
+            .filter(Boolean),
+        ),
+      ];
+
+      return bidder;
+    }));
+
+  return {
+    bidders,
+    items: equipment,
+  };
+}
 function openingDetails(bidOpenPayload, lotOpenPayload) {
   const submissions = bidOpenPayload?.bidSubmissionByContractorViewResponse?.bidSubmissionDTOList || [];
   const lots = Array.isArray(lotOpenPayload) ? lotOpenPayload : [];
@@ -777,9 +1218,15 @@ async function fetchTenderDetails(tender) {
       items = detail.items;
     }
     if (pricingResponse.status === "fulfilled") {
-      pricingTotal = pricingResponse.value.total;
-      if (!items.length) items = pricingResponse.value.items;
-    }
+  pricingTotal = pricingResponse.value.total;
+
+  // Luôn hợp nhất hai nguồn. Bảng giá có thể chứa model/nhãn hiệu
+  // đầy đủ hơn dữ liệu kết quả nhà thầu.
+  items = mergeEquipmentItems(
+    items,
+    pricingResponse.value.items,
+  );
+}
   } else if (["evaluating", "closed"].includes(tender.status)) {
     const request = {
       notifyNo: tender.notifyNo,
@@ -806,6 +1253,7 @@ async function fetchTenderDetails(tender) {
 
   return {
     schemaVersion: DETAIL_SCHEMA_VERSION,
+    resultItemParserVersion: RESULT_ITEM_PARSER_VERSION,
     total: Math.max(pricingTotal, items.length),
     bidders,
     items,
@@ -841,6 +1289,12 @@ function shouldRefreshDetails(tender, cached) {
   if (Number(cached.schemaVersion || 0) < DETAIL_SCHEMA_VERSION) return true;
   if (["open", "urgent"].includes(tender.status)
     && cached.requirements?.disclosure !== "public-plan-lots") return true;
+    if (
+    FORCE_RESULT_ITEM_REFRESH_NOS.has(tender.notifyNo)
+    && Number(cached.resultItemParserVersion || 0) < RESULT_ITEM_PARSER_VERSION
+  ) {
+    return true;
+  }
   const fetchedAt = new Date(cached.fetchedAt || 0).getTime();
   if (!fetchedAt) return true;
   const resultPublishedAt = new Date(tender.resultPublishedDate || 0).getTime();
