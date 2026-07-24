@@ -15,14 +15,17 @@ const DAYS = 3 * 365;
 const INCREMENTAL_DAYS = 14;
 const STATUS_SCHEMA_VERSION = 4;
 const DETAIL_SCHEMA_VERSION = 3;
+
 // Phiên bản bộ đọc mặt hàng kết quả trúng thầu.
-const RESULT_ITEM_PARSER_VERSION = 2;
+// Tăng phiên bản để buộc quét lại các gói có cache cũ.
+const RESULT_ITEM_PARSER_VERSION = 3;
 
 // Các gói cache cũ cần được làm mới một lần
 // sau khi nâng cấp parser.
 const FORCE_RESULT_ITEM_REFRESH_NOS = new Set([
   "IB2600079212",
 ]);
+
 const WINDOW_DAYS = 7;
 const PAGE_SIZE = 10;
 const DETAIL_PAGE_SIZE = 20;
@@ -39,6 +42,7 @@ const SEARCH_KEYWORDS = [
   "máy siêu âm",
   "máy thở",
 ];
+
 // Hồ sơ cũ trước đợt thay đổi địa giới thường không còn trường locations.provCode.
 // Khi quét bù 3 năm, tìm giao giữa địa danh trong tên đơn vị và từ khóa trong tên gói,
 // sau đó vẫn chạy bộ lọc y tế chặt chẽ ở isMedical().
@@ -56,12 +60,14 @@ const HISTORICAL_TITLE_TERMS = [
   "kit", "test", "stent", "catheter", "implant", "bơm tiêm", "kim", "găng",
   "khẩu trang", "bông", "gạc", "oxy", "khí y tế",
 ];
+
 // Các gói thuộc phạm vi Gia Lai nhưng có thể bị nguồn
 // gán mã tỉnh hoặc địa giới chưa đồng nhất.
 const FORCED_NOTIFY_NOS = [
   "IB2600391963",
   "IB2600384538",
 ];
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(root, "data/tenders.json");
 const biddersOutputPath = resolve(root, "data/bidders.json");
@@ -138,6 +144,7 @@ function historicalSearchPayload(pageNumber, from, to, locationTerm, titleTerm) 
     ],
   }];
 }
+
 function notifyNoSearchPayload(notifyNo) {
   return [{
     pageSize: PAGE_SIZE,
@@ -208,6 +215,7 @@ async function mapLimited(values, concurrency, mapper) {
   await Promise.all(Array.from({ length: Math.min(concurrency, values.length) }, worker));
   return results;
 }
+
 async function fetchForcedNotifyNos() {
   const results = await mapLimited(
     FORCED_NOTIFY_NOS,
@@ -357,60 +365,60 @@ function isMedical(item) {
 
   // Tiêu đề chung chỉ được nhận khi vừa có vật tư/hóa chất, vừa có ngữ cảnh khám chữa bệnh,
   // và chủ đầu tư rõ ràng là cơ sở y tế. Không dùng tên chủ đầu tư làm điều kiện duy nhất.
- const medicalInvestors = [
-  "so y te",
-  "benh vien",
-  "trung tam y te",
-  "tram y te",
-  "trung tam kiem soat benh tat",
-  "cdc",
-  "phong kham",
-  "benh xa",
-  "y khoa",
-  "y duoc",
-  "da khoa",
-  "chuyen khoa",
-  "trung tam phap y",
-  "trung tam kiem nghiem",
-];
+  const medicalInvestors = [
+    "so y te",
+    "benh vien",
+    "trung tam y te",
+    "tram y te",
+    "trung tam kiem soat benh tat",
+    "cdc",
+    "phong kham",
+    "benh xa",
+    "y khoa",
+    "y duoc",
+    "da khoa",
+    "chuyen khoa",
+    "trung tam phap y",
+    "trung tam kiem nghiem",
+  ];
 
-const genericSupplyTerms = [
-  "vat tu",
-  "hoa chat",
-  "sinh pham",
-  "dung cu",
-];
+  const genericSupplyTerms = [
+    "vat tu",
+    "hoa chat",
+    "sinh pham",
+    "dung cu",
+  ];
 
-const clinicalTerms = [
-  "kham chua benh",
-  "kham benh",
-  "chua benh",
-  "dieu tri",
-  "phong mo",
-];
+  const clinicalTerms = [
+    "kham chua benh",
+    "kham benh",
+    "chua benh",
+    "dieu tri",
+    "phong mo",
+  ];
 
-const isMedicalInvestor = medicalInvestors.some(
-  (term) => investor.includes(term),
-);
-
-const hasGenericSupply = genericSupplyTerms.some(
-  (term) => title.includes(term),
-);
-
-const hasClinicalContext = clinicalTerms.some(
-  (term) => title.includes(term),
-);
-
-const hasMedicalSupplyBundle =
-  (title.includes("mua sam") || title.includes("danh muc"))
-  && title.includes("vat tu")
-  && title.includes("hoa chat");
-
-return isMedicalInvestor
-  && (
-    hasMedicalSupplyBundle
-    || (hasGenericSupply && hasClinicalContext)
+  const isMedicalInvestor = medicalInvestors.some(
+    (term) => investor.includes(term),
   );
+
+  const hasGenericSupply = genericSupplyTerms.some(
+    (term) => title.includes(term),
+  );
+
+  const hasClinicalContext = clinicalTerms.some(
+    (term) => title.includes(term),
+  );
+
+  const hasMedicalSupplyBundle =
+    (title.includes("mua sam") || title.includes("danh muc"))
+    && title.includes("vat tu")
+    && title.includes("hoa chat");
+
+  return isMedicalInvestor
+    && (
+      hasMedicalSupplyBundle
+      || (hasGenericSupply && hasClinicalContext)
+    );
 }
 
 function isStoredTenderMedical(tender) {
@@ -524,6 +532,23 @@ function normalizeTender(item) {
   };
 }
 
+/**
+ * Tạo các biến thể mã TBMT vì dữ liệu bảng giá lịch sử
+ * có thể lưu mã dạng IBxxxxxxxxxx hoặc IBxxxxxxxxxx-00.
+ */
+function pricingNotifyNoVariants(notifyNo) {
+  const rawNotifyNo = String(notifyNo || "").trim();
+  if (!rawNotifyNo) return [];
+
+  const baseNotifyNo = rawNotifyNo.replace(/-\d{2}$/, "");
+
+  return [...new Set([
+    rawNotifyNo,
+    baseNotifyNo,
+    `${baseNotifyNo}-00`,
+  ])].filter(Boolean);
+}
+
 function pricingQuery(notifyNo, tab, pageNumber) {
   return {
     pageSize: DETAIL_PAGE_SIZE,
@@ -537,34 +562,36 @@ function pricingQuery(notifyNo, tab, pageNumber) {
       filters: [
         { fieldName: "type", searchType: "in", fieldValues: ["HANG_HOA"] },
         { fieldName: "tab", searchType: "in", fieldValues: [tab] },
-        { fieldName: "ma_tbmt", searchType: "in", fieldValues: [notifyNo] },
+        {
+          fieldName: "ma_tbmt",
+          searchType: "in",
+          fieldValues: pricingNotifyNoVariants(notifyNo),
+        },
       ],
     }],
   };
 }
 
 function normalizeEquipment(item) {
+  const winningNames = Array.isArray(item.winningName)
+    ? item.winningName
+    : [item.winningName];
+
   return {
     id: item.id || crypto.randomUUID(),
     name: item.tenThietBi || item.danhMucHangHoa || "Hàng hóa chưa có tên",
-    model: item.kyMaHieu || "",
-    brand: item.nhanHieu || "",
-    manufacturer: item.hangSanXuat || "",
-    origin: item.xuatXu || "",
-    manufactureYear: item.namSanXuat || "",
-    specification: (item.cauHinh || "").replace(/^\s*[\"']|[\"']\s*$/g, "").trim(),
-    unit: item.donViTinh || "",
-    quantity: Number(item.khoiLuongDouble) || 0,
-    unitPrice: Number(item.donGia ?? item.donGiaDuThau) || 0,
-    winnerNames: [
-  ...new Set(
-    (
-      Array.isArray(item.winningName)
-        ? item.winningName
-        : [item.winningName]
-    ).filter(Boolean),
-  ),
-],
+    model: item.kyMaHieu || item.codeGood || "",
+    brand: item.nhanHieu || item.labelGood || "",
+    manufacturer: item.hangSanXuat || item.manufacturer || "",
+    origin: item.xuatXu || item.origin || "",
+    manufactureYear: item.namSanXuat || item.yearManufacture || "",
+    specification: String(item.cauHinh || item.feature || "")
+      .replace(/^\s*["']|["']\s*$/g, "")
+      .trim(),
+    unit: item.donViTinh || item.uom || "",
+    quantity: Number(item.khoiLuongDouble ?? item.quantity ?? item.qty) || 0,
+    unitPrice: Number(item.donGia ?? item.donGiaDuThau ?? item.unitPrice) || 0,
+    winnerNames: [...new Set(winningNames.filter(Boolean))],
     decisionNo: item.soQuyetDinh || "",
     decisionDate: item.ngayBanHanhQuyetDinh || "",
     resultPublishedDate: item.ngayDangTaiKqlcnt || "",
@@ -572,9 +599,20 @@ function normalizeEquipment(item) {
 }
 
 async function fetchPricingDetailPage(notifyNo, pageNumber) {
+  const notifyNoVariants = pricingNotifyNoVariants(notifyNo);
+
+  if (pageNumber === 0) {
+    process.stdout.write(
+      `Tra bảng giá ${notifyNo} theo mã: ${notifyNoVariants.join(", ")}\n`,
+    );
+  }
+
   return postJson(
     WINNING_PRICE_URL,
-    [pricingQuery(notifyNo, "THIET_BI_VAT_TU_Y_TE", pageNumber), pricingQuery(notifyNo, "HANG_HOA", pageNumber)],
+    [
+      pricingQuery(notifyNo, "THIET_BI_VAT_TU_Y_TE", pageNumber),
+      pricingQuery(notifyNo, "HANG_HOA", pageNumber),
+    ],
     30_000,
   );
 }
@@ -667,14 +705,8 @@ function extractPricingResponse(payload) {
 }
 
 async function fetchPricingDetails(notifyNo) {
-  const firstPayload =
-    await fetchPricingDetailPage(
-      notifyNo,
-      0,
-    );
-
-  const firstResult =
-    extractPricingResponse(firstPayload);
+  const firstPayload = await fetchPricingDetailPage(notifyNo, 0);
+  const firstResult = extractPricingResponse(firstPayload);
 
   const pageNumbers = Array.from(
     {
@@ -686,16 +718,11 @@ async function fetchPricingDetails(notifyNo) {
     (_, index) => index + 1,
   );
 
-  const remainingPayloads =
-    await mapLimited(
-      pageNumbers,
-      2,
-      (pageNumber) =>
-        fetchPricingDetailPage(
-          notifyNo,
-          pageNumber,
-        ),
-    );
+  const remainingPayloads = await mapLimited(
+    pageNumbers,
+    2,
+    (pageNumber) => fetchPricingDetailPage(notifyNo, pageNumber),
+  );
 
   const extractedResults = [
     firstPayload,
@@ -716,25 +743,17 @@ async function fetchPricingDetails(notifyNo) {
   const unique = new Map();
 
   rawItems.forEach((item) => {
-    const key =
-      item.id
-      || [
-        item.tenThietBi
-          || item.danhMucHangHoa
-          || "",
-        item.kyMaHieu || "",
-        item.nhanHieu || "",
-        item.donGia
-          || item.donGiaDuThau
-          || "",
-      ].join("|");
+    const key = item.id || [
+      item.tenThietBi || item.danhMucHangHoa || "",
+      item.kyMaHieu || item.codeGood || "",
+      item.nhanHieu || item.labelGood || "",
+      item.donGia || item.donGiaDuThau || item.unitPrice || "",
+    ].join("|");
 
     unique.set(key, item);
   });
 
-  const items = [
-    ...unique.values(),
-  ].map(normalizeEquipment);
+  const items = [...unique.values()].map(normalizeEquipment);
 
   process.stdout.write(
     `Bảng giá ${notifyNo}: `
@@ -748,6 +767,7 @@ async function fetchPricingDetails(notifyNo) {
     fetchedAt: new Date().toISOString(),
   };
 }
+
 function numberOrZero(value) {
   const number = Number(value);
   return Number.isFinite(number) ? number : 0;
@@ -893,6 +913,7 @@ function normalizeResultEquipment(item, parent, root) {
     resultPublishedDate: root.publicDate || "",
   };
 }
+
 function mergeEquipmentItems(...groups) {
   const unique = new Map();
 
@@ -962,6 +983,7 @@ function mergeEquipmentItems(...groups) {
 
   return [...unique.values()];
 }
+
 function normalizeBidder(item, status) {
   const bidPrice = numberOrZero(
     item.lotOpenPrice ?? item.bidFinalPrice ?? item.lotFinalPrice ?? item.lotPrice ?? item.bidPrice,
@@ -1073,10 +1095,9 @@ function resultDetails(payload) {
 
   const bidders = lots.flatMap((lot) =>
     (lot.contractorList || []).map((contractor) => {
-      const status =
-        Number(contractor.bidResult) === 1
-          ? "won"
-          : "lost";
+      const status = Number(contractor.bidResult) === 1
+        ? "won"
+        : "lost";
 
       const bidder = normalizeBidder(
         {
@@ -1093,13 +1114,9 @@ function resultDetails(payload) {
             .filter(
               (item) =>
                 item.contractorCode
-                && item.contractorCode
-                  === bidder.contractorCode,
+                && item.contractorCode === bidder.contractorCode,
             )
-            .map(
-              (item) =>
-                item.model || item.name,
-            )
+            .map((item) => item.model || item.name)
             .filter(Boolean),
         ),
       ];
@@ -1112,6 +1129,7 @@ function resultDetails(payload) {
     items: equipment,
   };
 }
+
 function openingDetails(bidOpenPayload, lotOpenPayload) {
   const submissions = bidOpenPayload?.bidSubmissionByContractorViewResponse?.bidSubmissionDTOList || [];
   const lots = Array.isArray(lotOpenPayload) ? lotOpenPayload : [];
@@ -1212,21 +1230,23 @@ async function fetchTenderDetails(tender) {
       postJson(CONTRACTOR_RESULT_URL, { id: tender.inputResultId }, 35_000),
       fetchPricingDetails(tender.notifyNo),
     ]);
+
     if (resultResponse.status === "fulfilled") {
       const detail = resultDetails(resultResponse.value);
       bidders = detail.bidders;
       items = detail.items;
     }
-    if (pricingResponse.status === "fulfilled") {
-  pricingTotal = pricingResponse.value.total;
 
-  // Luôn hợp nhất hai nguồn. Bảng giá có thể chứa model/nhãn hiệu
-  // đầy đủ hơn dữ liệu kết quả nhà thầu.
-  items = mergeEquipmentItems(
-    items,
-    pricingResponse.value.items,
-  );
-}
+    if (pricingResponse.status === "fulfilled") {
+      pricingTotal = pricingResponse.value.total;
+
+      // Luôn hợp nhất hai nguồn. Bảng giá có thể chứa model/nhãn hiệu
+      // đầy đủ hơn dữ liệu kết quả nhà thầu.
+      items = mergeEquipmentItems(
+        items,
+        pricingResponse.value.items,
+      );
+    }
   } else if (["evaluating", "closed"].includes(tender.status)) {
     const request = {
       notifyNo: tender.notifyNo,
@@ -1287,14 +1307,17 @@ async function previousData() {
 function shouldRefreshDetails(tender, cached) {
   if (!cached) return true;
   if (Number(cached.schemaVersion || 0) < DETAIL_SCHEMA_VERSION) return true;
-  if (["open", "urgent"].includes(tender.status)
-    && cached.requirements?.disclosure !== "public-plan-lots") return true;
-    if (
+
+  if (
     FORCE_RESULT_ITEM_REFRESH_NOS.has(tender.notifyNo)
     && Number(cached.resultItemParserVersion || 0) < RESULT_ITEM_PARSER_VERSION
   ) {
     return true;
   }
+
+  if (["open", "urgent"].includes(tender.status)
+    && cached.requirements?.disclosure !== "public-plan-lots") return true;
+
   const fetchedAt = new Date(cached.fetchedAt || 0).getTime();
   if (!fetchedAt) return true;
   const resultPublishedAt = new Date(tender.resultPublishedDate || 0).getTime();
@@ -1355,16 +1378,19 @@ async function main() {
   const windowConcurrency = fullRefresh ? 1 : 2;
   const provinceItems = (await mapLimited(windows, windowConcurrency, (window, index) =>
     fetchWindow(window, index, windows.length))).flat();
-const historicalFallbackItems =
-  fullRefresh ? await fetchHistoricalFallback() : [];
 
-const forcedNotifyItems = await fetchForcedNotifyNos();
+  const historicalFallbackItems = fullRefresh
+    ? await fetchHistoricalFallback()
+    : [];
 
-const allItems = [
-  ...provinceItems,
-  ...historicalFallbackItems,
-  ...forcedNotifyItems,
-];
+  const forcedNotifyItems = await fetchForcedNotifyNos();
+
+  const allItems = [
+    ...provinceItems,
+    ...historicalFallbackItems,
+    ...forcedNotifyItems,
+  ];
+
   const allUnique = new Map();
   allItems.forEach((item) => {
     const key = item.notifyId || item.id || item.notifyNo;
