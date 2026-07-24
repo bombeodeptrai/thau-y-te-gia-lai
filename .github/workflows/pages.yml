@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "17 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -41,6 +41,8 @@ jobs:
         run: node --test scripts/technical-requirements.test.mjs
       - name: Lấy dữ liệu công khai mới nhất
         run: node scripts/fetch-data.mjs
+      - name: Quét bù nhanh gói mới theo địa danh
+        run: node scripts/fetch-recent-location-fallback.mjs
       - name: Áp dụng dữ liệu thiết bị đã xác minh
         run: node scripts/apply-manual-equipment-overrides.mjs
       - name: Tạo bản tĩnh
