@@ -41,6 +41,8 @@ jobs:
         run: node --test scripts/technical-requirements.test.mjs
       - name: Lấy dữ liệu công khai mới nhất
         run: node scripts/fetch-data.mjs
+      - name: Áp dụng dữ liệu thiết bị đã xác minh
+        run: node scripts/apply-manual-equipment-overrides.mjs
       - name: Tạo bản tĩnh
         run: node scripts/build-pages.mjs
       - name: Cấu hình Pages
