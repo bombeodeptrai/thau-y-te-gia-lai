@@ -1,0 +1,83 @@
+/*
+ * Vá bố cục dùng chung cho màn hình desktop, trình duyệt có thu phóng
+ * và các thao tác cuộn tới section bên dưới thanh điều hướng sticky.
+ */
+html {
+  scroll-padding-top: 92px;
+}
+
+main,
+.site-header,
+.hero,
+.content-wrap,
+.dashboard-grid,
+.tender-panel,
+.insight-panel {
+  min-width: 0;
+}
+
+main,
+.site-header {
+  width: 100%;
+  max-width: 100%;
+}
+
+.site-header nav {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.site-header nav::-webkit-scrollbar {
+  display: none;
+}
+
+#top,
+#goi-thau,
+#chu-dau-tu,
+#canh-bao {
+  scroll-margin-top: 92px;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stat-card,
+.stat-card > div,
+.panel-heading,
+.panel-heading > div {
+  min-width: 0;
+}
+
+.stat-card strong,
+.stat-card div > span {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1120px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 68px;
+  }
+
+  #top,
+  #goi-thau,
+  #chu-dau-tu,
+  #canh-bao {
+    scroll-margin-top: 68px;
+  }
+}
+
+@media (max-width: 390px) {
+  .stats-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
