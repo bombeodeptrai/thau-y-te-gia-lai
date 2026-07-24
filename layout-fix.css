@@ -6,6 +6,21 @@ html {
   scroll-padding-top: 92px;
 }
 
+/*
+ * Sửa lỗi Chrome tách chữ tiếng Việt trong tiêu đề serif, ví dụ
+ * "Gói thầ u đáng chú ý". Georgia có thể phải trộn font dự phòng cho
+ * ký tự "ầ", làm khoảng cách giữa "ầ" và "u" bị giãn bất thường.
+ * Times New Roman hỗ trợ đầy đủ bộ ký tự tiếng Việt trên Windows.
+ */
+.panel-heading h2,
+.alert-copy h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+  letter-spacing: -0.015em;
+  word-spacing: normal;
+}
+
 main,
 .site-header,
 .hero,
