@@ -53,18 +53,8 @@ jobs:
       - name: Áp dụng dữ liệu thiết bị đã xác minh
         run: node scripts/apply-manual-equipment-overrides.mjs
 
-      # API key chỉ được đọc từ GitHub Actions Secret, không đưa vào mã nguồn
-      # hoặc gửi xuống trình duyệt. Khi chưa có secret, script giữ nguyên kết quả
-      # AI cũ và workflow vẫn tiếp tục triển khai bình thường.
-      - name: Phân tích AI gói thầu cho Kiểu Việt
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: gpt-5-mini
-          AI_MAX_PER_RUN: "12"
-          AI_ANALYSIS_TTL_HOURS: "24"
-          AI_CONCURRENCY: "2"
-        run: node scripts/generate-ai-analyses.mjs
-
+      # Phân tích trên giao diện dùng quy tắc cục bộ và dữ liệu công khai.
+      # Không gọi OpenAI hay dịch vụ API trả phí.
       - name: Tạo bản tĩnh
         run: node scripts/build-pages.mjs
       - name: Cấu hình Pages
