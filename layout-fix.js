@@ -1,4 +1,43 @@
 (() => {
+  const enableFreeAnalysisMode = () => {
+    const setText = (element, value) => {
+      if (element && element.textContent !== value) element.textContent = value;
+    };
+
+    const applyLabels = () => {
+      document.querySelectorAll(".ai-analysis-button").forEach((button) => {
+        setText(button.querySelector("span:last-child"), "Phân tích miễn phí");
+        button.title = "Phân tích nhanh mức độ phù hợp và khả năng tham gia bằng dữ liệu công khai";
+      });
+
+      document.querySelectorAll(".ai-preview-head small, .ai-source-chip").forEach((element) => {
+        if (/đánh giá sơ bộ|openai/i.test(element.textContent || "")) {
+          setText(element, "Phân tích miễn phí");
+        }
+      });
+
+      document.querySelectorAll(".ai-preview-note").forEach((element) => {
+        setText(element, "Đánh giá tự động miễn phí từ dữ liệu công khai; không gọi dịch vụ trả phí.");
+      });
+
+      const header = document.querySelector(".ai-modal-panel > header span");
+      if (header) setText(header, "✦ PHÂN TÍCH ĐẤU THẦU KIỂU VIỆT");
+
+      document.querySelectorAll(".ai-live-status").forEach((element) => {
+        setText(element, "Chế độ miễn phí: không gọi API và không phát sinh chi phí.");
+      });
+
+      document.querySelectorAll("[data-ai-refresh]").forEach((button) => {
+        button.hidden = true;
+        button.remove();
+      });
+    };
+
+    applyLabels();
+    const observer = new MutationObserver(applyLabels);
+    observer.observe(document.documentElement, { childList: true, subtree: true, characterData: true });
+  };
+
   const loadAiModule = () => {
     if (document.querySelector("script[data-kieu-viet-ai]")) return;
 
@@ -8,6 +47,7 @@
       analysisScript.src = "./ai-analysis.js";
       analysisScript.async = false;
       analysisScript.dataset.kieuVietAi = "analysis";
+      analysisScript.addEventListener("load", enableFreeAnalysisMode, { once: true });
       document.head.appendChild(analysisScript);
     };
 
@@ -20,7 +60,7 @@
     document.head.appendChild(configScript);
   };
 
-  // Luôn nạp mô-đun AI, kể cả khi trang không cần đặt lại vị trí cuộn.
+  // Luôn nạp mô-đun phân tích, kể cả khi trang không cần đặt lại vị trí cuộn.
   loadAiModule();
 
   const params = new URLSearchParams(window.location.search);
