@@ -1,4 +1,28 @@
 (() => {
+  const loadAiModule = () => {
+    if (document.querySelector("script[data-kieu-viet-ai]")) return;
+
+    const loadAnalysis = () => {
+      if (document.querySelector("script[data-kieu-viet-ai='analysis']")) return;
+      const analysisScript = document.createElement("script");
+      analysisScript.src = "./ai-analysis.js";
+      analysisScript.async = false;
+      analysisScript.dataset.kieuVietAi = "analysis";
+      document.head.appendChild(analysisScript);
+    };
+
+    const configScript = document.createElement("script");
+    configScript.src = "./ai-config.js";
+    configScript.async = false;
+    configScript.dataset.kieuVietAi = "config";
+    configScript.addEventListener("load", loadAnalysis, { once: true });
+    configScript.addEventListener("error", loadAnalysis, { once: true });
+    document.head.appendChild(configScript);
+  };
+
+  // Luôn nạp mô-đun AI, kể cả khi trang không cần đặt lại vị trí cuộn.
+  loadAiModule();
+
   const params = new URLSearchParams(window.location.search);
   const navigationEntry = performance.getEntriesByType?.("navigation")?.[0];
   const navigationType = navigationEntry?.type || "";
