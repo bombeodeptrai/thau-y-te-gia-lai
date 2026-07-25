@@ -50,6 +50,13 @@ jobs:
         if: github.event_name != 'push'
         run: node scripts/fetch-recent-location-fallback.mjs
 
+      # Quét riêng lịch sử kết quả theo từng bệnh viện/đơn vị trong 3 năm.
+      # Dữ liệu được giữ 20 giờ nên các lượt chạy 15 phút không gửi request lặp lại.
+      # Commit có nhãn [full-history] sẽ buộc chạy ngay sau khi merge.
+      - name: Cập nhật lịch sử đối thủ 3 năm
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[full-history]')
+        run: node scripts/fetch-competitor-history.mjs
+
       - name: Áp dụng dữ liệu thiết bị đã xác minh
         run: node scripts/apply-manual-equipment-overrides.mjs
 
