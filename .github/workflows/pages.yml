@@ -39,6 +39,11 @@ jobs:
             tender-data-
       - name: Kiểm tra bộ trích thông số e-HSMT
         run: node --test scripts/technical-requirements.test.mjs
+      - name: Kiểm tra cú pháp phân tích đối thủ
+        run: |
+          node --check scripts/fetch-competitor-history.mjs
+          node --check scripts/build-pages.mjs
+          node --check competitor-count-fix.js
 
       # Khi chỉ sửa giao diện/mã nguồn và push lên main, dùng ngay dữ liệu gần nhất
       # từ cache để triển khai nhanh. Việc quét nguồn công khai tiếp tục chạy theo
