@@ -54,6 +54,7 @@ for (const entry of [
   "ai-analysis.css",
   "competitor-analysis.js",
   "competitor-analysis.css",
+  "competitor-count-fix.js",
   "favicon.svg",
   "assets",
   "data",
@@ -65,6 +66,7 @@ const equipmentData = JSON.parse(await readFile(resolve(dataDir, "equipment.json
 const tenderData = JSON.parse(await readFile(resolve(dataDir, "tenders.json"), "utf8"));
 let requirementsData = { requirements: [], fetchedAt: "" };
 let technicalRequirementsData = { technicalRequirements: [], fetchedAt: "" };
+let competitorHistoryData = { coverageDays: 0, generatedAt: "", records: [] };
 try {
   requirementsData = JSON.parse(await readFile(resolve(dataDir, "requirements.json"), "utf8"));
 } catch {
@@ -74,6 +76,11 @@ try {
   technicalRequirementsData = JSON.parse(await readFile(resolve(dataDir, "technical-requirements.json"), "utf8"));
 } catch {
   // Bản dữ liệu cũ chưa có biểu mẫu kỹ thuật e-HSMT đã trích xuất.
+}
+try {
+  competitorHistoryData = JSON.parse(await readFile(resolve(dataDir, "competitor-history.json"), "utf8"));
+} catch {
+  // Chưa có lần quét lịch sử đối thủ 3 năm.
 }
 
 const awardedEquipmentSearch = (equipmentData.equipment || [])
@@ -150,7 +157,7 @@ async function readTenderDetail(notifyNo) {
   }
 }
 
-const competitorRecords = [];
+const currentCompetitorRecords = [];
 for (const tender of tenderData.tenders || []) {
   const notifyNo = compact(tender.notifyNo, 100);
   if (!notifyNo) continue;
@@ -174,11 +181,12 @@ for (const tender of tenderData.tenders || []) {
     ? equipmentByNotifyNo.get(notifyNo)
     : (detail?.items || []).map(equipmentSummary);
 
-  competitorRecords.push({
+  currentCompetitorRecords.push({
     notifyNo,
     tenderId: compact(tender.id, 180),
     name: compact(tender.name, 1200),
     investor: compact(tender.investor, 600),
+    sourceInvestor: compact(tender.investor, 600),
     location: compact(tender.location, 300),
     category: compact(tender.category, 180),
     publicDate: compact(tender.publicDate, 80),
@@ -194,23 +202,64 @@ for (const tender of tenderData.tenders || []) {
   });
 }
 
+function mergeCompetitorRecords(previous, current) {
+  if (!previous) return current;
+  if (!current) return previous;
+  return {
+    ...previous,
+    ...current,
+    investor: current.investor || previous.investor,
+    sourceInvestor: previous.sourceInvestor || current.sourceInvestor || current.investor,
+    winnerNames: uniqueText([...(previous.winnerNames || []), ...(current.winnerNames || [])]),
+    participants: current.participants?.length ? current.participants : (previous.participants || []),
+    equipment: current.equipment?.length ? current.equipment : (previous.equipment || []),
+    winningPrice: Number(current.winningPrice) || Number(previous.winningPrice) || 0,
+    estimatedPrice: Number(current.estimatedPrice) || Number(previous.estimatedPrice) || 0,
+    decisionDate: current.decisionDate || previous.decisionDate || "",
+    publicDate: current.publicDate || previous.publicDate || "",
+  };
+}
+
+const cutoff = Date.now() - 3 * 365 * 86_400_000;
+const competitorRecordMap = new Map();
+for (const record of competitorHistoryData.records || []) {
+  const time = new Date(record.decisionDate || record.publicDate || 0).getTime();
+  if (!record.notifyNo || !Number.isFinite(time) || time < cutoff) continue;
+  competitorRecordMap.set(record.notifyNo, record);
+}
+for (const record of currentCompetitorRecords) {
+  competitorRecordMap.set(
+    record.notifyNo,
+    mergeCompetitorRecords(competitorRecordMap.get(record.notifyNo), record),
+  );
+}
+
+const competitorRecords = [...competitorRecordMap.values()];
 competitorRecords.sort((left, right) => {
   const rightTime = new Date(right.decisionDate || right.publicDate || 0).getTime() || 0;
   const leftTime = new Date(left.decisionDate || left.publicDate || 0).getTime() || 0;
   return rightTime - leftTime;
 });
 
+const coverageDays = Math.max(
+  Number(competitorHistoryData.coverageDays) || 0,
+  Number(tenderData.collection?.days) || 0,
+);
+
 await writeFile(
   resolve(output, "data/competitor-intelligence.json"),
   `${JSON.stringify({
-    schemaVersion: 1,
+    schemaVersion: 2,
     generatedAt: new Date().toISOString(),
     fetchedAt: tenderData.fetchedAt || equipmentData.fetchedAt || "",
+    historyGeneratedAt: competitorHistoryData.generatedAt || "",
+    coverageDays,
+    recordCount: competitorRecords.length,
     records: competitorRecords,
   })}\n`,
 );
 
 await writeFile(resolve(output, ".nojekyll"), "");
 process.stdout.write(
-  `Đã tạo GitHub Pages với ${equipmentSearch.length} dòng thiết bị/model và ${competitorRecords.length} hồ sơ đối thủ/trúng thầu\n`,
+  `Đã tạo GitHub Pages với ${equipmentSearch.length} dòng thiết bị/model và ${competitorRecords.length} hồ sơ đối thủ/trúng thầu, phủ ${coverageDays} ngày\n`,
 );
