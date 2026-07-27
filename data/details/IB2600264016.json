@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 6,
+  "bidders": [
+    {
+      "id": "c7c815d9-7e15-4887-a1bd-a7c8a03cd863",
+      "contractorCode": "vn0314072189",
+      "taxCode": "0314072189",
+      "contractorName": "CÔNG TY TNHH MEDNOVA TECK",
+      "status": "won",
+      "lotNo": "PP2600223197",
+      "lotName": "Phần 1: Thiết bị chụp và can thiệp mạch",
+      "bidPrice": 25000000000,
+      "finalPrice": 21380000000,
+      "winningPrice": 21380000000,
+      "reason": "",
+      "submittedAt": "2026-06-26T15:03:04.352",
+      "models": [
+        "Azurion 5 M20"
+      ]
+    },
+    {
+      "id": "e96c8a4e-8275-4643-a6b7-42fa6a21c53d",
+      "contractorCode": "vn0309347279",
+      "taxCode": "0309347279",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ IMED",
+      "status": "lost",
+      "lotNo": "PP2600223197",
+      "lotName": "Phần 1: Thiết bị chụp và can thiệp mạch",
+      "bidPrice": 22860000000,
+      "finalPrice": 22860000000,
+      "winningPrice": 0,
+      "reason": "xếp hạng II",
+      "submittedAt": "2026-06-26T15:03:04.352",
+      "models": []
+    },
+    {
+      "id": "38097575-4ec8-4df2-89b4-e5da4e38022a",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "won",
+      "lotNo": "PP2600223198",
+      "lotName": "Phần 2: Thiết bị theo dõi và điều trị bệnh nhân",
+      "bidPrice": 3178280000,
+      "finalPrice": 3178280000,
+      "winningPrice": 3178280000,
+      "reason": "",
+      "submittedAt": "2026-06-26T15:03:04.352",
+      "models": [
+        "Neumovent GraphNet TS",
+        "ZOLL M2 Monitor/Defibrillator",
+        "BSM-3562",
+        "TE-SS730",
+        "TE-LF630"
+      ]
+    },
+    {
+      "id": "dbce5f85-bd46-482f-b63b-c06cbadd51d2",
+      "contractorCode": "vn0108492727",
+      "taxCode": "0108492727",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT",
+      "status": "lost",
+      "lotNo": "PP2600223198",
+      "lotName": "Phần 2: Thiết bị theo dõi và điều trị bệnh nhân",
+      "bidPrice": 4089500000,
+      "finalPrice": 3353390000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng II",
+      "submittedAt": "2026-06-26T15:03:04.352",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "4a245068-af8c-4398-9d61-768c7ebfd7be",
+      "name": "Hệ thống chụp mạch số hóa xóa nền DSA một bình diện",
+      "model": "Azurion 5 M20",
+      "brand": "Philips",
+      "manufacturer": "Philips Medical Systems Nederland B.V",
+      "origin": "Hà Lan",
+      "manufactureYear": "2026",
+      "specification": "Theo bảng đáp ứng kỹ thuật đính kèm trong hồ sơ",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 25000000000,
+      "amount": 25000000000,
+      "contractorCode": "vn0314072189",
+      "winnerNames": [
+        "CÔNG TY TNHH MEDNOVA TECK"
+      ],
+      "lotNo": "",
+      "decisionNo": "662/QĐ-BVĐK",
+      "decisionDate": "2026-06-26T23:59:59",
+      "resultPublishedDate": "2026-06-26T15:03:12"
+    },
+    {
+      "id": "c0a12f58-205d-48aa-90ae-fa39e3460748",
+      "name": "Máy thở chức năng cao",
+      "model": "Neumovent GraphNet TS",
+      "brand": "Neumovent",
+      "manufacturer": "Tecme Corporation",
+      "origin": "Mỹ",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Cái",
+      "quantity": 3,
+      "unitPrice": 650000000,
+      "amount": 1950000000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "662/QĐ-BVĐK",
+      "decisionDate": "2026-06-26T23:59:59",
+      "resultPublishedDate": "2026-06-26T15:03:12"
+    },
+    {
+      "id": "6801ee32-5163-4f94-922b-e7b4a412078e",
+      "name": "Máy phá rung tim",
+      "model": "ZOLL M2 Monitor/Defibrillator",
+      "brand": "ZOLL",
+      "manufacturer": "Suzhou ZOLL Medical Technology Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 300000000,
+      "amount": 300000000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "662/QĐ-BVĐK",
+      "decisionDate": "2026-06-26T23:59:59",
+      "resultPublishedDate": "2026-06-26T15:03:12"
+    },
+    {
+      "id": "358d4bd8-8537-4beb-8954-d5fd8652e989",
+      "name": "Máy theo dõi bệnh nhân",
+      "model": "BSM-3562",
+      "brand": "NIHON KOHDEN",
+      "manufacturer": "NIHON KOHDEN TOMIOKA CORPORATION Tomioka Production Center",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Cái",
+      "quantity": 3,
+      "unitPrice": 153760000,
+      "amount": 461280000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "662/QĐ-BVĐK",
+      "decisionDate": "2026-06-26T23:59:59",
+      "resultPublishedDate": "2026-06-26T15:03:12"
+    },
+    {
+      "id": "f64ed741-e123-4dcf-80b3-f54a56cbbae2",
+      "name": "Bơm tiêm điện",
+      "model": "TE-SS730",
+      "brand": "Terumo",
+      "manufacturer": "Ashitaka Factory of Terumo Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Cái",
+      "quantity": 10,
+      "unitPrice": 28700000,
+      "amount": 287000000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "662/QĐ-BVĐK",
+      "decisionDate": "2026-06-26T23:59:59",
+      "resultPublishedDate": "2026-06-26T15:03:12"
+    },
+    {
+      "id": "117a8a69-1451-4eca-837e-d88944d62297",
+      "name": "Máy truyền dịch",
+      "model": "TE-LF630",
+      "brand": "Terumo",
+      "manufacturer": "Ashitaka Factory of Terumo Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Cái",
+      "quantity": 5,
+      "unitPrice": 36000000,
+      "amount": 180000000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "662/QĐ-BVĐK",
+      "decisionDate": "2026-06-26T23:59:59",
+      "resultPublishedDate": "2026-06-26T15:03:12"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "9de8fcc2-6729-43dd-adb8-40f76900a0b3",
+        "lotNo": "PP2600223197",
+        "name": "Phần 1: Thiết bị chụp và can thiệp mạch",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 27500000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "5fc0a885-0572-4772-963e-727c9fdb21d0",
+        "lotNo": "PP2600223198",
+        "name": "Phần 2: Thiết bị theo dõi và điều trị bệnh nhân",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 3459533000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Tổ chức lựa chọn nhà thầu cung cấp thiết bị dự án. Gói thầu số 5 được chia thành 2 phần",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-07-27T07:11:33.299Z"
+}

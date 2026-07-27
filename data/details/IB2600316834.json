@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "883bbb80-898f-4946-9d52-00ccec976c8b",
+      "contractorCode": "vn3301068656",
+      "taxCode": "3301068656",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VÀ THIẾT BỊ Y TẾ TÂM ĐỨC",
+      "status": "won",
+      "lotNo": "BP2600452474",
+      "lotName": "Mua Oxy y tế năm 2026",
+      "bidPrice": 4550000,
+      "finalPrice": 4550000,
+      "winningPrice": 4550000,
+      "reason": "",
+      "submittedAt": "2026-07-02T16:58:53.575",
+      "models": [
+        "không có"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "cda8bb20-65b3-4c71-89ac-a1514eb6bafb",
+      "name": "Oxy y tế 3m3",
+      "model": "không có",
+      "brand": "Oxy y tế 3m3",
+      "manufacturer": "Shian Yun",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Không yêu cầu",
+      "unit": "Bình",
+      "quantity": 10,
+      "unitPrice": 56000,
+      "amount": 560000,
+      "contractorCode": "vn3301068656",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VÀ THIẾT BỊ Y TẾ TÂM ĐỨC"
+      ],
+      "lotNo": "",
+      "decisionNo": "726 /QĐ-TTYT",
+      "decisionDate": "2026-07-02T16:39:54",
+      "resultPublishedDate": "2026-07-02T17:01:15"
+    },
+    {
+      "id": "121c4b2e-f953-4db4-b6ef-a37bc23e07f9",
+      "name": "Oxy y tế 6m3",
+      "model": "không có",
+      "brand": "Oxy y tế 6m3",
+      "manufacturer": "Shian Yun",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Không yêu cầu",
+      "unit": "Bình",
+      "quantity": 70,
+      "unitPrice": 57000,
+      "amount": 3990000,
+      "contractorCode": "vn3301068656",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VÀ THIẾT BỊ Y TẾ TÂM ĐỨC"
+      ],
+      "lotNo": "",
+      "decisionNo": "726 /QĐ-TTYT",
+      "decisionDate": "2026-07-02T16:39:54",
+      "resultPublishedDate": "2026-07-02T17:01:15"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "0cf9fa29-da92-4dab-816b-314d0d9bde4a",
+        "lotNo": "BP2600452474",
+        "name": "Mua Oxy y tế năm 2026",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 4550000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Lựa chọn đơn vị cung cấp Oxy y tế",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "11145022014047248",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Oxy y tế 3m3",
+        "unit": "Bình",
+        "quantity": 10,
+        "code": "Không yêu cầu",
+        "brand": "Oxy y tế 3m3",
+        "manufacturer": "Shian Yun",
+        "origin": "Việt Nam",
+        "manufactureYear": "2026",
+        "specification": "Không yêu cầu",
+        "otherRequirement": "không yêu cầu",
+        "projectPlace": "Trung tâm Y tế Phong Điền",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1957",
+        "chapterName": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "8984137946957400",
+        "position": "2",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Oxy y tế 6m3",
+        "unit": "Bình",
+        "quantity": 70,
+        "code": "Không yêu cầu",
+        "brand": "Oxy y tế 6m3",
+        "manufacturer": "Shian Yun",
+        "origin": "Việt Nam",
+        "manufactureYear": "2026",
+        "specification": "Không yêu cầu",
+        "otherRequirement": "không yêu cầu",
+        "projectPlace": "Trung tâm Y tế Phong Điền",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1957",
+        "chapterName": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1957",
+        "name": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "parentCode": "",
+        "orderIndex": 0
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-07-27T07:05:24.947Z"
+}

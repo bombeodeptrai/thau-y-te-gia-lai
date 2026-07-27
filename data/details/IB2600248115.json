@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "a4fed720-059a-4f5f-afda-ee99ae55bad2",
+      "contractorCode": "vn0108493431",
+      "taxCode": "0108493431",
+      "contractorName": "Công ty TNHH trang thiết bị y tế Trung Anh",
+      "status": "lost",
+      "lotNo": "BP2600355699",
+      "lotName": "Mua sắm phim X-Quang",
+      "bidPrice": 1132500000,
+      "finalPrice": 1132500000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu thầu xếp hạng 1",
+      "submittedAt": "2026-06-10T09:28:54.534",
+      "models": []
+    },
+    {
+      "id": "b9dfd809-112e-49e2-8abd-4350a1289c18",
+      "contractorCode": "vn0401428000",
+      "taxCode": "0401428000",
+      "contractorName": "CÔNG TY TNHH AVH",
+      "status": "won",
+      "lotNo": "BP2600355699",
+      "lotName": "Mua sắm phim X-Quang",
+      "bidPrice": 1124779500,
+      "finalPrice": 1124779500,
+      "winningPrice": 1124779500,
+      "reason": "",
+      "submittedAt": "2026-06-10T09:28:54.534",
+      "models": [
+        "DI-HT"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "990a3ab2-664c-4c8e-aad9-b436c1eee565",
+      "name": "Phim Xquang nhiệt 20x25 cm",
+      "model": "DI-HT",
+      "brand": "DI-HT",
+      "manufacturer": "Fujifilm Material Manufacturing Co., Ltd.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Kích thước: 20x25 cm\r\n- Độ dày phim: 185 µm trở lên.\r\n- Công nghệ in: Nhiệt\r\n- Chứng nhận ISO 13485, CE\r\n- Xuất xứ: G7\r\n- Cam kết cung cấp 01 máy in phim phù hợp.",
+      "unit": "Tấm",
+      "quantity": 45000,
+      "unitPrice": 14297,
+      "amount": 643365000,
+      "contractorCode": "vn0401428000",
+      "winnerNames": [
+        "CÔNG TY TNHH AVH"
+      ],
+      "lotNo": "",
+      "decisionNo": "475/QĐ-BV",
+      "decisionDate": "2026-06-10T09:27:36",
+      "resultPublishedDate": "2026-06-10T09:29:28"
+    },
+    {
+      "id": "46cda1cb-30cf-44f6-9d29-b9ef24bf27aa",
+      "name": "Phim Xquang nhiệt 35x43cm",
+      "model": "DI-HT",
+      "brand": "DI-HT",
+      "manufacturer": "Fujifilm Material Manufacturing Co., Ltd.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Kích thước: 35x43 cm\r\n- Độ dày phim: 185 µm trở lên.\r\n- Công nghệ in: Nhiệt\r\n- Chứng nhận ISO 13485, CE\r\n- Xuất xứ: G7\r\n- Cam kết cung cấp 02 máy in phim phù hợp.",
+      "unit": "Tấm",
+      "quantity": 15000,
+      "unitPrice": 32094.3,
+      "amount": 481414500,
+      "contractorCode": "vn0401428000",
+      "winnerNames": [
+        "CÔNG TY TNHH AVH"
+      ],
+      "lotNo": "",
+      "decisionNo": "475/QĐ-BV",
+      "decisionDate": "2026-06-10T09:27:36",
+      "resultPublishedDate": "2026-06-10T09:29:28"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "362c1562-ab01-41d0-98a1-0686fb81e606",
+        "lotNo": "BP2600355699",
+        "name": "Mua sắm phim X-Quang",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 1140750000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm phim X-Quang",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "2026429927200",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Phim Xquang nhiệt 20x25 cm",
+        "unit": "Tấm",
+        "quantity": 45000,
+        "code": "Không",
+        "brand": "Không",
+        "manufacturer": "Không",
+        "origin": "G7",
+        "manufactureYear": "2025 về sau",
+        "specification": "Kích thước: 20x25 cm Độ dày phim: 185 µm trở lên. Công nghệ in: Nhiệt Chứng nhận ISO 13485, CE Xuất xứ: G7 (Đơn vị trúng thầu cam kết đặt 01 máy in phim cho Bệnh viện mượn để sử dụng phim do đơn vị trúng thầu cung cấp)",
+        "otherRequirement": "(Đơn vị trúng thầu cam kết đặt 01 máy in phim cho Bệnh viện mượn để sử dụng phim do đơn vị trúng thầu cung cấp) . Cung cấp các chứng từ đày đủ liên quan đến sản phẩm chào thầu.",
+        "projectPlace": "Bệnh viện Đa khoa khu vực Quảng Nam",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1957",
+        "chapterName": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "20264299292949",
+        "position": "2",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Phim Xquang nhiệt 35x43cm",
+        "unit": "Tấm",
+        "quantity": 15000,
+        "code": "Không",
+        "brand": "Không",
+        "manufacturer": "Không",
+        "origin": "G7",
+        "manufactureYear": "2025 trở về sau",
+        "specification": "Kích thước: 35x43 cm Độ dày phim: 185 µm trở lên. Công nghệ in: Nhiệt Chứng nhận ISO 13485, CE Xuất xứ: G7 (Đơn vị trúng thầu cam kết đặt 02 máy in phim cho Bệnh viện mượn để sử dụng phim do đơn vị trúng thầu cung cấp)",
+        "otherRequirement": "Đơn vị trúng thầu cam kết đặt 02 máy in phim cho Bệnh viện mượn để sử dụng phim do đơn vị trúng thầu cung cấp. Cung cấp các chứng từ liên quan đến sản phẩm chào thầu",
+        "projectPlace": "Bệnh viện Đa khoa khu vực Quảng Nam",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1957",
+        "chapterName": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1957",
+        "name": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "parentCode": "",
+        "orderIndex": 0
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-07-27T07:07:17.980Z"
+}

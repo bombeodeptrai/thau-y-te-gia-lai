@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "cf27ca0d-8cad-4f79-bcc3-0345a67b5b8c",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "lost",
+      "lotNo": "BP2500875848",
+      "lotName": "Mua sắm bổ sung Găng tay phẫu thuật tiệt trùng",
+      "bidPrice": 116151200,
+      "finalPrice": 116151200,
+      "winningPrice": 0,
+      "reason": "Có giá dự thầu cao hơn nhà thầu được xếp hạng thứ nhất",
+      "submittedAt": "2025-12-31T11:17:23.107",
+      "models": []
+    },
+    {
+      "id": "fc28d970-9c81-4730-8ad9-64b3ad829ac2",
+      "contractorCode": "vn0402041359",
+      "taxCode": "0402041359",
+      "contractorName": "CÔNG TY TNHH MTV YTECO",
+      "status": "won",
+      "lotNo": "BP2500875848",
+      "lotName": "Mua sắm bổ sung Găng tay phẫu thuật tiệt trùng",
+      "bidPrice": 116000000,
+      "finalPrice": 116000000,
+      "winningPrice": 116000000,
+      "reason": "",
+      "submittedAt": "2025-12-31T11:17:23.107",
+      "models": [
+        "GPT Gloves"
+      ]
+    },
+    {
+      "id": "441fef3e-616b-41ad-ac0a-38037913721a",
+      "contractorCode": "vn4300361082",
+      "taxCode": "4300361082",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI",
+      "status": "lost",
+      "lotNo": "BP2500875848",
+      "lotName": "Mua sắm bổ sung Găng tay phẫu thuật tiệt trùng",
+      "bidPrice": 117215000,
+      "finalPrice": 117215000,
+      "winningPrice": 0,
+      "reason": "Có giá dự thầu cao hơn nhà thầu được xếp hạng thứ nhất",
+      "submittedAt": "2025-12-31T11:17:23.107",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "23243b03-21ba-421b-83c0-b30d8480a63b",
+      "name": "Găng tay phẫu thuật tiệt trùng",
+      "model": "GPT Gloves",
+      "brand": "Găng tay phẫu thuật có bột tiệt trùng hiệu GPT Gloves",
+      "manufacturer": "Công ty TNHH Công nghệ y tế I-Med",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Chất liệu cao su, tiệt trùng, có bột,\ncác số 6,5; 7; 7,5; 8\nDài ≥ 275mm",
+      "unit": "Đôi",
+      "quantity": 39400,
+      "unitPrice": 2944.1624365482235,
+      "amount": 116000000,
+      "contractorCode": "vn0402041359",
+      "winnerNames": [
+        "CÔNG TY TNHH MTV YTECO"
+      ],
+      "lotNo": "",
+      "decisionNo": "3386/QĐ-BVĐK",
+      "decisionDate": "2025-12-31T11:15:20",
+      "resultPublishedDate": "2025-12-31T11:17:35"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "8869be91-78fd-46c0-b9ac-3a37208db3f6",
+        "lotNo": "BP2500875848",
+        "name": "Mua sắm bổ sung Găng tay phẫu thuật tiệt trùng",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 117490800,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm bổ sung Găng tay phẫu thuật tiệt trùng",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "9716956979550212",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Găng tay phẫu thuật tiệt trùng",
+        "unit": "Đôi",
+        "quantity": 39400,
+        "code": "GPT Gloves",
+        "brand": "Găng tay phẫu thuật có bột tiệt trùng hiệu GPT Gloves",
+        "manufacturer": "Công ty TNHH Công nghệ y tế I-Med",
+        "origin": "Việt Nam",
+        "manufactureYear": "2025 trở về sau",
+        "specification": "Chất liệu cao su, tiệt trùng, có bột,\ncác số 6,5; 7; 7,5; 8\nDài ≥ 275mm",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Đa khoa tỉnh Quảng Ngãi",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1958",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1958",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-07-27T07:07:52.554Z"
+}

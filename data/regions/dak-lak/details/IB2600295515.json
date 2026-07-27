@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "a86c5cdb-dcc0-445d-9b68-c7c213ac9736",
+      "contractorCode": "vn0108493431",
+      "taxCode": "0108493431",
+      "contractorName": "Công ty TNHH trang thiết bị y tế Trung Anh",
+      "status": "lost",
+      "lotNo": "BP2600421676",
+      "lotName": "Mua sắm Phim X-Quang năm 2026",
+      "bidPrice": 235200000,
+      "finalPrice": 235200000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-06-29T14:41:50.634",
+      "models": []
+    },
+    {
+      "id": "8ce2e446-3858-4a93-9b34-51d8aaa4a697",
+      "contractorCode": "vn6000371421",
+      "taxCode": "6000371421",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM HOÀNG VŨ",
+      "status": "won",
+      "lotNo": "BP2600421676",
+      "lotName": "Mua sắm Phim X-Quang năm 2026",
+      "bidPrice": 234360000,
+      "finalPrice": 234360000,
+      "winningPrice": 234360000,
+      "reason": "",
+      "submittedAt": "2026-06-29T14:41:50.634",
+      "models": [
+        "DI-HL"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "22f6877f-afa5-4818-a155-601b4f92f6d0",
+      "name": "Phim X-Quang 20cm x 25cm",
+      "model": "DI-HL",
+      "brand": "DI-HL",
+      "manufacturer": "Fujifilm",
+      "origin": "Nhật",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Phim khô sử dụng trên máy in phim Fuji DryPix 8000, công nghệ in laser.\nKích thước: 20cm x 25cm.",
+      "unit": "Tấm",
+      "quantity": 16800,
+      "unitPrice": 13950,
+      "amount": 234360000,
+      "contractorCode": "vn6000371421",
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "lotNo": "",
+      "decisionNo": "0168/QĐ-BV",
+      "decisionDate": "2026-06-29T14:34:48",
+      "resultPublishedDate": "2026-06-29T14:42:00"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "bcbeb724-4f1b-44a1-bfbb-1faafbf461ae",
+        "lotNo": "BP2600421676",
+        "name": "Mua sắm Phim X-Quang năm 2026",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 243600000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm Phim X-Quang phục vụ cho công tác khám chữa bệnh của Bệnh viện đa khoa Buôn Hồ",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "8749568740190190",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Phim X-Quang 20cm x 25cm",
+        "unit": "Tấm",
+        "quantity": 16800,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Các nước công nghiệp phát triển G7 hoặc châu Âu hoặc Việt Nam.",
+        "manufactureYear": "Không yêu cầu",
+        "specification": "Phim khô sử dụng trên máy in phim Fuji DryPix 8000, công nghệ in laser.\nKích thước: 20cm x 25cm.",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện đa khoa Buôn Hồ",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1957",
+        "chapterName": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1957",
+        "name": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "parentCode": "",
+        "orderIndex": 0
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-07-27T07:09:17.825Z"
+}
