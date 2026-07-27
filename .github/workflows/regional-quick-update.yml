@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   scan:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]')
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]') || contains(github.event.head_commit.message, '[scan-overlap]')
     runs-on: ubuntu-latest
     timeout-minutes: 90
     strategy:
@@ -51,12 +51,15 @@ jobs:
           DRY_RUN: "1"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Quét 3 ngày gần nhất và giữ lịch sử 3 năm
+      # Quét chồng lấn 14 ngày thay vì chỉ 3 ngày. Khoảng chồng lấn này xử lý
+      # trường hợp nguồn công khai lập chỉ mục chậm, workflow bị xếp hàng hoặc
+      # hồ sơ mang mã địa giới cũ được trả về muộn. Dữ liệu 3 năm cũ vẫn được giữ.
+      - name: Quét chồng lấn 14 ngày gần nhất và giữ lịch sử 3 năm
         id: regional_scan
         continue-on-error: true
         env:
           SCAN_DAYS: "1095"
-          INCREMENTAL_DAYS: "3"
+          INCREMENTAL_DAYS: "14"
           WINDOW_DAYS: "7"
           PAGE_SIZE: "10"
           DETAIL_LIMIT: "12"
@@ -82,7 +85,7 @@ jobs:
           if-no-files-found: error
 
   merge-and-deploy:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]')
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]') || contains(github.event.head_commit.message, '[scan-overlap]')
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -136,7 +139,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: khôi phục và cập nhật dữ liệu y tế miền Trung [skip central scan]"
+            git commit -m "data: cập nhật chồng lấn 14 ngày miền Trung [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
