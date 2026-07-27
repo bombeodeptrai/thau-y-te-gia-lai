@@ -49,6 +49,8 @@ for (const entry of [
   "app.js",
   "layout-fix.css",
   "layout-fix.js",
+  "regional-mode.css",
+  "regional-mode.js",
   "ai-config.js",
   "ai-analysis.js",
   "ai-analysis.css",
@@ -93,6 +95,8 @@ const awardedEquipmentSearch = (equipmentData.equipment || [])
     manufacturer: compact(item.manufacturer, 280),
     origin: compact(item.origin, 180),
     winnerNames: uniqueText(item.winnerNames || item.contractorNames || []),
+    regionSlug: compact(item.regionSlug, 100),
+    region: compact(item.region, 160),
     stage: "award",
   }));
 const invitedEquipmentSearch = (requirementsData.requirements || [])
@@ -105,6 +109,8 @@ const invitedEquipmentSearch = (requirementsData.requirements || [])
     manufacturer: "",
     origin: "",
     lotNo: compact(item.lotNo, 120),
+    regionSlug: compact(item.regionSlug, 100),
+    region: compact(item.region, 160),
     stage: "invitation",
   }));
 const technicalEquipmentSearch = (technicalRequirementsData.technicalRequirements || [])
@@ -118,6 +124,8 @@ const technicalEquipmentSearch = (technicalRequirementsData.technicalRequirement
     origin: compact(item.origin, 180),
     lotNo: compact(item.lotNo, 120),
     lotName: compact(item.lotName, 400),
+    regionSlug: compact(item.regionSlug, 100),
+    region: compact(item.region, 160),
     stage: "invitation-technical",
   }));
 const equipmentSearch = [
@@ -188,6 +196,8 @@ for (const tender of tenderData.tenders || []) {
     investor: compact(tender.investor, 600),
     sourceInvestor: compact(tender.investor, 600),
     location: compact(tender.location, 300),
+    regionSlug: compact(tender.regionSlug, 100),
+    region: compact(tender.region, 160),
     category: compact(tender.category, 180),
     publicDate: compact(tender.publicDate, 80),
     decisionDate: compact(tender.decisionDate || tender.resultPublishedDate, 80),
@@ -210,6 +220,8 @@ function mergeCompetitorRecords(previous, current) {
     ...current,
     investor: current.investor || previous.investor,
     sourceInvestor: previous.sourceInvestor || current.sourceInvestor || current.investor,
+    regionSlug: current.regionSlug || previous.regionSlug,
+    region: current.region || previous.region,
     winnerNames: uniqueText([...(previous.winnerNames || []), ...(current.winnerNames || [])]),
     participants: current.participants?.length ? current.participants : (previous.participants || []),
     equipment: current.equipment?.length ? current.equipment : (previous.equipment || []),
@@ -241,20 +253,21 @@ competitorRecords.sort((left, right) => {
   return rightTime - leftTime;
 });
 
-const coverageDays = Math.max(
+const coverageDays = Number(tenderData.collection?.days) || Math.max(
   Number(competitorHistoryData.coverageDays) || 0,
-  Number(tenderData.collection?.days) || 0,
+  0,
 );
 
 await writeFile(
   resolve(output, "data/competitor-intelligence.json"),
   `${JSON.stringify({
-    schemaVersion: 2,
+    schemaVersion: 3,
     generatedAt: new Date().toISOString(),
     fetchedAt: tenderData.fetchedAt || equipmentData.fetchedAt || "",
     historyGeneratedAt: competitorHistoryData.generatedAt || "",
     coverageDays,
     recordCount: competitorRecords.length,
+    regions: tenderData.regions || [],
     records: competitorRecords,
   })}\n`,
 );
