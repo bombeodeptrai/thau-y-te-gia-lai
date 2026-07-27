@@ -1,0 +1,144 @@
+name: Cập nhật nhanh dữ liệu miền Trung
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: regional-data
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        region:
+          - thanh-hoa
+          - nghe-an
+          - ha-tinh
+          - quang-tri
+          - hue
+          - da-nang
+          - quang-ngai
+          - gia-lai
+          - dak-lak
+          - khanh-hoa
+          - lam-dong
+    steps:
+      - name: Lấy mã nguồn và dữ liệu đã lưu
+        uses: actions/checkout@v4
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Kiểm tra cấu hình ${{ matrix.region }}
+        env:
+          DRY_RUN: "1"
+        run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
+
+      - name: Quét 3 ngày gần nhất và giữ lịch sử 3 năm
+        id: regional_scan
+        continue-on-error: true
+        env:
+          SCAN_DAYS: "1095"
+          INCREMENTAL_DAYS: "3"
+          WINDOW_DAYS: "7"
+          PAGE_SIZE: "100"
+          DETAIL_LIMIT: "12"
+          ENABLE_HISTORICAL_FALLBACK: "0"
+          FORCE_FULL_REFRESH: "0"
+        run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
+
+      - name: Đóng gói dữ liệu tỉnh thành
+        run: |
+          mkdir -p "data/regions/${{ matrix.region }}" artifacts
+          printf '%s\n' "${{ steps.regional_scan.outcome }}" > "data/regions/${{ matrix.region }}/last-workflow-status.txt"
+          tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
+
+      - name: Lưu dữ liệu tạm
+        uses: actions/upload-artifact@v4
+        with:
+          name: region-${{ matrix.region }}
+          path: artifacts/${{ matrix.region }}.tgz
+          retention-days: 2
+          if-no-files-found: error
+
+  merge-and-deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Lấy mã nguồn mới nhất
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Tải dữ liệu từng tỉnh thành
+        uses: actions/download-artifact@v4
+        with:
+          pattern: region-*
+          path: artifacts
+          merge-multiple: true
+
+      - name: Giải nén và hợp nhất dữ liệu
+        run: |
+          for archive in artifacts/*.tgz; do
+            tar -xzf "$archive"
+          done
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
+
+      - name: Ghi cơ sở dữ liệu về repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Dữ liệu không thay đổi"
+          else
+            git commit -m "data: cập nhật nhanh dữ liệu y tế miền Trung [skip central scan]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Tạo bản website từ dữ liệu mới
+        run: |
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/build-pages.mjs
+
+      - name: Cấu hình Pages
+        uses: actions/configure-pages@v5
+
+      - name: Tải bản tĩnh lên Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist-pages
+
+      - name: Triển khai
+        id: deployment
+        uses: actions/deploy-pages@v4
