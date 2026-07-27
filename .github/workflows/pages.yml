@@ -1,10 +1,10 @@
-name: Cập nhật dữ liệu và triển khai GitHub Pages
+name: Triển khai giao diện GitHub Pages
 
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: "*/15 * * * *"
+    paths-ignore:
+      - "data/**"
   workflow_dispatch:
 
 permissions:
@@ -13,9 +13,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  # Không hủy lượt quét dữ liệu đang chạy giữa chừng.
-  cancel-in-progress: false
+  group: pages-deploy
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -26,55 +25,39 @@ jobs:
     steps:
       - name: Lấy mã nguồn
         uses: actions/checkout@v4
+
       - name: Cài Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Khôi phục bộ nhớ đệm dữ liệu
-        uses: actions/cache@v4
-        with:
-          path: data
-          key: tender-data-${{ github.run_id }}
-          restore-keys: |
-            tender-data-
-      - name: Kiểm tra bộ trích thông số e-HSMT
-        run: node --test scripts/technical-requirements.test.mjs
-      - name: Kiểm tra cú pháp phân tích đối thủ
+
+      - name: Kiểm tra mã nguồn
         run: |
-          node --check scripts/fetch-competitor-history.mjs
+          node --test scripts/technical-requirements.test.mjs
+          node --check scripts/run-region-scan.mjs
+          node --check scripts/merge-regions.mjs
           node --check scripts/build-pages.mjs
+          node --check regional-mode.js
+          node --check competitor-analysis.js
           node --check competitor-count-fix.js
+          DRY_RUN=1 node scripts/run-region-scan.mjs gia-lai
 
-      # Khi chỉ sửa giao diện/mã nguồn và push lên main, dùng ngay dữ liệu gần nhất
-      # từ cache để triển khai nhanh. Việc quét nguồn công khai tiếp tục chạy theo
-      # lịch 15 phút hoặc khi bấm Run workflow thủ công.
-      - name: Lấy dữ liệu công khai mới nhất
-        if: github.event_name != 'push'
-        run: node scripts/fetch-data.mjs
-      - name: Quét bù nhanh gói mới theo địa danh
-        if: github.event_name != 'push'
-        run: node scripts/fetch-recent-location-fallback.mjs
+      - name: Chuẩn hóa dữ liệu vùng hiện có
+        run: |
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
 
-      # Quét riêng lịch sử kết quả theo từng bệnh viện/đơn vị trong 3 năm.
-      # Dữ liệu được giữ 20 giờ nên các lượt chạy 15 phút không gửi request lặp lại.
-      # Commit có nhãn [full-history] sẽ buộc chạy ngay sau khi merge.
-      - name: Cập nhật lịch sử đối thủ 3 năm
-        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[full-history]')
-        run: node scripts/fetch-competitor-history.mjs
-
-      - name: Áp dụng dữ liệu thiết bị đã xác minh
-        run: node scripts/apply-manual-equipment-overrides.mjs
-
-      # Phân tích trên giao diện dùng quy tắc cục bộ và dữ liệu công khai.
-      # Không gọi OpenAI hay dịch vụ API trả phí.
       - name: Tạo bản tĩnh
         run: node scripts/build-pages.mjs
+
       - name: Cấu hình Pages
         uses: actions/configure-pages@v5
+
       - name: Tải bản tĩnh lên Pages
         uses: actions/upload-pages-artifact@v4
         with:
           path: dist-pages
+
       - name: Triển khai
         id: deployment
         uses: actions/deploy-pages@v4
