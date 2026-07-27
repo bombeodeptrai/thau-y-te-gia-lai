@@ -11,10 +11,12 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
-      - name: Lấy mã nguồn
+      - name: Lấy mã nguồn và lịch sử dữ liệu
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Cài Node.js
         uses: actions/setup-node@v4
@@ -25,6 +27,7 @@ jobs:
         run: |
           node --test scripts/technical-requirements.test.mjs
           node --check scripts/run-region-scan.mjs
+          node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
           node --check scripts/build-pages.mjs
           node --check scripts/build-site.mjs
@@ -41,11 +44,13 @@ jobs:
             DRY_RUN=1 node scripts/run-region-scan.mjs "$region"
           done
 
-      - name: Dựng thử website miền Trung
+      - name: Khôi phục và dựng thử website miền Trung
         run: |
+          node scripts/restore-legacy-gia-lai.mjs
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
           node scripts/build-site.mjs
           test -f dist-pages/index.html
           test -f dist-pages/data/region-coverage.json
           test -f dist-pages/regional-mode.js
+          node -e 'const d=require("./data/tenders.json"); if (!d.tenders?.length) process.exit(1); console.log(`CI có ${d.tenders.length} gói dữ liệu dự phòng`);'
