@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-07-27T03:43:40.727Z",
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-27T05:10:11.227Z",
   "configuredRegionCount": 11,
-  "initializedRegionCount": 0,
-  "completeCoverageDays": 0,
-  "totalTenderCount": 0,
+  "initializedRegionCount": 1,
+  "completeCoverageDays": 90,
+  "totalTenderCount": 153,
   "totalBidderCount": 0,
   "totalEquipmentCount": 0,
+  "fallbackActive": true,
   "regions": [
     {
       "slug": "thanh-hoa",
@@ -21,7 +22,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "nghe-an",
@@ -36,7 +37,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "ha-tinh",
@@ -51,7 +52,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "quang-tri",
@@ -67,7 +68,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "hue",
@@ -82,7 +83,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "da-nang",
@@ -98,7 +99,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "quang-ngai",
@@ -114,7 +115,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "gia-lai",
@@ -123,14 +124,14 @@
         "52",
         "64"
       ],
-      "tenderCount": 0,
+      "tenderCount": 153,
       "bidderCount": 0,
       "equipmentCount": 0,
-      "detailTenderCount": 0,
-      "coverageDays": 0,
-      "fetchedAt": "",
-      "initialized": false,
-      "source": "regional-scan"
+      "detailTenderCount": 94,
+      "coverageDays": 90,
+      "fetchedAt": "2026-07-21T13:44:46.017Z",
+      "initialized": true,
+      "source": "legacy-gia-lai-fallback"
     },
     {
       "slug": "dak-lak",
@@ -146,7 +147,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "khanh-hoa",
@@ -162,7 +163,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     },
     {
       "slug": "lam-dong",
@@ -179,7 +180,7 @@
       "coverageDays": 0,
       "fetchedAt": "",
       "initialized": false,
-      "source": "regional-scan"
+      "source": "regional-scan-empty"
     }
   ]
 }
