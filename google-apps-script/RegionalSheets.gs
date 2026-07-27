@@ -55,7 +55,7 @@ function mtWriteSummary_(ss, regions, coverage, fetchedAt) {
       Number(item.bidderCount) || 0, Number(item.equipmentCount) || 0, Number(item.detailTenderCount) || 0,
       Number(item.coverageDays) || 0, mtDate_(item.fetchedAt || fetchedAt), item.initialized ? "Đã có dữ liệu" : "Đang khởi tạo"];
   });
-  mtWriteTable_(mtSheet_(ss, "Miền Trung - Tổng hợp"), "Cơ sở dữ liệu đấu thầu y tế khu vực miền Trung", headers, rows);
+  mtWriteTable_(mtSheet_(ss, "Miền Trung - Tổng hợp"), "Cơ sở dữ liệu đấu thầu y tế khu vực miền Trung", headers, rows, 0);
 }
 
 function mtWriteTenderSheet_(ss, region, tenders, fetchedAt) {
@@ -71,8 +71,7 @@ function mtWriteTenderSheet_(ss, region, tenders, fetchedAt) {
       item.hasResult ? "Có" : "Chưa", item.sourceUrl || "", mtDate_(fetchedAt)];
   });
   const sheet = mtSheet_(ss, mtSheetName_("MT - " + (region.shortName || region.name)));
-  mtWriteTable_(sheet, "Gói thầu thiết bị y tế - " + region.name + " - 3 năm gần nhất", headers, rows);
-  sheet.setFrozenColumns(2);
+  mtWriteTable_(sheet, "Gói thầu thiết bị y tế - " + region.name + " - 3 năm gần nhất", headers, rows, 2);
   sheet.setColumnWidth(3, 420);
   sheet.setColumnWidths(5, 2, 230);
   sheet.setColumnWidths(11, 5, 260);
@@ -87,7 +86,7 @@ function mtWriteBidderSheet_(ss, bidders, fetchedAt) {
       mtNumber_(item.bidPrice), mtNumber_(item.finalPrice), mtNumber_(item.winningPrice), item.reason || "",
       (item.models || []).join("; "), item.sourceUrl || "", mtDate_(fetchedAt)];
   });
-  mtWriteTable_(mtSheet_(ss, "Miền Trung - Nhà thầu"), "Nhà thầu khu vực miền Trung", headers, rows);
+  mtWriteTable_(mtSheet_(ss, "Miền Trung - Nhà thầu"), "Nhà thầu khu vực miền Trung", headers, rows, 0);
 }
 
 function mtWriteEquipmentSheet_(ss, equipment, fetchedAt) {
@@ -101,24 +100,51 @@ function mtWriteEquipmentSheet_(ss, equipment, fetchedAt) {
       item.manufactureYear || "", item.specification || "", item.unit || "", quantity, unitPrice, quantity * unitPrice,
       (item.winnerNames || []).join("; "), item.sourceUrl || "", mtDate_(fetchedAt)];
   });
-  mtWriteTable_(mtSheet_(ss, "Miền Trung - Thiết bị"), "Thiết bị, hóa chất, model và giá trúng", headers, rows);
+  mtWriteTable_(mtSheet_(ss, "Miền Trung - Thiết bị"), "Thiết bị, hóa chất, model và giá trúng", headers, rows, 0);
 }
 
-function mtWriteTable_(sheet, title, headers, rows) {
+function mtWriteTable_(sheet, title, headers, rows, frozenColumns) {
+  const frozen = Math.max(0, Math.min(Number(frozenColumns) || 0, Math.max(0, headers.length - 1)));
   const filter = sheet.getFilter();
   if (filter) filter.remove();
+
+  // clear() không tự tách các ô đã gộp. Phải bỏ cố định và tách ô trước,
+  // nếu không lần chạy sau có thể báo lỗi khi thay đổi bố cục.
+  sheet.setFrozenColumns(0);
+  sheet.setFrozenRows(0);
+  sheet.getDataRange().breakApart();
   sheet.clear();
-  sheet.getRange(1, 1, 1, headers.length).merge().setValue(title).setHorizontalAlignment("center")
-    .setFontWeight("bold").setFontSize(15).setBackground("#e8f2eb").setFontColor("#173c32");
+
+  function styleTitle_(range) {
+    return range.setHorizontalAlignment("center")
+      .setVerticalAlignment("middle")
+      .setFontWeight("bold")
+      .setFontSize(15)
+      .setBackground("#e8f2eb")
+      .setFontColor("#173c32");
+  }
+
+  if (frozen > 0) {
+    // Không gộp ô tiêu đề băng qua ranh giới cột cố định.
+    // A:B nằm hoàn toàn trong vùng cố định; C:T nằm ngoài vùng cố định.
+    styleTitle_(sheet.getRange(1, 1, 1, frozen).merge().setValue("Mã gói · Ngày đăng"));
+    styleTitle_(sheet.getRange(1, frozen + 1, 1, headers.length - frozen).merge().setValue(title));
+  } else {
+    styleTitle_(sheet.getRange(1, 1, 1, headers.length).merge().setValue(title));
+  }
+
   sheet.getRange(2, 1, 1, headers.length).setValues([headers]).setBackground("#173c32")
     .setFontColor("#ffffff").setFontWeight("bold").setWrap(true);
-  if (rows.length) sheet.getRange(3, 1, rows.length, headers.length).setValues(rows).setVerticalAlignment("top").setWrap(true);
+  if (rows.length) {
+    sheet.getRange(3, 1, rows.length, headers.length).setValues(rows).setVerticalAlignment("top").setWrap(true);
+  }
   sheet.setFrozenRows(2);
+  if (frozen > 0) sheet.setFrozenColumns(frozen);
   sheet.getRange(2, 1, Math.max(2, rows.length + 1), headers.length).createFilter();
 }
 
 function mtSheet_(ss, name) { return ss.getSheetByName(name) || ss.insertSheet(name); }
-function mtSheetName_(name) { return String(name).replace(/[\\/?*\[\]:]/g, " ").slice(0, 99); }
+function mtSheetName_(name) { return String(name).replace(/[\/?*\[\]:]/g, " ").slice(0, 99); }
 function mtDate_(value) { const date = new Date(value || 0); return isNaN(date.getTime()) ? "" : date; }
 function mtNumber_(value) { const number = Number(value); return isFinite(number) && number !== 0 ? number : ""; }
 function mtStatus_(value) { return ({ open: "Đang mở", urgent: "Sắp đóng", evaluating: "Đang xét thầu", closed: "Chưa có kết quả", no_bidder: "Không có nhà thầu", awarded: "Đã có kết quả", cancelled: "Đã hủy" })[value] || value || ""; }
