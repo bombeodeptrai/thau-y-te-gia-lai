@@ -1,8 +1,12 @@
 {
-  "tenders": [],
-  "fetchedAt": "2026-07-27T03:43:40.760Z",
-  "source": "muasamcong-public-api-central-region",
-  "detailTenderCount": 0,
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-27T03:43:40.727Z",
+  "configuredRegionCount": 11,
+  "initializedRegionCount": 0,
+  "completeCoverageDays": 0,
+  "totalTenderCount": 0,
+  "totalBidderCount": 0,
+  "totalEquipmentCount": 0,
   "regions": [
     {
       "slug": "thanh-hoa",
@@ -177,12 +181,5 @@
       "initialized": false,
       "source": "regional-scan"
     }
-  ],
-  "collection": {
-    "days": 0,
-    "strategy": "merged-current-central-region-provinces",
-    "configuredRegionCount": 11,
-    "initializedRegionCount": 0,
-    "scannedTenderCount": 0
-  }
+  ]
 }
