@@ -44,9 +44,11 @@ function js(value) {
 }
 
 function replaceOrThrow(source, pattern, replacement, label) {
-  const next = source.replace(pattern, replacement);
-  if (next === source) throw new Error(`Không vá được fetch-data.mjs tại: ${label}`);
-  return next;
+  const matched = typeof pattern === "string"
+    ? source.includes(pattern)
+    : new RegExp(pattern.source, pattern.flags.replace("g", "")).test(source);
+  if (!matched) throw new Error(`Không vá được fetch-data.mjs tại: ${label}`);
+  return source.replace(pattern, replacement);
 }
 
 function runNode(args) {
