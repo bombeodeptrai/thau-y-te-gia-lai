@@ -23,8 +23,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Lấy mã nguồn
+      - name: Lấy mã nguồn và lịch sử dữ liệu
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Cài Node.js
         uses: actions/setup-node@v4
@@ -35,6 +37,7 @@ jobs:
         run: |
           node --test scripts/technical-requirements.test.mjs
           node --check scripts/run-region-scan.mjs
+          node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
           node --check scripts/build-pages.mjs
           node --check scripts/build-site.mjs
@@ -45,6 +48,9 @@ jobs:
           cp google-apps-script/RegionalSheets.gs /tmp/RegionalSheets.js
           node --check /tmp/RegionalSheets.js
           DRY_RUN=1 node scripts/run-region-scan.mjs gia-lai
+
+      - name: Khôi phục dữ liệu Gia Lai nếu bản hợp nhất bị rỗng
+        run: node scripts/restore-legacy-gia-lai.mjs
 
       - name: Chuẩn hóa dữ liệu vùng hiện có
         run: |
