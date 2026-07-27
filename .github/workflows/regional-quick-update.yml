@@ -60,6 +60,7 @@ jobs:
           WINDOW_DAYS: "7"
           PAGE_SIZE: "10"
           DETAIL_LIMIT: "12"
+          MIN_TENDER_COUNT: "1"
           ENABLE_HISTORICAL_FALLBACK: "0"
           FORCE_FULL_REFRESH: "0"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
@@ -107,7 +108,6 @@ jobs:
         run: node scripts/restore-legacy-gia-lai.mjs
 
       - name: Tải dữ liệu các tỉnh quét thành công
-        id: download_regions
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -126,6 +126,7 @@ jobs:
           fi
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/data-health-check.mjs
 
       - name: Ghi cơ sở dữ liệu an toàn về repository
         run: |
@@ -144,6 +145,7 @@ jobs:
         run: |
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/data-health-check.mjs
           node scripts/build-site.mjs
 
       - name: Cấu hình Pages
