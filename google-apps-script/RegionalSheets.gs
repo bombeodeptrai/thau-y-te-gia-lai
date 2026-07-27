@@ -1,82 +1,157 @@
 const MT_BASE_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/";
 const MT_SHEET_PREFIX = "DBMT - ";
 const MT_OWNER_KEY = "KIEU_VIET_MT_SYNC";
-const MT_OWNER_VALUE = "1";
+const MT_OWNER_VALUE = "2";
+const MT_DEFAULT_REGION_SLUG = "gia-lai";
+const MT_CURSOR_KEY = "MT_REGION_CURSOR_V2";
+const MT_LAST_SYNC_PREFIX = "MT_LAST_SYNC_";
+const MT_BATCH_ROWS = 1500;
 
 function setupMienTrungSheets() {
-  syncMienTrungSheets();
-  ScriptApp.getProjectTriggers()
-    .filter(function(trigger) { return trigger.getHandlerFunction() === "syncMienTrungSheets"; })
-    .forEach(function(trigger) { ScriptApp.deleteTrigger(trigger); });
-  ScriptApp.newTrigger("syncMienTrungSheets").timeBased().everyHours(1).create();
+  mtRemoveSyncTriggers_();
+  mtWithLock_(function() {
+    const metadata = mtLoadMetadata_();
+    mtWriteSummary_(SpreadsheetApp.getActive(), metadata.regions, metadata.coverage, metadata.fetchedAt);
+    const giaLai = metadata.regions.filter(function(region) { return region.slug === MT_DEFAULT_REGION_SLUG; })[0];
+    if (!giaLai) throw new Error("Không tìm thấy cấu hình Gia Lai");
+    mtSyncRegion_(SpreadsheetApp.getActive(), giaLai);
+    PropertiesService.getScriptProperties().setProperty(MT_CURSOR_KEY, "0");
+  });
+  ScriptApp.newTrigger("syncMienTrungSheets").timeBased().everyMinutes(15).create();
   SpreadsheetApp.getActive().toast(
-    "Đã tạo các tab DBMT riêng và cài cập nhật mỗi giờ. Các tab cũ không bị sửa.",
+    "Đã đồng bộ Gia Lai. Các tỉnh khác sẽ tự cập nhật lần lượt mỗi 15 phút vào tab riêng.",
     "Thầu Y tế Miền Trung",
-    8
+    10
   );
 }
 
-function stopMienTrungSheets() {
-  ScriptApp.getProjectTriggers()
-    .filter(function(trigger) { return trigger.getHandlerFunction() === "syncMienTrungSheets"; })
-    .forEach(function(trigger) { ScriptApp.deleteTrigger(trigger); });
-  SpreadsheetApp.getActive().toast("Đã dừng cập nhật tự động.", "Thầu Y tế Miền Trung", 6);
+function syncGiaLaiSheets() {
+  mtWithLock_(function() {
+    const metadata = mtLoadMetadata_();
+    mtWriteSummary_(SpreadsheetApp.getActive(), metadata.regions, metadata.coverage, metadata.fetchedAt);
+    const region = metadata.regions.filter(function(item) { return item.slug === MT_DEFAULT_REGION_SLUG; })[0];
+    if (!region) throw new Error("Không tìm thấy cấu hình Gia Lai");
+    mtSyncRegion_(SpreadsheetApp.getActive(), region);
+  });
+  SpreadsheetApp.getActive().toast("Đã cập nhật riêng dữ liệu Gia Lai.", "Thầu Y tế Miền Trung", 7);
 }
 
 function syncMienTrungSheets() {
-  const lock = LockService.getScriptLock();
-  if (!lock.tryLock(30000)) return;
-  try {
-    const version = Date.now();
-    const names = ["tenders.json", "bidders.json", "equipment.json", "regions.json", "region-coverage.json"];
-    const responses = UrlFetchApp.fetchAll(names.map(function(name) {
-      return { url: MT_BASE_URL + name + "?v=" + version, muteHttpExceptions: true };
-    }));
-    responses.forEach(function(response, index) {
-      if (response.getResponseCode() !== 200) throw new Error(names[index] + " HTTP " + response.getResponseCode());
-    });
-
-    const tenderPayload = JSON.parse(responses[0].getContentText());
-    const bidderPayload = JSON.parse(responses[1].getContentText());
-    const equipmentPayload = JSON.parse(responses[2].getContentText());
-    const regionPayload = JSON.parse(responses[3].getContentText());
-    const coveragePayload = JSON.parse(responses[4].getContentText());
-    const tenders = tenderPayload.tenders || [];
-    const bidders = bidderPayload.bidders || [];
-    const equipment = equipmentPayload.equipment || [];
-    const regions = regionPayload.regions || [];
+  mtWithLock_(function() {
+    const metadata = mtLoadMetadata_();
     const ss = SpreadsheetApp.getActive();
+    mtWriteSummary_(ss, metadata.regions, metadata.coverage, metadata.fetchedAt);
 
-    mtWriteSummary_(ss, regions, coveragePayload, tenderPayload.fetchedAt);
-    regions.forEach(function(region) {
-      mtWriteTenderSheet_(
-        ss,
-        region,
-        tenders.filter(function(item) { return item.regionSlug === region.slug; }),
-        tenderPayload.fetchedAt
-      );
+    const queue = metadata.regions.filter(function(region) {
+      return region.slug !== MT_DEFAULT_REGION_SLUG;
     });
-    mtWriteBidderSheet_(ss, bidders, tenderPayload.fetchedAt);
-    mtWriteEquipmentSheet_(ss, equipment, tenderPayload.fetchedAt);
+    if (!queue.length) return;
+
+    const properties = PropertiesService.getScriptProperties();
+    let cursor = Number(properties.getProperty(MT_CURSOR_KEY)) || 0;
+    cursor = Math.max(0, cursor % queue.length);
+    const region = queue[cursor];
+    mtSyncRegion_(ss, region);
+    properties.setProperty(MT_CURSOR_KEY, String((cursor + 1) % queue.length));
     ss.toast(
-      "Đã đồng bộ " + tenders.length + " gói của " + regions.length + " tỉnh thành vào các tab DBMT.",
+      "Đã cập nhật " + region.name + ". Lượt tiếp theo sẽ xử lý tỉnh kế tiếp.",
       "Thầu Y tế Miền Trung",
-      8
+      7
     );
+  });
+}
+
+function stopMienTrungSheets() {
+  mtRemoveSyncTriggers_();
+  SpreadsheetApp.getActive().toast("Đã dừng cập nhật tự động.", "Thầu Y tế Miền Trung", 6);
+}
+
+function mtRemoveSyncTriggers_() {
+  ScriptApp.getProjectTriggers()
+    .filter(function(trigger) { return trigger.getHandlerFunction() === "syncMienTrungSheets"; })
+    .forEach(function(trigger) { ScriptApp.deleteTrigger(trigger); });
+}
+
+function mtWithLock_(callback) {
+  const lock = LockService.getScriptLock();
+  if (!lock.tryLock(30000)) throw new Error("Một lượt đồng bộ khác đang chạy. Hãy thử lại sau.");
+  try {
+    callback();
   } finally {
     lock.releaseLock();
+  }
+}
+
+function mtLoadMetadata_() {
+  const version = Date.now();
+  const responses = UrlFetchApp.fetchAll([
+    { url: MT_BASE_URL + "regions.json?v=" + version, muteHttpExceptions: true },
+    { url: MT_BASE_URL + "region-coverage.json?v=" + version, muteHttpExceptions: true }
+  ]);
+  const regionPayload = mtParseResponse_(responses[0], "regions.json");
+  const coveragePayload = mtParseResponse_(responses[1], "region-coverage.json");
+  return {
+    regions: regionPayload.regions || [],
+    coverage: coveragePayload,
+    fetchedAt: coveragePayload.generatedAt || ""
+  };
+}
+
+function mtSyncRegion_(ss, region) {
+  const version = Date.now();
+  const base = MT_BASE_URL + "regions/" + encodeURIComponent(region.slug) + "/";
+  const files = ["tenders.json", "bidders.json", "equipment.json"];
+  const responses = UrlFetchApp.fetchAll(files.map(function(name) {
+    return { url: base + name + "?v=" + version, muteHttpExceptions: true };
+  }));
+
+  // Phải phân tích xong toàn bộ JSON trước khi chạm vào Sheet. Nếu một tệp lỗi hoặc
+  // bị cắt giữa chừng, dữ liệu cũ vẫn được giữ nguyên.
+  const tenderPayload = mtParseResponse_(responses[0], region.name + "/tenders.json");
+  const bidderPayload = mtParseResponse_(responses[1], region.name + "/bidders.json");
+  const equipmentPayload = mtParseResponse_(responses[2], region.name + "/equipment.json");
+  const fetchedAt = tenderPayload.fetchedAt || bidderPayload.fetchedAt || equipmentPayload.fetchedAt || new Date().toISOString();
+
+  mtWriteTenderSheet_(ss, region, tenderPayload.tenders || [], fetchedAt);
+  mtWriteBidderSheet_(ss, region, bidderPayload.bidders || [], fetchedAt);
+  mtWriteEquipmentSheet_(ss, region, equipmentPayload.equipment || [], fetchedAt);
+  PropertiesService.getScriptProperties().setProperty(MT_LAST_SYNC_PREFIX + region.slug, new Date().toISOString());
+}
+
+function mtParseResponse_(response, label) {
+  const code = response.getResponseCode();
+  if (code !== 200) throw new Error(label + " HTTP " + code);
+  const text = response.getContentText("UTF-8");
+  const trimmed = String(text || "").trim();
+  if (!trimmed || trimmed.charAt(0) !== "{" || trimmed.charAt(trimmed.length - 1) !== "}") {
+    throw new Error(label + " tải chưa đầy đủ hoặc bị cắt giữa chừng; dữ liệu cũ được giữ nguyên");
+  }
+  try {
+    return JSON.parse(trimmed);
+  } catch (error) {
+    throw new Error(label + " không phải JSON hoàn chỉnh: " + error.message);
   }
 }
 
 function mtWriteSummary_(ss, regions, coverage, fetchedAt) {
   const bySlug = {};
   (coverage.regions || []).forEach(function(item) { bySlug[item.slug] = item; });
-  const headers = ["Tỉnh/thành", "Mã nguồn", "Số gói", "Nhà thầu", "Thiết bị/model", "Hồ sơ chi tiết", "Số ngày dữ liệu", "Cập nhật", "Trạng thái"];
+  const properties = PropertiesService.getScriptProperties();
+  const headers = ["Tỉnh/thành", "Mã nguồn", "Số gói", "Nhà thầu", "Thiết bị/model", "Hồ sơ chi tiết", "Số ngày dữ liệu", "Cập nhật nguồn", "Đồng bộ Sheet", "Trạng thái"];
   const rows = regions.map(function(region) {
     const item = bySlug[region.slug] || {};
-    return [region.name, (region.provinceCodes || []).join(", "), Number(item.tenderCount) || 0,
-      Number(item.bidderCount) || 0, Number(item.equipmentCount) || 0, Number(item.detailTenderCount) || 0,
-      Number(item.coverageDays) || 0, mtDate_(item.fetchedAt || fetchedAt), item.initialized ? "Đã có dữ liệu" : "Đang khởi tạo"];
+    return [
+      region.name,
+      (region.provinceCodes || []).join(", "),
+      Number(item.tenderCount) || 0,
+      Number(item.bidderCount) || 0,
+      Number(item.equipmentCount) || 0,
+      Number(item.detailTenderCount) || 0,
+      Number(item.coverageDays) || 0,
+      mtDate_(item.fetchedAt || fetchedAt),
+      mtDate_(properties.getProperty(MT_LAST_SYNC_PREFIX + region.slug)),
+      item.initialized ? "Đã có dữ liệu" : "Đang khởi tạo"
+    ];
   });
   mtWriteTable_(mtManagedSheet_(ss, "Tổng hợp"), "Cơ sở dữ liệu đấu thầu y tế khu vực miền Trung", headers, rows, 0);
 }
@@ -86,12 +161,14 @@ function mtWriteTenderSheet_(ss, region, tenders, fetchedAt) {
     "Hạn đóng", "Trạng thái", "Số nhà thầu", "Nhà thầu tham dự", "Đơn vị trúng", "Nhà thầu không trúng",
     "Model trúng", "Model không trúng", "Giá trúng", "Ngày quyết định", "Có kết quả", "Nguồn", "Cập nhật"];
   const rows = tenders.map(function(item) {
-    return [item.notifyNo || "", mtDate_(item.publicDate), item.name || "", item.category || "", item.investor || "",
-      item.location || "", Number(item.price) || 0, mtDate_(item.closeDate), mtStatus_(item.status),
-      item.bidderCount == null ? "" : Number(item.bidderCount), (item.participantNames || []).join("; "),
-      (item.winnerNames || []).join("; "), (item.loserNames || []).join("; "), (item.winningModels || []).join("; "),
-      (item.losingModels || []).join("; "), Number(item.winningPrice) || 0, mtDate_(item.decisionDate),
-      item.hasResult ? "Có" : "Chưa", item.sourceUrl || "", mtDate_(fetchedAt)];
+    return [
+      mtCell_(item.notifyNo, 100), mtDate_(item.publicDate), mtCell_(item.name, 5000), mtCell_(item.category, 300),
+      mtCell_(item.investor, 1500), mtCell_(item.location, 800), Number(item.price) || 0, mtDate_(item.closeDate),
+      mtStatus_(item.status), item.bidderCount == null ? "" : Number(item.bidderCount),
+      mtList_(item.participantNames), mtList_(item.winnerNames), mtList_(item.loserNames),
+      mtList_(item.winningModels), mtList_(item.losingModels), Number(item.winningPrice) || 0,
+      mtDate_(item.decisionDate), item.hasResult ? "Có" : "Chưa", mtCell_(item.sourceUrl, 3000), mtDate_(fetchedAt)
+    ];
   });
   const sheet = mtManagedSheet_(ss, region.shortName || region.name);
   mtWriteTable_(sheet, "Gói thầu thiết bị y tế - " + region.name + " - 3 năm gần nhất", headers, rows, 2);
@@ -100,30 +177,47 @@ function mtWriteTenderSheet_(ss, region, tenders, fetchedAt) {
   sheet.setColumnWidths(11, 5, 260);
 }
 
-function mtWriteBidderSheet_(ss, bidders, fetchedAt) {
-  const headers = ["Tỉnh/thành", "Mã TBMT", "Tên gói", "Nhà thầu", "Mã nhà thầu", "Mã số thuế", "Lô/phần",
+function mtWriteBidderSheet_(ss, region, bidders, fetchedAt) {
+  const headers = ["Mã TBMT", "Tên gói", "Nhà thầu", "Mã nhà thầu", "Mã số thuế", "Lô/phần",
     "Trạng thái", "Giá dự thầu", "Giá sau giảm", "Giá trúng", "Lý do", "Model", "Nguồn", "Cập nhật"];
   const rows = bidders.map(function(item) {
-    return [item.region || "", item.notifyNo || "", item.tenderName || "", item.contractorName || "",
-      item.contractorCode || "", item.taxCode || "", item.lotName || item.lotNo || "", mtBidderStatus_(item.status),
-      mtNumber_(item.bidPrice), mtNumber_(item.finalPrice), mtNumber_(item.winningPrice), item.reason || "",
-      (item.models || []).join("; "), item.sourceUrl || "", mtDate_(fetchedAt)];
+    return [
+      mtCell_(item.notifyNo, 100), mtCell_(item.tenderName, 5000), mtCell_(item.contractorName, 1500),
+      mtCell_(item.contractorCode, 300), mtCell_(item.taxCode, 100), mtCell_(item.lotName || item.lotNo, 1500),
+      mtBidderStatus_(item.status), mtNumber_(item.bidPrice), mtNumber_(item.finalPrice), mtNumber_(item.winningPrice),
+      mtCell_(item.reason, 5000), mtList_(item.models), mtCell_(item.sourceUrl, 3000), mtDate_(fetchedAt)
+    ];
   });
-  mtWriteTable_(mtManagedSheet_(ss, "Nhà thầu"), "Nhà thầu khu vực miền Trung", headers, rows, 0);
+  mtWriteTable_(
+    mtManagedSheet_(ss, (region.shortName || region.name) + " - Nhà thầu"),
+    "Nhà thầu - " + region.name,
+    headers,
+    rows,
+    1
+  );
 }
 
-function mtWriteEquipmentSheet_(ss, equipment, fetchedAt) {
-  const headers = ["Tỉnh/thành", "Mã TBMT", "Tên gói", "Tên thiết bị/hàng hóa", "Model", "Nhãn hiệu", "Hãng",
+function mtWriteEquipmentSheet_(ss, region, equipment, fetchedAt) {
+  const headers = ["Mã TBMT", "Tên gói", "Tên thiết bị/hàng hóa", "Model", "Nhãn hiệu", "Hãng",
     "Xuất xứ", "Năm sản xuất", "Thông số kỹ thuật", "Đơn vị", "Số lượng", "Đơn giá", "Thành tiền", "Đơn vị trúng", "Nguồn", "Cập nhật"];
   const rows = equipment.map(function(item) {
     const quantity = Number(item.quantity) || 0;
     const unitPrice = Number(item.unitPrice) || 0;
-    return [item.region || "", item.notifyNo || "", item.tenderName || "", item.name || item.lotName || "",
-      item.model || item.code || "", item.brand || "", item.manufacturer || "", item.origin || "",
-      item.manufactureYear || "", item.specification || "", item.unit || "", quantity, unitPrice, quantity * unitPrice,
-      (item.winnerNames || []).join("; "), item.sourceUrl || "", mtDate_(fetchedAt)];
+    return [
+      mtCell_(item.notifyNo, 100), mtCell_(item.tenderName, 5000), mtCell_(item.name || item.lotName, 5000),
+      mtCell_(item.model || item.code, 1000), mtCell_(item.brand, 1000), mtCell_(item.manufacturer, 1500),
+      mtCell_(item.origin, 500), mtCell_(item.manufactureYear, 100), mtCell_(item.specification, 30000),
+      mtCell_(item.unit, 100), quantity, unitPrice, quantity * unitPrice, mtList_(item.winnerNames),
+      mtCell_(item.sourceUrl, 3000), mtDate_(fetchedAt)
+    ];
   });
-  mtWriteTable_(mtManagedSheet_(ss, "Thiết bị"), "Thiết bị, hóa chất, model và giá trúng", headers, rows, 0);
+  mtWriteTable_(
+    mtManagedSheet_(ss, (region.shortName || region.name) + " - Thiết bị"),
+    "Thiết bị, hóa chất, model và giá trúng - " + region.name,
+    headers,
+    rows,
+    1
+  );
 }
 
 function mtWriteTable_(sheet, title, headers, rows, frozenColumns) {
@@ -132,9 +226,11 @@ function mtWriteTable_(sheet, title, headers, rows, frozenColumns) {
   }
 
   const frozen = Math.max(0, Math.min(Number(frozenColumns) || 0, Math.max(0, headers.length - 1)));
+  const requiredRows = Math.max(3, rows.length + 2);
+  mtEnsureSheetSize_(sheet, requiredRows, headers.length);
+
   const filter = sheet.getFilter();
   if (filter) filter.remove();
-
   sheet.setFrozenColumns(0);
   sheet.setFrozenRows(0);
   sheet.getDataRange().breakApart();
@@ -151,7 +247,7 @@ function mtWriteTable_(sheet, title, headers, rows, frozenColumns) {
   }
 
   if (frozen > 0) {
-    styleTitle_(sheet.getRange(1, 1, 1, frozen).merge().setValue("Mã gói · Ngày đăng"));
+    styleTitle_(sheet.getRange(1, 1, 1, frozen).merge().setValue("Cột nhận diện"));
     styleTitle_(sheet.getRange(1, frozen + 1, 1, headers.length - frozen).merge().setValue(title));
   } else {
     styleTitle_(sheet.getRange(1, 1, 1, headers.length).merge().setValue(title));
@@ -159,12 +255,23 @@ function mtWriteTable_(sheet, title, headers, rows, frozenColumns) {
 
   sheet.getRange(2, 1, 1, headers.length).setValues([headers]).setBackground("#173c32")
     .setFontColor("#ffffff").setFontWeight("bold").setWrap(true);
-  if (rows.length) {
-    sheet.getRange(3, 1, rows.length, headers.length).setValues(rows).setVerticalAlignment("top").setWrap(true);
+
+  for (let start = 0; start < rows.length; start += MT_BATCH_ROWS) {
+    const batch = rows.slice(start, start + MT_BATCH_ROWS);
+    sheet.getRange(3 + start, 1, batch.length, headers.length)
+      .setValues(batch)
+      .setVerticalAlignment("top")
+      .setWrap(true);
   }
+
   sheet.setFrozenRows(2);
   if (frozen > 0) sheet.setFrozenColumns(frozen);
   sheet.getRange(2, 1, Math.max(2, rows.length + 1), headers.length).createFilter();
+}
+
+function mtEnsureSheetSize_(sheet, rows, columns) {
+  if (sheet.getMaxRows() < rows) sheet.insertRowsAfter(sheet.getMaxRows(), rows - sheet.getMaxRows());
+  if (sheet.getMaxColumns() < columns) sheet.insertColumnsAfter(sheet.getMaxColumns(), columns - sheet.getMaxColumns());
 }
 
 function mtManagedSheet_(ss, label) {
@@ -172,8 +279,6 @@ function mtManagedSheet_(ss, label) {
   const preferred = ss.getSheetByName(preferredName);
   if (preferred && mtIsManagedSheet_(preferred)) return preferred;
 
-  // Nếu tên đã tồn tại nhưng là tab của người dùng, tuyệt đối không xóa hoặc sửa.
-  // Tạo một tên DBMT khác và chỉ quản lý tab có dấu metadata của chương trình.
   if (preferred && !mtIsManagedSheet_(preferred)) {
     let index = 1;
     while (true) {
@@ -197,7 +302,7 @@ function mtManagedSheet_(ss, label) {
 function mtIsManagedSheet_(sheet) {
   try {
     return sheet.getDeveloperMetadata().some(function(item) {
-      return item.getKey() === MT_OWNER_KEY && item.getValue() === MT_OWNER_VALUE;
+      return item.getKey() === MT_OWNER_KEY && (item.getValue() === MT_OWNER_VALUE || item.getValue() === "1");
     });
   } catch (error) {
     return false;
@@ -206,6 +311,16 @@ function mtIsManagedSheet_(sheet) {
 
 function mtMarkManagedSheet_(sheet) {
   if (!mtIsManagedSheet_(sheet)) sheet.addDeveloperMetadata(MT_OWNER_KEY, MT_OWNER_VALUE);
+}
+
+function mtCell_(value, maxLength) {
+  const text = String(value == null ? "" : value).replace(/\u0000/g, "").trim();
+  const limit = Math.max(1, Number(maxLength) || 30000);
+  return text.length > limit ? text.slice(0, limit - 1) + "…" : text;
+}
+
+function mtList_(values) {
+  return mtCell_((Array.isArray(values) ? values : []).filter(Boolean).join("; "), 30000);
 }
 
 function mtSheetName_(name) { return String(name).replace(/[\/?*\[\]:]/g, " ").slice(0, 99); }
