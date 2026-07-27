@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 300
     strategy:
       fail-fast: false
-      max-parallel: 1
+      max-parallel: 2
       matrix:
         region:
           - thanh-hoa
@@ -51,7 +51,9 @@ jobs:
           DRY_RUN: "1"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Quét toàn bộ 3 năm
+      # Lượt đầu chỉ quét theo mã tỉnh cũ và mới. Quét bù từ khóa địa danh
+      # được tách sang workflow bổ sung để tránh quá tải nguồn công khai.
+      - name: Quét nền toàn bộ 3 năm
         id: regional_scan
         continue-on-error: true
         env:
@@ -59,12 +61,13 @@ jobs:
           INCREMENTAL_DAYS: "14"
           WINDOW_DAYS: "30"
           PAGE_SIZE: "10"
-          DETAIL_LIMIT: "50"
-          ENABLE_HISTORICAL_FALLBACK: "1"
+          DETAIL_LIMIT: "80"
+          MIN_TENDER_COUNT: "1"
+          ENABLE_HISTORICAL_FALLBACK: "0"
           FORCE_FULL_REFRESH: "1"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Đóng gói dữ liệu tỉnh thành đã quét thành công
+      - name: Đóng gói dữ liệu tỉnh thành đã xác thực
         if: steps.regional_scan.outcome == 'success'
         run: |
           mkdir -p "data/regions/${{ matrix.region }}" artifacts
@@ -72,7 +75,7 @@ jobs:
           date -u +'%Y-%m-%dT%H:%M:%SZ' > "data/regions/${{ matrix.region }}/last-full-scan-at.txt"
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
-      - name: Lưu dữ liệu tỉnh thành đã quét thành công
+      - name: Lưu dữ liệu tỉnh thành đã xác thực
         if: steps.regional_scan.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
@@ -126,6 +129,7 @@ jobs:
           fi
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
+          node -e 'const d=require("./data/tenders.json"); if (!d.tenders?.length) throw new Error("Từ chối triển khai cơ sở dữ liệu rỗng");'
 
       - name: Ghi cơ sở dữ liệu 3 năm an toàn về repository
         run: |
@@ -135,7 +139,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: cập nhật quét sâu miền Trung, giữ dữ liệu dự phòng [skip central scan]"
+            git commit -m "data: hoàn tất nền 3 năm miền Trung [start-detail-backfill] [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
