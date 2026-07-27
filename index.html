@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Theo dõi kết quả đấu thầu thiết bị y tế, vật tư tiêu hao và hóa chất xét nghiệm tại Gia Lai." />
-    <title>Thầu Y tế Gia Lai</title>
+    <meta name="description" content="Theo dõi và phân tích gói thầu thiết bị y tế, vật tư tiêu hao, hóa chất xét nghiệm tại các tỉnh thành khu vực miền Trung và Tây Nguyên." />
+    <title>Thầu Y tế Miền Trung</title>
     <link rel="icon" href="./favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./layout-fix.css" />
+    <link rel="stylesheet" href="./regional-mode.css" />
     <link rel="stylesheet" href="./competitor-analysis.css" />
     <script src="./layout-fix.js"></script>
     <script src="./app.js" defer></script>
+    <script src="./regional-mode.js" defer></script>
     <script src="./competitor-analysis.js" defer></script>
     <script src="./competitor-count-fix.js" defer></script>
   </head>
@@ -28,8 +30,8 @@
       <section class="hero" id="top">
         <div class="hero-copy">
           <p class="eyebrow">CỔNG THÔNG TIN ĐẤU THẦU</p>
-          <h1>Theo dõi cơ hội thầu<br />thiết bị y tế tại Gia Lai</h1>
-          <p class="hero-note">Chỉ tổng hợp thiết bị y tế, vật tư tiêu hao và hóa chất xét nghiệm; kèm kết quả lựa chọn nhà thầu, model, hãng, đơn giá và cấu hình kỹ thuật.</p>
+          <h1>Theo dõi cơ hội thầu<br />thiết bị y tế khu vực miền Trung</h1>
+          <p class="hero-note">Tổng hợp thiết bị y tế, vật tư tiêu hao, hóa chất xét nghiệm; kèm kết quả lựa chọn nhà thầu, đối thủ, model, hãng, đơn giá và cấu hình kỹ thuật.</p>
         </div>
         <div class="hero-art" aria-hidden="true">
           <img src="./assets/hero-medical-gialai.webp" alt="" width="1600" height="533" />
@@ -48,8 +50,8 @@
               <option value="Mindray"></option>
             </datalist>
           </label>
-          <div class="search-field fixed-field" aria-label="Địa bàn Gia Lai">
-            <span class="icon-text">⌖</span><span>Gia Lai</span><span class="field-note">sau sáp nhập</span>
+          <div class="search-field fixed-field" aria-label="Đang tải địa bàn">
+            <span class="icon-text">⌖</span><span>Đang tải tỉnh thành</span><span class="field-note">miền Trung</span>
           </div>
           <label class="search-field select-field">
             <span class="icon-text">▣</span><span class="sr-only">Nhóm dữ liệu</span>
@@ -57,6 +59,7 @@
               <option value="all">Tất cả thiết bị &amp; vật tư</option>
               <option value="Thiết bị y tế">Thiết bị y tế</option>
               <option value="Vật tư &amp; hóa chất">Vật tư tiêu hao &amp; hóa chất</option>
+              <option value="Dược phẩm">Dược phẩm</option>
             </select>
             <span>⌄</span>
           </label>
@@ -132,7 +135,7 @@
       </section>
 
       <footer class="site-footer">
-        <div class="source-line"><span>✓</span><span>Dữ liệu công khai từ Hệ thống mạng đấu thầu quốc gia; GitHub Actions tự động cập nhật định kỳ.</span></div>
+        <div class="source-line"><span>✓</span><span>Dữ liệu công khai từ Hệ thống mạng đấu thầu quốc gia; được tách theo tỉnh thành và tự động cập nhật định kỳ.</span></div>
         <p>Không phải website chính thức của cơ quan quản lý đấu thầu.</p>
       </footer>
     </main>

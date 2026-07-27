@@ -1,27 +1,17 @@
-name: Triển khai giao diện GitHub Pages
+name: Kiểm tra mã nguồn
 
 on:
-  push:
+  pull_request:
     branches: [main]
-    paths-ignore:
-      - "data/**"
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages-deploy
-  cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  test:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Lấy mã nguồn
         uses: actions/checkout@v4
@@ -31,7 +21,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Kiểm tra mã nguồn
+      - name: Kiểm tra cú pháp và bộ trích dữ liệu
         run: |
           node --test scripts/technical-requirements.test.mjs
           node --check scripts/run-region-scan.mjs
@@ -44,24 +34,18 @@ jobs:
           node --check competitor-count-fix.js
           cp google-apps-script/RegionalSheets.gs /tmp/RegionalSheets.js
           node --check /tmp/RegionalSheets.js
-          DRY_RUN=1 node scripts/run-region-scan.mjs gia-lai
 
-      - name: Chuẩn hóa dữ liệu vùng hiện có
+      - name: Kiểm tra cấu hình quét các tỉnh thành
+        run: |
+          for region in thanh-hoa nghe-an ha-tinh quang-tri hue da-nang quang-ngai gia-lai dak-lak khanh-hoa lam-dong; do
+            DRY_RUN=1 node scripts/run-region-scan.mjs "$region"
+          done
+
+      - name: Dựng thử website miền Trung
         run: |
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
-
-      - name: Tạo bản tĩnh
-        run: node scripts/build-site.mjs
-
-      - name: Cấu hình Pages
-        uses: actions/configure-pages@v5
-
-      - name: Tải bản tĩnh lên Pages
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist-pages
-
-      - name: Triển khai
-        id: deployment
-        uses: actions/deploy-pages@v4
+          node scripts/build-site.mjs
+          test -f dist-pages/index.html
+          test -f dist-pages/data/region-coverage.json
+          test -f dist-pages/regional-mode.js
