@@ -1,0 +1,167 @@
+name: Bổ sung chi tiết nhà thầu thiết bị và model
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: regional-data
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[start-detail-backfill]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        region:
+          - thanh-hoa
+          - nghe-an
+          - ha-tinh
+          - quang-tri
+          - hue
+          - da-nang
+          - quang-ngai
+          - gia-lai
+          - dak-lak
+          - khanh-hoa
+          - lam-dong
+    steps:
+      - name: Lấy cơ sở dữ liệu mới nhất
+        uses: actions/checkout@v4
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Kiểm tra tỉnh đã có dữ liệu nền
+        id: eligibility
+        shell: bash
+        run: |
+          FILE="data/regions/${{ matrix.region }}/tenders.json"
+          if [ -f "$FILE" ] && node -e 'const d=require("./'"$FILE"'"); process.exit(d.tenders?.length ? 0 : 1)'; then
+            echo "eligible=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "eligible=false" >> "$GITHUB_OUTPUT"
+            echo "${{ matrix.region }} chưa có dữ liệu nền; bỏ qua cho đến khi quét sâu thành công."
+          fi
+
+      # Mỗi lượt ưu tiên các gói chưa có hồ sơ chi tiết. Chạy lặp định kỳ
+      # cho đến khi nhà thầu, thiết bị, model và yêu cầu kỹ thuật được lấp đầy.
+      - name: Bổ sung tối đa 40 hồ sơ chi tiết
+        id: detail_scan
+        if: steps.eligibility.outputs.eligible == 'true'
+        continue-on-error: true
+        env:
+          SCAN_DAYS: "1095"
+          INCREMENTAL_DAYS: "2"
+          WINDOW_DAYS: "2"
+          PAGE_SIZE: "10"
+          DETAIL_LIMIT: "40"
+          MIN_TENDER_COUNT: "1"
+          ENABLE_HISTORICAL_FALLBACK: "0"
+          FORCE_FULL_REFRESH: "0"
+        run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
+
+      - name: Đóng gói tỉnh bổ sung thành công
+        if: steps.detail_scan.outcome == 'success'
+        run: |
+          mkdir -p artifacts
+          date -u +'%Y-%m-%dT%H:%M:%SZ' > "data/regions/${{ matrix.region }}/last-detail-backfill-at.txt"
+          tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
+
+      - name: Lưu dữ liệu bổ sung
+        if: steps.detail_scan.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: detail-region-${{ matrix.region }}
+          path: artifacts/${{ matrix.region }}.tgz
+          retention-days: 2
+          if-no-files-found: error
+
+  merge-and-deploy:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[start-detail-backfill]')
+    needs: scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Lấy repository mới nhất và lịch sử dự phòng
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Khôi phục dữ liệu nền nếu cần
+        run: node scripts/restore-legacy-gia-lai.mjs
+
+      - name: Tải các tỉnh bổ sung thành công
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: detail-region-*
+          path: artifacts
+          merge-multiple: true
+
+      - name: Hợp nhất dữ liệu chi tiết
+        run: |
+          if compgen -G "artifacts/*.tgz" > /dev/null; then
+            for archive in artifacts/*.tgz; do
+              tar -xzf "$archive"
+            done
+          else
+            echo "Chưa có hồ sơ chi tiết mới; giữ nguyên dữ liệu hiện tại."
+          fi
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
+          node -e 'const d=require("./data/tenders.json"); if (!d.tenders?.length) throw new Error("Từ chối ghi cơ sở dữ liệu rỗng");'
+
+      - name: Ghi bổ sung về repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Không có chi tiết mới"
+          else
+            git commit -m "data: bổ sung nhà thầu thiết bị model và yêu cầu kỹ thuật [skip central scan]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Dựng website từ dữ liệu bổ sung
+        run: node scripts/build-site.mjs
+
+      - name: Cấu hình Pages
+        uses: actions/configure-pages@v5
+
+      - name: Tải website lên Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist-pages
+
+      - name: Triển khai
+        id: deployment
+        uses: actions/deploy-pages@v4
