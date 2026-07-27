@@ -1,6 +1,8 @@
 name: Cập nhật nhanh dữ liệu miền Trung
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
@@ -16,11 +18,12 @@ concurrency:
 
 jobs:
   scan:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]')
     runs-on: ubuntu-latest
     timeout-minutes: 90
     strategy:
       fail-fast: false
-      max-parallel: 3
+      max-parallel: 2
       matrix:
         region:
           - thanh-hoa
@@ -55,19 +58,21 @@ jobs:
           SCAN_DAYS: "1095"
           INCREMENTAL_DAYS: "3"
           WINDOW_DAYS: "7"
-          PAGE_SIZE: "100"
+          PAGE_SIZE: "10"
           DETAIL_LIMIT: "12"
           ENABLE_HISTORICAL_FALLBACK: "0"
           FORCE_FULL_REFRESH: "0"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Đóng gói dữ liệu tỉnh thành
+      - name: Đóng gói dữ liệu tỉnh thành đã quét thành công
+        if: steps.regional_scan.outcome == 'success'
         run: |
           mkdir -p "data/regions/${{ matrix.region }}" artifacts
-          printf '%s\n' "${{ steps.regional_scan.outcome }}" > "data/regions/${{ matrix.region }}/last-workflow-status.txt"
+          printf '%s\n' "success" > "data/regions/${{ matrix.region }}/last-workflow-status.txt"
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
-      - name: Lưu dữ liệu tạm
+      - name: Lưu dữ liệu tỉnh thành đã quét thành công
+        if: steps.regional_scan.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: region-${{ matrix.region }}
@@ -76,6 +81,7 @@ jobs:
           if-no-files-found: error
 
   merge-and-deploy:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]')
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -86,7 +92,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Lấy mã nguồn mới nhất
+      - name: Lấy mã nguồn mới nhất và toàn bộ lịch sử
         uses: actions/checkout@v4
         with:
           ref: main
@@ -97,7 +103,12 @@ jobs:
         with:
           node-version: 22
 
-      - name: Tải dữ liệu từng tỉnh thành
+      - name: Khôi phục dữ liệu Gia Lai nếu bản hiện tại bị rỗng
+        run: node scripts/restore-legacy-gia-lai.mjs
+
+      - name: Tải dữ liệu các tỉnh quét thành công
+        id: download_regions
+        continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           pattern: region-*
@@ -106,13 +117,17 @@ jobs:
 
       - name: Giải nén và hợp nhất dữ liệu
         run: |
-          for archive in artifacts/*.tgz; do
-            tar -xzf "$archive"
-          done
+          if compgen -G "artifacts/*.tgz" > /dev/null; then
+            for archive in artifacts/*.tgz; do
+              tar -xzf "$archive"
+            done
+          else
+            echo "Không có tỉnh nào quét thành công; giữ dữ liệu gần nhất."
+          fi
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
 
-      - name: Ghi cơ sở dữ liệu về repository
+      - name: Ghi cơ sở dữ liệu an toàn về repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -120,7 +135,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: cập nhật nhanh dữ liệu y tế miền Trung [skip central scan]"
+            git commit -m "data: khôi phục và cập nhật dữ liệu y tế miền Trung [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
