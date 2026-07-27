@@ -1,0 +1,149 @@
+name: Kiểm tra chéo chống lọt gói thầu
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: regional-data
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[coverage-audit]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        region:
+          - thanh-hoa
+          - nghe-an
+          - ha-tinh
+          - quang-tri
+          - hue
+          - da-nang
+          - quang-ngai
+          - gia-lai
+          - dak-lak
+          - khanh-hoa
+          - lam-dong
+    steps:
+      - name: Lấy mã nguồn và dữ liệu gần nhất
+        uses: actions/checkout@v4
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Kiểm tra cú pháp bộ đối chiếu
+        run: node --check scripts/fetch-recent-location-audit.mjs
+
+      # Đây là đường quét độc lập với mã tỉnh. Nó tìm theo toàn bộ tên tỉnh,
+      # thành phố, huyện, thị xã và tên địa bàn cũ trong 30 ngày gần nhất.
+      # Kết quả chỉ được bổ sung, tuyệt đối không xóa dữ liệu đang có.
+      - name: Đối chiếu 30 ngày bằng toàn bộ địa danh ${{ matrix.region }}
+        env:
+          AUDIT_DAYS: "30"
+          PAGE_SIZE: "50"
+        run: node scripts/fetch-recent-location-audit.mjs "${{ matrix.region }}"
+
+      - name: Đóng gói dữ liệu đã đối chiếu
+        run: |
+          mkdir -p artifacts
+          tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
+
+      - name: Lưu dữ liệu đối chiếu
+        uses: actions/upload-artifact@v4
+        with:
+          name: audited-region-${{ matrix.region }}
+          path: artifacts/${{ matrix.region }}.tgz
+          retention-days: 2
+          if-no-files-found: error
+
+  merge-and-deploy:
+    if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[coverage-audit]'))
+    needs: audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Lấy mã nguồn và toàn bộ lịch sử
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Tải các tỉnh đã đối chiếu thành công
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: audited-region-*
+          path: artifacts
+          merge-multiple: true
+
+      - name: Hợp nhất mà không làm mất dữ liệu cũ
+        run: |
+          if compgen -G "artifacts/*.tgz" > /dev/null; then
+            for archive in artifacts/*.tgz; do
+              tar -xzf "$archive"
+            done
+          else
+            echo "Không có dữ liệu đối chiếu thành công; giữ nguyên cơ sở dữ liệu gần nhất."
+          fi
+          node scripts/restore-legacy-gia-lai.mjs
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/data-health-check.mjs
+
+      - name: Ghi kết quả đối chiếu về repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Đối chiếu không phát hiện gói mới"
+          else
+            git commit -m "data: bổ sung gói phát hiện qua kiểm tra chéo địa danh [skip central scan]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Dựng website từ dữ liệu đã kiểm tra
+        run: |
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/data-health-check.mjs
+          node scripts/build-site.mjs
+
+      - name: Cấu hình Pages
+        uses: actions/configure-pages@v5
+
+      - name: Tải bản tĩnh lên Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist-pages
+
+      - name: Triển khai
+        id: deployment
+        uses: actions/deploy-pages@v4
