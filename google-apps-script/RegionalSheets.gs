@@ -1,4 +1,7 @@
 const MT_BASE_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/";
+const MT_SHEET_PREFIX = "DBMT - ";
+const MT_OWNER_KEY = "KIEU_VIET_MT_SYNC";
+const MT_OWNER_VALUE = "1";
 
 function setupMienTrungSheets() {
   syncMienTrungSheets();
@@ -6,7 +9,18 @@ function setupMienTrungSheets() {
     .filter(function(trigger) { return trigger.getHandlerFunction() === "syncMienTrungSheets"; })
     .forEach(function(trigger) { ScriptApp.deleteTrigger(trigger); });
   ScriptApp.newTrigger("syncMienTrungSheets").timeBased().everyHours(1).create();
-  SpreadsheetApp.getActive().toast("Đã tạo trang tính riêng và cài cập nhật mỗi giờ.", "Thầu Y tế Miền Trung", 7);
+  SpreadsheetApp.getActive().toast(
+    "Đã tạo các tab DBMT riêng và cài cập nhật mỗi giờ. Các tab cũ không bị sửa.",
+    "Thầu Y tế Miền Trung",
+    8
+  );
+}
+
+function stopMienTrungSheets() {
+  ScriptApp.getProjectTriggers()
+    .filter(function(trigger) { return trigger.getHandlerFunction() === "syncMienTrungSheets"; })
+    .forEach(function(trigger) { ScriptApp.deleteTrigger(trigger); });
+  SpreadsheetApp.getActive().toast("Đã dừng cập nhật tự động.", "Thầu Y tế Miền Trung", 6);
 }
 
 function syncMienTrungSheets() {
@@ -35,11 +49,20 @@ function syncMienTrungSheets() {
 
     mtWriteSummary_(ss, regions, coveragePayload, tenderPayload.fetchedAt);
     regions.forEach(function(region) {
-      mtWriteTenderSheet_(ss, region, tenders.filter(function(item) { return item.regionSlug === region.slug; }), tenderPayload.fetchedAt);
+      mtWriteTenderSheet_(
+        ss,
+        region,
+        tenders.filter(function(item) { return item.regionSlug === region.slug; }),
+        tenderPayload.fetchedAt
+      );
     });
     mtWriteBidderSheet_(ss, bidders, tenderPayload.fetchedAt);
     mtWriteEquipmentSheet_(ss, equipment, tenderPayload.fetchedAt);
-    ss.toast("Đã đồng bộ " + tenders.length + " gói của " + regions.length + " tỉnh thành.", "Thầu Y tế Miền Trung", 7);
+    ss.toast(
+      "Đã đồng bộ " + tenders.length + " gói của " + regions.length + " tỉnh thành vào các tab DBMT.",
+      "Thầu Y tế Miền Trung",
+      8
+    );
   } finally {
     lock.releaseLock();
   }
@@ -55,7 +78,7 @@ function mtWriteSummary_(ss, regions, coverage, fetchedAt) {
       Number(item.bidderCount) || 0, Number(item.equipmentCount) || 0, Number(item.detailTenderCount) || 0,
       Number(item.coverageDays) || 0, mtDate_(item.fetchedAt || fetchedAt), item.initialized ? "Đã có dữ liệu" : "Đang khởi tạo"];
   });
-  mtWriteTable_(mtSheet_(ss, "Miền Trung - Tổng hợp"), "Cơ sở dữ liệu đấu thầu y tế khu vực miền Trung", headers, rows, 0);
+  mtWriteTable_(mtManagedSheet_(ss, "Tổng hợp"), "Cơ sở dữ liệu đấu thầu y tế khu vực miền Trung", headers, rows, 0);
 }
 
 function mtWriteTenderSheet_(ss, region, tenders, fetchedAt) {
@@ -70,7 +93,7 @@ function mtWriteTenderSheet_(ss, region, tenders, fetchedAt) {
       (item.losingModels || []).join("; "), Number(item.winningPrice) || 0, mtDate_(item.decisionDate),
       item.hasResult ? "Có" : "Chưa", item.sourceUrl || "", mtDate_(fetchedAt)];
   });
-  const sheet = mtSheet_(ss, mtSheetName_("MT - " + (region.shortName || region.name)));
+  const sheet = mtManagedSheet_(ss, region.shortName || region.name);
   mtWriteTable_(sheet, "Gói thầu thiết bị y tế - " + region.name + " - 3 năm gần nhất", headers, rows, 2);
   sheet.setColumnWidth(3, 420);
   sheet.setColumnWidths(5, 2, 230);
@@ -86,7 +109,7 @@ function mtWriteBidderSheet_(ss, bidders, fetchedAt) {
       mtNumber_(item.bidPrice), mtNumber_(item.finalPrice), mtNumber_(item.winningPrice), item.reason || "",
       (item.models || []).join("; "), item.sourceUrl || "", mtDate_(fetchedAt)];
   });
-  mtWriteTable_(mtSheet_(ss, "Miền Trung - Nhà thầu"), "Nhà thầu khu vực miền Trung", headers, rows, 0);
+  mtWriteTable_(mtManagedSheet_(ss, "Nhà thầu"), "Nhà thầu khu vực miền Trung", headers, rows, 0);
 }
 
 function mtWriteEquipmentSheet_(ss, equipment, fetchedAt) {
@@ -100,20 +123,23 @@ function mtWriteEquipmentSheet_(ss, equipment, fetchedAt) {
       item.manufactureYear || "", item.specification || "", item.unit || "", quantity, unitPrice, quantity * unitPrice,
       (item.winnerNames || []).join("; "), item.sourceUrl || "", mtDate_(fetchedAt)];
   });
-  mtWriteTable_(mtSheet_(ss, "Miền Trung - Thiết bị"), "Thiết bị, hóa chất, model và giá trúng", headers, rows, 0);
+  mtWriteTable_(mtManagedSheet_(ss, "Thiết bị"), "Thiết bị, hóa chất, model và giá trúng", headers, rows, 0);
 }
 
 function mtWriteTable_(sheet, title, headers, rows, frozenColumns) {
+  if (!mtIsManagedSheet_(sheet)) {
+    throw new Error("Từ chối ghi đè tab không thuộc bộ đồng bộ DBMT: " + sheet.getName());
+  }
+
   const frozen = Math.max(0, Math.min(Number(frozenColumns) || 0, Math.max(0, headers.length - 1)));
   const filter = sheet.getFilter();
   if (filter) filter.remove();
 
-  // clear() không tự tách các ô đã gộp. Phải bỏ cố định và tách ô trước,
-  // nếu không lần chạy sau có thể báo lỗi khi thay đổi bố cục.
   sheet.setFrozenColumns(0);
   sheet.setFrozenRows(0);
   sheet.getDataRange().breakApart();
   sheet.clear();
+  mtMarkManagedSheet_(sheet);
 
   function styleTitle_(range) {
     return range.setHorizontalAlignment("center")
@@ -125,8 +151,6 @@ function mtWriteTable_(sheet, title, headers, rows, frozenColumns) {
   }
 
   if (frozen > 0) {
-    // Không gộp ô tiêu đề băng qua ranh giới cột cố định.
-    // A:B nằm hoàn toàn trong vùng cố định; C:T nằm ngoài vùng cố định.
     styleTitle_(sheet.getRange(1, 1, 1, frozen).merge().setValue("Mã gói · Ngày đăng"));
     styleTitle_(sheet.getRange(1, frozen + 1, 1, headers.length - frozen).merge().setValue(title));
   } else {
@@ -143,7 +167,47 @@ function mtWriteTable_(sheet, title, headers, rows, frozenColumns) {
   sheet.getRange(2, 1, Math.max(2, rows.length + 1), headers.length).createFilter();
 }
 
-function mtSheet_(ss, name) { return ss.getSheetByName(name) || ss.insertSheet(name); }
+function mtManagedSheet_(ss, label) {
+  const preferredName = mtSheetName_(MT_SHEET_PREFIX + label);
+  const preferred = ss.getSheetByName(preferredName);
+  if (preferred && mtIsManagedSheet_(preferred)) return preferred;
+
+  // Nếu tên đã tồn tại nhưng là tab của người dùng, tuyệt đối không xóa hoặc sửa.
+  // Tạo một tên DBMT khác và chỉ quản lý tab có dấu metadata của chương trình.
+  if (preferred && !mtIsManagedSheet_(preferred)) {
+    let index = 1;
+    while (true) {
+      const candidateName = mtSheetName_(preferredName + " - tự động" + (index > 1 ? " " + index : ""));
+      const candidate = ss.getSheetByName(candidateName);
+      if (!candidate) {
+        const created = ss.insertSheet(candidateName);
+        mtMarkManagedSheet_(created);
+        return created;
+      }
+      if (mtIsManagedSheet_(candidate)) return candidate;
+      index += 1;
+    }
+  }
+
+  const created = ss.insertSheet(preferredName);
+  mtMarkManagedSheet_(created);
+  return created;
+}
+
+function mtIsManagedSheet_(sheet) {
+  try {
+    return sheet.getDeveloperMetadata().some(function(item) {
+      return item.getKey() === MT_OWNER_KEY && item.getValue() === MT_OWNER_VALUE;
+    });
+  } catch (error) {
+    return false;
+  }
+}
+
+function mtMarkManagedSheet_(sheet) {
+  if (!mtIsManagedSheet_(sheet)) sheet.addDeveloperMetadata(MT_OWNER_KEY, MT_OWNER_VALUE);
+}
+
 function mtSheetName_(name) { return String(name).replace(/[\/?*\[\]:]/g, " ").slice(0, 99); }
 function mtDate_(value) { const date = new Date(value || 0); return isNaN(date.getTime()) ? "" : date; }
 function mtNumber_(value) { const number = Number(value); return isFinite(number) && number !== 0 ? number : ""; }
