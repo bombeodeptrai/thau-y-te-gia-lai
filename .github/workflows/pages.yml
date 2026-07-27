@@ -37,9 +37,13 @@ jobs:
           node --check scripts/run-region-scan.mjs
           node --check scripts/merge-regions.mjs
           node --check scripts/build-pages.mjs
+          node --check scripts/build-site.mjs
+          node --check scripts/patch-regional-competitor.mjs
           node --check regional-mode.js
           node --check competitor-analysis.js
           node --check competitor-count-fix.js
+          cp google-apps-script/RegionalSheets.gs /tmp/RegionalSheets.js
+          node --check /tmp/RegionalSheets.js
           DRY_RUN=1 node scripts/run-region-scan.mjs gia-lai
 
       - name: Chuẩn hóa dữ liệu vùng hiện có
@@ -48,7 +52,7 @@ jobs:
           node scripts/apply-manual-equipment-overrides.mjs
 
       - name: Tạo bản tĩnh
-        run: node scripts/build-pages.mjs
+        run: node scripts/build-site.mjs
 
       - name: Cấu hình Pages
         uses: actions/configure-pages@v5
