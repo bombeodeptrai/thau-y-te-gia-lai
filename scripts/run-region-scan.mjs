@@ -18,16 +18,26 @@ if (!region) throw new Error(`Không có cấu hình khu vực: ${slug}`);
 const scanDays = Math.max(1, Number(process.env.SCAN_DAYS) || 1095);
 const incrementalDays = Math.max(1, Number(process.env.INCREMENTAL_DAYS) || 7);
 const windowDays = Math.max(1, Number(process.env.WINDOW_DAYS) || (scanDays >= 365 ? 60 : 7));
-const pageSize = Math.max(10, Math.min(100, Number(process.env.PAGE_SIZE) || 100));
-const detailLimit = Math.max(0, Number(process.env.DETAIL_LIMIT) || (scanDays >= 365 ? 60 : 15));
+const pageSize = Math.max(10, Math.min(100, Number(process.env.PAGE_SIZE) || 10));
+const detailLimit = Math.max(1, Number(process.env.DETAIL_LIMIT) || (scanDays >= 365 ? 60 : 15));
+const minTenderCount = Math.max(0, Number(process.env.MIN_TENDER_COUNT) || 1);
 const enableHistoricalFallback = process.env.ENABLE_HISTORICAL_FALLBACK === "1";
 const forceFullRefresh = process.env.FORCE_FULL_REFRESH === "1";
 const forcedNotifyNos = slug === "gia-lai"
   ? ["IB2600391963", "IB2600384538"]
   : [];
-const historicalTitleTerms = [
+const defaultHistoricalTitleTerms = [
   "thiết bị", "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "xét nghiệm", "máy", "dược phẩm",
 ];
+const historicalTitleTerms = String(process.env.HISTORICAL_TITLE_TERMS || "")
+  .split("|")
+  .map((value) => value.trim())
+  .filter(Boolean);
+if (!historicalTitleTerms.length) historicalTitleTerms.push(...defaultHistoricalTitleTerms);
+
+const regionDataDir = resolve(root, "data", "regions", region.slug);
+const regionOutputPath = resolve(regionDataDir, "tenders.json");
+const regionSummaryPath = resolve(regionDataDir, "scan-summary.json");
 
 function js(value) {
   return JSON.stringify(value, null, 2);
@@ -159,3 +169,38 @@ process.stdout.write(
 const exitCode = await runNode([generatedPath]);
 await rm(generatedPath, { force: true });
 if (exitCode !== 0) process.exit(exitCode);
+
+let payload;
+try {
+  payload = JSON.parse(await readFile(regionOutputPath, "utf8"));
+} catch (error) {
+  throw new Error(`Quét ${region.name} không tạo được tenders.json hợp lệ: ${error.message}`);
+}
+
+const tenderCount = Array.isArray(payload.tenders) ? payload.tenders.length : 0;
+const coverageDays = Number(payload.collection?.days) || 0;
+const detailTenderCount = Number(payload.detailTenderCount) || 0;
+if (tenderCount < minTenderCount) {
+  throw new Error(`Quét ${region.name} chỉ có ${tenderCount} gói, thấp hơn ngưỡng ${minTenderCount}; không ghi đè dữ liệu cũ`);
+}
+if (forceFullRefresh && coverageDays < scanDays) {
+  throw new Error(`Quét ${region.name} mới phủ ${coverageDays}/${scanDays} ngày; không công nhận hoàn tất`);
+}
+
+await writeFile(regionSummaryPath, `${JSON.stringify({
+  schemaVersion: 1,
+  regionSlug: region.slug,
+  region: region.name,
+  completedAt: new Date().toISOString(),
+  scanDays,
+  tenderCount,
+  detailTenderCount,
+  bidderCount: 0,
+  equipmentCount: 0,
+  historicalFallback: enableHistoricalFallback,
+  status: "success",
+}, null, 2)}\n`);
+
+process.stdout.write(
+  `Xác thực ${region.name}: ${tenderCount} gói/${coverageDays} ngày, ${detailTenderCount} gói đã có chi tiết.\n`,
+);
