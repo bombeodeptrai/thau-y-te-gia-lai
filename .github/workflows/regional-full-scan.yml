@@ -135,7 +135,7 @@ jobs:
           node --test scripts/technical-requirements.test.mjs
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
-          node scripts/build-pages.mjs
+          node scripts/build-site.mjs
 
       - name: Cấu hình Pages
         uses: actions/configure-pages@v5
