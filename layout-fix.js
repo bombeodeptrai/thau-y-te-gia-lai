@@ -1,22 +1,4 @@
 (() => {
-  // Dữ liệu 11 tỉnh đã được hợp nhất, nhưng giao diện cũ luôn mở bộ lọc Gia Lai
-  // và còn nhớ lựa chọn đó trong localStorage. Chuyển người dùng sang "Toàn miền Trung"
-  // đúng một lần; sau đó vẫn tôn trọng tỉnh họ tự chọn.
-  try {
-    const preferencesKey = "central-medical-tender-search-preferences-v1";
-    const migrationKey = "central-medical-default-all-regions-v1";
-    const params = new URLSearchParams(window.location.search);
-    if (!params.has("region") && localStorage.getItem(migrationKey) !== "1") {
-      localStorage.removeItem(preferencesKey);
-      params.set("region", "all");
-      const query = params.toString();
-      history.replaceState(null, "", `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`);
-      localStorage.setItem(migrationKey, "1");
-    }
-  } catch {
-    // Trình duyệt chặn localStorage thì giao diện vẫn hoạt động theo cấu hình sẵn có.
-  }
-
   const enableFreeAnalysisMode = () => {
     const setText = (element, value) => {
       if (element && element.textContent !== value) element.textContent = value;
