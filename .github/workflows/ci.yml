@@ -11,7 +11,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Lấy mã nguồn và lịch sử dữ liệu
         uses: actions/checkout@v4
@@ -32,11 +32,16 @@ jobs:
           node --check scripts/build-pages.mjs
           node --check scripts/build-site.mjs
           node --check scripts/patch-regional-competitor.mjs
+          node --check scripts/data-health-check.mjs
+          node --check scripts/validate-workflow-config.mjs
           node --check regional-mode.js
           node --check competitor-analysis.js
           node --check competitor-count-fix.js
           cp google-apps-script/RegionalSheets.gs /tmp/RegionalSheets.js
           node --check /tmp/RegionalSheets.js
+
+      - name: Kiểm tra cấu hình workflow an toàn
+        run: node scripts/validate-workflow-config.mjs
 
       - name: Kiểm tra cấu hình quét các tỉnh thành
         run: |
@@ -49,8 +54,8 @@ jobs:
           node scripts/restore-legacy-gia-lai.mjs
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/data-health-check.mjs
           node scripts/build-site.mjs
           test -f dist-pages/index.html
           test -f dist-pages/data/region-coverage.json
           test -f dist-pages/regional-mode.js
-          node -e 'const d=require("./data/tenders.json"); if (!d.tenders?.length) process.exit(1); console.log(`CI có ${d.tenders.length} gói dữ liệu dự phòng`);'
