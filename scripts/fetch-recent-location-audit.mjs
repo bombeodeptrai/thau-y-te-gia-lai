@@ -69,7 +69,7 @@ async function postJson(body, timeoutMs = 30_000) {
           "Content-Type": "application/json",
           Origin: "https://muasamcong.mpi.gov.vn",
           Referer: "https://muasamcong.mpi.gov.vn/",
-          "User-Agent": `thau-y-te-location-audit-${slug}/1.0`,
+          "User-Agent": `thau-y-te-location-audit-${slug}/1.1`,
         },
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(timeoutMs),
@@ -107,6 +107,24 @@ function searchPayload(pageNumber, from, to, term) {
   }];
 }
 
+function notifyNoPayload(notifyNo) {
+  return [{
+    pageSize: 10,
+    pageNumber: 0,
+    sortBy: "publicDate",
+    sortType: "DESC",
+    query: [{
+      index: "es-contractor-selection",
+      keyWord: notifyNo,
+      matchType: "exact",
+      matchFields: ["notifyNo"],
+      filters: [
+        { fieldName: "type", searchType: "in", fieldValues: ["es-notify-contractor"] },
+      ],
+    }],
+  }];
+}
+
 async function fetchTerm(term, from, to) {
   const first = await postJson(searchPayload(0, from, to, term));
   const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
@@ -115,6 +133,16 @@ async function fetchTerm(term, from, to) {
     postJson(searchPayload(pageNumber, from, to, term)));
   const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
   process.stdout.write(`Kiểm tra địa danh ${term}: ${items.length} bản ghi/${totalPages} trang\n`);
+  return items;
+}
+
+async function fetchCanary(notifyNo) {
+  const payload = await postJson(notifyNoPayload(notifyNo));
+  const items = payload.page?.content || [];
+  if (!items.some((item) => item.notifyNo === notifyNo)) {
+    throw new Error(`Canary ${notifyNo} không được nguồn trả về`);
+  }
+  process.stdout.write(`Canary ${notifyNo}: đạt\n`);
   return items;
 }
 
@@ -299,11 +327,21 @@ if (failedTerms.length) {
   throw new Error(`Kiểm tra địa danh chưa hoàn tất (${failedTerms.length}/${terms.length} lỗi): ${failedTerms.join(" | ")}`);
 }
 
+const canaryNotifyNos = slug === "gia-lai" ? ["IB2600378695"] : [];
+const canaryItems = (await mapLimited(canaryNotifyNos, 1, fetchCanary)).flat();
 const sourceMap = new Map();
-for (const item of groups.flat()) {
+for (const item of [...groups.flat(), ...canaryItems]) {
   const key = compact(item.notifyNo || item.notifyId || item.id, 180);
   if (!key || !isMedical(item)) continue;
   sourceMap.set(key, item);
+}
+
+const previousRecentCount = (previous.tenders || []).filter((item) => {
+  const time = new Date(item.publicDate || 0).getTime();
+  return Number.isFinite(time) && time >= new Date(from).getTime();
+}).length;
+if (!sourceMap.size && previousRecentCount > 0) {
+  throw new Error(`Nguồn kiểm tra chéo trả 0 gói nhưng dữ liệu đang có ${previousRecentCount} gói/${AUDIT_DAYS} ngày`);
 }
 
 const previousMap = new Map((previous.tenders || [])
@@ -318,6 +356,7 @@ const tenders = [...previousMap.values()]
   .sort((left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0));
 const newCount = Math.max(0, tenders.length - beforeCount);
 const fetchedAt = new Date().toISOString();
+const previousCoverageDays = Number(previous.collection?.days) || 0;
 const payload = {
   ...previous,
   tenders,
@@ -325,13 +364,14 @@ const payload = {
   source: previous.source || "muasamcong-public-api-central-region",
   collection: {
     ...(previous.collection || {}),
-    days: Math.max(Number(previous.collection?.days) || 0, 3 * 365),
+    days: previousCoverageDays || AUDIT_DAYS,
     auditStrategy: "province-code-scan-plus-independent-location-cross-check",
     lastLocationAuditAt: fetchedAt,
     lastLocationAuditDays: AUDIT_DAYS,
     lastLocationAuditTermCount: terms.length,
     lastLocationAuditSourceCount: sourceMap.size,
     lastLocationAuditNewCount: newCount,
+    lastLocationAuditCanaryCount: canaryNotifyNos.length,
   },
 };
 
@@ -347,6 +387,7 @@ await writeFile(resolve(regionDir, "location-audit-summary.json"), `${JSON.strin
   beforeCount,
   afterCount: tenders.length,
   newCount,
+  canaryNotifyNos,
   failedTerms: [],
 }, null, 2)}\n`);
 
