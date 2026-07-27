@@ -72,13 +72,6 @@ async function directoryExists(path) {
   }
 }
 
-const legacyDetailsDir = resolve(dataDir, "details");
-const legacyDetailsSnapshot = resolve(dataDir, ".legacy-details-snapshot");
-await rm(legacyDetailsSnapshot, { recursive: true, force: true });
-if (await directoryExists(legacyDetailsDir)) {
-  await cp(legacyDetailsDir, legacyDetailsSnapshot, { recursive: true });
-}
-
 const legacy = {
   tenders: await readJson(resolve(dataDir, "tenders.json"), { tenders: [] }),
   bidders: await readJson(resolve(dataDir, "bidders.json"), { bidders: [] }),
@@ -87,6 +80,7 @@ const legacy = {
   technicalRequirements: await readJson(resolve(dataDir, "technical-requirements.json"), { technicalRequirements: [] }),
 };
 
+const legacyHasData = Array.isArray(legacy.tenders.tenders) && legacy.tenders.tenders.length > 0;
 const tenderMap = new Map();
 const bidderMap = new Map();
 const equipmentMap = new Map();
@@ -98,22 +92,26 @@ const detailSources = [];
 
 for (const region of config.regions || []) {
   const regionDir = resolve(regionsDir, region.slug);
-  const hasRegionData = await directoryExists(regionDir);
-  const useLegacy = region.slug === "gia-lai" && !hasRegionData;
-
-  const tenderPayload = hasRegionData
+  const hasRegionDirectory = await directoryExists(regionDir);
+  const regionalTenderPayload = hasRegionDirectory
     ? await readJson(resolve(regionDir, "tenders.json"), { tenders: [] })
-    : (useLegacy ? legacy.tenders : { tenders: [] });
-  const bidderPayload = hasRegionData
+    : { tenders: [] };
+  const regionalHasData = Array.isArray(regionalTenderPayload.tenders)
+    && regionalTenderPayload.tenders.length > 0;
+  const useLegacy = region.slug === "gia-lai" && !regionalHasData && legacyHasData;
+  const useRegional = regionalHasData;
+
+  const tenderPayload = useRegional ? regionalTenderPayload : (useLegacy ? legacy.tenders : { tenders: [] });
+  const bidderPayload = useRegional
     ? await readJson(resolve(regionDir, "bidders.json"), { bidders: [] })
     : (useLegacy ? legacy.bidders : { bidders: [] });
-  const equipmentPayload = hasRegionData
+  const equipmentPayload = useRegional
     ? await readJson(resolve(regionDir, "equipment.json"), { equipment: [] })
     : (useLegacy ? legacy.equipment : { equipment: [] });
-  const requirementsPayload = hasRegionData
+  const requirementsPayload = useRegional
     ? await readJson(resolve(regionDir, "requirements.json"), { requirements: [] })
     : (useLegacy ? legacy.requirements : { requirements: [] });
-  const technicalPayload = hasRegionData
+  const technicalPayload = useRegional
     ? await readJson(resolve(regionDir, "technical-requirements.json"), { technicalRequirements: [] })
     : (useLegacy ? legacy.technicalRequirements : { technicalRequirements: [] });
 
@@ -132,7 +130,9 @@ for (const region of config.regions || []) {
     coverageDays,
     fetchedAt,
     initialized: Boolean(tenderPayload.tenders?.length),
-    source: useLegacy ? "legacy-gia-lai" : (hasRegionData ? "regional-scan" : "not-started"),
+    source: useLegacy
+      ? "legacy-gia-lai-fallback"
+      : (useRegional ? "regional-scan" : (hasRegionDirectory ? "regional-scan-empty" : "not-started")),
   });
 
   for (const tender of tenderPayload.tenders || []) {
@@ -171,10 +171,12 @@ for (const region of config.regions || []) {
     technicalMap.set(key, { ...item, regionSlug: region.slug, region: region.name });
   }
 
-  const detailDir = hasRegionData
+  const sourceDetailsDir = useRegional
     ? resolve(regionDir, "details")
-    : (useLegacy ? legacyDetailsSnapshot : "");
-  if (detailDir && await directoryExists(detailDir)) detailSources.push({ region, detailDir });
+    : (useLegacy ? resolve(dataDir, "details") : "");
+  if (sourceDetailsDir && await directoryExists(sourceDetailsDir)) {
+    detailSources.push({ region, detailDir: sourceDetailsDir });
+  }
 }
 
 const tenders = [...tenderMap.values()].sort((left, right) =>
@@ -190,10 +192,21 @@ const completeCoverageDays = initializedRegions.length
   : 0;
 
 const detailsDir = resolve(dataDir, "details");
+const stagingDir = resolve(dataDir, ".details-merge-staging");
+await rm(stagingDir, { recursive: true, force: true });
+await mkdir(stagingDir, { recursive: true });
+
+const stagedSources = [];
+for (const source of detailSources) {
+  const staged = resolve(stagingDir, source.region.slug);
+  await cp(source.detailDir, staged, { recursive: true });
+  stagedSources.push({ ...source, detailDir: staged });
+}
+
 await rm(detailsDir, { recursive: true, force: true });
 await mkdir(detailsDir, { recursive: true });
 const copiedDetails = new Map();
-for (const { region, detailDir } of detailSources) {
+for (const { region, detailDir } of stagedSources) {
   const files = (await readdir(detailDir).catch(() => [])).filter((name) => /^IB\d{10}\.json$/.test(name));
   for (const fileName of files) {
     const sourcePath = resolve(detailDir, fileName);
@@ -204,7 +217,7 @@ for (const { region, detailDir } of detailSources) {
     copiedDetails.set(fileName, { mtime: sourceMtime, regionSlug: region.slug });
   }
 }
-await rm(legacyDetailsSnapshot, { recursive: true, force: true });
+await rm(stagingDir, { recursive: true, force: true });
 
 await mkdir(regionsDir, { recursive: true });
 await writeFile(resolve(dataDir, "tenders.json"), `${JSON.stringify({
@@ -226,7 +239,7 @@ await writeFile(resolve(dataDir, "equipment.json"), `${JSON.stringify({ equipmen
 await writeFile(resolve(dataDir, "requirements.json"), `${JSON.stringify({ requirements, fetchedAt }, null, 2)}\n`);
 await writeFile(resolve(dataDir, "technical-requirements.json"), `${JSON.stringify({ technicalRequirements, fetchedAt }, null, 2)}\n`);
 await writeFile(resolve(dataDir, "region-coverage.json"), `${JSON.stringify({
-  schemaVersion: 1,
+  schemaVersion: 2,
   generatedAt: new Date().toISOString(),
   configuredRegionCount: regionCoverage.length,
   initializedRegionCount: initializedRegions.length,
@@ -234,10 +247,16 @@ await writeFile(resolve(dataDir, "region-coverage.json"), `${JSON.stringify({
   totalTenderCount: tenders.length,
   totalBidderCount: bidders.length,
   totalEquipmentCount: equipment.length,
+  fallbackActive: regionCoverage.some((item) => item.source === "legacy-gia-lai-fallback"),
   regions: regionCoverage,
 }, null, 2)}\n`);
 
+if (!tenders.length && legacyHasData) {
+  throw new Error("Hợp nhất trả về 0 gói dù dữ liệu Gia Lai dự phòng đang có");
+}
+
 process.stdout.write(
   `Đã hợp nhất ${initializedRegions.length}/${regionCoverage.length} tỉnh thành: `
-  + `${tenders.length} gói, ${bidders.length} nhà thầu, ${equipment.length} mặt hàng/model, ${copiedDetails.size} hồ sơ chi tiết.\n`,
+  + `${tenders.length} gói, ${bidders.length} nhà thầu, ${equipment.length} mặt hàng/model, ${copiedDetails.size} hồ sơ chi tiết.`
+  + `${regionCoverage.some((item) => item.source === "legacy-gia-lai-fallback") ? " Đang dùng dữ liệu Gia Lai dự phòng." : ""}\n`,
 );
