@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 300
     strategy:
       fail-fast: false
-      max-parallel: 2
+      max-parallel: 1
       matrix:
         region:
           - thanh-hoa
@@ -57,21 +57,23 @@ jobs:
         env:
           SCAN_DAYS: "1095"
           INCREMENTAL_DAYS: "14"
-          WINDOW_DAYS: "60"
-          PAGE_SIZE: "100"
-          DETAIL_LIMIT: "80"
+          WINDOW_DAYS: "30"
+          PAGE_SIZE: "10"
+          DETAIL_LIMIT: "50"
           ENABLE_HISTORICAL_FALLBACK: "1"
           FORCE_FULL_REFRESH: "1"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Đóng gói dữ liệu tỉnh thành
+      - name: Đóng gói dữ liệu tỉnh thành đã quét thành công
+        if: steps.regional_scan.outcome == 'success'
         run: |
           mkdir -p "data/regions/${{ matrix.region }}" artifacts
-          printf '%s\n' "${{ steps.regional_scan.outcome }}" > "data/regions/${{ matrix.region }}/last-full-scan-status.txt"
+          printf '%s\n' "success" > "data/regions/${{ matrix.region }}/last-full-scan-status.txt"
           date -u +'%Y-%m-%dT%H:%M:%SZ' > "data/regions/${{ matrix.region }}/last-full-scan-at.txt"
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
-      - name: Lưu dữ liệu tạm
+      - name: Lưu dữ liệu tỉnh thành đã quét thành công
+        if: steps.regional_scan.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: full-region-${{ matrix.region }}
@@ -91,7 +93,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Lấy mã nguồn mới nhất
+      - name: Lấy mã nguồn mới nhất và toàn bộ lịch sử
         uses: actions/checkout@v4
         with:
           ref: main
@@ -102,7 +104,11 @@ jobs:
         with:
           node-version: 22
 
-      - name: Tải dữ liệu từng tỉnh thành
+      - name: Khôi phục dữ liệu Gia Lai nếu bản hiện tại bị rỗng
+        run: node scripts/restore-legacy-gia-lai.mjs
+
+      - name: Tải dữ liệu các tỉnh quét thành công
+        continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           pattern: full-region-*
@@ -111,13 +117,17 @@ jobs:
 
       - name: Giải nén và hợp nhất dữ liệu
         run: |
-          for archive in artifacts/*.tgz; do
-            tar -xzf "$archive"
-          done
+          if compgen -G "artifacts/*.tgz" > /dev/null; then
+            for archive in artifacts/*.tgz; do
+              tar -xzf "$archive"
+            done
+          else
+            echo "Không có tỉnh nào quét thành công; giữ dữ liệu gần nhất."
+          fi
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
 
-      - name: Ghi cơ sở dữ liệu 3 năm về repository
+      - name: Ghi cơ sở dữ liệu 3 năm an toàn về repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -125,7 +135,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: hoàn tất một lượt quét sâu miền Trung [skip central scan]"
+            git commit -m "data: cập nhật quét sâu miền Trung, giữ dữ liệu dự phòng [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
