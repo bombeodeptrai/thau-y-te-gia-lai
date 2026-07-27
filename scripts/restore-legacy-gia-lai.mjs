@@ -24,7 +24,7 @@ function gitText(path) {
   });
 }
 
-async function restoreFile(path, required = true) {
+async function restoreFile(path, required = false) {
   try {
     const content = gitText(path);
     const destination = resolve(root, path);
@@ -37,20 +37,34 @@ async function restoreFile(path, required = true) {
   }
 }
 
+async function ensurePayload(path, key) {
+  const current = await readJson(resolve(root, path), null);
+  if (current && Array.isArray(current[key])) return;
+  await writeFile(resolve(root, path), `${JSON.stringify({
+    [key]: [],
+    fetchedAt: new Date().toISOString(),
+    disclosure: "legacy-tender-list-restored; details-will-be-refreshed",
+  }, null, 2)}\n`);
+}
+
 const current = await readJson(resolve(dataDir, "tenders.json"), { tenders: [] });
 if (Array.isArray(current.tenders) && current.tenders.length > 0) {
   process.stdout.write(`Dữ liệu hiện tại còn ${current.tenders.length} gói; không cần khôi phục dự phòng.\n`);
   process.exit(0);
 }
 
-const requiredFiles = [
-  "data/tenders.json",
-  "data/bidders.json",
-  "data/equipment.json",
-  "data/requirements.json",
-  "data/technical-requirements.json",
+await restoreFile("data/tenders.json", true);
+
+const optionalPayloads = [
+  ["data/bidders.json", "bidders"],
+  ["data/equipment.json", "equipment"],
+  ["data/requirements.json", "requirements"],
+  ["data/technical-requirements.json", "technicalRequirements"],
 ];
-for (const path of requiredFiles) await restoreFile(path, true);
+for (const [path, key] of optionalPayloads) {
+  const restored = await restoreFile(path, false);
+  if (!restored) await ensurePayload(path, key);
+}
 for (const path of ["data/competitor-history.json", "data/ai-analyses.json"]) {
   await restoreFile(path, false);
 }
@@ -68,7 +82,6 @@ try {
 } catch {
   detailFiles = [];
 }
-
 for (const path of detailFiles) await restoreFile(path, false);
 
 const restored = await readJson(resolve(dataDir, "tenders.json"), { tenders: [] });
@@ -77,5 +90,5 @@ if (!Array.isArray(restored.tenders) || !restored.tenders.length) {
 }
 
 process.stdout.write(
-  `Đã khôi phục dự phòng Gia Lai từ ${legacyCommit}: ${restored.tenders.length} gói, ${detailFiles.length} hồ sơ chi tiết.\n`,
+  `Đã khôi phục dự phòng Gia Lai từ ${legacyCommit}: ${restored.tenders.length} gói, ${detailFiles.length} hồ sơ chi tiết. Các chi tiết còn thiếu sẽ được quét lại.\n`,
 );
