@@ -17,14 +17,17 @@ if (!region) throw new Error(`Không có cấu hình khu vực: ${slug}`);
 
 const scanDays = Math.max(1, Number(process.env.SCAN_DAYS) || 1095);
 const incrementalDays = Math.max(1, Number(process.env.INCREMENTAL_DAYS) || 7);
-const windowDays = Math.max(1, Number(process.env.WINDOW_DAYS) || (scanDays >= 365 ? 30 : 7));
-const pageSize = Math.max(10, Math.min(100, Number(process.env.PAGE_SIZE) || 50));
+const windowDays = Math.max(1, Number(process.env.WINDOW_DAYS) || (scanDays >= 365 ? 60 : 7));
+const pageSize = Math.max(10, Math.min(100, Number(process.env.PAGE_SIZE) || 100));
 const detailLimit = Math.max(0, Number(process.env.DETAIL_LIMIT) || (scanDays >= 365 ? 60 : 15));
 const enableHistoricalFallback = process.env.ENABLE_HISTORICAL_FALLBACK === "1";
 const forceFullRefresh = process.env.FORCE_FULL_REFRESH === "1";
 const forcedNotifyNos = slug === "gia-lai"
   ? ["IB2600391963", "IB2600384538"]
   : [];
+const historicalTitleTerms = [
+  "thiết bị", "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "xét nghiệm", "máy", "dược phẩm",
+];
 
 function js(value) {
   return JSON.stringify(value, null, 2);
@@ -34,6 +37,18 @@ function replaceOrThrow(source, pattern, replacement, label) {
   const next = source.replace(pattern, replacement);
   if (next === source) throw new Error(`Không vá được fetch-data.mjs tại: ${label}`);
   return next;
+}
+
+function runNode(args) {
+  return new Promise((resolveExit, reject) => {
+    const child = spawn(process.execPath, args, {
+      cwd: root,
+      stdio: "inherit",
+      env: process.env,
+    });
+    child.once("error", reject);
+    child.once("exit", (code) => resolveExit(code ?? 1));
+  });
 }
 
 let source = await readFile(sourcePath, "utf8");
@@ -54,6 +69,12 @@ source = replaceOrThrow(
   /const HISTORICAL_LOCATION_TERMS = \[[\s\S]*?\n\];\nconst HISTORICAL_TITLE_TERMS =/,
   "const HISTORICAL_LOCATION_TERMS = REGION_LOCATION_TERMS;\nconst HISTORICAL_TITLE_TERMS =",
   "địa danh quét bù",
+);
+source = replaceOrThrow(
+  source,
+  /const HISTORICAL_TITLE_TERMS = \[[\s\S]*?\n\];/,
+  `const HISTORICAL_TITLE_TERMS = ${js(historicalTitleTerms)};`,
+  "từ khóa quét bù",
 );
 source = replaceOrThrow(
   source,
@@ -122,20 +143,19 @@ source = replaceOrThrow(
 const generatedPath = resolve(scriptsDir, `.generated-fetch-data-${region.slug}.mjs`);
 await writeFile(generatedPath, source);
 
+if (process.env.DRY_RUN === "1") {
+  const checkCode = await runNode(["--check", generatedPath]);
+  await rm(generatedPath, { force: true });
+  if (checkCode !== 0) process.exit(checkCode);
+  process.stdout.write(`Kiểm tra cấu hình quét ${region.name}: hợp lệ.\n`);
+  process.exit(0);
+}
+
 process.stdout.write(
   `Bắt đầu quét ${region.name}: mã ${region.provinceCodes.join(", ")}, ${scanDays} ngày, `
   + `tối đa ${detailLimit} gói chi tiết, quét bù=${enableHistoricalFallback ? "có" : "không"}\n`,
 );
 
-const exitCode = await new Promise((resolveExit, reject) => {
-  const child = spawn(process.execPath, [generatedPath], {
-    cwd: root,
-    stdio: "inherit",
-    env: process.env,
-  });
-  child.once("error", reject);
-  child.once("exit", (code) => resolveExit(code ?? 1));
-});
-
+const exitCode = await runNode([generatedPath]);
 await rm(generatedPath, { force: true });
 if (exitCode !== 0) process.exit(exitCode);
