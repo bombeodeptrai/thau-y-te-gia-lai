@@ -27,7 +27,7 @@ const forcedNotifyNos = slug === "gia-lai"
   ? ["IB2600391963", "IB2600384538"]
   : [];
 const defaultHistoricalTitleTerms = [
-  "thiết bị", "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "xét nghiệm", "máy", "dược phẩm",
+  "thiết bị", "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "xét nghiệm", "máy", "thuốc", "dược phẩm",
 ];
 const historicalTitleTerms = String(process.env.HISTORICAL_TITLE_TERMS || "")
   .split("|")
@@ -38,6 +38,30 @@ if (!historicalTitleTerms.length) historicalTitleTerms.push(...defaultHistorical
 const regionDataDir = resolve(root, "data", "regions", region.slug);
 const regionOutputPath = resolve(regionDataDir, "tenders.json");
 const regionSummaryPath = resolve(regionDataDir, "scan-summary.json");
+const topLevelTenderPath = resolve(root, "data", "tenders.json");
+const bidderOutputPath = resolve(regionDataDir, "bidders.json");
+const equipmentOutputPath = resolve(regionDataDir, "equipment.json");
+
+async function readJsonSafe(path, fallback) {
+  try {
+    return JSON.parse(await readFile(path, "utf8"));
+  } catch {
+    return fallback;
+  }
+}
+
+const existingRegionalPayload = await readJsonSafe(regionOutputPath, { tenders: [] });
+const topLevelPayload = slug === "gia-lai"
+  ? await readJsonSafe(topLevelTenderPath, { tenders: [] })
+  : { tenders: [] };
+const existingRegionalCount = Array.isArray(existingRegionalPayload.tenders)
+  ? existingRegionalPayload.tenders.length
+  : 0;
+const legacyGiaLaiCount = slug === "gia-lai" && Array.isArray(topLevelPayload.tenders)
+  ? topLevelPayload.tenders.filter((item) => !item.regionSlug || item.regionSlug === "gia-lai").length
+  : 0;
+const baselineTenderCount = Math.max(existingRegionalCount, legacyGiaLaiCount);
+const requiredTenderCount = Math.max(minTenderCount, baselineTenderCount);
 
 function js(value) {
   return JSON.stringify(value, null, 2);
@@ -159,12 +183,15 @@ if (process.env.DRY_RUN === "1") {
   const checkCode = await runNode(["--check", generatedPath]);
   await rm(generatedPath, { force: true });
   if (checkCode !== 0) process.exit(checkCode);
-  process.stdout.write(`Kiểm tra cấu hình quét ${region.name}: hợp lệ.\n`);
+  process.stdout.write(
+    `Kiểm tra cấu hình quét ${region.name}: hợp lệ; ngưỡng giữ dữ liệu hiện tại ${requiredTenderCount} gói.\n`,
+  );
   process.exit(0);
 }
 
 process.stdout.write(
   `Bắt đầu quét ${region.name}: mã ${region.provinceCodes.join(", ")}, ${scanDays} ngày, `
+  + `${region.locationTerms.length} địa danh, ngưỡng không giảm ${requiredTenderCount} gói, `
   + `tối đa ${detailLimit} gói chi tiết, quét bù=${enableHistoricalFallback ? "có" : "không"}\n`,
 );
 
@@ -182,27 +209,38 @@ try {
 const tenderCount = Array.isArray(payload.tenders) ? payload.tenders.length : 0;
 const coverageDays = Number(payload.collection?.days) || 0;
 const detailTenderCount = Number(payload.detailTenderCount) || 0;
-if (tenderCount < minTenderCount) {
-  throw new Error(`Quét ${region.name} chỉ có ${tenderCount} gói, thấp hơn ngưỡng ${minTenderCount}; không ghi đè dữ liệu cũ`);
+if (tenderCount < requiredTenderCount) {
+  throw new Error(
+    `Quét ${region.name} chỉ có ${tenderCount} gói, thấp hơn dữ liệu đang giữ ${requiredTenderCount}; không ghi đè dữ liệu cũ`,
+  );
 }
 if (forceFullRefresh && coverageDays < scanDays) {
   throw new Error(`Quét ${region.name} mới phủ ${coverageDays}/${scanDays} ngày; không công nhận hoàn tất`);
 }
 
+const bidderPayload = await readJsonSafe(bidderOutputPath, { bidders: [] });
+const equipmentPayload = await readJsonSafe(equipmentOutputPath, { equipment: [] });
+const bidderCount = Array.isArray(bidderPayload.bidders) ? bidderPayload.bidders.length : 0;
+const equipmentCount = Array.isArray(equipmentPayload.equipment) ? equipmentPayload.equipment.length : 0;
+
 await writeFile(regionSummaryPath, `${JSON.stringify({
-  schemaVersion: 1,
+  schemaVersion: 2,
   regionSlug: region.slug,
   region: region.name,
   completedAt: new Date().toISOString(),
   scanDays,
   tenderCount,
+  baselineTenderCount,
   detailTenderCount,
-  bidderCount: 0,
-  equipmentCount: 0,
+  bidderCount,
+  equipmentCount,
+  historicalLocationTermCount: region.locationTerms.length,
+  historicalTitleTermCount: historicalTitleTerms.length,
   historicalFallback: enableHistoricalFallback,
   status: "success",
 }, null, 2)}\n`);
 
 process.stdout.write(
-  `Xác thực ${region.name}: ${tenderCount} gói/${coverageDays} ngày, ${detailTenderCount} gói đã có chi tiết.\n`,
+  `Xác thực ${region.name}: ${tenderCount} gói/${coverageDays} ngày, ${detailTenderCount} gói chi tiết, `
+  + `${bidderCount} dòng nhà thầu, ${equipmentCount} mặt hàng/model.\n`,
 );

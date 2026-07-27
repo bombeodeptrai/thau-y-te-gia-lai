@@ -51,8 +51,8 @@ jobs:
           DRY_RUN: "1"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      # Lượt đầu chỉ quét theo mã tỉnh cũ và mới. Quét bù từ khóa địa danh
-      # được tách sang workflow bổ sung để tránh quá tải nguồn công khai.
+      # Quét theo cả mã tỉnh cũ/mới. Riêng Gia Lai còn quét bù theo toàn bộ
+      # địa danh Gia Lai và Bình Định cũ vì nhiều hồ sơ lịch sử thiếu mã tỉnh.
       - name: Quét nền toàn bộ 3 năm
         id: regional_scan
         continue-on-error: true
@@ -63,7 +63,7 @@ jobs:
           PAGE_SIZE: "10"
           DETAIL_LIMIT: "80"
           MIN_TENDER_COUNT: "1"
-          ENABLE_HISTORICAL_FALLBACK: "0"
+          ENABLE_HISTORICAL_FALLBACK: ${{ matrix.region == 'gia-lai' && '1' || '0' }}
           FORCE_FULL_REFRESH: "1"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
@@ -139,7 +139,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: hoàn tất nền 3 năm miền Trung [start-detail-backfill] [skip central scan]"
+            git commit -m "data: hoàn tất nền 3 năm và quét bù địa danh [start-detail-backfill] [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
