@@ -72,6 +72,13 @@ async function directoryExists(path) {
   }
 }
 
+const legacyDetailsDir = resolve(dataDir, "details");
+const legacyDetailsSnapshot = resolve(dataDir, ".legacy-details-snapshot");
+await rm(legacyDetailsSnapshot, { recursive: true, force: true });
+if (await directoryExists(legacyDetailsDir)) {
+  await cp(legacyDetailsDir, legacyDetailsSnapshot, { recursive: true });
+}
+
 const legacy = {
   tenders: await readJson(resolve(dataDir, "tenders.json"), { tenders: [] }),
   bidders: await readJson(resolve(dataDir, "bidders.json"), { bidders: [] }),
@@ -166,7 +173,7 @@ for (const region of config.regions || []) {
 
   const detailDir = hasRegionData
     ? resolve(regionDir, "details")
-    : (useLegacy ? resolve(dataDir, "details") : "");
+    : (useLegacy ? legacyDetailsSnapshot : "");
   if (detailDir && await directoryExists(detailDir)) detailSources.push({ region, detailDir });
 }
 
@@ -197,6 +204,7 @@ for (const { region, detailDir } of detailSources) {
     copiedDetails.set(fileName, { mtime: sourceMtime, regionSlug: region.slug });
   }
 }
+await rm(legacyDetailsSnapshot, { recursive: true, force: true });
 
 await mkdir(regionsDir, { recursive: true });
 await writeFile(resolve(dataDir, "tenders.json"), `${JSON.stringify({
