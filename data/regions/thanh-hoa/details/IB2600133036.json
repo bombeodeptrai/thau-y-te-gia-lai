@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "2cd614e7-79e7-4970-b22b-24dc71849802",
+      "contractorCode": "vn2802534183",
+      "taxCode": "2802534183",
+      "contractorName": "CÔNG TY TNHH MEDIGAS VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600138263",
+      "lotName": "Khí Oxy lỏng",
+      "bidPrice": 380000000,
+      "finalPrice": 380000000,
+      "winningPrice": 240000000,
+      "reason": "",
+      "submittedAt": "2026-05-04T10:48:32.504",
+      "models": [
+        "LOX",
+        "CO2B40L"
+      ]
+    },
+    {
+      "id": "e6a5c49c-50fe-40ab-ba65-7e4cbab4c46f",
+      "contractorCode": "vn2802534183",
+      "taxCode": "2802534183",
+      "contractorName": "CÔNG TY TNHH MEDIGAS VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600138264",
+      "lotName": "Khí CO2 (40 lít/bình)",
+      "bidPrice": 8000000,
+      "finalPrice": 8000000,
+      "winningPrice": 8000000,
+      "reason": "",
+      "submittedAt": "2026-05-04T10:48:32.504",
+      "models": [
+        "LOX",
+        "CO2B40L"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "cea2aa5b-a1d8-4bc0-a552-3bd17bb07ebb",
+      "name": "Khí Oxy lỏng",
+      "model": "LOX",
+      "brand": "Medigas",
+      "manufacturer": "Shian Yun",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Khí Oxy hóa lỏng sử dụng trong y tế, độ tinh khiết 99,6%. Nạp trực tiếp vào bồn chứa chuyên dụng của bệnh viện.",
+      "unit": "Kg",
+      "quantity": 100000,
+      "unitPrice": 2400,
+      "amount": 240000000,
+      "contractorCode": "vn2802534183",
+      "winnerNames": [
+        "CÔNG TY TNHH MEDIGAS VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "940/QĐ-BVUB",
+      "decisionDate": "2026-05-04T23:59:59",
+      "resultPublishedDate": "2026-05-04T10:50:49"
+    },
+    {
+      "id": "36adb6d2-1ee5-4ca1-a5da-6d9d56c049f1",
+      "name": "Khí CO2 (40 lít/bình)",
+      "model": "CO2B40L",
+      "brand": "Medigas",
+      "manufacturer": "Shian Yun",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Chất lượng khí: 99,9% CO2 tinh khiết, dạng lỏng. Quy cách: Bình 40 lít; Lượng nạp: 25kg ± 5%. Bình được kiểm định và đang trong thời gian lưu hành. Đổi khí, vỏ bình luân chuyển.",
+      "unit": "Bình",
+      "quantity": 40,
+      "unitPrice": 200000,
+      "amount": 8000000,
+      "contractorCode": "vn2802534183",
+      "winnerNames": [
+        "CÔNG TY TNHH MEDIGAS VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "940/QĐ-BVUB",
+      "decisionDate": "2026-05-04T23:59:59",
+      "resultPublishedDate": "2026-05-04T10:50:49"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "a8dd73ae-1101-4186-8f86-a2d22661b4df",
+        "lotNo": "PP2600138263",
+        "name": "Khí Oxy lỏng",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 240000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "99638873-53aa-4029-a606-894193b8cfcd",
+        "lotNo": "PP2600138264",
+        "name": "Khí CO2 (40 lít/bình)",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 8000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm khí y tế tại Bệnh viện Ung bướu tỉnh Thanh Hóa năm 2026",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-07-27T07:28:06.454Z"
+}

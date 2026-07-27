@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "b503e027-aceb-42d5-8513-d5236be7a4b8",
+      "contractorCode": "vn0103657372",
+      "taxCode": "0103657372",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ HAMEMY",
+      "status": "won",
+      "lotNo": "PP2600004540",
+      "lotName": "THIẾT BỊ Y TẾ PHÒNG XÉT NGHIỆM",
+      "bidPrice": 702975000,
+      "finalPrice": 702975000,
+      "winningPrice": 702975000,
+      "reason": "",
+      "submittedAt": "2026-03-19T14:52:23.141",
+      "models": [
+        "FG0074"
+      ]
+    },
+    {
+      "id": "37e9c2eb-3b9d-43a5-9da1-e8fe847bc132",
+      "contractorCode": "vn2801615584",
+      "taxCode": "2801615584",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ AN SINH",
+      "status": "lost",
+      "lotNo": "PP2600004541",
+      "lotName": "THIẾT BỊ Y TẾ KHOA CẤP CỨU HỒI SỨC TÍCH CỰC & CHỐNG ĐỘC",
+      "bidPrice": 275500000,
+      "finalPrice": 275500000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng E-HSMT",
+      "submittedAt": "2026-03-19T14:52:23.141",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "60465194-0c5c-450e-ba6a-c17e92ad1291",
+      "name": "Máy phân tích miễn dịch tự động",
+      "model": "FG0074",
+      "brand": "iFlash 1200-A",
+      "manufacturer": "Shenzhen YHLO Biotech Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Chi tiết theo \"Bảng chào đáp ứng thông số kỹ thuật",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 702975000,
+      "amount": 702975000,
+      "contractorCode": "vn0103657372",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HAMEMY"
+      ],
+      "lotNo": "",
+      "decisionNo": "40/QĐ-BVLC",
+      "decisionDate": "2026-03-19T23:59:59",
+      "resultPublishedDate": "2026-03-19T14:52:45"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "c398d5de-919f-498d-9549-4856ae38dc0d",
+        "lotNo": "PP2600004540",
+        "name": "THIẾT BỊ Y TẾ PHÒNG XÉT NGHIỆM",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 710000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "ab38a6df-ca4a-48fb-b6de-b39de71f78d9",
+        "lotNo": "PP2600004541",
+        "name": "THIẾT BỊ Y TẾ KHOA CẤP CỨU HỒI SỨC TÍCH CỰC & CHỐNG ĐỘC",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 326500000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Cung cấp trang thiết bị Y tế",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-07-27T07:28:32.211Z"
+}

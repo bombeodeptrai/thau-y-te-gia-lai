@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 4,
+  "bidders": [
+    {
+      "id": "62657d09-2f20-4b19-90f4-7cfc575dc23d",
+      "contractorCode": "vn3600254682",
+      "taxCode": "3600254682",
+      "contractorName": "CÔNG TY TNHH OXY ĐỒNG NAI",
+      "status": "won",
+      "lotNo": "BP2500747641",
+      "lotName": "Mua sắm khí y tế",
+      "bidPrice": 4438260000,
+      "finalPrice": 4438260000,
+      "winningPrice": 4438260000,
+      "reason": "",
+      "submittedAt": "2026-01-08T16:11:42.51",
+      "models": []
+    },
+    {
+      "id": "7a3bdfe5-5289-4a60-8c41-196694c1550a",
+      "contractorCode": "vn5900980625",
+      "taxCode": "5900980625",
+      "contractorName": "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI",
+      "status": "lost",
+      "lotNo": "BP2500747641",
+      "lotName": "Mua sắm khí y tế",
+      "bidPrice": 4538900000,
+      "finalPrice": 4538900000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-01-08T16:11:42.51",
+      "models": []
+    },
+    {
+      "id": "dc18eb02-20c4-405d-a69e-58b9b05185e0",
+      "contractorCode": "vn0300422482",
+      "taxCode": "0300422482",
+      "contractorName": "CÔNG TY CỔ PHẦN HƠI KỸ NGHỆ QUE HÀN",
+      "status": "lost",
+      "lotNo": "BP2500747641",
+      "lotName": "Mua sắm khí y tế",
+      "bidPrice": 5102800000,
+      "finalPrice": 5102800000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-01-08T16:11:42.51",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "1158bfa3-bd1a-4222-a691-2130a5f7da43",
+      "name": "Khí Oxy y tế",
+      "model": "O2",
+      "brand": "Oxygen",
+      "manufacturer": "Công ty TNHH Oxy Đồng Nai",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Loại chai 14 lít Chất lượng ≥ 99,5%",
+      "unit": "Chai",
+      "quantity": 400,
+      "unitPrice": 35100,
+      "winnerNames": [
+        "CÔNG TY TNHH OXY ĐỒNG NAI"
+      ],
+      "decisionNo": "15/QĐ-BVNT",
+      "decisionDate": "2026-01-08T23:59:59",
+      "resultPublishedDate": "2026-01-08T16:12:07"
+    },
+    {
+      "id": "8fdc358d-d7a7-4e28-93d0-2e62b4b0c96b",
+      "name": "Khí CO2",
+      "model": "CO2",
+      "brand": "Carbon Dioxide",
+      "manufacturer": "Công ty TNHH Oxy Đồng Nai",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Loại chai 7 lít Chất lượng ≥ 99,5%",
+      "unit": "Chai",
+      "quantity": 300,
+      "unitPrice": 59400,
+      "winnerNames": [
+        "CÔNG TY TNHH OXY ĐỒNG NAI"
+      ],
+      "decisionNo": "15/QĐ-BVNT",
+      "decisionDate": "2026-01-08T23:59:59",
+      "resultPublishedDate": "2026-01-08T16:12:07"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "967a6271-5064-4b96-9470-df3cbb512708",
+        "lotNo": "BP2500747641",
+        "name": "Mua sắm khí y tế",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 5517490000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm khí y tế",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-07-27T07:37:06.239Z"
+}

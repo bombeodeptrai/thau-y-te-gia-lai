@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "777f2ad1-627d-44f0-b2e8-e5830fcd1442",
+      "contractorCode": "vn0302204137",
+      "taxCode": "0302204137",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ B.M.S",
+      "status": "lost",
+      "lotNo": "PP2600120663",
+      "lotName": "Phần lô 1: Mua sắm bổ sung túi đựng dụng cụ tiệt trùng",
+      "bidPrice": 76000000,
+      "finalPrice": 76000000,
+      "winningPrice": 0,
+      "reason": "Công ty không cung cấp tài liệu theo yêu cầu của Bệnh viện mời thầu.",
+      "submittedAt": "2026-04-14T14:55:49.936",
+      "models": []
+    },
+    {
+      "id": "ee5b4c99-fb61-4581-b135-dde9afdf1761",
+      "contractorCode": "vn0315076080",
+      "taxCode": "0315076080",
+      "contractorName": "CÔNG TY TNHH DOMED",
+      "status": "lost",
+      "lotNo": "PP2600120664",
+      "lotName": "Phần lô 2: Mua sắm bổ sung chỉ thị hóa học",
+      "bidPrice": 89250000,
+      "finalPrice": 89250000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-04-14T14:55:49.936",
+      "models": []
+    },
+    {
+      "id": "8fd3dbf9-df3c-4842-8628-5a8e3cab5ed3",
+      "contractorCode": "vn4500579576",
+      "taxCode": "058091000167",
+      "contractorName": "Cửa Hàng Lê Khoa",
+      "status": "won",
+      "lotNo": "PP2600120664",
+      "lotName": "Phần lô 2: Mua sắm bổ sung chỉ thị hóa học",
+      "bidPrice": 88800000,
+      "finalPrice": 88800000,
+      "winningPrice": 88800000,
+      "reason": "",
+      "submittedAt": "2026-04-14T14:55:49.936",
+      "models": [
+        "1243A",
+        "1348"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "540e4b28-b44c-4afb-a36a-801d90ad79f3",
+      "name": "Chỉ thị hoá học đa thông số",
+      "model": "1243A",
+      "brand": "3M™ Attest™ Steam Chemical Integrator",
+      "manufacturer": "3M Company ",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "Từ năm 2024 trở về sau, hàng mới 100%",
+      "specification": "Chỉ thị hoá học sử dụng để giám sát quá trình tiệt khuẩn: thời gian, nhiệt độ và hơi nước\r\nKích thước 5,1cm x 1,9cm\r\nTúi / 500 miếng",
+      "unit": "Hộp",
+      "quantity": 36,
+      "unitPrice": 1695000,
+      "amount": 61020000,
+      "contractorCode": "vn4500579576",
+      "winnerNames": [
+        "Cửa Hàng Lê Khoa"
+      ],
+      "lotNo": "",
+      "decisionNo": "674/QĐ-BVNT",
+      "decisionDate": "2026-04-14T14:55:07",
+      "resultPublishedDate": "2026-04-14T14:55:55"
+    },
+    {
+      "id": "d673606b-fab2-4357-a1b8-7880f929782f",
+      "name": "Chỉ thị hoá học",
+      "model": "1348",
+      "brand": "3M™ Attest™ VH202 Tri - Metric Indicator",
+      "manufacturer": "3M Company",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "Từ năm 2024 trở về sau, hàng mới 100%",
+      "specification": "Chỉ thị hoá học dùng cho máy STERRAD 100S\r\nKích thước: 1,9cm x 5,1cm\r\nTúi /250 miếng",
+      "unit": "Hộp",
+      "quantity": 12,
+      "unitPrice": 2315000,
+      "amount": 27780000,
+      "contractorCode": "vn4500579576",
+      "winnerNames": [
+        "Cửa Hàng Lê Khoa"
+      ],
+      "lotNo": "",
+      "decisionNo": "674/QĐ-BVNT",
+      "decisionDate": "2026-04-14T14:55:07",
+      "resultPublishedDate": "2026-04-14T14:55:55"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "906f37e2-e1d8-4226-a5b4-6f88a356fac7",
+        "lotNo": "PP2600120663",
+        "name": "Phần lô 1: Mua sắm bổ sung túi đựng dụng cụ tiệt trùng",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 130737600,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "bbf357cb-3522-4271-b652-e03952b59f8b",
+        "lotNo": "PP2600120664",
+        "name": "Phần lô 2: Mua sắm bổ sung chỉ thị hóa học",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 89250000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm vật tư y tế (Đợt 2) (gồm 2 phần lô, 4 mặt hàng)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 4,
+    "items": [
+      {
+        "id": "9152964776180860",
+        "position": "1.1",
+        "lotNo": "PP2600120663",
+        "lotName": "Phần lô 1: Mua sắm bổ sung túi đựng dụng cụ tiệt trùng",
+        "name": "Túi đựng dụng cụ để tiệt trùng",
+        "unit": "Cuộn",
+        "quantity": 30,
+        "code": "20460021",
+        "brand": "Nhà thầu tự đề xuất",
+        "manufacturer": "E.Line S.r.l",
+        "origin": "Italy",
+        "manufactureYear": "Từ năm 2024 trở về sau, hàng mới 100%.",
+        "specification": "Kích thước: 150mm x 100m, nhựa plastic PET/PE hoặc OPA/PE. Dùng cho lò hấp Plasma",
+        "otherRequirement": "Nhà thầu cung cấp nội dung theo bảng biểu; Trang thiết bị y tế là hàng hóa đặc thù, phục vụ trực tiếp cho công tác khám bệnh, chữa bệnh, có yêu cầu cao về chất lượng và an toàn trong quá trình sử dụng. Hàng hóa chào thầu phải là hàng hóa hợp pháp, chính hãng, không phải hàng giả, hàng nhái. Để chứng minh khả năng cung cấp như yêu cầu trên nhà thầu phải nộp một trong các tài liệu sau: “giấy cam kết hoặc tài liệu hợp lệ của nhà sản xuất, nhà phân phối hợp pháp hoặc giấy chứng nhận quan hệ đối tác nhằm chứng minh khả năng cung cấp hàng hóa đúng chất lượng và số lượng, chủng loại trang thiết bị y tế” và cung cấp tài liệu chứng minh Trang thiết bị y tế khi tham dự thầu phải đáp ứng điều kiện lưu hành đối với trang thiết bị y tế theo quy định tại khoản 2 Điều 1 Nghị định số 07/2023/NĐ-CP ngày 03/3/2023 của Chính phủ về sửa đổi, bổ sung một số điều của nghị định số 98/2021/NĐ-CP ngày 08/11/2021 của chính phủ về quản lý trang thiết bị y tế trong vòng 05 ngày làm việc kể từ thời điểm kết thúc chào giá. Địa điểm gửi hồ sơ: Bệnh viện đa khoa Ninh Thuận, đường Nguyễn Văn Cừ, Phường Ninh Chử, tỉnh Khánh Hòa. Gửi Nhi- Phòng Vật tư TBYT – 0378618655.'",
+        "projectPlace": "Phòng Vật tư TBYT-Bệnh viện đa khoa Ninh Thuận",
+        "earliestDeliveryDate": "01 ngày kể từ ngày chủ đầu tư yêu cầu giao hàng",
+        "latestDeliveryDate": "03 ngày kể từ ngày chủ đầu tư yêu cầu giao hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "11147449021781956",
+        "position": "1.2",
+        "lotNo": "PP2600120663",
+        "lotName": "Phần lô 1: Mua sắm bổ sung túi đựng dụng cụ tiệt trùng",
+        "name": "Túi đựng dụng cụ để tiệt trùng",
+        "unit": "Cuộn",
+        "quantity": 4,
+        "code": "20460033",
+        "brand": "Nhà thầu tự đề xuất",
+        "manufacturer": "E.Line S.r.l",
+        "origin": "Italy",
+        "manufactureYear": "Từ năm 2024 trở về sau, hàng mới 100%.",
+        "specification": "Kích thước: 350mm x 100m, nhựa plastic PET/PE hoặc OPA/PE. Dùng cho lò hấp Plasma",
+        "otherRequirement": "Nhà thầu cung cấp nội dung theo bảng biểu; Trang thiết bị y tế là hàng hóa đặc thù, phục vụ trực tiếp cho công tác khám bệnh, chữa bệnh, có yêu cầu cao về chất lượng và an toàn trong quá trình sử dụng. Hàng hóa chào thầu phải là hàng hóa hợp pháp, chính hãng, không phải hàng giả, hàng nhái. Để chứng minh khả năng cung cấp như yêu cầu trên nhà thầu phải nộp một trong các tài liệu sau: “giấy cam kết hoặc tài liệu hợp lệ của nhà sản xuất, nhà phân phối hợp pháp hoặc giấy chứng nhận quan hệ đối tác nhằm chứng minh khả năng cung cấp hàng hóa đúng chất lượng và số lượng, chủng loại trang thiết bị y tế” và cung cấp tài liệu chứng minh Trang thiết bị y tế khi tham dự thầu phải đáp ứng điều kiện lưu hành đối với trang thiết bị y tế theo quy định tại khoản 2 Điều 1 Nghị định số 07/2023/NĐ-CP ngày 03/3/2023 của Chính phủ về sửa đổi, bổ sung một số điều của nghị định số 98/2021/NĐ-CP ngày 08/11/2021 của chính phủ về quản lý trang thiết bị y tế trong vòng 05 ngày làm việc kể từ thời điểm kết thúc chào giá. Địa điểm gửi hồ sơ: Bệnh viện đa khoa Ninh Thuận, đường Nguyễn Văn Cừ, Phường Ninh Chử, tỉnh Khánh Hòa. Gửi Nhi- Phòng Vật tư TBYT – 0378618655.'",
+        "projectPlace": "Phòng Vật tư TBYT-Bệnh viện đa khoa Ninh Thuận",
+        "earliestDeliveryDate": "01 ngày kể từ ngày chủ đầu tư yêu cầu giao hàng",
+        "latestDeliveryDate": "03 ngày kể từ ngày chủ đầu tư yêu cầu giao hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "10878024578829612",
+        "position": "2.1",
+        "lotNo": "PP2600120664",
+        "lotName": "Phần lô 2: Mua sắm bổ sung chỉ thị hóa học",
+        "name": "Chỉ thị hoá học đa thông số",
+        "unit": "Hộp",
+        "quantity": 36,
+        "code": "1243A",
+        "brand": "Nhà thầu tự đề xuất",
+        "manufacturer": "3M Company",
+        "origin": "Hoa Kỳ",
+        "manufactureYear": "Từ năm 2024 trở về sau, hàng mới 100%.",
+        "specification": "Chỉ thị hoá học sử dụng để giám sát quá trình tiệt khuẩn: thời gian, nhiệt độ và hơi nước\nKích thước 5,1cm x 1,9cm\nHộp / 500 miếng",
+        "otherRequirement": "Nhà thầu cung cấp nội dung theo bảng biểu; Trang thiết bị y tế là hàng hóa đặc thù, phục vụ trực tiếp cho công tác khám bệnh, chữa bệnh, có yêu cầu cao về chất lượng và an toàn trong quá trình sử dụng. Hàng hóa chào thầu phải là hàng hóa hợp pháp, chính hãng, không phải hàng giả, hàng nhái. Để chứng minh khả năng cung cấp như yêu cầu trên nhà thầu phải nộp một trong các tài liệu sau: “giấy cam kết hoặc tài liệu hợp lệ của nhà sản xuất, nhà phân phối hợp pháp hoặc giấy chứng nhận quan hệ đối tác nhằm chứng minh khả năng cung cấp hàng hóa đúng chất lượng và số lượng, chủng loại trang thiết bị y tế” và cung cấp tài liệu chứng minh Trang thiết bị y tế khi tham dự thầu phải đáp ứng điều kiện lưu hành đối với trang thiết bị y tế theo quy định tại khoản 2 Điều 1 Nghị định số 07/2023/NĐ-CP ngày 03/3/2023 của Chính phủ về sửa đổi, bổ sung một số điều của nghị định số 98/2021/NĐ-CP ngày 08/11/2021 của chính phủ về quản lý trang thiết bị y tế trong vòng 05 ngày làm việc kể từ thời điểm kết thúc chào giá. Địa điểm gửi hồ sơ: Bệnh viện đa khoa Ninh Thuận, đường Nguyễn Văn Cừ, Phường Ninh Chử, tỉnh Khánh Hòa. Gửi Nhi- Phòng Vật tư TBYT – 0378618655.'",
+        "projectPlace": "Phòng Vật tư TBYT-Bệnh viện đa khoa Ninh Thuận",
+        "earliestDeliveryDate": "01 ngày kể từ ngày chủ đầu tư yêu cầu giao hàng",
+        "latestDeliveryDate": "03 ngày kể từ ngày chủ đầu tư yêu cầu giao hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "8666211758493472",
+        "position": "2.2",
+        "lotNo": "PP2600120664",
+        "lotName": "Phần lô 2: Mua sắm bổ sung chỉ thị hóa học",
+        "name": "Chỉ thị hoá học",
+        "unit": "Hộp",
+        "quantity": 12,
+        "code": "1348",
+        "brand": "Nhà thầu tự đề xuất",
+        "manufacturer": "3M Company",
+        "origin": "Hoa Kỳ",
+        "manufactureYear": "Từ năm 2024 trở về sau, hàng mới 100%.",
+        "specification": "Chỉ thị hoá học dùng cho máy STERRAD 100S\nKích thước: 1,9cm x 5,1cm\nHộp/250 miếng",
+        "otherRequirement": "Nhà thầu cung cấp nội dung theo bảng biểu; Trang thiết bị y tế là hàng hóa đặc thù, phục vụ trực tiếp cho công tác khám bệnh, chữa bệnh, có yêu cầu cao về chất lượng và an toàn trong quá trình sử dụng. Hàng hóa chào thầu phải là hàng hóa hợp pháp, chính hãng, không phải hàng giả, hàng nhái. Để chứng minh khả năng cung cấp như yêu cầu trên nhà thầu phải nộp một trong các tài liệu sau: “giấy cam kết hoặc tài liệu hợp lệ của nhà sản xuất, nhà phân phối hợp pháp hoặc giấy chứng nhận quan hệ đối tác nhằm chứng minh khả năng cung cấp hàng hóa đúng chất lượng và số lượng, chủng loại trang thiết bị y tế” và cung cấp tài liệu chứng minh Trang thiết bị y tế khi tham dự thầu phải đáp ứng điều kiện lưu hành đối với trang thiết bị y tế theo quy định tại khoản 2 Điều 1 Nghị định số 07/2023/NĐ-CP ngày 03/3/2023 của Chính phủ về sửa đổi, bổ sung một số điều của nghị định số 98/2021/NĐ-CP ngày 08/11/2021 của chính phủ về quản lý trang thiết bị y tế trong vòng 05 ngày làm việc kể từ thời điểm kết thúc chào giá. Địa điểm gửi hồ sơ: Bệnh viện đa khoa Ninh Thuận, đường Nguyễn Văn Cừ, Phường Ninh Chử, tỉnh Khánh Hòa. Gửi Nhi- Phòng Vật tư TBYT – 0378618655.'",
+        "projectPlace": "Phòng Vật tư TBYT-Bệnh viện đa khoa Ninh Thuận",
+        "earliestDeliveryDate": "01 ngày kể từ ngày chủ đầu tư yêu cầu giao hàng",
+        "latestDeliveryDate": "03 ngày kể từ ngày chủ đầu tư yêu cầu giao hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-07-27T07:36:38.241Z"
+}
