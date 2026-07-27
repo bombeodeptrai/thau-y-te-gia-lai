@@ -1,0 +1,51 @@
+name: Kiểm tra mã nguồn
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v4
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Kiểm tra cú pháp và bộ trích dữ liệu
+        run: |
+          node --test scripts/technical-requirements.test.mjs
+          node --check scripts/run-region-scan.mjs
+          node --check scripts/merge-regions.mjs
+          node --check scripts/build-pages.mjs
+          node --check scripts/build-site.mjs
+          node --check scripts/patch-regional-competitor.mjs
+          node --check regional-mode.js
+          node --check competitor-analysis.js
+          node --check competitor-count-fix.js
+          cp google-apps-script/RegionalSheets.gs /tmp/RegionalSheets.js
+          node --check /tmp/RegionalSheets.js
+
+      - name: Kiểm tra cấu hình quét các tỉnh thành
+        run: |
+          for region in thanh-hoa nghe-an ha-tinh quang-tri hue da-nang quang-ngai gia-lai dak-lak khanh-hoa lam-dong; do
+            DRY_RUN=1 node scripts/run-region-scan.mjs "$region"
+          done
+
+      - name: Dựng thử website miền Trung
+        run: |
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/build-site.mjs
+          test -f dist-pages/index.html
+          test -f dist-pages/data/region-coverage.json
+          test -f dist-pages/regional-mode.js
