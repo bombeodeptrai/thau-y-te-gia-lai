@@ -68,13 +68,33 @@ jobs:
           FORCE_FULL_REFRESH: "0"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Quét bù toàn bộ bản ghi gần đây rồi áp dụng cùng bộ lọc
+      - name: Quét bù thật bằng mã tỉnh và địa danh
         id: medical_rescue
         continue-on-error: true
         env:
           RESCUE_DAYS: "21"
-          PAGE_SIZE: "100"
+          PAGE_SIZE: "10"
+          LOCATION_TERM_LIMIT: "16"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
+
+      - name: Chặn thành công giả của dữ liệu Gia Lai
+        if: matrix.region == 'gia-lai'
+        env:
+          RESCUE_OUTCOME: ${{ steps.medical_rescue.outcome }}
+        run: |
+          test "$RESCUE_OUTCOME" = "success"
+          test -f data/regions/gia-lai/medical-rescue-summary.json
+          node -e '
+            const fs=require("fs");
+            const summary=JSON.parse(fs.readFileSync("data/regions/gia-lai/medical-rescue-summary.json","utf8"));
+            const data=JSON.parse(fs.readFileSync("data/regions/gia-lai/tenders.json","utf8"));
+            if(!(summary.successfulStrategyCount>0)) throw new Error("Không có đường lấy dữ liệu nào thành công");
+            if(!(summary.candidateCount>0)) throw new Error("Quét thật trả 0 ứng viên");
+            if(!(summary.acceptedCount>0)) throw new Error("Bộ lọc không nhận được gói y tế nào");
+            const manual=(data.tenders||[]).filter(x=>x.manualTenderOverride || String(x.id||"").startsWith("manual-"));
+            if(manual.length) throw new Error(`Còn ${manual.length} bản ghi gói thầu thủ công`);
+            console.log(`Quét thật: ${summary.candidateCount} ứng viên, nhận ${summary.acceptedCount}, không còn bản ghi thủ công`);
+          '
 
       - name: Đóng gói dữ liệu tỉnh thành hợp lệ
         if: steps.regional_scan.outcome == 'success' || steps.medical_rescue.outcome == 'success'
@@ -139,6 +159,14 @@ jobs:
           node scripts/apply-manual-equipment-overrides.mjs
           node scripts/data-health-check.mjs
 
+      - name: Xác nhận dữ liệu tổng hợp không còn gói thủ công
+        run: |
+          node -e '
+            const d=require("./data/tenders.json");
+            const manual=(d.tenders||[]).filter(x=>x.manualTenderOverride || String(x.id||"").startsWith("manual-"));
+            if(manual.length) throw new Error(`Dữ liệu tổng hợp còn ${manual.length} gói thủ công`);
+          '
+
       - name: Ghi cơ sở dữ liệu an toàn về repository
         run: |
           git config user.name "github-actions[bot]"
@@ -147,7 +175,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: cập nhật bằng bộ lọc y tế thống nhất [skip central scan]"
+            git commit -m "data: cập nhật từ bộ lọc chạy trên nguồn thật [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
