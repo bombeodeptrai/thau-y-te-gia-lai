@@ -1,7 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { canonicalNotifyNo, isMedicalTender, medicalCategory } from "./medical-scope.mjs";
+import {
+  canonicalNotifyNo,
+  classifyMedicalTender,
+  medicalCategory,
+} from "./medical-scope.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const RESCUE_DAYS = Math.max(7, Number(process.env.RESCUE_DAYS) || 21);
@@ -13,16 +17,6 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const regionsPath = resolve(root, "data/regions.json");
 const slug = String(process.argv[2] || process.env.REGION_SLUG || "").trim();
 if (!slug) throw new Error("Thiếu REGION_SLUG hoặc đối số tên tỉnh/thành");
-
-const FORCED_BY_REGION = {
-  "gia-lai": [
-    "IB2600349751",
-    "IB2600348377",
-    "IB2600347689",
-    "IB2600346897",
-    "IB2600378695",
-  ],
-};
 
 async function readJson(path, fallback) {
   try {
@@ -71,7 +65,7 @@ async function postJson(body, timeoutMs = 30_000) {
           "Content-Type": "application/json",
           Origin: "https://muasamcong.mpi.gov.vn",
           Referer: "https://muasamcong.mpi.gov.vn/",
-          "User-Agent": `thau-y-te-medical-rescue-${slug}/1.0`,
+          "User-Agent": `thau-y-te-medical-rescue-${slug}/3.0`,
         },
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(timeoutMs),
@@ -110,24 +104,6 @@ function provincePayload(pageNumber, from, to, provinceCodes) {
   }];
 }
 
-function notifyPayload(value) {
-  return [{
-    pageSize: 20,
-    pageNumber: 0,
-    sortBy: "publicDate",
-    sortType: "DESC",
-    query: [{
-      index: "es-contractor-selection",
-      keyWord: value,
-      matchType: "exact",
-      matchFields: ["notifyNo"],
-      filters: [
-        { fieldName: "type", searchType: "in", fieldValues: ["es-notify-contractor"] },
-      ],
-    }],
-  }];
-}
-
 async function fetchProvince(from, to, provinceCodes) {
   const first = await postJson(provincePayload(0, from, to, provinceCodes));
   const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
@@ -135,20 +111,7 @@ async function fetchProvince(from, to, provinceCodes) {
   const remaining = await mapLimited(pages, PAGE_CONCURRENCY, (pageNumber) =>
     postJson(provincePayload(pageNumber, from, to, provinceCodes)));
   const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
-  process.stdout.write(`Cứu hộ ${slug}: ${items.length} bản ghi nguồn/${totalPages} trang/${RESCUE_DAYS} ngày\n`);
-  return items;
-}
-
-async function fetchForced(notifyNo) {
-  const base = canonicalNotifyNo(notifyNo);
-  const variants = unique([base, `${base}-00`]);
-  const groups = [];
-  for (const variant of variants) {
-    const payload = await postJson(notifyPayload(variant));
-    groups.push(...(payload.page?.content || []));
-  }
-  const items = groups.filter((item) => canonicalNotifyNo(item.notifyNo) === base);
-  process.stdout.write(`Tìm bắt buộc ${base}: ${items.length} bản ghi\n`);
+  process.stdout.write(`Quét bù ${slug}: ${items.length} bản ghi/${totalPages} trang/${RESCUE_DAYS} ngày\n`);
   return items;
 }
 
@@ -161,7 +124,6 @@ function statusOf(item) {
   const remaining = closeTime - Date.now();
   if (remaining > 0 && remaining <= 3 * 86_400_000) return "urgent";
   if (remaining > 0) return "open";
-  if (closeTime) return item.bidOpenId ? "evaluating" : "closed";
   return "closed";
 }
 
@@ -236,31 +198,19 @@ function normalizeItem(item, region) {
   };
 }
 
-function richness(value) {
-  if (!value) return 0;
-  return [
-    value.inputResultId, value.bidOpenId, value.hasResult, value.winnerNames?.length,
-    value.participantNames?.length, value.winningModels?.length, value.winningPrice,
-    value.bidderCount,
-  ].reduce((sum, item) => sum + (Array.isArray(item) ? item.length : item ? 1 : 0), 0);
-}
-
 function mergeTender(previous, current) {
   if (!previous) return current;
-  if (!current) return previous;
-  const preferred = richness(previous) >= richness(current) ? previous : current;
-  const other = preferred === previous ? current : previous;
   return {
-    ...other,
-    ...preferred,
-    notifyNo: canonicalNotifyNo(preferred.notifyNo || other.notifyNo),
-    winnerNames: unique([...(other.winnerNames || []), ...(preferred.winnerNames || [])]),
-    participantNames: unique([...(other.participantNames || []), ...(preferred.participantNames || [])]),
-    loserNames: unique([...(other.loserNames || []), ...(preferred.loserNames || [])]),
-    winningModels: unique([...(other.winningModels || []), ...(preferred.winningModels || [])]),
-    losingModels: unique([...(other.losingModels || []), ...(preferred.losingModels || [])]),
-    winningPrice: Number(preferred.winningPrice) || Number(other.winningPrice) || 0,
-    price: Number(preferred.price) || Number(other.price) || 0,
+    ...previous,
+    ...current,
+    notifyNo: canonicalNotifyNo(current.notifyNo || previous.notifyNo),
+    winnerNames: unique([...(previous.winnerNames || []), ...(current.winnerNames || [])]),
+    participantNames: unique([...(previous.participantNames || []), ...(current.participantNames || [])]),
+    loserNames: unique([...(previous.loserNames || []), ...(current.loserNames || [])]),
+    winningModels: unique([...(previous.winningModels || []), ...(current.winningModels || [])]),
+    losingModels: unique([...(previous.losingModels || []), ...(current.losingModels || [])]),
+    winningPrice: Number(current.winningPrice) || Number(previous.winningPrice) || 0,
+    price: Number(current.price) || Number(previous.price) || 0,
   };
 }
 
@@ -278,77 +228,67 @@ if ((!previous.tenders || !previous.tenders.length) && slug === "gia-lai") {
 const now = new Date();
 const from = new Date(now.getTime() - RESCUE_DAYS * 86_400_000).toISOString();
 const to = now.toISOString();
-const provinceItems = await fetchProvince(from, to, region.provinceCodes || []);
-const forcedNotifyNos = FORCED_BY_REGION[slug] || [];
-const forcedGroups = await mapLimited(forcedNotifyNos, 2, fetchForced);
-const sourceItems = [...provinceItems, ...forcedGroups.flat()];
-
-const sourceMap = new Map();
+const sourceItems = await fetchProvince(from, to, region.provinceCodes || []);
+const sourceUnique = new Map();
 for (const item of sourceItems) {
   const key = canonicalNotifyNo(item.notifyNo || item.notifyId || item.id);
-  if (!key || !isMedicalTender(item)) continue;
-  sourceMap.set(key, item);
+  if (key) sourceUnique.set(key, item);
 }
 
-const previousMap = new Map();
+const accepted = new Map();
+const rejectedReasons = new Map();
+for (const [key, item] of sourceUnique) {
+  const result = classifyMedicalTender(item);
+  if (result.accepted) accepted.set(key, normalizeItem(item, region));
+  else rejectedReasons.set(result.reason, (rejectedReasons.get(result.reason) || 0) + 1);
+}
+
+const merged = new Map();
 for (const item of previous.tenders || []) {
   const key = canonicalNotifyNo(item.notifyNo || item.id);
-  if (!key) continue;
-  previousMap.set(key, { ...item, notifyNo: key });
+  if (key) merged.set(key, { ...item, notifyNo: key });
 }
-
-const missingForced = forcedNotifyNos.filter((notifyNo) => {
-  const key = canonicalNotifyNo(notifyNo);
-  return !sourceMap.has(key) && !previousMap.has(key);
-});
-if (missingForced.length) {
-  throw new Error(`Chưa lấy được các gói bắt buộc: ${missingForced.join(", ")}`);
-}
-
-const beforeCount = previousMap.size;
-for (const [key, item] of sourceMap) {
-  previousMap.set(key, mergeTender(previousMap.get(key), normalizeItem(item, region)));
-}
-
-const tenders = [...previousMap.values()]
-  .sort((left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0));
+const beforeCount = merged.size;
+for (const [key, item] of accepted) merged.set(key, mergeTender(merged.get(key), item));
+const tenders = [...merged.values()].sort(
+  (left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0),
+);
 const fetchedAt = new Date().toISOString();
-const newCount = Math.max(0, tenders.length - beforeCount);
 
 const payload = {
   ...previous,
   tenders,
   fetchedAt,
-  source: previous.source || "muasamcong-public-api-central-region",
   collection: {
     ...(previous.collection || {}),
-    rescueStrategy: "recent-province-unfiltered-then-medical-classifier-v2",
+    rescueStrategy: "recent-province-unfiltered-unified-medical-scope-v3",
     lastMedicalRescueAt: fetchedAt,
     lastMedicalRescueDays: RESCUE_DAYS,
-    lastMedicalRescueSourceCount: provinceItems.length,
-    lastMedicalRescueMedicalCount: sourceMap.size,
-    lastMedicalRescueNewCount: newCount,
-    lastMedicalRescueForcedNotifyNos: forcedNotifyNos,
+    lastMedicalRescueCandidateCount: sourceUnique.size,
+    lastMedicalRescueMedicalCount: accepted.size,
+    lastMedicalRescueNewCount: Math.max(0, tenders.length - beforeCount),
   },
 };
 
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
 await writeFile(resolve(regionDir, "medical-rescue-summary.json"), `${JSON.stringify({
-  schemaVersion: 1,
+  schemaVersion: 2,
   regionSlug: slug,
   region: region.name,
   rescuedAt: fetchedAt,
   rescueDays: RESCUE_DAYS,
-  sourceCount: provinceItems.length,
-  medicalCount: sourceMap.size,
+  candidateCount: sourceUnique.size,
+  acceptedCount: accepted.size,
+  rejectedCount: sourceUnique.size - accepted.size,
+  rejectedReasons: Object.fromEntries([...rejectedReasons].sort((a, b) => b[1] - a[1])),
   beforeCount,
   afterCount: tenders.length,
-  newCount,
-  forcedNotifyNos,
-  missingForced: [],
+  newCount: Math.max(0, tenders.length - beforeCount),
+  filterStrategy: "unified-medical-scope-v3",
 }, null, 2)}\n`);
 
 process.stdout.write(
-  `Cứu hộ ${region.name}: ${sourceMap.size} gói y tế, thêm ${newCount}, tổng ${tenders.length}; mã bắt buộc đạt ${forcedNotifyNos.length}/${forcedNotifyNos.length}.\n`,
+  `Quét bù ${region.name}: ${sourceUnique.size} ứng viên, nhận ${accepted.size}, `
+  + `thêm ${Math.max(0, tenders.length - beforeCount)}, tổng ${tenders.length}.\n`,
 );
