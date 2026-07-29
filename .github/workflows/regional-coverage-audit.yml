@@ -46,24 +46,39 @@ jobs:
         with:
           node-version: 22
 
-      - name: Kiểm tra cú pháp bộ đối chiếu
-        run: node --check scripts/fetch-recent-location-audit.mjs
+      - name: Kiểm tra cú pháp các lớp chống lọt
+        run: |
+          node --check scripts/fetch-recent-location-audit.mjs
+          node --check scripts/fetch-recent-medical-rescue.mjs
+          node --test scripts/medical-scope.test.mjs
 
-      # Đây là đường quét độc lập với mã tỉnh. Nó tìm theo toàn bộ tên tỉnh,
-      # thành phố, huyện, thị xã và tên địa bàn cũ trong 30 ngày gần nhất.
-      # Kết quả chỉ được bổ sung, tuyệt đối không xóa dữ liệu đang có.
+      # Đường quét theo địa danh độc lập với locations.provCode.
       - name: Đối chiếu 30 ngày bằng toàn bộ địa danh ${{ matrix.region }}
+        id: location_audit
+        continue-on-error: true
         env:
           AUDIT_DAYS: "30"
           PAGE_SIZE: "50"
         run: node scripts/fetch-recent-location-audit.mjs "${{ matrix.region }}"
 
-      - name: Đóng gói dữ liệu đã đối chiếu
+      # Đường thứ hai đọc toàn bộ bản ghi theo mã tỉnh rồi áp dụng bộ nhận diện y tế mới.
+      # Đây là lớp bắt các gói hóa chất trên máy miễn dịch, ELISA, HbA1C...
+      - name: Cứu hộ độc lập các gói y tế bị bộ lọc cũ bỏ sót
+        id: medical_rescue
+        continue-on-error: true
+        env:
+          RESCUE_DAYS: "30"
+          PAGE_SIZE: "100"
+        run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
+
+      - name: Đóng gói dữ liệu đã qua lớp cứu hộ
+        if: steps.medical_rescue.outcome == 'success'
         run: |
           mkdir -p artifacts
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
       - name: Lưu dữ liệu đối chiếu
+        if: steps.medical_rescue.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: audited-region-${{ matrix.region }}
@@ -109,7 +124,7 @@ jobs:
               tar -xzf "$archive"
             done
           else
-            echo "Không có dữ liệu đối chiếu thành công; giữ nguyên cơ sở dữ liệu gần nhất."
+            echo "Không có dữ liệu cứu hộ thành công; giữ nguyên cơ sở dữ liệu gần nhất."
           fi
           node scripts/restore-legacy-gia-lai.mjs
           node scripts/merge-regions.mjs
@@ -124,7 +139,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Đối chiếu không phát hiện gói mới"
           else
-            git commit -m "data: bổ sung gói phát hiện qua kiểm tra chéo địa danh [skip central scan]"
+            git commit -m "data: bổ sung gói qua đối chiếu địa danh và cứu hộ y tế [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
