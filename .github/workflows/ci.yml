@@ -26,8 +26,11 @@ jobs:
       - name: Kiểm tra cú pháp và bộ trích dữ liệu
         run: |
           node --test scripts/technical-requirements.test.mjs
+          node --test scripts/medical-scope.test.mjs
           node --check scripts/run-region-scan.mjs
           node --check scripts/fetch-recent-location-audit.mjs
+          node --check scripts/fetch-recent-medical-rescue.mjs
+          node --check scripts/apply-manual-tender-overrides.mjs
           node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
           node --check scripts/build-pages.mjs
@@ -60,3 +63,16 @@ jobs:
           test -f dist-pages/index.html
           test -f dist-pages/data/region-coverage.json
           test -f dist-pages/regional-mode.js
+          test -f dist-pages/data/regions/gia-lai/tenders.json
+          node -e '
+            const fs=require("fs");
+            const need=["IB2600349751","IB2600348377","IB2600347689","IB2600346897"];
+            for (const file of ["data/tenders.json","data/regions/gia-lai/tenders.json","dist-pages/data/regions/gia-lai/tenders.json"]) {
+              const d=JSON.parse(fs.readFileSync(file,"utf8"));
+              const got=new Set((d.tenders||[]).map(x=>String(x.notifyNo||"").replace(/-\d{2}$/, "")));
+              const missing=need.filter(x=>!got.has(x));
+              if(missing.length) throw new Error(`${file} còn thiếu ${missing.join(", ")}`);
+              if(got.has("IB2600363942")) throw new Error(`${file} nhận nhầm gói điện lực`);
+              console.log(`${file}: đủ 4 gói bắt buộc, không có gói điện lực`);
+            }
+          '

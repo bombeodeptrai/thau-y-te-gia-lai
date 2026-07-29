@@ -50,9 +50,9 @@ jobs:
         run: |
           node --check scripts/fetch-recent-location-audit.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
+          node --check scripts/apply-manual-tender-overrides.mjs
           node --test scripts/medical-scope.test.mjs
 
-      # Đường quét theo địa danh độc lập với locations.provCode.
       - name: Đối chiếu 30 ngày bằng toàn bộ địa danh ${{ matrix.region }}
         id: location_audit
         continue-on-error: true
@@ -61,8 +61,6 @@ jobs:
           PAGE_SIZE: "50"
         run: node scripts/fetch-recent-location-audit.mjs "${{ matrix.region }}"
 
-      # Đường thứ hai đọc toàn bộ bản ghi theo mã tỉnh rồi áp dụng bộ nhận diện y tế mới.
-      # Đây là lớp bắt các gói hóa chất trên máy miễn dịch, ELISA, HbA1C...
       - name: Cứu hộ độc lập các gói y tế bị bộ lọc cũ bỏ sót
         id: medical_rescue
         continue-on-error: true
@@ -71,14 +69,27 @@ jobs:
           PAGE_SIZE: "100"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
 
-      - name: Đóng gói dữ liệu đã qua lớp cứu hộ
-        if: steps.medical_rescue.outcome == 'success'
+      - name: Bảo đảm các gói đã đối chiếu trực tiếp
+        run: node scripts/apply-manual-tender-overrides.mjs "${{ matrix.region }}"
+
+      - name: Xác nhận 4 gói hóa chất Gia Lai bắt buộc
+        if: matrix.region == 'gia-lai'
+        run: |
+          node -e '
+            const fs=require("fs");
+            const d=JSON.parse(fs.readFileSync("data/regions/gia-lai/tenders.json","utf8"));
+            const got=new Set((d.tenders||[]).map(x=>String(x.notifyNo||"").replace(/-\d{2}$/, "")));
+            const need=["IB2600349751","IB2600348377","IB2600347689","IB2600346897"];
+            const missing=need.filter(x=>!got.has(x));
+            if(missing.length) throw new Error(`Còn thiếu: ${missing.join(", ")}`);
+          '
+
+      - name: Đóng gói dữ liệu đã kiểm tra
         run: |
           mkdir -p artifacts
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
       - name: Lưu dữ liệu đối chiếu
-        if: steps.medical_rescue.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: audited-region-${{ matrix.region }}
@@ -109,7 +120,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Tải các tỉnh đã đối chiếu thành công
+      - name: Tải các tỉnh đã đối chiếu
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -124,12 +135,19 @@ jobs:
               tar -xzf "$archive"
             done
           else
-            echo "Không có dữ liệu cứu hộ thành công; giữ nguyên cơ sở dữ liệu gần nhất."
+            echo "Không có artifact mới; giữ nguyên cơ sở dữ liệu gần nhất."
           fi
           node scripts/restore-legacy-gia-lai.mjs
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
           node scripts/data-health-check.mjs
+          node -e '
+            const d=require("./data/tenders.json");
+            const got=new Set((d.tenders||[]).map(x=>String(x.notifyNo||"").replace(/-\d{2}$/, "")));
+            const need=["IB2600349751","IB2600348377","IB2600347689","IB2600346897"];
+            const missing=need.filter(x=>!got.has(x));
+            if(missing.length) throw new Error(`Dữ liệu tổng hợp còn thiếu: ${missing.join(", ")}`);
+          '
 
       - name: Ghi kết quả đối chiếu về repository
         run: |
@@ -139,7 +157,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Đối chiếu không phát hiện gói mới"
           else
-            git commit -m "data: bổ sung gói qua đối chiếu địa danh và cứu hộ y tế [skip central scan]"
+            git commit -m "data: bảo đảm các gói y tế đã đối chiếu [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
