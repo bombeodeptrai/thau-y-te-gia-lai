@@ -1,4 +1,13 @@
+import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
+
+for (const file of [
+  "scripts/medical-scope.mjs",
+  "scripts/fetch-recent-medical-rescue.mjs",
+]) {
+  execFileSync(process.execPath, ["--check", file], { stdio: "inherit" });
+}
+execFileSync(process.execPath, ["--test", "scripts/medical-scope.test.mjs"], { stdio: "inherit" });
 
 const files = [
   ".github/workflows/regional-full-scan.yml",
