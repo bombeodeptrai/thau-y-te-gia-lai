@@ -9,9 +9,11 @@ import {
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const RESCUE_DAYS = Math.max(7, Number(process.env.RESCUE_DAYS) || 21);
-const PAGE_SIZE = Math.max(20, Math.min(100, Number(process.env.PAGE_SIZE) || 100));
+// API tìm kiếm công khai chỉ ổn định với 10 bản ghi/trang. Giá trị 50/100 gây HTTP 400.
+const PAGE_SIZE = Math.max(1, Math.min(10, Number(process.env.PAGE_SIZE) || 10));
 const MAX_ATTEMPTS = 6;
 const PAGE_CONCURRENCY = 2;
+const LOCATION_TERM_LIMIT = Math.max(4, Math.min(16, Number(process.env.LOCATION_TERM_LIMIT) || 12));
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const regionsPath = resolve(root, "data/regions.json");
@@ -33,6 +35,14 @@ function compact(value, maxLength = 1500) {
 
 function unique(values) {
   return [...new Set((values || []).filter(Boolean))];
+}
+
+function isManualTender(item) {
+  return Boolean(
+    item?.manualTenderOverride
+    || String(item?.id || "").startsWith("manual-")
+    || String(item?.sourceStage || "").startsWith("manual"),
+  );
 }
 
 function delay(ms) {
@@ -65,15 +75,17 @@ async function postJson(body, timeoutMs = 30_000) {
           "Content-Type": "application/json",
           Origin: "https://muasamcong.mpi.gov.vn",
           Referer: "https://muasamcong.mpi.gov.vn/",
-          "User-Agent": `thau-y-te-medical-rescue-${slug}/3.0`,
+          "User-Agent": `thau-y-te-medical-rescue-${slug}/4.0`,
         },
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(timeoutMs),
       });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const text = await response.text();
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${compact(text, 300)}`);
+      }
       if (!text.trim().startsWith("{") && !text.trim().startsWith("[")) {
-        throw new Error("Nguồn không trả JSON");
+        throw new Error(`Nguồn không trả JSON: ${compact(text, 200)}`);
       }
       return JSON.parse(text);
     } catch (error) {
@@ -82,6 +94,41 @@ async function postJson(body, timeoutMs = 30_000) {
     }
   }
   throw lastError;
+}
+
+function extractSearchPage(payload) {
+  const pages = [];
+  const visited = new Set();
+
+  const visit = (value) => {
+    if (!value || typeof value !== "object" || visited.has(value)) return;
+    visited.add(value);
+
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+
+    if (Array.isArray(value.content)) {
+      pages.push({
+        content: value.content,
+        totalPages: Number(value.totalPages) || 1,
+        totalElements: Number(value.totalElements) || value.content.length,
+      });
+    }
+
+    if (value.page) visit(value.page);
+    for (const key of ["data", "result", "results", "responses", "body"]) {
+      if (value[key] !== undefined) visit(value[key]);
+    }
+  };
+
+  visit(payload);
+  return {
+    content: pages.flatMap((page) => page.content),
+    totalPages: Math.max(1, ...pages.map((page) => page.totalPages)),
+    totalElements: Math.max(0, ...pages.map((page) => page.totalElements)),
+  };
 }
 
 function provincePayload(pageNumber, from, to, provinceCodes) {
@@ -104,15 +151,47 @@ function provincePayload(pageNumber, from, to, provinceCodes) {
   }];
 }
 
-async function fetchProvince(from, to, provinceCodes) {
-  const first = await postJson(provincePayload(0, from, to, provinceCodes));
-  const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
-  const pages = Array.from({ length: totalPages - 1 }, (_, index) => index + 1);
-  const remaining = await mapLimited(pages, PAGE_CONCURRENCY, (pageNumber) =>
-    postJson(provincePayload(pageNumber, from, to, provinceCodes)));
-  const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
-  process.stdout.write(`Quét bù ${slug}: ${items.length} bản ghi/${totalPages} trang/${RESCUE_DAYS} ngày\n`);
+function locationPayload(pageNumber, from, to, locationTerm) {
+  return [{
+    pageSize: PAGE_SIZE,
+    pageNumber,
+    sortBy: "publicDate",
+    sortType: "DESC",
+    query: [{
+      index: "es-contractor-selection",
+      keyWord: locationTerm,
+      matchType: "exact",
+      matchFields: ["investorName", "procuringEntityName", "bidName"],
+      filters: [
+        { fieldName: "type", searchType: "in", fieldValues: ["es-notify-contractor"] },
+        { fieldName: "publicDate", searchType: "range", from, to },
+      ],
+    }],
+  }];
+}
+
+async function fetchAllPages(payloadFactory, label) {
+  const firstPayload = await postJson(payloadFactory(0));
+  const first = extractSearchPage(firstPayload);
+  const pages = Array.from({ length: Math.max(0, first.totalPages - 1) }, (_, index) => index + 1);
+  const remainingPayloads = await mapLimited(pages, PAGE_CONCURRENCY, (pageNumber) =>
+    postJson(payloadFactory(pageNumber)));
+  const remaining = remainingPayloads.map(extractSearchPage);
+  const items = [first, ...remaining].flatMap((page) => page.content);
+  process.stdout.write(`${label}: ${items.length} bản ghi/${first.totalPages} trang\n`);
   return items;
+}
+
+async function runStrategy(name, task, strategyResults) {
+  try {
+    const items = await task();
+    strategyResults.push({ name, success: true, count: items.length, error: "" });
+    return items;
+  } catch (error) {
+    strategyResults.push({ name, success: false, count: 0, error: compact(error.message, 500) });
+    process.stderr.write(`${name} thất bại: ${error.message}\n`);
+    return [];
+  }
 }
 
 function statusOf(item) {
@@ -153,7 +232,7 @@ function sourceUrl(item) {
 
 function normalizeItem(item, region) {
   const notifyNo = canonicalNotifyNo(item.notifyNo || item.notifyId || item.id);
-  const name = compact(item.bidName?.join(" ") || "Gói thầu chưa có tên");
+  const name = compact(item.bidName?.join?.(" ") || item.bidName || item.name || "Gói thầu chưa có tên");
   const locations = (item.locations || [])
     .map((location) => location.districtName || location.provName)
     .filter(Boolean);
@@ -195,12 +274,13 @@ function normalizeItem(item, region) {
     winningModels: [],
     losingModels: [],
     losingModelDisclosure: "",
+    sourceStage: "official-public-search",
   };
 }
 
 function mergeTender(previous, current) {
   if (!previous) return current;
-  return {
+  const merged = {
     ...previous,
     ...current,
     notifyNo: canonicalNotifyNo(current.notifyNo || previous.notifyNo),
@@ -212,6 +292,10 @@ function mergeTender(previous, current) {
     winningPrice: Number(current.winningPrice) || Number(previous.winningPrice) || 0,
     price: Number(current.price) || Number(previous.price) || 0,
   };
+  delete merged.manualTenderOverride;
+  delete merged.manualTenderVerifiedAt;
+  delete merged.sourceNotifyNo;
+  return merged;
 }
 
 const config = await readJson(regionsPath, { regions: [] });
@@ -228,23 +312,94 @@ if ((!previous.tenders || !previous.tenders.length) && slug === "gia-lai") {
 const now = new Date();
 const from = new Date(now.getTime() - RESCUE_DAYS * 86_400_000).toISOString();
 const to = now.toISOString();
-const sourceItems = await fetchProvince(from, to, region.provinceCodes || []);
+const strategyResults = [];
+const sourceGroups = [];
+
+const provinceCodes = unique(region.provinceCodes || []);
+if (provinceCodes.length) {
+  sourceGroups.push(await runStrategy(
+    `Mã tỉnh ${provinceCodes.join(",")}`,
+    () => fetchAllPages(
+      (pageNumber) => provincePayload(pageNumber, from, to, provinceCodes),
+      `Quét mã tỉnh ${slug}`,
+    ),
+    strategyResults,
+  ));
+
+  // Nếu nguồn không chấp nhận nhiều mã trong một điều kiện, quét riêng từng mã.
+  if (!sourceGroups.at(-1)?.length && provinceCodes.length > 1) {
+    for (const code of provinceCodes) {
+      sourceGroups.push(await runStrategy(
+        `Mã tỉnh riêng ${code}`,
+        () => fetchAllPages(
+          (pageNumber) => provincePayload(pageNumber, from, to, [code]),
+          `Quét mã ${code}`,
+        ),
+        strategyResults,
+      ));
+    }
+  }
+}
+
+const priorityLocationTerms = unique([
+  region.name,
+  region.shortName,
+  ...(region.locationTerms || []),
+]).slice(0, LOCATION_TERM_LIMIT);
+for (const term of priorityLocationTerms) {
+  sourceGroups.push(await runStrategy(
+    `Địa danh ${term}`,
+    () => fetchAllPages(
+      (pageNumber) => locationPayload(pageNumber, from, to, term),
+      `Quét địa danh ${term}`,
+    ),
+    strategyResults,
+  ));
+}
+
+const successfulStrategyCount = strategyResults.filter((item) => item.success).length;
+if (!successfulStrategyCount) {
+  throw new Error(`Mọi đường lấy dữ liệu ${region.name} đều thất bại; không thay đổi dữ liệu đang lưu`);
+}
+
 const sourceUnique = new Map();
-for (const item of sourceItems) {
+for (const item of sourceGroups.flat()) {
   const key = canonicalNotifyNo(item.notifyNo || item.notifyId || item.id);
   if (key) sourceUnique.set(key, item);
 }
+if (!sourceUnique.size) {
+  throw new Error(`Nguồn trả 0 ứng viên cho ${region.name}; giữ nguyên dữ liệu gần nhất`);
+}
 
 const accepted = new Map();
+const acceptedDiagnostics = [];
+const rejectedDiagnostics = [];
 const rejectedReasons = new Map();
 for (const [key, item] of sourceUnique) {
   const result = classifyMedicalTender(item);
-  if (result.accepted) accepted.set(key, normalizeItem(item, region));
-  else rejectedReasons.set(result.reason, (rejectedReasons.get(result.reason) || 0) + 1);
+  const diagnostic = {
+    notifyNo: key,
+    name: compact(item.bidName?.join?.(" ") || item.bidName || item.name, 500),
+    investor: compact(item.investorName || item.procuringEntityName, 300),
+    accepted: result.accepted,
+    score: result.score,
+    reason: result.reason,
+    matched: result.matched,
+  };
+  if (result.accepted) {
+    accepted.set(key, normalizeItem(item, region));
+    if (acceptedDiagnostics.length < 40) acceptedDiagnostics.push(diagnostic);
+  } else {
+    rejectedReasons.set(result.reason, (rejectedReasons.get(result.reason) || 0) + 1);
+    if (rejectedDiagnostics.length < 40) rejectedDiagnostics.push(diagnostic);
+  }
 }
 
+const previousRows = previous.tenders || [];
+const officialPreviousRows = previousRows.filter((item) => !isManualTender(item));
+const removedManualCount = previousRows.length - officialPreviousRows.length;
 const merged = new Map();
-for (const item of previous.tenders || []) {
+for (const item of officialPreviousRows) {
   const key = canonicalNotifyNo(item.notifyNo || item.id);
   if (key) merged.set(key, { ...item, notifyNo: key });
 }
@@ -255,40 +410,51 @@ const tenders = [...merged.values()].sort(
 );
 const fetchedAt = new Date().toISOString();
 
+const collection = { ...(previous.collection || {}) };
+delete collection.manualTenderOverrideCount;
+delete collection.lastManualTenderOverrideAt;
+Object.assign(collection, {
+  rescueStrategy: "province-codes-plus-location-terms-unified-medical-scope-v4",
+  lastMedicalRescueAt: fetchedAt,
+  lastMedicalRescueDays: RESCUE_DAYS,
+  lastMedicalRescueCandidateCount: sourceUnique.size,
+  lastMedicalRescueMedicalCount: accepted.size,
+  lastMedicalRescueNewCount: Math.max(0, tenders.length - beforeCount),
+  lastRemovedManualTenderCount: removedManualCount,
+});
+
 const payload = {
   ...previous,
   tenders,
   fetchedAt,
-  collection: {
-    ...(previous.collection || {}),
-    rescueStrategy: "recent-province-unfiltered-unified-medical-scope-v3",
-    lastMedicalRescueAt: fetchedAt,
-    lastMedicalRescueDays: RESCUE_DAYS,
-    lastMedicalRescueCandidateCount: sourceUnique.size,
-    lastMedicalRescueMedicalCount: accepted.size,
-    lastMedicalRescueNewCount: Math.max(0, tenders.length - beforeCount),
-  },
+  collection,
 };
 
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
 await writeFile(resolve(regionDir, "medical-rescue-summary.json"), `${JSON.stringify({
-  schemaVersion: 2,
+  schemaVersion: 4,
   regionSlug: slug,
   region: region.name,
   rescuedAt: fetchedAt,
   rescueDays: RESCUE_DAYS,
+  pageSize: PAGE_SIZE,
+  strategyResults,
+  successfulStrategyCount,
   candidateCount: sourceUnique.size,
   acceptedCount: accepted.size,
   rejectedCount: sourceUnique.size - accepted.size,
   rejectedReasons: Object.fromEntries([...rejectedReasons].sort((a, b) => b[1] - a[1])),
+  acceptedDiagnostics,
+  rejectedDiagnostics,
+  removedManualCount,
   beforeCount,
   afterCount: tenders.length,
   newCount: Math.max(0, tenders.length - beforeCount),
-  filterStrategy: "unified-medical-scope-v3",
+  filterStrategy: "unified-medical-scope-v4",
 }, null, 2)}\n`);
 
 process.stdout.write(
-  `Quét bù ${region.name}: ${sourceUnique.size} ứng viên, nhận ${accepted.size}, `
-  + `thêm ${Math.max(0, tenders.length - beforeCount)}, tổng ${tenders.length}.\n`,
+  `Quét bù thật ${region.name}: ${sourceUnique.size} ứng viên, nhận ${accepted.size}, `
+  + `bỏ ${removedManualCount} bản ghi thủ công, tổng ${tenders.length}.\n`,
 );

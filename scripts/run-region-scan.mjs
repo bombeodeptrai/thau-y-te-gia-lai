@@ -1,4 +1,4 @@
-import { readFile, rm, writeFile } from "node:fs/promises";
+import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { spawn } from "node:child_process";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -18,7 +18,7 @@ if (!region) throw new Error(`Không có cấu hình khu vực: ${slug}`);
 const scanDays = Math.max(1, Number(process.env.SCAN_DAYS) || 1095);
 const incrementalDays = Math.max(1, Number(process.env.INCREMENTAL_DAYS) || 7);
 const windowDays = Math.max(1, Number(process.env.WINDOW_DAYS) || (scanDays >= 365 ? 60 : 7));
-const pageSize = Math.max(10, Math.min(100, Number(process.env.PAGE_SIZE) || 10));
+const pageSize = Math.max(1, Math.min(10, Number(process.env.PAGE_SIZE) || 10));
 const detailLimit = Math.max(1, Number(process.env.DETAIL_LIMIT) || (scanDays >= 365 ? 60 : 15));
 const minTenderCount = Math.max(0, Number(process.env.MIN_TENDER_COUNT) || 1);
 const enableHistoricalFallback = process.env.ENABLE_HISTORICAL_FALLBACK === "1";
@@ -48,15 +48,29 @@ async function readJsonSafe(path, fallback) {
   }
 }
 
+function isManualTender(item) {
+  return Boolean(
+    item?.manualTenderOverride
+    || String(item?.id || "").startsWith("manual-")
+    || String(item?.sourceStage || "").startsWith("manual"),
+  );
+}
+
+function officialTenderCount(payload, regionSlug = "") {
+  if (!Array.isArray(payload?.tenders)) return 0;
+  return payload.tenders.filter((item) => {
+    if (isManualTender(item)) return false;
+    return !regionSlug || !item.regionSlug || item.regionSlug === regionSlug;
+  }).length;
+}
+
 const existingRegionalPayload = await readJsonSafe(regionOutputPath, { tenders: [] });
 const topLevelPayload = slug === "gia-lai"
   ? await readJsonSafe(topLevelTenderPath, { tenders: [] })
   : { tenders: [] };
-const existingRegionalCount = Array.isArray(existingRegionalPayload.tenders)
-  ? existingRegionalPayload.tenders.length
-  : 0;
-const legacyGiaLaiCount = slug === "gia-lai" && Array.isArray(topLevelPayload.tenders)
-  ? topLevelPayload.tenders.filter((item) => !item.regionSlug || item.regionSlug === "gia-lai").length
+const existingRegionalCount = officialTenderCount(existingRegionalPayload);
+const legacyGiaLaiCount = slug === "gia-lai"
+  ? officialTenderCount(topLevelPayload, "gia-lai")
   : 0;
 const baselineTenderCount = Math.max(existingRegionalCount, legacyGiaLaiCount);
 const requiredTenderCount = Math.max(minTenderCount, baselineTenderCount);
@@ -83,6 +97,25 @@ function runNode(args) {
     child.once("error", reject);
     child.once("exit", (code) => resolveExit(code ?? 1));
   });
+}
+
+async function backupRegionData() {
+  const backupRoot = resolve(scriptsDir, `.region-backup-${region.slug}-${Date.now()}`);
+  const backupDataDir = resolve(backupRoot, "region");
+  await mkdir(backupRoot, { recursive: true });
+  try {
+    await cp(regionDataDir, backupDataDir, { recursive: true, force: true });
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
+    await mkdir(backupDataDir, { recursive: true });
+  }
+  return { backupRoot, backupDataDir };
+}
+
+async function restoreRegionData(backup) {
+  await rm(regionDataDir, { recursive: true, force: true });
+  await cp(backup.backupDataDir, regionDataDir, { recursive: true, force: true });
+  process.stderr.write(`Đã khôi phục dữ liệu ${region.name} sau lượt quét không hợp lệ.\n`);
 }
 
 let source = await readFile(sourcePath, "utf8");
@@ -145,7 +178,7 @@ source = replaceOrThrow(
   '{ fieldName: "locations.provCode", searchType: "in", fieldValues: PROVINCE_CODES },',
   "mã tỉnh tìm kiếm",
 );
-source = source.replaceAll("thau-y-te-gia-lai-public-data/2.0", `thau-y-te-mien-trung-${region.slug}/4.0`);
+source = source.replaceAll("thau-y-te-gia-lai-public-data/2.0", `thau-y-te-mien-trung-${region.slug}/4.1`);
 source = replaceOrThrow(
   source,
   "    name,\n    investor:",
@@ -191,62 +224,66 @@ if (process.env.DRY_RUN === "1") {
   const checkCode = await runNode(["--check", generatedPath]);
   await rm(generatedPath, { force: true });
   if (checkCode !== 0) process.exit(checkCode);
-  process.stdout.write(`Kiểm tra cấu hình quét ${region.name}: hợp lệ; dùng bộ lọc y tế thống nhất.\n`);
+  process.stdout.write(`Kiểm tra cấu hình quét ${region.name}: hợp lệ; pageSize=${pageSize}, bộ lọc thống nhất.\n`);
   process.exit(0);
 }
 
 process.stdout.write(
   `Bắt đầu quét ${region.name}: mã ${region.provinceCodes.join(", ")}, ${scanDays} ngày, `
-  + `ngưỡng không giảm ${requiredTenderCount} gói, bộ lọc thống nhất.\n`,
+  + `ngưỡng dữ liệu chính thức không giảm ${requiredTenderCount} gói, pageSize=${pageSize}.\n`,
 );
 
-const exitCode = await runNode([generatedPath]);
-await rm(generatedPath, { force: true });
-if (exitCode !== 0) process.exit(exitCode);
-
-let payload;
+const backup = await backupRegionData();
 try {
-  payload = JSON.parse(await readFile(regionOutputPath, "utf8"));
-} catch (error) {
-  throw new Error(`Quét ${region.name} không tạo được tenders.json hợp lệ: ${error.message}`);
-}
+  const exitCode = await runNode([generatedPath]);
+  if (exitCode !== 0) throw new Error(`Tiến trình quét ${region.name} kết thúc với mã ${exitCode}`);
 
-const tenderCount = Array.isArray(payload.tenders) ? payload.tenders.length : 0;
-const coverageDays = Number(payload.collection?.days) || 0;
-const detailTenderCount = Number(payload.detailTenderCount) || 0;
-if (tenderCount < requiredTenderCount) {
-  throw new Error(
-    `Quét ${region.name} chỉ có ${tenderCount} gói, thấp hơn dữ liệu đang giữ ${requiredTenderCount}; không ghi đè dữ liệu cũ`,
+  const payload = JSON.parse(await readFile(regionOutputPath, "utf8"));
+  const tenderCount = officialTenderCount(payload);
+  const coverageDays = Number(payload.collection?.days) || 0;
+  const detailTenderCount = Number(payload.detailTenderCount) || 0;
+
+  if (tenderCount < requiredTenderCount) {
+    throw new Error(
+      `Quét ${region.name} chỉ có ${tenderCount} gói chính thức, thấp hơn dữ liệu đang giữ ${requiredTenderCount}`,
+    );
+  }
+  if (forceFullRefresh && coverageDays < scanDays) {
+    throw new Error(`Quét ${region.name} mới phủ ${coverageDays}/${scanDays} ngày; không công nhận hoàn tất`);
+  }
+
+  const bidderPayload = await readJsonSafe(bidderOutputPath, { bidders: [] });
+  const equipmentPayload = await readJsonSafe(equipmentOutputPath, { equipment: [] });
+  const bidderCount = Array.isArray(bidderPayload.bidders) ? bidderPayload.bidders.length : 0;
+  const equipmentCount = Array.isArray(equipmentPayload.equipment) ? equipmentPayload.equipment.length : 0;
+
+  await writeFile(regionSummaryPath, `${JSON.stringify({
+    schemaVersion: 4,
+    regionSlug: region.slug,
+    region: region.name,
+    completedAt: new Date().toISOString(),
+    scanDays,
+    tenderCount,
+    baselineTenderCount,
+    detailTenderCount,
+    bidderCount,
+    equipmentCount,
+    historicalLocationTermCount: region.locationTerms.length,
+    historicalTitleTermCount: historicalTitleTerms.length,
+    historicalFallback: enableHistoricalFallback,
+    filterStrategy: "unified-medical-scope-v4",
+    rollbackOnFailure: true,
+    status: "success",
+  }, null, 2)}\n`);
+
+  process.stdout.write(
+    `Xác thực ${region.name}: ${tenderCount} gói chính thức/${coverageDays} ngày, `
+    + `${detailTenderCount} gói chi tiết, ${bidderCount} dòng nhà thầu, ${equipmentCount} mặt hàng/model.\n`,
   );
+} catch (error) {
+  await restoreRegionData(backup);
+  throw error;
+} finally {
+  await rm(generatedPath, { force: true });
+  await rm(backup.backupRoot, { recursive: true, force: true });
 }
-if (forceFullRefresh && coverageDays < scanDays) {
-  throw new Error(`Quét ${region.name} mới phủ ${coverageDays}/${scanDays} ngày; không công nhận hoàn tất`);
-}
-
-const bidderPayload = await readJsonSafe(bidderOutputPath, { bidders: [] });
-const equipmentPayload = await readJsonSafe(equipmentOutputPath, { equipment: [] });
-const bidderCount = Array.isArray(bidderPayload.bidders) ? bidderPayload.bidders.length : 0;
-const equipmentCount = Array.isArray(equipmentPayload.equipment) ? equipmentPayload.equipment.length : 0;
-
-await writeFile(regionSummaryPath, `${JSON.stringify({
-  schemaVersion: 3,
-  regionSlug: region.slug,
-  region: region.name,
-  completedAt: new Date().toISOString(),
-  scanDays,
-  tenderCount,
-  baselineTenderCount,
-  detailTenderCount,
-  bidderCount,
-  equipmentCount,
-  historicalLocationTermCount: region.locationTerms.length,
-  historicalTitleTermCount: historicalTitleTerms.length,
-  historicalFallback: enableHistoricalFallback,
-  filterStrategy: "unified-medical-scope-v3",
-  status: "success",
-}, null, 2)}\n`);
-
-process.stdout.write(
-  `Xác thực ${region.name}: ${tenderCount} gói/${coverageDays} ngày, ${detailTenderCount} gói chi tiết, `
-  + `${bidderCount} dòng nhà thầu, ${equipmentCount} mặt hàng/model.\n`,
-);
