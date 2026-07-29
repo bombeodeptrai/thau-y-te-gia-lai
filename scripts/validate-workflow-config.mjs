@@ -3,8 +3,9 @@ import { readFile } from "node:fs/promises";
 
 for (const file of [
   "scripts/medical-scope.mjs",
+  "scripts/run-region-scan.mjs",
+  "scripts/fetch-recent-location-audit.mjs",
   "scripts/fetch-recent-medical-rescue.mjs",
-  "scripts/apply-manual-tender-overrides.mjs",
 ]) {
   execFileSync(process.execPath, ["--check", file], { stdio: "inherit" });
 }
@@ -36,13 +37,10 @@ if (!quickScan.includes('INCREMENTAL_DAYS: "14"') || !quickScan.includes('cron: 
   throw new Error("Workflow cập nhật nhanh phải quét chồng lấn 14 ngày mỗi 30 phút");
 }
 if (!quickScan.includes("fetch-recent-medical-rescue.mjs") || !quickScan.includes('RESCUE_DAYS: "21"')) {
-  throw new Error("Workflow cập nhật nhanh thiếu lớp cứu hộ gói y tế 21 ngày");
+  throw new Error("Workflow cập nhật nhanh thiếu lớp quét bù y tế 21 ngày");
 }
-if (!quickScan.includes('apply-manual-tender-overrides.mjs "${{ matrix.region }}"')) {
-  throw new Error("Workflow cập nhật nhanh chưa bảo đảm gói đã đối chiếu trực tiếp khi nguồn cứu hộ lỗi");
-}
-if (!quickScan.includes("IB2600349751") || !quickScan.includes("Dữ liệu tổng hợp còn thiếu")) {
-  throw new Error("Workflow cập nhật nhanh chưa chặn triển khai khi bốn gói Gia Lai còn thiếu");
+if (quickScan.includes("apply-manual-tender-overrides") || quickScan.includes("IB2600349751")) {
+  throw new Error("Workflow cập nhật nhanh vẫn phụ thuộc mã gói hoặc dữ liệu chèn thủ công");
 }
 
 const coverageAudit = await readFile(".github/workflows/regional-coverage-audit.yml", "utf8");
@@ -56,33 +54,41 @@ if (!coverageAudit.includes("fetch-recent-location-audit.mjs")) {
   throw new Error("Workflow kiểm tra chéo chưa gọi bộ quét độc lập theo địa danh");
 }
 if (!coverageAudit.includes("fetch-recent-medical-rescue.mjs") || !coverageAudit.includes('RESCUE_DAYS: "30"')) {
-  throw new Error("Workflow kiểm tra chéo thiếu lớp cứu hộ y tế độc lập 30 ngày");
+  throw new Error("Workflow kiểm tra chéo thiếu lớp quét bù theo mã tỉnh 30 ngày");
 }
-if (!coverageAudit.includes('apply-manual-tender-overrides.mjs "${{ matrix.region }}"')) {
-  throw new Error("Workflow kiểm tra chéo chưa bảo đảm gói đối chiếu trực tiếp");
-}
-
-const auditScript = await readFile("scripts/fetch-recent-location-audit.mjs", "utf8");
-if (!auditScript.includes("IB2600378695")) {
-  throw new Error("Bộ kiểm tra chéo thiếu canary gói An Lão đã từng bị lọt");
-}
-if (!auditScript.includes("lastLocationAuditAt")) {
-  throw new Error("Bộ kiểm tra chéo chưa ghi dấu thời gian đối chiếu");
+if (coverageAudit.includes("apply-manual-tender-overrides") || coverageAudit.includes("IB2600349751")) {
+  throw new Error("Workflow kiểm tra chéo vẫn phụ thuộc mã gói hoặc dữ liệu chèn thủ công");
 }
 
-const requiredNotifyNos = ["IB2600349751", "IB2600348377", "IB2600347689", "IB2600346897"];
-const rescueScript = await readFile("scripts/fetch-recent-medical-rescue.mjs", "utf8");
-const manualPayload = await readFile("data/manual-tender-overrides.json", "utf8");
-for (const notifyNo of requiredNotifyNos) {
-  if (!rescueScript.includes(notifyNo)) {
-    throw new Error(`Bộ cứu hộ thiếu mã gói xét nghiệm đã bị lọt: ${notifyNo}`);
+const regionRunner = await readFile("scripts/run-region-scan.mjs", "utf8");
+if (!regionRunner.includes("isMedicalTender, medicalCategory")) {
+  throw new Error("Đường quét chính chưa được vá sang bộ lọc y tế dùng chung");
+}
+if (!regionRunner.includes("thay bộ lọc cũ bằng bộ lọc dùng chung")) {
+  throw new Error("Đường quét chính chưa xác nhận thay toàn bộ hàm isMedical cũ");
+}
+
+for (const file of [
+  "scripts/fetch-recent-location-audit.mjs",
+  "scripts/fetch-recent-medical-rescue.mjs",
+]) {
+  const text = await readFile(file, "utf8");
+  if (!text.includes("classifyMedicalTender")) {
+    throw new Error(`${file} chưa dùng bộ phân loại thống nhất`);
   }
-  if (!manualPayload.includes(notifyNo)) {
-    throw new Error(`Dữ liệu đối chiếu trực tiếp thiếu mã: ${notifyNo}`);
+  if (text.includes("FORCED_BY_REGION") || text.includes("IB2600349751")) {
+    throw new Error(`${file} vẫn chứa mã gói bắt buộc`);
+  }
+  if (!text.includes("rejectedReasons")) {
+    throw new Error(`${file} chưa ghi thống kê lý do loại`);
   }
 }
-if (!rescueScript.includes("canonicalNotifyNo") || !rescueScript.includes("missingForced")) {
-  throw new Error("Bộ cứu hộ chưa chuẩn hóa hậu tố -00 hoặc chưa kiểm tra mã bắt buộc");
+
+const classifier = await readFile("scripts/medical-scope.mjs", "utf8");
+for (const term of ["mien dich", "elisa", "hba1c", "su dung tren may", "su dung cho may"]) {
+  if (!classifier.includes(term)) {
+    throw new Error(`Bộ lọc thống nhất thiếu ngữ cảnh: ${term}`);
+  }
 }
 
-console.log("Cấu hình quét nhanh, quét sâu, đối chiếu và lớp bảo đảm gói trực tiếp hợp lệ.");
+console.log("Mọi đường quét dùng chung bộ lọc y tế theo ngữ cảnh; không còn chèn mã gói thủ công.");
