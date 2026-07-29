@@ -1,4 +1,13 @@
+import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
+
+for (const file of [
+  "scripts/medical-scope.mjs",
+  "scripts/fetch-recent-medical-rescue.mjs",
+]) {
+  execFileSync(process.execPath, ["--check", file], { stdio: "inherit" });
+}
+execFileSync(process.execPath, ["--test", "scripts/medical-scope.test.mjs"], { stdio: "inherit" });
 
 const files = [
   ".github/workflows/regional-full-scan.yml",
@@ -25,6 +34,12 @@ const quickScan = await readFile(".github/workflows/regional-quick-update.yml", 
 if (!quickScan.includes('INCREMENTAL_DAYS: "14"') || !quickScan.includes('cron: "*/30 * * * *"')) {
   throw new Error("Workflow cập nhật nhanh phải quét chồng lấn 14 ngày mỗi 30 phút");
 }
+if (!quickScan.includes("fetch-recent-medical-rescue.mjs") || !quickScan.includes('RESCUE_DAYS: "21"')) {
+  throw new Error("Workflow cập nhật nhanh thiếu lớp cứu hộ gói y tế 21 ngày");
+}
+if (!quickScan.includes("steps.medical_rescue.outcome == 'success'")) {
+  throw new Error("Workflow cập nhật nhanh chưa chặn đóng gói khi lớp cứu hộ thất bại");
+}
 
 const coverageAudit = await readFile(".github/workflows/regional-coverage-audit.yml", "utf8");
 if (!coverageAudit.includes('AUDIT_DAYS: "30"')) {
@@ -36,6 +51,9 @@ if (!coverageAudit.includes('cron: "17 */4 * * *"')) {
 if (!coverageAudit.includes("fetch-recent-location-audit.mjs")) {
   throw new Error("Workflow kiểm tra chéo chưa gọi bộ quét độc lập theo địa danh");
 }
+if (!coverageAudit.includes("fetch-recent-medical-rescue.mjs") || !coverageAudit.includes('RESCUE_DAYS: "30"')) {
+  throw new Error("Workflow kiểm tra chéo thiếu lớp cứu hộ y tế độc lập 30 ngày");
+}
 
 const auditScript = await readFile("scripts/fetch-recent-location-audit.mjs", "utf8");
 if (!auditScript.includes("IB2600378695")) {
@@ -45,4 +63,14 @@ if (!auditScript.includes("lastLocationAuditAt")) {
   throw new Error("Bộ kiểm tra chéo chưa ghi dấu thời gian đối chiếu");
 }
 
-console.log("Cấu hình quét nhanh, quét sâu và kiểm tra chéo chống lọt gói hợp lệ.");
+const rescueScript = await readFile("scripts/fetch-recent-medical-rescue.mjs", "utf8");
+for (const notifyNo of ["IB2600349751", "IB2600348377", "IB2600347689", "IB2600346897"]) {
+  if (!rescueScript.includes(notifyNo)) {
+    throw new Error(`Bộ cứu hộ thiếu mã gói xét nghiệm đã bị lọt: ${notifyNo}`);
+  }
+}
+if (!rescueScript.includes("canonicalNotifyNo") || !rescueScript.includes("missingForced")) {
+  throw new Error("Bộ cứu hộ chưa chuẩn hóa hậu tố -00 hoặc chưa kiểm tra mã bắt buộc");
+}
+
+console.log("Cấu hình quét nhanh, quét sâu, đối chiếu địa danh và cứu hộ gói y tế hợp lệ.");

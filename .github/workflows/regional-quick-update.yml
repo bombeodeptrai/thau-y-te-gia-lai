@@ -49,11 +49,12 @@ jobs:
       - name: Kiểm tra cấu hình ${{ matrix.region }}
         env:
           DRY_RUN: "1"
-        run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
+        run: |
+          node --test scripts/medical-scope.test.mjs
+          node --check scripts/fetch-recent-medical-rescue.mjs
+          node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      # Quét chồng lấn 14 ngày thay vì chỉ 3 ngày. Khoảng chồng lấn này xử lý
-      # trường hợp nguồn công khai lập chỉ mục chậm, workflow bị xếp hàng hoặc
-      # hồ sơ mang mã địa giới cũ được trả về muộn. Dữ liệu 3 năm cũ vẫn được giữ.
+      # Lớp quét chính giữ lịch sử ba năm và làm mới trạng thái/chi tiết.
       - name: Quét chồng lấn 14 ngày gần nhất và giữ lịch sử 3 năm
         id: regional_scan
         continue-on-error: true
@@ -68,15 +69,26 @@ jobs:
           FORCE_FULL_REFRESH: "0"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Đóng gói dữ liệu tỉnh thành đã quét thành công
-        if: steps.regional_scan.outcome == 'success'
+      # Lớp cứu hộ đọc lại toàn bộ bản ghi gần đây theo mã tỉnh trước khi lọc.
+      # Nó nhận cả các tiêu đề như “Hóa chất sử dụng trên máy miễn dịch/ELISA/HbA1C”
+      # mà bộ lọc cũ đã loại nhầm, đồng thời vẫn loại gói điện lực/xây dựng/IT.
+      - name: Cứu hộ gói y tế mới bị bộ lọc bỏ sót
+        id: medical_rescue
+        continue-on-error: true
+        env:
+          RESCUE_DAYS: "21"
+          PAGE_SIZE: "100"
+        run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
+
+      - name: Đóng gói dữ liệu tỉnh thành đã qua lớp cứu hộ
+        if: steps.medical_rescue.outcome == 'success'
         run: |
           mkdir -p "data/regions/${{ matrix.region }}" artifacts
           printf '%s\n' "success" > "data/regions/${{ matrix.region }}/last-workflow-status.txt"
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
-      - name: Lưu dữ liệu tỉnh thành đã quét thành công
-        if: steps.regional_scan.outcome == 'success'
+      - name: Lưu dữ liệu tỉnh thành đã qua lớp cứu hộ
+        if: steps.medical_rescue.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: region-${{ matrix.region }}
@@ -125,7 +137,7 @@ jobs:
               tar -xzf "$archive"
             done
           else
-            echo "Không có tỉnh nào quét thành công; giữ dữ liệu gần nhất."
+            echo "Không có tỉnh nào qua lớp cứu hộ; giữ dữ liệu gần nhất."
           fi
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
@@ -139,7 +151,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: cập nhật chồng lấn 14 ngày miền Trung [skip central scan]"
+            git commit -m "data: cập nhật và cứu hộ gói y tế mới [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
