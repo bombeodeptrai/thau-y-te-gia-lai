@@ -46,11 +46,10 @@ jobs:
         with:
           node-version: 22
 
-      - name: Kiểm tra cú pháp các lớp chống lọt
+      - name: Kiểm tra bộ lọc thống nhất
         run: |
           node --check scripts/fetch-recent-location-audit.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
-          node --check scripts/apply-manual-tender-overrides.mjs
           node --test scripts/medical-scope.test.mjs
 
       - name: Đối chiếu 30 ngày bằng toàn bộ địa danh ${{ matrix.region }}
@@ -61,7 +60,7 @@ jobs:
           PAGE_SIZE: "50"
         run: node scripts/fetch-recent-location-audit.mjs "${{ matrix.region }}"
 
-      - name: Cứu hộ độc lập các gói y tế bị bộ lọc cũ bỏ sót
+      - name: Quét bù toàn bộ bản ghi theo mã tỉnh rồi áp dụng cùng bộ lọc
         id: medical_rescue
         continue-on-error: true
         env:
@@ -69,27 +68,14 @@ jobs:
           PAGE_SIZE: "100"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
 
-      - name: Bảo đảm các gói đã đối chiếu trực tiếp
-        run: node scripts/apply-manual-tender-overrides.mjs "${{ matrix.region }}"
-
-      - name: Xác nhận 4 gói hóa chất Gia Lai bắt buộc
-        if: matrix.region == 'gia-lai'
-        run: |
-          node -e '
-            const fs=require("fs");
-            const d=JSON.parse(fs.readFileSync("data/regions/gia-lai/tenders.json","utf8"));
-            const got=new Set((d.tenders||[]).map(x=>String(x.notifyNo||"").replace(/-\d{2}$/, "")));
-            const need=["IB2600349751","IB2600348377","IB2600347689","IB2600346897"];
-            const missing=need.filter(x=>!got.has(x));
-            if(missing.length) throw new Error(`Còn thiếu: ${missing.join(", ")}`);
-          '
-
       - name: Đóng gói dữ liệu đã kiểm tra
+        if: steps.location_audit.outcome == 'success' || steps.medical_rescue.outcome == 'success'
         run: |
           mkdir -p artifacts
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
       - name: Lưu dữ liệu đối chiếu
+        if: steps.location_audit.outcome == 'success' || steps.medical_rescue.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: audited-region-${{ matrix.region }}
@@ -120,7 +106,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Tải các tỉnh đã đối chiếu
+      - name: Tải các tỉnh đã đối chiếu thành công
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -141,13 +127,6 @@ jobs:
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
           node scripts/data-health-check.mjs
-          node -e '
-            const d=require("./data/tenders.json");
-            const got=new Set((d.tenders||[]).map(x=>String(x.notifyNo||"").replace(/-\d{2}$/, "")));
-            const need=["IB2600349751","IB2600348377","IB2600347689","IB2600346897"];
-            const missing=need.filter(x=>!got.has(x));
-            if(missing.length) throw new Error(`Dữ liệu tổng hợp còn thiếu: ${missing.join(", ")}`);
-          '
 
       - name: Ghi kết quả đối chiếu về repository
         run: |
@@ -157,7 +136,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Đối chiếu không phát hiện gói mới"
           else
-            git commit -m "data: bảo đảm các gói y tế đã đối chiếu [skip central scan]"
+            git commit -m "data: đối chiếu bằng bộ lọc y tế thống nhất [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

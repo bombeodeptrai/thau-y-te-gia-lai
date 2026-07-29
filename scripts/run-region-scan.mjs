@@ -23,11 +23,9 @@ const detailLimit = Math.max(1, Number(process.env.DETAIL_LIMIT) || (scanDays >=
 const minTenderCount = Math.max(0, Number(process.env.MIN_TENDER_COUNT) || 1);
 const enableHistoricalFallback = process.env.ENABLE_HISTORICAL_FALLBACK === "1";
 const forceFullRefresh = process.env.FORCE_FULL_REFRESH === "1";
-const forcedNotifyNos = slug === "gia-lai"
-  ? ["IB2600391963", "IB2600384538"]
-  : [];
 const defaultHistoricalTitleTerms = [
-  "thiết bị", "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "xét nghiệm", "máy", "thuốc", "dược phẩm",
+  "thiết bị", "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "xét nghiệm", "máy",
+  "miễn dịch", "elisa", "hba1c", "thuốc thử", "chất hiệu chuẩn", "reagent",
 ];
 const historicalTitleTerms = String(process.env.HISTORICAL_TITLE_TERMS || "")
   .split("|")
@@ -91,6 +89,24 @@ let source = await readFile(sourcePath, "utf8");
 
 source = replaceOrThrow(
   source,
+  'import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";',
+  'import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";\nimport { isMedicalTender, medicalCategory } from "./medical-scope.mjs";',
+  "nạp bộ lọc y tế dùng chung",
+);
+source = replaceOrThrow(
+  source,
+  /function isMedical\(item\) \{[\s\S]*?\n\}\n\nfunction isStoredTenderMedical/,
+  "function isMedical(item) {\n  return isMedicalTender(item);\n}\n\nfunction isStoredTenderMedical",
+  "thay bộ lọc cũ bằng bộ lọc dùng chung",
+);
+source = replaceOrThrow(
+  source,
+  /function categoryOf\(name\) \{[\s\S]*?\n\}\n\nfunction statusOf/,
+  "function categoryOf(name) {\n  return medicalCategory(name);\n}\n\nfunction statusOf",
+  "phân loại nhóm hàng dùng chung",
+);
+source = replaceOrThrow(
+  source,
   'const PROVINCE_CODE = "52";',
   `const REGION_SLUG = ${js(region.slug)};\nconst REGION_NAME = ${js(region.name)};\nconst PROVINCE_CODES = ${js(region.provinceCodes)};\nconst REGION_LOCATION_TERMS = ${js(region.locationTerms)};\nconst ENABLE_HISTORICAL_FALLBACK = ${enableHistoricalFallback};\nconst DETAIL_LIMIT = ${detailLimit};`,
   "cấu hình tỉnh",
@@ -99,7 +115,6 @@ source = replaceOrThrow(source, "const DAYS = 3 * 365;", `const DAYS = ${scanDay
 source = replaceOrThrow(source, "const INCREMENTAL_DAYS = 14;", `const INCREMENTAL_DAYS = ${incrementalDays};`, "số ngày cập nhật");
 source = replaceOrThrow(source, "const WINDOW_DAYS = 7;", `const WINDOW_DAYS = ${windowDays};`, "cửa sổ ngày");
 source = replaceOrThrow(source, "const PAGE_SIZE = 10;", `const PAGE_SIZE = ${pageSize};`, "kích thước trang");
-
 source = replaceOrThrow(
   source,
   /const HISTORICAL_LOCATION_TERMS = \[[\s\S]*?\n\];\nconst HISTORICAL_TITLE_TERMS =/,
@@ -115,36 +130,29 @@ source = replaceOrThrow(
 source = replaceOrThrow(
   source,
   /const FORCED_NOTIFY_NOS = \[[\s\S]*?\n\];/,
-  `const FORCED_NOTIFY_NOS = ${js(forcedNotifyNos)};`,
-  "mã gói bắt buộc",
+  "const FORCED_NOTIFY_NOS = [];",
+  "loại bỏ mã gói bắt buộc",
 );
-
 source = replaceOrThrow(
   source,
   /const outputPath = resolve\(root, "data\/tenders\.json"\);\nconst biddersOutputPath = resolve\(root, "data\/bidders\.json"\);\nconst equipmentOutputPath = resolve\(root, "data\/equipment\.json"\);\nconst requirementsOutputPath = resolve\(root, "data\/requirements\.json"\);\nconst technicalRequirementsOutputPath = resolve\(root, "data\/technical-requirements\.json"\);\nconst detailsDir = resolve\(root, "data\/details"\);/,
   `const regionDataDir = resolve(root, "data", "regions", REGION_SLUG);\nconst outputPath = resolve(regionDataDir, "tenders.json");\nconst biddersOutputPath = resolve(regionDataDir, "bidders.json");\nconst equipmentOutputPath = resolve(regionDataDir, "equipment.json");\nconst requirementsOutputPath = resolve(regionDataDir, "requirements.json");\nconst technicalRequirementsOutputPath = resolve(regionDataDir, "technical-requirements.json");\nconst detailsDir = resolve(regionDataDir, "details");`,
   "đường dẫn dữ liệu khu vực",
 );
-
 source = replaceOrThrow(
   source,
   '{ fieldName: "locations.provCode", searchType: "in", fieldValues: [PROVINCE_CODE] },',
   '{ fieldName: "locations.provCode", searchType: "in", fieldValues: PROVINCE_CODES },',
   "mã tỉnh tìm kiếm",
 );
-source = source.replaceAll("thau-y-te-gia-lai-public-data/2.0", `thau-y-te-mien-trung-${region.slug}/3.0`);
+source = source.replaceAll("thau-y-te-gia-lai-public-data/2.0", `thau-y-te-mien-trung-${region.slug}/4.0`);
 source = replaceOrThrow(
   source,
-  '    name,\n    investor:',
-  '    name,\n    regionSlug: REGION_SLUG,\n    region: REGION_NAME,\n    provinceCodes: PROVINCE_CODES,\n    investor:',
+  "    name,\n    investor:",
+  "    name,\n    regionSlug: REGION_SLUG,\n    region: REGION_NAME,\n    provinceCodes: PROVINCE_CODES,\n    investor:",
   "nhãn khu vực trên gói thầu",
 );
-source = replaceOrThrow(
-  source,
-  'join(", ") || "Tỉnh Gia Lai",',
-  'join(", ") || REGION_NAME,',
-  "địa điểm mặc định",
-);
+source = replaceOrThrow(source, 'join(", ") || "Tỉnh Gia Lai",', 'join(", ") || REGION_NAME,', "địa điểm mặc định");
 source = replaceOrThrow(
   source,
   "  const fullRefresh = !previous.tenders?.length\n    || previousDays < DAYS",
@@ -172,7 +180,7 @@ source = replaceOrThrow(
 source = replaceOrThrow(
   source,
   '      strategy: "incremental-province-plus-historical-entity-keywords",',
-  '      strategy: ENABLE_HISTORICAL_FALLBACK\n        ? "regional-province-codes-plus-historical-location-terms"\n        : "regional-province-codes",',
+  '      strategy: ENABLE_HISTORICAL_FALLBACK\n        ? "regional-province-codes-plus-historical-location-terms-unified-filter"\n        : "regional-province-codes-unified-filter",',
   "chiến lược quét",
 );
 
@@ -183,16 +191,13 @@ if (process.env.DRY_RUN === "1") {
   const checkCode = await runNode(["--check", generatedPath]);
   await rm(generatedPath, { force: true });
   if (checkCode !== 0) process.exit(checkCode);
-  process.stdout.write(
-    `Kiểm tra cấu hình quét ${region.name}: hợp lệ; ngưỡng giữ dữ liệu hiện tại ${requiredTenderCount} gói.\n`,
-  );
+  process.stdout.write(`Kiểm tra cấu hình quét ${region.name}: hợp lệ; dùng bộ lọc y tế thống nhất.\n`);
   process.exit(0);
 }
 
 process.stdout.write(
   `Bắt đầu quét ${region.name}: mã ${region.provinceCodes.join(", ")}, ${scanDays} ngày, `
-  + `${region.locationTerms.length} địa danh, ngưỡng không giảm ${requiredTenderCount} gói, `
-  + `tối đa ${detailLimit} gói chi tiết, quét bù=${enableHistoricalFallback ? "có" : "không"}\n`,
+  + `ngưỡng không giảm ${requiredTenderCount} gói, bộ lọc thống nhất.\n`,
 );
 
 const exitCode = await runNode([generatedPath]);
@@ -224,7 +229,7 @@ const bidderCount = Array.isArray(bidderPayload.bidders) ? bidderPayload.bidders
 const equipmentCount = Array.isArray(equipmentPayload.equipment) ? equipmentPayload.equipment.length : 0;
 
 await writeFile(regionSummaryPath, `${JSON.stringify({
-  schemaVersion: 2,
+  schemaVersion: 3,
   regionSlug: region.slug,
   region: region.name,
   completedAt: new Date().toISOString(),
@@ -237,6 +242,7 @@ await writeFile(regionSummaryPath, `${JSON.stringify({
   historicalLocationTermCount: region.locationTerms.length,
   historicalTitleTermCount: historicalTitleTerms.length,
   historicalFallback: enableHistoricalFallback,
+  filterStrategy: "unified-medical-scope-v3",
   status: "success",
 }, null, 2)}\n`);
 

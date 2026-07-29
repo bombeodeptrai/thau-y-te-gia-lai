@@ -1,6 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  canonicalNotifyNo,
+  classifyMedicalTender,
+  medicalCategory,
+} from "./medical-scope.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const AUDIT_DAYS = Math.max(7, Number(process.env.AUDIT_DAYS) || 30);
@@ -24,15 +29,6 @@ async function readJson(path, fallback) {
 function compact(value, maxLength = 1500) {
   const text = String(value ?? "").replace(/\s+/g, " ").trim();
   return text.length > maxLength ? `${text.slice(0, maxLength - 1)}…` : text;
-}
-
-function normalizeText(value) {
-  return compact(value)
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/đ/g, "d")
-    .replace(/Đ/g, "D")
-    .toLowerCase();
 }
 
 function unique(values) {
@@ -69,7 +65,7 @@ async function postJson(body, timeoutMs = 30_000) {
           "Content-Type": "application/json",
           Origin: "https://muasamcong.mpi.gov.vn",
           Referer: "https://muasamcong.mpi.gov.vn/",
-          "User-Agent": `thau-y-te-location-audit-${slug}/1.1`,
+          "User-Agent": `thau-y-te-location-audit-${slug}/3.0`,
         },
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(timeoutMs),
@@ -88,7 +84,7 @@ async function postJson(body, timeoutMs = 30_000) {
   throw lastError;
 }
 
-function searchPayload(pageNumber, from, to, term) {
+function searchPayload(pageNumber, from, to, locationTerm) {
   return [{
     pageSize: PAGE_SIZE,
     pageNumber,
@@ -96,7 +92,7 @@ function searchPayload(pageNumber, from, to, term) {
     sortType: "DESC",
     query: [{
       index: "es-contractor-selection",
-      keyWord: term,
+      keyWord: locationTerm,
       matchType: "exact",
       matchFields: ["investorName", "procuringEntityName", "bidName"],
       filters: [
@@ -107,97 +103,29 @@ function searchPayload(pageNumber, from, to, term) {
   }];
 }
 
-function notifyNoPayload(notifyNo) {
-  return [{
-    pageSize: 10,
-    pageNumber: 0,
-    sortBy: "publicDate",
-    sortType: "DESC",
-    query: [{
-      index: "es-contractor-selection",
-      keyWord: notifyNo,
-      matchType: "exact",
-      matchFields: ["notifyNo"],
-      filters: [
-        { fieldName: "type", searchType: "in", fieldValues: ["es-notify-contractor"] },
-      ],
-    }],
-  }];
-}
-
-async function fetchTerm(term, from, to) {
-  const first = await postJson(searchPayload(0, from, to, term));
+async function fetchLocationTerm(locationTerm, from, to, index, total) {
+  const first = await postJson(searchPayload(0, from, to, locationTerm));
   const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
-  const pages = Array.from({ length: totalPages - 1 }, (_, index) => index + 1);
+  const pages = Array.from({ length: totalPages - 1 }, (_, pageIndex) => pageIndex + 1);
   const remaining = await mapLimited(pages, 2, (pageNumber) =>
-    postJson(searchPayload(pageNumber, from, to, term)));
+    postJson(searchPayload(pageNumber, from, to, locationTerm)));
   const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
-  process.stdout.write(`Kiểm tra địa danh ${term}: ${items.length} bản ghi/${totalPages} trang\n`);
-  return items;
-}
-
-async function fetchCanary(notifyNo) {
-  const payload = await postJson(notifyNoPayload(notifyNo));
-  const items = payload.page?.content || [];
-  if (!items.some((item) => item.notifyNo === notifyNo)) {
-    throw new Error(`Canary ${notifyNo} không được nguồn trả về`);
+  if (items.length || index + 1 === total) {
+    process.stdout.write(`Đối chiếu ${index + 1}/${total}: ${locationTerm} = ${items.length}\n`);
   }
-  process.stdout.write(`Canary ${notifyNo}: đạt\n`);
   return items;
-}
-
-const excludedTerms = [
-  "xay lap", "xay dung", "cai tao", "sua chua", "tu van", "bao tri", "kiem dinh",
-  "suat an", "thuc pham", "bao ve", "ve sinh", "van phong pham", "xang dau",
-  "cay xanh", "rac thai", "chat thai", "in an", "trang phuc", "bao hiem",
-  "may tinh", "may in", "cong nghe thong tin", "may chu", "thang may", "may phat dien",
-  "dieu hoa", "phan bon", "bao ve thuc vat", "thu y", "thuoc dieu tri", "duoc pham",
-];
-const explicitMedicalTerms = [
-  "thiet bi y te", "trang thiet bi y te", "vat tu y te", "vat tu tieu hao",
-  "vat tu phau thuat", "hoa chat xet nghiem", "hoa chat y te", "hoa chat khu khuan",
-  "sinh pham", "chan doan in vitro", "dung cu y te", "y cu", "khi y te", "oxy y te",
-  "may xet nghiem", "may sieu am", "may tho", "may dien tim", "may theo doi benh nhan",
-  "may loc mau", "may chay than", "may chup", "x quang", "noi soi", "phau thuat",
-  "catheter", "stent", "implant", "bom tiem", "kim tiem", "gang tay y te",
-  "bong y te", "gac y te", "khau trang y te", "kit test", "test nhanh",
-];
-const medicalInvestorTerms = [
-  "so y te", "benh vien", "trung tam y te", "tram y te", "phong kham", "benh xa",
-  "trung tam kiem soat benh tat", "cdc", "trung tam kiem nghiem", "trung tam phap y",
-];
-
-function isMedical(item) {
-  const title = normalizeText(item.bidName?.join(" ") || "");
-  const investor = normalizeText(item.investorName || item.procuringEntityName || "");
-  if (!title || excludedTerms.some((term) => title.includes(term))) return false;
-  if (explicitMedicalTerms.some((term) => title.includes(term))) return true;
-
-  const hasMedicalInvestor = medicalInvestorTerms.some((term) => investor.includes(term));
-  const hasSupply = ["vat tu", "hoa chat", "sinh pham", "dung cu", "may", "thiet bi"]
-    .some((term) => title.includes(term));
-  const hasClinicalContext = ["xet nghiem", "chan doan", "kham", "chua benh", "dieu tri", "phong mo"]
-    .some((term) => title.includes(term));
-  return hasMedicalInvestor && hasSupply && hasClinicalContext;
-}
-
-function categoryOf(name) {
-  const text = String(name || "").toLocaleLowerCase("vi-VN");
-  return /(vật tư|hóa chất|hoá chất|sinh phẩm|dụng cụ|kit|test|gạc|găng|kim|stent|catheter)/.test(text)
-    ? "Vật tư & hóa chất"
-    : "Thiết bị y tế";
 }
 
 function statusOf(item) {
   const sourceStatus = String(item.statusForNotify || item.status || "").toUpperCase();
   if (sourceStatus.includes("HUY") || sourceStatus === "CANCELLED") return "cancelled";
   if (item.inputResultId || item.contractorName?.length || sourceStatus === "CNTTT") return "awarded";
+  if (sourceStatus === "DXT" || String(item.status || "").toUpperCase() === "OPEN_BID") return "evaluating";
   const closeTime = new Date(item.bidCloseDate || item.closeDate || 0).getTime();
-  if (!closeTime) return "closed";
   const remaining = closeTime - Date.now();
   if (remaining > 0 && remaining <= 3 * 86_400_000) return "urgent";
   if (remaining > 0) return "open";
-  return item.bidOpenId ? "evaluating" : "closed";
+  return closeTime ? "closed" : "closed";
 }
 
 function sourceUrl(item) {
@@ -225,22 +153,21 @@ function sourceUrl(item) {
 }
 
 function normalizeItem(item, region) {
+  const notifyNo = canonicalNotifyNo(item.notifyNo || item.notifyId || item.id);
   const name = compact(item.bidName?.join(" ") || "Gói thầu chưa có tên");
   const locations = (item.locations || [])
     .map((location) => location.districtName || location.provName)
     .filter(Boolean);
-  const winners = unique(item.contractorName || []);
-  const winningPrice = (item.bidWinningPrice || []).reduce((sum, value) => sum + (Number(value) || 0), 0);
   return {
-    id: compact(item.id || item.notifyId || item.notifyNo, 180),
+    id: compact(item.notifyId || item.id || notifyNo, 180),
     notifyId: compact(item.notifyId || item.id, 180),
     bidId: compact(item.bidId, 180),
     bidOpenId: compact(item.bidOpenId, 180),
     inputResultId: compact(item.inputResultId, 180),
     bidForm: compact(item.bidForm, 80),
-    processApply: compact(item.processApply, 80),
+    processApply: compact(item.processApply || "LDT", 80),
     stepCode: compact(item.stepCode, 120),
-    notifyNo: compact(item.notifyNo, 100),
+    notifyNo,
     name,
     regionSlug: region.slug,
     region: region.name,
@@ -250,17 +177,17 @@ function normalizeItem(item, region) {
     closeDate: compact(item.bidCloseDate || item.closeDate, 80),
     publicDate: compact(item.publicDate, 80),
     price: (item.bidPrice || []).reduce((sum, value) => sum + (Number(value) || 0), 0),
-    category: categoryOf(name),
+    category: medicalCategory(name),
     status: statusOf(item),
-    sourceStatus: compact(item.statusForNotify || item.status, 80),
+    sourceStatus: compact(item.status || "", 80),
     statusForNotify: compact(item.statusForNotify, 80),
-    bidderCount: item.bidderCount == null ? null : Number(item.bidderCount),
+    bidderCount: item.numBidderJoin == null ? null : Number(item.numBidderJoin),
     sourceUrl: sourceUrl(item),
-    winnerNames: winners,
-    winningPrice,
+    winnerNames: unique(item.contractorName || []),
+    winningPrice: (item.bidWinningPrice || []).reduce((sum, value) => sum + (Number(value) || 0), 0),
     decisionDate: compact(item.decisionDate || item.publicDateKqlcnt, 80),
     resultPublishedDate: compact(item.publicDateKqlcnt, 80),
-    hasResult: Boolean(item.inputResultId || winners.length || winningPrice),
+    hasResult: Boolean(item.inputResultId || item.contractorName?.length),
     participantNames: [],
     loserNames: [],
     loserDetails: [],
@@ -270,30 +197,19 @@ function normalizeItem(item, region) {
   };
 }
 
-function richness(value) {
-  if (!value) return 0;
-  return [
-    value.inputResultId, value.bidOpenId, value.hasResult, value.winnerNames?.length,
-    value.participantNames?.length, value.winningModels?.length, value.winningPrice,
-    value.bidderCount,
-  ].reduce((sum, item) => sum + (Array.isArray(item) ? item.length : item ? 1 : 0), 0);
-}
-
 function mergeTender(previous, current) {
   if (!previous) return current;
-  if (!current) return previous;
-  const preferred = richness(previous) >= richness(current) ? previous : current;
-  const other = preferred === previous ? current : previous;
   return {
-    ...other,
-    ...preferred,
-    winnerNames: unique([...(other.winnerNames || []), ...(preferred.winnerNames || [])]),
-    participantNames: unique([...(other.participantNames || []), ...(preferred.participantNames || [])]),
-    loserNames: unique([...(other.loserNames || []), ...(preferred.loserNames || [])]),
-    winningModels: unique([...(other.winningModels || []), ...(preferred.winningModels || [])]),
-    losingModels: unique([...(other.losingModels || []), ...(preferred.losingModels || [])]),
-    winningPrice: Number(preferred.winningPrice) || Number(other.winningPrice) || 0,
-    price: Number(preferred.price) || Number(other.price) || 0,
+    ...previous,
+    ...current,
+    notifyNo: canonicalNotifyNo(current.notifyNo || previous.notifyNo),
+    winnerNames: unique([...(previous.winnerNames || []), ...(current.winnerNames || [])]),
+    participantNames: unique([...(previous.participantNames || []), ...(current.participantNames || [])]),
+    loserNames: unique([...(previous.loserNames || []), ...(current.loserNames || [])]),
+    winningModels: unique([...(previous.winningModels || []), ...(current.winningModels || [])]),
+    losingModels: unique([...(previous.losingModels || []), ...(current.losingModels || [])]),
+    winningPrice: Number(current.winningPrice) || Number(previous.winningPrice) || 0,
+    price: Number(current.price) || Number(previous.price) || 0,
   };
 }
 
@@ -311,86 +227,71 @@ if ((!previous.tenders || !previous.tenders.length) && slug === "gia-lai") {
 const now = new Date();
 const from = new Date(now.getTime() - AUDIT_DAYS * 86_400_000).toISOString();
 const to = now.toISOString();
-const terms = unique(region.locationTerms || []);
-if (!terms.length) throw new Error(`${region.name} chưa có danh sách địa danh kiểm tra`);
+const terms = unique(region.locationTerms || [region.name]);
+const groups = await mapLimited(terms, TERM_CONCURRENCY, (term, index) =>
+  fetchLocationTerm(term, from, to, index, terms.length));
+const sourceItems = groups.flat();
+const sourceUnique = new Map();
+for (const item of sourceItems) {
+  const key = canonicalNotifyNo(item.notifyNo || item.notifyId || item.id);
+  if (key) sourceUnique.set(key, item);
+}
 
-const failedTerms = [];
-const groups = await mapLimited(terms, TERM_CONCURRENCY, async (term) => {
-  try {
-    return await fetchTerm(term, from, to);
-  } catch (error) {
-    failedTerms.push(`${term}: ${error.message}`);
-    return [];
+const accepted = new Map();
+const rejectedReasons = new Map();
+for (const [key, item] of sourceUnique) {
+  const result = classifyMedicalTender(item);
+  if (result.accepted) {
+    accepted.set(key, normalizeItem(item, region));
+  } else {
+    rejectedReasons.set(result.reason, (rejectedReasons.get(result.reason) || 0) + 1);
   }
-});
-if (failedTerms.length) {
-  throw new Error(`Kiểm tra địa danh chưa hoàn tất (${failedTerms.length}/${terms.length} lỗi): ${failedTerms.join(" | ")}`);
 }
 
-const canaryNotifyNos = slug === "gia-lai" ? ["IB2600378695"] : [];
-const canaryItems = (await mapLimited(canaryNotifyNos, 1, fetchCanary)).flat();
-const sourceMap = new Map();
-for (const item of [...groups.flat(), ...canaryItems]) {
-  const key = compact(item.notifyNo || item.notifyId || item.id, 180);
-  if (!key || !isMedical(item)) continue;
-  sourceMap.set(key, item);
+const merged = new Map();
+for (const item of previous.tenders || []) {
+  const key = canonicalNotifyNo(item.notifyNo || item.id);
+  if (key) merged.set(key, { ...item, notifyNo: key });
 }
-
-const previousRecentCount = (previous.tenders || []).filter((item) => {
-  const time = new Date(item.publicDate || 0).getTime();
-  return Number.isFinite(time) && time >= new Date(from).getTime();
-}).length;
-if (!sourceMap.size && previousRecentCount > 0) {
-  throw new Error(`Nguồn kiểm tra chéo trả 0 gói nhưng dữ liệu đang có ${previousRecentCount} gói/${AUDIT_DAYS} ngày`);
-}
-
-const previousMap = new Map((previous.tenders || [])
-  .map((item) => [compact(item.notifyNo || item.id, 180), item])
-  .filter(([key]) => key));
-const beforeCount = previousMap.size;
-for (const [key, item] of sourceMap) {
-  previousMap.set(key, mergeTender(previousMap.get(key), normalizeItem(item, region)));
-}
-
-const tenders = [...previousMap.values()]
-  .sort((left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0));
-const newCount = Math.max(0, tenders.length - beforeCount);
+const beforeCount = merged.size;
+for (const [key, item] of accepted) merged.set(key, mergeTender(merged.get(key), item));
+const tenders = [...merged.values()].sort(
+  (left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0),
+);
 const fetchedAt = new Date().toISOString();
-const previousCoverageDays = Number(previous.collection?.days) || 0;
+
 const payload = {
   ...previous,
   tenders,
   fetchedAt,
-  source: previous.source || "muasamcong-public-api-central-region",
   collection: {
     ...(previous.collection || {}),
-    days: previousCoverageDays || AUDIT_DAYS,
-    auditStrategy: "province-code-scan-plus-independent-location-cross-check",
     lastLocationAuditAt: fetchedAt,
     lastLocationAuditDays: AUDIT_DAYS,
-    lastLocationAuditTermCount: terms.length,
-    lastLocationAuditSourceCount: sourceMap.size,
-    lastLocationAuditNewCount: newCount,
-    lastLocationAuditCanaryCount: canaryNotifyNos.length,
+    lastLocationAuditCandidateCount: sourceUnique.size,
+    lastLocationAuditMedicalCount: accepted.size,
+    lastLocationAuditNewCount: Math.max(0, tenders.length - beforeCount),
+    filterStrategy: "unified-medical-scope-v3",
   },
 };
 
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
 await writeFile(resolve(regionDir, "location-audit-summary.json"), `${JSON.stringify({
+  schemaVersion: 2,
   regionSlug: slug,
-  region: region.name,
   auditedAt: fetchedAt,
   auditDays: AUDIT_DAYS,
-  termCount: terms.length,
-  sourceMedicalCount: sourceMap.size,
+  candidateCount: sourceUnique.size,
+  acceptedCount: accepted.size,
+  rejectedCount: sourceUnique.size - accepted.size,
+  rejectedReasons: Object.fromEntries([...rejectedReasons].sort((a, b) => b[1] - a[1])),
   beforeCount,
   afterCount: tenders.length,
-  newCount,
-  canaryNotifyNos,
-  failedTerms: [],
+  filterStrategy: "unified-medical-scope-v3",
 }, null, 2)}\n`);
 
 process.stdout.write(
-  `Kiểm tra chéo ${region.name}: ${terms.length} địa danh, ${sourceMap.size} gói y tế/${AUDIT_DAYS} ngày, bổ sung ${newCount}, tổng ${tenders.length}.\n`,
+  `Đối chiếu ${region.name}: ${sourceUnique.size} ứng viên, nhận ${accepted.size}, `
+  + `thêm ${Math.max(0, tenders.length - beforeCount)}, tổng ${tenders.length}.\n`,
 );

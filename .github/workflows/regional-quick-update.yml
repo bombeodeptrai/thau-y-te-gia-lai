@@ -46,13 +46,12 @@ jobs:
         with:
           node-version: 22
 
-      - name: Kiểm tra cấu hình ${{ matrix.region }}
+      - name: Kiểm tra bộ lọc và cấu hình ${{ matrix.region }}
         env:
           DRY_RUN: "1"
         run: |
           node --test scripts/medical-scope.test.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
-          node --check scripts/apply-manual-tender-overrides.mjs
           node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
       - name: Quét chồng lấn 14 ngày gần nhất và giữ lịch sử 3 năm
@@ -69,7 +68,7 @@ jobs:
           FORCE_FULL_REFRESH: "0"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Cứu hộ gói y tế mới bị bộ lọc bỏ sót
+      - name: Quét bù toàn bộ bản ghi gần đây rồi áp dụng cùng bộ lọc
         id: medical_rescue
         continue-on-error: true
         env:
@@ -77,33 +76,15 @@ jobs:
           PAGE_SIZE: "100"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
 
-      # Nguồn công khai có thể không trả được một mã trong một lượt. Các gói đã
-      # đối chiếu trực tiếp vẫn phải được chèn vào dữ liệu vùng và đóng gói ngay,
-      # thay vì bỏ cả artifact của tỉnh như quy trình cũ.
-      - name: Bảo đảm các gói đã đối chiếu trực tiếp
-        id: manual_tender_overrides
-        run: node scripts/apply-manual-tender-overrides.mjs "${{ matrix.region }}"
-
-      - name: Xác nhận 4 gói hóa chất Gia Lai bắt buộc
-        if: matrix.region == 'gia-lai'
-        run: |
-          node -e '
-            const fs=require("fs");
-            const d=JSON.parse(fs.readFileSync("data/regions/gia-lai/tenders.json","utf8"));
-            const got=new Set((d.tenders||[]).map(x=>String(x.notifyNo||"").replace(/-\d{2}$/, "")));
-            const need=["IB2600349751","IB2600348377","IB2600347689","IB2600346897"];
-            const missing=need.filter(x=>!got.has(x));
-            if(missing.length) throw new Error(`Còn thiếu: ${missing.join(", ")}`);
-            console.log(`Đã có đủ ${need.length}/${need.length} gói bắt buộc`);
-          '
-
-      - name: Đóng gói dữ liệu tỉnh thành
+      - name: Đóng gói dữ liệu tỉnh thành hợp lệ
+        if: steps.regional_scan.outcome == 'success' || steps.medical_rescue.outcome == 'success'
         run: |
           mkdir -p "data/regions/${{ matrix.region }}" artifacts
           printf '%s\n' "success" > "data/regions/${{ matrix.region }}/last-workflow-status.txt"
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
       - name: Lưu dữ liệu tỉnh thành
+        if: steps.regional_scan.outcome == 'success' || steps.medical_rescue.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: region-${{ matrix.region }}
@@ -112,7 +93,7 @@ jobs:
           if-no-files-found: error
 
   merge-and-deploy:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]') || contains(github.event.head_commit.message, '[scan-overlap]')
+    if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]') || contains(github.event.head_commit.message, '[scan-overlap]'))
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -137,7 +118,7 @@ jobs:
       - name: Khôi phục dữ liệu Gia Lai nếu bản hiện tại bị rỗng
         run: node scripts/restore-legacy-gia-lai.mjs
 
-      - name: Tải dữ liệu các tỉnh
+      - name: Tải dữ liệu các tỉnh quét thành công
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -157,13 +138,6 @@ jobs:
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
           node scripts/data-health-check.mjs
-          node -e '
-            const d=require("./data/tenders.json");
-            const got=new Set((d.tenders||[]).map(x=>String(x.notifyNo||"").replace(/-\d{2}$/, "")));
-            const need=["IB2600349751","IB2600348377","IB2600347689","IB2600346897"];
-            const missing=need.filter(x=>!got.has(x));
-            if(missing.length) throw new Error(`Dữ liệu tổng hợp còn thiếu: ${missing.join(", ")}`);
-          '
 
       - name: Ghi cơ sở dữ liệu an toàn về repository
         run: |
@@ -173,7 +147,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: bảo đảm các gói y tế đã đối chiếu [skip central scan]"
+            git commit -m "data: cập nhật bằng bộ lọc y tế thống nhất [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
