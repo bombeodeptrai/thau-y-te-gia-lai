@@ -1,4 +1,4 @@
-name: Bổ sung chi tiết nhà thầu thiết bị và model
+name: Bổ sung chi tiết nhà thầu thiết bị và model Gia Lai
 
 on:
   push:
@@ -23,20 +23,9 @@ jobs:
     timeout-minutes: 120
     strategy:
       fail-fast: false
-      max-parallel: 2
       matrix:
         region:
-          - thanh-hoa
-          - nghe-an
-          - ha-tinh
-          - quang-tri
-          - hue
-          - da-nang
-          - quang-ngai
           - gia-lai
-          - dak-lak
-          - khanh-hoa
-          - lam-dong
     steps:
       - name: Lấy cơ sở dữ liệu mới nhất
         uses: actions/checkout@v4
@@ -58,8 +47,6 @@ jobs:
             echo "${{ matrix.region }} chưa có dữ liệu nền; bỏ qua cho đến khi quét sâu thành công."
           fi
 
-      # Mỗi lượt ưu tiên các gói chưa có hồ sơ chi tiết. Chạy lặp định kỳ
-      # cho đến khi nhà thầu, thiết bị, model và yêu cầu kỹ thuật được lấp đầy.
       - name: Bổ sung tối đa 40 hồ sơ chi tiết
         id: detail_scan
         if: steps.eligibility.outputs.eligible == 'true'
