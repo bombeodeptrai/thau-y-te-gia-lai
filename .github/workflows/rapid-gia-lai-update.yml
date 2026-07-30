@@ -1,0 +1,130 @@
+name: Cập nhật nhanh gói mới Gia Lai
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  detect:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[rapid-gia-lai]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+    steps:
+      - name: Lấy dữ liệu mới nhất
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Kiểm tra bộ lọc y tế
+        run: node --test scripts/medical-scope.test.mjs
+
+      - name: Lưu bản dữ liệu trước khi quét
+        run: |
+          cp data/regions/gia-lai/tenders.json /tmp/gia-lai-before.json
+          if [ -f data/regions/gia-lai/medical-rescue-summary.json ]; then
+            cp data/regions/gia-lai/medical-rescue-summary.json /tmp/gia-lai-summary-before.json
+          fi
+
+      - name: Quét toàn bộ gói 7 ngày gần nhất theo mã tỉnh Gia Lai và Bình Định cũ
+        env:
+          RESCUE_DAYS: "7"
+          PAGE_SIZE: "100"
+        run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
+
+      - name: Xác định có gói mới hoặc thay đổi thật sự
+        id: compare
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const before = JSON.parse(fs.readFileSync('/tmp/gia-lai-before.json', 'utf8'));
+          const after = JSON.parse(fs.readFileSync('data/regions/gia-lai/tenders.json', 'utf8'));
+          const normalize = (rows) => [...(rows || [])]
+            .sort((a, b) => String(a.notifyNo || a.id).localeCompare(String(b.notifyNo || b.id)));
+          const changed = JSON.stringify(normalize(before.tenders)) !== JSON.stringify(normalize(after.tenders));
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${changed}\n`);
+          console.log(changed ? 'Phát hiện gói mới hoặc thông tin gói thay đổi.' : 'Không có thay đổi dữ liệu gói thầu.');
+          NODE
+
+  apply-and-deploy:
+    if: needs.detect.outputs.changed == 'true'
+    needs: detect
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Lấy repository mới nhất sau khi chờ quyền ghi
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Quét lại Gia Lai trên dữ liệu mới nhất
+        env:
+          RESCUE_DAYS: "7"
+          PAGE_SIZE: "100"
+        run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
+
+      - name: Hợp nhất và kiểm tra an toàn
+        run: |
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/data-health-check.mjs
+
+      - name: Ghi gói mới về repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Một tiến trình khác đã cập nhật dữ liệu trước đó."
+          else
+            git commit -m "data: cập nhật nhanh gói mới Gia Lai [skip central scan]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Dựng website từ dữ liệu vừa cập nhật
+        run: |
+          node scripts/merge-regions.mjs
+          node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/data-health-check.mjs
+          node scripts/build-site.mjs
+
+      - name: Cấu hình Pages
+        uses: actions/configure-pages@v5
+
+      - name: Tải website lên Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist-pages
+
+      - name: Triển khai
+        id: deployment
+        uses: actions/deploy-pages@v4
