@@ -1,4 +1,4 @@
-name: Kiểm tra chéo chống lọt gói thầu
+name: Kiểm tra chéo chống lọt gói Gia Lai
 
 on:
   push:
@@ -23,20 +23,9 @@ jobs:
     timeout-minutes: 120
     strategy:
       fail-fast: false
-      max-parallel: 2
       matrix:
         region:
-          - thanh-hoa
-          - nghe-an
-          - ha-tinh
-          - quang-tri
-          - hue
-          - da-nang
-          - quang-ngai
           - gia-lai
-          - dak-lak
-          - khanh-hoa
-          - lam-dong
     steps:
       - name: Lấy mã nguồn và dữ liệu gần nhất
         uses: actions/checkout@v4
@@ -52,7 +41,7 @@ jobs:
           node --check scripts/fetch-recent-medical-rescue.mjs
           node --test scripts/medical-scope.test.mjs
 
-      - name: Đối chiếu 30 ngày bằng toàn bộ địa danh ${{ matrix.region }}
+      - name: Đối chiếu 30 ngày bằng toàn bộ địa danh Gia Lai và Bình Định cũ
         id: location_audit
         continue-on-error: true
         env:
@@ -106,7 +95,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Tải các tỉnh đã đối chiếu thành công
+      - name: Tải dữ liệu Gia Lai đã đối chiếu thành công
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -136,7 +125,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Đối chiếu không phát hiện gói mới"
           else
-            git commit -m "data: đối chiếu bằng bộ lọc y tế thống nhất [skip central scan]"
+            git commit -m "data: đối chiếu Gia Lai bằng bộ lọc y tế thống nhất [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
