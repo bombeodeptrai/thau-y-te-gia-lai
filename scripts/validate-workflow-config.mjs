@@ -15,7 +15,7 @@ const fullScanPath = ".github/workflows/regional-full-scan.yml";
 const detailPath = ".github/workflows/regional-detail-backfill.yml";
 const quickPath = ".github/workflows/regional-quick-update.yml";
 const auditPath = ".github/workflows/regional-coverage-audit.yml";
-const rapidPath = ".github/workflows/rapid-gia-lai.yml";
+const rapidPath = ".github/workflows/rapid-gia-lai-update.yml";
 
 for (const file of [fullScanPath, detailPath, quickPath]) {
   const text = await readFile(file, "utf8");
