@@ -1,10 +1,8 @@
-name: Cập nhật nhanh dữ liệu miền Trung
+name: Cập nhật dự phòng dữ liệu Gia Lai
 
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -23,20 +21,9 @@ jobs:
     timeout-minutes: 90
     strategy:
       fail-fast: false
-      max-parallel: 2
       matrix:
         region:
-          - thanh-hoa
-          - nghe-an
-          - ha-tinh
-          - quang-tri
-          - hue
-          - da-nang
-          - quang-ngai
           - gia-lai
-          - dak-lak
-          - khanh-hoa
-          - lam-dong
     steps:
       - name: Lấy mã nguồn và dữ liệu đã lưu
         uses: actions/checkout@v4
@@ -46,7 +33,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Kiểm tra bộ lọc và cấu hình ${{ matrix.region }}
+      - name: Kiểm tra bộ lọc và cấu hình Gia Lai
         env:
           DRY_RUN: "1"
         run: |
@@ -76,14 +63,14 @@ jobs:
           PAGE_SIZE: "100"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
 
-      - name: Đóng gói dữ liệu tỉnh thành hợp lệ
+      - name: Đóng gói dữ liệu Gia Lai hợp lệ
         if: steps.regional_scan.outcome == 'success' || steps.medical_rescue.outcome == 'success'
         run: |
           mkdir -p "data/regions/${{ matrix.region }}" artifacts
           printf '%s\n' "success" > "data/regions/${{ matrix.region }}/last-workflow-status.txt"
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
-      - name: Lưu dữ liệu tỉnh thành
+      - name: Lưu dữ liệu Gia Lai
         if: steps.regional_scan.outcome == 'success' || steps.medical_rescue.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
@@ -118,7 +105,7 @@ jobs:
       - name: Khôi phục dữ liệu Gia Lai nếu bản hiện tại bị rỗng
         run: node scripts/restore-legacy-gia-lai.mjs
 
-      - name: Tải dữ liệu các tỉnh quét thành công
+      - name: Tải dữ liệu Gia Lai quét thành công
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -147,7 +134,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: cập nhật bằng bộ lọc y tế thống nhất [skip central scan]"
+            git commit -m "data: cập nhật dự phòng Gia Lai [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

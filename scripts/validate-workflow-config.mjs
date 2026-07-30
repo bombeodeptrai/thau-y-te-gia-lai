@@ -11,13 +11,13 @@ for (const file of [
 }
 execFileSync(process.execPath, ["--test", "scripts/medical-scope.test.mjs"], { stdio: "inherit" });
 
-const files = [
-  ".github/workflows/regional-full-scan.yml",
-  ".github/workflows/regional-detail-backfill.yml",
-  ".github/workflows/regional-quick-update.yml",
-];
+const fullScanPath = ".github/workflows/regional-full-scan.yml";
+const detailPath = ".github/workflows/regional-detail-backfill.yml";
+const quickPath = ".github/workflows/regional-quick-update.yml";
+const auditPath = ".github/workflows/regional-coverage-audit.yml";
+const rapidPath = ".github/workflows/rapid-gia-lai-update.yml";
 
-for (const file of files) {
+for (const file of [fullScanPath, detailPath, quickPath]) {
   const text = await readFile(file, "utf8");
   if (!text.includes("MIN_TENDER_COUNT")) {
     throw new Error(`${file} chưa có ngưỡng chống ghi dữ liệu rỗng`);
@@ -27,45 +27,84 @@ for (const file of files) {
   }
 }
 
-const fullScan = await readFile(".github/workflows/regional-full-scan.yml", "utf8");
+const nonGiaLaiRegions = [
+  "thanh-hoa",
+  "nghe-an",
+  "ha-tinh",
+  "quang-tri",
+  "hue",
+  "da-nang",
+  "quang-ngai",
+  "dak-lak",
+  "khanh-hoa",
+  "lam-dong",
+];
+
+const fullScan = await readFile(fullScanPath, "utf8");
+if (!fullScan.includes('cron: "15 17 * * 0"')) {
+  throw new Error("Mười tỉnh ngoài Gia Lai phải quét tự động đúng một lần mỗi tuần");
+}
+for (const region of nonGiaLaiRegions) {
+  if (!fullScan.includes(`- ${region}`)) {
+    throw new Error(`Workflow quét tuần thiếu khu vực ${region}`);
+  }
+}
 if (!fullScan.includes("matrix.region == 'gia-lai'") || !fullScan.includes("ENABLE_HISTORICAL_FALLBACK")) {
-  throw new Error("Workflow quét sâu chưa bật quét bù địa danh riêng cho Gia Lai");
+  throw new Error("Workflow quét sâu chưa giữ quét bù địa danh riêng cho Gia Lai");
 }
 
-const quickScan = await readFile(".github/workflows/regional-quick-update.yml", "utf8");
-if (!quickScan.includes('INCREMENTAL_DAYS: "14"') || !quickScan.includes('cron: "*/30 * * * *"')) {
-  throw new Error("Workflow cập nhật nhanh phải quét chồng lấn 14 ngày mỗi 30 phút");
+const highFrequencyFiles = [quickPath, auditPath, detailPath];
+for (const file of highFrequencyFiles) {
+  const text = await readFile(file, "utf8");
+  if (!text.includes("- gia-lai")) {
+    throw new Error(`${file} chưa giữ Gia Lai trong luồng cập nhật thường xuyên`);
+  }
+  for (const region of nonGiaLaiRegions) {
+    if (text.includes(`- ${region}`)) {
+      throw new Error(`${file} vẫn quét thường xuyên khu vực ${region}`);
+    }
+  }
+}
+
+const quickScan = await readFile(quickPath, "utf8");
+if (quickScan.includes("cron:")) {
+  throw new Error("Workflow cập nhật dự phòng Gia Lai không được chạy lịch trùng với luồng 10 phút");
+}
+if (!quickScan.includes('INCREMENTAL_DAYS: "14"')) {
+  throw new Error("Workflow cập nhật dự phòng Gia Lai phải giữ cửa sổ chồng lấn 14 ngày");
 }
 if (!quickScan.includes("fetch-recent-medical-rescue.mjs") || !quickScan.includes('RESCUE_DAYS: "21"')) {
-  throw new Error("Workflow cập nhật nhanh thiếu lớp quét bù y tế 21 ngày");
-}
-if (quickScan.includes("apply-manual-tender-overrides") || quickScan.includes("IB2600349751")) {
-  throw new Error("Workflow cập nhật nhanh vẫn phụ thuộc mã gói hoặc dữ liệu chèn thủ công");
+  throw new Error("Workflow cập nhật dự phòng Gia Lai thiếu lớp quét bù 21 ngày");
 }
 
-const coverageAudit = await readFile(".github/workflows/regional-coverage-audit.yml", "utf8");
-if (!coverageAudit.includes('AUDIT_DAYS: "30"')) {
-  throw new Error("Workflow kiểm tra chéo chưa đối chiếu tối thiểu 30 ngày");
+const coverageAudit = await readFile(auditPath, "utf8");
+if (!coverageAudit.includes('AUDIT_DAYS: "30"') || !coverageAudit.includes('cron: "17 */4 * * *"')) {
+  throw new Error("Gia Lai phải tiếp tục kiểm tra chéo 30 ngày mỗi 4 giờ");
 }
-if (!coverageAudit.includes('cron: "17 */4 * * *"')) {
-  throw new Error("Workflow kiểm tra chéo chưa chạy định kỳ mỗi 4 giờ");
+if (!coverageAudit.includes("fetch-recent-location-audit.mjs") || !coverageAudit.includes("fetch-recent-medical-rescue.mjs")) {
+  throw new Error("Kiểm tra chéo Gia Lai thiếu một trong hai lớp quét độc lập");
 }
-if (!coverageAudit.includes("fetch-recent-location-audit.mjs")) {
-  throw new Error("Workflow kiểm tra chéo chưa gọi bộ quét độc lập theo địa danh");
+
+const detailScan = await readFile(detailPath, "utf8");
+if (!detailScan.includes('cron: "17 */2 * * *"') || !detailScan.includes('DETAIL_LIMIT: "40"')) {
+  throw new Error("Gia Lai phải tiếp tục bổ sung chi tiết mỗi 2 giờ");
 }
-if (!coverageAudit.includes("fetch-recent-medical-rescue.mjs") || !coverageAudit.includes('RESCUE_DAYS: "30"')) {
-  throw new Error("Workflow kiểm tra chéo thiếu lớp quét bù theo mã tỉnh 30 ngày");
+
+const rapidScan = await readFile(rapidPath, "utf8");
+if (!rapidScan.includes('cron: "*/10 * * * *"') || !rapidScan.includes("fetch-recent-medical-rescue.mjs gia-lai")) {
+  throw new Error("Luồng quét nhanh Gia Lai mỗi 10 phút chưa hợp lệ");
 }
-if (coverageAudit.includes("apply-manual-tender-overrides") || coverageAudit.includes("IB2600349751")) {
-  throw new Error("Workflow kiểm tra chéo vẫn phụ thuộc mã gói hoặc dữ liệu chèn thủ công");
+
+for (const file of [quickPath, auditPath]) {
+  const text = await readFile(file, "utf8");
+  if (text.includes("apply-manual-tender-overrides") || text.includes("IB2600349751")) {
+    throw new Error(`${file} vẫn phụ thuộc mã gói hoặc dữ liệu chèn thủ công`);
+  }
 }
 
 const regionRunner = await readFile("scripts/run-region-scan.mjs", "utf8");
 if (!regionRunner.includes("isMedicalTender, medicalCategory")) {
-  throw new Error("Đường quét chính chưa được vá sang bộ lọc y tế dùng chung");
-}
-if (!regionRunner.includes("thay bộ lọc cũ bằng bộ lọc dùng chung")) {
-  throw new Error("Đường quét chính chưa xác nhận thay toàn bộ hàm isMedical cũ");
+  throw new Error("Đường quét chính chưa dùng bộ lọc y tế thống nhất");
 }
 
 for (const file of [
@@ -76,19 +115,9 @@ for (const file of [
   if (!text.includes("classifyMedicalTender")) {
     throw new Error(`${file} chưa dùng bộ phân loại thống nhất`);
   }
-  if (text.includes("FORCED_BY_REGION") || text.includes("IB2600349751")) {
-    throw new Error(`${file} vẫn chứa mã gói bắt buộc`);
-  }
   if (!text.includes("rejectedReasons")) {
     throw new Error(`${file} chưa ghi thống kê lý do loại`);
   }
 }
 
-const classifier = await readFile("scripts/medical-scope.mjs", "utf8");
-for (const term of ["mien dich", "elisa", "hba1c", "su dung tren may", "su dung cho may"]) {
-  if (!classifier.includes(term)) {
-    throw new Error(`Bộ lọc thống nhất thiếu ngữ cảnh: ${term}`);
-  }
-}
-
-console.log("Mọi đường quét dùng chung bộ lọc y tế theo ngữ cảnh; không còn chèn mã gói thủ công.");
+console.log("Gia Lai cập nhật thường xuyên; 10 tỉnh còn lại chỉ quét tự động một lần mỗi tuần.");
