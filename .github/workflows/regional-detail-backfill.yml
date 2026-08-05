@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   scan:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[start-detail-backfill]')
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[start-detail-backfill]') || contains(github.event.head_commit.message, '[repair-official-details]')
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -47,7 +47,19 @@ jobs:
             echo "${{ matrix.region }} chưa có dữ liệu nền; bỏ qua cho đến khi quét sâu thành công."
           fi
 
-      - name: Bổ sung tối đa 40 hồ sơ chi tiết
+      - name: Sửa định danh chính thức trước khi tải chi tiết
+        if: steps.eligibility.outputs.eligible == 'true'
+        run: node scripts/repair-official-tender-identities.mjs "${{ matrix.region }}"
+
+      - name: Tạo hồ sơ tối thiểu từ định danh chính thức
+        id: official_detail_refresh
+        if: steps.eligibility.outputs.eligible == 'true'
+        continue-on-error: true
+        env:
+          DETAIL_LIMIT: "80"
+        run: node scripts/refresh-official-tender-details.mjs "${{ matrix.region }}"
+
+      - name: Bổ sung tối đa 80 hồ sơ đầy đủ, ưu tiên gói chưa có dữ liệu
         id: detail_scan
         if: steps.eligibility.outputs.eligible == 'true'
         continue-on-error: true
@@ -56,21 +68,42 @@ jobs:
           INCREMENTAL_DAYS: "2"
           WINDOW_DAYS: "2"
           PAGE_SIZE: "10"
-          DETAIL_LIMIT: "40"
+          DETAIL_LIMIT: "80"
           MIN_TENDER_COUNT: "1"
           ENABLE_HISTORICAL_FALLBACK: "0"
           FORCE_FULL_REFRESH: "0"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
+      - name: Xác nhận dữ liệu chi tiết dùng định danh chính thức
+        if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const regionDir = 'data/regions/gia-lai';
+          const data = JSON.parse(fs.readFileSync(path.join(regionDir, 'tenders.json'), 'utf8'));
+          const manual = (data.tenders || []).filter((item) => item.manualTenderOverride || String(item.id || '').startsWith('manual-') || String(item.sourceStage || '').startsWith('manual'));
+          if (manual.length) throw new Error(`Còn ${manual.length} gói thủ công`);
+          const summaryPath = path.join(regionDir, 'official-identity-repair-summary.json');
+          if (fs.existsSync(summaryPath)) {
+            const summary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+            for (const notifyNo of summary.repairedNotifyNos || []) {
+              if (!fs.existsSync(path.join(regionDir, 'details', `${notifyNo}.json`))) {
+                throw new Error(`${notifyNo} chưa có hồ sơ chi tiết`);
+              }
+            }
+          }
+          NODE
+
       - name: Đóng gói tỉnh bổ sung thành công
-        if: steps.detail_scan.outcome == 'success'
+        if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'
         run: |
           mkdir -p artifacts
           date -u +'%Y-%m-%dT%H:%M:%SZ' > "data/regions/${{ matrix.region }}/last-detail-backfill-at.txt"
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
       - name: Lưu dữ liệu bổ sung
-        if: steps.detail_scan.outcome == 'success'
+        if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: detail-region-${{ matrix.region }}
@@ -79,7 +112,7 @@ jobs:
           if-no-files-found: error
 
   merge-and-deploy:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[start-detail-backfill]')
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[start-detail-backfill]') || contains(github.event.head_commit.message, '[repair-official-details]')
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -104,7 +137,7 @@ jobs:
       - name: Khôi phục dữ liệu nền nếu cần
         run: node scripts/restore-legacy-gia-lai.mjs
 
-      - name: Tải các tỉnh bổ sung thành công
+      - name: Tải dữ liệu Gia Lai bổ sung thành công
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -123,6 +156,7 @@ jobs:
           fi
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
+          node scripts/data-health-check.mjs
           node -e 'const d=require("./data/tenders.json"); if (!d.tenders?.length) throw new Error("Từ chối ghi cơ sở dữ liệu rỗng");'
 
       - name: Ghi bổ sung về repository
@@ -133,7 +167,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Không có chi tiết mới"
           else
-            git commit -m "data: bổ sung nhà thầu thiết bị model và yêu cầu kỹ thuật [skip central scan]"
+            git commit -m "data: bổ sung hồ sơ chính thức nhà thầu thiết bị model [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

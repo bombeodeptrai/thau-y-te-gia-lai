@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   audit:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[coverage-audit]')
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[coverage-audit]') || contains(github.event.head_commit.message, '[repair-official-details]')
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -35,36 +35,65 @@ jobs:
         with:
           node-version: 22
 
-      - name: Kiểm tra bộ lọc thống nhất
+      - name: Kiểm tra bộ lọc và nguồn thật
         run: |
+          node --check scripts/repair-official-tender-identities.mjs
           node --check scripts/fetch-recent-location-audit.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
           node --test scripts/medical-scope.test.mjs
+
+      - name: Sửa mọi bản ghi thủ công bằng định danh chính thức
+        run: node scripts/repair-official-tender-identities.mjs "${{ matrix.region }}"
 
       - name: Đối chiếu 30 ngày bằng toàn bộ địa danh Gia Lai và Bình Định cũ
         id: location_audit
         continue-on-error: true
         env:
           AUDIT_DAYS: "30"
-          PAGE_SIZE: "50"
+          PAGE_SIZE: "10"
         run: node scripts/fetch-recent-location-audit.mjs "${{ matrix.region }}"
 
-      - name: Quét bù toàn bộ bản ghi theo mã tỉnh rồi áp dụng cùng bộ lọc
+      - name: Quét bù 30 ngày bằng mã tỉnh và địa danh
         id: medical_rescue
         continue-on-error: true
         env:
           RESCUE_DAYS: "30"
-          PAGE_SIZE: "100"
+          PAGE_SIZE: "10"
+          LOCATION_TERM_LIMIT: "16"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
 
+      - name: Xác nhận Gia Lai đã được đối chiếu từ nguồn thật
+        env:
+          LOCATION_OUTCOME: ${{ steps.location_audit.outcome }}
+          RESCUE_OUTCOME: ${{ steps.medical_rescue.outcome }}
+        run: |
+          if [ "$LOCATION_OUTCOME" != "success" ] && [ "$RESCUE_OUTCOME" != "success" ]; then
+            echo "Cả hai đường đối chiếu Gia Lai đều thất bại"
+            exit 1
+          fi
+          node <<'NODE'
+          const fs = require('fs');
+          const file = 'data/regions/gia-lai/tenders.json';
+          const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+          const manual = (data.tenders || []).filter((item) => item.manualTenderOverride || String(item.id || '').startsWith('manual-') || String(item.sourceStage || '').startsWith('manual'));
+          if (manual.length) throw new Error(`Còn ${manual.length} gói thủ công`);
+          const summaries = ['medical-rescue-summary.json', 'location-audit-summary.json']
+            .map((name) => `data/regions/gia-lai/${name}`)
+            .filter(fs.existsSync);
+          if (!summaries.length) throw new Error('Không có báo cáo đối chiếu nguồn thật');
+          for (const summaryFile of summaries) {
+            const summary = JSON.parse(fs.readFileSync(summaryFile, 'utf8'));
+            if (!(summary.candidateCount > 0)) throw new Error(`${summaryFile} có 0 ứng viên`);
+          }
+          console.log(`Gia Lai có ${summaries.length} báo cáo nguồn thật, không còn gói thủ công.`);
+          NODE
+
       - name: Đóng gói dữ liệu đã kiểm tra
-        if: steps.location_audit.outcome == 'success' || steps.medical_rescue.outcome == 'success'
         run: |
           mkdir -p artifacts
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
       - name: Lưu dữ liệu đối chiếu
-        if: steps.location_audit.outcome == 'success' || steps.medical_rescue.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: audited-region-${{ matrix.region }}
@@ -73,7 +102,7 @@ jobs:
           if-no-files-found: error
 
   merge-and-deploy:
-    if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[coverage-audit]'))
+    if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[coverage-audit]') || contains(github.event.head_commit.message, '[repair-official-details]'))
     needs: audit
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -117,6 +146,14 @@ jobs:
           node scripts/apply-manual-equipment-overrides.mjs
           node scripts/data-health-check.mjs
 
+      - name: Xác nhận dữ liệu tổng hợp không còn gói thủ công
+        run: |
+          node -e '
+            const d=require("./data/tenders.json");
+            const manual=(d.tenders||[]).filter(x=>x.manualTenderOverride || String(x.id||"").startsWith("manual-") || String(x.sourceStage||"").startsWith("manual"));
+            if(manual.length) throw new Error(`Dữ liệu tổng hợp còn ${manual.length} gói thủ công`);
+          '
+
       - name: Ghi kết quả đối chiếu về repository
         run: |
           git config user.name "github-actions[bot]"
@@ -125,7 +162,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Đối chiếu không phát hiện gói mới"
           else
-            git commit -m "data: đối chiếu Gia Lai bằng bộ lọc y tế thống nhất [skip central scan]"
+            git commit -m "data: đối chiếu Gia Lai từ nguồn chính thức [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

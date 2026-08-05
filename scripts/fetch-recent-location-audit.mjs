@@ -9,7 +9,7 @@ import {
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const AUDIT_DAYS = Math.max(7, Number(process.env.AUDIT_DAYS) || 30);
-const PAGE_SIZE = Math.max(10, Math.min(100, Number(process.env.PAGE_SIZE) || 50));
+const PAGE_SIZE = Math.max(1, Math.min(10, Number(process.env.PAGE_SIZE) || 10));
 const MAX_ATTEMPTS = 6;
 const TERM_CONCURRENCY = 2;
 
@@ -33,6 +33,14 @@ function compact(value, maxLength = 1500) {
 
 function unique(values) {
   return [...new Set((values || []).filter(Boolean))];
+}
+
+function isManualTender(item) {
+  return Boolean(
+    item?.manualTenderOverride
+    || String(item?.id || "").startsWith("manual-")
+    || String(item?.sourceStage || "").startsWith("manual"),
+  );
 }
 
 function delay(ms) {
@@ -65,15 +73,15 @@ async function postJson(body, timeoutMs = 30_000) {
           "Content-Type": "application/json",
           Origin: "https://muasamcong.mpi.gov.vn",
           Referer: "https://muasamcong.mpi.gov.vn/",
-          "User-Agent": `thau-y-te-location-audit-${slug}/3.0`,
+          "User-Agent": `thau-y-te-location-audit-${slug}/4.0`,
         },
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(timeoutMs),
       });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const text = await response.text();
+      if (!response.ok) throw new Error(`HTTP ${response.status}: ${compact(text, 300)}`);
       if (!text.trim().startsWith("{") && !text.trim().startsWith("[")) {
-        throw new Error("Nguồn không trả JSON");
+        throw new Error(`Nguồn không trả JSON: ${compact(text, 200)}`);
       }
       return JSON.parse(text);
     } catch (error) {
@@ -82,6 +90,35 @@ async function postJson(body, timeoutMs = 30_000) {
     }
   }
   throw lastError;
+}
+
+function extractSearchPage(payload) {
+  const pages = [];
+  const visited = new Set();
+  const visit = (value) => {
+    if (!value || typeof value !== "object" || visited.has(value)) return;
+    visited.add(value);
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+    if (Array.isArray(value.content)) {
+      pages.push({
+        content: value.content,
+        totalPages: Number(value.totalPages) || 1,
+        totalElements: Number(value.totalElements) || value.content.length,
+      });
+    }
+    if (value.page) visit(value.page);
+    for (const key of ["data", "result", "results", "responses", "body"]) {
+      if (value[key] !== undefined) visit(value[key]);
+    }
+  };
+  visit(payload);
+  return {
+    content: pages.flatMap((page) => page.content),
+    totalPages: Math.max(1, ...pages.map((page) => page.totalPages)),
+  };
 }
 
 function searchPayload(pageNumber, from, to, locationTerm) {
@@ -104,16 +141,19 @@ function searchPayload(pageNumber, from, to, locationTerm) {
 }
 
 async function fetchLocationTerm(locationTerm, from, to, index, total) {
-  const first = await postJson(searchPayload(0, from, to, locationTerm));
-  const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
-  const pages = Array.from({ length: totalPages - 1 }, (_, pageIndex) => pageIndex + 1);
-  const remaining = await mapLimited(pages, 2, (pageNumber) =>
-    postJson(searchPayload(pageNumber, from, to, locationTerm)));
-  const items = [first, ...remaining].flatMap((payload) => payload.page?.content || []);
-  if (items.length || index + 1 === total) {
+  try {
+    const first = extractSearchPage(await postJson(searchPayload(0, from, to, locationTerm)));
+    const pages = Array.from({ length: Math.max(0, first.totalPages - 1) }, (_, pageIndex) => pageIndex + 1);
+    const remainingPayloads = await mapLimited(pages, 2, (pageNumber) =>
+      postJson(searchPayload(pageNumber, from, to, locationTerm)));
+    const remaining = remainingPayloads.map(extractSearchPage);
+    const items = [first, ...remaining].flatMap((page) => page.content);
     process.stdout.write(`Đối chiếu ${index + 1}/${total}: ${locationTerm} = ${items.length}\n`);
+    return { term: locationTerm, success: true, items, error: "" };
+  } catch (error) {
+    process.stderr.write(`Đối chiếu ${locationTerm} thất bại: ${error.message}\n`);
+    return { term: locationTerm, success: false, items: [], error: compact(error.message, 500) };
   }
-  return items;
 }
 
 function statusOf(item) {
@@ -125,7 +165,7 @@ function statusOf(item) {
   const remaining = closeTime - Date.now();
   if (remaining > 0 && remaining <= 3 * 86_400_000) return "urgent";
   if (remaining > 0) return "open";
-  return closeTime ? "closed" : "closed";
+  return "closed";
 }
 
 function sourceUrl(item) {
@@ -154,7 +194,7 @@ function sourceUrl(item) {
 
 function normalizeItem(item, region) {
   const notifyNo = canonicalNotifyNo(item.notifyNo || item.notifyId || item.id);
-  const name = compact(item.bidName?.join(" ") || "Gói thầu chưa có tên");
+  const name = compact(item.bidName?.join?.(" ") || item.bidName || item.name || "Gói thầu chưa có tên");
   const locations = (item.locations || [])
     .map((location) => location.districtName || location.provName)
     .filter(Boolean);
@@ -194,12 +234,13 @@ function normalizeItem(item, region) {
     winningModels: [],
     losingModels: [],
     losingModelDisclosure: "",
+    sourceStage: "official-public-location-search",
   };
 }
 
 function mergeTender(previous, current) {
   if (!previous) return current;
-  return {
+  const merged = {
     ...previous,
     ...current,
     notifyNo: canonicalNotifyNo(current.notifyNo || previous.notifyNo),
@@ -211,6 +252,10 @@ function mergeTender(previous, current) {
     winningPrice: Number(current.winningPrice) || Number(previous.winningPrice) || 0,
     price: Number(current.price) || Number(previous.price) || 0,
   };
+  delete merged.manualTenderOverride;
+  delete merged.manualTenderVerifiedAt;
+  delete merged.sourceNotifyNo;
+  return merged;
 }
 
 const config = await readJson(regionsPath, { regions: [] });
@@ -227,29 +272,52 @@ if ((!previous.tenders || !previous.tenders.length) && slug === "gia-lai") {
 const now = new Date();
 const from = new Date(now.getTime() - AUDIT_DAYS * 86_400_000).toISOString();
 const to = now.toISOString();
-const terms = unique(region.locationTerms || [region.name]);
-const groups = await mapLimited(terms, TERM_CONCURRENCY, (term, index) =>
+const terms = unique([region.name, region.shortName, ...(region.locationTerms || [])]);
+const termResults = await mapLimited(terms, TERM_CONCURRENCY, (term, index) =>
   fetchLocationTerm(term, from, to, index, terms.length));
-const sourceItems = groups.flat();
+const successfulTermCount = termResults.filter((result) => result.success).length;
+if (!successfulTermCount) {
+  throw new Error(`Tất cả ${terms.length} truy vấn địa danh ${region.name} đều thất bại`);
+}
+
 const sourceUnique = new Map();
-for (const item of sourceItems) {
+for (const item of termResults.flatMap((result) => result.items)) {
   const key = canonicalNotifyNo(item.notifyNo || item.notifyId || item.id);
   if (key) sourceUnique.set(key, item);
 }
+if (!sourceUnique.size) {
+  throw new Error(`Đối chiếu địa danh ${region.name} trả 0 ứng viên; giữ dữ liệu cũ`);
+}
 
 const accepted = new Map();
+const acceptedDiagnostics = [];
+const rejectedDiagnostics = [];
 const rejectedReasons = new Map();
 for (const [key, item] of sourceUnique) {
   const result = classifyMedicalTender(item);
+  const diagnostic = {
+    notifyNo: key,
+    name: compact(item.bidName?.join?.(" ") || item.bidName || item.name, 500),
+    investor: compact(item.investorName || item.procuringEntityName, 300),
+    accepted: result.accepted,
+    score: result.score,
+    reason: result.reason,
+    matched: result.matched,
+  };
   if (result.accepted) {
     accepted.set(key, normalizeItem(item, region));
+    if (acceptedDiagnostics.length < 40) acceptedDiagnostics.push(diagnostic);
   } else {
     rejectedReasons.set(result.reason, (rejectedReasons.get(result.reason) || 0) + 1);
+    if (rejectedDiagnostics.length < 40) rejectedDiagnostics.push(diagnostic);
   }
 }
 
+const previousRows = previous.tenders || [];
+const officialPreviousRows = previousRows.filter((item) => !isManualTender(item));
+const removedManualCount = previousRows.length - officialPreviousRows.length;
 const merged = new Map();
-for (const item of previous.tenders || []) {
+for (const item of officialPreviousRows) {
   const key = canonicalNotifyNo(item.notifyNo || item.id);
   if (key) merged.set(key, { ...item, notifyNo: key });
 }
@@ -260,38 +328,43 @@ const tenders = [...merged.values()].sort(
 );
 const fetchedAt = new Date().toISOString();
 
-const payload = {
-  ...previous,
-  tenders,
-  fetchedAt,
-  collection: {
-    ...(previous.collection || {}),
-    lastLocationAuditAt: fetchedAt,
-    lastLocationAuditDays: AUDIT_DAYS,
-    lastLocationAuditCandidateCount: sourceUnique.size,
-    lastLocationAuditMedicalCount: accepted.size,
-    lastLocationAuditNewCount: Math.max(0, tenders.length - beforeCount),
-    filterStrategy: "unified-medical-scope-v3",
-  },
-};
+const collection = { ...(previous.collection || {}) };
+delete collection.manualTenderOverrideCount;
+delete collection.lastManualTenderOverrideAt;
+Object.assign(collection, {
+  lastLocationAuditAt: fetchedAt,
+  lastLocationAuditDays: AUDIT_DAYS,
+  lastLocationAuditCandidateCount: sourceUnique.size,
+  lastLocationAuditMedicalCount: accepted.size,
+  lastLocationAuditNewCount: Math.max(0, tenders.length - beforeCount),
+  lastRemovedManualTenderCount: removedManualCount,
+  filterStrategy: "unified-medical-scope-v4",
+});
 
+const payload = { ...previous, tenders, fetchedAt, collection };
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
 await writeFile(resolve(regionDir, "location-audit-summary.json"), `${JSON.stringify({
-  schemaVersion: 2,
+  schemaVersion: 4,
   regionSlug: slug,
   auditedAt: fetchedAt,
   auditDays: AUDIT_DAYS,
+  pageSize: PAGE_SIZE,
+  termResults: termResults.map(({ term, success, items, error }) => ({ term, success, count: items.length, error })),
+  successfulTermCount,
   candidateCount: sourceUnique.size,
   acceptedCount: accepted.size,
   rejectedCount: sourceUnique.size - accepted.size,
   rejectedReasons: Object.fromEntries([...rejectedReasons].sort((a, b) => b[1] - a[1])),
+  acceptedDiagnostics,
+  rejectedDiagnostics,
+  removedManualCount,
   beforeCount,
   afterCount: tenders.length,
-  filterStrategy: "unified-medical-scope-v3",
+  filterStrategy: "unified-medical-scope-v4",
 }, null, 2)}\n`);
 
 process.stdout.write(
-  `Đối chiếu ${region.name}: ${sourceUnique.size} ứng viên, nhận ${accepted.size}, `
-  + `thêm ${Math.max(0, tenders.length - beforeCount)}, tổng ${tenders.length}.\n`,
+  `Đối chiếu thật ${region.name}: ${sourceUnique.size} ứng viên, nhận ${accepted.size}, `
+  + `bỏ ${removedManualCount} bản ghi thủ công, tổng ${tenders.length}.\n`,
 );

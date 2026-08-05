@@ -1,4 +1,4 @@
-name: Cập nhật nhanh gói mới Gia Lai
+name: Cập nhật nhanh gói mới và hồ sơ chính thức Gia Lai
 
 on:
   push:
@@ -12,11 +12,15 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: rapid-gia-lai-update
+  cancel-in-progress: false
+
 jobs:
   detect:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[rapid-gia-lai]')
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[rapid-gia-lai]') || contains(github.event.head_commit.message, '[repair-official-details]')
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     outputs:
       changed: ${{ steps.compare.outputs.changed }}
     steps:
@@ -31,23 +35,27 @@ jobs:
         with:
           node-version: 22
 
-      - name: Kiểm tra bộ lọc y tế
-        run: node --test scripts/medical-scope.test.mjs
+      - name: Kiểm tra bộ lọc và quy trình sửa dữ liệu
+        run: |
+          node --test scripts/medical-scope.test.mjs
+          node --check scripts/repair-official-tender-identities.mjs
+          node --check scripts/refresh-official-tender-details.mjs
+          node --check scripts/fetch-recent-medical-rescue.mjs
 
       - name: Lưu bản dữ liệu trước khi quét
-        run: |
-          cp data/regions/gia-lai/tenders.json /tmp/gia-lai-before.json
-          if [ -f data/regions/gia-lai/medical-rescue-summary.json ]; then
-            cp data/regions/gia-lai/medical-rescue-summary.json /tmp/gia-lai-summary-before.json
-          fi
+        run: cp data/regions/gia-lai/tenders.json /tmp/gia-lai-before.json
 
-      - name: Quét toàn bộ gói 7 ngày gần nhất theo mã tỉnh Gia Lai và Bình Định cũ
+      - name: Thay bản ghi thủ công bằng định danh chính thức
+        run: node scripts/repair-official-tender-identities.mjs gia-lai
+
+      - name: Quét toàn bộ gói 7 ngày gần nhất bằng nguồn thật
         env:
           RESCUE_DAYS: "7"
-          PAGE_SIZE: "100"
+          PAGE_SIZE: "10"
+          LOCATION_TERM_LIMIT: "16"
         run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
 
-      - name: Xác định có gói mới hoặc thay đổi thật sự
+      - name: Xác định có gói mới hoặc định danh được sửa
         id: compare
         shell: bash
         run: |
@@ -56,17 +64,22 @@ jobs:
           const before = JSON.parse(fs.readFileSync('/tmp/gia-lai-before.json', 'utf8'));
           const after = JSON.parse(fs.readFileSync('data/regions/gia-lai/tenders.json', 'utf8'));
           const normalize = (rows) => [...(rows || [])]
+            .map((item) => ({
+              ...item,
+              fetchedAt: undefined,
+              manualTenderVerifiedAt: undefined,
+            }))
             .sort((a, b) => String(a.notifyNo || a.id).localeCompare(String(b.notifyNo || b.id)));
           const changed = JSON.stringify(normalize(before.tenders)) !== JSON.stringify(normalize(after.tenders));
           fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${changed}\n`);
-          console.log(changed ? 'Phát hiện gói mới hoặc thông tin gói thay đổi.' : 'Không có thay đổi dữ liệu gói thầu.');
+          console.log(changed ? 'Phát hiện gói mới hoặc định danh chính thức thay đổi.' : 'Không có thay đổi dữ liệu gói thầu.');
           NODE
 
   apply-and-deploy:
     if: needs.detect.outputs.changed == 'true'
     needs: detect
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 90
     concurrency:
       group: pages-deploy
       cancel-in-progress: false
@@ -85,11 +98,45 @@ jobs:
         with:
           node-version: 22
 
-      - name: Quét lại Gia Lai trên dữ liệu mới nhất
+      - name: Sửa lại định danh chính thức trên bản main mới nhất
+        run: node scripts/repair-official-tender-identities.mjs gia-lai
+
+      - name: Quét lại danh sách Gia Lai trên dữ liệu mới nhất
         env:
-          RESCUE_DAYS: "7"
-          PAGE_SIZE: "100"
+          RESCUE_DAYS: "14"
+          PAGE_SIZE: "10"
+          LOCATION_TERM_LIMIT: "16"
         run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
+
+      - name: Tạo ngay hồ sơ chi tiết từ định danh chính thức
+        env:
+          DETAIL_LIMIT: "80"
+        run: node scripts/refresh-official-tender-details.mjs gia-lai
+
+      - name: Xác nhận không còn bản ghi thủ công và đã có hồ sơ sửa chữa
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const regionDir = 'data/regions/gia-lai';
+          const data = JSON.parse(fs.readFileSync(path.join(regionDir, 'tenders.json'), 'utf8'));
+          const rows = data.tenders || [];
+          const manual = rows.filter((item) => item.manualTenderOverride || String(item.id || '').startsWith('manual-') || String(item.sourceStage || '').startsWith('manual'));
+          if (manual.length) throw new Error(`Còn ${manual.length} bản ghi gói thầu thủ công`);
+          const summaryPath = path.join(regionDir, 'official-identity-repair-summary.json');
+          if (fs.existsSync(summaryPath)) {
+            const summary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
+            for (const notifyNo of summary.repairedNotifyNos || []) {
+              const tender = rows.find((item) => item.notifyNo === notifyNo);
+              if (!tender?.notifyId || String(tender.id || '').startsWith('manual-')) {
+                throw new Error(`${notifyNo} chưa có định danh chính thức`);
+              }
+              const detailPath = path.join(regionDir, 'details', `${notifyNo}.json`);
+              if (!fs.existsSync(detailPath)) throw new Error(`${notifyNo} chưa tạo được hồ sơ chi tiết`);
+            }
+          }
+          console.log('Dữ liệu Gia Lai đã dùng định danh chính thức và có hồ sơ chi tiết cho các gói được sửa.');
+          NODE
 
       - name: Hợp nhất và kiểm tra an toàn
         run: |
@@ -97,7 +144,7 @@ jobs:
           node scripts/apply-manual-equipment-overrides.mjs
           node scripts/data-health-check.mjs
 
-      - name: Ghi gói mới về repository
+      - name: Ghi dữ liệu chính thức về repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -105,7 +152,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Một tiến trình khác đã cập nhật dữ liệu trước đó."
           else
-            git commit -m "data: cập nhật nhanh gói mới Gia Lai [skip central scan]"
+            git commit -m "data: thay bản ghi thủ công bằng hồ sơ chính thức Gia Lai [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
