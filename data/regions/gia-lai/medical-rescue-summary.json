@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-05T02:31:27.659Z",
+  "rescuedAt": "2026-08-05T10:15:54.600Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -15,7 +15,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 463,
+      "count": 468,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 46,
+      "count": 48,
       "error": ""
     },
     {
@@ -63,7 +63,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 17,
+      "count": 10,
       "error": ""
     },
     {
@@ -111,17 +111,17 @@
   ],
   "successfulStrategyCount": 17,
   "candidateCount": 813,
-  "acceptedCount": 28,
-  "rejectedCount": 785,
+  "acceptedCount": 29,
+  "rejectedCount": 784,
   "rejectedReasons": {
-    "excluded:xay dung": 274,
-    "insufficient-medical-context": 249,
-    "excluded:tu van": 120,
+    "excluded:xay dung": 273,
+    "insufficient-medical-context": 253,
+    "excluded:tu van": 115,
     "excluded:sua chua": 43,
-    "excluded:xay lap": 35,
-    "excluded:bao hiem": 7,
+    "excluded:xay lap": 36,
+    "excluded:tham dinh": 7,
     "excluded:bao ve": 6,
-    "excluded:tham dinh": 6,
+    "excluded:bao hiem": 6,
     "excluded:may tinh": 5,
     "excluded:trang phuc": 5,
     "excluded:kiem dinh": 4,
@@ -129,10 +129,10 @@
     "excluded:van phong pham": 3,
     "excluded:bao tri": 3,
     "excluded:thuoc generic": 3,
+    "excluded:cai tao": 3,
     "excluded:thuc pham": 2,
     "excluded:cay xanh": 2,
     "excluded:duong day": 2,
-    "excluded:cai tao": 2,
     "excluded:thiet bi dien": 1,
     "excluded:tu dien": 1,
     "excluded:dieu hoa khong khi": 1,
@@ -141,11 +141,23 @@
     "excluded:cong nghe thong tin": 1,
     "excluded:tin hoc": 1,
     "excluded:in an": 1,
-    "excluded:bao ho lao dong": 1,
     "excluded:giam sat thi cong": 1,
     "excluded:may in": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600421414",
+      "name": "Mua vật tư y tế nẹp vít và phim X quang năm 2026 - 2027 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
+      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "x quang",
+        "benh vien"
+      ]
+    },
     {
       "notifyNo": "IB2600407003",
       "name": "Mua sắm 03 Ống soi sử dụng trong phẫu thuật",
@@ -564,6 +576,39 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600384354",
+      "name": "Gói thầu số 02/XL: Thi công xây lắp và xử lý hành lang tuyến công trình Hoàn thiện lưới điện, khắc phục thiệt hại bão lụt khu vực phía Tây tỉnh Gia Lai năm 2026 bổ sung",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600418145",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Ban Quản lý phường Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600419677",
+      "name": "Thi công xây dựng",
+      "investor": "PHÒNG KINH TẾ XÃ IA KHƯƠL",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600396722",
       "name": "Gói thầu số 02: Mua sắm phụ tùng thay thế (06 Trạm Bình Định cũ)",
       "investor": "Trung tâm Quan trắc tài nguyên và môi trường",
@@ -941,40 +986,11 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600354956",
-      "name": "Cung cấp Vật tư thiết bị cơ Nhà máy Vĩnh Sơn - Sông Hinh",
-      "investor": "CÔNG TY CỔ PHẦN THỦY ĐIỆN VĨNH SƠN SÔNG HINH",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600354832",
-      "name": "Cung cấp Vật tư thiết bị điện Nhà máy Vĩnh Sơn - Sông Hinh",
-      "investor": "CÔNG TY CỔ PHẦN THỦY ĐIỆN VĨNH SƠN SÔNG HINH",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:thiet bi dien",
-      "matched": [
-        "thiet bi dien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600412436",
-      "name": "Gói 1: Mua xe ô tô con 7 chỗ phục vụ công tác chung",
-      "investor": "VĂN PHÒNG HỘI ĐỒNG NHÂN DÂN VÀ ỦY BAN NHÂN DÂN PHƯỜNG AN NHƠN BẮC",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
-  "beforeCount": 818,
-  "afterCount": 818,
+  "beforeCount": 819,
+  "afterCount": 819,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v4"
 }

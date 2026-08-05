@@ -1,6 +1,47 @@
 {
   "tenders": [
     {
+      "id": "ca342949-7892-4c0b-800d-54357b8c9859",
+      "notifyId": "ca342949-7892-4c0b-800d-54357b8c9859",
+      "bidId": "7fb46203-13e0-4f8a-b896-9215ce86273c",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "DTRR",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-1-tbmt",
+      "notifyNo": "IB2600421414",
+      "name": "Mua vật tư y tế nẹp vít và phim X quang năm 2026 - 2027 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
+      "location": "Phường Quy Nhơn Nam",
+      "closeDate": "2026-08-17T10:00:00",
+      "publicDate": "2026-08-05T09:14:46.098",
+      "price": 4197877700,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=ca342949-7892-4c0b-800d-54357b8c9859&notifyId=ca342949-7892-4c0b-800d-54357b8c9859&inputResultId=&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600421414&planNo=PL2600213104&step=tbmt&isInternet=1&bidForm=DTRR",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "IB2600425097",
       "notifyId": "IB2600425097",
       "bidId": "5c5ad850-80f5-42fb-9e65-e966a21531f4",
@@ -358,9 +399,9 @@
       "publicDate": "2026-07-29T11:35:56.45",
       "price": 538974632,
       "category": "Vật tư & hóa chất",
-      "status": "urgent",
+      "status": "evaluating",
       "sourceStatus": "01",
-      "statusForNotify": "",
+      "statusForNotify": "DXT",
       "bidderCount": null,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=48c9fe2d-c9f5-4945-9323-7d65d6e4cba1&notifyId=48c9fe2d-c9f5-4945-9323-7d65d6e4cba1&inputResultId=&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600378695&planNo=PL2600174220&step=tbmt&isInternet=1&bidForm=CGTTRG",
       "winnerNames": [],
@@ -233780,7 +233821,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-08-05T02:35:21.251Z",
+  "fetchedAt": "2026-08-05T10:17:11.200Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 1604,
   "regions": [
@@ -233899,12 +233940,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 818,
+      "tenderCount": 819,
       "bidderCount": 2774,
       "equipmentCount": 2698,
       "detailTenderCount": 160,
       "coverageDays": 1095,
-      "fetchedAt": "2026-08-05T02:31:27.659Z",
+      "fetchedAt": "2026-08-05T10:15:54.600Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -233963,6 +234004,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 2861
+    "scannedTenderCount": 2862
   }
 }
