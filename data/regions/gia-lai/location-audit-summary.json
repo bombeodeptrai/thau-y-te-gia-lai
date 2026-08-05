@@ -1,20 +1,20 @@
 {
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-05T17:15:16.970Z",
+  "auditedAt": "2026-08-05T23:35:29.567Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 471,
+      "count": 467,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 84,
+      "count": 88,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 51,
+      "count": 55,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 25,
+      "count": 21,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -276,14 +276,14 @@
   "rejectedCount": 1007,
   "rejectedReasons": {
     "excluded:xay dung": 313,
-    "insufficient-medical-context": 271,
+    "insufficient-medical-context": 272,
     "excluded:tu van": 240,
-    "excluded:sua chua": 59,
-    "excluded:xay lap": 42,
+    "excluded:sua chua": 53,
+    "excluded:xay lap": 44,
+    "excluded:cai tao": 10,
     "excluded:trang phuc": 10,
+    "excluded:bao hiem": 10,
     "excluded:tham dinh": 9,
-    "excluded:bao hiem": 9,
-    "excluded:cai tao": 8,
     "excluded:may tinh": 7,
     "excluded:bao ve": 7,
     "excluded:rac thai": 5,
@@ -764,6 +764,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600428677",
+      "name": "Cung cấp dịch vụ tổ chức lớp tập huấn hướng dẫn triển khai, thực hiện Chương trình mục tiêu quốc gia về phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi năm 2026 tại tỉnh Gia Lai",
+      "investor": "Văn phòng Bộ Nội vụ",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600401906",
       "name": "Tư vấn giám sát thi công xây dựng và lắp đăt thiết bị",
       "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
@@ -1177,18 +1186,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600419871",
-      "name": "Gói thầu 58-TVTK-2027: Tư vấn, lập báo cáo Kinh tế - Kỹ thuật xây dựng",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,

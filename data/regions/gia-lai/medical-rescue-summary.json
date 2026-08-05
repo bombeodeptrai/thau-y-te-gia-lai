@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-05T17:15:40.530Z",
+  "rescuedAt": "2026-08-05T23:35:57.840Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -15,13 +15,13 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 471,
+      "count": 467,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 84,
+      "count": 88,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 51,
+      "count": 55,
       "error": ""
     },
     {
@@ -110,26 +110,26 @@
     }
   ],
   "successfulStrategyCount": 17,
-  "candidateCount": 827,
+  "candidateCount": 831,
   "acceptedCount": 29,
-  "rejectedCount": 798,
+  "rejectedCount": 802,
   "rejectedReasons": {
     "excluded:xay dung": 281,
-    "insufficient-medical-context": 257,
-    "excluded:tu van": 119,
+    "insufficient-medical-context": 258,
+    "excluded:tu van": 118,
     "excluded:sua chua": 43,
-    "excluded:xay lap": 36,
+    "excluded:xay lap": 37,
+    "excluded:bao hiem": 7,
     "excluded:bao ve": 6,
-    "excluded:bao hiem": 6,
     "excluded:may tinh": 5,
     "excluded:trang phuc": 5,
+    "excluded:cai tao": 5,
     "excluded:tham dinh": 5,
     "excluded:kiem dinh": 4,
     "excluded:rac thai": 3,
     "excluded:van phong pham": 3,
     "excluded:bao tri": 3,
     "excluded:thuoc generic": 3,
-    "excluded:cai tao": 3,
     "excluded:thuc pham": 2,
     "excluded:cay xanh": 2,
     "excluded:duong day": 2,
