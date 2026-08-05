@@ -16,9 +16,9 @@ concurrency:
 
 jobs:
   scan:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]') || contains(github.event.head_commit.message, '[scan-overlap]')
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]') || contains(github.event.head_commit.message, '[scan-overlap]') || contains(github.event.head_commit.message, '[repair-official-details]')
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     strategy:
       fail-fast: false
       matrix:
@@ -38,8 +38,12 @@ jobs:
           DRY_RUN: "1"
         run: |
           node --test scripts/medical-scope.test.mjs
+          node --check scripts/repair-official-tender-identities.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
           node scripts/run-region-scan.mjs "${{ matrix.region }}"
+
+      - name: Sửa định danh chính thức trước khi quét
+        run: node scripts/repair-official-tender-identities.mjs "${{ matrix.region }}"
 
       - name: Quét chồng lấn 14 ngày gần nhất và giữ lịch sử 3 năm
         id: regional_scan
@@ -49,19 +53,28 @@ jobs:
           INCREMENTAL_DAYS: "14"
           WINDOW_DAYS: "7"
           PAGE_SIZE: "10"
-          DETAIL_LIMIT: "12"
+          DETAIL_LIMIT: "40"
           MIN_TENDER_COUNT: "1"
           ENABLE_HISTORICAL_FALLBACK: "0"
           FORCE_FULL_REFRESH: "0"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
-      - name: Quét bù toàn bộ bản ghi gần đây rồi áp dụng cùng bộ lọc
+      - name: Quét bù 21 ngày bằng mã tỉnh và địa danh
         id: medical_rescue
         continue-on-error: true
         env:
           RESCUE_DAYS: "21"
-          PAGE_SIZE: "100"
+          PAGE_SIZE: "10"
+          LOCATION_TERM_LIMIT: "16"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
+
+      - name: Xác nhận không còn gói thủ công
+        run: |
+          node -e '
+            const d=require("./data/regions/gia-lai/tenders.json");
+            const manual=(d.tenders||[]).filter(x=>x.manualTenderOverride || String(x.id||"").startsWith("manual-") || String(x.sourceStage||"").startsWith("manual"));
+            if(manual.length) throw new Error(`Còn ${manual.length} gói thủ công`);
+          '
 
       - name: Đóng gói dữ liệu Gia Lai hợp lệ
         if: steps.regional_scan.outcome == 'success' || steps.medical_rescue.outcome == 'success'
@@ -80,7 +93,7 @@ jobs:
           if-no-files-found: error
 
   merge-and-deploy:
-    if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]') || contains(github.event.head_commit.message, '[scan-overlap]'))
+    if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[restore-data]') || contains(github.event.head_commit.message, '[scan-overlap]') || contains(github.event.head_commit.message, '[repair-official-details]'))
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -134,7 +147,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Dữ liệu không thay đổi"
           else
-            git commit -m "data: cập nhật dự phòng Gia Lai [skip central scan]"
+            git commit -m "data: cập nhật dự phòng Gia Lai từ nguồn chính thức [skip central scan]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
