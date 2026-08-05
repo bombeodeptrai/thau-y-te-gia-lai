@@ -51,7 +51,15 @@ jobs:
         if: steps.eligibility.outputs.eligible == 'true'
         run: node scripts/repair-official-tender-identities.mjs "${{ matrix.region }}"
 
-      - name: Bổ sung tối đa 80 hồ sơ chi tiết, ưu tiên gói chưa có dữ liệu
+      - name: Tạo hồ sơ tối thiểu từ định danh chính thức
+        id: official_detail_refresh
+        if: steps.eligibility.outputs.eligible == 'true'
+        continue-on-error: true
+        env:
+          DETAIL_LIMIT: "80"
+        run: node scripts/refresh-official-tender-details.mjs "${{ matrix.region }}"
+
+      - name: Bổ sung tối đa 80 hồ sơ đầy đủ, ưu tiên gói chưa có dữ liệu
         id: detail_scan
         if: steps.eligibility.outputs.eligible == 'true'
         continue-on-error: true
@@ -67,7 +75,7 @@ jobs:
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
       - name: Xác nhận dữ liệu chi tiết dùng định danh chính thức
-        if: steps.detail_scan.outcome == 'success'
+        if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'
         run: |
           node <<'NODE'
           const fs = require('fs');
@@ -88,14 +96,14 @@ jobs:
           NODE
 
       - name: Đóng gói tỉnh bổ sung thành công
-        if: steps.detail_scan.outcome == 'success'
+        if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'
         run: |
           mkdir -p artifacts
           date -u +'%Y-%m-%dT%H:%M:%SZ' > "data/regions/${{ matrix.region }}/last-detail-backfill-at.txt"
           tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
 
       - name: Lưu dữ liệu bổ sung
-        if: steps.detail_scan.outcome == 'success'
+        if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: detail-region-${{ matrix.region }}

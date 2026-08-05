@@ -39,8 +39,8 @@ jobs:
         run: |
           node --test scripts/medical-scope.test.mjs
           node --check scripts/repair-official-tender-identities.mjs
+          node --check scripts/refresh-official-tender-details.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
-          node --check scripts/run-region-scan.mjs
 
       - name: Lưu bản dữ liệu trước khi quét
         run: cp data/regions/gia-lai/tenders.json /tmp/gia-lai-before.json
@@ -79,7 +79,7 @@ jobs:
     if: needs.detect.outputs.changed == 'true'
     needs: detect
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 90
     concurrency:
       group: pages-deploy
       cancel-in-progress: false
@@ -108,17 +108,10 @@ jobs:
           LOCATION_TERM_LIMIT: "16"
         run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
 
-      - name: Tải ngay hồ sơ chi tiết còn thiếu
+      - name: Tạo ngay hồ sơ chi tiết từ định danh chính thức
         env:
-          SCAN_DAYS: "1095"
-          INCREMENTAL_DAYS: "14"
-          WINDOW_DAYS: "7"
-          PAGE_SIZE: "10"
           DETAIL_LIMIT: "80"
-          MIN_TENDER_COUNT: "1"
-          ENABLE_HISTORICAL_FALLBACK: "0"
-          FORCE_FULL_REFRESH: "0"
-        run: node scripts/run-region-scan.mjs gia-lai
+        run: node scripts/refresh-official-tender-details.mjs gia-lai
 
       - name: Xác nhận không còn bản ghi thủ công và đã có hồ sơ sửa chữa
         run: |

@@ -7,6 +7,7 @@ for (const file of [
   "scripts/fetch-recent-location-audit.mjs",
   "scripts/fetch-recent-medical-rescue.mjs",
   "scripts/repair-official-tender-identities.mjs",
+  "scripts/refresh-official-tender-details.mjs",
 ]) {
   execFileSync(process.execPath, ["--check", file], { stdio: "inherit" });
 }
@@ -96,7 +97,8 @@ if (!coverageAudit.includes("repair-official-tender-identities.mjs")
 const detailScan = await readFile(detailPath, "utf8");
 if (!detailScan.includes('cron: "17 */2 * * *"')
   || !detailScan.includes('DETAIL_LIMIT: "80"')
-  || !detailScan.includes("repair-official-tender-identities.mjs")) {
+  || !detailScan.includes("repair-official-tender-identities.mjs")
+  || !detailScan.includes("refresh-official-tender-details.mjs")) {
   throw new Error("Gia Lai phải bổ sung tối đa 80 hồ sơ mỗi 2 giờ sau khi sửa định danh chính thức");
 }
 
@@ -104,10 +106,10 @@ const rapidScan = await readFile(rapidPath, "utf8");
 if (!rapidScan.includes('cron: "*/10 * * * *"')
   || !rapidScan.includes("repair-official-tender-identities.mjs gia-lai")
   || !rapidScan.includes("fetch-recent-medical-rescue.mjs gia-lai")
-  || !rapidScan.includes("run-region-scan.mjs gia-lai")
+  || !rapidScan.includes("refresh-official-tender-details.mjs gia-lai")
   || !rapidScan.includes('DETAIL_LIMIT: "80"')
   || rapidScan.includes('PAGE_SIZE: "100"')) {
-  throw new Error("Luồng quét nhanh Gia Lai chưa sửa định danh, tải chi tiết hoặc còn pageSize không an toàn");
+  throw new Error("Luồng quét nhanh Gia Lai chưa sửa định danh, tạo chi tiết hoặc còn pageSize không an toàn");
 }
 
 for (const file of [quickPath, auditPath, rapidPath]) {
@@ -147,4 +149,12 @@ if (!repairScript.includes("dynamic-direct-notify-search")
   throw new Error("Bộ sửa định danh chưa tìm động từ nguồn thật hoặc còn mã gói viết cứng");
 }
 
-console.log("Gia Lai dùng nguồn chính thức, sửa định danh và tải chi tiết; 10 tỉnh còn lại chỉ quét mỗi tuần.");
+const detailScript = await readFile("scripts/refresh-official-tender-details.mjs", "utf8");
+if (!detailScript.includes("PLAN_BID_DETAIL_URL")
+  || !detailScript.includes("ONLINE_REOFFER_HSMT_URL")
+  || !detailScript.includes("official-identity-plan-and-public-technical-details")
+  || /IB\d{10}/.test(detailScript)) {
+  throw new Error("Bộ tạo hồ sơ chi tiết chưa dùng định danh chính thức hoặc còn mã gói viết cứng");
+}
+
+console.log("Gia Lai dùng nguồn chính thức, sửa định danh và tạo chi tiết; 10 tỉnh còn lại chỉ quét mỗi tuần.");
