@@ -1,14 +1,14 @@
 {
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-05T10:15:33.708Z",
+  "auditedAt": "2026-08-05T02:30:59.773Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 467,
+      "count": 463,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 10,
+      "count": 17,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 94,
+      "count": 92,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 36,
+      "count": 35,
       "error": ""
     },
     {
@@ -194,19 +194,19 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 18,
+      "count": 21,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 28,
+      "count": 29,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -271,21 +271,21 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1030,
-  "acceptedCount": 31,
-  "rejectedCount": 999,
+  "candidateCount": 1035,
+  "acceptedCount": 30,
+  "rejectedCount": 1005,
   "rejectedReasons": {
-    "excluded:xay dung": 306,
-    "insufficient-medical-context": 270,
-    "excluded:tu van": 238,
+    "excluded:xay dung": 308,
+    "insufficient-medical-context": 266,
+    "excluded:tu van": 246,
     "excluded:sua chua": 61,
-    "excluded:xay lap": 42,
-    "excluded:tham dinh": 10,
+    "excluded:xay lap": 41,
+    "excluded:bao hiem": 10,
+    "excluded:tham dinh": 9,
     "excluded:trang phuc": 9,
-    "excluded:bao hiem": 9,
-    "excluded:cai tao": 8,
     "excluded:may tinh": 7,
     "excluded:bao ve": 7,
+    "excluded:cai tao": 7,
     "excluded:rac thai": 5,
     "excluded:bao tri": 3,
     "excluded:van phong pham": 3,
@@ -297,10 +297,12 @@
     "excluded:phan bon": 2,
     "excluded:in an": 1,
     "excluded:cong nghe thong tin": 1,
+    "excluded:bao ho lao dong": 1,
     "excluded:kiem dinh": 1,
     "excluded:may in": 1,
     "excluded:may phat dien": 1,
     "excluded:dieu hoa khong khi": 1,
+    "excluded:suat an": 1,
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
@@ -625,19 +627,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600421414",
-      "name": "Mua vật tư y tế nẹp vít và phim X quang năm 2026 - 2027 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
-      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "x quang",
-        "benh vien"
-      ]
-    },
-    {
       "notifyNo": "IB2600367634",
       "name": "Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh cho Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
       "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
@@ -763,89 +752,6 @@
     }
   ],
   "rejectedDiagnostics": [
-    {
-      "notifyNo": "IB2600426324",
-      "name": "Gói thầu số 01",
-      "investor": "BAN QUẢN LÝ PHƯỜNG AN KHÊ, TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600426209",
-      "name": "Cải tạo và sửa chữa nhỏ phòng thu viện phí, phòng cấp thuốc BHYT",
-      "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600384354",
-      "name": "Gói thầu số 02/XL: Thi công xây lắp và xử lý hành lang tuyến công trình Hoàn thiện lưới điện, khắc phục thiệt hại bão lụt khu vực phía Tây tỉnh Gia Lai năm 2026 bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600425979",
-      "name": "Thẩm định giá thiết bị",
-      "investor": "Sở Tài chính Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tham dinh",
-      "matched": [
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600425947",
-      "name": "Thẩm tra Báo cáo kinh tế kỹ thuật",
-      "investor": "Sở Tài chính Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600425843",
-      "name": "Gói thầu sửa chữa, nâng cấp hệ thống SCADA",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600425728",
-      "name": "Gói thầu số 01: Tư vấn lập hồ sơ mời thầu và đánh giá hồ sơ dự thầu",
-      "investor": "Trung tâm Lưu trữ Lịch sử tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600425631",
-      "name": "Mua vé máy bay phục vụ Đoàn cán bộ, huấn luyện viên, vận động viên tỉnh Phú Thọ tham gia thi đấu giải vô địch Bắn nỏ, Bắn ná quốc gia lần thứ IX năm 2026, tại tỉnh Gia Lai",
-      "investor": "Sở Văn hóa Thể thao và Du lịch tỉnh Phú Thọ",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
     {
       "notifyNo": "IB2600425422",
       "name": "Xây lắp",
@@ -1187,10 +1093,106 @@
         "xay dung",
         "tu van"
       ]
+    },
+    {
+      "notifyNo": "IB2600419010",
+      "name": "Gói thầu số 09-TVGSKS-2027: Tư vấn giám sát công tác khảo sát xây dựng",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600418994",
+      "name": "Gói thầu số 09-TVTK-2027: Tư vấn khảo sát, lập BCKTKT đầu tư xây dựng dự án",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600418952",
+      "name": "Gói thầu 05/TVGSKS/2027: Tư vấn giám sát công tác khảo sát xây dựng",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600418927",
+      "name": "Gói thầu 05/TVTK/2027: Tư vấn khảo sát, lập báo cáo Kinh tế - Kỹ thuật xây dựng",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600418914",
+      "name": "Gói thầu số 28-TVGSKS-2027: Tư vấn giám sát công tác khảo sát xây dựng",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600418900",
+      "name": "Gói thầu số 28-TVTK-2027: Tư vấn khảo sát, lập BCKTKT đầu tư xây dựng dự án",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600418880",
+      "name": "Gói thầu số 07-TVGSKS-2027: Tư vấn giám sát công tác khảo sát xây dựng",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600418836",
+      "name": "Gói thầu số 07-TVTK-2027: Tư vấn khảo sát, lập BCKTKT đầu tư xây dựng dự án",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
     }
   ],
   "removedManualCount": 0,
-  "beforeCount": 818,
-  "afterCount": 819,
+  "beforeCount": 806,
+  "afterCount": 818,
   "filterStrategy": "unified-medical-scope-v4"
 }
