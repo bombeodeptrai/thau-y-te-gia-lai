@@ -1,14 +1,14 @@
 {
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-05T23:35:29.567Z",
+  "auditedAt": "2026-08-06T10:17:47.327Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 467,
+      "count": 466,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 43,
+      "count": 41,
       "error": ""
     },
     {
@@ -62,13 +62,13 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 85,
+      "count": 84,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 29,
+      "count": 31,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1038,
+  "candidateCount": 1036,
   "acceptedCount": 31,
-  "rejectedCount": 1007,
+  "rejectedCount": 1005,
   "rejectedReasons": {
-    "excluded:xay dung": 313,
-    "insufficient-medical-context": 272,
-    "excluded:tu van": 240,
+    "excluded:xay dung": 316,
+    "insufficient-medical-context": 269,
+    "excluded:tu van": 239,
     "excluded:sua chua": 53,
     "excluded:xay lap": 44,
     "excluded:cai tao": 10,
@@ -287,10 +287,10 @@
     "excluded:may tinh": 7,
     "excluded:bao ve": 7,
     "excluded:rac thai": 5,
-    "excluded:bao tri": 3,
     "excluded:van phong pham": 3,
     "excluded:cay xanh": 3,
     "excluded:thuoc generic": 3,
+    "excluded:bao tri": 2,
     "excluded:duong day": 2,
     "excluded:thuc pham": 2,
     "excluded:giam sat thi cong": 2,
@@ -764,6 +764,52 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600429054",
+      "name": "Gói thầu số 01-TVTT-2027: Tư vấn thẩm tra BCKTKT dự án",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600429043",
+      "name": "Gói thầu số 01-TVGSKS-2027: Tư vấn giám sát khảo sát xây dựng dự án",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600429025",
+      "name": "Gói thầu số 01-TVTK-2027: Tư vấn khảo sát, lập Báo cáo Kinh tế - Kỹ thuật đầu tư xây dựng dự án",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600428996",
+      "name": "Tư vấn lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600428677",
       "name": "Cung cấp dịch vụ tổ chức lớp tập huấn hướng dẫn triển khai, thực hiện Chương trình mục tiêu quốc gia về phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi năm 2026 tại tỉnh Gia Lai",
       "investor": "Văn phòng Bộ Nội vụ",
@@ -1140,48 +1186,6 @@
       "notifyNo": "IB2600420081",
       "name": "Báo điện tử 18",
       "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600420080",
-      "name": "Gói thầu số 02-TVTK-2027: Tư vấn khảo sát, lập Báo cáo Kinh tế - Kỹ thuật đầu tư xây dựng dự án",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600420051",
-      "name": "Mua sắm, lắp đặt hệ thống điện mặt trời áp mái",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600420009",
-      "name": "Gói thầu 57-TVTK-2027: Tư vấn, lập báo cáo Kinh tế - Kỹ thuật xây dựng",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600419902",
-      "name": "Chi phí khảo sát địa hình (bao gồm lập nhiệm vụ khảo sát địa hình)",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
       "accepted": false,
       "score": 0,
       "reason": "insufficient-medical-context",
