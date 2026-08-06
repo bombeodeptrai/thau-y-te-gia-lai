@@ -1,6 +1,7 @@
 import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { isMedicalTender, medicalCategory } from "./medical-scope.mjs";
 import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
@@ -45,7 +46,7 @@ const SEARCH_KEYWORDS = [
 
 // Hồ sơ cũ trước đợt thay đổi địa giới thường không còn trường locations.provCode.
 // Khi quét bù 3 năm, tìm giao giữa địa danh trong tên đơn vị và từ khóa trong tên gói,
-// sau đó vẫn chạy bộ lọc y tế chặt chẽ ở isMedical().
+// sau đó vẫn chạy bộ lọc y tế dùng chung ở isMedicalTender().
 const HISTORICAL_LOCATION_TERMS = [
   "Gia Lai", "Bình Định",
   "Pleiku", "An Khê", "Ayun Pa", "Chư Păh", "Chư Prông", "Chư Sê", "Chư Pưh",
@@ -59,13 +60,6 @@ const HISTORICAL_TITLE_TERMS = [
   "xét nghiệm", "chẩn đoán", "phẫu thuật", "nha khoa", "lọc máu", "chạy thận",
   "kit", "test", "stent", "catheter", "implant", "bơm tiêm", "kim", "găng",
   "khẩu trang", "bông", "gạc", "oxy", "khí y tế",
-];
-
-// Các gói thuộc phạm vi Gia Lai nhưng có thể bị nguồn
-// gán mã tỉnh hoặc địa giới chưa đồng nhất.
-const FORCED_NOTIFY_NOS = [
-  "IB2600391963",
-  "IB2600384538",
 ];
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -145,28 +139,6 @@ function historicalSearchPayload(pageNumber, from, to, locationTerm, titleTerm) 
   }];
 }
 
-function notifyNoSearchPayload(notifyNo) {
-  return [{
-    pageSize: PAGE_SIZE,
-    pageNumber: 0,
-    sortBy: "publicDate",
-    sortType: "DESC",
-    query: [{
-      index: "es-contractor-selection",
-      keyWord: notifyNo,
-      matchType: "exact",
-      matchFields: ["notifyNo"],
-      filters: [
-        {
-          fieldName: "type",
-          searchType: "in",
-          fieldValues: ["es-notify-contractor"],
-        },
-      ],
-    }],
-  }];
-}
-
 function delay(ms) {
   return new Promise((resolveDelay) => setTimeout(resolveDelay, ms));
 }
@@ -216,37 +188,6 @@ async function mapLimited(values, concurrency, mapper) {
   return results;
 }
 
-async function fetchForcedNotifyNos() {
-  const results = await mapLimited(
-    FORCED_NOTIFY_NOS,
-    2,
-    async (notifyNo) => {
-      try {
-        const payload = await postJson(
-          SEARCH_URL,
-          notifyNoSearchPayload(notifyNo),
-        );
-
-        const items = payload.page?.content || [];
-
-        process.stdout.write(
-          `Tìm trực tiếp ${notifyNo}: ${items.length} bản ghi\n`,
-        );
-
-        return items;
-      } catch (error) {
-        process.stderr.write(
-          `Không tìm được ${notifyNo}: ${error.message}\n`,
-        );
-
-        return [];
-      }
-    },
-  );
-
-  return results.flat();
-}
-
 async function fetchWindow(window, windowIndex, totalWindows) {
   const first = await postJson(SEARCH_URL, searchPayload(0, window.from, window.to));
   const totalPages = Math.max(1, Number(first.page?.totalPages) || 1);
@@ -294,159 +235,11 @@ async function fetchHistoricalFallback() {
     fetchHistoricalPair(pair, index, pairs.length, from, to))).flat();
 }
 
-function isMedical(item) {
-  const originalTitle = String(item.bidName?.join(" ") || "").toLocaleLowerCase("vi-VN");
-  const title = normalizeText(originalTitle);
-  const investor = normalizeText(item.investorName);
-  const excludedTerms = [
-    // Xây dựng, vận hành và mua sắm hành chính.
-    "xay lap", "xay dung", "cai tao", "sua chua nha", "suat an", "thuc pham", "bao ve",
-    "ve sinh cong nghiep", "van phong pham", "xang dau", "cay xanh", "rac thai", "chat thai",
-    "in an", "bien ten", "trang phuc", "bao ho lao dong", "giay bao ho", "quan ao", "drap",
-    "boi duong doc hai", "boi duong hien vat", "hang hoa thuc hien che do", "phu cap doc hai",
-    "ban, ghe", "ban ghe", "tu dung ho so", "xe ban tai", "xe day sieu thi", "bao hiem",
-    "binh ac quy", "vat tu dien", "vat tu nuoc", "dien, nuoc", "dien nuoc",
-    "dich vu sua chua", "sua chua", "dich vu bao tri", "bao tri, bao duong",
-    "dich vu kiem dinh", "kiem dinh, hieu chuan", "kiem dinh va hieu chuan",
-    "tu van", "tham dinh", "lap e-hsmt", "danh gia e-hsdt", "lap ho so moi thau",
-    "danh gia ho so du thau", "lap du toan", "giam sat thi cong", "quan ly du an",
-    "di doi va lap dat lai", "thao do va lap dat lai", "gia cong, lap dat tu",
-    "tu de ho so", "ke de vat tu",
-    // Công nghệ thông tin và thiết bị hạ tầng không phải thiết bị y tế.
-    "may tinh", "may in", "tin hoc", "cong nghe thong tin", "may chu", "thiet bi tuong lua",
-    "bao mat du lieu", "luu tru san", "thang may", "may phat dien", "dieu hoa khong khi",
-    // Nông nghiệp, cao su và thú y.
-    "phan bon", "thuoc bvtv", "bao ve thuc vat", "vuon cay", "cay cao su", "cay ca phe",
-    "kich thich mu", "phun thuoc", "thuoc phong tri", "thuoc phun tri", "benh dong vat",
-    "trau, bo", "cho, meo", "gia cam", "lo mom long mong", "viem da noi cuc",
-    "phuc vu che bien", "san xuat phan vi sinh",
-  ];
-  if (excludedTerms.some((term) => title.includes(term))) return false;
-
-  // Chỉ các cụm từ tự thân xác định rõ thiết bị/vật tư y tế mới được giữ lại.
-  const explicitMedicalTerms = [
-    ...SEARCH_KEYWORDS,
-    "trang thiết bị y tế", "y cụ", "y dụng cụ", "hóa chất y tế", "hoá chất y tế",
-    "sinh phẩm y tế", "sinh phẩm xét nghiệm", "khí y tế", "oxy y tế",
-    "hóa chất khử khuẩn", "hoá chất khử khuẩn", "hóa chất định nhóm máu",
-    "hoá chất định nhóm máu", "vật tư xét nghiệm", "vật tư nha khoa",
-  ];
-  if (explicitMedicalTerms.some((term) => originalTitle.includes(term))) return true;
-
-  // Tên riêng của máy móc, vật tư và sinh phẩm chuyên môn.
-  const medicalProductTerms = [
-    "máy thở", "máy siêu âm", "đầu dò siêu âm", "máy điện tim", "máy theo dõi bệnh nhân",
-    "monitor bệnh nhân", "máy hút dịch", "bơm tiêm điện", "máy tim phổi", "máy lọc máu",
-    "máy chạy thận", "máy xét nghiệm", "máy phân tích huyết học", "máy sinh hóa",
-    "máy sinh hoá", "máy chụp", "x-quang", "x quang", "ct scanner", "mri",
-    "máy hấp nhiệt độ thấp", "máy tiệt khuẩn", "máy tập cơ sàn chậu", "micropipet",
-    "tủ bảo quản máu", "bình nitơ lưu trữ mẫu", "lọc nước ro cho phòng xét nghiệm",
-    "dụng cụ phẫu thuật", "dao phẫu thuật", "gạc phẫu thuật", "găng tay phẫu thuật",
-    "bơm tiêm", "kim tiêm", "kim nha khoa", "kim châm cứu", "dây truyền dịch",
-    "truyền máu", "catheter", "stent", "implant", "đinh, nẹp, vít", "đinh nẹp vít",
-    "nẹp chấn thương", "khớp gối", "khớp háng", "nội soi", "dây dao siêu âm",
-    "bộ bơm cản quang", "máy bơm cản quang", "ampu bóp bóng", "túi đựng oxy",
-    "bông y tế", "găng tay y tế", "khẩu trang y tế", "test nhanh chẩn đoán",
-    "kit test", "dịch nhầy dùng trong phẫu thuật mắt", "chẩn thương chỉnh hình",
-    "chấn thương chỉnh hình", "lọc máu liên tục", "chạy thận nhân tạo",
-    "vật tư thận niệu", "vật tư tim mạch can thiệp", "vật tư can thiệp mạch não",
-    "áo, khăn phẫu thuật", "que đè lưỡi", "dây garo",
-  ];
-  if (medicalProductTerms.some((term) => originalTitle.includes(term))) return true;
-
-  // Hóa chất/sinh phẩm chỉ được giữ khi gắn với xét nghiệm hoặc chẩn đoán y khoa.
-  const laboratoryTerms = [
-    "xét nghiệm", "chẩn đoán", "in vitro", "huyết học", "sinh hóa", "sinh hoá",
-    "vi sinh", "bệnh phẩm", "định nhóm máu", "máy huyết học", "máy sinh hóa", "máy sinh hoá",
-  ];
-  const laboratorySupplies = ["hóa chất", "hoá chất", "sinh phẩm", "vật tư", "chủng vi sinh"];
-  if (laboratoryTerms.some((term) => originalTitle.includes(term))
-    && laboratorySupplies.some((term) => originalTitle.includes(term))) return true;
-
-  // Tiêu đề chung chỉ được nhận khi vừa có vật tư/hóa chất, vừa có ngữ cảnh khám chữa bệnh,
-  // và chủ đầu tư rõ ràng là cơ sở y tế. Không dùng tên chủ đầu tư làm điều kiện duy nhất.
-  const medicalInvestors = [
-    "so y te",
-    "benh vien",
-    "trung tam y te",
-    "tram y te",
-    "trung tam kiem soat benh tat",
-    "cdc",
-    "phong kham",
-    "benh xa",
-    "y khoa",
-    "y duoc",
-    "da khoa",
-    "chuyen khoa",
-    "trung tam phap y",
-    "trung tam kiem nghiem",
-  ];
-
-  const genericSupplyTerms = [
-    "vat tu",
-    "hoa chat",
-    "sinh pham",
-    "dung cu",
-  ];
-
-  const clinicalTerms = [
-    "kham chua benh",
-    "kham benh",
-    "chua benh",
-    "dieu tri",
-    "phong mo",
-  ];
-
-  const isMedicalInvestor = medicalInvestors.some(
-    (term) => investor.includes(term),
-  );
-
-  const hasGenericSupply = genericSupplyTerms.some(
-    (term) => title.includes(term),
-  );
-
-  const hasClinicalContext = clinicalTerms.some(
-    (term) => title.includes(term),
-  );
-
-  const hasMedicalSupplyBundle =
-    (title.includes("mua sam") || title.includes("danh muc"))
-    && title.includes("vat tu")
-    && title.includes("hoa chat");
-
-  return isMedicalInvestor
-    && (
-      hasMedicalSupplyBundle
-      || (hasGenericSupply && hasClinicalContext)
-    );
-}
-
 function isStoredTenderMedical(tender) {
-  return isMedical({
+  return isMedicalTender({
     bidName: [tender.name],
     investorName: tender.investor,
   });
-}
-
-function categoryOf(name) {
-  const original = String(name || "").toLocaleLowerCase("vi-VN");
-  const normalized = normalizeText(original);
-  const supplyTerms = [
-    "vật tư", "hóa chất", "hoá chất", "sinh phẩm", "dụng cụ", "đinh", "nẹp", "vít",
-    "gạc", "găng tay", "bộ bơm tiêm", "bơm tiêm các loại", "dây nối bơm tiêm", "kim ",
-    "dây truyền", "stent", "khớp", "test nhanh", "dao phẫu thuật", "dây garo",
-    "áo, khăn phẫu thuật", "bông y tế", "khẩu trang", "hơi oxy y tế", "oxy y tế",
-    "dịch nhầy", "chuẩn đối chiếu", "chủng vi sinh", "tay dao", "dây dao", "ampu bóp bóng",
-  ];
-  if (supplyTerms.some((term) => original.includes(term))) return "Vật tư & hóa chất";
-  if (original === normalized && [
-    "vat tu", "hoa chat", "sinh pham", "dung cu", "dinh", "nep", "vit", "gac",
-    "gang tay", "bo bom tiem", "bom tiem cac loai", "day noi bom tiem", "kim ",
-    "day truyen", "stent", "khop", "test nhanh", "dao phau thuat", "day garo",
-    "ao, khan phau thuat", "bong y te", "khau trang", "hoi oxy y te", "oxy y te",
-    "dich nhay", "chuan doi chieu", "chung vi sinh", "tay dao", "day dao", "ampu bop bong",
-  ].some((term) => normalized.includes(term))) return "Vật tư & hóa chất";
-  return "Thiết bị y tế";
 }
 
 function statusOf(item) {
@@ -518,7 +311,7 @@ function normalizeTender(item) {
     closeDate: item.bidCloseDate || "",
     publicDate: item.publicDate || "",
     price: (item.bidPrice || []).reduce((sum, value) => sum + (Number(value) || 0), 0),
-    category: categoryOf(name),
+    category: medicalCategory(name),
     status: statusOf(item),
     sourceStatus: item.status || "",
     statusForNotify: item.statusForNotify || "",
@@ -1383,12 +1176,9 @@ async function main() {
     ? await fetchHistoricalFallback()
     : [];
 
-  const forcedNotifyItems = await fetchForcedNotifyNos();
-
   const allItems = [
     ...provinceItems,
     ...historicalFallbackItems,
-    ...forcedNotifyItems,
   ];
 
   const allUnique = new Map();
@@ -1398,7 +1188,7 @@ async function main() {
   });
 
   const medicalUnique = new Map();
-  [...allUnique.values()].filter(isMedical).forEach((item) => {
+  [...allUnique.values()].filter(isMedicalTender).forEach((item) => {
     const key = item.notifyId || item.id || item.notifyNo;
     if (key) medicalUnique.set(key, item);
   });
@@ -1415,7 +1205,7 @@ async function main() {
     })
     .map((tender) => ({
       ...tender,
-      category: categoryOf(tender.name),
+      category: medicalCategory(tender.name),
       status: statusOf(tender),
     }));
   const mergedTenders = new Map();
