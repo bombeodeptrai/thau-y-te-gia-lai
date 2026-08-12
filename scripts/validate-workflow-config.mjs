@@ -149,6 +149,21 @@ if (!pagesWorkflow.includes("group: pages-deploy")
   || !pagesWorkflow.includes("actions/deploy-pages@v4")) {
   throw new Error("Workflow Pages duy nhất chưa giữ khóa triển khai và bước deploy chính thức");
 }
+for (const workflowName of [
+  "Cập nhật nhanh gói mới và hồ sơ chính thức Gia Lai",
+  "Cập nhật dự phòng dữ liệu Gia Lai",
+  "Kiểm tra chéo chống lọt gói Gia Lai",
+  "Bổ sung chi tiết nhà thầu thiết bị và model Gia Lai",
+  "Khởi tạo và quét sâu dữ liệu miền Trung",
+]) {
+  if (!pagesWorkflow.includes(`- ${workflowName}`)) {
+    throw new Error(`Workflow Pages chưa tự chạy sau luồng dữ liệu: ${workflowName}`);
+  }
+}
+if (!pagesWorkflow.includes("workflow_run:")
+  || !pagesWorkflow.includes("github.event.workflow_run.conclusion == 'success'")) {
+  throw new Error("Workflow Pages chưa xử lý commit do GITHUB_TOKEN ghi hoặc còn deploy sau lượt quét thất bại");
+}
 
 for (const file of [quickPath, auditPath, rapidPath]) {
   const text = await readFile(file, "utf8");
