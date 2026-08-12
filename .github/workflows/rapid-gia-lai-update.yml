@@ -49,7 +49,6 @@ jobs:
         env:
           RESCUE_DAYS: "7"
           PAGE_SIZE: "10"
-          LOCATION_TERM_LIMIT: "16"
         run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
 
       - name: Xác định có gói mới hoặc định danh được sửa
@@ -99,7 +98,6 @@ jobs:
         env:
           RESCUE_DAYS: "14"
           PAGE_SIZE: "10"
-          LOCATION_TERM_LIMIT: "16"
         run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
 
       - name: Tạo ngay hồ sơ chi tiết từ định danh chính thức

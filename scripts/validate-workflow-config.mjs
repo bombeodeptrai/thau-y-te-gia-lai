@@ -116,6 +116,17 @@ if (!rapidScan.includes('cron: "*/10 * * * *"')
   || rapidScan.includes('PAGE_SIZE: "100"')) {
   throw new Error("Luồng quét nhanh Gia Lai chưa sửa định danh, tạo chi tiết hoặc còn pageSize không an toàn");
 }
+if (rapidScan.includes("LOCATION_TERM_LIMIT")) {
+  throw new Error("Luồng quét nhanh Gia Lai vẫn giới hạn địa danh và có thể bỏ khu vực Bình Định cũ");
+}
+
+const medicalRescue = await readFile("scripts/fetch-recent-medical-rescue.mjs", "utf8");
+if (medicalRescue.includes("LOCATION_TERM_LIMIT")
+  || medicalRescue.includes("]).slice(0,")
+  || !medicalRescue.includes("removedRejectedStoredCount")
+  || !medicalRescue.includes("rejectedSourceKeys")) {
+  throw new Error("Quét bù Gia Lai chưa quét đủ địa danh hoặc chưa tự loại bản ghi cũ sai phạm vi");
+}
 
 const dataWorkflowPaths = [fullScanPath, detailPath, quickPath, auditPath, rapidPath];
 for (const file of dataWorkflowPaths) {

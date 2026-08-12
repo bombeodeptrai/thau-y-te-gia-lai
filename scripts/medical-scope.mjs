@@ -77,7 +77,11 @@ const CLINICAL_TERMS = [
 ];
 
 function matchedTerms(text, terms) {
-  return terms.filter((term) => text.includes(term));
+  const haystack = ` ${normalizeMedicalText(text).replace(/[^a-z0-9]+/g, " ").trim()} `;
+  return terms.filter((term) => {
+    const needle = normalizeMedicalText(term).replace(/[^a-z0-9]+/g, " ").trim();
+    return needle && haystack.includes(` ${needle} `);
+  });
 }
 
 export function classifyMedicalTender(item) {
@@ -138,8 +142,8 @@ export function classifyMedicalTender(item) {
   const accepted = explicit.length > 0
     || (labSupply.length > 0 && labAnalyzer.length > 0)
     || (medicalInvestor.length > 0 && labSupply.length > 0 && machineUsage.length > 0)
-    || (medicalInvestor.length > 0 && genericSupply.length > 0 && clinical.length > 0)
-    || score >= 80;
+    || (medicalInvestor.length > 0 && genericSupply.length > 0 && machineUsage.length > 0)
+    || (medicalInvestor.length > 0 && genericSupply.length > 0 && clinical.length > 0);
 
   return {
     accepted,
@@ -163,7 +167,10 @@ export function isMedicalTender(item) {
 
 export function medicalCategory(name) {
   const text = normalizeMedicalText(name);
-  return /(vat tu|hoa chat|sinh pham|dung cu|kit|test|gac|gang|kim|stent|catheter|reagent|thuoc thu|dung dich)/.test(text)
+  return matchedTerms(text, [
+    "vat tu", "hoa chat", "sinh pham", "dung cu", "kit", "test", "gac", "gang",
+    "kim", "stent", "catheter", "reagent", "thuoc thu", "dung dich", "gioang", "dem",
+  ]).length
     ? "Vật tư & hóa chất"
     : "Thiết bị y tế";
 }

@@ -316,12 +316,24 @@ for (const [key, item] of sourceUnique) {
 const previousRows = previous.tenders || [];
 const officialPreviousRows = previousRows.filter((item) => !isManualTender(item));
 const removedManualCount = previousRows.length - officialPreviousRows.length;
+const previousKeys = new Set(officialPreviousRows
+  .map((item) => canonicalNotifyNo(item.notifyNo || item.id))
+  .filter(Boolean));
+const rejectedSourceKeys = new Set(
+  [...sourceUnique.keys()].filter((key) => !accepted.has(key)),
+);
+const revalidatedPreviousRows = officialPreviousRows.filter((item) => {
+  const key = canonicalNotifyNo(item.notifyNo || item.id);
+  return key && !rejectedSourceKeys.has(key);
+});
+const removedRejectedStoredCount = officialPreviousRows.length - revalidatedPreviousRows.length;
 const merged = new Map();
-for (const item of officialPreviousRows) {
+for (const item of revalidatedPreviousRows) {
   const key = canonicalNotifyNo(item.notifyNo || item.id);
   if (key) merged.set(key, { ...item, notifyNo: key });
 }
-const beforeCount = merged.size;
+const beforeCount = previousKeys.size;
+const newCount = [...accepted.keys()].filter((key) => !previousKeys.has(key)).length;
 for (const [key, item] of accepted) merged.set(key, mergeTender(merged.get(key), item));
 const tenders = [...merged.values()].sort(
   (left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0),
@@ -336,16 +348,17 @@ Object.assign(collection, {
   lastLocationAuditDays: AUDIT_DAYS,
   lastLocationAuditCandidateCount: sourceUnique.size,
   lastLocationAuditMedicalCount: accepted.size,
-  lastLocationAuditNewCount: Math.max(0, tenders.length - beforeCount),
+  lastLocationAuditNewCount: newCount,
   lastRemovedManualTenderCount: removedManualCount,
-  filterStrategy: "unified-medical-scope-v4",
+  lastRemovedRejectedStoredCount: removedRejectedStoredCount,
+  filterStrategy: "unified-medical-scope-v5",
 });
 
 const payload = { ...previous, tenders, fetchedAt, collection };
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
 await writeFile(resolve(regionDir, "location-audit-summary.json"), `${JSON.stringify({
-  schemaVersion: 4,
+  schemaVersion: 5,
   regionSlug: slug,
   auditedAt: fetchedAt,
   auditDays: AUDIT_DAYS,
@@ -359,12 +372,15 @@ await writeFile(resolve(regionDir, "location-audit-summary.json"), `${JSON.strin
   acceptedDiagnostics,
   rejectedDiagnostics,
   removedManualCount,
+  removedRejectedStoredCount,
   beforeCount,
   afterCount: tenders.length,
-  filterStrategy: "unified-medical-scope-v4",
+  newCount,
+  filterStrategy: "unified-medical-scope-v5",
 }, null, 2)}\n`);
 
 process.stdout.write(
   `Đối chiếu thật ${region.name}: ${sourceUnique.size} ứng viên, nhận ${accepted.size}, `
-  + `bỏ ${removedManualCount} bản ghi thủ công, tổng ${tenders.length}.\n`,
+  + `bỏ ${removedManualCount} bản ghi thủ công và ${removedRejectedStoredCount} bản ghi sai phạm vi, `
+  + `tổng ${tenders.length}.\n`,
 );
