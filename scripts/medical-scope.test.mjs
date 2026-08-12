@@ -31,6 +31,17 @@ test("nhận hóa chất dùng cho máy có tên thương mại tại cơ sở y
   }), true);
 });
 
+for (const title of [
+  "Mua sắm vật tư sử dụng cho máy thận 4008S",
+  "Mua đệm (gioăng) cửa dùng cho máy hấp tiệt trùng hơi nước dòng máy Lumo, trang bị cho khoa Kiểm soát nhiễm khuẩn",
+]) {
+  test(`nhận vật tư gắn với máy y tế tại bệnh viện: ${title}`, () => {
+    const result = classifyMedicalTender({ bidName: [title], investorName: hospital });
+    assert.equal(result.accepted, true, result.reason);
+    assert.equal(result.category, "Vật tư & hóa chất");
+  });
+}
+
 for (const [title, investor] of [
   ["Cung cấp vật tư thiết bị và dịch vụ thay thế hệ thống điều tốc các tổ máy", "Công ty Điện lực"],
   ["Mua hóa chất xử lý nước thải năm 2026", hospital],
@@ -38,6 +49,8 @@ for (const [title, investor] of [
   ["Cải tạo, sửa chữa khu xét nghiệm", hospital],
   ["Mua văn phòng phẩm phục vụ bệnh viện", hospital],
   ["Mua hóa chất giặt là cho máy giặt công nghiệp", hospital],
+  ["Chỉnh lý, số hóa hồ sơ lưu trữ của Đảng ủy 03 xã trước sáp nhập (xã An Nhơn Tây (cũ), xã An Phú, xã Phú Mỹ Hưng)", "Văn phòng Đảng ủy xã An Nhơn Tây"],
+  ["Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh năm 2026-2029", "Trung tâm Y tế Phù Cát"],
 ]) {
   test(`loại đúng gói ngoài phạm vi: ${title}`, () => {
     const result = classifyMedicalTender({ bidName: [title], investorName: investor });
