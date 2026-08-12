@@ -164,6 +164,12 @@ if (!pagesWorkflow.includes("workflow_run:")
   || !pagesWorkflow.includes("github.event.workflow_run.conclusion == 'success'")) {
   throw new Error("Workflow Pages chưa xử lý commit do GITHUB_TOKEN ghi hoặc còn deploy sau lượt quét thất bại");
 }
+const pagesBeforeJobs = pagesWorkflow.split("\njobs:\n")[0];
+const pagesDeployJob = pagesWorkflow.split("\n  deploy:\n")[1] || "";
+if (pagesBeforeJobs.includes("\nconcurrency:")
+  || !pagesDeployJob.includes("    concurrency:\n      group: pages-deploy")) {
+  throw new Error("Khóa Pages phải nằm trong job deploy để workflow_run bị bỏ qua không hủy lượt triển khai thật");
+}
 
 for (const file of [quickPath, auditPath, rapidPath]) {
   const text = await readFile(file, "utf8");
