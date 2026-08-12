@@ -2,32 +2,32 @@
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-12T03:35:00.962Z",
-  "rescueDays": 14,
+  "rescuedAt": "2026-08-12T05:51:21.777Z",
+  "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 116,
+      "count": 270,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 247,
+      "count": 465,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 39,
+      "count": 93,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 20,
+      "count": 42,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 28,
+      "count": 47,
       "error": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 5,
+      "count": 10,
       "error": ""
     },
     {
@@ -63,31 +63,31 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 2,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 12,
+      "count": 24,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 4,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 3,
+      "count": 8,
       "error": ""
     },
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 2,
+      "count": 8,
       "error": ""
     },
     {
@@ -99,7 +99,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 6,
+      "count": 9,
       "error": ""
     },
     {
@@ -110,29 +110,38 @@
     }
   ],
   "successfulStrategyCount": 17,
-  "candidateCount": 410,
-  "acceptedCount": 14,
-  "rejectedCount": 396,
+  "candidateCount": 830,
+  "acceptedCount": 25,
+  "rejectedCount": 805,
   "rejectedReasons": {
-    "excluded:xay dung": 152,
-    "insufficient-medical-context": 122,
-    "excluded:tu van": 57,
-    "excluded:xay lap": 20,
-    "excluded:sua chua": 17,
-    "excluded:bao ve": 3,
-    "excluded:may tinh": 3,
-    "excluded:kiem dinh": 3,
+    "excluded:xay dung": 285,
+    "insufficient-medical-context": 262,
+    "excluded:tu van": 121,
+    "excluded:sua chua": 42,
+    "excluded:xay lap": 31,
+    "excluded:bao ve": 5,
+    "excluded:may tinh": 5,
+    "excluded:trang phuc": 5,
+    "excluded:bao hiem": 5,
+    "excluded:kiem dinh": 4,
+    "excluded:van phong pham": 4,
+    "excluded:cai tao": 4,
+    "excluded:tham dinh": 4,
+    "excluded:bao tri": 3,
+    "excluded:rac thai": 3,
+    "excluded:cong nghe thong tin": 3,
     "excluded:may in": 3,
-    "excluded:cai tao": 3,
-    "excluded:van phong pham": 2,
+    "excluded:cay xanh": 2,
+    "excluded:thuoc generic": 2,
+    "excluded:duong day": 2,
     "excluded:thiet bi tuong lua": 2,
-    "excluded:cong nghe thong tin": 2,
-    "excluded:bao tri": 1,
     "excluded:thuc pham": 1,
     "excluded:thiet bi dien": 1,
-    "excluded:rac thai": 1,
-    "excluded:tham dinh": 1,
-    "excluded:bao hiem": 1,
+    "excluded:tu dien": 1,
+    "excluded:dieu hoa khong khi": 1,
+    "excluded:ve sinh cong nghiep": 1,
+    "excluded:may phat dien": 1,
+    "excluded:in an": 1,
     "excluded:giam sat thi cong": 1
   },
   "acceptedDiagnostics": [
@@ -332,6 +341,167 @@
         "may dong mau",
         "su dung tren may",
         "dung tren may"
+      ]
+    },
+    {
+      "notifyNo": "IB2600381748",
+      "name": "Mua sắm vật tư y tế tiêu hao, sinh phẩm y tế, hóa chất sát khuẩn, hóa chất xét nghiệm, vật tư y tế thay thế và khí y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 230,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
+      "matched": [
+        "vat tu y te",
+        "hoa chat xet nghiem",
+        "sinh pham y te",
+        "khi y te",
+        "benh vien",
+        "hoa chat",
+        "sinh pham",
+        "xet nghiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600384538",
+      "name": "Mua sắm Hệ thống phẫu thuật nội soi khớp phục vụ công tác khám bệnh, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 155,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "noi soi",
+        "phau thuat",
+        "benh vien",
+        "da khoa",
+        "kham benh",
+        "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600377100",
+      "name": "Mua sắm thiết bị y tế phục vụ công tác khám chữa bệnh tại Trung tâm Y tế Hoài Nhơn năm 2026",
+      "investor": "Trung tâm Y tế Hoài Nhơn",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "thiet bi y te",
+        "trung tam y te",
+        "kham chua benh",
+        "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600354173",
+      "name": "Vật tư y tế dùng trong phẫu thuật khớp háng, khớp gối",
+      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "phau thuat",
+        "benh vien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600383327",
+      "name": "Mua sắm vật tư y tế, vật tư xét nghiệm, hoá chất, sinh phẩm, dụng cụ y tế năm 2026-2027 của Trung tâm Y tế Chư Păh",
+      "investor": "Trung Tâm Y Tế Chư Păh",
+      "accepted": true,
+      "score": 230,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
+      "matched": [
+        "vat tu y te",
+        "vat tu xet nghiem",
+        "dung cu y te",
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "xet nghiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600375070",
+      "name": "Mua sắm bổ sung vật tư y tế Ngoại lồng ngực- Ngoại thần kinh- Hồi sức tích cực chống độc (lần 7)",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "da khoa",
+        "hoi suc"
+      ]
+    },
+    {
+      "notifyNo": "IB2600373681",
+      "name": "Mua sắm dụng cụ, thiết bị y tế phục vụ hoạt động chuyên môn tại các khoa thuộc Trung tâm Y tế Phù Mỹ (Mã 12.2026)",
+      "investor": "Trung tâm Y tế Phù Mỹ",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "thiet bi y te",
+        "trung tam y te"
+      ]
+    },
+    {
+      "notifyNo": "IB2600368530",
+      "name": "Mua sắm bổ sung vật tư y tế, hóa chất, sinh phẩm phục vụ cho việc khám bệnh, chữa bệnh năm 2026 của Trung tâm Y tế Hoài Ân (lần 4)",
+      "investor": "TRUNG TÂM Y TẾ HOÀI ÂN",
+      "accepted": true,
+      "score": 195,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply",
+      "matched": [
+        "vat tu y te",
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "kham benh",
+        "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600365265",
+      "name": "Mua sắm hóa chất, sinh phẩm, vật tư để phục vụ công tác khám bệnh, chữa bệnh của Trung tâm Y tế Vĩnh Thạnh năm 2026 (bổ sung lần 3)",
+      "investor": "TRUNG TÂM Y TẾ VĨNH THẠNH",
+      "accepted": true,
+      "score": 95,
+      "reason": "medical-investor+laboratory-supply",
+      "matched": [
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "kham benh",
+        "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600313612",
+      "name": "Mua sắm vật tư y tế Can thiệp mạch - Máy tạo nhịp",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "da khoa"
+      ]
+    },
+    {
+      "notifyNo": "IB2600404410",
+      "name": "Mua sắm Vật tư, Y dụng cụ nha khoa năm 2026 của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "nha khoa",
+        "benh vien",
+        "da khoa"
       ]
     },
     {
@@ -774,8 +944,8 @@
     }
   ],
   "removedManualCount": 0,
-  "beforeCount": 819,
+  "beforeCount": 820,
   "afterCount": 820,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v4"
 }
