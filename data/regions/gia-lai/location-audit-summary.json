@@ -1,20 +1,20 @@
 {
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-12T22:25:34.515Z",
+  "auditedAt": "2026-08-12T19:54:34.116Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 469,
+      "count": 468,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 93,
+      "count": 91,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1086,
+  "candidateCount": 1083,
   "acceptedCount": 30,
-  "rejectedCount": 1056,
+  "rejectedCount": 1053,
   "rejectedReasons": {
-    "excluded:xay dung": 339,
-    "insufficient-medical-context": 279,
+    "excluded:xay dung": 337,
+    "insufficient-medical-context": 278,
     "excluded:tu van": 251,
     "excluded:sua chua": 56,
     "excluded:xay lap": 41,
@@ -746,15 +746,6 @@
   ],
   "rejectedDiagnostics": [
     {
-      "notifyNo": "IB2600447677",
-      "name": "Chiếu",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
       "notifyNo": "IB2600447512",
       "name": "Tư vấn dịch vụ thẩm định giá Cây Phi Lao - dạng cây đứng tại rừng thuộc khoảnh 2, tiểu khu 216B,x ã Cát Tiến, tỉnh Gia Lai",
       "investor": "Ban quản lý rừng phòng hộ Gia Lai",
@@ -1153,6 +1144,17 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
+    },
+    {
+      "notifyNo": "IB2600419243",
+      "name": "Xây lắp công trình",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
     }
   ],
   "removedManualCount": 0,
