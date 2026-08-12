@@ -122,24 +122,6 @@ let source = await readFile(sourcePath, "utf8");
 
 source = replaceOrThrow(
   source,
-  'import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";',
-  'import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";\nimport { isMedicalTender, medicalCategory } from "./medical-scope.mjs";',
-  "nạp bộ lọc y tế dùng chung",
-);
-source = replaceOrThrow(
-  source,
-  /function isMedical\(item\) \{[\s\S]*?\n\}\n\nfunction isStoredTenderMedical/,
-  "function isMedical(item) {\n  return isMedicalTender(item);\n}\n\nfunction isStoredTenderMedical",
-  "thay bộ lọc cũ bằng bộ lọc dùng chung",
-);
-source = replaceOrThrow(
-  source,
-  /function categoryOf\(name\) \{[\s\S]*?\n\}\n\nfunction statusOf/,
-  "function categoryOf(name) {\n  return medicalCategory(name);\n}\n\nfunction statusOf",
-  "phân loại nhóm hàng dùng chung",
-);
-source = replaceOrThrow(
-  source,
   'const PROVINCE_CODE = "52";',
   `const REGION_SLUG = ${js(region.slug)};\nconst REGION_NAME = ${js(region.name)};\nconst PROVINCE_CODES = ${js(region.provinceCodes)};\nconst REGION_LOCATION_TERMS = ${js(region.locationTerms)};\nconst ENABLE_HISTORICAL_FALLBACK = ${enableHistoricalFallback};\nconst DETAIL_LIMIT = ${detailLimit};`,
   "cấu hình tỉnh",
@@ -159,12 +141,6 @@ source = replaceOrThrow(
   /const HISTORICAL_TITLE_TERMS = \[[\s\S]*?\n\];/,
   `const HISTORICAL_TITLE_TERMS = ${js(historicalTitleTerms)};`,
   "từ khóa quét bù",
-);
-source = replaceOrThrow(
-  source,
-  /const FORCED_NOTIFY_NOS = \[[\s\S]*?\n\];/,
-  "const FORCED_NOTIFY_NOS = [];",
-  "loại bỏ mã gói bắt buộc",
 );
 source = replaceOrThrow(
   source,

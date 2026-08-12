@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 
 for (const file of [
   "scripts/medical-scope.mjs",
+  "scripts/fetch-data.mjs",
   "scripts/run-region-scan.mjs",
   "scripts/fetch-recent-location-audit.mjs",
   "scripts/fetch-recent-medical-rescue.mjs",
@@ -81,6 +82,9 @@ if (!quickScan.includes("repair-official-tender-identities.mjs")
   || !quickScan.includes('PAGE_SIZE: "10"')) {
   throw new Error("Workflow cập nhật dự phòng Gia Lai thiếu lớp sửa định danh hoặc quét bù an toàn");
 }
+if (!quickScan.includes("steps.regional_scan.outcome == 'success' || steps.medical_rescue.outcome == 'success'")) {
+  throw new Error("Workflow đang bỏ kết quả quét chính khi riêng lớp cứu hộ thất bại");
+}
 
 const coverageAudit = await readFile(auditPath, "utf8");
 if (!coverageAudit.includes('AUDIT_DAYS: "30"') || !coverageAudit.includes('cron: "17 */4 * * *"')) {
@@ -120,12 +124,22 @@ for (const file of [quickPath, auditPath, rapidPath]) {
 }
 
 const regionRunner = await readFile("scripts/run-region-scan.mjs", "utf8");
-if (!regionRunner.includes("isMedicalTender, medicalCategory")
-  || !regionRunner.includes("backupRegionData")
+const mainScanner = await readFile("scripts/fetch-data.mjs", "utf8");
+if (!mainScanner.includes('import { isMedicalTender, medicalCategory } from "./medical-scope.mjs";')
+  || !mainScanner.includes(".filter(isMedicalTender)")
+  || mainScanner.includes("function isMedical(")
+  || mainScanner.includes("FORCED_NOTIFY_NOS")
+  || mainScanner.includes("fetchForcedNotifyNos")
+  || /const FORCED_NOTIFY_NOS|Tìm trực tiếp IB\d{10}/.test(mainScanner)) {
+  throw new Error("Đường quét chính chưa dùng trực tiếp bộ lọc chung hoặc còn mã gói ép buộc");
+}
+if (!regionRunner.includes("backupRegionData")
   || !regionRunner.includes("restoreRegionData")
   || !regionRunner.includes("officialTenderCount")
-  || !regionRunner.includes("Math.min(10")) {
-  throw new Error("Đường quét chính chưa dùng bộ lọc chung, pageSize 10 và rollback dữ liệu lỗi");
+  || !regionRunner.includes("Math.min(10")
+  || regionRunner.includes("thay bộ lọc cũ bằng bộ lọc dùng chung")
+  || regionRunner.includes("loại bỏ mã gói bắt buộc")) {
+  throw new Error("Bộ chạy vùng còn vá bộ lọc bằng chuỗi hoặc thiếu pageSize 10/rollback dữ liệu lỗi");
 }
 
 for (const file of [
