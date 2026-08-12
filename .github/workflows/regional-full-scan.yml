@@ -9,12 +9,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: regional-data
-  cancel-in-progress: false
 
 jobs:
   scan:
@@ -84,17 +78,14 @@ jobs:
           retention-days: 3
           if-no-files-found: error
 
-  merge-and-deploy:
+  merge-data:
     if: github.event_name != 'push' || contains(github.event.head_commit.message, '[central-full-scan]')
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 60
     concurrency:
-      group: pages-deploy
+      group: regional-data-write
       cancel-in-progress: false
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Lấy mã nguồn mới nhất và toàn bộ lịch sử
         uses: actions/checkout@v4
@@ -143,22 +134,3 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-
-      - name: Kiểm tra và tạo website
-        run: |
-          node --test scripts/technical-requirements.test.mjs
-          node scripts/merge-regions.mjs
-          node scripts/apply-manual-equipment-overrides.mjs
-          node scripts/build-site.mjs
-
-      - name: Cấu hình Pages
-        uses: actions/configure-pages@v5
-
-      - name: Tải bản tĩnh lên Pages
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist-pages
-
-      - name: Triển khai
-        id: deployment
-        uses: actions/deploy-pages@v4
