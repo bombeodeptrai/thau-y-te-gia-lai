@@ -19,13 +19,12 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages-deploy
-  cancel-in-progress: true
-
 jobs:
   deploy:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
