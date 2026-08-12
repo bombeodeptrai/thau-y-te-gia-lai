@@ -1,6 +1,49 @@
 {
   "tenders": [
     {
+      "id": "IB2600444639",
+      "notifyId": "IB2600444639",
+      "bidId": "cedb43b5-0d44-4ccc-b180-bb843de8edc8",
+      "bidOpenId": "",
+      "inputResultId": "da7b5d40-47f3-4bf0-9073-d93208f7ffdc",
+      "bidForm": "CDTRG",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-4-kqlcnt",
+      "notifyNo": "IB2600444639",
+      "name": "Chỉnh lý, số hóa hồ sơ lưu trữ của Đảng ủy 03 xã trước sáp nhập (xã An Nhơn Tây (cũ), xã An Phú, xã Phú Mỹ Hưng)",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Văn phòng Đảng ủy xã An Nhơn Tây",
+      "location": "Gia Lai",
+      "closeDate": "2026-08-12T08:32:50.377",
+      "publicDate": "2026-08-12T08:32:48",
+      "price": 399736385,
+      "category": "Thiết bị y tế",
+      "status": "awarded",
+      "sourceStatus": "IS_PUBLISH",
+      "statusForNotify": "CNTTT",
+      "bidderCount": 0,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600444639&notifyId=IB2600444639&inputResultId=da7b5d40-47f3-4bf0-9073-d93208f7ffdc&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600444639&planNo=PL2600245573&step=tbmt&isInternet=0&bidForm=CDTRG",
+      "winnerNames": [
+        "TRUNG TÂM LƯU TRỮ LỊCH SỬ THÀNH PHỐ HỒ CHÍ MINH"
+      ],
+      "winningPrice": 326672000,
+      "decisionDate": "2026-08-11T23:59:59",
+      "resultPublishedDate": "2026-08-12T08:32:48",
+      "hasResult": true,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-location-search"
+    },
+    {
       "id": "8ab9f311-fa7a-4846-a4a2-6bc66b643449",
       "notifyId": "8ab9f311-fa7a-4846-a4a2-6bc66b643449",
       "bidId": "5728d096-ed1b-4ed8-9635-7bdf0a3fb7ab",
@@ -233868,7 +233911,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-08-12T09:53:16.282Z",
+  "fetchedAt": "2026-08-12T11:16:58.276Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 2144,
   "regions": [
@@ -233987,12 +234030,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 820,
+      "tenderCount": 821,
       "bidderCount": 2774,
       "equipmentCount": 2698,
       "detailTenderCount": 780,
       "coverageDays": 1095,
-      "fetchedAt": "2026-08-12T05:51:21.777Z",
+      "fetchedAt": "2026-08-12T11:15:11.750Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -234051,6 +234094,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 2863
+    "scannedTenderCount": 2864
   }
 }

@@ -2,26 +2,26 @@
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-12T05:51:21.777Z",
+  "rescuedAt": "2026-08-12T11:15:11.750Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 270,
+      "count": 272,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 465,
+      "count": 470,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 93,
+      "count": 91,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 47,
+      "count": 50,
       "error": ""
     },
     {
@@ -75,7 +75,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -110,16 +110,16 @@
     }
   ],
   "successfulStrategyCount": 17,
-  "candidateCount": 830,
+  "candidateCount": 840,
   "acceptedCount": 25,
-  "rejectedCount": 805,
+  "rejectedCount": 815,
   "rejectedReasons": {
-    "excluded:xay dung": 285,
-    "insufficient-medical-context": 262,
-    "excluded:tu van": 121,
-    "excluded:sua chua": 42,
-    "excluded:xay lap": 31,
-    "excluded:bao ve": 5,
+    "excluded:xay dung": 286,
+    "insufficient-medical-context": 264,
+    "excluded:tu van": 125,
+    "excluded:sua chua": 44,
+    "excluded:xay lap": 30,
+    "excluded:bao ve": 6,
     "excluded:may tinh": 5,
     "excluded:trang phuc": 5,
     "excluded:bao hiem": 5,
@@ -134,6 +134,7 @@
     "excluded:cay xanh": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
+    "excluded:giam sat thi cong": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:thuc pham": 1,
     "excluded:thiet bi dien": 1,
@@ -141,8 +142,7 @@
     "excluded:dieu hoa khong khi": 1,
     "excluded:ve sinh cong nghiep": 1,
     "excluded:may phat dien": 1,
-    "excluded:in an": 1,
-    "excluded:giam sat thi cong": 1
+    "excluded:in an": 1
   },
   "acceptedDiagnostics": [
     {
@@ -520,6 +520,60 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600445445",
+      "name": "Gói thầu số 09: Mua máy xiết bu lông, bộ com và máy vặn vít bằng điện",
+      "investor": "Kho K897/Cục Quân khí/Tổng cục Hậu cần-Kỹ thuật",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600443087",
+      "name": "Mua sắm xe ô tô ép và vận chuyển rác",
+      "investor": "Ban Quản lý xã Kông Chro",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600427019",
+      "name": "Gói 06/SCL2027/PTC3: Cung cấp rơ le điều chỉnh điện áp MBA, rơ le bảo vệ khoảng cách (Bao gồm dịch vụ khai báo, cấu hình HTĐKMT và SCADA cho TBA 220kV Quy Nhơn)",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ve",
+      "matched": [
+        "bao ve"
+      ]
+    },
+    {
+      "notifyNo": "IB2600437061",
+      "name": "Gói thầu XL-01: Thi công xây dựng, cung cấp, lắp đặt thiết bị",
+      "investor": "Binh đoàn 15",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600415216",
+      "name": "Mua sắm vật tư sử dụng cho máy thận 4008S",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": 70,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "su dung cho may",
+        "dung cho may"
+      ]
+    },
+    {
       "notifyNo": "IB2600441284",
       "name": "Mua sắm thuốc chuyên khoa tâm thần phục vụ công tác khám, chữa bệnh của các Trạm Y tế phường giai đoạn năm 2026-2027 (12 tháng) do Trung tâm Y tế Hoài Nhơn thực hiện",
       "investor": "Trung tâm Y tế Hoài Nhơn",
@@ -890,62 +944,11 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600419804",
-      "name": "Thi công xây dựng và lắp đặt thiết bị toàn bộ công trình",
-      "investor": "Ban Quản lý phường Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600428943",
-      "name": "Gói thầu mua sắm thiết bị",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CÀ PHÊ VIỆT ĐỨC",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600418138",
-      "name": "Tư vấn giám sát thi công xây dựng",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600412467",
-      "name": "Mua sắm TSCĐ (Xe nâng hàng)",
-      "investor": "NGÂN HÀNG NHÀ NƯỚC CHI NHÁNH KHU VỰC 11",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600426160",
-      "name": "Mua sắm mới 01 xe ô tô phục vụ công tác chung của HĐND và UBND xã",
-      "investor": "Văn phòng HĐND và UBND xã Kim Sơn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
-  "beforeCount": 820,
-  "afterCount": 820,
+  "beforeCount": 821,
+  "afterCount": 821,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v4"
 }

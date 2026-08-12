@@ -1,20 +1,20 @@
 {
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-12T05:50:52.775Z",
+  "auditedAt": "2026-08-12T11:14:40.464Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 465,
+      "count": 470,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 93,
+      "count": 91,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 47,
+      "count": 50,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 25,
+      "count": 28,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 81,
+      "count": 83,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 53,
+      "count": 51,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 29,
+      "count": 31,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
@@ -271,31 +271,31 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1068,
-  "acceptedCount": 29,
-  "rejectedCount": 1039,
+  "candidateCount": 1081,
+  "acceptedCount": 30,
+  "rejectedCount": 1051,
   "rejectedReasons": {
-    "excluded:xay dung": 337,
-    "insufficient-medical-context": 277,
-    "excluded:tu van": 246,
-    "excluded:sua chua": 52,
+    "excluded:xay dung": 336,
+    "insufficient-medical-context": 278,
+    "excluded:tu van": 253,
+    "excluded:sua chua": 55,
     "excluded:xay lap": 41,
     "excluded:cai tao": 9,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 9,
-    "excluded:bao hiem": 8,
+    "excluded:bao hiem": 9,
     "excluded:may tinh": 7,
-    "excluded:bao ve": 5,
+    "excluded:bao ve": 6,
     "excluded:rac thai": 5,
     "excluded:may in": 4,
     "excluded:van phong pham": 4,
     "excluded:cay xanh": 4,
+    "excluded:giam sat thi cong": 3,
     "excluded:cong nghe thong tin": 3,
-    "excluded:thuoc generic": 3,
     "excluded:thiet bi tuong lua": 2,
     "excluded:bao tri": 2,
+    "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
-    "excluded:giam sat thi cong": 2,
     "excluded:phan bon": 2,
     "excluded:in an": 1,
     "excluded:kiem dinh": 1,
@@ -622,6 +622,17 @@
       ]
     },
     {
+      "notifyNo": "IB2600444639",
+      "name": "Chỉnh lý, số hóa hồ sơ lưu trữ của Đảng ủy 03 xã trước sáp nhập (xã An Nhơn Tây (cũ), xã An Phú, xã Phú Mỹ Hưng)",
+      "investor": "Văn phòng Đảng ủy xã An Nhơn Tây",
+      "accepted": true,
+      "score": 100,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "y cu"
+      ]
+    },
+    {
       "notifyNo": "IB2600377100",
       "name": "Mua sắm thiết bị y tế phục vụ công tác khám chữa bệnh tại Trung tâm Y tế Hoài Nhơn năm 2026",
       "investor": "Trung tâm Y tế Hoài Nhơn",
@@ -734,6 +745,102 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600445427",
+      "name": "Thi công rà phá bom mìn",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600445224",
+      "name": "Giám sát thi công rà phá bom mìn",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:giam sat thi cong",
+      "matched": [
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600445004",
+      "name": "Công bố quy hoạch điều chỉnh Quy hoạch chi tiết tỷ lệ 1/500 Khu trung tâm Khu kinh tế Cửa khẩu quốc tế Lệ Thanh",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600415216",
+      "name": "Mua sắm vật tư sử dụng cho máy thận 4008S",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": 70,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "su dung cho may",
+        "dung cho may"
+      ]
+    },
+    {
+      "notifyNo": "IB2600438488",
+      "name": "Cung cấp sách giáo khoa, túi ngủ cho học sinh TH &THCS",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600444638",
+      "name": "Tư vấn thẩm tra Báo cáo Kinh tế - kỹ thuật",
+      "investor": "Liên đoàn Lao động tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600444561",
+      "name": "Tư vấn khảo sát địa hình, lập Báo cáo nghiên cứu khả thi",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600444536",
+      "name": "Tư vấn khảo sát địa chất",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600444459",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600444056",
       "name": "Mua sắm camera",
@@ -1049,111 +1156,10 @@
         "sua chua",
         "duong day"
       ]
-    },
-    {
-      "notifyNo": "IB2600419929",
-      "name": "Xây lắp công trình",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600436250",
-      "name": "Tổ chức diễn tập phương án bảo đảm an ninh, an toàn các hệ thống thông tin tại 10 UBND phường, xã năm 2026",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600435532",
-      "name": "Tư vấn Thẩm định giá",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600435523",
-      "name": "Tư vấn Thẩm định giá",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600435515",
-      "name": "Tư vấn lập kế hoạch thuê",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600435509",
-      "name": "Tư vấn Thẩm định giá",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600435499",
-      "name": "Tư vấn lập kế hoạch thuê",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600435483",
-      "name": "Tư vấn Thẩm định giá",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600435463",
-      "name": "Tư vấn lập kế hoạch thuê",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "beforeCount": 820,
-  "afterCount": 820,
+  "afterCount": 821,
   "filterStrategy": "unified-medical-scope-v4"
 }
