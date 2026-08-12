@@ -2,14 +2,14 @@
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-12T15:33:32.459Z",
+  "rescuedAt": "2026-08-12T19:55:00.499Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 271,
+      "count": 269,
       "error": ""
     },
     {
@@ -110,15 +110,15 @@
     }
   ],
   "successfulStrategyCount": 17,
-  "candidateCount": 833,
+  "candidateCount": 832,
   "acceptedCount": 25,
-  "rejectedCount": 808,
+  "rejectedCount": 807,
   "rejectedReasons": {
     "excluded:xay dung": 284,
-    "insufficient-medical-context": 265,
-    "excluded:tu van": 119,
+    "insufficient-medical-context": 262,
+    "excluded:tu van": 120,
     "excluded:sua chua": 44,
-    "excluded:xay lap": 30,
+    "excluded:xay lap": 31,
     "excluded:bao ve": 6,
     "excluded:may tinh": 5,
     "excluded:trang phuc": 5,
@@ -520,6 +520,59 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600444959",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban Quản lý phường Bồng Sơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600447204",
+      "name": "G08-VN-CSCC_GL_1312.3: Tiến hành trồng san hô cùng với phụ nữ, các tổ chức do phụ nữ lãnh đạo",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600417683",
+      "name": "Xây lắp công trình",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600440544",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Phòng Kinh tế xã Ya Hội",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600443279",
+      "name": "Gói thầu mua sắm sữa tươi tiệt trùng thực hiện bồi dưỡng bằng hiện vật năm 2026",
+      "investor": "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam kiem nghiem"
+      ]
+    },
+    {
       "notifyNo": "IB2600445445",
       "name": "Gói thầu số 09: Mua máy xiết bu lông, bộ com và máy vặn vít bằng điện",
       "investor": "Kho K897/Cục Quân khí/Tổng cục Hậu cần-Kỹ thuật",
@@ -887,62 +940,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600418172",
-      "name": "Tư vấn giám sát thi công",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600399795",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600432933",
-      "name": "Thi công xây dựng",
-      "investor": "Trung tâm cung ứng dịch vụ công ích Đak Sơmei",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600416095",
-      "name": "Thi công xây lắp dự án",
-      "investor": "Phòng Kinh tế xã Sơn Lang",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600428402",
-      "name": "Toàn bộ khối lượng thi công xây dựng Kè chống sạt lở khu vực suối K93",
-      "investor": "Ban Quản lý công ích xã Vĩnh Thạnh",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],

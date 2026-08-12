@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-12T15:33:09.392Z",
+  "auditedAt": "2026-08-12T19:54:34.116Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 29,
+      "count": 30,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 49,
+      "count": 47,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 31,
+      "count": 37,
       "error": ""
     },
     {
@@ -271,19 +271,19 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1078,
+  "candidateCount": 1083,
   "acceptedCount": 30,
-  "rejectedCount": 1048,
+  "rejectedCount": 1053,
   "rejectedReasons": {
-    "excluded:xay dung": 335,
-    "insufficient-medical-context": 280,
-    "excluded:tu van": 249,
+    "excluded:xay dung": 337,
+    "insufficient-medical-context": 278,
+    "excluded:tu van": 251,
     "excluded:sua chua": 56,
-    "excluded:xay lap": 40,
+    "excluded:xay lap": 41,
+    "excluded:bao hiem": 11,
     "excluded:cai tao": 9,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 9,
-    "excluded:bao hiem": 9,
     "excluded:may tinh": 7,
     "excluded:bao ve": 6,
     "excluded:rac thai": 5,
@@ -746,6 +746,49 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600447512",
+      "name": "Tư vấn dịch vụ thẩm định giá Cây Phi Lao - dạng cây đứng tại rừng thuộc khoảnh 2, tiểu khu 216B,x ã Cát Tiến, tỉnh Gia Lai",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600447204",
+      "name": "G08-VN-CSCC_GL_1312.3: Tiến hành trồng san hô cùng với phụ nữ, các tổ chức do phụ nữ lãnh đạo",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600417683",
+      "name": "Xây lắp công trình",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600443279",
+      "name": "Gói thầu mua sắm sữa tươi tiệt trùng thực hiện bồi dưỡng bằng hiện vật năm 2026",
+      "investor": "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam kiem nghiem"
+      ]
+    },
+    {
       "notifyNo": "IB2600446362",
       "name": "Công bố quy hoạch",
       "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
@@ -1112,46 +1155,6 @@
       "matched": [
         "xay lap"
       ]
-    },
-    {
-      "notifyNo": "IB2600429615",
-      "name": "Gói thầu số 01: Số hóa tài liệu tại Lưu trữ lịch sử Đảng của Tỉnh ủy Gia Lai",
-      "investor": "Văn phòng Tỉnh ủy Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600437690",
-      "name": "Tư vấn lập Báo cáo kinh tế - kỹ thuật",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600428906",
-      "name": "Gói thầu số 01: Thi công xây dựng công trình",
-      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600436777",
-      "name": "Thuê xe ô tô đi khảo sát tại tỉnh Gia Lai",
-      "investor": "Viện Khoa học xã hội vùng Trung Bộ và Tây Nguyên",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
