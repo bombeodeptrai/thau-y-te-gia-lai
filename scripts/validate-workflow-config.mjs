@@ -19,6 +19,7 @@ const detailPath = ".github/workflows/regional-detail-backfill.yml";
 const quickPath = ".github/workflows/regional-quick-update.yml";
 const auditPath = ".github/workflows/regional-coverage-audit.yml";
 const rapidPath = ".github/workflows/rapid-gia-lai-update.yml";
+const pagesPath = ".github/workflows/pages.yml";
 
 for (const file of [fullScanPath, detailPath, quickPath]) {
   const text = await readFile(file, "utf8");
@@ -114,6 +115,39 @@ if (!rapidScan.includes('cron: "*/10 * * * *"')
   || !rapidScan.includes('DETAIL_LIMIT: "80"')
   || rapidScan.includes('PAGE_SIZE: "100"')) {
   throw new Error("Luồng quét nhanh Gia Lai chưa sửa định danh, tạo chi tiết hoặc còn pageSize không an toàn");
+}
+
+const dataWorkflowPaths = [fullScanPath, detailPath, quickPath, auditPath, rapidPath];
+for (const file of dataWorkflowPaths) {
+  const text = await readFile(file, "utf8");
+  if (text.includes("group: pages-deploy")
+    || text.includes("actions/deploy-pages")
+    || text.includes("actions/upload-pages-artifact")
+    || text.includes("environment:\n      name: github-pages")) {
+    throw new Error(`${file} vẫn tự triển khai Pages và có thể chặn hàng đợi cập nhật dữ liệu`);
+  }
+  if (!text.includes("group: regional-data-write")) {
+    throw new Error(`${file} chưa dùng khóa ghi dữ liệu ngắn, dùng chung giữa các workflow`);
+  }
+}
+
+for (const file of [fullScanPath, detailPath, quickPath, auditPath]) {
+  const text = await readFile(file, "utf8");
+  if (text.includes("group: regional-data\n")) {
+    throw new Error(`${file} còn khóa toàn workflow khiến các lịch quét triệt tiêu lẫn nhau`);
+  }
+}
+if (rapidScan.includes("group: rapid-gia-lai-update")) {
+  throw new Error("Luồng quét nhanh còn khóa toàn workflow nên một lượt deploy chờ có thể chặn mọi lượt sau");
+}
+
+const pagesWorkflow = await readFile(pagesPath, "utf8");
+if (pagesWorkflow.includes("paths-ignore:") && pagesWorkflow.includes('"data/**"')) {
+  throw new Error("Workflow Pages đang bỏ qua commit dữ liệu nên website không tự cập nhật");
+}
+if (!pagesWorkflow.includes("group: pages-deploy")
+  || !pagesWorkflow.includes("actions/deploy-pages@v4")) {
+  throw new Error("Workflow Pages duy nhất chưa giữ khóa triển khai và bước deploy chính thức");
 }
 
 for (const file of [quickPath, auditPath, rapidPath]) {

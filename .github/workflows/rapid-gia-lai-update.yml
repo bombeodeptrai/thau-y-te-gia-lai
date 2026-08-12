@@ -9,18 +9,15 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: rapid-gia-lai-update
-  cancel-in-progress: false
 
 jobs:
   detect:
     if: github.event_name != 'push' || contains(github.event.head_commit.message, '[rapid-gia-lai]') || contains(github.event.head_commit.message, '[repair-official-details]')
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    concurrency:
+      group: rapid-gia-lai-detect
+      cancel-in-progress: false
     outputs:
       changed: ${{ steps.compare.outputs.changed }}
     steps:
@@ -75,17 +72,14 @@ jobs:
           console.log(changed ? 'Phát hiện gói mới hoặc định danh chính thức thay đổi.' : 'Không có thay đổi dữ liệu gói thầu.');
           NODE
 
-  apply-and-deploy:
+  apply-data:
     if: needs.detect.outputs.changed == 'true'
     needs: detect
     runs-on: ubuntu-latest
     timeout-minutes: 90
     concurrency:
-      group: pages-deploy
+      group: regional-data-write
       cancel-in-progress: false
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Lấy repository mới nhất sau khi chờ quyền ghi
         uses: actions/checkout@v4
@@ -156,22 +150,3 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-
-      - name: Dựng website từ dữ liệu vừa cập nhật
-        run: |
-          node scripts/merge-regions.mjs
-          node scripts/apply-manual-equipment-overrides.mjs
-          node scripts/data-health-check.mjs
-          node scripts/build-site.mjs
-
-      - name: Cấu hình Pages
-        uses: actions/configure-pages@v5
-
-      - name: Tải website lên Pages
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist-pages
-
-      - name: Triển khai
-        id: deployment
-        uses: actions/deploy-pages@v4

@@ -3,8 +3,6 @@ name: Triển khai giao diện GitHub Pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - "data/**"
   workflow_dispatch:
 
 permissions:
