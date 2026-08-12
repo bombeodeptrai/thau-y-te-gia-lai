@@ -1,14 +1,14 @@
 {
   "schemaVersion": 4,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-12T11:14:40.464Z",
+  "auditedAt": "2026-08-12T15:33:09.392Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 470,
+      "count": 468,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 10,
+      "count": 5,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 10,
+      "count": 17,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 83,
+      "count": 81,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 51,
+      "count": 49,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1081,
+  "candidateCount": 1078,
   "acceptedCount": 30,
-  "rejectedCount": 1051,
+  "rejectedCount": 1048,
   "rejectedReasons": {
-    "excluded:xay dung": 336,
-    "insufficient-medical-context": 278,
-    "excluded:tu van": 253,
-    "excluded:sua chua": 55,
-    "excluded:xay lap": 41,
+    "excluded:xay dung": 335,
+    "insufficient-medical-context": 280,
+    "excluded:tu van": 249,
+    "excluded:sua chua": 56,
+    "excluded:xay lap": 40,
     "excluded:cai tao": 9,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 9,
@@ -746,6 +746,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600446362",
+      "name": "Công bố quy hoạch",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600445427",
       "name": "Thi công rà phá bom mìn",
       "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
@@ -1143,23 +1152,10 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600423467",
-      "name": "26-74/XL thi công xây lắp công trình Sửa chữa tuyến cáp ngầm đường dây 110kV Đống Đa - Cảng Quy Nhơn",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "sua chua",
-        "duong day"
-      ]
     }
   ],
   "removedManualCount": 0,
-  "beforeCount": 820,
+  "beforeCount": 821,
   "afterCount": 821,
   "filterStrategy": "unified-medical-scope-v4"
 }
