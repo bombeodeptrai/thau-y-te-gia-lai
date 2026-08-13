@@ -2,32 +2,32 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-13T11:16:19.509Z",
+  "rescuedAt": "2026-08-13T15:37:19.433Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 266,
+      "count": 261,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 470,
+      "count": 467,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 93,
+      "count": 92,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 42,
+      "count": 43,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
@@ -111,13 +111,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 37,
+      "count": 38,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 11,
+      "count": 14,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 80,
+      "count": 77,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 43,
+      "count": 44,
       "error": ""
     },
     {
@@ -201,19 +201,19 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -273,37 +273,37 @@
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 15,
+      "count": 13,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1174,
-  "acceptedCount": 30,
+  "candidateCount": 1173,
+  "acceptedCount": 29,
   "rejectedCount": 1144,
   "rejectedReasons": {
-    "excluded:xay dung": 360,
+    "excluded:xay dung": 363,
     "insufficient-medical-context": 327,
-    "excluded:tu van": 256,
-    "excluded:sua chua": 58,
-    "excluded:xay lap": 49,
+    "excluded:tu van": 257,
+    "excluded:sua chua": 59,
+    "excluded:xay lap": 46,
     "excluded:bao hiem": 11,
+    "excluded:tham dinh": 10,
     "excluded:trang phuc": 9,
-    "excluded:tham dinh": 9,
     "excluded:bao ve": 7,
     "excluded:may tinh": 7,
     "excluded:cai tao": 7,
-    "excluded:rac thai": 5,
-    "excluded:kiem dinh": 4,
+    "excluded:rac thai": 4,
     "excluded:van phong pham": 4,
     "excluded:cay xanh": 4,
     "excluded:may in": 4,
     "excluded:bao tri": 3,
+    "excluded:kiem dinh": 3,
     "excluded:thuoc generic": 3,
-    "excluded:cong nghe thong tin": 3,
     "excluded:duong day": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:thiet bi tuong lua": 2,
+    "excluded:cong nghe thong tin": 2,
     "excluded:thuc pham": 1,
     "excluded:thiet bi dien": 1,
     "excluded:tu dien": 1,
@@ -636,21 +636,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600365265",
-      "name": "Mua sắm hóa chất, sinh phẩm, vật tư để phục vụ công tác khám bệnh, chữa bệnh của Trung tâm Y tế Vĩnh Thạnh năm 2026 (bổ sung lần 3)",
-      "investor": "TRUNG TÂM Y TẾ VĨNH THẠNH",
-      "accepted": true,
-      "score": 95,
-      "reason": "medical-investor+laboratory-supply",
-      "matched": [
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "kham benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "IB2600448147",
       "name": "Mua sắm 01 máy X quang C Arm phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -761,6 +746,27 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600449608",
+      "name": "Mua hàng BDĐH tháng 8,tháng 9 năm 2026",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600448406",
+      "name": "Gói 27/SCL2027/PTC3: Thi công sửa chữa hệ thống nối đất đường dây 500kV Pleiku - Đăk Nông tại Gia Lai (Bao gồm cung cấp vật tư tiếp địa)",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua",
+        "duong day"
+      ]
+    },
     {
       "notifyNo": "IB2600445909",
       "name": "Mua sắm 01 xe ô tô mới phục vụ công tác chung",
@@ -1162,24 +1168,6 @@
       "matched": [
         "xay lap"
       ]
-    },
-    {
-      "notifyNo": "IB2600435942",
-      "name": "Gói 02/SCL2027/PTC3: Cung cấp VTTB nhị thứ và phụ kiện",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600430663",
-      "name": "Gói thầu số 4: Thiết lập và hỗ trợ các cộng đồng/tổ chức dựa vào cộng đồng tại địa phương triển khai danh mục giải pháp đổi mới sáng tạo dựa vào tự nhiên (Hoạt động 2.2.4)",
-      "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,

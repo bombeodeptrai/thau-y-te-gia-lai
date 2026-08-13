@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-13T11:15:33.238Z",
+  "auditedAt": "2026-08-13T15:36:33.449Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 470,
+      "count": 467,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 93,
+      "count": 92,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 42,
+      "count": 43,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
@@ -104,13 +104,13 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 37,
+      "count": 38,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 11,
+      "count": 14,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 80,
+      "count": 77,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 43,
+      "count": 44,
       "error": ""
     },
     {
@@ -194,19 +194,19 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -266,33 +266,33 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 15,
+      "count": 13,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1078,
-  "acceptedCount": 30,
-  "rejectedCount": 1048,
+  "candidateCount": 1080,
+  "acceptedCount": 29,
+  "rejectedCount": 1051,
   "rejectedReasons": {
-    "excluded:xay dung": 336,
-    "insufficient-medical-context": 276,
-    "excluded:tu van": 252,
-    "excluded:sua chua": 56,
-    "excluded:xay lap": 42,
+    "excluded:xay dung": 339,
+    "insufficient-medical-context": 278,
+    "excluded:tu van": 253,
+    "excluded:sua chua": 57,
+    "excluded:xay lap": 39,
     "excluded:bao hiem": 11,
-    "excluded:tham dinh": 9,
+    "excluded:tham dinh": 10,
     "excluded:trang phuc": 9,
     "excluded:cai tao": 7,
     "excluded:may tinh": 7,
     "excluded:bao ve": 6,
-    "excluded:rac thai": 5,
     "excluded:may in": 4,
     "excluded:van phong pham": 4,
     "excluded:cay xanh": 4,
-    "excluded:cong nghe thong tin": 3,
+    "excluded:rac thai": 4,
     "excluded:giam sat thi cong": 2,
     "excluded:thiet bi tuong lua": 2,
+    "excluded:cong nghe thong tin": 2,
     "excluded:bao tri": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
@@ -705,21 +705,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600365265",
-      "name": "Mua sắm hóa chất, sinh phẩm, vật tư để phục vụ công tác khám bệnh, chữa bệnh của Trung tâm Y tế Vĩnh Thạnh năm 2026 (bổ sung lần 3)",
-      "investor": "TRUNG TÂM Y TẾ VĨNH THẠNH",
-      "accepted": true,
-      "score": 95,
-      "reason": "medical-investor+laboratory-supply",
-      "matched": [
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "kham benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "IB2600378695",
       "name": "Mua sắm vật tư y tế, sinh phẩm chẩn đoán invitro năm 2026 của Trung tâm y tế An Lão",
       "investor": "Trung tâm Y tế An Lão",
@@ -752,6 +737,53 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600449661",
+      "name": "Gói thầu số 2: Thẩm định dự toán kinh phí mua sắm thiết bị phục vụ thực hiện nhiệm vụ khoa học công nghệ, chuyển đổi số và đổi mới sáng tạo (giai đoạn 2, 3) năm 2026 của Văn phòng Sở",
+      "investor": "Sở Nông nghiệp và Môi trường tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tham dinh",
+      "matched": [
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600449556",
+      "name": "Gói thầu số 1: Tư vấn lập nhiệm vụ và dự toán kinh phí mua sắm thiết bị phục vụ thực hiện nhiệm vụ khoa học công nghệ, chuyển đổi số và đổi mới sáng tạo (giai đoạn 2, 3) năm 2026 của Văn phòng Sở",
+      "investor": "Sở Nông nghiệp và Môi trường tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600448406",
+      "name": "Gói 27/SCL2027/PTC3: Thi công sửa chữa hệ thống nối đất đường dây 500kV Pleiku - Đăk Nông tại Gia Lai (Bao gồm cung cấp vật tư tiếp địa)",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua",
+        "duong day"
+      ]
+    },
+    {
+      "notifyNo": "IB2600449027",
+      "name": "Gói thầu số 01: Tư vấn lập dự toán chuẩn bị đầu tư xây dựng công trình Nâng cấp, sửa chữa đường liên xã Ia Lâu, tỉnh Gia Lai (đoạn từ trung tâm xã đi thôn Đà Bắc)",
+      "investor": "Phòng Kinh tế xã Ia Lâu",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua",
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "IB2600448635",
       "name": "Thay thế tổ hợp ắc quy của Trạm thu/phát sóng bộ đàm tại núi Hàm Rồng, An Khê, AyunPa, Mang Yang, Đức Cơ",
@@ -1117,44 +1149,6 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "IB2600439198",
-      "name": "Tư vấn giám sát công tác khảo sát giai đoạn thiết kế bản vẽ thi công",
-      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600438792",
-      "name": "Lập quy hoạch tỷ lệ 1/500 Khu tái định cư Tân Thanh (giai đoạn 2)",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600438778",
-      "name": "Lập E- Hồ sơ mời thầu và đánh giá E-Hồ sơ dự thầu",
-      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600438767",
-      "name": "Khảo sát địa hình tỷ lệ 1/500 Khu tái định cư Tân Thanh (giai đoạn 2)",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
