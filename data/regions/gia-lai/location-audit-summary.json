@@ -1,20 +1,20 @@
 {
-  "schemaVersion": 4,
+  "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-12T19:54:34.116Z",
+  "auditedAt": "2026-08-13T05:53:26.168Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 468,
+      "count": 469,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 91,
+      "count": 93,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 17,
+      "count": 15,
       "error": ""
     },
     {
@@ -271,19 +271,19 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1083,
+  "candidateCount": 1084,
   "acceptedCount": 30,
-  "rejectedCount": 1053,
+  "rejectedCount": 1054,
   "rejectedReasons": {
-    "excluded:xay dung": 337,
-    "insufficient-medical-context": 278,
+    "excluded:xay dung": 339,
+    "insufficient-medical-context": 279,
     "excluded:tu van": 251,
     "excluded:sua chua": 56,
     "excluded:xay lap": 41,
     "excluded:bao hiem": 11,
-    "excluded:cai tao": 9,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 9,
+    "excluded:cai tao": 7,
     "excluded:may tinh": 7,
     "excluded:bao ve": 6,
     "excluded:rac thai": 5,
@@ -305,6 +305,33 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600415216",
+      "name": "Mua sắm vật tư sử dụng cho máy thận 4008S",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 70,
+      "reason": "medical-investor+machine-usage-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "su dung cho may",
+        "dung cho may"
+      ]
+    },
+    {
+      "notifyNo": "IB2600426102",
+      "name": "Mua đệm (gioăng) cửa dùng cho máy hấp tiệt trùng hơi nước dòng máy Lumo, trang bị cho khoa Kiểm soát nhiễm khuẩn",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 70,
+      "reason": "medical-investor+machine-usage-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "dung cho may"
+      ]
+    },
     {
       "notifyNo": "IB2600407003",
       "name": "Mua sắm 03 Ống soi sử dụng trong phẫu thuật",
@@ -584,6 +611,19 @@
       ]
     },
     {
+      "notifyNo": "IB2600402792",
+      "name": "Mua sắm Que thử nước tiểu 11 thông số sử dung cho máy Reactif Touch plus của Trung tâm Y tế Mang Yang năm 2026",
+      "investor": "TRUNG TÂM Y TẾ MANG YANG",
+      "accepted": true,
+      "score": 70,
+      "reason": "medical-investor+machine-usage-context",
+      "matched": [
+        "trung tam y te",
+        "su dung cho may",
+        "dung cho may"
+      ]
+    },
+    {
       "notifyNo": "IB2600421414",
       "name": "Mua vật tư y tế nẹp vít và phim X quang năm 2026 - 2027 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
       "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
@@ -594,18 +634,6 @@
         "vat tu y te",
         "x quang",
         "benh vien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600367634",
-      "name": "Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh cho Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": true,
-      "score": 90,
-      "reason": "medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "benh vien",
-        "chan doan"
       ]
     },
     {
@@ -622,17 +650,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600444639",
-      "name": "Chỉnh lý, số hóa hồ sơ lưu trữ của Đảng ủy 03 xã trước sáp nhập (xã An Nhơn Tây (cũ), xã An Phú, xã Phú Mỹ Hưng)",
-      "investor": "Văn phòng Đảng ủy xã An Nhơn Tây",
-      "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
-      "matched": [
-        "y cu"
-      ]
-    },
-    {
       "notifyNo": "IB2600377100",
       "name": "Mua sắm thiết bị y tế phục vụ công tác khám chữa bệnh tại Trung tâm Y tế Hoài Nhơn năm 2026",
       "investor": "Trung tâm Y tế Hoài Nhơn",
@@ -644,18 +661,6 @@
         "trung tam y te",
         "kham chua benh",
         "chua benh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600429006",
-      "name": "Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh năm 2026-2029",
-      "investor": "Trung tâm Y tế Phù Cát",
-      "accepted": true,
-      "score": 90,
-      "reason": "medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "trung tam y te",
-        "chan doan"
       ]
     },
     {
@@ -746,6 +751,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600447677",
+      "name": "Chiếu",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600447512",
       "name": "Tư vấn dịch vụ thẩm định giá Cây Phi Lao - dạng cây đứng tại rừng thuộc khoảnh 2, tiểu khu 216B,x ã Cát Tiến, tỉnh Gia Lai",
       "investor": "Ban quản lý rừng phòng hộ Gia Lai",
@@ -825,20 +839,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600415216",
-      "name": "Mua sắm vật tư sử dụng cho máy thận 4008S",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": 70,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "su dung cho may",
-        "dung cho may"
-      ]
     },
     {
       "notifyNo": "IB2600438488",
@@ -1158,7 +1158,9 @@
     }
   ],
   "removedManualCount": 0,
+  "removedRejectedStoredCount": 1,
   "beforeCount": 821,
   "afterCount": 821,
-  "filterStrategy": "unified-medical-scope-v4"
+  "newCount": 1,
+  "filterStrategy": "unified-medical-scope-v5"
 }
