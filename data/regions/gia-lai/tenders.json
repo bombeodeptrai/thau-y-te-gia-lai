@@ -1,6 +1,49 @@
 {
   "tenders": [
     {
+      "id": "IB2600448147",
+      "notifyId": "IB2600448147",
+      "bidId": "da900257-6be2-4177-ab2a-da3e268cba44",
+      "bidOpenId": "",
+      "inputResultId": "4343f976-2063-431c-adbe-fcd8f2e49d64",
+      "bidForm": "MSTT",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-4-kqlcnt",
+      "notifyNo": "IB2600448147",
+      "name": "Mua sắm 01 máy X quang C Arm phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "location": "Gia Lai",
+      "closeDate": "2026-08-13T08:41:14.316",
+      "publicDate": "2026-08-13T08:41:12",
+      "price": 2263000000,
+      "category": "Thiết bị y tế",
+      "status": "awarded",
+      "sourceStatus": "IS_PUBLISH",
+      "statusForNotify": "CNTTT",
+      "bidderCount": 0,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600448147&notifyId=IB2600448147&inputResultId=4343f976-2063-431c-adbe-fcd8f2e49d64&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600448147&planNo=PL2600222135&step=tbmt&isInternet=0&bidForm=MSTT",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ LONG CHÂU"
+      ],
+      "winningPrice": 2263000000,
+      "decisionDate": "2026-08-12T23:59:59",
+      "resultPublishedDate": "2026-08-13T08:41:12",
+      "hasResult": true,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "52fef288-9c72-40f7-b34f-4e597192eb40",
       "notifyId": "52fef288-9c72-40f7-b34f-4e597192eb40",
       "bidId": "8a8c1a41-7f50-44d9-b93f-4e0015c8ff4c",
@@ -42150,7 +42193,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-08-13T05:54:16.279Z",
+  "fetchedAt": "2026-08-13T09:48:38.832Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -42158,7 +42201,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 783,
+  "detailTenderCount": 785,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-plus-historical-location-terms",
@@ -42192,11 +42235,11 @@
     "lastRemovedManualTenderCount": 0,
     "filterStrategy": "unified-medical-scope-v5",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v5",
-    "lastMedicalRescueAt": "2026-08-13T05:54:16.279Z",
-    "lastMedicalRescueDays": 30,
-    "lastMedicalRescueCandidateCount": 1181,
-    "lastMedicalRescueMedicalCount": 30,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedRejectedStoredCount": 1
+    "lastMedicalRescueAt": "2026-08-13T09:48:38.832Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 590,
+    "lastMedicalRescueMedicalCount": 9,
+    "lastMedicalRescueNewCount": 1,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
