@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-13T05:53:26.168Z",
+  "auditedAt": "2026-08-13T11:15:33.238Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 469,
+      "count": 470,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 50,
+      "count": 51,
       "error": ""
     },
     {
@@ -56,13 +56,13 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 24,
+      "count": 26,
       "error": ""
     },
     {
@@ -74,13 +74,13 @@
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 8,
+      "count": 10,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 36,
+      "count": 37,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 30,
+      "count": 32,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 17,
+      "count": 14,
       "error": ""
     },
     {
@@ -140,7 +140,7 @@
     {
       "term": "Mang Yang",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 81,
+      "count": 80,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 47,
+      "count": 43,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 37,
+      "count": 38,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 21,
+      "count": 19,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1084,
+  "candidateCount": 1078,
   "acceptedCount": 30,
-  "rejectedCount": 1054,
+  "rejectedCount": 1048,
   "rejectedReasons": {
-    "excluded:xay dung": 339,
-    "insufficient-medical-context": 279,
-    "excluded:tu van": 251,
+    "excluded:xay dung": 336,
+    "insufficient-medical-context": 276,
+    "excluded:tu van": 252,
     "excluded:sua chua": 56,
-    "excluded:xay lap": 41,
+    "excluded:xay lap": 42,
     "excluded:bao hiem": 11,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 9,
@@ -290,21 +290,36 @@
     "excluded:may in": 4,
     "excluded:van phong pham": 4,
     "excluded:cay xanh": 4,
-    "excluded:giam sat thi cong": 3,
     "excluded:cong nghe thong tin": 3,
+    "excluded:giam sat thi cong": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:bao tri": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
-    "excluded:phan bon": 2,
     "excluded:in an": 1,
     "excluded:kiem dinh": 1,
     "excluded:may phat dien": 1,
     "excluded:thuc pham": 1,
     "excluded:dieu hoa khong khi": 1,
+    "excluded:phan bon": 1,
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600448147",
+      "name": "Mua sắm 01 máy X quang C Arm phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "x quang",
+        "benh vien",
+        "da khoa",
+        "kham chua benh",
+        "chua benh"
+      ]
+    },
     {
       "notifyNo": "IB2600415216",
       "name": "Mua sắm vật tư sử dụng cho máy thận 4008S",
@@ -555,19 +570,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600313612",
-      "name": "Mua sắm vật tư y tế Can thiệp mạch - Máy tạo nhịp",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
       "notifyNo": "IB2600383327",
       "name": "Mua sắm vật tư y tế, vật tư xét nghiệm, hoá chất, sinh phẩm, dụng cụ y tế năm 2026-2027 của Trung tâm Y tế Chư Păh",
       "investor": "Trung Tâm Y Tế Chư Păh",
@@ -750,6 +752,24 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600448635",
+      "name": "Thay thế tổ hợp ắc quy của Trạm thu/phát sóng bộ đàm tại núi Hàm Rồng, An Khê, AyunPa, Mang Yang, Đức Cơ",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600447938",
+      "name": "Công bố quy hoạch",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600447677",
       "name": "Chiếu",
@@ -1135,32 +1155,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600438738",
-      "name": "Đưa mốc giới ra thực địa",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600419243",
-      "name": "Xây lắp công trình",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
     }
   ],
   "removedManualCount": 0,
-  "removedRejectedStoredCount": 1,
+  "removedRejectedStoredCount": 0,
   "beforeCount": 821,
   "afterCount": 821,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
