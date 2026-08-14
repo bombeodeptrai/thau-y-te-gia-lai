@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-14T05:50:42.147Z",
+  "auditedAt": "2026-08-14T09:20:59.199Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 466,
+      "count": 469,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 32,
+      "count": 36,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 78,
+      "count": 77,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1090,
+  "candidateCount": 1095,
   "acceptedCount": 28,
-  "rejectedCount": 1062,
+  "rejectedCount": 1067,
   "rejectedReasons": {
-    "excluded:xay dung": 346,
-    "insufficient-medical-context": 278,
-    "excluded:tu van": 258,
+    "excluded:xay dung": 345,
+    "insufficient-medical-context": 280,
+    "excluded:tu van": 261,
     "excluded:sua chua": 57,
-    "excluded:xay lap": 39,
+    "excluded:xay lap": 40,
     "excluded:tham dinh": 11,
     "excluded:bao hiem": 11,
     "excluded:trang phuc": 9,
@@ -723,6 +723,36 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600451921",
+      "name": "Kế hoạch lựa chọn nhà thầu Dự án: Di dời hạ tầng kỹ thuật đường điện phục vụ công tác giải phóng mặt bằng dự án: Đường liên xã huyện Ia Pa, tỉnh Gia Lai",
+      "investor": "Ban quản lý xã Ia Pa",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600451839",
+      "name": "Mua sắm bản quyền phần mềm Windows và Microsoft Office phục vụ bảo đảm an toàn thông tin mạng tại Ban Quản lý Khu kinh tế năm 2026",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600451522",
+      "name": "Gói thầu số 01 Tư vấn lập E-HSMT và đánh E-HSDT giá cho Gói thầu số: 02",
+      "investor": "TRUNG TÂM BẢO TRỢ XÃ HỘI TỔNG HỢP TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "lap e hsmt"
+      ]
+    },
+    {
       "notifyNo": "IB2600450218",
       "name": "Mua xe ô tô phục vụ công tác chung của Văn phòng UBND tỉnh",
       "investor": "Văn phòng Uỷ ban nhân dân tỉnh Gia Lai",
@@ -1102,41 +1132,6 @@
       "matched": [
         "tu van",
         "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600442336",
-      "name": "Gói thầu số 2: Tư vấn lập HSMT và đánh giá HSDT",
-      "investor": "Ban chỉ huy bộ đội biên phòng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600442326",
-      "name": "Tư vấn giám sát thi công xây dựng",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600442086",
-      "name": "205154-CĐTRG-VTNetTVTT2026 Thẩm tra Thiết kế bản vẽ thi công và lập dự toán công trình: Xây dựng hạ tầng trạm BTS tại Gia Lai",
-      "investor": "TỔNG CÔNG TY MẠNG LƯỚI VIETTEL - CHI NHÁNH TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
