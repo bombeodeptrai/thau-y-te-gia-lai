@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-18T10:47:05.407Z",
+  "rescuedAt": "2026-08-18T11:50:00.149Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 114,
+      "count": 120,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 163,
+      "count": 164,
       "error": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -123,7 +123,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 46,
+      "count": 47,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 19,
+      "count": 20,
       "error": ""
     },
     {
@@ -278,15 +278,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 554,
-  "acceptedCount": 7,
-  "rejectedCount": 547,
+  "candidateCount": 562,
+  "acceptedCount": 8,
+  "rejectedCount": 554,
   "rejectedReasons": {
-    "insufficient-medical-context": 162,
-    "excluded:tu van": 157,
-    "excluded:xay dung": 133,
-    "excluded:sua chua": 25,
-    "excluded:xay lap": 22,
+    "insufficient-medical-context": 165,
+    "excluded:tu van": 158,
+    "excluded:xay dung": 136,
+    "excluded:sua chua": 26,
+    "excluded:xay lap": 21,
     "excluded:tham dinh": 9,
     "excluded:bao hiem": 7,
     "excluded:cai tao": 4,
@@ -307,6 +307,19 @@
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600443322",
+      "name": "Mua sắm Nẹp, vít, dụng cụ chấn thương, dụng cụ phẩu thuật nội soi và y dụng cụ chuyên dùng khác năm 2026 của Trung tâm Y tế An Khê",
+      "investor": "TRUNG TÂM Y TẾ AN KHÊ",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "noi soi",
+        "phau thuat",
+        "trung tam y te"
+      ]
+    },
     {
       "notifyNo": "IB2600453434",
       "name": "Gói thầu số 01: Mua sắm vật tư y tế, sinh phẩm, hóa chất xét nghiệm và thiết bị y tế thông thường phục vụ khám sức khỏe toàn dân năm 2026 của Trung tâm Y tế Đức Cơ",
@@ -409,6 +422,58 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600457062",
+      "name": "Gói thầu số 1: Xây dựng tuyến cáp quang GPON",
+      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600456186",
+      "name": "Mua sắm",
+      "investor": "Ban quản lý xã Ia Pa",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600460149",
+      "name": "Gói thầu số 33/SX2026/PTC3: Cung cấp biến dòng điện 123kV và phụ kiện",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600438984",
+      "name": "Mua sắm vật tư, thiết bị sửa chữa lớn Hệ thống cung cấp điện tự dùng AC, DC Nhà máy thủy điện Sê San 4",
+      "investor": "CÔNG TY PHÁT TRIỂN THỦY ĐIỆN SÊ SAN - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua",
+        "cap dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600430446",
+      "name": "Thi công xây dựng",
+      "investor": "Phòng Kinh tế xã Đak Rong",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600460980",
       "name": "Cung cấp tivi, tủ lạnh, ấm siêu tốc cho phòng điều trị theo yêu cầu của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
@@ -784,57 +849,6 @@
       "matched": [
         "sua chua",
         "duong day"
-      ]
-    },
-    {
-      "notifyNo": "IB2600445909",
-      "name": "Mua sắm 01 xe ô tô mới phục vụ công tác chung",
-      "investor": "VĂN PHÒNG HỘI ĐỒNG NHÂN DÂN VÀ ỦY BAN NHÂN DÂN XÃ LƠ PANG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600427013",
-      "name": "Gói thầu XL-01",
-      "investor": "Binh đoàn 15",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600444164",
-      "name": "Xây dựng công trình",
-      "investor": "Ban Quản lý Đak Đoa",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600443962",
-      "name": "Xây dựng + thiết bị công trình",
-      "investor": "Ban Quản lý Đak Đoa",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600444959",
-      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
-      "investor": "Ban Quản lý phường Bồng Sơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
