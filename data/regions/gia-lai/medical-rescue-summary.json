@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-18T10:06:36.584Z",
+  "rescuedAt": "2026-08-18T10:47:05.407Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 113,
+      "count": 114,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 166,
+      "count": 163,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -278,14 +278,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 555,
-  "acceptedCount": 6,
-  "rejectedCount": 549,
+  "candidateCount": 554,
+  "acceptedCount": 7,
+  "rejectedCount": 547,
   "rejectedReasons": {
     "insufficient-medical-context": 162,
     "excluded:tu van": 157,
-    "excluded:xay dung": 132,
-    "excluded:sua chua": 28,
+    "excluded:xay dung": 133,
+    "excluded:sua chua": 25,
     "excluded:xay lap": 22,
     "excluded:tham dinh": 9,
     "excluded:bao hiem": 7,
@@ -307,6 +307,23 @@
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600453434",
+      "name": "Gói thầu số 01: Mua sắm vật tư y tế, sinh phẩm, hóa chất xét nghiệm và thiết bị y tế thông thường phục vụ khám sức khỏe toàn dân năm 2026 của Trung tâm Y tế Đức Cơ",
+      "investor": "Trung tâm Y tế Đức Cơ",
+      "accepted": true,
+      "score": 230,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
+      "matched": [
+        "thiet bi y te",
+        "vat tu y te",
+        "hoa chat xet nghiem",
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "xet nghiem"
+      ]
+    },
     {
       "notifyNo": "IB2600454114",
       "name": "Gói 14. Vật tư tiêu hao xét nghiệm gồm 11 mặt hàng 11 phần (lô)",
