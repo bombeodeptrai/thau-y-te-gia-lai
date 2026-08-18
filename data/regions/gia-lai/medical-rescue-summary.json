@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-18T11:50:00.149Z",
+  "rescuedAt": "2026-08-18T14:09:11.382Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 120,
+      "count": 121,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 164,
+      "count": 166,
       "error": ""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 23,
+      "count": 24,
       "error": ""
     },
     {
@@ -278,14 +278,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 562,
+  "candidateCount": 564,
   "acceptedCount": 8,
-  "rejectedCount": 554,
+  "rejectedCount": 556,
   "rejectedReasons": {
     "insufficient-medical-context": 165,
     "excluded:tu van": 158,
-    "excluded:xay dung": 136,
-    "excluded:sua chua": 26,
+    "excluded:xay dung": 137,
+    "excluded:sua chua": 27,
     "excluded:xay lap": 21,
     "excluded:tham dinh": 9,
     "excluded:bao hiem": 7,
@@ -422,6 +422,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600460002",
+      "name": "Gói 32/SCL2027/PTC3: Sửa chữa xe ô tô UAZ thuộc Truyền tải điện Gia Lai",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
     {
       "notifyNo": "IB2600457062",
       "name": "Gói thầu số 1: Xây dựng tuyến cáp quang GPON",
@@ -838,18 +849,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600448406",
-      "name": "Gói 27/SCL2027/PTC3: Thi công sửa chữa hệ thống nối đất đường dây 500kV Pleiku - Đăk Nông tại Gia Lai (Bao gồm cung cấp vật tư tiếp địa)",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "duong day"
-      ]
     }
   ],
   "removedManualCount": 0,
