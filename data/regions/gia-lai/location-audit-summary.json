@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-20T16:51:08.796Z",
+  "auditedAt": "2026-08-20T20:47:05.860Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 450,
+      "count": 454,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 82,
+      "count": 78,
       "error": ""
     },
     {
@@ -134,7 +134,7 @@
     {
       "term": "Krông Pa",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 93,
+      "count": 96,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 57,
+      "count": 61,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 31,
+      "count": 30,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1137,
+  "candidateCount": 1143,
   "acceptedCount": 29,
-  "rejectedCount": 1108,
+  "rejectedCount": 1114,
   "rejectedReasons": {
-    "excluded:xay dung": 333,
-    "excluded:tu van": 304,
-    "insufficient-medical-context": 290,
+    "excluded:xay dung": 337,
+    "excluded:tu van": 310,
+    "insufficient-medical-context": 281,
     "excluded:sua chua": 54,
     "excluded:xay lap": 36,
     "excluded:trang phuc": 13,
@@ -287,18 +287,18 @@
     "excluded:cai tao": 6,
     "excluded:bao ve": 6,
     "excluded:may in": 5,
+    "excluded:giam sat thi cong": 4,
+    "excluded:bao duong": 4,
     "excluded:van phong pham": 4,
     "excluded:cong nghe thong tin": 3,
     "excluded:cay xanh": 3,
     "excluded:rac thai": 3,
     "excluded:bao tri": 2,
-    "excluded:giam sat thi cong": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:thuc pham": 2,
     "excluded:kiem dinh": 2,
     "excluded:in an": 1,
     "excluded:thiet bi dien": 1,
-    "excluded:bao duong": 1,
     "excluded:duong day": 1,
     "excluded:may phat dien": 1,
     "excluded:thuoc generic": 1,
@@ -741,6 +741,105 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600471263",
+      "name": "Giám sát thi công",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:giam sat thi cong",
+      "matched": [
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471254",
+      "name": "Thi công Duy tu, bảo dưỡng đường liên xã (Đoạn từ giáp ranh xã Kông Bơ La thuộc làng Pơ Ngăl đến ngã ba thôn Hbang)",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao duong",
+      "matched": [
+        "bao duong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471247",
+      "name": "Giám sát Chương trình mục tiêu quốc gia phát triển kinh tế - xã hội vùng đồng bào dân tộc thiểu số và miền núi nguồn chuyển nguồn sang năm 2026",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600471237",
+      "name": "thi công Duy tu, bảo dưỡng đường liên xã (Đoạn từ ngã ba làng Nam Cao đến Cầu sắt; Đoạn từ đầu làng Đak PơKao đến cánh đồng Đê Bar)",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao duong",
+      "matched": [
+        "bao duong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471177",
+      "name": "Giám sát thi công công trình",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:giam sat thi cong",
+      "matched": [
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471169",
+      "name": "Thi công duy tu, bảo dưỡng công trình",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao duong",
+      "matched": [
+        "bao duong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471117",
+      "name": "Tư vấn khảo sát xây dựng và lập Báo cáo kinh tế - kỹ thuậ",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471090",
+      "name": "Tư vấn quản lý dự án",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471070",
+      "name": "Tư vấn thẩm tra Báo cáo kinh tế - kỹ thuật",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600395059",
       "name": "Gói thầu 26.40/HH: Cung cấp cách điện, cáp quang và phụ kiện",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1060,98 +1159,6 @@
       "matched": [
         "bao tri",
         "bao duong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600453736",
-      "name": "Gói thầu số 5: Mua sắm xuồng PCCC và CHCN trên biển",
-      "investor": "Ban chỉ huy bộ đội biên phòng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600453652",
-      "name": "Gói thầu số 4: Mua sắm trang bị",
-      "investor": "Ban chỉ huy bộ đội biên phòng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600458129",
-      "name": "Gói thầu số 03",
-      "investor": "BAN QUẢN LÝ PHƯỜNG AN KHÊ, TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600456192",
-      "name": "Tư vấn giám sát thi công xây dựng",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600455253",
-      "name": "Mua xe ô tô phục vụ công tác chung của Sở Dân tộc và Tôn giáo",
-      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600443803",
-      "name": "26-43/SC: thi công sửa chữa xe oto tải gắn cẩu có rổ nâng người trên cao 77C-216.69",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600443799",
-      "name": "26-42/SC: thi công sửa chữa xe bán tải Mazda biển số 77C-144.11",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600457625",
-      "name": "Lập hồ sơ bổ sung quy hoạch các dự án Nhà máy điện mặt trời tại xã Phú Túc, tỉnh Gia Lai",
-      "investor": "CÔNG TY CỔ PHẦN VRG - ĐẮK NÔNG",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600426311",
-      "name": "Cung cấp Bản quyền phần mềm diệt virus cho máy tính (máy chủ và máy trạm)",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may tinh",
-      "matched": [
-        "may tinh",
-        "may chu"
       ]
     }
   ],
