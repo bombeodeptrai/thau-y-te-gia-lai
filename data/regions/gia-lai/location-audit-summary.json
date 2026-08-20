@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-20T04:53:31.256Z",
+  "auditedAt": "2026-08-20T08:57:15.872Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 449,
+      "count": 447,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 23,
+      "count": 25,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 86,
+      "count": 85,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -271,14 +271,14 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1115,
+  "candidateCount": 1113,
   "acceptedCount": 30,
-  "rejectedCount": 1085,
+  "rejectedCount": 1083,
   "rejectedReasons": {
-    "excluded:xay dung": 320,
-    "excluded:tu van": 299,
-    "insufficient-medical-context": 286,
-    "excluded:sua chua": 53,
+    "excluded:xay dung": 319,
+    "excluded:tu van": 301,
+    "insufficient-medical-context": 284,
+    "excluded:sua chua": 52,
     "excluded:xay lap": 36,
     "excluded:trang phuc": 12,
     "excluded:tham dinh": 11,
