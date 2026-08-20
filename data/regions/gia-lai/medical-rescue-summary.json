@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-20T04:54:19.092Z",
+  "rescuedAt": "2026-08-20T13:12:10.668Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 261,
+      "count": 260,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 449,
+      "count": 451,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -63,13 +63,13 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 44,
+      "count": 48,
       "error": ""
     },
     {
@@ -153,7 +153,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 23,
+      "count": 25,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 55,
+      "count": 57,
       "error": ""
     },
     {
@@ -207,19 +207,19 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 36,
+      "count": 38,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 9,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -231,7 +231,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 24,
+      "count": 27,
       "error": ""
     },
     {
@@ -278,17 +278,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1213,
-  "acceptedCount": 30,
-  "rejectedCount": 1183,
+  "candidateCount": 1221,
+  "acceptedCount": 29,
+  "rejectedCount": 1192,
   "rejectedReasons": {
-    "excluded:xay dung": 344,
+    "excluded:xay dung": 348,
     "insufficient-medical-context": 335,
-    "excluded:tu van": 303,
-    "excluded:sua chua": 56,
+    "excluded:tu van": 308,
+    "excluded:sua chua": 55,
     "excluded:xay lap": 45,
+    "excluded:trang phuc": 13,
     "excluded:tham dinh": 12,
-    "excluded:trang phuc": 12,
     "excluded:bao hiem": 10,
     "excluded:may tinh": 8,
     "excluded:bao ve": 7,
@@ -636,23 +636,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600383327",
-      "name": "Mua sắm vật tư y tế, vật tư xét nghiệm, hoá chất, sinh phẩm, dụng cụ y tế năm 2026-2027 của Trung tâm Y tế Chư Păh",
-      "investor": "Trung Tâm Y Tế Chư Păh",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "vat tu y te",
-        "vat tu xet nghiem",
-        "dung cu y te",
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "xet nghiem"
-      ]
-    },
-    {
       "notifyNo": "IB2600448147",
       "name": "Mua sắm 01 máy X quang C Arm phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -763,6 +746,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600464145",
+      "name": "Gói thầu số 01: Thi công xây dựng",
+      "investor": "Ban quản lý phường Pleiku",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600452023",
       "name": "Xây lắp",
@@ -1177,20 +1171,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600454325",
-      "name": "Gói 15. Hóa chất, sinh phẩm thông thường gồm 12 mặt hàng 12 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": 75,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "sinh pham"
-      ]
     }
   ],
   "removedManualCount": 0,

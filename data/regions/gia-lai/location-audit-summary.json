@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-20T04:53:31.256Z",
+  "auditedAt": "2026-08-20T13:11:30.595Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 449,
+      "count": 451,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -56,13 +56,13 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 44,
+      "count": 48,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 23,
+      "count": 25,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 55,
+      "count": 57,
       "error": ""
     },
     {
@@ -200,19 +200,19 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 36,
+      "count": 38,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 9,
+      "count": 7,
       "error": ""
     },
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 24,
+      "count": 27,
       "error": ""
     },
     {
@@ -271,16 +271,16 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1115,
-  "acceptedCount": 30,
-  "rejectedCount": 1085,
+  "candidateCount": 1124,
+  "acceptedCount": 29,
+  "rejectedCount": 1095,
   "rejectedReasons": {
-    "excluded:xay dung": 320,
-    "excluded:tu van": 299,
+    "excluded:xay dung": 325,
+    "excluded:tu van": 304,
     "insufficient-medical-context": 286,
-    "excluded:sua chua": 53,
+    "excluded:sua chua": 52,
     "excluded:xay lap": 36,
-    "excluded:trang phuc": 12,
+    "excluded:trang phuc": 13,
     "excluded:tham dinh": 11,
     "excluded:bao hiem": 10,
     "excluded:may tinh": 8,
@@ -598,23 +598,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600383327",
-      "name": "Mua sắm vật tư y tế, vật tư xét nghiệm, hoá chất, sinh phẩm, dụng cụ y tế năm 2026-2027 của Trung tâm Y tế Chư Păh",
-      "investor": "Trung Tâm Y Tế Chư Păh",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "vat tu y te",
-        "vat tu xet nghiem",
-        "dung cu y te",
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "xet nghiem"
-      ]
-    },
-    {
       "notifyNo": "IB2600413030",
       "name": "Mua sắm Vật tư y tế, hóa chất sát khuẩn bổ sung quý 3 năm 2026 của Trung tâm Y tế Đak Đoa",
       "investor": "Trung tâm Y tế Đak Đoa",
@@ -754,6 +737,62 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600469090",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600469063",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600468968",
+      "name": "Dự toán mua sắm máy móc, thiết bị và phần mềm",
+      "investor": "Đảng ủy các cơ quan Đảng tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600468631",
+      "name": "Mua sắm trang phục tập luyện thường xuyên cho các đội thể thao tuyến tỉnh và tuyến Năng khiếu năm 2026",
+      "investor": "Trung tâm Huấn luyện và Thi đấu Thể thao tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:trang phuc",
+      "matched": [
+        "trang phuc"
+      ]
+    },
+    {
+      "notifyNo": "IB2600468366",
+      "name": "Tư vấn dịch vụ Thẩm định giá loại cây (thuộc nhóm gỗ I đến VIII) thuộc Lô 68A, khoảnh 3, tiểu khu 991; lô 8A, lô 18B, lô 19 khoảnh 6, tiểu khu 1006; lô 7, lô 14, lô 10A, lô 10B, lô 16C, lô 18A, lô 18C, lô 21A, khoảnh 1 và lô 3, lô 16A, lô 16B, lô 2B, lô 5B, khoảnh 2, tiểu khu 1010; lô 63B, lô 2B khoảnh 8, lô 35J, khoảnh 9 và lô 12D, khoảnh 10, tiểu khu 1011, xã Ia Mơ, tỉnh Gia Lai.",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
     {
       "notifyNo": "IB2600461281",
       "name": "Quy hoạch chung đô thị An Khê, tỉnh Gia Lai",
@@ -1119,54 +1158,6 @@
       "matched": [
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "IB2600453113",
-      "name": "Mua thiết bị dò tìm rò rỉ dạng cây bút, thực hiện công tác chống thất thoát năm 2026",
-      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600452558",
-      "name": "Gói thầu: Mua vật tư, phụ kiện thực hiện công tác khắc phục sự cố các tuyến ống và lắp đặt đồng hồ nước hộ gia đình tại Nhà máy Nước sạch Phù Cát",
-      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600452318",
-      "name": "Mua Đồng hồ nước DN15LS thực hiện công tác lắp đặt hệ thống cấp nước hộ dân tại Nhà máy Nước sạch Nhơn Tân",
-      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600452292",
-      "name": "Thẩm định giá xác định giá trị vật tư, vật liệu thu hồi từ thanh lý tài sản các công trình xây dựng trên đất của 18/38 Doanh nghiệp bị ảnh hưởng do GPMB để thực hiện dự án Di dời các Doanh nghiệp trong Cụm công nghiệp Nhơn Bình, phường Quy Nhơn Đông, tỉnh Gia Lai",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600451921",
-      "name": "Kế hoạch lựa chọn nhà thầu Dự án: Di dời hạ tầng kỹ thuật đường điện phục vụ công tác giải phóng mặt bằng dự án: Đường liên xã huyện Ia Pa, tỉnh Gia Lai",
-      "investor": "Ban quản lý xã Ia Pa",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
