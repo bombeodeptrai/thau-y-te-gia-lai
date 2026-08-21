@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-20T20:47:05.860Z",
+  "auditedAt": "2026-08-21T08:58:39.005Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 454,
+      "count": 455,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 30,
+      "count": 29,
       "error": ""
     },
     {
@@ -266,7 +266,7 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     }
   ],
@@ -276,13 +276,13 @@
   "rejectedCount": 1114,
   "rejectedReasons": {
     "excluded:xay dung": 337,
-    "excluded:tu van": 310,
+    "excluded:tu van": 309,
     "insufficient-medical-context": 281,
     "excluded:sua chua": 54,
     "excluded:xay lap": 36,
     "excluded:trang phuc": 13,
+    "excluded:bao hiem": 11,
     "excluded:tham dinh": 11,
-    "excluded:bao hiem": 10,
     "excluded:may tinh": 8,
     "excluded:cai tao": 6,
     "excluded:bao ve": 6,
@@ -741,6 +741,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600471767",
+      "name": "Mua Bảo hiểm trách nhiệm nghề nghiệp trong khám bệnh, chữa bệnh năm 2026 của Bệnh viện Sản - Nhi tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao hiem",
+      "matched": [
+        "bao hiem"
+      ]
+    },
+    {
       "notifyNo": "IB2600471263",
       "name": "Giám sát thi công",
       "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
@@ -1147,18 +1158,6 @@
       "matched": [
         "benh vien",
         "dieu tri"
-      ]
-    },
-    {
-      "notifyNo": "IB2600460496",
-      "name": "Bảo trì, bảo dưỡng cho thiết bị y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao tri",
-      "matched": [
-        "bao tri",
-        "bao duong"
       ]
     }
   ],
