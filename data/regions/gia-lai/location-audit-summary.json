@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-21T13:11:28.971Z",
+  "auditedAt": "2026-08-21T16:51:27.919Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 457,
+      "count": 456,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 78,
+      "count": 79,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 43,
+      "count": 42,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 52,
+      "count": 47,
       "error": ""
     },
     {
@@ -68,13 +68,13 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 8,
+      "count": 12,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 60,
+      "count": 62,
       "error": ""
     },
     {
@@ -271,32 +271,33 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1146,
-  "acceptedCount": 29,
-  "rejectedCount": 1117,
+  "candidateCount": 1151,
+  "acceptedCount": 28,
+  "rejectedCount": 1123,
   "rejectedReasons": {
-    "excluded:xay dung": 336,
-    "excluded:tu van": 308,
-    "insufficient-medical-context": 284,
-    "excluded:sua chua": 54,
-    "excluded:xay lap": 37,
+    "excluded:xay dung": 340,
+    "excluded:tu van": 310,
+    "insufficient-medical-context": 282,
+    "excluded:sua chua": 55,
+    "excluded:xay lap": 39,
     "excluded:tham dinh": 12,
     "excluded:trang phuc": 12,
     "excluded:bao hiem": 11,
     "excluded:may tinh": 8,
     "excluded:cai tao": 6,
-    "excluded:bao ve": 6,
     "excluded:may in": 5,
+    "excluded:bao ve": 5,
     "excluded:giam sat thi cong": 4,
     "excluded:bao duong": 4,
     "excluded:van phong pham": 4,
     "excluded:cong nghe thong tin": 3,
-    "excluded:cay xanh": 3,
     "excluded:rac thai": 3,
     "excluded:bao tri": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:thuc pham": 2,
     "excluded:kiem dinh": 2,
+    "excluded:cay xanh": 2,
+    "excluded:chat thai": 1,
     "excluded:in an": 1,
     "excluded:thiet bi dien": 1,
     "excluded:duong day": 1,
@@ -655,19 +656,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600354173",
-      "name": "Vật tư y tế dùng trong phẫu thuật khớp háng, khớp gối",
-      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
-      "accepted": true,
-      "score": 165,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "phau thuat",
-        "benh vien"
-      ]
-    },
-    {
       "notifyNo": "IB2600377100",
       "name": "Mua sắm thiết bị y tế phục vụ công tác khám chữa bệnh tại Trung tâm Y tế Hoài Nhơn năm 2026",
       "investor": "Trung tâm Y tế Hoài Nhơn",
@@ -741,6 +729,82 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600474379",
+      "name": "Thi công xây dựng công trình: San lấp mặt bằng Khu quy hoạch đấu giá quyền sử dụng đất tại thôn Tân Đông, xã Kông Bơ La (vị trí giao TL669 tại Km21+517,00m)",
+      "investor": "Phòng Kinh tế xã Kông Bơ La, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600474144",
+      "name": "Sửa chữa máy lọc máu liên tục của Bệnh viện Đa khoa Gia Lai.",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600473987",
+      "name": "Gói thầu số 02: Mua sắm bì nhựa từ Quý 3/2026 đến hết Quý 2/2027 tại Bệnh viện Mắt tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600473610",
+      "name": "Gói thầu số 01: Mua sắm công cụ dụng cụ văn phòng từ Quý 3/2026 đến hết Quý 2/2027 tại Bệnh viện Mắt tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600473097",
+      "name": "Cung cấp Dịch vụ thu gom, vận chuyển và xử lý chất thải rắn sinh hoạt trên địa bàn xã Kông Bơ La",
+      "investor": "Phòng Kinh tế xã Kông Bơ La, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:chat thai",
+      "matched": [
+        "chat thai"
+      ]
+    },
+    {
+      "notifyNo": "IB2600473545",
+      "name": "Bảo hiểm xây dựng công trình",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "bao hiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600473308",
+      "name": "In tờ rơi tuyên truyền phục vụ công tác của Phòng Cảnh sát giao thông",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600467209",
       "name": "Xây Lắp",
@@ -1094,69 +1158,6 @@
       "matched": [
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "IB2600465939",
-      "name": "Phê duyệt kế hoạch lựa chọn nhà thầu gói thầu: Trang bị, lắp đặt Hệ thống phòng cháy, chữa cháy tại Sở Ngoại vụ",
-      "investor": "SỞ NGOẠI VỤ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600465596",
-      "name": "Kiểm toán công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600465574",
-      "name": "Kiểm toán công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600465533",
-      "name": "Kiểm toán công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600463578",
-      "name": "Kiểm toán công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600463757",
-      "name": "Tổ chức dạy nghề người cai nghiện",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600394701",
-      "name": "Gói thầu 26.39/HH: Cung cấp dây dẫn",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
