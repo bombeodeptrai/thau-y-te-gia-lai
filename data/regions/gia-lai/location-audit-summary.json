@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-20T20:47:05.860Z",
+  "auditedAt": "2026-08-21T13:11:28.971Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 454,
+      "count": 457,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 42,
+      "count": 43,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 54,
+      "count": 52,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 13,
+      "count": 15,
       "error": ""
     },
     {
@@ -134,7 +134,7 @@
     {
       "term": "Krông Pa",
       "success": true,
-      "count": 0,
+      "count": 2,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 96,
+      "count": 95,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 61,
+      "count": 60,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 30,
+      "count": 29,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 27,
+      "count": 28,
       "error": ""
     },
     {
@@ -266,23 +266,23 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1143,
+  "candidateCount": 1146,
   "acceptedCount": 29,
-  "rejectedCount": 1114,
+  "rejectedCount": 1117,
   "rejectedReasons": {
-    "excluded:xay dung": 337,
-    "excluded:tu van": 310,
-    "insufficient-medical-context": 281,
+    "excluded:xay dung": 336,
+    "excluded:tu van": 308,
+    "insufficient-medical-context": 284,
     "excluded:sua chua": 54,
-    "excluded:xay lap": 36,
-    "excluded:trang phuc": 13,
-    "excluded:tham dinh": 11,
-    "excluded:bao hiem": 10,
+    "excluded:xay lap": 37,
+    "excluded:tham dinh": 12,
+    "excluded:trang phuc": 12,
+    "excluded:bao hiem": 11,
     "excluded:may tinh": 8,
     "excluded:cai tao": 6,
     "excluded:bao ve": 6,
@@ -301,6 +301,7 @@
     "excluded:thiet bi dien": 1,
     "excluded:duong day": 1,
     "excluded:may phat dien": 1,
+    "excluded:tin hoc": 1,
     "excluded:thuoc generic": 1,
     "excluded:dieu hoa khong khi": 1,
     "excluded:lap e hsmt": 1,
@@ -741,6 +742,70 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600467209",
+      "name": "Xây Lắp",
+      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600472629",
+      "name": "Mua vật dụng bếp ăn phục vụ công tác",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600468867",
+      "name": "Thi công xây dựng công trình: Đường từ cầu Nghĩa An đi khu sản xuất Tây Sông Ba",
+      "investor": "Phòng Kinh tế xã Kông Bơ La, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600469351",
+      "name": "Thi công xây dựng công trình: Nâng cấp mở rộng Đường từ Tỉnh lộ 669 Đoạn Nhà Văn Hoá xã đi cầu Nghĩa An; hạng mục: Nền, mặt đường và công trình thoát nước",
+      "investor": "Phòng Kinh tế xã Kông Bơ La, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600472141",
+      "name": "Lập đề cương, ma-két và tổ chức thẩm định đề cương, ma-két trưng bày Không gian văn hóa cồng chiêng tỉnh Gia Lai",
+      "investor": "Bảo tàng Pleiku",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tham dinh",
+      "matched": [
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471767",
+      "name": "Mua Bảo hiểm trách nhiệm nghề nghiệp trong khám bệnh, chữa bệnh năm 2026 của Bệnh viện Sản - Nhi tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao hiem",
+      "matched": [
+        "bao hiem"
+      ]
+    },
+    {
       "notifyNo": "IB2600471263",
       "name": "Giám sát thi công",
       "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
@@ -1092,74 +1157,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600462721",
-      "name": "Sửa chữa máy Holter điện tim của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600461959",
-      "name": "Lập hồ sơ mời thầu, đánh giá hồ sơ dự thầu thi công xây dựng",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600460002",
-      "name": "Gói 32/SCL2027/PTC3: Sửa chữa xe ô tô UAZ thuộc Truyền tải điện Gia Lai",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600457062",
-      "name": "Gói thầu số 1: Xây dựng tuyến cáp quang GPON",
-      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600460980",
-      "name": "Cung cấp tivi, tủ lạnh, ấm siêu tốc cho phòng điều trị theo yêu cầu của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": false,
-      "score": 55,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "dieu tri"
-      ]
-    },
-    {
-      "notifyNo": "IB2600460496",
-      "name": "Bảo trì, bảo dưỡng cho thiết bị y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao tri",
-      "matched": [
-        "bao tri",
-        "bao duong"
-      ]
     }
   ],
   "removedManualCount": 0,
