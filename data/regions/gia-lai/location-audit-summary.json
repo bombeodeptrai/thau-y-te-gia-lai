@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-22T13:00:52.668Z",
+  "auditedAt": "2026-08-22T16:40:45.259Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -14,13 +14,13 @@
     {
       "term": "Bình Định",
       "success": true,
-      "count": 72,
+      "count": 69,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 38,
+      "count": 36,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 31,
+      "count": 30,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 95,
+      "count": 94,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 40,
+      "count": 41,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1158,
-  "acceptedCount": 27,
-  "rejectedCount": 1131,
+  "candidateCount": 1150,
+  "acceptedCount": 26,
+  "rejectedCount": 1124,
   "rejectedReasons": {
-    "excluded:xay dung": 352,
-    "excluded:tu van": 311,
-    "insufficient-medical-context": 278,
+    "excluded:xay dung": 348,
+    "excluded:tu van": 310,
+    "insufficient-medical-context": 276,
     "excluded:sua chua": 54,
-    "excluded:xay lap": 38,
+    "excluded:xay lap": 39,
     "excluded:tham dinh": 12,
     "excluded:bao hiem": 11,
     "excluded:trang phuc": 11,
@@ -301,7 +301,6 @@
     "excluded:in an": 1,
     "excluded:thiet bi dien": 1,
     "excluded:duong day": 1,
-    "excluded:may phat dien": 1,
     "excluded:tin hoc": 1,
     "excluded:thuoc generic": 1,
     "excluded:dieu hoa khong khi": 1,
@@ -571,22 +570,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600384538",
-      "name": "Mua sắm Hệ thống phẫu thuật nội soi khớp phục vụ công tác khám bệnh, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 155,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "noi soi",
-        "phau thuat",
-        "benh vien",
-        "da khoa",
-        "kham benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "IB2600443322",
       "name": "Mua sắm Nẹp, vít, dụng cụ chấn thương, dụng cụ phẩu thuật nội soi và y dụng cụ chuyên dùng khác năm 2026 của Trung tâm Y tế An Khê",
       "investor": "TRUNG TÂM Y TẾ AN KHÊ",
@@ -715,6 +698,39 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600477565",
+      "name": "Tư vấn thẩm tra Báo cáo kinh tế - kỹ thuật",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600477407",
+      "name": "Gói thầu sửa chữa, nâng cấp hệ thống SCADA",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600460583",
+      "name": "Gói thầu số 73-XL-2026: Thi công xây lắp dự án",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
     {
       "notifyNo": "IB2600476138",
       "name": "Mua thùng rác trang bị cho các bôn và 02 trụ sở (UBND xã và Đảng ủy xã) nhằm thực hiện công tác môi trường năm 2026",
@@ -1121,44 +1137,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600470303",
-      "name": "Xây dựng định mức kinh tế - kỹ thuật lập hành lang bảo vệ nguồn nước trên địa bàn tỉnh Gia Lai",
-      "investor": "Sở Nông nghiệp và Môi trường tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "bao ve"
-      ]
-    },
-    {
-      "notifyNo": "IB2600470136",
-      "name": "Mua sắm giường bệnh, ghế đa năng và tủ đầu giường cho các phòng bệnh dịch vụ theo yêu cầu của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600470168",
-      "name": "Lắp đặt hệ thống camera an ninh trên địa bàn xã Ia Dreh",
-      "investor": "CÔNG AN XÃ IA DREH, TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 826,
-  "afterCount": 826,
+  "beforeCount": 827,
+  "afterCount": 827,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
