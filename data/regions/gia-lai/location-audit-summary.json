@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-22T04:49:29.461Z",
+  "auditedAt": "2026-08-22T08:48:28.076Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 460,
+      "count": 459,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 79,
+      "count": 77,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 42,
+      "count": 40,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 95,
+      "count": 94,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1159,
+  "candidateCount": 1154,
   "acceptedCount": 27,
-  "rejectedCount": 1132,
+  "rejectedCount": 1127,
   "rejectedReasons": {
-    "excluded:xay dung": 353,
-    "excluded:tu van": 309,
-    "insufficient-medical-context": 281,
+    "excluded:xay dung": 352,
+    "excluded:tu van": 307,
+    "insufficient-medical-context": 279,
     "excluded:sua chua": 54,
     "excluded:xay lap": 38,
     "excluded:tham dinh": 12,
