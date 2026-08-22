@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-22T04:49:29.461Z",
+  "auditedAt": "2026-08-22T13:00:52.668Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -14,13 +14,13 @@
     {
       "term": "Bình Định",
       "success": true,
-      "count": 79,
+      "count": 72,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 42,
+      "count": 38,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 10,
+      "count": 12,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 27,
+      "count": 28,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 61,
+      "count": 60,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 70,
+      "count": 76,
       "error": ""
     },
     {
@@ -271,18 +271,18 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1159,
+  "candidateCount": 1158,
   "acceptedCount": 27,
-  "rejectedCount": 1132,
+  "rejectedCount": 1131,
   "rejectedReasons": {
-    "excluded:xay dung": 353,
-    "excluded:tu van": 309,
-    "insufficient-medical-context": 281,
+    "excluded:xay dung": 352,
+    "excluded:tu van": 311,
+    "insufficient-medical-context": 278,
     "excluded:sua chua": 54,
     "excluded:xay lap": 38,
     "excluded:tham dinh": 12,
-    "excluded:trang phuc": 12,
     "excluded:bao hiem": 11,
+    "excluded:trang phuc": 11,
     "excluded:may tinh": 8,
     "excluded:cai tao": 6,
     "excluded:may in": 5,
@@ -290,12 +290,12 @@
     "excluded:giam sat thi cong": 4,
     "excluded:bao duong": 4,
     "excluded:van phong pham": 4,
+    "excluded:bao tri": 3,
     "excluded:cong nghe thong tin": 3,
+    "excluded:kiem dinh": 3,
     "excluded:rac thai": 3,
-    "excluded:bao tri": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:thuc pham": 2,
-    "excluded:kiem dinh": 2,
     "excluded:cay xanh": 2,
     "excluded:chat thai": 1,
     "excluded:in an": 1,
@@ -716,6 +716,46 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600476138",
+      "name": "Mua thùng rác trang bị cho các bôn và 02 trụ sở (UBND xã và Đảng ủy xã) nhằm thực hiện công tác môi trường năm 2026",
+      "investor": "Phòng Kinh tế xã Ia Sao, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600475936",
+      "name": "Sản xuất, lắp đặt vách nhôm kính Xingfa phòng Siêu âm tại Khoa Cấp cứu (cũ) Bệnh viện Đa khoa Gia Lai.",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": false,
+      "score": 55,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "cap cuu"
+      ]
+    },
+    {
+      "notifyNo": "IB2600473697",
+      "name": "Gói thầu số 1",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600475537",
+      "name": "Mua vật tư, phụ kiện thực hiện công tác khắc phục sự cố các tuyến ống và lắp đặt đồng hồ nước hộ gia đình tại Nhà máy Nước sạch Hoài Nhơn",
+      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600474708",
       "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật Trường THCS Mỹ Quang (điểm trường thôn Trung Thuận), hạng mục: Sửa chữa nhà lớp học 02 tầng 08 phòng và các hạng mục phụ trợ",
       "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
@@ -1113,52 +1153,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600470109",
-      "name": "Cung cấp dịch vụ hội trường, giải khát giữa giờ, in khẩu hiệu và backdroptại Gia Lai Tây",
-      "investor": "Trung tâm Khám phá khoa học và đổi mới sáng tạo",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600470069",
-      "name": "Tư vấn giám sát khảo sát xây dựng",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600470039",
-      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế kỹ thuật đầu tư xây dựng",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600469090",
-      "name": "Tư vấn giám sát thi công xây dựng",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
     }
   ],
   "removedManualCount": 0,
