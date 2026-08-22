@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-22T16:40:45.259Z",
+  "auditedAt": "2026-08-22T20:39:41.975Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 460,
+      "count": 456,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 69,
+      "count": 68,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 41,
+      "count": 42,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -266,19 +266,19 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1150,
-  "acceptedCount": 26,
-  "rejectedCount": 1124,
+  "candidateCount": 1146,
+  "acceptedCount": 27,
+  "rejectedCount": 1119,
   "rejectedReasons": {
     "excluded:xay dung": 348,
-    "excluded:tu van": 310,
-    "insufficient-medical-context": 276,
-    "excluded:sua chua": 54,
+    "excluded:tu van": 308,
+    "insufficient-medical-context": 273,
+    "excluded:sua chua": 53,
     "excluded:xay lap": 39,
     "excluded:tham dinh": 12,
     "excluded:bao hiem": 11,
@@ -287,11 +287,11 @@
     "excluded:cai tao": 6,
     "excluded:may in": 5,
     "excluded:bao ve": 5,
+    "excluded:cong nghe thong tin": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:bao duong": 4,
     "excluded:van phong pham": 4,
     "excluded:bao tri": 3,
-    "excluded:cong nghe thong tin": 3,
     "excluded:kiem dinh": 3,
     "excluded:rac thai": 3,
     "excluded:thiet bi tuong lua": 2,
@@ -308,6 +308,22 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600477857",
+      "name": "Mua sắm thiết bị y tế, y dụng cụ, vật tư y tế, hóa chất xét nghiệm để phục vụ công tác chuyên môn tại Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 230,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
+      "matched": [
+        "thiet bi y te",
+        "vat tu y te",
+        "hoa chat xet nghiem",
+        "benh vien",
+        "hoa chat",
+        "xet nghiem"
+      ]
+    },
     {
       "notifyNo": "IB2600464282",
       "name": "Mua sắm bổ sung vật tư y tế, hóa chất (lần 8)",
@@ -698,6 +714,30 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600477946",
+      "name": "Thuê dịch vụ công nghệ thông tin phục vụ công tác khảo sát trực tuyến ý kiến của người dân, doanh nghiệp về chất lượng công tác tiếp nhận hồ sơ, giải quyết thủ tục hành chính và cung cấp dịch vụ công trực tuyến",
+      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cong nghe thong tin",
+      "matched": [
+        "cong nghe thong tin"
+      ]
+    },
+    {
+      "notifyNo": "IB2600477671",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
     {
       "notifyNo": "IB2600477565",
       "name": "Tư vấn thẩm tra Báo cáo kinh tế - kỹ thuật",
@@ -1117,32 +1157,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600468074",
-      "name": "Gói thầu Dịch vụ đánh giá công nhận Phòng thí nghiệm theo tiêu chuẩn ISO/IEC 17025: 2017",
-      "investor": "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam kiem nghiem"
-      ]
-    },
-    {
-      "notifyNo": "IB2600470418",
-      "name": "Mua sắm, trang bị bình chữa cháy phục vụ công tác",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 827,
-  "afterCount": 827,
+  "beforeCount": 828,
+  "afterCount": 828,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
