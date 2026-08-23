@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-23T16:43:29.437Z",
+  "auditedAt": "2026-08-22T20:39:41.975Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 433,
+      "count": 456,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 66,
+      "count": 68,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 11,
+      "count": 13,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 10,
+      "count": 12,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 10,
+      "count": 12,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 26,
+      "count": 28,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 24,
+      "count": 26,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 59,
+      "count": 60,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 67,
+      "count": 76,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 40,
+      "count": 42,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 25,
+      "count": 27,
       "error": ""
     },
     {
@@ -230,7 +230,7 @@
     {
       "term": "Hoài Ân",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -260,41 +260,41 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 9,
+      "count": 11,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1099,
+  "candidateCount": 1146,
   "acceptedCount": 27,
-  "rejectedCount": 1072,
+  "rejectedCount": 1119,
   "rejectedReasons": {
-    "excluded:xay dung": 324,
-    "excluded:tu van": 299,
-    "insufficient-medical-context": 271,
-    "excluded:sua chua": 51,
-    "excluded:xay lap": 36,
+    "excluded:xay dung": 348,
+    "excluded:tu van": 308,
+    "insufficient-medical-context": 273,
+    "excluded:sua chua": 53,
+    "excluded:xay lap": 39,
+    "excluded:tham dinh": 12,
     "excluded:bao hiem": 11,
     "excluded:trang phuc": 11,
-    "excluded:tham dinh": 10,
-    "excluded:may tinh": 7,
+    "excluded:may tinh": 8,
+    "excluded:cai tao": 6,
     "excluded:may in": 5,
-    "excluded:cai tao": 5,
     "excluded:bao ve": 5,
     "excluded:cong nghe thong tin": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:bao duong": 4,
+    "excluded:van phong pham": 4,
     "excluded:bao tri": 3,
     "excluded:kiem dinh": 3,
     "excluded:rac thai": 3,
     "excluded:thiet bi tuong lua": 2,
-    "excluded:van phong pham": 2,
     "excluded:thuc pham": 2,
     "excluded:cay xanh": 2,
     "excluded:chat thai": 1,
@@ -304,7 +304,8 @@
     "excluded:tin hoc": 1,
     "excluded:thuoc generic": 1,
     "excluded:dieu hoa khong khi": 1,
-    "excluded:lap e hsmt": 1
+    "excluded:lap e hsmt": 1,
+    "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
     {
@@ -321,18 +322,6 @@
         "benh vien",
         "hoa chat",
         "xet nghiem"
-      ]
-    },
-    {
-      "notifyNo": "IB2600470136",
-      "name": "Mua sắm giường bệnh, ghế đa năng và tủ đầu giường cho các phòng bệnh dịch vụ theo yêu cầu của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "giuong benh",
-        "benh vien"
       ]
     },
     {
@@ -579,6 +568,24 @@
       ]
     },
     {
+      "notifyNo": "IB2600381748",
+      "name": "Mua sắm vật tư y tế tiêu hao, sinh phẩm y tế, hóa chất sát khuẩn, hóa chất xét nghiệm, vật tư y tế thay thế và khí y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 230,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
+      "matched": [
+        "vat tu y te",
+        "hoa chat xet nghiem",
+        "sinh pham y te",
+        "khi y te",
+        "benh vien",
+        "hoa chat",
+        "sinh pham",
+        "xet nghiem"
+      ]
+    },
+    {
       "notifyNo": "IB2600443322",
       "name": "Mua sắm Nẹp, vít, dụng cụ chấn thương, dụng cụ phẩu thuật nội soi và y dụng cụ chuyên dùng khác năm 2026 của Trung tâm Y tế An Khê",
       "investor": "TRUNG TÂM Y TẾ AN KHÊ",
@@ -707,51 +714,6 @@
     }
   ],
   "rejectedDiagnostics": [
-    {
-      "notifyNo": "IB2600478307",
-      "name": "Cung cấp và lắp đặt trang thiết bị theo nhận diện thương hiệu của TCT BĐVN",
-      "investor": "BƯU ĐIỆN TỈNH GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600478303",
-      "name": "Cung cấp và lắp đặt trang thiết bị theo nhận diện thương hiệu của TCT BĐVN",
-      "investor": "BƯU ĐIỆN TỈNH GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600478248",
-      "name": "Cung cấp và lắp đặt trang thiết bị theo nhận diện thương hiệu của TCT BĐVN",
-      "investor": "BƯU ĐIỆN TỈNH GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600478246",
-      "name": "Cung cấp và lắp đặt trang thiết bị theo nhận diện thương hiệu của TCT BĐVN",
-      "investor": "BƯU ĐIỆN TỈNH GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600478245",
-      "name": "Cung cấp và lắp đặt trang thiết bị theo nhận diện thương hiệu của TCT BĐVN",
-      "investor": "BƯU ĐIỆN TỈNH GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
     {
       "notifyNo": "IB2600477946",
       "name": "Thuê dịch vụ công nghệ thông tin phục vụ công tác khảo sát trực tuyến ý kiến của người dân, doanh nghiệp về chất lượng công tác tiếp nhận hồ sơ, giải quyết thủ tục hành chính và cung cấp dịch vụ công trực tuyến",
@@ -1140,12 +1102,67 @@
       "matched": [
         "giam sat thi cong"
       ]
+    },
+    {
+      "notifyNo": "IB2600471169",
+      "name": "Thi công duy tu, bảo dưỡng công trình",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao duong",
+      "matched": [
+        "bao duong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471117",
+      "name": "Tư vấn khảo sát xây dựng và lập Báo cáo kinh tế - kỹ thuậ",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471090",
+      "name": "Tư vấn quản lý dự án",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "IB2600471070",
+      "name": "Tư vấn thẩm tra Báo cáo kinh tế - kỹ thuật",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600395059",
+      "name": "Gói thầu 26.40/HH: Cung cấp cách điện, cáp quang và phụ kiện",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 829,
-  "afterCount": 829,
+  "beforeCount": 828,
+  "afterCount": 828,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
