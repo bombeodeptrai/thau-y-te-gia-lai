@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-23T08:49:09.323Z",
+  "auditedAt": "2026-08-22T20:39:41.975Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 441,
+      "count": 456,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 10,
+      "count": 12,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 26,
+      "count": 28,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 75,
+      "count": 76,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1126,
+  "candidateCount": 1146,
   "acceptedCount": 27,
-  "rejectedCount": 1099,
+  "rejectedCount": 1119,
   "rejectedReasons": {
-    "excluded:xay dung": 331,
-    "excluded:tu van": 306,
+    "excluded:xay dung": 348,
+    "excluded:tu van": 308,
     "insufficient-medical-context": 273,
     "excluded:sua chua": 53,
     "excluded:xay lap": 39,
@@ -284,8 +284,8 @@
     "excluded:bao hiem": 11,
     "excluded:trang phuc": 11,
     "excluded:may tinh": 8,
+    "excluded:cai tao": 6,
     "excluded:may in": 5,
-    "excluded:cai tao": 5,
     "excluded:bao ve": 5,
     "excluded:cong nghe thong tin": 4,
     "excluded:giam sat thi cong": 4,
