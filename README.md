@@ -10,7 +10,7 @@ Website: <https://bombeodeptrai.github.io/thau-y-te-gia-lai/>
 - Phạm vi lưu trữ: các gói thiết bị/vật tư y tế thuộc Gia Lai hiện nay (gồm địa bàn Gia Lai và Bình Định cũ) trong 1.095 ngày, tức 3 năm gần nhất.
 - Lần đầu hệ thống quét bù đủ 3 năm theo mã tỉnh và theo giao giữa địa danh với từ khóa y tế. Nhánh thứ hai khôi phục hồ sơ cũ không còn trường mã tỉnh trong API. Các lần chạy sau quét lại 14 ngày mới nhất, ghép với dữ liệu cũ và tự xóa bản ghi quá 3 năm.
 - Bộ lọc yêu cầu tiêu đề gói thầu phải nêu rõ thiết bị/vật tư y tế, vật tư tiêu hao, hóa chất xét nghiệm hoặc tên một mặt hàng chuyên môn. Tên bệnh viện/trung tâm y tế không còn là điều kiện đủ.
-- Loại khỏi danh sách chính các gói thuốc, vắc xin, xây dựng, CNTT, xe, bàn ghế, đồng phục, xử lý rác, dịch vụ sửa chữa/bảo trì và vật tư nông nghiệp.
+- Loại khỏi danh sách chính các gói thuốc, vắc xin, xây dựng, CNTT, xe, bàn ghế/nội thất hành chính, đồng phục, xử lý rác, dịch vụ sửa chữa/bảo trì và vật tư nông nghiệp. Giường bệnh và giường y tế chuyên dụng vẫn thuộc phạm vi thiết bị y tế.
 - Trạng thái lấy từ mã chính thức của nguồn để phân biệt `Đang xét thầu`, `Đã đóng – chưa có kết quả`, `Đã có kết quả` và `Đã hủy/không lựa chọn`; không chỉ suy đoán từ hạn đóng thầu.
 - Sau mở thầu, hệ thống lấy tên các nhà thầu tham dự và giá dự thầu từ biên bản mở thầu công khai.
 - Với gói mới/đang mời thầu, hệ thống lấy danh sách phần/lô, tên thiết bị/vật tư và giá kế hoạch từ dữ liệu KHLCNT công khai; danh mục này cũng được đưa vào chỉ mục tìm kiếm.
