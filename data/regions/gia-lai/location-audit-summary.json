@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-22T20:39:41.975Z",
+  "auditedAt": "2026-08-23T04:52:49.864Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 456,
+      "count": 446,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 28,
+      "count": 26,
       "error": ""
     },
     {
@@ -271,11 +271,11 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1146,
+  "candidateCount": 1134,
   "acceptedCount": 27,
-  "rejectedCount": 1119,
+  "rejectedCount": 1107,
   "rejectedReasons": {
-    "excluded:xay dung": 348,
+    "excluded:xay dung": 337,
     "excluded:tu van": 308,
     "insufficient-medical-context": 273,
     "excluded:sua chua": 53,
@@ -284,8 +284,8 @@
     "excluded:bao hiem": 11,
     "excluded:trang phuc": 11,
     "excluded:may tinh": 8,
-    "excluded:cai tao": 6,
     "excluded:may in": 5,
+    "excluded:cai tao": 5,
     "excluded:bao ve": 5,
     "excluded:cong nghe thong tin": 4,
     "excluded:giam sat thi cong": 4,
