@@ -31,6 +31,22 @@ test("nhận hóa chất dùng cho máy có tên thương mại tại cơ sở y
   }), true);
 });
 
+test("nhận giường bệnh chuyên dụng nhưng không mở rộng sang nội thất hành chính", () => {
+  const medicalBed = classifyMedicalTender({
+    bidName: ["Mua sắm giường bệnh, ghế đa năng và tủ đầu giường cho các phòng bệnh dịch vụ theo yêu cầu của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026"],
+    investorName: "Bệnh viện Sản - Nhi tỉnh Gia Lai",
+  });
+  assert.equal(medicalBed.accepted, true, medicalBed.reason);
+  assert.equal(medicalBed.category, "Thiết bị y tế");
+  assert.ok(medicalBed.matched.includes("giuong benh"));
+
+  const officeFurniture = classifyMedicalTender({
+    bidName: ["Mua sắm bàn ghế, giường tủ nội thất phục vụ khối hành chính"],
+    investorName: hospital,
+  });
+  assert.equal(officeFurniture.accepted, false, officeFurniture.reason);
+});
+
 for (const title of [
   "Mua sắm vật tư sử dụng cho máy thận 4008S",
   "Mua đệm (gioăng) cửa dùng cho máy hấp tiệt trùng hơi nước dòng máy Lumo, trang bị cho khoa Kiểm soát nhiễm khuẩn",
