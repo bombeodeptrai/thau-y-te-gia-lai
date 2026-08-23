@@ -37,6 +37,7 @@ const EXPLICIT_MEDICAL_TITLE_TERMS = [
   "sinh pham chan doan", "chan doan in vitro", "dung cu y te", "y cu",
   "khi y te", "oxy y te", "may xet nghiem", "may sieu am", "may tho",
   "may dien tim", "may theo doi benh nhan", "may loc mau", "may chay than",
+  "giuong benh", "giuong y te", "giuong hoi suc", "giuong cap cuu",
   "may chup", "x quang", "noi soi", "phau thuat", "catheter", "stent",
   "implant", "bom tiem", "kim tiem", "gang tay y te", "bong y te",
   "gac y te", "khau trang y te", "kit test", "test nhanh", "nha khoa",
