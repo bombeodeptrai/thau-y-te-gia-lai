@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-24T09:34:05.876Z",
+  "rescuedAt": "2026-08-24T10:25:25.227Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
@@ -15,7 +15,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 162,
+      "count": 161,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 15,
+      "count": 13,
       "error": ""
     },
     {
@@ -147,7 +147,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -201,13 +201,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -278,15 +278,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 555,
+  "candidateCount": 556,
   "acceptedCount": 10,
-  "rejectedCount": 545,
+  "rejectedCount": 546,
   "rejectedReasons": {
     "insufficient-medical-context": 157,
-    "excluded:tu van": 150,
-    "excluded:xay dung": 146,
-    "excluded:sua chua": 24,
-    "excluded:xay lap": 20,
+    "excluded:tu van": 151,
+    "excluded:xay dung": 145,
+    "excluded:sua chua": 23,
+    "excluded:xay lap": 22,
     "excluded:bao hiem": 7,
     "excluded:bao duong": 5,
     "excluded:tham dinh": 5,
@@ -456,6 +456,18 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600461683",
+      "name": "SCL2026-HH/01: Cung cấp vật tư, thiết bị và thi công xây lắp công trình: Sửa chữa ĐZTA khu vực Mang Yang năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap",
+        "sua chua"
+      ]
+    },
     {
       "notifyNo": "IB2600469224",
       "name": "Mua mực in, các vật tư thay thế, vật tư tiêu hao cho thiết bị tin học năm 2026",
@@ -866,18 +878,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600460088",
-      "name": "Gói 18/SCL2027/PTC3: Sửa chữa hệ thống PCCC tại TBA 500kV Pleiku 2 và sửa chữa phần xây dựng hạng mục móng máy cắt 500kV tại TBA 500kV Pleiku",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
       ]
     }
   ],
