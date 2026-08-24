@@ -1,6 +1,88 @@
 {
   "tenders": [
     {
+      "id": "ded67d47-bec5-47c6-af7b-c2b4dc813fb2",
+      "notifyId": "ded67d47-bec5-47c6-af7b-c2b4dc813fb2",
+      "bidId": "82182a21-d1dd-4d6b-9aa3-e0dcbcc0c57d",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "DTRR",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-1-tbmt",
+      "notifyNo": "IB2600462245",
+      "name": "Gói 2. Vật tư Phẫu thuật thần kinh cột sống gồm 25 mặt hàng 6 phần (lô)",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "location": "Phường Pleiku",
+      "closeDate": "2026-09-11T08:00:00",
+      "publicDate": "2026-08-24T15:55:36.804",
+      "price": 18930000000,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=ded67d47-bec5-47c6-af7b-c2b4dc813fb2&notifyId=ded67d47-bec5-47c6-af7b-c2b4dc813fb2&inputResultId=&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600462245&planNo=PL2600238277&step=tbmt&isInternet=1&bidForm=DTRR",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
+      "id": "0fb2b44a-c2f8-49c6-8798-3a5f693292cb",
+      "notifyId": "0fb2b44a-c2f8-49c6-8798-3a5f693292cb",
+      "bidId": "46db636c-14c3-42a5-bdca-658952688667",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "DTRR",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-1-tbmt",
+      "notifyNo": "IB2600467487",
+      "name": "Gói thầu MS-04: Mua sắm trang thiết bị y tế phục vụ khám chữa bệnh năm 2026",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Quân y 211",
+      "location": "Phường Thống Nhất",
+      "closeDate": "2026-09-19T10:00:00",
+      "publicDate": "2026-08-24T15:46:25.284",
+      "price": 49500000000,
+      "category": "Thiết bị y tế",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=0fb2b44a-c2f8-49c6-8798-3a5f693292cb&notifyId=0fb2b44a-c2f8-49c6-8798-3a5f693292cb&inputResultId=&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600467487&planNo=PL2600213198&step=tbmt&isInternet=1&bidForm=DTRR",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "9a4e2f47-de06-4731-9da8-7361943bb41e",
       "notifyId": "9a4e2f47-de06-4731-9da8-7361943bb41e",
       "bidId": "04898c6a-e568-4aa5-a724-34b413ce6a72",
@@ -234264,9 +234346,9 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-08-24T15:07:56.507Z",
+  "fetchedAt": "2026-08-24T15:57:10.457Z",
   "source": "muasamcong-public-api-central-region",
-  "detailTenderCount": 2157,
+  "detailTenderCount": 2159,
   "regions": [
     {
       "slug": "thanh-hoa",
@@ -234383,12 +234465,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 829,
+      "tenderCount": 831,
       "bidderCount": 2774,
       "equipmentCount": 2698,
-      "detailTenderCount": 793,
+      "detailTenderCount": 795,
       "coverageDays": 1095,
-      "fetchedAt": "2026-08-24T13:13:46.318Z",
+      "fetchedAt": "2026-08-24T15:56:56.632Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -234447,6 +234529,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 2872
+    "scannedTenderCount": 2874
   }
 }
