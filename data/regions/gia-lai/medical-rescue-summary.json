@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-25T04:11:37.283Z",
+  "rescuedAt": "2026-08-25T09:48:34.078Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 134,
+      "count": 131,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 163,
+      "count": 162,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 49,
+      "count": 52,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 24,
+      "count": 23,
       "error": ""
     },
     {
@@ -231,7 +231,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 21,
+      "count": 23,
       "error": ""
     },
     {
@@ -267,7 +267,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -278,32 +278,32 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 563,
+  "candidateCount": 564,
   "acceptedCount": 14,
-  "rejectedCount": 549,
+  "rejectedCount": 550,
   "rejectedReasons": {
-    "insufficient-medical-context": 155,
-    "excluded:xay dung": 151,
-    "excluded:tu van": 149,
-    "excluded:xay lap": 24,
+    "excluded:xay dung": 154,
+    "insufficient-medical-context": 151,
+    "excluded:tu van": 150,
+    "excluded:xay lap": 23,
     "excluded:sua chua": 23,
     "excluded:bao hiem": 7,
     "excluded:bao duong": 6,
     "excluded:tham dinh": 5,
+    "excluded:bao tri": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:trang phuc": 4,
-    "excluded:duong day": 2,
     "excluded:tin hoc": 2,
+    "excluded:cai tao": 2,
     "excluded:bao ve": 2,
     "excluded:cong nghe thong tin": 2,
-    "excluded:bao tri": 2,
     "excluded:kiem dinh": 2,
     "excluded:may in": 2,
+    "excluded:duong day": 1,
     "excluded:chat thai": 1,
     "excluded:thuc pham": 1,
     "excluded:tram bien ap": 1,
     "excluded:may tinh": 1,
-    "excluded:cai tao": 1,
     "excluded:cay xanh": 1,
     "excluded:lap e hsmt": 1
   },
@@ -525,17 +525,6 @@
     {
       "notifyNo": "IB2600478680",
       "name": "Gói 71/SCL2026/PTC3: Cung cấp phụ kiện đường dây phục vụ thi công SCL năm 2026 tại Gia Lai",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:duong day",
-      "matched": [
-        "duong day"
-      ]
-    },
-    {
-      "notifyNo": "IB2600476350",
-      "name": "Gói 72/SCL2026/PTC3: Cung cấp kết cấu thép cột đường dây 220 kV phục vụ thi công SCL năm 2026 tại Gia Lai",
       "investor": "Công ty Truyền tải điện 3",
       "accepted": false,
       "score": -100,
@@ -935,6 +924,17 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "trung tam kiem nghiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600469548",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
       ]
     }
   ],
