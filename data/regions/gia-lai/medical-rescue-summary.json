@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-25T03:17:12.362Z",
+  "rescuedAt": "2026-08-24T16:50:32.434Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
@@ -21,7 +21,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 34,
+      "count": 26,
       "error": ""
     },
     {
@@ -39,13 +39,13 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Thị xã An Khê",
       "success": true,
-      "count": 0,
+      "count": 1,
       "error": ""
     },
     {
@@ -117,7 +117,7 @@
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 13,
+      "count": 11,
       "error": ""
     },
     {
@@ -153,7 +153,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 23,
+      "count": 24,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -278,13 +278,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 564,
+  "candidateCount": 556,
   "acceptedCount": 14,
-  "rejectedCount": 550,
+  "rejectedCount": 542,
   "rejectedReasons": {
-    "insufficient-medical-context": 155,
-    "excluded:xay dung": 151,
-    "excluded:tu van": 149,
+    "insufficient-medical-context": 157,
+    "excluded:tu van": 148,
+    "excluded:xay dung": 144,
     "excluded:xay lap": 24,
     "excluded:sua chua": 23,
     "excluded:bao hiem": 7,
@@ -292,7 +292,6 @@
     "excluded:tham dinh": 5,
     "excluded:giam sat thi cong": 4,
     "excluded:trang phuc": 4,
-    "excluded:duong day": 2,
     "excluded:tin hoc": 2,
     "excluded:bao ve": 2,
     "excluded:cong nghe thong tin": 2,
@@ -511,40 +510,6 @@
     }
   ],
   "rejectedDiagnostics": [
-    {
-      "notifyNo": "IB2600475881",
-      "name": "Gói 01: Xây lắp (- Xây dựng công trình; - ATGT trong quá trình thi công; - Thuế TNMT và phí BVMT)",
-      "investor": "Ủy ban nhân dân xã Phú Thiện",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600478680",
-      "name": "Gói 71/SCL2026/PTC3: Cung cấp phụ kiện đường dây phục vụ thi công SCL năm 2026 tại Gia Lai",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:duong day",
-      "matched": [
-        "duong day"
-      ]
-    },
-    {
-      "notifyNo": "IB2600476350",
-      "name": "Gói 72/SCL2026/PTC3: Cung cấp kết cấu thép cột đường dây 220 kV phục vụ thi công SCL năm 2026 tại Gia Lai",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:duong day",
-      "matched": [
-        "duong day"
-      ]
-    },
     {
       "notifyNo": "IB2600463377",
       "name": "Gói 3.Bộ kit thu nhận tiểu cầu gồm 02 mặt hàng 02 phần (lô)",
@@ -937,12 +902,45 @@
       "matched": [
         "trung tam kiem nghiem"
       ]
+    },
+    {
+      "notifyNo": "IB2600469548",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600460912",
+      "name": "Xây dựng",
+      "investor": "Ủy ban nhân dân xã Tuy Phước Tây",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600462408",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban Quản lý phường Hoài Nhơn Tây",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 833,
+  "beforeCount": 831,
   "afterCount": 833,
-  "newCount": 0,
+  "newCount": 2,
   "filterStrategy": "unified-medical-scope-v5"
 }
