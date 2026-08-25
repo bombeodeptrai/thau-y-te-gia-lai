@@ -1,6 +1,54 @@
 {
   "tenders": [
     {
+      "id": "IB2600485310",
+      "notifyId": "IB2600485310",
+      "bidId": "d6bd75ff-563a-462c-a958-c5ae50eb1da8",
+      "bidOpenId": "",
+      "inputResultId": "472ba6ba-79e0-46a6-9a3e-f02e1b30ea2c",
+      "bidForm": "CDTRG",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-4-kqlcnt",
+      "notifyNo": "IB2600485310",
+      "name": "Mua sắm một số mặt hàng vật tư y tế, hóa chất sinh phẩm không có kết quả đấu thầu năm 2026-2027 (test nhanh, clip kẹp mạch máu, bộ kiểm tra độ cứng tạm thời ...) của Bệnh viện Đa khoa Gia Lai",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "location": "Gia Lai",
+      "closeDate": "2026-08-25T17:17:20.118",
+      "publicDate": "2026-08-25T17:17:18",
+      "price": 176530200,
+      "category": "Vật tư & hóa chất",
+      "status": "awarded",
+      "sourceStatus": "IS_PUBLISH",
+      "statusForNotify": "CNTTT",
+      "bidderCount": 0,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2600485310&notifyId=IB2600485310&inputResultId=472ba6ba-79e0-46a6-9a3e-f02e1b30ea2c&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600485310&planNo=PL2600262454&step=tbmt&isInternet=0&bidForm=CDTRG",
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ THÀNH PHÁT",
+        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ TRỌNG TÍN",
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ TÂM PHÁT",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ TRUNG THỊNH PHÁT",
+        "CÔNG TY TNHH DỊCH VỤ THƯƠNG MẠI VÀ ĐẦU TƯ HƯNG PHÁT",
+        "CÔNG TY TNHH HANNA INSTRUMENTS VIỆT NAM"
+      ],
+      "winningPrice": 156179720,
+      "decisionDate": "2026-08-25T23:59:59",
+      "resultPublishedDate": "2026-08-25T17:17:18",
+      "hasResult": true,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "c3ed3780-5691-429f-9604-516ba931e5ed",
       "notifyId": "c3ed3780-5691-429f-9604-516ba931e5ed",
       "bidId": "356d1b7d-e94e-4937-8824-f51179867f0a",
@@ -42748,7 +42796,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-08-25T16:57:14.167Z",
+  "fetchedAt": "2026-08-25T17:30:05.626Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -42756,7 +42804,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 798,
+  "detailTenderCount": 799,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-plus-historical-location-terms",
@@ -42790,10 +42838,10 @@
     "lastRemovedManualTenderCount": 0,
     "filterStrategy": "unified-medical-scope-v5",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v5",
-    "lastMedicalRescueAt": "2026-08-25T16:57:14.167Z",
+    "lastMedicalRescueAt": "2026-08-25T17:30:05.626Z",
     "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 584,
-    "lastMedicalRescueMedicalCount": 15,
+    "lastMedicalRescueCandidateCount": 586,
+    "lastMedicalRescueMedicalCount": 16,
     "lastMedicalRescueNewCount": 1,
     "lastRemovedRejectedStoredCount": 0
   }
