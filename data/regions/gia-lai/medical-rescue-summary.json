@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-25T17:30:05.626Z",
+  "rescuedAt": "2026-08-25T18:10:32.644Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 137,
+      "count": 139,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 161,
+      "count": 158,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 46,
+      "count": 47,
       "error": ""
     },
     {
@@ -278,15 +278,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 586,
-  "acceptedCount": 16,
-  "rejectedCount": 570,
+  "candidateCount": 584,
+  "acceptedCount": 17,
+  "rejectedCount": 567,
   "rejectedReasons": {
     "excluded:tu van": 161,
-    "excluded:xay dung": 154,
-    "insufficient-medical-context": 153,
+    "excluded:xay dung": 155,
+    "insufficient-medical-context": 149,
     "excluded:xay lap": 26,
-    "excluded:sua chua": 22,
+    "excluded:sua chua": 21,
     "excluded:bao hiem": 8,
     "excluded:bao duong": 7,
     "excluded:tham dinh": 5,
@@ -296,6 +296,7 @@
     "excluded:cai tao": 3,
     "excluded:duong day": 2,
     "excluded:tin hoc": 2,
+    "excluded:may tinh": 2,
     "excluded:bao ve": 2,
     "excluded:cong nghe thong tin": 2,
     "excluded:kiem dinh": 2,
@@ -303,13 +304,25 @@
     "excluded:chat thai": 1,
     "excluded:thuc pham": 1,
     "excluded:tram bien ap": 1,
-    "excluded:may tinh": 1,
     "excluded:thiet bi dien": 1,
     "excluded:may in": 1,
     "excluded:cay xanh": 1,
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600461954",
+      "name": "Gói 1.Chỉ phẫu thuật gồm 34 mặt hàng 01 phần (lô)",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 155,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "phau thuat",
+        "benh vien",
+        "da khoa"
+      ]
+    },
     {
       "notifyNo": "IB2600477126",
       "name": "Gói thầu số 01: Mua sắm hóa chất, vật tư y tế tiêu hao",
@@ -541,6 +554,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600485321",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600462058",
       "name": "Toàn bộ khối lượng xây dựng công trình",
@@ -957,23 +981,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600459852",
-      "name": "Xây lắp",
-      "investor": "Ban Quản lý phường An Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 834,
-  "afterCount": 835,
+  "beforeCount": 835,
+  "afterCount": 836,
   "newCount": 1,
   "filterStrategy": "unified-medical-scope-v5"
 }
