@@ -2,32 +2,32 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-25T15:12:45.621Z",
+  "rescuedAt": "2026-08-25T09:48:34.078Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 133,
+      "count": 131,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 158,
+      "count": 162,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 33,
+      "count": 34,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 19,
+      "count": 17,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -117,7 +117,7 @@
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -129,7 +129,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 15,
+      "count": 20,
       "error": ""
     },
     {
@@ -153,7 +153,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 16,
+      "count": 19,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 47,
+      "count": 42,
       "error": ""
     },
     {
@@ -195,7 +195,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -231,7 +231,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 25,
+      "count": 23,
       "error": ""
     },
     {
@@ -278,34 +278,32 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 562,
+  "candidateCount": 564,
   "acceptedCount": 14,
-  "rejectedCount": 548,
+  "rejectedCount": 550,
   "rejectedReasons": {
+    "excluded:xay dung": 154,
     "insufficient-medical-context": 151,
-    "excluded:xay dung": 151,
-    "excluded:tu van": 149,
-    "excluded:xay lap": 22,
-    "excluded:sua chua": 22,
-    "excluded:bao hiem": 8,
+    "excluded:tu van": 150,
+    "excluded:xay lap": 23,
+    "excluded:sua chua": 23,
+    "excluded:bao hiem": 7,
     "excluded:bao duong": 6,
-    "excluded:tham dinh": 4,
+    "excluded:tham dinh": 5,
     "excluded:bao tri": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:trang phuc": 4,
-    "excluded:cai tao": 3,
-    "excluded:duong day": 2,
     "excluded:tin hoc": 2,
+    "excluded:cai tao": 2,
     "excluded:bao ve": 2,
     "excluded:cong nghe thong tin": 2,
     "excluded:kiem dinh": 2,
     "excluded:may in": 2,
-    "excluded:thuoc generic": 1,
+    "excluded:duong day": 1,
     "excluded:chat thai": 1,
     "excluded:thuc pham": 1,
     "excluded:tram bien ap": 1,
     "excluded:may tinh": 1,
-    "excluded:thiet bi dien": 1,
     "excluded:cay xanh": 1,
     "excluded:lap e hsmt": 1
   },
@@ -512,68 +510,6 @@
     }
   ],
   "rejectedDiagnostics": [
-    {
-      "notifyNo": "IB2600469453",
-      "name": "Toàn bộ vật tư cấp nước của dự án (giai đoạn 1)",
-      "investor": "CÔNG TY CỔ PHẦN CẤP THOÁT NƯỚC BÌNH ĐỊNH",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600482399",
-      "name": "Mua sắm mới 01 xe ô tô phục vụ công tác chung của HĐND và UBND xã",
-      "investor": "Văn phòng HĐND & UBND xã Ân Tường",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600476350",
-      "name": "Gói 72/SCL2026/PTC3: Cung cấp kết cấu thép cột đường dây 220 kV phục vụ thi công SCL năm 2026 tại Gia Lai",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:duong day",
-      "matched": [
-        "duong day"
-      ]
-    },
-    {
-      "notifyNo": "IB2600476732",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "BAN QUẢN LÝ XÃ AN LƯƠNG",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600472158",
-      "name": "Gói 29/CPSX2026/PTC3: Mua bảo hiểm cháy, nổ bắt buộc tại PTC3 năm 2026",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao hiem",
-      "matched": [
-        "bao hiem"
-      ]
-    },
-    {
-      "notifyNo": "IB2600483068",
-      "name": "Gói thầu thuốc generic",
-      "investor": "Trung tâm Y tế Tuy Phước",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:thuoc generic",
-      "matched": [
-        "thuoc generic"
-      ]
-    },
     {
       "notifyNo": "IB2600475881",
       "name": "Gói 01: Xây lắp (- Xây dựng công trình; - ATGT trong quá trình thi công; - Thuế TNMT và phí BVMT)",
@@ -932,6 +868,68 @@
       "notifyNo": "IB2600437140",
       "name": "Toàn bộ khối lượng xây dựng công trình",
       "investor": "Ban quản lý xã Bình Khê",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600470389",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600395059",
+      "name": "Gói thầu 26.40/HH: Cung cấp cách điện, cáp quang và phụ kiện",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600464039",
+      "name": "Gói TV-02: Tư vấn kiểm toán độc lập chi phí đầu tư các dự án đầu tư phát triển cao su của Công ty 72 tại Vương quốc Campuchia",
+      "investor": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN 72",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600430267",
+      "name": "Gói 13/SCL2027/PTC3: Cung cấp dây dẫn, dây chống sét và phụ kiện dây dẫn, dây chống sét",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600468074",
+      "name": "Gói thầu Dịch vụ đánh giá công nhận Phòng thí nghiệm theo tiêu chuẩn ISO/IEC 17025: 2017",
+      "investor": "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam kiem nghiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600469548",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",
