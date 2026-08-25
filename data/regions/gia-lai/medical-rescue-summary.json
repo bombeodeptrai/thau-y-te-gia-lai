@@ -2,14 +2,14 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-25T16:06:50.795Z",
+  "rescuedAt": "2026-08-25T16:57:14.167Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 135,
+      "count": 137,
       "error": ""
     },
     {
@@ -21,7 +21,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 33,
+      "count": 37,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 10,
+      "count": 13,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -201,13 +201,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 11,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -231,7 +231,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 29,
+      "count": 33,
       "error": ""
     },
     {
@@ -278,17 +278,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 569,
-  "acceptedCount": 14,
-  "rejectedCount": 555,
+  "candidateCount": 584,
+  "acceptedCount": 15,
+  "rejectedCount": 569,
   "rejectedReasons": {
-    "insufficient-medical-context": 152,
-    "excluded:xay dung": 152,
-    "excluded:tu van": 151,
+    "excluded:tu van": 161,
+    "excluded:xay dung": 154,
+    "insufficient-medical-context": 153,
     "excluded:xay lap": 25,
     "excluded:sua chua": 22,
     "excluded:bao hiem": 8,
-    "excluded:bao duong": 6,
+    "excluded:bao duong": 7,
     "excluded:tham dinh": 5,
     "excluded:bao tri": 4,
     "excluded:giam sat thi cong": 4,
@@ -310,6 +310,19 @@
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600477126",
+      "name": "Gói thầu số 01: Mua sắm hóa chất, vật tư y tế tiêu hao",
+      "investor": "Bệnh viện Quân y 13",
+      "accepted": true,
+      "score": 175,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "hoa chat"
+      ]
+    },
     {
       "notifyNo": "IB2600480537",
       "name": "Gói thầu số 2: Mua sắm thiết bị y tế nha khoa",
@@ -512,6 +525,28 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600462058",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600483337",
+      "name": "DỊCH VỤ VẬN HÀNH BẢO DƯỠNG TUABIN GIÓ SAU BẢO HÀNH NHÀ MÁY ĐIỆN GIÓ IAPECH",
+      "investor": "CÔNG TY CỔ PHẦN ĐẦU TƯ NĂNG LƯỢNG TÁI TẠO QUỐC TẾ",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao duong",
+      "matched": [
+        "bao duong"
+      ]
+    },
     {
       "notifyNo": "IB2600452023",
       "name": "Xây lắp",
@@ -917,35 +952,12 @@
       "matched": [
         "xay lap"
       ]
-    },
-    {
-      "notifyNo": "IB2600459841",
-      "name": "Xây lắp",
-      "investor": "Ban Quản lý phường An Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600453662",
-      "name": "Gói 1: Cung cấp dịch vụ tư vấn khảo sát xây dựng, lập BCKTKT, lập HSMT, DTGT và các thỏa thuận chuyên ngành",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 833,
-  "afterCount": 833,
-  "newCount": 0,
+  "afterCount": 834,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v5"
 }

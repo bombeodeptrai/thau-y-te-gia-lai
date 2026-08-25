@@ -1,6 +1,47 @@
 {
   "tenders": [
     {
+      "id": "c3ed3780-5691-429f-9604-516ba931e5ed",
+      "notifyId": "c3ed3780-5691-429f-9604-516ba931e5ed",
+      "bidId": "356d1b7d-e94e-4937-8824-f51179867f0a",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "DTRR",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-1-tbmt",
+      "notifyNo": "IB2600477126",
+      "name": "Gói thầu số 01: Mua sắm hóa chất, vật tư y tế tiêu hao",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Quân y 13",
+      "location": "Phường Quy Nhơn Nam",
+      "closeDate": "2026-09-14T09:00:00",
+      "publicDate": "2026-08-25T16:31:17.221",
+      "price": 12987734966,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=c3ed3780-5691-429f-9604-516ba931e5ed&notifyId=c3ed3780-5691-429f-9604-516ba931e5ed&inputResultId=&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600477126&planNo=PL2600269350&step=tbmt&isInternet=1&bidForm=DTRR",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "f8707d11-b07a-488b-bbeb-9dfdda41c07a",
       "notifyId": "f8707d11-b07a-488b-bbeb-9dfdda41c07a",
       "bidId": "8be3b729-0f0d-48a1-8696-ace5b6ea3821",
@@ -42707,7 +42748,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-08-25T16:06:50.795Z",
+  "fetchedAt": "2026-08-25T16:57:14.167Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -42715,7 +42756,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 797,
+  "detailTenderCount": 798,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-plus-historical-location-terms",
@@ -42749,11 +42790,11 @@
     "lastRemovedManualTenderCount": 0,
     "filterStrategy": "unified-medical-scope-v5",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v5",
-    "lastMedicalRescueAt": "2026-08-25T16:06:50.795Z",
+    "lastMedicalRescueAt": "2026-08-25T16:57:14.167Z",
     "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 569,
-    "lastMedicalRescueMedicalCount": 14,
-    "lastMedicalRescueNewCount": 0,
+    "lastMedicalRescueCandidateCount": 584,
+    "lastMedicalRescueMedicalCount": 15,
+    "lastMedicalRescueNewCount": 1,
     "lastRemovedRejectedStoredCount": 0
   }
 }
