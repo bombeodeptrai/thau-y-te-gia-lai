@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-26T07:29:32.554Z",
+  "rescuedAt": "2026-08-26T07:38:03.355Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
@@ -75,7 +75,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -282,9 +282,9 @@
   "acceptedCount": 17,
   "rejectedCount": 568,
   "rejectedReasons": {
-    "excluded:tu van": 164,
+    "excluded:tu van": 163,
     "excluded:xay dung": 154,
-    "insufficient-medical-context": 149,
+    "insufficient-medical-context": 150,
     "excluded:xay lap": 27,
     "excluded:sua chua": 20,
     "excluded:bao duong": 8,
@@ -994,8 +994,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 836,
+  "beforeCount": 837,
   "afterCount": 837,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
