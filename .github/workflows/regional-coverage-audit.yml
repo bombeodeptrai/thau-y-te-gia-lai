@@ -35,6 +35,7 @@ jobs:
           node --check scripts/fetch-recent-location-audit.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
           node --test scripts/medical-scope.test.mjs
+          node --test scripts/source-time.test.mjs
 
       - name: Sửa mọi bản ghi thủ công bằng định danh chính thức
         run: node scripts/repair-official-tender-identities.mjs "${{ matrix.region }}"
