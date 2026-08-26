@@ -23,6 +23,23 @@ const auditPath = ".github/workflows/regional-coverage-audit.yml";
 const rapidPath = ".github/workflows/rapid-gia-lai-update.yml";
 const pagesPath = ".github/workflows/pages.yml";
 
+for (const file of [
+  ".github/workflows/ci.yml",
+  pagesPath,
+  fullScanPath,
+  quickPath,
+  auditPath,
+  detailPath,
+  rapidPath,
+]) {
+  const text = await readFile(file, "utf8");
+  const fullHistoryCheckouts = text.match(/fetch-depth:\s*0/g) || [];
+  const filteredCheckouts = text.match(/filter:\s*blob:none/g) || [];
+  if (filteredCheckouts.length < fullHistoryCheckouts.length) {
+    throw new Error(`${file} còn tải toàn bộ blob lịch sử và làm chậm cập nhật`);
+  }
+}
+
 for (const file of [fullScanPath, detailPath, quickPath]) {
   const text = await readFile(file, "utf8");
   if (!text.includes("MIN_TENDER_COUNT")) {
