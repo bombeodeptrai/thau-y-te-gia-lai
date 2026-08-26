@@ -27,9 +27,12 @@ jobs:
         run: |
           node --test scripts/technical-requirements.test.mjs
           node --test scripts/medical-scope.test.mjs
+          node --test scripts/source-time.test.mjs
           node --check scripts/run-region-scan.mjs
           node --check scripts/fetch-recent-location-audit.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
+          node --check scripts/fetch-recent-location-fallback.mjs
+          node --check scripts/fetch-competitor-history.mjs
           node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
           node --check scripts/build-pages.mjs

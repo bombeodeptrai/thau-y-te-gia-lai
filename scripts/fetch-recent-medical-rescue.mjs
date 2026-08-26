@@ -6,6 +6,7 @@ import {
   classifyMedicalTender,
   medicalCategory,
 } from "./medical-scope.mjs";
+import { muasamcongDateRange } from "./source-time.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const RESCUE_DAYS = Math.max(7, Number(process.env.RESCUE_DAYS) || 21);
@@ -309,8 +310,7 @@ if ((!previous.tenders || !previous.tenders.length) && slug === "gia-lai") {
 }
 
 const now = new Date();
-const from = new Date(now.getTime() - RESCUE_DAYS * 86_400_000).toISOString();
-const to = now.toISOString();
+const { from, to } = muasamcongDateRange(now, RESCUE_DAYS * 86_400_000);
 const strategyResults = [];
 const sourceGroups = [];
 

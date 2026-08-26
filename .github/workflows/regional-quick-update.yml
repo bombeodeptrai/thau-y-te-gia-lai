@@ -32,6 +32,7 @@ jobs:
           DRY_RUN: "1"
         run: |
           node --test scripts/medical-scope.test.mjs
+          node --test scripts/source-time.test.mjs
           node --check scripts/repair-official-tender-identities.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
           node scripts/run-region-scan.mjs "${{ matrix.region }}"

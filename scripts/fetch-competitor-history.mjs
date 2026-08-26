@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { muasamcongDateRange } from "./source-time.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const COVERAGE_DAYS = 3 * 365;
@@ -318,8 +319,7 @@ for (const item of equipmentData.equipment || []) {
 }
 
 const now = new Date();
-const from = new Date(now.getTime() - COVERAGE_DAYS * 86_400_000).toISOString();
-const to = now.toISOString();
+const { from, to } = muasamcongDateRange(now, COVERAGE_DAYS * 86_400_000);
 process.stdout.write(`Quét lịch sử 3 năm cho ${investors.length} đơn vị y tế; mỗi đơn vị lấy tối đa 10 gói có kết quả.\n`);
 
 const groups = await mapLimited(investors, CONCURRENCY, (investor) =>

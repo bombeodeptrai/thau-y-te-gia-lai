@@ -6,6 +6,7 @@ import {
   classifyMedicalTender,
   medicalCategory,
 } from "./medical-scope.mjs";
+import { muasamcongDateRange } from "./source-time.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const AUDIT_DAYS = Math.max(7, Number(process.env.AUDIT_DAYS) || 30);
@@ -270,8 +271,7 @@ if ((!previous.tenders || !previous.tenders.length) && slug === "gia-lai") {
 }
 
 const now = new Date();
-const from = new Date(now.getTime() - AUDIT_DAYS * 86_400_000).toISOString();
-const to = now.toISOString();
+const { from, to } = muasamcongDateRange(now, AUDIT_DAYS * 86_400_000);
 const terms = unique([region.name, region.shortName, ...(region.locationTerms || [])]);
 const termResults = await mapLimited(terms, TERM_CONCURRENCY, (term, index) =>
   fetchLocationTerm(term, from, to, index, terms.length));

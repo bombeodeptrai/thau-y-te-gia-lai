@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 
 for (const file of [
   "scripts/medical-scope.mjs",
+  "scripts/source-time.mjs",
   "scripts/fetch-data.mjs",
   "scripts/run-region-scan.mjs",
   "scripts/fetch-recent-location-audit.mjs",
@@ -13,6 +14,7 @@ for (const file of [
   execFileSync(process.execPath, ["--check", file], { stdio: "inherit" });
 }
 execFileSync(process.execPath, ["--test", "scripts/medical-scope.test.mjs"], { stdio: "inherit" });
+execFileSync(process.execPath, ["--test", "scripts/source-time.test.mjs"], { stdio: "inherit" });
 
 const fullScanPath = ".github/workflows/regional-full-scan.yml";
 const detailPath = ".github/workflows/regional-detail-backfill.yml";
@@ -126,6 +128,21 @@ if (medicalRescue.includes("LOCATION_TERM_LIMIT")
   || !medicalRescue.includes("removedRejectedStoredCount")
   || !medicalRescue.includes("rejectedSourceKeys")) {
   throw new Error("Quét bù Gia Lai chưa quét đủ địa danh hoặc chưa tự loại bản ghi cũ sai phạm vi");
+}
+
+for (const file of [
+  "scripts/fetch-data.mjs",
+  "scripts/fetch-recent-location-audit.mjs",
+  "scripts/fetch-recent-medical-rescue.mjs",
+  "scripts/fetch-recent-location-fallback.mjs",
+  "scripts/fetch-competitor-history.mjs",
+]) {
+  const text = await readFile(file, "utf8");
+  if (!text.includes("source-time.mjs")
+    || /const\s+(from|to)\s*=.*toISOString\(\)/.test(text)
+    || /from:\s*from\.toISOString\(\)|to:\s*to\.toISOString\(\)/.test(text)) {
+    throw new Error(`${file} chưa dùng giờ Việt Nam cho cửa sổ publicDate của nguồn`);
+  }
 }
 
 const dataWorkflowPaths = [fullScanPath, detailPath, quickPath, auditPath, rapidPath];
