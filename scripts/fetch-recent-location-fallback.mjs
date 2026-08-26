@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { muasamcongDateRange } from "./source-time.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const LOOKBACK_HOURS = 72;
@@ -272,8 +273,7 @@ async function fetchPair(pair, from, to) {
 
 const manifest = JSON.parse(await readFile(tendersPath, "utf8"));
 const now = new Date();
-const from = new Date(now.getTime() - LOOKBACK_HOURS * 60 * 60 * 1000).toISOString();
-const to = now.toISOString();
+const { from, to } = muasamcongDateRange(now, LOOKBACK_HOURS * 60 * 60 * 1000);
 const pairs = LOCATION_TERMS.flatMap((locationTerm) =>
   TITLE_TERMS.map((titleTerm) => ({ locationTerm, titleTerm })));
 
