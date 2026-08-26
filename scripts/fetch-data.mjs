@@ -2,6 +2,7 @@ import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { isMedicalTender, medicalCategory } from "./medical-scope.mjs";
+import { formatMuasamcongDateTime, muasamcongDateRange } from "./source-time.mjs";
 import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
@@ -85,7 +86,10 @@ function dateWindows(days = DAYS) {
   for (let offset = 0; offset < days; offset += WINDOW_DAYS) {
     const to = new Date(now.getTime() - offset * 86_400_000);
     const from = new Date(now.getTime() - Math.min(offset + WINDOW_DAYS, days) * 86_400_000);
-    windows.push({ from: from.toISOString(), to: to.toISOString() });
+    windows.push({
+      from: formatMuasamcongDateTime(from),
+      to: formatMuasamcongDateTime(to),
+    });
   }
   return windows;
 }
@@ -224,8 +228,7 @@ async function fetchHistoricalPair(pair, pairIndex, totalPairs, from, to) {
 
 async function fetchHistoricalFallback() {
   const now = new Date();
-  const from = new Date(now.getTime() - DAYS * 86_400_000).toISOString();
-  const to = now.toISOString();
+  const { from, to } = muasamcongDateRange(now, DAYS * 86_400_000);
   const pairs = HISTORICAL_LOCATION_TERMS.flatMap((locationTerm) =>
     HISTORICAL_TITLE_TERMS.map((titleTerm) => ({ locationTerm, titleTerm })));
   process.stdout.write(
