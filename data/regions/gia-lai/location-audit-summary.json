@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-26T13:16:56.074Z",
+  "auditedAt": "2026-08-26T16:59:48.927Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 36,
+      "count": 32,
       "error": ""
     },
     {
@@ -206,7 +206,7 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -271,18 +271,18 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1193,
+  "candidateCount": 1189,
   "acceptedCount": 34,
-  "rejectedCount": 1159,
+  "rejectedCount": 1155,
   "rejectedReasons": {
-    "excluded:xay dung": 345,
-    "excluded:tu van": 323,
+    "excluded:xay dung": 346,
+    "excluded:tu van": 319,
     "insufficient-medical-context": 292,
     "excluded:xay lap": 51,
     "excluded:sua chua": 49,
     "excluded:tham dinh": 12,
     "excluded:bao hiem": 11,
-    "excluded:trang phuc": 10,
+    "excluded:trang phuc": 9,
     "excluded:cai tao": 7,
     "excluded:may tinh": 6,
     "excluded:bao tri": 5,
