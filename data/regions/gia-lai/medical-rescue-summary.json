@@ -2,26 +2,26 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-25T18:10:32.644Z",
+  "rescuedAt": "2026-08-26T02:19:18.073Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 139,
+      "count": 138,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 158,
+      "count": 159,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 37,
+      "count": 33,
       "error": ""
     },
     {
@@ -153,7 +153,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -278,15 +278,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 584,
+  "candidateCount": 582,
   "acceptedCount": 17,
-  "rejectedCount": 567,
+  "rejectedCount": 565,
   "rejectedReasons": {
     "excluded:tu van": 161,
-    "excluded:xay dung": 155,
-    "insufficient-medical-context": 149,
+    "insufficient-medical-context": 151,
+    "excluded:xay dung": 150,
     "excluded:xay lap": 26,
-    "excluded:sua chua": 21,
+    "excluded:sua chua": 22,
     "excluded:bao hiem": 8,
     "excluded:bao duong": 7,
     "excluded:tham dinh": 5,
@@ -555,14 +555,16 @@
   ],
   "rejectedDiagnostics": [
     {
-      "notifyNo": "IB2600485321",
-      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
-      "investor": "Ban quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn",
+      "notifyNo": "IB2600485625",
+      "name": "DỊCH VỤ SỬA CHỮA BẢO DƯỠNG VẬN HÀNH TRẠM BIẾN ÁP NHÀ MÁY ĐIỆN GIÓ IAPECH",
+      "investor": "CÔNG TY CỔ PHẦN ĐẦU TƯ NĂNG LƯỢNG TÁI TẠO QUỐC TẾ",
       "accepted": false,
       "score": -100,
-      "reason": "excluded:xay dung",
+      "reason": "excluded:sua chua",
       "matched": [
-        "xay dung"
+        "sua chua",
+        "bao duong",
+        "tram bien ap"
       ]
     },
     {
@@ -630,19 +632,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600469025",
-      "name": "SCL2026-HH/04: Cung cấp vật tư, thiết bị và thi công xây lắp công trình: Sửa chữa lớn đường dây trung hạ áp khu vực Phú Phong",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "sua chua",
-        "duong day"
-      ]
     },
     {
       "notifyNo": "IB2600469453",
@@ -981,12 +970,23 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
+    },
+    {
+      "notifyNo": "IB2600459852",
+      "name": "Xây lắp",
+      "investor": "Ban Quản lý phường An Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 835,
+  "beforeCount": 836,
   "afterCount": 836,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
