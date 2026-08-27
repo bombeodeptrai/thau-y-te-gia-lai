@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-26T23:33:32.108Z",
+  "rescuedAt": "2026-08-27T09:48:47.505Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 281,
+      "count": 285,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 445,
+      "count": 438,
       "error": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 11,
+      "count": 9,
       "error": ""
     },
     {
@@ -63,19 +63,19 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 8,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -87,7 +87,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 7,
+      "count": 8,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 52,
+      "count": 47,
       "error": ""
     },
     {
@@ -123,7 +123,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 32,
+      "count": 34,
       "error": ""
     },
     {
@@ -147,7 +147,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 109,
+      "count": 114,
       "error": ""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 41,
+      "count": 40,
       "error": ""
     },
     {
@@ -225,13 +225,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 43,
+      "count": 38,
       "error": ""
     },
     {
@@ -267,45 +267,45 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 18,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1289,
-  "acceptedCount": 39,
-  "rejectedCount": 1250,
+  "candidateCount": 1283,
+  "acceptedCount": 40,
+  "rejectedCount": 1243,
   "rejectedReasons": {
-    "excluded:xay dung": 370,
-    "insufficient-medical-context": 331,
-    "excluded:tu van": 323,
-    "excluded:xay lap": 61,
-    "excluded:sua chua": 54,
-    "excluded:tham dinh": 13,
+    "excluded:xay dung": 374,
+    "excluded:tu van": 325,
+    "insufficient-medical-context": 324,
+    "excluded:xay lap": 62,
+    "excluded:sua chua": 48,
     "excluded:bao hiem": 12,
-    "excluded:trang phuc": 9,
+    "excluded:tham dinh": 12,
     "excluded:bao duong": 8,
-    "excluded:cai tao": 7,
-    "excluded:may tinh": 6,
-    "excluded:bao ve": 6,
+    "excluded:cai tao": 8,
+    "excluded:trang phuc": 8,
+    "excluded:kiem dinh": 6,
     "excluded:bao tri": 6,
-    "excluded:kiem dinh": 5,
+    "excluded:bao ve": 6,
+    "excluded:may tinh": 5,
     "excluded:giam sat thi cong": 5,
     "excluded:may in": 5,
     "excluded:cong nghe thong tin": 4,
+    "excluded:van phong pham": 3,
     "excluded:cay xanh": 3,
     "excluded:duong day": 2,
     "excluded:thuoc generic": 2,
     "excluded:tin hoc": 2,
     "excluded:thuc pham": 2,
     "excluded:thiet bi dien": 2,
-    "excluded:van phong pham": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:may phat dien": 1,
     "excluded:chat thai": 1,
@@ -313,10 +313,35 @@
     "excluded:rac thai": 1,
     "excluded:tu dien": 1,
     "excluded:dieu hoa khong khi": 1,
-    "excluded:in an": 1,
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600478781",
+      "name": "Gói thầu số 02: Mua sắm vật tư y tế chấn thương chỉnh hình",
+      "investor": "Bệnh viện Quân y 13",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "benh vien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600490350",
+      "name": "Mua sắm linh kiện, phụ kiện, vật tư thay thế cho Máy xét nghiệm sinh hóa tự động (Model: BA200, Hãng nước sản xuất: BioSystems S.A, SPAIN)",
+      "investor": "Trung tâm Y tế Đức Cơ",
+      "accepted": true,
+      "score": 200,
+      "reason": "explicit-medical-title+medical-investor+laboratory-analyzer-context",
+      "matched": [
+        "may xet nghiem",
+        "trung tam y te",
+        "xet nghiem",
+        "sinh hoa"
+      ]
+    },
     {
       "notifyNo": "IB2600465808",
       "name": "Mua thiết bị y tế phục hồi chức năng năm 2026 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
@@ -804,19 +829,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600404410",
-      "name": "Mua sắm Vật tư, Y dụng cụ nha khoa năm 2026 của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "nha khoa",
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
       "notifyNo": "IB2600413030",
       "name": "Mua sắm Vật tư y tế, hóa chất sát khuẩn bổ sung quý 3 năm 2026 của Trung tâm Y tế Đak Đoa",
       "investor": "Trung tâm Y tế Đak Đoa",
@@ -830,16 +842,15 @@
       ]
     },
     {
-      "notifyNo": "IB2600402792",
-      "name": "Mua sắm Que thử nước tiểu 11 thông số sử dung cho máy Reactif Touch plus của Trung tâm Y tế Mang Yang năm 2026",
-      "investor": "TRUNG TÂM Y TẾ MANG YANG",
+      "notifyNo": "IB2600492233",
+      "name": "Mua sắm khí Oxy y tế năm 2026 của Trung tâm Y tế Ia Pa",
+      "investor": "Trung tâm Y tế Ia Pa",
       "accepted": true,
-      "score": 70,
-      "reason": "medical-investor+machine-usage-context",
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
       "matched": [
-        "trung tam y te",
-        "su dung cho may",
-        "dung cho may"
+        "oxy y te",
+        "trung tam y te"
       ]
     },
     {
@@ -886,6 +897,100 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600485284",
+      "name": "Trang bị hệ thống thiết bị vô tuyến 5G và dịch vụ",
+      "investor": "Tổng công ty Hạ tầng mạng",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600487594",
+      "name": "PTV/2026: Kiểm định, hiệu chuẩn phương tiện đo năm 2026.",
+      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:kiem dinh",
+      "matched": [
+        "kiem dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600419243",
+      "name": "Xây lắp công trình",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600489783",
+      "name": "Mua sắm sách giáo khoa",
+      "investor": "PHÒNG VĂN HÓA - XÃ HỘI XÃ IA BĂNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600490732",
+      "name": "Cung cấp 02 phễu rót hàng rời",
+      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600479156",
+      "name": "Mua sắm xe ô tô 07 chỗ ngồi phục vụ công tác chung",
+      "investor": "Văn phòng HĐND-UBND xã Ia Sao",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600483794",
+      "name": "Tư vấn giám sát thi công xây dựng công trình",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600489809",
+      "name": "Cung cấp dịch vụ bảo trì, bảo dưỡng máy móc, thiết bị y tế cho Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026- 2027",
+      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao tri",
+      "matched": [
+        "bao tri",
+        "bao duong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600487455",
+      "name": "Thi công xây dựng toàn bộ khối lượng công trình",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600481471",
       "name": "Gói thầu số 05: Tư vấn lập báo cáo nghiên cứu khả thi",
@@ -1229,108 +1334,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600473292",
-      "name": "Gói thầu 01: Thi công xây dựng công trình",
-      "investor": "Ban Quản lý xã Mang Yang, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600469670",
-      "name": "Gói thầu 01: Thi công xây dựng công trình",
-      "investor": "Ban Quản lý xã Mang Yang, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600466311",
-      "name": "Thi công xây lắp dự án",
-      "investor": "Phòng Kinh tế xã Sơn Lang",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600467933",
-      "name": "Thi công xây lắp dự án",
-      "investor": "Phòng Kinh tế xã Sơn Lang",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600461683",
-      "name": "SCL2026-HH/01: Cung cấp vật tư, thiết bị và thi công xây lắp công trình: Sửa chữa ĐZTA khu vực Mang Yang năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600469224",
-      "name": "Mua mực in, các vật tư thay thế, vật tư tiêu hao cho thiết bị tin học năm 2026",
-      "investor": "Trung tâm Y tế Tây Sơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tin hoc",
-      "matched": [
-        "tin hoc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600468063",
-      "name": "Mua sắm",
-      "investor": "Trạm cấp nước và Dịch vụ đô thị xã Chư Păh, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600478184",
-      "name": "Mua sắm trang thiết bị dạy học cho Trường PTDTNT Trung học cơ sở Ia Pa",
-      "investor": "TRƯỜNG PHỔ THÔNG DÂN TỘC NỘI TRÚ TRUNG HỌC CƠ SỞ IA PA",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600474865",
-      "name": "GT04-Xây dựng",
-      "investor": "Trường Đại học Lâm nghiệp",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 840,
-  "afterCount": 840,
-  "newCount": 0,
+  "beforeCount": 842,
+  "afterCount": 843,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v5"
 }
