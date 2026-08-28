@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-28T11:23:31.208Z",
+  "auditedAt": "2026-08-28T22:19:47.490Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 437,
+      "count": 441,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 75,
+      "count": 78,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 37,
+      "count": 43,
       "error": ""
     },
     {
@@ -271,19 +271,19 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1183,
+  "candidateCount": 1195,
   "acceptedCount": 26,
-  "rejectedCount": 1157,
+  "rejectedCount": 1169,
   "rejectedReasons": {
-    "excluded:xay dung": 342,
-    "excluded:tu van": 330,
-    "insufficient-medical-context": 290,
+    "excluded:xay dung": 344,
+    "excluded:tu van": 333,
+    "insufficient-medical-context": 293,
     "excluded:xay lap": 52,
     "excluded:sua chua": 47,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 11,
+    "excluded:cai tao": 10,
     "excluded:trang phuc": 7,
-    "excluded:cai tao": 7,
     "excluded:may tinh": 5,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
@@ -292,6 +292,7 @@
     "excluded:cong nghe thong tin": 4,
     "excluded:bao ve": 4,
     "excluded:thuc pham": 4,
+    "excluded:thuoc generic": 3,
     "excluded:kiem dinh": 3,
     "excluded:cay xanh": 3,
     "excluded:quan ly du an": 2,
@@ -299,7 +300,6 @@
     "excluded:duong day": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:tin hoc": 2,
-    "excluded:thuoc generic": 2,
     "excluded:in an": 1,
     "excluded:chat thai": 1,
     "excluded:thiet bi dien": 1,
@@ -669,6 +669,47 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600469554",
+      "name": "Gói thầu số 9: Khảo sát, lập thiết kế BVTC-Dự toán TDA Nâng cấp, mở rộng khu neo đậu tránh trú bão cho tàu cá cấp vùng Tam Quan - tỉnh Bình Định (nay là tỉnh Gia Lai)",
+      "investor": "Ban quản lý các dự án Nông nghiệp",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600498294",
+      "name": "Gói thầu số 01: Cung cấp xi măng thực hiện Chương trình bê tông giao thông nông thôn năm 2026",
+      "investor": "Sở Tài chính Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600493354",
+      "name": "Gói thầu số 2: Gói thầu thuốc dược liệu, thuốc có kết hợp dược chất với các dược liệu, thuốc cổ truyền",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa"
+      ]
+    },
+    {
+      "notifyNo": "IB2600493161",
+      "name": "Gói thầu số 1: Gói thầu thuốc generic",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:thuoc generic",
+      "matched": [
+        "thuoc generic"
+      ]
+    },
     {
       "notifyNo": "IB2600497962",
       "name": "Sửa chữa Hệ thống xử lý chất thải y tế Bệnh viện Đa khoa Gia Lai",
@@ -1074,48 +1115,6 @@
       "score": 10,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600492055",
-      "name": "Lắp dựng gian hàng và Trưng bày triển lãm, giới thiệu sản phẩm OCOP, của địa phương tham gia triển lãm tại chủ đề “Thái Nguyên - Di tích, Danh thắng, triển vọng và tương lai” tại triển lãm “Không gian du lịch, Văn hóa- Hội nhập và lan tỏa” trong khuôn khổ “Năm du lịch Quốc gia- Gia lai 2026”",
-      "investor": "Ban quản lý các Khu di tích Quốc Gia đặc biệt tỉnh Thái Nguyên",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600491533",
-      "name": "Gói thầu số 03: Văn phòng phẩm",
-      "investor": "Trung tâm Lưu trữ Lịch sử tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:van phong pham",
-      "matched": [
-        "van phong pham"
-      ]
-    },
-    {
-      "notifyNo": "IB2600419243",
-      "name": "Xây lắp công trình",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600490240",
-      "name": "Tư vấn thẩm tra Báo cáo Kinh tế kỹ thuật",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
