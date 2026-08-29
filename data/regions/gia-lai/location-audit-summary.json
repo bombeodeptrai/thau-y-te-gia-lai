@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-28T22:19:47.490Z",
+  "auditedAt": "2026-08-29T07:04:43.012Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 441,
+      "count": 427,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 43,
+      "count": 41,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 114,
+      "count": 112,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 61,
+      "count": 62,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 14,
+      "count": 12,
       "error": ""
     },
     {
@@ -271,19 +271,19 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1195,
-  "acceptedCount": 26,
-  "rejectedCount": 1169,
+  "candidateCount": 1177,
+  "acceptedCount": 24,
+  "rejectedCount": 1153,
   "rejectedReasons": {
-    "excluded:xay dung": 344,
-    "excluded:tu van": 333,
-    "insufficient-medical-context": 293,
-    "excluded:xay lap": 52,
+    "excluded:xay dung": 332,
+    "excluded:tu van": 332,
+    "insufficient-medical-context": 294,
+    "excluded:xay lap": 50,
     "excluded:sua chua": 47,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 11,
     "excluded:cai tao": 10,
-    "excluded:trang phuc": 7,
+    "excluded:trang phuc": 6,
     "excluded:may tinh": 5,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
@@ -294,12 +294,12 @@
     "excluded:thuc pham": 4,
     "excluded:thuoc generic": 3,
     "excluded:kiem dinh": 3,
-    "excluded:cay xanh": 3,
     "excluded:quan ly du an": 2,
     "excluded:van phong pham": 2,
     "excluded:duong day": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:tin hoc": 2,
+    "excluded:cay xanh": 2,
     "excluded:in an": 1,
     "excluded:chat thai": 1,
     "excluded:thiet bi dien": 1,
@@ -483,36 +483,6 @@
       "reason": "explicit-medical-title+medical-investor",
       "matched": [
         "stent",
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
-      "notifyNo": "IB2600367132",
-      "name": "Mua sắm vật tư y tế - Hóa chất xét nghiệm Hóa sinh, Huyết học, IVF",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "vat tu y te",
-        "hoa chat xet nghiem",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "xet nghiem",
-        "huyet hoc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600388524",
-      "name": "Mua sắm vật tư y tế Chuyên khoa Ngoại",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
         "benh vien",
         "da khoa"
       ]

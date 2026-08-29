@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-28T22:20:26.733Z",
+  "rescuedAt": "2026-08-29T07:05:23.283Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 287,
+      "count": 286,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 441,
+      "count": 426,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 43,
+      "count": 41,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 114,
+      "count": 112,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 61,
+      "count": 62,
       "error": ""
     },
     {
@@ -195,7 +195,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -267,7 +267,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 14,
+      "count": 12,
       "error": ""
     },
     {
@@ -278,21 +278,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1302,
-  "acceptedCount": 32,
-  "rejectedCount": 1270,
+  "candidateCount": 1284,
+  "acceptedCount": 30,
+  "rejectedCount": 1254,
   "rejectedReasons": {
-    "excluded:xay dung": 370,
-    "excluded:tu van": 337,
+    "excluded:xay dung": 357,
+    "excluded:tu van": 336,
     "insufficient-medical-context": 335,
-    "excluded:xay lap": 64,
+    "excluded:xay lap": 62,
     "excluded:sua chua": 52,
     "excluded:bao hiem": 13,
     "excluded:tham dinh": 12,
     "excluded:cai tao": 10,
     "excluded:bao duong": 8,
-    "excluded:trang phuc": 7,
     "excluded:bao tri": 6,
+    "excluded:trang phuc": 6,
     "excluded:kiem dinh": 5,
     "excluded:may tinh": 5,
     "excluded:bao ve": 5,
@@ -300,15 +300,15 @@
     "excluded:may in": 5,
     "excluded:thuc pham": 4,
     "excluded:cong nghe thong tin": 4,
+    "excluded:may phat dien": 3,
     "excluded:thuoc generic": 3,
-    "excluded:cay xanh": 3,
     "excluded:duong day": 2,
     "excluded:tin hoc": 2,
     "excluded:thiet bi dien": 2,
     "excluded:quan ly du an": 2,
     "excluded:van phong pham": 2,
     "excluded:thiet bi tuong lua": 2,
-    "excluded:may phat dien": 1,
+    "excluded:cay xanh": 2,
     "excluded:chat thai": 1,
     "excluded:tram bien ap": 1,
     "excluded:in an": 1,
@@ -662,36 +662,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600367132",
-      "name": "Mua sắm vật tư y tế - Hóa chất xét nghiệm Hóa sinh, Huyết học, IVF",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "vat tu y te",
-        "hoa chat xet nghiem",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "xet nghiem",
-        "huyet hoc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600388524",
-      "name": "Mua sắm vật tư y tế Chuyên khoa Ngoại",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
       "notifyNo": "IB2600485310",
       "name": "Mua sắm một số mặt hàng vật tư y tế, hóa chất sinh phẩm không có kết quả đấu thầu năm 2026-2027 (test nhanh, clip kẹp mạch máu, bộ kiểm tra độ cứng tạm thời ...) của Bệnh viện Đa khoa Gia Lai",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -764,6 +734,37 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600452648",
+      "name": "Gói thầu số 03: Mua 10 bộ máy phát điện loại 100kVA nhập kho dự trữ quốc gia tại các Chi cục Dự trữ Nhà nước khu vực I, III, VIII, XI.",
+      "investor": "Cục Dự trữ Nhà nước",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may phat dien",
+      "matched": [
+        "may phat dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600452452",
+      "name": "Gói thầu số 02: Mua 20 bộ máy phát điện loại 50kVA nhập kho dự trữ quốc gia tại các Chi cục Dự trữ Nhà nước khu vực III, IV, VI, VIII, X, XI.",
+      "investor": "Cục Dự trữ Nhà nước",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may phat dien",
+      "matched": [
+        "may phat dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600498263",
+      "name": "Mua xe ô tô phục vụ công tác chung",
+      "investor": "Văn phòng HĐND và UBND xã Tuy Phước",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600469554",
       "name": "Gói thầu số 9: Khảo sát, lập thiết kế BVTC-Dự toán TDA Nâng cấp, mở rộng khu neo đậu tránh trú bão cho tàu cá cấp vùng Tam Quan - tỉnh Bình Định (nay là tỉnh Gia Lai)",
@@ -1161,38 +1162,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "benh vien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600434374",
-      "name": "Mua sắm khí dùng trong y tế",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
-      "notifyNo": "IB2600485280",
-      "name": "Gói 1: Chi phí mua sắm cột bơm",
-      "investor": "CÔNG TY TNHH MTV PETROLIMEX GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600488061",
-      "name": "Gói thầu số 1: Sửa chữa Máy xét nghiệm huyết học XN-550 và Máy xét nghiệm sinh hoá BX3010 năm 2026",
-      "investor": "TRUNG TÂM Y TẾ PLEIKU",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
       ]
     }
   ],
