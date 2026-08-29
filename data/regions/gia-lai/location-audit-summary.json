@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-29T07:04:43.012Z",
+  "auditedAt": "2026-08-29T13:50:52.874Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 427,
+      "count": 400,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 41,
+      "count": 40,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 43,
+      "count": 35,
       "error": ""
     },
     {
@@ -56,19 +56,19 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 16,
+      "count": 14,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 25,
+      "count": 23,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 33,
+      "count": 29,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 16,
+      "count": 14,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 41,
+      "count": 39,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 112,
+      "count": 109,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 45,
       "error": ""
     },
     {
@@ -266,29 +266,29 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1177,
-  "acceptedCount": 24,
-  "rejectedCount": 1153,
+  "candidateCount": 1133,
+  "acceptedCount": 22,
+  "rejectedCount": 1111,
   "rejectedReasons": {
-    "excluded:xay dung": 332,
-    "excluded:tu van": 332,
-    "insufficient-medical-context": 294,
-    "excluded:xay lap": 50,
+    "excluded:tu van": 323,
+    "excluded:xay dung": 308,
+    "insufficient-medical-context": 290,
     "excluded:sua chua": 47,
-    "excluded:bao hiem": 12,
+    "excluded:xay lap": 47,
+    "excluded:bao hiem": 11,
     "excluded:tham dinh": 11,
     "excluded:cai tao": 10,
     "excluded:trang phuc": 6,
-    "excluded:may tinh": 5,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
     "excluded:giam sat thi cong": 5,
     "excluded:may in": 5,
+    "excluded:may tinh": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:bao ve": 4,
     "excluded:thuc pham": 4,
@@ -475,19 +475,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600411824",
-      "name": "Mua sắm mặt hàng Giá đỡ mạch vành phủ thuốc và Stent mạch vành phủ thuốc cho khoa Tim mạch trong khi chờ kết quả đấu thầu năm 2026-2027 của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "stent",
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
       "notifyNo": "IB2600443322",
       "name": "Mua sắm Nẹp, vít, dụng cụ chấn thương, dụng cụ phẩu thuật nội soi và y dụng cụ chuyên dùng khác năm 2026 của Trung tâm Y tế An Khê",
       "investor": "TRUNG TÂM Y TẾ AN KHÊ",
@@ -498,19 +485,6 @@
         "noi soi",
         "phau thuat",
         "trung tam y te"
-      ]
-    },
-    {
-      "notifyNo": "IB2600413030",
-      "name": "Mua sắm Vật tư y tế, hóa chất sát khuẩn bổ sung quý 3 năm 2026 của Trung tâm Y tế Đak Đoa",
-      "investor": "Trung tâm Y tế Đak Đoa",
-      "accepted": true,
-      "score": 175,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply",
-      "matched": [
-        "vat tu y te",
-        "trung tam y te",
-        "hoa chat"
       ]
     },
     {
@@ -639,6 +613,30 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600499509",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600499501",
+      "name": "Tư vấn giám sát thi công xây dựng công trình",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
     {
       "notifyNo": "IB2600469554",
       "name": "Gói thầu số 9: Khảo sát, lập thiết kế BVTC-Dự toán TDA Nâng cấp, mở rộng khu neo đậu tránh trú bão cho tàu cá cấp vùng Tam Quan - tỉnh Bình Định (nay là tỉnh Gia Lai)",
@@ -1064,27 +1062,6 @@
         "lap e hsmt",
         "danh gia e hsdt"
       ]
-    },
-    {
-      "notifyNo": "IB2600492893",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600492589",
-      "name": "Mua sắm vật tư phòng, chống thiên tai (bao cát) từ nguồn Quỹ phòng, chống thiên tai tỉnh",
-      "investor": "Chi cục Thủy lợi tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
