@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-29T22:40:32.318Z",
+  "auditedAt": "2026-08-30T05:24:20.062Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 400,
+      "count": 390,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 40,
+      "count": 38,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 35,
+      "count": 33,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 8,
+      "count": 6,
       "error": ""
     },
     {
@@ -74,7 +74,7 @@
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 3,
+      "count": 1,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 29,
+      "count": 27,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1133,
+  "candidateCount": 1122,
   "acceptedCount": 22,
-  "rejectedCount": 1111,
+  "rejectedCount": 1100,
   "rejectedReasons": {
     "excluded:tu van": 323,
-    "excluded:xay dung": 308,
-    "insufficient-medical-context": 290,
+    "excluded:xay dung": 299,
+    "insufficient-medical-context": 288,
     "excluded:sua chua": 47,
     "excluded:xay lap": 47,
     "excluded:bao hiem": 11,
@@ -613,6 +613,28 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600487966",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600497376",
+      "name": "Mua sắm sách giáo khoa",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600499509",
       "name": "Toàn bộ khối lượng xây dựng công trình",
@@ -1037,30 +1059,6 @@
       "matched": [
         "tu van",
         "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "IB2600492926",
-      "name": "Cung cấp dịch vụ in ấn tờ gấp và bìa kẹp tài liệu tuyên truyền",
-      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:in an",
-      "matched": [
-        "in an"
-      ]
-    },
-    {
-      "notifyNo": "IB2600492919",
-      "name": "Tư vấn lập E-HSMT và đánh giá E-HSDT",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "lap e hsmt",
-        "danh gia e hsdt"
       ]
     }
   ],

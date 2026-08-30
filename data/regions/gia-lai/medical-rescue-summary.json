@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-29T22:41:21.281Z",
+  "rescuedAt": "2026-08-30T05:24:57.944Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -15,7 +15,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 400,
+      "count": 390,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 40,
+      "count": 38,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 35,
+      "count": 33,
       "error": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 8,
+      "count": 6,
       "error": ""
     },
     {
@@ -81,7 +81,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 3,
+      "count": 1,
       "error": ""
     },
     {
@@ -123,7 +123,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 29,
+      "count": 27,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
@@ -278,14 +278,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1237,
+  "candidateCount": 1225,
   "acceptedCount": 28,
-  "rejectedCount": 1209,
+  "rejectedCount": 1197,
   "rejectedReasons": {
-    "excluded:xay dung": 334,
-    "insufficient-medical-context": 328,
     "excluded:tu van": 327,
-    "excluded:xay lap": 59,
+    "insufficient-medical-context": 326,
+    "excluded:xay dung": 325,
+    "excluded:xay lap": 58,
     "excluded:sua chua": 52,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 12,
@@ -709,6 +709,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600487966",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600497376",
+      "name": "Mua sắm sách giáo khoa",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600498263",
       "name": "Mua xe ô tô phục vụ công tác chung",
       "investor": "Văn phòng HĐND và UBND xã Tuy Phước",
@@ -1114,28 +1136,6 @@
       "reason": "excluded:may phat dien",
       "matched": [
         "may phat dien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600480044",
-      "name": "Thi công xây dựng",
-      "investor": "PHÒNG NÔNG NGHIỆP - HẠ TẦNG",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600477937",
-      "name": "Gói thầu số 01: Cung cấp Hệ thống CT Scanner 32 lát cắt/ vòng quay",
-      "investor": "Bệnh Viện Phong Da Liễu Trung ương Quy Hòa",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien"
       ]
     }
   ],
