@@ -2,32 +2,32 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-30T05:24:57.944Z",
+  "rescuedAt": "2026-08-30T13:49:18.650Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 280,
+      "count": 272,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 390,
+      "count": 385,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 78,
+      "count": 73,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 38,
+      "count": 32,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 33,
+      "count": 32,
       "error": ""
     },
     {
@@ -99,7 +99,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 14,
+      "count": 12,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 39,
+      "count": 38,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 109,
+      "count": 108,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 62,
+      "count": 56,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 80,
+      "count": 79,
       "error": ""
     },
     {
@@ -201,7 +201,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -237,7 +237,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
@@ -267,7 +267,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -278,14 +278,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1225,
-  "acceptedCount": 28,
-  "rejectedCount": 1197,
+  "candidateCount": 1189,
+  "acceptedCount": 27,
+  "rejectedCount": 1162,
   "rejectedReasons": {
-    "excluded:tu van": 327,
-    "insufficient-medical-context": 326,
-    "excluded:xay dung": 325,
-    "excluded:xay lap": 58,
+    "insufficient-medical-context": 322,
+    "excluded:xay dung": 316,
+    "excluded:tu van": 307,
+    "excluded:xay lap": 59,
     "excluded:sua chua": 52,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 12,
@@ -295,13 +295,13 @@
     "excluded:trang phuc": 6,
     "excluded:kiem dinh": 5,
     "excluded:bao ve": 5,
-    "excluded:giam sat thi cong": 5,
-    "excluded:may in": 5,
-    "excluded:thuc pham": 4,
     "excluded:may tinh": 4,
     "excluded:cong nghe thong tin": 4,
+    "excluded:giam sat thi cong": 4,
+    "excluded:may in": 4,
     "excluded:may phat dien": 3,
     "excluded:thuoc generic": 3,
+    "excluded:thuc pham": 3,
     "excluded:duong day": 2,
     "excluded:tin hoc": 2,
     "excluded:quan ly du an": 2,
@@ -636,19 +636,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600407003",
-      "name": "Mua sắm 03 Ống soi sử dụng trong phẫu thuật",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 155,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "phau thuat",
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
       "notifyNo": "IB2600485310",
       "name": "Mua sắm một số mặt hàng vật tư y tế, hóa chất sinh phẩm không có kết quả đấu thầu năm 2026-2027 (test nhanh, clip kẹp mạch máu, bộ kiểm tra độ cứng tạm thời ...) của Bệnh viện Đa khoa Gia Lai",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -708,6 +695,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600499485",
+      "name": "Gói số 15: Thi công xây lắp",
+      "investor": "NGÂN HÀNG HỢP TÁC XÃ VIỆT NAM CHI NHÁNH BÌNH ĐỊNH",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
     {
       "notifyNo": "IB2600487966",
       "name": "Tư vấn giám sát thi công xây dựng",
@@ -1125,17 +1123,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600483082",
-      "name": "Mua sắm 03 máy phát điện dự phòng",
-      "investor": "TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may phat dien",
-      "matched": [
-        "may phat dien"
       ]
     }
   ],

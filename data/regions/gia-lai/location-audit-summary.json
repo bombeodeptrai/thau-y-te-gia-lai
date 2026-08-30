@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-30T05:24:20.062Z",
+  "auditedAt": "2026-08-30T13:48:40.302Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 390,
+      "count": 385,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 78,
+      "count": 73,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 38,
+      "count": 32,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 33,
+      "count": 32,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 14,
+      "count": 12,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 39,
+      "count": 38,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 109,
+      "count": 108,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 62,
+      "count": 56,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 80,
+      "count": 79,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -230,7 +230,7 @@
     {
       "term": "Hoài Ân",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -271,28 +271,28 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1122,
-  "acceptedCount": 22,
-  "rejectedCount": 1100,
+  "candidateCount": 1091,
+  "acceptedCount": 21,
+  "rejectedCount": 1070,
   "rejectedReasons": {
-    "excluded:tu van": 323,
-    "excluded:xay dung": 299,
-    "insufficient-medical-context": 288,
+    "excluded:tu van": 305,
+    "excluded:xay dung": 291,
+    "insufficient-medical-context": 286,
+    "excluded:xay lap": 48,
     "excluded:sua chua": 47,
-    "excluded:xay lap": 47,
     "excluded:bao hiem": 11,
     "excluded:tham dinh": 11,
     "excluded:cai tao": 10,
     "excluded:trang phuc": 6,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
-    "excluded:giam sat thi cong": 5,
-    "excluded:may in": 5,
     "excluded:may tinh": 4,
     "excluded:cong nghe thong tin": 4,
+    "excluded:giam sat thi cong": 4,
+    "excluded:may in": 4,
     "excluded:bao ve": 4,
-    "excluded:thuc pham": 4,
     "excluded:thuoc generic": 3,
+    "excluded:thuc pham": 3,
     "excluded:kiem dinh": 3,
     "excluded:quan ly du an": 2,
     "excluded:van phong pham": 2,
@@ -459,19 +459,6 @@
         "benh vien",
         "da khoa",
         "dung cho may"
-      ]
-    },
-    {
-      "notifyNo": "IB2600407003",
-      "name": "Mua sắm 03 Ống soi sử dụng trong phẫu thuật",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 155,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "phau thuat",
-        "benh vien",
-        "da khoa"
       ]
     },
     {
