@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-30T22:44:59.016Z",
+  "auditedAt": "2026-08-31T05:34:14.763Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 385,
+      "count": 382,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 23,
+      "count": 25,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 108,
+      "count": 106,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1087,
+  "candidateCount": 1084,
   "acceptedCount": 21,
-  "rejectedCount": 1066,
+  "rejectedCount": 1063,
   "rejectedReasons": {
     "excluded:tu van": 305,
-    "excluded:xay dung": 287,
+    "excluded:xay dung": 286,
     "insufficient-medical-context": 286,
-    "excluded:xay lap": 48,
     "excluded:sua chua": 47,
+    "excluded:xay lap": 46,
     "excluded:bao hiem": 11,
     "excluded:tham dinh": 11,
     "excluded:cai tao": 10,
