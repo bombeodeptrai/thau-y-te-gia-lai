@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-08-31T05:34:14.763Z",
+  "auditedAt": "2026-08-31T16:10:28.787Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 382,
+      "count": 380,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 32,
+      "count": 31,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 38,
+      "count": 45,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 106,
+      "count": 105,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1084,
+  "candidateCount": 1087,
   "acceptedCount": 21,
-  "rejectedCount": 1063,
+  "rejectedCount": 1066,
   "rejectedReasons": {
     "excluded:tu van": 305,
-    "excluded:xay dung": 286,
-    "insufficient-medical-context": 286,
+    "excluded:xay dung": 292,
+    "insufficient-medical-context": 283,
     "excluded:sua chua": 47,
     "excluded:xay lap": 46,
     "excluded:bao hiem": 11,
