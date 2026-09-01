@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-08-31T21:29:47.187Z",
+  "rescuedAt": "2026-09-01T05:08:30.811Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 271,
+      "count": 268,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 380,
+      "count": 379,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 105,
+      "count": 106,
       "error": ""
     },
     {
@@ -278,13 +278,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1184,
+  "candidateCount": 1182,
   "acceptedCount": 27,
-  "rejectedCount": 1157,
+  "rejectedCount": 1155,
   "rejectedReasons": {
-    "insufficient-medical-context": 319,
     "excluded:xay dung": 317,
-    "excluded:tu van": 307,
+    "insufficient-medical-context": 316,
+    "excluded:tu van": 308,
     "excluded:xay lap": 56,
     "excluded:sua chua": 52,
     "excluded:bao hiem": 12,
