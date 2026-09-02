@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-01T22:38:03.129Z",
+  "rescuedAt": "2026-09-02T04:34:42.029Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 268,
+      "count": 266,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 377,
+      "count": 360,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 31,
+      "count": 30,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 32,
+      "count": 33,
       "error": ""
     },
     {
@@ -201,7 +201,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
@@ -278,15 +278,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1180,
+  "candidateCount": 1162,
   "acceptedCount": 27,
-  "rejectedCount": 1153,
+  "rejectedCount": 1135,
   "rejectedReasons": {
-    "excluded:xay dung": 315,
-    "insufficient-medical-context": 315,
-    "excluded:tu van": 307,
+    "insufficient-medical-context": 314,
+    "excluded:tu van": 305,
+    "excluded:xay dung": 301,
     "excluded:xay lap": 56,
-    "excluded:sua chua": 52,
+    "excluded:sua chua": 51,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 12,
     "excluded:cai tao": 10,
