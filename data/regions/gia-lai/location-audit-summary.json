@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-02T12:47:12.895Z",
+  "auditedAt": "2026-09-02T04:34:03.244Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 347,
+      "count": 360,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 29,
+      "count": 30,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 106,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 76,
+      "count": 79,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 22,
+      "count": 25,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 45,
       "error": ""
     },
     {
@@ -212,19 +212,19 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 7,
+      "count": 8,
       "error": ""
     },
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 25,
+      "count": 26,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1038,
+  "candidateCount": 1067,
   "acceptedCount": 21,
-  "rejectedCount": 1017,
+  "rejectedCount": 1046,
   "rejectedReasons": {
-    "excluded:tu van": 300,
-    "excluded:xay dung": 266,
-    "insufficient-medical-context": 264,
+    "excluded:tu van": 303,
+    "insufficient-medical-context": 279,
+    "excluded:xay dung": 277,
     "excluded:sua chua": 46,
     "excluded:xay lap": 46,
     "excluded:bao hiem": 11,
@@ -600,31 +600,6 @@
     }
   ],
   "rejectedDiagnostics": [
-    {
-      "notifyNo": "IB2600501934",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600501930",
-      "name": "Tư vấn lập E-HSMT và đánh giá E-HSDT",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "lap e hsmt",
-        "danh gia e hsdt"
-      ]
-    },
     {
       "notifyNo": "IB2600501255",
       "name": "Mua sắm máy vi tính để bàn, máy tính xách tay, máy photocopy, máy tính bảng, màn hình tương tác và thiết bị công nghệ thông tin tương đương cho các cơ sở giáo dục trên địa bàn tỉnh Gia Lai",
@@ -1049,6 +1024,28 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600493505",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600493497",
+      "name": "Tư vấn giám sát công trình",
+      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
       ]
     }
   ],

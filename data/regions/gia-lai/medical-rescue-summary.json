@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-02T12:47:54.892Z",
+  "rescuedAt": "2026-09-02T04:34:42.029Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 261,
+      "count": 266,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 347,
+      "count": 360,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 29,
+      "count": 30,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 106,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 76,
+      "count": 79,
       "error": ""
     },
     {
@@ -201,13 +201,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 22,
+      "count": 25,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 45,
       "error": ""
     },
     {
@@ -219,19 +219,19 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 7,
+      "count": 8,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 25,
+      "count": 26,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
@@ -278,13 +278,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1130,
+  "candidateCount": 1162,
   "acceptedCount": 27,
-  "rejectedCount": 1103,
+  "rejectedCount": 1135,
   "rejectedReasons": {
-    "excluded:tu van": 302,
-    "insufficient-medical-context": 296,
-    "excluded:xay dung": 290,
+    "insufficient-medical-context": 314,
+    "excluded:tu van": 305,
+    "excluded:xay dung": 301,
     "excluded:xay lap": 56,
     "excluded:sua chua": 51,
     "excluded:bao hiem": 12,
@@ -695,15 +695,6 @@
     }
   ],
   "rejectedDiagnostics": [
-    {
-      "notifyNo": "IB2600498379",
-      "name": "Gói 02/SCL2027/PTC3: Cung cấp VTTB nhị thứ và phụ kiện",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
     {
       "notifyNo": "IB2600501255",
       "name": "Mua sắm máy vi tính để bàn, máy tính xách tay, máy photocopy, máy tính bảng, màn hình tương tác và thiết bị công nghệ thông tin tương đương cho các cơ sở giáo dục trên địa bàn tỉnh Gia Lai",
@@ -1122,6 +1113,17 @@
       "matched": [
         "bao tri",
         "bao duong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600487455",
+      "name": "Thi công xây dựng toàn bộ khối lượng công trình",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
       ]
     }
   ],
