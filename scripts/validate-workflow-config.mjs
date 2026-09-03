@@ -127,16 +127,28 @@ if (!detailScan.includes('cron: "17 */2 * * *"')
 }
 
 const rapidScan = await readFile(rapidPath, "utf8");
-if (!rapidScan.includes('cron: "*/10 * * * *"')
+if (!rapidScan.includes('cron: "7,17,27,37,47,57 * * * *"')
   || !rapidScan.includes("repair-official-tender-identities.mjs gia-lai")
   || !rapidScan.includes("fetch-recent-medical-rescue.mjs gia-lai")
   || !rapidScan.includes("refresh-official-tender-details.mjs gia-lai")
   || !rapidScan.includes('DETAIL_LIMIT: "80"')
   || rapidScan.includes('PAGE_SIZE: "100"')) {
-  throw new Error("Luồng quét nhanh Gia Lai chưa sửa định danh, tạo chi tiết hoặc còn pageSize không an toàn");
+  throw new Error("Luồng quét nhanh Gia Lai chưa lệch phút cao điểm, sửa định danh, tạo chi tiết hoặc còn pageSize không an toàn");
 }
 if (rapidScan.includes("LOCATION_TERM_LIMIT")) {
   throw new Error("Luồng quét nhanh Gia Lai vẫn giới hạn địa danh và có thể bỏ khu vực Bình Định cũ");
+}
+for (const workflowName of [
+  "Kiểm tra chéo chống lọt gói Gia Lai",
+  "Bổ sung chi tiết nhà thầu thiết bị và model Gia Lai",
+]) {
+  if (!rapidScan.includes(`- ${workflowName}`)) {
+    throw new Error(`Luồng quét nhanh chưa chạy bù sau workflow: ${workflowName}`);
+  }
+}
+if (!rapidScan.includes("workflow_run:")
+  || !rapidScan.includes("github.event.workflow_run.conclusion == 'success'")) {
+  throw new Error("Luồng quét nhanh chưa có nhánh chạy bù an toàn khi cron bị trễ");
 }
 
 const medicalRescue = await readFile("scripts/fetch-recent-medical-rescue.mjs", "utf8");

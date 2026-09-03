@@ -54,6 +54,27 @@ test("không nhận gói nhiều nhóm vật tư nếu chủ đầu tư không t
   assert.equal(result.accepted, false, result.reason);
 });
 
+test("nhận gói test ma túy tại trung tâm y tế", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600503446-00",
+    bidName: ["Mua sắm test ma túy 05 thành phần (Mã 17.2026)"],
+    investorName: "Trung tâm Y tế Phù Mỹ",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.reason.includes("explicit-medical-title"));
+  assert.ok(result.matched.includes("test ma tuy"));
+});
+
+test("không mở rộng từ test ma túy sang mọi gói có từ test", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Thuê dịch vụ test tải hệ thống phần mềm"],
+    investorName: "Trung tâm công nghệ thông tin",
+  });
+  assert.equal(result.accepted, false, result.reason);
+});
+
 test("nhận giường bệnh chuyên dụng nhưng không mở rộng sang nội thất hành chính", () => {
   const medicalBed = classifyMedicalTender({
     bidName: ["Mua sắm giường bệnh, ghế đa năng và tủ đầu giường cho các phòng bệnh dịch vụ theo yêu cầu của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026"],
