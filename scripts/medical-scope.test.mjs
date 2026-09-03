@@ -31,6 +31,29 @@ test("nhận hóa chất dùng cho máy có tên thương mại tại cơ sở y
   }), true);
 });
 
+test("nhận gói liệt kê nhiều nhóm vật tư chuyên môn tại cơ sở y tế", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600482835-00",
+    bidName: ["Mua sắm vật tư, hóa chất, sinh phẩm bổ sung năm 2026 (Lần 2)"],
+    investorName: "Trung tâm Y tế An Nhơn",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.reason.includes("medical-supply-bundle"));
+  assert.ok(result.matched.includes("vat tu"));
+  assert.ok(result.matched.includes("hoa chat"));
+  assert.ok(result.matched.includes("sinh pham"));
+});
+
+test("không nhận gói nhiều nhóm vật tư nếu chủ đầu tư không thuộc ngành y tế", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Mua sắm vật tư, hóa chất, sinh phẩm bổ sung năm 2026"],
+    investorName: "Công ty sản xuất công nghiệp",
+  });
+  assert.equal(result.accepted, false, result.reason);
+});
+
 test("nhận giường bệnh chuyên dụng nhưng không mở rộng sang nội thất hành chính", () => {
   const medicalBed = classifyMedicalTender({
     bidName: ["Mua sắm giường bệnh, ghế đa năng và tủ đầu giường cho các phòng bệnh dịch vụ theo yêu cầu của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026"],
