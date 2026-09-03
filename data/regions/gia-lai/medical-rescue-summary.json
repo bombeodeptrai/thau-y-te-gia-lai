@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-03T09:59:12.754Z",
+  "rescuedAt": "2026-09-03T11:53:33.410Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
@@ -15,7 +15,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 159,
+      "count": 151,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 40,
+      "count": 38,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 27,
+      "count": 24,
       "error": ""
     },
     {
@@ -278,23 +278,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 467,
-  "acceptedCount": 20,
-  "rejectedCount": 447,
+  "candidateCount": 453,
+  "acceptedCount": 22,
+  "rejectedCount": 431,
   "rejectedReasons": {
-    "excluded:xay dung": 127,
-    "insufficient-medical-context": 110,
-    "excluded:tu van": 107,
+    "excluded:xay dung": 123,
+    "insufficient-medical-context": 109,
+    "excluded:tu van": 101,
     "excluded:xay lap": 31,
     "excluded:sua chua": 18,
-    "excluded:bao duong": 6,
     "excluded:cai tao": 6,
     "excluded:bao tri": 4,
     "excluded:bao hiem": 4,
     "excluded:may phat dien": 3,
     "excluded:kiem dinh": 3,
+    "excluded:bao duong": 3,
     "excluded:tham dinh": 3,
-    "excluded:giam sat thi cong": 3,
     "excluded:may tinh": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
@@ -306,6 +305,7 @@
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi dien": 1,
+    "excluded:giam sat thi cong": 1,
     "excluded:bao ve": 1,
     "excluded:trang phuc": 1,
     "excluded:cay xanh": 1
@@ -356,6 +356,20 @@
         "loc mau",
         "benh vien",
         "da khoa",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600503446",
+      "name": "Mua sắm test ma túy 05 thành phần (Mã 17.2026)",
+      "investor": "Trung tâm Y tế Phù Mỹ",
+      "accepted": true,
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "test ma tuy",
+        "trung tam y te",
         "mua",
         "mua sam"
       ]
@@ -622,6 +636,18 @@
       ]
     },
     {
+      "notifyNo": "IB2600481239",
+      "name": "Cung cấp que test ma tuý",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": true,
+      "score": 100,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "test ma tuy",
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600492233",
       "name": "Mua sắm khí Oxy y tế năm 2026 của Trung tâm Y tế Ia Pa",
       "investor": "Trung tâm Y tế Ia Pa",
@@ -637,6 +663,18 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600503366",
+      "name": "Vật tư hóa chất phục vụ duy trì năng lực theo tiêu chuẩn TCVN ISO/IEC 17025:2017 cho phòng thí nghiệm Công nghệ sinh học",
+      "investor": "Trung tâm Ứng dụng tiến bộ khoa học và công nghệ Gia Lai",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat",
+        "vat tu"
+      ]
+    },
     {
       "notifyNo": "IB2600395006",
       "name": "Gói thầu số 21: Tư vấn đo đạc quan trắc biến dạng và đánh giá ổn định các hạng mục công trình Thuỷ điện An Khê - Ka Nak, chu kỳ “11”",
@@ -688,19 +726,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600503446",
-      "name": "Mua sắm test ma túy 05 thành phần (Mã 17.2026)",
-      "investor": "Trung tâm Y tế Phù Mỹ",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te",
-        "mua",
-        "mua sam"
       ]
     },
     {
@@ -1094,8 +1119,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 844,
-  "afterCount": 847,
-  "newCount": 3,
+  "beforeCount": 847,
+  "afterCount": 849,
+  "newCount": 2,
   "filterStrategy": "unified-medical-scope-v5"
 }
