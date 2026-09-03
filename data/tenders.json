@@ -1,6 +1,47 @@
 {
   "tenders": [
     {
+      "id": "0f6508e4-7485-4242-b62c-03df0313420f",
+      "notifyId": "0f6508e4-7485-4242-b62c-03df0313420f",
+      "bidId": "6db47a87-a8d2-4b77-bc34-5035ee908adb",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "CHCT",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-1-tbmt",
+      "notifyNo": "IB2600482835",
+      "name": "Mua sắm vật tư, hóa chất, sinh phẩm bổ sung năm 2026 (Lần 2)",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "location": "Phường An Nhơn Đông",
+      "closeDate": "2026-09-14T08:30:00",
+      "publicDate": "2026-08-28T15:56:55.752",
+      "price": 739586850,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=0f6508e4-7485-4242-b62c-03df0313420f&notifyId=0f6508e4-7485-4242-b62c-03df0313420f&inputResultId=&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600482835&planNo=PL2600258866&step=tbmt&isInternet=1&bidForm=CHCT",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "IB2600492233",
       "notifyId": "IB2600492233",
       "bidId": "e5acbb63-2886-4709-85fc-da076e2884e8",
@@ -234857,9 +234898,9 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-09-03T04:35:46.453Z",
+  "fetchedAt": "2026-09-03T05:08:37.152Z",
   "source": "muasamcong-public-api-central-region",
-  "detailTenderCount": 2171,
+  "detailTenderCount": 2172,
   "regions": [
     {
       "slug": "thanh-hoa",
@@ -234976,12 +235017,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 843,
+      "tenderCount": 844,
       "bidderCount": 2774,
       "equipmentCount": 2698,
-      "detailTenderCount": 807,
+      "detailTenderCount": 808,
       "coverageDays": 1095,
-      "fetchedAt": "2026-09-03T04:34:02.512Z",
+      "fetchedAt": "2026-09-03T05:08:24.565Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -235040,6 +235081,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 2886
+    "scannedTenderCount": 2887
   }
 }
