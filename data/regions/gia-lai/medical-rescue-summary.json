@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-02T22:39:46.457Z",
+  "rescuedAt": "2026-09-03T04:34:02.512Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -15,7 +15,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 346,
+      "count": 342,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 33,
+      "count": 32,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 45,
+      "count": 47,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 98,
       "error": ""
     },
     {
@@ -201,13 +201,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 22,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 42,
       "error": ""
     },
     {
@@ -231,7 +231,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
@@ -278,15 +278,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1128,
+  "candidateCount": 1121,
   "acceptedCount": 27,
-  "rejectedCount": 1101,
+  "rejectedCount": 1094,
   "rejectedReasons": {
     "excluded:tu van": 302,
-    "insufficient-medical-context": 295,
-    "excluded:xay dung": 290,
-    "excluded:xay lap": 55,
-    "excluded:sua chua": 51,
+    "insufficient-medical-context": 297,
+    "excluded:xay dung": 287,
+    "excluded:xay lap": 52,
+    "excluded:sua chua": 48,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 12,
     "excluded:cai tao": 10,
@@ -696,6 +696,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600503025",
+      "name": "Hoá chất chuyên dụng Giải trình tự illumina",
+      "investor": "Trung tâm Ứng dụng tiến bộ khoa học và công nghệ Gia Lai",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat"
+      ]
+    },
+    {
+      "notifyNo": "IB2600487964",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600498379",
       "name": "Gói 02/SCL2027/PTC3: Cung cấp VTTB nhị thứ và phụ kiện",
       "investor": "Công ty Truyền tải điện 3",
@@ -1010,17 +1032,6 @@
       "matched": []
     },
     {
-      "notifyNo": "IB2600487964",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
       "notifyNo": "IB2600492498",
       "name": "Mua sắm",
       "investor": "VĂN PHÒNG HĐND - UBND XÃ GÀO",
@@ -1110,18 +1121,6 @@
         "xay dung",
         "tu van",
         "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600489809",
-      "name": "Cung cấp dịch vụ bảo trì, bảo dưỡng máy móc, thiết bị y tế cho Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026- 2027",
-      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao tri",
-      "matched": [
-        "bao tri",
-        "bao duong"
       ]
     }
   ],

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-02T22:39:08.600Z",
+  "auditedAt": "2026-09-03T04:33:25.974Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 346,
+      "count": 342,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 33,
+      "count": 32,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 45,
+      "count": 47,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 98,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 22,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 42,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1037,
+  "candidateCount": 1030,
   "acceptedCount": 21,
-  "rejectedCount": 1016,
+  "rejectedCount": 1009,
   "rejectedReasons": {
     "excluded:tu van": 300,
-    "excluded:xay dung": 266,
-    "insufficient-medical-context": 263,
-    "excluded:sua chua": 46,
-    "excluded:xay lap": 46,
+    "insufficient-medical-context": 265,
+    "excluded:xay dung": 263,
+    "excluded:sua chua": 43,
+    "excluded:xay lap": 43,
     "excluded:bao hiem": 11,
     "excluded:tham dinh": 11,
     "excluded:cai tao": 10,
@@ -601,6 +601,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600503025",
+      "name": "Hoá chất chuyên dụng Giải trình tự illumina",
+      "investor": "Trung tâm Ứng dụng tiến bộ khoa học và công nghệ Gia Lai",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat"
+      ]
+    },
+    {
+      "notifyNo": "IB2600487964",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600501934",
       "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -907,17 +929,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600487964",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
       "notifyNo": "IB2600493747",
       "name": "Bảo hiểm công trình",
       "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
@@ -1038,17 +1049,6 @@
       "matched": [
         "tu van",
         "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "IB2600493515",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
