@@ -72,6 +72,18 @@ const GENERIC_SUPPLY_TERMS = [
   "vat tu", "hoa chat", "sinh pham", "dung cu", "may", "thiet bi", "hang hoa",
 ];
 
+// Một số TBMT tại cơ sở y tế chỉ liệt kê nhóm hàng hóa (ví dụ: “vật tư,
+// hóa chất, sinh phẩm”) mà không ghi rõ “y tế” hoặc “xét nghiệm”. Chỉ coi đây
+// là tín hiệu đủ mạnh khi tiêu đề thể hiện việc mua/cung cấp hàng hóa và có ít
+// nhất hai nhóm vật tư chuyên môn, tránh dùng tên bệnh viện làm điều kiện duy nhất.
+const MEDICAL_SUPPLY_BUNDLE_TERMS = [
+  "vat tu", "hoa chat", "sinh pham", "thuoc thu",
+];
+
+const GOODS_PURCHASE_TERMS = [
+  "mua", "mua sam", "cung cap", "cung ung",
+];
+
 const CLINICAL_TERMS = [
   "xet nghiem", "chan doan", "kham chua benh", "kham benh", "chua benh",
   "dieu tri", "phong mo", "phau thuat", "cap cuu", "hoi suc",
@@ -112,7 +124,12 @@ export function classifyMedicalTender(item) {
   const labAnalyzer = matchedTerms(title, LAB_ANALYZER_TERMS);
   const machineUsage = matchedTerms(title, MACHINE_USAGE_TERMS);
   const genericSupply = matchedTerms(title, GENERIC_SUPPLY_TERMS);
+  const medicalSupplyBundle = matchedTerms(title, MEDICAL_SUPPLY_BUNDLE_TERMS);
+  const goodsPurchase = matchedTerms(title, GOODS_PURCHASE_TERMS);
   const clinical = matchedTerms(title, CLINICAL_TERMS);
+  const bundledMedicalSupplies = medicalInvestor.length > 0
+    && goodsPurchase.length > 0
+    && medicalSupplyBundle.length >= 2;
 
   let score = 0;
   const reasons = [];
@@ -137,6 +154,10 @@ export function classifyMedicalTender(item) {
     score += 25;
     reasons.push("machine-usage-context");
   }
+  if (bundledMedicalSupplies) {
+    score += 25;
+    reasons.push("medical-supply-bundle");
+  }
   if (genericSupply.length) score += 10;
   if (clinical.length) score += 20;
 
@@ -144,7 +165,8 @@ export function classifyMedicalTender(item) {
     || (labSupply.length > 0 && labAnalyzer.length > 0)
     || (medicalInvestor.length > 0 && labSupply.length > 0 && machineUsage.length > 0)
     || (medicalInvestor.length > 0 && genericSupply.length > 0 && machineUsage.length > 0)
-    || (medicalInvestor.length > 0 && genericSupply.length > 0 && clinical.length > 0);
+    || (medicalInvestor.length > 0 && genericSupply.length > 0 && clinical.length > 0)
+    || bundledMedicalSupplies;
 
   return {
     accepted,
@@ -157,6 +179,8 @@ export function classifyMedicalTender(item) {
       ...labSupply,
       ...labAnalyzer,
       ...machineUsage,
+      ...medicalSupplyBundle,
+      ...goodsPurchase,
       ...clinical,
     ])],
   };
