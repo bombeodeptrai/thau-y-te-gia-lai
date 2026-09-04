@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-03T22:36:07.971Z",
+  "rescuedAt": "2026-09-04T04:33:29.133Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 263,
+      "count": 262,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 343,
+      "count": 335,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 33,
+      "count": 28,
       "error": ""
     },
     {
@@ -69,13 +69,13 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 25,
+      "count": 29,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 4,
+      "count": 6,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -129,7 +129,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 24,
+      "count": 26,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 97,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 55,
+      "count": 56,
       "error": ""
     },
     {
@@ -207,13 +207,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 45,
+      "count": 44,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -278,21 +278,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1092,
+  "candidateCount": 1090,
   "acceptedCount": 32,
-  "rejectedCount": 1060,
+  "rejectedCount": 1058,
   "rejectedReasons": {
-    "insufficient-medical-context": 293,
-    "excluded:xay dung": 285,
-    "excluded:tu van": 282,
+    "insufficient-medical-context": 291,
+    "excluded:xay dung": 284,
+    "excluded:tu van": 284,
     "excluded:xay lap": 51,
-    "excluded:sua chua": 48,
+    "excluded:sua chua": 47,
     "excluded:bao hiem": 12,
-    "excluded:cai tao": 10,
-    "excluded:tham dinh": 9,
+    "excluded:cai tao": 9,
     "excluded:bao duong": 8,
+    "excluded:tham dinh": 8,
+    "excluded:trang phuc": 7,
     "excluded:bao tri": 6,
-    "excluded:trang phuc": 6,
     "excluded:cong nghe thong tin": 5,
     "excluded:may tinh": 4,
     "excluded:kiem dinh": 4,
@@ -309,6 +309,7 @@
     "excluded:van phong pham": 2,
     "excluded:thiet bi tuong lua": 2,
     "excluded:cay xanh": 2,
+    "excluded:phan bon": 1,
     "excluded:tram bien ap": 1,
     "excluded:in an": 1,
     "excluded:thiet bi dien": 1,
@@ -751,21 +752,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600421414",
-      "name": "Mua vật tư y tế nẹp vít và phim X quang năm 2026 - 2027 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
-      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "x quang",
-        "benh vien",
-        "vat tu",
-        "mua"
-      ]
-    },
-    {
       "notifyNo": "IB2600485310",
       "name": "Mua sắm một số mặt hàng vật tư y tế, hóa chất sinh phẩm không có kết quả đấu thầu năm 2026-2027 (test nhanh, clip kẹp mạch máu, bộ kiểm tra độ cứng tạm thời ...) của Bệnh viện Đa khoa Gia Lai",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -814,6 +800,23 @@
       ]
     },
     {
+      "notifyNo": "IB2600505799",
+      "name": "Mua sắm một số mặt hàng hóa chất, sinh phẩm chẩn đoán y tế trong thời gian chờ tổ chức đấu thầu năm 2026-2027",
+      "investor": "Trung tâm Y tế Chư Prông",
+      "accepted": true,
+      "score": 255,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
+      "matched": [
+        "sinh pham chan doan",
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "chan doan",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600492233",
       "name": "Mua sắm khí Oxy y tế năm 2026 của Trung tâm Y tế Ia Pa",
       "investor": "Trung tâm Y tế Ia Pa",
@@ -829,6 +832,63 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600490078",
+      "name": "Mua sắm",
+      "investor": "Ban quản lý xã Phú Thiện",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600456214",
+      "name": "Xây dựng công trình Đường Lý Thường Kiệt",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600505886",
+      "name": "Gói thầu xây lắp (đã bao gồm nhà tạm, nhà ĐHTC)",
+      "investor": "Phòng Kinh tế xã Ia Lâu",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600501731",
+      "name": "Mua phân bón, thuốc BVTV trồng Khoai lang thuộc Dự án Nông nghiệp ứng dụng công nghệ cao",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ SÊ.",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:phan bon",
+      "matched": [
+        "phan bon"
+      ]
+    },
+    {
+      "notifyNo": "IB2600503743",
+      "name": "Mua sắm trang thiết bị và phần mềm thương mại",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600503366",
       "name": "Vật tư hóa chất phục vụ duy trì năng lực theo tiêu chuẩn TCVN ISO/IEC 17025:2017 cho phòng thí nghiệm Công nghệ sinh học",
@@ -1225,68 +1285,12 @@
       "matched": [
         "kiem dinh"
       ]
-    },
-    {
-      "notifyNo": "IB2600491742",
-      "name": "Mua sắm",
-      "investor": "TRUNG TÂM DỊCH VỤ SỰ NGHIỆP CÔNG XÃ KBANG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600492498",
-      "name": "Mua sắm",
-      "investor": "VĂN PHÒNG HĐND - UBND XÃ GÀO",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600467454",
-      "name": "Gói thầu vị thuốc cổ truyền",
-      "investor": "BỆNH VIỆN Y DƯỢC CỔ TRUYỀN VÀ PHỤC HỒI CHỨC NĂNG PLEIKU",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "y duoc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600485284",
-      "name": "Trang bị hệ thống thiết bị vô tuyến 5G và dịch vụ",
-      "investor": "Tổng công ty Hạ tầng mạng",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600487594",
-      "name": "PTV/2026: Kiểm định, hiệu chuẩn phương tiện đo năm 2026.",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:kiem dinh",
-      "matched": [
-        "kiem dinh"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 849,
-  "afterCount": 849,
+  "beforeCount": 850,
+  "afterCount": 850,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }

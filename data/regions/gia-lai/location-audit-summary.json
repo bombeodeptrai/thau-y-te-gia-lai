@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-03T22:35:23.360Z",
+  "auditedAt": "2026-09-04T04:32:52.793Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 343,
+      "count": 335,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 33,
+      "count": 28,
       "error": ""
     },
     {
@@ -62,13 +62,13 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 25,
+      "count": 29,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 4,
+      "count": 6,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 24,
+      "count": 26,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 97,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 55,
+      "count": 56,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 45,
+      "count": 44,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -271,19 +271,19 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1004,
+  "candidateCount": 1003,
   "acceptedCount": 26,
-  "rejectedCount": 978,
+  "rejectedCount": 977,
   "rejectedReasons": {
-    "excluded:tu van": 280,
-    "insufficient-medical-context": 262,
+    "excluded:tu van": 282,
     "excluded:xay dung": 262,
-    "excluded:sua chua": 43,
-    "excluded:xay lap": 42,
+    "insufficient-medical-context": 261,
+    "excluded:sua chua": 42,
+    "excluded:xay lap": 41,
     "excluded:bao hiem": 11,
-    "excluded:cai tao": 10,
-    "excluded:tham dinh": 8,
-    "excluded:trang phuc": 6,
+    "excluded:cai tao": 9,
+    "excluded:tham dinh": 7,
+    "excluded:trang phuc": 7,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
     "excluded:cong nghe thong tin": 5,
@@ -303,6 +303,7 @@
     "excluded:cay xanh": 2,
     "excluded:in an": 1,
     "excluded:thiet bi dien": 1,
+    "excluded:phan bon": 1,
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
@@ -560,6 +561,23 @@
       ]
     },
     {
+      "notifyNo": "IB2600505799",
+      "name": "Mua sắm một số mặt hàng hóa chất, sinh phẩm chẩn đoán y tế trong thời gian chờ tổ chức đấu thầu năm 2026-2027",
+      "investor": "Trung tâm Y tế Chư Prông",
+      "accepted": true,
+      "score": 255,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
+      "matched": [
+        "sinh pham chan doan",
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "chan doan",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600490350",
       "name": "Mua sắm linh kiện, phụ kiện, vật tư thay thế cho Máy xét nghiệm sinh hóa tự động (Model: BA200, Hãng nước sản xuất: BioSystems S.A, SPAIN)",
       "investor": "Trung tâm Y tế Đức Cơ",
@@ -620,21 +638,6 @@
       "matched": [
         "thiet bi y te",
         "benh vien",
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600421414",
-      "name": "Mua vật tư y tế nẹp vít và phim X quang năm 2026 - 2027 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
-      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "x quang",
-        "benh vien",
-        "vat tu",
         "mua"
       ]
     },
@@ -718,6 +721,51 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600506774",
+      "name": "Lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "so y te"
+      ]
+    },
+    {
+      "notifyNo": "IB2600506750",
+      "name": "Khảo sát địa chất",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "so y te"
+      ]
+    },
+    {
+      "notifyNo": "IB2600456214",
+      "name": "Xây dựng công trình Đường Lý Thường Kiệt",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600503743",
+      "name": "Mua sắm trang thiết bị và phần mềm thương mại",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600503366",
       "name": "Vật tư hóa chất phục vụ duy trì năng lực theo tiêu chuẩn TCVN ISO/IEC 17025:2017 cho phòng thí nghiệm Công nghệ sinh học",
@@ -1132,55 +1180,12 @@
         "xay dung",
         "tham dinh"
       ]
-    },
-    {
-      "notifyNo": "IB2600493574",
-      "name": "Quản lý dự án",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:quan ly du an",
-      "matched": [
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "IB2600493570",
-      "name": "Gói thầu thuê thiết kế, thi công, dàn dựng, trang trí và tháo dỡ gian hàng trưng bày, giới thiệu quảng bá, triển lãm Du lịch, Văn hóa, Sản phẩm OCOP của tỉnh An Giang (dt 9m x 4m) tham gia triển lãm “Không gian Du lịch, Văn hóa - Hội nhập và lan tỏa” trong khuôn khổ “Năm Du lịch quốc gia - Gia Lai 2026”",
-      "investor": "Trung tâm Xúc tiến Đầu tư, Thương mại và Du lịch tỉnh An Giang",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600493568",
-      "name": "Giám sát thi công xây dựng công trình",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600493563",
-      "name": "Thi công xây dựng",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 849,
-  "afterCount": 849,
-  "newCount": 0,
+  "afterCount": 850,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v5"
 }
