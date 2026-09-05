@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-04T22:22:38.736Z",
+  "rescuedAt": "2026-09-05T04:29:12.786Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -15,7 +15,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 348,
+      "count": 341,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 29,
+      "count": 26,
       "error": ""
     },
     {
@@ -93,13 +93,13 @@
     {
       "name": "Địa danh Đăk Đoa",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 99,
+      "count": 96,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 52,
+      "count": 51,
       "error": ""
     },
     {
@@ -201,19 +201,19 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 21,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 44,
+      "count": 42,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -278,30 +278,30 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1080,
+  "candidateCount": 1060,
   "acceptedCount": 40,
-  "rejectedCount": 1040,
+  "rejectedCount": 1020,
   "rejectedReasons": {
-    "insufficient-medical-context": 303,
-    "excluded:tu van": 275,
-    "excluded:xay dung": 270,
-    "excluded:xay lap": 49,
-    "excluded:sua chua": 45,
+    "insufficient-medical-context": 298,
+    "excluded:tu van": 267,
+    "excluded:xay dung": 263,
+    "excluded:xay lap": 50,
+    "excluded:sua chua": 44,
     "excluded:bao hiem": 11,
     "excluded:bao duong": 8,
     "excluded:tham dinh": 7,
     "excluded:cai tao": 7,
     "excluded:bao tri": 6,
     "excluded:trang phuc": 6,
+    "excluded:may tinh": 5,
     "excluded:kiem dinh": 5,
     "excluded:cong nghe thong tin": 5,
-    "excluded:may tinh": 4,
     "excluded:giam sat thi cong": 4,
-    "excluded:may in": 4,
     "excluded:may phat dien": 3,
     "excluded:thuc pham": 3,
     "excluded:bao ve": 3,
     "excluded:quan ly du an": 3,
+    "excluded:may in": 3,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
     "excluded:tin hoc": 2,
@@ -960,6 +960,29 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600489867",
+      "name": "Xây lắp công trình",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600506086",
+      "name": "Mua sắm máy vi tính để bàn hoặc máy tính xách tay và thiết bị phụ trợ phòng tin học cho các cơ sở giáo dục trên địa bàn tỉnh Gia Lai thuộc Chương trình “Sóng và máy tính cho em”",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may tinh",
+      "matched": [
+        "may tinh",
+        "tin hoc"
+      ]
+    },
+    {
       "notifyNo": "IB2600463157",
       "name": "Gói 4. Túi máu các loại gồm 02 mặt hàng 02 phần (lô)",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -1385,29 +1408,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600484495",
-      "name": "Thi công xây dựng",
-      "investor": "PHÒNG NÔNG NGHIỆP - HẠ TẦNG",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600472754",
-      "name": "SCL2026-HH/03: Cung cấp vật tư, thiết bị và thi công xây lắp công trình: Sửa chữa ĐZ THA khu vực Tuy Phước năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
         "sua chua"
       ]
     }

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-04T22:21:56.477Z",
+  "auditedAt": "2026-09-05T04:28:29.912Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 348,
+      "count": 341,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 29,
+      "count": 26,
       "error": ""
     },
     {
@@ -86,13 +86,13 @@
     {
       "term": "Đăk Đoa",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 99,
+      "count": 96,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 52,
+      "count": 51,
       "error": ""
     },
     {
@@ -194,19 +194,19 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 21,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 44,
+      "count": 42,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -271,27 +271,27 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 994,
+  "candidateCount": 975,
   "acceptedCount": 34,
-  "rejectedCount": 960,
+  "rejectedCount": 941,
   "rejectedReasons": {
-    "insufficient-medical-context": 273,
-    "excluded:tu van": 273,
-    "excluded:xay dung": 249,
-    "excluded:sua chua": 40,
-    "excluded:xay lap": 39,
+    "insufficient-medical-context": 268,
+    "excluded:tu van": 266,
+    "excluded:xay dung": 242,
+    "excluded:xay lap": 40,
+    "excluded:sua chua": 39,
     "excluded:bao hiem": 10,
     "excluded:cai tao": 7,
     "excluded:tham dinh": 6,
     "excluded:trang phuc": 6,
+    "excluded:may tinh": 5,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
     "excluded:cong nghe thong tin": 5,
     "excluded:kiem dinh": 4,
-    "excluded:may tinh": 4,
     "excluded:giam sat thi cong": 4,
-    "excluded:may in": 4,
     "excluded:quan ly du an": 3,
+    "excluded:may in": 3,
     "excluded:thuc pham": 3,
     "excluded:thuoc generic": 2,
     "excluded:van phong pham": 2,
@@ -849,6 +849,29 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600489867",
+      "name": "Xây lắp công trình",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600506086",
+      "name": "Mua sắm máy vi tính để bàn hoặc máy tính xách tay và thiết bị phụ trợ phòng tin học cho các cơ sở giáo dục trên địa bàn tỉnh Gia Lai thuộc Chương trình “Sóng và máy tính cho em”",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may tinh",
+      "matched": [
+        "may tinh",
+        "tin hoc"
+      ]
+    },
+    {
       "notifyNo": "IB2600509283",
       "name": "Mua máy móc, thiết bị văn phòng",
       "investor": "Công an tỉnh Gia Lai",
@@ -1266,32 +1289,6 @@
     {
       "notifyNo": "IB2600497363",
       "name": "KẾ HOẠCH LCNT GÓI THI CÔNG VÀ TƯ VẤN GIÁM SÁT THI CÔNG-CT SỬA CHỮA PGD BẮC GIA LAI",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600497326",
-      "name": "KẾ HOẠCH LCNT GÓI THI CÔNG VÀ TƯ VẤN GIÁM SÁT THI CÔNG-CT SỬA CHỮA PGD ĐÔNG GIA LAI",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600497280",
-      "name": "KẾ HOẠCH LCNT GÓI THI CÔNG VÀ TƯ VẤN GIÁM SÁT THI CÔNG-CT SỬA CHỮA PGD ĐÔNG GIA LAI",
       "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
       "accepted": false,
       "score": -100,
