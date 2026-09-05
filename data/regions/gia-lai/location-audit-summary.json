@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-05T04:28:29.912Z",
+  "auditedAt": "2026-09-05T11:50:43.809Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 341,
+      "count": 334,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 58,
+      "count": 53,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 26,
+      "count": 24,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 96,
+      "count": 91,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 51,
+      "count": 50,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -206,13 +206,13 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 13,
+      "count": 11,
       "error": ""
     },
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 975,
-  "acceptedCount": 34,
-  "rejectedCount": 941,
+  "candidateCount": 953,
+  "acceptedCount": 33,
+  "rejectedCount": 920,
   "rejectedReasons": {
-    "insufficient-medical-context": 268,
-    "excluded:tu van": 266,
-    "excluded:xay dung": 242,
-    "excluded:xay lap": 40,
-    "excluded:sua chua": 39,
+    "excluded:tu van": 261,
+    "insufficient-medical-context": 258,
+    "excluded:xay dung": 237,
+    "excluded:xay lap": 39,
+    "excluded:sua chua": 38,
     "excluded:bao hiem": 10,
     "excluded:cai tao": 7,
     "excluded:tham dinh": 6,
@@ -303,6 +303,7 @@
     "excluded:cay xanh": 2,
     "excluded:in an": 1,
     "excluded:thiet bi dien": 1,
+    "excluded:rac thai": 1,
     "excluded:phan bon": 1,
     "excluded:lap e hsmt": 1
   },
@@ -643,20 +644,6 @@
         "vat tu",
         "mua",
         "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600426102",
-      "name": "Mua đệm (gioăng) cửa dùng cho máy hấp tiệt trùng hơi nước dòng máy Lumo, trang bị cho khoa Kiểm soát nhiễm khuẩn",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 70,
-      "reason": "medical-investor+machine-usage-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "dung cho may",
-        "mua"
       ]
     },
     {
