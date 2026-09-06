@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-06T04:38:45.464Z",
+  "auditedAt": "2026-09-06T12:09:36.165Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 329,
+      "count": 301,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 53,
+      "count": 50,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 50,
+      "count": 45,
       "error": ""
     },
     {
@@ -188,19 +188,19 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 18,
+      "count": 15,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 42,
+      "count": 39,
       "error": ""
     },
     {
@@ -271,40 +271,40 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 944,
+  "candidateCount": 903,
   "acceptedCount": 33,
-  "rejectedCount": 911,
+  "rejectedCount": 870,
   "rejectedReasons": {
-    "excluded:tu van": 260,
-    "insufficient-medical-context": 256,
-    "excluded:xay dung": 232,
+    "excluded:tu van": 245,
+    "insufficient-medical-context": 244,
+    "excluded:xay dung": 225,
     "excluded:xay lap": 39,
-    "excluded:sua chua": 38,
-    "excluded:bao hiem": 10,
+    "excluded:sua chua": 37,
+    "excluded:bao hiem": 9,
     "excluded:cai tao": 7,
     "excluded:tham dinh": 6,
     "excluded:trang phuc": 6,
-    "excluded:may tinh": 5,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
+    "excluded:may tinh": 4,
     "excluded:kiem dinh": 4,
-    "excluded:cong nghe thong tin": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:quan ly du an": 3,
-    "excluded:may in": 3,
+    "excluded:cong nghe thong tin": 3,
     "excluded:thuc pham": 3,
     "excluded:thuoc generic": 2,
-    "excluded:van phong pham": 2,
     "excluded:duong day": 2,
     "excluded:chat thai": 2,
-    "excluded:thiet bi tuong lua": 2,
     "excluded:bao ve": 2,
     "excluded:tin hoc": 2,
+    "excluded:may in": 2,
     "excluded:cay xanh": 2,
     "excluded:in an": 1,
+    "excluded:van phong pham": 1,
     "excluded:thiet bi dien": 1,
     "excluded:rac thai": 1,
     "excluded:phan bon": 1,
+    "excluded:suat an": 1,
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
