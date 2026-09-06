@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-05T18:18:45.659Z",
+  "auditedAt": "2026-09-06T04:38:45.464Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 334,
+      "count": 329,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 91,
+      "count": 92,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 74,
+      "count": 70,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 25,
+      "count": 24,
       "error": ""
     },
     {
@@ -266,18 +266,18 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 8,
+      "count": 6,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 953,
+  "candidateCount": 944,
   "acceptedCount": 33,
-  "rejectedCount": 920,
+  "rejectedCount": 911,
   "rejectedReasons": {
-    "excluded:tu van": 261,
-    "insufficient-medical-context": 258,
-    "excluded:xay dung": 237,
+    "excluded:tu van": 260,
+    "insufficient-medical-context": 256,
+    "excluded:xay dung": 232,
     "excluded:xay lap": 39,
     "excluded:sua chua": 38,
     "excluded:bao hiem": 10,
@@ -287,8 +287,8 @@
     "excluded:may tinh": 5,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
-    "excluded:cong nghe thong tin": 5,
     "excluded:kiem dinh": 4,
+    "excluded:cong nghe thong tin": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:quan ly du an": 3,
     "excluded:may in": 3,
@@ -836,6 +836,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600511475",
+      "name": "Tổ chức Hội thảo xúc tiến đầu tư tại các nước Pháp - Đức - Bồ Đào Nha",
+      "investor": "Sở Tài chính Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600489867",
       "name": "Xây lắp công trình",
       "investor": "Sở Xây dựng Gia Lai",
@@ -1271,19 +1280,6 @@
       "matched": [
         "xay lap",
         "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600497363",
-      "name": "KẾ HOẠCH LCNT GÓI THI CÔNG VÀ TƯ VẤN GIÁM SÁT THI CÔNG-CT SỬA CHỮA PGD BẮC GIA LAI",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "tu van",
-        "giam sat thi cong"
       ]
     }
   ],
