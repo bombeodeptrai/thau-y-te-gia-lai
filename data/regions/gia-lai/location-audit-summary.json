@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-06T18:17:57.735Z",
+  "auditedAt": "2026-09-07T04:40:56.847Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 301,
+      "count": 311,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 5,
+      "count": 8,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 42,
+      "count": 44,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 92,
+      "count": 93,
       "error": ""
     },
     {
@@ -206,7 +206,7 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 11,
+      "count": 13,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 11,
+      "count": 13,
       "error": ""
     },
     {
@@ -271,27 +271,29 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 904,
+  "candidateCount": 922,
   "acceptedCount": 33,
-  "rejectedCount": 871,
+  "rejectedCount": 889,
   "rejectedReasons": {
-    "excluded:tu van": 246,
-    "insufficient-medical-context": 244,
-    "excluded:xay dung": 225,
-    "excluded:xay lap": 39,
-    "excluded:sua chua": 37,
-    "excluded:bao hiem": 9,
-    "excluded:cai tao": 7,
-    "excluded:tham dinh": 6,
+    "excluded:tu van": 249,
+    "insufficient-medical-context": 245,
+    "excluded:xay dung": 230,
+    "excluded:xay lap": 40,
+    "excluded:sua chua": 36,
+    "excluded:bao hiem": 10,
+    "excluded:cai tao": 10,
+    "excluded:tham dinh": 7,
     "excluded:trang phuc": 6,
+    "excluded:may tinh": 5,
     "excluded:bao tri": 5,
     "excluded:bao duong": 5,
-    "excluded:may tinh": 4,
     "excluded:kiem dinh": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
     "excluded:thuc pham": 3,
+    "excluded:suat an": 3,
+    "excluded:rac thai": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
     "excluded:chat thai": 2,
@@ -302,9 +304,7 @@
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi dien": 1,
-    "excluded:rac thai": 1,
     "excluded:phan bon": 1,
-    "excluded:suat an": 1,
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
@@ -836,6 +836,136 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600513223",
+      "name": "Cung cấp bì đựng phim các loại cho khoa Chẩn đoán hình ảnh - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai năm 2026",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "chan doan",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600513145",
+      "name": "Cung cấp Bảo hiểm trách nhiệm cho người hành nghề khám bệnh, chữa bệnh tại Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai năm 2026",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao hiem",
+      "matched": [
+        "bao hiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600512862",
+      "name": "In phướn",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600512812",
+      "name": "In Tờ rơi tuyên truyền về phân loại rác thải tại nguồn",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:rac thai",
+      "matched": [
+        "rac thai"
+      ]
+    },
+    {
+      "notifyNo": "IB2600512499",
+      "name": "Mua sắm máy tính, máy in và máy huỷ tài liệu",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may tinh",
+      "matched": [
+        "may tinh",
+        "may in"
+      ]
+    },
+    {
+      "notifyNo": "IB2600512448",
+      "name": "Tư vấn đánh giá hồ sơ dự thầu",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600512432",
+      "name": "Tư vấn lập hồ sơ mời thầu",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600512099",
+      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuật. Công trình: Trường PTDTNT THPT Số 1 tỉnh Gia Lai Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600512078",
+      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuậtCông trình: Trường THPT Số 1 Nguyễn Thái Học Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600512048",
+      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuật công trìnhTrường THPT Chuyên Lê Quý Đôn Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600512008",
+      "name": "Tư vấn thẩm tra Báo cáo kinh tế - kỹ thuật đầu tư xây dựng",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600511475",
       "name": "Tổ chức Hội thảo xúc tiến đầu tư tại các nước Pháp - Đức - Bồ Đào Nha",
       "investor": "Sở Tài chính Gia Lai",
@@ -1151,135 +1281,6 @@
       "matched": [
         "may tinh",
         "cong nghe thong tin"
-      ]
-    },
-    {
-      "notifyNo": "IB2600487966",
-      "name": "Tư vấn giám sát thi công xây dựng",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600497376",
-      "name": "Mua sắm sách giáo khoa",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600499509",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600499501",
-      "name": "Tư vấn giám sát thi công xây dựng công trình",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600469554",
-      "name": "Gói thầu số 9: Khảo sát, lập thiết kế BVTC-Dự toán TDA Nâng cấp, mở rộng khu neo đậu tránh trú bão cho tàu cá cấp vùng Tam Quan - tỉnh Bình Định (nay là tỉnh Gia Lai)",
-      "investor": "Ban quản lý các dự án Nông nghiệp",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600498294",
-      "name": "Gói thầu số 01: Cung cấp xi măng thực hiện Chương trình bê tông giao thông nông thôn năm 2026",
-      "investor": "Sở Tài chính Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600493354",
-      "name": "Gói thầu số 2: Gói thầu thuốc dược liệu, thuốc có kết hợp dược chất với các dược liệu, thuốc cổ truyền",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
-      "notifyNo": "IB2600493161",
-      "name": "Gói thầu số 1: Gói thầu thuốc generic",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:thuoc generic",
-      "matched": [
-        "thuoc generic"
-      ]
-    },
-    {
-      "notifyNo": "IB2600497962",
-      "name": "Sửa chữa Hệ thống xử lý chất thải y tế Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "chat thai"
-      ]
-    },
-    {
-      "notifyNo": "IB2600497442",
-      "name": "KẾ HOẠCH LCNT GÓI THI CÔNG VÀ TƯ VẤN GIÁM SÁT THI CÔNG-CT SỬA CHỮA PGD BẮC GIA LAI",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600472754",
-      "name": "SCL2026-HH/03: Cung cấp vật tư, thiết bị và thi công xây lắp công trình: Sửa chữa ĐZ THA khu vực Tuy Phước năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "sua chua"
       ]
     }
   ],
