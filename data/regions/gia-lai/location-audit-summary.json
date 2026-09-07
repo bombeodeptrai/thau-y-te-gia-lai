@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-07T04:40:56.847Z",
+  "auditedAt": "2026-09-07T14:15:41.378Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 311,
+      "count": 315,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 27,
+      "count": 28,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 21,
+      "count": 23,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
@@ -74,7 +74,7 @@
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -140,7 +140,7 @@
     {
       "term": "Mang Yang",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 93,
+      "count": 97,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 70,
+      "count": 72,
       "error": ""
     },
     {
@@ -271,17 +271,17 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 922,
+  "candidateCount": 939,
   "acceptedCount": 33,
-  "rejectedCount": 889,
+  "rejectedCount": 906,
   "rejectedReasons": {
+    "insufficient-medical-context": 252,
     "excluded:tu van": 249,
-    "insufficient-medical-context": 245,
-    "excluded:xay dung": 230,
-    "excluded:xay lap": 40,
+    "excluded:xay dung": 233,
+    "excluded:xay lap": 41,
     "excluded:sua chua": 36,
+    "excluded:cai tao": 13,
     "excluded:bao hiem": 10,
-    "excluded:cai tao": 10,
     "excluded:tham dinh": 7,
     "excluded:trang phuc": 6,
     "excluded:may tinh": 5,
@@ -289,22 +289,22 @@
     "excluded:bao duong": 5,
     "excluded:kiem dinh": 4,
     "excluded:giam sat thi cong": 4,
+    "excluded:thuc pham": 4,
+    "excluded:may in": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
-    "excluded:thuc pham": 3,
     "excluded:suat an": 3,
     "excluded:rac thai": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
     "excluded:chat thai": 2,
     "excluded:bao ve": 2,
+    "excluded:phan bon": 2,
     "excluded:tin hoc": 2,
-    "excluded:may in": 2,
     "excluded:cay xanh": 2,
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi dien": 1,
-    "excluded:phan bon": 1,
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
@@ -836,6 +836,85 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600515487",
+      "name": "Mua sắm mực in, mực photo, linh kiện máy photo và linh kiện máy in",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may in",
+      "matched": [
+        "may in"
+      ]
+    },
+    {
+      "notifyNo": "IB2600503025",
+      "name": "Hoá chất chuyên dụng Giải trình tự illumina",
+      "investor": "Trung tâm Ứng dụng tiến bộ khoa học và công nghệ Gia Lai",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat"
+      ]
+    },
+    {
+      "notifyNo": "IB2600514795",
+      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuật Công trình: Trường THPT Võ Nguyên Giáp Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600514766",
+      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuật Công trình: Trường THPT Chuyên Hùng Vương Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600514733",
+      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuật Công trình: Trung tâm GDNN-GDTX Mang Yang Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600513887",
+      "name": "Thuê đường truyền số liệu",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600513497",
+      "name": "Phê duyệt dự toán và kế hoạch lựa chọn nhà thầu gói thầu: dịch vụ thuê hội trường (bao gồm giải khát giữa giờ) và phòng nghỉ cho báo cáo viên tham dự tập huấn bồi dưỡng nghiệp vụ cho hòa giải viên lao động, trọng tài viên lao động; tuyên truyền, phổ biến pháp luật lao động trên địa bàn tỉnh năm 2026",
+      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600513223",
       "name": "Cung cấp bì đựng phim các loại cho khoa Chẩn đoán hình ảnh - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai năm 2026",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -1201,86 +1280,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600502091",
-      "name": "Lập Đề án phát triển đô thị thông minh tỉnh Gia Lai (Gói 1).",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600503491",
-      "name": "Tư vấn lập E-HSMT và Đánh giá HSDT",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "lap e hsmt"
-      ]
-    },
-    {
-      "notifyNo": "IB2600503025",
-      "name": "Hoá chất chuyên dụng Giải trình tự illumina",
-      "investor": "Trung tâm Ứng dụng tiến bộ khoa học và công nghệ Gia Lai",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat"
-      ]
-    },
-    {
-      "notifyNo": "IB2600487964",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600501934",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600501930",
-      "name": "Tư vấn lập E-HSMT và đánh giá E-HSDT",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "lap e hsmt",
-        "danh gia e hsdt"
-      ]
-    },
-    {
-      "notifyNo": "IB2600501255",
-      "name": "Mua sắm máy vi tính để bàn, máy tính xách tay, máy photocopy, máy tính bảng, màn hình tương tác và thiết bị công nghệ thông tin tương đương cho các cơ sở giáo dục trên địa bàn tỉnh Gia Lai",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may tinh",
-      "matched": [
-        "may tinh",
-        "cong nghe thong tin"
       ]
     }
   ],
