@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-08T04:35:23.334Z",
+  "auditedAt": "2026-09-08T12:53:13.032Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 320,
+      "count": 329,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 29,
+      "count": 31,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
@@ -56,13 +56,13 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 25,
+      "count": 27,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 99,
+      "count": 100,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 45,
+      "count": 50,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 15,
+      "count": 14,
       "error": ""
     },
     {
@@ -271,17 +271,17 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 960,
+  "candidateCount": 979,
   "acceptedCount": 34,
-  "rejectedCount": 926,
+  "rejectedCount": 945,
   "rejectedReasons": {
-    "insufficient-medical-context": 258,
-    "excluded:tu van": 253,
-    "excluded:xay dung": 237,
-    "excluded:xay lap": 43,
-    "excluded:sua chua": 39,
+    "insufficient-medical-context": 265,
+    "excluded:tu van": 255,
+    "excluded:xay dung": 243,
+    "excluded:xay lap": 44,
+    "excluded:sua chua": 40,
     "excluded:cai tao": 13,
-    "excluded:bao hiem": 10,
+    "excluded:bao hiem": 12,
     "excluded:tham dinh": 7,
     "excluded:trang phuc": 6,
     "excluded:may tinh": 5,
@@ -851,6 +851,95 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600519156",
+      "name": "Lập điều chỉnh cục bộ quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị Du lịch Nhơn Hội (phân khu 3) Khu kinh tế Nhơn Hội",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600519145",
+      "name": "Lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu công nghiệp đô thị Nhơn Hội (phân khu 4), KKT Nhơn Hội",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600518929",
+      "name": "Sửa chữa, thay thể linh phụ kiện cho bộ SLR8000",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600518898",
+      "name": "Gói thầu 01-TN-2026: Thí nghiệm rơ le, cài đặt cấu hình role, kết nối scada, thí nghiệm tổng mạch tại TBA 110kV dự án",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600518733",
+      "name": "In và treo băng rôn, phướn tuyên truyền trực quan chính sách BHYT học sinh, sinh viên nhân dịp năm học mới 2026-2027",
+      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600518679",
+      "name": "Thực hiện tuyên truyền chính sách bảo hiểm xã hội, bảo hiểm y tế trên Báo và phát thanh, truyền hình Gia Lai giai đoạn cao điểm cuối năm 2026",
+      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao hiem",
+      "matched": [
+        "bao hiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600517860",
+      "name": "Trang thiết bị giường nằm cho học sinh",
+      "investor": "Trường PTDTNT THCS Chư Păh, Xã Chư Păh, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600516114",
+      "name": "Mua giống lúa",
+      "investor": "Phòng Kinh tế xã Hra, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600517354",
+      "name": "Gói thầu số 01: Tư vấn lập Quy hoạch chi tiết khu trung tâm hành chính mới xã Ia Ko, tỉnh Gia Lai",
+      "investor": "PHÒNG KINH TẾ XÃ IA KO",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600516821",
       "name": "Cung cấp, cho thuê các điều kiện tổ chức Hội thi Làm bánh dân gian và Trưng bày mâm bánh truyền thống nhân dịp Lễ giỗ Hoàng đế Quang Trung lần thứ 234 (1792 - 2026).",
       "investor": "HỘI LIÊN HIỆP PHỤ NỮ TỈNH GIA LAI",
@@ -1202,106 +1291,12 @@
       "score": 10,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600502588",
-      "name": "Mua sắm tài sản, trang thiết bị phục vụ hoạt động tại cơ quan Văn phòng Sở Y tế tỉnh Gia Lai năm 2026",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "so y te",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600507777",
-      "name": "Dịch vụ kiểm định an toàn và tính năng kỹ thuật cho các thiết bị y tế năm 2026 - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:kiem dinh",
-      "matched": [
-        "kiem dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600507891",
-      "name": "Khảo sát địa hình phục vụ lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu công nghiệp đô thị Nhơn Hội (phân khu 4), KKT Nhơn Hội",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600507873",
-      "name": "Khảo sát địa hình phục vụ lập điều chỉnh cục bộ quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị Du lịch Nhơn Hội (phân khu 3) Khu kinh tế Nhơn Hội",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600507731",
-      "name": "In tài liệu cẩm nang bỏ túi",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600507607",
-      "name": "Phun thuốc diệt côn trùng phòng dịch",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600507577",
-      "name": "Mua hoá chất diệt côn trùng",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat",
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600506774",
-      "name": "Lập Báo cáo kinh tế - kỹ thuật",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "so y te"
-      ]
-    },
-    {
-      "notifyNo": "IB2600506750",
-      "name": "Khảo sát địa chất",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "so y te"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 858,
+  "beforeCount": 859,
   "afterCount": 859,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
