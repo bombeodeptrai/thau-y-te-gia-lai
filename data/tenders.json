@@ -1,6 +1,47 @@
 {
   "tenders": [
     {
+      "id": "afea28b0-dfda-4dd0-a7db-8b71e8a32b27",
+      "notifyId": "afea28b0-dfda-4dd0-a7db-8b71e8a32b27",
+      "bidId": "00083439-adf9-44fd-b8c2-3202a97d99ee",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "DTRR",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-1-tbmt",
+      "notifyNo": "IB2600481046",
+      "name": "Gói 11.Hóa chất Máy Real Time PCR tự động gồm 10 mặt hàng 01 phần (lô)",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "location": "Phường Pleiku",
+      "closeDate": "2026-09-17T08:00:00",
+      "publicDate": "2026-09-08T09:21:35.124",
+      "price": 2140867008,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=afea28b0-dfda-4dd0-a7db-8b71e8a32b27&notifyId=afea28b0-dfda-4dd0-a7db-8b71e8a32b27&inputResultId=&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600481046&planNo=PL2600238277&step=tbmt&isInternet=1&bidForm=DTRR",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "IB2600505799",
       "notifyId": "IB2600505799",
       "bidId": "42e6bd29-4d7c-4a15-90af-859b408d6d48",
@@ -235486,7 +235527,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-09-07T22:55:07.896Z",
+  "fetchedAt": "2026-09-08T04:37:32.883Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 2186,
   "regions": [
@@ -235605,12 +235646,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 858,
+      "tenderCount": 859,
       "bidderCount": 2774,
       "equipmentCount": 2698,
       "detailTenderCount": 822,
       "coverageDays": 1095,
-      "fetchedAt": "2026-09-07T19:58:46.128Z",
+      "fetchedAt": "2026-09-08T04:36:01.544Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -235669,6 +235710,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 2901
+    "scannedTenderCount": 2902
   }
 }
