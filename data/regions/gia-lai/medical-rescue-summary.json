@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-08T22:41:27.905Z",
+  "rescuedAt": "2026-09-09T04:42:35.669Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -15,19 +15,19 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 329,
+      "count": 334,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 54,
+      "count": 53,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 31,
+      "count": 33,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 27,
+      "count": 25,
       "error": ""
     },
     {
@@ -87,7 +87,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -123,7 +123,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 25,
+      "count": 24,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 98,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -207,13 +207,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 50,
+      "count": 52,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
@@ -225,13 +225,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -278,23 +278,23 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1070,
-  "acceptedCount": 40,
-  "rejectedCount": 1030,
+  "candidateCount": 1081,
+  "acceptedCount": 41,
+  "rejectedCount": 1040,
   "rejectedReasons": {
-    "insufficient-medical-context": 292,
-    "excluded:xay dung": 272,
-    "excluded:tu van": 256,
-    "excluded:xay lap": 53,
-    "excluded:sua chua": 45,
-    "excluded:bao hiem": 13,
-    "excluded:cai tao": 13,
+    "insufficient-medical-context": 293,
+    "excluded:xay dung": 273,
+    "excluded:tu van": 259,
+    "excluded:xay lap": 52,
+    "excluded:sua chua": 44,
+    "excluded:cai tao": 15,
+    "excluded:bao hiem": 14,
     "excluded:bao duong": 8,
     "excluded:tham dinh": 8,
-    "excluded:bao tri": 6,
-    "excluded:trang phuc": 6,
+    "excluded:kiem dinh": 7,
+    "excluded:bao tri": 7,
+    "excluded:trang phuc": 7,
     "excluded:may tinh": 5,
-    "excluded:kiem dinh": 5,
     "excluded:thuc pham": 5,
     "excluded:bao ve": 4,
     "excluded:giam sat thi cong": 4,
@@ -318,6 +318,26 @@
     "excluded:lap e hsmt": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600520572",
+      "name": "Gói thầu số 1: Mua sắm Hoá chất xét nghiệm sử dụng cho máy sinh hoá BX3010 năm 2026 (Lần 3)",
+      "investor": "TRUNG TÂM Y TẾ PLEIKU",
+      "accepted": true,
+      "score": 255,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+machine-usage-context",
+      "matched": [
+        "hoa chat xet nghiem",
+        "trung tam y te",
+        "hoa chat",
+        "xet nghiem",
+        "sinh hoa",
+        "may sinh hoa",
+        "su dung cho may",
+        "dung cho may",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600481046",
       "name": "Gói 11.Hóa chất Máy Real Time PCR tự động gồm 10 mặt hàng 01 phần (lô)",
@@ -945,23 +965,53 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600492233",
-      "name": "Mua sắm khí Oxy y tế năm 2026 của Trung tâm Y tế Ia Pa",
-      "investor": "Trung tâm Y tế Ia Pa",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "oxy y te",
-        "trung tam y te",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600470158",
+      "name": "Ủy thác nhập khẩu",
+      "investor": "Tổng công ty Hạ tầng mạng",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600519638",
+      "name": "Mua sắm xe ô tô phục vụ công tác chung",
+      "investor": "Văn phòng HĐND và UBND xã Đak Sơmei",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600489783",
+      "name": "Mua sắm sách giáo khoa",
+      "investor": "PHÒNG VĂN HÓA - XÃ HỘI XÃ IA BĂNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600517203",
+      "name": "Xây dựng công trình",
+      "investor": "Ban Quản lý Đak Đoa",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600495302",
       "name": "Gói thầu số 03: Cung cấp máy chủ",
@@ -1369,54 +1419,12 @@
         "hoa chat",
         "vat tu"
       ]
-    },
-    {
-      "notifyNo": "IB2600395006",
-      "name": "Gói thầu số 21: Tư vấn đo đạc quan trắc biến dạng và đánh giá ổn định các hạng mục công trình Thuỷ điện An Khê - Ka Nak, chu kỳ “11”",
-      "investor": "CÔNG TY THỦY ĐIỆN AN KHÊ - KA NAK - CHI NHÁNH TỔNG CÔNG TY PHÁT ĐIỆN 2 - CÔNG TY CỔ PHẦN",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600504046",
-      "name": "Đầu tư xây dựng CSHT các trạm BTS tỉnh Gia Lai đợt 1 thuộc pha PTM năm 2026",
-      "investor": "MOBIFONE GIA LAI - CHI NHÁNH TỔNG CÔNG TY VIỄN THÔNG MOBIFONE",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600494343",
-      "name": "Toàn bộ khối lượng thi công xây dựng",
-      "investor": "Ban Quản lý công ích xã Vĩnh Thạnh",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600502091",
-      "name": "Lập Đề án phát triển đô thị thông minh tỉnh Gia Lai (Gói 1).",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 859,
-  "afterCount": 859,
+  "beforeCount": 860,
+  "afterCount": 860,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
