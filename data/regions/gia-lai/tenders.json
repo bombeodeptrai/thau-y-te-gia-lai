@@ -1,6 +1,47 @@
 {
   "tenders": [
     {
+      "id": "9ca7d3f9-f4e7-4936-9067-64b5dd7ad50a",
+      "notifyId": "9ca7d3f9-f4e7-4936-9067-64b5dd7ad50a",
+      "bidId": "37699207-909b-4df5-b0df-b6cffb346a84",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "CGTTRG",
+      "processApply": "LDT",
+      "stepCode": "reoffer-price-step-1",
+      "notifyNo": "IB2600520002",
+      "name": "Mua sắm linh kiện, phụ kiện, vật tư thay thế cho Máy xét nghiệm sinh hóa tự động (Model: BA200, Hãng nước sản xuất: BioSystems S.A, SPAIN)",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Trung tâm Y tế Đức Cơ",
+      "location": "Xã Đức Cơ",
+      "closeDate": "2026-09-18T14:00:00",
+      "publicDate": "2026-09-09T13:42:54.32",
+      "price": 197233856,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=9ca7d3f9-f4e7-4936-9067-64b5dd7ad50a&notifyId=9ca7d3f9-f4e7-4936-9067-64b5dd7ad50a&inputResultId=&bidOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600520002&planNo=PL2600279152&step=tbmt&isInternet=1&bidForm=CGTTRG",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "f9d52e9c-c698-4929-826b-d7c84371c069",
       "notifyId": "f9d52e9c-c698-4929-826b-d7c84371c069",
       "bidId": "9e33788d-463d-4b84-a5c3-65c25d7f5bdd",
@@ -43847,7 +43888,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-09-09T04:42:35.669Z",
+  "fetchedAt": "2026-09-09T07:34:05.381Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -43855,7 +43896,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 824,
+  "detailTenderCount": 825,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-plus-historical-location-terms",
@@ -43889,11 +43930,11 @@
     "lastRemovedManualTenderCount": 0,
     "filterStrategy": "unified-medical-scope-v5",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v5",
-    "lastMedicalRescueAt": "2026-09-09T04:42:35.669Z",
-    "lastMedicalRescueDays": 30,
-    "lastMedicalRescueCandidateCount": 1081,
-    "lastMedicalRescueMedicalCount": 41,
-    "lastMedicalRescueNewCount": 0,
+    "lastMedicalRescueAt": "2026-09-09T07:34:05.381Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 391,
+    "lastMedicalRescueMedicalCount": 23,
+    "lastMedicalRescueNewCount": 1,
     "lastRemovedRejectedStoredCount": 0
   }
 }
