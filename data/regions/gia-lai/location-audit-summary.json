@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-10T12:55:48.108Z",
+  "auditedAt": "2026-09-10T04:42:35.251Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 336,
+      "count": 340,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 51,
+      "count": 52,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 29,
+      "count": 30,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 9,
+      "count": 7,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 21,
+      "count": 20,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 42,
+      "count": 46,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 102,
+      "count": 103,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 47,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 64,
+      "count": 66,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 51,
+      "count": 50,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 975,
-  "acceptedCount": 37,
-  "rejectedCount": 938,
+  "candidateCount": 983,
+  "acceptedCount": 36,
+  "rejectedCount": 947,
   "rejectedReasons": {
-    "insufficient-medical-context": 264,
-    "excluded:tu van": 253,
-    "excluded:xay dung": 233,
-    "excluded:xay lap": 44,
-    "excluded:sua chua": 39,
+    "insufficient-medical-context": 265,
+    "excluded:tu van": 257,
+    "excluded:xay dung": 235,
+    "excluded:xay lap": 43,
+    "excluded:sua chua": 41,
     "excluded:cai tao": 15,
     "excluded:bao hiem": 12,
     "excluded:trang phuc": 7,
@@ -292,9 +292,9 @@
     "excluded:giam sat thi cong": 4,
     "excluded:suat an": 4,
     "excluded:phan bon": 3,
+    "excluded:may in": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
-    "excluded:may in": 2,
     "excluded:rac thai": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
@@ -698,25 +698,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600525594",
-      "name": "Mua sắm vật tư, hóa chất, sinh phẩm chẩn đoán y tế trong khi chờ kết quả lựa chọn nhà thầu năm 2026 của Bệnh viện đa khoa cao su Chư Prông",
-      "investor": "CHI NHÁNH CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG - BỆNH VIỆN ĐA KHOA CAO SU CHƯ PRÔNG",
-      "accepted": true,
-      "score": 255,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
-      "matched": [
-        "sinh pham chan doan",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "sinh pham",
-        "chan doan",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "IB2600505799",
       "name": "Mua sắm một số mặt hàng hóa chất, sinh phẩm chẩn đoán y tế trong thời gian chờ tổ chức đấu thầu năm 2026-2027",
       "investor": "Trung tâm Y tế Chư Prông",
@@ -907,107 +888,6 @@
     }
   ],
   "rejectedDiagnostics": [
-    {
-      "notifyNo": "IB2600525923",
-      "name": "Trang trí khánh tiết",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525854",
-      "name": "Trang trí khánh tiết",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525800",
-      "name": "Mua lẵng hoa tươi chúc mừng Lễ khai giảng năm học 2026-2027 cho các trường học trên địa bàn tỉnh Gia Lai.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600525689",
-      "name": "Mua vật tư, phụ kiện thực hiện công tác lắp đặt đồng hồ nước và sửa chữa các sự cố khi lắp đặt cho hộ gia đình tại Nhà máy Nước sạch ven biển Phù Mỹ",
-      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600525540",
-      "name": "Trích đo bản đồ địa chính",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525499",
-      "name": "Khảo sát địa hình phục vụ lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị du lịch Phương Mai (phân khu 5), KKT Nhơn Hội",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525476",
-      "name": "Khảo sát địa hình phục vụ lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị du lịch Tân Thanh, Vĩnh Hội (Phân khu 1), KKT Nhơn Hội",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600517749",
-      "name": "Xây dựng cải tạo, nâng cấp Nhà bán hàng, mái che cột bơm và hạng mục phụ trợ Petrolimex- Cửa hàng 29",
-      "investor": "CÔNG TY TNHH MTV PETROLIMEX GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "cai tao"
-      ]
-    },
-    {
-      "notifyNo": "IB2600525222",
-      "name": "Nhà để xe ô tô cán bộ chiến sĩ Trại tạm giam số 1 thuộc Công an tỉnh Gia Lai",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525017",
-      "name": "mua sắm thuốc, đa vi chất dinh dưỡng cho trẻ suy dinh dưỡng, cung cấp viên sắt cho trẻ em gái thuộc Tiểu dự án 2 - Dự án 3 “Cải thiện dinh dưỡng” năm 2026 thuộc Chương trình mục tiêu quốc gia giảm nghèo bền vững giai đoạn 2021- 2025",
-      "investor": "Phòng Văn hóa - Xã hội xã Cửu An, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam",
-        "cung cap"
-      ]
-    },
     {
       "notifyNo": "IB2600524667",
       "name": "Xây dựng mô hình xử lý, tái sử dụng chất thải nông nghiệp, phụ phẩm nông nghiệp bằng chế phẩm sinh học Bio Grow làm phân bón hữu cơ tại xã Ia Nan, tỉnh Gia Lai",
@@ -1323,12 +1203,120 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
+    },
+    {
+      "notifyNo": "IB2600518733",
+      "name": "In và treo băng rôn, phướn tuyên truyền trực quan chính sách BHYT học sinh, sinh viên nhân dịp năm học mới 2026-2027",
+      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600518679",
+      "name": "Thực hiện tuyên truyền chính sách bảo hiểm xã hội, bảo hiểm y tế trên Báo và phát thanh, truyền hình Gia Lai giai đoạn cao điểm cuối năm 2026",
+      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao hiem",
+      "matched": [
+        "bao hiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600517860",
+      "name": "Trang thiết bị giường nằm cho học sinh",
+      "investor": "Trường PTDTNT THCS Chư Păh, Xã Chư Păh, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600516114",
+      "name": "Mua giống lúa",
+      "investor": "Phòng Kinh tế xã Hra, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600517354",
+      "name": "Gói thầu số 01: Tư vấn lập Quy hoạch chi tiết khu trung tâm hành chính mới xã Ia Ko, tỉnh Gia Lai",
+      "investor": "PHÒNG KINH TẾ XÃ IA KO",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600516821",
+      "name": "Cung cấp, cho thuê các điều kiện tổ chức Hội thi Làm bánh dân gian và Trưng bày mâm bánh truyền thống nhân dịp Lễ giỗ Hoàng đế Quang Trung lần thứ 234 (1792 - 2026).",
+      "investor": "HỘI LIÊN HIỆP PHỤ NỮ TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600516663",
+      "name": "Tư vấn thẩm tra Báo cáo kinh tế kỹ thuật",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600516643",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật công trình: Mở mạng các tuyến đường ống nước sạch trên địa bàn xã Phù Mỹ",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600515946",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600515817",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 863,
-  "afterCount": 863,
+  "beforeCount": 862,
+  "afterCount": 862,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v5"
 }
