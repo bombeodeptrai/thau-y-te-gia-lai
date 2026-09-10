@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-09T22:34:58.413Z",
+  "rescuedAt": "2026-09-10T04:43:08.709Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 265,
+      "count": 270,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 337,
+      "count": 340,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 32,
+      "count": 30,
       "error": ""
     },
     {
@@ -111,13 +111,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -129,7 +129,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 25,
+      "count": 20,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 101,
+      "count": 103,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 47,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 64,
+      "count": 66,
       "error": ""
     },
     {
@@ -219,7 +219,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -283,33 +283,33 @@
   "rejectedCount": 1028,
   "rejectedReasons": {
     "insufficient-medical-context": 293,
-    "excluded:xay dung": 266,
-    "excluded:tu van": 255,
+    "excluded:xay dung": 262,
+    "excluded:tu van": 258,
     "excluded:xay lap": 51,
     "excluded:sua chua": 46,
     "excluded:cai tao": 15,
     "excluded:bao hiem": 13,
     "excluded:bao duong": 8,
-    "excluded:tham dinh": 8,
     "excluded:kiem dinh": 7,
+    "excluded:tham dinh": 7,
     "excluded:trang phuc": 7,
     "excluded:may tinh": 6,
     "excluded:bao tri": 6,
     "excluded:thuc pham": 5,
     "excluded:giam sat thi cong": 4,
     "excluded:suat an": 4,
+    "excluded:phan bon": 3,
     "excluded:may phat dien": 3,
     "excluded:bao ve": 3,
     "excluded:may in": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
-    "excluded:phan bon": 2,
+    "excluded:may chu": 2,
     "excluded:rac thai": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
     "excluded:tin hoc": 2,
     "excluded:chat thai": 2,
-    "excluded:may chu": 1,
     "excluded:tram bien ap": 1,
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
@@ -969,6 +969,63 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600522422",
+      "name": "Mua sắm mực in sử dụng tại các Khoa, Phòng và Trung tâm Đào tạo bằng nguồn thu dịch vụ khám bệnh, chữa bệnh của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": false,
+      "score": 20,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam",
+        "kham benh",
+        "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600502094",
+      "name": "Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh cho Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2027-2029",
+      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "chan doan"
+      ]
+    },
+    {
+      "notifyNo": "IB2600523939",
+      "name": "Gói thầu MS01: Mua phân bón NPK 16-8-16+TE chăm sóc cà phê khu vực Gia Lai",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CÀ PHÊ 15",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:phan bon",
+      "matched": [
+        "phan bon"
+      ]
+    },
+    {
+      "notifyNo": "IB2600519762",
+      "name": "G10-VN-CSCC_GL_1311.2: Lập hồ sơ đề xuất thành lập khu bảo tồn biển Vịnh Quy Nhơn, bao gồm cả việc phân vùng, để UBND tỉnh Gia Lai thành lập chính thức",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600510696",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ban Quản lý xã Bình Hiệp",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600515266",
       "name": "Xây dựng công trình",
       "investor": "PHÒNG KINH TẾ XÃ KON GANG",
@@ -1360,62 +1417,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600506193",
-      "name": "Toàn bộ khối lượng thi công xây dựng",
-      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600469453",
-      "name": "Toàn bộ vật tư cấp nước của dự án (giai đoạn 1)",
-      "investor": "CÔNG TY CỔ PHẦN CẤP THOÁT NƯỚC BÌNH ĐỊNH",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600490078",
-      "name": "Mua sắm",
-      "investor": "Ban quản lý xã Phú Thiện",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600456214",
-      "name": "Xây dựng công trình Đường Lý Thường Kiệt",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600505886",
-      "name": "Gói thầu xây lắp (đã bao gồm nhà tạm, nhà ĐHTC)",
-      "investor": "Phòng Kinh tế xã Ia Lâu",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
       ]
     }
   ],

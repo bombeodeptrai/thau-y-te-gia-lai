@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-09T22:34:18.373Z",
+  "auditedAt": "2026-09-10T04:42:35.251Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 337,
+      "count": 340,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 32,
+      "count": 30,
       "error": ""
     },
     {
@@ -104,13 +104,13 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 25,
+      "count": 20,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 101,
+      "count": 103,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 47,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 64,
+      "count": 66,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -271,26 +271,27 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 984,
+  "candidateCount": 983,
   "acceptedCount": 36,
-  "rejectedCount": 948,
+  "rejectedCount": 947,
   "rejectedReasons": {
     "insufficient-medical-context": 265,
-    "excluded:tu van": 254,
-    "excluded:xay dung": 240,
+    "excluded:tu van": 257,
+    "excluded:xay dung": 235,
     "excluded:xay lap": 43,
     "excluded:sua chua": 41,
     "excluded:cai tao": 15,
     "excluded:bao hiem": 12,
-    "excluded:tham dinh": 7,
     "excluded:trang phuc": 7,
     "excluded:bao tri": 6,
     "excluded:kiem dinh": 6,
     "excluded:may tinh": 6,
+    "excluded:tham dinh": 6,
     "excluded:bao duong": 5,
     "excluded:thuc pham": 5,
     "excluded:giam sat thi cong": 4,
     "excluded:suat an": 4,
+    "excluded:phan bon": 3,
     "excluded:may in": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
@@ -299,11 +300,11 @@
     "excluded:duong day": 2,
     "excluded:chat thai": 2,
     "excluded:bao ve": 2,
-    "excluded:phan bon": 2,
     "excluded:tin hoc": 2,
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi dien": 1,
+    "excluded:may chu": 1,
     "excluded:cay xanh": 1,
     "excluded:lap e hsmt": 1
   },
@@ -888,6 +889,59 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600524667",
+      "name": "Xây dựng mô hình xử lý, tái sử dụng chất thải nông nghiệp, phụ phẩm nông nghiệp bằng chế phẩm sinh học Bio Grow làm phân bón hữu cơ tại xã Ia Nan, tỉnh Gia Lai",
+      "investor": "ỦY BAN NHÂN DÂN XÃ IA NAN TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "chat thai",
+        "phan bon"
+      ]
+    },
+    {
+      "notifyNo": "IB2600524508",
+      "name": "Thuê xe đưa đoàn chức sắc, chức việc, nhà tu hành các tổ chức tôn giáo, tổ chức tôn giáo trực thuộc trên địa bàn tỉnh đi thăm, làm việc, giao lưu, gặp mặt, trao đổi kinh nghiệm ngoài tỉnh năm 2026.",
+      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600523987",
+      "name": "Xây dựng hồ sơ thành quả diễn biến rừng năm 2025",
+      "investor": "Chi cục Kiểm lâm Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600523939",
+      "name": "Gói thầu MS01: Mua phân bón NPK 16-8-16+TE chăm sóc cà phê khu vực Gia Lai",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CÀ PHÊ 15",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:phan bon",
+      "matched": [
+        "phan bon"
+      ]
+    },
+    {
+      "notifyNo": "IB2600519762",
+      "name": "G10-VN-CSCC_GL_1311.2: Lập hồ sơ đề xuất thành lập khu bảo tồn biển Vịnh Quy Nhơn, bao gồm cả việc phân vùng, để UBND tỉnh Gia Lai thành lập chính thức",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600522980",
       "name": "Cung cấp dịch vụ Sân khấu, nhà bạt, trang trí khánh tiết phục vụ Tổ chức diễn tập thực binh xử lý tình huống tội phạm sử dụng vũ khí cướp tài sản tại Ngân hàng trên địa bàn tỉnh Gia Lai",
       "investor": "Công an tỉnh Gia Lai",
@@ -1257,65 +1311,6 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "IB2600515487",
-      "name": "Mua sắm mực in, mực photo, linh kiện máy photo và linh kiện máy in",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may in",
-      "matched": [
-        "may in"
-      ]
-    },
-    {
-      "notifyNo": "IB2600514795",
-      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuật Công trình: Trường THPT Võ Nguyên Giáp Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600514766",
-      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuật Công trình: Trường THPT Chuyên Hùng Vương Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600514733",
-      "name": "Tư vấn lập Báo cáo Kinh tế - Kỹ thuật Công trình: Trung tâm GDNN-GDTX Mang Yang Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600513887",
-      "name": "Thuê đường truyền số liệu",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
