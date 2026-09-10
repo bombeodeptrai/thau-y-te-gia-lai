@@ -60,6 +60,7 @@ for (const entry of [
   "favicon.svg",
   "assets",
   "data",
+  "kieu-viet",
 ]) {
   await cp(resolve(root, entry), resolve(output, entry), { recursive: true });
 }

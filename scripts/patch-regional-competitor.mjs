@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 
 const target = resolve(process.argv[2] || "dist-pages/competitor-analysis.js");
 let source = await readFile(target, "utf8");
+source = source.replace(/\r\n/g, "\n");
 
 const oldFunction = `  function isRegional(record) {
     return /gia lai|pleiku|quy nhon|binh dinh|an khe|ayun pa/.test(
