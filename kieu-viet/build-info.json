@@ -1,9 +1,9 @@
 {
   "appName": "Kiểu Việt Healthcare — Medical Devices & Bidding System",
-  "version": "1.2.0-codex-aligned",
-  "buildTimestamp": "2026-09-11T02:48:21.433Z",
-  "gitCommit": "08285906c7d608d3dc33f0d6b958821124fcf98c",
-  "gitBranch": "main",
+  "version": "1.3.0-tender-clinic-integrated",
+  "buildTimestamp": "2026-09-11T14:55:54.846Z",
+  "gitCommit": "6bec0458fca71f5e735e1c1871e5a0506acf1cd5",
+  "gitBranch": "feat/medical-platform",
   "buildCommand": "npm run build",
   "corpus": {
     "totalDocuments": 12,
@@ -11,6 +11,25 @@
     "badChromePhrasesCount": 0,
     "sanitizedFooter": true,
     "sanitizedHeader": true
+  },
+  "tenderIntegration": {
+    "cases": [
+      "IB2600520002",
+      "IB2600481169"
+    ],
+    "ba200DisclosedTechnicalRows": 5,
+    "gialaiDisclosureStatus": "official-captcha-required",
+    "chatSystemPromptVersion": "kv-medical-evidence-v2"
+  },
+  "clinicManagement": {
+    "regimes": [
+      "maintenance",
+      "inspection_tt24",
+      "calibration"
+    ],
+    "tt24DeadlinePriorJuly2027": "2028-01-01",
+    "qrInspectionTracking": true,
+    "secondaryTaxTab": true
   },
   "complianceEngine": {
     "totalCriteria": 40,
@@ -20,6 +39,25 @@
       "insufficient",
       "review",
       "not_applicable"
+    ]
+  },
+  "templates": {
+    "totalForms": 14,
+    "codes": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07",
+      "T08",
+      "T09",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T14"
     ]
   },
   "deploymentLocations": [
