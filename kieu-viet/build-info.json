@@ -1,0 +1,29 @@
+{
+  "appName": "Kiểu Việt Healthcare — Medical Devices & Bidding System",
+  "version": "1.2.0-codex-aligned",
+  "buildTimestamp": "2026-09-11T02:48:21.433Z",
+  "gitCommit": "08285906c7d608d3dc33f0d6b958821124fcf98c",
+  "gitBranch": "main",
+  "buildCommand": "npm run build",
+  "corpus": {
+    "totalDocuments": 12,
+    "cleanedMarkdownCount": 12,
+    "badChromePhrasesCount": 0,
+    "sanitizedFooter": true,
+    "sanitizedHeader": true
+  },
+  "complianceEngine": {
+    "totalCriteria": 40,
+    "evaluationStates": [
+      "pass",
+      "fail",
+      "insufficient",
+      "review",
+      "not_applicable"
+    ]
+  },
+  "deploymentLocations": [
+    "/Tra-cuu-ke-toan-kieu-viet/med-app/",
+    "/thau-y-te-gia-lai/kieu-viet/"
+  ]
+}
