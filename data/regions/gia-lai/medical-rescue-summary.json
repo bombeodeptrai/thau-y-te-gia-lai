@@ -2,26 +2,26 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-11T12:50:55.754Z",
+  "rescuedAt": "2026-09-11T19:10:50.077Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 261,
+      "count": 262,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 345,
+      "count": 344,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 47,
+      "count": 45,
       "error": ""
     },
     {
@@ -278,13 +278,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1068,
+  "candidateCount": 1066,
   "acceptedCount": 43,
-  "rejectedCount": 1025,
+  "rejectedCount": 1023,
   "rejectedReasons": {
     "insufficient-medical-context": 294,
     "excluded:tu van": 268,
-    "excluded:xay dung": 252,
+    "excluded:xay dung": 250,
     "excluded:xay lap": 50,
     "excluded:sua chua": 43,
     "excluded:cai tao": 16,
@@ -969,6 +969,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600520177",
+      "name": "Gói thầu số 11: Khảo sát, lập thiết kế BVTC-Dự toán XDCT TDA Mở rộng cảng cá Tắc Cậu tại Trung tâm nghề cá lớn Kiên Giang (nay là tỉnh An Giang)",
+      "investor": "Ban quản lý các dự án Nông nghiệp",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600376981",
       "name": "Gói thầu số 7: Bảo hiểm xây dựng công trình",
       "investor": "TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
@@ -1403,17 +1412,6 @@
       "reason": "excluded:rac thai",
       "matched": [
         "rac thai"
-      ]
-    },
-    {
-      "notifyNo": "IB2600489867",
-      "name": "Xây lắp công trình",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
       ]
     }
   ],
