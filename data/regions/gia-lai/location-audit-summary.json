@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-10T22:36:12.793Z",
+  "auditedAt": "2026-09-11T04:39:49.561Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 337,
+      "count": 332,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 29,
+      "count": 28,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 24,
+      "count": 21,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 15,
+      "count": 14,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 47,
+      "count": 44,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 102,
+      "count": 100,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 64,
+      "count": 67,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 51,
+      "count": 48,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -271,17 +271,17 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 977,
-  "acceptedCount": 37,
-  "rejectedCount": 940,
+  "candidateCount": 960,
+  "acceptedCount": 36,
+  "rejectedCount": 924,
   "rejectedReasons": {
-    "insufficient-medical-context": 270,
-    "excluded:tu van": 253,
-    "excluded:xay dung": 229,
+    "insufficient-medical-context": 264,
+    "excluded:tu van": 248,
+    "excluded:xay dung": 230,
     "excluded:xay lap": 44,
-    "excluded:sua chua": 39,
+    "excluded:sua chua": 36,
     "excluded:cai tao": 15,
-    "excluded:bao hiem": 12,
+    "excluded:bao hiem": 11,
     "excluded:trang phuc": 7,
     "excluded:bao tri": 6,
     "excluded:kiem dinh": 6,
@@ -289,21 +289,21 @@
     "excluded:tham dinh": 6,
     "excluded:bao duong": 5,
     "excluded:thuc pham": 5,
-    "excluded:giam sat thi cong": 4,
     "excluded:suat an": 4,
     "excluded:phan bon": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
+    "excluded:giam sat thi cong": 3,
     "excluded:may in": 2,
     "excluded:rac thai": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
     "excluded:chat thai": 2,
-    "excluded:bao ve": 2,
     "excluded:tin hoc": 2,
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi dien": 1,
+    "excluded:bao ve": 1,
     "excluded:may chu": 1,
     "excluded:cay xanh": 1,
     "excluded:lap e hsmt": 1
@@ -646,23 +646,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600415216",
-      "name": "Mua sắm vật tư sử dụng cho máy thận 4008S",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 70,
-      "reason": "medical-investor+machine-usage-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "su dung cho may",
-        "dung cho may",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "IB2600520572",
       "name": "Gói thầu số 1: Mua sắm Hoá chất xét nghiệm sử dụng cho máy sinh hoá BX3010 năm 2026 (Lần 3)",
       "investor": "TRUNG TÂM Y TẾ PLEIKU",
@@ -907,6 +890,51 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600527971",
+      "name": "Tư vấn thẩm định E-HSMT và kết quả LCNT thi công xây dựng",
+      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600527957",
+      "name": "Tư vấn lập HSMT và phân tích đánh giá HSDT nhà thầu thi công",
+      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600527648",
+      "name": "Kiểm tra, nghiệm thu",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600527539",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế kỹ thuật đầu tư xây dựng",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "IB2600527143",
       "name": "Mua sắm đồ dùng cá nhân cấp cho học sinh năm học 2026-2027 của Trường PTDTNT THPT số 1 tỉnh Gia Lai",
@@ -1287,44 +1315,6 @@
       "reason": "excluded:kiem dinh",
       "matched": [
         "kiem dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600519823",
-      "name": "Tổ chức mời cơm thân đại biểu về tham dự Triển lãm “Không gian Du lịch, Văn hóa - Hội nhập và Lan tỏa” tại tỉnh Gia Lai",
-      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600519156",
-      "name": "Lập điều chỉnh cục bộ quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị Du lịch Nhơn Hội (phân khu 3) Khu kinh tế Nhơn Hội",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600519145",
-      "name": "Lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu công nghiệp đô thị Nhơn Hội (phân khu 4), KKT Nhơn Hội",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600518929",
-      "name": "Sửa chữa, thay thể linh phụ kiện cho bộ SLR8000",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
       ]
     }
   ],
