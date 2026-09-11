@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-10T22:36:53.796Z",
+  "rescuedAt": "2026-09-11T12:50:55.754Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 266,
+      "count": 261,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 337,
+      "count": 345,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 29,
+      "count": 28,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 24,
+      "count": 21,
       "error": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -87,7 +87,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -117,7 +117,7 @@
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 15,
+      "count": 7,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 102,
+      "count": 99,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 64,
+      "count": 78,
       "error": ""
     },
     {
@@ -201,25 +201,25 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 51,
+      "count": 43,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 17,
+      "count": 22,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -278,33 +278,33 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1065,
-  "acceptedCount": 44,
-  "rejectedCount": 1021,
+  "candidateCount": 1068,
+  "acceptedCount": 43,
+  "rejectedCount": 1025,
   "rejectedReasons": {
-    "insufficient-medical-context": 298,
-    "excluded:xay dung": 255,
-    "excluded:tu van": 254,
-    "excluded:xay lap": 51,
-    "excluded:sua chua": 45,
-    "excluded:cai tao": 15,
-    "excluded:bao hiem": 13,
+    "insufficient-medical-context": 294,
+    "excluded:tu van": 268,
+    "excluded:xay dung": 252,
+    "excluded:xay lap": 50,
+    "excluded:sua chua": 43,
+    "excluded:cai tao": 16,
+    "excluded:bao hiem": 12,
+    "excluded:kiem dinh": 8,
     "excluded:bao duong": 8,
-    "excluded:kiem dinh": 7,
     "excluded:tham dinh": 7,
     "excluded:trang phuc": 7,
     "excluded:may tinh": 6,
     "excluded:bao tri": 6,
     "excluded:thuc pham": 5,
-    "excluded:giam sat thi cong": 4,
-    "excluded:suat an": 4,
+    "excluded:suat an": 5,
     "excluded:phan bon": 3,
     "excluded:may phat dien": 3,
-    "excluded:bao ve": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
+    "excluded:giam sat thi cong": 3,
     "excluded:tram bien ap": 2,
     "excluded:may chu": 2,
+    "excluded:bao ve": 2,
     "excluded:rac thai": 2,
     "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
@@ -919,23 +919,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600415216",
-      "name": "Mua sắm vật tư sử dụng cho máy thận 4008S",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 70,
-      "reason": "medical-investor+machine-usage-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "su dung cho may",
-        "dung cho may",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "IB2600485310",
       "name": "Mua sắm một số mặt hàng vật tư y tế, hóa chất sinh phẩm không có kết quả đấu thầu năm 2026-2027 (test nhanh, clip kẹp mạch máu, bộ kiểm tra độ cứng tạm thời ...) của Bệnh viện Đa khoa Gia Lai",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -965,9 +948,72 @@
         "test ma tuy",
         "cung cap"
       ]
+    },
+    {
+      "notifyNo": "IB2600448147",
+      "name": "Mua sắm 01 máy X quang C Arm phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "x quang",
+        "benh vien",
+        "da khoa",
+        "mua",
+        "mua sam",
+        "kham chua benh",
+        "chua benh"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600376981",
+      "name": "Gói thầu số 7: Bảo hiểm xây dựng công trình",
+      "investor": "TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "bao hiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600520648",
+      "name": "Cung cấp dịch vụ kiểm định, hiệu chuẩn thiết bị y tế của Trung tâm Y tế An Nhơn năm 2026 (Lần 2)",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:kiem dinh",
+      "matched": [
+        "kiem dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600517366",
+      "name": "Mua sắm xe ô tô 7 chỗ phục vụ công tác",
+      "investor": "Cảng hàng không Phù Cát - Chi nhánh Tổng công ty Cảng hàng không Việt Nam-CTCP",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600527235",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Ban Quản lý xã Ia Krêl",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600482859",
       "name": "SCL2027-04: Cung cấp VTTB và dịch vụ sửa chữa trạm hợp bộTHB2, THB3 NMTĐ Ialy",
@@ -1368,54 +1414,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600506086",
-      "name": "Mua sắm máy vi tính để bàn hoặc máy tính xách tay và thiết bị phụ trợ phòng tin học cho các cơ sở giáo dục trên địa bàn tỉnh Gia Lai thuộc Chương trình “Sóng và máy tính cho em”",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may tinh",
-      "matched": [
-        "may tinh",
-        "tin hoc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600463157",
-      "name": "Gói 4. Túi máu các loại gồm 02 mặt hàng 02 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
-      "notifyNo": "IB2600508184",
-      "name": "Mua sắm hệ thống màn hình LED bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600490116",
-      "name": "Mua sắm xe ô tô phục vụ công tác chung của Văn phòng Đảng ủy xã Vân Canh",
-      "investor": "Văn phòng Đảng ủy xã Vân Canh",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
       ]
     }
   ],
