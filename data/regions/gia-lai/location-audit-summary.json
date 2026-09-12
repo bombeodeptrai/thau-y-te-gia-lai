@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-11T22:35:55.708Z",
+  "auditedAt": "2026-09-12T04:34:19.257Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 344,
+      "count": 341,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 21,
+      "count": 20,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 26,
+      "count": 24,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 9,
+      "count": 7,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 21,
+      "count": 20,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 24,
+      "count": 22,
       "error": ""
     },
     {
@@ -140,7 +140,7 @@
     {
       "term": "Mang Yang",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 99,
+      "count": 102,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 42,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -271,14 +271,14 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 979,
-  "acceptedCount": 36,
-  "rejectedCount": 943,
+  "candidateCount": 971,
+  "acceptedCount": 35,
+  "rejectedCount": 936,
   "rejectedReasons": {
-    "excluded:tu van": 267,
-    "insufficient-medical-context": 266,
-    "excluded:xay dung": 225,
-    "excluded:xay lap": 43,
+    "excluded:tu van": 266,
+    "insufficient-medical-context": 264,
+    "excluded:xay dung": 221,
+    "excluded:xay lap": 41,
     "excluded:sua chua": 37,
     "excluded:cai tao": 16,
     "excluded:bao hiem": 11,
@@ -288,12 +288,12 @@
     "excluded:may tinh": 6,
     "excluded:tham dinh": 6,
     "excluded:bao duong": 5,
+    "excluded:giam sat thi cong": 5,
     "excluded:thuc pham": 5,
     "excluded:suat an": 5,
     "excluded:phan bon": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
-    "excluded:giam sat thi cong": 3,
     "excluded:may in": 2,
     "excluded:rac thai": 2,
     "excluded:thuoc generic": 2,
@@ -629,23 +629,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600448147",
-      "name": "Mua sắm 01 máy X quang C Arm phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 165,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "x quang",
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam",
-        "kham chua benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "IB2600520572",
       "name": "Gói thầu số 1: Mua sắm Hoá chất xét nghiệm sử dụng cho máy sinh hoá BX3010 năm 2026 (Lần 3)",
       "investor": "TRUNG TÂM Y TẾ PLEIKU",
@@ -890,6 +873,18 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600525920",
+      "name": "Tư vấn lập Đề án chỉnh trang cây xanh đô thị Quy Nhơn giai đoạn 2026 - 2030, tầm nhìn đến năm 2035",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "cay xanh"
+      ]
+    },
     {
       "notifyNo": "IB2600527143",
       "name": "Mua sắm đồ dùng cá nhân cấp cho học sinh năm học 2026-2027 của Trường PTDTNT THPT số 1 tỉnh Gia Lai",
@@ -1314,17 +1309,6 @@
       "matched": [
         "mua",
         "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600522701",
-      "name": "Xây dựng hệ thống bảo đảm an toàn thông tin mạng",
-      "investor": "SỞ TƯ PHÁP TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
