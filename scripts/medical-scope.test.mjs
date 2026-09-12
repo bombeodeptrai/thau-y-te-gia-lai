@@ -67,6 +67,38 @@ test("nhận gói test ma túy tại trung tâm y tế", () => {
   assert.ok(result.matched.includes("test ma tuy"));
 });
 
+test("nhận gói túi máu của bệnh viện", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600463157-00",
+    bidName: ["Gói 4. Túi máu các loại phục vụ hoạt động chuyên môn năm 2026"],
+    investorName: "Bệnh viện Đa khoa Gia Lai",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.matched.includes("tui mau"));
+});
+
+for (const [notifyNo, title, investor] of [
+  [
+    "IB2600520648-00",
+    "Cung cấp dịch vụ kiểm định, hiệu chuẩn thiết bị y tế của Trung tâm Y tế An Nhơn năm 2026 (Lần 2)",
+    "Trung tâm Y tế An Nhơn",
+  ],
+  [
+    "IB2600517233-00",
+    "Gói thầu số 1: Sửa chữa Ghế nha khoa, Máy Xquang C-Arm, Hệ thống rửa tay tự động và Tủ sấy năm 2026",
+    "Trung tâm Y tế Pleiku",
+  ],
+]) {
+  test(`nhận dịch vụ dành riêng cho thiết bị y tế: ${notifyNo}`, () => {
+    const result = classifyMedicalTender({ notifyNo, bidName: [title], investorName: investor });
+    assert.equal(result.accepted, true, result.reason);
+    assert.equal(result.category, "Thiết bị y tế");
+    assert.ok(result.reason.includes("medical-equipment-service"));
+  });
+}
+
 test("không mở rộng từ test ma túy sang mọi gói có từ test", () => {
   const result = classifyMedicalTender({
     bidName: ["Thuê dịch vụ test tải hệ thống phần mềm"],
@@ -107,6 +139,9 @@ for (const [title, investor] of [
   ["Mua hóa chất xử lý nước thải năm 2026", hospital],
   ["Mua máy chủ và thiết bị công nghệ thông tin", hospital],
   ["Cải tạo, sửa chữa khu xét nghiệm", hospital],
+  ["Kiểm định hệ thống điện bệnh viện", hospital],
+  ["Sửa chữa máy tính tại bệnh viện", hospital],
+  ["Bảo trì máy phát điện của bệnh viện", hospital],
   ["Mua văn phòng phẩm phục vụ bệnh viện", hospital],
   ["Mua hóa chất giặt là cho máy giặt công nghiệp", hospital],
   ["Chỉnh lý, số hóa hồ sơ lưu trữ của Đảng ủy 03 xã trước sáp nhập (xã An Nhơn Tây (cũ), xã An Phú, xã Phú Mỹ Hưng)", "Văn phòng Đảng ủy xã An Nhơn Tây"],

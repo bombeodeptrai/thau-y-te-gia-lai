@@ -1,6 +1,7 @@
 import { cp, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadRegionalCollection } from "./regional-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const output = resolve(root, "dist-pages");
@@ -65,21 +66,15 @@ for (const entry of [
   await cp(resolve(root, entry), resolve(output, entry), { recursive: true });
 }
 
-const equipmentData = JSON.parse(await readFile(resolve(dataDir, "equipment.json"), "utf8"));
 const tenderData = JSON.parse(await readFile(resolve(dataDir, "tenders.json"), "utf8"));
-let requirementsData = { requirements: [], fetchedAt: "" };
-let technicalRequirementsData = { technicalRequirements: [], fetchedAt: "" };
+const equipmentData = await loadRegionalCollection(dataDir, "equipment.json", "equipment");
+const requirementsData = await loadRegionalCollection(dataDir, "requirements.json", "requirements");
+const technicalRequirementsData = await loadRegionalCollection(
+  dataDir,
+  "technical-requirements.json",
+  "technicalRequirements",
+);
 let competitorHistoryData = { coverageDays: 0, generatedAt: "", records: [] };
-try {
-  requirementsData = JSON.parse(await readFile(resolve(dataDir, "requirements.json"), "utf8"));
-} catch {
-  // Bản dữ liệu cũ chưa có danh mục phần/lô mời thầu.
-}
-try {
-  technicalRequirementsData = JSON.parse(await readFile(resolve(dataDir, "technical-requirements.json"), "utf8"));
-} catch {
-  // Bản dữ liệu cũ chưa có biểu mẫu kỹ thuật e-HSMT đã trích xuất.
-}
 try {
   competitorHistoryData = JSON.parse(await readFile(resolve(dataDir, "competitor-history.json"), "utf8"));
 } catch {

@@ -247,7 +247,7 @@ try {
     historicalLocationTermCount: region.locationTerms.length,
     historicalTitleTermCount: historicalTitleTerms.length,
     historicalFallback: enableHistoricalFallback,
-    filterStrategy: "unified-medical-scope-v4",
+    filterStrategy: "unified-medical-scope-v6",
     rollbackOnFailure: true,
     status: "success",
   }, null, 2)}\n`);

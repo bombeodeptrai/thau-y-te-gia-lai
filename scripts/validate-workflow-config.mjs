@@ -3,6 +3,8 @@ import { readFile } from "node:fs/promises";
 
 for (const file of [
   "scripts/medical-scope.mjs",
+  "scripts/official-source.mjs",
+  "scripts/regional-data.mjs",
   "scripts/source-time.mjs",
   "scripts/fetch-data.mjs",
   "scripts/run-region-scan.mjs",
@@ -10,10 +12,16 @@ for (const file of [
   "scripts/fetch-recent-medical-rescue.mjs",
   "scripts/repair-official-tender-identities.mjs",
   "scripts/refresh-official-tender-details.mjs",
+  "scripts/merge-regions.mjs",
+  "scripts/apply-manual-equipment-overrides.mjs",
+  "scripts/build-pages.mjs",
+  "scripts/build-region-shards.mjs",
 ]) {
   execFileSync(process.execPath, ["--check", file], { stdio: "inherit" });
 }
 execFileSync(process.execPath, ["--test", "scripts/medical-scope.test.mjs"], { stdio: "inherit" });
+execFileSync(process.execPath, ["--test", "scripts/official-source.test.mjs"], { stdio: "inherit" });
+execFileSync(process.execPath, ["--test", "scripts/regional-data.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/source-time.test.mjs"], { stdio: "inherit" });
 
 const fullScanPath = ".github/workflows/regional-full-scan.yml";
@@ -171,6 +179,27 @@ for (const file of [
     || /const\s+(from|to)\s*=.*toISOString\(\)/.test(text)
     || /from:\s*from\.toISOString\(\)|to:\s*to\.toISOString\(\)/.test(text)) {
     throw new Error(`${file} chưa dùng giờ Việt Nam cho cửa sổ publicDate của nguồn`);
+  }
+  if (!text.includes("buildOfficialSourceUrl") || text.includes('step: "tbmt"')) {
+    throw new Error(`${file} chưa dùng bộ tạo link Mua sắm công theo đúng trạng thái hồ sơ`);
+  }
+}
+
+const mergeRegions = await readFile("scripts/merge-regions.mjs", "utf8");
+for (const fileName of [
+  "bidders.json",
+  "equipment.json",
+  "requirements.json",
+  "technical-requirements.json",
+]) {
+  if (!mergeRegions.includes(`await rm(resolve(dataDir, fileName), { force: true })`)) {
+    throw new Error(`Bộ hợp nhất chưa loại tệp tổng hợp lớn ${fileName}`);
+  }
+}
+const sheetScript = await readFile("google-apps-script/Code.gs", "utf8");
+for (const fileName of ["tenders.json", "bidders.json", "equipment.json"]) {
+  if (!sheetScript.includes(`/data/regions/gia-lai/${fileName}`)) {
+    throw new Error(`Google Sheets còn tải tệp tổng hợp thay vì shard Gia Lai: ${fileName}`);
   }
 }
 

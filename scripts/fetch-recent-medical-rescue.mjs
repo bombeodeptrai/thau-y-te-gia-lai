@@ -6,6 +6,7 @@ import {
   classifyMedicalTender,
   medicalCategory,
 } from "./medical-scope.mjs";
+import { buildOfficialSourceUrl } from "./official-source.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
@@ -206,30 +207,6 @@ function statusOf(item) {
   return "closed";
 }
 
-function sourceUrl(item) {
-  const params = new URLSearchParams({
-    p_p_id: "egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2",
-    p_p_lifecycle: "0",
-    p_p_state: "normal",
-    p_p_mode: "view",
-    _egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render: "detail-v2",
-    type: item.type || "es-notify-contractor",
-    stepCode: item.stepCode || "notify-contractor-step-1-tbmt",
-    id: item.id || "",
-    notifyId: item.notifyId || item.id || "",
-    inputResultId: item.inputResultId || "",
-    bidOpenId: item.bidOpenId || "",
-    processApply: item.processApply || "LDT",
-    bidMode: item.bidMode || "",
-    notifyNo: item.notifyNo || "",
-    planNo: item.planNo || "",
-    step: "tbmt",
-    isInternet: String(item.isInternet ?? ""),
-    bidForm: item.bidForm || "",
-  });
-  return `https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?${params}`;
-}
-
 function normalizeItem(item, region) {
   const notifyNo = canonicalNotifyNo(item.notifyNo || item.notifyId || item.id);
   const name = compact(item.bidName?.join?.(" ") || item.bidName || item.name || "Gói thầu chưa có tên");
@@ -262,7 +239,7 @@ function normalizeItem(item, region) {
     sourceStatus: compact(item.status || "", 80),
     statusForNotify: compact(item.statusForNotify, 80),
     bidderCount: item.numBidderJoin == null ? null : Number(item.numBidderJoin),
-    sourceUrl: sourceUrl(item),
+    sourceUrl: buildOfficialSourceUrl(item),
     winnerNames,
     winningPrice,
     decisionDate: compact(item.decisionDate || item.publicDateKqlcnt, 80),
@@ -425,7 +402,7 @@ const collection = { ...(previous.collection || {}) };
 delete collection.manualTenderOverrideCount;
 delete collection.lastManualTenderOverrideAt;
 Object.assign(collection, {
-  rescueStrategy: "province-codes-plus-all-location-terms-unified-medical-scope-v5",
+  rescueStrategy: "province-codes-plus-all-location-terms-unified-medical-scope-v6",
   lastMedicalRescueAt: fetchedAt,
   lastMedicalRescueDays: RESCUE_DAYS,
   lastMedicalRescueCandidateCount: sourceUnique.size,
@@ -464,7 +441,7 @@ await writeFile(resolve(regionDir, "medical-rescue-summary.json"), `${JSON.strin
   beforeCount,
   afterCount: tenders.length,
   newCount,
-  filterStrategy: "unified-medical-scope-v5",
+  filterStrategy: "unified-medical-scope-v6",
 }, null, 2)}\n`);
 
 process.stdout.write(

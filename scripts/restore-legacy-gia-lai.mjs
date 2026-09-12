@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = resolve(root, "data");
+const giaLaiDir = resolve(dataDir, "regions/gia-lai");
 const legacyCommit = process.env.LEGACY_DATA_COMMIT
   || "2c0658c433d63e681d622c0ac34c9fbcef14af82";
 
@@ -24,15 +25,15 @@ function gitText(path) {
   });
 }
 
-async function restoreFile(path, required = false) {
+async function restoreFile(sourcePath, destinationPath = sourcePath, required = false) {
   try {
-    const content = gitText(path);
-    const destination = resolve(root, path);
+    const content = gitText(sourcePath);
+    const destination = resolve(root, destinationPath);
     await mkdir(dirname(destination), { recursive: true });
     await writeFile(destination, content);
     return true;
   } catch (error) {
-    if (required) throw new Error(`Không khôi phục được ${path}: ${error.message}`);
+    if (required) throw new Error(`Không khôi phục được ${sourcePath}: ${error.message}`);
     return false;
   }
 }
@@ -47,26 +48,26 @@ async function ensurePayload(path, key) {
   }, null, 2)}\n`);
 }
 
-const current = await readJson(resolve(dataDir, "tenders.json"), { tenders: [] });
+const current = await readJson(resolve(giaLaiDir, "tenders.json"), { tenders: [] });
 if (Array.isArray(current.tenders) && current.tenders.length > 0) {
-  process.stdout.write(`Dữ liệu hiện tại còn ${current.tenders.length} gói; không cần khôi phục dự phòng.\n`);
+  process.stdout.write(`Dữ liệu vùng Gia Lai còn ${current.tenders.length} gói; không cần khôi phục dự phòng.\n`);
   process.exit(0);
 }
 
-await restoreFile("data/tenders.json", true);
+await restoreFile("data/tenders.json", "data/regions/gia-lai/tenders.json", true);
 
 const optionalPayloads = [
-  ["data/bidders.json", "bidders"],
-  ["data/equipment.json", "equipment"],
-  ["data/requirements.json", "requirements"],
-  ["data/technical-requirements.json", "technicalRequirements"],
+  ["data/bidders.json", "data/regions/gia-lai/bidders.json", "bidders"],
+  ["data/equipment.json", "data/regions/gia-lai/equipment.json", "equipment"],
+  ["data/requirements.json", "data/regions/gia-lai/requirements.json", "requirements"],
+  ["data/technical-requirements.json", "data/regions/gia-lai/technical-requirements.json", "technicalRequirements"],
 ];
-for (const [path, key] of optionalPayloads) {
-  const restored = await restoreFile(path, false);
-  if (!restored) await ensurePayload(path, key);
+for (const [sourcePath, destinationPath, key] of optionalPayloads) {
+  const restored = await restoreFile(sourcePath, destinationPath, false);
+  if (!restored) await ensurePayload(destinationPath, key);
 }
 for (const path of ["data/competitor-history.json", "data/ai-analyses.json"]) {
-  await restoreFile(path, false);
+  await restoreFile(path, path, false);
 }
 
 let detailFiles = [];
@@ -82,9 +83,11 @@ try {
 } catch {
   detailFiles = [];
 }
-for (const path of detailFiles) await restoreFile(path, false);
+for (const path of detailFiles) {
+  await restoreFile(path, path.replace("data/details/", "data/regions/gia-lai/details/"), false);
+}
 
-const restored = await readJson(resolve(dataDir, "tenders.json"), { tenders: [] });
+const restored = await readJson(resolve(giaLaiDir, "tenders.json"), { tenders: [] });
 if (!Array.isArray(restored.tenders) || !restored.tenders.length) {
   throw new Error("Bản dự phòng Gia Lai không chứa gói thầu");
 }
