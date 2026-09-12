@@ -1,11 +1,11 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const overridePath = resolve(root, "data/manual-equipment-overrides.json");
 const tendersPath = resolve(root, "data/tenders.json");
-const equipmentPath = resolve(root, "data/equipment.json");
+const regionsDir = resolve(root, "data/regions");
 const detailsDir = resolve(root, "data/details");
 
 function compactText(value) {
@@ -19,6 +19,14 @@ function normalizeKey(value) {
     .replace(/đ/g, "d")
     .replace(/Đ/g, "D")
     .toLowerCase();
+}
+
+async function readJson(path, fallback) {
+  try {
+    return JSON.parse(await readFile(path, "utf8"));
+  } catch {
+    return fallback;
+  }
 }
 
 function normalizeItem(item, notifyNo, tender) {
@@ -53,11 +61,7 @@ function mergeItems(existingItems, manualItems) {
   const merged = new Map();
 
   for (const item of [...(existingItems || []), ...(manualItems || [])]) {
-    const key = [
-      normalizeKey(item.lotNo),
-      normalizeKey(item.model || item.name),
-    ].join("|");
-
+    const key = [normalizeKey(item.lotNo), normalizeKey(item.model || item.name)].join("|");
     const previous = merged.get(key);
     if (!previous) {
       merged.set(key, { ...item });
@@ -74,21 +78,56 @@ function mergeItems(existingItems, manualItems) {
         || (typeof current === "number" && current === 0);
       if (empty) next[field] = value;
     }
-
     next.winnerNames = [...new Set([
       ...(previous.winnerNames || []),
       ...(item.winnerNames || []),
     ].filter(Boolean))];
-
     merged.set(key, next);
   }
 
   return [...merged.values()];
 }
 
-const overrides = JSON.parse(await readFile(overridePath, "utf8"));
-const manifest = JSON.parse(await readFile(tendersPath, "utf8"));
-const equipmentPayload = JSON.parse(await readFile(equipmentPath, "utf8"));
+function emptyDetail() {
+  return {
+    schemaVersion: 3,
+    resultItemParserVersion: 3,
+    total: 0,
+    bidders: [],
+    items: [],
+    requirements: { total: 0, items: [], summary: "", disclosure: "unknown" },
+    technicalRequirements: {
+      total: 0,
+      items: [],
+      chapters: [],
+      files: [],
+      disclosure: "unknown",
+    },
+    modelDisclosure: "as-published",
+    fetchedAt: new Date().toISOString(),
+  };
+}
+
+const regionCache = new Map();
+async function loadRegion(slug) {
+  if (regionCache.has(slug)) return regionCache.get(slug);
+  const regionDir = resolve(regionsDir, slug);
+  const state = {
+    slug,
+    regionDir,
+    tendersPath: resolve(regionDir, "tenders.json"),
+    equipmentPath: resolve(regionDir, "equipment.json"),
+    detailsDir: resolve(regionDir, "details"),
+    tenders: await readJson(resolve(regionDir, "tenders.json"), { tenders: [] }),
+    equipment: await readJson(resolve(regionDir, "equipment.json"), { equipment: [] }),
+    touched: false,
+  };
+  regionCache.set(slug, state);
+  return state;
+}
+
+const overrides = await readJson(overridePath, {});
+const manifest = await readJson(tendersPath, { tenders: [] });
 const tenderByNotifyNo = new Map(
   (manifest.tenders || []).map((tender) => [tender.notifyNo, tender]),
 );
@@ -105,30 +144,20 @@ for (const [notifyNo, rows] of Object.entries(overrides)) {
     continue;
   }
 
-  const detailPath = resolve(detailsDir, `${notifyNo}.json`);
-  let detail;
-  try {
-    detail = JSON.parse(await readFile(detailPath, "utf8"));
-  } catch {
-    detail = {
-      schemaVersion: 3,
-      resultItemParserVersion: 3,
-      total: 0,
-      bidders: [],
-      items: [],
-      requirements: { total: 0, items: [], summary: "", disclosure: "unknown" },
-      technicalRequirements: {
-        total: 0,
-        items: [],
-        chapters: [],
-        files: [],
-        disclosure: "unknown",
-      },
-      modelDisclosure: "as-published",
-      fetchedAt: new Date().toISOString(),
-    };
+  const region = await loadRegion(compactText(tender.regionSlug) || "gia-lai");
+  let regionalTender = (region.tenders.tenders || [])
+    .find((item) => item.notifyNo === notifyNo);
+  if (!regionalTender) {
+    regionalTender = { ...tender, regionSlug: region.slug };
+    region.tenders.tenders = [...(region.tenders.tenders || []), regionalTender];
   }
 
+  const regionalDetailPath = resolve(region.detailsDir, `${notifyNo}.json`);
+  const mergedDetailPath = resolve(detailsDir, `${notifyNo}.json`);
+  const detail = await readJson(
+    regionalDetailPath,
+    await readJson(mergedDetailPath, emptyDetail()),
+  );
   const manualItems = rows.map((item) => normalizeItem(item, notifyNo, tender));
   detail.items = mergeItems(detail.items, manualItems);
   detail.total = Math.max(Number(detail.total) || 0, detail.items.length);
@@ -139,35 +168,45 @@ for (const [notifyNo, rows] of Object.entries(overrides)) {
     .sort()
     .at(-1) || "";
 
-  await writeFile(detailPath, `${JSON.stringify(detail, null, 2)}\n`);
+  await mkdir(region.detailsDir, { recursive: true });
+  await mkdir(detailsDir, { recursive: true });
+  const detailText = `${JSON.stringify(detail, null, 2)}\n`;
+  await writeFile(regionalDetailPath, detailText);
+  await writeFile(mergedDetailPath, detailText);
 
-  tender.winningModels = [...new Set(detail.items
+  const winningModels = [...new Set(detail.items
     .map((item) => item.model || item.name)
     .filter(Boolean))];
+  tender.winningModels = winningModels;
+  regionalTender.winningModels = winningModels;
 
-  const otherEquipment = (equipmentPayload.equipment || [])
+  const otherEquipment = (region.equipment.equipment || [])
     .filter((item) => item.notifyNo !== notifyNo);
   const tenderEquipment = detail.items.map((item) => ({
     notifyNo,
     tenderName: tender.name || "",
+    regionSlug: region.slug,
+    region: tender.region || regionalTender.region || "",
     sourceUrl: tender.sourceUrl || "",
     ...item,
   }));
-  equipmentPayload.equipment = [...otherEquipment, ...tenderEquipment];
+  region.equipment.equipment = [...otherEquipment, ...tenderEquipment];
+  region.touched = true;
 
   appliedTenderCount += 1;
   appliedItemCount += manualItems.length;
-  process.stdout.write(
-    `Bổ sung đã xác minh ${notifyNo}: ${manualItems.length} mặt hàng\n`,
-  );
+  process.stdout.write(`Bổ sung đã xác minh ${notifyNo}: ${manualItems.length} mặt hàng\n`);
 }
 
-manifest.fetchedAt = new Date().toISOString();
-equipmentPayload.fetchedAt = new Date().toISOString();
-
 await writeFile(tendersPath, `${JSON.stringify(manifest, null, 2)}\n`);
-await writeFile(equipmentPath, `${JSON.stringify(equipmentPayload, null, 2)}\n`);
+
+for (const region of regionCache.values()) {
+  if (!region.touched) continue;
+  await mkdir(region.regionDir, { recursive: true });
+  await writeFile(region.tendersPath, `${JSON.stringify(region.tenders, null, 2)}\n`);
+  await writeFile(region.equipmentPath, `${JSON.stringify(region.equipment, null, 2)}\n`);
+}
 
 process.stdout.write(
-  `Đã áp dụng dữ liệu bổ sung cho ${appliedTenderCount} gói, ${appliedItemCount} mặt hàng\n`,
+  `Đã áp dụng dữ liệu bổ sung cho ${appliedTenderCount} gói, ${appliedItemCount} mặt hàng từ các tệp vùng\n`,
 );

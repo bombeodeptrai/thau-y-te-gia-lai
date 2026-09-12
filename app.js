@@ -165,9 +165,19 @@ function tenderModelSearchTexts(tender) {
 function officialUrl(value) {
   try {
     const url = new URL(value);
-    return url.protocol === "https:" && url.hostname === "muasamcong.mpi.gov.vn"
-      ? escapeHtml(url.href)
-      : "https://muasamcong.mpi.gov.vn/";
+    if (url.protocol !== "https:" || url.hostname !== "muasamcong.mpi.gov.vn") {
+      return "https://muasamcong.mpi.gov.vn/";
+    }
+
+    const hasParam = (name) => {
+      const text = String(url.searchParams.get(name) || "").trim();
+      return Boolean(text) && !/^(null|undefined)$/i.test(text);
+    };
+    const stepCode = String(url.searchParams.get("stepCode") || "").toLowerCase();
+    if (hasParam("inputResultId") || stepCode.includes("kqlcnt")) {
+      url.searchParams.set("step", "kqlcnt");
+    }
+    return escapeHtml(url.href);
   } catch {
     return "https://muasamcong.mpi.gov.vn/";
   }

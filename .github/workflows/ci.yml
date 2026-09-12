@@ -28,6 +28,8 @@ jobs:
         run: |
           node --test scripts/technical-requirements.test.mjs
           node --test scripts/medical-scope.test.mjs
+          node --test scripts/official-source.test.mjs
+          node --test scripts/regional-data.test.mjs
           node --test scripts/source-time.test.mjs
           node --check scripts/run-region-scan.mjs
           node --check scripts/fetch-recent-location-audit.mjs
@@ -36,7 +38,9 @@ jobs:
           node --check scripts/fetch-competitor-history.mjs
           node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
+          node --check scripts/apply-manual-equipment-overrides.mjs
           node --check scripts/build-pages.mjs
+          node --check scripts/build-region-shards.mjs
           node --check scripts/build-site.mjs
           node --check scripts/patch-regional-competitor.mjs
           node --check scripts/data-health-check.mjs
@@ -67,3 +71,7 @@ jobs:
           test -f dist-pages/data/region-coverage.json
           test -f dist-pages/regional-mode.js
           test -f dist-pages/data/regions/gia-lai/tenders.json
+          test ! -f data/bidders.json
+          test ! -f data/equipment.json
+          test ! -f data/requirements.json
+          test ! -f data/technical-requirements.json

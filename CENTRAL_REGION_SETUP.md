@@ -27,7 +27,7 @@ Workflow `Khởi tạo và quét sâu dữ liệu miền Trung`:
 - Quét tối đa 3 năm theo từng tỉnh/thành.
 - Chạy song song có giới hạn để tránh quá tải nguồn công khai.
 - Lưu dữ liệu riêng tại `data/regions/<tỉnh-thành>/`.
-- Hợp nhất thành bộ dữ liệu chung cho website.
+- Tạo danh mục gói chung cho website; nhà thầu, thiết bị và yêu cầu kỹ thuật tiếp tục nằm ở các tệp theo tỉnh để tránh tệp tổng hợp quá lớn.
 - Ghi tiến độ và trạng thái của từng tỉnh.
 - Tự triển khai GitHub Pages sau khi hoàn tất.
 
@@ -63,7 +63,7 @@ Hệ thống sẽ tạo:
 - `Miền Trung - Nhà thầu`
 - `Miền Trung - Thiết bị`
 
-Sau đó Apps Script tự cập nhật mỗi giờ.
+Sau đó Apps Script tự cập nhật luân phiên mỗi 15 phút; Gia Lai có thể cập nhật riêng bằng `syncGiaLaiSheets`.
 
 ## Tìm kiếm trên website
 

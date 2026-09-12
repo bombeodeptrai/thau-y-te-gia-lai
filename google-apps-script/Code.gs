@@ -1,6 +1,6 @@
-const TENDER_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/tenders.json";
-const BIDDER_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/bidders.json";
-const EQUIPMENT_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/equipment.json";
+const TENDER_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/regions/gia-lai/tenders.json";
+const BIDDER_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/regions/gia-lai/bidders.json";
+const EQUIPMENT_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/regions/gia-lai/equipment.json";
 const TENDER_SHEET = "Gói thầu";
 const BIDDER_SHEET = "Nhà thầu";
 const EQUIPMENT_SHEET = "Danh mục thiết bị";
@@ -9,6 +9,23 @@ const KNOWN_IDS_KEY = "KNOWN_TENDER_IDS";
 const INITIALIZED_KEY = "INITIALIZED";
 const TENDER_HEADER_ROW = 2;
 const TENDER_DATA_START_ROW = 3;
+
+function officialTenderUrl_(value) {
+  const url = String(value || "");
+  if (url.indexOf("https://muasamcong.mpi.gov.vn/") !== 0) return url;
+  const resultMatch = url.match(/[?&]inputResultId=([^&]*)/i);
+  const resultStep = /[?&]stepCode=[^&]*kqlcnt/i.test(url);
+  const valid = function(match) {
+    if (!match) return false;
+    const text = decodeURIComponent(match[1] || "").trim();
+    return Boolean(text) && !/^(null|undefined)$/i.test(text);
+  };
+  const step = valid(resultMatch) || resultStep ? "kqlcnt" : "";
+  if (!step) return url;
+  return /([?&]step=)[^&]*/i.test(url)
+    ? url.replace(/([?&]step=)[^&]*/i, "$1" + step)
+    : url + (url.indexOf("?") >= 0 ? "&" : "?") + "step=" + step;
+}
 
 function onOpen() {
   SpreadsheetApp.getUi()
@@ -123,7 +140,7 @@ function writeTenderSheet_(tenders, equipment, equipmentIndex, fetchedAt) {
     moneyText_(tender.winningPrice),
     toDate_(tender.decisionDate),
     tender.hasResult ? "Có" : "Chưa",
-    tender.sourceUrl || "",
+    officialTenderUrl_(tender.sourceUrl),
     toDate_(fetchedAt),
   ]);
 
@@ -232,7 +249,7 @@ function writeBidderSheet_(bidders, fetchedAt) {
     optionalNumber_(bidder.winningPrice),
     bidder.reason || "",
     summarizeModelList_(bidder.models || []) || (bidder.status === "lost" ? "Nguồn công khai chưa công bố" : ""),
-    bidder.sourceUrl || "",
+    officialTenderUrl_(bidder.sourceUrl),
     toDate_(fetchedAt),
   ]);
   writeManagedSheet_(BIDDER_SHEET, headers, rows, [2, 3, 6, 11, 12]);
@@ -264,7 +281,7 @@ function writeEquipmentSheet_(equipment, fetchedAt) {
     optionalNumber_(item.quantity),
     optionalNumber_(item.unitPrice),
     optionalNumber_(item.amount),
-    item.sourceUrl || "",
+    officialTenderUrl_(item.sourceUrl),
     toDate_(fetchedAt),
   ]);
   const sheet = writeManagedSheet_(EQUIPMENT_SHEET, headers, rows, [2, 3, 5, 6, 7, 8, 11]);
@@ -347,7 +364,7 @@ function sendNewTenderEmail_(tenders, fetchedAt) {
     <li style="margin-bottom:12px">
       <b>${escapeHtml_(tender.notifyNo || "")}</b> – ${escapeHtml_(tender.name || "")}<br>
       <span style="color:#59665f">${escapeHtml_(tender.investor || "")} · Hạn: ${formatDate_(tender.closeDate)}</span><br>
-      <a href="${escapeHtml_(tender.sourceUrl || TENDER_DATA_URL)}">Mở hồ sơ chính thức</a>
+      <a href="${escapeHtml_(officialTenderUrl_(tender.sourceUrl) || TENDER_DATA_URL)}">Mở hồ sơ chính thức</a>
     </li>`).join("");
   const remainder = tenders.length > visible.length
     ? `<p>Và ${tenders.length - visible.length} gói mới khác trong Google Sheet.</p>`

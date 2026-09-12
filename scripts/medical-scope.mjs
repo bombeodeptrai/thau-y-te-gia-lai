@@ -41,8 +41,21 @@ const EXPLICIT_MEDICAL_TITLE_TERMS = [
   "may chup", "x quang", "noi soi", "phau thuat", "catheter", "stent",
   "implant", "bom tiem", "kim tiem", "gang tay y te", "bong y te",
   "gac y te", "khau trang y te", "kit test", "test nhanh", "test ma tuy",
-  "que thu ma tuy", "nha khoa",
+  "que thu ma tuy", "tui mau", "nha khoa",
   "loc mau", "chay than", "dien cuc tim", "may phan tich",
+];
+
+const MEDICAL_EQUIPMENT_SERVICE_TERMS = [
+  "sua chua", "bao tri", "bao duong", "kiem dinh", "hieu chuan",
+];
+
+// Dịch vụ chỉ được nhận khi tiêu đề nêu đúng đối tượng là thiết bị y tế.
+// Điều kiện này ngăn tên bệnh viện kéo nhầm sửa chữa xây dựng, điện hoặc CNTT.
+const MEDICAL_EQUIPMENT_OBJECT_TERMS = [
+  "thiet bi y te", "trang thiet bi y te", "dung cu y te", "y cu",
+  "may xet nghiem", "may sieu am", "may tho", "may dien tim",
+  "may theo doi benh nhan", "may loc mau", "may chay than", "may chup",
+  "x quang", "noi soi", "ghe nha khoa",
 ];
 
 const MEDICAL_INVESTOR_TERMS = [
@@ -109,7 +122,17 @@ export function classifyMedicalTender(item) {
   }
 
   const excluded = matchedTerms(title, HARD_EXCLUDED_TITLE_TERMS);
-  if (excluded.length) {
+  const explicit = matchedTerms(title, EXPLICIT_MEDICAL_TITLE_TERMS);
+  const medicalInvestor = matchedTerms(investor, MEDICAL_INVESTOR_TERMS);
+  const equipmentService = matchedTerms(title, MEDICAL_EQUIPMENT_SERVICE_TERMS);
+  const equipmentObject = matchedTerms(title, MEDICAL_EQUIPMENT_OBJECT_TERMS);
+  const nonServiceExcluded = excluded.filter((term) => !equipmentService.includes(term));
+  const medicalEquipmentService = equipmentService.length > 0
+    && equipmentObject.length > 0
+    && medicalInvestor.length > 0
+    && nonServiceExcluded.length === 0;
+
+  if (excluded.length && !medicalEquipmentService) {
     return {
       accepted: false,
       category: "",
@@ -119,8 +142,6 @@ export function classifyMedicalTender(item) {
     };
   }
 
-  const explicit = matchedTerms(title, EXPLICIT_MEDICAL_TITLE_TERMS);
-  const medicalInvestor = matchedTerms(investor, MEDICAL_INVESTOR_TERMS);
   const labSupply = matchedTerms(title, LAB_SUPPLY_TERMS);
   const labAnalyzer = matchedTerms(title, LAB_ANALYZER_TERMS);
   const machineUsage = matchedTerms(title, MACHINE_USAGE_TERMS);
@@ -138,6 +159,10 @@ export function classifyMedicalTender(item) {
   if (explicit.length) {
     score += 100;
     reasons.push("explicit-medical-title");
+  }
+  if (medicalEquipmentService) {
+    score += 80;
+    reasons.push("medical-equipment-service");
   }
   if (medicalInvestor.length) {
     score += 35;
@@ -162,7 +187,8 @@ export function classifyMedicalTender(item) {
   if (genericSupply.length) score += 10;
   if (clinical.length) score += 20;
 
-  const accepted = explicit.length > 0
+  const accepted = medicalEquipmentService
+    || explicit.length > 0
     || (labSupply.length > 0 && labAnalyzer.length > 0)
     || (medicalInvestor.length > 0 && labSupply.length > 0 && machineUsage.length > 0)
     || (medicalInvestor.length > 0 && genericSupply.length > 0 && machineUsage.length > 0)
@@ -177,6 +203,8 @@ export function classifyMedicalTender(item) {
     matched: [...new Set([
       ...explicit,
       ...medicalInvestor,
+      ...equipmentService,
+      ...equipmentObject,
       ...labSupply,
       ...labAnalyzer,
       ...machineUsage,
@@ -196,6 +224,7 @@ export function medicalCategory(name) {
   return matchedTerms(text, [
     "vat tu", "hoa chat", "sinh pham", "dung cu", "kit", "test", "gac", "gang",
     "kim", "stent", "catheter", "reagent", "thuoc thu", "dung dich", "gioang", "dem",
+    "tui mau",
   ]).length
     ? "Vật tư & hóa chất"
     : "Thiết bị y tế";

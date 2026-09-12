@@ -44,10 +44,15 @@ jobs:
       - name: Kiểm tra mã nguồn
         run: |
           node --test scripts/technical-requirements.test.mjs
+          node --test scripts/medical-scope.test.mjs
+          node --test scripts/official-source.test.mjs
+          node --test scripts/regional-data.test.mjs
           node --check scripts/run-region-scan.mjs
           node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
+          node --check scripts/apply-manual-equipment-overrides.mjs
           node --check scripts/build-pages.mjs
+          node --check scripts/build-region-shards.mjs
           node --check scripts/build-site.mjs
           node --check scripts/patch-regional-competitor.mjs
           node --check regional-mode.js
@@ -55,6 +60,8 @@ jobs:
           node --check competitor-count-fix.js
           cp google-apps-script/RegionalSheets.gs /tmp/RegionalSheets.js
           node --check /tmp/RegionalSheets.js
+          cp google-apps-script/Code.gs /tmp/Code.js
+          node --check /tmp/Code.js
           DRY_RUN=1 node scripts/run-region-scan.mjs gia-lai
 
       - name: Khôi phục dữ liệu Gia Lai nếu bản hợp nhất bị rỗng
