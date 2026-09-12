@@ -1,67 +1,11 @@
 {
-  "appName": "Kiểu Việt Healthcare — Medical Devices & Bidding System",
-  "version": "1.3.0-tender-clinic-integrated",
-  "buildTimestamp": "2026-09-11T15:23:24.273Z",
-  "gitCommit": "7577d4291ca636d95dedef113ef41609dff1e140",
-  "gitBranch": "feat/medical-platform",
-  "buildCommand": "npm run build",
-  "corpus": {
-    "totalDocuments": 12,
-    "cleanedMarkdownCount": 12,
-    "badChromePhrasesCount": 0,
-    "sanitizedFooter": true,
-    "sanitizedHeader": true
-  },
-  "tenderIntegration": {
-    "cases": [
-      "IB2600520002",
-      "IB2600481169"
-    ],
-    "ba200DisclosedTechnicalRows": 5,
-    "gialaiDisclosureStatus": "official-captcha-required",
-    "chatSystemPromptVersion": "kv-medical-evidence-v2"
-  },
-  "clinicManagement": {
-    "regimes": [
-      "maintenance",
-      "inspection_tt24",
-      "calibration"
-    ],
-    "tt24DeadlinePriorJuly2027": "2028-01-01",
-    "qrInspectionTracking": true,
-    "secondaryTaxTab": true
-  },
-  "complianceEngine": {
-    "totalCriteria": 40,
-    "evaluationStates": [
-      "pass",
-      "fail",
-      "insufficient",
-      "review",
-      "not_applicable"
-    ]
-  },
-  "templates": {
-    "totalForms": 14,
-    "codes": [
-      "T01",
-      "T02",
-      "T03",
-      "T04",
-      "T05",
-      "T06",
-      "T07",
-      "T08",
-      "T09",
-      "T10",
-      "T11",
-      "T12",
-      "T13",
-      "T14"
-    ]
-  },
-  "deploymentLocations": [
-    "/Tra-cuu-ke-toan-kieu-viet/med-app/",
-    "/thau-y-te-gia-lai/kieu-viet/"
+  "version": "1.2.2",
+  "builtAt": "2026-09-12T10:12:37.416Z",
+  "gitCommit": "update-markdown-table-v2",
+  "features": [
+    "ReactMarkdown and remarkGfm rendered chat messages without raw leaks",
+    "Responsive scrollable HTML table for 5 BA200 components",
+    "Complete 10 test scenarios in Section 9 CODEX_WALKTHROUGH",
+    "Real-time e-GP 863 tenders connection without fake numbers"
   ]
 }
