@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-12T04:34:19.257Z",
+  "auditedAt": "2026-09-12T15:32:04.160Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 24,
+      "count": 23,
       "error": ""
     },
     {
@@ -104,13 +104,13 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 16,
+      "count": 13,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 102,
+      "count": 101,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 78,
+      "count": 77,
       "error": ""
     },
     {
@@ -194,19 +194,19 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 42,
+      "count": 43,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
@@ -218,13 +218,13 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 24,
+      "count": 17,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 35,
+      "count": 27,
       "error": ""
     },
     {
@@ -271,26 +271,26 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 971,
+  "candidateCount": 943,
   "acceptedCount": 35,
-  "rejectedCount": 936,
+  "rejectedCount": 908,
   "rejectedReasons": {
-    "excluded:tu van": 266,
-    "insufficient-medical-context": 264,
-    "excluded:xay dung": 221,
+    "excluded:tu van": 258,
+    "insufficient-medical-context": 257,
+    "excluded:xay dung": 213,
     "excluded:xay lap": 41,
-    "excluded:sua chua": 37,
+    "excluded:sua chua": 35,
     "excluded:cai tao": 16,
     "excluded:bao hiem": 11,
     "excluded:kiem dinh": 7,
     "excluded:trang phuc": 7,
     "excluded:bao tri": 6,
     "excluded:may tinh": 6,
-    "excluded:tham dinh": 6,
     "excluded:bao duong": 5,
     "excluded:giam sat thi cong": 5,
     "excluded:thuc pham": 5,
     "excluded:suat an": 5,
+    "excluded:tham dinh": 4,
     "excluded:phan bon": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
@@ -305,8 +305,7 @@
     "excluded:thiet bi dien": 1,
     "excluded:bao ve": 1,
     "excluded:may chu": 1,
-    "excluded:cay xanh": 1,
-    "excluded:lap e hsmt": 1
+    "excluded:cay xanh": 1
   },
   "acceptedDiagnostics": [
     {
@@ -874,6 +873,111 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600532145",
+      "name": "Gói thầu số 01: Thi công xây dựng công trình",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600532144",
+      "name": "Gói thầu số 02: Tư vấn giám sát thi công xây dựng",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600532140",
+      "name": "Gói thầu số 02: Tư vấn giám sát thi công xây dựng",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600532135",
+      "name": "Gói thầu số 01: Thi công xây dựng công trình",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600532099",
+      "name": "Gói thầu số 03: Tư vấn thẩm tra Báo cáo kinh tế - kỹ thuật",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600532089",
+      "name": "Gói thầu số 01: Tư vấn quản lý dự án",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "IB2600532078",
+      "name": "Gói thầu số 02: Tư vấn khảo sát xây dựng và lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600531865",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600531854",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600525920",
       "name": "Tư vấn lập Đề án chỉnh trang cây xanh đô thị Quy Nhơn giai đoạn 2026 - 2030, tầm nhìn đến năm 2035",
       "investor": "Sở Xây dựng Gia Lai",
@@ -1211,104 +1315,6 @@
       "matched": [
         "xay dung",
         "cai tao"
-      ]
-    },
-    {
-      "notifyNo": "IB2600525222",
-      "name": "Nhà để xe ô tô cán bộ chiến sĩ Trại tạm giam số 1 thuộc Công an tỉnh Gia Lai",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525017",
-      "name": "mua sắm thuốc, đa vi chất dinh dưỡng cho trẻ suy dinh dưỡng, cung cấp viên sắt cho trẻ em gái thuộc Tiểu dự án 2 - Dự án 3 “Cải thiện dinh dưỡng” năm 2026 thuộc Chương trình mục tiêu quốc gia giảm nghèo bền vững giai đoạn 2021- 2025",
-      "investor": "Phòng Văn hóa - Xã hội xã Cửu An, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam",
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600524667",
-      "name": "Xây dựng mô hình xử lý, tái sử dụng chất thải nông nghiệp, phụ phẩm nông nghiệp bằng chế phẩm sinh học Bio Grow làm phân bón hữu cơ tại xã Ia Nan, tỉnh Gia Lai",
-      "investor": "ỦY BAN NHÂN DÂN XÃ IA NAN TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "chat thai",
-        "phan bon"
-      ]
-    },
-    {
-      "notifyNo": "IB2600524508",
-      "name": "Thuê xe đưa đoàn chức sắc, chức việc, nhà tu hành các tổ chức tôn giáo, tổ chức tôn giáo trực thuộc trên địa bàn tỉnh đi thăm, làm việc, giao lưu, gặp mặt, trao đổi kinh nghiệm ngoài tỉnh năm 2026.",
-      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600523987",
-      "name": "Xây dựng hồ sơ thành quả diễn biến rừng năm 2025",
-      "investor": "Chi cục Kiểm lâm Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600523939",
-      "name": "Gói thầu MS01: Mua phân bón NPK 16-8-16+TE chăm sóc cà phê khu vực Gia Lai",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CÀ PHÊ 15",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:phan bon",
-      "matched": [
-        "phan bon"
-      ]
-    },
-    {
-      "notifyNo": "IB2600519762",
-      "name": "G10-VN-CSCC_GL_1311.2: Lập hồ sơ đề xuất thành lập khu bảo tồn biển Vịnh Quy Nhơn, bao gồm cả việc phân vùng, để UBND tỉnh Gia Lai thành lập chính thức",
-      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600522980",
-      "name": "Cung cấp dịch vụ Sân khấu, nhà bạt, trang trí khánh tiết phục vụ Tổ chức diễn tập thực binh xử lý tình huống tội phạm sử dụng vũ khí cướp tài sản tại Ngân hàng trên địa bàn tỉnh Gia Lai",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600522870",
-      "name": "Mua sắm máy móc, thiết bị phục vụ công tác tuyên truyền",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
       ]
     }
   ],
