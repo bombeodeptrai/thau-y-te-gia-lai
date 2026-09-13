@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-13T04:47:27.957Z",
+  "auditedAt": "2026-09-13T13:19:24.859Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 336,
+      "count": 331,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 43,
+      "count": 35,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 22,
+      "count": 20,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 18,
+      "count": 16,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 47,
+      "count": 50,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 97,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 45,
+      "count": 44,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 77,
+      "count": 76,
       "error": ""
     },
     {
@@ -188,13 +188,13 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -212,19 +212,19 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 16,
+      "count": 11,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 27,
+      "count": 25,
       "error": ""
     },
     {
@@ -271,21 +271,21 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 930,
-  "acceptedCount": 35,
-  "rejectedCount": 895,
+  "candidateCount": 900,
+  "acceptedCount": 34,
+  "rejectedCount": 866,
   "rejectedReasons": {
-    "excluded:tu van": 254,
-    "insufficient-medical-context": 250,
-    "excluded:xay dung": 212,
-    "excluded:xay lap": 40,
-    "excluded:sua chua": 35,
+    "insufficient-medical-context": 243,
+    "excluded:tu van": 240,
+    "excluded:xay dung": 206,
+    "excluded:xay lap": 41,
+    "excluded:sua chua": 33,
     "excluded:cai tao": 16,
     "excluded:bao hiem": 11,
     "excluded:kiem dinh": 7,
-    "excluded:trang phuc": 7,
     "excluded:bao tri": 6,
     "excluded:may tinh": 6,
+    "excluded:trang phuc": 6,
     "excluded:bao duong": 5,
     "excluded:giam sat thi cong": 5,
     "excluded:thuc pham": 5,
@@ -611,20 +611,6 @@
         "vat tu",
         "mua",
         "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600454114",
-      "name": "Gói 14. Vật tư tiêu hao xét nghiệm gồm 11 mặt hàng 11 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "xet nghiem",
-        "vat tu"
       ]
     },
     {
