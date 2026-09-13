@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-12T22:17:31.274Z",
+  "auditedAt": "2026-09-13T04:47:27.957Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 341,
+      "count": 336,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 45,
+      "count": 43,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 22,
+      "count": 18,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 101,
+      "count": 100,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 15,
+      "count": 14,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -271,14 +271,14 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 942,
+  "candidateCount": 930,
   "acceptedCount": 35,
-  "rejectedCount": 907,
+  "rejectedCount": 895,
   "rejectedReasons": {
-    "excluded:tu van": 258,
-    "insufficient-medical-context": 256,
-    "excluded:xay dung": 213,
-    "excluded:xay lap": 41,
+    "excluded:tu van": 254,
+    "insufficient-medical-context": 250,
+    "excluded:xay dung": 212,
+    "excluded:xay lap": 40,
     "excluded:sua chua": 35,
     "excluded:cai tao": 16,
     "excluded:bao hiem": 11,
@@ -873,6 +873,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600532694",
+      "name": "Mua sắm pano tuyên truyền về tái hoà nhập cộng đồng năm 2026",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600532145",
       "name": "Gói thầu số 01: Thi công xây dựng công trình",
       "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
@@ -1304,18 +1316,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600517749",
-      "name": "Xây dựng cải tạo, nâng cấp Nhà bán hàng, mái che cột bơm và hạng mục phụ trợ Petrolimex- Cửa hàng 29",
-      "investor": "CÔNG TY TNHH MTV PETROLIMEX GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "cai tao"
-      ]
     }
   ],
   "removedManualCount": 0,
