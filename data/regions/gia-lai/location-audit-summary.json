@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-13T22:25:06.211Z",
+  "auditedAt": "2026-09-14T04:56:02.666Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 331,
+      "count": 337,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 50,
+      "count": 51,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 97,
+      "count": 95,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 76,
+      "count": 75,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 45,
       "error": ""
     },
     {
@@ -271,17 +271,17 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 900,
+  "candidateCount": 905,
   "acceptedCount": 34,
-  "rejectedCount": 866,
+  "rejectedCount": 871,
   "rejectedReasons": {
-    "insufficient-medical-context": 243,
-    "excluded:tu van": 240,
-    "excluded:xay dung": 206,
-    "excluded:xay lap": 41,
-    "excluded:sua chua": 33,
-    "excluded:cai tao": 16,
-    "excluded:bao hiem": 11,
+    "insufficient-medical-context": 244,
+    "excluded:tu van": 237,
+    "excluded:xay dung": 207,
+    "excluded:xay lap": 43,
+    "excluded:sua chua": 35,
+    "excluded:cai tao": 17,
+    "excluded:bao hiem": 12,
     "excluded:kiem dinh": 7,
     "excluded:bao tri": 6,
     "excluded:may tinh": 6,
@@ -859,6 +859,69 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600534105",
+      "name": "Gói thầu số: 20072608_CĐTRG_VTNet_TV2026: Tư vấn lập báo cáo nghiên cứu khả thi: Dự án cải tạo nâng cấp hệ thống điện cho trạm BTS năm 2026 tại Gia Lai",
+      "investor": "TỔNG CÔNG TY MẠNG LƯỚI VIETTEL - CHI NHÁNH TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600533853",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600533778",
+      "name": "Bảo hiểm công trình",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao hiem",
+      "matched": [
+        "bao hiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600509449",
+      "name": "CTC 2026-HH/01: Cung cấp VTTB và thi công xây lắp công trình: Chỉnh trang cáp viễn thông khu vực Pleiku, Quy Nhơn, Phú Tài,Tuy Phước, An Nhơn, Phú Phong",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600533446",
+      "name": "Lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị du lịch Tân Thanh, Vĩnh Hội (Phân khu 1), KKT Nhơn Hội",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600533432",
+      "name": "Lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị du lịch Phương Mai (phân khu 5), KKT Nhơn Hội",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600532694",
       "name": "Mua sắm pano tuyên truyền về tái hoà nhập cộng đồng năm 2026",
       "investor": "Công an tỉnh Gia Lai",
@@ -1240,64 +1303,6 @@
       "notifyNo": "IB2600525923",
       "name": "Trang trí khánh tiết",
       "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525854",
-      "name": "Trang trí khánh tiết",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525800",
-      "name": "Mua lẵng hoa tươi chúc mừng Lễ khai giảng năm học 2026-2027 cho các trường học trên địa bàn tỉnh Gia Lai.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600525689",
-      "name": "Mua vật tư, phụ kiện thực hiện công tác lắp đặt đồng hồ nước và sửa chữa các sự cố khi lắp đặt cho hộ gia đình tại Nhà máy Nước sạch ven biển Phù Mỹ",
-      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600525540",
-      "name": "Trích đo bản đồ địa chính",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525499",
-      "name": "Khảo sát địa hình phục vụ lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị du lịch Phương Mai (phân khu 5), KKT Nhơn Hội",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600525476",
-      "name": "Khảo sát địa hình phục vụ lập điều chỉnh cục bộ Quy hoạch phân khu tỷ lệ 1/2000 Khu đô thị du lịch Tân Thanh, Vĩnh Hội (Phân khu 1), KKT Nhơn Hội",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
       "accepted": false,
       "score": 0,
       "reason": "insufficient-medical-context",
