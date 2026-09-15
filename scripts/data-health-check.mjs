@@ -13,8 +13,6 @@ async function readJson(name, fallback) {
 }
 
 const tenders = await readJson("tenders.json", { tenders: [] });
-const bidders = await readJson("bidders.json", { bidders: [] });
-const equipment = await readJson("equipment.json", { equipment: [] });
 const coverage = await readJson("region-coverage.json", { regions: [] });
 const regionConfig = await readJson("regions.json", { regions: [] });
 const giaLai = (regionConfig.regions || []).find((item) => item.slug === "gia-lai");
@@ -32,8 +30,11 @@ const missingGiaLaiTerms = requiredGiaLaiTerms.filter((term) => !configuredTerms
 const summary = {
   checkedAt: new Date().toISOString(),
   tenderCount: tenders.tenders?.length || 0,
-  bidderCount: bidders.bidders?.length || 0,
-  equipmentCount: equipment.equipment?.length || 0,
+  bidderCount: Number(coverage.totalBidderCount)
+    || (coverage.regions || []).reduce((sum, item) => sum + (Number(item.bidderCount) || 0), 0),
+  equipmentCount: Number(coverage.totalEquipmentCount)
+    || (coverage.regions || []).reduce((sum, item) => sum + (Number(item.equipmentCount) || 0), 0),
+  storageMode: "regional-json-shards",
   initializedRegionCount: coverage.initializedRegionCount || 0,
   configuredRegionCount: coverage.configuredRegionCount || 0,
   coverageDays: coverage.completeCoverageDays || 0,

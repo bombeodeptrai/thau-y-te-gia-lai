@@ -15,30 +15,6 @@ async function readJson(path, fallback) {
   }
 }
 
-function compact(value) {
-  return String(value ?? "").replace(/\s+/g, " ").trim();
-}
-
-function regionSlugOf(item) {
-  const direct = compact(item?.regionSlug);
-  if (direct) return direct;
-
-  const region = compact(item?.region).toLocaleLowerCase("vi-VN");
-  if (region === "gia lai") return "gia-lai";
-  return "";
-}
-
-function groupByRegion(items) {
-  const grouped = new Map();
-  for (const item of items || []) {
-    const slug = regionSlugOf(item);
-    if (!slug) continue;
-    if (!grouped.has(slug)) grouped.set(slug, []);
-    grouped.get(slug).push(item);
-  }
-  return grouped;
-}
-
 async function writePayload(path, payload) {
   await mkdir(dirname(path), { recursive: true });
   // Ghi JSON nén để Apps Script tải nhanh hơn và tránh phản hồi quá lớn.
@@ -47,21 +23,18 @@ async function writePayload(path, payload) {
 
 const regionConfig = await readJson(resolve(dataDir, "regions.json"));
 const coverage = await readJson(resolve(dataDir, "region-coverage.json"), { regions: [] });
-const tenderPayload = await readJson(resolve(dataDir, "tenders.json"));
-const bidderPayload = await readJson(resolve(dataDir, "bidders.json"), { bidders: [] });
-const equipmentPayload = await readJson(resolve(dataDir, "equipment.json"), { equipment: [] });
-
-const tendersByRegion = groupByRegion(tenderPayload.tenders || []);
-const biddersByRegion = groupByRegion(bidderPayload.bidders || []);
-const equipmentByRegion = groupByRegion(equipmentPayload.equipment || []);
 const coverageBySlug = new Map((coverage.regions || []).map((item) => [item.slug, item]));
 
 const manifest = [];
 for (const region of regionConfig.regions || []) {
   const slug = region.slug;
-  const tenders = tendersByRegion.get(slug) || [];
-  const bidders = biddersByRegion.get(slug) || [];
-  const equipment = equipmentByRegion.get(slug) || [];
+  const sourceDir = resolve(dataDir, "regions", slug);
+  const tenderPayload = await readJson(resolve(sourceDir, "tenders.json"), { tenders: [] });
+  const bidderPayload = await readJson(resolve(sourceDir, "bidders.json"), { bidders: [] });
+  const equipmentPayload = await readJson(resolve(sourceDir, "equipment.json"), { equipment: [] });
+  const tenders = tenderPayload.tenders || [];
+  const bidders = bidderPayload.bidders || [];
+  const equipment = equipmentPayload.equipment || [];
   const expected = coverageBySlug.get(slug) || {};
 
   // Nếu báo cáo tổng hợp nói tỉnh đã có dữ liệu mà shard lại rỗng thì dừng triển khai,
@@ -69,9 +42,17 @@ for (const region of regionConfig.regions || []) {
   if (Number(expected.tenderCount) > 0 && tenders.length === 0) {
     throw new Error(`Không tạo được shard ${region.name}: báo cáo có ${expected.tenderCount} gói nhưng kết quả lọc bằng 0`);
   }
+  if (Number(expected.bidderCount) > 0 && bidders.length === 0) {
+    throw new Error(`Không tạo được shard nhà thầu ${region.name}: dữ liệu nguồn bị rỗng`);
+  }
+  if (Number(expected.equipmentCount) > 0 && equipment.length === 0) {
+    throw new Error(`Không tạo được shard thiết bị ${region.name}: dữ liệu nguồn bị rỗng`);
+  }
 
   const outputDir = resolve(outputDataDir, "regions", slug);
-  const fetchedAt = tenderPayload.fetchedAt || bidderPayload.fetchedAt || equipmentPayload.fetchedAt || "";
+  const fetchedAt = [tenderPayload.fetchedAt, bidderPayload.fetchedAt, equipmentPayload.fetchedAt]
+    .filter(Boolean)
+    .sort((left, right) => new Date(right) - new Date(left))[0] || "";
 
   await writePayload(resolve(outputDir, "tenders.json"), {
     schemaVersion: 1,

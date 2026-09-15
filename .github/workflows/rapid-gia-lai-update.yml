@@ -47,6 +47,7 @@ jobs:
       - name: Kiểm tra bộ lọc và quy trình sửa dữ liệu
         run: |
           node --test scripts/medical-scope.test.mjs
+          node --test scripts/official-source.test.mjs
           node --test scripts/source-time.test.mjs
           node --check scripts/repair-official-tender-identities.mjs
           node --check scripts/refresh-official-tender-details.mjs
@@ -62,6 +63,7 @@ jobs:
         env:
           RESCUE_DAYS: "7"
           PAGE_SIZE: "10"
+          RESCUE_SUMMARY_FILE: "rapid-medical-rescue-summary.json"
         run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
 
       - name: Xác định có gói mới hoặc định danh được sửa
@@ -112,6 +114,7 @@ jobs:
         env:
           RESCUE_DAYS: "14"
           PAGE_SIZE: "10"
+          RESCUE_SUMMARY_FILE: "rapid-medical-rescue-summary.json"
         run: node scripts/fetch-recent-medical-rescue.mjs gia-lai
 
       - name: Tạo ngay hồ sơ chi tiết từ định danh chính thức

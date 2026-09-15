@@ -2,6 +2,8 @@ import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildOfficialSourceUrl } from "./official-source.mjs";
+import { loadRegionalCollection } from "./regional-data.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
@@ -13,7 +15,6 @@ const CONCURRENCY = 3;
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const tendersPath = resolve(root, "data/tenders.json");
-const equipmentPath = resolve(root, "data/equipment.json");
 const outputPath = resolve(root, "data/competitor-history.json");
 
 function compact(value, maxLength = 1200) {
@@ -193,29 +194,6 @@ function categoryOf(name) {
     : "Thiết bị y tế";
 }
 
-function sourceUrl(item) {
-  const params = new URLSearchParams({
-    p_p_id: "egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2",
-    p_p_lifecycle: "0",
-    p_p_state: "normal",
-    p_p_mode: "view",
-    _egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render: "detail-v2",
-    type: item.type || "es-notify-contractor",
-    stepCode: item.stepCode || "notify-contractor-step-1-tbmt",
-    id: item.id || "",
-    notifyId: item.notifyId || item.id || "",
-    inputResultId: item.inputResultId || "",
-    bidOpenId: item.bidOpenId || "",
-    processApply: item.processApply || "LDT",
-    bidMode: item.bidMode || "",
-    notifyNo: item.notifyNo || "",
-    planNo: item.planNo || "",
-    step: "tbmt",
-    isInternet: String(item.isInternet ?? ""),
-  });
-  return `https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?${params}`;
-}
-
 function locationOf(item) {
   return (item.locations || [])
     .map((location) => location.districtName || location.provName)
@@ -241,7 +219,7 @@ function normalizeRecord(item, canonicalInvestor, equipmentByNotifyNo) {
     winnerNames: unique((item.contractorName || []).map((value) => compact(value, 500))),
     participants: [],
     equipment: equipment.slice(0, 35),
-    sourceUrl: sourceUrl(item),
+    sourceUrl: buildOfficialSourceUrl(item),
   };
 }
 
@@ -278,7 +256,11 @@ async function fetchInvestorHistory(investor, from, to, equipmentByNotifyNo) {
 }
 
 const tenderData = await readJson(tendersPath, { tenders: [] });
-const equipmentData = await readJson(equipmentPath, { equipment: [] });
+const equipmentData = await loadRegionalCollection(
+  resolve(root, "data"),
+  "equipment.json",
+  "equipment",
+);
 const existing = await readJson(outputPath, null);
 
 const investors = unique((tenderData.tenders || [])

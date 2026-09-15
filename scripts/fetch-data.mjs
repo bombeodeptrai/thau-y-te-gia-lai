@@ -2,6 +2,7 @@ import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { isMedicalTender, medicalCategory } from "./medical-scope.mjs";
+import { buildOfficialSourceUrl } from "./official-source.mjs";
 import { formatMuasamcongDateTime, muasamcongDateRange } from "./source-time.mjs";
 import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
 
@@ -264,35 +265,6 @@ function statusOf(item) {
   return "open";
 }
 
-function sourceUrl(item) {
-  const params = new URLSearchParams({
-    p_p_id: "egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2",
-    p_p_lifecycle: "0",
-    p_p_state: "normal",
-    p_p_mode: "view",
-    _egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render: "detail-v2",
-    type: item.type || "es-notify-contractor",
-    stepCode: item.stepCode || "notify-contractor-step-1-tbmt",
-    id: item.id || "",
-    notifyId: item.notifyId || item.id || "",
-    inputResultId: item.inputResultId || "",
-    bidOpenId: item.bidOpenId || "",
-    techReqId: item.techReqId || "",
-    bidPreNotifyResultId: item.bidPreNotifyResultId || "",
-    bidPreOpenId: item.bidPreOpenId || "",
-    processApply: item.processApply || "LDT",
-    bidMode: item.bidMode || "",
-    notifyNo: item.notifyNo || "",
-    planNo: item.planNo || "",
-    pno: item.pno || "",
-    step: "tbmt",
-    isInternet: String(item.isInternet ?? ""),
-    caseKHKQ: String(item.caseKHKQ ?? ""),
-    bidForm: item.bidForm || "",
-  });
-  return `https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?${params}`;
-}
-
 function normalizeTender(item) {
   const name = (item.bidName?.join(" ") || "Gói thầu chưa có tên").replace(/\s+/g, " ").trim();
   const bidderCount = item.numBidderJoin === null || item.numBidderJoin === undefined
@@ -319,7 +291,7 @@ function normalizeTender(item) {
     sourceStatus: item.status || "",
     statusForNotify: item.statusForNotify || "",
     bidderCount: Number.isFinite(bidderCount) ? bidderCount : null,
-    sourceUrl: sourceUrl(item),
+    sourceUrl: buildOfficialSourceUrl(item),
     winnerNames: [...new Set((item.contractorName || []).filter(Boolean))],
     winningPrice: (item.bidWinningPrice || []).reduce((sum, value) => sum + (Number(value) || 0), 0),
     decisionDate: item.decisionDate || "",

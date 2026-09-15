@@ -6,6 +6,33 @@ const MT_DEFAULT_REGION_SLUG = "gia-lai";
 const MT_CURSOR_KEY = "MT_REGION_CURSOR_V2";
 const MT_LAST_SYNC_PREFIX = "MT_LAST_SYNC_";
 const MT_BATCH_ROWS = 1500;
+const MT_OFFICIAL_SEARCH_URL = "https://muasamcong.mpi.gov.vn/web/guest/home";
+
+function mtOfficialTenderUrl_(value) {
+  const url = String(value || "");
+  if (url.indexOf("https://muasamcong.mpi.gov.vn/") !== 0) return url;
+  if (url.indexOf("/web/guest/home") >= 0) return MT_OFFICIAL_SEARCH_URL;
+  const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+  const idMatches = [url.match(/[?&]id=([^&]*)/i), url.match(/[?&]notifyId=([^&]*)/i)];
+  const hasDirectId = idMatches.some(function(match) {
+    return match && uuid.test(decodeURIComponent(match[1] || "").trim());
+  });
+  if ((/[?&][^=]*render=detail-v2/i.test(url) || /[?&]notifyNo=/i.test(url)) && !hasDirectId) {
+    return MT_OFFICIAL_SEARCH_URL;
+  }
+  const resultMatch = url.match(/[?&]inputResultId=([^&]*)/i);
+  const resultStep = /[?&]stepCode=[^&]*kqlcnt/i.test(url);
+  const valid = function(match) {
+    if (!match) return false;
+    const text = decodeURIComponent(match[1] || "").trim();
+    return Boolean(text) && !/^(null|undefined)$/i.test(text);
+  };
+  const step = valid(resultMatch) || resultStep ? "kqlcnt" : "";
+  if (!step) return url;
+  return /([?&]step=)[^&]*/i.test(url)
+    ? url.replace(/([?&]step=)[^&]*/i, "$1" + step)
+    : url + (url.indexOf("?") >= 0 ? "&" : "?") + "step=" + step;
+}
 
 function setupMienTrungSheets() {
   mtRemoveSyncTriggers_();
@@ -167,7 +194,7 @@ function mtWriteTenderSheet_(ss, region, tenders, fetchedAt) {
       mtStatus_(item.status), item.bidderCount == null ? "" : Number(item.bidderCount),
       mtList_(item.participantNames), mtList_(item.winnerNames), mtList_(item.loserNames),
       mtList_(item.winningModels), mtList_(item.losingModels), Number(item.winningPrice) || 0,
-      mtDate_(item.decisionDate), item.hasResult ? "Có" : "Chưa", mtCell_(item.sourceUrl, 3000), mtDate_(fetchedAt)
+      mtDate_(item.decisionDate), item.hasResult ? "Có" : "Chưa", mtCell_(mtOfficialTenderUrl_(item.sourceUrl), 3000), mtDate_(fetchedAt)
     ];
   });
   const sheet = mtManagedSheet_(ss, region.shortName || region.name);
@@ -185,7 +212,7 @@ function mtWriteBidderSheet_(ss, region, bidders, fetchedAt) {
       mtCell_(item.notifyNo, 100), mtCell_(item.tenderName, 5000), mtCell_(item.contractorName, 1500),
       mtCell_(item.contractorCode, 300), mtCell_(item.taxCode, 100), mtCell_(item.lotName || item.lotNo, 1500),
       mtBidderStatus_(item.status), mtNumber_(item.bidPrice), mtNumber_(item.finalPrice), mtNumber_(item.winningPrice),
-      mtCell_(item.reason, 5000), mtList_(item.models), mtCell_(item.sourceUrl, 3000), mtDate_(fetchedAt)
+      mtCell_(item.reason, 5000), mtList_(item.models), mtCell_(mtOfficialTenderUrl_(item.sourceUrl), 3000), mtDate_(fetchedAt)
     ];
   });
   mtWriteTable_(
@@ -208,7 +235,7 @@ function mtWriteEquipmentSheet_(ss, region, equipment, fetchedAt) {
       mtCell_(item.model || item.code, 1000), mtCell_(item.brand, 1000), mtCell_(item.manufacturer, 1500),
       mtCell_(item.origin, 500), mtCell_(item.manufactureYear, 100), mtCell_(item.specification, 30000),
       mtCell_(item.unit, 100), quantity, unitPrice, quantity * unitPrice, mtList_(item.winnerNames),
-      mtCell_(item.sourceUrl, 3000), mtDate_(fetchedAt)
+      mtCell_(mtOfficialTenderUrl_(item.sourceUrl), 3000), mtDate_(fetchedAt)
     ];
   });
   mtWriteTable_(

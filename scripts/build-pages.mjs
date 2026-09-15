@@ -1,6 +1,8 @@
 import { cp, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildContractorSearchRows } from "./contractor-search.mjs";
+import { loadRegionalCollection } from "./regional-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const output = resolve(root, "dist-pages");
@@ -65,21 +67,16 @@ for (const entry of [
   await cp(resolve(root, entry), resolve(output, entry), { recursive: true });
 }
 
-const equipmentData = JSON.parse(await readFile(resolve(dataDir, "equipment.json"), "utf8"));
 const tenderData = JSON.parse(await readFile(resolve(dataDir, "tenders.json"), "utf8"));
-let requirementsData = { requirements: [], fetchedAt: "" };
-let technicalRequirementsData = { technicalRequirements: [], fetchedAt: "" };
+const bidderData = await loadRegionalCollection(dataDir, "bidders.json", "bidders");
+const equipmentData = await loadRegionalCollection(dataDir, "equipment.json", "equipment");
+const requirementsData = await loadRegionalCollection(dataDir, "requirements.json", "requirements");
+const technicalRequirementsData = await loadRegionalCollection(
+  dataDir,
+  "technical-requirements.json",
+  "technicalRequirements",
+);
 let competitorHistoryData = { coverageDays: 0, generatedAt: "", records: [] };
-try {
-  requirementsData = JSON.parse(await readFile(resolve(dataDir, "requirements.json"), "utf8"));
-} catch {
-  // Bản dữ liệu cũ chưa có danh mục phần/lô mời thầu.
-}
-try {
-  technicalRequirementsData = JSON.parse(await readFile(resolve(dataDir, "technical-requirements.json"), "utf8"));
-} catch {
-  // Bản dữ liệu cũ chưa có biểu mẫu kỹ thuật e-HSMT đã trích xuất.
-}
 try {
   competitorHistoryData = JSON.parse(await readFile(resolve(dataDir, "competitor-history.json"), "utf8"));
 } catch {
@@ -140,6 +137,15 @@ await writeFile(
     equipment: equipmentSearch,
     fetchedAt: equipmentData.fetchedAt || requirementsData.fetchedAt
       || technicalRequirementsData.fetchedAt || "",
+  })}\n`,
+);
+
+const contractorSearch = buildContractorSearchRows(bidderData.bidders, tenderData.tenders);
+await writeFile(
+  resolve(output, "data/contractor-search.json"),
+  `${JSON.stringify({
+    contractors: contractorSearch,
+    fetchedAt: bidderData.fetchedAt || "",
   })}\n`,
 );
 
@@ -275,5 +281,6 @@ await writeFile(
 
 await writeFile(resolve(output, ".nojekyll"), "");
 process.stdout.write(
-  `Đã tạo GitHub Pages với ${equipmentSearch.length} dòng thiết bị/model và ${competitorRecords.length} hồ sơ đối thủ/trúng thầu, phủ ${coverageDays} ngày\n`,
+  `Đã tạo GitHub Pages với ${equipmentSearch.length} dòng thiết bị/model, ${contractorSearch.length} dòng nhà thầu `
+  + `và ${competitorRecords.length} hồ sơ đối thủ/trúng thầu, phủ ${coverageDays} ngày\n`,
 );
