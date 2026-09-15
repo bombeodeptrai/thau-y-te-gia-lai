@@ -47,12 +47,14 @@ jobs:
           node --test scripts/medical-scope.test.mjs
           node --test scripts/official-source.test.mjs
           node --test scripts/regional-data.test.mjs
+          node --test scripts/contractor-search.test.mjs
           node --check scripts/run-region-scan.mjs
           node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
           node --check scripts/apply-manual-equipment-overrides.mjs
           node --check scripts/build-pages.mjs
           node --check scripts/build-region-shards.mjs
+          node --check scripts/contractor-search.mjs
           node --check scripts/build-site.mjs
           node --check scripts/patch-regional-competitor.mjs
           node --check regional-mode.js

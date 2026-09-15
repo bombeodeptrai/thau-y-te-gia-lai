@@ -62,6 +62,7 @@ jobs:
           RESCUE_DAYS: "21"
           PAGE_SIZE: "10"
           LOCATION_TERM_LIMIT: "16"
+          RESCUE_SUMMARY_FILE: "quick-medical-rescue-summary.json"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
 
       - name: Xác nhận không còn gói thủ công

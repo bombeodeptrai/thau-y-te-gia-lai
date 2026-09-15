@@ -5,6 +5,7 @@ for (const file of [
   "scripts/medical-scope.mjs",
   "scripts/official-source.mjs",
   "scripts/regional-data.mjs",
+  "scripts/contractor-search.mjs",
   "scripts/source-time.mjs",
   "scripts/fetch-data.mjs",
   "scripts/run-region-scan.mjs",
@@ -22,6 +23,7 @@ for (const file of [
 execFileSync(process.execPath, ["--test", "scripts/medical-scope.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/official-source.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/regional-data.test.mjs"], { stdio: "inherit" });
+execFileSync(process.execPath, ["--test", "scripts/contractor-search.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/source-time.test.mjs"], { stdio: "inherit" });
 
 const fullScanPath = ".github/workflows/regional-full-scan.yml";
@@ -29,6 +31,7 @@ const detailPath = ".github/workflows/regional-detail-backfill.yml";
 const quickPath = ".github/workflows/regional-quick-update.yml";
 const auditPath = ".github/workflows/regional-coverage-audit.yml";
 const rapidPath = ".github/workflows/rapid-gia-lai-update.yml";
+const watchdogPath = ".github/workflows/rapid-gia-lai-watchdog.yml";
 const pagesPath = ".github/workflows/pages.yml";
 
 for (const file of [
@@ -39,6 +42,7 @@ for (const file of [
   auditPath,
   detailPath,
   rapidPath,
+  watchdogPath,
 ]) {
   const text = await readFile(file, "utf8");
   const fullHistoryCheckouts = text.match(/fetch-depth:\s*0/g) || [];
@@ -143,6 +147,17 @@ if (!rapidScan.includes('cron: "7,17,27,37,47,57 * * * *"')
   || rapidScan.includes('PAGE_SIZE: "100"')) {
   throw new Error("Luồng quét nhanh Gia Lai chưa lệch phút cao điểm, sửa định danh, tạo chi tiết hoặc còn pageSize không an toàn");
 }
+
+const watchdog = await readFile(watchdogPath, "utf8");
+if (!watchdog.includes('cron: "2,32 * * * *"')
+  || !watchdog.includes("createWorkflowDispatch")
+  || !watchdog.includes("ageMinutes <= 30")
+  || !watchdog.includes("actions: write")) {
+  throw new Error("Watchdog chưa gọi quét bù khi cron Gia Lai chậm quá 30 phút");
+}
+if (!rapidScan.includes('RESCUE_SUMMARY_FILE: "rapid-medical-rescue-summary.json"')) {
+  throw new Error("Luồng quét nhanh còn ghi đè báo cáo đối chiếu 30 ngày");
+}
 if (rapidScan.includes("LOCATION_TERM_LIMIT")) {
   throw new Error("Luồng quét nhanh Gia Lai vẫn giới hạn địa danh và có thể bỏ khu vực Bình Định cũ");
 }
@@ -165,6 +180,10 @@ if (medicalRescue.includes("LOCATION_TERM_LIMIT")
   || !medicalRescue.includes("removedRejectedStoredCount")
   || !medicalRescue.includes("rejectedSourceKeys")) {
   throw new Error("Quét bù Gia Lai chưa quét đủ địa danh hoặc chưa tự loại bản ghi cũ sai phạm vi");
+}
+if (!medicalRescue.includes("RESCUE_SUMMARY_FILE")
+  || !quickScan.includes('RESCUE_SUMMARY_FILE: "quick-medical-rescue-summary.json"')) {
+  throw new Error("Các lượt quét ngắn chưa tách báo cáo khỏi đối chiếu 30 ngày");
 }
 
 for (const file of [
@@ -201,6 +220,14 @@ for (const fileName of ["tenders.json", "bidders.json", "equipment.json"]) {
   if (!sheetScript.includes(`/data/regions/gia-lai/${fileName}`)) {
     throw new Error(`Google Sheets còn tải tệp tổng hợp thay vì shard Gia Lai: ${fileName}`);
   }
+}
+const pageBuilder = await readFile("scripts/build-pages.mjs", "utf8");
+const regionalMode = await readFile("regional-mode.js", "utf8");
+const appScript = await readFile("app.js", "utf8");
+if (!pageBuilder.includes("contractor-search.json")
+  || !appScript.includes("CONTRACTOR_SEARCH_URL")
+  || !regionalMode.includes("regional-contractor")) {
+  throw new Error("Website chưa có chỉ mục và bộ lọc riêng theo tên nhà thầu/MST");
 }
 
 const dataWorkflowPaths = [fullScanPath, detailPath, quickPath, auditPath, rapidPath];

@@ -20,6 +20,10 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const regionsPath = resolve(root, "data/regions.json");
 const slug = String(process.argv[2] || process.env.REGION_SLUG || "").trim();
 if (!slug) throw new Error("Thiếu REGION_SLUG hoặc đối số tên tỉnh/thành");
+const summaryFileName = String(process.env.RESCUE_SUMMARY_FILE || "medical-rescue-summary.json").trim();
+if (!/^[a-z0-9][a-z0-9.-]*\.json$/i.test(summaryFileName)) {
+  throw new Error(`Tên tệp báo cáo quét bù không hợp lệ: ${summaryFileName}`);
+}
 
 async function readJson(path, fallback) {
   try {
@@ -421,7 +425,7 @@ const payload = {
 
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
-await writeFile(resolve(regionDir, "medical-rescue-summary.json"), `${JSON.stringify({
+await writeFile(resolve(regionDir, summaryFileName), `${JSON.stringify({
   schemaVersion: 5,
   regionSlug: slug,
   region: region.name,

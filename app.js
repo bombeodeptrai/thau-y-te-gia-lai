@@ -1,12 +1,16 @@
 const DATA_URL = "./data/tenders.json";
 const EQUIPMENT_SEARCH_URL = "./data/equipment-search.json";
+const CONTRACTOR_SEARCH_URL = "./data/contractor-search.json";
+const OFFICIAL_HOME_URL = "https://muasamcong.mpi.gov.vn/web/guest/home";
 const SAVED_KEY = "gia-lai-medical-tender-watchlist";
 const TENDERS_PER_PAGE = 10;
 
 const state = {
   tenders: [],
   equipmentByNotifyNo: new Map(),
+  contractorsByNotifyNo: new Map(),
   searchMatchesByNotifyNo: new Map(),
+  contractorMatchesByNotifyNo: new Map(),
   detailsByNotifyNo: {},
   fetchedAt: "",
   query: "",
@@ -14,6 +18,7 @@ const state = {
   days: 1095,
   status: "all",
   investor: "",
+  contractorText: "",
   page: 1,
   expandedId: null,
   detailLoading: null,
@@ -138,6 +143,27 @@ function indexEquipment(items) {
   return byNotifyNo;
 }
 
+function contractorSearchText(item) {
+  return normalizeSearch([
+    item.contractorName,
+    item.contractorCode,
+    item.taxCode,
+  ].filter(Boolean).join(" "));
+}
+
+function indexContractors(items) {
+  const byNotifyNo = new Map();
+  for (const item of items) {
+    const notifyNo = String(item.notifyNo || "").trim();
+    if (!notifyNo) continue;
+    const indexedItem = { ...item, searchText: contractorSearchText(item) };
+    if (!indexedItem.searchText) continue;
+    if (!byNotifyNo.has(notifyNo)) byNotifyNo.set(notifyNo, []);
+    byNotifyNo.get(notifyNo).push(indexedItem);
+  }
+  return byNotifyNo;
+}
+
 function asList(value) {
   if (Array.isArray(value)) return value;
   return value ? [value] : [];
@@ -162,11 +188,16 @@ function tenderModelSearchTexts(tender) {
   ].map(normalizeSearch).filter(Boolean);
 }
 
-function officialUrl(value) {
+function isUuid(value) {
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
+    .test(String(value || "").trim());
+}
+
+function officialLinkInfo(value) {
   try {
     const url = new URL(value);
     if (url.protocol !== "https:" || url.hostname !== "muasamcong.mpi.gov.vn") {
-      return "https://muasamcong.mpi.gov.vn/";
+      return { href: OFFICIAL_HOME_URL, direct: false };
     }
 
     const hasParam = (name) => {
@@ -177,10 +208,24 @@ function officialUrl(value) {
     if (hasParam("inputResultId") || stepCode.includes("kqlcnt")) {
       url.searchParams.set("step", "kqlcnt");
     }
-    return escapeHtml(url.href);
+    const render = String(url.searchParams.get("_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render") || "");
+    const isDetail = render === "detail-v2" || url.searchParams.has("notifyNo");
+    const hasDirectId = [url.searchParams.get("id"), url.searchParams.get("notifyId")].some(isUuid);
+    if (isDetail && !hasDirectId) return { href: OFFICIAL_HOME_URL, direct: false };
+    if (url.pathname === "/web/guest/home") return { href: OFFICIAL_HOME_URL, direct: false };
+    return { href: url.href, direct: true };
   } catch {
-    return "https://muasamcong.mpi.gov.vn/";
+    return { href: OFFICIAL_HOME_URL, direct: false };
   }
+}
+
+function officialLinkMarkup(tender, labelHtml, className = "") {
+  const info = officialLinkInfo(tender?.sourceUrl);
+  const notifyNo = String(tender?.notifyNo || "").trim();
+  const fallback = !info.direct && notifyNo
+    ? ` data-official-search="${escapeHtml(notifyNo)}" title="Mã ${escapeHtml(notifyNo)} sẽ được sao chép để tra cứu trên cổng chính thức"`
+    : "";
+  return `<a${className ? ` class="${escapeHtml(className)}"` : ""} href="${escapeHtml(info.href)}" target="_blank" rel="noreferrer"${fallback}>${labelHtml}</a>`;
 }
 
 function loadSaved() {
@@ -328,7 +373,9 @@ function periodTenders() {
 
 function filteredTenders() {
   const terms = searchTerms(state.query);
+  const contractorTerms = searchTerms(state.contractorText);
   state.searchMatchesByNotifyNo.clear();
+  state.contractorMatchesByNotifyNo.clear();
   return periodTenders().filter((tender) => {
     const tenderText = tenderSearchText(tender);
     const equipment = state.equipmentByNotifyNo.get(tender.notifyNo) || [];
@@ -341,15 +388,23 @@ function filteredTenders() {
       || searchTextMatches(tenderText, terms)
       || modelMatches
       || equipmentMatches.length > 0;
+    const contractorMatches = contractorTerms.length
+      ? (state.contractorsByNotifyNo.get(tender.notifyNo) || [])
+        .filter((item) => searchTextMatches(item.searchText, contractorTerms))
+      : [];
+    const contractorFilterMatches = !contractorTerms.length || contractorMatches.length > 0;
     const statusMatches =
       state.status === "all" ||
       (state.status === "awarded"
         ? Boolean(tender.hasResult || tender.winnerNames?.length)
         : tender.status === state.status);
     const investorMatches = !state.investor || tender.investor === state.investor;
-    const matches = queryMatches && statusMatches && investorMatches;
+    const matches = queryMatches && contractorFilterMatches && statusMatches && investorMatches;
     if (matches && equipmentMatches.length) {
       state.searchMatchesByNotifyNo.set(tender.notifyNo, equipmentMatches);
+    }
+    if (matches && contractorMatches.length) {
+      state.contractorMatchesByNotifyNo.set(tender.notifyNo, contractorMatches);
     }
     return matches;
   });
@@ -480,7 +535,7 @@ function requirementsMarkup(detail, tender) {
     const message = requirements?.disclosure === "temporarily-unavailable"
       ? "Tạm thời chưa tải được danh mục phần/lô mời thầu từ dữ liệu kế hoạch công khai. Hệ thống sẽ tự thử lại ở lần cập nhật tiếp theo."
       : "Nguồn kế hoạch chưa tách danh mục phần/lô cho gói này. Hãy mở E-HSMT chính thức để xem yêu cầu kỹ thuật chi tiết.";
-    return `<div class="requirements-list"><div class="equipment-heading"><div><span>DANH MỤC MỜI THẦU</span><strong>Yêu cầu kỹ thuật và thiết bị được mời</strong></div><a class="official-document-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Mở E-HSMT ↗</a></div><div class="detail-notice">${escapeHtml(message)}</div></div>`;
+    return `<div class="requirements-list"><div class="equipment-heading"><div><span>DANH MỤC MỜI THẦU</span><strong>Yêu cầu kỹ thuật và thiết bị được mời</strong></div>${officialLinkMarkup(tender, "Mở E-HSMT ↗", "official-document-link")}</div><div class="detail-notice">${escapeHtml(message)}</div></div>`;
   }
 
   const rows = items.map((item, index) => {
@@ -500,7 +555,7 @@ function requirementsMarkup(detail, tender) {
   const summary = requirements.summary
     ? `<p class="requirement-summary"><b>Phạm vi:</b> ${escapeHtml(requirements.summary)}</p>`
     : "";
-  return `<div class="requirements-list"><div class="equipment-heading"><div><span>DANH MỤC MỜI THẦU</span><strong>${items.length} phần/lô từ kế hoạch công khai</strong></div><a class="official-document-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Mở E-HSMT ↗</a></div>${summary}${rows}<p class="requirement-source-note">Tên phần/lô và giá kế hoạch lấy từ KHLCNT công khai. Cấu hình chi tiết chỉ hiển thị khi nguồn chính thức công bố không qua CAPTCHA; E-HSMT vẫn là tài liệu đối chiếu cuối cùng.</p></div>`;
+  return `<div class="requirements-list"><div class="equipment-heading"><div><span>DANH MỤC MỜI THẦU</span><strong>${items.length} phần/lô từ kế hoạch công khai</strong></div>${officialLinkMarkup(tender, "Mở E-HSMT ↗", "official-document-link")}</div>${summary}${rows}<p class="requirement-source-note">Tên phần/lô và giá kế hoạch lấy từ KHLCNT công khai. Cấu hình chi tiết chỉ hiển thị khi nguồn chính thức công bố không qua CAPTCHA; E-HSMT vẫn là tài liệu đối chiếu cuối cùng.</p></div>`;
 }
 
 function technicalRequirementsMarkup(detail, tender) {
@@ -511,7 +566,7 @@ function technicalRequirementsMarkup(detail, tender) {
     const message = technical?.disclosure === "temporarily-unavailable"
       ? "Nguồn biểu mẫu e-HSMT đang tạm thời chưa phản hồi; hệ thống sẽ tự thử lại ở lần cập nhật tiếp theo."
       : "Gói này yêu cầu xác nhận reCAPTCHA trên cổng chính thức trước khi xem toàn bộ biểu mẫu e-HSMT. Website không tự giải CAPTCHA.";
-    return `<div class="technical-requirements-list"><div class="equipment-heading"><div><span>THÔNG SỐ KỸ THUẬT E-HSMT</span><strong>Hồ sơ đầy đủ trên nguồn chính thức</strong></div><a class="official-document-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xác nhận và mở hồ sơ ↗</a></div><div class="detail-notice">${escapeHtml(message)}</div></div>`;
+    return `<div class="technical-requirements-list"><div class="equipment-heading"><div><span>THÔNG SỐ KỸ THUẬT E-HSMT</span><strong>Hồ sơ đầy đủ trên nguồn chính thức</strong></div>${officialLinkMarkup(tender, "Xác nhận và mở hồ sơ ↗", "official-document-link")}</div><div class="detail-notice">${escapeHtml(message)}</div></div>`;
   }
 
   const visibleItems = items.slice(0, 40);
@@ -574,7 +629,7 @@ function detailMarkup(tender) {
       ${summary}
     </div>
     ${detailBody}
-    <div class="detail-footer"><span>Dữ liệu được đối chiếu từ KHLCNT, biểu mẫu e-HSMT, biên bản mở thầu và kết quả công khai.</span><a href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer">Xem hồ sơ chính thức ↗</a></div>
+    <div class="detail-footer"><span>Dữ liệu được đối chiếu từ KHLCNT, biểu mẫu e-HSMT, biên bản mở thầu và kết quả công khai.</span>${officialLinkMarkup(tender, "Xem hồ sơ chính thức ↗")}</div>
   </section>`;
 }
 
@@ -630,6 +685,32 @@ function equipmentSearchMatchMarkup(tender) {
   return `<div class="equipment-search-match"><div class="equipment-search-match-heading"><span>Khớp danh mục e-HSMT/thiết bị/model</span><b>${matches.length} mặt hàng</b></div>${visible}${remainder}</div>`;
 }
 
+function contractorStatusLabel(status) {
+  return ({
+    won: "Trúng thầu",
+    lost: "Không trúng",
+    participating: "Tham dự/đang xét",
+  })[status] || "Có tham dự";
+}
+
+function contractorSearchMatchMarkup(tender) {
+  if (!state.contractorText.trim()) return "";
+  const matches = state.contractorMatchesByNotifyNo.get(tender.notifyNo) || [];
+  if (!matches.length) return "";
+  const visible = matches.slice(0, 2).map((item) => {
+    const facts = [
+      contractorStatusLabel(item.status),
+      item.taxCode ? `MST: ${item.taxCode}` : "",
+      item.lotName ? `Lô: ${item.lotName}` : "",
+    ].filter(Boolean).join(" · ");
+    return `<div class="equipment-search-match-item"><strong>${escapeHtml(item.contractorName || item.contractorCode || item.taxCode)}</strong><span>${escapeHtml(facts)}</span></div>`;
+  }).join("");
+  const remainder = matches.length > 2
+    ? `<span class="equipment-search-more">+${matches.length - 2} kết quả nhà thầu khác</span>`
+    : "";
+  return `<div class="equipment-search-match contractor-search-match"><div class="equipment-search-match-heading"><span>Khớp tên nhà thầu / mã số thuế</span><b>${matches.length} kết quả</b></div>${visible}${remainder}</div>`;
+}
+
 function tenderMarkup(tender) {
   const expanded = state.expandedId === tender.id;
   const saved = state.saved.includes(String(tender.id));
@@ -637,10 +718,10 @@ function tenderMarkup(tender) {
   const price = Number(tender.winningPrice) || Number(tender.price) || 0;
   return `<article class="tender-row">
     <button class="save-button${saved ? " saved" : ""}" data-action="save" data-id="${escapeHtml(tender.id)}" type="button" aria-label="${saved ? "Bỏ lưu" : "Lưu"} gói thầu">${saved ? "★" : "☆"}</button>
-    <div class="tender-main"><div class="tender-meta"><span>${escapeHtml(tender.notifyNo)}</span><span>${escapeHtml(tender.category)}</span>${hasResult ? '<span class="result-meta">Có kết quả</span>' : ""}${Number(tender.bidderCount) ? `<span>${escapeHtml(tender.bidderCount)} nhà thầu</span>` : ""}</div><h3>${escapeHtml(tender.name)}</h3><p>${escapeHtml(tender.investor)} · ${escapeHtml(tender.location)}</p>${equipmentSearchMatchMarkup(tender)}</div>
+    <div class="tender-main"><div class="tender-meta"><span>${escapeHtml(tender.notifyNo)}</span><span>${escapeHtml(tender.category)}</span>${hasResult ? '<span class="result-meta">Có kết quả</span>' : ""}${Number(tender.bidderCount) ? `<span>${escapeHtml(tender.bidderCount)} nhà thầu</span>` : ""}</div><h3>${escapeHtml(tender.name)}</h3><p>${escapeHtml(tender.investor)} · ${escapeHtml(tender.location)}</p>${contractorSearchMatchMarkup(tender)}${equipmentSearchMatchMarkup(tender)}</div>
     <div class="tender-status"><span class="status-pill ${escapeHtml(tender.status)}">${escapeHtml(statusLabels[tender.status] || tender.status)}</span><span>Đóng ${escapeHtml(formatDate(tender.closeDate, true))}</span></div>
     <div class="tender-price"><strong title="${escapeHtml(formatMoney(price, false))}">${escapeHtml(formatMoney(price))}</strong><span>${tender.winningPrice ? "Giá trúng thầu" : "Giá dự toán"}</span></div>
-    <div class="tender-actions"><button class="expand-button${expanded ? " expanded" : ""}" data-action="expand" data-id="${escapeHtml(tender.id)}" type="button" aria-expanded="${expanded}"><span>${expanded ? "Thu gọn" : "Mở rộng"}</span><span>⌄</span></button><a class="detail-link" href="${officialUrl(tender.sourceUrl)}" target="_blank" rel="noreferrer"><span>↗</span><span>Nguồn</span></a></div>
+    <div class="tender-actions"><button class="expand-button${expanded ? " expanded" : ""}" data-action="expand" data-id="${escapeHtml(tender.id)}" type="button" aria-expanded="${expanded}"><span>${expanded ? "Thu gọn" : "Mở rộng"}</span><span>⌄</span></button>${officialLinkMarkup(tender, "<span>↗</span><span>Nguồn</span>", "detail-link")}</div>
     ${expanded ? detailMarkup(tender) : ""}
   </article>`;
 }
@@ -669,7 +750,11 @@ function render() {
     (sum, tender) => sum + (state.searchMatchesByNotifyNo.get(tender.notifyNo)?.length || 0),
     0,
   );
-  elements.resultCount.textContent = `${tenders.length} gói thầu${equipmentMatchCount ? ` · ${equipmentMatchCount} mặt hàng/model khớp` : ""} · trang ${state.page}/${totalPages}${state.investor ? ` · ${state.investor}` : ""}`;
+  const contractorMatchCount = tenders.reduce(
+    (sum, tender) => sum + (state.contractorMatchesByNotifyNo.get(tender.notifyNo)?.length || 0),
+    0,
+  );
+  elements.resultCount.textContent = `${tenders.length} gói thầu${contractorMatchCount ? ` · ${contractorMatchCount} kết quả nhà thầu` : ""}${equipmentMatchCount ? ` · ${equipmentMatchCount} mặt hàng/model khớp` : ""} · trang ${state.page}/${totalPages}${state.investor ? ` · ${state.investor}` : ""}`;
   elements.list.innerHTML = tenders.length
     ? visibleTenders.map(tenderMarkup).join("")
     : '<div class="empty-state"><span class="icon-text">⌕</span><h3>Chưa tìm thấy gói thầu phù hợp</h3><p>Hãy thử từ khóa ngắn hơn hoặc mở rộng khoảng thời gian.</p></div>';
@@ -685,9 +770,11 @@ async function loadData(cacheBust = false) {
   elements.warning.hidden = true;
   try {
     const suffix = cacheBust ? `?t=${Date.now()}` : "";
-    const [response, equipmentResponse] = await Promise.all([
+    const [response, equipmentResponse, contractorResponse] = await Promise.all([
       fetch(`${DATA_URL}${suffix}`, { cache: cacheBust ? "reload" : "default" }),
       fetch(`${EQUIPMENT_SEARCH_URL}${suffix}`, { cache: cacheBust ? "reload" : "default" })
+        .catch(() => null),
+      fetch(`${CONTRACTOR_SEARCH_URL}${suffix}`, { cache: cacheBust ? "reload" : "default" })
         .catch(() => null),
     ]);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -702,15 +789,26 @@ async function loadData(cacheBust = false) {
         equipment = [];
       }
     }
+    let contractors = [];
+    if (contractorResponse?.ok) {
+      try {
+        const contractorData = await contractorResponse.json();
+        if (Array.isArray(contractorData.contractors)) contractors = contractorData.contractors;
+      } catch {
+        contractors = [];
+      }
+    }
     state.tenders = data.tenders;
     state.equipmentByNotifyNo = indexEquipment(equipment);
+    state.contractorsByNotifyNo = indexContractors(contractors);
     state.searchMatchesByNotifyNo.clear();
+    state.contractorMatchesByNotifyNo.clear();
     state.detailsByNotifyNo = data.detailsByNotifyNo || {};
     state.fetchedAt = data.fetchedAt || "";
     state.page = 1;
     elements.dataState.dataset.state = "live";
-    elements.sourceLabel.textContent = equipment.length
-      ? "Dữ liệu & model đã đồng bộ"
+    elements.sourceLabel.textContent = equipment.length || contractors.length
+      ? "Dữ liệu, nhà thầu & model đã đồng bộ"
       : "Dữ liệu đã đồng bộ";
     elements.updatedLabel.textContent = state.fetchedAt
       ? `Cập nhật ${formatDate(state.fetchedAt, true)}`
@@ -787,11 +885,14 @@ elements.savedList.addEventListener("click", (event) => {
   state.days = 3650;
   state.status = "all";
   state.investor = "";
+  state.contractorText = "";
   state.page = 1;
   state.expandedId = null;
   elements.keyword.value = "";
   elements.category.value = "all";
   elements.days.value = "3650";
+  const contractorInput = document.querySelector("#regional-contractor");
+  if (contractorInput) contractorInput.value = "";
   elements.statusFilter.querySelectorAll("button[data-status]").forEach((item) => {
     item.classList.toggle("selected", item.dataset.status === "all");
   });
@@ -802,6 +903,16 @@ elements.savedList.addEventListener("click", (event) => {
 });
 
 elements.list.addEventListener("click", (event) => {
+  const officialSearchLink = event.target.closest("a[data-official-search]");
+  if (officialSearchLink) {
+    const notifyNo = officialSearchLink.dataset.officialSearch;
+    if (notifyNo && navigator.clipboard?.writeText) {
+      void navigator.clipboard.writeText(notifyNo).then(() => {
+        officialSearchLink.title = `Đã sao chép ${notifyNo}. Dán mã này vào ô tìm kiếm trên cổng Mua sắm công.`;
+      }).catch(() => {});
+    }
+    return;
+  }
   const button = event.target.closest("button[data-action]");
   if (!button) return;
   const id = button.dataset.id;

@@ -1,6 +1,7 @@
 import { cp, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildContractorSearchRows } from "./contractor-search.mjs";
 import { loadRegionalCollection } from "./regional-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -67,6 +68,7 @@ for (const entry of [
 }
 
 const tenderData = JSON.parse(await readFile(resolve(dataDir, "tenders.json"), "utf8"));
+const bidderData = await loadRegionalCollection(dataDir, "bidders.json", "bidders");
 const equipmentData = await loadRegionalCollection(dataDir, "equipment.json", "equipment");
 const requirementsData = await loadRegionalCollection(dataDir, "requirements.json", "requirements");
 const technicalRequirementsData = await loadRegionalCollection(
@@ -135,6 +137,15 @@ await writeFile(
     equipment: equipmentSearch,
     fetchedAt: equipmentData.fetchedAt || requirementsData.fetchedAt
       || technicalRequirementsData.fetchedAt || "",
+  })}\n`,
+);
+
+const contractorSearch = buildContractorSearchRows(bidderData.bidders, tenderData.tenders);
+await writeFile(
+  resolve(output, "data/contractor-search.json"),
+  `${JSON.stringify({
+    contractors: contractorSearch,
+    fetchedAt: bidderData.fetchedAt || "",
   })}\n`,
 );
 
@@ -270,5 +281,6 @@ await writeFile(
 
 await writeFile(resolve(output, ".nojekyll"), "");
 process.stdout.write(
-  `Đã tạo GitHub Pages với ${equipmentSearch.length} dòng thiết bị/model và ${competitorRecords.length} hồ sơ đối thủ/trúng thầu, phủ ${coverageDays} ngày\n`,
+  `Đã tạo GitHub Pages với ${equipmentSearch.length} dòng thiết bị/model, ${contractorSearch.length} dòng nhà thầu `
+  + `và ${competitorRecords.length} hồ sơ đối thủ/trúng thầu, phủ ${coverageDays} ngày\n`,
 );

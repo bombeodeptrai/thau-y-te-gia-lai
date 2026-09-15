@@ -79,6 +79,28 @@ test("nhận gói túi máu của bệnh viện", () => {
   assert.ok(result.matched.includes("tui mau"));
 });
 
+test("nhận gói thuốc bó dược liệu của bệnh viện y dược cổ truyền", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600535702-00",
+    bidName: ["Thuốc bó dược liệu của Bệnh viện Y dược cổ truyền và Phục hồi chức năng Pleiku năm 2026"],
+    investorName: "Bệnh viện Y dược cổ truyền và Phục hồi chức năng Pleiku",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.reason.includes("explicit-medical-title"));
+  assert.ok(result.matched.includes("thuoc bo"));
+});
+
+test("không mở rộng từ thuốc bó sang mọi gói dược liệu", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Cung cấp cây giống và dược liệu phục vụ mô hình nông nghiệp"],
+    investorName: "Trung tâm dịch vụ nông nghiệp",
+  });
+
+  assert.equal(result.accepted, false, result.reason);
+});
+
 for (const [notifyNo, title, investor] of [
   [
     "IB2600520648-00",

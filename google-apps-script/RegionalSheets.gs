@@ -6,10 +6,20 @@ const MT_DEFAULT_REGION_SLUG = "gia-lai";
 const MT_CURSOR_KEY = "MT_REGION_CURSOR_V2";
 const MT_LAST_SYNC_PREFIX = "MT_LAST_SYNC_";
 const MT_BATCH_ROWS = 1500;
+const MT_OFFICIAL_SEARCH_URL = "https://muasamcong.mpi.gov.vn/web/guest/home";
 
 function mtOfficialTenderUrl_(value) {
   const url = String(value || "");
   if (url.indexOf("https://muasamcong.mpi.gov.vn/") !== 0) return url;
+  if (url.indexOf("/web/guest/home") >= 0) return MT_OFFICIAL_SEARCH_URL;
+  const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+  const idMatches = [url.match(/[?&]id=([^&]*)/i), url.match(/[?&]notifyId=([^&]*)/i)];
+  const hasDirectId = idMatches.some(function(match) {
+    return match && uuid.test(decodeURIComponent(match[1] || "").trim());
+  });
+  if ((/[?&][^=]*render=detail-v2/i.test(url) || /[?&]notifyNo=/i.test(url)) && !hasDirectId) {
+    return MT_OFFICIAL_SEARCH_URL;
+  }
   const resultMatch = url.match(/[?&]inputResultId=([^&]*)/i);
   const resultStep = /[?&]stepCode=[^&]*kqlcnt/i.test(url);
   const valid = function(match) {

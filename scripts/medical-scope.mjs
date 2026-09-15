@@ -41,7 +41,7 @@ const EXPLICIT_MEDICAL_TITLE_TERMS = [
   "may chup", "x quang", "noi soi", "phau thuat", "catheter", "stent",
   "implant", "bom tiem", "kim tiem", "gang tay y te", "bong y te",
   "gac y te", "khau trang y te", "kit test", "test nhanh", "test ma tuy",
-  "que thu ma tuy", "tui mau", "nha khoa",
+  "que thu ma tuy", "tui mau", "thuoc bo", "nha khoa",
   "loc mau", "chay than", "dien cuc tim", "may phan tich",
 ];
 
@@ -224,7 +224,7 @@ export function medicalCategory(name) {
   return matchedTerms(text, [
     "vat tu", "hoa chat", "sinh pham", "dung cu", "kit", "test", "gac", "gang",
     "kim", "stent", "catheter", "reagent", "thuoc thu", "dung dich", "gioang", "dem",
-    "tui mau",
+    "tui mau", "thuoc bo",
   ]).length
     ? "Vật tư & hóa chất"
     : "Thiết bị y tế";

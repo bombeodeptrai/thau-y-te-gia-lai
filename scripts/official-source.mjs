@@ -1,5 +1,7 @@
 const OFFICIAL_ORIGIN = "https://muasamcong.mpi.gov.vn";
 const OFFICIAL_PATH = "/web/guest/contractor-selection";
+const OFFICIAL_SEARCH_PATH = "/web/guest/home";
+const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
 function cleanParam(value) {
   const text = String(value ?? "").trim();
@@ -11,6 +13,14 @@ function defaultStepCode(step) {
   return "notify-contractor-step-1-tbmt";
 }
 
+export function hasOfficialDetailId(item = {}) {
+  return [item.id, item.notifyId].some((value) => UUID_PATTERN.test(cleanParam(value)));
+}
+
+export function officialSearchUrl() {
+  return `${OFFICIAL_ORIGIN}${OFFICIAL_SEARCH_PATH}`;
+}
+
 export function officialSourceStep(item = {}) {
   const stepCode = cleanParam(item.stepCode).toLowerCase();
   if (cleanParam(item.inputResultId) || stepCode.includes("kqlcnt")) return "kqlcnt";
@@ -20,6 +30,11 @@ export function officialSourceStep(item = {}) {
 }
 
 export function buildOfficialSourceUrl(item = {}) {
+  // Một số gói chỉ định thầu/rút gọn được API công khai trả `id=IB...`
+  // thay vì UUID. Cổng chính thức báo lỗi khi mở detail-v2 với định danh này,
+  // nên đưa người dùng về ô tra cứu chính thức thay vì phát sinh link hỏng.
+  if (!hasOfficialDetailId(item)) return officialSearchUrl();
+
   const step = officialSourceStep(item);
   const id = cleanParam(item.id);
   const params = new URLSearchParams({
@@ -55,6 +70,16 @@ export function repairOfficialSourceUrl(value) {
     const url = new URL(value);
     if (url.protocol !== "https:" || url.hostname !== "muasamcong.mpi.gov.vn") {
       return `${OFFICIAL_ORIGIN}/`;
+    }
+
+    const render = cleanParam(
+      url.searchParams.get("_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render"),
+    );
+    if ((render === "detail-v2" || url.searchParams.has("notifyNo")) && !hasOfficialDetailId({
+      id: url.searchParams.get("id"),
+      notifyId: url.searchParams.get("notifyId"),
+    })) {
+      return officialSearchUrl();
     }
 
     const step = officialSourceStep({

@@ -1,6 +1,7 @@
 const TENDER_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/regions/gia-lai/tenders.json";
 const BIDDER_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/regions/gia-lai/bidders.json";
 const EQUIPMENT_DATA_URL = "https://bombeodeptrai.github.io/thau-y-te-gia-lai/data/regions/gia-lai/equipment.json";
+const OFFICIAL_SEARCH_URL = "https://muasamcong.mpi.gov.vn/web/guest/home";
 const TENDER_SHEET = "Gói thầu";
 const BIDDER_SHEET = "Nhà thầu";
 const EQUIPMENT_SHEET = "Danh mục thiết bị";
@@ -13,6 +14,15 @@ const TENDER_DATA_START_ROW = 3;
 function officialTenderUrl_(value) {
   const url = String(value || "");
   if (url.indexOf("https://muasamcong.mpi.gov.vn/") !== 0) return url;
+  if (url.indexOf("/web/guest/home") >= 0) return OFFICIAL_SEARCH_URL;
+  const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+  const idMatches = [url.match(/[?&]id=([^&]*)/i), url.match(/[?&]notifyId=([^&]*)/i)];
+  const hasDirectId = idMatches.some(function(match) {
+    return match && uuid.test(decodeURIComponent(match[1] || "").trim());
+  });
+  if ((/[?&][^=]*render=detail-v2/i.test(url) || /[?&]notifyNo=/i.test(url)) && !hasDirectId) {
+    return OFFICIAL_SEARCH_URL;
+  }
   const resultMatch = url.match(/[?&]inputResultId=([^&]*)/i);
   const resultStep = /[?&]stepCode=[^&]*kqlcnt/i.test(url);
   const valid = function(match) {

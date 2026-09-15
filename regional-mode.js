@@ -47,6 +47,7 @@
       minBudget: params.get("min") || saved.minBudget || "",
       maxBudget: params.get("max") || saved.maxBudget || "",
       investorText: params.get("investor") || saved.investorText || "",
+      contractorText: params.get("contractor") || saved.contractorText || "",
     };
   }
 
@@ -57,6 +58,7 @@
       minBudget: state.minBudgetBillion || "",
       maxBudget: state.maxBudgetBillion || "",
       investorText: state.investorText || "",
+      contractorText: state.contractorText || "",
     };
     localStorage.setItem(PREFS_KEY, JSON.stringify(value));
     const params = new URLSearchParams(location.search);
@@ -66,6 +68,7 @@
       min: value.minBudget,
       max: value.maxBudget,
       investor: value.investorText,
+      contractor: value.contractorText,
     };
     Object.entries(values).forEach(([key, item]) => {
       if (item) params.set(key, item);
@@ -166,6 +169,7 @@
         <label><span>Giá từ (tỷ đồng)</span><input id="regional-min-budget" type="number" min="0" step="0.1" inputmode="decimal" placeholder="0" /></label>
         <label><span>Giá đến (tỷ đồng)</span><input id="regional-max-budget" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Không giới hạn" /></label>
         <label class="advanced-investor"><span>Chủ đầu tư</span><input id="regional-investor" type="search" placeholder="Bệnh viện, trung tâm y tế…" /></label>
+        <label class="advanced-contractor"><span>Tên nhà thầu / MST</span><input id="regional-contractor" type="search" placeholder="Ví dụ: Việt Mỹ hoặc mã số thuế" /></label>
         <button type="button" id="regional-reset">Đặt lại</button>
       </div>`;
     form.insertAdjacentElement("afterend", advanced);
@@ -182,10 +186,12 @@
     const min = document.querySelector("#regional-min-budget");
     const max = document.querySelector("#regional-max-budget");
     const investor = document.querySelector("#regional-investor");
+    const contractor = document.querySelector("#regional-contractor");
     if (sort) sort.value = state.advancedSort;
     if (min) min.value = state.minBudgetBillion;
     if (max) max.value = state.maxBudgetBillion;
     if (investor) investor.value = state.investorText;
+    if (contractor) contractor.value = state.contractorText;
   }
 
   function bindRegionalEvents() {
@@ -213,12 +219,13 @@
       state.minBudgetBillion = document.querySelector("#regional-min-budget")?.value || "";
       state.maxBudgetBillion = document.querySelector("#regional-max-budget")?.value || "";
       state.investorText = document.querySelector("#regional-investor")?.value || "";
+      state.contractorText = document.querySelector("#regional-contractor")?.value || "";
       state.page = 1;
       state.expandedId = null;
       writePreferences();
       render();
     };
-    ["#regional-sort", "#regional-min-budget", "#regional-max-budget", "#regional-investor"]
+    ["#regional-sort", "#regional-min-budget", "#regional-max-budget", "#regional-investor", "#regional-contractor"]
       .forEach((selector) => document.querySelector(selector)?.addEventListener("input", rerender));
 
     document.querySelector("#regional-reset")?.addEventListener("click", () => {
@@ -226,6 +233,7 @@
       state.minBudgetBillion = "";
       state.maxBudgetBillion = "";
       state.investorText = "";
+      state.contractorText = "";
       applyAdvancedInputs();
       rerender();
     });
@@ -299,6 +307,7 @@
       state.minBudgetBillion = prefs.minBudget;
       state.maxBudgetBillion = prefs.maxBudget;
       state.investorText = prefs.investorText;
+      state.contractorText = prefs.contractorText;
 
       const [configPayload, coveragePayload] = await Promise.all([
         fetchJson(REGION_CONFIG_URL, { regions: [] }),
