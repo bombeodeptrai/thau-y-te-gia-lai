@@ -2,14 +2,14 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-15T10:31:56.399Z",
+  "rescuedAt": "2026-09-15T15:17:54.759Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 104,
+      "count": 106,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
@@ -278,11 +278,11 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 428,
+  "candidateCount": 429,
   "acceptedCount": 28,
-  "rejectedCount": 400,
+  "rejectedCount": 401,
   "rejectedReasons": {
-    "insufficient-medical-context": 136,
+    "insufficient-medical-context": 138,
     "excluded:tu van": 90,
     "excluded:xay dung": 88,
     "excluded:xay lap": 17,
@@ -306,8 +306,7 @@
     "excluded:may phat dien": 1,
     "excluded:bao ve": 1,
     "excluded:quan ly du an": 1,
-    "excluded:cong nghe thong tin": 1,
-    "excluded:chat thai": 1
+    "excluded:cong nghe thong tin": 1
   },
   "acceptedDiagnostics": [
     {
@@ -756,6 +755,24 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600523295",
+      "name": "Trang bị hệ thống xử lý nước thải sinh hoạt tại các khu vực sản xuất trong Công ty Thủy điện Ialy.",
+      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600536943",
+      "name": "Quản lý vận hành nhà máy xử lý nước thải Nhơn Bình, nhà máy xử lý nước thải 2A, các trạm bơm và hệ thống giếng tách, tuyến ống áp lực (từ ngày 01/10/2026 đến ngày 31/12/2026)",
+      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600536210",
       "name": "SCL2026-XL/25: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZTHA khu vực Phú Tài năm 2026",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1186,32 +1203,12 @@
       "matched": [
         "may tinh"
       ]
-    },
-    {
-      "notifyNo": "IB2600503025",
-      "name": "Hoá chất chuyên dụng Giải trình tự illumina",
-      "investor": "Trung tâm Ứng dụng tiến bộ khoa học và công nghệ Gia Lai",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat"
-      ]
-    },
-    {
-      "notifyNo": "IB2600470158",
-      "name": "Ủy thác nhập khẩu",
-      "investor": "Tổng công ty Hạ tầng mạng",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 880,
+  "beforeCount": 882,
   "afterCount": 882,
-  "newCount": 2,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v6"
 }
