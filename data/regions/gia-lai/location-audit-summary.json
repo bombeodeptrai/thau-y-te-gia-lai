@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-15T04:54:16.082Z",
+  "auditedAt": "2026-09-15T13:33:51.637Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 356,
+      "count": 358,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 32,
+      "count": 33,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -68,13 +68,13 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 8,
+      "count": 17,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -128,13 +128,13 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 5,
+      "count": 9,
       "error": ""
     },
     {
       "term": "Krông Pa",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 98,
+      "count": 99,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 49,
+      "count": 50,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 75,
+      "count": 76,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 44,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -260,28 +260,28 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 12,
+      "count": 14,
       "error": ""
     },
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 940,
-  "acceptedCount": 51,
-  "rejectedCount": 889,
+  "candidateCount": 961,
+  "acceptedCount": 53,
+  "rejectedCount": 908,
   "rejectedReasons": {
-    "insufficient-medical-context": 251,
-    "excluded:tu van": 244,
-    "excluded:xay dung": 222,
+    "excluded:tu van": 254,
+    "insufficient-medical-context": 252,
+    "excluded:xay dung": 227,
     "excluded:xay lap": 43,
     "excluded:sua chua": 31,
     "excluded:cai tao": 17,
-    "excluded:bao hiem": 12,
+    "excluded:bao hiem": 13,
     "excluded:may tinh": 6,
     "excluded:trang phuc": 6,
     "excluded:tham dinh": 5,
@@ -289,14 +289,14 @@
     "excluded:giam sat thi cong": 5,
     "excluded:thuc pham": 5,
     "excluded:suat an": 5,
+    "excluded:thuoc generic": 3,
     "excluded:phan bon": 3,
     "excluded:bao tri": 3,
+    "excluded:may in": 3,
     "excluded:quan ly du an": 3,
     "excluded:cong nghe thong tin": 3,
     "excluded:kiem dinh": 2,
-    "excluded:may in": 2,
     "excluded:rac thai": 2,
-    "excluded:thuoc generic": 2,
     "excluded:duong day": 2,
     "excluded:chat thai": 2,
     "excluded:tin hoc": 2,
@@ -308,6 +308,36 @@
     "excluded:cay xanh": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600537610",
+      "name": "Cung ứng giường bệnh nhân, băng ca, tủ đầu giường và xe đẩy các loại - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "giuong benh",
+        "benh vien",
+        "da khoa",
+        "cung ung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600538361",
+      "name": "Mua sắm một số vật tư y tế, hóa chất, khí AirMac của Bệnh viện Sản - Nhi tỉnh Gia Lai quý III năm 2026",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 200,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+medical-supply-bundle",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "hoa chat",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600536973",
       "name": "Mua sắm Hóa chất định lượng ProBNP II sử dụng trên máy miễn dịch phương pháp điện hóa phát quang của Bệnh viện Đa khoa Gia Lai.",
@@ -914,36 +944,56 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600492233",
-      "name": "Mua sắm khí Oxy y tế năm 2026 của Trung tâm Y tế Ia Pa",
-      "investor": "Trung tâm Y tế Ia Pa",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "oxy y te",
-        "trung tam y te",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600506798",
-      "name": "Mua sắm Hệ thống thu nhận ảnh X-quang kỹ thuật số bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
-      "matched": [
-        "x quang",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600536210",
+      "name": "SCL2026-XL/25: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZTHA khu vực Phú Tài năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600000791",
+      "name": "Thuê đơn vị cung cấp dịch vụ tổ chức sự kiện tuyên truyền chính sách BHTG năm 2026 tại tỉnh Gia Lai",
+      "investor": "Chi nhánh Bảo hiểm tiền gửi Việt Nam tại Thành phố Đà Nẵng",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600534284",
+      "name": "Mua sắm thuốc Generic bổ sung lần 1",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:thuoc generic",
+      "matched": [
+        "thuoc generic"
+      ]
+    },
+    {
+      "notifyNo": "IB2600533626",
+      "name": "SCL2026-XL/32: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn đường dây trung hạ áp khu vực Phú Phong năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua",
+        "duong day"
+      ]
+    },
     {
       "notifyNo": "IB2600534400",
       "name": "SCL2026-XL/34: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTA khu vực Kbang năm 2026 đợt 2",
@@ -1352,60 +1402,12 @@
       "matched": [
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "IB2600525920",
-      "name": "Tư vấn lập Đề án chỉnh trang cây xanh đô thị Quy Nhơn giai đoạn 2026 - 2030, tầm nhìn đến năm 2035",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "cay xanh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600527143",
-      "name": "Mua sắm đồ dùng cá nhân cấp cho học sinh năm học 2026-2027 của Trường PTDTNT THPT số 1 tỉnh Gia Lai",
-      "investor": "Trường PTDTNT THPT số 1 tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600530643",
-      "name": "Mua sắm học phẩm cấp cho học sinh năm học 2026-2027 của Trường PTDTNT THPT số 1 Gia Lai",
-      "investor": "Trường PTDTNT THPT số 1 tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600530709",
-      "name": "Mua sắm Đồng phục quần tây xanh, áo trắng, đồ học thể dục và áo khoác cho học sinh nội trú năm học 2026-2027 của Trường PTDTNT THPT số 1 tỉnh Gia Lai",
-      "investor": "Trường PTDTNT THPT số 1 tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 869,
-  "afterCount": 880,
-  "newCount": 11,
+  "beforeCount": 882,
+  "afterCount": 882,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v6"
 }
