@@ -406,7 +406,7 @@ const collection = { ...(previous.collection || {}) };
 delete collection.manualTenderOverrideCount;
 delete collection.lastManualTenderOverrideAt;
 Object.assign(collection, {
-  rescueStrategy: "province-codes-plus-all-location-terms-unified-medical-scope-v6",
+  rescueStrategy: "province-codes-plus-all-location-terms-unified-medical-scope-v7",
   lastMedicalRescueAt: fetchedAt,
   lastMedicalRescueDays: RESCUE_DAYS,
   lastMedicalRescueCandidateCount: sourceUnique.size,
@@ -445,7 +445,7 @@ await writeFile(resolve(regionDir, summaryFileName), `${JSON.stringify({
   beforeCount,
   afterCount: tenders.length,
   newCount,
-  filterStrategy: "unified-medical-scope-v6",
+  filterStrategy: "unified-medical-scope-v7",
 }, null, 2)}\n`);
 
 process.stdout.write(
