@@ -2,26 +2,26 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-15T22:55:54.602Z",
+  "rescuedAt": "2026-09-16T04:49:51.441Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 262,
+      "count": 263,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 358,
+      "count": 373,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 37,
+      "count": 39,
       "error": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -63,7 +63,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -141,7 +141,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 54,
+      "count": 52,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 99,
+      "count": 100,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 12,
+      "count": 14,
       "error": ""
     },
     {
@@ -267,7 +267,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
@@ -278,22 +278,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1045,
-  "acceptedCount": 60,
-  "rejectedCount": 985,
+  "candidateCount": 1062,
+  "acceptedCount": 62,
+  "rejectedCount": 1000,
   "rejectedReasons": {
-    "insufficient-medical-context": 280,
-    "excluded:tu van": 255,
-    "excluded:xay dung": 250,
-    "excluded:xay lap": 50,
+    "insufficient-medical-context": 282,
+    "excluded:tu van": 262,
+    "excluded:xay dung": 256,
+    "excluded:xay lap": 52,
     "excluded:sua chua": 36,
     "excluded:cai tao": 17,
     "excluded:bao hiem": 14,
     "excluded:bao duong": 8,
-    "excluded:may tinh": 6,
-    "excluded:tham dinh": 6,
     "excluded:trang phuc": 6,
+    "excluded:may tinh": 5,
     "excluded:thuc pham": 5,
+    "excluded:tham dinh": 5,
     "excluded:giam sat thi cong": 5,
     "excluded:suat an": 5,
     "excluded:thuoc generic": 3,
@@ -317,6 +317,19 @@
     "excluded:cay xanh": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600518070",
+      "name": "Mua sắm xe lăn hỗ trợ cho nạn nhân chất độc da cam/dioxin Việt Nam",
+      "investor": "QUỸ NẠN NHÂN CHẤT ĐỘC DA CAM/DIOXIN VIỆT NAM",
+      "accepted": true,
+      "score": 100,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "xe lan",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600537610",
       "name": "Cung ứng giường bệnh nhân, băng ca, tủ đầu giường và xe đẩy các loại - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -924,28 +937,45 @@
         "da khoa",
         "vat tu"
       ]
-    },
-    {
-      "notifyNo": "IB2600477857",
-      "name": "Mua sắm thiết bị y tế, y dụng cụ, vật tư y tế, hóa chất xét nghiệm để phục vụ công tác chuyên môn tại Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": true,
-      "score": 255,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
-      "matched": [
-        "thiet bi y te",
-        "vat tu y te",
-        "hoa chat xet nghiem",
-        "benh vien",
-        "hoa chat",
-        "xet nghiem",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600534426",
+      "name": "SCL2026-XL/33: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTA khu vực Krông Pa năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600534414",
+      "name": "SCL2026-XL/36: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTA khu vực Chư Păh năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600534423",
+      "name": "SCL2026-XL/35: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTA khu vực Ayun Pa năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
     {
       "notifyNo": "IB2600523295",
       "name": "Trang bị hệ thống xử lý nước thải sinh hoạt tại các khu vực sản xuất trong Công ty Thủy điện Ialy.",
@@ -996,18 +1026,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600518070",
-      "name": "Mua sắm xe lăn hỗ trợ cho nạn nhân chất độc da cam/dioxin Việt Nam",
-      "investor": "QUỸ NẠN NHÂN CHẤT ĐỘC DA CAM/DIOXIN VIỆT NAM",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
       ]
     },
     {
@@ -1373,34 +1391,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600513700",
-      "name": "Mua 01 xe ô tô phục vụ công tác chung của phường Quy Nhơn Bắc",
-      "investor": "PHÒNG KINH TẾ, HẠ TẦNG VÀ ĐÔ THỊ PHƯỜNG QUY NHƠN BẮC",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600518306",
-      "name": "Mua sắm máy tính xách tay bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may tinh",
-      "matched": [
-        "may tinh"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 882,
-  "afterCount": 882,
+  "beforeCount": 884,
+  "afterCount": 884,
   "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v6"
+  "filterStrategy": "unified-medical-scope-v7"
 }
