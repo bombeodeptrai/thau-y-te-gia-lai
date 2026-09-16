@@ -41,7 +41,7 @@ const EXPLICIT_MEDICAL_TITLE_TERMS = [
   "may chup", "x quang", "noi soi", "phau thuat", "catheter", "stent",
   "implant", "bom tiem", "kim tiem", "gang tay y te", "bong y te",
   "gac y te", "khau trang y te", "kit test", "test nhanh", "test ma tuy",
-  "que thu ma tuy", "tui mau", "thuoc bo", "nha khoa",
+  "que thu ma tuy", "tui mau", "thuoc bo", "xe lan", "xe lan co bo", "nha khoa",
   "loc mau", "chay than", "dien cuc tim", "may phan tich",
 ];
 

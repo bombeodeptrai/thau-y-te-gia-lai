@@ -79,6 +79,19 @@ test("nhận gói túi máu của bệnh viện", () => {
   assert.ok(result.matched.includes("tui mau"));
 });
 
+test("nhận gói xe lăn hỗ trợ nạn nhân chất độc da cam thực hiện tại Gia Lai", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600518070-00",
+    bidName: ["Mua sắm xe lăn hỗ trợ cho nạn nhân chất độc da cam/dioxin Việt Nam"],
+    investorName: "Quỹ nạn nhân chất độc da cam/dioxin Việt Nam",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Thiết bị y tế");
+  assert.ok(result.reason.includes("explicit-medical-title"));
+  assert.ok(result.matched.includes("xe lan"));
+});
+
 test("nhận gói thuốc bó dược liệu của bệnh viện y dược cổ truyền", () => {
   const result = classifyMedicalTender({
     notifyNo: "IB2600535702-00",
