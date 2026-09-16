@@ -1,6 +1,47 @@
 {
   "tenders": [
     {
+      "id": "47909154-4639-4539-84f7-f53dffb64d6b",
+      "notifyId": "47909154-4639-4539-84f7-f53dffb64d6b",
+      "bidId": "1d70585e-5ad1-4283-9779-b3465c443dae",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "DTRR",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-1-tbmt",
+      "notifyNo": "IB2600518070",
+      "name": "Mua sắm xe lăn hỗ trợ cho nạn nhân chất độc da cam/dioxin Việt Nam",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "QUỸ NẠN NHÂN CHẤT ĐỘC DA CAM/DIOXIN VIỆT NAM",
+      "location": "Tỉnh Cao Bằng, Tỉnh Lạng Sơn, Tỉnh Thái Nguyên, Tỉnh Tuyên Quang, Tỉnh Lào Cai, Tỉnh Lai Châu, Tỉnh Điện Biên, Tỉnh Sơn La, Tỉnh Phú Thọ, Thành phố Hà Nội, Tỉnh Bắc Ninh, Thành phố Quảng Ninh, Thành phố Hải Phòng, Tỉnh Hưng Yên, Tỉnh Ninh Bình, Tỉnh Thanh Hóa, Tỉnh Nghệ An, Tỉnh Hà Tĩnh, Tỉnh Quảng…",
+      "closeDate": "2026-09-24T10:00:00",
+      "publicDate": "2026-09-15T16:33:16.289",
+      "price": 1084510021,
+      "category": "Thiết bị y tế",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=47909154-4639-4539-84f7-f53dffb64d6b&notifyId=47909154-4639-4539-84f7-f53dffb64d6b&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600518070&planNo=PL2600289858&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "c2ab2c82-a6ab-4f55-98b4-f56a40c97cb0",
       "notifyId": "c2ab2c82-a6ab-4f55-98b4-f56a40c97cb0",
       "bidId": "64906536-97dd-486f-a9c7-ad3deebb3609",
@@ -44779,7 +44820,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-09-15T22:55:54.602Z",
+  "fetchedAt": "2026-09-16T00:42:48.011Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -44787,7 +44828,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 846,
+  "detailTenderCount": 847,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-plus-historical-location-terms",
@@ -44820,12 +44861,12 @@
     "lastLocationAuditNewCount": 0,
     "lastRemovedManualTenderCount": 0,
     "filterStrategy": "unified-medical-scope-v6",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v6",
-    "lastMedicalRescueAt": "2026-09-15T22:55:54.602Z",
-    "lastMedicalRescueDays": 30,
-    "lastMedicalRescueCandidateCount": 1045,
-    "lastMedicalRescueMedicalCount": 60,
-    "lastMedicalRescueNewCount": 0,
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v7",
+    "lastMedicalRescueAt": "2026-09-16T00:42:48.011Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 429,
+    "lastMedicalRescueMedicalCount": 29,
+    "lastMedicalRescueNewCount": 1,
     "lastRemovedRejectedStoredCount": 0
   }
 }

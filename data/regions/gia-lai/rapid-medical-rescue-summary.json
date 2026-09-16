@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-15T15:17:54.759Z",
+  "rescuedAt": "2026-09-16T00:42:48.011Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
@@ -279,10 +279,10 @@
   ],
   "successfulStrategyCount": 45,
   "candidateCount": 429,
-  "acceptedCount": 28,
-  "rejectedCount": 401,
+  "acceptedCount": 29,
+  "rejectedCount": 400,
   "rejectedReasons": {
-    "insufficient-medical-context": 138,
+    "insufficient-medical-context": 137,
     "excluded:tu van": 90,
     "excluded:xay dung": 88,
     "excluded:xay lap": 17,
@@ -309,6 +309,19 @@
     "excluded:cong nghe thong tin": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600518070",
+      "name": "Mua sắm xe lăn hỗ trợ cho nạn nhân chất độc da cam/dioxin Việt Nam",
+      "investor": "QUỸ NẠN NHÂN CHẤT ĐỘC DA CAM/DIOXIN VIỆT NAM",
+      "accepted": true,
+      "score": 100,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "xe lan",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600537610",
       "name": "Cung ứng giường bệnh nhân, băng ca, tủ đầu giường và xe đẩy các loại - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -807,18 +820,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600518070",
-      "name": "Mua sắm xe lăn hỗ trợ cho nạn nhân chất độc da cam/dioxin Việt Nam",
-      "investor": "QUỸ NẠN NHÂN CHẤT ĐỘC DA CAM/DIOXIN VIỆT NAM",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "IB2600534284",
       "name": "Mua sắm thuốc Generic bổ sung lần 1",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -1203,12 +1204,23 @@
       "matched": [
         "may tinh"
       ]
+    },
+    {
+      "notifyNo": "IB2600503025",
+      "name": "Hoá chất chuyên dụng Giải trình tự illumina",
+      "investor": "Trung tâm Ứng dụng tiến bộ khoa học và công nghệ Gia Lai",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 882,
-  "afterCount": 882,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v6"
+  "afterCount": 883,
+  "newCount": 1,
+  "filterStrategy": "unified-medical-scope-v7"
 }
