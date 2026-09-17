@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-16T22:56:38.356Z",
+  "auditedAt": "2026-09-17T04:52:24.877Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 381,
+      "count": 387,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 39,
+      "count": 32,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 32,
+      "count": 34,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 15,
+      "count": 14,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 11,
+      "count": 14,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 60,
+      "count": 58,
       "error": ""
     },
     {
@@ -266,21 +266,21 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 964,
-  "acceptedCount": 54,
-  "rejectedCount": 910,
+  "candidateCount": 961,
+  "acceptedCount": 52,
+  "rejectedCount": 909,
   "rejectedReasons": {
-    "insufficient-medical-context": 253,
-    "excluded:tu van": 246,
-    "excluded:xay dung": 228,
+    "insufficient-medical-context": 257,
+    "excluded:tu van": 241,
+    "excluded:xay dung": 227,
     "excluded:xay lap": 44,
     "excluded:sua chua": 33,
-    "excluded:cai tao": 24,
+    "excluded:cai tao": 25,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 6,
     "excluded:trang phuc": 6,
@@ -733,17 +733,18 @@
       ]
     },
     {
-      "notifyNo": "IB2600460496",
-      "name": "Bảo trì, bảo dưỡng cho thiết bị y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "notifyNo": "DC2600000978",
+      "name": "“Cung cấp dịch vụ Kiểm định, hiệu chuẩn máy móc, Thiết bị y tế năm 2026”",
+      "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
       "accepted": true,
       "score": 225,
       "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
       "matched": [
         "thiet bi y te",
         "benh vien",
-        "bao tri",
-        "bao duong"
+        "kiem dinh",
+        "hieu chuan",
+        "cung cap"
       ]
     },
     {
@@ -807,21 +808,6 @@
         "xet nghiem",
         "sinh hoa",
         "huyet hoc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600443322",
-      "name": "Mua sắm Nẹp, vít, dụng cụ chấn thương, dụng cụ phẩu thuật nội soi và y dụng cụ chuyên dùng khác năm 2026 của Trung tâm Y tế An Khê",
-      "investor": "TRUNG TÂM Y TẾ AN KHÊ",
-      "accepted": true,
-      "score": 165,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "noi soi",
-        "phau thuat",
-        "trung tam y te",
-        "mua",
-        "mua sam"
       ]
     },
     {
@@ -938,9 +924,135 @@
         "mua",
         "mua sam"
       ]
+    },
+    {
+      "notifyNo": "IB2600492233",
+      "name": "Mua sắm khí Oxy y tế năm 2026 của Trung tâm Y tế Ia Pa",
+      "investor": "Trung tâm Y tế Ia Pa",
+      "accepted": true,
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "oxy y te",
+        "trung tam y te",
+        "mua",
+        "mua sam"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600532097",
+      "name": "SCL2026-XL/26: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn Đường dây Trung hạ áp và TBA khu vực Quy Nhơn năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua",
+        "duong day"
+      ]
+    },
+    {
+      "notifyNo": "DC2600002472",
+      "name": "Lập nhiệm vụ khảo sát và khảo sát địa hình phục vụ lập quy hoạch phân khu tỷ lệ 1/2000 KCN Bình Hiệp",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600542784",
+      "name": "Tư vấn xác định giá đất cụ thể đối với khu đất A2.1 đường Võ Văn Kiệt và khu đất sản xuất kinh doanh diện tích 3.447,6 m2 của Công ty Cổ phần Hoàng Anh Gia Lai",
+      "investor": "Sở Nông Nghiệp và Môi trường thành phố Đà Nẵng",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600542664",
+      "name": "Gói thầu số 02: Thẩm tra báo cáo KTKT",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600542610",
+      "name": "Cung cấp dịch vụ dự báo Khí tượng Thủy văn trong mùa mưa lũ năm 2026 Công trình hồ chứa nước Ayun Hạ",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600542587",
+      "name": "Cung cấp dịch vụ dự báo Khí tượng Thủy văn trong mùa mưa lũ năm 2026 Công trình hồ chứa nước Ia M’lah",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600002863",
+      "name": "Gói thầu số 2: Giải khát giữa giờ cho đại biểu tham dự Hội nghị tập huấn tại cụm An Khê",
+      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600002877",
+      "name": "Gói thầu số 01: Cung cấp dịch vụ hội trường, máy chiếu, âm thanh, ánh sáng, phòng ngủ, Market, giải khát giữa giờ phục vụ Hội nghị tập huấn tại cụm Pleiku",
+      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600541964",
+      "name": "Gói thầu 81/TVGSKS- 2026: Tư vấn giám sát công tác khảo sát xây dựng dự ánCấp điện Công ty cổ phần Tiến Thịnh Gia Lai năm 2026 thuộc dự án: Các dự án Cấp điện khách hàng chuyên dùng trong và ngoài KCN tỉnh Gia Lai năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "cap dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600541929",
+      "name": "Gói thầu 81/TVTK- 2026: Tư vấn khảo sát, lập báo cáo Kinh tế - Kỹ thuật xây dựng dự án Cấp điện Công ty cổ phần Tiến Thịnh Gia Lai năm 2026 thuộc dự án: Các dự án Cấp điện khách hàng chuyên dùng trong và ngoài KCN tỉnh Gia Lai năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "cap dien"
+      ]
+    },
     {
       "notifyNo": "IB2600538039",
       "name": "26.46.HH Cáp hạ thế các loại phục vụ sửa chữa lớn bổ sung",
@@ -1290,126 +1402,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600539673",
-      "name": "Tư vấn khảo sát, lập báo cáo kinh tế kỹ thuật",
-      "investor": "Phòng Văn hóa - Xã hội xã Ia Nan, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600536210",
-      "name": "SCL2026-XL/25: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZTHA khu vực Phú Tài năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600000791",
-      "name": "Thuê đơn vị cung cấp dịch vụ tổ chức sự kiện tuyên truyền chính sách BHTG năm 2026 tại tỉnh Gia Lai",
-      "investor": "Chi nhánh Bảo hiểm tiền gửi Việt Nam tại Thành phố Đà Nẵng",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600534284",
-      "name": "Mua sắm thuốc Generic bổ sung lần 1",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:thuoc generic",
-      "matched": [
-        "thuoc generic"
-      ]
-    },
-    {
-      "notifyNo": "IB2600533626",
-      "name": "SCL2026-XL/32: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn đường dây trung hạ áp khu vực Phú Phong năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua",
-        "duong day"
-      ]
-    },
-    {
-      "notifyNo": "IB2600534400",
-      "name": "SCL2026-XL/34: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTA khu vực Kbang năm 2026 đợt 2",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600537491",
-      "name": "Thẩm định giá",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tham dinh",
-      "matched": [
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600537472",
-      "name": "Tư vấn khảo sát, đánh giá khoáng sản đất để làm mỏ vật liệu",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600536806",
-      "name": "Lập phương án nhiệm vụ - dự toán",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600532097",
-      "name": "SCL2026-XL/26: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn Đường dây Trung hạ áp và TBA khu vực Quy Nhơn năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua",
-        "duong day"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 884,
-  "afterCount": 884,
+  "beforeCount": 885,
+  "afterCount": 885,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v6"
 }
