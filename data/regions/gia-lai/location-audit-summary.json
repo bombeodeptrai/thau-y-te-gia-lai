@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-18T12:58:33.685Z",
+  "auditedAt": "2026-09-18T22:35:03.085Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 100,
+      "count": 99,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
@@ -271,9 +271,9 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 977,
+  "candidateCount": 976,
   "acceptedCount": 51,
-  "rejectedCount": 926,
+  "rejectedCount": 925,
   "rejectedReasons": {
     "insufficient-medical-context": 257,
     "excluded:xay dung": 238,
@@ -283,11 +283,11 @@
     "excluded:cai tao": 29,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 7,
-    "excluded:trang phuc": 6,
     "excluded:thuc pham": 6,
     "excluded:may tinh": 5,
     "excluded:bao duong": 5,
     "excluded:giam sat thi cong": 5,
+    "excluded:trang phuc": 5,
     "excluded:suat an": 5,
     "excluded:thuoc generic": 3,
     "excluded:phan bon": 3,
