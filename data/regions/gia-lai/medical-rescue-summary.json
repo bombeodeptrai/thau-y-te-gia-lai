@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-18T22:35:45.100Z",
+  "rescuedAt": "2026-09-19T04:38:00.024Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 257,
+      "count": 256,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 398,
+      "count": 394,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 57,
+      "count": 56,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 99,
+      "count": 98,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 46,
+      "count": 44,
       "error": ""
     },
     {
@@ -231,7 +231,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 28,
+      "count": 25,
       "error": ""
     },
     {
@@ -278,14 +278,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1058,
+  "candidateCount": 1047,
   "acceptedCount": 59,
-  "rejectedCount": 999,
+  "rejectedCount": 988,
   "rejectedReasons": {
-    "insufficient-medical-context": 285,
-    "excluded:xay dung": 260,
-    "excluded:tu van": 236,
-    "excluded:xay lap": 52,
+    "insufficient-medical-context": 282,
+    "excluded:xay dung": 257,
+    "excluded:tu van": 231,
+    "excluded:xay lap": 53,
     "excluded:sua chua": 41,
     "excluded:cai tao": 29,
     "excluded:bao hiem": 13,
@@ -295,8 +295,8 @@
     "excluded:thuoc generic": 5,
     "excluded:may tinh": 5,
     "excluded:giam sat thi cong": 5,
-    "excluded:trang phuc": 5,
     "excluded:suat an": 5,
+    "excluded:trang phuc": 4,
     "excluded:phan bon": 3,
     "excluded:may phat dien": 3,
     "excluded:bao ve": 3,

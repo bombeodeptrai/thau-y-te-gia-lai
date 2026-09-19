@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-18T22:35:03.085Z",
+  "auditedAt": "2026-09-19T04:37:17.992Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 398,
+      "count": 394,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 57,
+      "count": 56,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 99,
+      "count": 98,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 46,
+      "count": 44,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 28,
+      "count": 25,
       "error": ""
     },
     {
@@ -271,14 +271,14 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 976,
+  "candidateCount": 965,
   "acceptedCount": 51,
-  "rejectedCount": 925,
+  "rejectedCount": 914,
   "rejectedReasons": {
-    "insufficient-medical-context": 257,
-    "excluded:xay dung": 238,
-    "excluded:tu van": 235,
-    "excluded:xay lap": 46,
+    "insufficient-medical-context": 254,
+    "excluded:xay dung": 235,
+    "excluded:tu van": 230,
+    "excluded:xay lap": 47,
     "excluded:sua chua": 36,
     "excluded:cai tao": 29,
     "excluded:bao hiem": 12,
@@ -287,8 +287,8 @@
     "excluded:may tinh": 5,
     "excluded:bao duong": 5,
     "excluded:giam sat thi cong": 5,
-    "excluded:trang phuc": 5,
     "excluded:suat an": 5,
+    "excluded:trang phuc": 4,
     "excluded:thuoc generic": 3,
     "excluded:phan bon": 3,
     "excluded:bao tri": 3,
@@ -940,6 +940,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600546862",
+      "name": "Tư vấn thẩm tra an toàn giao thông",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600542200",
       "name": "26.49.HH Cáp ngầm trung thế phục vụ sửa chữa lớn bổ sung",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1383,20 +1394,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600541494",
-      "name": "Tư vấn thẩm định giá. Công trình: Trường THPT Số 1 Nguyễn Thái Học Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua",
-        "tu van",
-        "tham dinh"
-      ]
     }
   ],
   "removedManualCount": 0,
