@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-19T12:30:54.394Z",
+  "rescuedAt": "2026-09-19T18:37:34.299Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 247,
+      "count": 248,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 394,
+      "count": 395,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -278,13 +278,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1017,
+  "candidateCount": 1019,
   "acceptedCount": 57,
-  "rejectedCount": 960,
+  "rejectedCount": 962,
   "rejectedReasons": {
     "insufficient-medical-context": 274,
-    "excluded:xay dung": 242,
-    "excluded:tu van": 233,
+    "excluded:xay dung": 243,
+    "excluded:tu van": 234,
     "excluded:xay lap": 53,
     "excluded:sua chua": 39,
     "excluded:cai tao": 29,
@@ -941,6 +941,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600546998",
+      "name": "Thi công xây dựng toàn bộ công trình",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600544070",
       "name": "SCL2026-XL/40: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa đường dây trung hạ áp và TBA khu vực Hoài Ân năm 2026",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1369,17 +1380,6 @@
       "notifyNo": "IB2600536779",
       "name": "Toàn bộ khối lượng xây dựng công trình",
       "investor": "Ban Quản lý xã Phù Mỹ Nam",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600501836",
-      "name": "Thi công xây dựng và thiết bị",
-      "investor": "phòng kinh tế xã Ia Hrung",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",

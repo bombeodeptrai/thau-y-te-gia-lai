@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-19T12:30:17.618Z",
+  "auditedAt": "2026-09-19T18:36:53.143Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 394,
+      "count": 395,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 937,
+  "candidateCount": 939,
   "acceptedCount": 49,
-  "rejectedCount": 888,
+  "rejectedCount": 890,
   "rejectedReasons": {
     "insufficient-medical-context": 246,
-    "excluded:tu van": 233,
-    "excluded:xay dung": 221,
+    "excluded:tu van": 234,
+    "excluded:xay dung": 222,
     "excluded:xay lap": 47,
     "excluded:sua chua": 34,
     "excluded:cai tao": 29,
@@ -939,6 +939,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600546998",
+      "name": "Thi công xây dựng toàn bộ công trình",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600544070",
       "name": "SCL2026-XL/40: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa đường dây trung hạ áp và TBA khu vực Hoài Ân năm 2026",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1377,17 +1388,6 @@
       "reason": "excluded:bao ve",
       "matched": [
         "bao ve"
-      ]
-    },
-    {
-      "notifyNo": "DC2600003534",
-      "name": "Tư vấn khảo sát, lập thiết kế bản vẽ thi công",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
       ]
     }
   ],
