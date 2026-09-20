@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-19T22:20:43.435Z",
+  "auditedAt": "2026-09-20T04:54:00.487Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 395,
+      "count": 394,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 32,
+      "count": 31,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 15,
+      "count": 13,
       "error": ""
     },
     {
@@ -134,7 +134,7 @@
     {
       "term": "Krông Pa",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
@@ -266,33 +266,33 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 939,
+  "candidateCount": 933,
   "acceptedCount": 49,
-  "rejectedCount": 890,
+  "rejectedCount": 884,
   "rejectedReasons": {
-    "insufficient-medical-context": 246,
-    "excluded:tu van": 234,
-    "excluded:xay dung": 222,
-    "excluded:xay lap": 47,
+    "insufficient-medical-context": 243,
+    "excluded:tu van": 237,
+    "excluded:xay dung": 219,
+    "excluded:xay lap": 46,
     "excluded:sua chua": 34,
     "excluded:cai tao": 29,
-    "excluded:bao hiem": 12,
-    "excluded:tham dinh": 7,
+    "excluded:bao hiem": 11,
+    "excluded:tham dinh": 6,
     "excluded:thuc pham": 6,
     "excluded:may tinh": 5,
     "excluded:suat an": 5,
     "excluded:trang phuc": 4,
+    "excluded:bao ve": 3,
     "excluded:thuoc generic": 3,
     "excluded:phan bon": 3,
     "excluded:bao tri": 3,
     "excluded:quan ly du an": 3,
     "excluded:giam sat thi cong": 3,
-    "excluded:bao ve": 2,
     "excluded:kiem dinh": 2,
     "excluded:may in": 2,
     "excluded:rac thai": 2,
@@ -300,12 +300,12 @@
     "excluded:bao duong": 2,
     "excluded:cong nghe thong tin": 2,
     "excluded:chat thai": 2,
-    "excluded:tin hoc": 2,
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi dien": 1,
     "excluded:thu y": 1,
     "excluded:may chu": 1,
+    "excluded:tin hoc": 1,
     "excluded:cay xanh": 1
   },
   "acceptedDiagnostics": [
@@ -939,6 +939,61 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600547341",
+      "name": "Tư vấn giám sát: Trồng rừng thay thế (trồng rừng phòng hộ năm 2026 của Ban quản lý rừng phòng hộ Gia Lai",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600547337",
+      "name": "Cung cấp cây giống trồng rừng thay thế (trồng rừng phòng hộ) năm 2026 của Ban quản lý rừng phòng hộ Gia Lai",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600547315",
+      "name": "Tư vấn lập HSYC và đánh giá HSĐX",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600547319",
+      "name": "Tư vấn lập HSYC và đánh giá HSĐX",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600547309",
+      "name": "Trồng và chăm sóc bảo vệ rừng trồng phòng hộ, sản xuất",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ve",
+      "matched": [
+        "bao ve"
+      ]
+    },
+    {
       "notifyNo": "IB2600546998",
       "name": "Thi công xây dựng toàn bộ công trình",
       "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
@@ -1332,63 +1387,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600540681",
-      "name": "26.48.HH Cáp trung thế các loại đến 120mm2 phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600000792",
-      "name": "Toàn bộ khối lượng thực hiện Gói thầu Số hóa 3D, xây dựng mã QR cho 13 Bảo vật quốc gia và Xây dựng phần mềm số hóa quản lý hiện vật.",
-      "investor": "Bảo tàng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600538801",
-      "name": "26.47.HH Cáp trung thế các loại từ 150mm2 trở lên phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600538164",
-      "name": "Mua sắm thiết bị văn phòng",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "so y te",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600544009",
-      "name": "Gói thầu số 02: Cung cấp dịch vụ hỗ trợ tổ chức khóa tập huấn Phương pháp tiếp cận dựa vào cộng đồng và đồng quản lý trong bảo vệ nguồn lợi thủy sản (kết hợp tham quan mô hình đồng quản lý) tại GIA LAI thực hiện Dự án “Đánh giá và nâng cao năng lực quản lý nguồn lợi ven biển và nuôi trồng thủy sản”thuộc Chương trình “Chuyển đổi bền vững, thích ứng biến đổi khí hậu và đại dương (COAST)”",
-      "investor": "TRUNG TÂM KINH TẾ VÀ QUY HOẠCH THUỶ SẢN",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ve",
-      "matched": [
-        "bao ve"
-      ]
     }
   ],
   "removedManualCount": 0,
