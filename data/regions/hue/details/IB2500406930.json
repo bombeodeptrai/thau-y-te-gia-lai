@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 0,
+  "bidders": [
+    {
+      "id": "2c6d6725-52bc-4972-b782-61ebaae040c1",
+      "contractorCode": "vn0309324289",
+      "taxCode": "0309324289",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ QUỐC TẾ PHÚ MỸ",
+      "status": "lost",
+      "lotNo": "PP2500427803",
+      "lotName": "Phần 1: Máy gây mê kèm thở.",
+      "bidPrice": 868616900,
+      "finalPrice": 868616900,
+      "winningPrice": 0,
+      "reason": "Đáp ứng thấp hơn yêu cầu: -Sóng lưu lượng thể tích khí được hít vào và thở ra: 0-1.6 L < yêu cầu Thở vào: 0 – ≥ 2200 ml -Sóng lưu lượng thể tích khí được hít vào và thở ra: 0-1.6 L < yêu cầu Thở ra: 0 – ≥ 2200 ml -Không hiển thị được áp lực: Pmean - Tần số thở (Freq/rate) + Giới hạn cao: 4 – 100 bpm (với giới hạn thấp là 2bpm) < yêu cầu Giới hạn cao: ≤ 2 – ≥ 100 bpm + Giới hạn thấp: 0 – 58 bpm (với giới hạn cao là 60bpm) < yêu cầu Giới hạn thấp: ≤ 1 – ≥ 95 bpm - Ngưng thở: 20 – 40 giây < yêu cầu Ngưng thở: ≤ 10 – ≥ 30 giây",
+      "submittedAt": "2025-12-03T16:05:13.657",
+      "models": []
+    },
+    {
+      "id": "1364d0ad-4996-47e4-8ab3-e9b0e020d0ad",
+      "contractorCode": "vn0107650360",
+      "taxCode": "0107650360",
+      "contractorName": "CÔNG TY TNHH NANOMED",
+      "status": "won",
+      "lotNo": "PP2500427803",
+      "lotName": "Phần 1: Máy gây mê kèm thở.",
+      "bidPrice": 769000000,
+      "finalPrice": 769000000,
+      "winningPrice": 769000000,
+      "reason": "",
+      "submittedAt": "2025-12-03T16:05:13.657",
+      "models": []
+    },
+    {
+      "id": "b091d1d2-993e-41f4-8f65-7bc07876407b",
+      "contractorCode": "vn0301603121",
+      "taxCode": "0301603121",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ ANH KHOA",
+      "status": "lost",
+      "lotNo": "PP2500427803",
+      "lotName": "Phần 1: Máy gây mê kèm thở.",
+      "bidPrice": 919000000,
+      "finalPrice": 919000000,
+      "winningPrice": 0,
+      "reason": "E-HSDT xếp hạng 2",
+      "submittedAt": "2025-12-03T16:05:13.658",
+      "models": []
+    },
+    {
+      "id": "552c68a0-bf58-4ccd-8628-ee2b8eebc068",
+      "contractorCode": "vn0312920901",
+      "taxCode": "0312920901",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y KHOA TÂM AN",
+      "status": "won",
+      "lotNo": "PP2500427804",
+      "lotName": "Phần 2: Máy sinh hiển vi khám bệnh",
+      "bidPrice": 337741000,
+      "finalPrice": 337741000,
+      "winningPrice": 337741000,
+      "reason": "",
+      "submittedAt": "2025-12-03T16:05:13.658",
+      "models": []
+    }
+  ],
+  "items": [],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "ace4d77c-f94e-4c75-9348-70a56d05b82a",
+        "lotNo": "PP2500427803",
+        "name": "Phần 1: Máy gây mê kèm thở.",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 995000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "661007a5-b786-45b6-9a6a-2df4465feab8",
+        "lotNo": "PP2500427804",
+        "name": "Phần 2: Máy sinh hiển vi khám bệnh",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 400000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm máy gây mê kèm thở, sinh hiển vi khám bệnh",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:34:17.297Z"
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "a933e8fb-d0bb-4e10-ac6c-82e6a2035dae",
+      "contractorCode": "vn0107512970",
+      "taxCode": "0107512970",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ Y TẾ VIỆT ĐỨC",
+      "status": "won",
+      "lotNo": "BP2500230547",
+      "lotName": "Gói thầu số 3: mua sắm máy phẫu thuật Phaco của Bệnh viện Mắt Huế",
+      "bidPrice": 1789000000,
+      "finalPrice": 1789000000,
+      "winningPrice": 1789000000,
+      "reason": "",
+      "submittedAt": "2025-06-24T13:50:09.667",
+      "models": []
+    },
+    {
+      "id": "44f164eb-a92b-4104-bb94-0ccc77a47836",
+      "contractorCode": "vn0303847356",
+      "taxCode": "0303847356",
+      "contractorName": "Công ty TNHH Trang thiết bị Y tế KHKT Minh Duy",
+      "status": "lost",
+      "lotNo": "BP2500230547",
+      "lotName": "Gói thầu số 3: mua sắm máy phẫu thuật Phaco của Bệnh viện Mắt Huế",
+      "bidPrice": 1765000000,
+      "finalPrice": 1765000000,
+      "winningPrice": 0,
+      "reason": "Không đạt tiêu chí kỹ thuật. \"Bộ dây tưới hút (Cassette), vô trùng: 05 Bộ\" không đáp ứng yêu cầu \"có thể hấp tiệt trùng dùng nhiều lần\"",
+      "submittedAt": "2025-06-24T13:50:09.667",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "28006e60-b98e-41eb-8507-837a03d76e09",
+      "name": "Máy phẫu thuật phaco",
+      "model": "SCP680300",
+      "brand": "Compact Intuitiv",
+      "manufacturer": "Johnson & Johnson Surgical Vision, Inc",
+      "origin": "Mỹ",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Máy chính: 01 Cái\r\nCác phụ kiện và vật tư tiêu hao đi kèm bao gồm:\r\n- Tay cầm phẫu thuật Phaco: 02 Cái\r\n- Tay cầm rửa hút: 01 Cái\r\n- Tay cầm đốt điện: 01 Cái\r\n- Bộ điều khiển từ xa: 01 Bộ\r\n- Test chamber + sleeve: 03 Cái\r\n- Tay cầm cắt dịch kính: 02 Chiếc\r\n- Khóa vặn đầu típ phaco: 01 Cái\r\n- Típ + sleeve Phaco: 02 Bộ (1 bộ 2.2 và 1 bộ 2.8)\r\n- Kim hút rửa I/A: 02 Cái loại cong\r\n- Bộ dây tưới hút có thể hấp tiệt trùng dùng nhiều lần: 02 Bộ\r\n- Bộ dây tưới hút dùng 1 lần: 01 Bộ\r\n- Xe đẩy máy: 01 Bộ\r\n- Khay hấp tiệt trùng: 01 Cái\r\n- Bàn đạp điều khiển: 01 Cái\r\n- Bộ lưu điện UPS online 1KVA: 01 Bộ (Mua lẻ tại Việt Nam)",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1789000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ Y TẾ VIỆT ĐỨC"
+      ],
+      "decisionNo": "KQ2500195086_2506232003",
+      "decisionDate": "2025-06-23T23:59:59",
+      "resultPublishedDate": "2025-06-24T13:50:57"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "5dc38a0a-9c18-4cbe-85cf-cec4b2b6e070",
+        "lotNo": "BP2500230547",
+        "name": "Gói thầu số 3: mua sắm máy phẫu thuật Phaco của Bệnh viện Mắt Huế",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 1800000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm một máy phẫu thuật phaco",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:34:18.390Z"
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "9cb8a5e4-2e78-4f5f-a9ac-6818e352da2c",
+      "contractorCode": "vn0102918085",
+      "taxCode": "0102918085",
+      "contractorName": "CÔNG TY TNHH DỊCH VỤ KỸ THUẬT VÀ THƯƠNG MẠI THÁI BÌNH DƯƠNG",
+      "status": "lost",
+      "lotNo": "BP2500514543",
+      "lotName": "Gói thầu số 02: Mua sắm đầu nén khí dùng cho máy khí nén (Model: SF15+/ Hãng: Atlas Copco)",
+      "bidPrice": 1763167500,
+      "finalPrice": 1763167500,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2025-09-04T17:40:40.2",
+      "models": []
+    },
+    {
+      "id": "e5963ade-a33e-4df7-8d6f-001103daff99",
+      "contractorCode": "vn0314400048",
+      "taxCode": "0314400048",
+      "contractorName": "CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI DỊCH VỤ PNF",
+      "status": "won",
+      "lotNo": "BP2500514543",
+      "lotName": "Gói thầu số 02: Mua sắm đầu nén khí dùng cho máy khí nén (Model: SF15+/ Hãng: Atlas Copco)",
+      "bidPrice": 1736640000,
+      "finalPrice": 1736640000,
+      "winningPrice": 1736640000,
+      "reason": "",
+      "submittedAt": "2025-09-04T17:40:40.2",
+      "models": [
+        "2902022211"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "1d85718a-e423-4f41-b3bb-bfd14c2ea5cb",
+      "name": "Đầu nén khí dùng cho máy nén khi (Model: SF15+/ Hãng: Atlas copco)",
+      "model": "2902022211",
+      "brand": "Atlas copco",
+      "manufacturer": "Atlas Copco",
+      "origin": "Bỉ/ Châu Âu",
+      "manufactureYear": "2024/ 2025",
+      "specification": "Tiêu chuẩn ISO 13485 hoặc tương đương; Kích thước: Dài 44cm x rộng 57cm x cao 47 cm; Cụm nén 3,7 kW; Áp suất max: 10 Bar; Tương thích với máy nén khi SF15+/ Atlas Copco;",
+      "unit": "Bộ",
+      "quantity": 6,
+      "unitPrice": 289440000,
+      "amount": 1736640000,
+      "contractorCode": "vn0314400048",
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI DỊCH VỤ PNF"
+      ],
+      "lotNo": "",
+      "decisionNo": "1935/QĐ-BVSN",
+      "decisionDate": "2025-09-04T17:36:22",
+      "resultPublishedDate": "2025-09-04T17:41:13"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "781d5248-67c9-4f05-9f79-ba4a508c78fc",
+        "lotNo": "BP2500514543",
+        "name": "Gói thầu số 02: Mua sắm đầu nén khí dùng cho máy khí nén (Model: SF15+/ Hãng: Atlas Copco)",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 1903500000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm đầu nén khí dùng cho máy khí nén (Model: SF15+/ Hãng: Atlas Copco)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "10802056695362924",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Đầu nén khí dùng cho máy nén khi (Model: SF15+/ Hãng: Atlas copco)",
+        "unit": "Bộ",
+        "quantity": 6,
+        "code": "2902022211",
+        "brand": "Atlas copco",
+        "manufacturer": "Atlas Copco",
+        "origin": "Bỉ/ Châu Âu",
+        "manufactureYear": "2024/2025",
+        "specification": "Tiêu chuẩn ISO 13485 hoặc tương đương; Kích thước: Dài 44cm x rộng 57cm x cao 47 cm; Cụm nén 3,7 kW; Áp suất max: 10 Bar; Tương thích với máy nén khi SF15+/ Atlas Copco;",
+        "otherRequirement": "Yêu cầu lắp đặt,chạy thử, reset lỗi phần mềm",
+        "projectPlace": "Bệnh viện Sản Nhi Nghệ An",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1957",
+        "chapterName": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1957",
+        "name": "Mẫu số 02A. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng trọn gói)",
+        "parentCode": "",
+        "orderIndex": 0
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:28:57.957Z"
+}

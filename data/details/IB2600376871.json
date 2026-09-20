@@ -1,9 +1,164 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "3fe32bec-b897-460f-b788-2cb2d68adf3c",
+      "contractorCode": "vn4000993757",
+      "taxCode": "4000993757",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ TÂM ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600294168",
+      "lotName": "Máy điện tim 6 kênh kèm xe đẩy",
+      "bidPrice": 81500000,
+      "finalPrice": 81500000,
+      "winningPrice": 81500000,
+      "reason": "",
+      "submittedAt": "2026-09-15T08:32:39.714",
+      "models": [
+        "ECG-3250",
+        "BLU12",
+        "U1.111.014"
+      ]
+    },
+    {
+      "id": "61ac1eab-b1aa-42db-8e22-43ccca254da9",
+      "contractorCode": "vn4300895831",
+      "taxCode": "4300895831",
+      "contractorName": "CÔNG TY TNHH BIOTECH ASIA",
+      "status": "lost",
+      "lotNo": "PP2600294168",
+      "lotName": "Máy điện tim 6 kênh kèm xe đẩy",
+      "bidPrice": 79000000,
+      "finalPrice": 79000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu Công ty TNHH Biotech Asia không đáp ứng điều kiện kinh doanh trang thiết bị y tế loại B, C, D theo Điều 41 Nghị định số 98/2021/NĐ-CP quy định.",
+      "submittedAt": "2026-09-15T08:32:39.714",
+      "models": []
+    },
+    {
+      "id": "52275494-cc0c-4f68-9ec6-85b82374871f",
+      "contractorCode": "vn4401110543",
+      "taxCode": "4401110543",
+      "contractorName": "CÔNG TY TNHH VẬT TƯ KỸ THUẬT TN",
+      "status": "lost",
+      "lotNo": "PP2600294168",
+      "lotName": "Máy điện tim 6 kênh kèm xe đẩy",
+      "bidPrice": 81000000,
+      "finalPrice": 81000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xác nhận chấp thuận được trao hợp đồng trên hệ thống",
+      "submittedAt": "2026-09-15T08:32:39.714",
+      "models": []
+    },
+    {
+      "id": "bf1f2fe2-676a-4538-82b3-fe1a11109be8",
+      "contractorCode": "vn4000993757",
+      "taxCode": "4000993757",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ TÂM ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600294169",
+      "lotName": "Monitor theo dõi bệnh nhân (loại 5 thông số)",
+      "bidPrice": 195000000,
+      "finalPrice": 195000000,
+      "winningPrice": 195000000,
+      "reason": "",
+      "submittedAt": "2026-09-15T08:32:39.714",
+      "models": [
+        "ECG-3250",
+        "BLU12",
+        "U1.111.014"
+      ]
+    },
+    {
+      "id": "3042f9fc-9e10-4193-ae3e-882989f860c1",
+      "contractorCode": "vn4000993757",
+      "taxCode": "4000993757",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ TÂM ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600294170",
+      "lotName": "Đèn gù tiểu phẫu (đèn khám di động)",
+      "bidPrice": 18900000,
+      "finalPrice": 18900000,
+      "winningPrice": 18900000,
+      "reason": "",
+      "submittedAt": "2026-09-15T08:32:39.714",
+      "models": [
+        "ECG-3250",
+        "BLU12",
+        "U1.111.014"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "482df6fd-aa95-41d5-950a-9cb416c2b63b",
+      "name": "Máy điện tim 6 kênh kèm xe đẩy",
+      "model": "ECG-3250",
+      "brand": "-",
+      "manufacturer": "Shanghai Kohden Medical Electronic Instrument Corp",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết theo Quyết định đính kèm",
+      "unit": "máy",
+      "quantity": 1,
+      "unitPrice": 81500000,
+      "amount": 81500000,
+      "contractorCode": "vn4000993757",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ TÂM ĐỨC"
+      ],
+      "lotNo": "",
+      "decisionNo": "305/QĐ-BVĐKKVQN",
+      "decisionDate": "2026-09-15T08:28:53",
+      "resultPublishedDate": "2026-09-15T08:33:56"
+    },
+    {
+      "id": "9c7c317d-0b1d-4e23-b5a6-58aee61d0703",
+      "name": "Monitor theo dõi bệnh nhân (loại 5 thông số)",
+      "model": "BLU12",
+      "brand": "-",
+      "manufacturer": "Mediblu Medical, LLC",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết theo Quyết định đính kèm",
+      "unit": "máy",
+      "quantity": 2,
+      "unitPrice": 97500000,
+      "amount": 195000000,
+      "contractorCode": "vn4000993757",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ TÂM ĐỨC"
+      ],
+      "lotNo": "",
+      "decisionNo": "305/QĐ-BVĐKKVQN",
+      "decisionDate": "2026-09-15T08:28:53",
+      "resultPublishedDate": "2026-09-15T08:33:56"
+    },
+    {
+      "id": "69e093cd-8f6a-49ed-8c44-00a0b8899bf5",
+      "name": "Đèn gù tiểu phẫu (đèn khám di động)",
+      "model": "U1.111.014",
+      "brand": "-",
+      "manufacturer": "Luxamed GmbH & Co.KG",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết theo Quyết định đính kèm",
+      "unit": "cái",
+      "quantity": 1,
+      "unitPrice": 18900000,
+      "amount": 18900000,
+      "contractorCode": "vn4000993757",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ TÂM ĐỨC"
+      ],
+      "lotNo": "",
+      "decisionNo": "305/QĐ-BVĐKKVQN",
+      "decisionDate": "2026-09-15T08:28:53",
+      "resultPublishedDate": "2026-09-15T08:33:56"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -122,6 +277,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:07:30.321Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:37:03.291Z"
 }

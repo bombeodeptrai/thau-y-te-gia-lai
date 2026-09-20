@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "413585f5-e37d-4596-bf17-05ebe12301b9",
+      "contractorCode": "vn0105993690",
+      "taxCode": "0105993690",
+      "contractorName": "CÔNG TY TNHH AMV PHARMACEUTICAL",
+      "status": "lost",
+      "lotNo": "PP2600227731",
+      "lotName": "Test HbA1c",
+      "bidPrice": 56280000,
+      "finalPrice": 56280000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-07-02T14:55:57.555",
+      "models": []
+    },
+    {
+      "id": "3719b3fc-1d67-4ab5-8a62-25fa76c84809",
+      "contractorCode": "vn0110600257",
+      "taxCode": "0110600257",
+      "contractorName": "CÔNG TY TNHH Y TẾ KIM GIANG",
+      "status": "won",
+      "lotNo": "PP2600227731",
+      "lotName": "Test HbA1c",
+      "bidPrice": 55260000,
+      "finalPrice": 55260000,
+      "winningPrice": 55260000,
+      "reason": "",
+      "submittedAt": "2026-07-02T14:55:57.555",
+      "models": [
+        "03HS11"
+      ]
+    },
+    {
+      "id": "cd76c33f-e65d-4a12-9843-5e98539f1762",
+      "contractorCode": "vnz000046735",
+      "taxCode": "084089009131",
+      "contractorName": "HỘ KINH DOANH CƠ SỞ GIA HƯNG",
+      "status": "won",
+      "lotNo": "PP2600227733",
+      "lotName": "Nệm giường bệnh",
+      "bidPrice": 46000000,
+      "finalPrice": 46000000,
+      "winningPrice": 46000000,
+      "reason": "",
+      "submittedAt": "2026-07-02T14:55:57.555",
+      "models": [
+        "NGB"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "63c050ae-407e-4555-9df5-9598c67ca749",
+      "name": "Nệm giường bệnh",
+      "model": "NGB",
+      "brand": "Thuỷ Tiên",
+      "manufacturer": "Cơ sở Nệm Thuỷ Tiên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Thành phần bộ kit: Thẻ xét nghiệm được đóng gói riêng rẽ trong túi giấy bạc (mỗi túi bao gồm một thẻ xét nghiệm, một ống lấy mẫu spoit chứa hạt latex và gói hút ẩm), dung dịch đệm, codechip, tờ hướng dẫn sử dụng.",
+      "unit": "Cái",
+      "quantity": 100,
+      "unitPrice": 460000,
+      "amount": 46000000,
+      "contractorCode": "vnz000046735",
+      "winnerNames": [
+        "HỘ KINH DOANH CƠ SỞ GIA HƯNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "284/QĐ-TTYT",
+      "decisionDate": "2026-07-02T14:55:06",
+      "resultPublishedDate": "2026-07-02T14:56:03"
+    },
+    {
+      "id": "b520421a-9e72-416f-bd1d-2c824c9dbcdb",
+      "name": "Test HbA1c",
+      "model": "03HS11",
+      "brand": "SD Biosensor, Inc.",
+      "manufacturer": "SD Biosensor, Inc.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025",
+      "specification": "Định lượng HbA1c.",
+      "unit": "Test",
+      "quantity": 800,
+      "unitPrice": 69075,
+      "amount": 55260000,
+      "contractorCode": "vn0110600257",
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ KIM GIANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "284/QĐ-TTYT",
+      "decisionDate": "2026-07-02T14:55:06",
+      "resultPublishedDate": "2026-07-02T14:56:03"
+    }
+  ],
+  "requirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "830be9d5-2e0e-43d8-bc84-4be8ec280f37",
+        "lotNo": "PP2600227731",
+        "name": "Test HbA1c",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 56280000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "3a35b575-7144-49b3-b183-2de0ff36a8ea",
+        "lotNo": "PP2600227732",
+        "name": "Đồng hồ oxy",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 2620000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "c0c52bf0-2fd6-4965-83f5-45fdd8bde71d",
+        "lotNo": "PP2600227733",
+        "name": "Nệm giường bệnh",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 47000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua bổ sung nệm giường bệnh, đồng hồ oxy và test HbA1c ( bao gồm 3 phần (lô)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "9464557040682280",
+        "position": "1.1",
+        "lotNo": "PP2600227731",
+        "lotName": "Test HbA1c",
+        "name": "Test HbA1c",
+        "unit": "Test",
+        "quantity": 800,
+        "code": "Không yêu cầu",
+        "brand": "Multicare™ Analyzer",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "2025 trở về sau",
+        "specification": "Định lượng HbA1c.\nThành phần bộ kit: Thẻ xét nghiệm được đóng gói riêng rẽ trong túi giấy bạc (mỗi túi bao gồm một thẻ xét nghiệm, một ống lấy mẫu spoit chứa hạt latex và gói hút ẩm), dung dịch đệm, codechip, tờ hướng dẫn sử dụng.\nLà test thử theo máy Multicare™ Analyzer.\nĐạt tiêu chuẩn ISO 13485.",
+        "otherRequirement": "",
+        "projectPlace": "Trung tâm Y tế khu vực Ngũ Hành Sơn",
+        "earliestDeliveryDate": "01 ngày",
+        "latestDeliveryDate": "60 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "11554714630753748",
+        "position": "2.1",
+        "lotNo": "PP2600227732",
+        "lotName": "Đồng hồ oxy",
+        "name": "Đồng hồ oxy",
+        "unit": "Cái",
+        "quantity": 10,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "2025 trở về sau",
+        "specification": "Công dụng: Đo áp suất bình khí oxy.\n• Bộ sản phẩm tiêu chuẩn bao gồm:\n+ Đồng hồ đo áp suất.\n+ Cột đo lưu lượng khí Oxy ra.\n+ Bình tạo ẩm khí Oxy\n+ Đầu làm bằng polycacbonat để đảm bảo tính bền. \n Áp suất đầu vào: 150bar \n Van an toàn: 3.5bar ± 0.5bar \n Áp suất đầu ra: 2bar-3bar \n Phạm vi lưu lượng kế: 1L / phút -10L / 15L / phút\n- Tiêu chuẩn: ISO 13485 (hoặc tương đương)",
+        "otherRequirement": "",
+        "projectPlace": "Trung tâm Y tế khu vực Ngũ Hành Sơn",
+        "earliestDeliveryDate": "01 ngày",
+        "latestDeliveryDate": "60 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "11001062929123660",
+        "position": "3.1",
+        "lotNo": "PP2600227733",
+        "lotName": "Nệm giường bệnh",
+        "name": "Nệm giường bệnh",
+        "unit": "Cái",
+        "quantity": 100,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "2025 trở về sau",
+        "specification": "Chất liệu: Đệm mút cứng chết liệu PU(PE) tương đương hoặc tốt hơn.\nVỏ giả da chống thấm nước dày ≥5cm\nKích thước: Đệm 190x90x50 vỏ simili ± 5%\nTiêu chuẩn: ISO 13485 (hoặc tương đương)",
+        "otherRequirement": "",
+        "projectPlace": "Trung tâm Y tế khu vực Ngũ Hành Sơn",
+        "earliestDeliveryDate": "01 ngày",
+        "latestDeliveryDate": "60 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:35:00.321Z"
+}

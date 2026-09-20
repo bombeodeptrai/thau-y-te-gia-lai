@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "4640e343-1fa2-42fb-8875-88e1115cda2e",
+      "contractorCode": "vn0106892737",
+      "taxCode": "0106892737",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ Y TẾ 130 ARMEPHACO",
+      "status": "won",
+      "lotNo": "BP2600330579",
+      "lotName": "Mua giường bệnh nhân 3 tay quay và tủ đầu giường",
+      "bidPrice": 775000000,
+      "finalPrice": 775000000,
+      "winningPrice": 775000000,
+      "reason": "",
+      "submittedAt": "2026-06-19T10:11:04.803",
+      "models": []
+    },
+    {
+      "id": "0729a85d-574e-4e73-a290-d18ffb06ba4d",
+      "contractorCode": "vn0106072847",
+      "taxCode": "0106072847",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ CHUẨN VIETTROMED",
+      "status": "lost",
+      "lotNo": "BP2600330579",
+      "lotName": "Mua giường bệnh nhân 3 tay quay và tủ đầu giường",
+      "bidPrice": 799280000,
+      "finalPrice": 799280000,
+      "winningPrice": 0,
+      "reason": "XẾP HẠNG 2",
+      "submittedAt": "2026-06-19T10:11:04.803",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "58a11309-39fd-41f2-8334-390d4f301799",
+      "name": "Giường bệnh nhân 3 tay quay",
+      "model": "G3-2509",
+      "brand": "Công ty TNHH MTV Thiết bị Y tế 130 Armephaco",
+      "manufacturer": "Công ty TNHH MTV Thiết bị Y tế 130 Armephaco",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Theo BẢNG CHÀO ĐÁP ỨNG THÔNG SỐ KỸ THUẬT",
+      "unit": "Cái",
+      "quantity": 90,
+      "unitPrice": 7500000,
+      "winnerNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ Y TẾ 130 ARMEPHACO"
+      ],
+      "decisionNo": "1722/QĐ-BVYD",
+      "decisionDate": "2026-06-19T23:59:59",
+      "resultPublishedDate": "2026-06-19T10:11:13"
+    },
+    {
+      "id": "1a556393-0b25-410d-98ae-72294dab5bdd",
+      "name": "Tủ đầu giường",
+      "model": "TĐG-2404",
+      "brand": "Công ty TNHH MTV Thiết bị Y tế 130 Armephaco",
+      "manufacturer": "Công ty TNHH MTV Thiết bị Y tế 130 Armephaco",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Theo BẢNG CHÀO ĐÁP ỨNG THÔNG SỐ KỸ THUẬT",
+      "unit": "Cái",
+      "quantity": 100,
+      "unitPrice": 1000000,
+      "winnerNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ Y TẾ 130 ARMEPHACO"
+      ],
+      "decisionNo": "1722/QĐ-BVYD",
+      "decisionDate": "2026-06-19T23:59:59",
+      "resultPublishedDate": "2026-06-19T10:11:13"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "3d7315b4-d57f-4685-b081-65577f996fe8",
+        "lotNo": "BP2600330579",
+        "name": "Mua giường bệnh nhân 3 tay quay và tủ đầu giường",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 988000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua giường bệnh nhân 3 tay quay và tủ đầu giường",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:34:13.998Z"
+}

@@ -1,9 +1,91 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "098040ed-827f-4a6a-9e66-ff4428755368",
+      "contractorCode": "vn2900326174",
+      "taxCode": "2900326174",
+      "contractorName": "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN",
+      "status": "won",
+      "lotNo": "PP2600307427",
+      "lotName": "Máy phẫu thuật tai mũi họng Plasma",
+      "bidPrice": 323000000,
+      "finalPrice": 323000000,
+      "winningPrice": 323000000,
+      "reason": "",
+      "submittedAt": "2026-08-04T16:05:26.925",
+      "models": [
+        "ARS 700",
+        "RJ-MP (NM500)"
+      ]
+    },
+    {
+      "id": "bfebb1c6-0caf-4059-913f-f9bc164f0305",
+      "contractorCode": "vn2900326174",
+      "taxCode": "2900326174",
+      "contractorName": "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN",
+      "status": "won",
+      "lotNo": "PP2600307428",
+      "lotName": "Bộ khoan cưa xương",
+      "bidPrice": 78300000,
+      "finalPrice": 78300000,
+      "winningPrice": 78300000,
+      "reason": "",
+      "submittedAt": "2026-08-04T16:05:26.925",
+      "models": [
+        "ARS 700",
+        "RJ-MP (NM500)"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "567f6b5c-ad8e-4fb5-bea7-3230e5036fea",
+      "name": "Máy phẫu thuật tai mũi họng Plasma",
+      "model": "ARS 700",
+      "brand": "Jiangsu Bonss Medical Technology Co., Ltd.",
+      "manufacturer": "Jiangsu Bonss Medical Technology Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Máy chính: 1 Cái\r\n- Hộp điều khiển lưu lượng nước: 1 Cái\r\n- Bàn đạp điều khiển: 1 Cái\r\n- Dây nguồn và cáp kết nối: 1 bộ\r\n- Đầu cắt amidal: 2 Cái\r\n- Bộ tài liệu hướng dẫn sử dụng tiếng Việt và tiếng Anh 1 Bộ",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 323000000,
+      "amount": 323000000,
+      "contractorCode": "vn2900326174",
+      "winnerNames": [
+        "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN"
+      ],
+      "lotNo": "",
+      "decisionNo": "777/QĐ-BVĐL",
+      "decisionDate": "2026-08-04T16:04:00",
+      "resultPublishedDate": "2026-08-04T16:05:59"
+    },
+    {
+      "id": "7b0200c3-724d-44b9-b1a5-77b598f464b6",
+      "name": "Bộ khoan cưa xương",
+      "model": "RJ-MP (NM500)",
+      "brand": "Wuhu Ruijin Medical Instrument & Device Co.,Ltd",
+      "manufacturer": "Wuhu Ruijin Medical Instrument & Device Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thân máy dùng pin: 1 cái\r\n- Bộ sạc pin: 1 bộ\r\n- Pin: 2 cái\r\n- Vòng khử trùng: 2 cái\r\n- Vặn ngàm: 1 cái\r\n- Hộp đựng: 1 cái\r\n- Đầu lắp lưỡi cưa xương: 1 cái\r\n- Lưỡi cưa các cỡ đi kèm: 5 cái\r\n- Đầu lắp mũi khoan xương: 1 cái\r\n- Mũi khoan các cỡ đi kèm: 5 cái",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 78300000,
+      "amount": 78300000,
+      "contractorCode": "vn2900326174",
+      "winnerNames": [
+        "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN"
+      ],
+      "lotNo": "",
+      "decisionNo": "777/QĐ-BVĐL",
+      "decisionDate": "2026-08-04T16:04:00",
+      "resultPublishedDate": "2026-08-04T16:05:59"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,5 +173,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:01:50.322Z"
+  "fetchedAt": "2026-09-20T19:29:05.068Z"
 }

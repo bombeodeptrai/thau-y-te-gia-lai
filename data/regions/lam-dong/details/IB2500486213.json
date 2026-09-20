@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "af273d72-5f42-4581-acfc-897689f57fff",
+      "contractorCode": "vn0105660557",
+      "taxCode": "0105660557",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ Y TẾ HELIX",
+      "status": "won",
+      "lotNo": "BP2500607788",
+      "lotName": "Mua sắm máy siêu âm A-B",
+      "bidPrice": 870000000,
+      "finalPrice": 819540000,
+      "winningPrice": 819540000,
+      "reason": "",
+      "submittedAt": "2025-11-27T10:27:17.779",
+      "models": []
+    },
+    {
+      "id": "8a626ab9-8fde-48df-987e-4583fa46ddaa",
+      "contractorCode": "vn0109335893",
+      "taxCode": "0109335893",
+      "contractorName": "CÔNG TY TNHH DỊCH VỤ THƯƠNG MẠI VÀ KỸ THUẬT NHA",
+      "status": "lost",
+      "lotNo": "BP2500607788",
+      "lotName": "Mua sắm máy siêu âm A-B",
+      "bidPrice": 830000000,
+      "finalPrice": 830000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng thứ hai",
+      "submittedAt": "2025-11-27T10:27:17.779",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "1ddafca1-a441-4956-90e4-0345b6e139e1",
+      "name": "Máy siêu âm A-B",
+      "model": "Vupad A/B",
+      "brand": "VUPAD",
+      "manufacturer": "Sonomed Inc",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Máy chính siêu âm: 01 cái\nMáy tính (tích hợp với máy chính): 01 cái\nĐế đỡ đầu dò: 01 cái\nĐầu dò A 10MHz : 01 cái\nĐầu dò B 20MHz : 01 cái\nMàn hình hiển thị (tích hợp với máy chính): 01 cái\nChuột + bàn phím không dây: 01 bộ (Mua tại Việt Nam)\nBàn đạp điều khiển: 01 cái\nMáy in màu: 01 cái (Mua tại Việt Nam)\nBộ cốc nhúng siêu âm: 01 bộ\nBộ lưu điện (UPS) Santak offline 2KVA (mua tại Việt Nam)\nXe đẩy inox 2 tầng có hộc: 01 Cái (mua tại Việt Nam)\nTài liệu hướng dẫn sử dụng tiếng Anh + tiếng Việt: 01 bộ\nBản quyền phần mềm Dicom: 01 bộ",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 870000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ Y TẾ HELIX"
+      ],
+      "decisionNo": "389/QĐ-BVBT",
+      "decisionDate": "2025-11-27T23:59:59",
+      "resultPublishedDate": "2025-11-27T10:27:22"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "01b05e57-3599-4f1a-beee-6a748b30c46d",
+        "lotNo": "BP2500607788",
+        "name": "Mua sắm máy siêu âm A-B",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 830000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm máy siêu âm nhằm duy trì hoạt động thường xuyên của đơn vị",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:42:52.231Z"
+}

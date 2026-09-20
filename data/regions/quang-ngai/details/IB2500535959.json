@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "89656b99-2e7a-4c4f-910a-8cee97e1db50",
+      "contractorCode": "vn0107705972",
+      "taxCode": "0107705972",
+      "contractorName": "CÔNG TY TNHH MEDITEX VIỆT NAM",
+      "status": "won",
+      "lotNo": "BP2500764511",
+      "lotName": "Mua sắm máy phẫu thuật Phaco",
+      "bidPrice": 1418000000,
+      "finalPrice": 1418000000,
+      "winningPrice": 1418000000,
+      "reason": "",
+      "submittedAt": "2025-12-12T15:39:38.16",
+      "models": []
+    },
+    {
+      "id": "65bdb533-0f66-45aa-97cb-9babae004cb8",
+      "contractorCode": "vn0202164480",
+      "taxCode": "0202164480",
+      "contractorName": "CÔNG TY TNHH VISIONARY MEDICAL",
+      "status": "lost",
+      "lotNo": "BP2500764511",
+      "lotName": "Mua sắm máy phẫu thuật Phaco",
+      "bidPrice": 1300000000,
+      "finalPrice": 1300000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không đạt yêu cầu về kỹ thuật",
+      "submittedAt": "2025-12-12T15:39:38.16",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "7d45765d-d83f-4bb1-9798-8f3f60115ff4",
+      "name": "Máy phẫu thuật phaco",
+      "model": "COMPACT INTUITIV System",
+      "brand": "Johnson&Johnson Surgical Vision, Inc.",
+      "manufacturer": "AMO Manufacturing USA, LLC",
+      "origin": "Mỹ",
+      "manufactureYear": "Từ năm 2024 trở về sau",
+      "specification": "Chi tiết theo Bảng đáp ứng kỹ thuật hàng hóa thuộc E-HSDT",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 1418000000,
+      "winnerNames": [
+        "CÔNG TY TNHH MEDITEX VIỆT NAM"
+      ],
+      "decisionNo": "1036/QĐ/BVĐKT2",
+      "decisionDate": "2025-12-12T23:59:59",
+      "resultPublishedDate": "2025-12-12T15:39:51"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "e0c59c80-957c-4ae1-b2ef-a9dda23f8a29",
+        "lotNo": "BP2500764511",
+        "name": "Mua sắm máy phẫu thuật Phaco",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 1450000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm máy phẫu thuật Phaco",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:36:56.864Z"
+}

@@ -1,25 +1,79 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "7e323a33-14d4-45f0-a3e4-854fdcc4fde8",
+      "id": "d2818679-722e-4e0f-906d-f941ae65a3c9",
       "contractorCode": "vn0101174429",
-      "taxCode": "",
+      "taxCode": "0101174429",
       "contractorName": "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI TRẦN LÊ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600451746",
       "lotName": "01.MS: Mua sắm thiết bị y tế đợt 2 năm 2026",
       "bidPrice": 4820600000,
       "finalPrice": 4820600000,
-      "winningPrice": 0,
+      "winningPrice": 4820600000,
       "reason": "",
-      "submittedAt": "2026-07-13T10:55:04.282",
+      "submittedAt": "2026-08-05T16:56:18.964",
+      "models": []
+    },
+    {
+      "id": "26a79730-023d-4170-9401-dee261319eaf",
+      "contractorCode": "vn0108317073",
+      "taxCode": "0108317073",
+      "contractorName": "CÔNG TY CỔ PHẦN HỢP TÁC QUỐC TẾ VIỆT - HÀN",
+      "status": "won",
+      "lotNo": "BP2600451746",
+      "lotName": "01.MS: Mua sắm thiết bị y tế đợt 2 năm 2026",
+      "bidPrice": 4820600000,
+      "finalPrice": 4820600000,
+      "winningPrice": 4820600000,
+      "reason": "",
+      "submittedAt": "2026-08-05T16:56:18.964",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "84ac376a-155d-4c5a-aa02-a1befdbca3a1",
+      "name": "Hệ thống nội soi dạ dày –đại tràng video có chức năng hỗ trợ chẩn đoán ung thư sớm",
+      "model": "Ký mã hiệu/Model máy chính: CV-170",
+      "brand": "OLYMPUS",
+      "manufacturer": "Hãng sản xuất máy chính: Shirakawa Olympus Co.,Ltd ; Hãng-Nước chủ sở hữu máy chính: Olympus Medical Systems Corp - Nhật Bản",
+      "origin": "Xuất xứ máy chính: Nhật Bản",
+      "manufactureYear": "2025 trở đi",
+      "specification": "Chi tiết theo Bảng đáp ứng kỹ thuật",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 2675000000,
+      "winnerNames": [
+        "LIÊN DANH TRẦN LÊ – VIỆT HÀN"
+      ],
+      "decisionNo": "679/QĐ-TTYT",
+      "decisionDate": "2026-08-05T23:59:59",
+      "resultPublishedDate": "2026-08-05T16:56:28"
+    },
+    {
+      "id": "f4d77d89-590f-4547-94bc-5aefa7a67d71",
+      "name": "Máy X-quang kỹ thuật số chụp tổng quát",
+      "model": "Ký mã hiệu/Model: Ecoview 9 Plus",
+      "brand": "Ecoview 9 Plus",
+      "manufacturer": "Ecoray Co.,Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở đi",
+      "specification": "Chi tiết theo Bảng đáp ứng kỹ thuật",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 2145600000,
+      "winnerNames": [
+        "LIÊN DANH TRẦN LÊ – VIỆT HÀN"
+      ],
+      "decisionNo": "679/QĐ-TTYT",
+      "decisionDate": "2026-08-05T23:59:59",
+      "resultPublishedDate": "2026-08-05T16:56:28"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +99,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:03:29.042Z"
+  "fetchedAt": "2026-09-20T19:31:26.771Z"
 }

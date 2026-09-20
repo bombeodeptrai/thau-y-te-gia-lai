@@ -1,40 +1,132 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 4,
   "bidders": [
     {
-      "id": "ca4a3268-1c70-4f12-9347-a766c2bc8cc4",
+      "id": "9975668d-9949-4f02-b998-6ee4e3a4f2ea",
       "contractorCode": "vn0106283950",
-      "taxCode": "",
+      "taxCode": "0106283950",
       "contractorName": "CÔNG TY TNHH PHÁT TRIỂN KỸ THUẬT Y TẾ ĐÔNG ĐÔ",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600399492",
       "lotName": "Gói thầu MS-04: Mua sắm, lắp đặt trang thiết bị y tế",
       "bidPrice": 4933000000,
       "finalPrice": 4933000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-10T09:36:24.789",
+      "reason": "Không đáp ứng yêu cầu về kỹ thuật",
+      "submittedAt": "2026-08-18T10:21:30.436",
       "models": []
     },
     {
-      "id": "59634c88-ea85-495a-93e4-176557a33c6d",
+      "id": "314ee403-210a-480f-bad0-43e81d161786",
       "contractorCode": "vn0110511568",
-      "taxCode": "",
+      "taxCode": "0110511568",
       "contractorName": "CÔNG TY TNHH XUẤT NHẬP KHẨU CÔNG NGHỆ CAO VẠN XUÂN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600399492",
       "lotName": "Gói thầu MS-04: Mua sắm, lắp đặt trang thiết bị y tế",
       "bidPrice": 4929000000,
       "finalPrice": 4929000000,
-      "winningPrice": 0,
+      "winningPrice": 4929000000,
       "reason": "",
-      "submittedAt": "2026-07-10T09:36:25.782",
+      "submittedAt": "2026-08-18T10:21:30.436",
+      "models": []
+    },
+    {
+      "id": "a934389d-c54d-481f-9407-18da15fda50d",
+      "contractorCode": "vn0108599011",
+      "taxCode": "0108599011",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ DUY TIÊN - HÀ NAM",
+      "status": "won",
+      "lotNo": "BP2600399492",
+      "lotName": "Gói thầu MS-04: Mua sắm, lắp đặt trang thiết bị y tế",
+      "bidPrice": 4929000000,
+      "finalPrice": 4929000000,
+      "winningPrice": 4929000000,
+      "reason": "",
+      "submittedAt": "2026-08-18T10:21:30.436",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "7ac1184b-256b-46b8-a784-407c0cc72685",
+      "name": "Hệ thống X-quang kỹ thuật số 1 tấm phẳng",
+      "model": "MAC",
+      "brand": "General Medical Merate S.P.A",
+      "manufacturer": "General Medical Merate S.P.A",
+      "origin": "Ý",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Cấu hình và đặc tính kỹ thuật được mô tả chi tiết trong bảng đáp ứng tính năng kỹ thuật của E-HSDT",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 2168000000,
+      "winnerNames": [
+        "Liên danh Vạn Xuân - Duy Tiên Hà Nam"
+      ],
+      "decisionNo": "2538/QĐ-SĐ",
+      "decisionDate": "2026-08-18T23:59:59",
+      "resultPublishedDate": "2026-08-18T10:21:41"
+    },
+    {
+      "id": "ba3113c3-6166-4257-ad2b-7242f64d8cd2",
+      "name": "Máy siêu âm màu 4D với đầu dò khối 4D kèm phần mềm (03 đầu dò)",
+      "model": "Versana Balance",
+      "brand": "GE Healthcare",
+      "manufacturer": "GE Medical Systems (China) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Cấu hình và đặc tính kỹ thuật được mô tả chi tiết trong bảng đáp ứng tính năng kỹ thuật của E-HSDT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 1375000000,
+      "winnerNames": [
+        "Liên danh Vạn Xuân - Duy Tiên Hà Nam"
+      ],
+      "decisionNo": "2538/QĐ-SĐ",
+      "decisionDate": "2026-08-18T23:59:59",
+      "resultPublishedDate": "2026-08-18T10:21:41"
+    },
+    {
+      "id": "8bf33c9d-ab88-41ff-9e3a-bd065fd43346",
+      "name": "Máy phân tích sinh hóa tự động",
+      "model": "Clinical Chemistry Analyzer CA-270",
+      "brand": "Furuno Electric Co., Ltd.",
+      "manufacturer": "Furuno Electric Co., Ltd.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Cấu hình và đặc tính kỹ thuật được mô tả chi tiết trong bảng đáp ứng tính năng kỹ thuật của E-HSDT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 1100000000,
+      "winnerNames": [
+        "Liên danh Vạn Xuân - Duy Tiên Hà Nam"
+      ],
+      "decisionNo": "2538/QĐ-SĐ",
+      "decisionDate": "2026-08-18T23:59:59",
+      "resultPublishedDate": "2026-08-18T10:21:41"
+    },
+    {
+      "id": "8641e809-d421-4d02-a1f0-65a295a08f8d",
+      "name": "Máy phân tích huyết học tự động 3 thành phần bạch cầu",
+      "model": "MEK - 1301",
+      "brand": "Nihon Kohden",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Cấu hình và đặc tính kỹ thuật được mô tả chi tiết trong bảng đáp ứng tính năng kỹ thuật của E-HSDT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 286000000,
+      "winnerNames": [
+        "Liên danh Vạn Xuân - Duy Tiên Hà Nam"
+      ],
+      "decisionNo": "2538/QĐ-SĐ",
+      "decisionDate": "2026-08-18T23:59:59",
+      "resultPublishedDate": "2026-08-18T10:21:41"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +151,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:07:30.413Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-20T19:37:06.134Z"
 }

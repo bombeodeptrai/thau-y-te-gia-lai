@@ -1,9 +1,128 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "e477940d-76af-4f16-a27e-0ef09fe7c9f6",
+      "contractorCode": "vn0101877171",
+      "taxCode": "0101877171",
+      "contractorName": "CÔNG TY TNHH KỸ THUẬT THANH HÀ",
+      "status": "won",
+      "lotNo": "PP2600305112",
+      "lotName": "Hóa chất dung dịch dùng để làm sạch trên hệ thống máy đông máu tự động",
+      "bidPrice": 55440000,
+      "finalPrice": 55440000,
+      "winningPrice": 55440000,
+      "reason": "",
+      "submittedAt": "2026-08-04T12:08:49.722",
+      "models": [
+        "0009831700"
+      ]
+    },
+    {
+      "id": "452ab066-2acb-4e76-a57c-52b9fd956a0f",
+      "contractorCode": "vn2900414568",
+      "taxCode": "2900414568",
+      "contractorName": "CÔNG TY CP DƯỢC PHẨM VÀ THIẾT BỊ Y TẾ ĐÔNG ÂU",
+      "status": "won",
+      "lotNo": "PP2600305113",
+      "lotName": "Thẻ phân tích khí máu",
+      "bidPrice": 427770000,
+      "finalPrice": 427770000,
+      "winningPrice": 427770000,
+      "reason": "",
+      "submittedAt": "2026-08-04T12:08:49.722",
+      "models": [
+        "10736515"
+      ]
+    },
+    {
+      "id": "abbf1c48-a43a-4479-af5d-157b38741baa",
+      "contractorCode": "vn0100276097",
+      "taxCode": "0100276097",
+      "contractorName": "Công ty TNHH Dược Phẩm Trí Hùng",
+      "status": "won",
+      "lotNo": "PP2600305114",
+      "lotName": "Dao siêu âm mổ nội soi",
+      "bidPrice": 544813500,
+      "finalPrice": 544813500,
+      "winningPrice": 544813500,
+      "reason": "",
+      "submittedAt": "2026-08-04T12:08:49.722",
+      "models": [
+        "HAR36"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "cb64e124-d630-431b-a594-b3e82d7ea9c1",
+      "name": "Dao siêu âm mổ nội soi",
+      "model": "HAR36",
+      "brand": "Tay dao siêu âm HARMONIC ACE Laparoscopic Shears + Adaptive Tissue Technology",
+      "manufacturer": "Ethicon Endo-Surgery S.A. de C.V. Planta II",
+      "origin": "Mexico",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dao siêu âm nội soi HARMONIC ACE®+, đường kính cán 5mm, chiều dài cán 36cm, có công nghệ thích ứng mô. Chiều dài hàm dao 15mm, độ mở hàm 10mm, kết hợp với dây dao mổ nội soi HP054 và máy phát chính GEN04 & GEN11\nXuất xứ: Mexico",
+      "unit": "Cái",
+      "quantity": 30,
+      "unitPrice": 18160450,
+      "amount": 544813500,
+      "contractorCode": "vn0100276097",
+      "winnerNames": [
+        "Công ty TNHH Dược Phẩm Trí Hùng"
+      ],
+      "lotNo": "",
+      "decisionNo": "501/QĐ-BVNT",
+      "decisionDate": "2026-08-04T12:06:51",
+      "resultPublishedDate": "2026-08-04T12:08:54"
+    },
+    {
+      "id": "663c4e2a-58f7-49af-b6b2-24657f284d91",
+      "name": "Thẻ phân tích khí máu",
+      "model": "10736515",
+      "brand": "Epocal Inc.",
+      "manufacturer": "Epocal Inc.",
+      "origin": "Canada",
+      "manufactureYear": "Từ năm 2026",
+      "specification": "Dùng tương thích với máy phân tích máu EPOC của bệnh viện để định lượng các chỉ số khí máu - điện giải - chuyển hóa gồm: \n- Khí máu: PH, PCO2, PO2, TCO2\n- Điện giải: Na+, K+, Cl-, Ca++\n-Chất chuyển hóa: Hematocrit (Hct), Creatinine, Lactat, BUN, Urea, Glucose\nThông số tính toán: cHCO3-, cTCO2, độ kiềm dư BE, độ bão hòa oxy cSO2, Huyết cầu tố cHgb\n- Loại mẫu: động mạch, tĩnh mạch, mao mạch",
+      "unit": "Test",
+      "quantity": 2000,
+      "unitPrice": 213885,
+      "amount": 427770000,
+      "contractorCode": "vn2900414568",
+      "winnerNames": [
+        "CÔNG TY CP DƯỢC PHẨM VÀ THIẾT BỊ Y TẾ ĐÔNG ÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "501/QĐ-BVNT",
+      "decisionDate": "2026-08-04T12:06:51",
+      "resultPublishedDate": "2026-08-04T12:08:54"
+    },
+    {
+      "id": "ebcf2e90-298a-4d2e-999e-7aae2479bdfc",
+      "name": "Hóa chất dung dịch dùng để làm sạch trên hệ thống máy đông máu tự động",
+      "model": "0009831700",
+      "brand": "HemosIL Cleaning solution",
+      "manufacturer": "Instrumentation Laboratory Company, Mỹ",
+      "origin": "Mỹ",
+      "manufactureYear": "Năm 2025 trở đi",
+      "specification": "Hóa chất dung dịch dùng để làm sạch trên hệ thống máy đông máu tự động ACL Top 300. Thành phần ít nhất bao gồm: acid hydrochloric.\nXuất xứ: G7 hoặc Châu Âu",
+      "unit": "Ml",
+      "quantity": 12000,
+      "unitPrice": 4620,
+      "amount": 55440000,
+      "contractorCode": "vn0101877171",
+      "winnerNames": [
+        "CÔNG TY TNHH KỸ THUẬT THANH HÀ"
+      ],
+      "lotNo": "",
+      "decisionNo": "501/QĐ-BVNT",
+      "decisionDate": "2026-08-04T12:06:51",
+      "resultPublishedDate": "2026-08-04T12:08:54"
+    }
+  ],
   "requirements": {
     "total": 7,
     "items": [
@@ -251,5 +370,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:01:51.444Z"
+  "fetchedAt": "2026-09-20T19:29:05.934Z"
 }
