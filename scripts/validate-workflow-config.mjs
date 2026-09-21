@@ -147,6 +147,11 @@ if (!rapidScan.includes('cron: "7,17,27,37,47,57 * * * *"')
   || rapidScan.includes('PAGE_SIZE: "100"')) {
   throw new Error("Luồng quét nhanh Gia Lai chưa lệch phút cao điểm, sửa định danh, tạo chi tiết hoặc còn pageSize không an toàn");
 }
+if (!rapidScan.includes("actions: write")
+  || !rapidScan.includes('workflow_id: "pages.yml"')
+  || !rapidScan.includes("Yêu cầu triển khai Pages sau khi ghi dữ liệu")) {
+  throw new Error("Luồng quét nhanh chưa triển khai Pages trực tiếp sau commit do GITHUB_TOKEN tạo");
+}
 
 const watchdog = await readFile(watchdogPath, "utf8");
 if (!watchdog.includes('cron: "2,32 * * * *"')
@@ -154,6 +159,11 @@ if (!watchdog.includes('cron: "2,32 * * * *"')
   || !watchdog.includes("ageMinutes <= 30")
   || !watchdog.includes("actions: write")) {
   throw new Error("Watchdog chưa gọi quét bù khi cron Gia Lai chậm quá 30 phút");
+}
+if (!watchdog.includes('workflow_id: "pages.yml"')
+  || !watchdog.includes("getBranch")
+  || !watchdog.includes("deployedAt >= mainAt")) {
+  throw new Error("Watchdog chưa tự triển khai lại website khi main mới hơn Pages");
 }
 if (!rapidScan.includes('RESCUE_SUMMARY_FILE: "rapid-medical-rescue-summary.json"')) {
   throw new Error("Luồng quét nhanh còn ghi đè báo cáo đối chiếu 30 ngày");
