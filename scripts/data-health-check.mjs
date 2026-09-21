@@ -26,6 +26,21 @@ const requiredGiaLaiTerms = [
 ];
 const configuredTerms = new Set(giaLai?.locationTerms || []);
 const missingGiaLaiTerms = requiredGiaLaiTerms.filter((term) => !configuredTerms.has(term));
+const tenderRows = Array.isArray(tenders.tenders) ? tenders.tenders : [];
+const mergedRegionCount = (slug) => tenderRows.filter((item) => {
+  const slugs = [
+    ...(Array.isArray(item.regionSlugs) ? item.regionSlugs : []),
+    item.regionSlug,
+  ].map((value) => String(value || "").trim()).filter(Boolean);
+  return new Set(slugs).has(slug);
+}).length;
+const regionCountMismatches = (coverage.regions || [])
+  .map((region) => ({
+    slug: region.slug,
+    expected: Number(region.tenderCount) || 0,
+    actual: mergedRegionCount(region.slug),
+  }))
+  .filter((item) => item.expected !== item.actual);
 
 const summary = {
   checkedAt: new Date().toISOString(),
@@ -41,6 +56,7 @@ const summary = {
   giaLaiProvinceCodes: giaLai?.provinceCodes || [],
   giaLaiLocationTermCount: giaLai?.locationTerms?.length || 0,
   missingGiaLaiTerms,
+  regionCountMismatches,
 };
 
 console.log(JSON.stringify(summary));
@@ -50,4 +66,9 @@ if (!giaLai?.provinceCodes?.includes("52") || !giaLai?.provinceCodes?.includes("
 }
 if (missingGiaLaiTerms.length) {
   throw new Error(`Cấu hình Gia Lai thiếu địa danh: ${missingGiaLaiTerms.join(", ")}`);
+}
+if (regionCountMismatches.length) {
+  throw new Error(`Dữ liệu hợp nhất làm mất gói theo vùng: ${regionCountMismatches
+    .map((item) => `${item.slug} ${item.actual}/${item.expected}`)
+    .join(", ")}`);
 }

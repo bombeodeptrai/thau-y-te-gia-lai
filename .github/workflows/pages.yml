@@ -47,6 +47,7 @@ jobs:
           node --test scripts/medical-scope.test.mjs
           node --test scripts/official-source.test.mjs
           node --test scripts/regional-data.test.mjs
+          node --test scripts/region-membership.test.mjs
           node --test scripts/contractor-search.test.mjs
           node --check scripts/run-region-scan.mjs
           node --check scripts/restore-legacy-gia-lai.mjs

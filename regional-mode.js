@@ -92,6 +92,17 @@
     return regionConfig.find((item) => item.slug === state.regionSlug) || null;
   }
 
+  function tenderRegionSlugs(tender) {
+    return [...new Set([
+      ...(Array.isArray(tender?.regionSlugs) ? tender.regionSlugs : []),
+      tender?.regionSlug,
+    ].map((value) => String(value || "").trim()).filter(Boolean))];
+  }
+
+  function tenderMatchesRegion(tender, regionSlug) {
+    return tenderRegionSlugs(tender).includes(regionSlug);
+  }
+
   function updatePageIdentity() {
     const region = currentRegion();
     const label = region?.shortName || region?.name || "miền Trung";
@@ -105,7 +116,7 @@
   }
 
   function regionOptionLabel(region) {
-    const count = state.tenders.filter((tender) => tender.regionSlug === region.slug).length;
+    const count = state.tenders.filter((tender) => tenderMatchesRegion(tender, region.slug)).length;
     return `${region.shortName || region.name}${count ? ` (${count})` : ""}`;
   }
 
@@ -253,7 +264,7 @@
       const values = basePeriodTenders();
       return state.regionSlug === "all"
         ? values
-        : values.filter((tender) => tender.regionSlug === state.regionSlug);
+        : values.filter((tender) => tenderMatchesRegion(tender, state.regionSlug));
     };
 
     filteredTenders = function regionalFilteredTenders() {
@@ -290,7 +301,12 @@
 
     tenderMarkup = function regionalTenderMarkup(tender) {
       const markup = baseTenderMarkup(tender);
-      const regionLabel = tender.region || regionConfig.find((item) => item.slug === tender.regionSlug)?.name;
+      const selectedRegion = state.regionSlug !== "all" && tenderMatchesRegion(tender, state.regionSlug)
+        ? regionConfig.find((item) => item.slug === state.regionSlug)
+        : null;
+      const regionLabel = selectedRegion?.name
+        || tender.region
+        || regionConfig.find((item) => item.slug === tender.regionSlug)?.name;
       if (!regionLabel) return markup;
       return markup.replace(
         '<div class="tender-meta">',

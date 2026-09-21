@@ -11,8 +11,10 @@ const oldFunction = `  function isRegional(record) {
     );
   }`;
 const newFunction = `  function isRegional(tender, record) {
-    if (tender?.regionSlug && record?.regionSlug) {
-      return tender.regionSlug === record.regionSlug;
+    const tenderRegions = [...new Set([...(tender?.regionSlugs || []), tender?.regionSlug].filter(Boolean))];
+    const recordRegions = [...new Set([...(record?.regionSlugs || []), record?.regionSlug].filter(Boolean))];
+    if (tenderRegions.length && recordRegions.length) {
+      return tenderRegions.some((regionSlug) => recordRegions.includes(regionSlug));
     }
     return /thanh hoa|nghe an|ha tinh|quang tri|quang binh|hue|da nang|quang nam|quang ngai|kon tum|gia lai|binh dinh|dak lak|phu yen|khanh hoa|ninh thuan|lam dong|binh thuan|dak nong/.test(
       normalize(\`${"${record?.location || \"\"} ${record?.investor || \"\"}"}\`),
