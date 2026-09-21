@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-21T13:02:58.393Z",
+  "rescuedAt": "2026-09-21T19:37:04.137Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 103,
+      "count": 104,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 228,
+      "count": 229,
       "error": ""
     },
     {
@@ -141,7 +141,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 19,
+      "count": 20,
       "error": ""
     },
     {
@@ -278,16 +278,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 524,
+  "candidateCount": 525,
   "acceptedCount": 18,
-  "rejectedCount": 506,
+  "rejectedCount": 507,
   "rejectedReasons": {
-    "insufficient-medical-context": 144,
+    "insufficient-medical-context": 143,
     "excluded:tu van": 138,
-    "excluded:xay dung": 118,
+    "excluded:xay dung": 120,
     "excluded:sua chua": 25,
+    "excluded:cai tao": 20,
     "excluded:xay lap": 20,
-    "excluded:cai tao": 19,
     "excluded:bao hiem": 8,
     "excluded:tham dinh": 4,
     "excluded:thuoc generic": 3,
@@ -298,14 +298,14 @@
     "excluded:bao ve": 2,
     "excluded:bao tri": 2,
     "excluded:kiem dinh": 2,
-    "excluded:may in": 2,
     "excluded:trang phuc": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:tram bien ap": 1,
     "excluded:phan bon": 1,
     "excluded:may phat dien": 1,
     "excluded:thu y": 1,
-    "excluded:bao duong": 1
+    "excluded:bao duong": 1,
+    "excluded:may in": 1
   },
   "acceptedDiagnostics": [
     {
@@ -591,6 +591,18 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600547282",
+      "name": "Toàn bộ khối lượng thi công công trình Cải tạo, sửa chữa nghĩa trang liệt sĩ Quy Nhơn",
+      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua"
+      ]
+    },
     {
       "notifyNo": "IB2600536943",
       "name": "Quản lý vận hành nhà máy xử lý nước thải Nhơn Bình, nhà máy xử lý nước thải 2A, các trạm bơm và hệ thống giếng tách, tuyến ống áp lực (từ ngày 01/10/2026 đến ngày 31/12/2026)",
@@ -1028,17 +1040,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600539805",
-      "name": "Mua sắm 05 mặt hàng thuốc Generic",
-      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:thuoc generic",
-      "matched": [
-        "thuoc generic"
-      ]
     }
   ],
   "removedManualCount": 0,
