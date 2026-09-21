@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-21T04:55:36.700Z",
+  "rescuedAt": "2026-09-21T06:07:14.925Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -635,10 +635,12 @@
       "name": "Mua sắm Hệ thống thu nhận ảnh X-quang kỹ thuật số bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
       "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
       "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
       "matched": [
         "x quang",
+        "vien sot ret",
+        "ky sinh trung con trung",
         "mua",
         "mua sam"
       ]
@@ -1392,8 +1394,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 886,
-  "afterCount": 886,
+  "beforeCount": 833,
+  "afterCount": 833,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v7"
 }

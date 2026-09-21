@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-21T04:55:02.671Z",
+  "auditedAt": "2026-09-21T06:06:24.407Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -687,13 +687,14 @@
       "name": "Mua sắm thiết bị y tế, y dụng cụ, vật tư y tế, hóa chất xét nghiệm để phục vụ công tác chuyên môn tại Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
       "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
       "accepted": true,
-      "score": 255,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
+      "score": 315,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-context-supply",
       "matched": [
         "thiet bi y te",
         "vat tu y te",
         "hoa chat xet nghiem",
         "benh vien",
+        "y dung cu",
         "hoa chat",
         "xet nghiem",
         "vat tu",
@@ -881,10 +882,12 @@
       "name": "Mua sắm Hệ thống thu nhận ảnh X-quang kỹ thuật số bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
       "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
       "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
       "matched": [
         "x quang",
+        "vien sot ret",
+        "ky sinh trung con trung",
         "mua",
         "mua sam"
       ]
@@ -1394,8 +1397,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 886,
-  "afterCount": 886,
+  "beforeCount": 833,
+  "afterCount": 833,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v6"
 }
