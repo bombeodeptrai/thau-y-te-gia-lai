@@ -1,6 +1,7 @@
 import { cp, mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { mergeTenderRegionSlugs } from "./region-membership.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = resolve(root, "data");
@@ -48,10 +49,14 @@ function mergeTender(previous, current) {
   if (!current) return previous;
   const preferred = richness(current) >= richness(previous) ? current : previous;
   const other = preferred === current ? previous : current;
+  const regionSlugs = mergeTenderRegionSlugs(other, preferred);
   return {
     ...other,
     ...preferred,
     regionSlug: preferred.regionSlug || other.regionSlug,
+    // Một TBMT có thể thực hiện tại nhiều tỉnh. Vẫn giữ regionSlug để tương
+    // thích dữ liệu cũ, nhưng không được làm mất các vùng còn lại khi khử trùng.
+    regionSlugs: regionSlugs.length > 1 ? regionSlugs : undefined,
     region: preferred.region || other.region,
     provinceCodes: [...new Set([...(other.provinceCodes || []), ...(preferred.provinceCodes || [])])],
     winnerNames: [...new Set([...(other.winnerNames || []), ...(preferred.winnerNames || [])].filter(Boolean))],
