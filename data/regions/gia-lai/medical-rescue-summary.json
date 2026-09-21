@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-21T06:07:14.925Z",
+  "rescuedAt": "2026-09-21T15:07:45.425Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -15,7 +15,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 382,
+      "count": 390,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 36,
+      "count": 37,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -99,7 +99,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -147,19 +147,19 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 55,
+      "count": 56,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 90,
+      "count": 92,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 41,
+      "count": 44,
       "error": ""
     },
     {
@@ -195,7 +195,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 9,
+      "count": 11,
       "error": ""
     },
     {
@@ -207,13 +207,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 41,
+      "count": 42,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 20,
+      "count": 22,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 13,
+      "count": 17,
       "error": ""
     },
     {
@@ -267,33 +267,33 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 979,
-  "acceptedCount": 54,
-  "rejectedCount": 925,
+  "candidateCount": 1000,
+  "acceptedCount": 53,
+  "rejectedCount": 947,
   "rejectedReasons": {
-    "insufficient-medical-context": 261,
-    "excluded:tu van": 232,
-    "excluded:xay dung": 225,
-    "excluded:xay lap": 50,
+    "insufficient-medical-context": 266,
+    "excluded:tu van": 239,
+    "excluded:xay dung": 229,
+    "excluded:xay lap": 53,
     "excluded:sua chua": 39,
-    "excluded:cai tao": 30,
+    "excluded:cai tao": 32,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 7,
+    "excluded:may tinh": 6,
+    "excluded:suat an": 6,
     "excluded:thuc pham": 6,
     "excluded:thuoc generic": 5,
-    "excluded:may tinh": 5,
-    "excluded:suat an": 5,
     "excluded:bao ve": 4,
     "excluded:bao duong": 4,
     "excluded:trang phuc": 4,
@@ -307,13 +307,13 @@
     "excluded:rac thai": 2,
     "excluded:duong day": 2,
     "excluded:may in": 2,
-    "excluded:cong nghe thong tin": 2,
     "excluded:tram bien ap": 1,
     "excluded:tin hoc": 1,
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi dien": 1,
     "excluded:thu y": 1,
+    "excluded:cong nghe thong tin": 1,
     "excluded:chat thai": 1,
     "excluded:cay xanh": 1
   },
@@ -943,6 +943,83 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600547282",
+      "name": "Toàn bộ khối lượng thi công công trình Cải tạo, sửa chữa nghĩa trang liệt sĩ Quy Nhơn",
+      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600536943",
+      "name": "Quản lý vận hành nhà máy xử lý nước thải Nhơn Bình, nhà máy xử lý nước thải 2A, các trạm bơm và hệ thống giếng tách, tuyến ống áp lực (từ ngày 01/10/2026 đến ngày 31/12/2026)",
+      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600544629",
+      "name": "Mua bản quyền phần mềm giám sát phòng, chống mã độc và phòng chống thất thoát dữ liệu cho các máy trạm kết nối hệ thống Cơ sở dữ liệu quốc gia về dân cư",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600548838",
+      "name": "Mua sắm máy tính để bàn và phần mềm (gồm 2 phần)",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may tinh",
+      "matched": [
+        "may tinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600537050",
+      "name": "Cung cấp vật tư, thiết bị, vật liệu phục vụ sửa chữa thường xuyên các hệ thống thiết bị công nghệ năm 2027",
+      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600464141",
+      "name": "Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh tại Trung tâm Y tế An Nhơn",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "chan doan"
+      ]
+    },
+    {
+      "notifyNo": "IB2600547970",
+      "name": "Mua bầu cây giống cao su (gói số 1)",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
       "notifyNo": "IB2600543380",
       "name": "26.53.HH Cách điện treo phục vụ sửa chữa lớn bổ sung",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1314,88 +1391,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600539805",
-      "name": "Mua sắm 05 mặt hàng thuốc Generic",
-      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:thuoc generic",
-      "matched": [
-        "thuoc generic"
-      ]
-    },
-    {
-      "notifyNo": "IB2600520631",
-      "name": "Mua thuốc generic gồm 12 danh mục",
-      "investor": "Bệnh Viện Phong Da Liễu Trung ương Quy Hòa",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:thuoc generic",
-      "matched": [
-        "thuoc generic"
-      ]
-    },
-    {
-      "notifyNo": "IB2600534426",
-      "name": "SCL2026-XL/33: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTA khu vực Krông Pa năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600534414",
-      "name": "SCL2026-XL/36: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTA khu vực Chư Păh năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600534423",
-      "name": "SCL2026-XL/35: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTA khu vực Ayun Pa năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600523295",
-      "name": "Trang bị hệ thống xử lý nước thải sinh hoạt tại các khu vực sản xuất trong Công ty Thủy điện Ialy.",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600536943",
-      "name": "Quản lý vận hành nhà máy xử lý nước thải Nhơn Bình, nhà máy xử lý nước thải 2A, các trạm bơm và hệ thống giếng tách, tuyến ống áp lực (từ ngày 01/10/2026 đến ngày 31/12/2026)",
-      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 833,
-  "afterCount": 833,
+  "beforeCount": 834,
+  "afterCount": 834,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v7"
 }
