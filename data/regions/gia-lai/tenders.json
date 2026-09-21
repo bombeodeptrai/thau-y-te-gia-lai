@@ -26,7 +26,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH THIẾT BỊ Y TẾ VŨ GIA PHÁT ",
@@ -115,7 +115,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY CP CHỨNG NHẬN VÀ KIỂM ĐỊNH VINACONTROL"
@@ -160,7 +160,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH TƯ VẤN VÀ XÂY DỰNG HOÀNG NGHI"
@@ -42979,7 +42979,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-09-21T12:59:44.164Z",
+  "fetchedAt": "2026-09-21T13:02:58.393Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -42987,7 +42987,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 795,
+  "detailTenderCount": 848,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
@@ -43010,6 +43010,14 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v7",
+    "lastMedicalRescueAt": "2026-09-21T13:02:58.393Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 524,
+    "lastMedicalRescueMedicalCount": 18,
+    "lastMedicalRescueNewCount": 0,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
