@@ -50,3 +50,47 @@ jobs:
               ref: "main",
             });
             core.notice(`Đã gọi quét bù vì lượt gần nhất đã cũ ${Number.isFinite(ageMinutes) ? ageMinutes.toFixed(1) : "không xác định"} phút.`);
+
+      - name: Triển khai Pages nếu main mới hơn website
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = await github.rest.repos.getBranch({ owner, repo, branch: "main" });
+            const mainSha = branch.data.commit.sha;
+            const commit = await github.rest.repos.getCommit({ owner, repo, ref: mainSha });
+            const mainAt = new Date(
+              commit.data.commit.committer?.date || commit.data.commit.author?.date || 0,
+            ).getTime();
+
+            const response = await github.rest.actions.listWorkflowRuns({
+              owner,
+              repo,
+              workflow_id: "pages.yml",
+              branch: "main",
+              per_page: 20,
+            });
+            const runs = response.data.workflow_runs || [];
+            const active = runs.find((run) =>
+              ["queued", "in_progress", "waiting", "requested", "pending"].includes(run.status));
+            if (active) {
+              core.info(`Pages #${active.id} đang ở trạng thái ${active.status}; không tạo lượt trùng.`);
+              return;
+            }
+
+            const latestSuccess = runs.find((run) => run.conclusion === "success");
+            const deployedAt = latestSuccess
+              ? new Date(latestSuccess.run_started_at || latestSuccess.created_at).getTime()
+              : 0;
+            if (deployedAt >= mainAt) {
+              core.info("Website đã được triển khai sau commit main mới nhất.");
+              return;
+            }
+
+            await github.rest.actions.createWorkflowDispatch({
+              owner,
+              repo,
+              workflow_id: "pages.yml",
+              ref: "main",
+            });
+            core.notice(`Đã gọi Pages vì commit ${mainSha.slice(0, 7)} chưa được triển khai.`);
