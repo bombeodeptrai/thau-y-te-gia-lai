@@ -125,12 +125,48 @@ for (const [notifyNo, title, investor] of [
     "Gói thầu số 1: Sửa chữa Ghế nha khoa, Máy Xquang C-Arm, Hệ thống rửa tay tự động và Tủ sấy năm 2026",
     "Trung tâm Y tế Pleiku",
   ],
+  [
+    "IB2500463852-00",
+    "Bảo trì bảo dưỡng trang thiết bị y tế",
+    "Công an tỉnh Gia Lai",
+  ],
 ]) {
   test(`nhận dịch vụ dành riêng cho thiết bị y tế: ${notifyNo}`, () => {
     const result = classifyMedicalTender({ notifyNo, bidName: [title], investorName: investor });
     assert.equal(result.accepted, true, result.reason);
     assert.equal(result.category, "Thiết bị y tế");
     assert.ok(result.reason.includes("medical-equipment-service"));
+  });
+}
+
+for (const [notifyNo, title, investor] of [
+  ["IB2600311793-00", "Gói 25. Vật tư thận niệu gồm 08 mặt hàng 08 phần (lô)", "Bệnh viện Đa khoa Gia Lai"],
+  ["IB2600313785-00", "Gói 22. Tay dao, dây dao siêu âm gồm 05 mặt hàng", "Bệnh viện Đa khoa Gia Lai"],
+  ["IB2600313356-00", "Gói 21. Khớp gối, khớp háng bán phần, toàn phần", "Bệnh viện Đa khoa Gia Lai"],
+  ["IB2600312004-00", "Gói 19. Đinh, nẹp, vít, khóa gồm 46 mặt hàng", "Bệnh viện Đa khoa Gia Lai"],
+  ["IB2600300426-00", "Mua sắm 12 Micropipet", "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai"],
+  ["IB2600264745-00", "Bộ dây truyền dịch, truyền máu", "Bệnh viện Đa khoa Gia Lai"],
+  ["IB2600239471-00", "Mua sắm 01 bình nitơ lưu trữ mẫu", "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai"],
+  ["IB2300372771-00", "Vật tư tiêu hao phục vụ nghiên cứu khoa học", "Viện Sốt rét Ký sinh trùng Côn trùng Quy Nhơn"],
+  ["IB2400210144-00", "Mua sắm vật tư tiêu hao và hoá chất tẩy rửa", "Bệnh viện Đa khoa tỉnh Gia Lai"],
+]) {
+  test(`giữ gói vật tư chuyên khoa khi quét lại: ${notifyNo}`, () => {
+    const result = classifyMedicalTender({ notifyNo, bidName: [title], investorName: investor });
+    assert.equal(result.accepted, true, result.reason);
+    assert.ok(result.reason.includes("medical-context-supply"), result.reason);
+  });
+}
+
+for (const [notifyNo, title, investor] of [
+  ["IB2600165590-00", "Vật tư tiêu hao phục vụ công tác khám sức khỏe", "Công an tỉnh Gia Lai"],
+  ["IB2500443781-00", "Mua sắm 01 Máy CT Scanner mô phỏng dùng trong xạ trị ung thư", "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai"],
+  ["IB2500326674-00", "Cung cấp bánh xe và phụ kiện Xe băng ca; Xe tiêm thuốc", "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai"],
+  ["IB2500021922-00", "Mua sắm hóa chất, vật tư tiêu hao phục vụ công tác giám định ma túy, sinh học, pháp y", "Công an tỉnh Gia Lai"],
+]) {
+  test(`nhận đúng ngữ cảnh y tế rõ ràng ngoài tên cơ sở: ${notifyNo}`, () => {
+    const result = classifyMedicalTender({ notifyNo, bidName: [title], investorName: investor });
+    assert.equal(result.accepted, true, result.reason);
+    assert.ok(result.reason.includes("explicit-medical-title"), result.reason);
   });
 }
 
@@ -181,6 +217,10 @@ for (const [title, investor] of [
   ["Mua hóa chất giặt là cho máy giặt công nghiệp", hospital],
   ["Chỉnh lý, số hóa hồ sơ lưu trữ của Đảng ủy 03 xã trước sáp nhập (xã An Nhơn Tây (cũ), xã An Phú, xã Phú Mỹ Hưng)", "Văn phòng Đảng ủy xã An Nhơn Tây"],
   ["Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh năm 2026-2029", "Trung tâm Y tế Phù Cát"],
+  ["Mua nguyên vật liệu, vật tư tiêu hao phục vụ giảng dạy ngành Công nghệ Kỹ thuật ô tô", "Trường Đại học Quy Nhơn"],
+  ["Mua sắm vật tư tiêu hao, hoá chất vận hành 06 trạm quan trắc", "Trung tâm Quan trắc tài nguyên và môi trường"],
+  ["Mua sắm vật tư tiêu hao để bảo dưỡng hệ thống thiết bị CNS", "Cảng hàng không Phù Cát"],
+  ["Mua hoá chất và vật tư tiêu hao thực hiện nhiệm vụ", "Trung tâm Thông tin Ứng dụng Khoa học và Công nghệ"],
 ]) {
   test(`loại đúng gói ngoài phạm vi: ${title}`, () => {
     const result = classifyMedicalTender({ bidName: [title], investorName: investor });

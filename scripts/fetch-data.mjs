@@ -3,6 +3,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { isMedicalTender, medicalCategory } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
+import { shouldRetainStoredTender } from "./scan-baseline.mjs";
 import { formatMuasamcongDateTime, muasamcongDateRange } from "./source-time.mjs";
 import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
 
@@ -237,13 +238,6 @@ async function fetchHistoricalFallback() {
   );
   return (await mapLimited(pairs, 3, (pair, index) =>
     fetchHistoricalPair(pair, index, pairs.length, from, to))).flat();
-}
-
-function isStoredTenderMedical(tender) {
-  return isMedicalTender({
-    bidName: [tender.name],
-    investorName: tender.investor,
-  });
 }
 
 function statusOf(item) {
@@ -1169,15 +1163,11 @@ async function main() {
   });
   const freshTenders = [...medicalUnique.values()].map(normalizeTender);
   const now = Date.now();
-  const cutoff = now - DAYS * 86_400_000;
-  const refreshedFrom = now - scanDays * 86_400_000;
   const historicalTenders = fullRefresh ? [] : (previous.tenders || [])
-    .filter((tender) => {
-      const publishedAt = new Date(tender.publicDate || 0).getTime();
-      return publishedAt >= cutoff
-        && publishedAt < refreshedFrom
-        && isStoredTenderMedical(tender);
-    })
+    // Nguồn theo mã tỉnh có thể không trả gói đa tỉnh hoặc gói chỉ gắn địa
+    // danh. Giữ mọi bản ghi hợp lệ trong 1.095 ngày rồi để bản mới ghi đè theo
+    // notifyNo; không xóa gói chỉ vì một đường tìm kiếm tạm thời bỏ sót.
+    .filter((tender) => shouldRetainStoredTender(tender, { scanDays: DAYS, now }))
     .map((tender) => ({
       ...tender,
       category: medicalCategory(tender.name),

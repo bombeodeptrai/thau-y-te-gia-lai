@@ -43,6 +43,8 @@ const EXPLICIT_MEDICAL_TITLE_TERMS = [
   "gac y te", "khau trang y te", "kit test", "test nhanh", "test ma tuy",
   "que thu ma tuy", "tui mau", "thuoc bo", "xe lan", "xe lan co bo", "nha khoa",
   "loc mau", "chay than", "dien cuc tim", "may phan tich",
+  "kham suc khoe", "giam dinh ma tuy", "phap y", "test xet nghiem",
+  "may ct scanner", "xe bang ca", "xe tiem thuoc",
 ];
 
 const MEDICAL_EQUIPMENT_SERVICE_TERMS = [
@@ -58,10 +60,23 @@ const MEDICAL_EQUIPMENT_OBJECT_TERMS = [
   "x quang", "noi soi", "ghe nha khoa",
 ];
 
+// Các gói bệnh viện thường chỉ ghi tên vật tư chuyên khoa hoặc "vật tư tiêu
+// hao" mà không lặp lại hậu tố "y tế". Chỉ dùng nhóm này khi bên mua là cơ sở
+// y tế để không kéo nhầm vật tư công nghiệp, hàng không hay giáo dục.
+const MEDICAL_CONTEXT_SUPPLY_TERMS = [
+  "vat tu tieu hao", "vat tu than nieu", "vat tu tim mach",
+  "vat tu chan thuong", "vat tu can thiep", "dinh nep vit",
+  "nep chan thuong", "khop goi", "khop hang", "dao sieu am",
+  "dau do sieu am", "truyen dich", "truyen mau", "dinh nhom mau",
+  "ampu bop bong", "que de luoi", "day garo", "micropipet",
+  "binh nito luu tru mau", "chung vi sinh", "y dung cu",
+];
+
 const MEDICAL_INVESTOR_TERMS = [
   "so y te", "benh vien", "trung tam y te", "tram y te", "phong kham", "benh xa",
   "trung tam kiem soat benh tat", "cdc", "trung tam kiem nghiem",
   "trung tam phap y", "y khoa", "y duoc", "da khoa", "chuyen khoa",
+  "vien sot ret", "ky sinh trung con trung",
 ];
 
 const LAB_SUPPLY_TERMS = [
@@ -126,13 +141,17 @@ export function classifyMedicalTender(item) {
   const medicalInvestor = matchedTerms(investor, MEDICAL_INVESTOR_TERMS);
   const equipmentService = matchedTerms(title, MEDICAL_EQUIPMENT_SERVICE_TERMS);
   const equipmentObject = matchedTerms(title, MEDICAL_EQUIPMENT_OBJECT_TERMS);
+  const contextualSupply = matchedTerms(title, MEDICAL_CONTEXT_SUPPLY_TERMS);
+  const contextualMedicalSupplies = medicalInvestor.length > 0
+    && contextualSupply.length > 0;
   const nonServiceExcluded = excluded.filter((term) => !equipmentService.includes(term));
   const medicalEquipmentService = equipmentService.length > 0
     && equipmentObject.length > 0
-    && medicalInvestor.length > 0
     && nonServiceExcluded.length === 0;
+  const contextualAllowedExcluded = contextualMedicalSupplies
+    && excluded.every((term) => term === "hoa chat tay rua");
 
-  if (excluded.length && !medicalEquipmentService) {
+  if (excluded.length && !medicalEquipmentService && !contextualAllowedExcluded) {
     return {
       accepted: false,
       category: "",
@@ -184,6 +203,10 @@ export function classifyMedicalTender(item) {
     score += 25;
     reasons.push("medical-supply-bundle");
   }
+  if (contextualMedicalSupplies) {
+    score += 60;
+    reasons.push("medical-context-supply");
+  }
   if (genericSupply.length) score += 10;
   if (clinical.length) score += 20;
 
@@ -193,7 +216,8 @@ export function classifyMedicalTender(item) {
     || (medicalInvestor.length > 0 && labSupply.length > 0 && machineUsage.length > 0)
     || (medicalInvestor.length > 0 && genericSupply.length > 0 && machineUsage.length > 0)
     || (medicalInvestor.length > 0 && genericSupply.length > 0 && clinical.length > 0)
-    || bundledMedicalSupplies;
+    || bundledMedicalSupplies
+    || contextualMedicalSupplies;
 
   return {
     accepted,
@@ -205,6 +229,7 @@ export function classifyMedicalTender(item) {
       ...medicalInvestor,
       ...equipmentService,
       ...equipmentObject,
+      ...contextualSupply,
       ...labSupply,
       ...labAnalyzer,
       ...machineUsage,

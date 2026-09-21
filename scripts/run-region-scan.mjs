@@ -2,6 +2,7 @@ import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { spawn } from "node:child_process";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { retainedOfficialTenderCount } from "./scan-baseline.mjs";
 
 const scriptsDir = dirname(fileURLToPath(import.meta.url));
 const root = resolve(scriptsDir, "..");
@@ -68,9 +69,10 @@ const existingRegionalPayload = await readJsonSafe(regionOutputPath, { tenders: 
 const topLevelPayload = slug === "gia-lai"
   ? await readJsonSafe(topLevelTenderPath, { tenders: [] })
   : { tenders: [] };
-const existingRegionalCount = officialTenderCount(existingRegionalPayload);
+const storedRegionalCount = officialTenderCount(existingRegionalPayload);
+const existingRegionalCount = retainedOfficialTenderCount(existingRegionalPayload, { scanDays });
 const legacyGiaLaiCount = slug === "gia-lai"
-  ? officialTenderCount(topLevelPayload, "gia-lai")
+  ? retainedOfficialTenderCount(topLevelPayload, { regionSlug: "gia-lai", scanDays })
   : 0;
 const baselineTenderCount = Math.max(existingRegionalCount, legacyGiaLaiCount);
 const requiredTenderCount = Math.max(minTenderCount, baselineTenderCount);
@@ -206,7 +208,8 @@ if (process.env.DRY_RUN === "1") {
 
 process.stdout.write(
   `Bắt đầu quét ${region.name}: mã ${region.provinceCodes.join(", ")}, ${scanDays} ngày, `
-  + `ngưỡng dữ liệu chính thức không giảm ${requiredTenderCount} gói, pageSize=${pageSize}.\n`,
+  + `đang giữ ${storedRegionalCount} gói; ngưỡng hợp lệ trong phạm vi không giảm `
+  + `${requiredTenderCount} gói, pageSize=${pageSize}.\n`,
 );
 
 const backup = await backupRegionData();
@@ -221,7 +224,8 @@ try {
 
   if (tenderCount < requiredTenderCount) {
     throw new Error(
-      `Quét ${region.name} chỉ có ${tenderCount} gói chính thức, thấp hơn dữ liệu đang giữ ${requiredTenderCount}`,
+      `Quét ${region.name} chỉ có ${tenderCount} gói chính thức, thấp hơn `
+      + `${requiredTenderCount} gói hợp lệ đang giữ trong phạm vi ${scanDays} ngày`,
     );
   }
   if (forceFullRefresh && coverageDays < scanDays) {
