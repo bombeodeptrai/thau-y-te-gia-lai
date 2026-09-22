@@ -36,3 +36,9 @@ export function retainedOfficialTenderCount(payload, {
     return shouldRetainStoredTender(item, { scanDays, now });
   }).length;
 }
+
+export function shouldReplaceRescueCollectionMetadata(collection, scanDays) {
+  const previousDays = Math.max(0, Number(collection?.lastMedicalRescueDays) || 0);
+  const currentDays = Math.max(0, Number(scanDays) || 0);
+  return previousDays === 0 || currentDays >= previousDays;
+}
