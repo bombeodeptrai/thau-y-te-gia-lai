@@ -2,26 +2,26 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-22T12:20:07.826Z",
+  "rescuedAt": "2026-09-22T17:06:38.207Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 106,
+      "count": 109,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 229,
+      "count": 234,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 10,
+      "count": 6,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 47,
+      "count": 48,
       "error": ""
     },
     {
@@ -278,13 +278,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 531,
+  "candidateCount": 536,
   "acceptedCount": 19,
-  "rejectedCount": 512,
+  "rejectedCount": 517,
   "rejectedReasons": {
-    "excluded:tu van": 146,
-    "insufficient-medical-context": 139,
-    "excluded:xay dung": 129,
+    "excluded:tu van": 151,
+    "insufficient-medical-context": 143,
+    "excluded:xay dung": 125,
     "excluded:sua chua": 23,
     "excluded:cai tao": 20,
     "excluded:xay lap": 17,
@@ -603,6 +603,33 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600530615",
+      "name": "Gói thầu MS-03",
+      "investor": "Binh đoàn 15",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600530233",
+      "name": "Gói thầu MS-02",
+      "investor": "Binh đoàn 15",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600530812",
+      "name": "Gói thầu MS-01",
+      "investor": "Binh đoàn 15",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600547360",
       "name": "SCL2026-XL/39: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn đường dây trung hạ áp khu vực Phù Cát năm 2026",
@@ -1013,43 +1040,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600503305",
-      "name": "SCL2027-03: Cung cấp VTTB và dịch vụ sửa chữa hệ thống rơ le bảo vệ khối tổ máy H1, H2, H3 NMTĐ Ialy",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "bao ve"
-      ]
-    },
-    {
-      "notifyNo": "IB2600541137",
-      "name": "Mua sắm máy vi tính để bàn, máy vi tính xách tay năm 2026 cho Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600538533",
-      "name": "SCL2026-XL/29: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Ia Grai năm 2026; Sửa chữa ĐZTHA phía bắc khu vực Ia Grai năm 2026 - đợt 2",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
       ]
     }
   ],
