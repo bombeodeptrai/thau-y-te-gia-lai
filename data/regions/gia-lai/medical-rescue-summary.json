@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-22T13:25:46.713Z",
+  "rescuedAt": "2026-09-22T19:45:44.463Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 243,
+      "count": 245,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 401,
+      "count": 405,
       "error": ""
     },
     {
@@ -278,12 +278,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1047,
+  "candidateCount": 1053,
   "acceptedCount": 56,
-  "rejectedCount": 991,
+  "rejectedCount": 997,
   "rejectedReasons": {
-    "insufficient-medical-context": 273,
-    "excluded:tu van": 253,
+    "insufficient-medical-context": 275,
+    "excluded:tu van": 257,
     "excluded:xay dung": 249,
     "excluded:xay lap": 53,
     "excluded:sua chua": 41,
@@ -939,6 +939,24 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600530615",
+      "name": "Gói thầu MS-03",
+      "investor": "Binh đoàn 15",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600530233",
+      "name": "Gói thầu MS-02",
+      "investor": "Binh đoàn 15",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600530812",
       "name": "Gói thầu MS-01",
       "investor": "Binh đoàn 15",
@@ -1357,31 +1375,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600503305",
-      "name": "SCL2027-03: Cung cấp VTTB và dịch vụ sửa chữa hệ thống rơ le bảo vệ khối tổ máy H1, H2, H3 NMTĐ Ialy",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "bao ve"
-      ]
-    },
-    {
-      "notifyNo": "IB2600541137",
-      "name": "Mua sắm máy vi tính để bàn, máy vi tính xách tay năm 2026 cho Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "mua",
-        "mua sam"
       ]
     }
   ],
