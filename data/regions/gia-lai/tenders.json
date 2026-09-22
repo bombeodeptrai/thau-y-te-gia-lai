@@ -1,6 +1,47 @@
 {
   "tenders": [
     {
+      "id": "723df507-7944-4a3d-a569-d61e2ec35b62",
+      "notifyId": "723df507-7944-4a3d-a569-d61e2ec35b62",
+      "bidId": "2f578423-6e78-426f-9e80-56fd9a34103f",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "CGTTRG",
+      "processApply": "LDT",
+      "stepCode": "reoffer-price-step-1",
+      "notifyNo": "IB2600550475",
+      "name": "Gói 3: Dụng cụ, vật tư tiêu hao",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "location": "Phường Quy Nhơn Bắc",
+      "closeDate": "2026-09-30T08:00:00",
+      "publicDate": "2026-09-22T14:35:32.729",
+      "price": 150462860,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=723df507-7944-4a3d-a569-d61e2ec35b62&notifyId=723df507-7944-4a3d-a569-d61e2ec35b62&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600550475&planNo=PL2600315971&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "DC2600000882",
       "notifyId": "DC2600000882",
       "bidId": "2016996a-6fd4-4746-a014-92b1144fc6ac",
@@ -71,7 +112,7 @@
       "publicDate": "2026-09-18T14:29:48.626",
       "price": 281000000,
       "category": "Thiết bị y tế",
-      "status": "open",
+      "status": "urgent",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": null,
@@ -368,7 +409,7 @@
       "publicDate": "2026-09-14T18:00:35.128",
       "price": 49500000000,
       "category": "Thiết bị y tế",
-      "status": "open",
+      "status": "urgent",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": null,
@@ -42989,7 +43030,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-09-22T05:11:10.238Z",
+  "fetchedAt": "2026-09-22T11:31:57.933Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -42997,7 +43038,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 848,
+  "detailTenderCount": 849,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
@@ -43022,11 +43063,11 @@
       "máy thở"
     ],
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v7",
-    "lastMedicalRescueAt": "2026-09-22T05:11:10.238Z",
+    "lastMedicalRescueAt": "2026-09-22T11:31:57.933Z",
     "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 522,
+    "lastMedicalRescueCandidateCount": 530,
     "lastMedicalRescueMedicalCount": 17,
-    "lastMedicalRescueNewCount": 0,
+    "lastMedicalRescueNewCount": 1,
     "lastRemovedManualTenderCount": 0,
     "lastRemovedRejectedStoredCount": 0
   }

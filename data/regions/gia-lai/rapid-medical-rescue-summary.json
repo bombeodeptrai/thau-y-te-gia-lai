@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-22T05:11:10.238Z",
+  "rescuedAt": "2026-09-22T11:31:57.933Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 103,
+      "count": 106,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 234,
+      "count": 229,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -63,13 +63,13 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 6,
+      "count": 4,
       "error": ""
     },
     {
@@ -99,7 +99,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 5,
+      "count": 10,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 17,
+      "count": 21,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 25,
+      "count": 26,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 43,
+      "count": 47,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
@@ -195,19 +195,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 5,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 2,
+      "count": 4,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 23,
+      "count": 20,
       "error": ""
     },
     {
@@ -278,36 +278,49 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 522,
+  "candidateCount": 530,
   "acceptedCount": 17,
-  "rejectedCount": 505,
+  "rejectedCount": 513,
   "rejectedReasons": {
+    "excluded:tu van": 146,
     "insufficient-medical-context": 140,
-    "excluded:tu van": 139,
-    "excluded:xay dung": 126,
-    "excluded:sua chua": 22,
+    "excluded:xay dung": 129,
+    "excluded:sua chua": 23,
     "excluded:cai tao": 20,
-    "excluded:xay lap": 18,
-    "excluded:bao hiem": 8,
+    "excluded:xay lap": 17,
+    "excluded:bao hiem": 6,
     "excluded:tham dinh": 4,
     "excluded:thuoc generic": 3,
     "excluded:suat an": 3,
+    "excluded:thuc pham": 3,
+    "excluded:may in": 2,
     "excluded:may tinh": 2,
-    "excluded:may chu": 2,
     "excluded:bao ve": 2,
     "excluded:bao tri": 2,
     "excluded:kiem dinh": 2,
     "excluded:trang phuc": 2,
     "excluded:giam sat thi cong": 2,
-    "excluded:thuc pham": 2,
     "excluded:tram bien ap": 1,
     "excluded:phan bon": 1,
-    "excluded:may phat dien": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1,
-    "excluded:may in": 1
+    "excluded:may chu": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600550475",
+      "name": "Gói 3: Dụng cụ, vật tư tiêu hao",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": true,
+      "score": 105,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "vat tu tieu hao",
+        "vat tu"
+      ]
+    },
     {
       "notifyNo": "IB2600533554",
       "name": "Dịch vụ sửa chữa 02 máy thở Servo",
@@ -465,20 +478,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600517233",
-      "name": "Gói thầu số 1: Sửa chữa Ghế nha khoa, Máy Xquang C-Arm, Hệ thống rửa tay tự động và Tủ sấy năm 2026",
-      "investor": "TRUNG TÂM Y TẾ PLEIKU",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "nha khoa",
-        "trung tam y te",
-        "sua chua",
-        "ghe nha khoa"
-      ]
-    },
-    {
       "notifyNo": "DC2600000882",
       "name": "mua sắm Máy Garo hơi tự động phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Đa Khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -576,6 +575,100 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600547360",
+      "name": "SCL2026-XL/39: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn đường dây trung hạ áp khu vực Phù Cát năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua",
+        "duong day"
+      ]
+    },
+    {
+      "notifyNo": "IB2600549533",
+      "name": "Gói thầu: Mua sắm Máy vi tính để bàn và Máy in phục vụ công tác triển khai bệnh án điện tử cho các khoa, phòng thuộc Trung tâm Y tế Hoài Nhơn",
+      "investor": "Trung tâm Y tế Hoài Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may in",
+      "matched": [
+        "may in"
+      ]
+    },
+    {
+      "notifyNo": "IB2600495135",
+      "name": "Dịch vụ tổ chức sự kiện tuyên truyền phòng chống vi phạm pháp luật trong trường học năm 2026",
+      "investor": "Cục Cảnh sát điều tra tội phạm về trật tự xã hội",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600550514",
+      "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": false,
+      "score": 75,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "hoa chat",
+        "sinh pham"
+      ]
+    },
+    {
+      "notifyNo": "IB2600550501",
+      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": false,
+      "score": 75,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "hoa chat",
+        "sinh pham"
+      ]
+    },
+    {
+      "notifyNo": "IB2600549798",
+      "name": "Gói thầu số 04: Sửa chữa lớn tàu Cảng vụ Hàng hải Quy Nhơn 01",
+      "investor": "CẢNG VỤ HÀNG HẢI QUY NHƠN",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600544718",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ban Quản lý xã Phù Mỹ Nam",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600543927",
+      "name": "Cung cấp và lắp đặt thiết bị",
+      "investor": "Trường Đại học Sư phạm Thành phố Hồ Chí Minh",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
     {
       "notifyNo": "IB2600548641",
       "name": "Gói 36/SX2026/PTC3: Quan trắc môi trường lao động năm 2026 của Công ty Truyền tải điện 3",
@@ -933,104 +1026,12 @@
         "sua chua",
         "bao ve"
       ]
-    },
-    {
-      "notifyNo": "IB2600541137",
-      "name": "Mua sắm máy vi tính để bàn, máy vi tính xách tay năm 2026 cho Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600538533",
-      "name": "SCL2026-XL/29: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Ia Grai năm 2026; Sửa chữa ĐZTHA phía bắc khu vực Ia Grai năm 2026 - đợt 2",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600532097",
-      "name": "SCL2026-XL/26: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn Đường dây Trung hạ áp và TBA khu vực Quy Nhơn năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua",
-        "duong day"
-      ]
-    },
-    {
-      "notifyNo": "IB2600469453",
-      "name": "Toàn bộ vật tư cấp nước của dự án (giai đoạn 1)",
-      "investor": "CÔNG TY CỔ PHẦN CẤP THOÁT NƯỚC BÌNH ĐỊNH",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600479485",
-      "name": "SCL2027-02: Mua sắm Servomotor điều chỉnh cánh hướng tổ máy H1 NMTĐ Pleikrông",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600495135",
-      "name": "Dịch vụ tổ chức sự kiện tuyên truyền phòng chống vi phạm pháp luật trong trường học năm 2026",
-      "investor": "Cục Cảnh sát điều tra tội phạm về trật tự xã hội",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600535600",
-      "name": "Thi công xây dựng",
-      "investor": "Phòng Kinh tế xã Đak Rong",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600538039",
-      "name": "26.46.HH Cáp hạ thế các loại phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 834,
-  "afterCount": 834,
-  "newCount": 0,
+  "afterCount": 835,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v7"
 }
