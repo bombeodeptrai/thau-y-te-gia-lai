@@ -1,55 +1,80 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "d9ed35e6-ab39-4ee4-89e0-533a37c5e71c",
+      "id": "95e8d4fa-730e-4d5a-aa3d-477e5d319d29",
       "contractorCode": "vn0313421694",
-      "taxCode": "",
+      "taxCode": "0313421694",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM SEN VÀNG",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600489901",
-      "lotName": "Mua thuốc, vật tư y tế cho phạm nhân và cán bộ chiến sĩ Trại giam Gia Trung 5 tháng cuối năm 2026",
+      "lotName": "Theo yêu cầu quy định tại Chương V của E-HSMT",
       "bidPrice": 1168423380,
       "finalPrice": 1168423380,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-17T10:05:26.766",
+      "reason": "Xếp hạng I và không đạt về tính hợp lệ, năng lực, kinh nghiệm và kỹ thuật",
+      "submittedAt": "2026-07-27T16:19:26.216",
       "models": []
     },
     {
-      "id": "8a1bd06b-ee78-478c-a1d1-329abcf89781",
-      "contractorCode": "vn0318702113",
-      "taxCode": "",
-      "contractorName": "Công ty Trách nhiệm hữu hạn Dược - Y tế Phúc Tâm An",
-      "status": "participating",
+      "id": "57b1fe0c-6545-483f-a38d-371078aa00eb",
+      "contractorCode": "vn0311871916",
+      "taxCode": "0311871916",
+      "contractorName": "CÔNG TY TNHH DƯỢC THANH THANH",
+      "status": "won",
       "lotNo": "BP2600489901",
-      "lotName": "Mua thuốc, vật tư y tế cho phạm nhân và cán bộ chiến sĩ Trại giam Gia Trung 5 tháng cuối năm 2026",
+      "lotName": "Theo yêu cầu quy định tại Chương V của E-HSMT",
+      "bidPrice": 1189272780,
+      "finalPrice": 1189272780,
+      "winningPrice": 1189272780,
+      "reason": "",
+      "submittedAt": "2026-07-27T16:19:26.216",
+      "models": [
+        "THEO MẪU 05: BẢNG GIÁ DỰ THẦU"
+      ]
+    },
+    {
+      "id": "d423046e-9f62-4eac-9a77-ad7320c4cd0c",
+      "contractorCode": "vn0318702113",
+      "taxCode": "0318702113",
+      "contractorName": "Công ty Trách nhiệm hữu hạn Dược - Y tế Phúc Tâm An",
+      "status": "lost",
+      "lotNo": "BP2600489901",
+      "lotName": "Theo yêu cầu quy định tại Chương V của E-HSMT",
       "bidPrice": 1242470780,
       "finalPrice": 1242470780,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-17T10:05:27.125",
-      "models": []
-    },
-    {
-      "id": "4d4dd66c-22cd-4b3d-bd2f-782f2863a243",
-      "contractorCode": "vn0311871916",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH DƯỢC THANH THANH",
-      "status": "participating",
-      "lotNo": "BP2600489901",
-      "lotName": "Mua thuốc, vật tư y tế cho phạm nhân và cán bộ chiến sĩ Trại giam Gia Trung 5 tháng cuối năm 2026",
-      "bidPrice": 1189272780,
-      "finalPrice": 1189272780,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-17T10:05:27.267",
+      "reason": "Xếp hạng III và không đánh giá",
+      "submittedAt": "2026-07-27T16:19:26.216",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600489901",
+      "name": "THEO MẪU 05: BẢNG GIÁ DỰ THẦU",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "THEO MẪU 05: BẢNG GIÁ DỰ THẦU",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Theo yêu cầu quy định tại Chương V của E-HSMT",
+      "quantity": 1,
+      "unitPrice": 1189272780,
+      "amount": 1189272780,
+      "contractorCode": "vn0311871916",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC THANH THANH"
+      ],
+      "lotNo": "BP2600489901",
+      "decisionNo": "1026/QĐ-TGGT",
+      "decisionDate": "2026-07-27T23:59:59",
+      "resultPublishedDate": "2026-07-27T16:19:32"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +99,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:08:49.524Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-22T12:16:46.504Z"
 }

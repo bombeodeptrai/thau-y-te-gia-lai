@@ -1,9 +1,89 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "f5a9aa74-b483-4c7d-8634-5de8529252c7",
+      "contractorCode": "vn6001513534",
+      "taxCode": "6001513534",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ M-PROTECH",
+      "status": "won",
+      "lotNo": "PP2600365574",
+      "lotName": "Sửa chữa Máy xét nghiệm huyết học XN-550",
+      "bidPrice": 13000000,
+      "finalPrice": 13000000,
+      "winningPrice": 13000000,
+      "reason": "",
+      "submittedAt": "2026-09-07T14:32:15.689",
+      "models": [
+        "Sửa chữa Máy xét nghiệm huyết học XN-550"
+      ]
+    },
+    {
+      "id": "20d71a3a-a902-461f-b93d-fb68d8d06d0e",
+      "contractorCode": "vn6001837095",
+      "taxCode": "6001837095",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ BÌNH MINH MEDICAL",
+      "status": "won",
+      "lotNo": "PP2600365575",
+      "lotName": "Sửa chữa Máy xét nghiệm sinh hoá BX3010",
+      "bidPrice": 6000000,
+      "finalPrice": 6000000,
+      "winningPrice": 6000000,
+      "reason": "",
+      "submittedAt": "2026-09-07T14:32:15.689",
+      "models": [
+        "Sửa chữa Máy xét nghiệm sinh hoá BX3010"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "20267261584282",
+      "name": "Sửa chữa Máy xét nghiệm sinh hoá BX3010",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 6000000,
+      "amount": 6000000,
+      "contractorCode": "vn6001837095",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ BÌNH MINH MEDICAL"
+      ],
+      "lotNo": "",
+      "decisionNo": "299/QĐ-TTPLE",
+      "decisionDate": "2026-09-07T14:30:35",
+      "resultPublishedDate": "2026-09-07T14:32:20"
+    },
+    {
+      "id": "20267261573998",
+      "name": "Sửa chữa Máy xét nghiệm huyết học XN-550",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 13000000,
+      "amount": 13000000,
+      "contractorCode": "vn6001513534",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ M-PROTECH"
+      ],
+      "lotNo": "",
+      "decisionNo": "299/QĐ-TTPLE",
+      "decisionDate": "2026-09-07T14:30:35",
+      "resultPublishedDate": "2026-09-07T14:32:20"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -97,12 +177,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2600488061",
-    "notifyId": "20ef0bfa-c074-4696-a45f-4d92df68c543",
-    "bidId": "b95efbe5-f7b1-4427-8ebf-3dc4c549c7a1",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-15T05:01:56.087Z"
+  "fetchedAt": "2026-09-22T12:16:31.675Z"
 }

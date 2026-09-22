@@ -1,9 +1,96 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "c2db8627-781a-44b9-b20e-d7e563fe299c",
+      "contractorCode": "vn0304241487",
+      "taxCode": "0304241487",
+      "contractorName": "CÔNG TY TNHH KHẢ LỘC",
+      "status": "won",
+      "lotNo": "BP2600579663",
+      "lotName": "Mua sắm 03 Ống soi sử dụng trong phẫu thuật",
+      "bidPrice": 479398000,
+      "finalPrice": 479398000,
+      "winningPrice": 479398000,
+      "reason": "",
+      "submittedAt": "2026-08-25T08:22:52.514",
+      "models": [
+        "NPSLM.01",
+        "URSLL.01",
+        "EX6337B.01"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "994f9977-487a-4a8b-8426-a1dbd1bcdf53",
+      "name": "Ống nội soi quang học",
+      "model": "NPSLM.01",
+      "brand": "EMOS",
+      "manufacturer": "EMOS Technology GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hướng góc soi 5°;\r\nĐường kính ngoài ống soi 12 Fr;\r\nKênh làm việc 6.8 Fr, dùng với các dụng cụ có đường kính 5.0 Fr;\r\nChiều dài: 22 cm, Thị kính gập góc;\r\nBao gồm phụ kiện: Cổng dụng cụ với 01 kênh, Nắp chặn nước.",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 152250000,
+      "amount": 152250000,
+      "contractorCode": "vn0304241487",
+      "winnerNames": [
+        "CÔNG TY TNHH KHẢ LỘC"
+      ],
+      "lotNo": "",
+      "decisionNo": "2523/QĐ-BVĐKTT",
+      "decisionDate": "2026-08-25T08:19:11",
+      "resultPublishedDate": "2026-08-25T08:23:00"
+    },
+    {
+      "id": "8bfa853b-7599-460e-a5b5-4ed28280d52c",
+      "name": "Ống kính nội soi mật",
+      "model": "URSLL.01",
+      "brand": "EMOS",
+      "manufacturer": "EMOS Technology GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Cỡ 7,5-9 Fr., góc soi 5°;\r\nĐường kính ngoài ống soi 12-13,2 Fr.;\r\nKích thước vỏ ngoài: 7,5-9 | 12-13,2 Fr.\r\nKênh làm việc 6.8 Fr, dùng với các dụng cụ có đường kính 5.0 Fr;\r\nĐường kính ngoài ống soi 12-13,2 Fr.;\r\nChiều dài: 42.5 cm, Thị kính gập góc, 2 cổng tưới bên hông và 1 kênh làm việc 6.8Fr., sử dụng với dụng cụ có kích thước lên đến 5Fr",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 147000000,
+      "amount": 147000000,
+      "contractorCode": "vn0304241487",
+      "winnerNames": [
+        "CÔNG TY TNHH KHẢ LỘC"
+      ],
+      "lotNo": "",
+      "decisionNo": "2523/QĐ-BVĐKTT",
+      "decisionDate": "2026-08-25T08:19:11",
+      "resultPublishedDate": "2026-08-25T08:23:00"
+    },
+    {
+      "id": "526a35ce-f96f-4e45-bb71-ea5ef84c820d",
+      "name": "Ống soi quang học góc rộng",
+      "model": "EX6337B.01",
+      "brand": "EMOS",
+      "manufacturer": "EMOS Technology GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hướng nhìn: 30° \r\nĐường kính: 6,38 mm \r\nKênh làm việc: đường kính 3,75 mm \r\nTương thích: Storz®\r\nChiều dài làm việc 181 mm",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 180148000,
+      "amount": 180148000,
+      "contractorCode": "vn0304241487",
+      "winnerNames": [
+        "CÔNG TY TNHH KHẢ LỘC"
+      ],
+      "lotNo": "",
+      "decisionNo": "2523/QĐ-BVĐKTT",
+      "decisionDate": "2026-08-25T08:19:11",
+      "resultPublishedDate": "2026-08-25T08:23:00"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -103,12 +190,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2600407003",
-    "notifyId": "23b9c29f-e3a8-4233-9498-6b74e9215f7d",
-    "bidId": "b6f11248-f3a8-47bd-ab8b-835fd77f8070",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:33.642Z"
+  "fetchedAt": "2026-09-22T12:16:39.226Z"
 }

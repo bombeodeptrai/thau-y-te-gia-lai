@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "9d221fc2-e7ad-4df1-bc56-6be5cfdc3b09",
+      "contractorCode": "vnz000051751",
+      "taxCode": "064090003120",
+      "contractorName": "HỘ KINH DOANH LÊ ĐỨC HẬU90",
+      "status": "won",
+      "lotNo": "BP2600569581",
+      "lotName": "Mua sắm khí Oxy y tế năm 2026 của Trung tâm Y tế Ia Pa",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 30000000,
+      "reason": "",
+      "submittedAt": "2026-08-27T15:47:27.692",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "4b2d4517-a0d5-4f55-a46e-f0118985e754",
+      "name": "Khí Oxy y tế(Hơi Oxygen y tế 6m3)",
+      "model": "Khí Oxy ",
+      "brand": "Khí Oxy ",
+      "manufacturer": "LÊ ĐỨC HẬU90 ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Oxy dùng trong y tế - Bình 40 lít(6.000 lít)",
+      "unit": "Chai",
+      "quantity": 200,
+      "unitPrice": 150000,
+      "winnerNames": [
+        "HỘ KINH DOANH LÊ ĐỨC HẬU90"
+      ],
+      "decisionNo": "1209/QĐ-TTIP",
+      "decisionDate": "2026-08-03T23:59:59",
+      "resultPublishedDate": "2026-08-27T15:51:32"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2600492233",
-    "notifyId": "IB2600492233",
-    "bidId": "e5acbb63-2886-4709-85fc-da076e2884e8",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-27T09:58:30.324Z"
+  "fetchedAt": "2026-09-22T12:16:30.809Z"
 }

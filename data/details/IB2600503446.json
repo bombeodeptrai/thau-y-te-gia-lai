@@ -1,9 +1,80 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "a76e1527-9e09-42d5-933e-05203ac4146b",
+      "contractorCode": "vn0104090569",
+      "taxCode": "0104090569",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐĂNG PHÁT VN",
+      "status": "won",
+      "lotNo": "BP2600715009",
+      "lotName": "Mua sắm test ma túy 05 thành phần (Mã 17.2026)",
+      "bidPrice": 78950000,
+      "finalPrice": 78950000,
+      "winningPrice": 78950000,
+      "reason": "",
+      "submittedAt": "2026-09-21T15:06:11.795",
+      "models": [
+        "MD-U55 (MOP/COD/ HER/THC/ AMP)"
+      ]
+    },
+    {
+      "id": "d79ce69e-4be7-4563-9290-8815bb4bc1ac",
+      "contractorCode": "vn0106494327",
+      "taxCode": "0106494327",
+      "contractorName": "CÔNG TY TNHH HÓA CHẤT VÀ THIẾT BỊ Y TẾ THÀNH ĐẠT",
+      "status": "lost",
+      "lotNo": "BP2600715009",
+      "lotName": "Mua sắm test ma túy 05 thành phần (Mã 17.2026)",
+      "bidPrice": 80119700,
+      "finalPrice": 80119700,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2 trở xuống theo kết quả chào giá trực tuyến; không thực hiện đánh giá chi tiết do nhà thầu xếp hạng thứ nhất đáp ứng yêu cầu",
+      "submittedAt": "2026-09-21T15:06:11.795",
+      "models": []
+    },
+    {
+      "id": "15775a96-7088-464a-8fba-ebbcd5731b5e",
+      "contractorCode": "vn8136548817",
+      "taxCode": "010190008599",
+      "contractorName": "HỘ KINH DOANH TÊN CỬA HÀNG DỤNG CỤ Y KHOA THIÊN TRANG",
+      "status": "lost",
+      "lotNo": "BP2600715009",
+      "lotName": "Mua sắm test ma túy 05 thành phần (Mã 17.2026)",
+      "bidPrice": 79800000,
+      "finalPrice": 79800000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2 trở xuống theo kết quả chào giá trực tuyến; không thực hiện đánh giá chi tiết do nhà thầu xếp hạng thứ nhất đáp ứng yêu cầu",
+      "submittedAt": "2026-09-21T15:06:11.795",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2953aeb6-b1f8-4d5f-9a16-c0a26f99dae0",
+      "name": "Test ma túy 5 trong 1 (AMP/THC/HER/MOP/COD)",
+      "model": "MD-U55 (MOP/COD/ HER/THC/ AMP)\n",
+      "brand": "FASTEP\n",
+      "manufacturer": "Assure Tech. (Hangz hou) Co., Ltd.\n",
+      "origin": "Trung Quốc\n",
+      "manufactureYear": "2026",
+      "specification": "Mẫu phẩm: Nước tiểu; Xét nghiệm định tính đồng thời 05 loại ma túy/chất chuyển hóa; Amphetamine (AMP): ngưỡng phát hiện 300 ng/mL; Marijuana/Tetrahydrocannabinol (THC): 25 ng/mL; Heroin hoặc chất chuyển hóa 6- Monoacetylmorphine (6-MAM): 5 ng/mL; Morphine (MOR/MOP): 100 ng/mL; Codeine (COD): 100 ng/mL; Hiệu năng được đánh giá so với phương pháp GC/MS Độ nhạy của từng chất: 100%; Độ đặc hiệu của từng chất: 100%; Độ chính xác của từng chất: 100%; Thời gian đọc kết quả: Tại 5 phút; Tiêu chuẩn chất lượng: ISO 13485:2016",
+      "unit": "Test",
+      "quantity": 5000,
+      "unitPrice": 15790,
+      "amount": 78950000,
+      "contractorCode": "vn0104090569",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐĂNG PHÁT VN"
+      ],
+      "lotNo": "",
+      "decisionNo": "443/QĐ-TTYT",
+      "decisionDate": "2026-09-21T15:03:25",
+      "resultPublishedDate": "2026-09-21T15:06:17"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +129,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-21T12:59:21.347Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-22T12:16:30.491Z"
 }
