@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-22T04:54:59.074Z",
+  "auditedAt": "2026-09-22T11:42:56.024Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 401,
+      "count": 400,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 40,
+      "count": 41,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 9,
+      "count": 14,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 19,
+      "count": 23,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 56,
+      "count": 57,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 91,
+      "count": 95,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -188,19 +188,19 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 11,
+      "count": 17,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 7,
+      "count": 9,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 42,
+      "count": 44,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -271,30 +271,30 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 947,
-  "acceptedCount": 46,
-  "rejectedCount": 901,
+  "candidateCount": 969,
+  "acceptedCount": 47,
+  "rejectedCount": 922,
   "rejectedReasons": {
+    "excluded:tu van": 252,
     "insufficient-medical-context": 247,
-    "excluded:tu van": 243,
-    "excluded:xay dung": 222,
+    "excluded:xay dung": 231,
     "excluded:xay lap": 47,
-    "excluded:sua chua": 33,
+    "excluded:sua chua": 35,
     "excluded:cai tao": 32,
     "excluded:bao hiem": 11,
     "excluded:tham dinh": 7,
+    "excluded:thuc pham": 7,
     "excluded:may tinh": 6,
     "excluded:suat an": 6,
-    "excluded:thuc pham": 6,
     "excluded:trang phuc": 4,
     "excluded:bao ve": 3,
     "excluded:thuoc generic": 3,
     "excluded:phan bon": 3,
     "excluded:bao tri": 3,
+    "excluded:may in": 3,
     "excluded:quan ly du an": 3,
     "excluded:giam sat thi cong": 3,
     "excluded:kiem dinh": 2,
-    "excluded:may in": 2,
     "excluded:rac thai": 2,
     "excluded:duong day": 2,
     "excluded:bao duong": 2,
@@ -305,8 +305,7 @@
     "excluded:may chu": 1,
     "excluded:tin hoc": 1,
     "excluded:cong nghe thong tin": 1,
-    "excluded:chat thai": 1,
-    "excluded:cay xanh": 1
+    "excluded:chat thai": 1
   },
   "acceptedDiagnostics": [
     {
@@ -874,6 +873,20 @@
       ]
     },
     {
+      "notifyNo": "IB2600550475",
+      "name": "Gói 3: Dụng cụ, vật tư tiêu hao",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": true,
+      "score": 105,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "vat tu tieu hao",
+        "vat tu"
+      ]
+    },
+    {
       "notifyNo": "IB2600506798",
       "name": "Mua sắm Hệ thống thu nhận ảnh X-quang kỹ thuật số bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
       "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
@@ -917,22 +930,56 @@
         "bao duong",
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "IB2600465808",
-      "name": "Mua thiết bị y tế phục hồi chức năng năm 2026 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
-      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "thiet bi y te",
-        "benh vien",
-        "mua"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600547360",
+      "name": "SCL2026-XL/39: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn đường dây trung hạ áp khu vực Phù Cát năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua",
+        "duong day"
+      ]
+    },
+    {
+      "notifyNo": "IB2600550617",
+      "name": "Tổ chức giải Vô địch các Câu lạc bộ Muay quốc gia năm 2026 tại tỉnh Gia Lai.",
+      "investor": "Trung tâm Huấn luyện và Thi đấu thể thao Pleiku",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600008105",
+      "name": "Tư vấn thẩm định giá thiết bị, cây xanh",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh",
+        "cay xanh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600006611",
+      "name": "Tư vấn khảo sát xây dựng, lập Báo cáo nghiên cứu khả thi, lập mô hình thông tin công trình (BIM)",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "IB2600550219",
       "name": "Tư vấn quản lý dự án",
@@ -1345,59 +1392,12 @@
       "matched": [
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "IB2600547309",
-      "name": "Trồng và chăm sóc bảo vệ rừng trồng phòng hộ, sản xuất",
-      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ve",
-      "matched": [
-        "bao ve"
-      ]
-    },
-    {
-      "notifyNo": "IB2600546998",
-      "name": "Thi công xây dựng toàn bộ công trình",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600544070",
-      "name": "SCL2026-XL/40: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa đường dây trung hạ áp và TBA khu vực Hoài Ân năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua",
-        "duong day"
-      ]
-    },
-    {
-      "notifyNo": "IB2600543914",
-      "name": "SCL2026-XL/30: Thi công xây dựng và lắp đặt vật tư, thiết bị các công trình: Sửa chữa ĐZHA khu vực Tuy Phước năm 2026; Sửa chữa ĐZTHA khu vực Tuy Phước năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 834,
-  "afterCount": 834,
+  "beforeCount": 835,
+  "afterCount": 835,
   "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v6"
+  "filterStrategy": "unified-medical-scope-v7"
 }
