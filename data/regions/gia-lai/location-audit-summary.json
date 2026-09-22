@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-22T12:16:31.974Z",
+  "auditedAt": "2026-09-22T13:25:03.776Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 400,
+      "count": 401,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 95,
+      "count": 96,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 970,
+  "candidateCount": 972,
   "acceptedCount": 49,
-  "rejectedCount": 921,
+  "rejectedCount": 923,
   "rejectedReasons": {
-    "excluded:tu van": 252,
-    "insufficient-medical-context": 246,
+    "excluded:tu van": 253,
+    "insufficient-medical-context": 247,
     "excluded:xay dung": 231,
     "excluded:xay lap": 47,
     "excluded:sua chua": 35,
@@ -932,6 +932,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600012118",
+      "name": "Gói 1: cung cấp dịch vụ hội trường, ăn, nghỉ lớp tập huấn bồi dưỡng nghiệp vụ công tác Hội cho cán bộ hội nông dân tổ chức tại Quy Nhơn (hoặc địa bàn lân cận không cách trụ sở cơ quan 10km)",
+      "investor": "Hội Nông dân tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600547360",
       "name": "SCL2026-XL/39: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn đường dây trung hạ áp khu vực Phù Cát năm 2026",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1371,17 +1382,6 @@
     },
     {
       "notifyNo": "IB2600547315",
-      "name": "Tư vấn lập HSYC và đánh giá HSĐX",
-      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600547319",
       "name": "Tư vấn lập HSYC và đánh giá HSĐX",
       "investor": "Ban quản lý rừng phòng hộ Gia Lai",
       "accepted": false,
