@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-21T20:26:30.741Z",
+  "rescuedAt": "2026-09-22T04:55:40.738Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 234,
+      "count": 235,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 390,
+      "count": 401,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 37,
+      "count": 40,
       "error": ""
     },
     {
@@ -99,7 +99,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 5,
+      "count": 9,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 92,
+      "count": 91,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
@@ -231,7 +231,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 25,
+      "count": 26,
       "error": ""
     },
     {
@@ -267,7 +267,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -278,13 +278,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1000,
+  "candidateCount": 1020,
   "acceptedCount": 53,
-  "rejectedCount": 947,
+  "rejectedCount": 967,
   "rejectedReasons": {
-    "insufficient-medical-context": 266,
-    "excluded:tu van": 239,
-    "excluded:xay dung": 229,
+    "insufficient-medical-context": 271,
+    "excluded:tu van": 243,
+    "excluded:xay dung": 240,
     "excluded:xay lap": 53,
     "excluded:sua chua": 39,
     "excluded:cai tao": 32,
@@ -943,6 +943,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600548641",
+      "name": "Gói 36/SX2026/PTC3: Quan trắc môi trường lao động năm 2026 của Công ty Truyền tải điện 3",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600547282",
       "name": "Toàn bộ khối lượng thi công công trình Cải tạo, sửa chữa nghĩa trang liệt sĩ Quy Nhơn",
       "investor": "Sở Nội vụ tỉnh Gia Lai",
@@ -1382,15 +1391,6 @@
       "matched": [
         "sua chua"
       ]
-    },
-    {
-      "notifyNo": "IB2600533356",
-      "name": "Lắp đặt hệ thống điện mặt trời mái nhà tự sản xuất, tự tiêu thụ tại NMTĐ Ialy mở rộng và Văn phòng Công ty.",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
