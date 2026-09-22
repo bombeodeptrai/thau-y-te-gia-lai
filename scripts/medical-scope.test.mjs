@@ -54,6 +54,43 @@ test("không nhận gói nhiều nhóm vật tư nếu chủ đầu tư không t
   assert.equal(result.accepted, false, result.reason);
 });
 
+for (const [notifyNo, title] of [
+  ["IB2600550501-00", "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo"],
+  ["IB2600550514-00", "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài"],
+]) {
+  test(`nhận bộ hóa chất sinh phẩm labo tại viện y tế: ${notifyNo}`, () => {
+    const result = classifyMedicalTender({
+      notifyNo,
+      bidName: [title],
+      investorName: "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+    });
+
+    assert.equal(result.accepted, true, result.reason);
+    assert.equal(result.category, "Vật tư & hóa chất");
+    assert.ok(result.reason.includes("medical-laboratory-supply-bundle"));
+    assert.ok(result.matched.includes("hoa chat"));
+    assert.ok(result.matched.includes("sinh pham"));
+  });
+}
+
+test("không nhận bộ hóa chất sinh phẩm nghiên cứu của đơn vị ngoài y tế", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Hóa chất, sinh phẩm phục vụ đề tài xử lý môi trường"],
+    investorName: "Viện Nghiên cứu Tài nguyên và Môi trường",
+  });
+
+  assert.equal(result.accepted, false, result.reason);
+});
+
+test("không dùng một nhóm hóa chất chung tại viện y tế làm điều kiện đủ", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Hóa chất dùng cho đề tài"],
+    investorName: "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+  });
+
+  assert.equal(result.accepted, false, result.reason);
+});
+
 test("nhận gói test ma túy tại trung tâm y tế", () => {
   const result = classifyMedicalTender({
     notifyNo: "IB2600503446-00",

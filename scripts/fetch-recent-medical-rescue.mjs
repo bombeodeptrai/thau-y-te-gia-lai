@@ -8,6 +8,7 @@ import {
   medicalCategory,
 } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
+import { shouldReplaceRescueCollectionMetadata } from "./scan-baseline.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
@@ -406,16 +407,19 @@ const fetchedAt = new Date().toISOString();
 const collection = { ...(previous.collection || {}) };
 delete collection.manualTenderOverrideCount;
 delete collection.lastManualTenderOverrideAt;
-Object.assign(collection, {
-  rescueStrategy: `province-codes-plus-all-location-terms-${MEDICAL_SCOPE_VERSION}`,
-  lastMedicalRescueAt: fetchedAt,
-  lastMedicalRescueDays: RESCUE_DAYS,
-  lastMedicalRescueCandidateCount: sourceUnique.size,
-  lastMedicalRescueMedicalCount: accepted.size,
-  lastMedicalRescueNewCount: newCount,
-  lastRemovedManualTenderCount: removedManualCount,
-  lastRemovedRejectedStoredCount: removedRejectedStoredCount,
-});
+if (shouldReplaceRescueCollectionMetadata(collection, RESCUE_DAYS)) {
+  Object.assign(collection, {
+    filterStrategy: MEDICAL_SCOPE_VERSION,
+    rescueStrategy: `province-codes-plus-all-location-terms-${MEDICAL_SCOPE_VERSION}`,
+    lastMedicalRescueAt: fetchedAt,
+    lastMedicalRescueDays: RESCUE_DAYS,
+    lastMedicalRescueCandidateCount: sourceUnique.size,
+    lastMedicalRescueMedicalCount: accepted.size,
+    lastMedicalRescueNewCount: newCount,
+    lastRemovedManualTenderCount: removedManualCount,
+    lastRemovedRejectedStoredCount: removedRejectedStoredCount,
+  });
+}
 
 const payload = {
   ...previous,

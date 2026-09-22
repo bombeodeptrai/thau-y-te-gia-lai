@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   retainedOfficialTenderCount,
+  shouldReplaceRescueCollectionMetadata,
   shouldRetainStoredTender,
 } from "./scan-baseline.mjs";
 
@@ -80,4 +81,17 @@ test("giữ gói hợp lệ còn hạn khi lượt quét mã tỉnh tạm thời
 
   assert.equal(shouldRetainStoredTender(recentLocationOnlyTender, { now }), true);
   assert.equal(shouldRetainStoredTender(expiredTender, { now }), false);
+});
+
+test("quét nhanh không ghi đè metadata của đối chiếu 30 ngày", () => {
+  const collection = { lastMedicalRescueDays: 30 };
+
+  assert.equal(shouldReplaceRescueCollectionMetadata(collection, 7), false);
+  assert.equal(shouldReplaceRescueCollectionMetadata(collection, 14), false);
+  assert.equal(shouldReplaceRescueCollectionMetadata(collection, 30), true);
+  assert.equal(shouldReplaceRescueCollectionMetadata(collection, 1095), true);
+});
+
+test("lượt quét đầu tiên được phép tạo metadata đối chiếu", () => {
+  assert.equal(shouldReplaceRescueCollectionMetadata({}, 7), true);
 });

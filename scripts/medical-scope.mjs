@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v7";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v8";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -173,6 +173,13 @@ export function classifyMedicalTender(item) {
   const bundledMedicalSupplies = medicalInvestor.length > 0
     && goodsPurchase.length > 0
     && medicalSupplyBundle.length >= 2;
+  // Một số viện chuyên ngành đặt tên gói ngắn theo số thứ tự, ví dụ
+  // "Hóa chất, sinh phẩm dùng cho hoạt động labo/đề tài", nên tiêu đề không
+  // luôn lặp lại động từ mua sắm hoặc từ "xét nghiệm". Chỉ nhận trường hợp
+  // này khi bên mua là cơ sở y tế và tiêu đề có ít nhất hai nhóm vật tư labo
+  // độc lập, tránh kéo nhầm hóa chất/sinh phẩm của đơn vị ngoài ngành y tế.
+  const bundledMedicalLabSupplies = medicalInvestor.length > 0
+    && labSupply.length >= 2;
 
   let score = 0;
   const reasons = [];
@@ -205,6 +212,10 @@ export function classifyMedicalTender(item) {
     score += 25;
     reasons.push("medical-supply-bundle");
   }
+  if (bundledMedicalLabSupplies) {
+    score += 25;
+    reasons.push("medical-laboratory-supply-bundle");
+  }
   if (contextualMedicalSupplies) {
     score += 60;
     reasons.push("medical-context-supply");
@@ -219,6 +230,7 @@ export function classifyMedicalTender(item) {
     || (medicalInvestor.length > 0 && genericSupply.length > 0 && machineUsage.length > 0)
     || (medicalInvestor.length > 0 && genericSupply.length > 0 && clinical.length > 0)
     || bundledMedicalSupplies
+    || bundledMedicalLabSupplies
     || contextualMedicalSupplies;
 
   return {
