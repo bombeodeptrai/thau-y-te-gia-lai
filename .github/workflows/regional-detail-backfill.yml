@@ -95,9 +95,27 @@ jobs:
       - name: Đóng gói tỉnh bổ sung thành công
         if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'
         run: |
-          mkdir -p artifacts
-          date -u +'%Y-%m-%dT%H:%M:%SZ' > "data/regions/${{ matrix.region }}/last-detail-backfill-at.txt"
-          tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
+          SOURCE_DIR="data/regions/${{ matrix.region }}"
+          STAGING_ROOT="artifacts/staging"
+          STAGING_DIR="$STAGING_ROOT/$SOURCE_DIR"
+          mkdir -p "$STAGING_DIR"
+          date -u +'%Y-%m-%dT%H:%M:%SZ' > "$SOURCE_DIR/last-detail-backfill-at.txt"
+          # Không mang theo báo cáo đối chiếu/quét nhanh từ checkout cũ.
+          for file in \
+            tenders.json bidders.json equipment.json requirements.json \
+            technical-requirements.json scan-summary.json \
+            official-identity-repair-summary.json \
+            official-detail-refresh-summary.json \
+            last-detail-backfill-at.txt; do
+            if [ -f "$SOURCE_DIR/$file" ]; then
+              cp "$SOURCE_DIR/$file" "$STAGING_DIR/$file"
+            fi
+          done
+          if [ -d "$SOURCE_DIR/details" ]; then
+            cp -a "$SOURCE_DIR/details" "$STAGING_DIR/details"
+          fi
+          tar -C "$STAGING_ROOT" -czf "artifacts/${{ matrix.region }}.tgz" "$SOURCE_DIR"
+          rm -rf "$STAGING_ROOT"
 
       - name: Lưu dữ liệu bổ sung
         if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'

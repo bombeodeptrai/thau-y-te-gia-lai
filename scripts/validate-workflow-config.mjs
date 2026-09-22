@@ -130,6 +130,23 @@ if (!coverageAudit.includes("repair-official-tender-identities.mjs")
   throw new Error("Kiểm tra chéo Gia Lai chưa dùng đầy đủ nguồn thật với pageSize 10");
 }
 
+const artifactWorkflows = [fullScanPath, detailPath, quickPath, auditPath];
+for (const file of artifactWorkflows) {
+  const text = await readFile(file, "utf8");
+  if (!text.includes('STAGING_ROOT="artifacts/staging"')
+    || text.includes('tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"')) {
+    throw new Error(`${file} còn đóng gói toàn bộ thư mục vùng và có thể ghi đè dữ liệu mới của workflow khác`);
+  }
+}
+for (const reportName of [
+  "rapid-medical-rescue-summary.json",
+  "quick-medical-rescue-summary.json",
+]) {
+  if (coverageAudit.includes(reportName)) {
+    throw new Error(`Workflow đối chiếu không được đóng gói báo cáo riêng ${reportName}`);
+  }
+}
+
 const detailScan = await readFile(detailPath, "utf8");
 if (!detailScan.includes('cron: "17 */2 * * *"')
   || !detailScan.includes('DETAIL_LIMIT: "80"')
