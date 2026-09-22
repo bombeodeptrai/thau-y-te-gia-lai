@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-22T11:43:46.688Z",
+  "rescuedAt": "2026-09-22T12:03:35.035Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -278,11 +278,11 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1043,
-  "acceptedCount": 54,
-  "rejectedCount": 989,
+  "candidateCount": 1044,
+  "acceptedCount": 56,
+  "rejectedCount": 988,
   "rejectedReasons": {
-    "insufficient-medical-context": 272,
+    "insufficient-medical-context": 271,
     "excluded:tu van": 252,
     "excluded:xay dung": 249,
     "excluded:xay lap": 53,
@@ -317,6 +317,34 @@
     "excluded:chat thai": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600550514",
+      "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": true,
+      "score": 100,
+      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "hoa chat",
+        "sinh pham"
+      ]
+    },
+    {
+      "notifyNo": "IB2600550501",
+      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": true,
+      "score": 100,
+      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "hoa chat",
+        "sinh pham"
+      ]
+    },
     {
       "notifyNo": "IB2600550475",
       "name": "Gói 3: Dụng cụ, vật tư tiêu hao",
@@ -740,8 +768,8 @@
       "name": "Mua sắm vật tư, hóa chất, sinh phẩm bổ sung năm 2026 (Lần 2)",
       "investor": "TRUNG TÂM Y TẾ AN NHƠN",
       "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-supply-bundle",
+      "score": 125,
+      "reason": "medical-investor+laboratory-supply+medical-supply-bundle+medical-laboratory-supply-bundle",
       "matched": [
         "trung tam y te",
         "hoa chat",
@@ -907,37 +935,6 @@
         "benh vien",
         "da khoa"
       ]
-    },
-    {
-      "notifyNo": "IB2600477126",
-      "name": "Gói thầu số 01: Mua sắm hóa chất, vật tư y tế tiêu hao",
-      "investor": "Bệnh viện Quân y 13",
-      "accepted": true,
-      "score": 200,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+medical-supply-bundle",
-      "matched": [
-        "vat tu y te",
-        "benh vien",
-        "hoa chat",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600480537",
-      "name": "Gói thầu số 2: Mua sắm thiết bị y tế nha khoa",
-      "investor": "Trung tâm Y tế Tây Sơn",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "thiet bi y te",
-        "nha khoa",
-        "trung tam y te",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
@@ -973,34 +970,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600550514",
-      "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": 75,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
-    },
-    {
-      "notifyNo": "IB2600550501",
-      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": 75,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
     },
     {
       "notifyNo": "IB2600549798",
@@ -1392,12 +1361,37 @@
         "sua chua",
         "bao ve"
       ]
+    },
+    {
+      "notifyNo": "IB2600541137",
+      "name": "Mua sắm máy vi tính để bàn, máy vi tính xách tay năm 2026 cho Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
+      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600538533",
+      "name": "SCL2026-XL/29: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Ia Grai năm 2026; Sửa chữa ĐZTHA phía bắc khu vực Ia Grai năm 2026 - đợt 2",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 835,
-  "afterCount": 835,
+  "beforeCount": 837,
+  "afterCount": 837,
   "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v7"
+  "filterStrategy": "unified-medical-scope-v8"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-22T12:03:58.916Z",
+  "rescuedAt": "2026-09-22T11:52:35.877Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -278,12 +278,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 531,
-  "acceptedCount": 19,
-  "rejectedCount": 512,
+  "candidateCount": 530,
+  "acceptedCount": 17,
+  "rejectedCount": 513,
   "rejectedReasons": {
     "excluded:tu van": 146,
-    "insufficient-medical-context": 139,
+    "insufficient-medical-context": 140,
     "excluded:xay dung": 129,
     "excluded:sua chua": 23,
     "excluded:cai tao": 20,
@@ -307,34 +307,6 @@
     "excluded:may chu": 1
   },
   "acceptedDiagnostics": [
-    {
-      "notifyNo": "IB2600550514",
-      "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
-    },
-    {
-      "notifyNo": "IB2600550501",
-      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
-    },
     {
       "notifyNo": "IB2600550475",
       "name": "Gói 3: Dụng cụ, vật tư tiêu hao",
@@ -587,8 +559,8 @@
       "name": "Mua sắm vật tư, hóa chất, sinh phẩm chẩn đoán y tế trong khi chờ kết quả lựa chọn nhà thầu năm 2026 của Bệnh viện đa khoa cao su Chư Prông",
       "investor": "CHI NHÁNH CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG - BỆNH VIỆN ĐA KHOA CAO SU CHƯ PRÔNG",
       "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "score": 255,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
       "matched": [
         "sinh pham chan doan",
         "benh vien",
@@ -635,6 +607,34 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
+    },
+    {
+      "notifyNo": "IB2600550514",
+      "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": false,
+      "score": 75,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "hoa chat",
+        "sinh pham"
+      ]
+    },
+    {
+      "notifyNo": "IB2600550501",
+      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": false,
+      "score": 75,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "hoa chat",
+        "sinh pham"
+      ]
     },
     {
       "notifyNo": "IB2600549798",
@@ -1026,37 +1026,12 @@
         "sua chua",
         "bao ve"
       ]
-    },
-    {
-      "notifyNo": "IB2600541137",
-      "name": "Mua sắm máy vi tính để bàn, máy vi tính xách tay năm 2026 cho Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600538533",
-      "name": "SCL2026-XL/29: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Ia Grai năm 2026; Sửa chữa ĐZTHA phía bắc khu vực Ia Grai năm 2026 - đợt 2",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 835,
-  "afterCount": 837,
-  "newCount": 2,
-  "filterStrategy": "unified-medical-scope-v8"
+  "afterCount": 835,
+  "newCount": 0,
+  "filterStrategy": "unified-medical-scope-v7"
 }
