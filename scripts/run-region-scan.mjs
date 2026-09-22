@@ -3,6 +3,7 @@ import { spawn } from "node:child_process";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { retainedOfficialTenderCount } from "./scan-baseline.mjs";
+import { MEDICAL_SCOPE_VERSION } from "./medical-scope.mjs";
 
 const scriptsDir = dirname(fileURLToPath(import.meta.url));
 const root = resolve(scriptsDir, "..");
@@ -251,7 +252,7 @@ try {
     historicalLocationTermCount: region.locationTerms.length,
     historicalTitleTermCount: historicalTitleTerms.length,
     historicalFallback: enableHistoricalFallback,
-    filterStrategy: "unified-medical-scope-v6",
+    filterStrategy: MEDICAL_SCOPE_VERSION,
     rollbackOnFailure: true,
     status: "success",
   }, null, 2)}\n`);

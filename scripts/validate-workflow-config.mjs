@@ -196,6 +196,21 @@ if (!medicalRescue.includes("RESCUE_SUMMARY_FILE")
   throw new Error("Các lượt quét ngắn chưa tách báo cáo khỏi đối chiếu 30 ngày");
 }
 
+const medicalScope = await readFile("scripts/medical-scope.mjs", "utf8");
+if (!medicalScope.includes('export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v7"')) {
+  throw new Error("Bộ lọc y tế chưa công bố phiên bản chuẩn dùng chung");
+}
+for (const file of [
+  "scripts/run-region-scan.mjs",
+  "scripts/fetch-recent-location-audit.mjs",
+  "scripts/fetch-recent-medical-rescue.mjs",
+]) {
+  const text = await readFile(file, "utf8");
+  if (!text.includes("MEDICAL_SCOPE_VERSION") || /unified-medical-scope-v\d+/.test(text)) {
+    throw new Error(`${file} còn ghi cứng phiên bản bộ lọc và có thể báo cáo sai`);
+  }
+}
+
 for (const file of [
   "scripts/fetch-data.mjs",
   "scripts/fetch-recent-location-audit.mjs",

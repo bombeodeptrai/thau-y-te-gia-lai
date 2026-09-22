@@ -1,3 +1,5 @@
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v7";
+
 export function normalizeMedicalText(value) {
   return String(value ?? "")
     .normalize("NFD")

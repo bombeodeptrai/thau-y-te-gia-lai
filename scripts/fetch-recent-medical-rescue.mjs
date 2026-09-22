@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import {
   canonicalNotifyNo,
   classifyMedicalTender,
+  MEDICAL_SCOPE_VERSION,
   medicalCategory,
 } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
@@ -406,7 +407,7 @@ const collection = { ...(previous.collection || {}) };
 delete collection.manualTenderOverrideCount;
 delete collection.lastManualTenderOverrideAt;
 Object.assign(collection, {
-  rescueStrategy: "province-codes-plus-all-location-terms-unified-medical-scope-v7",
+  rescueStrategy: `province-codes-plus-all-location-terms-${MEDICAL_SCOPE_VERSION}`,
   lastMedicalRescueAt: fetchedAt,
   lastMedicalRescueDays: RESCUE_DAYS,
   lastMedicalRescueCandidateCount: sourceUnique.size,
@@ -445,7 +446,7 @@ await writeFile(resolve(regionDir, summaryFileName), `${JSON.stringify({
   beforeCount,
   afterCount: tenders.length,
   newCount,
-  filterStrategy: "unified-medical-scope-v7",
+  filterStrategy: MEDICAL_SCOPE_VERSION,
 }, null, 2)}\n`);
 
 process.stdout.write(

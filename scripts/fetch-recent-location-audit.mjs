@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import {
   canonicalNotifyNo,
   classifyMedicalTender,
+  MEDICAL_SCOPE_VERSION,
   medicalCategory,
 } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
@@ -328,7 +329,7 @@ Object.assign(collection, {
   lastLocationAuditNewCount: newCount,
   lastRemovedManualTenderCount: removedManualCount,
   lastRemovedRejectedStoredCount: removedRejectedStoredCount,
-  filterStrategy: "unified-medical-scope-v6",
+  filterStrategy: MEDICAL_SCOPE_VERSION,
 });
 
 const payload = { ...previous, tenders, fetchedAt, collection };
@@ -353,7 +354,7 @@ await writeFile(resolve(regionDir, "location-audit-summary.json"), `${JSON.strin
   beforeCount,
   afterCount: tenders.length,
   newCount,
-  filterStrategy: "unified-medical-scope-v6",
+  filterStrategy: MEDICAL_SCOPE_VERSION,
 }, null, 2)}\n`);
 
 process.stdout.write(
