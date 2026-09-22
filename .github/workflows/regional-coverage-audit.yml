@@ -86,8 +86,23 @@ jobs:
 
       - name: Đóng gói dữ liệu đã kiểm tra
         run: |
-          mkdir -p artifacts
-          tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"
+          SOURCE_DIR="data/regions/${{ matrix.region }}"
+          STAGING_ROOT="artifacts/staging"
+          STAGING_DIR="$STAGING_ROOT/$SOURCE_DIR"
+          mkdir -p "$STAGING_DIR"
+          # Chỉ chuyển kết quả do workflow đối chiếu sở hữu. Không đóng gói
+          # chi tiết, nhà thầu hay báo cáo quét nhanh từ checkout cũ.
+          for file in \
+            tenders.json \
+            official-identity-repair-summary.json \
+            location-audit-summary.json \
+            medical-rescue-summary.json; do
+            if [ -f "$SOURCE_DIR/$file" ]; then
+              cp "$SOURCE_DIR/$file" "$STAGING_DIR/$file"
+            fi
+          done
+          tar -C "$STAGING_ROOT" -czf "artifacts/${{ matrix.region }}.tgz" "$SOURCE_DIR"
+          rm -rf "$STAGING_ROOT"
 
       - name: Lưu dữ liệu đối chiếu
         uses: actions/upload-artifact@v4
