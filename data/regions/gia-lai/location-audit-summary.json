@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-23T13:39:03.686Z",
+  "auditedAt": "2026-09-23T19:41:07.856Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -14,7 +14,7 @@
     {
       "term": "Bình Định",
       "success": true,
-      "count": 33,
+      "count": 26,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 986,
+  "candidateCount": 980,
   "acceptedCount": 45,
-  "rejectedCount": 941,
+  "rejectedCount": 935,
   "rejectedReasons": {
-    "excluded:tu van": 268,
-    "excluded:xay dung": 245,
+    "excluded:tu van": 269,
     "insufficient-medical-context": 243,
+    "excluded:xay dung": 238,
     "excluded:xay lap": 41,
     "excluded:sua chua": 37,
     "excluded:cai tao": 33,
