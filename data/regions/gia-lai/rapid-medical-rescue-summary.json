@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-23T07:53:34.477Z",
+  "rescuedAt": "2026-09-23T13:46:03.744Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
@@ -15,13 +15,13 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 241,
+      "count": 239,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 6,
+      "count": 8,
       "error": ""
     },
     {
@@ -81,7 +81,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 25,
+      "count": 24,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 50,
+      "count": 46,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 27,
+      "count": 36,
       "error": ""
     },
     {
@@ -213,25 +213,25 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 2,
+      "count": 1,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 7,
+      "count": 12,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -267,7 +267,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -278,21 +278,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 538,
-  "acceptedCount": 17,
-  "rejectedCount": 521,
+  "candidateCount": 545,
+  "acceptedCount": 16,
+  "rejectedCount": 529,
   "rejectedReasons": {
-    "excluded:tu van": 156,
-    "insufficient-medical-context": 140,
-    "excluded:xay dung": 132,
-    "excluded:sua chua": 22,
-    "excluded:cai tao": 18,
+    "excluded:tu van": 162,
+    "excluded:xay dung": 140,
+    "insufficient-medical-context": 134,
+    "excluded:sua chua": 23,
+    "excluded:cai tao": 19,
     "excluded:xay lap": 17,
     "excluded:bao hiem": 5,
-    "excluded:may tinh": 4,
     "excluded:tham dinh": 4,
-    "excluded:suat an": 4,
+    "excluded:may tinh": 3,
     "excluded:thuoc generic": 3,
+    "excluded:suat an": 3,
     "excluded:thuc pham": 3,
     "excluded:may in": 2,
     "excluded:bao ve": 2,
@@ -451,23 +451,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600513914",
-      "name": "Mua sắm dụng cụ dùng cho phẫu thuật phục vụ công tác khám, chữa bệnh của Bệnh viện ĐKKV Bồng Sơn",
-      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
-      "accepted": true,
-      "score": 165,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "phau thuat",
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam",
-        "kham chua benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "DC2600000882",
       "name": "mua sắm Máy Garo hơi tự động phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Đa Khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -565,6 +548,48 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600543161",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600548604",
+      "name": "26.55.HH Vật tư phụ kiện điện phục vụ sửa chữa lớn bổ sung",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600550518",
+      "name": "26.52.HH Sứ đứng phục vụ sửa chữa lớn bổ sung",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600552432",
+      "name": "Tổ chức chương trình du lịch năm 2026 cho CBCNV",
+      "investor": "CÔNG TY CỔ PHẦN CNG VIỆT NAM",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600547516",
       "name": "Toàn bộ khối lượng xây dựng công trình",
@@ -962,47 +987,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600543107",
-      "name": "Mua sắm xe ô tô 7 chỗ 2 cầu và xe ô tô 16 chỗ",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600536234",
-      "name": "26.51.HH Cột bê tông ly tâm, móng cột khu vực phía Tây Gia Lai",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600539364",
-      "name": "26.50.HH Cột bê tông ly tâm, móng cột khu vực phía Đông Gia Lai",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600540681",
-      "name": "26.48.HH Cáp trung thế các loại đến 120mm2 phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
       ]
     }
   ],
