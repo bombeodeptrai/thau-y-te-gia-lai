@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-24T05:04:49.864Z",
+  "rescuedAt": "2026-09-24T08:40:58.103Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
@@ -15,19 +15,19 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 243,
+      "count": 244,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 31,
+      "count": 32,
       "error": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -81,7 +81,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 2,
+      "count": 4,
       "error": ""
     },
     {
@@ -99,7 +99,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 10,
+      "count": 14,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 21,
+      "count": 24,
       "error": ""
     },
     {
@@ -195,7 +195,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 13,
+      "count": 15,
       "error": ""
     },
     {
@@ -225,7 +225,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -237,7 +237,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 2,
+      "count": 4,
       "error": ""
     },
     {
@@ -278,17 +278,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 558,
+  "candidateCount": 577,
   "acceptedCount": 16,
-  "rejectedCount": 542,
+  "rejectedCount": 561,
   "rejectedReasons": {
-    "excluded:tu van": 164,
-    "excluded:xay dung": 147,
-    "insufficient-medical-context": 137,
+    "excluded:tu van": 177,
+    "excluded:xay dung": 155,
+    "insufficient-medical-context": 135,
     "excluded:sua chua": 23,
     "excluded:cai tao": 19,
-    "excluded:xay lap": 18,
-    "excluded:bao hiem": 5,
+    "excluded:xay lap": 17,
+    "excluded:bao hiem": 6,
     "excluded:tham dinh": 4,
     "excluded:may tinh": 3,
     "excluded:thuoc generic": 3,
@@ -305,6 +305,21 @@
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600552700",
+      "name": "Mua sắm 02 mặt hàng phim X-quang khô Laser",
+      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
+      "accepted": true,
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "x quang",
+        "benh vien",
+        "da khoa",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600550514",
       "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
@@ -525,28 +540,20 @@
         "trung tam y te",
         "sua chua"
       ]
-    },
-    {
-      "notifyNo": "IB2600525594",
-      "name": "Mua sắm vật tư, hóa chất, sinh phẩm chẩn đoán y tế trong khi chờ kết quả lựa chọn nhà thầu năm 2026 của Bệnh viện đa khoa cao su Chư Prông",
-      "investor": "CHI NHÁNH CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG - BỆNH VIỆN ĐA KHOA CAO SU CHƯ PRÔNG",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "sinh pham chan doan",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "sinh pham",
-        "chan doan",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600551845",
+      "name": "Xây dựng công trình",
+      "investor": "Phòng Kinh tế xã Chơ Long",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600546740",
       "name": "Gói thầu số 01: Thuê dịch vụ công nghệ số Hệ thống CSDL về giá trên địa bàn tỉnh giai đoạn 2026-2029",
@@ -973,24 +980,12 @@
         "sua chua",
         "duong day"
       ]
-    },
-    {
-      "notifyNo": "IB2600540896",
-      "name": "SCL2026-XL/37: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZTHA khu vực An Nhơn năm 2026 năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 837,
-  "afterCount": 837,
-  "newCount": 0,
+  "afterCount": 838,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v8"
 }
