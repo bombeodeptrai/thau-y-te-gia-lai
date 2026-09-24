@@ -2,32 +2,32 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-23T23:03:07.698Z",
+  "rescuedAt": "2026-09-24T05:04:49.864Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 105,
+      "count": 101,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 239,
+      "count": 243,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 27,
+      "count": 31,
       "error": ""
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
@@ -87,7 +87,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 24,
+      "count": 26,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 46,
+      "count": 44,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 36,
+      "count": 38,
       "error": ""
     },
     {
@@ -195,7 +195,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 11,
+      "count": 13,
       "error": ""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 24,
+      "count": 28,
       "error": ""
     },
     {
@@ -278,16 +278,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 546,
+  "candidateCount": 558,
   "acceptedCount": 16,
-  "rejectedCount": 530,
+  "rejectedCount": 542,
   "rejectedReasons": {
-    "excluded:tu van": 163,
-    "excluded:xay dung": 140,
-    "insufficient-medical-context": 134,
+    "excluded:tu van": 164,
+    "excluded:xay dung": 147,
+    "insufficient-medical-context": 137,
     "excluded:sua chua": 23,
     "excluded:cai tao": 19,
-    "excluded:xay lap": 17,
+    "excluded:xay lap": 18,
     "excluded:bao hiem": 5,
     "excluded:tham dinh": 4,
     "excluded:may tinh": 3,
@@ -296,14 +296,13 @@
     "excluded:thuc pham": 3,
     "excluded:may in": 2,
     "excluded:bao ve": 2,
+    "excluded:trang phuc": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:tram bien ap": 1,
-    "excluded:phan bon": 1,
+    "excluded:may chu": 1,
     "excluded:bao tri": 1,
-    "excluded:trang phuc": 1,
     "excluded:thu y": 1,
-    "excluded:bao duong": 1,
-    "excluded:may chu": 1
+    "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
     {
@@ -548,6 +547,15 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600546740",
+      "name": "Gói thầu số 01: Thuê dịch vụ công nghệ số Hệ thống CSDL về giá trên địa bàn tỉnh giai đoạn 2026-2029",
+      "investor": "Sở Tài chính Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600543161",
       "name": "Toàn bộ khối lượng xây dựng công trình",
@@ -976,17 +984,6 @@
       "matched": [
         "xay dung",
         "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600537071",
-      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
-      "investor": "Ban Quản lý phường Bồng Sơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
