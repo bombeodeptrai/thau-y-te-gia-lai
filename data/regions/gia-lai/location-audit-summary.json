@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-24T13:33:13.650Z",
+  "auditedAt": "2026-09-24T20:00:15.005Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 53,
+      "count": 52,
       "error": ""
     },
     {
@@ -271,14 +271,14 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 995,
+  "candidateCount": 994,
   "acceptedCount": 43,
-  "rejectedCount": 952,
+  "rejectedCount": 951,
   "rejectedReasons": {
     "excluded:tu van": 274,
     "excluded:xay dung": 251,
     "insufficient-medical-context": 248,
-    "excluded:xay lap": 39,
+    "excluded:xay lap": 38,
     "excluded:sua chua": 37,
     "excluded:cai tao": 31,
     "excluded:bao hiem": 11,
@@ -924,6 +924,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600006652",
+      "name": ": Mua sắm đồ dùng cá nhân cho học sinh nội trú theo Nghị định số 66/2025/NĐ-CP",
+      "investor": "TRƯỜNG PHỔ THÔNG DÂN TỘC NỘI TRÚ TRUNG HỌC PHỔ THÔNG ĐÔNG GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "DC2600011332",
       "name": "Tư vấn thẩm tra Báo cáo kinh tế - kỹ thuật",
       "investor": "Chi cục Quản lý thị trường tỉnh Gia Lai",
@@ -1361,18 +1373,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600551896",
-      "name": "Tư vấn giám sát thi công rà phá bom mìn, vật nổ",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "giam sat thi cong"
-      ]
     }
   ],
   "removedManualCount": 0,
