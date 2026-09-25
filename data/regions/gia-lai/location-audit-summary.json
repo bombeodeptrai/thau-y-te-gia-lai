@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-24T23:13:03.351Z",
+  "auditedAt": "2026-09-25T04:57:18.491Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 422,
+      "count": 414,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 43,
+      "count": 44,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 13,
+      "count": 16,
       "error": ""
     },
     {
@@ -56,25 +56,25 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 24,
+      "count": 30,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 17,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 6,
+      "count": 8,
       "error": ""
     },
     {
@@ -92,25 +92,25 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Đăk Pơ",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 9,
+      "count": 7,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 52,
+      "count": 49,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 94,
+      "count": 95,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 58,
+      "count": 59,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 57,
+      "count": 54,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -271,21 +271,21 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 994,
-  "acceptedCount": 43,
-  "rejectedCount": 951,
+  "candidateCount": 999,
+  "acceptedCount": 42,
+  "rejectedCount": 957,
   "rejectedReasons": {
-    "excluded:tu van": 274,
-    "excluded:xay dung": 251,
-    "insufficient-medical-context": 248,
-    "excluded:xay lap": 38,
-    "excluded:sua chua": 37,
+    "excluded:tu van": 270,
+    "excluded:xay dung": 258,
+    "insufficient-medical-context": 249,
+    "excluded:xay lap": 39,
+    "excluded:sua chua": 38,
     "excluded:cai tao": 31,
-    "excluded:bao hiem": 11,
+    "excluded:bao hiem": 12,
     "excluded:thuc pham": 8,
     "excluded:suat an": 7,
     "excluded:may tinh": 6,
-    "excluded:tham dinh": 6,
+    "excluded:tham dinh": 5,
     "excluded:trang phuc": 5,
     "excluded:phan bon": 3,
     "excluded:may in": 3,
@@ -618,24 +618,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600422769",
-      "name": "Mua sắm vật tư y tế, vật tư xét nghiệm",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "vat tu y te",
-        "vat tu xet nghiem",
-        "benh vien",
-        "da khoa",
-        "xet nghiem",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600000978",
       "name": "“Cung cấp dịch vụ Kiểm định, hiệu chuẩn máy móc, Thiết bị y tế năm 2026”",
       "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
@@ -920,9 +902,94 @@
         "benh vien",
         "mua"
       ]
+    },
+    {
+      "notifyNo": "IB2600520648",
+      "name": "Cung cấp dịch vụ kiểm định, hiệu chuẩn thiết bị y tế của Trung tâm Y tế An Nhơn năm 2026 (Lần 2)",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "thiet bi y te",
+        "trung tam y te",
+        "kiem dinh",
+        "hieu chuan",
+        "cung cap"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600554464",
+      "name": "Gói thầu số 1: Thi công xây lắp và cung cấp vật tư, phụ kiện lắp đặt",
+      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600013946",
+      "name": "Tư vấn giám sát thi công xây dựng công trình và lắp đặt thiết bị toàn bộ hệ thống điện",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600017125",
+      "name": "Mua sách giáo khoa trang bị cho thư viện phục vụ học sinh mượn từ năm học 2026 - 2027",
+      "investor": "Phòng Văn hóa - Xã hội xã Ya Hội, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600012340",
+      "name": "Tư vấn lập hồ sơ đăng ký môi trường",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600012872",
+      "name": "Tư vấn giám sát khảo sát xây dựng",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600013283",
+      "name": "Tư vấn giám sát khảo sát xây dựng",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "DC2600006652",
       "name": ": Mua sắm đồ dùng cá nhân cho học sinh nội trú theo Nghị định số 66/2025/NĐ-CP",
@@ -1302,73 +1369,6 @@
       "notifyNo": "DC2600013172",
       "name": "Kiểm toán độc lập",
       "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600008227",
-      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Võ Giữ (nay là Trường trung học cơ sở và trung học phổ thông Võ Giữ), hạng mục: Nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn; nhà để xe học sinh; mở rộng cổng chính; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "DC2600008217",
-      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT An Lão (nay là Trường trung học cơ sở và trung học phổ thông An Lão), hạng mục: Sửa chữa, cải tạo dãy nhà 02 tầng 10 phòng học (dãy C); xây dựng mới nhà vệ sinh, nhà xe giáo viên, các hạng mục phụ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "cai tao",
-        "sua chua",
-        "tu van",
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "DC2600013108",
-      "name": "Tư vấn Lập nhiệm vụ khảo sát.Dự án: Trường THPT Võ Giữ (nay là Trường trung học cơ sở và trung học phổ thông Võ Giữ), hạng mục: Nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn; nhà để xe học sinh; mở rộng cổng chính; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600013082",
-      "name": "Tư vấn Lập nhiệm vụ khảo sát.Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 4 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600551936",
-      "name": "Rà phá bom mìn, vật nổ",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600541509",
-      "name": "Kế hoạch lựa chọn nhà thầu Gói thầu: Tài liệu tiếng Trung phồn thể phục vụ Hội thảo xúc tiến đầu tư tỉnh Gia Lai với Hiệp hội Thương mại Đài Loan tại Việt Nam",
-      "investor": "Sở Tài chính Gia Lai",
       "accepted": false,
       "score": 0,
       "reason": "insufficient-medical-context",
