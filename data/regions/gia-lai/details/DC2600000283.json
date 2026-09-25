@@ -2,14 +2,40 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "91b86498-c30e-466b-99f3-037d44f9cd86",
+      "contractorCode": "vn4101432853",
+      "taxCode": "4101432853",
+      "contractorName": "CÔNG TY TNHH TƯ VẤN VÀ XÂY DỰNG HOÀNG NGHI",
+      "status": "won",
+      "lotNo": "BP2600751270",
+      "lotName": "Lắp đặt vách ngăn các Kho thuốc; Vật tư y tế Khoa Dược thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 493853587,
+      "reason": "",
+      "submittedAt": "2026-09-16T09:36:22.765",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
-    "total": 0,
-    "items": [],
-    "summary": "",
-    "disclosure": "temporarily-unavailable",
-    "error": "HTTP 404: <!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} "
+    "total": 1,
+    "items": [
+      {
+        "id": "04427a83-2f45-46b2-aed4-41347de0a1c2",
+        "lotNo": "BP2600751270",
+        "name": "Lắp đặt vách ngăn các Kho thuốc; Vật tư y tế Khoa Dược thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 493853587,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Lắp đặt vách ngăn các Kho thuốc; Vật tư y tế Khoa Dược thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+    "disclosure": "public-plan-lots"
   },
   "technicalRequirements": {
     "total": 0,
@@ -19,12 +45,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "DC2600000283",
-    "notifyId": "DC2600000283",
-    "bidId": "c3f50b0b-8d8d-479d-859f-e0a7d4d5883c",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-25T13:55:38.010Z"
+  "fetchedAt": "2026-09-25T18:42:59.418Z"
 }
