@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-25T00:39:48.681Z",
+  "rescuedAt": "2026-09-25T08:00:35.425Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 107,
+      "count": 109,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 244,
+      "count": 246,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 33,
+      "count": 34,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 3,
+      "count": 6,
       "error": ""
     },
     {
@@ -51,7 +51,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
@@ -63,13 +63,13 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 12,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 4,
+      "count": 6,
       "error": ""
     },
     {
@@ -81,7 +81,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 5,
+      "count": 7,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -141,7 +141,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -153,13 +153,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 21,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 46,
+      "count": 53,
       "error": ""
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 40,
+      "count": 39,
       "error": ""
     },
     {
@@ -231,7 +231,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -278,17 +278,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 589,
-  "acceptedCount": 17,
-  "rejectedCount": 572,
+  "candidateCount": 611,
+  "acceptedCount": 18,
+  "rejectedCount": 593,
   "rejectedReasons": {
-    "excluded:tu van": 181,
-    "excluded:xay dung": 164,
-    "insufficient-medical-context": 133,
+    "excluded:tu van": 188,
+    "excluded:xay dung": 173,
+    "insufficient-medical-context": 135,
     "excluded:sua chua": 22,
+    "excluded:xay lap": 20,
     "excluded:cai tao": 19,
-    "excluded:xay lap": 18,
-    "excluded:bao hiem": 6,
+    "excluded:bao hiem": 7,
     "excluded:tham dinh": 4,
     "excluded:thuc pham": 4,
     "excluded:may tinh": 3,
@@ -304,6 +304,27 @@
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600549987",
+      "name": "Mua sắm hóa chất xét nghiệm và sinh phẩm chẩn đoán In Vitro năm 2026-2027",
+      "investor": "Trung tâm Y tế Krông Pa",
+      "accepted": true,
+      "score": 280,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "matched": [
+        "hoa chat xet nghiem",
+        "sinh pham chan doan",
+        "chan doan in vitro",
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "xet nghiem",
+        "chan doan",
+        "in vitro",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600552197",
       "name": "Khám sức khỏe sinh viên",
@@ -553,6 +574,29 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600520486",
+      "name": "Gói thầu số 10: Khảo sát, lập phương án, dự toán thi công rà phá bom mìn, vật nổ và tư vấn giám sát thi công rà phá bom mìn, vật nổ",
+      "investor": "TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600554464",
+      "name": "Gói thầu số 1: Thi công xây lắp và cung cấp vật tư, phụ kiện lắp đặt",
+      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
     {
       "notifyNo": "IB2600160712",
       "name": "Gói thầu số 04: Tư vấn giám sát xây dựng công trình.",
@@ -970,32 +1014,12 @@
         "xay dung",
         "sua chua"
       ]
-    },
-    {
-      "notifyNo": "IB2600544825",
-      "name": "Dịch vụ cho thuê xe thực hiện nhiệm vụ chuyên môn năm 2026 (điều chỉnh bổ sung)",
-      "investor": "Viện Vệ sinh dịch tễ Tây Nguyên",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600545690",
-      "name": "GL-Cs-11: Xây dưng chuỗi giá trị các sản phầm dinh dưỡng không gây mât rừng",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 839,
-  "afterCount": 839,
+  "beforeCount": 840,
+  "afterCount": 840,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v8"
 }
