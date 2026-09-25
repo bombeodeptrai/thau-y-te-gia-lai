@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-25T04:57:18.491Z",
+  "auditedAt": "2026-09-25T20:01:26.539Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 414,
+      "count": 418,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 25,
+      "count": 24,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 30,
+      "count": 28,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -104,19 +104,19 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 10,
+      "count": 8,
       "error": ""
     },
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -134,25 +134,25 @@
     {
       "term": "Krông Pa",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
       "term": "Mang Yang",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 49,
+      "count": 47,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 95,
+      "count": 93,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
@@ -188,13 +188,13 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 22,
+      "count": 24,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -271,18 +271,18 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 999,
-  "acceptedCount": 42,
-  "rejectedCount": 957,
+  "candidateCount": 995,
+  "acceptedCount": 41,
+  "rejectedCount": 954,
   "rejectedReasons": {
-    "excluded:tu van": 270,
-    "excluded:xay dung": 258,
-    "insufficient-medical-context": 249,
-    "excluded:xay lap": 39,
-    "excluded:sua chua": 38,
-    "excluded:cai tao": 31,
+    "excluded:tu van": 268,
+    "excluded:xay dung": 255,
+    "insufficient-medical-context": 248,
+    "excluded:xay lap": 38,
+    "excluded:sua chua": 37,
+    "excluded:cai tao": 34,
     "excluded:bao hiem": 12,
-    "excluded:thuc pham": 8,
+    "excluded:thuc pham": 9,
     "excluded:suat an": 7,
     "excluded:may tinh": 6,
     "excluded:tham dinh": 5,
@@ -297,6 +297,7 @@
     "excluded:kiem dinh": 2,
     "excluded:rac thai": 2,
     "excluded:giam sat thi cong": 2,
+    "excluded:cap dien": 1,
     "excluded:in an": 1,
     "excluded:van phong pham": 1,
     "excluded:thu y": 1,
@@ -680,22 +681,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600488061",
-      "name": "Gói thầu số 1: Sửa chữa Máy xét nghiệm huyết học XN-550 và Máy xét nghiệm sinh hoá BX3010 năm 2026",
-      "investor": "TRUNG TÂM Y TẾ PLEIKU",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "may xet nghiem",
-        "trung tam y te",
-        "sua chua",
-        "xet nghiem",
-        "sinh hoa",
-        "huyet hoc"
-      ]
-    },
-    {
       "notifyNo": "IB2600533247",
       "name": "Sửa chữa máy X-Quang C-arm tăng sáng truyền hình",
       "investor": "Trung Tâm Y Tế Ayun Pa",
@@ -788,6 +773,27 @@
       "matched": [
         "oxy y te",
         "trung tam y te",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600549987",
+      "name": "Mua sắm hóa chất xét nghiệm và sinh phẩm chẩn đoán In Vitro năm 2026-2027",
+      "investor": "Trung tâm Y tế Krông Pa",
+      "accepted": true,
+      "score": 280,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "matched": [
+        "hoa chat xet nghiem",
+        "sinh pham chan doan",
+        "chan doan in vitro",
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "xet nghiem",
+        "chan doan",
+        "in vitro",
         "mua",
         "mua sam"
       ]
@@ -891,19 +897,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600465808",
-      "name": "Mua thiết bị y tế phục hồi chức năng năm 2026 của Bệnh viện Chỉnh hình và Phục hồi chức năng Quy Nhơn",
-      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "thiet bi y te",
-        "benh vien",
-        "mua"
-      ]
-    },
-    {
       "notifyNo": "IB2600520648",
       "name": "Cung cấp dịch vụ kiểm định, hiệu chuẩn thiết bị y tế của Trung tâm Y tế An Nhơn năm 2026 (Lần 2)",
       "investor": "TRUNG TÂM Y TẾ AN NHƠN",
@@ -917,9 +910,122 @@
         "hieu chuan",
         "cung cap"
       ]
+    },
+    {
+      "notifyNo": "IB2600482835",
+      "name": "Mua sắm vật tư, hóa chất, sinh phẩm bổ sung năm 2026 (Lần 2)",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+laboratory-supply+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "matched": [
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600547282",
+      "name": "Toàn bộ khối lượng thi công công trình Cải tạo, sửa chữa nghĩa trang liệt sĩ Quy Nhơn",
+      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600554340",
+      "name": "Xây lắp công trình",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600552238",
+      "name": "26.45.HH Dụng cụ an toàn, thi công, bảo hộ an toàn điện năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600006944",
+      "name": "Mua vật tư, phụ kiện thực hiện công tác lắp đặt đồng hồ nước hộ gia đình tại Nhà máy Nước sạch Nhơn Tân",
+      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu",
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600551862",
+      "name": "Gói thầu 26.22/HH: Cung cấp Vật liệu điện",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600551561",
+      "name": "Gói thầu 26.21/HH: Cung cấp cáp điện",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cap dien",
+      "matched": [
+        "cap dien"
+      ]
+    },
+    {
+      "notifyNo": "DC2600014857",
+      "name": "Tư vấn thẩm tra an toàn giao thông bước thiết kế bản vẽ thi công",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600011233",
+      "name": "Tư vấn khảo sát, đánh giá khoáng sản đất để làm mỏ vật liệu",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600555888",
+      "name": "Nhà để xe vi phạm hành chính Công an phường An Nhơn Bắc thuộc Công an tỉnh Gia Lai",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600554464",
       "name": "Gói thầu số 1: Thi công xây lắp và cung cấp vật tư, phụ kiện lắp đặt",
@@ -1276,109 +1382,12 @@
         "xay dung",
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "IB2600552643",
-      "name": "Triển khai cơ sở hạ tầng phục vụ lắp đặt hệ thống bộ đàm HF công nghệ số tại Công an tỉnh và 07 Công an xã biên giới",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600013507",
-      "name": "Tư vấn Lập nhiệm vụ khảo sát.Trường THPT Trần Phú, hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552468",
-      "name": "Thi công xây dựng",
-      "investor": "Quỹ Bảo vệ và Phát triển rừng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552491",
-      "name": "Tư vấn giám sát",
-      "investor": "Quỹ Bảo vệ và Phát triển rừng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600550518",
-      "name": "26.52.HH Sứ đứng phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552472",
-      "name": "Sửa chữa xe cứu thương 77A- 00306 Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552357",
-      "name": "Tư vấn thẩm định giá các vật tư, vật liệu sau khi phá dỡ thu hồi",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552325",
-      "name": "Tư vấn thẩm định giá các vật tư, vật liệu sau khi phá dỡ thu hồi",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600013172",
-      "name": "Kiểm toán độc lập",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 839,
-  "afterCount": 839,
+  "beforeCount": 840,
+  "afterCount": 840,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v8"
 }
