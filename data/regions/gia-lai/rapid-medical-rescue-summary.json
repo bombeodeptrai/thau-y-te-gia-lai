@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-25T23:23:49.496Z",
+  "rescuedAt": "2026-09-26T05:11:39.694Z",
   "rescueDays": 14,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 111,
+      "count": 110,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 236,
+      "count": 245,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 7,
+      "count": 9,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 55,
+      "count": 52,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 28,
+      "count": 31,
       "error": ""
     },
     {
@@ -195,7 +195,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 28,
+      "count": 33,
       "error": ""
     },
     {
@@ -278,17 +278,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 590,
+  "candidateCount": 606,
   "acceptedCount": 17,
-  "rejectedCount": 573,
+  "rejectedCount": 589,
   "rejectedReasons": {
-    "excluded:xay dung": 172,
-    "excluded:tu van": 165,
-    "insufficient-medical-context": 135,
-    "excluded:sua chua": 23,
+    "excluded:xay dung": 177,
+    "excluded:tu van": 174,
+    "insufficient-medical-context": 136,
+    "excluded:sua chua": 24,
+    "excluded:cai tao": 22,
     "excluded:xay lap": 22,
-    "excluded:cai tao": 21,
-    "excluded:bao hiem": 5,
+    "excluded:bao hiem": 6,
     "excluded:thuc pham": 5,
     "excluded:tham dinh": 4,
     "excluded:may tinh": 3,
@@ -296,7 +296,6 @@
     "excluded:may in": 2,
     "excluded:bao ve": 2,
     "excluded:trang phuc": 2,
-    "excluded:giam sat thi cong": 2,
     "excluded:suat an": 2,
     "excluded:cap dien": 1,
     "excluded:may chu": 1,
