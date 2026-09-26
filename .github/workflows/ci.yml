@@ -32,6 +32,7 @@ jobs:
           node --test scripts/regional-data.test.mjs
           node --test scripts/region-membership.test.mjs
           node --test scripts/scan-baseline.test.mjs
+          node --test scripts/rescue-runtime.test.mjs
           node --test scripts/contractor-search.test.mjs
           node --test scripts/source-time.test.mjs
           node --check scripts/run-region-scan.mjs

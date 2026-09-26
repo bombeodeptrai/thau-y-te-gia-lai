@@ -11,6 +11,7 @@ for (const file of [
   "scripts/run-region-scan.mjs",
   "scripts/fetch-recent-location-audit.mjs",
   "scripts/fetch-recent-medical-rescue.mjs",
+  "scripts/rescue-runtime.mjs",
   "scripts/repair-official-tender-identities.mjs",
   "scripts/refresh-official-tender-details.mjs",
   "scripts/merge-regions.mjs",
@@ -25,6 +26,7 @@ execFileSync(process.execPath, ["--test", "scripts/official-source.test.mjs"], {
 execFileSync(process.execPath, ["--test", "scripts/regional-data.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/contractor-search.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/source-time.test.mjs"], { stdio: "inherit" });
+execFileSync(process.execPath, ["--test", "scripts/rescue-runtime.test.mjs"], { stdio: "inherit" });
 
 const fullScanPath = ".github/workflows/regional-full-scan.yml";
 const detailPath = ".github/workflows/regional-detail-backfill.yml";
@@ -164,6 +166,12 @@ if (!rapidScan.includes('cron: "7,17,27,37,47,57 * * * *"')
   || rapidScan.includes('PAGE_SIZE: "100"')) {
   throw new Error("Luồng quét nhanh Gia Lai chưa lệch phút cao điểm, sửa định danh, tạo chi tiết hoặc còn pageSize không an toàn");
 }
+if (!rapidScan.includes('RESCUE_MAX_ATTEMPTS: "2"')
+  || !rapidScan.includes('RESCUE_REQUEST_TIMEOUT_MS: "12000"')
+  || !rapidScan.includes('RESCUE_MAX_RUNTIME_MS: "480000"')
+  || !rapidScan.includes("timeout-minutes: 15")) {
+  throw new Error("Luồng quét nhanh chưa giới hạn retry và thời gian chạy khi nguồn công khai chậm");
+}
 if (!rapidScan.includes("actions: write")
   || !rapidScan.includes('workflow_id: "pages.yml"')
   || !rapidScan.includes("Yêu cầu triển khai Pages sau khi ghi dữ liệu")) {
@@ -207,6 +215,11 @@ if (medicalRescue.includes("LOCATION_TERM_LIMIT")
   || !medicalRescue.includes("removedRejectedStoredCount")
   || !medicalRescue.includes("rejectedSourceKeys")) {
   throw new Error("Quét bù Gia Lai chưa quét đủ địa danh hoặc chưa tự loại bản ghi cũ sai phạm vi");
+}
+if (!medicalRescue.includes("createRescueRuntime")
+  || !medicalRescue.includes("rescueRuntime.assertRemaining")
+  || !medicalRescue.includes("rescueRuntime.assertCanWait")) {
+  throw new Error("Quét bù chưa giới hạn tổng thời gian và retry khi nguồn công khai chậm");
 }
 if (!medicalRescue.includes("RESCUE_SUMMARY_FILE")
   || !quickScan.includes('RESCUE_SUMMARY_FILE: "quick-medical-rescue-summary.json"')) {
@@ -270,6 +283,10 @@ if (!pageBuilder.includes("contractor-search.json")
   || !appScript.includes("CONTRACTOR_SEARCH_URL")
   || !regionalMode.includes("regional-contractor")) {
   throw new Error("Website chưa có chỉ mục và bộ lọc riêng theo tên nhà thầu/MST");
+}
+if (!pageBuilder.includes('entry === "data"')
+  || !pageBuilder.includes('part.startsWith(".")')) {
+  throw new Error("Build Pages chưa loại thư mục staging và tệp tạm ẩn khỏi dữ liệu công bố");
 }
 
 const dataWorkflowPaths = [fullScanPath, detailPath, quickPath, auditPath, rapidPath];

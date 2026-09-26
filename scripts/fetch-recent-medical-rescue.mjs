@@ -8,6 +8,7 @@ import {
   medicalCategory,
 } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
+import { createRescueRuntime } from "./rescue-runtime.mjs";
 import { shouldReplaceRescueCollectionMetadata } from "./scan-baseline.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
 
@@ -15,7 +16,8 @@ const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/sma
 const RESCUE_DAYS = Math.max(7, Number(process.env.RESCUE_DAYS) || 21);
 // API tìm kiếm công khai chỉ ổn định với 10 bản ghi/trang. Giá trị 50/100 gây HTTP 400.
 const PAGE_SIZE = Math.max(1, Math.min(10, Number(process.env.PAGE_SIZE) || 10));
-const MAX_ATTEMPTS = 6;
+const rescueRuntime = createRescueRuntime(process.env);
+const MAX_ATTEMPTS = rescueRuntime.maxAttempts;
 const PAGE_CONCURRENCY = 2;
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -70,10 +72,14 @@ async function mapLimited(values, concurrency, mapper) {
   return output;
 }
 
-async function postJson(body, timeoutMs = 30_000) {
+async function postJson(body, timeoutMs = rescueRuntime.nextRequestTimeoutMs()) {
   let lastError;
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
     try {
+      const effectiveTimeoutMs = Math.min(
+        timeoutMs,
+        rescueRuntime.nextRequestTimeoutMs(`gọi nguồn công khai lần ${attempt}/${MAX_ATTEMPTS}`),
+      );
       const response = await fetch(SEARCH_URL, {
         method: "POST",
         headers: {
@@ -85,7 +91,7 @@ async function postJson(body, timeoutMs = 30_000) {
           "User-Agent": `thau-y-te-medical-rescue-${slug}/4.0`,
         },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(timeoutMs),
+        signal: AbortSignal.timeout(effectiveTimeoutMs),
       });
       const text = await response.text();
       if (!response.ok) {
@@ -97,7 +103,11 @@ async function postJson(body, timeoutMs = 30_000) {
       return JSON.parse(text);
     } catch (error) {
       lastError = error;
-      if (attempt < MAX_ATTEMPTS) await delay(attempt * 2_000);
+      if (attempt < MAX_ATTEMPTS) {
+        const waitMs = attempt * 2_000;
+        rescueRuntime.assertCanWait(waitMs, `chờ thử lại nguồn công khai lần ${attempt + 1}`);
+        await delay(waitMs);
+      }
     }
   }
   throw lastError;
@@ -299,6 +309,7 @@ const sourceGroups = [];
 
 const provinceCodes = unique(region.provinceCodes || []);
 if (provinceCodes.length) {
+  rescueRuntime.assertRemaining("bắt đầu quét theo mã tỉnh");
   sourceGroups.push(await runStrategy(
     `Mã tỉnh ${provinceCodes.join(",")}`,
     () => fetchAllPages(
@@ -311,6 +322,7 @@ if (provinceCodes.length) {
   // Nếu nguồn không chấp nhận nhiều mã trong một điều kiện, quét riêng từng mã.
   if (!sourceGroups.at(-1)?.length && provinceCodes.length > 1) {
     for (const code of provinceCodes) {
+      rescueRuntime.assertRemaining(`bắt đầu quét riêng mã tỉnh ${code}`);
       sourceGroups.push(await runStrategy(
         `Mã tỉnh riêng ${code}`,
         () => fetchAllPages(
@@ -329,6 +341,7 @@ const locationTerms = unique([
   ...(region.locationTerms || []),
 ]);
 for (const term of locationTerms) {
+  rescueRuntime.assertRemaining(`bắt đầu quét địa danh ${term}`);
   sourceGroups.push(await runStrategy(
     `Địa danh ${term}`,
     () => fetchAllPages(
@@ -437,6 +450,9 @@ await writeFile(resolve(regionDir, summaryFileName), `${JSON.stringify({
   rescuedAt: fetchedAt,
   rescueDays: RESCUE_DAYS,
   pageSize: PAGE_SIZE,
+  maxAttempts: rescueRuntime.maxAttempts,
+  requestTimeoutMs: rescueRuntime.requestTimeoutMs,
+  maxRuntimeMs: rescueRuntime.maxRuntimeMs,
   strategyResults,
   successfulStrategyCount,
   candidateCount: sourceUnique.size,

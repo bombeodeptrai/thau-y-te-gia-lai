@@ -1,5 +1,5 @@
 import { cp, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
+import { dirname, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildContractorSearchRows } from "./contractor-search.mjs";
 import { loadRegionalCollection } from "./regional-data.mjs";
@@ -64,7 +64,19 @@ for (const entry of [
   "data",
   "kieu-viet",
 ]) {
-  await cp(resolve(root, entry), resolve(output, entry), { recursive: true });
+  const source = resolve(root, entry);
+  await cp(source, resolve(output, entry), {
+    recursive: true,
+    // Không công bố thư mục staging/tệp tạm ẩn. Các workflow ghép dữ liệu có
+    // thể tạo rồi xóa chúng đồng thời với Pages; sao chép cả staging vừa làm
+    // lộ dữ liệu trung gian, vừa khiến build lỗi ENOENT khi tệp biến mất.
+    filter: entry === "data"
+      ? (path) => {
+        const child = relative(source, path);
+        return !child.split(sep).some((part) => part.startsWith("."));
+      }
+      : undefined,
+  });
 }
 
 const tenderData = JSON.parse(await readFile(resolve(dataDir, "tenders.json"), "utf8"));
