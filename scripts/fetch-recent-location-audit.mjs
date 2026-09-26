@@ -8,12 +8,14 @@ import {
   medicalCategory,
 } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
+import { createRescueRuntime } from "./rescue-runtime.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const AUDIT_DAYS = Math.max(7, Number(process.env.AUDIT_DAYS) || 30);
 const PAGE_SIZE = Math.max(1, Math.min(10, Number(process.env.PAGE_SIZE) || 10));
-const MAX_ATTEMPTS = 6;
+const auditRuntime = createRescueRuntime(process.env);
+const MAX_ATTEMPTS = auditRuntime.maxAttempts;
 const TERM_CONCURRENCY = 2;
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -64,10 +66,14 @@ async function mapLimited(values, concurrency, mapper) {
   return output;
 }
 
-async function postJson(body, timeoutMs = 30_000) {
+async function postJson(body, timeoutMs = auditRuntime.nextRequestTimeoutMs()) {
   let lastError;
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
     try {
+      const effectiveTimeoutMs = Math.min(
+        timeoutMs,
+        auditRuntime.nextRequestTimeoutMs(`gọi nguồn đối chiếu lần ${attempt}/${MAX_ATTEMPTS}`),
+      );
       const response = await fetch(SEARCH_URL, {
         method: "POST",
         headers: {
@@ -79,7 +85,7 @@ async function postJson(body, timeoutMs = 30_000) {
           "User-Agent": `thau-y-te-location-audit-${slug}/4.0`,
         },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(timeoutMs),
+        signal: AbortSignal.timeout(effectiveTimeoutMs),
       });
       const text = await response.text();
       if (!response.ok) throw new Error(`HTTP ${response.status}: ${compact(text, 300)}`);
@@ -89,7 +95,11 @@ async function postJson(body, timeoutMs = 30_000) {
       return JSON.parse(text);
     } catch (error) {
       lastError = error;
-      if (attempt < MAX_ATTEMPTS) await delay(attempt * 2_000);
+      if (attempt < MAX_ATTEMPTS) {
+        const waitMs = attempt * 2_000;
+        auditRuntime.assertCanWait(waitMs, `chờ thử lại nguồn đối chiếu lần ${attempt + 1}`);
+        await delay(waitMs);
+      }
     }
   }
   throw lastError;
@@ -251,8 +261,10 @@ if ((!previous.tenders || !previous.tenders.length) && slug === "gia-lai") {
 const now = new Date();
 const { from, to } = muasamcongDateRange(now, AUDIT_DAYS * 86_400_000);
 const terms = unique([region.name, region.shortName, ...(region.locationTerms || [])]);
-const termResults = await mapLimited(terms, TERM_CONCURRENCY, (term, index) =>
-  fetchLocationTerm(term, from, to, index, terms.length));
+const termResults = await mapLimited(terms, TERM_CONCURRENCY, (term, index) => {
+  auditRuntime.assertRemaining(`bắt đầu đối chiếu địa danh ${term}`);
+  return fetchLocationTerm(term, from, to, index, terms.length);
+});
 const successfulTermCount = termResults.filter((result) => result.success).length;
 if (!successfulTermCount) {
   throw new Error(`Tất cả ${terms.length} truy vấn địa danh ${region.name} đều thất bại`);
