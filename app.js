@@ -360,9 +360,11 @@ async function downloadTechnicalXlsx(tender, button) {
 }
 
 function withinDays(tender) {
-  const published = new Date(tender.publicDate).getTime();
-  if (!published) return true;
-  return published >= Date.now() - state.days * 86_400_000;
+  return window.tenderDisplayTime.withinSnapshotDays(
+    tender.publicDate,
+    state.days,
+    state.fetchedAt,
+  );
 }
 
 function periodTenders() {

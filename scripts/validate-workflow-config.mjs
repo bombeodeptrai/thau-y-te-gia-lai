@@ -7,6 +7,7 @@ for (const file of [
   "scripts/regional-data.mjs",
   "scripts/contractor-search.mjs",
   "scripts/source-time.mjs",
+  "display-time.js",
   "scripts/fetch-data.mjs",
   "scripts/run-region-scan.mjs",
   "scripts/fetch-recent-location-audit.mjs",
@@ -27,6 +28,7 @@ execFileSync(process.execPath, ["--test", "scripts/regional-data.test.mjs"], { s
 execFileSync(process.execPath, ["--test", "scripts/contractor-search.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/source-time.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/rescue-runtime.test.mjs"], { stdio: "inherit" });
+execFileSync(process.execPath, ["--test", "scripts/display-time.test.mjs"], { stdio: "inherit" });
 
 const fullScanPath = ".github/workflows/regional-full-scan.yml";
 const detailPath = ".github/workflows/regional-detail-backfill.yml";
@@ -277,12 +279,18 @@ for (const fileName of ["tenders.json", "bidders.json", "equipment.json"]) {
   }
 }
 const pageBuilder = await readFile("scripts/build-pages.mjs", "utf8");
+const displayTime = await readFile("display-time.js", "utf8");
 const regionalMode = await readFile("regional-mode.js", "utf8");
 const appScript = await readFile("app.js", "utf8");
 if (!pageBuilder.includes("contractor-search.json")
   || !appScript.includes("CONTRACTOR_SEARCH_URL")
   || !regionalMode.includes("regional-contractor")) {
   throw new Error("Website chưa có chỉ mục và bộ lọc riêng theo tên nhà thầu/MST");
+}
+if (!appScript.includes("tenderDisplayTime.withinSnapshotDays")
+  || !displayTime.includes("SOURCE_TIME_ZONE_OFFSET")
+  || !pageBuilder.includes('"display-time.js"')) {
+  throw new Error("Giao diện chưa lọc theo thời điểm chụp dữ liệu và giờ Việt Nam");
 }
 if (!pageBuilder.includes('entry === "data"')
   || !pageBuilder.includes('part.startsWith(".")')) {
