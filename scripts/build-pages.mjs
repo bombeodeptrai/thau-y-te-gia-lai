@@ -47,6 +47,7 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 for (const entry of [
   "index.html",
+  "display-time.js",
   "styles.css",
   "app.js",
   "layout-fix.css",
