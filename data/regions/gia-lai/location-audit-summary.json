@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-25T23:18:34.385Z",
+  "auditedAt": "2026-09-26T04:57:44.994Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 418,
+      "count": 419,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 15,
+      "count": 17,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 93,
+      "count": 89,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 59,
+      "count": 62,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 54,
+      "count": 58,
       "error": ""
     },
     {
@@ -271,22 +271,22 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 995,
-  "acceptedCount": 41,
-  "rejectedCount": 954,
+  "candidateCount": 997,
+  "acceptedCount": 39,
+  "rejectedCount": 958,
   "rejectedReasons": {
-    "excluded:tu van": 268,
-    "excluded:xay dung": 255,
-    "insufficient-medical-context": 248,
-    "excluded:xay lap": 38,
-    "excluded:sua chua": 37,
+    "excluded:tu van": 273,
+    "excluded:xay dung": 256,
+    "insufficient-medical-context": 246,
+    "excluded:sua chua": 38,
+    "excluded:xay lap": 37,
     "excluded:cai tao": 34,
-    "excluded:bao hiem": 12,
+    "excluded:bao hiem": 13,
     "excluded:thuc pham": 9,
     "excluded:suat an": 7,
     "excluded:may tinh": 6,
     "excluded:tham dinh": 5,
-    "excluded:trang phuc": 5,
+    "excluded:trang phuc": 4,
     "excluded:phan bon": 3,
     "excluded:may in": 3,
     "excluded:quan ly du an": 3,
@@ -747,23 +747,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600490350",
-      "name": "Mua sắm linh kiện, phụ kiện, vật tư thay thế cho Máy xét nghiệm sinh hóa tự động (Model: BA200, Hãng nước sản xuất: BioSystems S.A, SPAIN)",
-      "investor": "Trung tâm Y tế Đức Cơ",
-      "accepted": true,
-      "score": 200,
-      "reason": "explicit-medical-title+medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "may xet nghiem",
-        "trung tam y te",
-        "xet nghiem",
-        "sinh hoa",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "IB2600492233",
       "name": "Mua sắm khí Oxy y tế năm 2026 của Trung tâm Y tế Ia Pa",
       "investor": "Trung tâm Y tế Ia Pa",
@@ -882,21 +865,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600489809",
-      "name": "Cung cấp dịch vụ bảo trì, bảo dưỡng máy móc, thiết bị y tế cho Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026- 2027",
-      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "thiet bi y te",
-        "benh vien",
-        "bao tri",
-        "bao duong",
-        "cung cap"
-      ]
-    },
-    {
       "notifyNo": "IB2600520648",
       "name": "Cung cấp dịch vụ kiểm định, hiệu chuẩn thiết bị y tế của Trung tâm Y tế An Nhơn năm 2026 (Lần 2)",
       "investor": "TRUNG TÂM Y TẾ AN NHƠN",
@@ -926,9 +894,147 @@
         "mua",
         "mua sam"
       ]
+    },
+    {
+      "notifyNo": "IB2600503446",
+      "name": "Mua sắm test ma túy 05 thành phần (Mã 17.2026)",
+      "investor": "Trung tâm Y tế Phù Mỹ",
+      "accepted": true,
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "test ma tuy",
+        "trung tam y te",
+        "mua",
+        "mua sam"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "DC2600010071",
+      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Võ Văn Kiệt (nay là Trường trung học phổ thông Trần Quốc Tuấn), hạng mục: Xây mới khối nhà 02 tầng, gồm 04 phòng lý thuyết, 03 phòng bộ môn và các hạng mục phụ trợ.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600010081",
+      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 4 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600012161",
+      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT An Lương (nay là Trường trung học cơ sở và trung học phổ thông An Lương), hạng mục: Xây mới nhà hành chính quản trị; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600012163",
+      "name": "Tư vấn Tư vấn Quản lý dự án. Dự án: Trường THPT Tăng Bạt Hổ. Hạng mục: Xây mới dãy nhà 2 tầng; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600010080",
+      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Lương Thế Vinh. Hạng mục: Nhà học 03 tầng, 06 phòng học lý thuyết, 02 phòng học bộ môn; khu vệ sinh học sinh; các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600010064",
+      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Anh Hùng Núp (nay là Trường trung học cơ sở và trung học phổ thông Anh Hùng Núp).Hạng mục: Dãy nhà 02 tầng 06 phòng học bộ môn; nhà ở học sinh 04 phòng 01 tầng; nhà bếp, nhà ăn 01 tầng; cải tạo dãy nhà 02 tầng 04 phòng thành khu hành chính quản trị; các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600010058",
+      "name": "Tư vấn Quản lý dự án. Dự án: Trường THPT Pleime, hạng mục: Dãy nhà 03 tầng 10 phòng học lý thuyết, 02 phòng học bộ môn; các hạng mục phụ và thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600011724",
+      "name": "Tư vấn Quản lý dự án:Trường THPT Bình Dương (nay là Trường trung học phổ thông số 2 Phù Mỹ) Hạng mục: Dãy nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn, phòng y tế và phòng Đoàn Thanh niên; nhà để xe; các hạng mục phụ và thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600012152",
+      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Số 2 Tuy Phước, hạng mục: Sửa chữa, cải tạo nhà lớp học 02 tầng (dãy A, B); xây dựng mới các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "cai tao",
+        "sua chua",
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600016089",
+      "name": "Tư vấn khảo sát xây dựng, lập Báo cáo nghiên cứu khả thi",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "IB2600547282",
       "name": "Toàn bộ khối lượng thi công công trình Cải tạo, sửa chữa nghĩa trang liệt sĩ Quy Nhơn",
@@ -1264,122 +1370,6 @@
       "score": -100,
       "reason": "excluded:tu van",
       "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600546740",
-      "name": "Gói thầu số 01: Thuê dịch vụ công nghệ số Hệ thống CSDL về giá trên địa bàn tỉnh giai đoạn 2026-2029",
-      "investor": "Sở Tài chính Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600013715",
-      "name": "Tư vấn giám sát thi công xây dựng điện chiếu sáng",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600013740",
-      "name": "Tư vấn giám sát thi công xây dựng đoạn 1 từ cầu Sông Ngang đến cọc 55+6m bờ tả",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600008917",
-      "name": "Tư vấn thẩm tra thiết kế bản vẽ thi công và dự toán",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600011485",
-      "name": "Tư vấn giám sát công tác khảo sát xây dựng bước thiết kế bản vẽ thi công",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600014313",
-      "name": "Tư vấn Lập nhiệm vụ khảo sát.Dự án: Trường THPT Tăng Bạt Hổ. Hạng mục: Xây mới dãy nhà 2 tầng; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600014301",
-      "name": "Tư vấn Lập nhiệm vụ khảo sát.Dự án: Trường THPT Số 2 An Nhơn. Hạng mục: Xây mới nhà 02 tầng gồm 05 phòng học bộ môn và 01 thư viện; khu vệ sinh học sinh; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600010243",
-      "name": "PHÊ DUYỆT KHLCNT-TƯ VẤN LẬP BÁO CÁO KTKT-CÔNG TRÌNH CẢI TẠO SỬA CHỮA PGD PHÙ ĐỔNG",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600548604",
-      "name": "26.55.HH Vật tư phụ kiện điện phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600009480",
-      "name": "Tư vấn khảo sát xây dựng, lập Báo cáo nghiên cứu khả thi",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
         "tu van"
       ]
     }

@@ -2,20 +2,20 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-25T23:19:10.524Z",
+  "rescuedAt": "2026-09-26T04:58:29.020Z",
   "rescueDays": 30,
   "pageSize": 10,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 226,
+      "count": 220,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 418,
+      "count": 419,
       "error": ""
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 15,
+      "count": 17,
       "error": ""
     },
     {
@@ -87,7 +87,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -123,7 +123,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -159,7 +159,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 93,
+      "count": 89,
       "error": ""
     },
     {
@@ -183,7 +183,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 59,
+      "count": 62,
       "error": ""
     },
     {
@@ -195,7 +195,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 54,
+      "count": 58,
       "error": ""
     },
     {
@@ -278,23 +278,23 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1067,
-  "acceptedCount": 46,
-  "rejectedCount": 1021,
+  "candidateCount": 1068,
+  "acceptedCount": 44,
+  "rejectedCount": 1024,
   "rejectedReasons": {
-    "insufficient-medical-context": 279,
-    "excluded:xay dung": 273,
-    "excluded:tu van": 269,
-    "excluded:xay lap": 42,
-    "excluded:sua chua": 42,
+    "insufficient-medical-context": 276,
+    "excluded:tu van": 274,
+    "excluded:xay dung": 274,
+    "excluded:sua chua": 43,
+    "excluded:xay lap": 41,
     "excluded:cai tao": 34,
-    "excluded:bao hiem": 12,
+    "excluded:bao hiem": 13,
     "excluded:thuc pham": 9,
     "excluded:suat an": 7,
     "excluded:may tinh": 6,
     "excluded:tham dinh": 5,
-    "excluded:trang phuc": 5,
     "excluded:thuoc generic": 4,
+    "excluded:trang phuc": 4,
     "excluded:may in": 3,
     "excluded:phan bon": 3,
     "excluded:may chu": 3,
@@ -855,38 +855,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600490350",
-      "name": "Mua sắm linh kiện, phụ kiện, vật tư thay thế cho Máy xét nghiệm sinh hóa tự động (Model: BA200, Hãng nước sản xuất: BioSystems S.A, SPAIN)",
-      "investor": "Trung tâm Y tế Đức Cơ",
-      "accepted": true,
-      "score": 200,
-      "reason": "explicit-medical-title+medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "may xet nghiem",
-        "trung tam y te",
-        "xet nghiem",
-        "sinh hoa",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600489809",
-      "name": "Cung cấp dịch vụ bảo trì, bảo dưỡng máy móc, thiết bị y tế cho Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026- 2027",
-      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "thiet bi y te",
-        "benh vien",
-        "bao tri",
-        "bao duong",
-        "cung cap"
-      ]
-    },
-    {
       "notifyNo": "DC2600000882",
       "name": "mua sắm Máy Garo hơi tự động phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Đa Khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -933,6 +901,35 @@
         "dung tren may",
         "mua",
         "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600496264",
+      "name": "Dịch vụ sửa chữa 01 máy thở Savina 300",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "may tho",
+        "benh vien",
+        "da khoa",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600000978",
+      "name": "“Cung cấp dịch vụ Kiểm định, hiệu chuẩn máy móc, Thiết bị y tế năm 2026”",
+      "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "thiet bi y te",
+        "benh vien",
+        "kiem dinh",
+        "hieu chuan",
+        "cung cap"
       ]
     }
   ],
