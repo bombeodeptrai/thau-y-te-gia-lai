@@ -2,20 +2,23 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-26T05:11:39.694Z",
+  "rescuedAt": "2026-09-26T21:20:02.133Z",
   "rescueDays": 14,
   "pageSize": 10,
+  "maxAttempts": 3,
+  "requestTimeoutMs": 15000,
+  "maxRuntimeMs": 1200000,
   "strategyResults": [
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 110,
+      "count": 111,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 245,
+      "count": 250,
       "error": ""
     },
     {
@@ -39,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -75,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -117,7 +120,7 @@
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -129,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -159,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 52,
+      "count": 53,
       "error": ""
     },
     {
@@ -207,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 33,
+      "count": 46,
       "error": ""
     },
     {
@@ -278,23 +281,23 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 606,
+  "candidateCount": 616,
   "acceptedCount": 17,
-  "rejectedCount": 589,
+  "rejectedCount": 599,
   "rejectedReasons": {
-    "excluded:xay dung": 177,
-    "excluded:tu van": 174,
-    "insufficient-medical-context": 136,
-    "excluded:sua chua": 24,
+    "excluded:xay dung": 179,
+    "excluded:tu van": 177,
+    "insufficient-medical-context": 137,
+    "excluded:sua chua": 25,
     "excluded:cai tao": 22,
     "excluded:xay lap": 22,
-    "excluded:bao hiem": 6,
+    "excluded:bao hiem": 8,
     "excluded:thuc pham": 5,
     "excluded:tham dinh": 4,
     "excluded:may tinh": 3,
     "excluded:thuoc generic": 3,
+    "excluded:bao ve": 3,
     "excluded:may in": 2,
-    "excluded:bao ve": 2,
     "excluded:trang phuc": 2,
     "excluded:suat an": 2,
     "excluded:cap dien": 1,
@@ -559,6 +562,32 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600554510",
+      "name": "26-81/XL: thi công Sửa chữa phần xây dựng TBA 110kV An Khê + Kbang + Nhơn Tân + Đồn Phó + Tam Quan",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600549463",
+      "name": "MS-02: Mua sắm vật tư hóa chất",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600547282",
       "name": "Toàn bộ khối lượng thi công công trình Cải tạo, sửa chữa nghĩa trang liệt sĩ Quy Nhơn",
@@ -969,35 +998,12 @@
       "matched": [
         "may tinh"
       ]
-    },
-    {
-      "notifyNo": "IB2600537050",
-      "name": "Cung cấp vật tư, thiết bị, vật liệu phục vụ sửa chữa thường xuyên các hệ thống thiết bị công nghệ năm 2027",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600464141",
-      "name": "Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh tại Trung tâm Y tế An Nhơn",
-      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
-      "accepted": false,
-      "score": 90,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te",
-        "chan doan"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 840,
-  "afterCount": 840,
+  "beforeCount": 839,
+  "afterCount": 839,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v8"
 }
