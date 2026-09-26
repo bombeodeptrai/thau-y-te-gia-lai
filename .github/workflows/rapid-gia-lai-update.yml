@@ -29,7 +29,9 @@ jobs:
     timeout-minutes: 15
     concurrency:
       group: rapid-gia-lai-detect
-      cancel-in-progress: false
+      # Một lượt detect mới phải dọn lượt cũ bị kẹt ở nguồn công khai. Bước
+      # apply-data dùng khóa regional-data-write riêng nên không bị hủy giữa ghi.
+      cancel-in-progress: true
     outputs:
       changed: ${{ steps.compare.outputs.changed }}
     steps:

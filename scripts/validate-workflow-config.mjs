@@ -174,6 +174,13 @@ if (!rapidScan.includes('RESCUE_MAX_ATTEMPTS: "2"')
   || !rapidScan.includes("timeout-minutes: 15")) {
   throw new Error("Luồng quét nhanh chưa giới hạn retry và thời gian chạy khi nguồn công khai chậm");
 }
+const rapidDetectConcurrency = rapidScan.slice(
+  rapidScan.indexOf("group: rapid-gia-lai-detect"),
+  rapidScan.indexOf("group: rapid-gia-lai-detect") + 320,
+);
+if (!rapidDetectConcurrency.includes("cancel-in-progress: true")) {
+  throw new Error("Luồng quét nhanh chưa tự hủy lượt detect cũ bị kẹt");
+}
 if (!rapidScan.includes("actions: write")
   || !rapidScan.includes('workflow_id: "pages.yml"')
   || !rapidScan.includes("Yêu cầu triển khai Pages sau khi ghi dữ liệu")) {
