@@ -15,6 +15,11 @@ jobs:
     if: github.event_name != 'push' || contains(github.event.head_commit.message, '[coverage-audit]') || contains(github.event.head_commit.message, '[repair-official-details]')
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    concurrency:
+      group: gia-lai-coverage-audit
+      # Lượt đối chiếu mới chỉ hủy bước đọc nguồn cũ. Bước merge-data vẫn dùng
+      # khóa regional-data-write riêng và không bị ngắt giữa lúc ghi dữ liệu.
+      cancel-in-progress: true
     strategy:
       fail-fast: false
       matrix:
@@ -23,6 +28,10 @@ jobs:
     steps:
       - name: Lấy mã nguồn và dữ liệu gần nhất
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          filter: blob:none
 
       - name: Cài Node.js
         uses: actions/setup-node@v4
@@ -47,6 +56,9 @@ jobs:
         env:
           AUDIT_DAYS: "30"
           PAGE_SIZE: "10"
+          RESCUE_MAX_ATTEMPTS: "3"
+          RESCUE_REQUEST_TIMEOUT_MS: "15000"
+          RESCUE_MAX_RUNTIME_MS: "1200000"
         run: node scripts/fetch-recent-location-audit.mjs "${{ matrix.region }}"
 
       - name: Quét bù 30 ngày bằng mã tỉnh và địa danh
@@ -55,7 +67,9 @@ jobs:
         env:
           RESCUE_DAYS: "30"
           PAGE_SIZE: "10"
-          LOCATION_TERM_LIMIT: "16"
+          RESCUE_MAX_ATTEMPTS: "3"
+          RESCUE_REQUEST_TIMEOUT_MS: "15000"
+          RESCUE_MAX_RUNTIME_MS: "1200000"
         run: node scripts/fetch-recent-medical-rescue.mjs "${{ matrix.region }}"
 
       - name: Xác nhận Gia Lai đã được đối chiếu từ nguồn thật

@@ -133,6 +133,12 @@ if (!coverageAudit.includes("repair-official-tender-identities.mjs")
   || coverageAudit.includes('PAGE_SIZE: "100"')) {
   throw new Error("Kiểm tra chéo Gia Lai chưa dùng đầy đủ nguồn thật với pageSize 10");
 }
+if (!coverageAudit.includes("group: gia-lai-coverage-audit")
+  || !coverageAudit.includes("cancel-in-progress: true")
+  || !coverageAudit.includes("ref: main")
+  || !coverageAudit.includes('RESCUE_MAX_RUNTIME_MS: "1200000"')) {
+  throw new Error("Kiểm tra chéo Gia Lai chưa lấy main mới nhất, tự hủy lượt cũ hoặc giới hạn thời gian nguồn");
+}
 
 const artifactWorkflows = [fullScanPath, detailPath, quickPath, auditPath];
 for (const file of artifactWorkflows) {
@@ -224,6 +230,12 @@ if (medicalRescue.includes("LOCATION_TERM_LIMIT")
   || !medicalRescue.includes("removedRejectedStoredCount")
   || !medicalRescue.includes("rejectedSourceKeys")) {
   throw new Error("Quét bù Gia Lai chưa quét đủ địa danh hoặc chưa tự loại bản ghi cũ sai phạm vi");
+}
+const locationAudit = await readFile("scripts/fetch-recent-location-audit.mjs", "utf8");
+if (!locationAudit.includes("createRescueRuntime")
+  || !locationAudit.includes("auditRuntime.assertRemaining")
+  || !locationAudit.includes("auditRuntime.assertCanWait")) {
+  throw new Error("Đối chiếu địa danh chưa giới hạn tổng thời gian và retry khi nguồn công khai chậm");
 }
 if (!medicalRescue.includes("createRescueRuntime")
   || !medicalRescue.includes("rescueRuntime.assertRemaining")
