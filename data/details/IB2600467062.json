@@ -1,40 +1,193 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 8,
   "bidders": [
     {
-      "id": "bbaa05ca-4b36-4345-9bf9-5ef064ea1127",
+      "id": "94761db5-bbf2-4d42-9ba4-8aa0eb4615d4",
       "contractorCode": "vn0310913521",
-      "taxCode": "",
+      "taxCode": "0310913521",
       "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ VIMEC",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600502690",
       "lotName": "Gói thầu số 19/2026/HC: Cung ứng vật tư xét nghiệm, hóa chất sử dụng cho máy miễn dịch Elisa huyết học, năm 2026",
       "bidPrice": 1490112000,
       "finalPrice": 1490112000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-04T08:35:59.693",
+      "reason": "Không đáp ứng tiêu chí kỹ thuật",
+      "submittedAt": "2026-09-22T15:52:59.263",
       "models": []
     },
     {
-      "id": "1e409b76-a37c-4b67-8b77-afadfc114fa3",
+      "id": "6d79164a-ce5b-4877-991d-d309942b22e0",
       "contractorCode": "vn0312141366",
-      "taxCode": "",
+      "taxCode": "0312141366",
       "contractorName": "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600502690",
       "lotName": "Gói thầu số 19/2026/HC: Cung ứng vật tư xét nghiệm, hóa chất sử dụng cho máy miễn dịch Elisa huyết học, năm 2026",
       "bidPrice": 1509696000,
       "finalPrice": 1509696000,
-      "winningPrice": 0,
+      "winningPrice": 1509696000,
       "reason": "",
-      "submittedAt": "2026-09-04T08:35:59.912",
+      "submittedAt": "2026-09-22T15:52:59.263",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "62b09129-b749-49ff-9655-f48b7775b57f",
+      "name": "Test xét nghiệm phát hiện đồng thời kháng nguyên và kháng thể kháng HIV bằng phương pháp ELISA",
+      "model": "7G79-11",
+      "brand": "Murex HIV Ag/Ab combination",
+      "manufacturer": "DiaSorin Italia S.p.A UK Branch",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Bộ xét nghiệm miễn dịch enzyme dùng để phát hiện định tính kháng nguyên p24 của HIV và các kháng thể chống lại virus suy giảm miễn dịch ở người loại 1 (HIV-1, bao gồm HIV-1 nhóm O) và loại 2 (HIV-2) trong mẫu huyết thanh hoặc huyết tương của con người. - Độ nhạy: 100% - Độ đặc hiệu: 99.78% - Đạt tiêu chuẩn: CE-IVD, được liệt kê vào danh sách tiền thẩm định của WHO (WHO pre-qualified) - Xuất xứ: Anh",
+      "unit": "Test",
+      "quantity": 9600,
+      "unitPrice": 35100,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO"
+      ],
+      "decisionNo": "1836/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:00"
+    },
+    {
+      "id": "366ff700-5a79-4f7d-a79f-f797b42d8706",
+      "name": "Đầu col hút mẫu (Sample Tip)",
+      "model": "X0003",
+      "brand": "Tips 300 microlit",
+      "manufacturer": "Stratec Biomedical",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Đầu côn sử dụng một lần, dẫn điện, phù hợp với hệ thống tự động - Thể tích 300 µL. - Đóng gói sẵn: 960 cái / hộp - Xuất xứ: Đức",
+      "unit": "Cái",
+      "quantity": 42240,
+      "unitPrice": 5250,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO"
+      ],
+      "decisionNo": "1836/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:00"
+    },
+    {
+      "id": "bd4bbd07-7a3f-486b-b0c0-065377cba299",
+      "name": "Bộ xét nghiệm định lượng kháng thể IgG kháng dsDNA",
+      "model": "DSDNA.CE",
+      "brand": "IgG anti dsDNA",
+      "manufacturer": "DIA.PRO Diagnostic BioProbes S.r.l",
+      "origin": "Ý",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Bộ xét nghiệm phát hiện định lượng/định tính kháng thể tự miễn IgG kháng DNA mạch đôi (dsDNA) trong huyết thanh và huyết tương người. - Thành phần gồm: 12 thanh x 8 giếng phủ với dsDNA có trong các protein bò; bộ dựng đường cong chuẩn (CAL); enzyme liên hợp; cơ chất (substrate TMB); Sulphuric Acid và đệm rửa đậm đặc,Dung dịch pha loãng mẫu - Tổng thời gian ủ 105 phút ở 37 độ C - Độ nhạy: ≥ 98%, Độ đặc hiệu: ≥ 98% - Xuất xứ: Ý",
+      "unit": "Test",
+      "quantity": 576,
+      "unitPrice": 73000,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO"
+      ],
+      "decisionNo": "1836/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:00"
+    },
+    {
+      "id": "bc1570ec-33f6-48d5-877b-69decc59af8d",
+      "name": "Đầu col hút hóa chất (Reagent Tip)",
+      "model": "X0002",
+      "brand": "Tips 1100 microlit",
+      "manufacturer": "Stratec Biomedical",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Đầu côn sử dụng một lần, dẫn điện, phù hợp với hệ thống tự động - Thể tích 1100 µL. - Đóng gói sẵn: 960 cái / hộp - Xuất xứ: Đức",
+      "unit": "Cái",
+      "quantity": 3840,
+      "unitPrice": 5250,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO"
+      ],
+      "decisionNo": "1836/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:00"
+    },
+    {
+      "id": "6d0de322-527c-43e4-bb93-9cb53715c75a",
+      "name": "Bộ xét nghiệm định tính kháng thể IgG kháng nhân (ANA)",
+      "model": "ANAS.CE",
+      "brand": "ANA Screening IgG",
+      "manufacturer": "DIA.PRO Diagnostic BioProbes S.r.l",
+      "origin": "Ý",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Xét nghiệm miễn dịch Enzyme (ELISA) để phát hiện định tính các tự kháng thể IgG kháng dsDNA, histone, SSA, SSB, Sm, Sm/RNP, Scl-70, Jo-1, tâm động (centromere) và các kháng nguyên khác tách chiết từ nhân HEp-2 trong huyết thanh và huyết tương người liên quan đến hệ thống bệnh tự miễn như SLE (Systemic Lupus Erythematosus - Lupus ban đỏ hệ thống), RA (Reumatoid Arthritis - viêm khớp dạng thấp), xơ cứng bì, MCDT (Mixed Connective Tissue Disease - bệnh mô liên kết hỗn hợp) và hội chứng Sjögren; và kháng thể kháng nhân hòa tan (Extractable anti Nuclear Antibodies-ENA) liên quan đến hệ thống bệnh tự miễn như viêm đa cơ, SLE, MCDT và hội chứng Sjogren. - Thành phần gồm: khay vi giếng, chứng âm, chứng dương, enzyme liên hợp, cơ chất, Sulphuric Acid, đệm rửa đậm đặc, dung dịch pha loãng mẫu - Tổng thời gian ủ 105 phút ở 37 độ C - Độ nhạy: ≥ 98%, Độ đặc hiệu: ≥ 98% - Xuất xứ: Ý",
+      "unit": "Test",
+      "quantity": 576,
+      "unitPrice": 73000,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO"
+      ],
+      "decisionNo": "1836/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:00"
+    },
+    {
+      "id": "cb54af1e-157f-4cd1-88fe-e1da09dcbbe7",
+      "name": "Test xét nghiệm Syphilis bằng phương pháp ELISA",
+      "model": "8E04-01",
+      "brand": "ICE* Syphilis",
+      "manufacturer": "DiaSorin Italia S.p.A UK Branch",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Bộ xét nghiệm miễn dịch enzyme dùng để phát hiện định tính các kháng thể chống lại Treponema pallidum trong mẫu huyết thanh hoặc huyết tương của con người. - Độ nhạy: 100% - Độ đặc hiệu: 99.95% - Đạt tiêu chuẩn: CE-IVD - Xuất xứ: Anh",
+      "unit": "Test",
+      "quantity": 9600,
+      "unitPrice": 25000,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO"
+      ],
+      "decisionNo": "1836/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:00"
+    },
+    {
+      "id": "637ee373-30b4-4bf1-9cc5-0dc7826a23c1",
+      "name": "Test xét nghiệm phát hiện HBsAg trong huyết tương bằng phương pháp ELISA",
+      "model": "9F80-05",
+      "brand": "Murex HBsAg Version 3",
+      "manufacturer": "DiaSorin Italia S.p.A UK Branch",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Bộ xét nghiệm miễn dịch enzyme dùng để phát hiện định tính kháng nguyên bề mặt viêm gan B (HBsAg) trong mẫu huyết thanh hoặc huyết tương của con người. - Độ nhạy: 100% - Độ đặc hiệu: 99.97% - Đạt tiêu chuẩn: CE-IVD, được liệt kê vào danh sách tiền thẩm định của WHO (WHO pre-qualified) - Xuất xứ: Anh",
+      "unit": "Test",
+      "quantity": 9600,
+      "unitPrice": 25700,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO"
+      ],
+      "decisionNo": "1836/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:00"
+    },
+    {
+      "id": "348a2d9b-eae0-4890-931d-46b7ff636de6",
+      "name": "Test xét nghiệm phát hiện kháng thể kháng HCV bằng phương pháp ELISA",
+      "model": "7F5157",
+      "brand": "Murex anti-HCV (version 4.0)",
+      "manufacturer": "DiaSorin Italia S.p.A UK Branch",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Bộ xét nghiệm miễn dịch enzyme dùng để xét nghiệm định tính kháng thể chống virus viêm gan C (anti-HCV) trong mẫu huyết tương hoặc huyết thanh của người. - Độ nhạy: 100% (457/457 mẫu) - Độ đặc hiệu: 99.92% - Đạt tiêu chuẩn CE-IVD - Xuất xứ: Anh",
+      "unit": "Test",
+      "quantity": 9600,
+      "unitPrice": 37500,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ NANO"
+      ],
+      "decisionNo": "1836/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:00"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +212,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:39:15.801Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-27T20:18:56.160Z"
 }

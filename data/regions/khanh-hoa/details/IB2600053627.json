@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "cb9771fc-f23f-41be-b136-cce6a3bb9701",
+      "contractorCode": "vn0305127353",
+      "taxCode": "0305127353",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT THÁI DƯƠNG",
+      "status": "lost",
+      "lotNo": "BP2600070357",
+      "lotName": "Dịch vụ sửa chữa dây nội soi ERCP",
+      "bidPrice": 85650000,
+      "finalPrice": 85650000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-02-26T09:51:05.582",
+      "models": []
+    },
+    {
+      "id": "229d04dd-bb4b-4b68-bf4d-79b4a0c64926",
+      "contractorCode": "vn0310623082",
+      "taxCode": "0310623082",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT MINH LONG",
+      "status": "won",
+      "lotNo": "BP2600070357",
+      "lotName": "Dịch vụ sửa chữa dây nội soi ERCP",
+      "bidPrice": 83000000,
+      "finalPrice": 83000000,
+      "winningPrice": 83000000,
+      "reason": "",
+      "submittedAt": "2026-02-26T09:51:05.582",
+      "models": [
+        "Dây nội soi ERCP Seri: 2501737 Model: TJF-150 Xuất xứ: Olympus-Nhật"
+      ]
+    },
+    {
+      "id": "dc5811ea-ed8e-4426-870e-5d6b1f45fb67",
+      "contractorCode": "vn0318751752",
+      "taxCode": "0318751752",
+      "contractorName": "CÔNG TY TNHH MGI MEDICAL",
+      "status": "lost",
+      "lotNo": "BP2600070357",
+      "lotName": "Dịch vụ sửa chữa dây nội soi ERCP",
+      "bidPrice": 91806000,
+      "finalPrice": 91806000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-02-26T09:51:05.582",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "10571314682654324",
+      "name": "Dây nội soi ERCP Seri: 2501737 Model: TJF-150 Xuất xứ: Olympus-Nhật",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 83000000,
+      "amount": 83000000,
+      "contractorCode": "vn0310623082",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN KỸ THUẬT MINH LONG"
+      ],
+      "lotNo": "",
+      "decisionNo": "352/QĐ-BVNT",
+      "decisionDate": "2026-02-26T09:50:26",
+      "resultPublishedDate": "2026-02-26T09:51:42"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "9139729e-9ee6-4392-b9c5-d59acc834932",
+        "lotNo": "BP2600070357",
+        "name": "Dịch vụ sửa chữa dây nội soi ERCP",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 97000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Dịch vụ sửa chữa dây nội soi ERCP",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "10571314682654324",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Dây nội soi ERCP Seri: 2501737 Model: TJF-150 Xuất xứ: Olympus-Nhật",
+        "unit": "",
+        "quantity": 1,
+        "code": "",
+        "brand": "",
+        "manufacturer": "",
+        "origin": "",
+        "manufactureYear": "",
+        "specification": "",
+        "otherRequirement": "",
+        "projectPlace": "",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.2034",
+        "chapterName": "Mẫu số 02A. PHẠM VI CUNG CẤP DỊCH VỤ (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.2034",
+        "name": "Mẫu số 02A. PHẠM VI CUNG CẤP DỊCH VỤ (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra)",
+        "parentCode": "",
+        "orderIndex": 0
+      },
+      {
+        "code": "BD.DT.02.2102",
+        "name": "Mẫu số 03. YÊU CẦU VỀ KỸ THUẬT",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-27T20:21:11.262Z"
+}

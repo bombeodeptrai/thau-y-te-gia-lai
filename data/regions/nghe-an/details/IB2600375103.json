@@ -1,9 +1,66 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "65eeacb4-f707-4f82-8000-111638a11514",
+      "contractorCode": "vn0104817815",
+      "taxCode": "0104817815",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ GIẢI PHÁP Y TẾ HSI",
+      "status": "won",
+      "lotNo": "BP2600521553",
+      "lotName": "Gói thầu số 3: Mua sắm phụ kiện thay thế cho hệ thống nội soi",
+      "bidPrice": 70000000,
+      "finalPrice": 70000000,
+      "winningPrice": 70000000,
+      "reason": "",
+      "submittedAt": "2026-07-29T15:59:37.521",
+      "models": [
+        "Y1964",
+        "UXR-300BF"
+      ]
+    },
+    {
+      "id": "cd0273b5-70f3-4a5f-859b-33c29482af41",
+      "contractorCode": "vn0310623082",
+      "taxCode": "0310623082",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT MINH LONG",
+      "status": "lost",
+      "lotNo": "BP2600521553",
+      "lotName": "Gói thầu số 3: Mua sắm phụ kiện thay thế cho hệ thống nội soi",
+      "bidPrice": 70500000,
+      "finalPrice": 70500000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-07-29T15:59:37.521",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "0a94c0f3-0eeb-439b-bdc8-a7594ff22b33",
+      "name": "Bóng xenon 300W",
+      "model": "Y1964",
+      "brand": "-",
+      "manufacturer": "Excelitas",
+      "origin": "Indonesia",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Hàng mới 100%\n- Tương thích với:\n+ Hệ thống nội soi siêu âm nguồn sáng xenon 300W (Model: EPK-i7010, Hãng sản xuất: Pentax/Hoya – Nhật Bản, Năm sản xuất: 2020).\n+ Hệ thống nội soi khí phế quản (Model: EPK-i5000, Hãng sản xuất: Hoya – Nhật Bản, Năm sản xuất: 2019).\n+ Hệ thống nội soi dạ dày và đại tràng (Model: EPK-i5000, Hãng sản xuất: Hoya – Nhật Bản, Năm sản xuất: 2019).",
+      "unit": "Cái",
+      "quantity": 3,
+      "unitPrice": 18500000,
+      "amount": 14500000,
+      "contractorCode": "vn0104817815",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ GIẢI PHÁP Y TẾ HSI"
+      ],
+      "lotNo": "",
+      "decisionNo": "2219/QĐ-BVUB",
+      "decisionDate": "2026-07-28T16:26:31",
+      "resultPublishedDate": "2026-07-29T15:59:43"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -80,6 +137,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:01:54.184Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-27T20:09:59.950Z"
 }

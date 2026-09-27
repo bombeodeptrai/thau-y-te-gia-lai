@@ -1,25 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "73d56bf1-a99c-4373-9673-b5ad2357cbe6",
+      "id": "0c6db4dc-9717-4115-b6a1-74442cb59e49",
       "contractorCode": "vn0313424952",
-      "taxCode": "",
+      "taxCode": "0313424952",
       "contractorName": "CÔNG TY CỔ PHẦN VAMTRADING",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600571723",
       "lotName": "Gói thầu số 22/2026/DVKT: Cung ứng hóa chất, vật tư, thiết bị thực hiện dịch vụ kỹ thuật xét nghiệm khí máu động mạch",
       "bidPrice": 900000000,
       "finalPrice": 900000000,
-      "winningPrice": 0,
+      "winningPrice": 900000000,
       "reason": "",
-      "submittedAt": "2026-09-03T08:38:26.03",
+      "submittedAt": "2026-09-22T16:12:03.697",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "0f1ec72b-c28d-4851-91a3-2b836b275a35",
+      "name": "Xét nghiệm khí máu động mạch",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Test",
+      "quantity": 5000,
+      "unitPrice": 180000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN VAMTRADING "
+      ],
+      "decisionNo": "1837/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T16:12:28"
+    },
+    {
+      "id": "e4cd0be3-403c-4ebe-a846-e3851ab033fe",
+      "name": "Máy phân tích khí máu",
+      "model": "00026000000",
+      "brand": "GEM Premier 3500",
+      "manufacturer": "Instrumentation Laboratory Company",
+      "origin": "Mỹ",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "- Máy phân tích khí máu sử dụng công nghệ Cartridge. - Tự động hiệu chuẩn và kiểm tra chất lượng theo thiết kế của cartridge. - Có chức năng phát hiện lỗi mẫu (bọt khí, thể tích mẫu không đủ… ). - Lưu trữ kết quả, kết nối LIS/HIS qua Internet hoặc các giao thức chuẩn. - Có Bộ lưu điện.",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 0,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN VAMTRADING "
+      ],
+      "decisionNo": "1837/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T16:12:28"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:39:16.397Z"
+  "fetchedAt": "2026-09-27T20:18:59.389Z"
 }

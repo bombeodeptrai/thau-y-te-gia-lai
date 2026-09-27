@@ -1,25 +1,83 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "8e74a7ed-3532-4001-8b2b-56f067863c05",
+      "id": "ebefb190-4220-4ba1-9534-a10e2121629d",
       "contractorCode": "vn0101859694",
-      "taxCode": "",
+      "taxCode": "0101859694",
       "contractorName": "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THIẾT BỊ VÀ HÓA CHẤT VIỆT NAM (INCHEMCO., JSC)",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600580125",
       "lotName": "Gói thầu số 1: Mua sắm thiết bị y tế phục vụ công tác khám chữa bệnh tại Trung tâm Y tế A Lưới năm 2026",
       "bidPrice": 811000000,
       "finalPrice": 811000000,
-      "winningPrice": 0,
+      "winningPrice": 811000000,
       "reason": "",
-      "submittedAt": "2026-08-26T15:48:17.947",
+      "submittedAt": "2026-09-24T14:38:47.78",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "b108fbb1-1ea1-4e66-ac54-c3967129b1a0",
+      "name": "Máy điện tim",
+      "model": "FCP 8100",
+      "brand": "FCP 8100",
+      "manufacturer": "Fukuda Denshi",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Sản xuất năm 2026 trở về sau",
+      "specification": "Tham chiếu tại bảng đáp ứng thông số kỹ thuật chào thầu",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 58000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THIẾT BỊ VÀ HÓA CHẤT VIỆT NAM (INCHEMCO., JSC)"
+      ],
+      "decisionNo": "165/QĐ-TTYT",
+      "decisionDate": "2026-09-24T23:59:59",
+      "resultPublishedDate": "2026-09-24T14:38:55"
+    },
+    {
+      "id": "ed3aa75d-8747-4842-81d8-ec01beb3c8bd",
+      "name": "Dao mổ điện cao tần",
+      "model": "Surtron 300 HP",
+      "brand": "Surtron 300 HP",
+      "manufacturer": "LED Spa",
+      "origin": "Ý",
+      "manufactureYear": "Sản xuất năm 2026 trở về sau",
+      "specification": "Tham chiếu tại bảng đáp ứng thông số kỹ thuật chào thầu",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 155000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THIẾT BỊ VÀ HÓA CHẤT VIỆT NAM (INCHEMCO., JSC)"
+      ],
+      "decisionNo": "165/QĐ-TTYT",
+      "decisionDate": "2026-09-24T23:59:59",
+      "resultPublishedDate": "2026-09-24T14:38:55"
+    },
+    {
+      "id": "34907988-be9b-4eda-b446-a03f1a50f503",
+      "name": "Máy điện não đồ",
+      "model": "Neuron-Spectrum-4/P",
+      "brand": "Neuron-Spectrum-4/P",
+      "manufacturer": "Neurosoft LLC",
+      "origin": "CHLB Nga",
+      "manufactureYear": "Sản xuất năm 2026 trở về sau",
+      "specification": "Tham chiếu tại bảng đáp ứng thông số kỹ thuật chào thầu",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 598000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU THIẾT BỊ VÀ HÓA CHẤT VIỆT NAM (INCHEMCO., JSC)"
+      ],
+      "decisionNo": "165/QĐ-TTYT",
+      "decisionDate": "2026-09-24T23:59:59",
+      "resultPublishedDate": "2026-09-24T14:38:55"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +103,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:34:06.706Z"
+  "fetchedAt": "2026-09-27T20:14:17.840Z"
 }

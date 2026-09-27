@@ -1,40 +1,132 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 8,
   "bidders": [
     {
-      "id": "1d8c9772-a4f6-4708-8eb8-01c9c088dd79",
-      "contractorCode": "vn0110511568",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH XUẤT NHẬP KHẨU CÔNG NGHỆ CAO VẠN XUÂN",
-      "status": "participating",
-      "lotNo": "BP2600435535",
-      "lotName": "Gói thầu MS-04: Mua sắm, lắp đặt trang thiết bị y tế",
-      "bidPrice": 4929000000,
-      "finalPrice": 4929000000,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-16T10:39:45.5",
-      "models": []
-    },
-    {
-      "id": "9821f679-9b5c-46d6-a75c-3faadda9b5af",
+      "id": "e2d71557-7113-437f-b67a-5ec0d62edbf8",
       "contractorCode": "vn0106283950",
-      "taxCode": "",
+      "taxCode": "0106283950",
       "contractorName": "CÔNG TY TNHH PHÁT TRIỂN KỸ THUẬT Y TẾ ĐÔNG ĐÔ",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600435535",
       "lotName": "Gói thầu MS-04: Mua sắm, lắp đặt trang thiết bị y tế",
       "bidPrice": 4933000000,
       "finalPrice": 4933000000,
       "winningPrice": 0,
+      "reason": "Không đáp ứng về yêu cầu kỹ thuật",
+      "submittedAt": "2026-09-14T10:22:43.864",
+      "models": []
+    },
+    {
+      "id": "1c0853e5-040b-46c6-924c-2cd06f752b7b",
+      "contractorCode": "vn0110511568",
+      "taxCode": "0110511568",
+      "contractorName": "CÔNG TY TNHH XUẤT NHẬP KHẨU CÔNG NGHỆ CAO VẠN XUÂN",
+      "status": "won",
+      "lotNo": "BP2600435535",
+      "lotName": "Gói thầu MS-04: Mua sắm, lắp đặt trang thiết bị y tế",
+      "bidPrice": 4929000000,
+      "finalPrice": 4929000000,
+      "winningPrice": 4929000000,
       "reason": "",
-      "submittedAt": "2026-07-16T10:39:45.794",
+      "submittedAt": "2026-09-14T10:22:43.864",
+      "models": []
+    },
+    {
+      "id": "3ad844c7-171e-4ab7-b19b-1779a3684e22",
+      "contractorCode": "vn0108599011",
+      "taxCode": "0108599011",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ DUY TIÊN - HÀ NAM",
+      "status": "won",
+      "lotNo": "BP2600435535",
+      "lotName": "Gói thầu MS-04: Mua sắm, lắp đặt trang thiết bị y tế",
+      "bidPrice": 4929000000,
+      "finalPrice": 4929000000,
+      "winningPrice": 4929000000,
+      "reason": "",
+      "submittedAt": "2026-09-14T10:22:43.864",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "fcc0418e-4a73-41ef-b575-c9d29b7b558d",
+      "name": "Máy siêu âm màu 03 đầu dò loại xe đẩy với đầu dò tim kèm phần mềm",
+      "model": "Versana Essential",
+      "brand": "GE Healthcare",
+      "manufacturer": "GE Medical Systems (China) Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "sản xuất năm 2026 trở về sau",
+      "specification": "Cấu hình và đặc tính kỹ thuật được mô tả chi tiết trong bảng đáp ứng tính năng kỹ thuật của E-HSDT",
+      "unit": "Máy",
+      "quantity": 3,
+      "unitPrice": 1131000000,
+      "winnerNames": [
+        "Liên danh Vạn Xuân - Duy Tiên Hà Nam"
+      ],
+      "decisionNo": "2010/QĐ-SĐ",
+      "decisionDate": "2026-09-14T23:59:59",
+      "resultPublishedDate": "2026-09-14T10:23:13"
+    },
+    {
+      "id": "7f1b8869-af0d-4e21-807f-822dc4269b28",
+      "name": "Kính Sinh hiển vi (đèn khe)",
+      "model": "L-0189-LED",
+      "brand": "Inami & Co.,Ltd",
+      "manufacturer": "Inami & Co.,Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "sản xuất năm 2026 trở về sau",
+      "specification": "Cấu hình và đặc tính kỹ thuật được mô tả chi tiết trong bảng đáp ứng tính năng kỹ thuật của E-HSDT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 262000000,
+      "winnerNames": [
+        "Liên danh Vạn Xuân - Duy Tiên Hà Nam"
+      ],
+      "decisionNo": "2010/QĐ-SĐ",
+      "decisionDate": "2026-09-14T23:59:59",
+      "resultPublishedDate": "2026-09-14T10:23:13"
+    },
+    {
+      "id": "44fc2a98-f497-4c69-b1f5-273c0a2736fb",
+      "name": "Đèn mổ di động",
+      "model": "LED SL88A",
+      "brand": "Elpis Medical Co., Ltd",
+      "manufacturer": "Elpis Medical Co., Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "sản xuất năm 2026 trở về sau",
+      "specification": "Cấu hình và đặc tính kỹ thuật được mô tả chi tiết trong bảng đáp ứng tính năng kỹ thuật của E-HSDT",
+      "unit": "Cái",
+      "quantity": 4,
+      "unitPrice": 54000000,
+      "winnerNames": [
+        "Liên danh Vạn Xuân - Duy Tiên Hà Nam"
+      ],
+      "decisionNo": "2010/QĐ-SĐ",
+      "decisionDate": "2026-09-14T23:59:59",
+      "resultPublishedDate": "2026-09-14T10:23:13"
+    },
+    {
+      "id": "32c5f9b1-339d-41d2-a029-5185da11b9a7",
+      "name": "Hệ thống nội soi tai mũi họng kèm + ghế khám đồng bộ + Máy in màu + Máy tính",
+      "model": "V1 Smart mini + ghế GX 100",
+      "brand": "Dong-A Chammed Co., Ltd",
+      "manufacturer": "Dong-A Chammed Co., Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "sản xuất năm 2026 trở về sau",
+      "specification": "Cấu hình và đặc tính kỹ thuật được mô tả chi tiết trong bảng đáp ứng tính năng kỹ thuật của E-HSDT",
+      "unit": "Hệ thống",
+      "quantity": 2,
+      "unitPrice": 529000000,
+      "winnerNames": [
+        "Liên danh Vạn Xuân - Duy Tiên Hà Nam"
+      ],
+      "decisionNo": "2010/QĐ-SĐ",
+      "decisionDate": "2026-09-14T23:59:59",
+      "resultPublishedDate": "2026-09-14T10:23:13"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +151,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:01:54.539Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-27T20:10:00.821Z"
 }

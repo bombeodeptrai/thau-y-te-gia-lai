@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "678ab3b2-dd92-4b1e-8bff-ee32d43811d4",
+      "contractorCode": "vn0300422482",
+      "taxCode": "0300422482",
+      "contractorName": "CÔNG TY CỔ PHẦN HƠI KỸ NGHỆ QUE HÀN",
+      "status": "lost",
+      "lotNo": "BP2500590553",
+      "lotName": "Oxy y tế (dạng lỏng) sử dụng tại Bệnh viện Phổi Khánh Hòa từ 11/2025 – 10/2026",
+      "bidPrice": 186300000,
+      "finalPrice": 186300000,
+      "winningPrice": 0,
+      "reason": "NHÀ THẦU XẾP HẠNG THỨ 2",
+      "submittedAt": "2025-12-05T15:33:28.111",
+      "models": []
+    },
+    {
+      "id": "322384a4-2ae2-4b62-891c-9cf857fa6900",
+      "contractorCode": "vn6000195906",
+      "taxCode": "6000195906",
+      "contractorName": "CÔNG TY TNHH TM&DV KHÍ ÔXY LONG PHÁT",
+      "status": "won",
+      "lotNo": "BP2500590553",
+      "lotName": "Oxy y tế (dạng lỏng) sử dụng tại Bệnh viện Phổi Khánh Hòa từ 11/2025 – 10/2026",
+      "bidPrice": 165000000,
+      "finalPrice": 165000000,
+      "winningPrice": 165000000,
+      "reason": "",
+      "submittedAt": "2025-12-05T15:33:28.111",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "fe96d5e1-baa2-4184-97dc-75cca4a1b8cc",
+      "name": "Oxy y tế",
+      "model": "Oxy",
+      "brand": "Messer",
+      "manufacturer": "Messer",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Khí oxy y tế (dạng lỏng). Hàm lượng >=99.6%",
+      "unit": "kg",
+      "quantity": 25000,
+      "unitPrice": 6600,
+      "winnerNames": [
+        "CÔNG TY TNHH TM&DV KHÍ ÔXY LONG PHÁT"
+      ],
+      "decisionNo": "199/QĐ-BVPKH",
+      "decisionDate": "2025-12-05T23:59:59",
+      "resultPublishedDate": "2025-12-05T15:34:19"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "9d19724e-e067-4010-8122-6c531d8398e7",
+        "lotNo": "BP2500590553",
+        "name": "Oxy y tế (dạng lỏng) sử dụng tại Bệnh viện Phổi Khánh Hòa từ 11/2025 – 10/2026",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 191700000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm Oxy y tế (dạng lỏng)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-27T20:21:28.130Z"
+}

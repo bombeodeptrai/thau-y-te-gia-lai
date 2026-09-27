@@ -1,40 +1,60 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "66ec1aeb-47a8-43ee-98c6-498ffd204406",
+      "id": "4a2712db-ef2e-4108-985b-493b35e5ce24",
       "contractorCode": "vn0307884750",
-      "taxCode": "",
+      "taxCode": "0307884750",
       "contractorName": "CÔNG TY TNHH KINH DOANH VẬT TƯ TRANG THIẾT BỊ Y TẾ VIỆT NAM",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600536417",
       "lotName": "Mua hệ thống nội soi tiêu hóa có chức năng chẩn đoán ung thư sớm",
       "bidPrice": 2263000000,
       "finalPrice": 2263000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-08-28T08:35:41.343",
+      "reason": "không đánh giá",
+      "submittedAt": "2026-09-25T15:42:40.97",
       "models": []
     },
     {
-      "id": "24080e7f-ba5a-446e-86b2-e5e3554d8ade",
+      "id": "c91041d0-29be-46ac-9b08-f1618ce7bece",
       "contractorCode": "vn0310520947",
-      "taxCode": "",
+      "taxCode": "0310520947",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ ETC",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600536417",
       "lotName": "Mua hệ thống nội soi tiêu hóa có chức năng chẩn đoán ung thư sớm",
-      "bidPrice": 2023540000,
+      "bidPrice": 2438000000,
       "finalPrice": 2023540000,
-      "winningPrice": 0,
+      "winningPrice": 2023540000,
       "reason": "",
-      "submittedAt": "2026-08-28T08:35:41.552",
+      "submittedAt": "2026-09-25T15:42:40.97",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "20e0064e-4cda-480c-957c-3a9afaaf0094",
+      "name": "Hệ thống nội soi tiêu hóa hỗ trợ chẩn đoán ung thư sớm",
+      "model": "EP-8000",
+      "brand": "Fujifilm",
+      "manufacturer": "Fujifilm Healthcare Manufacturing Corporation Sano Office",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo Bảng đáp ứng yêu cầu kỹ thuật",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 2023540000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ ETC"
+      ],
+      "decisionNo": "2778/QĐ-BVYD",
+      "decisionDate": "2026-09-25T23:59:59",
+      "resultPublishedDate": "2026-09-25T15:42:45"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +79,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:34:07.496Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-27T20:14:18.093Z"
 }

@@ -1,9 +1,163 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "ca0d1234-73aa-4b8b-9013-d9446892b247",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "lost",
+      "lotNo": "PP2600393303",
+      "lotName": "Máy đo huyết áp điện tử",
+      "bidPrice": 7128000,
+      "finalPrice": 7128000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-09-23T14:56:05.767",
+      "models": [
+        "38 plates",
+        "5002 CABLE-A"
+      ]
+    },
+    {
+      "id": "83cd5b18-a320-4234-b5f6-d75086a274c5",
+      "contractorCode": "vn2902219749",
+      "taxCode": "2902219749",
+      "contractorName": "CÔNG TY TNHH VẬT TƯ Y TẾ HỒNG PHÁT",
+      "status": "won",
+      "lotNo": "PP2600393303",
+      "lotName": "Máy đo huyết áp điện tử",
+      "bidPrice": 6980000,
+      "finalPrice": 6980000,
+      "winningPrice": 6980000,
+      "reason": "",
+      "submittedAt": "2026-09-23T14:56:05.767",
+      "models": [
+        "HEM - 7183"
+      ]
+    },
+    {
+      "id": "f2ad8105-13f2-4735-bfd7-42adf0709c1c",
+      "contractorCode": "vn3604062734",
+      "taxCode": "3604062734",
+      "contractorName": "CÔNG TY TNHH GIẢI PHÁP TOÀN DIỆN NGỌC PHÁT",
+      "status": "lost",
+      "lotNo": "PP2600393303",
+      "lotName": "Máy đo huyết áp điện tử",
+      "bidPrice": 7500000,
+      "finalPrice": 7500000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-09-23T14:56:05.767",
+      "models": []
+    },
+    {
+      "id": "ba8c96a5-a0c9-4c57-a1ad-12fa9aff73e0",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "PP2600393304",
+      "lotName": "Bộ dây gắn máy điện châm",
+      "bidPrice": 2100000,
+      "finalPrice": 2100000,
+      "winningPrice": 2100000,
+      "reason": "",
+      "submittedAt": "2026-09-23T14:56:05.767",
+      "models": [
+        "38 plates",
+        "5002 CABLE-A"
+      ]
+    },
+    {
+      "id": "ea0f8ca1-3864-4eb4-8df6-6e678965cdd4",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "PP2600393305",
+      "lotName": "Quyển đo sắc giác Ishiharra",
+      "bidPrice": 2388000,
+      "finalPrice": 2388000,
+      "winningPrice": 2388000,
+      "reason": "",
+      "submittedAt": "2026-09-23T14:56:05.767",
+      "models": [
+        "38 plates",
+        "5002 CABLE-A"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2a5dd9a7-47c3-420a-83c1-1364be321478",
+      "name": "Quyển đo sắc giác Ishiharra",
+      "model": "38 plates",
+      "brand": "Chongqing Vision Star ",
+      "manufacturer": "Chongqing Vision Star Optical Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở di",
+      "specification": "38 hình",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 2388000,
+      "amount": 2388000,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "359/QĐ-BVĐK",
+      "decisionDate": "2026-09-23T14:51:12",
+      "resultPublishedDate": "2026-09-23T14:56:15"
+    },
+    {
+      "id": "bd05df5d-152c-4133-b959-3b8d31cc7ad7",
+      "name": "Máy đo huyết áp điện tử",
+      "model": "HEM - 7183",
+      "brand": "OMRON",
+      "manufacturer": "OMRON HEALTHE\nMANUACTURING\nVIETNAM Co., Ltd.\n",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở di",
+      "specification": "dải đo huyết áp khoảng từ 30-280 mmHg (hoặc rộng hơn), nhịp tim từ 40-180 nhịp/phút (hoặc rộng hơn), độ chính xác huyết áp ±3 mmHg, nhịp tim ±5%, bộ nhớ lưu tối thiểu 30 kết quả gần nhất. Chạy bằng pin kèm adapter điện. Đạt tiêu chuẩn ISO 13485; tiêu chuẩn CE hoặc FDA hoặc tương đương.",
+      "unit": "Cái",
+      "quantity": 6,
+      "unitPrice": 1163333.3333333333,
+      "amount": 6980000,
+      "contractorCode": "vn2902219749",
+      "winnerNames": [
+        "CÔNG TY TNHH VẬT TƯ Y TẾ HỒNG PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "359/QĐ-BVĐK",
+      "decisionDate": "2026-09-23T14:51:12",
+      "resultPublishedDate": "2026-09-23T14:56:15"
+    },
+    {
+      "id": "f64479d9-22ec-49ec-b6c0-e7a05b48a5b2",
+      "name": "Bộ dây gắn máy điện châm",
+      "model": "5002 CABLE-A",
+      "brand": "Greatwall",
+      "manufacturer": "Wujin Greatwall Medical Device Co.,Ltd.Changzhou",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở di",
+      "specification": "- Dây châm cứu  là phụ kiện đi kèm máy châm cứu (máy điện châm): KWD-808I, KWD-808II\n- Dây cáp điện cực đã gắn đầu nối \n- Vỏ bọc nhựa cách điện, lõi dây đồng có độ tinh khiết cao đảm bảo dẫn truyền xung điện chính xác nhất; Dây giắc loại giắc vuông chuyên dùng cho máy điện châm thế hệ mới.\n- Điện áp 10mA\n-Dây dài 130cm, gắc cắm máy giắc đúc  tròn 3.5mm , chia 2 đầu kẹp cá sấu dài 16mm. Chiều dài toàn bộ  dây là khoảng  135 cm",
+      "unit": "Bộ",
+      "quantity": 60,
+      "unitPrice": 35000,
+      "amount": 2100000,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "359/QĐ-BVĐK",
+      "decisionDate": "2026-09-23T14:51:12",
+      "resultPublishedDate": "2026-09-23T14:56:15"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -122,6 +276,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:36:43.492Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-27T20:16:35.844Z"
 }
