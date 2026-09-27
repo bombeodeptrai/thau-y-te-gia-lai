@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-27T08:23:02.446Z",
+  "rescuedAt": "2026-09-27T11:53:57.072Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -156,7 +156,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -285,9 +285,9 @@
   "acceptedCount": 17,
   "rejectedCount": 602,
   "rejectedReasons": {
-    "excluded:xay dung": 179,
     "excluded:tu van": 179,
-    "insufficient-medical-context": 138,
+    "excluded:xay dung": 178,
+    "insufficient-medical-context": 139,
     "excluded:sua chua": 25,
     "excluded:cai tao": 22,
     "excluded:xay lap": 22,
