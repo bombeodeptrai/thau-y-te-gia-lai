@@ -384,29 +384,45 @@ function filteredTenders() {
     const equipmentMatches = terms.length
       ? equipment.filter((item) => searchTextMatches(item.searchText, terms))
       : [];
+    const contractors = state.contractorsByNotifyNo.get(tender.notifyNo) || [];
+    const queryContractorMatches = terms.length
+      ? contractors.filter((item) => searchTextMatches(item.searchText, terms))
+      : [];
     const modelMatches = terms.length
       && tenderModelSearchTexts(tender).some((modelText) => searchTextMatches(modelText, terms));
     const queryMatches = !terms.length
       || searchTextMatches(tenderText, terms)
       || modelMatches
-      || equipmentMatches.length > 0;
-    const contractorMatches = contractorTerms.length
-      ? (state.contractorsByNotifyNo.get(tender.notifyNo) || [])
-        .filter((item) => searchTextMatches(item.searchText, contractorTerms))
+      || equipmentMatches.length > 0
+      || queryContractorMatches.length > 0;
+    const contractorFilterMatches = contractorTerms.length
+      ? contractors.filter((item) => searchTextMatches(item.searchText, contractorTerms))
       : [];
-    const contractorFilterMatches = !contractorTerms.length || contractorMatches.length > 0;
+    const contractorFilterPasses = !contractorTerms.length || contractorFilterMatches.length > 0;
     const statusMatches =
       state.status === "all" ||
       (state.status === "awarded"
         ? Boolean(tender.hasResult || tender.winnerNames?.length)
         : tender.status === state.status);
     const investorMatches = !state.investor || tender.investor === state.investor;
-    const matches = queryMatches && contractorFilterMatches && statusMatches && investorMatches;
+    const matches = queryMatches && contractorFilterPasses && statusMatches && investorMatches;
     if (matches && equipmentMatches.length) {
       state.searchMatchesByNotifyNo.set(tender.notifyNo, equipmentMatches);
     }
-    if (matches && contractorMatches.length) {
-      state.contractorMatchesByNotifyNo.set(tender.notifyNo, contractorMatches);
+    const displayedContractorMatches = [...queryContractorMatches, ...contractorFilterMatches]
+      .filter((item, index, values) => values.findIndex((value) => [
+        value.contractorName,
+        value.contractorCode,
+        value.taxCode,
+        value.lotName,
+      ].join("|") === [
+        item.contractorName,
+        item.contractorCode,
+        item.taxCode,
+        item.lotName,
+      ].join("|")) === index);
+    if (matches && displayedContractorMatches.length) {
+      state.contractorMatchesByNotifyNo.set(tender.notifyNo, displayedContractorMatches);
     }
     return matches;
   });
@@ -696,7 +712,7 @@ function contractorStatusLabel(status) {
 }
 
 function contractorSearchMatchMarkup(tender) {
-  if (!state.contractorText.trim()) return "";
+  if (!state.query.trim() && !state.contractorText.trim()) return "";
   const matches = state.contractorMatchesByNotifyNo.get(tender.notifyNo) || [];
   if (!matches.length) return "";
   const visible = matches.slice(0, 2).map((item) => {
