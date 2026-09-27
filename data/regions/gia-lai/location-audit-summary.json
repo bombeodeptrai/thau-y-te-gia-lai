@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-27T11:32:12.267Z",
+  "auditedAt": "2026-09-27T13:58:22.893Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 395,
+      "count": 392,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 21,
+      "count": 19,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 932,
+  "candidateCount": 927,
   "acceptedCount": 35,
-  "rejectedCount": 897,
+  "rejectedCount": 892,
   "rejectedReasons": {
     "excluded:tu van": 257,
-    "excluded:xay dung": 239,
-    "insufficient-medical-context": 232,
+    "excluded:xay dung": 237,
+    "insufficient-medical-context": 230,
     "excluded:cai tao": 34,
     "excluded:xay lap": 33,
     "excluded:sua chua": 32,
@@ -291,12 +291,12 @@
     "excluded:phan bon": 3,
     "excluded:may in": 3,
     "excluded:may chu": 2,
-    "excluded:thuoc generic": 2,
     "excluded:bao tri": 2,
     "excluded:kiem dinh": 2,
     "excluded:rac thai": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:cap dien": 1,
+    "excluded:thuoc generic": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1,
     "excluded:quan ly du an": 1,
