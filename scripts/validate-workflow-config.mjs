@@ -194,11 +194,11 @@ if (!rapidScan.includes("actions: write")
 }
 
 const watchdog = await readFile(watchdogPath, "utf8");
-if (!watchdog.includes('cron: "2,32 * * * *"')
+if (!watchdog.includes('cron: "4,9,14,19,24,29,34,39,44,49,54,59 * * * *"')
   || !watchdog.includes("createWorkflowDispatch")
-  || !watchdog.includes("ageMinutes <= 30")
+  || !watchdog.includes("ageMinutes <= 25")
   || !watchdog.includes("actions: write")) {
-  throw new Error("Watchdog chưa gọi quét bù khi cron Gia Lai chậm quá 30 phút");
+  throw new Error("Watchdog chưa kiểm tra đủ dày để gọi quét bù trước khi cron Gia Lai chậm quá 30 phút");
 }
 if (!watchdog.includes('workflow_id: "pages.yml"')
   || !watchdog.includes("getBranch")

@@ -2,8 +2,10 @@ name: Giám sát lịch quét nhanh Gia Lai
 
 on:
   schedule:
-    # Dùng lịch độc lập để gọi bù nếu cron quét nhanh bị GitHub bỏ qua.
-    - cron: "2,32 * * * *"
+    # Kiểm tra dày hơn lịch quét nhanh để một mốc cron watchdog bị bỏ qua
+    # không làm dữ liệu chậm gần một giờ. Ngưỡng 25 phút bên dưới tạo
+    # khoảng đệm để lượt chạy trễ vẫn gọi quét bù trước mốc 30 phút.
+    - cron: "4,9,14,19,24,29,34,39,44,49,54,59 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Chạy bù khi quét nhanh đã cũ quá 30 phút
+      - name: Chạy bù trước khi quét nhanh cũ quá 30 phút
         uses: actions/github-script@v7
         with:
           script: |
@@ -38,7 +40,7 @@ jobs:
             const latest = runs[0];
             const latestAt = latest ? new Date(latest.run_started_at || latest.created_at).getTime() : 0;
             const ageMinutes = latestAt ? (Date.now() - latestAt) / 60_000 : Number.POSITIVE_INFINITY;
-            if (ageMinutes <= 30) {
+            if (ageMinutes <= 25) {
               core.info(`Quét nhanh gần nhất cách đây ${ageMinutes.toFixed(1)} phút; chưa cần chạy bù.`);
               return;
             }
