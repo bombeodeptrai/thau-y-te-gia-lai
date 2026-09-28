@@ -6,13 +6,19 @@ on:
   schedule:
     - cron: "17 */2 * * *"
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Khởi tạo và quét sâu dữ liệu miền Trung
+    types: [completed]
 
 permissions:
   contents: write
 
 jobs:
   scan:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[start-detail-backfill]') || contains(github.event.head_commit.message, '[repair-official-details]')
+    if: >-
+      (github.event_name != 'push' || contains(github.event.head_commit.message, '[start-detail-backfill]') || contains(github.event.head_commit.message, '[repair-official-details]')) &&
+      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -23,6 +29,8 @@ jobs:
     steps:
       - name: Lấy cơ sở dữ liệu mới nhất
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Cài Node.js
         uses: actions/setup-node@v4
