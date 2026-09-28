@@ -1,9 +1,497 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 24,
+  "bidders": [
+    {
+      "id": "b5301669-9fd8-4e47-bfad-ffa27859fa10",
+      "contractorCode": "vn0106293846",
+      "taxCode": "0106293846",
+      "contractorName": "CÔNG TY TNHH ĐẦU TƯ HALICO",
+      "status": "won",
+      "lotNo": "BP2500794697",
+      "lotName": "Mua sắm vật tư xét nghiệm năm 2025",
+      "bidPrice": 306030000,
+      "finalPrice": 306030000,
+      "winningPrice": 306030000,
+      "reason": "",
+      "submittedAt": "2026-01-20T08:45:41.757",
+      "models": []
+    },
+    {
+      "id": "70eb07ed-a80d-497a-a0f4-69db29d37996",
+      "contractorCode": "vn0401823561",
+      "taxCode": "0401823561",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ Y TẾ THANH LỘC PHÁT",
+      "status": "lost",
+      "lotNo": "BP2500794697",
+      "lotName": "Mua sắm vật tư xét nghiệm năm 2025",
+      "bidPrice": 322313500,
+      "finalPrice": 322313500,
+      "winningPrice": 0,
+      "reason": "E-HSDT không đáp ứng yêu cầu kỹ thuật của E-HSMT",
+      "submittedAt": "2026-01-20T08:45:41.757",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "ccd3de48-58b6-4e64-8f2f-21fdc168cae7",
+      "name": "Hóa chất xét nghiệm Glucose",
+      "model": "998282",
+      "brand": "Glucose Liquid",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: - A.3x100ml Reagent - B.1x5ml Standard Nồng độ: - Concentration in the reagent solution is: - Phosphate buffer pH 6.8 100 mM - p-hydroxybenzoic acid 39.5 mM - 4-aminoantipyrine 0.8 mM - Phenol 4.5 mM - Glucose oxidase ≥ 18 kU/l - Peroxidase ≥ 1.1 kU/l **Độ nhạy, như giới hạn phát hiện: 2,0 mg/dL *Độ tuyến tính: Lên tới 500 mg/dL. Đối với các giá trị cao hơn, nên pha loãng mẫu 1/2 trong nước muối (NaCl 0,9%) và xét nghiệm một lần nữa. Nhân kết quả cuối cùng với 2. *Độ chính xác: 98,9%. *Độ lặp lại với hệ số biến thiên: 0,79% *Độ tái lặp với hệ số biến thiên: 1,33%.",
+      "unit": "Hộp",
+      "quantity": 4,
+      "unitPrice": 1350000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "6de5cd68-06aa-4529-9dde-03a3d374c992",
+      "name": "Hóa chất xét nghiệm RF",
+      "model": "994523",
+      "brand": "RF Direct Latex",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: A. 1 x 4.0 mL Thuốc thử Latex B. 1 x 0.5 mL Chứng dương tính C. 1 x 0.5 mL Chứng âm tính D. Lam kính và que trộn dùng một lần. Độ nhạy: thuốc thử được thiết kế để ngưng kết với sự có mặt của các mức độ RF cao hơn 20 IU/ml. Tính đặc hiệu: thuốc thử ngưng kết chỉ khi có mặt các yếu tố dạng thấp. Không có hiện tượng prozone đối với chất chuẩn độ ≤ 1129 IU/ml. Tiêu chuẩn chất lượng: ISO 9001, ISO 13485, CE, Giấy phép lưu hành",
+      "unit": "Hộp",
+      "quantity": 10,
+      "unitPrice": 750000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "35729f77-8c5e-489b-ad14-c61933a2f17e",
+      "name": "HCXN huyết học Alfa Diluent",
+      "model": "1504462",
+      "brand": "Swelab Alfa Diluent",
+      "manufacturer": "Boule Medical AB",
+      "origin": "Thụy Điển",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "* Chức năng: Là dung dịch pha loãng máu dùng cho việc đếm và định cỡ tế bào. * Thành phần: + Muối ổn định isotonic <1.5%; + Thuốc chống vi trùng <0.1%; + Dung dịch đệm <0.3% Tương thích cho máy xét ngiệm huyết học Swelab Alfa Plus Basic",
+      "unit": "Thùng",
+      "quantity": 7,
+      "unitPrice": 6000000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "596237bd-a7cf-4cfa-beac-3b3513fe12f4",
+      "name": "HCXN huyết học Alfa Lyse",
+      "model": "1504463",
+      "brand": "Swelab Alfa Lyse",
+      "manufacturer": "Boule Medical AB",
+      "origin": "Thụy Điển",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "* Chức năng: Là dung dịch ly giải phá vỡ hồng cầu, khôngchứa cyanide lytic, dùng để đếm và định cỡ tế bào. * Thành phần: + Muối bậc 4 <1.0%; + Muối<1.5%. Tương thích cho máy xét ngiệm huyết học Swelab Alfa Plus Basic",
+      "unit": "Thùng",
+      "quantity": 7,
+      "unitPrice": 6550000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "1c0e2a89-0c37-4ba0-9753-c956ce831cbf",
+      "name": "HCXN Hóa sinh Cleaning Solution",
+      "model": "999950",
+      "brand": "Washing Solution",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần + Chất hoạt động bề mặt: 2% + Chất bảo quản và chất ổn định Bộ Washing Solution 10 x 10 mL Thêm một lọ (10 mL) vào 5 lít nước khử ion.",
+      "unit": "Hộp",
+      "quantity": 5,
+      "unitPrice": 2950000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "db830e22-a910-4036-8486-fcca1e8424ff",
+      "name": "Que thử nước tiểu 11 thông số",
+      "model": "ComboStik-11M",
+      "brand": "ComboStik-11M",
+      "manufacturer": "DFI Co., Ltd.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Test thử đo 11 thông số:Glucose, Bilirubin,Cetone(Acid acetoacetic), tỷ trọng, máu,pH, Protein (Albumin),Urobilinogen, Nitrite, Leukocyte (Bạch cầu),Acid Ascorbic. Tương thích với máy ComboStik R700. Đạt tiêu chuẩn ISO13485:2016 hoặc tương đương",
+      "unit": "Hộp",
+      "quantity": 20,
+      "unitPrice": 650000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "5ccdb72b-bd50-422d-8a35-175099bfa2ed",
+      "name": "Test HCV",
+      "model": "ITP01102-TC40",
+      "brand": "Rapid Anti-HCV Test",
+      "manufacturer": "Intec Products, Inc.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Phát hiện kháng thể kháng HCV trong huyết thanh, huyết tương, máu toàn phần người Mẫu phẩm huyết thanh, huyết tương, máu toàn phần Độ nhạy: 100% ; Độ đặc hiệu: 100 % 40 Test/hộp Dạng bào chế: Khay",
+      "unit": "Test",
+      "quantity": 3000,
+      "unitPrice": 11500,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "33bd7c18-e81f-4eb8-b458-838cc8a846c0",
+      "name": "Băng keo chỉ thị màu",
+      "model": "1322-12MM",
+      "brand": "3M™ Comply™ Steam Indicator Tape",
+      "manufacturer": "3M Canada Company",
+      "origin": "Canada",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Băng chỉ thị tiếp xúc cho gói dụng cụ tiệt khuẩn bằng hơi nước - 12mm x 55mm, lớp keo không dính cao su, dính chắc phù hợp với nhiều loại vải bọc,... Lớp nền có thể co giãn, có thể viết được lên trên hoặc dán nhãn bằng nhãn in sẵn",
+      "unit": "Cuộn",
+      "quantity": 20,
+      "unitPrice": 145000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "3d6593f1-f4ed-45c7-b8bb-2a5bc08b82a5",
+      "name": "Lam kính",
+      "model": "HD7102; HD7105",
+      "brand": "Lam kính hiển vi, trong suốt; Lam kính hiển vi, mài mờ.",
+      "manufacturer": "Jiangsu Huida Medical Instruments Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thông số kỹ thuật: Chất liệu: Thủy tinh natri cacbonat Độ dày: 1.0-1.2mm Màu sắc: 1 trong suốt, 2 mài mờ Mục đích: Dùng cho quan sát hiển vi Đóng gói hút chân không chống ẩm mốc",
+      "unit": "Hộp",
+      "quantity": 60,
+      "unitPrice": 35000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "c206fa26-77a1-4316-9a00-f68f96e564ae",
+      "name": "Test HIV",
+      "model": "ITP2006-TC40",
+      "brand": "Rapid Anti-HIV Test",
+      "manufacturer": "Intec Products, Inc.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Định tính phát hiện sự có mặt của kháng thể kháng HIV-1 và HIV-2 trong máu toàn phần, huyết thanh hoặc huyết tương của người nhằm mục đích chẩn đoán lây nhiễm HIV - Mẫu phẩm: Huyết thanh, huyết tương, máu toàn phần - Độ nhạy:≥ 99.59% ; Độ đặc hiệu: ≥ 99.87 40 Test/hộp Dạng bào chế: Khay Nằm trong khuyến cáo xét nghiệm khẳng định HIV của viện Vệ sinh dịch tễ TW năm 2020",
+      "unit": "Test",
+      "quantity": 3000,
+      "unitPrice": 13650,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "ff03b622-1e31-483e-9c4c-ca9f6bef1348",
+      "name": "Ống nghiệm citrat",
+      "model": "C8-012",
+      "brand": "Ống nghiệm Natri citrate 3.8%",
+      "manufacturer": "Công ty cổ phần đầu tư y tế An Phú, Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Nhựa PP, 12x75mm, Vạch định mức 2ml",
+      "unit": "Cái",
+      "quantity": 200,
+      "unitPrice": 1200,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "9fb56822-94c7-4826-aea3-12ce43cd730a",
+      "name": "Hóa chất xét nghiệm CRP",
+      "model": "990085",
+      "brand": "CRP direct latex",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: A. 1 x 4.0 ml Thuốc thử Latex. B. 1 x 0.5 ml Chứng dương tính. C. 1 x 0.5 ml Chứng âm tính. D. Lam kính và que trộn dùng một lần. *Độ nhạy: Thuốc thử được thiết kế để ngưng kết khi có nồng độ CRP cao hơn 7,5 mg/dL *Độ đặc hiệu: Thuốc thử ngưng kết khi có CRP của người * Hiện tượng prozone xuất hiện từ: 100 mg/L *Gây nhiễu: Không có nhiễu bởi ASO cho đến 1100IU/ml Tiêu chuẩn chất lượng: ISO 9001, ISO 13485, CE, Giấy phép lưu hành",
+      "unit": "Hộp",
+      "quantity": 10,
+      "unitPrice": 750000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "29a8bdb9-a636-4265-b663-ab3de400e2fb",
+      "name": "Thuốc thử kiểm chuẩn xét nghiệm sinh hóa mức 2",
+      "model": "994685",
+      "brand": "Sericann ABNormal",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Huyết thanh kiểm soát 46 thông số bao gồm cả CK Nac và CK-MB; HDL; LDL *Thành phần: Bộ 1 x 5 mL. Thành phần: 1 lọ huyết thanh kiểm chuẩn bất thường dạng đông khô",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 850000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "9dd007f5-cb9b-4da7-b900-ed753c536ec8",
+      "name": "Hóa chất xét nghiệm Creatinin",
+      "model": "998891",
+      "brand": "Creatinine",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: - A.1x100ml Picric acid solution - B.1x100ml Alkaline solution - C.1x5ml Standard Nồng độ: - Picric acid 24 mM - Sodium carbonate 50 mM - NaOH 0.40 M *Độ nhạy, như giới hạn phát hiện: 0,16 mg/dL *Độ tuyến tính: Lên đến 15 mg/dL Creatinine. Đối với các giá trị cao hơn, pha loãng 1:1 mẫu trong nước khử ion và xét nghiệm một lần nữa. Nhân kết quả cuối cùng với 2. *Độ chính xác: 105% *Độ lặp lại với hệ số biến thiên: 1,18% *Độ tái lặp với hệ số biến thiên: 1,82%",
+      "unit": "Hộp",
+      "quantity": 5,
+      "unitPrice": 950000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "561b1303-623f-4fdc-a2f2-ecb1de88684b",
+      "name": "Hóa chất xét nghiệm SGPT",
+      "model": "999200",
+      "brand": "GPT/ALT UV Liquid",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: - A.2x100 ml Enzymes solution - B.1x50 ml Liquid substrate Nồng độ: - Tris-HCl buffer pH 7.8 90 mM - L-Aspartic acid 500 mM - α-Ketoglutaric acid 17 mM - NADH 0.18 mM - LDH ≥ 800 U/L *Độ nhạy, như giới hạn phát hiện: 5 UI/mL *Độ tuyến tính: lên tới 550 U/L. Đối với các giá trị cao hơn, nên pha loãng mẫu 1/10 trong nước muối (NaCl 0,9%) và xét nghiệm một lần nữa. Nhân kết quả cuối cùng với 10. *Độ chính xác: 98,1% *Độ lặp lại với hệ số biến thiên: 1,76% *Độ tái lặp với hệ số biến thiên: 2,41%",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 1950000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "7bea2930-57c6-4e20-84de-e30729adb95d",
+      "name": "HCXN Hóa sinh Rinse Solution",
+      "model": "990186",
+      "brand": "Extra wash kit",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: A.1 x 250 mL Dung dịch Kiềm B.1 x 100 mL Dung dịch Acid A. Dung dịch Kiềm + Natri hypochlorite: ≥ 9.0 g Cl2 / L + Chất bảo quản và chất ổn định B. Dung dịch Acid + HCl: 0.1M + Chất bảo quản và chất ổn định",
+      "unit": "Hộp",
+      "quantity": 2,
+      "unitPrice": 3150000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "38b71b63-b884-4d97-80ae-64ba889a8989",
+      "name": "Anti thử nhóm máu ABO",
+      "model": "BG-A10; BG-B10; BG-AB10.",
+      "brand": "Anti-A Monoclonal; Anti-B Monoclonal; Anti-A,B Monoclonal.",
+      "manufacturer": "Rapid Labs Ltd.",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Định nhóm máu ABO \"Xét nghiệm phát hiện kháng nguyên A trên bề mặt hồng cầu Thuốc thử nhóm máu chứa kháng thể IgM đơn dòng của chuột trong dung dịch đệm Dung dịch đệm photphat chứa natri clorua, EDTA và nguyên liệu bò Thuốc thử chứa <0,1% natri clorua và các chất tạo màu và dòng tế bào sau: - Thuốc thử: Anti A - Màu sắc: Màu xanh da trời - Thuốc nhuộm: Patent blue - Dòng tế bào: BRIMA-1 Độ nhạy: 100%, độ đặc hiệu: 100% Bảo quản 2-8 Chứng chỉ: ISO, CE Nước SX: G7\" \"Xét nghiệm phát hiện kháng nguyên B trên bề mặt hồng cầu Thuốc thử nhóm máu chứa kháng thể IgM đơn dòng của chuột trong dung dịch đệm Dung dịch đệm photphat chứa natri clorua, EDTA và nguyên liệu bò Thuốc thử chứa <0,1% natri clorua và các chất tạo màu và dòng tế bào sau: - Thuốc thử: Anti B - Màu sắc: Màu Vàng - Thuốc nhuộm: Tartrazin - Dòng tế bào: LB-2 Độ nhạy: 100%, độ đặc hiệu: 100% Bảo quản 2-8 Chứng chỉ: ISO, CE Nước SX: G7\" \"Xét nghiệm phát hiện kháng nguyên A hoặc B trên bề mặt hồng cầu Thuốc thử nhóm máu chứa kháng thể IgM đơn dòng của chuột trong dung dịch đệm Dung dịch đệm photphat chứa natri clorua, EDTA và nguyên liệu bò Thuốc thử chứa <0,1% natri clorua và các chất tạo màu và dòng tế bào sau: - Thuốc thử: Anti - A,B - Màu sắc: Không màu - Thuốc nhuộm: Không có - Dòng tế bào: ES-15/ES-4 Độ nhạy: 100%, độ đặc hiệu: 100% Bảo quản 2-8 Chứng chỉ: ISO, CE Nước SX: G7",
+      "unit": "Bộ",
+      "quantity": 20,
+      "unitPrice": 350000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "3e23d8b3-32d4-49e5-8b56-c6c804f1d707",
+      "name": "Anti D",
+      "model": "BG-D10",
+      "brand": "Anti-D Monoclonal.",
+      "manufacturer": "Rapid Labs Ltd.",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Định nhóm máu Rh \"Xét nghiệm phát hiện kháng nguyên RhD trên bề mặt hồng cầu Thuốc thử nhóm máu chứa kháng thể IgM và IgG đơn dòng của người trong dung dịch đệm Dung dịch đệm photphat chứa natri clorua, EDTA và nguyên liệu bò Thuốc thử chứa <0,1% natri clorua và các chất tạo màu và dòng tế bào sau: - Thuốc thử: Anti - D (IgG/IgM) - Màu sắc: Vàng nhạt/Trong suốt - Thuốc nhuộm: Không có - Dòng tế bào: MS-26 & RUM-1 Độ nhạy: 100%, độ đặc hiệu: 100% Bảo quản 2-8 Chứng chỉ: ISO, CE Nước SX: G7",
+      "unit": "Lọ",
+      "quantity": 2,
+      "unitPrice": 175000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "189e33f1-073e-47ea-94bd-fada98e77874",
+      "name": "Hóa chất xét nghiệm SGOT",
+      "model": "999500",
+      "brand": "GOT/AST UV Liquid",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: - A.2x100ml Enzymes solution - B.1x50ml Liquid substrate Nồng độ: - Tris-HCl buffer pH 7.8 80 mM - L-Aspartic acid 240 mM - α-Ketoglutaric acid 12 mM - NADH 0.18 mM - MDH ≥ 600 U/L - LDH ≥ 800 U/L *Độ nhạy, như giới hạn phát hiện: 1,5 UI/ml *Độ tuyến tính: Lên tới 520 U/L. Đối với các giá trị cao hơn, nên pha loãng mẫu 1/10 trong nước muối (NaCl 0,9%) và xét nghiệm một lần nữa. Nhân kết quả cuối cùng với 10. *Độ chính xác: 96% *Độ lặp lại với hệ số biến thiên: 1,42% *Độ tái lặp với hệ số biến thiên: 2,83%",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 1950000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "884247db-e742-492e-96d9-1260e9fff3c9",
+      "name": "Giấy điện tim",
+      "model": "ACFD110140F142RS",
+      "brand": "Giấy điện tim 6 cần",
+      "manufacturer": "Tele-Paper (M) Sdn. Bhd",
+      "origin": "Malaysia",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Dạng tệp - Kích thước 110mm x 140mm x 142 tờ, loại có dòng kẻ, tương thích với máy điện tim 6 cần - Có bao bì bảo vệ - Đạt tiêu chuẩn ISO 9001, ISO 13485, CE",
+      "unit": "Xấp",
+      "quantity": 40,
+      "unitPrice": 75000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "0417800b-bf17-4702-b545-e525f6d9d8d6",
+      "name": "Thuốc thử kiểm chuẩn xét nghiệm sinh hóa mức 1",
+      "model": "994148",
+      "brand": "Sericann Normal",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Huyết thanh kiểm soát 46 thông số bao gồm cả CK Nac và CK-MB; HDL; LDL *Thành phần: Bộ 1 x 5 mL. Thành phần: 1 lọ huyết thanh kiểm chuẩn bình thường dạng đông khô.",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 790000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "5e23d0d7-1768-45d3-b711-c82beb4afff6",
+      "name": "Test HBSAg",
+      "model": "ITP01003-TC40",
+      "brand": "One Step HBsAg Test",
+      "manufacturer": "Intec Products, Inc.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Phát hiện kháng nguyên HBsAg trong huyết thanh, huyết tương Mẫu phẩm huyết thanh, huyết tương Độ nhạy: 100%, Độ đặc hiệu: ≥99.88% Ngưỡng phát hiện ≤1ng/ml. 40 Test/hộp Dạng bào chế: Khay",
+      "unit": "Test",
+      "quantity": 3000,
+      "unitPrice": 9500,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "bdee92d5-e044-4f1e-8c00-cccb263f49c3",
+      "name": "Thuốc thử hiệu chuẩn xét nghiệm sinh hóa",
+      "model": "996280",
+      "brand": "Carlibrator for Autoanalyzers",
+      "manufacturer": "Quimica Clinica Aplicada, S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chuẩn cho 23 thông số hóa sinh bao gồm cả CK *thành phần: A. 1 x 7 ml. Lyoph. calibration serum. B. 1 x 10 ml. Diluent.",
+      "unit": "Hộp",
+      "quantity": 2,
+      "unitPrice": 1050000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    },
+    {
+      "id": "c9135725-0e00-4a35-985f-b9de24199498",
+      "name": "Hóa chất xét nghiệm Acid Uric",
+      "model": "994020",
+      "brand": "Uric acid liquid",
+      "manufacturer": "Quimica Clinica Aplicada, S.A",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: - A.3x100ml Reagent - B.1x5ml Standard Nồng độ: - Pipes buffer pH 7.0 100 mM - 3,5-Dichloro-2-hydroxy-sulphonate 3.2 mM - 4-Aminoantipyrine 0.4 mM - EDTA Na2·H2O 0.6 mM - K3Fe(CN)6 0.1 mM - Uricase ≥ 350 U/L - Peroxidase ≥ 1300 U/L *Độ nhạy, như giới hạn phát hiện: 0,09 mg/dL *Độ tuyến tính: Lên đến 25 mg/dL. Đối với các giá trị cao hơn, nên pha loãng mẫu 1/2 trong nước muối (NaCl 0,9%) và xét nghiệm một lần nữa. Nhân kết quả cuối cùng với 2. *Độ chính xác: 104%. *Độ lặp lại với hệ số biến thiên: 0,76% *Độ tái lặp với hệ số biến thiên: 2,91%",
+      "unit": "Hộp",
+      "quantity": 2,
+      "unitPrice": 2050000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ HALICO"
+      ],
+      "decisionNo": "55/QĐ-BVCH",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T08:45:49"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +516,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500581526",
-    "notifyId": "0c36383a-ad7b-4dac-b408-e967d0402520",
-    "bidId": "18e73435-3c6b-4c2c-a4a7-9c7bae6fd7ed",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:46.802Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T14:10:01.204Z"
 }

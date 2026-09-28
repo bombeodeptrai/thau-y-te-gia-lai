@@ -1,9 +1,73 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "9f005548-590b-4edf-a9eb-18d8753137be",
+      "contractorCode": "vn4300795516",
+      "taxCode": "4300795516",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO",
+      "status": "won",
+      "lotNo": "BP2500897878",
+      "lotName": "Mua sắm vật tư dùng cho Máy xét nghiệm sinh hóa (Model: BS-360E, Hãng sản xuất: Shenzhen Mindray Bio-Medical Electronics Co.,Ltd, Nước sản xuất: Trung Quốc) phục vụ công tác khám, chữa bệnh của Bệnh viện ĐKKV Bồng Sơn",
+      "bidPrice": 24100000,
+      "finalPrice": 24100000,
+      "winningPrice": 24100000,
+      "reason": "",
+      "submittedAt": "2026-01-10T14:50:05.197",
+      "models": [
+        "801-BA23-00025-00",
+        "15-017932-00"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "7fcd92c8-287f-44dd-a076-38c7ef7c0ff8",
+      "name": "Reagent Syringe 500µl dùng cho máy xét nghiệm sinh hóa (Model: BS-360E)",
+      "model": "801-BA23-00025-00",
+      "brand": ".",
+      "manufacturer": "Mindray",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Tương thích với máy xét nghiệm sinh hóa Model: BS-360E)",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 12400000,
+      "amount": 12400000,
+      "contractorCode": "vn4300795516",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "20/QĐ-BVBS",
+      "decisionDate": "2026-01-10T14:48:42",
+      "resultPublishedDate": "2026-01-10T14:50:09"
+    },
+    {
+      "id": "42a22bbb-b42c-43d8-8271-2920f3871f93",
+      "name": "Bóng đèn dùng cho máy xét nghiệm sinh hóa",
+      "model": "15-017932-00",
+      "brand": ".",
+      "manufacturer": "Mindray",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Điện áp: 12V\n- Công suất: 20W\n-Tương thích với máy xét nghiệm sinh hóa (Model: BS-360E)",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 5850000,
+      "amount": 11700000,
+      "contractorCode": "vn4300795516",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "20/QĐ-BVBS",
+      "decisionDate": "2026-01-10T14:48:42",
+      "resultPublishedDate": "2026-01-10T14:50:09"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -81,12 +145,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500639131",
-    "notifyId": "1af31bd7-fbbf-48fd-8575-b61203695dc0",
-    "bidId": "79e4c906-90b3-4e3e-90ab-cefd8df3b6c3",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:42.989Z"
+  "fetchedAt": "2026-09-28T14:09:58.109Z"
 }

@@ -1,9 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "24d88b91-825d-46d7-a917-6b3a0d19ec71",
+      "contractorCode": "vn0311733313",
+      "taxCode": "0311733313",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ TRẦN DANH",
+      "status": "won",
+      "lotNo": "BP2500885190",
+      "lotName": "\"Mua hóa chất chương trình Ngoại kiểm xét nghiệm năm 2026\"",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 33948360,
+      "reason": "",
+      "submittedAt": "2025-12-31T09:19:17.753",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "ae2bbf3d-8f3f-493d-afa0-c6b5b8220692",
+      "name": "Hóa chất sử dụng cho chương trình ngoại kiểm tra chất lượng xét nghiệm huyết học (RIQAS Monthly Haematology Programme)",
+      "model": "RQ9140A, RQ9140B RQ9140C, RQ9140D",
+      "brand": "Hóa chất chương trình ngoại kiểm huyết học (Riqas Monthly Haematology Programme)",
+      "manufacturer": "Randox",
+      "origin": "Vương Quốc Anh",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Chương trình Ngoại kiểm Huyết học đáp ứng >10 thông số công thức máu hoặc tương đương. Chu kỳ bắt đầu từ tháng 1 đến tháng 12 hàng năm. Hộp/3 x 2 ml",
+      "unit": "Hộp",
+      "quantity": 4,
+      "unitPrice": 4301040,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ TRẦN DANH"
+      ],
+      "decisionNo": "488/QĐ-BVLBPPLE",
+      "decisionDate": "2025-12-30T23:59:59",
+      "resultPublishedDate": "2025-12-31T09:20:25"
+    },
+    {
+      "id": "9857d87c-d136-42b0-9cea-1d1dc86d745a",
+      "name": "Hóa chất sử dụng cho chương trình ngoại kiểm tra chất lượng xét nghiệm sinh hóa (RIQAS Monthly\r\nGeneral Clinical Chemistry Programme)",
+      "model": "RQ9128",
+      "brand": "Hóa chất chương trình ngoại kiểm sinh hóa (Riqas Monthly General Clinical Chemistry Programme)",
+      "manufacturer": "Randox",
+      "origin": "Vương Quốc Anh",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Chương trình Ngoại kiểm Sinh hoá đáp ứng trên 50 thông số sinh hoá thường qui hoặc tương đương. Chu kỳ bắt đầu từ tháng 1 đến tháng 12 hàng năm. Hộp/6 x 5 ml",
+      "unit": "Hộp",
+      "quantity": 2,
+      "unitPrice": 8372100,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ TRẦN DANH"
+      ],
+      "decisionNo": "488/QĐ-BVLBPPLE",
+      "decisionDate": "2025-12-30T23:59:59",
+      "resultPublishedDate": "2025-12-31T09:20:25"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500646846",
-    "notifyId": "IB2500646846",
-    "bidId": "e73ad9f9-38b0-4986-8392-c9a05da76b45",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:41.542Z"
+  "fetchedAt": "2026-09-28T14:09:57.379Z"
 }

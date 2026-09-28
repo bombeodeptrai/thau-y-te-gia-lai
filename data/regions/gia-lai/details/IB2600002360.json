@@ -1,9 +1,91 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "e7db1bed-753c-4ce7-b8c4-2563201df5d2",
+      "contractorCode": "vn0105406631",
+      "taxCode": "0105406631",
+      "contractorName": "CÔNG TY TNHH KỸ THUẬT THƯƠNG MẠI ĐƯỜNG VIỆT",
+      "status": "won",
+      "lotNo": "PP2600001352",
+      "lotName": "Bộ bơm tiêm dùng cho máy bơm tiêm thuốc cản quang",
+      "bidPrice": 94500000,
+      "finalPrice": 94500000,
+      "winningPrice": 94500000,
+      "reason": "",
+      "submittedAt": "2026-01-16T14:07:46.833",
+      "models": [
+        "TM0544D",
+        "TM0539003"
+      ]
+    },
+    {
+      "id": "8601dbfd-8052-46a0-83c7-56a65e500aac",
+      "contractorCode": "vn0105406631",
+      "taxCode": "0105406631",
+      "contractorName": "CÔNG TY TNHH KỸ THUẬT THƯƠNG MẠI ĐƯỜNG VIỆT",
+      "status": "won",
+      "lotNo": "PP2600001353",
+      "lotName": "Dây truyền dạng chữ Y dùng cho máy tiêm thuốc cản quang",
+      "bidPrice": 57750000,
+      "finalPrice": 57750000,
+      "winningPrice": 57750000,
+      "reason": "",
+      "submittedAt": "2026-01-16T14:07:46.833",
+      "models": [
+        "TM0544D",
+        "TM0539003"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "cf8307b5-337c-43a0-b616-391c2ae91180",
+      "name": "Dây truyền dạng chữ Y dùng cho máy tiêm thuốc cản quang",
+      "model": "TM0544D",
+      "brand": "Pacific Hospital Supply Co., Ltd",
+      "manufacturer": "Pacific Hospital Supply Co., Ltd",
+      "origin": " Đài Loan",
+      "manufactureYear": "Từ 2025 trở về sau",
+      "specification": "Gồm 1 dây truyền chữ Y dạng thẳng.\r\n- Chất liệu: dây truyền bằng PVC, van an toàn bằng PC, bộ chuyển đổi Luer bằng PVC, nắp chụp thông hơi bằng HDPE, nắp trượt bằng LDPE, khóa luer bằng PVC.\r\n- Dây truyền dạng thẳng chữ Y với 2 van an toàn, chiều dài dây truyền: 150cm.\r\n- Chiều dài dây ngắn đến chữ Y: 80mm. \r\n- Chiều dài dây ngắn đến chữ Y màu xanh da trời: 180mm.\r\n- Đường kính trong: 1,77mm.\r\n- Đường kính ngoài: 3,25mm.\r\n- ÁP suất 300psi\r\n- Tiệt trùng: ETO",
+      "unit": "Chiếc",
+      "quantity": 500,
+      "unitPrice": 115500,
+      "amount": 57750000,
+      "contractorCode": "vn0105406631",
+      "winnerNames": [
+        "CÔNG TY TNHH KỸ THUẬT THƯƠNG MẠI ĐƯỜNG VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "36/QĐ-BVBS",
+      "decisionDate": "2026-01-16T14:06:36",
+      "resultPublishedDate": "2026-01-16T14:07:54"
+    },
+    {
+      "id": "66c0ae3a-9330-430b-9ada-ae8a48e2aba6",
+      "name": "Bộ bơm tiêm dùng cho máy bơm tiêm thuốc cản quang",
+      "model": "TM0539003",
+      "brand": "Pacific Hospital Supply Co., Ltd",
+      "manufacturer": "Pacific Hospital Supply Co., Ltd",
+      "origin": " Đài Loan",
+      "manufactureYear": "Từ 2025 trở về sau",
+      "specification": "Bộ tiêm thuốc cản quang bao gồm:\r\n- 01 Xilanh dung tích: 200ml\r\n- Áp suất: 300psi\r\n- Khóa Luer\r\n- Chất liệu Ống bơm: PCTG (chịu áp, chống tỏa nhiệt); Pittong: PP; Miếng đệm: TPV; không DEHP. \r\n- Đóng gói: dạng túi, Túi bọc – Mặt giấy: giấy Tyvek, Túi bọc – Mặt phim: PET _LLDPE\r\n- Tiệt trùng bằng phương pháp ETO",
+      "unit": "Chiếc",
+      "quantity": 500,
+      "unitPrice": 189000,
+      "amount": 94500000,
+      "contractorCode": "vn0105406631",
+      "winnerNames": [
+        "CÔNG TY TNHH KỸ THUẬT THƯƠNG MẠI ĐƯỜNG VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "36/QĐ-BVBS",
+      "decisionDate": "2026-01-16T14:06:36",
+      "resultPublishedDate": "2026-01-16T14:07:54"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,12 +173,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2600002360",
-    "notifyId": "65981a27-a045-4d10-8b62-335483ccc020",
-    "bidId": "3d25f456-0aad-4be9-a017-8c4596ef904f",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:43.033Z"
+  "fetchedAt": "2026-09-28T14:09:56.566Z"
 }

@@ -1,9 +1,60 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "48e4b5c4-582c-4cb5-883f-db7ad786fea7",
+      "contractorCode": "vn6000371421",
+      "taxCode": "6000371421",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM HOÀNG VŨ",
+      "status": "won",
+      "lotNo": "BP2500780403",
+      "lotName": "Gói thầu 20: Vật tư máy chạy thận Fresenius",
+      "bidPrice": 262000000,
+      "finalPrice": 262000000,
+      "winningPrice": 262000000,
+      "reason": "",
+      "submittedAt": "2026-01-10T15:58:28.927",
+      "models": []
+    },
+    {
+      "id": "ab8cba81-4b99-418b-b33f-6827cd60f4f3",
+      "contractorCode": "vn0313033525",
+      "taxCode": "0313033525",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ NGUYÊN MINH",
+      "status": "lost",
+      "lotNo": "BP2500780403",
+      "lotName": "Gói thầu 20: Vật tư máy chạy thận Fresenius",
+      "bidPrice": 266490000,
+      "finalPrice": 266490000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 02",
+      "submittedAt": "2026-01-10T15:58:28.927",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "fd3ef3b5-3bfa-402e-ac5e-e24f29a47de9",
+      "name": "Quả lọc dịch Diasafe Plus",
+      "model": "5008201",
+      "brand": "Quả lọc dịch cho chạy thận nhân tạo DIASAFE® plus",
+      "manufacturer": "Fresenius Medical Care Deutschland GmbH St.Wendel Plant",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu màng: Fresenius polysulfore - Diện tích bề mặt: 2.2 m2 - Trọng lượng: 170g",
+      "unit": "cái",
+      "quantity": 100,
+      "unitPrice": 2620000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "45/TTYT-QĐ",
+      "decisionDate": "2026-01-10T23:59:59",
+      "resultPublishedDate": "2026-01-10T15:59:24"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +79,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500561301",
-    "notifyId": "f36bdc88-f971-42b1-9c55-ded0a15e7787",
-    "bidId": "3e720158-a05d-4546-bf5a-e107fbf4038a",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:51.204Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T14:10:03.361Z"
 }

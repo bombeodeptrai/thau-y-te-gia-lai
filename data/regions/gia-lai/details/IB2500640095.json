@@ -1,9 +1,174 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "6fcc42d6-f38f-476f-ba97-22abd7a53857",
+      "contractorCode": "vn5901019333",
+      "taxCode": "5901019333",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI",
+      "status": "won",
+      "lotNo": "PP2500617558",
+      "lotName": "Phần 1: Máy siêu âm 4D",
+      "bidPrice": 1450000000,
+      "finalPrice": 1450000000,
+      "winningPrice": 1450000000,
+      "reason": "",
+      "submittedAt": "2026-02-05T15:17:20.424",
+      "models": [
+        "New Hospivac 350",
+        "7F-5W",
+        "LOGIQ P8",
+        "CARDIPIA400H"
+      ]
+    },
+    {
+      "id": "cfbb0bed-c1cb-4279-bbeb-f16636f50444",
+      "contractorCode": "vn5901019333",
+      "taxCode": "5901019333",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI",
+      "status": "won",
+      "lotNo": "PP2500617559",
+      "lotName": "Phần 2: Máy điện tim",
+      "bidPrice": 58500000,
+      "finalPrice": 58500000,
+      "winningPrice": 58500000,
+      "reason": "",
+      "submittedAt": "2026-02-05T15:17:20.424",
+      "models": [
+        "New Hospivac 350",
+        "7F-5W",
+        "LOGIQ P8",
+        "CARDIPIA400H"
+      ]
+    },
+    {
+      "id": "c21bac57-3afe-4bd0-a35e-3861b6af5698",
+      "contractorCode": "vn0100778964",
+      "taxCode": "0100778964",
+      "contractorName": "CÔNG TY TNHH VIỆT QUANG",
+      "status": "lost",
+      "lotNo": "PP2500617560",
+      "lotName": "Phần 3: Máy hút dịch, Máy tạo oxy",
+      "bidPrice": 92200000,
+      "finalPrice": 92200000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng thứ 2 về giá",
+      "submittedAt": "2026-02-05T15:17:20.424",
+      "models": []
+    },
+    {
+      "id": "38c663b7-2a85-4fb4-b2a5-488154031a22",
+      "contractorCode": "vn5901019333",
+      "taxCode": "5901019333",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI",
+      "status": "won",
+      "lotNo": "PP2500617560",
+      "lotName": "Phần 3: Máy hút dịch, Máy tạo oxy",
+      "bidPrice": 88000000,
+      "finalPrice": 88000000,
+      "winningPrice": 88000000,
+      "reason": "",
+      "submittedAt": "2026-02-05T15:17:20.424",
+      "models": [
+        "New Hospivac 350",
+        "7F-5W",
+        "LOGIQ P8",
+        "CARDIPIA400H"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "9faec103-d1fa-422a-b81b-5e22dd30d9dc",
+      "name": "Máy hút dịch",
+      "model": "New Hospivac 350",
+      "brand": "NEW HOSPIVAC",
+      "manufacturer": "CA-MI S.R.L",
+      "origin": "Italy",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Xem chi tiết tại Bảng chào đáp ứng kỹ thuật đính kèm E-HSDT",
+      "unit": "Máy",
+      "quantity": 2,
+      "unitPrice": 32000000,
+      "amount": 64000000,
+      "contractorCode": "vn5901019333",
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "29/QĐ-TTYT",
+      "decisionDate": "2026-02-05T23:59:59",
+      "resultPublishedDate": "2026-02-05T15:17:25"
+    },
+    {
+      "id": "a079f155-55c1-41bc-bac3-2292428bfead",
+      "name": "Máy tạo oxy",
+      "model": "7F-5W",
+      "brand": "Yuwell",
+      "manufacturer": "Jiangsu Yuyue Medical Equipment &Supply Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Xem chi tiết tại Bảng chào đáp ứng kỹ thuật đính kèm E-HSDT",
+      "unit": "Máy",
+      "quantity": 2,
+      "unitPrice": 12000000,
+      "amount": 24000000,
+      "contractorCode": "vn5901019333",
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "29/QĐ-TTYT",
+      "decisionDate": "2026-02-05T23:59:59",
+      "resultPublishedDate": "2026-02-05T15:17:25"
+    },
+    {
+      "id": "a5983dd2-5f92-4ee4-9e80-6b7f49ab9386",
+      "name": "Máy siêu âm 4D",
+      "model": "LOGIQ P8",
+      "brand": "GE",
+      "manufacturer": "GE Ultrasound Korea, Ltd./Hàn Quốc",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Xem chi tiết tại Bảng chào đáp ứng kỹ thuật đính kèm E-HSDT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1450000000,
+      "amount": 1450000000,
+      "contractorCode": "vn5901019333",
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "29/QĐ-TTYT",
+      "decisionDate": "2026-02-05T23:59:59",
+      "resultPublishedDate": "2026-02-05T15:17:25"
+    },
+    {
+      "id": "36a55a6b-7896-4c90-9980-c369bf262f06",
+      "name": "Máy điện tim",
+      "model": "CARDIPIA400H",
+      "brand": "TRISMED",
+      "manufacturer": "Trismed Co., Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Xem chi tiết tại Bảng chào đáp ứng kỹ thuật đính kèm E-HSDT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 58500000,
+      "amount": 58500000,
+      "contractorCode": "vn5901019333",
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "29/QĐ-TTYT",
+      "decisionDate": "2026-02-05T23:59:59",
+      "resultPublishedDate": "2026-02-05T15:17:25"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -48,13 +213,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500640095",
-    "notifyId": "3d7548b7-0e34-42eb-828e-85fae6f902c1",
-    "bidId": "9473ff95-6d98-4733-af95-ecce77dcd343",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:43.204Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T14:09:57.581Z"
 }
