@@ -33,11 +33,14 @@ jobs:
           node --test scripts/region-membership.test.mjs
           node --test scripts/scan-baseline.test.mjs
           node --test scripts/rescue-runtime.test.mjs
+          node --test scripts/resilient-source-scan.test.mjs
           node --test scripts/contractor-search.test.mjs
           node --test scripts/source-time.test.mjs
           node --test scripts/display-time.test.mjs
           node --check display-time.js
           node --check scripts/run-region-scan.mjs
+          node --check scripts/fetch-data.mjs
+          node --check scripts/resilient-source-scan.mjs
           node --check scripts/fetch-recent-location-audit.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
           node --check scripts/fetch-recent-location-fallback.mjs
