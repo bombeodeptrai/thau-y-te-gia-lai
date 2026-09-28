@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-28T11:33:50.318Z",
+  "rescuedAt": "2026-09-28T14:21:12.774Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 242,
+      "count": 243,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 36,
+      "count": 37,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 639,
+  "candidateCount": 641,
   "acceptedCount": 16,
-  "rejectedCount": 623,
+  "rejectedCount": 625,
   "rejectedReasons": {
+    "excluded:tu van": 185,
     "excluded:xay dung": 184,
-    "excluded:tu van": 184,
-    "insufficient-medical-context": 147,
+    "insufficient-medical-context": 148,
     "excluded:sua chua": 24,
     "excluded:cai tao": 22,
     "excluded:xay lap": 21,
@@ -996,8 +996,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1059,
+  "beforeCount": 1060,
   "afterCount": 1060,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v9"
 }
