@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-28T05:24:19.654Z",
+  "rescuedAt": "2026-09-28T06:32:13.326Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 196,
+      "count": 197,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 993,
+  "candidateCount": 994,
   "acceptedCount": 40,
-  "rejectedCount": 953,
+  "rejectedCount": 954,
   "rejectedReasons": {
+    "excluded:xay dung": 259,
     "insufficient-medical-context": 259,
-    "excluded:xay dung": 258,
     "excluded:tu van": 258,
     "excluded:sua chua": 37,
     "excluded:xay lap": 35,
@@ -938,6 +938,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600558112",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "ỦY ban nhân dân xã Canh Liên",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600556218",
       "name": "26-80/XL: thi công Sửa chữa phần xây dựng TBA 110kV Ayunpa + Chư Sê + Krông Pa",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1363,23 +1374,12 @@
       "score": 10,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600544629",
-      "name": "Mua bản quyền phần mềm giám sát phòng, chống mã độc và phòng chống thất thoát dữ liệu cho các máy trạm kết nối hệ thống Cơ sở dữ liệu quốc gia về dân cư",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 840,
-  "afterCount": 840,
+  "beforeCount": 1059,
+  "afterCount": 1059,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v9"
 }
