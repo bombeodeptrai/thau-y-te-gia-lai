@@ -24,7 +24,18 @@ test("đọc publicDate của Mua sắm công theo giờ Việt Nam ở mọi tr
 test("lọc thời gian theo mốc chụp dữ liệu thay vì đồng hồ người xem", () => {
   const fetchedAt = "2026-09-26T05:11:39.694Z";
   assert.equal(withinSnapshotDays("2023-09-27T14:46:58.533", 1095, fetchedAt), true);
-  assert.equal(withinSnapshotDays("2023-09-27T12:11:39.693", 1095, fetchedAt), false);
+  assert.equal(withinSnapshotDays("2023-09-27T00:00:00.000", 1095, fetchedAt), true);
+  assert.equal(withinSnapshotDays("2023-09-26T23:59:59.999", 1095, fetchedAt), false);
+});
+
+test("giữ gói ở ngày biên của phạm vi Gia Lai 1.095 ngày", () => {
+  const fetchedAt = "2026-09-28T11:33:50.318Z";
+  assert.equal(
+    withinSnapshotDays("2023-09-29T16:32:23.196", 1095, fetchedAt),
+    true,
+    "IB2300243206 không được biến mất khỏi giao diện Gia Lai",
+  );
+  assert.equal(withinSnapshotDays("2023-09-28T23:59:59.999", 1095, fetchedAt), false);
 });
 
 test("số Gia Lai mặc định trên giao diện khớp dữ liệu vùng", async () => {
