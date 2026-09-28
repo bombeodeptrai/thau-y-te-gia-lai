@@ -1,9 +1,290 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 8,
+  "bidders": [
+    {
+      "id": "b074d017-1642-4fd2-8c61-d7dd91f9547f",
+      "contractorCode": "vn0314068802",
+      "taxCode": "0314068802",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT CÁT MINH",
+      "status": "lost",
+      "lotNo": "PP2600367720",
+      "lotName": "Phần/lô 1 mua sắm vật tư sửa chữa giường, tủ Inox",
+      "bidPrice": 247255260,
+      "finalPrice": 247255260,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-09-24T15:36:00.745",
+      "models": []
+    },
+    {
+      "id": "136f4947-d231-4282-8f57-90c585e347d2",
+      "contractorCode": "vn0318464532",
+      "taxCode": "0318464532",
+      "contractorName": "CÔNG TY TNHH GREEN MIQ",
+      "status": "won",
+      "lotNo": "PP2600367720",
+      "lotName": "Phần/lô 1 mua sắm vật tư sửa chữa giường, tủ Inox",
+      "bidPrice": 235680000,
+      "finalPrice": 235680000,
+      "winningPrice": 235680000,
+      "reason": "",
+      "submittedAt": "2026-09-24T15:36:00.745",
+      "models": [
+        "Cánh tủ",
+        "Hộc tủ",
+        "Núm kéo cánh tủ",
+        "Nan giường ( bao gồm: vạt giường+ vạt nâng hạ đầu giường+ Thanh nâng hạ đầu giường)",
+        "Thanh Inox tròn Ø 25",
+        "Thanh Inox vuông Ø 25"
+      ]
+    },
+    {
+      "id": "1c38bb89-7486-4673-b3f5-c966ee073ab1",
+      "contractorCode": "vn5801514239",
+      "taxCode": "5801514239",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ AN NHÀN - LD",
+      "status": "lost",
+      "lotNo": "PP2600367720",
+      "lotName": "Phần/lô 1 mua sắm vật tư sửa chữa giường, tủ Inox",
+      "bidPrice": 261366000,
+      "finalPrice": 261366000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-09-24T15:36:00.745",
+      "models": []
+    },
+    {
+      "id": "f24f2a62-5017-452e-83b5-f499921edced",
+      "contractorCode": "vn0304241487",
+      "taxCode": "0304241487",
+      "contractorName": "CÔNG TY TNHH KHẢ LỘC",
+      "status": "lost",
+      "lotNo": "PP2600367721",
+      "lotName": "Phần/lô 2 mua sắm dụng cụ Bộ dụng cụ U Xơ tiền liệt tuyến",
+      "bidPrice": 21850000,
+      "finalPrice": 21850000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-09-24T15:36:00.745",
+      "models": [
+        "27002LK"
+      ]
+    },
+    {
+      "id": "2ab1b84c-7af9-44f4-ac23-83f745bdfd32",
+      "contractorCode": "vn0307954951",
+      "taxCode": "0307954951",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ Y VIỆT",
+      "status": "won",
+      "lotNo": "PP2600367721",
+      "lotName": "Phần/lô 2 mua sắm dụng cụ Bộ dụng cụ U Xơ tiền liệt tuyến",
+      "bidPrice": 21700000,
+      "finalPrice": 21700000,
+      "winningPrice": 21700000,
+      "reason": "",
+      "submittedAt": "2026-09-24T15:36:00.745",
+      "models": [
+        "27177A"
+      ]
+    },
+    {
+      "id": "b9f5541d-785a-4046-b3c4-b69302679aa3",
+      "contractorCode": "vn0304241487",
+      "taxCode": "0304241487",
+      "contractorName": "CÔNG TY TNHH KHẢ LỘC",
+      "status": "won",
+      "lotNo": "PP2600367722",
+      "lotName": "Phần/lô 3 mua sắm Ống soi niệu quản bể thận cho hệ thống nội soi tán sỏi ngược dòng.",
+      "bidPrice": 350000000,
+      "finalPrice": 350000000,
+      "winningPrice": 350000000,
+      "reason": "",
+      "submittedAt": "2026-09-24T15:36:00.745",
+      "models": [
+        "27002LK"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "64c3c22d-0afa-4d3a-926e-7729be31f10e",
+      "name": "Ống soi niệu quản bể thận",
+      "model": "27002LK",
+      "brand": "27002LK",
+      "manufacturer": "Karl Storz",
+      "origin": "Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Ống soi niệu quản-bể thận, cỡ 9,5 Fr., góc soi 6°, dài 43 cm. Kích thước đầu xa: 8 Fr, kích thước vỏ ngoài: 9,5 Fr. - 12 Fr., hấp tiệt trùng được, thị kính gập góc, 2 cổng tưới bên hông và 1 kênh làm việc 6 Fr, sử dụng với dụng cụ có kích thước lên đến 5 Fr",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 350000000,
+      "amount": 350000000,
+      "contractorCode": "vn0304241487",
+      "winnerNames": [
+        "CÔNG TY TNHH KHẢ LỘC"
+      ],
+      "lotNo": "",
+      "decisionNo": "839/QĐ-BVIILĐ",
+      "decisionDate": "2026-09-24T15:35:09",
+      "resultPublishedDate": "2026-09-24T15:36:41"
+    },
+    {
+      "id": "f7a7df29-ec41-4b49-aceb-f7d973512c10",
+      "name": "Kẹp lấy Sonde JJ đường niệu",
+      "model": "27177A",
+      "brand": "27177A",
+      "manufacturer": "Karl Storz",
+      "origin": "Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Kẹp lấy Sonde JJ đường niệu cỡ 7 Fr., dài 40 cm , hàm tác động đôi, loại mềm dẻo. Chất liệu thép không gỉ",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 21700000,
+      "amount": 21700000,
+      "contractorCode": "vn0307954951",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ Y VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "839/QĐ-BVIILĐ",
+      "decisionDate": "2026-09-24T15:35:09",
+      "resultPublishedDate": "2026-09-24T15:36:41"
+    },
+    {
+      "id": "51c9608a-e058-400a-9ba6-1d844b5de769",
+      "name": "Cánh tủ",
+      "model": "Cánh tủ",
+      "brand": "Cánh tủ",
+      "manufacturer": "Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu:  Inox 201,Kích thước : cao 37cm x rộng 35cm",
+      "unit": "Cái",
+      "quantity": 32,
+      "unitPrice": 300000,
+      "amount": 9600000,
+      "contractorCode": "vn0318464532",
+      "winnerNames": [
+        "CÔNG TY TNHH GREEN MIQ"
+      ],
+      "lotNo": "",
+      "decisionNo": "839/QĐ-BVIILĐ",
+      "decisionDate": "2026-09-24T15:35:09",
+      "resultPublishedDate": "2026-09-24T15:36:41"
+    },
+    {
+      "id": "32a83228-9e13-474d-9d50-0d6d0929406e",
+      "name": "Hộc tủ",
+      "model": "Hộc tủ",
+      "brand": "Hộc tủ",
+      "manufacturer": "Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu:  Inox 201 Kích thước : Rộng 34 cm X dài 33cm X cao 8cm",
+      "unit": "Cái",
+      "quantity": 18,
+      "unitPrice": 450000,
+      "amount": 8100000,
+      "contractorCode": "vn0318464532",
+      "winnerNames": [
+        "CÔNG TY TNHH GREEN MIQ"
+      ],
+      "lotNo": "",
+      "decisionNo": "839/QĐ-BVIILĐ",
+      "decisionDate": "2026-09-24T15:35:09",
+      "resultPublishedDate": "2026-09-24T15:36:41"
+    },
+    {
+      "id": "a4f33903-b652-4d15-be81-e46f0f629689",
+      "name": "Núm kéo cánh tủ",
+      "model": "Núm kéo cánh tủ",
+      "brand": "Núm kéo cánh tủ",
+      "manufacturer": "Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu hợp kim có ốc vặn cỡ khoảng 3mm",
+      "unit": "Cái",
+      "quantity": 109,
+      "unitPrice": 20000,
+      "amount": 2180000,
+      "contractorCode": "vn0318464532",
+      "winnerNames": [
+        "CÔNG TY TNHH GREEN MIQ"
+      ],
+      "lotNo": "",
+      "decisionNo": "839/QĐ-BVIILĐ",
+      "decisionDate": "2026-09-24T15:35:09",
+      "resultPublishedDate": "2026-09-24T15:36:41"
+    },
+    {
+      "id": "088fe387-2269-44f7-b62e-979f7eaa4b66",
+      "name": "Nan giường ( bao gồm: vạt giường+ vạt nâng hạ đầu giường+ Thanh nâng hạ đầu giường)",
+      "model": "Nan giường ( bao gồm: vạt giường+ vạt nâng hạ đầu giường+ Thanh nâng hạ đầu giường)",
+      "brand": "Nan giường ( bao gồm: vạt giường+ vạt nâng hạ đầu giường+ Thanh nâng hạ đầu giường)",
+      "manufacturer": "Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu Inox 201,Vạt giường Kích thước: dài 1m30 x rộng 83cm,Vạt nâng đầu giường KT: dài 54cmx rộng 83cm,Thanh nâng hạ đầu giường KT:rộng 81cm x cao 31cm",
+      "unit": "Bộ",
+      "quantity": 126,
+      "unitPrice": 1300000,
+      "amount": 163800000,
+      "contractorCode": "vn0318464532",
+      "winnerNames": [
+        "CÔNG TY TNHH GREEN MIQ"
+      ],
+      "lotNo": "",
+      "decisionNo": "839/QĐ-BVIILĐ",
+      "decisionDate": "2026-09-24T15:35:09",
+      "resultPublishedDate": "2026-09-24T15:36:41"
+    },
+    {
+      "id": "b3270b34-eba1-40cf-8ec0-27c6d7831199",
+      "name": "Thanh Inox tròn Ø 25",
+      "model": "Thanh Inox tròn Ø 25",
+      "brand": "Thanh Inox tròn Ø 25",
+      "manufacturer": "Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu: Inox 304, Kích thước Ø 25",
+      "unit": "Mét",
+      "quantity": 20,
+      "unitPrice": 1200000,
+      "amount": 24000000,
+      "contractorCode": "vn0318464532",
+      "winnerNames": [
+        "CÔNG TY TNHH GREEN MIQ"
+      ],
+      "lotNo": "",
+      "decisionNo": "839/QĐ-BVIILĐ",
+      "decisionDate": "2026-09-24T15:35:09",
+      "resultPublishedDate": "2026-09-24T15:36:41"
+    },
+    {
+      "id": "99567fbd-7a0e-4b9c-9d1a-1e5712918d1e",
+      "name": "Thanh Inox vuông Ø 25",
+      "model": "Thanh Inox vuông Ø 25",
+      "brand": "Thanh Inox vuông Ø 25",
+      "manufacturer": "Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu: Inox 304,Kích thước 25x25mm",
+      "unit": "Mét",
+      "quantity": 20,
+      "unitPrice": 1400000,
+      "amount": 28000000,
+      "contractorCode": "vn0318464532",
+      "winnerNames": [
+        "CÔNG TY TNHH GREEN MIQ"
+      ],
+      "lotNo": "",
+      "decisionNo": "839/QĐ-BVIILĐ",
+      "decisionDate": "2026-09-24T15:35:09",
+      "resultPublishedDate": "2026-09-24T15:36:41"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -232,6 +513,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:42:29.085Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T01:00:31.703Z"
 }

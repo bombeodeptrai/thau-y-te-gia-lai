@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "268e1180-2484-438f-b0dc-0b0a0b0e8ba5",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "BP2500502395",
+      "lotName": "Sửa chữa dây nội soi đại tràng năm 2025",
+      "bidPrice": 123000000,
+      "finalPrice": 123000000,
+      "winningPrice": 123000000,
+      "reason": "",
+      "submittedAt": "2025-09-24T15:59:42.492",
+      "models": [
+        "Sửa chữa dây nội soi đại tràng - Model: EC-380FKP - Số máy: H121102 - Hãng sản xuất: Pentax/Nhật Bản"
+      ]
+    },
+    {
+      "id": "e07b2abb-a71d-4d6e-a230-f5f75b9a6f80",
+      "contractorCode": "vnz000014333",
+      "taxCode": "8031293287",
+      "contractorName": "HỘ KINH DOANH THIẾT BỊ Y TẾ TOÀN CẦU",
+      "status": "lost",
+      "lotNo": "BP2500502395",
+      "lotName": "Sửa chữa dây nội soi đại tràng năm 2025",
+      "bidPrice": 123253000,
+      "finalPrice": 123253000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2; Nhà thầu xếp hạng 1 đã xác nhận chấp thuận được trao hợp đồng",
+      "submittedAt": "2025-09-24T15:59:42.492",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2025728153129239",
+      "name": "Sửa chữa dây nội soi đại tràng - Model: EC-380FKP - Số máy: H121102 - Hãng sản xuất: Pentax/Nhật Bản",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 123000000,
+      "amount": 123000000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1071/QĐ-BVTS",
+      "decisionDate": "2025-09-24T15:55:10",
+      "resultPublishedDate": "2025-09-24T15:59:51"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "53490f7e-d520-4714-8b1e-0c969578efba",
+        "lotNo": "BP2500502395",
+        "name": "Sửa chữa dây nội soi đại tràng năm 2025",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 123500000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Sửa chữa dây nội soi đại tràng sử dụng tại Bệnh viện đa khoa Triệu Sơn",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "2025728153129239",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Sửa chữa dây nội soi đại tràng - Model: EC-380FKP - Số máy: H121102 - Hãng sản xuất: Pentax/Nhật Bản",
+        "unit": "",
+        "quantity": 1,
+        "code": "",
+        "brand": "",
+        "manufacturer": "",
+        "origin": "",
+        "manufactureYear": "",
+        "specification": "",
+        "otherRequirement": "",
+        "projectPlace": "",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.2034",
+        "chapterName": "Mẫu số 02A. PHẠM VI CUNG CẤP DỊCH VỤ (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.2034",
+        "name": "Mẫu số 02A. PHẠM VI CUNG CẤP DỊCH VỤ (áp dụng đối với loại hợp đồng trọn gói, hợp đồng theo kết quả đầu ra)",
+        "parentCode": "",
+        "orderIndex": 0
+      },
+      {
+        "code": "BD.DT.02.2102",
+        "name": "Mẫu số 03. YÊU CẦU VỀ KỸ THUẬT",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T00:49:29.622Z"
+}

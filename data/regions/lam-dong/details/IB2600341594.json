@@ -1,40 +1,459 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 22,
   "bidders": [
     {
-      "id": "c5425c33-4f95-4d12-9b60-8feae43134b4",
+      "id": "740e52f2-629f-46a9-a75a-1e5925e21c9e",
+      "contractorCode": "vn0312692797",
+      "taxCode": "0312692797",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN",
+      "status": "won",
+      "lotNo": "BP2600467673",
+      "lotName": "Mua sắm sinh phẩm và y cụ xét nghiệm năm 2026",
+      "bidPrice": 609586500,
+      "finalPrice": 609586500,
+      "winningPrice": 609586500,
+      "reason": "",
+      "submittedAt": "2026-09-03T17:05:31.315",
+      "models": []
+    },
+    {
+      "id": "04bef439-9a42-4ae7-9d08-c23e99fcc657",
       "contractorCode": "vn0312728203",
-      "taxCode": "",
+      "taxCode": "0312728203",
       "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ MINH HOÀNG",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600467673",
       "lotName": "Mua sắm sinh phẩm và y cụ xét nghiệm năm 2026",
       "bidPrice": 640001250,
       "finalPrice": 640001250,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-22T10:05:57.901",
-      "models": []
-    },
-    {
-      "id": "f95edd1f-5f11-4042-b495-eb20d4bee17b",
-      "contractorCode": "vn0312692797",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN",
-      "status": "participating",
-      "lotNo": "BP2600467673",
-      "lotName": "Mua sắm sinh phẩm và y cụ xét nghiệm năm 2026",
-      "bidPrice": 609586500,
-      "finalPrice": 609586500,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-22T10:06:00.572",
+      "reason": "giá dự thầu cao hơn giá trúng thầu",
+      "submittedAt": "2026-09-03T17:05:31.315",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "29b051d0-05d5-4482-a6cd-d6b9ae71d707",
+      "name": "Test thử nước tiểu 10 thông số",
+      "model": "U031-101",
+      "brand": "Acon",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Que thử nước tiểu 10 thông số được dùng để đo các chỉ số : Leukocytes, Nitrite, Urobilinogen, Protein, pH, Blood, Specific Gravity, Ketone, Bilirubin, Glucose (LEU/ NIT/URO/ PRO/ pH/ BLO/ SG/ KET/ BIL/ GLU). - Dạng que - Tiêu chuẩn: ISO 13485",
+      "unit": "test",
+      "quantity": 50000,
+      "unitPrice": 1680,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "4ac89172-4635-48d2-b142-50c16d38a0de",
+      "name": "Test thử đường huyết",
+      "model": "G135-10U",
+      "brand": "Acon",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Que thử đường huyết dùng để đo nồng độ đường huyết trong máu toàn phần. - Công nghệ không cần code chíp - Khoảng HCT 10-70% cho phép đo với mẫu máu trẻ sơ sinh và người thiếu máu. - Men GDH-FAD cho phép đo với mẫu máu mao mạch, tĩnh mạch và động mạch. - Thời gian đo: 5 giây, thể tích mẫu: 0.6 µl - Que thử sử dụng một lần.",
+      "unit": "test",
+      "quantity": 13000,
+      "unitPrice": 3150,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "6af288f5-1dae-423d-b083-9e068b2d35b2",
+      "name": "Test xét nghiệm nhanh chẩn đoán viêm gan C",
+      "model": "IHCB-301",
+      "brand": "Trueline",
+      "manufacturer": "Công ty TNHH Medicon",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Que thử HCV Ab Rapid Test là xét nghiệm chuẩn đoán In-vitro định tính phát hiện kháng thể kháng HCV trong huyết thanh hoặc huyết tương của người. - Hoạt chất chính: Các kháng nguyên HCV tái tổ hợp. - Độ nhạy tương quan: 99.05%; - Độ đặc hiệu tương quan: 99.46%; - Độ chính xác tương quan: 99.33%. - Độ chính xác ngẫu nhiên lặp: 100% - Phân loại BYT: D - Đọc kết quả tại 15 phút.",
+      "unit": "Test",
+      "quantity": 2000,
+      "unitPrice": 9828,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "735323a5-e0ca-409b-ba66-c242d9bdbdd3",
+      "name": "Ống nghiệm 5ml không nắp",
+      "model": "V1011100",
+      "brand": "VMA",
+      "manufacturer": "Công ty CP Vật tư Y tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Kích thước 13x75 mm. Nhựa PS nguyên sinh, không nắp, không nhãn, độ nhẵn và trơn láng cao chống sự bám dính mẫu, dung tích tối đa 6ml. - Đạt tiêu chuẩn ISO 13485: 2016.",
+      "unit": "Ống",
+      "quantity": 15000,
+      "unitPrice": 336,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "37587f9c-90f0-450f-9494-d0d3a737812d",
+      "name": "Ống đựng huyết thanh",
+      "model": "VC320350",
+      "brand": "VMA",
+      "manufacturer": "Công ty CP Vật tư Y tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Ống nghiệm nhựa PP nguyên sinh. - Thể tích 1.5 ml, có vạch thể tích trên thành ống. - Thành trơn láng chống sự bám dính của mẫu bệnh phẩm. - Dùng lưu mẫu và vận chuyển mẫu. - Đạt tiêu chuẩn ISO 13485: 2016.",
+      "unit": "Cái",
+      "quantity": 6000,
+      "unitPrice": 273,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "1580a508-ba77-400a-86b1-215aefcf80b1",
+      "name": "Đầu col xanh",
+      "model": "GT205-413",
+      "brand": "GREETMED",
+      "manufacturer": "NINGBO GREETMED MEDICAL INSTRUMENTS CO.,LTD",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Sử dụng cùng cây micropipet để lấy mẫu xét nghiệm - Kích thước: 0-1000ul . Độ cone ôm kín đầu cây micropipet. - Có khía",
+      "unit": "Cái",
+      "quantity": 25000,
+      "unitPrice": 105,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "d810b782-4bd5-4c17-8180-50e33c09d6c2",
+      "name": "Anti Human Globulin (AHG)",
+      "model": "819001",
+      "brand": "Spectrum",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) - Spectrum Diagnostics",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Huyết thanh chẩn đoán Spectrum Anti-Human Globulin để phát hiện in- vitro của lớp phủ kháng thể ở hồng cầu người. - Độ đặc hiệu 100%. - Độ chính xác 100%. - Bảo quản từ 2-8℃. ISO 13485",
+      "unit": "Lọ",
+      "quantity": 10,
+      "unitPrice": 294000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "e505c9bb-1d71-4d5c-b8de-de1a012f3267",
+      "name": "Clo-test dùng để tìm vi khuẩn HP trong dạ dày",
+      "model": "MI004.1ID",
+      "brand": "NAM KHOA BIOTEK",
+      "manufacturer": "CÔNG TY CỔ PHẦN DỊCH VỤ VÀ THƯƠNG MẠI NAM KHOA BIOTEK",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Được dùng để phát hiện nhanh H.pylori có trong bệnh phẩm hoặc trên môi trường nuôi cấy. - Thành phần: là môi trường chuyên biệt dạng Gel dùng để phát hiện nhanh vi khuẩn H.pylori và được chứa trong tube nhựa 0.5 ml. - Mỗi tube nhựa chứa gel tương đương với một thử nghiệm được dùng cho một bệnh phẩm hoặc mẫu thử. - Bảo quản: 2-8°C",
+      "unit": "Test",
+      "quantity": 300,
+      "unitPrice": 8400,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "97c80fb0-ac17-487f-aa63-3f7841d6d2bd",
+      "name": "Thẻ định nhóm máu đầu giường",
+      "model": "BG1722",
+      "brand": "Sifin",
+      "manufacturer": "Sifin Diagnostics GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thẻ định nhóm máu ABO tại giường gắn sẵn huyết thanh mẫu. - Thành phần: Anti-A (dòng A003) Anti-B (dòng B005) - Độ nhạy: Anti A: 100%; Anti B: 100% - Độ đặc hiệu: Anti A: 100%; Anti B: 100% - Chất bảo quản: Natri azide < 1,0 mg/ml trong thuốc thử - Chất ổn định: ≤ 0.1% NaN₃ - Nhiệt độ bảo quản: 2-25˚C - Quy cách: Thẻ/ 2 Test - Tiêu chuẩn chất lượng: ISO 13485",
+      "unit": "Test",
+      "quantity": 350,
+      "unitPrice": 21000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "db2b11b1-c609-47a7-9797-b1d32bff736b",
+      "name": "Anti A",
+      "model": "810001",
+      "brand": "Spectrum",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) - Spectrum Diagnostics",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thuốc thử Anti A (IgM) được sử dụng để phát hiện nhóm máu A trong mẫu máu người. - Kháng thể đơn dòng được tạo ra từ chuỗi tế bào Hybridoma bằng cách kết hợp kháng thể chuột tạo ra tế bào Lympho B với tế bào u tủy chuột dùng để thử nghiệm ngưng kết hồng cầu xác định nhóm máu. - 10ml/lọmáu. - Hiệu giá ≥ 1:256 - Độ nhạy và độ đặc hiệu: 100% - Dung dịch dạng lỏng, màu xanh - Bảo quản ở 2-8℃",
+      "unit": "Lọ",
+      "quantity": 10,
+      "unitPrice": 84000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "3c198c60-3753-464e-9ae5-77d2e210b265",
+      "name": "Anti B",
+      "model": "814001",
+      "brand": "Spectrum",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) - Spectrum Diagnostics",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thuốc thử Anti B (IgM) được sử dụng để phát hiện nhóm máu B trong mẫu máu người. - Kháng thể đơn dòng được tạo ra từ chuỗi tế bào Hybridoma bằng cách kết hợp kháng thể chuột tạo ra tế bào Lympho B với tế bào u tủy chuột dùng để thử nghiệm ngưng kết hồng cầu xác định nhóm máu. - Hiệu giá ≥ 1:256 - Độ nhạy và độ đặc hiệu: 100% - Dung dịch dạng lỏng, màu vàng - Bảo quản ở 2-8℃",
+      "unit": "Lọ",
+      "quantity": 10,
+      "unitPrice": 84000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "6caf92e2-6e85-41c9-8eb3-fe3efe01e43f",
+      "name": "Anti D",
+      "model": "822001",
+      "brand": "Spectrum",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) - Spectrum Diagnostics",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thuốc thử Anti D (IgM+IgG) được sử dụng để phát hiện type Rho (D) trong mẫu máu người. - Kháng thể đơn dòng được tạo ra từ chuỗi tế bào Hybridoma bằng cách kết hợp tế bào Lympho B sinh kháng thể của chuột với tế bào u tủy chuột dùng để thử nghiệm ngưng kết hồng cầu xác định nhóm máu. - Hiệu giá ≥ 1:256 - Độ nhạy và độ đặc hiệu: 100% - Dung dịch dạng lỏng, không màu - Bảo quản ở 2-8℃",
+      "unit": "Lọ",
+      "quantity": 10,
+      "unitPrice": 168000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "eafd54b1-5b2b-43e6-96ac-f2b5c821fd4c",
+      "name": "Test HIV",
+      "model": "HIV-W23",
+      "brand": "Fastep",
+      "manufacturer": "Assure Tech. (Hangzhou) Co., Ltd.;",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Xét nghiệm miễn dịch trực quan nhanh để phát hiện định tính, giả định các kháng thể đối với HIV-l/HIV-2 trong các mẫu máu toàn phần, huyết thanh hoặc huyết tương của người. - Độ nhạy chẩn đoán cho mỗi loại mẫu (huyết thanh/huyết tương/ máu toàn phần mao mạch (đỉnh ngón tay): + Độ nhạy: >99% - Độ đặc hiệu đoán cho mỗi loại mẫu (huyết thanh/huyết tương/ máu toàn phần tĩnh mạch/ mao mạch (đỉnh ngón tay): + Độ đặc hiệu: >99% - Đọc kết quả lúc 10 phút. Không diễn giải kết quả sau 20 phút - Bảo quản nhiệt độ: 2-30˚C",
+      "unit": "Test",
+      "quantity": 3000,
+      "unitPrice": 7980,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "0bc40f01-5a16-44d6-b368-f7284bd4e367",
+      "name": "Lọ nhựa đựng nước tiểu",
+      "model": "VS711741",
+      "brand": "VMA",
+      "manufacturer": "Công ty CP Vật tư Y tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Lọ nhựa PS nguyên sinh, trong, có nhãn màu trắng, nắp màu đỏ, dung tích 55ml. - Kích thước: Chiều cao 60 mm, đường kính 36 mm. - Đạt tiêu chuẩn ISO 13485: 2016.",
+      "unit": "Lọ",
+      "quantity": 80000,
+      "unitPrice": 1197,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "02828bdd-fc02-4a2a-bdaa-84bf12943acf",
+      "name": "Test xét nghiệm nhanh chẩn đoán viêm gan B",
+      "model": "IHBsg-301",
+      "brand": "Trueline",
+      "manufacturer": "Công ty TNHH Medicon",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Que thử HBsAg Rapid Test là xét nghiệm chẩn đoán In-vitro định tính phát hiện kháng nguyên HBsAg trong huyết thanh hoặc huyết tương của người. - Hoạt chất chính: Cặp kháng thể kháng HBsAg - Độ nhạy tương quan: 100% - Độ đặc hiệu tương quan: 100% - Độ chính xác tương quan: 100%. - Độ chính xác ngẫu nhiên lặp: 100% - Ngưỡng phát hiện (LOD) : 1 ng/mL. - Phân loại BYT: D - Đọc kết quả tại 15 phút.",
+      "unit": "Test",
+      "quantity": 3000,
+      "unitPrice": 4200,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "68e1fe91-387d-47bd-ad14-1295617b99d1",
+      "name": "Anti AB",
+      "model": "816001",
+      "brand": "Spectrum",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) - Spectrum Diagnostics",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thuốc thử Anti AB (IgM) được sử dụng để phát hiện nhóm máu AB trong mẫu máu người. - Kháng thể đơn dòng được tạo ra từ chuỗi tế bào Hybridoma bằng cách kết hợp kháng thể chuột tạo ra tế bào Lympho B với tế bào u tủy chuột dùng để thử nghiệm ngưng kết hồng cầu xác định nhóm máu. - Hiệu giá ≥ 1:256 - Độ nhạy và độ đặc hiệu: 100% - Dung dịch dạng lỏng, không màu - Bảo quản ở 2-8℃",
+      "unit": "Lọ",
+      "quantity": 10,
+      "unitPrice": 84000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "772796b4-f8b5-47a1-b7ec-94e054f090a7",
+      "name": "Ống nghiệm Citrate",
+      "model": "V3020521",
+      "brand": "VMA",
+      "manufacturer": "Công ty CP Vật tư Y tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Ống nghiệm nhựa PP, nguyên sinh, có độ nhẵn và trơn láng cao chống sự bám dính mẫu, kích thước Ø13 x 75 (mm) hoặc Ø12 x 75(mm), dung tích tối đa 6 ml, nắp nhựa màu xanh lá - Bên trong chứa chất kháng đông Trisodium Citrate Dihydrate 3.8%, chỉ có một vạch chỉ thể tích 2ml trên nhãn ống - Chịu được lực quay ly tâm gia tốc 6.000 vòng/phút trong thời gian 10 phút, đạt độ an toàn, đạt độ kín thân và nắp ống nghiệm, đạt độ vô khuẩn (có phiếu kết quả thử nghiệm của đơn vị kiểm chứng). - Đạt tiêu chuẩn ISO 13485:2016",
+      "unit": "Ống",
+      "quantity": 1500,
+      "unitPrice": 840,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "51a8c9c9-84db-4b33-b78d-af852aead3af",
+      "name": "Ống EDTA",
+      "model": "V6020521",
+      "brand": "VMA",
+      "manufacturer": "Công ty CP Vật tư Y tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Ống nghiệm nhựa PP, nguyên sinh, có độ nhẵn và trơn láng cao chống sự bám dính mẫu, kích thước Ø13 x 75 (mm) hoặc Ø12 x75 (mm), dung tích tối đa 6 ml , nắp nhựa màu xanh dương. - Bên trong chứa chất kháng đông Ethylenediaminetetraacetic Acid Dipotassium Salt Dihydrate (EDTA K2), chỉ có một vạch chỉ thể tích 2ml trên nhãn ống. - Chịu được lực quay ly tâm gia tốc 6.000 vòng/phút trong thời gian 10 phút, đạt độ an toàn, đạt độ kín thân và nắp ống nghiệm, đạt độ vô khuẩn (có phiếu kết quả thử nghiệm của đơn vị kiểm chứng). - Đạt tiêu chuẩn ISO 13485: 2016",
+      "unit": "Ống",
+      "quantity": 110000,
+      "unitPrice": 735,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "741f07aa-5464-42d1-b7db-5d540c91bf82",
+      "name": "Ống nghiệm Serum",
+      "model": "V4020021B",
+      "brand": "VMA",
+      "manufacturer": "Công ty CP Vật tư Y tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Ống nghiệm nhựa PP, nguyên sinh, có độ nhẵn và trơn láng cao chống sự bám dính mẫu, kích thước Ø13 x 75 (mm) hoặc Ø12 x 75 (mm), dung tích tối đa 6 ml, nắp nhựa màu đỏ. - Bên trong chứa hạt nhựa PS (Polystyrene), giúp tiến trình đông máu diễn tiến nhanh chỉ từ 3 - 5 phút, có 3 vạch chỉ thể tích trên nhãn ống. '- Chịu được lực quay ly tâm gia tốc 6.000 vòng/phút trong thời gian 10 phút, đạt độ an toàn, đạt độ kín thân và nắp ống nghiệm, đạt độ vô khuẩn (có phiếu kết quả thử nghiệm của đơn vị kiểm chứng). - Đạt tiêu chuẩn ISO 13485: 2016",
+      "unit": "Ống",
+      "quantity": 110000,
+      "unitPrice": 777,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "18fd9a69-a93b-4910-b838-97c8cfa5341d",
+      "name": "Test xét nghiệm nhanh tìm kháng nguyên chẩn đoán sớm virus sốt xuất huyết",
+      "model": "IDENG-402",
+      "brand": "Trueline",
+      "manufacturer": "Công ty TNHH Medicon",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Khay thử Dengue NS1 Ag Rapid Test là xét nghiệm chẩn đoán In-vitro định tính phát hiện sự có mặt của kháng nguyên Dengue NS1 trong máu toàn phần, huyết thanh, huyết tương của người. Hoạt chất chính: Các kháng thể đơn dòng kháng Dengue NS1. - Độ nhạy tương quan: 100%; - Độ đặc hiệu tương quan: 98,75%; - Độ chính xác tương quan: 99.0%. - Ngưỡng phát hiện (LoD): 0.25 ng/mL. - Phân loại BYT: C - Đọc kết quả tại 15 phút",
+      "unit": "Test",
+      "quantity": 6000,
+      "unitPrice": 16000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "5cca5d0e-b4bf-4240-b70d-4918b1905aa2",
+      "name": "Test thử ma túy 5 chân",
+      "model": "MD-U55 (MOP/COD/HER/THC/AMP)",
+      "brand": "Fastep",
+      "manufacturer": "Assure Tech. (Hangzhou) Co., Ltd.;",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Xét nghiệm định tính MOP/COD/HER/THC/AMP (Nước tiểu) là xét nghiệm miễn dịch sắc ký nhanh để phát hiện định tính và đồng thời các chất sau đây trong nước tiểu người. - Nồng độ ngưỡng phát hiện (Cut-off (ng/mL) như sau: + AMP: 300 (ng/mL); + COD: 200 (ng/mL); + HER: 10 (ng/mL); + MOP: 300 (ng/mL); + THC: 50 (ng/mL) - Độ nhạy; Độ đặc hiệu; Độ chính xác lần lượt như sau: + AMP: 100%; ≥ 99.9%; ≥ 99.9% + COD: ≥ 99.9%; 100%;100% + HER: ≥ 99.9%; 100%; ≥ 99.9% + MOP: 100%; ≥ 99.9%; ≥ 99.9% + THC: 100%; 100%;100% - Độ chụm: 100% - Độ lặp lại: 100% - Độ ổn định: 100% - Các hợp chất sau được phát hiện là không phản ứng chéo khi thử nghiệm ở nồng độ 100 μg/mL : Ibuprofen, Ampicillin, Pseudoephedrine, Trimeprazine, Oxalic Acid, Venlafaxine, Methadone, Dextromethorphan, Chloroquine,.. - Đọc kết quả sau 5 phút. Không đọc kết quả sau 10 phút.",
+      "unit": "Test",
+      "quantity": 2500,
+      "unitPrice": 16275,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    },
+    {
+      "id": "c89db57e-d20c-4b21-b7bf-657b950acbfd",
+      "name": "Đầu col vàng",
+      "model": "GT205-413",
+      "brand": "GREETMED",
+      "manufacturer": "NINGBO GREETMED MEDICAL INSTRUMENTS CO.,LTD",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Sử dụng cùng cây micropipet để lấy mẫu xét nghiệm - Kích thước: 0-200ul . Độ cone ôm kín đầu cây micropipet. - Có khía",
+      "unit": "Cái",
+      "quantity": 25000,
+      "unitPrice": 84,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN"
+      ],
+      "decisionNo": "264/QĐ-TTYT",
+      "decisionDate": "2026-09-03T23:59:59",
+      "resultPublishedDate": "2026-09-03T17:05:35"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +478,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:11:16.310Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T01:00:41.139Z"
 }

@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "d58bf407-7a57-4020-91ba-88c264d48b05",
+      "contractorCode": "vn3600254682",
+      "taxCode": "3600254682",
+      "contractorName": "CÔNG TY TNHH OXY ĐỒNG NAI",
+      "status": "won",
+      "lotNo": "PP2600302369",
+      "lotName": "Khí Oxy y tế",
+      "bidPrice": 366120000,
+      "finalPrice": 366120000,
+      "winningPrice": 366120000,
+      "reason": "",
+      "submittedAt": "2026-07-31T08:28:49.467",
+      "models": [
+        "O2"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "bf5f4621-16a1-4827-9b1b-561717cc6b31",
+      "name": "Khí Oxy y tế",
+      "model": "O2",
+      "brand": "Oxygen\n",
+      "manufacturer": "Công ty TNHH Oxy Đồng Nai",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Khí Oxy dùng trong y tế. Dung tích vỏ chai/ bình 40 lít, áp suất nạp 150 bar, lượng khí tương đương khoảng 6.000 lít oxy ở điều kiện tiêu chuẩn, dùng cho hô hấp",
+      "unit": "Bình",
+      "quantity": 4068,
+      "unitPrice": 90000,
+      "amount": 366120000,
+      "contractorCode": "vn3600254682",
+      "winnerNames": [
+        "CÔNG TY TNHH OXY ĐỒNG NAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "401/QĐ-TTYT",
+      "decisionDate": "2026-07-31T08:25:07",
+      "resultPublishedDate": "2026-07-31T08:29:35"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,5 +132,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:11:10.551Z"
+  "fetchedAt": "2026-09-28T01:00:37.299Z"
 }

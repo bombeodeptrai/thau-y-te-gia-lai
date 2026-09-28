@@ -1,40 +1,60 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "244a1734-b8e3-43c1-b04d-fedcae946c3e",
+      "id": "9a3672ae-bc04-45f9-9886-a401177d738e",
       "contractorCode": "vn0314087033",
-      "taxCode": "",
+      "taxCode": "0314087033",
       "contractorName": "CÔNG TY TNHH NAMSION",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600468037",
       "lotName": "Gói thầu số 03: Mua sắm Phim X quang, bao gồm 01 mặt hàng",
       "bidPrice": 201600000,
       "finalPrice": 201600000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-16T09:20:53.529",
+      "reason": "Đánh giá về tài chính",
+      "submittedAt": "2026-08-05T17:39:55.395",
       "models": []
     },
     {
-      "id": "b98c6bfb-1722-48f4-aea7-7b41aa9e0ed7",
+      "id": "44f514e9-5662-478a-a508-b8076428f652",
       "contractorCode": "vn0312728203",
-      "taxCode": "",
+      "taxCode": "0312728203",
       "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ MINH HOÀNG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600468037",
       "lotName": "Gói thầu số 03: Mua sắm Phim X quang, bao gồm 01 mặt hàng",
       "bidPrice": 189000000,
       "finalPrice": 189000000,
-      "winningPrice": 0,
+      "winningPrice": 189000000,
       "reason": "",
-      "submittedAt": "2026-07-16T09:20:53.765",
+      "submittedAt": "2026-08-05T17:39:55.395",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "9f189038-46d1-4414-9ac6-3505c516436c",
+      "name": "Phim X-quang kỹ thuật số 20x25",
+      "model": "DI-HL",
+      "brand": "Phim X Quang DI-HL 20X25cm",
+      "manufacturer": "Fujifilm Material Manufacturing Co., LTD.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 - 2026",
+      "specification": "- Kích cỡ: 20cm x 25cm - Phim khô kỹ thuật số công nghệ in laser - Xuất xứ: G7 - Cấu tạo phim 4 lớp + Lớp bảo vệ phía trên: 86% gelatin ; độ dày: 2.3 μm + Lớp nền phim xanh: 100% polyethylene terephthalate; độ dày: 170 μm + Lớp nhạy quang: 59% latex polymer, 36% light sensitive agents ; độ dày: 10.6 μm. + Lớp bảo vệ phía dưới 88% gelatin; độ dày: 3.5 μm - Có chứng nhận đạt tiêu chuẩn: ISO, EC/FDA *Tương thích với máy in phim khô Drypix Smart (6000)",
+      "unit": "Tấm",
+      "quantity": 12000,
+      "unitPrice": 15750,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ MINH HOÀNG"
+      ],
+      "decisionNo": "164/QĐ-TTYT",
+      "decisionDate": "2026-08-05T23:59:59",
+      "resultPublishedDate": "2026-08-05T17:40:00"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +79,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:11:17.566Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T01:00:42.746Z"
 }

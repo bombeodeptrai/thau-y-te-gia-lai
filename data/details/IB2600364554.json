@@ -1,9 +1,60 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "b1cc63ca-322a-43eb-8fad-70e40988539c",
+      "contractorCode": "vn0105198389",
+      "taxCode": "0105198389",
+      "contractorName": "CÔNG TY CỔ PHẦN GIẢI PHÁP Y TẾ NAM MINH",
+      "status": "won",
+      "lotNo": "BP2600450398",
+      "lotName": "Mua sắm dây nội soi dạ dày",
+      "bidPrice": 650000000,
+      "finalPrice": 650000000,
+      "winningPrice": 650000000,
+      "reason": "",
+      "submittedAt": "2026-09-16T13:51:53.014",
+      "models": []
+    },
+    {
+      "id": "cb9a1f81-1638-44a8-bdff-becf97128f09",
+      "contractorCode": "vn0307954951",
+      "taxCode": "0307954951",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ Y VIỆT",
+      "status": "lost",
+      "lotNo": "BP2600450398",
+      "lotName": "Mua sắm dây nội soi dạ dày",
+      "bidPrice": 689000000,
+      "finalPrice": 689000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2 nên không xem xét E-HSDT",
+      "submittedAt": "2026-09-16T13:51:53.014",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "79a2a42e-bae8-4358-ad7b-ee0065d962d3",
+      "name": "Dây nội soi dạ dày",
+      "model": "EG29-i10c",
+      "brand": "Pentax",
+      "manufacturer": "Hoya Corporation PENTAX Miyagi Factory",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Cam kết yêu cầu tại Mục 1.2 Chương V của E-HSMT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 650000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN GIẢI PHÁP Y TẾ NAM MINH"
+      ],
+      "decisionNo": "955/QĐ-BVBT",
+      "decisionDate": "2026-09-16T23:59:59",
+      "resultPublishedDate": "2026-09-16T13:52:03"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,6 +79,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:11:11.774Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T01:00:37.016Z"
 }

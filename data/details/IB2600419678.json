@@ -1,55 +1,132 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 4,
   "bidders": [
     {
-      "id": "957d910c-c457-416f-a06b-eb3490dc78a6",
-      "contractorCode": "vn5900980625",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI",
-      "status": "participating",
-      "lotNo": "BP2600597239",
-      "lotName": "Gói thầu số 28/2026/VT: Mua sắm khí y tế phục vụ công tác khám bệnh, chữa bệnh",
-      "bidPrice": 5035640000,
-      "finalPrice": 5035640000,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-08-24T10:39:52.692",
-      "models": []
-    },
-    {
-      "id": "3db8c6cf-d45e-4014-a8fa-1382adad4c80",
+      "id": "cd90ef88-5b88-4099-b92d-6b527dd9c2bb",
       "contractorCode": "vn0100103016",
-      "taxCode": "",
+      "taxCode": "0100103016",
       "contractorName": "CÔNG TY CỔ PHẦN KHÍ CÔNG NGHIỆP VIỆT NAM",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600597239",
       "lotName": "Gói thầu số 28/2026/VT: Mua sắm khí y tế phục vụ công tác khám bệnh, chữa bệnh",
       "bidPrice": 5442660000,
       "finalPrice": 5442660000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-08-24T10:39:52.88",
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-09-23T17:05:35.484",
       "models": []
     },
     {
-      "id": "7d911a28-2335-4a05-932a-e9070ebb6e9a",
+      "id": "ab418cbd-8bab-4797-a436-1149800e83c4",
       "contractorCode": "vn4400425371",
-      "taxCode": "",
+      "taxCode": "4400425371",
       "contractorName": "CÔNG TY CP KHÍ CÔNG NGHIỆP TUY HÒA",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600597239",
       "lotName": "Gói thầu số 28/2026/VT: Mua sắm khí y tế phục vụ công tác khám bệnh, chữa bệnh",
       "bidPrice": 5240360000,
       "finalPrice": 5240360000,
       "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-09-23T17:05:35.484",
+      "models": []
+    },
+    {
+      "id": "2c406121-246f-4a6d-a58f-e61b9c615888",
+      "contractorCode": "vn5900980625",
+      "taxCode": "5900980625",
+      "contractorName": "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI",
+      "status": "won",
+      "lotNo": "BP2600597239",
+      "lotName": "Gói thầu số 28/2026/VT: Mua sắm khí y tế phục vụ công tác khám bệnh, chữa bệnh",
+      "bidPrice": 5035640000,
+      "finalPrice": 5035640000,
+      "winningPrice": 5035640000,
       "reason": "",
-      "submittedAt": "2026-08-24T10:39:53.034",
+      "submittedAt": "2026-09-23T17:05:35.484",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "c9e7b396-ba3f-47a0-b98a-01c7b64e65e5",
+      "name": "Oxy lỏng",
+      "model": "LOX",
+      "brand": "LiquideOxygen",
+      "manufacturer": "Messer",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Oxy y tế dạng lỏng, nhiệt độ hóa lỏng khoản -183°C - Hàm lượng oxy > 99,6%. - Chứa trong bồn (xitec) chuyên dụng, Bồn có độ lạnh âm sâu -1830C.",
+      "unit": "kg",
+      "quantity": 1300000,
+      "unitPrice": 3780,
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "decisionNo": "1841/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-23T23:59:59",
+      "resultPublishedDate": "2026-09-23T17:05:51"
+    },
+    {
+      "id": "ee75aa94-f5b5-49bf-af0a-ddadeddf55b2",
+      "name": "Khí Cacbonic (CO₂)",
+      "model": "CO2",
+      "brand": "Carbondioxide",
+      "manufacturer": "Khoáng Sản Đăk Lăk",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Khí cacbonic (CO2) - Hàm lượng CO2 > 99,6% - Đóng trong bình thép chịu áp lực, đáp ứng quy định về an toàn áp lực và tiêu chuẩn khí y tế hiện hành.",
+      "unit": "Kg",
+      "quantity": 1460,
+      "unitPrice": 13000,
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "decisionNo": "1841/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-23T23:59:59",
+      "resultPublishedDate": "2026-09-23T17:05:51"
+    },
+    {
+      "id": "221d8fc4-860c-408e-97d4-99949415c8c4",
+      "name": "Khí Oxy (loại chai 10 - 15 lít)",
+      "model": "O2",
+      "brand": "Oxygen",
+      "manufacturer": "Messer",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Oxy y tế dạng khí nén - Hàm lượng Oxy > 99,6% - Đóng trong bình thép chịu áp lực, thể tích bình 10 lít hoặc 15 lít - Áp suất chai ≥ 135 Bar",
+      "unit": "Chai",
+      "quantity": 2140,
+      "unitPrice": 44000,
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "decisionNo": "1841/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-23T23:59:59",
+      "resultPublishedDate": "2026-09-23T17:05:51"
+    },
+    {
+      "id": "178b6590-a599-4328-b059-7bdf8ae55587",
+      "name": "Khí Oxy (loại chai 40 lít)",
+      "model": "O2",
+      "brand": "Oxygen",
+      "manufacturer": "Messer",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Oxy y tế dạng khí nén - Hàm lượng Oxy > 99,6% - Đóng trong bình thép chịu áp lực, thể tích bình 40 lít - Áp suất chai ≥ 135 Bar",
+      "unit": "Chai",
+      "quantity": 100,
+      "unitPrice": 85000,
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "decisionNo": "1841/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-23T23:59:59",
+      "resultPublishedDate": "2026-09-23T17:05:51"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +151,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:39:17.366Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T00:57:07.023Z"
 }

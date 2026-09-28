@@ -1,55 +1,75 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "56182ab2-e69c-4308-bb20-704806fb324f",
+      "id": "e6c7ca74-0fe8-40c7-92f8-40e4d189397a",
+      "contractorCode": "vn0102277113",
+      "taxCode": "0102277113",
+      "contractorName": "CÔNG TY CỔ PHẦN Y TẾ QUANG MINH",
+      "status": "won",
+      "lotNo": "BP2600511489",
+      "lotName": "Gói thầu số 01: Mua máy xét nghiệm sinh hoá tự động phục vụ công tác khám chữa bệnh tại Trung tâm y tế khu vực Bảo Lộc năm 2026",
+      "bidPrice": 1595000000,
+      "finalPrice": 1595000000,
+      "winningPrice": 1595000000,
+      "reason": "",
+      "submittedAt": "2026-08-13T14:42:35.426",
+      "models": []
+    },
+    {
+      "id": "0e840e47-0f7f-45e5-95ed-6f5baa8d3bec",
       "contractorCode": "vn0108538481",
-      "taxCode": "",
+      "taxCode": "0108538481",
       "contractorName": "Công ty TNHH Thiết bị y tế Ngôi Sao Việt",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600511489",
       "lotName": "Gói thầu số 01: Mua máy xét nghiệm sinh hoá tự động phục vụ công tác khám chữa bệnh tại Trung tâm y tế khu vực Bảo Lộc năm 2026",
       "bidPrice": 1610000000,
       "finalPrice": 1610000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-27T10:20:42.505",
+      "reason": "Đánh giá về tài chính",
+      "submittedAt": "2026-08-13T14:42:35.426",
       "models": []
     },
     {
-      "id": "1b55a719-eceb-41b2-890a-ae76cca33e43",
+      "id": "a2210339-9ee8-48aa-85fb-478fe2c49042",
       "contractorCode": "vn2301214753",
-      "taxCode": "",
+      "taxCode": "2301214753",
       "contractorName": "Công ty TNHH Thương mại và Dịch vụ Y sinh Nam Anh",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600511489",
       "lotName": "Gói thầu số 01: Mua máy xét nghiệm sinh hoá tự động phục vụ công tác khám chữa bệnh tại Trung tâm y tế khu vực Bảo Lộc năm 2026",
       "bidPrice": 1340000000,
       "finalPrice": 1340000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-27T10:20:42.765",
-      "models": []
-    },
-    {
-      "id": "1cdb8f40-408b-43f3-9da3-79ec4c06cfe4",
-      "contractorCode": "vn0102277113",
-      "taxCode": "",
-      "contractorName": "CÔNG TY CỔ PHẦN Y TẾ QUANG MINH",
-      "status": "participating",
-      "lotNo": "BP2600511489",
-      "lotName": "Gói thầu số 01: Mua máy xét nghiệm sinh hoá tự động phục vụ công tác khám chữa bệnh tại Trung tâm y tế khu vực Bảo Lộc năm 2026",
-      "bidPrice": 1595000000,
-      "finalPrice": 1595000000,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-27T10:20:43.006",
+      "reason": "Đánh giá về kỹ thuật",
+      "submittedAt": "2026-08-13T14:42:35.426",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "0af12e49-2c47-417d-ab1c-8aaa6532d5d7",
+      "name": "Máy xét nghiệm sinh hóa tự động",
+      "model": "RX4900",
+      "brand": "RX Imola",
+      "manufacturer": "Furuno Electric Co., Ltd.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Chi tiết theo Bảng đáp ứng thông số kỹ thuật hàng hóa dự thầu",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 1595000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN Y TẾ QUANG MINH"
+      ],
+      "decisionNo": "171/QĐ-TTYT",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T14:42:44"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +94,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:11:14.432Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T01:00:39.045Z"
 }

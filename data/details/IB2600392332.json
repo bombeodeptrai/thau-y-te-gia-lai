@@ -1,25 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "4d932716-1b7c-4cfe-b7a6-fb20ebaa4bfc",
+      "id": "16e65292-498c-4a77-a0d8-0e72f465784d",
       "contractorCode": "vn0304902916",
-      "taxCode": "",
+      "taxCode": "0304902916",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ KỸ THUẬT TÂN LONG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600550251",
       "lotName": "Gói thầu số 25/2026/TB : Mua sắm máy thở ( di động)",
       "bidPrice": 513000000,
       "finalPrice": 513000000,
-      "winningPrice": 0,
+      "winningPrice": 513000000,
       "reason": "",
-      "submittedAt": "2026-08-21T09:43:47.03",
+      "submittedAt": "2026-09-22T15:54:08.809",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "396ad1e9-a831-4e97-b193-335ae3d32f8a",
+      "name": "Máy thở (máy thở di động)",
+      "model": "Monnal T60 Advanced (Mã sản phẩm: KA017129)",
+      "brand": "Air Liquide Medical Systems S.A",
+      "manufacturer": "Air Liquide Medical Systems S.A",
+      "origin": "Pháp",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Theo file thông số kỹ thật đính kèm",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 513000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ KỸ THUẬT TÂN LONG"
+      ],
+      "decisionNo": "1838/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-22T23:59:59",
+      "resultPublishedDate": "2026-09-22T15:54:15"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:39:18.457Z"
+  "fetchedAt": "2026-09-28T00:57:10.202Z"
 }

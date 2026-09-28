@@ -1,25 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "e5cb40cf-cdbd-444a-ba7e-0e26e8b1bf9a",
+      "id": "db45454f-bc41-42de-9745-62487beb5644",
       "contractorCode": "vn0300483319",
-      "taxCode": "",
+      "taxCode": "0300483319",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600611760",
       "lotName": "Gói thầu số 01: Mua sắm thiết bị y tế",
       "bidPrice": 509586000,
       "finalPrice": 509586000,
-      "winningPrice": 0,
+      "winningPrice": 509586000,
       "reason": "",
-      "submittedAt": "2026-09-14T09:14:44.056",
+      "submittedAt": "2026-09-21T16:27:14.601",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "b24c347a-e941-46f5-aeda-5b85c0b99c3a",
+      "name": "HỆ THỐNG XỬ LÝ HÌNH ẢNH DR",
+      "model": "Model: 17HQ701G-B",
+      "brand": "Hãng sản xuất: LG ELECTRONICS INC.",
+      "manufacturer": "Hãng sản xuất: LG ELECTRONICS INC.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 397320000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "963/QĐ-TTYT",
+      "decisionDate": "2026-09-21T23:59:59",
+      "resultPublishedDate": "2026-09-21T16:27:21"
+    },
+    {
+      "id": "cb83f906-9cea-4549-8300-a68d34637976",
+      "name": "MÁY SẮC THUỐC ĐÔNG Y",
+      "model": "Model: ST16TĐ",
+      "brand": "Hãng sản xuất: Tiến Đạt",
+      "manufacturer": "Hãng sản xuất: Tiến Đạt",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 112266000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "963/QĐ-TTYT",
+      "decisionDate": "2026-09-21T23:59:59",
+      "resultPublishedDate": "2026-09-21T16:27:21"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:42:29.093Z"
+  "fetchedAt": "2026-09-28T01:00:32.465Z"
 }

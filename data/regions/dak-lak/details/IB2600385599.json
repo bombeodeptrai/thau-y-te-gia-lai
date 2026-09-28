@@ -1,9 +1,80 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "1620badb-f86f-4803-843b-8840e7ef5d17",
+      "contractorCode": "vn0109440432",
+      "taxCode": "0109440432",
+      "contractorName": "CÔNG TY TNHH S84 VIỆT NAM",
+      "status": "won",
+      "lotNo": "BP2600550512",
+      "lotName": "Pin cho máy Bơm tiêm điện B.Braun",
+      "bidPrice": 215270000,
+      "finalPrice": 215270000,
+      "winningPrice": 215270000,
+      "reason": "",
+      "submittedAt": "2026-07-30T14:31:03.508",
+      "models": [
+        "34522005"
+      ]
+    },
+    {
+      "id": "ecc143e3-e665-4557-bb8a-4069f3130192",
+      "contractorCode": "vn5500629123",
+      "taxCode": "5500629123",
+      "contractorName": "CÔNG TY TNHH S26",
+      "status": "lost",
+      "lotNo": "BP2600550512",
+      "lotName": "Pin cho máy Bơm tiêm điện B.Braun",
+      "bidPrice": 236600000,
+      "finalPrice": 236600000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-07-30T14:31:03.508",
+      "models": []
+    },
+    {
+      "id": "28582e91-5ba9-4529-843c-e99a278f5102",
+      "contractorCode": "vnz000034264",
+      "taxCode": "8036270692-001",
+      "contractorName": "HỘ KINH DOANH CỬA HÀNG VẬT TƯ THIẾT BỊ ĐẠI THÀNH",
+      "status": "lost",
+      "lotNo": "BP2600550512",
+      "lotName": "Pin cho máy Bơm tiêm điện B.Braun",
+      "bidPrice": 217600000,
+      "finalPrice": 217600000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-07-30T14:31:03.508",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "b21e30b0-80b2-4d8e-af89-9cdbfbf8e6e0",
+      "name": "Pin sạc cho bơm tiêm điện B.Braun",
+      "model": "\t34522005",
+      "brand": "B.Braun",
+      "manufacturer": "B.Braun",
+      "origin": "Đức",
+      "manufactureYear": "Từ 2025 trở về sau",
+      "specification": "- Hàng mới 100% - Công suất: 7.2V, 2100mAh - Tương thích với Bơm tiêm điện B.Braun chủng loại: Perfusor® compact plus - Bảo hành 06 tháng theo tiêu chuẩn nhà sản xuất",
+      "unit": "Cái",
+      "quantity": 40,
+      "unitPrice": 5381750,
+      "amount": 215270000,
+      "contractorCode": "vn0109440432",
+      "winnerNames": [
+        "CÔNG TY TNHH S84 VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "Số:  02861/QĐ-BVVTN",
+      "decisionDate": "2026-07-30T14:30:28",
+      "resultPublishedDate": "2026-07-30T14:31:08"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +129,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:09:05.568Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T00:57:13.720Z"
 }

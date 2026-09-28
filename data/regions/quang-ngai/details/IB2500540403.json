@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
       "id": "a626ae6b-c3ab-4b3e-9add-e13adbbeb2ef",
@@ -19,7 +19,46 @@
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "bb018f2e-552e-467e-a8b2-49930b477a30",
+      "name": "Máy thận nhân tạo",
+      "model": "Dialog +",
+      "brand": "B.Braun",
+      "manufacturer": "B.Braun",
+      "origin": "Đức",
+      "manufactureYear": "2025",
+      "specification": "Xem trong bảng đáp ứng kỹ thuật đính kèm",
+      "unit": "Cái",
+      "quantity": 4,
+      "unitPrice": 343000000,
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ TÂM ĐỨC"
+      ],
+      "decisionNo": "224/QĐ-BVKVNH",
+      "decisionDate": "2025-12-18T23:59:59",
+      "resultPublishedDate": "2025-12-18T09:24:15"
+    },
+    {
+      "id": "70a7a025-5270-4119-8be4-06baa966086a",
+      "name": "Máy siêu âm tổng quát",
+      "model": "Consona N7",
+      "brand": "Mindray",
+      "manufacturer": "Mindray",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "Xem trong bảng đáp ứng kỹ thuật đính kèm",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 595000000,
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ TÂM ĐỨC"
+      ],
+      "decisionNo": "224/QĐ-BVKVNH",
+      "decisionDate": "2025-12-18T23:59:59",
+      "resultPublishedDate": "2025-12-18T09:24:15"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:07:53.830Z"
+  "fetchedAt": "2026-09-28T00:55:07.727Z"
 }
