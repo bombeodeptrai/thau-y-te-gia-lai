@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-27T23:03:48.869Z",
+  "rescuedAt": "2026-09-28T00:42:25.724Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 391,
+      "count": 392,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 43,
+      "count": 44,
       "error": ""
     },
     {
@@ -281,8 +281,8 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 982,
-  "acceptedCount": 39,
+  "candidateCount": 983,
+  "acceptedCount": 40,
   "rejectedCount": 943,
   "rejectedReasons": {
     "insufficient-medical-context": 256,
@@ -335,6 +335,19 @@
         "in vitro",
         "mua",
         "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600527982",
+      "name": "Gói thầu số 04: Cung cấp và phân phối Chất bôi trơn cho 17 tỉnh/thành phố",
+      "investor": "Cục Phòng bệnh",
+      "accepted": true,
+      "score": 95,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "cuc phong benh",
+        "chat boi tron",
+        "cung cap"
       ]
     },
     {
@@ -1063,17 +1076,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600527982",
-      "name": "Gói thầu số 04: Cung cấp và phân phối Chất bôi trơn cho 17 tỉnh/thành phố",
-      "investor": "Cục Phòng bệnh",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
       "notifyNo": "IB2600541271",
       "name": "Gói thầu số 26.2026.TĐAK: Cung cấp, lắp đặt sửa chữa, thay thế các tuyến cáp quang nội bộ ADSS-24FO tại Nhà máy Thủy điện An Khê và Nhà máy thủy điện Ka Nak",
       "investor": "Ban Quản lý dự án EVNGENCO2- Chi nhánh Tổng công ty phát điện 2",
@@ -1360,12 +1362,23 @@
       "matched": [
         "may tinh"
       ]
+    },
+    {
+      "notifyNo": "IB2600537050",
+      "name": "Cung cấp vật tư, thiết bị, vật liệu phục vụ sửa chữa thường xuyên các hệ thống thiết bị công nghệ năm 2027",
+      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 839,
-  "afterCount": 839,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v8"
+  "afterCount": 840,
+  "newCount": 1,
+  "filterStrategy": "unified-medical-scope-v9"
 }

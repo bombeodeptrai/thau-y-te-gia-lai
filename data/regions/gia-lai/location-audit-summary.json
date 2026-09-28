@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-27T23:03:05.662Z",
+  "auditedAt": "2026-09-28T00:41:38.814Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 391,
+      "count": 392,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 43,
+      "count": 44,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 921,
+  "candidateCount": 922,
   "acceptedCount": 35,
-  "rejectedCount": 886,
+  "rejectedCount": 887,
   "rejectedReasons": {
     "excluded:tu van": 255,
     "excluded:xay dung": 237,
-    "insufficient-medical-context": 229,
+    "insufficient-medical-context": 230,
     "excluded:xay lap": 33,
     "excluded:sua chua": 32,
     "excluded:cai tao": 31,
@@ -851,6 +851,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600019873",
+      "name": "Gói 2: cung cấp dịch vụ hội trường, ăn, nghỉ lớp tập huấn bồi dưỡng nghiệp vụ công tác Hội cho cán bộ hội nông dân tổ chức tại Pleiku",
+      "investor": "Hội Nông dân tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600554510",
       "name": "26-81/XL: thi công Sửa chữa phần xây dựng TBA 110kV An Khê + Kbang + Nhơn Tân + Đồn Phó + Tam Quan",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1296,18 +1307,6 @@
         "xay dung",
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "DC2600006652",
-      "name": ": Mua sắm đồ dùng cá nhân cho học sinh nội trú theo Nghị định số 66/2025/NĐ-CP",
-      "investor": "TRƯỜNG PHỔ THÔNG DÂN TỘC NỘI TRÚ TRUNG HỌC PHỔ THÔNG ĐÔNG GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
@@ -1315,5 +1314,5 @@
   "beforeCount": 839,
   "afterCount": 839,
   "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v8"
+  "filterStrategy": "unified-medical-scope-v9"
 }
