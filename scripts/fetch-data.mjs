@@ -6,6 +6,7 @@ import { buildOfficialSourceUrl } from "./official-source.mjs";
 import { shouldRetainStoredTender } from "./scan-baseline.mjs";
 import { formatMuasamcongDateTime, muasamcongDateRange } from "./source-time.mjs";
 import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
+import { mapLimitedSettled } from "./resilient-source-scan.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
@@ -72,6 +73,7 @@ const equipmentOutputPath = resolve(root, "data/equipment.json");
 const requirementsOutputPath = resolve(root, "data/requirements.json");
 const technicalRequirementsOutputPath = resolve(root, "data/technical-requirements.json");
 const detailsDir = resolve(root, "data/details");
+const historicalFallbackFailures = [];
 
 function normalizeText(value) {
   return String(value || "")
@@ -236,8 +238,27 @@ async function fetchHistoricalFallback() {
   process.stdout.write(
     `Quét bù hồ sơ cũ thiếu mã tỉnh bằng ${pairs.length} cặp địa danh/từ khóa\n`,
   );
-  return (await mapLimited(pairs, 3, (pair, index) =>
-    fetchHistoricalPair(pair, index, pairs.length, from, to))).flat();
+  const { results, failures } = await mapLimitedSettled(
+    pairs,
+    3,
+    (pair, index) => fetchHistoricalPair(pair, index, pairs.length, from, to),
+    {
+      onRejected: ({ index, value, message }) => {
+        process.stderr.write(
+          `Bỏ qua truy vấn bù ${index + 1}/${pairs.length}: `
+          + `${value.locationTerm} + ${value.titleTerm}: ${message}\n`,
+        );
+      },
+    },
+  );
+  historicalFallbackFailures.push(...failures);
+  if (failures.length) {
+    process.stderr.write(
+      `Quét bù hoàn tất một phần: ${pairs.length - failures.length}/${pairs.length} truy vấn thành công; `
+      + "giữ các gói hợp lệ đã lưu cho phần nguồn tạm lỗi.\n",
+    );
+  }
+  return results.flat();
 }
 
 function statusOf(item) {
@@ -1163,10 +1184,10 @@ async function main() {
   });
   const freshTenders = [...medicalUnique.values()].map(normalizeTender);
   const now = Date.now();
-  const historicalTenders = fullRefresh ? [] : (previous.tenders || [])
-    // Nguồn theo mã tỉnh có thể không trả gói đa tỉnh hoặc gói chỉ gắn địa
-    // danh. Giữ mọi bản ghi hợp lệ trong 1.095 ngày rồi để bản mới ghi đè theo
-    // notifyNo; không xóa gói chỉ vì một đường tìm kiếm tạm thời bỏ sót.
+  const historicalTenders = (previous.tenders || [])
+    // Nguồn theo mã tỉnh hoặc một truy vấn bù có thể tạm lỗi. Luôn giữ mọi
+    // bản ghi hợp lệ trong 1.095 ngày rồi để bản mới ghi đè theo notifyNo;
+    // không xóa gói chỉ vì một đường tìm kiếm tạm thời bỏ sót.
     .filter((tender) => shouldRetainStoredTender(tender, { scanDays: DAYS, now }))
     .map((tender) => ({
       ...tender,
@@ -1261,6 +1282,8 @@ async function main() {
       lastScanTenderCount: allUnique.size,
       lastProvinceTenderCount: provinceItems.length,
       lastHistoricalFallbackTenderCount: historicalFallbackItems.length,
+      lastHistoricalFallbackFailureCount: historicalFallbackFailures.length,
+      lastHistoricalFallbackComplete: historicalFallbackFailures.length === 0,
       scannedTenderCount: fullRefresh
         ? allUnique.size
         : (Number(previous.collection?.scannedTenderCount) || allUnique.size),
