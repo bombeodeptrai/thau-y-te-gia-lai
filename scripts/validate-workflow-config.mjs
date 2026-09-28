@@ -91,6 +91,11 @@ for (const region of nonGiaLaiRegions) {
 if (!fullScan.includes("matrix.region == 'gia-lai'") || !fullScan.includes("ENABLE_HISTORICAL_FALLBACK")) {
   throw new Error("Workflow quét sâu chưa giữ quét bù địa danh riêng cho Gia Lai");
 }
+if (!fullScan.includes("for attempt in 1 2 3")
+  || !fullScan.includes("wait_seconds=$((attempt * 30))")
+  || !fullScan.includes("run-region-scan.mjs")) {
+  throw new Error("Workflow quét sâu chưa tự thử lại sau lỗi nguồn công khai tạm thời");
+}
 
 const highFrequencyFiles = [quickPath, auditPath, detailPath];
 for (const file of highFrequencyFiles) {
@@ -163,6 +168,12 @@ if (!detailScan.includes('cron: "17 */2 * * *"')
   || !detailScan.includes("repair-official-tender-identities.mjs")
   || !detailScan.includes("refresh-official-tender-details.mjs")) {
   throw new Error("Gia Lai phải bổ sung tối đa 80 hồ sơ mỗi 2 giờ sau khi sửa định danh chính thức");
+}
+if (!detailScan.includes("workflow_run:")
+  || !detailScan.includes("Khởi tạo và quét sâu dữ liệu miền Trung")
+  || !detailScan.includes("github.event.workflow_run.conclusion == 'success'")
+  || !detailScan.includes("ref: main")) {
+  throw new Error("Bổ sung chi tiết chưa tự chạy trên main sau khi quét sâu hoàn tất");
 }
 
 const rapidScan = await readFile(rapidPath, "utf8");
