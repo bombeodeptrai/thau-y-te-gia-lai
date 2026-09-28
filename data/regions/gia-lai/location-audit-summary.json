@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-28T00:41:38.814Z",
+  "auditedAt": "2026-09-28T05:23:31.134Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 392,
+      "count": 396,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
@@ -68,13 +68,13 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 18,
+      "count": 20,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 19,
+      "count": 20,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 10,
+      "count": 12,
       "error": ""
     },
     {
@@ -134,7 +134,7 @@
     {
       "term": "Krông Pa",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 922,
+  "candidateCount": 932,
   "acceptedCount": 35,
-  "rejectedCount": 887,
+  "rejectedCount": 897,
   "rejectedReasons": {
-    "excluded:tu van": 255,
-    "excluded:xay dung": 237,
-    "insufficient-medical-context": 230,
+    "excluded:tu van": 257,
+    "excluded:xay dung": 243,
+    "insufficient-medical-context": 232,
     "excluded:xay lap": 33,
     "excluded:sua chua": 32,
     "excluded:cai tao": 31,
@@ -851,6 +851,50 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600013714",
+      "name": "Thẩm định giá xác định giá trị bồi thường các hạng mục công trình hạ tầng kỹ thuật xây dựng trên đất của 12 Doanh nghiệp bị ảnh hưởng do GPMB để thực hiện dự án Di dời các Doanh nghiệp trong Cụm công nghiệp Nhơn Bình",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600020900",
+      "name": "Thuê phòng nghỉ lưu trú cho Đoàn học tập kinh nghiệm mô hình hợp tác xã kiểu mới trong lĩnh vực nông nghiệp và quỹ tín dụng nhân dân hoạt động hiệu quả tại tỉnh Gia Lai",
+      "investor": "LIÊN MINH HỢP TÁC XÃ THÀNH PHỐ ĐỒNG NAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600556218",
+      "name": "26-80/XL: thi công Sửa chữa phần xây dựng TBA 110kV Ayunpa + Chư Sê + Krông Pa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600557804",
+      "name": "Tư vấn lập HSMT, đánh giá HSDT",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "DC2600019873",
       "name": "Gói 2: cung cấp dịch vụ hội trường, ăn, nghỉ lớp tập huấn bồi dưỡng nghiệp vụ công tác Hội cho cán bộ hội nông dân tổ chức tại Pleiku",
       "investor": "Hội Nông dân tỉnh Gia Lai",
@@ -1261,58 +1305,12 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "DC2600017125",
-      "name": "Mua sách giáo khoa trang bị cho thư viện phục vụ học sinh mượn từ năm học 2026 - 2027",
-      "investor": "Phòng Văn hóa - Xã hội xã Ya Hội, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600012340",
-      "name": "Tư vấn lập hồ sơ đăng ký môi trường",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600012872",
-      "name": "Tư vấn giám sát khảo sát xây dựng",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600013283",
-      "name": "Tư vấn giám sát khảo sát xây dựng",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 839,
-  "afterCount": 839,
+  "beforeCount": 840,
+  "afterCount": 840,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v9"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-28T00:42:25.724Z",
+  "rescuedAt": "2026-09-28T05:24:19.654Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 195,
+      "count": 196,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 392,
+      "count": 396,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
@@ -78,13 +78,13 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 18,
+      "count": 20,
       "error": ""
     },
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 19,
+      "count": 20,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 10,
+      "count": 12,
       "error": ""
     },
     {
@@ -144,7 +144,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 983,
+  "candidateCount": 993,
   "acceptedCount": 40,
-  "rejectedCount": 943,
+  "rejectedCount": 953,
   "rejectedReasons": {
-    "insufficient-medical-context": 256,
-    "excluded:tu van": 256,
-    "excluded:xay dung": 252,
+    "insufficient-medical-context": 259,
+    "excluded:xay dung": 258,
+    "excluded:tu van": 258,
     "excluded:sua chua": 37,
     "excluded:xay lap": 35,
     "excluded:cai tao": 31,
@@ -302,13 +302,13 @@
     "excluded:thuoc generic": 3,
     "excluded:phan bon": 3,
     "excluded:may chu": 3,
-    "excluded:may phat dien": 2,
     "excluded:rac thai": 2,
     "excluded:bao tri": 2,
     "excluded:kiem dinh": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:cap dien": 1,
     "excluded:tram bien ap": 1,
+    "excluded:may phat dien": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1,
     "excluded:quan ly du an": 1,
@@ -938,6 +938,29 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600556218",
+      "name": "26-80/XL: thi công Sửa chữa phần xây dựng TBA 110kV Ayunpa + Chư Sê + Krông Pa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600556114",
+      "name": "Gói 10/SCL2027/PTC3:Cung cấp điều hòa nhiệt độ (bao gồm lắp đặt)",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600554510",
       "name": "26-81/XL: thi công Sửa chữa phần xây dựng TBA 110kV An Khê + Kbang + Nhơn Tân + Đồn Phó + Tam Quan",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1351,34 +1374,12 @@
       "matched": [
         "mua"
       ]
-    },
-    {
-      "notifyNo": "IB2600548838",
-      "name": "Mua sắm máy tính để bàn và phần mềm (gồm 2 phần)",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may tinh",
-      "matched": [
-        "may tinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600537050",
-      "name": "Cung cấp vật tư, thiết bị, vật liệu phục vụ sửa chữa thường xuyên các hệ thống thiết bị công nghệ năm 2027",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 839,
+  "beforeCount": 840,
   "afterCount": 840,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v9"
 }
