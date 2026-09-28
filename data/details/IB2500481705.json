@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
       "id": "aea1c29c-1249-40d3-a6d4-473e3abc62d8",
@@ -49,7 +49,65 @@
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "9e2453e9-6304-4032-8a71-cfdeb87c21ed",
+      "name": "Máy chạy thận nhân tạo",
+      "model": "Dialog +",
+      "brand": "B.Braun",
+      "manufacturer": "B.Braun",
+      "origin": "Đức",
+      "manufactureYear": "2025",
+      "specification": "Đính kèm bảng đáp ứng thông số kỹ thuật",
+      "unit": "Máy",
+      "quantity": 5,
+      "unitPrice": 340000000,
+      "winnerNames": [
+        "Liên danh công ty Tâm Đức – Phú Thái"
+      ],
+      "decisionNo": "0385/QĐ-TTYT",
+      "decisionDate": "2025-12-16T23:59:59",
+      "resultPublishedDate": "2025-12-16T14:44:58"
+    },
+    {
+      "id": "bba9459b-0730-4b54-ba77-003370a6dfa4",
+      "name": "Hệ thống lọc nước RO",
+      "model": "NAS/WTS – RO – HD 1000",
+      "brand": "NAS",
+      "manufacturer": "Nhất An Sinh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Đính kèm bảng đáp ứng thông số kỹ thuật",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 632000000,
+      "winnerNames": [
+        "Liên danh công ty Tâm Đức – Phú Thái"
+      ],
+      "decisionNo": "0385/QĐ-TTYT",
+      "decisionDate": "2025-12-16T23:59:59",
+      "resultPublishedDate": "2025-12-16T14:44:58"
+    },
+    {
+      "id": "699a4db9-c475-4bed-8830-0d103ebcd5d5",
+      "name": "Máy rửa quả (màng) lọc thận",
+      "model": "NAS/RDM-AT02",
+      "brand": "NAS",
+      "manufacturer": "Nhất An Sinh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Đính kèm bảng đáp ứng thông số kỹ thuật",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 244000000,
+      "winnerNames": [
+        "Liên danh công ty Tâm Đức – Phú Thái"
+      ],
+      "decisionNo": "0385/QĐ-TTYT",
+      "decisionDate": "2025-12-16T23:59:59",
+      "resultPublishedDate": "2025-12-16T14:44:58"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -75,5 +133,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "winning-bidders-only",
-  "fetchedAt": "2026-07-27T07:34:51.880Z"
+  "fetchedAt": "2026-09-28T06:17:55.425Z"
 }
