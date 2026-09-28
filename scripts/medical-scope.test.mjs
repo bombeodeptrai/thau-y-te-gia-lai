@@ -91,6 +91,29 @@ test("không dùng một nhóm hóa chất chung tại viện y tế làm điề
   assert.equal(result.accepted, false, result.reason);
 });
 
+test("nhận gói vật tư giảm hại HIV/AIDS của Cục Phòng bệnh", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600527982-00",
+    bidName: ["Gói thầu số 04: Cung cấp và phân phối Chất bôi trơn cho 17 tỉnh/thành phố"],
+    investorName: "Cục Phòng bệnh",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.reason.includes("medical-context-supply"));
+  assert.ok(result.matched.includes("chat boi tron"));
+  assert.ok(result.matched.includes("cuc phong benh"));
+});
+
+test("không nhận chất bôi trơn công nghiệp của đơn vị ngoài ngành y tế", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Cung cấp chất bôi trơn cho tua-bin và máy phát điện"],
+    investorName: "Công ty Điện lực Gia Lai",
+  });
+
+  assert.equal(result.accepted, false, result.reason);
+});
+
 test("nhận gói test ma túy tại trung tâm y tế", () => {
   const result = classifyMedicalTender({
     notifyNo: "IB2600503446-00",

@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v8";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v9";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -72,6 +72,9 @@ const MEDICAL_CONTEXT_SUPPLY_TERMS = [
   "dau do sieu am", "truyen dich", "truyen mau", "dinh nhom mau",
   "ampu bop bong", "que de luoi", "day garo", "micropipet",
   "binh nito luu tru mau", "chung vi sinh", "y dung cu",
+  // Vật tư giảm hại/phòng lây nhiễm thường được Cục Phòng bệnh đặt tên rất
+  // ngắn, không kèm các từ "y tế" hoặc "HIV/AIDS" trong tên gói.
+  "chat boi tron", "bao cao su",
 ];
 
 const MEDICAL_INVESTOR_TERMS = [
@@ -79,6 +82,7 @@ const MEDICAL_INVESTOR_TERMS = [
   "trung tam kiem soat benh tat", "cdc", "trung tam kiem nghiem",
   "trung tam phap y", "y khoa", "y duoc", "da khoa", "chuyen khoa",
   "vien sot ret", "ky sinh trung con trung",
+  "cuc phong benh", "cuc phong chong hiv aids",
 ];
 
 const LAB_SUPPLY_TERMS = [
@@ -264,6 +268,7 @@ export function medicalCategory(name) {
     "vat tu", "hoa chat", "sinh pham", "dung cu", "kit", "test", "gac", "gang",
     "kim", "stent", "catheter", "reagent", "thuoc thu", "dung dich", "gioang", "dem",
     "tui mau", "thuoc bo",
+    "chat boi tron", "bao cao su",
   ]).length
     ? "Vật tư & hóa chất"
     : "Thiết bị y tế";
