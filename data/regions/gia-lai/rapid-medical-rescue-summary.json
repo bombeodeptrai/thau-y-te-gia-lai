@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-27T23:10:28.272Z",
+  "rescuedAt": "2026-09-28T05:38:32.085Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 111,
+      "count": 113,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 249,
+      "count": 248,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 36,
+      "count": 35,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -78,13 +78,13 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 13,
+      "count": 15,
       "error": ""
     },
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 6,
+      "count": 8,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
@@ -144,7 +144,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 53,
+      "count": 49,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 24,
+      "count": 23,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 46,
+      "count": 44,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
@@ -281,17 +281,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 618,
+  "candidateCount": 619,
   "acceptedCount": 17,
-  "rejectedCount": 601,
+  "rejectedCount": 602,
   "rejectedReasons": {
-    "excluded:tu van": 180,
-    "excluded:xay dung": 178,
-    "insufficient-medical-context": 139,
-    "excluded:sua chua": 25,
-    "excluded:cai tao": 21,
-    "excluded:xay lap": 21,
-    "excluded:bao hiem": 8,
+    "excluded:xay dung": 182,
+    "excluded:tu van": 181,
+    "insufficient-medical-context": 140,
+    "excluded:sua chua": 24,
+    "excluded:cai tao": 20,
+    "excluded:xay lap": 19,
+    "excluded:bao hiem": 7,
     "excluded:thuc pham": 5,
     "excluded:tham dinh": 4,
     "excluded:may tinh": 3,
@@ -326,6 +326,19 @@
         "in vitro",
         "mua",
         "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600527982",
+      "name": "Gói thầu số 04: Cung cấp và phân phối Chất bôi trơn cho 17 tỉnh/thành phố",
+      "investor": "Cục Phòng bệnh",
+      "accepted": true,
+      "score": 95,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "cuc phong benh",
+        "chat boi tron",
+        "cung cap"
       ]
     },
     {
@@ -546,22 +559,43 @@
         "hieu chuan",
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "IB2600533247",
-      "name": "Sửa chữa máy X-Quang C-arm tăng sáng truyền hình",
-      "investor": "Trung Tâm Y Tế Ayun Pa",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "x quang",
-        "trung tam y te",
-        "sua chua"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600558112",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "ỦY ban nhân dân xã Canh Liên",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600556218",
+      "name": "26-80/XL: thi công Sửa chữa phần xây dựng TBA 110kV Ayunpa + Chư Sê + Krông Pa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600556114",
+      "name": "Gói 10/SCL2027/PTC3:Cung cấp điều hòa nhiệt độ (bao gồm lắp đặt)",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
     {
       "notifyNo": "IB2600554510",
       "name": "26-81/XL: thi công Sửa chữa phần xây dựng TBA 110kV An Khê + Kbang + Nhơn Tân + Đồn Phó + Tam Quan",
@@ -698,17 +732,6 @@
       "matched": [
         "xay dung",
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600527982",
-      "name": "Gói thầu số 04: Cung cấp và phân phối Chất bôi trơn cho 17 tỉnh/thành phố",
-      "investor": "Cục Phòng bệnh",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
       ]
     },
     {
@@ -976,34 +999,12 @@
       "score": 10,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600544629",
-      "name": "Mua bản quyền phần mềm giám sát phòng, chống mã độc và phòng chống thất thoát dữ liệu cho các máy trạm kết nối hệ thống Cơ sở dữ liệu quốc gia về dân cư",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600548838",
-      "name": "Mua sắm máy tính để bàn và phần mềm (gồm 2 phần)",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may tinh",
-      "matched": [
-        "may tinh"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 839,
-  "afterCount": 839,
+  "beforeCount": 840,
+  "afterCount": 840,
   "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v8"
+  "filterStrategy": "unified-medical-scope-v9"
 }
