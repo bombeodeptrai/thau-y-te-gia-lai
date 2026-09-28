@@ -1,9 +1,69 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "aa1b7e86-720a-43ff-b3db-a73fd1cfd805",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "BP2500735525",
+      "lotName": "Mua sắm máy điện tim (máy điện tim 3 kênh) phục vụ công tác khám, chữa bệnh của Bệnh viện ĐKKV Bồng Sơn",
+      "bidPrice": 34488000,
+      "finalPrice": 34488000,
+      "winningPrice": 34488000,
+      "reason": "",
+      "submittedAt": "2025-11-27T10:00:50.116",
+      "models": [
+        "ECG-3150"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "8031608734707958",
+      "name": "Máy điện tim",
+      "model": "ECG-3150",
+      "brand": "Shanghai Kohden",
+      "manufacturer": "Shanghai Kohden Medical Electronic Instrument Corp",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "Máy chính với màn hình 5 inch và có sẵn phần mềm phân tích kết quả điện tim, 1 cổng LAN kết nối với máy tính, 2 cổng USB và phụ kiện chuẩn đi kèm :\n- 1 dây nguồn\n- 1 bộ chuyển đổi nguồn ( AC adaptor ) \n- 1 dây điện tim\n- 6 điện cực hút ở ngực bằng núm cao su\n- 4 điện cực kẹp chi\n- 1 cuộn giấy ghi theo máy\n- 1 bút lau đầu máy ghi nhiệt\n- 1 pin sạc\n- 1 đĩa CD chứa tài liệu kỹ thuật ( service manual ), phần mềm đọc kết quả điện tim, hướng dẫn sử dụng tiếng Anh\n- 1 cuốn tài liệu hướng dẫn sử dụng tiếng Việt\n- 1 xe để máy",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 34488000,
+      "amount": 34488000,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "646/QĐ-BVBS",
+      "decisionDate": "2025-11-27T09:58:25",
+      "resultPublishedDate": "2025-11-27T10:01:13"
+    },
+    {
+      "id": "faf38b13-cd15-461b-bafb-b027f19e008c",
+      "name": "Máy điện tim ",
+      "model": "ECG-3150 ",
+      "brand": "Shanghai Kohden ",
+      "manufacturer": "Shanghai Kohden \nMedical Electronic \nInstrument Corp ",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "Máy chính với màn hình 5 inch và có sẵn phần mềm phân tích kết quả điện tim, 1 cổng LAN kết nối với máy tính, 2 cổng USB và phụ kiện chuẩn đi kèm :\n- 1 dây nguồn\n- 1 bộ chuyển đổi nguồn ( AC adaptor ) \n- 1 dây điện tim\n- 6 điện cực hút ở ngực bằng núm cao su\n- 4 điện cực kẹp chi\n- 1 cuộn giấy ghi theo máy\n- 1 bút lau đầu máy ghi nhiệt\n- 1 pin sạc\n- 1 đĩa CD chứa tài liệu kỹ thuật ( service manual ), phần mềm đọc kết quả điện tim, hướng dẫn sử dụng tiếng Anh\n- 1 cuốn tài liệu hướng dẫn sử dụng tiếng Việt\n- 1 xe để máy",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 34488000,
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "decisionNo": "646/QĐ-BVBS",
+      "decisionDate": "2025-11-27T09:58:25",
+      "resultPublishedDate": "2025-11-27T10:01:13"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,12 +119,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500514943",
-    "notifyId": "1aef5f3e-7b63-4f24-b4d7-739116f24865",
-    "bidId": "def5250f-0a15-4515-823b-5d4e22189bcc",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:58.656Z"
+  "fetchedAt": "2026-09-28T20:37:21.190Z"
 }

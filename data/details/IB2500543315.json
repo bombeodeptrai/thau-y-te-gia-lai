@@ -1,9 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "87814576-bd24-4ec5-b24d-b2d98333a953",
+      "contractorCode": "vn0304097120",
+      "taxCode": "0304097120",
+      "contractorName": "CÔNG TY TNHH KỸ THUẬT Y TẾ DUYÊN HẢI",
+      "status": "won",
+      "lotNo": "BP2500761774",
+      "lotName": "Mua sắm trang thiết bị y tế năm 2025",
+      "bidPrice": 2568000000,
+      "finalPrice": 2568000000,
+      "winningPrice": 2568000000,
+      "reason": "",
+      "submittedAt": "2025-12-26T10:19:35.012",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "c66489e3-0086-4a3e-9b9d-e1ca7636d65b",
+      "name": "Hệ thống  X quang C-arm",
+      "model": "OSCAR PRIME",
+      "brand": "OSCAR PRIME",
+      "manufacturer": "GENORAY Co.,Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Chi tiết theo file THÔNG SỐ KỸ THUẬT MÁY C-ARM đính kèm E-HSDT",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 1900000000,
+      "winnerNames": [
+        "CÔNG TY TNHH KỸ THUẬT Y TẾ DUYÊN HẢI"
+      ],
+      "decisionNo": "697/QĐ-BVCH",
+      "decisionDate": "2025-12-26T23:59:59",
+      "resultPublishedDate": "2025-12-26T10:19:40"
+    },
+    {
+      "id": "1a119a25-70bf-4d88-9ceb-2889153f7ec1",
+      "name": "Hệ thống tấm nhận ảnh  X quang  kỹ thuật số",
+      "model": "FXRD-4343 VAW",
+      "brand": "VIVIX-S 4343VW",
+      "manufacturer": "Vieworks Co.,Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Chi tiết theo file THÔNG SỐ KỸ THUẬT TẤM NHẬN ẢNH đính kèm E-HSDT",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 668000000,
+      "winnerNames": [
+        "CÔNG TY TNHH KỸ THUẬT Y TẾ DUYÊN HẢI"
+      ],
+      "decisionNo": "697/QĐ-BVCH",
+      "decisionDate": "2025-12-26T23:59:59",
+      "resultPublishedDate": "2025-12-26T10:19:40"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500543315",
-    "notifyId": "dd89fc4c-69a1-4ac1-ad5f-e3f2a321a2e3",
-    "bidId": "4e0d8792-d879-467c-b419-589f8469ed08",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:56.086Z"
+  "fetchedAt": "2026-09-28T20:37:18.570Z"
 }

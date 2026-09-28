@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "250ef7b7-993b-4249-8abf-d5e7757bcf27",
+      "contractorCode": "vn1800665083",
+      "taxCode": "1800665083",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ MIỀN TÂY",
+      "status": "won",
+      "lotNo": "BP2500808259",
+      "lotName": "Mua sắm máy siêu âm tổng quát (01 mặt hàng)",
+      "bidPrice": 1145000000,
+      "finalPrice": 1145000000,
+      "winningPrice": 1145000000,
+      "reason": "",
+      "submittedAt": "2025-12-22T15:48:58.132",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "3c8d03e2-f454-4131-b7e7-dcff6da1fd63",
+      "name": "Máy siêu âm tổng quát",
+      "model": "Voluson Performance 16",
+      "brand": "Voluson Performance 16",
+      "manufacturer": "GE Ultrasound Korea, Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Theo bảng Yêu cầu kỹ thuật cụ thể đính kèm",
+      "unit": "cái",
+      "quantity": 1,
+      "unitPrice": 1145000000,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ MIỀN TÂY"
+      ],
+      "decisionNo": "297/QĐ-TTYT",
+      "decisionDate": "2025-12-22T23:59:59",
+      "resultPublishedDate": "2025-12-22T15:49:14"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500567351",
-    "notifyId": "8dbf7aeb-1a6e-4317-996c-7e0f29fe04ec",
-    "bidId": "1569f5bd-bfd7-41f2-8aab-3454de127243",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:54.650Z"
+  "fetchedAt": "2026-09-28T20:37:17.905Z"
 }

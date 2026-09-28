@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "182d6a6f-dd23-495c-9dc4-2378e3f2eb94",
+      "contractorCode": "vn0304504714",
+      "taxCode": "0304504714",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ GIA MẠNH",
+      "status": "won",
+      "lotNo": "BP2500733807",
+      "lotName": "Mua sắm 02 Kim hút mẫu cho máy xét nghiệm Sysmex - Bệnh viện đa khoa Trung tâm tỉnh Gia Lai",
+      "bidPrice": 30000000,
+      "finalPrice": 30000000,
+      "winningPrice": 30000000,
+      "reason": "",
+      "submittedAt": "2025-12-05T16:52:55.117",
+      "models": [
+        "AN965961"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "ce5d729b-cfdb-47c8-8233-29490093f135",
+      "name": "Kim hút mẫu",
+      "model": "AN965961",
+      "brand": "ASP_ASSY\n(PM)NO.8",
+      "manufacturer": "Sysmex",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 trở\nvề sau",
+      "specification": "- Chiều dài: 160mm\n- Đường kính\nngoài kim 1,81mm\n- Đường kính trong\nkim 1,45mm\n- Chất liệu: Thép\nkhông rỉ\n- Tương thích với\nmáy xét nghiệm\nSysmex XN-1000",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 15000000,
+      "amount": 30000000,
+      "contractorCode": "vn0304504714",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ GIA MẠNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "2389/QĐ-BVĐKTT",
+      "decisionDate": "2025-12-05T16:52:04",
+      "resultPublishedDate": "2025-12-05T16:52:59"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,12 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500520297",
-    "notifyId": "50808848-1456-4a0c-8fca-d5c7b9d4e4de",
-    "bidId": "60b03942-2461-477d-8a76-17a2cde1141d",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:32:58.333Z"
+  "fetchedAt": "2026-09-28T20:37:20.636Z"
 }

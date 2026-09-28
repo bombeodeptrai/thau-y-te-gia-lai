@@ -1,9 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "ae802cf2-5442-42a1-b34b-b88321b79b18",
+      "contractorCode": "vn5900905113",
+      "taxCode": "5900905113",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ HOÀNG KIM PHÁT GIA LAI",
+      "status": "won",
+      "lotNo": "BP2500683483",
+      "lotName": "Trang bị vật tư thiết bị y tế phục vụ công tác khám chữa bệnh của Bệnh viện Đa khoa Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 18900000,
+      "reason": "",
+      "submittedAt": "2025-10-30T08:59:50.281",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "e75fb789-06c6-408d-8652-9f46a8e34b2d",
+      "name": "Máy cắt đốt cao tần Plasma",
+      "model": "Máy cắt đốt cao tần Plasma",
+      "brand": "Máy cắt đốt cao tần Plasma",
+      "manufacturer": "Việt Nam",
+      "origin": "Trung tâm công nghệ laser",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "+ Điện thế điều trị: 5 ÷ 15V\n+ Công suất tối đa: 50 W\n+ Công suất tiêu thụ: 100VA\n+ Nguồn điện: 220VAC ± 10%, 50Hz\n- Kèm dụng cụ nạo curet 2 đầu: 1 cái\n+ Kích thước: 16.5cm\n+ Chất liệu: Inox không gỉ",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 15700000,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ HOÀNG KIM PHÁT GIA LAI"
+      ],
+      "decisionNo": "1033/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-28T23:59:59",
+      "resultPublishedDate": "2025-10-30T09:00:28"
+    },
+    {
+      "id": "67d5e741-78e9-454d-83f4-f3b8bb046b30",
+      "name": "Đèn lúp Led soi da",
+      "model": "Đèn lúp Led soi da",
+      "brand": "Đèn lúp Led soi da",
+      "manufacturer": "Việt Nam",
+      "origin": "Hana KBN",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "+ Điện áp: 220VAC ±10%, 50 Hz\n+ Công Suất tối đa: 15W\n+ Chiều cao: 1.6m ±10%",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 3200000,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ HOÀNG KIM PHÁT GIA LAI"
+      ],
+      "decisionNo": "1033/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-28T23:59:59",
+      "resultPublishedDate": "2025-10-30T09:00:28"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500482652",
-    "notifyId": "IB2500482652",
-    "bidId": "cef13ae9-49b0-44ce-89f9-173e6b93e5d4",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:02.615Z"
+  "fetchedAt": "2026-09-28T20:37:25.210Z"
 }
