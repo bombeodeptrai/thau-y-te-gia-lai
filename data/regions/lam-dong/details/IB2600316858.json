@@ -1,9 +1,215 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 6,
+  "bidders": [
+    {
+      "id": "e1734255-7cd1-4cc5-8066-e3811c7fe077",
+      "contractorCode": "vn6001513534",
+      "taxCode": "6001513534",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ M-PROTECH",
+      "status": "won",
+      "lotNo": "PP2600260324",
+      "lotName": "Phần 1: Hoá chất sinh hoá dùng cho Máy xét nghiệm sinh hoá AU 480",
+      "bidPrice": 104997690,
+      "finalPrice": 104997690,
+      "winningPrice": 104997690,
+      "reason": "",
+      "submittedAt": "2026-07-30T15:06:45.035",
+      "models": [
+        "GL8S107",
+        "GL8S108"
+      ]
+    },
+    {
+      "id": "cfde02cf-814a-4fdc-af58-a0353890bc5b",
+      "contractorCode": "vn6001513534",
+      "taxCode": "6001513534",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ M-PROTECH",
+      "status": "lost",
+      "lotNo": "PP2600260325",
+      "lotName": "Phần 2: Sinh phẩm dùng cho máy phân tích nước tiểu U-AQ Smart và vật tư xét nghiệm",
+      "bidPrice": 53655000,
+      "finalPrice": 53655000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xếp hạng 1",
+      "submittedAt": "2026-07-30T15:06:45.035",
+      "models": [
+        "GL8S107",
+        "GL8S108"
+      ]
+    },
+    {
+      "id": "3b6cde15-abd7-4ccc-be65-8194977aec21",
+      "contractorCode": "vn6001781808",
+      "taxCode": "6001781808",
+      "contractorName": "CÔNG TY TNHH MEDITECH AUTOMATION",
+      "status": "won",
+      "lotNo": "PP2600260325",
+      "lotName": "Phần 2: Sinh phẩm dùng cho máy phân tích nước tiểu U-AQ Smart và vật tư xét nghiệm",
+      "bidPrice": 49520000,
+      "finalPrice": 49520000,
+      "winningPrice": 49520000,
+      "reason": "",
+      "submittedAt": "2026-07-30T15:06:45.035",
+      "models": [
+        "U-AQS-11",
+        "LON_355MNON3P3N1"
+      ]
+    },
+    {
+      "id": "1d56af35-a4ec-4abb-a39d-35433577e41a",
+      "contractorCode": "vn0310363437",
+      "taxCode": "0310363437",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ THIẾT BỊ Y TẾ NHẬT MINH",
+      "status": "won",
+      "lotNo": "PP2600260326",
+      "lotName": "Phần 3: Vật tư y tế và hoá chất thông thường",
+      "bidPrice": 22021125,
+      "finalPrice": 22021125,
+      "winningPrice": 22021125,
+      "reason": "",
+      "submittedAt": "2026-07-30T15:06:45.035",
+      "models": [
+        "BTK10:MPV",
+        "LGCS70"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "f610aecb-4e52-423f-8959-27733ef66a1d",
+      "name": "Bơm tiêm 10ml/cc - kim các cỡ",
+      "model": "BTK10:MPV",
+      "brand": "Bơm tiêm 10ml/cc - kim các cỡ",
+      "manufacturer": "Việt Nam",
+      "origin": "Công ty CP Nhựa Y tế Việt Nam",
+      "manufactureYear": "Năm 2026",
+      "specification": "Xy lanh dung tích 10ml được sản xuất từ nhựa y tế nguyên sinh trong suốt, nhẵn bóng, không cong vênh, không có ba via. Vạch chia dung tích rõ nét.\r\n- Có thang chia dung tích hút tối đa đến 12ml, vạch chia nhỏ nhất ≤0,2ml\r\n- Pít tông có khía bẻ gãy để hủy, không có ba via.\r\n- Kim làm bằng thép không gỉ, sắc nhọn, vát 3 cạnh. Kim các cỡ 23Gx1\", 25Gx1\". Đốc kim có màu giúp phân biệt cỡ kim theo tiêu chuẩn quốc tế và được gắn chặt với thân kim không gây rò rỉ, an toàn khi sử dụng.\r\n- Có giấy chứng nhận đạt tiêu chuẩn CE, - Xuất xứ: Việt Nam",
+      "unit": "Cái",
+      "quantity": 18000,
+      "unitPrice": 1176,
+      "amount": 21168000,
+      "contractorCode": "vn0310363437",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ THIẾT BỊ  Y TẾ NHẬT MINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "547/QĐ-TTYT",
+      "decisionDate": "2026-07-30T14:56:24",
+      "resultPublishedDate": "2026-07-30T15:07:32"
+    },
+    {
+      "id": "d47a7b47-6440-455f-8f01-856aa7355d60",
+      "name": "Cồn 70 độ",
+      "model": "LGCS70",
+      "brand": "Cồn 70 độ",
+      "manufacturer": "Việt Nam",
+      "origin": "Lê Gia",
+      "manufactureYear": "Năm 2026",
+      "specification": "Cồn 70 độ, chai 1 líl",
+      "unit": "Lít",
+      "quantity": 25,
+      "unitPrice": 34125,
+      "amount": 853125,
+      "contractorCode": "vn0310363437",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ THIẾT BỊ  Y TẾ NHẬT MINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "547/QĐ-TTYT",
+      "decisionDate": "2026-07-30T14:56:24",
+      "resultPublishedDate": "2026-07-30T15:07:32"
+    },
+    {
+      "id": "a45d3a15-0422-427f-90e4-3242e2ce6b19",
+      "name": "Test nước tiểu 11 thông số",
+      "model": "U-AQS-11",
+      "brand": "Test nước tiểu 11 thông số",
+      "manufacturer": "Humasis Co.,Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Năm 2026",
+      "specification": "Test nước tiểu 11 thông số: LEU, NIT,URO,PRO,pH,BLO,SG,KET,BIL,GLU,ASC",
+      "unit": "Test",
+      "quantity": 8000,
+      "unitPrice": 3200,
+      "amount": 25600000,
+      "contractorCode": "vn6001781808",
+      "winnerNames": [
+        "CÔNG TY TNHH MEDITECH AUTOMATION"
+      ],
+      "lotNo": "",
+      "decisionNo": "547/QĐ-TTYT",
+      "decisionDate": "2026-07-30T14:56:24",
+      "resultPublishedDate": "2026-07-30T15:07:32"
+    },
+    {
+      "id": "d26031aa-5b9c-46bb-944b-1814983e603d",
+      "name": "Lọ đựng nước tiểu nắp đỏ",
+      "model": "LON_355MNON3P3N1",
+      "brand": "Lọ đựng nước tiểu nắp đỏ",
+      "manufacturer": "Công ty cổ phần vật tư Y tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026",
+      "specification": "Lọ nhựa trong suốt, dung tích 55ml, nắp nhựa màu đỏ, có nhãn. Đạt tiêu chuẩn ISO",
+      "unit": "Cái",
+      "quantity": 13000,
+      "unitPrice": 1840,
+      "amount": 23920000,
+      "contractorCode": "vn6001781808",
+      "winnerNames": [
+        "CÔNG TY TNHH MEDITECH AUTOMATION"
+      ],
+      "lotNo": "",
+      "decisionNo": "547/QĐ-TTYT",
+      "decisionDate": "2026-07-30T14:56:24",
+      "resultPublishedDate": "2026-07-30T15:07:32"
+    },
+    {
+      "id": "3a3156fb-03c4-4757-a682-325ae71190bc",
+      "name": "Hoá chất định lượng men gan AST ≥ 495 mL",
+      "model": "GL8S107",
+      "brand": "Aspartate aminotransferase (AST)",
+      "manufacturer": "Glenbio Ltd.",
+      "origin": "Anh",
+      "manufactureYear": "Năm 2026",
+      "specification": "Định lượng AST trong huyết thanh và huyết tương .\r\nThành phần: \r\nR1: TRIS Buffer pH 7.8 100 mmol/l\r\nL-Aspartate 300 mmol/l\r\nMDH ≥ 530 U/l\r\nLDH ≥ 750 U/l\r\nR2: a-Ketoglutarate 75 mmol/l\r\nNADH 0.23 mmol/l\r\nDải đo:  4 U/L  - 692 U/l (11.5 µKat/l).\r\nĐạt tiêu chuẩn ISO13485",
+      "unit": "Hộp",
+      "quantity": 12,
+      "unitPrice": 4999890,
+      "amount": 59998680,
+      "contractorCode": "vn6001513534",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ M-PROTECH"
+      ],
+      "lotNo": "",
+      "decisionNo": "547/QĐ-TTYT",
+      "decisionDate": "2026-07-30T14:56:24",
+      "resultPublishedDate": "2026-07-30T15:07:32"
+    },
+    {
+      "id": "7b62a75c-ce8e-4add-b115-aa276ef2970e",
+      "name": "Hoá chất định lượng men gan ALT ≥ 495 mL",
+      "model": "GL8S108",
+      "brand": "Alanine aminotransferase (ALT)",
+      "manufacturer": "Glenbio Ltd.",
+      "origin": "Anh",
+      "manufactureYear": "Năm 2026",
+      "specification": "Định lượng ALT trong huyết thanh và huyết tương .\r\nThành phần: \r\nR1: TRIS Buffer pH 7.3 125.0 mmol/l L-Alanine 625.0 mmol/l \r\nLDH 1500 U/l\r\nR2: a-Ketoglutarate 94 mmol/l \r\nNADH 0.23 mmol/l \r\nDải đo: 3 U/l - 448 U/l (7.48 μkat/l).\r\nĐạt tiêu chuẩn ISO13485",
+      "unit": "Hộp",
+      "quantity": 9,
+      "unitPrice": 4999890,
+      "amount": 44999010,
+      "contractorCode": "vn6001513534",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ M-PROTECH"
+      ],
+      "lotNo": "",
+      "decisionNo": "547/QĐ-TTYT",
+      "decisionDate": "2026-07-30T14:56:24",
+      "resultPublishedDate": "2026-07-30T15:07:32"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -188,6 +394,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:11:24.265Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T05:52:53.235Z"
 }

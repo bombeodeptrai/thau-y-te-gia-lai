@@ -1,40 +1,117 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 6,
   "bidders": [
     {
-      "id": "7d7897bd-a5a1-49b9-b5d7-e8326a4ab57b",
-      "contractorCode": "vn3600254682",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH OXY ĐỒNG NAI",
-      "status": "participating",
-      "lotNo": "BP2600329970",
-      "lotName": "Mua sắm Khí y tế",
-      "bidPrice": 2763072000,
-      "finalPrice": 2763072000,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-06-29T10:06:18.467",
-      "models": []
-    },
-    {
-      "id": "ea037aa1-5546-483f-8394-cd4c9ef35907",
+      "id": "05885533-5c4b-4c5b-893f-96ab8614c164",
       "contractorCode": "vn0300422482",
-      "taxCode": "",
+      "taxCode": "0300422482",
       "contractorName": "CÔNG TY CỔ PHẦN HƠI KỸ NGHỆ QUE HÀN",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600329970",
       "lotName": "Mua sắm Khí y tế",
       "bidPrice": 3068388000,
       "finalPrice": 3068388000,
       "winningPrice": 0,
+      "reason": "Xếp hạng 2 đánh giá theo quy trình 1",
+      "submittedAt": "2026-08-18T15:24:58.893",
+      "models": []
+    },
+    {
+      "id": "d26cefcb-daa9-4972-81da-a3066e4403cd",
+      "contractorCode": "vn3600254682",
+      "taxCode": "3600254682",
+      "contractorName": "CÔNG TY TNHH OXY ĐỒNG NAI",
+      "status": "won",
+      "lotNo": "BP2600329970",
+      "lotName": "Mua sắm Khí y tế",
+      "bidPrice": 2763072000,
+      "finalPrice": 2763072000,
+      "winningPrice": 2763072000,
       "reason": "",
-      "submittedAt": "2026-06-29T10:06:20.72",
+      "submittedAt": "2026-08-18T15:24:58.893",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "f3fbef35-21a8-45f6-9c2c-1ba122b14172",
+      "name": "Khí oxy y tế chai nhỏ",
+      "model": "O2",
+      "brand": "Oxygen",
+      "manufacturer": "Công ty TNHH Oxy Đồng Nai",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Hàm lượng oxy ≥ 99,6%",
+      "unit": "chai",
+      "quantity": 200,
+      "unitPrice": 34020,
+      "winnerNames": [
+        "CÔNG TY TNHH OXY ĐỒNG NAI"
+      ],
+      "decisionNo": "869/QĐ-BVBT",
+      "decisionDate": "2026-08-18T23:59:59",
+      "resultPublishedDate": "2026-08-18T15:25:02"
+    },
+    {
+      "id": "f095f3ab-a878-4c85-81bf-c883d02abb58",
+      "name": "Khí CO2 y tế chai lớn",
+      "model": "CO2",
+      "brand": "Carbon Dioxide",
+      "manufacturer": "Công ty TNHH Oxy Đồng Nai",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Hàm lượng CO2 ≥ 99,6%",
+      "unit": "chai",
+      "quantity": 500,
+      "unitPrice": 324000,
+      "winnerNames": [
+        "CÔNG TY TNHH OXY ĐỒNG NAI"
+      ],
+      "decisionNo": "869/QĐ-BVBT",
+      "decisionDate": "2026-08-18T23:59:59",
+      "resultPublishedDate": "2026-08-18T15:25:02"
+    },
+    {
+      "id": "16cb2417-a0ed-4950-bb40-e7d34bc1ff8a",
+      "name": "Khí oxy y tế dạng lỏng",
+      "model": "LO2",
+      "brand": "Liquid Oxygen",
+      "manufacturer": "Công ty TNHH Oxy Đồng Nai",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Hàm lượng oxy ≥ 99,6%",
+      "unit": "Kg",
+      "quantity": 800000,
+      "unitPrice": 2970,
+      "winnerNames": [
+        "CÔNG TY TNHH OXY ĐỒNG NAI"
+      ],
+      "decisionNo": "869/QĐ-BVBT",
+      "decisionDate": "2026-08-18T23:59:59",
+      "resultPublishedDate": "2026-08-18T15:25:02"
+    },
+    {
+      "id": "f6c5502e-3a7f-418d-b023-7dcd533a1371",
+      "name": "Khí oxy y tế chai lớn",
+      "model": "O2",
+      "brand": "Oxygen",
+      "manufacturer": "Công ty TNHH Oxy Đồng Nai",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Hàm lượng oxy ≥ 99,6%",
+      "unit": "chai",
+      "quantity": 2000,
+      "unitPrice": 72036,
+      "winnerNames": [
+        "CÔNG TY TNHH OXY ĐỒNG NAI"
+      ],
+      "decisionNo": "869/QĐ-BVBT",
+      "decisionDate": "2026-08-18T23:59:59",
+      "resultPublishedDate": "2026-08-18T15:25:02"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +136,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:11:25.239Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T05:52:55.046Z"
 }

@@ -1,55 +1,427 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 16,
   "bidders": [
     {
-      "id": "4d8962ac-2f75-4f67-939a-18dd905c255c",
+      "id": "fcb6ce1e-5a64-4e35-9fac-127e6b9610df",
       "contractorCode": "vn3301681735",
-      "taxCode": "",
+      "taxCode": "3301681735",
       "contractorName": "CÔNG TY TNHH AN KHANG THÀNH ĐẠT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600352340",
       "lotName": "Lô phần Test xét nghiệm",
       "bidPrice": 514166000,
       "finalPrice": 514166000,
-      "winningPrice": 0,
+      "winningPrice": 514166000,
       "reason": "",
-      "submittedAt": "2026-09-16T09:16:37.414",
-      "models": []
+      "submittedAt": "2026-09-28T10:54:05.312",
+      "models": [
+        "022552",
+        "URS -10",
+        "QHBS01G",
+        "Bioline™ HIV/Syphilis DUO",
+        "QDEN01G",
+        "One Step Multi-Drug Screening Test (MDMA/MET/OPI/THC)",
+        "ONE STEP Opiates (OPI/Morphine) TEST (Colloidal Gold)",
+        "QHIV02B",
+        "Bioline™ HIV 1/2 3.0",
+        "Rapid Anti-HIV Test"
+      ]
     },
     {
-      "id": "df47f51f-c719-4761-ace8-1e6f80c313e1",
+      "id": "4d374bcc-5028-4cc5-b6b6-5fc95a93f8ea",
       "contractorCode": "vn0107918480",
-      "taxCode": "",
+      "taxCode": "0107918480",
       "contractorName": "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI NAM ĐẠT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600352341",
       "lotName": "Lô phần Hàng tiêm chủng mở rộng",
       "bidPrice": 100290000,
       "finalPrice": 100290000,
-      "winningPrice": 0,
+      "winningPrice": 100290000,
       "reason": "",
-      "submittedAt": "2026-09-16T09:16:37.03",
-      "models": []
+      "submittedAt": "2026-09-28T10:54:05.312",
+      "models": [
+        "150193",
+        "NM92",
+        "Freeze-tag",
+        "104614.03"
+      ]
     },
     {
-      "id": "6ed50689-c45c-4287-b767-a648702e6e2e",
+      "id": "c3bc104f-200a-42ae-847f-536deafba4ac",
       "contractorCode": "vn0101284414",
-      "taxCode": "",
+      "taxCode": "0101284414",
       "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ LIÊN DOANH VIỆT ANH",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600352342",
       "lotName": "Lô phần Hóa chất phun tẩm",
       "bidPrice": 267910000,
       "finalPrice": 267910000,
-      "winningPrice": 0,
+      "winningPrice": 267910000,
       "reason": "",
-      "submittedAt": "2026-09-16T09:16:37.249",
-      "models": []
+      "submittedAt": "2026-09-28T10:54:05.312",
+      "models": [
+        "VNDP-HC-648-09-20",
+        "VNDP-HC-025-10-15"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "44ada362-044e-47f2-aff6-8e371fd8debe",
+      "name": "Hoá chất diệt muỗi",
+      "model": "VNDP-HC-648-09-20",
+      "brand": "VIAPER 50EC",
+      "manufacturer": "Công ty Cổ phần Đầu tư Liên doanh Việt Anh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Thành phần trong 1 lít chứa: + Permethrin: 50% w/v (500 g/lít) + Hàm lượng phụ gia: 50% w/v (500 g/lít) - Công dụng: Sử dụng để diệt muỗi trong gia dụng và y tế. Chế phẩm được sử dụng để phun trong nhà bằng bình phun tay, bình phun đeo vai hoặc máy phun ULV. Phun tại tất cả các khu vực có côn trùng ẩn náu, sinh sản. - Quy cách đóng gói: 1 lít/chai",
+      "unit": "Chai",
+      "quantity": 650,
+      "unitPrice": 395000,
+      "amount": 256750000,
+      "contractorCode": "vn0101284414",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ LIÊN DOANH VIỆT ANH"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "1274d434-113e-49c4-a482-1813594be763",
+      "name": "Hoá chất tẩm màn",
+      "model": "VNDP-HC-025-10-15",
+      "brand": "FENDONA 10SC",
+      "manufacturer": "BASF Agri-Production SAS, Genay, France",
+      "origin": "Pháp",
+      "manufactureYear": "2026",
+      "specification": "- Thành phần hoạt chất: + Alpha-Cypermethrin: 10% (100 g/L) - Công dụng: FENDONA 10SC có tác dung diệt muỗi, gián, kiến, ruồi, bọ chét, kiến ba khoang, ... - Chế phẩm chuyên dùng để tẩm mùng diệt muỗi chống bệnh sốt rét… - Quy cách đóng gói: 1 lít/chai - Hạn sử dụng: 2 năm kể từ ngày sản xuất",
+      "unit": "Chai",
+      "quantity": 8,
+      "unitPrice": 1395000,
+      "amount": 11160000,
+      "contractorCode": "vn0101284414",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ LIÊN DOANH VIỆT ANH"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "ab7f5632-4ea4-4179-83c5-d63af67a8883",
+      "name": "Que thử đường huyết",
+      "model": "022552",
+      "brand": "OneTouch",
+      "manufacturer": "Lifescan Scotland Ltd.,",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Đo bằng phương pháp: Kỹ thuật hóa điện cực - Sử dụng men (enzyme): Glucose Dehydrogenase (FAD-GDH) rất đặc hiệu với glucose (chỉ phản ứng với glucose) cho kết quả chính xác vì không bị ảnh hưởng bởi nồng độ oxy và các loại đường như maltose, galactose có trong máu. - Độ chính xác cao ≥ 99% đạt tiêu chuẩn EN ISO 13485:2016. - Mã hóa tự động nhận que không cần hiệu chỉnh hay cài đặt.. - Loại mẫu máu: mao mạch, tĩnh mạch - Thời gian đo: 5 giây, mẫu lấy máu: 0,4µL - Phạm vi đo lường Glucose: 20 - 600 mg/dL (1,1 - 33,3 mmol/L) - Khoảng Hematocrit: 20 - 60% - Sử dụng cho máy đo OneTouch Verio Pro +/ OneTouch Verio Vue. HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng",
+      "unit": "Test",
+      "quantity": 275,
+      "unitPrice": 11000,
+      "amount": 3025000,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "987828ad-3414-4144-98e6-3188ced3c50d",
+      "name": "Nước tiểu 10 thông số",
+      "model": "URS -10",
+      "brand": "TC",
+      "manufacturer": "Teco Diagnostics - Mỹ",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Test dùng phân tích bán định lượng các thành phần Glucose, Bilirubin, Ketone, Specific Gravity, Blood, pH, Protein, Urobilinogen, Nitrite, Leukocytes Sử dụng được cho máy Teco HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng.",
+      "unit": "Test",
+      "quantity": 25600,
+      "unitPrice": 2100,
+      "amount": 53760000,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "1b92401a-755d-4a3b-8ff4-711bfa58e83c",
+      "name": "Test HBsAg",
+      "model": "QHBS01G",
+      "brand": "SD Biosensor",
+      "manufacturer": "SD Biosensor, InC",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện HbsAg trong huyết thanh, huyết tương hoặc máu toàn phần, phù hợp để sử dụng trên mẫu phụ nữ mang thai - Độ nhay: ≥ 99,9% (khoảng tin cậy: 96.2-100%) - Độ đặc hiệu: ≥ 99,9% (khoảng tin cậy: 97.9-100%) - Thể tích mẫu: 100µL - Bảo quản: 2-40°C. - Tiêu chuẩn: ISO 13485. Phân loại TTBYT loại D HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng",
+      "unit": "Test",
+      "quantity": 4560,
+      "unitPrice": 14880,
+      "amount": 67852800,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "7262f8e3-dcf2-4d4a-9bb4-0cd0be660e69",
+      "name": "Test HIV Giang mai",
+      "model": "Bioline™ HIV/Syphilis DUO",
+      "brand": "Abbott",
+      "manufacturer": "Abbott Diagnostics Korea Inc.,",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Phát hiện đồng thời kháng thể (IgG, IgM và IgA) kháng HIV-1/2 và/hoặc Treponema Pallidum (TP) trong mẫu huyết thanh, huyết tương và máu toàn phần. Độ nhạy HIV: 100%. Độ đặc hiệu HIV: 96,6%. Độ nhạy Syphilis: 99,1%. Độ đặc hiệu của Syphilis: 99,5%. Nằm trong danh sách của WHO-PQ và USAID. Mẫu mỡ máu, ly giải máu, máu chứa nồng độ bilirubin cao không ảnh hưởng đến kết quả. Không có phản ứng chéo với các mẫu ly giải máu, mẫu rối loạn đông máu, mẫu chứa yếu tố dạng thấp, mẫu chứa kháng thể kháng HCV, dương tính với Malaria Pf, Malaria Pv, Leprosy, mẫu phụ nữ mang thai. Bảo quản: 2-40°C. Tiêu chuẩn: ISO 13485 hoặc tương đương",
+      "unit": "Test",
+      "quantity": 2700,
+      "unitPrice": 62000,
+      "amount": 167400000,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "813ff44b-c792-44b4-84fa-0751caf72803",
+      "name": "Test nhanh NS1",
+      "model": "QDEN01G",
+      "brand": "SD Biosensor",
+      "manufacturer": "SD Biosensor, InC",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Độ nhạy ≥92%, Độ đặc hiệu: ≥98% so sánh với RT-PCR. Độ chính xác và độ tái lặp đạt 100%. Giới hạn phát hiện (Đối với Den-1, 2, 3, 4) là: ≤4.0 ng/ml - Khây thử có ống lấy mẫu đi kèm. - Không gây nhiễu bởi các loại thuốc thông dụng như: Ribarvirin, Doxycyclin hydrate, Aspirin, Ciprofloxacin, Qunine, Ibuprogen, Acetaminophen. Không xảy ra phản ứng chéo với các chủng sau:Streptococcus pyogenes, Salmonella (Typhi), Mẫu dương tính với CMV Ab, mẫu từ người đã tiêm phòng vaccin vi rút sốt vàng. Bảo quản: 2-40°C - Đạt tiêu chuẩn CE. Phân loại TTBYT loại C HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng.",
+      "unit": "Test",
+      "quantity": 100,
+      "unitPrice": 66000,
+      "amount": 6600000,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "4c58af16-5318-42ec-83ac-46fa9439a261",
+      "name": "Test thử ma túy 4 thông số",
+      "model": "One Step Multi-Drug Screening Test (MDMA/MET/OPI/THC)",
+      "brand": "Intec",
+      "manufacturer": "InTec Products, Incc",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Là xét nghiệm miễn dịch cạnh tranh, nhanh chóng, định tính phát hiện các chất gây nghiện (Drug-of-Abuse-DOA) và/ hoặc các chất chuyển hóa của chúng trong nước tiểu người. - Đạt tiêu chuẩn ISO13485:2016, đáp ứng chỉ thị 98/79/EC. - Ngưỡng phát hiện (cut-off): MDMA: 500 ng/ml; MET: 500 ng/ml; OPIATES (Morphin): 300 ng/ml; THC: 50 ng/ml. - Độ nhạy: MET : 100% ; OPI : 100%; THC : ≥99.12% ; MDMA: 100% - Độ đặc hiệu: MET : 100% ; OPI : 100%; THC : ≥99.53% ; MDMA: 100% - Thời gian đọc kết quả trong vòng 3-8 phút , không đọc kết quả sau 8 phút. - Các chất dương tính với One step Multi-Drug Screening Test: MDMA(MDA): 2000 ng/ml ; MDMA(MDEA): 1000 ng/ml - Các chất gây nhiễu không gây ảnh hưởng đến kết quả xét nghiệm:Glucose (2000 mg/dl) ; Human Albumin (2000 mg/dl) ; Hemoglobin (10 mg/dl) ; Uric acid (10 mg/dl), Urea (4000 mg/dl), Billrubin (2mg/dl) HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng.",
+      "unit": "Test",
+      "quantity": 50,
+      "unitPrice": 35000,
+      "amount": 1750000,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "c3e883d1-c0cb-4ec4-95ae-a51b4fa4e38c",
+      "name": "Test thử heroin 01 thông số",
+      "model": "ONE STEP Opiates (OPI/Morphine) TEST (Colloidal Gold)",
+      "brand": "Intec",
+      "manufacturer": "InTec Products, Incc",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Đạt tiêu chuẩn ISO13485:2016, đáp ứng chỉ thị 98/79/EC - Mẫu phẩm: Nước tiểu - Phát hiện OPI/Morphine -Độ nhạy tương quan 100 %, Độ đặc hiệu tương quan 100 % - Ngưỡng phát hiện: 300 ng/mL HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng.",
+      "unit": "Test",
+      "quantity": 200,
+      "unitPrice": 10000,
+      "amount": 2000000,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "c9ad9417-d28c-42cf-8da0-364840e8575d",
+      "name": "Test xét nghiệm HIV",
+      "model": "QHIV02B",
+      "brand": "SD Biosensor",
+      "manufacturer": "SD Biosensor, InC",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Sinh phẩm thuộc nhóm sinh phẩm mà Viện vệ sinh dịch tể Trung ương khuyến cáo tại Công văn 858/VVSDTTW-HIV về việc khuyến cáo phương cách xét nghiệm chẩn đoán HIV quốc gia năm 2020 - Hạn sử dụng trên ≥ 15 tháng - Mẫu bệnh phẩm: huyết thanh, huyết tương, máu toàn phần tĩnh mạch, máu toàn phần mao mạch. - Độ nhạy: ≥ 99,5% đối với SP nhanh, Độ đặc hiệu ≥ 98% đối với SP nhanh - Bảo quản: 2-40°C - Có kim chích máu và bông cồn đi kèm theo hộp hàng. - Giới hạn phát hiện: Kháng thể kháng HIV-1; Kháng thể kháng HIV-2; Kháng thể kháng HIV-1 nhóm phụ O: Thành phần chính: +Vạch thử T1: protein tái tổ hợp gp41 của HIV-1, gp41 của HIV-1 phân nhóm O; +Vạch thử T2: gp36 của HIV-2; Vạch chứng: kháng thể đơn dòng kháng IgY gà; Đệm liên hợp: cộng hợp gp41 của HIV-1 keo vàng/gp41 của HIV-1 phân nhóm O keo vàng; gp36 của HIV-2 keo vàng HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng.",
+      "unit": "Test",
+      "quantity": 6700,
+      "unitPrice": 30146,
+      "amount": 201978200,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "e632036f-1b28-4be6-a984-0f9a085a56a9",
+      "name": "Test xét nghiệm HIV (bổ sung 1)",
+      "model": "Bioline™ HIV 1/2 3.0",
+      "brand": "Abbott",
+      "manufacturer": "Abbott Diagnostics Korea Inc.,",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Độ nhạy: HIV-1 Positive 100%; HIV-2 Positive 100%; HIV-1 Subtype A-G 100%; HIV-1 Group O 100%; Europe 100%; North America 100%; Asia 100%; Africa 99.91% - Đặc tính: Over-all 99.75% - Thông tin sản phẩm: Phương pháp: Lateral flow Thời gian cho kết quả: 15 minutes Điều kiện bảo quản: 2-30°C HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng Sinh phẩm thuộc nhóm sinh phẩm mà Viện vệ sinh dịch tể Trung ương khuyến cáo tại Công văn 858/VVSDTTW-HIV về việc khuyến cáo phương cách xét nghiệm chẩn đoán HIV quốc gia năm 2020",
+      "unit": "Test",
+      "quantity": 200,
+      "unitPrice": 37000,
+      "amount": 7400000,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "85b10e74-f835-4004-b367-a2e33a5b869a",
+      "name": "Test xét nghiệm HIV (bổ sung 2)",
+      "model": "Rapid Anti-HIV Test",
+      "brand": "Intec",
+      "manufacturer": "InTec Products, Incc",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Phát hiện sự có mặt của các kháng thể kháng HIV-1 và HIV-2 trong máu toàn phần, huyết thanh hoặc huyết tương người Đạt tiêu chuẩn ISO13485:2016 - Mẫu phẩm: Huyết thanh, huyết tương, máu toàn phần - Độ nhạy: ≥99.59%, Độ đặc hiệu: ≥99.87% - Thành phần Kit thử: Cộng hợp vàng HIV-Ag tái tổ hợp. - Vạch kết quả Anti-human IgG-Fc Mcab. - Nằm trong khuyến cáo xét nghiệm khẳng định HIV của viện Vệ sinh dịch tễ TW năm 2020 - Bảo quản ở nhiệt độ thường. - Đáp ứng tiêu chuẩn ISO 13485 hoặc tương đương HSD ≥ 2/3 thời gian kể từ ngày bàn giao hàng hóa đến ngày hết hạn sử dụng Sinh phẩm thuộc nhóm sinh phẩm mà Viện vệ sinh dịch tể Trung ương khuyến cáo tại Công văn 858/VVSDTTW-HIV về việc khuyến cáo phương cách xét nghiệm chẩn đoán HIV quốc gia năm 2020",
+      "unit": "Test",
+      "quantity": 120,
+      "unitPrice": 20000,
+      "amount": 2400000,
+      "contractorCode": "vn3301681735",
+      "winnerNames": [
+        "CÔNG TY TNHH AN KHANG THÀNH ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "a785768d-384f-453c-87a9-938387315cc4",
+      "name": "Bơm kim tiêm 0,5 ml",
+      "model": "150193",
+      "brand": "Meditec",
+      "manufacturer": "Công ty TNHH công nghệ Meditec",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026",
+      "specification": "I. CÁC TIÊU CHUẨN CHUNG. Gồm 6 tiêu chuẩn sau: 1. Bơm tiêm làm bằng nhựa dùng một lần. 2. Dung tích bơm tiêm là 0,5ml. 3.Cỡ kim là 25G 1” ( 25G1 inch) 4. Các nguyên vật liệu để làm bơm tiêm: xy lanh, piston, kim tiêm ...là những nguyên vật liệu được phép sử dụng trong y tế. 5. Bơm tiêm phải có tính năng tự khoá (hay còn được gọi là tự hóc, tự hủy, thuật ngữ tiếng Anh là Auto-Disable) có nghĩa là sau khi vắc xin hoặc dung dịch tiêm truyền được hút đủ liều vào trong bơm tiêm rồi tiêm hết thì không thể kéo piston trở lại để hút vắc xin hoặc dung dịch tiêm truyền lần thứ 2 được nữa. 6. Tập hợp bơm tiêm, kim tiêm, nắp chụp bảo vệ được hàn kín trong một đơn vị đóng gói, và sau đó được xử lý tiệt trùng theo quy trình tiệt trùng *Thông số kỹ thuật bơm kim tiêm dựa trên hướng dẫn của công văn số 929/VSDTTƯ- TCQG ngày 09/07/2020 của Viện vệ sinh dịch tễ Trung Ương.",
+      "unit": "Cái",
+      "quantity": 7000,
+      "unitPrice": 1500,
+      "amount": 10500000,
+      "contractorCode": "vn0107918480",
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI NAM ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "047f4ddc-b17b-4382-a009-cd85090f6db8",
+      "name": "Hộp an toàn",
+      "model": "NM92",
+      "brand": "Nhật Minh",
+      "manufacturer": "Công ty TNHH Thương mại và Thiết bị y tế Nhật Minh",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026",
+      "specification": "I. CÁC TIÊU CHUẨN CHUNG: Gồm 3 tiêu chuẩn sau: 1. Chất liệu là carton ép. Mặt ngoài hộp không thấm nước. 2. Dung tích 5 lít. 3. Thành hộp dầy 1,5mm . có màu vàng II. CÁC TIÊU CHUẨN KHÁC: Gồm 7 tiêu chuẩn sau: 1. Kim không chọc thủng thành hộp. 2. Có một lỗ để nhét bơm kim tiêm. Lỗ này phải có nắp đậy. Khi nhét bơm kim tiêm vào trong hộp, nắp đậy vẫn giữ nguyên được để tránh việc thò tay vào bên trong. 3. Hộp phải có tay cầm để có thể xách bằng một tay. Tay cầm phải đảm bảo độ an toàn và độ bền cần thiết. 4. Dễ dàng dùng mồi lửa để thiêu huỷ mà không cần sử dụng đến nguồn năng lượng khác 5. Hộp được gấp ở mức tối thiểu để thuận tiện cho vận chuyển ban đầu. Có các hướng dẫn bằng ảnh vẽ về cách gập hộp, cách sử dụng và huỷ bỏ hộp. Các hướng dẫn đơn giản, dễ hiểu. 6. Phân loại A 7. ISO 13485",
+      "unit": "Cái",
+      "quantity": 800,
+      "unitPrice": 12500,
+      "amount": 10000000,
+      "contractorCode": "vn0107918480",
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI NAM ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "ea3ac802-f4ba-453b-9f07-791a5b0995fb",
+      "name": "Chỉ thị đông băng điện tử",
+      "model": "Freeze-tag",
+      "brand": "Berlinger",
+      "manufacturer": "Sensitech",
+      "origin": "Malaysia",
+      "manufactureYear": "Năm 2026",
+      "specification": "Thiết bị giúp theo dõi xem nhiệt độ bảo quản vắc xin có dưới 0°C hay không - Kích thước ngoài (DxRxC) 49x30x10.5 mm - Kích thước màn hình hiển thị 10x10 mm - Trọng lượng 12g ± 1g - Điều kiện bảo quản +4°C đến +50°C / +40°F đến +122°F - Nhiệt độ hoạt động -20°Cđến +55°C / - 4°F đến +131°F - Độ chính xác của phép đo nhiệt độ +/- 0.3 °C +/- 0.6 °F - Thời gian tới hạn cảnh báo 60 phút – nhiệt độ dưới 0°C / +32°F - Tiêu chuẩn EN 12830, Chỉ thị EC 2002/95 (RoHS), 2012/19/EU (WEEE), EN 61000-6-2/6-3, Lớp bảo vệ EN/IEC 60529 IP, Quy định IATA - Đạt tiêu chuẩn chất lượng: ISO 9001, ISO 17025",
+      "unit": "Cái",
+      "quantity": 113,
+      "unitPrice": 550000,
+      "amount": 62150000,
+      "contractorCode": "vn0107918480",
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI NAM ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    },
+    {
+      "id": "1ed75a62-c463-485a-8067-abd88694d1eb",
+      "name": "Nhiệt kế đo nhiệt độ trong tủ bảo quản vắc xin",
+      "model": "104614.03",
+      "brand": "Möller-Therm GmbH",
+      "manufacturer": "Möller Therm GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2026",
+      "specification": "Nhiệt kế thủy ngân dùng trong bảo quản vắc xin Model: 104614 Hãng sản xuất: Moller-Therm GmbH - Đức Khoảng nhiệt đó: -30 đến +50 độ C kích thước: 165 x 25 mm",
+      "unit": "Cái",
+      "quantity": 63,
+      "unitPrice": 280000,
+      "amount": 17640000,
+      "contractorCode": "vn0107918480",
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI NAM ĐẠT"
+      ],
+      "lotNo": "",
+      "decisionNo": "320/QĐ-KSBT",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T10:54:13"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -95,5 +467,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T00:52:39.736Z"
+  "fetchedAt": "2026-09-28T05:43:01.712Z"
 }

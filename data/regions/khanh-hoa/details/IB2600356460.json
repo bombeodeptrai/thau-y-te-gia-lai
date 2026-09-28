@@ -1,9 +1,157 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "5f1dffcd-5f2e-4e9a-a28d-cc2fffe511da",
+      "contractorCode": "vn0317438480",
+      "taxCode": "0317438480",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ PHƯƠNG NAM VIỆT",
+      "status": "won",
+      "lotNo": "PP2600275963",
+      "lotName": "Phim X-quang y tế 10'' x12'' (25x30cm)",
+      "bidPrice": 45000000,
+      "finalPrice": 45000000,
+      "winningPrice": 45000000,
+      "reason": "",
+      "submittedAt": "2026-08-25T14:49:35.467",
+      "models": [
+        "NSDP"
+      ]
+    },
+    {
+      "id": "0bdc9e7b-5856-4e75-bbbb-c3e6326780ba",
+      "contractorCode": "vn2901720991",
+      "taxCode": "2901720991",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ CÔNG NGHỆ - VẬT TƯ Y TẾ DUY CƯỜNG",
+      "status": "lost",
+      "lotNo": "PP2600275964",
+      "lotName": "Phim X-quang y tế 14'' x17'' (35x43cm)",
+      "bidPrice": 345000000,
+      "finalPrice": 345000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xếp hạng 1",
+      "submittedAt": "2026-08-25T14:49:35.467",
+      "models": []
+    },
+    {
+      "id": "17fb99b6-ebff-4e99-9627-7ce7da34e656",
+      "contractorCode": "vn6001683977",
+      "taxCode": "6001683977",
+      "contractorName": "CÔNG TY TNHH TMDV MINH ANH",
+      "status": "lost",
+      "lotNo": "PP2600275964",
+      "lotName": "Phim X-quang y tế 14'' x17'' (35x43cm)",
+      "bidPrice": 258000000,
+      "finalPrice": 258000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xếp hạng 1",
+      "submittedAt": "2026-08-25T14:49:35.467",
+      "models": []
+    },
+    {
+      "id": "40bbf29c-30bb-4588-a7d3-73ca15be2ac5",
+      "contractorCode": "vn0317438480",
+      "taxCode": "0317438480",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ PHƯƠNG NAM VIỆT",
+      "status": "won",
+      "lotNo": "PP2600275964",
+      "lotName": "Phim X-quang y tế 14'' x17'' (35x43cm)",
+      "bidPrice": 255000000,
+      "finalPrice": 255000000,
+      "winningPrice": 255000000,
+      "reason": "",
+      "submittedAt": "2026-08-25T14:49:35.467",
+      "models": [
+        "NSDP"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600275964",
+      "name": "Phim X-quang y tế 14'' x17'' (35x43cm)",
+      "model": "NSDP",
+      "brand": "Nice Image",
+      "manufacturer": "Nice Imaging Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Kích thước 14x17 inch (35x43cm). - Phim không nhiễm sáng (sử dụng trong điều kiện ánh sáng môi trường). - Cấu tạo gồm 3 lớp: lớp phủ in phim, lớp nền PET, lớp phủ chống tĩnh điện. - Đạt tiêu chuẩn chất lượng: ISO13485 hoặc tương đương. - Cam kết hỗ trợ cung cấp, lắp đặt máy đảm bảo tương thích với hàng hóa trúng thầu.",
+      "unit": "Tấm",
+      "quantity": 15000,
+      "unitPrice": 0,
+      "amount": 255000000,
+      "contractorCode": "vn0317438480",
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ PHƯƠNG NAM VIỆT"
+      ],
+      "lotNo": "PP2600275964",
+      "decisionNo": "313/QĐ-BVUB",
+      "decisionDate": "2026-08-25T23:59:59",
+      "resultPublishedDate": "2026-08-25T14:50:18"
+    },
+    {
+      "id": "2600275963",
+      "name": "Phim X-quang y tế 10'' x12'' (25x30cm)",
+      "model": "NSDP",
+      "brand": "Nice Image",
+      "manufacturer": "Nice Imaging Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Kích thước 10x12inch (25x30cm). - Phim không nhiễm sáng (sử dụng trong điều kiện ánh sáng môi trường). - Cấu tạo gồm 3 lớp: lớp phủ in phim, lớp nền PET, lớp phủ chống tĩnh điện. - Đạt tiêu chuẩn chất lượng: ISO13485 hoặc tương đương. - Cam kết hỗ trợ cung cấp, lắp đặt máy đảm bảo tương thích với hàng hóa trúng thầu.",
+      "unit": "Tấm",
+      "quantity": 5000,
+      "unitPrice": 0,
+      "amount": 45000000,
+      "contractorCode": "vn0317438480",
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ PHƯƠNG NAM VIỆT"
+      ],
+      "lotNo": "PP2600275963",
+      "decisionNo": "313/QĐ-BVUB",
+      "decisionDate": "2026-08-25T23:59:59",
+      "resultPublishedDate": "2026-08-25T14:50:18"
+    },
+    {
+      "id": "43fd8efa-b6bb-4c7a-8c14-dc3aa7c7f955",
+      "name": "Phim X-quang y tế 10'' x12'' (25x30cm)",
+      "model": "NSDP",
+      "brand": "Nice Image",
+      "manufacturer": "Nice Imaging Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Kích thước 10x12inch (25x30cm). - Phim không nhiễm sáng (sử dụng trong điều kiện ánh sáng môi trường). - Cấu tạo gồm 3 lớp: lớp phủ in phim, lớp nền PET, lớp phủ chống tĩnh điện. - Đạt tiêu chuẩn chất lượng: ISO13485 hoặc tương đương. - Cam kết hỗ trợ cung cấp, lắp đặt máy đảm bảo tương thích với hàng hóa trúng thầu.",
+      "unit": "Tấm",
+      "quantity": 5000,
+      "unitPrice": 9000,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ PHƯƠNG NAM VIỆT"
+      ],
+      "decisionNo": "313/QĐ-BVUB",
+      "decisionDate": "2026-08-25T23:59:59",
+      "resultPublishedDate": "2026-08-25T14:50:18"
+    },
+    {
+      "id": "99eb9840-2d65-486a-9e5f-6d3e7a93b59a",
+      "name": "Phim X-quang y tế 14'' x17'' (35x43cm)",
+      "model": "NSDP",
+      "brand": "Nice Image",
+      "manufacturer": "Nice Imaging Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Kích thước 14x17 inch (35x43cm). - Phim không nhiễm sáng (sử dụng trong điều kiện ánh sáng môi trường). - Cấu tạo gồm 3 lớp: lớp phủ in phim, lớp nền PET, lớp phủ chống tĩnh điện. - Đạt tiêu chuẩn chất lượng: ISO13485 hoặc tương đương. - Cam kết hỗ trợ cung cấp, lắp đặt máy đảm bảo tương thích với hàng hóa trúng thầu.",
+      "unit": "Tấm",
+      "quantity": 15000,
+      "unitPrice": 17000,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ PHƯƠNG NAM VIỆT"
+      ],
+      "decisionNo": "313/QĐ-BVUB",
+      "decisionDate": "2026-08-25T23:59:59",
+      "resultPublishedDate": "2026-08-25T14:50:18"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -38,6 +186,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:10:42.611Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T05:49:58.812Z"
 }

@@ -1,9 +1,291 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 9,
+  "bidders": [
+    {
+      "id": "2a5f9486-bb7c-4b48-b5c0-d936f198d604",
+      "contractorCode": "vn4200464334",
+      "taxCode": "4200464334",
+      "contractorName": "CÔNG TY TNHH AQUA",
+      "status": "won",
+      "lotNo": "PP2600305689",
+      "lotName": "Vật tư phục vụ khám và chẩn đoán",
+      "bidPrice": 340310000,
+      "finalPrice": 340310000,
+      "winningPrice": 340310000,
+      "reason": "",
+      "submittedAt": "2026-08-13T21:59:05.434",
+      "models": [
+        "BYT",
+        "GYT",
+        "GĐT",
+        "ĐLG",
+        "MVN"
+      ]
+    },
+    {
+      "id": "c7cbcca9-eb80-472e-a374-1e84f6550ccd",
+      "contractorCode": "vn4201964749",
+      "taxCode": "4201964749",
+      "contractorName": "CÔNG TY TNHH TMDV KỸ THUẬT M&M",
+      "status": "lost",
+      "lotNo": "PP2600305689",
+      "lotName": "Vật tư phục vụ khám và chẩn đoán",
+      "bidPrice": 370310000,
+      "finalPrice": 370310000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu xếp hạng 1",
+      "submittedAt": "2026-08-13T21:59:05.434",
+      "models": [
+        "CHI_22MLOTH3P5L1",
+        "URS-10",
+        "VGS01-011",
+        "Lancet"
+      ]
+    },
+    {
+      "id": "fc9024ce-49bd-4049-8b75-558ae82178c3",
+      "contractorCode": "vn4200464334",
+      "taxCode": "4200464334",
+      "contractorName": "CÔNG TY TNHH AQUA",
+      "status": "lost",
+      "lotNo": "PP2600305690",
+      "lotName": "Vật tư dùng cho xét nghiệm",
+      "bidPrice": 157800000,
+      "finalPrice": 157800000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu xếp hạng 1",
+      "submittedAt": "2026-08-13T21:59:05.434",
+      "models": [
+        "BYT",
+        "GYT",
+        "GĐT",
+        "ĐLG",
+        "MVN"
+      ]
+    },
+    {
+      "id": "9e91e821-cd43-4d5e-81fa-132273e0a7f8",
+      "contractorCode": "vn4201964749",
+      "taxCode": "4201964749",
+      "contractorName": "CÔNG TY TNHH TMDV KỸ THUẬT M&M",
+      "status": "won",
+      "lotNo": "PP2600305690",
+      "lotName": "Vật tư dùng cho xét nghiệm",
+      "bidPrice": 157000000,
+      "finalPrice": 157000000,
+      "winningPrice": 157000000,
+      "reason": "",
+      "submittedAt": "2026-08-13T21:59:05.434",
+      "models": [
+        "CHI_22MLOTH3P5L1",
+        "URS-10",
+        "VGS01-011",
+        "Lancet"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "6f1f21e3-ffd8-4ced-a84b-92a7014fb17e",
+      "name": "Ống nghiệm Glucose",
+      "model": "CHI_22MLOTH3P5L1",
+      "brand": "HTM",
+      "manufacturer": "Công ty CP Vật Tư Y Tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "* Ống nghiệm nhựa PP độ pH trung tính, kích thước 13x75mm, dung tích 6ml, nắp nhựa LDPE màu xám, có vạch lấy mẫu riêng biệt 2ml trên nhãn ống.\r\n* Hóa chất bên trong là Sodium Flouride và EDTA K2, phân tích hóa chất Sodium Fluoride bằng phương pháp US EPA Method 300.1 mod 18650 mg/L \r\n* Chịu được lực quay ly tâm gia tốc 6.000 vòng/phút trong thời gian 10 phút, đạt độ vô khuẩn (có phiếu kết quả thử nghiệm của đơn vị kiểm chứng).\r\n*  Đạt một trong các tiêu chuẩn: ISO 13485; CE; FDA.",
+      "unit": "ống",
+      "quantity": 25000,
+      "unitPrice": 888,
+      "amount": 22200000,
+      "contractorCode": "vn4201964749",
+      "winnerNames": [
+        "CÔNG TY TNHH TMDV KỸ THUẬT M&M"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    },
+    {
+      "id": "f330d72d-b74a-4880-8617-e6c5af24a7c0",
+      "name": "Que thử phân tích nước tiểu",
+      "model": "URS-10",
+      "brand": "URS-10",
+      "manufacturer": "Hangzhou AllTest Biotech Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Phát hiện định tính hoặc bán định lượng các chất trong nước tiểu người, thông số tối thiểu gồm: Leukocytes, Nitrite, Urobilinogen, Protein, pH, Blood, Specific Gravity, Ketone, Bilirubin, Glucose. Que thử sử dụng một lần. \r\n- Sử dụng tương thích trên máy Mission U120.\r\n -  Đạt một trong các tiêu chuẩn: ISO 13485; CE; FDA.",
+      "unit": "que",
+      "quantity": 26000,
+      "unitPrice": 1574,
+      "amount": 40924000,
+      "contractorCode": "vn4201964749",
+      "winnerNames": [
+        "CÔNG TY TNHH TMDV KỸ THUẬT M&M"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    },
+    {
+      "id": "83fcd929-0905-46fc-ba1a-55eccdc59885",
+      "name": "Que đường huyết",
+      "model": "VGS01-011",
+      "brand": "VivaChek Ino",
+      "manufacturer": "Vivachek Biotech (Hangzhou) Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Sử dụng Men GOD, Công nghệ cảm biến sinh học;\r\n - Que test 8 điện cực bằng bạc, Công nghệ \" No coding\";\r\n - Loại bỏ sự ảnh hưởng của Hematocrit \r\n - Giới hạn hematocrite (dải HCT) 20-70%. đo chính xác được cho trẻ sơ sinh, phụ nữ mang thai và những người bị chứng thiếu máu \r\n - Có dung dịch kiểm chuẩn với 3 mức (thấp, trung bình và cao)\r\n - Mỗi que thử chứa các hóa chất phản ứng: Glucose oxidase <25 IU, Mediator <300 μg.\r\n - Lượng máu sử dụng rất ít chỉ 0,5 μL\r\n - Kết quả chuẩn sau 5 giây, \r\n - Cảnh báo hạ đường huyết (hypo warming), \r\n - Đánh dấu trước ăn và sau ăn \r\n - Độ chính xác ≥ 98.8 % , kết quả đo nằm trong vòng sai số ±15% với Pp chuẩn YSI plasma theo protocol của EN ISO 15197_2015.\r\n -  Đạt một trong các tiêu chuẩn: ISO 13485; CE; FDA.",
+      "unit": "que",
+      "quantity": 25000,
+      "unitPrice": 3612,
+      "amount": 90300000,
+      "contractorCode": "vn4201964749",
+      "winnerNames": [
+        "CÔNG TY TNHH TMDV KỸ THUẬT M&M"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    },
+    {
+      "id": "92da66d0-7dd5-4dc8-9ca6-a63654aca9aa",
+      "name": "Lancet (kim thử đường máu)",
+      "model": "Lancet",
+      "brand": "Promisemed  ",
+      "manufacturer": "Promisemed Hangzhou Meditech Co., Ltd -",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Kim có kích thước số 28G \r\n- Kim lấy máu sử dụng cho máy đo đường huyết.\r\n- Kim sử dụng được cho tất cả các loại bút lấy máu \r\n- Sử dụng được cho tất cả các máy đo đường huyết \r\n- Tiện dụng, đơn giản, dễ sử dụng và không gây đau \r\n- Thân có dập gân tăng cứng. Đầu kim sắc nhọn \r\n- Đầu kim làm bằng thép không gỉ vát 3 đầu sắc nhọn. \r\n- Tiệt trùng từng cây bằng E.O. Không độc hại, không có chất gây sốt \r\n- Đạt một trong các tiêu chuẩn: ISO 13485; CE; FDA",
+      "unit": "cái",
+      "quantity": 25000,
+      "unitPrice": 143.04,
+      "amount": 3576000,
+      "contractorCode": "vn4201964749",
+      "winnerNames": [
+        "CÔNG TY TNHH TMDV KỸ THUẬT M&M"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    },
+    {
+      "id": "dc20c8fb-b690-45d2-bedc-b3138b956b96",
+      "name": "Bông y tế thấm nước",
+      "model": "BYT",
+      "brand": "An Lành",
+      "manufacturer": "An Lành",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Nguyê n liệu: 100% bông xơ tự nhiên, có màu trắng, không lẫn màu, không lẫn chất.\r\n- Gói: 01kg.\r\n- Khả năng giữ nước: ≥ 20g nước/ gam bông.\r\n- Tốc độ hút nước: ≤ 10 giây;\r\n- Độ ẩm tối đa: ≤ 8%; Tro toàn phần: ≤ 0,5%; Hàm lượng chất tan: ≤ 0,5%; Hàm lượng clorua: ≤ 0,005%.\r\n- Đạt một trong các tiêu chuẩn: ISO 13485; CE; FDA.",
+      "unit": "kg",
+      "quantity": 100,
+      "unitPrice": 133600,
+      "amount": 13360000,
+      "contractorCode": "vn4200464334",
+      "winnerNames": [
+        "CÔNG TY TNHH AQUA"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    },
+    {
+      "id": "738a120a-f42f-4ad6-a64c-9f5eee96395e",
+      "name": "Găng tay cao su y tế có bột các cỡ",
+      "model": "GYT",
+      "brand": "Meruf a",
+      "manufacturer": "Merufa",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Sản xuất từ cao su thiên nhiên, có phủ bột chống dính, không gây kích ứng da. Có các kích cỡ. \r\nThuận cho cả tay trái và tay phải, chiều dài min 220mm. \r\nĐộ dày tối thiểu 1 lớp áp dụng cho các cỡ: 0,08mm. \r\nLực kéo đứt tối thiểu trước già hóa: ≥ 7,0 N, sau già hóa: ≥ 6,0 N.\r\nĐộ giãn dài tối thiểu khi đứt trước già hóa: 650%, sau già hóa: 500%.\r\nLượng bột: ≤ 10mg/ dm2. Hàm lượng Protein dưới 200 µg/ dm2. Đạt một trong các tiêu chuẩn: ISO 13485; CE; FDA.",
+      "unit": "đôi",
+      "quantity": 200000,
+      "unitPrice": 1180,
+      "amount": 236000000,
+      "contractorCode": "vn4200464334",
+      "winnerNames": [
+        "CÔNG TY TNHH AQUA"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    },
+    {
+      "id": "1b1f4391-b257-4d05-999b-3650d0814e62",
+      "name": "Giấy điện tim 80mm x 72mm x 20m",
+      "model": "GĐT",
+      "brand": "Tianjin Grand Paper Industr y Co., Ltd",
+      "manufacturer": "Tianjin Grand Paper Industr y Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Giấy đo điện tim 3 cần, 80 mm x 20m, có sọc, kích thước khả dụng: 72mm.\r\nĐạt một trong các tiêu chuẩn ISO, CE",
+      "unit": "Cuộn",
+      "quantity": 250,
+      "unitPrice": 15000,
+      "amount": 3750000,
+      "contractorCode": "vn4200464334",
+      "winnerNames": [
+        "CÔNG TY TNHH AQUA"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    },
+    {
+      "id": "a6c6b757-a5ae-44c1-8fcf-27880ef3611f",
+      "name": "Đè lưỡi gỗ",
+      "model": "ĐLG",
+      "brand": "Tanaphar",
+      "manufacturer": "Tanaphar",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Vật liệu: gỗ đã tiệt trùng; Đóng gói rời, mỗi cái đóng trong 1 bao bì.\r\nĐạt một trong các tiêu chuẩn: ISO 13485; CE; FDA.",
+      "unit": "cái",
+      "quantity": 200000,
+      "unitPrice": 365,
+      "amount": 73000000,
+      "contractorCode": "vn4200464334",
+      "winnerNames": [
+        "CÔNG TY TNHH AQUA"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    },
+    {
+      "id": "b4c92972-14e3-4346-810d-e5bbe01d185e",
+      "name": "Mỏ vịt nhựa",
+      "model": "MVN",
+      "brand": "MPV",
+      "manufacturer": "MPV",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Sản xuất từ chất liệu nhựa PP\r\nnguyên sinh, độ trơn láng cao.\r\nĐạt một trong các tiêu chuẩn: ISO 13485; CE; FDA.",
+      "unit": "cái",
+      "quantity": 4000,
+      "unitPrice": 3550,
+      "amount": 14200000,
+      "contractorCode": "vn4200464334",
+      "winnerNames": [
+        "CÔNG TY TNHH AQUA"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-BVĐKY",
+      "decisionDate": "2026-08-13T21:56:09",
+      "resultPublishedDate": "2026-08-13T22:03:28"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -244,6 +526,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:10:43.739Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T05:49:59.102Z"
 }

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 3,
+  "bidders": [
+    {
+      "id": "ebc305b5-ce1f-4fcc-a93e-6d163c72fe44",
+      "contractorCode": "vn0400476756",
+      "taxCode": "0400476756",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+      "status": "won",
+      "lotNo": "BP2500574361",
+      "lotName": "Cung ứng các mặt hàng thiết bị y tế tiêu hao găng tay các loại sử dụng cho các khoa lâm sàng",
+      "bidPrice": 1037636800,
+      "finalPrice": 1037636800,
+      "winningPrice": 1037636800,
+      "reason": "",
+      "submittedAt": "2025-11-24T18:14:27.37",
+      "models": []
+    },
+    {
+      "id": "466f4a4e-2ea6-4e19-9cc7-ce62be831ed9",
+      "contractorCode": "vn0401583020",
+      "taxCode": "0401583020",
+      "contractorName": "CÔNG TY TNHH VIDIAN",
+      "status": "lost",
+      "lotNo": "BP2500574361",
+      "lotName": "Cung ứng các mặt hàng thiết bị y tế tiêu hao găng tay các loại sử dụng cho các khoa lâm sàng",
+      "bidPrice": 1146000000,
+      "finalPrice": 1146000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2025-11-24T18:14:27.371",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "c92db4b9-6f23-40f1-a918-e6fd2966ee70",
+      "name": "Găng tay sản khoa",
+      "model": "GPTCTD",
+      "brand": "Merufa",
+      "manufacturer": "Merufa",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Sản xuất từ latex cao su thiên nhiên, màu trắng tự nhiên của cao su.\r\n Có phủ bột chống dính không gây kích ứng da\r\n Chiều dài găng ≥ 490mm\r\n Đã tiệt trùng từng đôi",
+      "unit": "Đôi",
+      "quantity": 800,
+      "unitPrice": 13696,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "decisionNo": "432/QĐ-BV",
+      "decisionDate": "2025-11-18T23:59:59",
+      "resultPublishedDate": "2025-11-24T18:14:40"
+    },
+    {
+      "id": "5c3d716c-b3ce-4ad0-9ec1-0231840d50c4",
+      "name": "Găng tay khám sử dụng 1 lần",
+      "model": "GKTCB",
+      "brand": "Merufa",
+      "manufacturer": "Merufa",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Chất liệu: Cao su thiên nhiên, có bột\r\nChiều dài găng ≥ 240mm\r\n Độ dày: ≥ 0.08mm\r\n Đạt tiêu chuẩn: ISO, CE",
+      "unit": "Đôi",
+      "quantity": 500000,
+      "unitPrice": 1070,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "decisionNo": "432/QĐ-BV",
+      "decisionDate": "2025-11-18T23:59:59",
+      "resultPublishedDate": "2025-11-24T18:14:40"
+    },
+    {
+      "id": "f06d10aa-4de8-4559-a48f-85e90614252d",
+      "name": "Găng tay phẩu thuật tiệt trùng không bột",
+      "model": "GPT",
+      "brand": "Merufa",
+      "manufacturer": "Merufa",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Găng tay được sản xuất từ cao su thiên nhiên không bột\r\n Tiệt trùng bằng khí EO và được đóng gói từng đôi: 1 đôi/1 túi.\r\n Chiều dài găng tay ≥ 280 mm\r\n Độ dày: ≥ 0,10mm\r\n Đạt tiêu chuẩn:  ISO, CE",
+      "unit": "Đôi",
+      "quantity": 140000,
+      "unitPrice": 3512,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "decisionNo": "432/QĐ-BV",
+      "decisionDate": "2025-11-18T23:59:59",
+      "resultPublishedDate": "2025-11-24T18:14:40"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "3fd9ab29-6d6c-41d0-ab53-86a5478ca961",
+        "lotNo": "BP2500574361",
+        "name": "Cung ứng các mặt hàng thiết bị y tế tiêu hao găng tay các loại sử dụng cho các khoa lâm sàng",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 1306340000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Cung ứng các mặt hàng thiết bị y tế tiêu hao găng tay các loại",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T05:44:56.788Z"
+}

@@ -1,40 +1,60 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "40887833-0147-437a-b8e7-df775813e5fb",
-      "contractorCode": "vn0107613344",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM",
-      "status": "participating",
-      "lotNo": "BP2600526660",
-      "lotName": "Mua sắm máy siêu âm phục vụ công tác chuyên môn tại bệnh viện đa khoa Lang Chánh năm 2026",
-      "bidPrice": 2940000000,
-      "finalPrice": 2940000000,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-27T08:01:46.637",
-      "models": []
-    },
-    {
-      "id": "2380813f-43a9-40cf-b7c1-c550469b22ef",
+      "id": "12cba11f-2f8c-430d-8d43-df58101c06fe",
       "contractorCode": "vn0106887695",
-      "taxCode": "",
+      "taxCode": "0106887695",
       "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ AN PHÚC",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600526660",
       "lotName": "Mua sắm máy siêu âm phục vụ công tác chuyên môn tại bệnh viện đa khoa Lang Chánh năm 2026",
       "bidPrice": 3050000000,
       "finalPrice": 3050000000,
       "winningPrice": 0,
+      "reason": "Không đáp ứng E-HSMT",
+      "submittedAt": "2026-08-04T16:58:18.149",
+      "models": []
+    },
+    {
+      "id": "6a07cbfe-8813-4f1d-9647-4756902b90fc",
+      "contractorCode": "vn0107613344",
+      "taxCode": "0107613344",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM",
+      "status": "won",
+      "lotNo": "BP2600526660",
+      "lotName": "Mua sắm máy siêu âm phục vụ công tác chuyên môn tại bệnh viện đa khoa Lang Chánh năm 2026",
+      "bidPrice": 2940000000,
+      "finalPrice": 2940000000,
+      "winningPrice": 2940000000,
       "reason": "",
-      "submittedAt": "2026-07-27T08:01:48.156",
+      "submittedAt": "2026-08-04T16:58:18.149",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "3e03dfec-ef57-4c10-9018-77ee469e5810",
+      "name": "Máy siêu âm 4D, 05 đầu dò có chức năng đàn hồi mô, siêu âm tim, sản khoa",
+      "model": "Aplio me (CUS-AME00)",
+      "brand": "Canon Inc.",
+      "manufacturer": "Canon Inc.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026",
+      "specification": "Chủng loại/ Model: Aplio me (CUS-AME00) Hãng sản xuất: Canon Inc. Xuất xứ: Nhật Bản Năm sản xuất: 2026 trở về sau Tình trạng: Máy mới 100% - Điều kiện vận hành: + Nhiệt độ 10 độ C đến 35 độ C + Độ ẩm 35% đến 80% (Không ngưng tụ) - Nguồn điện: 220V, 50/60Hz - Đạt các tiêu chuẩn chất lượng ISO 13485; CE (Cấu hình chi tiết đáp ứng yêu cầu E-HSMT)",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 2940000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM"
+      ],
+      "decisionNo": "Số : 210/QĐ-BVLC",
+      "decisionDate": "2026-08-04T23:59:59",
+      "resultPublishedDate": "2026-08-04T16:59:03"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +79,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:01:41.736Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T05:39:18.954Z"
 }

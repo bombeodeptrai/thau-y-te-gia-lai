@@ -1,9 +1,69 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "becf0df6-d40b-44d6-91ac-a7c1dbbea4cd",
+      "contractorCode": "vn2802860701",
+      "taxCode": "2802860701",
+      "contractorName": "CÔNG TY TNHH QA PHARMA",
+      "status": "won",
+      "lotNo": "BP2600748515",
+      "lotName": "Mua thuốc bổ sung lần 4 tại Bệnh viện đa khoa Nghi Sơn năm 2026",
+      "bidPrice": 472500000,
+      "finalPrice": 472500000,
+      "winningPrice": 472500000,
+      "reason": "",
+      "submittedAt": "2026-09-24T08:22:10.019",
+      "models": [
+        "MIZHO"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2026811135119955",
+      "name": "MIZHO",
+      "model": "MIZHO",
+      "brand": "MIZHO",
+      "manufacturer": "Công ty cổ phần dược phẩm Phương Đông",
+      "origin": "Việt Nam",
+      "manufactureYear": "Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm",
+      "specification": "Nhóm 3",
+      "unit": "Viên",
+      "quantity": 300000,
+      "unitPrice": 1575,
+      "amount": 472500000,
+      "contractorCode": "vn2802860701",
+      "winnerNames": [
+        "CÔNG TY TNHH  QA PHARMA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1977/QĐ-BVNS",
+      "decisionDate": "2026-09-24T08:20:54",
+      "resultPublishedDate": "2026-09-24T08:22:27"
+    },
+    {
+      "id": "17ff7235-c75f-4370-8165-b9fd9e458677",
+      "name": "MIZHO\n",
+      "model": "MIZHO\n",
+      "brand": "MIZHO\n",
+      "manufacturer": "Công ty cổ phần dược phẩm Phương Đông\n",
+      "origin": "Việt Nam",
+      "manufactureYear": "Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm\n",
+      "specification": "Nhóm 3",
+      "unit": "Viên",
+      "quantity": 300000,
+      "unitPrice": 1575,
+      "winnerNames": [
+        "CÔNG TY TNHH  QA PHARMA"
+      ],
+      "decisionNo": "1977/QĐ-BVNS",
+      "decisionDate": "2026-09-24T08:20:54",
+      "resultPublishedDate": "2026-09-24T08:22:27"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +119,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:28:42.019Z"
+  "fetchedAt": "2026-09-28T05:38:59.048Z"
 }

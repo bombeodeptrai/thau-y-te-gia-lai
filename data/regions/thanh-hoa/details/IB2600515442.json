@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "1e427e90-3f5a-42a6-b310-c4a8338b8fb3",
+      "contractorCode": "vn0107613344",
+      "taxCode": "0107613344",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM",
+      "status": "won",
+      "lotNo": "BP2600731216",
+      "lotName": "Mua sắm bộ thuốc thử xét nghiệm định lượng hs- cTnT năm 2026",
+      "bidPrice": 235500000,
+      "finalPrice": 235500000,
+      "winningPrice": 235500000,
+      "reason": "",
+      "submittedAt": "2026-09-25T10:16:42.359",
+      "models": [
+        "Sharay hs-cTnT (CLIA)"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "68e29dc4-3335-4264-8b01-2cd4f93f2508",
+      "name": "Bộ thuốc thử xét nghiệm định lượng hs-cTnT",
+      "model": "Sharay hs-cTnT (CLIA)",
+      "brand": "Sharay",
+      "manufacturer": "Luminary Biotechnology Co., Ltd. - Trung Quốc",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Xét nghiệm miễn dịch hóa phát quang trên vi hạt từ tính (CLIA) để định lượng hs-cTnT trong huyết thanh/huyết tương người. Các mẫu bị tăng lipid máu, tan máu hoặc vàng da có thể dẫn đến kết quả không chính xác. Tuy nhiên, Hemoglobin nhỏ hơn hoặc bằng 150 mg/dL, triglyceride nhỏ hơn hoặc bằng 1000 mg/dL, hoặc bilirubin nhỏ hơn hoặc bằng 40 mg/dL sẽ không gây nhiễu đáng kể cho kết quả. ĐẶC TÍNH HIỆU NĂNG • Giới hạn Trống (Limit of Blank): Nhỏ hơn hoặc bằng 5.00 pg/mL. • Khoảng tuyến tính (Linear Range): 8.00 pg/mL đến 10000.00 pg/mL, với hệ số tương quan r lớn hơn hoặc bằng 0.9900. • Độ chính xác (Accuracy): Độ lệch tương đối trong phạm vi cộng trừ 10.0%. • Độ lặp lại (Reproducibility): o Hệ số biến thiên trong cùng lần xét nghiệm (Intra-assay CV) nhỏ hơn hoặc bằng 10.0% o Hệ số biến thiên giữa các lần xét nghiệm (Inter-assay CV) nhỏ hơn hoặc bằng 15.0% Đã bao gồm control và calib",
+      "unit": "hộp",
+      "quantity": 30,
+      "unitPrice": 7850000,
+      "amount": 235500000,
+      "contractorCode": "vn0107613344",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1052/QĐ-BVTX",
+      "decisionDate": "2026-09-25T10:16:18",
+      "resultPublishedDate": "2026-09-25T10:16:46"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:28:46.783Z"
+  "fetchedAt": "2026-09-28T05:39:00.046Z"
 }

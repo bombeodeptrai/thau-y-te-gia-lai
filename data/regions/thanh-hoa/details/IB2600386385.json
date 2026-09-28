@@ -1,9 +1,136 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "80c90f68-d48b-438a-93bc-041014dee7d8",
+      "contractorCode": "vn0107613344",
+      "taxCode": "0107613344",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600299980",
+      "lotName": "Găng tay phẫu thuật tiệt trùng",
+      "bidPrice": 159000000,
+      "finalPrice": 159000000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ 2",
+      "submittedAt": "2026-07-31T09:45:11.926",
+      "models": []
+    },
+    {
+      "id": "cc317288-02b4-4313-af28-4a06a77243d9",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "PP2600299980",
+      "lotName": "Găng tay phẫu thuật tiệt trùng",
+      "bidPrice": 158000000,
+      "finalPrice": 158000000,
+      "winningPrice": 158000000,
+      "reason": "",
+      "submittedAt": "2026-07-31T09:45:11.926",
+      "models": [
+        "GPT"
+      ]
+    },
+    {
+      "id": "fc1a00e4-168a-47dd-9db2-8dbf0025e6ac",
+      "contractorCode": "vn0107613344",
+      "taxCode": "0107613344",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600299981",
+      "lotName": "Găng tay khám có bột các cỡ",
+      "bidPrice": 57800000,
+      "finalPrice": 57800000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ 3",
+      "submittedAt": "2026-07-31T09:45:11.926",
+      "models": []
+    },
+    {
+      "id": "af39abcd-ee70-4e62-86ba-c99a85d1056d",
+      "contractorCode": "vn0109373842",
+      "taxCode": "0109373842",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ VẬT TƯ HOÀNG BẢO",
+      "status": "won",
+      "lotNo": "PP2600299981",
+      "lotName": "Găng tay khám có bột các cỡ",
+      "bidPrice": 52400000,
+      "finalPrice": 52400000,
+      "winningPrice": 52400000,
+      "reason": "",
+      "submittedAt": "2026-07-31T09:45:11.926",
+      "models": [
+        "GKT CB.S ;GKT CB.M"
+      ]
+    },
+    {
+      "id": "7a466900-1a06-452d-b7eb-f976179c703a",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "lost",
+      "lotNo": "PP2600299981",
+      "lotName": "Găng tay khám có bột các cỡ",
+      "bidPrice": 55600000,
+      "finalPrice": 55600000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ 2",
+      "submittedAt": "2026-07-31T09:45:11.927",
+      "models": [
+        "GPT"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "7d52b32f-f2e2-4a3e-8f79-76faa41a6289",
+      "name": "Găng tay khám có bột các cỡ",
+      "model": "GKT\nCB.S\n;GKT\nCB.M",
+      "brand": "Merufa",
+      "manufacturer": "Công ty\ncổ phần\nMerufa/\nViệt\nNam",
+      "origin": "Việt\nNam",
+      "manufactureYear": "2025\ntrở về\nsau",
+      "specification": "Làm từ cao su tự nhiên, có phủ lớp bột\nchống dính.\nHàm lượng bột: ≤10mg /dm2\nChiều dài: ≥ 200mm, độ dày ≥0,08mm\nDùng được cả hai tay, cổ tay được se viền,\nbề mặt găng tay trơn hoặc vùng bàn tay\nnhám.",
+      "unit": "Đôi",
+      "quantity": 40000,
+      "unitPrice": 1310,
+      "amount": 52400000,
+      "contractorCode": "vn0109373842",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ VẬT TƯ HOÀNG BẢO"
+      ],
+      "lotNo": "",
+      "decisionNo": "781/QĐ-BVM",
+      "decisionDate": "2026-07-31T09:03:25",
+      "resultPublishedDate": "2026-07-31T09:47:16"
+    },
+    {
+      "id": "9d78a0d9-e43b-410a-b543-65139918103c",
+      "name": "Găng tay phẫu thuật tiệt trùng",
+      "model": "GPT",
+      "brand": "GPT",
+      "manufacturer": "Công ty\ncổ phần\nMerufa",
+      "origin": "Việt\nNam",
+      "manufactureYear": "2025\ntrở về\nsau",
+      "specification": "Sản xuất từ cao su thiên nhiên. Dày trung\nbình 0,15÷0,20mm, Chiều dài tối thiểu\n275mm, Chiều rộng lòng bàn tay: Size\n61/2: 83±5mm, Size 7: 89±5mm, Size 71/2:\n95±5mm.Cường lực khi đứt trước lão hóa:\ntối thiểu 12,5N, sau lão hóa: tối thiểu\n9,5N.Độ giãn đứt trước lão hóa: tối thiểu\n700%, sau lão hóa: tối thiểu 550%. Lượng\nbột: tối đa 80mg/đôi. Lượng protein: tối đa\n200μg/dm2, mức độ nhiễm tĩnh điện dưới\n100V. Tiệt trùng bằng khí EO.TCVN 6344\n(ISO 10282). ISO 9001; ISO 13485 hoặc\ntương đương.",
+      "unit": "Đôi",
+      "quantity": 40000,
+      "unitPrice": 3950,
+      "amount": 158000000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "781/QĐ-BVM",
+      "decisionDate": "2026-07-31T09:03:25",
+      "resultPublishedDate": "2026-07-31T09:47:16"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +217,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-07-27T07:01:39.667Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-28T05:39:16.908Z"
 }

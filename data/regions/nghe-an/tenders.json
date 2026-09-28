@@ -5436,9 +5436,9 @@
       "publicDate": "2026-06-05T10:55:33.605",
       "price": 57400000,
       "category": "Thiết bị y tế",
-      "status": "evaluating",
-      "sourceStatus": "01",
-      "statusForNotify": "DXT",
+      "status": "cancelled",
+      "sourceStatus": "03",
+      "statusForNotify": "DHTBMT",
       "bidderCount": null,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=3a07f3f6-1285-4bb1-b386-d6e6665e6961&notifyId=3a07f3f6-1285-4bb1-b386-d6e6665e6961&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600266624&planNo=PL2600140656&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
@@ -28160,7 +28160,18 @@
           "reason": "Nhà thầu xếp hạng 2"
         }
       ],
-      "winningModels": [],
+      "winningModels": [
+        "T2DB70U530380",
+        "531000001",
+        "C2-8",
+        "EVN4-9",
+        "VN4-8",
+        "1128-P-1015",
+        "1302-P-1014",
+        "VM100",
+        "LC1D80A",
+        "0532140159"
+      ],
       "losingModels": [],
       "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
@@ -29448,7 +29459,9 @@
           "reason": "Đánh giá theo quy trình 02 nên E-HSDT của nhà thầu không được xem xét đánh giá"
         }
       ],
-      "winningModels": [],
+      "winningModels": [
+        "HS40"
+      ],
       "losingModels": [],
       "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
@@ -36152,7 +36165,9 @@
       ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "X-CUBE 60"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -37372,9 +37387,9 @@
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [
+        "BR64 Air Fan Replacement Kit",
         "Couch control board with CONFIG-B CPM",
         "20 Amp fuse",
-        "BR64 Air Fan Replacement Kit",
         "Fan, tube Axial",
         "Spellman 80 KW RoHS CPM Assy",
         "FRU, AMC upgrade KITS",
@@ -41824,7 +41839,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-09-28T00:49:34.077Z",
+  "fetchedAt": "2026-09-28T05:39:02.180Z",
   "source": "muasamcong-public-api",
   "regionSlug": "nghe-an",
   "region": "Nghệ An",
@@ -41838,10 +41853,10 @@
     "refreshDays": 14,
     "statusSchemaVersion": 4,
     "lastScanDays": 1095,
-    "lastScanTenderCount": 3398,
-    "lastProvinceTenderCount": 3398,
+    "lastScanTenderCount": 3400,
+    "lastProvinceTenderCount": 3400,
     "lastHistoricalFallbackTenderCount": 0,
-    "scannedTenderCount": 3398,
+    "scannedTenderCount": 3400,
     "keywords": [
       "thiết bị y tế",
       "vật tư tiêu hao",
