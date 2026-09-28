@@ -2,6 +2,8 @@
   "use strict";
 
   const SOURCE_TIME_ZONE_OFFSET = "+07:00";
+  const SOURCE_TIME_ZONE_OFFSET_MS = 7 * 60 * 60 * 1000;
+  const DAY_MS = 86_400_000;
 
   function sourceDateTimestamp(value) {
     const text = String(value ?? "").trim();
@@ -20,7 +22,11 @@
     if (!Number.isFinite(dayCount) || dayCount <= 0) return true;
     const snapshotTime = new Date(fetchedAt || "").getTime();
     const referenceTime = Number.isFinite(snapshotTime) ? snapshotTime : Date.now();
-    return published >= referenceTime - dayCount * 86_400_000;
+    const rawCutoff = referenceTime - dayCount * DAY_MS;
+    const sourceDayCutoff = Math.floor(
+      (rawCutoff + SOURCE_TIME_ZONE_OFFSET_MS) / DAY_MS,
+    ) * DAY_MS - SOURCE_TIME_ZONE_OFFSET_MS;
+    return published >= sourceDayCutoff;
   }
 
   const api = { sourceDateTimestamp, withinSnapshotDays };
