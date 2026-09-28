@@ -59,7 +59,19 @@ jobs:
           MIN_TENDER_COUNT: "1"
           ENABLE_HISTORICAL_FALLBACK: ${{ matrix.region == 'gia-lai' && '1' || '0' }}
           FORCE_FULL_REFRESH: "1"
-        run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
+        run: |
+          for attempt in 1 2 3; do
+            echo "Lượt quét $attempt/3 cho ${{ matrix.region }}"
+            if node scripts/run-region-scan.mjs "${{ matrix.region }}"; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              wait_seconds=$((attempt * 30))
+              echo "Nguồn công khai tạm lỗi; chờ ${wait_seconds}s rồi quét lại từ bản dữ liệu đã khôi phục."
+              sleep "$wait_seconds"
+            fi
+          done
+          exit 1
 
       - name: Đóng gói dữ liệu tỉnh thành đã xác thực
         if: steps.regional_scan.outcome == 'success'
