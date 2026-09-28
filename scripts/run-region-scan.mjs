@@ -222,6 +222,9 @@ try {
   const tenderCount = officialTenderCount(payload);
   const coverageDays = Number(payload.collection?.days) || 0;
   const detailTenderCount = Number(payload.detailTenderCount) || 0;
+  const historicalFallbackFailureCount = Number(
+    payload.collection?.lastHistoricalFallbackFailureCount,
+  ) || 0;
 
   if (tenderCount < requiredTenderCount) {
     throw new Error(
@@ -252,14 +255,17 @@ try {
     historicalLocationTermCount: region.locationTerms.length,
     historicalTitleTermCount: historicalTitleTerms.length,
     historicalFallback: enableHistoricalFallback,
+    historicalFallbackFailureCount,
+    historicalFallbackComplete: historicalFallbackFailureCount === 0,
     filterStrategy: MEDICAL_SCOPE_VERSION,
     rollbackOnFailure: true,
-    status: "success",
+    status: historicalFallbackFailureCount ? "partial-success" : "success",
   }, null, 2)}\n`);
 
   process.stdout.write(
     `Xác thực ${region.name}: ${tenderCount} gói chính thức/${coverageDays} ngày, `
-    + `${detailTenderCount} gói chi tiết, ${bidderCount} dòng nhà thầu, ${equipmentCount} mặt hàng/model.\n`,
+    + `${detailTenderCount} gói chi tiết, ${bidderCount} dòng nhà thầu, ${equipmentCount} mặt hàng/model; `
+    + `${historicalFallbackFailureCount} truy vấn bù tạm lỗi.\n`,
   );
 } catch (error) {
   await restoreRegionData(backup);
