@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "bcbc359b-816b-444c-be32-8704a4cfbba3",
+      "contractorCode": "vn0109273904",
+      "taxCode": "0109273904",
+      "contractorName": "CÔNG TY CỔ PHẦN Y SINH ĐẠI XUÂN",
+      "status": "lost",
+      "lotNo": "BP2500598485",
+      "lotName": "Gói 1: Hóa chất xét nghiệm phục vụ kỹ thuật chuyên môn trong công tác phòng, chống dịch",
+      "bidPrice": 615312000,
+      "finalPrice": 615312000,
+      "winningPrice": 0,
+      "reason": "không đáp ứng yêu cầu của E-HSMT",
+      "submittedAt": "2025-11-28T10:18:32.93",
+      "models": []
+    },
+    {
+      "id": "cddab5b2-d8b5-4233-adc8-20fa055afdbf",
+      "contractorCode": "vn0101192851",
+      "taxCode": "0101192851",
+      "contractorName": "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU KỸ THUẬT - TECHNIMEX",
+      "status": "lost",
+      "lotNo": "BP2500598485",
+      "lotName": "Gói 1: Hóa chất xét nghiệm phục vụ kỹ thuật chuyên môn trong công tác phòng, chống dịch",
+      "bidPrice": 615312000,
+      "finalPrice": 615312000,
+      "winningPrice": 0,
+      "reason": "không đáp ứng yêu cầu của E-HSMT",
+      "submittedAt": "2025-11-28T10:18:32.93",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +59,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500450821",
-    "notifyId": "6c3bea02-45c2-4ad0-98b3-9ac5f529d616",
-    "bidId": "1826adbd-4b09-4760-a102-169a127e936e",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:07.908Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T00:43:06.281Z"
 }

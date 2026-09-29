@@ -1,9 +1,89 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "7aed924a-a49c-4a78-b058-31eab99c7bac",
+      "contractorCode": "vn4300795516",
+      "taxCode": "4300795516",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO",
+      "status": "won",
+      "lotNo": "PP2500459396",
+      "lotName": "Dung dịch rửa quả lọc",
+      "bidPrice": 4728570,
+      "finalPrice": 4728570,
+      "winningPrice": 4728570,
+      "reason": "",
+      "submittedAt": "2025-10-14T15:15:58.627",
+      "models": [
+        "Không"
+      ]
+    },
+    {
+      "id": "57a5c2a7-3c28-43b7-b2ad-d57f182056dc",
+      "contractorCode": "vn4300795516",
+      "taxCode": "4300795516",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO",
+      "status": "won",
+      "lotNo": "PP2500459397",
+      "lotName": "Dung dịch khử khuẩn máy thận nhân tạo",
+      "bidPrice": 12900000,
+      "finalPrice": 12900000,
+      "winningPrice": 12900000,
+      "reason": "",
+      "submittedAt": "2025-10-14T15:15:58.627",
+      "models": [
+        "Không"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "1bddb8f7-bbfc-4163-85ad-fe8206a2341a",
+      "name": "Dung dịch rửa quả lọc",
+      "model": "Không ",
+      "brand": "Không ",
+      "manufacturer": "RÜHL AG & Co. chemische Fabrik KG",
+      "origin": "GERMANY",
+      "manufactureYear": "Không ",
+      "specification": "Thành phần gồm: Peracetic acid: ~ 4.2% w/w; Hydrogen peroxide: ~ 30% w/w; Acetic acid: ~ 4.9% w/w. Can 5kg",
+      "unit": "Can",
+      "quantity": 5,
+      "unitPrice": 945714,
+      "amount": 4728570,
+      "contractorCode": "vn4300795516",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "517/QĐ-BVBS",
+      "decisionDate": "2025-10-14T15:14:41",
+      "resultPublishedDate": "2025-10-14T15:16:02"
+    },
+    {
+      "id": "ce3b07b0-80b1-40b1-8bdc-3e44d5512609",
+      "name": "Dung dịch khử khuẩn máy thận nhân tạo",
+      "model": "Không ",
+      "brand": "Không ",
+      "manufacturer": "Fresenius Medical Care Production Sdn Bhd",
+      "origin": "MALAYSIA",
+      "manufactureYear": "Không ",
+      "specification": "Thành phần: Trong 100g Citrosteril chứa 21g acid citric 1-hydrate; 2g acid lactic; 2g acid malic. Can 5 lít",
+      "unit": "Can",
+      "quantity": 10,
+      "unitPrice": 1290000,
+      "amount": 12900000,
+      "contractorCode": "vn4300795516",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "517/QĐ-BVBS",
+      "decisionDate": "2025-10-14T15:14:41",
+      "resultPublishedDate": "2025-10-14T15:16:02"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,12 +171,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500434514",
-    "notifyId": "a74c1c19-fd4e-478d-88e4-ed41acb15c88",
-    "bidId": "44757116-9aa8-4cb5-898f-a0847498518b",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:09.822Z"
+  "fetchedAt": "2026-09-29T00:43:08.075Z"
 }

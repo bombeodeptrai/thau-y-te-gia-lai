@@ -1,9 +1,80 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "e804063c-2582-43e1-8b77-6b00b36975c8",
+      "contractorCode": "vn0110983803",
+      "taxCode": "0110983803",
+      "contractorName": "CÔNG TY TNHH TBYT VIỆT NAM CBN",
+      "status": "won",
+      "lotNo": "BP2500646028",
+      "lotName": "Mua sắm Hóa chất huyết học",
+      "bidPrice": 98280000,
+      "finalPrice": 98280000,
+      "winningPrice": 98280000,
+      "reason": "",
+      "submittedAt": "2025-10-24T14:23:31.042",
+      "models": [
+        "P90411317"
+      ]
+    },
+    {
+      "id": "2ae87586-f8b3-4e6d-9601-e530d0d8d4ec",
+      "contractorCode": "vn0304504714",
+      "taxCode": "0304504714",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ GIA MẠNH",
+      "status": "lost",
+      "lotNo": "BP2500646028",
+      "lotName": "Mua sắm Hóa chất huyết học",
+      "bidPrice": 99900000,
+      "finalPrice": 99900000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2025-10-24T14:23:31.042",
+      "models": []
+    },
+    {
+      "id": "546c9637-6254-4432-a562-79ba6f8d6b58",
+      "contractorCode": "vn2601013617",
+      "taxCode": "2601013617",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI TỔNG HỢP NGỌC MINH",
+      "status": "lost",
+      "lotNo": "BP2500646028",
+      "lotName": "Mua sắm Hóa chất huyết học",
+      "bidPrice": 99796503,
+      "finalPrice": 99796503,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2025-10-24T14:23:31.042",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "37436cb9-c53e-4349-82e2-49f0b364637d",
+      "name": "Dung dịch đo Hemoglobin",
+      "model": "P90411317\n",
+      "brand": "Sysmex Asia Pacific Pte Ltd\n",
+      "manufacturer": "Sysmex Asia Pacific Pte Ltd\n",
+      "origin": "SINGAPORE\n",
+      "manufactureYear": "2024 trở đi\n",
+      "specification": "* Thành phần: Sodium lauryl sulfate 1,7 g/l\n* Chai ≥ 500 ml.",
+      "unit": "Chai",
+      "quantity": 54,
+      "unitPrice": 1820000,
+      "amount": 98280000,
+      "contractorCode": "vn0110983803",
+      "winnerNames": [
+        "CÔNG TY TNHH TBYT VIỆT NAM CBN"
+      ],
+      "lotNo": "",
+      "decisionNo": "2020/QĐ-BVĐKTT",
+      "decisionDate": "2025-10-24T14:22:49",
+      "resultPublishedDate": "2025-10-24T14:23:36"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,13 +129,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500453414",
-    "notifyId": "ee1f6bb0-e299-4ee9-a7ba-17a52daef545",
-    "bidId": "e8df743e-6d77-4de5-8a58-c9bda9630e5a",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:07.316Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T00:43:06.003Z"
 }

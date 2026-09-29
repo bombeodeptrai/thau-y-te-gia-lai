@@ -1,9 +1,84 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "7c3ca69f-8c01-4cab-900b-edf91e895b51",
+      "contractorCode": "vn0106184195",
+      "taxCode": "0106184195",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ VÀ THƯƠNG MẠI SBG VIỆT",
+      "status": "won",
+      "lotNo": "BP2500647620",
+      "lotName": "Mua sắm 03 bộ trộn khí cho máy thở CPAP - Bệnh viện Đa khoa trung tâm tỉnh Gia Lai",
+      "bidPrice": 61000000,
+      "finalPrice": 61000000,
+      "winningPrice": 61000000,
+      "reason": "",
+      "submittedAt": "2025-11-17T11:33:13.212",
+      "models": [
+        "AD3000-SPD"
+      ]
+    },
+    {
+      "id": "e9c1c61a-8d51-4bfa-a864-10b63f439a35",
+      "contractorCode": "vn3703320471",
+      "taxCode": "3703320471",
+      "contractorName": "CÔNG TY TNHH KHOA HỌC KỸ THUẬT NHẬT AN",
+      "status": "lost",
+      "lotNo": "BP2500647620",
+      "lotName": "Mua sắm 03 bộ trộn khí cho máy thở CPAP - Bệnh viện Đa khoa trung tâm tỉnh Gia Lai",
+      "bidPrice": 66500000,
+      "finalPrice": 66500000,
+      "winningPrice": 0,
+      "reason": "HẠNG 2",
+      "submittedAt": "2025-11-17T11:33:13.212",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "10943208229223184",
+      "name": "Bộ trốn khí dùng cho máy thở Cpap",
+      "model": "AD3000-SPD",
+      "brand": "Pigeon",
+      "manufacturer": "Guangdong Pigeon Medical Apparatus Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "- Điều chỉnh FIO2: 21% -100% \n- Lưu lượng: 0LPM ~ 1.0LPM; \n  0LPM ~ 10LPM \n- Áp suất oxy và không khí: 0.3MPa ~  0.4MPa \n- Báo động chênh lệch áp suất: > 0.1Mpa \n- Dây cấp oxy và không khí: 01 bộ \n- Kẹp giữ máy: 01 chiếc\n - Đầu cắm nhanh: 02 chiếc\n - Bình làm ẩm: 02 chiếc\n - Hàng mới 100%",
+      "unit": "Bộ",
+      "quantity": 3,
+      "unitPrice": 20333333.333333332,
+      "amount": 61000000,
+      "contractorCode": "vn0106184195",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ VÀ THƯƠNG MẠI SBG VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "2187/QĐ_BVĐKTT",
+      "decisionDate": "2025-11-17T11:29:22",
+      "resultPublishedDate": "2025-11-17T11:33:19"
+    },
+    {
+      "id": "1a2e4d10-7b4f-47d9-b8a7-f66e3ec8c396",
+      "name": "Bộ trốn khí  dùng cho\n máy thở Cpap",
+      "model": "AD3000-SPD\n",
+      "brand": "Pigeon\n",
+      "manufacturer": "Guangdong Pigeon Medical Apparatus Co.,Ltd\n",
+      "origin": "Trung Quốc\n",
+      "manufactureYear": "2025\n",
+      "specification": "- Điều chỉnh FIO2: 21% -100% \n- Lưu lượng: 0LPM ~ 1.0LPM; \n  0LPM ~ 10LPM \n- Áp suất oxy và không khí: 0.3MPa ~  0.4MPa \n- Báo động chênh lệch áp suất: > 0.1Mpa \n- Dây cấp oxy và không khí: 01 bộ \n- Kẹp giữ máy: 01 chiếc\n - Đầu cắm nhanh: 02 chiếc\n - Bình làm ẩm: 02 chiếc\n - Hàng mới 100%",
+      "unit": "Bộ",
+      "quantity": 3,
+      "unitPrice": 20333333.333333332,
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ VÀ THƯƠNG MẠI SBG VIỆT"
+      ],
+      "decisionNo": "2187/QĐ_BVĐKTT",
+      "decisionDate": "2025-11-17T11:29:22",
+      "resultPublishedDate": "2025-11-17T11:33:19"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,13 +133,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500475775",
-    "notifyId": "f5ccd817-6cc5-4ee3-843a-4663494ba726",
-    "bidId": "41f1be21-2759-4a38-80c6-071e7c2a2e4d",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:04.193Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T00:43:02.859Z"
 }

@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "21a44989-44f4-4298-806f-b86b258f4540",
+      "contractorCode": "vn5901186246",
+      "taxCode": "5901186246",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN THIẾT BỊ Y TẾ BIMED",
+      "status": "won",
+      "lotNo": "BP2500646858",
+      "lotName": "Mua sắm máy điện tim 6 kênh Model Cardipia 400H",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 49000000,
+      "reason": "",
+      "submittedAt": "2025-10-14T14:21:46.802",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "e10af5eb-88bf-4123-9ec4-6942f98de4b1",
+      "name": "máy điện tim 6 kênh Model Cardipia 400H",
+      "model": "Cardipia 400H",
+      "brand": "Cardipia 400H",
+      "manufacturer": "Trismed",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025",
+      "specification": "Cardipia 400H",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 49000000,
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN THIẾT BỊ Y TẾ BIMED"
+      ],
+      "decisionNo": "509/QĐ-TTYT",
+      "decisionDate": "2025-10-03T23:59:59",
+      "resultPublishedDate": "2025-10-14T14:21:57"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500453055",
-    "notifyId": "IB2500453055",
-    "bidId": "6202bff0-8ddf-4a7e-9d4a-59acb6a80148",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:07.774Z"
+  "fetchedAt": "2026-09-29T00:43:06.477Z"
 }

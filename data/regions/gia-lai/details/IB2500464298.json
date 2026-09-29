@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "ae019a75-a7f8-415d-a2b3-eb1307c2c231",
+      "contractorCode": "vn0104275249",
+      "taxCode": "0104275249",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ THÁI AN",
+      "status": "won",
+      "lotNo": "BP2500654471",
+      "lotName": "Mua sắm bóng đèn sử dụng cho hệ thống máy nội soi của Bệnh viện Đa khoa Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 16800000,
+      "reason": "",
+      "submittedAt": "2025-10-21T10:16:50.78",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "0698a9a7-c8ad-449d-bc65-5dcf69278193",
+      "name": "Bóng đèn nội soi",
+      "model": "Model: 6423FO",
+      "brand": "Mã ANS: EFR A 1/232",
+      "manufacturer": "Philip (Đức)",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Điện áp: 15V\nCông Suất: 150W\nTuổi thọ: 50H\nNhiệt độ màu: 3350K\nĐường kính gương: 50mm\nMặt gương: trơn\nVị trí nhấp nháy: S105\nNhiệt độ niêm phong tối đa cho phép Celsius: 400\nNhiệt độ bầu tối đa cho phép Celsius: 900",
+      "unit": "Cái",
+      "quantity": 30,
+      "unitPrice": 560000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ THÁI AN"
+      ],
+      "decisionNo": "1004/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-21T23:59:59",
+      "resultPublishedDate": "2025-10-21T10:16:58"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500464298",
-    "notifyId": "IB2500464298",
-    "bidId": "f0d52521-cab9-4450-a692-098f2a003bab",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:05.298Z"
+  "fetchedAt": "2026-09-29T00:43:04.126Z"
 }

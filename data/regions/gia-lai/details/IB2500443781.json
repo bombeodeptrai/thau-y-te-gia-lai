@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "f55ccb73-8a4d-40bc-99dd-b4a8516469b6",
+      "contractorCode": "vn0105500137",
+      "taxCode": "0105500137",
+      "contractorName": "CÔNG TY TNHH ĐẦU TƯ Y TẾ SAO KIM",
+      "status": "won",
+      "lotNo": "BP2500622872",
+      "lotName": "Mua sắm 01 Máy CT Scanner mô phỏng (dùng trong mô phỏng xạ trị ung thư)",
+      "bidPrice": 18500000000,
+      "finalPrice": 18500000000,
+      "winningPrice": 18500000000,
+      "reason": "",
+      "submittedAt": "2025-11-26T10:06:23.272",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "d6247be9-5950-4724-b013-5f7fd07b8bb9",
+      "name": "Máy CT Scanner mô phỏng (dùng trong mô phỏng xạ trị ung thư) (bao gồm Máy CT Scanner mô phỏng và dụng cụ định vị bệnh nhân và các vật liệu tiêu hao đi kèm)",
+      "model": "Discovery RT",
+      "brand": "GE Medical Systems, LLC",
+      "manufacturer": "GE Medical Systems, LLC",
+      "origin": "Mỹ",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Máy CT Scanner mô phỏng (dùng trong mô phỏng xạ trị ung thư)): 01 Hệ thống\n1.Hệ thống máy chính: 01 Hệ thống\n2. Phần mềm/chức năng chụp:-\tPhần mềm điều khiển chụp và hiển thị cơ bản: 01 Bộ\n-\tPhần mềm/chức năng tái tạo lặp giảm liều tia: 01 Bộ\n-\tPhần mềm/chức năng giảm nhiễu gây ra bởi kim loại: 01 Bộ\n-\tPhần mềm/chức năng chụp đồng bộ theo ngưỡng ngấm thuốc cản quang: 01 Bộ\n-\tPhần mềm/chức năng chụp cho trẻ nhỏ: 01 Bộ\n-\tPhần mềm tái tạo chi tiết phổi và cấu trúc trung thất độ phân giải cao: 01 Bộ\n-\tChức năng kiểm tra liều tia trước khi chụp, báo cáo liều tia sau khi chụp: 01 Bộ\n-\tPhần mềm/chức năng chụp xoắn ốc tốc độ cao, giữ nguyên chất lượng hình ảnh: 01 Bộ\n-\tPhần mềm/chức năng điều biến liều chụp 3D: 01 Bộ\n-\tChức năng chụp bệnh nhân cấp cứu/ chấn thương: 01 Bộ\n-\tPhần mềm/chức năng tái tạo và xem ảnh 3D: 01 Bộ\n-\tPhần mềm/chức năng chụp và phân tích mạch máu (CTA) và xóa xương tự động: 01 Bộ\n-\tPhần mềm/chức năng chồng ảnh: 01 Bộ\n-\tPhần mềm/ứng dụng chuyên dụng cho quy trình thực hiện CT mô phỏng: 01 Bộ\n-\tPhần mềm/chức năng tự động chọn dòng giúp giảm liều chụp: 01 Bộ\n-\tPhần mềm/chức năng khảo sát theo dõi tiến triển ung bướu: 01 Bộ\n-\tPhần mềm/chức năng thu nhận ảnh CT đồng bộ (gating) theo nhịp thở: 01 Bộ\n-\tPhần mềm/chức năng thu nhận ảnh CT 4D không cần thiết bị theo dõi nhịp thở ngoài: 01 Bộ\n-\tPhần mềm/chức năng phân tích và đánh giá u phổi: 01 Bộ\n-\tPhần mềm/chức năng tự động đánh giá, phân tích tổn thương, lập kế hoạch điều trị u gan: 01 Bộ\n-\tKết nối chuẩn DICOM: 01 Bộ\n3. Các thiết bị phụ trợ: 01 Bộ\n4.Các thiết bị phụ trợ cho mô phỏng xạ trị\n5. Bộ cố định bệnh nhân mô phỏng xạ trị: 01 Bộ\n6. Hệ thống hỗ trợ định vị và theo dõi nhịp thở bệnh nhân khi mô phỏng: 01 Hệ thống",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 18500000000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ Y TẾ SAO KIM"
+      ],
+      "decisionNo": "2286/QĐ-BVĐKTT",
+      "decisionDate": "2025-11-26T23:59:59",
+      "resultPublishedDate": "2025-11-26T10:06:32"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500443781",
-    "notifyId": "116a0007-2ef1-4a48-9d75-f6ab6b3e9269",
-    "bidId": "7f729ba3-9d2e-4f4a-9807-80319e091b95",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:08.355Z"
+  "fetchedAt": "2026-09-29T00:43:06.889Z"
 }

@@ -1,9 +1,60 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "741bb0ed-8ab9-420d-ba7a-8678769b5b98",
+      "contractorCode": "vn0316457829",
+      "taxCode": "0316457829",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ MINH ĐỨC",
+      "status": "lost",
+      "lotNo": "BP2500620021",
+      "lotName": "Mua sắm trang thiết bị y tế khám chữa bệnh",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không đáp ứng yêu cầu về kỹ thuật",
+      "submittedAt": "2025-12-02T14:40:59.101",
+      "models": []
+    },
+    {
+      "id": "75287c1f-b566-4de9-952b-7e75609938fa",
+      "contractorCode": "vn0108538481",
+      "taxCode": "0108538481",
+      "contractorName": "Công ty TNHH Thiết bị y tế Ngôi Sao Việt",
+      "status": "won",
+      "lotNo": "BP2500620021",
+      "lotName": "Mua sắm trang thiết bị y tế khám chữa bệnh",
+      "bidPrice": 1274000000,
+      "finalPrice": 1274000000,
+      "winningPrice": 1274000000,
+      "reason": "",
+      "submittedAt": "2025-12-02T14:40:59.101",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "f184db79-79b3-49c8-8314-a64527516519",
+      "name": "Hệ thống Elisa bán tự động (ủ, rửa, đọc)",
+      "model": "Theo Bảng kê khai thông tin hàng hóa dự thầu",
+      "brand": "Theo Bảng kê khai thông tin hàng hóa dự thầu",
+      "manufacturer": "Theo Bảng kê khai thông tin hàng hóa dự thầu",
+      "origin": "Theo Bảng kê khai thông tin hàng hóa dự thầu",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Theo Bảng Đáp ứng thông số kỹ thuật",
+      "unit": "Hệ thống",
+      "quantity": 2,
+      "unitPrice": 637000000,
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "decisionNo": "353/QĐ-VSR",
+      "decisionDate": "2025-12-02T23:59:59",
+      "resultPublishedDate": "2025-12-02T14:41:45"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +79,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500456726",
-    "notifyId": "40ad8206-3ccb-4210-9071-20c56c5a0a78",
-    "bidId": "9aed40ef-97d5-45d7-aa79-97e66d1bd987",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:06.756Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T00:43:05.234Z"
 }

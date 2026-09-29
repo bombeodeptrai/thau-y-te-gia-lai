@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "e283597c-4b90-4887-85e3-07fa8bbcd68b",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "BP2500654394",
+      "lotName": "Mua sắm dây cảm biến SpO2 cho máy theo dõi bệnh nhân của Bệnh viện Đa khoa Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 3772000,
+      "reason": "",
+      "submittedAt": "2025-10-21T10:24:35.267",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "0295a7e9-f7a6-41e4-b42e-3430c582943f",
+      "name": "Cáp SpO2 cho monitor theo dõi bệnh nhân",
+      "model": "Cáp SpO2",
+      "brand": "Cáp SpO2",
+      "manufacturer": "Shenzhen YKD Technology Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Kích thước: Dài >=3m\nPhạm vi đo: 70%-100%\nDải đo nhịp tim: 30 - 250 BPM",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 1886000,
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "decisionNo": "1005/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-21T23:59:59",
+      "resultPublishedDate": "2025-10-21T10:24:43"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500464329",
-    "notifyId": "IB2500464329",
-    "bidId": "50f1b747-a0a5-41ec-b532-698b04d4b2f3",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T02:33:04.762Z"
+  "fetchedAt": "2026-09-29T00:43:02.949Z"
 }
