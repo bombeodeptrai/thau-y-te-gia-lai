@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v10";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v11";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -47,6 +47,12 @@ const EXPLICIT_MEDICAL_TITLE_TERMS = [
   "loc mau", "chay than", "dien cuc tim", "may phan tich",
   "kham suc khoe", "giam dinh ma tuy", "phap y", "test xet nghiem",
   "may ct scanner", "xe bang ca", "xe tiem thuoc",
+  // Dịch vụ đào tạo chuyên môn lâm sàng vẫn thuộc phạm vi y tế dù không mua
+  // hàng hóa. Các cụm này mô tả trực tiếp nội dung/người học ngành y, tránh
+  // mở rộng sang mọi gói đào tạo của cơ quan có tên chứa từ "y tế".
+  "y hoc gia dinh", "dao tao bac sy", "dao tao bac si",
+  "boi duong bac sy", "boi duong bac si", "dao tao nhan vien y te",
+  "boi duong nhan vien y te", "dao tao can bo y te", "boi duong can bo y te",
 ];
 
 const MEDICAL_EQUIPMENT_SERVICE_TERMS = [
