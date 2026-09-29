@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-29T00:33:57.007Z",
+  "auditedAt": "2026-09-29T05:42:24.664Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 404,
+      "count": 405,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
@@ -74,13 +74,13 @@
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 11,
+      "count": 16,
       "error": ""
     },
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -110,13 +110,13 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 30,
+      "count": 32,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 56,
+      "count": 58,
       "error": ""
     },
     {
@@ -230,7 +230,7 @@
     {
       "term": "Hoài Ân",
       "success": true,
-      "count": 4,
+      "count": 6,
       "error": ""
     },
     {
@@ -271,24 +271,24 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 973,
-  "acceptedCount": 37,
-  "rejectedCount": 936,
+  "candidateCount": 991,
+  "acceptedCount": 38,
+  "rejectedCount": 953,
   "rejectedReasons": {
-    "excluded:tu van": 265,
-    "excluded:xay dung": 253,
-    "insufficient-medical-context": 242,
-    "excluded:xay lap": 36,
+    "excluded:tu van": 269,
+    "excluded:xay dung": 258,
+    "insufficient-medical-context": 243,
+    "excluded:xay lap": 38,
+    "excluded:cai tao": 34,
     "excluded:sua chua": 33,
-    "excluded:cai tao": 33,
-    "excluded:bao hiem": 16,
+    "excluded:bao hiem": 18,
     "excluded:suat an": 7,
     "excluded:thuc pham": 7,
     "excluded:may tinh": 6,
     "excluded:tham dinh": 6,
+    "excluded:trang phuc": 5,
+    "excluded:bao ve": 4,
     "excluded:bao tri": 4,
-    "excluded:trang phuc": 4,
-    "excluded:bao ve": 3,
     "excluded:phan bon": 3,
     "excluded:may in": 3,
     "excluded:may chu": 2,
@@ -304,6 +304,18 @@
     "excluded:chat thai": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600558508",
+      "name": "Lựa chọn đơn vị cung cấp dịch vụ tổ chức các khóa đào tạo Bồi dưỡng về Y học gia đình cho bác sỹ tại các TYT xã/phường trọng điểm thuộc 02 tỉnh Gia Lai và Lâm Đồng;",
+      "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
+      "accepted": true,
+      "score": 100,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "y hoc gia dinh",
+        "cung cap"
+      ]
+    },
     {
       "notifyNo": "IB2600558343",
       "name": "Mua sắm một số vật tư phục vụ bệnh nhân Khu xạ trị của Bệnh viện Đa khoa Gia Lai",
@@ -887,6 +899,51 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600547309",
+      "name": "Trồng và chăm sóc bảo vệ rừng trồng phòng hộ, sản xuất",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ve",
+      "matched": [
+        "bao ve"
+      ]
+    },
+    {
+      "notifyNo": "IB2600559820",
+      "name": "Trồng và chăm sóc bảo vệ rừng trồng phòng hộ, sản xuất",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ve",
+      "matched": [
+        "bao ve"
+      ]
+    },
+    {
+      "notifyNo": "DC2600018775",
+      "name": "Cung cấp dịch vụ hội trường, giải khát giữa giờ, in khẩu hiệu và backdroptại Gia Lai Đông",
+      "investor": "Trung tâm Khám phá khoa học và đổi mới sáng tạo",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600559474",
+      "name": "Gói thầu: Tư vấn thẩm tra nhiệm vụ, hồ sơ khảo sát địa hình, hồ sơ thiết kế và dự toán công trình Khảo sát, đo đạc điều chỉnh khoanh vùng và cắm mốc giới khu vực bảo vệ thắng cảnh Gành Ráng",
+      "investor": "Bảo tàng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "bao ve"
+      ]
+    },
+    {
       "notifyNo": "DC2600016442",
       "name": "Cung cấp, lắp đặt hệ thống điện cấp nguồn cho Máy Cộng hưởng từ (MRI) thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -938,17 +995,6 @@
       "score": 10,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600558508",
-      "name": "Lựa chọn đơn vị cung cấp dịch vụ tổ chức các khóa đào tạo Bồi dưỡng về Y học gia đình cho bác sỹ tại các TYT xã/phường trọng điểm thuộc 02 tỉnh Gia Lai và Lâm Đồng;",
-      "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
     },
     {
       "notifyNo": "IB2600556116",
@@ -1305,47 +1351,12 @@
         "tu van",
         "quan ly du an"
       ]
-    },
-    {
-      "notifyNo": "DC2600016089",
-      "name": "Tư vấn khảo sát xây dựng, lập Báo cáo nghiên cứu khả thi",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600547282",
-      "name": "Toàn bộ khối lượng thi công công trình Cải tạo, sửa chữa nghĩa trang liệt sĩ Quy Nhơn",
-      "investor": "Sở Nội vụ tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600554340",
-      "name": "Xây lắp công trình",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1059,
-  "afterCount": 1060,
+  "beforeCount": 1060,
+  "afterCount": 1061,
   "newCount": 1,
-  "filterStrategy": "unified-medical-scope-v10"
+  "filterStrategy": "unified-medical-scope-v11"
 }
