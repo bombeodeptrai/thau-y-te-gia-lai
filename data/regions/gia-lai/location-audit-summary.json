@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-29T00:22:31.158Z",
+  "auditedAt": "2026-09-29T00:33:57.007Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 403,
+      "count": 404,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -271,8 +271,8 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 972,
-  "acceptedCount": 36,
+  "candidateCount": 973,
+  "acceptedCount": 37,
   "rejectedCount": 936,
   "rejectedReasons": {
     "excluded:tu van": 265,
@@ -304,6 +304,23 @@
     "excluded:chat thai": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600558343",
+      "name": "Mua sắm một số vật tư phục vụ bệnh nhân Khu xạ trị của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 65,
+      "reason": "medical-investor",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "vat tu",
+        "mua",
+        "mua sam",
+        "xa tri",
+        "benh nhan"
+      ]
+    },
     {
       "notifyNo": "DC2600000882",
       "name": "mua sắm Máy Garo hơi tự động phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Đa Khoa Trung tâm tỉnh Gia Lai",
@@ -353,13 +370,14 @@
       "name": "Cung ứng giường bệnh nhân, băng ca, tủ đầu giường và xe đẩy các loại - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "accepted": true,
-      "score": 135,
+      "score": 155,
       "reason": "explicit-medical-title+medical-investor",
       "matched": [
         "giuong benh",
         "benh vien",
         "da khoa",
-        "cung ung"
+        "cung ung",
+        "benh nhan"
       ]
     },
     {
@@ -869,6 +887,19 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600016442",
+      "name": "Cung cấp, lắp đặt hệ thống điện cấp nguồn cho Máy Cộng hưởng từ (MRI) thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "DC2600018730",
       "name": "Tư vấn lập báo cáo Kinh tế - kỹ thuật điều chỉnh, bổ sung",
       "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
@@ -927,21 +958,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600558343",
-      "name": "Mua sắm một số vật tư phục vụ bệnh nhân Khu xạ trị của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "vat tu",
         "mua",
         "mua sam"
       ]
@@ -1329,7 +1345,7 @@
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1059,
-  "afterCount": 1059,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v9"
+  "afterCount": 1060,
+  "newCount": 1,
+  "filterStrategy": "unified-medical-scope-v10"
 }
