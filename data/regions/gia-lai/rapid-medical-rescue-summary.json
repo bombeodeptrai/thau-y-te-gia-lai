@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-29T08:44:17.350Z",
+  "rescuedAt": "2026-09-29T22:27:33.588Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 113,
+      "count": 108,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 244,
+      "count": 245,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -78,13 +78,13 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 10,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 15,
+      "count": 14,
       "error": ""
     },
     {
@@ -132,13 +132,13 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 3,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 18,
+      "count": 15,
       "error": ""
     },
     {
@@ -150,19 +150,19 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 61,
+      "count": 64,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 20,
+      "count": 23,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 17,
+      "count": 27,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
@@ -281,30 +281,31 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 652,
-  "acceptedCount": 20,
-  "rejectedCount": 632,
+  "candidateCount": 669,
+  "acceptedCount": 18,
+  "rejectedCount": 651,
   "rejectedReasons": {
-    "excluded:xay dung": 190,
-    "excluded:tu van": 186,
+    "excluded:xay dung": 197,
+    "excluded:tu van": 195,
     "insufficient-medical-context": 141,
-    "excluded:sua chua": 27,
+    "excluded:sua chua": 29,
     "excluded:xay lap": 24,
     "excluded:cai tao": 23,
-    "excluded:bao hiem": 11,
+    "excluded:bao hiem": 10,
     "excluded:thuc pham": 5,
     "excluded:bao ve": 4,
     "excluded:tham dinh": 4,
     "excluded:may tinh": 3,
     "excluded:trang phuc": 3,
+    "excluded:suat an": 3,
     "excluded:thuoc generic": 2,
     "excluded:bao tri": 2,
-    "excluded:suat an": 2,
     "excluded:cap dien": 1,
     "excluded:may in": 1,
     "excluded:may chu": 1,
     "excluded:thu y": 1,
-    "excluded:bao duong": 1
+    "excluded:bao duong": 1,
+    "excluded:kiem dinh": 1
   },
   "acceptedDiagnostics": [
     {
@@ -509,34 +510,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600518070",
-      "name": "Mua sắm xe lăn hỗ trợ cho nạn nhân chất độc da cam/dioxin Việt Nam",
-      "investor": "QUỸ NẠN NHÂN CHẤT ĐỘC DA CAM/DIOXIN VIỆT NAM",
-      "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
-      "matched": [
-        "xe lan",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600537610",
-      "name": "Cung ứng giường bệnh nhân, băng ca, tủ đầu giường và xe đẩy các loại - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 155,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "giuong benh",
-        "benh vien",
-        "da khoa",
-        "cung ung",
-        "benh nhan"
-      ]
-    },
-    {
       "notifyNo": "DC2600000882",
       "name": "mua sắm Máy Garo hơi tự động phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Đa Khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -614,6 +587,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600554554",
+      "name": "Toàn bộ khối lượng xây dựng và thiết bị",
+      "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600518463",
       "name": "Thi công xây dựng",
@@ -1043,25 +1027,12 @@
       "matched": [
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "IB2600551622",
-      "name": "Cung cấp dịch vụ vệ sinh tại cơ sở 1 và cơ sở 2 của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1063,
-  "afterCount": 1065,
-  "newCount": 2,
+  "beforeCount": 1064,
+  "afterCount": 1064,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v11"
 }
