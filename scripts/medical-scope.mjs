@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v9";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v10";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -121,7 +121,7 @@ const GOODS_PURCHASE_TERMS = [
 
 const CLINICAL_TERMS = [
   "xet nghiem", "chan doan", "kham chua benh", "kham benh", "chua benh",
-  "dieu tri", "phong mo", "phau thuat", "cap cuu", "hoi suc",
+  "dieu tri", "xa tri", "benh nhan", "phong mo", "phau thuat", "cap cuu", "hoi suc",
 ];
 
 function matchedTerms(text, terms) {
