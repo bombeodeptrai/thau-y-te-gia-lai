@@ -139,6 +139,28 @@ test("nhận gói túi máu của bệnh viện", () => {
   assert.ok(result.matched.includes("tui mau"));
 });
 
+test("nhận vật tư phục vụ bệnh nhân khu xạ trị của bệnh viện", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600558343-00",
+    bidName: ["Mua sắm một số vật tư phục vụ bệnh nhân Khu xạ trị của Bệnh viện Đa khoa Gia Lai"],
+    investorName: "Bệnh viện Đa khoa Gia Lai",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.matched.includes("benh nhan"));
+  assert.ok(result.matched.includes("xa tri"));
+});
+
+test("không nhận vật tư có từ bệnh nhân nếu bên mua không thuộc ngành y tế", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Mua sắm vật tư phục vụ chương trình hỗ trợ bệnh nhân"],
+    investorName: "Công ty sản xuất công nghiệp",
+  });
+
+  assert.equal(result.accepted, false, result.reason);
+});
+
 test("nhận gói xe lăn hỗ trợ nạn nhân chất độc da cam thực hiện tại Gia Lai", () => {
   const result = classifyMedicalTender({
     notifyNo: "IB2600518070-00",
