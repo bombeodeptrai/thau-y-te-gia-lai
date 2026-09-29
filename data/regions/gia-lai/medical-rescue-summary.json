@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-28T16:46:25.646Z",
+  "rescuedAt": "2026-09-29T00:23:06.128Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 205,
+      "count": 206,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1035,
+  "candidateCount": 1036,
   "acceptedCount": 41,
-  "rejectedCount": 994,
+  "rejectedCount": 995,
   "rejectedReasons": {
     "insufficient-medical-context": 271,
-    "excluded:xay dung": 268,
+    "excluded:xay dung": 269,
     "excluded:tu van": 266,
     "excluded:xay lap": 38,
     "excluded:sua chua": 38,
@@ -939,6 +939,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600557001",
+      "name": "Thi công xây dựng + Thiết bị",
+      "investor": "Ban quản lý phường Pleiku",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600552633",
       "name": "Ủy thác nhập khẩu",
       "investor": "Tổng công ty Hạ tầng mạng",
@@ -1371,21 +1382,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600530233",
-      "name": "Gói thầu MS-02",
-      "investor": "Binh đoàn 15",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1060,
-  "afterCount": 1060,
+  "beforeCount": 1059,
+  "afterCount": 1059,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v9"
 }

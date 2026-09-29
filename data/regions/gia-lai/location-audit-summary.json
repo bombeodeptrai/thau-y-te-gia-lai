@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-28T16:45:52.485Z",
+  "auditedAt": "2026-09-29T00:22:31.158Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 971,
+  "candidateCount": 972,
   "acceptedCount": 36,
-  "rejectedCount": 935,
+  "rejectedCount": 936,
   "rejectedReasons": {
     "excluded:tu van": 265,
-    "excluded:xay dung": 252,
+    "excluded:xay dung": 253,
     "insufficient-medical-context": 242,
     "excluded:xay lap": 36,
     "excluded:sua chua": 33,
@@ -1328,8 +1328,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1060,
-  "afterCount": 1060,
+  "beforeCount": 1059,
+  "afterCount": 1059,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v9"
 }
