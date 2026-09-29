@@ -1,55 +1,288 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 10,
   "bidders": [
     {
-      "id": "b9aa18f7-b5d0-45de-afb3-b6b675f994ef",
-      "contractorCode": "vn0401754999",
-      "taxCode": "",
-      "contractorName": "Công ty TNHH Y tế Phúc Phúc Hưng",
-      "status": "participating",
-      "lotNo": "PP2600218775",
-      "lotName": "Test nhanh chẩn đoán viêm gan",
-      "bidPrice": 409302000,
-      "finalPrice": 409302000,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-06-26T08:37:25.436",
-      "models": []
-    },
-    {
-      "id": "9f0957dd-7231-4901-92df-ebe6fedfbc5c",
+      "id": "123a768e-5097-4fd4-b7d8-b640c5d1c917",
       "contractorCode": "vn0316960510",
-      "taxCode": "",
+      "taxCode": "0316960510",
       "contractorName": "CÔNG TY TNHH BKS DIAGNOSTICS",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600218775",
       "lotName": "Test nhanh chẩn đoán viêm gan",
       "bidPrice": 481891200,
       "finalPrice": 481891200,
       "winningPrice": 0,
       "reason": "Xếp hạng 2",
-      "submittedAt": "2026-06-26T08:37:26.301",
+      "submittedAt": "2026-08-13T16:14:25.353",
       "models": []
     },
     {
-      "id": "54dd1762-6be9-4eac-9ed3-71371711b5ba",
+      "id": "7b8eb1b7-24a6-4fa8-b0d1-3dde04ef5c07",
+      "contractorCode": "vn0401754999",
+      "taxCode": "0401754999",
+      "contractorName": "Công ty TNHH Y tế Phúc Phúc Hưng",
+      "status": "won",
+      "lotNo": "PP2600218775",
+      "lotName": "Test nhanh chẩn đoán viêm gan",
+      "bidPrice": 409302000,
+      "finalPrice": 409302000,
+      "winningPrice": 409302000,
+      "reason": "",
+      "submittedAt": "2026-08-13T16:14:25.353",
+      "models": [
+        "ITP01003-DS50",
+        "ITP01102 -TC40",
+        "ITP01043 -DS50",
+        "HAV- W23",
+        "HEV - P23",
+        "IHBSB-302"
+      ]
+    },
+    {
+      "id": "c934386b-dd03-4891-b0ba-64d575e0c4d9",
       "contractorCode": "vn0401892974",
-      "taxCode": "",
+      "taxCode": "0401892974",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ & HÓA CHẤT DANAFACO",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600218776",
       "lotName": "Test nhanh chẩn đoán HIV",
       "bidPrice": 842223000,
       "finalPrice": 842223000,
-      "winningPrice": 0,
+      "winningPrice": 842223000,
       "reason": "",
-      "submittedAt": "2026-06-26T08:37:26.83",
-      "models": []
+      "submittedAt": "2026-08-13T16:14:25.353",
+      "models": [
+        "03FK10",
+        "03FK11",
+        "7D2343",
+        "ITP02006-DS50"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "3dbbb4b6-05e7-469b-b475-b6c91703a568",
+      "name": "Test nhanh chẩn đoán HIV thế hệ 3",
+      "model": "03FK10",
+      "brand": "Bioline™ HIV 1/2 3.0 - 03FK10",
+      "manufacturer": "Abbott Diagnostics Korea Inc.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2026",
+      "specification": "1. Phát hiện tất cả các type kháng thể (IgG, IgM, IgA), phân biệt virus HIV-1 bao gồm type phụ O và HIV-2 bằng sự hình thành 3 vạch rõ ràng trong mẫu huyết thanh, huyết tương và máu toàn phần. 2. Độ nhạy: 100%; Độ đặc hiệu: 99.8% so với ELISA 3. Nhạy với IgM trong giai đoạn nhiễm bệnh sớm 4. Được ban hành trong Hướng dẫn Quản Lý, Điều trị và chăm sóc HIV/AIDS của BYT năm 2015. 5. Được ban hành trong Khuyến cáo phương cách xét nghiệm chẩn đoán HIV quốc gia năm 2020 của Viện vệ sinh dịch tễ trung ương 6. Thể tích mẫu sử dụng: huyết thanh/huyết tương: 10 uL; máu toàn phần: 20uL Nếu bảo quản ở nhiệt độ 2~8°C, máu toàn phần có thể sử dụng trong vòng 3 ngày. 7.Không có phản ứng chéo với các mẫu thẩm tách máu, mẫu rối loạn đông máu, mẫu dương tính với kháng thể kháng HCV và mẫu máu phụ nữ mang thai. 8. Thời gian trả kết quả: 10 – 20 phút. 9. Được phê duyệt bởi WHO, USAID 10. Dạng khay, hộp 30 test 11. 1 test thử bao gồm: Phức hợp vàng: Kháng nguyên HIV-1 gp41, p24, HIV-2 gp36 tái tổ hợp – chất keo vàng (1,0 ± 0,2 μg); Vạch thử 1: Kháng nguyên HIV -1 tái tổ hợp (gp41, p24) (0,625 ± 0,125 μg); Vạch thử 2: Kháng nguyên HIV -2 tái tổ hợp (gp36) (0,5±0,1μg); Vạch chứng: Huyết thanh dê có kháng thể HIV (0,75 ± 0,15 μg). 12.Giới hạn phát hiện: ở ngưỡng pha loãng 320 lần của mẫu huyết thanh dương tính với HIV 13. Được phê duyệt bởi USAID 14. Nhiệt độ bảo quản: 1 – 30 °C 15. Đạt tiêu chuẩn ISO",
+      "unit": "Test",
+      "quantity": 28800,
+      "unitPrice": 29000,
+      "amount": 835200000,
+      "contractorCode": "vn0401892974",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ & HÓA CHẤT DANAFACO"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "4ad9c4e8-44a5-4958-b7e2-c38f9decd8b1",
+      "name": "Test nhanh Bioline HIV 1/2 3.0",
+      "model": "03FK11",
+      "brand": "Bioline™ HIV 1/2 3.0 - 03FK11",
+      "manufacturer": "Abbott Diagnostics Korea Inc.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2026",
+      "specification": "1. Phát hiện tất cả các type kháng thể (IgG, IgM, IgA), phân biệt virus HIV-1 bao gồm type phụ O và HIV-2 bằng sự hình thành 3 vạch rõ ràng trong mẫu huyết thanh, huyết tương và máu toàn phần. 2. Độ nhạy: 100%; Độ đặc hiệu: 99.8% so với ELISA 3. Nhạy với IgM trong giai đoạn nhiễm bệnh sớm 4. Được ban hành trong Hướng dẫn Quản Lý, Điều trị và chăm sóc HIV/AIDS của BYT năm 2015 5. Được ban hành trong Khuyến cáo phương cách xét nghiệm chẩn đoán HIV quốc gia năm 2020 của Viện vệ sinh dịch tễ trung ương. 6. Thể tích mẫu sử dụng: huyết thanh/huyết tương: 10 uL; máu toàn phần: 20uL 7. Không có phản ứng chéo với các mẫu thẩm tách máu, mẫu rối loạn đông máu, mẫu dương tính với kháng thể kháng HCV và mẫu máu phụ nữ mang thai. 8. Thời gian trả kết quả: 10 – 20 phút 9. Dạng khay. Hộp 100 test 10. 1 test thử bao gồm: Phức hợp vàng: Kháng nguyên HIV-1 gp41, p24, HIV-2 gp36 tái tổ hợp – chất keo vàng (1,0 ± 0,2 μg); Vạch thử 1: Kháng nguyên HIV -1 tái tổ hợp (gp41, p24) (0,625 ± 0,125 μg); Vạch thử 2: Kháng nguyên HIV -2 tái tổ hợp (gp36) (0,5±0,1μg); Vạch chứng: Huyết thanh dê có kháng thể HIV (0,75 ± 0,15 μg) 11.Giới hạn phát hiện: ở ngưỡng pha loãng 320 lần của mẫu huyết thanh dương tính với HIV 12.Nhiệt độ bảo quản: 1 – 30 °C 13. Tiêu chuẩn ISO",
+      "unit": "Test",
+      "quantity": 60,
+      "unitPrice": 32000,
+      "amount": 1920000,
+      "contractorCode": "vn0401892974",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ & HÓA CHẤT DANAFACO"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "38e1c42b-a608-4520-b300-d8dba94dea39",
+      "name": "Test nhanh Determine HIV-1/2",
+      "model": "7D2343",
+      "brand": "Determine™ HIV- ½ - 7D2343",
+      "manufacturer": "Abbott Diagnostics Medical Co., Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026",
+      "specification": "1. Độ nhạy 100% , độ đặc hiệu ≥ 99,75%, 2. Cho kết quả nhanh trong vòng 15 phút, Độ ổn định của kết quả xét nghiệm tới 60 phút, 3. Thể tích mẫu sử dụng: huyết thanh/huyết tương/máu toàn phần: 50uL. Không cần sử dụng thêm bất kỳ dung dịch dịch đệm (chase) cho mẫu huyết thanh, huyết tương . 4. Sản xuất tại nước thuộc G7. 5. Được ban hành trong Khuyến cáo phương cách xét nghiệm chẩn đoán HIV quốc gia năm 2020 của Viện vệ sinh dịch tễ trung ương 6. Thành phần chính: Anti- HIV-1 Antibody, Anti-HIV-2 Antibody, HIV-1 Group O (pGO9-CKS/XL-1), Antigen hiv-2 (PjC100), HIV-1 (pOM10/PV361) Antigen, HIV-1 (pTB319/XL-1) Antigen, HIV-2 (peptide) Antigen, HIV-1/2 Peptide- BSA 7. Đạt tiêu chuẩn ISO 8. Đạt tiêu chuẩn WHOPQ",
+      "unit": "Test",
+      "quantity": 100,
+      "unitPrice": 40950,
+      "amount": 4095000,
+      "contractorCode": "vn0401892974",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ & HÓA CHẤT DANAFACO"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "647f834f-ce68-4449-937c-7ab527edb041",
+      "name": "Advance quality Rapid",
+      "model": "ITP02006-DS50",
+      "brand": "Rapid Anti - HIV (1 & 2)",
+      "manufacturer": "InTec Products , INC.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Đạt tiêu chuẩn ISO13485:2016, GMP hoặc tương đương - Mẫu phẩm: Huyết thanh, huyết tương, máu toàn phần - Phát hiện các type kháng thể IgG, IgA,…đặc hiệu với HIV-1 và HIV-2 - Thành phần kít thử: Cộng hợp vàng HIV-Ag tái tổ hợp. - Vạch kết quả Anti-human IgG-Fe Mab. - Bảo quản ở nhiệt độ thường - Quy cách dạng khay",
+      "unit": "Test",
+      "quantity": 80,
+      "unitPrice": 12600,
+      "amount": 1008000,
+      "contractorCode": "vn0401892974",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ & HÓA CHẤT DANAFACO"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "6aa9f94d-2d2d-4245-881c-cb51912e8779",
+      "name": "Test nhanh chuẩn đoán HBsAg (dạng que nhúng)",
+      "model": "ITP01003-DS50",
+      "brand": "One Step HBsAg Test",
+      "manufacturer": "Intec",
+      "origin": "Intec/ Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "- Dạng que nhúng - Độ nhạy lâm sàng: 100% - Mẫu: Huyết thanh, huyết tương hoặc máu toàn phần - Phát hiện định tính kháng nguyên bề mặt vi rút viêm gan B (HBsAg) trong mẫu huyết thanh, huyết tương hoặc máu toàn phần - Đóng gói riêng biệt từng Test - Xuất xứ: Intec/ Trung Quốc",
+      "unit": "Test",
+      "quantity": 48600,
+      "unitPrice": 3390,
+      "amount": 164754000,
+      "contractorCode": "vn0401754999",
+      "winnerNames": [
+        "Công ty TNHH Y tế Phúc Phúc Hưng"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "a3891b1b-35ac-4dae-9050-c394c0cb6629",
+      "name": "Test nhanh chẩn đoán HCV",
+      "model": "ITP01102 -TC40",
+      "brand": "Advanced Quality™ Rapid Anti-HCV Test",
+      "manufacturer": "Intec",
+      "origin": "Intec/ Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "- Định tính phát hiện các kháng thể kháng HCV trong huyết thanh hoặc huyết tương người. Có dung dịch đệm đi kèm - Độ nhạy : 100%; độ đặc hiệu : 100% ; độ chính xác: 100% . - Dạng khay - Xuất xứ: Intec/ Trung Quốc",
+      "unit": "Test",
+      "quantity": 14400,
+      "unitPrice": 10300,
+      "amount": 148320000,
+      "contractorCode": "vn0401754999",
+      "winnerNames": [
+        "Công ty TNHH Y tế Phúc Phúc Hưng"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "338734b7-30d4-435c-94a6-43be0d068159",
+      "name": "Que thử xét nghiệm định tính kháng nguyên HBeAg",
+      "model": "ITP01043 -DS50",
+      "brand": "Advanced Quality™ Diagnostic Kit for Hepatitis B e Antigen (Colloidal Gold)",
+      "manufacturer": "Intec",
+      "origin": "Intec/ Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "Phát hiện định tính HBeAg trong mẫu huyết thanh huyết tương người. Độ nhạy: 96,2% Độ đặc hiệu: ≥ 99,4% . Đọc kết quả: ≤ 20 phút Không có phản ứng chéo với các mẫu chứa yếu tố dạng thấp, chứa kháng thể kháng HCV, kháng thể kháng HIV và phụ nữ mang thai Xuất xứ: Intec/ Trung Quốc",
+      "unit": "Test",
+      "quantity": 7000,
+      "unitPrice": 8100,
+      "amount": 56700000,
+      "contractorCode": "vn0401754999",
+      "winnerNames": [
+        "Công ty TNHH Y tế Phúc Phúc Hưng"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "e5a1d06c-6de5-4b5e-8d6b-7cbcd18abe0a",
+      "name": "Test nhanh chẩn đoán HAV (Dạng khay)",
+      "model": "HAV- W23",
+      "brand": "Fastep",
+      "manufacturer": "Assure Tech",
+      "origin": "Assure Tech/ Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "Phát hiện định tính kháng thể IgM kháng HAV trong mẫu huyết thanh, huyết tương hoặc máu toàn phần - Độ nhạy: 100%; Độ đặc hiệu: ≥ 98% - Thành phần chính: Vạch thử: Kháng thể đơn dòng kháng IgM người; Vạch chứng: Kháng thể đơn dòng kháng HAV; Đệm liên hợp: Kháng thể đơn dòng kháng HAV-vàng; kháng thể kháng HAV tự nhiên tinh khiết Xuất xứ: Assure Tech/ Trung Quốc",
+      "unit": "Test",
+      "quantity": 1200,
+      "unitPrice": 16900,
+      "amount": 20280000,
+      "contractorCode": "vn0401754999",
+      "winnerNames": [
+        "Công ty TNHH Y tế Phúc Phúc Hưng"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "556fc631-38b5-4e1f-a9b8-7b73868856ef",
+      "name": "Test nhanh chẩn đoán HEV",
+      "model": "HEV - P23",
+      "brand": "Fastep",
+      "manufacturer": "Assure Tech",
+      "origin": "Assure Tech/ Trung Quốc",
+      "manufactureYear": "2025",
+      "specification": "Phát hiện kháng thể kháng HEV trong huyết thanh, huyết tương hoặc máu người. Độ nhạy 98,6%, độ đặc hiệu 99,3% Xuất xứ: Assure Tech/ Trung Quốc",
+      "unit": "Test",
+      "quantity": 960,
+      "unitPrice": 18300,
+      "amount": 17568000,
+      "contractorCode": "vn0401754999",
+      "winnerNames": [
+        "Công ty TNHH Y tế Phúc Phúc Hưng"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    },
+    {
+      "id": "473c3cf7-bc8e-481e-99da-ec0659ec53df",
+      "name": "HbsAb Rapid Test",
+      "model": "IHBSB-302",
+      "brand": "Truline",
+      "manufacturer": "Medicon",
+      "origin": "Medicon/ Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Phát hiện định tính kháng thể kháng virus viêm gan B trong huyết thanh hoặc huyết tương. Mẫu bệnh phẩm: Huyết tương/Huyết thanh - Độ nhạy 100%. - Độ đặc hiệu 98,7%. - Đô chính xác 99.5%. - Ngưỡng phát hiện: 10mIU/ml. Xuất xứ: Medicon/ Việt Nam",
+      "unit": "Test",
+      "quantity": 100,
+      "unitPrice": 16800,
+      "amount": 1680000,
+      "contractorCode": "vn0401754999",
+      "winnerNames": [
+        "Công ty TNHH Y tế Phúc Phúc Hưng"
+      ],
+      "lotNo": "",
+      "decisionNo": "1187/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T23:59:59",
+      "resultPublishedDate": "2026-08-13T16:14:34"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -104,6 +337,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:34:26.592Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T08:40:59.732Z"
 }

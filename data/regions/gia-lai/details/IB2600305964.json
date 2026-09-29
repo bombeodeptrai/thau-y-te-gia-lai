@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "5dcbd400-a777-40ad-8e87-b10c89871a2b",
+      "contractorCode": "vn6001718348",
+      "taxCode": "6001718348",
+      "contractorName": "CÔNG TY TNHH HOÀNG GIA COMPANY",
+      "status": "won",
+      "lotNo": "BP2600433783",
+      "lotName": "Gói 6. Bộ bơm tiêm dùng cho máy bơm cản quang gồm 01 mặt hàng/ 01 phần (lô)",
+      "bidPrice": 52000000,
+      "finalPrice": 52000000,
+      "winningPrice": 52000000,
+      "reason": "",
+      "submittedAt": "2026-08-17T14:09:52.989",
+      "models": [
+        "AT2218"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "74f3e4f4-6907-4b57-ab26-36407bf2a9a5",
+      "name": "Bộ bơm tiêm 200ml sử dụng cho máy bơm cản quang Optivantage dùng cho chụp CT (02 nòng)",
+      "model": "AT2218",
+      "brand": "Antom Medica Limited - \r\nTrung Quốc",
+      "manufacturer": "Antom Medica Limited",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Từ 2025 trở đi",
+      "specification": "Bộ bơm tiêm 200ml sử dụng cho máy bơm cản quang dual Pack (2 nòng), 200ml, 350-400psi (sử dụng cho máy bơm cản quang Optivantage)",
+      "unit": "Bộ",
+      "quantity": 200,
+      "unitPrice": 260000,
+      "amount": 52000000,
+      "contractorCode": "vn6001718348",
+      "winnerNames": [
+        "CÔNG TY TNHH HOÀNG GIA COMPANY"
+      ],
+      "lotNo": "",
+      "decisionNo": "1198/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-17T14:05:16",
+      "resultPublishedDate": "2026-08-17T14:10:17"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:34:24.490Z"
+  "fetchedAt": "2026-09-29T08:40:56.941Z"
 }
