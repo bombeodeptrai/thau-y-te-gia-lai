@@ -161,6 +161,27 @@ test("không nhận vật tư có từ bệnh nhân nếu bên mua không thuộ
   assert.equal(result.accepted, false, result.reason);
 });
 
+test("nhận gói đào tạo Y học gia đình cho bác sĩ tại trạm y tế", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600558508-00",
+    bidName: ["Lựa chọn đơn vị cung cấp dịch vụ tổ chức các khóa đào tạo Bồi dưỡng về Y học gia đình cho bác sỹ tại các TYT xã/phường trọng điểm thuộc 02 tỉnh Gia Lai và Lâm Đồng"],
+    investorName: "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.ok(result.reason.includes("explicit-medical-title"));
+  assert.ok(result.matched.includes("y hoc gia dinh"));
+});
+
+test("không nhận mọi gói bồi dưỡng chỉ vì có từ gia đình", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Tổ chức bồi dưỡng kỹ năng xây dựng gia đình văn hóa cho cán bộ phường"],
+    investorName: "Trung tâm Văn hóa tỉnh Gia Lai",
+  });
+
+  assert.equal(result.accepted, false, result.reason);
+});
+
 test("nhận gói xe lăn hỗ trợ nạn nhân chất độc da cam thực hiện tại Gia Lai", () => {
   const result = classifyMedicalTender({
     notifyNo: "IB2600518070-00",
