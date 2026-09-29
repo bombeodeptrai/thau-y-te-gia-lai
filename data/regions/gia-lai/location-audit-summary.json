@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-29T10:41:10.225Z",
+  "auditedAt": "2026-09-29T18:05:26.864Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 414,
+      "count": 415,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 7,
+      "count": 13,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 70,
+      "count": 71,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1031,
+  "candidateCount": 1039,
   "acceptedCount": 42,
-  "rejectedCount": 989,
+  "rejectedCount": 997,
   "rejectedReasons": {
-    "excluded:tu van": 285,
-    "excluded:xay dung": 267,
+    "excluded:tu van": 287,
+    "excluded:xay dung": 273,
     "insufficient-medical-context": 247,
     "excluded:sua chua": 38,
     "excluded:xay lap": 38,
@@ -939,6 +939,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600025786",
+      "name": "Tư vấn lập Hồ sơ mời thầu, đánh giá Hồ sơ dự thầu",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "DC2600025620",
       "name": "Mua sắm, di dời, sửa chữa máy móc phục vụ công tác",
       "investor": "Công an tỉnh Gia Lai",
@@ -1363,18 +1374,6 @@
     {
       "notifyNo": "DC2600010071",
       "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Võ Văn Kiệt (nay là Trường trung học phổ thông Trần Quốc Tuấn), hạng mục: Xây mới khối nhà 02 tầng, gồm 04 phòng lý thuyết, 03 phòng bộ môn và các hạng mục phụ trợ.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "DC2600010081",
-      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 4 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
       "accepted": false,
       "score": -100,
