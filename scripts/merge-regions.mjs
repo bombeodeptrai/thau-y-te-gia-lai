@@ -1,7 +1,11 @@
 import { cp, mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { mergeTenderRegionSlugs } from "./region-membership.mjs";
+import {
+  inferTenderRegionSlugs,
+  mergeTenderRegionSlugs,
+  tenderBelongsToRegion,
+} from "./region-membership.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = resolve(root, "data");
@@ -132,6 +136,8 @@ for (const region of config.regions || []) {
       region: tender.region || region.name,
       provinceCodes: tender.provinceCodes || region.provinceCodes,
     };
+    const inferredRegionSlugs = inferTenderRegionSlugs(tagged, config.regions || []);
+    if (inferredRegionSlugs.length > 1) tagged.regionSlugs = inferredRegionSlugs;
     tenderMap.set(notifyNo, mergeTender(tenderMap.get(notifyNo), tagged));
   }
 
@@ -145,6 +151,12 @@ for (const region of config.regions || []) {
 
 const tenders = [...tenderMap.values()].sort((left, right) =>
   new Date(right.publicDate || 0) - new Date(left.publicDate || 0));
+// tenderCount phục vụ giao diện phải phản ánh membership sau khử trùng, kể cả
+// gói đa tỉnh chỉ được một workflow vùng phát hiện ở lượt hiện tại.
+for (const coverage of regionCoverage) {
+  coverage.tenderCount = tenders.filter((tender) =>
+    tenderBelongsToRegion(tender, coverage.slug)).length;
+}
 const fetchedAt = newestIso(fetchedTimes);
 const initializedRegions = regionCoverage.filter((item) => item.initialized);
 const totalBidderCount = regionCoverage.reduce((sum, item) => sum + item.bidderCount, 0);

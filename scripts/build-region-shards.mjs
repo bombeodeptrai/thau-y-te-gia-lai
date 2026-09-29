@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { tenderBelongsToRegion } from "./region-membership.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = resolve(root, "data");
@@ -24,6 +25,10 @@ async function writePayload(path, payload) {
 const regionConfig = await readJson(resolve(dataDir, "regions.json"));
 const coverage = await readJson(resolve(dataDir, "region-coverage.json"), { regions: [] });
 const coverageBySlug = new Map((coverage.regions || []).map((item) => [item.slug, item]));
+const mergedTenderPayload = await readJson(resolve(dataDir, "tenders.json"), { tenders: [] });
+const mergedTenders = Array.isArray(mergedTenderPayload.tenders)
+  ? mergedTenderPayload.tenders
+  : [];
 
 const manifest = [];
 for (const region of regionConfig.regions || []) {
@@ -32,7 +37,11 @@ for (const region of regionConfig.regions || []) {
   const tenderPayload = await readJson(resolve(sourceDir, "tenders.json"), { tenders: [] });
   const bidderPayload = await readJson(resolve(sourceDir, "bidders.json"), { bidders: [] });
   const equipmentPayload = await readJson(resolve(sourceDir, "equipment.json"), { equipment: [] });
-  const tenders = tenderPayload.tenders || [];
+  // Dùng membership của dữ liệu hợp nhất để gói đa tỉnh xuất hiện trong mọi
+  // shard liên quan ngay cả khi lượt quét hiện tại mới phát hiện nó ở một vùng.
+  const tenders = mergedTenders.length
+    ? mergedTenders.filter((tender) => tenderBelongsToRegion(tender, slug))
+    : (tenderPayload.tenders || []);
   const bidders = bidderPayload.bidders || [];
   const equipment = equipmentPayload.equipment || [];
   const expected = coverageBySlug.get(slug) || {};
@@ -41,6 +50,9 @@ for (const region of regionConfig.regions || []) {
   // không đưa các tệp rỗng lên GitHub Pages.
   if (Number(expected.tenderCount) > 0 && tenders.length === 0) {
     throw new Error(`Không tạo được shard ${region.name}: báo cáo có ${expected.tenderCount} gói nhưng kết quả lọc bằng 0`);
+  }
+  if (Number(expected.tenderCount) > 0 && tenders.length !== Number(expected.tenderCount)) {
+    throw new Error(`Shard ${region.name} lệch số gói: ${tenders.length}/${expected.tenderCount}`);
   }
   if (Number(expected.bidderCount) > 0 && bidders.length === 0) {
     throw new Error(`Không tạo được shard nhà thầu ${region.name}: dữ liệu nguồn bị rỗng`);
