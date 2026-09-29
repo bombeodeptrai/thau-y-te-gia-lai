@@ -1,9 +1,241 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 8,
+  "bidders": [
+    {
+      "id": "16bb9fbb-fc47-4883-8ca1-72d9b5caefaf",
+      "contractorCode": "vn0107834128",
+      "taxCode": "0107834128",
+      "contractorName": "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM",
+      "status": "won",
+      "lotNo": "BP2600433724",
+      "lotName": "Gói 4.Nẹp chấn thương các loại gồm 08 mặt hàng/ 1 phần (lô)",
+      "bidPrice": 79000000,
+      "finalPrice": 79000000,
+      "winningPrice": 79000000,
+      "reason": "",
+      "submittedAt": "2026-08-13T15:23:03.529",
+      "models": [
+        "OSF330",
+        "NGCDC-01",
+        "NGCDC-02",
+        "NGCDC-03",
+        "NGCDC-04",
+        "NGCDC-05",
+        "NGCDC-06",
+        "OSF645"
+      ]
+    },
+    {
+      "id": "aa30ba50-39a4-4038-ba27-b2ef91f78772",
+      "contractorCode": "vn5500527178",
+      "taxCode": "5500527178",
+      "contractorName": "CÔNG TY CỔ PHẦN SINH",
+      "status": "lost",
+      "lotNo": "BP2600433724",
+      "lotName": "Gói 4.Nẹp chấn thương các loại gồm 08 mặt hàng/ 1 phần (lô)",
+      "bidPrice": 81100000,
+      "finalPrice": 81100000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-08-13T15:23:03.529",
+      "models": []
+    },
+    {
+      "id": "b3bbcbb5-d354-44f0-8e83-38e2d6563136",
+      "contractorCode": "vn5901186140",
+      "taxCode": "5901186140",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN KHANG HIỆP PHÁT",
+      "status": "lost",
+      "lotNo": "BP2600433724",
+      "lotName": "Gói 4.Nẹp chấn thương các loại gồm 08 mặt hàng/ 1 phần (lô)",
+      "bidPrice": 81188000,
+      "finalPrice": 81188000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-08-13T15:23:03.529",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "a4ccec47-ef04-432f-b3d9-e71d1f468d47",
+      "name": "Nẹp cổ cứng các cỡ",
+      "model": "OSF330",
+      "brand": "OSF330",
+      "manufacturer": "Anji Hongde Medical Products Co., Ltd/Trung Quốc",
+      "origin": "Anji Hongde Medical Products Co., Ltd/Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Nẹp cổ cứng cố định cột sống cổ sau chấn thương hoặc sau phẫu thuật Size: S,M, L\r\n-Được  trang bị dây đeo đàn hồi và hệ thống buộc chặt ăn toàn để có thể tùy chỉnh phù hợp với nhiều kích cỡ khác nhau",
+      "unit": "Cái",
+      "quantity": 200,
+      "unitPrice": 89520.6188,
+      "amount": 17904123.7621,
+      "contractorCode": "vn0107834128",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1186/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T15:20:40",
+      "resultPublishedDate": "2026-08-13T15:23:15"
+    },
+    {
+      "id": "43e59e58-df84-4ee1-a6fd-1aa5e80b47c1",
+      "name": "Nẹp cố định xương cẳng chân người lớn (gỗ)",
+      "model": "NGCDC-01",
+      "brand": "NGCDC-01",
+      "manufacturer": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "origin": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu: Gỗ; Bộ 02 cái.\r\n Kích thước: \r\n- Dài 80cm (±5%)\r\n- Rộng 6cm(±5%)\r\n- Dày 1cm(±5%)",
+      "unit": "Bộ",
+      "quantity": 300,
+      "unitPrice": 53517.7612,
+      "amount": 16055328.3737,
+      "contractorCode": "vn0107834128",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1186/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T15:20:40",
+      "resultPublishedDate": "2026-08-13T15:23:15"
+    },
+    {
+      "id": "4756027e-da8e-4c78-924c-739702a908e0",
+      "name": "Nẹp cố định xương cẳng chân trẻ em (gỗ)",
+      "model": "NGCDC-02",
+      "brand": "NGCDC-02",
+      "manufacturer": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "origin": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu: Gỗ. Bộ 02 cái; Kích thước: \r\n- Dài 50cm (±5%) \r\n- Rộng 6cm (±5%) \r\n- Dày 1 cm (±5%)",
+      "unit": "Bộ",
+      "quantity": 10,
+      "unitPrice": 52544.711,
+      "amount": 525447.1104,
+      "contractorCode": "vn0107834128",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1186/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T15:20:40",
+      "resultPublishedDate": "2026-08-13T15:23:15"
+    },
+    {
+      "id": "4ce7b443-7014-45c0-901f-bcca78bc3141",
+      "name": "Nẹp cố định xương cẳng tay người lớn (gỗ)",
+      "model": "NGCDC-03",
+      "brand": "NGCDC-03",
+      "manufacturer": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "origin": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu: Gỗ; Bộ 02 cái; Kích thước \r\n- Dài 40cm (±5%)\r\n- Rộng 5cm (±5%)\r\n- Dày 1cm (±5%)",
+      "unit": "Bộ",
+      "quantity": 300,
+      "unitPrice": 35029.8074,
+      "amount": 10508942.2082,
+      "contractorCode": "vn0107834128",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1186/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T15:20:40",
+      "resultPublishedDate": "2026-08-13T15:23:15"
+    },
+    {
+      "id": "931d42be-742d-4236-90e5-32f54d26d359",
+      "name": "Nẹp cố định xương cẳng tay trẻ em (gỗ)",
+      "model": "NGCDC-04",
+      "brand": "NGCDC-04",
+      "manufacturer": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "origin": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu: Gỗ; Bộ 2 cái; Kích thước:\r\n- Dài 25 cm (±5%)\r\n- Rộng 5cm (±5%)\r\n- Dày 1cm (±5%)",
+      "unit": "Bộ",
+      "quantity": 10,
+      "unitPrice": 30164.5563,
+      "amount": 301645.5634,
+      "contractorCode": "vn0107834128",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1186/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T15:20:40",
+      "resultPublishedDate": "2026-08-13T15:23:15"
+    },
+    {
+      "id": "7b82c6bd-affb-4e7d-a649-0fb98d2fddfc",
+      "name": "Nẹp cố định xương đùi người lớn (gỗ)",
+      "model": "NGCDC-05",
+      "brand": "NGCDC-05",
+      "manufacturer": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "origin": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu: Gỗ; Bộ 02 cái gồm:\r\n01 cái Kích thước: \r\n- Dài 85 cm(±5%)\r\n- Rộng 7cm (±5%)\r\n- Dày 1cm (±5%)\r\n01 cái : \r\n- Dài 120 cm (±5%)\r\n- Rộng 7cm(±5%)\r\n- Dày 1cm (±5%)",
+      "unit": "Bộ",
+      "quantity": 300,
+      "unitPrice": 102170.2715,
+      "amount": 30651081.4406,
+      "contractorCode": "vn0107834128",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1186/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T15:20:40",
+      "resultPublishedDate": "2026-08-13T15:23:15"
+    },
+    {
+      "id": "951e9b69-201c-414f-ad5f-71c5ed790a35",
+      "name": "Nẹp cố định xương đùi trẻ em (gỗ)",
+      "model": "NGCDC-06",
+      "brand": "NGCDC-06",
+      "manufacturer": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "origin": "Công ty cổ phần Đất Việt Thành/ Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu: Gỗ. Bộ 02 cái. Kích thước: \r\n- 1 cái: \r\nDài 60 cm (±5%) \r\nRộng 6cm (±5%) \r\nDày 1 cm(±5%)\r\n- 1 cái: \r\nDài 80 cm (±5%) \r\nRộng 6cm (±5%) \r\nDày 1 cm(±5%)",
+      "unit": "Bộ",
+      "quantity": 5,
+      "unitPrice": 87574.5184,
+      "amount": 437872.592,
+      "contractorCode": "vn0107834128",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1186/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T15:20:40",
+      "resultPublishedDate": "2026-08-13T15:23:15"
+    },
+    {
+      "id": "f27c7219-1289-438c-81b7-ca54ea78912d",
+      "name": "Đai cột sống người lớn",
+      "model": "OSF645",
+      "brand": "OSF645",
+      "manufacturer": "Anji Hongde Medical Products Co., Ltd/Trung Quốc",
+      "origin": "Anji Hongde Medical Products Co., Ltd/Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Đai cột sống người lớn\r\n-Với hệ thông thanh nẹp hợp kim định hình được sắp xếp khoa học theo chiều dọc và phần than được may bằng vải chun đặc biệt có dodoj bền và đàn hồi cao làm cho sản phẩm nhẹ, thoáng khí , đẹp tạo ra cảm giác yên tâm và thoải mái cho người sử dụng",
+      "unit": "Cái",
+      "quantity": 40,
+      "unitPrice": 65388.9737,
+      "amount": 2615558.9496,
+      "contractorCode": "vn0107834128",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AK GLOBAL VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1186/QĐ-BVĐKGL",
+      "decisionDate": "2026-08-13T15:20:40",
+      "resultPublishedDate": "2026-08-13T15:23:15"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -212,6 +444,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:34:22.655Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T06:02:14.604Z"
 }
