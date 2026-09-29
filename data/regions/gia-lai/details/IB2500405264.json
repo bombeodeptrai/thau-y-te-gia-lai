@@ -1,9 +1,234 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 7,
+  "bidders": [
+    {
+      "id": "eeb3b6bc-4101-40c6-89e5-2eef4f02fd22",
+      "contractorCode": "vn0304992275",
+      "taxCode": "0304992275",
+      "contractorName": "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HÓA CHẤT VIỆT SINH",
+      "status": "won",
+      "lotNo": "PP2500394529",
+      "lotName": "Phần 1: Hóa chất xét nghiệm giun sán 1 tương thích với máy ELISA bán tự động",
+      "bidPrice": 21519960000,
+      "finalPrice": 21519960000,
+      "winningPrice": 21519960000,
+      "reason": "",
+      "submittedAt": "2025-12-09T20:22:31.123",
+      "models": [
+        "KST1",
+        "KST2",
+        "KST3",
+        "KST5",
+        "KST6",
+        "KST7"
+      ]
+    },
+    {
+      "id": "2f6563f3-f29c-46d8-9a55-dec84d2b6306",
+      "contractorCode": "vn0401517772",
+      "taxCode": "0401517772",
+      "contractorName": "Công ty Cổ phần Thương mại và Dịch vụ Artcare",
+      "status": "lost",
+      "lotNo": "PP2500394530",
+      "lotName": "Phần 2: Hóa chất xét nghiệm giun sán 2 tương thích với máy ELISA bán tự động",
+      "bidPrice": 697050000,
+      "finalPrice": 697050000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu chào giá cao hơn được xếp thứ 2",
+      "submittedAt": "2025-12-09T20:22:31.123",
+      "models": []
+    },
+    {
+      "id": "689dfd71-74f0-4657-a43d-6eeae6e767df",
+      "contractorCode": "vn0302376496",
+      "taxCode": "0302376496",
+      "contractorName": "CÔNG TY TNHH M.D.S. TRUNG THIỆN",
+      "status": "won",
+      "lotNo": "PP2500394530",
+      "lotName": "Phần 2: Hóa chất xét nghiệm giun sán 2 tương thích với máy ELISA bán tự động",
+      "bidPrice": 683865000,
+      "finalPrice": 683865000,
+      "winningPrice": 683865000,
+      "reason": "",
+      "submittedAt": "2025-12-09T20:22:31.123",
+      "models": [
+        "ECHG0130"
+      ]
+    },
+    {
+      "id": "17697ebe-d3a2-488c-be9e-cf525758a141",
+      "contractorCode": "vn0315765965",
+      "taxCode": "0315765965",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐOÀN GIA SÀI GÒN",
+      "status": "lost",
+      "lotNo": "PP2500394530",
+      "lotName": "Phần 2: Hóa chất xét nghiệm giun sán 2 tương thích với máy ELISA bán tự động",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng tiêu chí kỹ thuật trong mục II - Yêu cầu về kỹ thuật chi tiết của Chương V",
+      "submittedAt": "2025-12-09T20:22:31.123",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2954222e-598d-4648-b3eb-7d212c5752be",
+      "name": "Bộ xét nghiệm kháng thể IgG kháng sán dãi chó",
+      "model": "ECHG0130",
+      "brand": "Echinococcus IgG",
+      "manufacturer": "Gold Standard Diagnostics Frankfurt GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Echinococcus IgG  được chỉ định để xét nghiệm kháng thể kháng Echinococcus trong huyết thanh hoặc huyết tương \r\n- Độ nhạy: 97.22%\r\n- Độ đặc hiệu: 98.82%\r\nQuy cách: 96 test/ hộp",
+      "unit": "Hộp",
+      "quantity": 150,
+      "unitPrice": 4559100,
+      "amount": 683865000,
+      "contractorCode": "vn0302376496",
+      "winnerNames": [
+        "CÔNG TY TNHH M.D.S. TRUNG THIỆN"
+      ],
+      "lotNo": "",
+      "decisionNo": "387/QĐ-VSR",
+      "decisionDate": "2025-12-09T23:59:59",
+      "resultPublishedDate": "2025-12-09T20:23:39"
+    },
+    {
+      "id": "5083ed6f-99c0-4d1e-9e78-8b6e17239302",
+      "name": "Bộ xét nghiệm kháng thể IgG kháng amip",
+      "model": "KST1",
+      "brand": "KST1",
+      "manufacturer": "Công ty TNHH Sản xuất Thương mại Hóa chất Việt Sinh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "1.Phát hiện kháng thể lớp IgG trong huyết thanh người bệnh để chẩn đoán bệnh do  amip Entamoeba histolytica\n2. Độ nhạy: 90,62%; Độ đặc hiệu: 94,44%\n3. Quy cách: 96 test/ Bộ đựng trong hộp",
+      "unit": "Bộ",
+      "quantity": 80,
+      "unitPrice": 2877000,
+      "amount": 230160000,
+      "contractorCode": "vn0304992275",
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HÓA CHẤT VIỆT SINH "
+      ],
+      "lotNo": "",
+      "decisionNo": "387/QĐ-VSR",
+      "decisionDate": "2025-12-09T23:59:59",
+      "resultPublishedDate": "2025-12-09T20:23:39"
+    },
+    {
+      "id": "4fb4629e-79b7-47ee-b0d6-99f1c63625d4",
+      "name": "Bộ xét nghiệm kháng thể IgG kháng gạo lợn",
+      "model": "KST2",
+      "brand": "KST2",
+      "manufacturer": "Công ty TNHH Sản xuất Thương mại Hóa chất Việt Sinh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "1.Phát hiện kháng thể lớp IgG trong huyết thanh người bệnh để chẩn đoán bệnh do Cysticercus cellulosae.\n2. Độ nhạy: 94,76%; Độ đặc hiệu: 97,00%\n3. Quy cách: 96 test/ Bộ đựng trong hộp",
+      "unit": "Bộ",
+      "quantity": 1200,
+      "unitPrice": 2877000,
+      "amount": 3452400000,
+      "contractorCode": "vn0304992275",
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HÓA CHẤT VIỆT SINH "
+      ],
+      "lotNo": "",
+      "decisionNo": "387/QĐ-VSR",
+      "decisionDate": "2025-12-09T23:59:59",
+      "resultPublishedDate": "2025-12-09T20:23:39"
+    },
+    {
+      "id": "4054260d-f360-42f4-86df-b56537d2e666",
+      "name": "Bộ xét nghiệm kháng thể IgG kháng sán lá gan lớn",
+      "model": "KST3",
+      "brand": "KST3",
+      "manufacturer": "Công ty TNHH Sản xuất Thương mại Hóa chất Việt Sinh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "1.Phát hiện kháng thể lớp IgG trong huyết thanh người bệnh để chẩn đoán bệnh do  Fasciola sp.\n2. Độ nhạy: 95,54%; Độ đặc hiệu: 93,75%\n3.Quy cách: 96 test/ Bộ đựng trong hộp",
+      "unit": "Bộ",
+      "quantity": 1600,
+      "unitPrice": 2877000,
+      "amount": 4603200000,
+      "contractorCode": "vn0304992275",
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HÓA CHẤT VIỆT SINH "
+      ],
+      "lotNo": "",
+      "decisionNo": "387/QĐ-VSR",
+      "decisionDate": "2025-12-09T23:59:59",
+      "resultPublishedDate": "2025-12-09T20:23:39"
+    },
+    {
+      "id": "4ca29c79-2516-470c-8e45-d8a1b53b0214",
+      "name": "Bộ xét nghiệm kháng thể IgG kháng giun đầu gai",
+      "model": "KST5",
+      "brand": "KST5",
+      "manufacturer": "Công ty TNHH Sản xuất Thương mại Hóa chất Việt Sinh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "1. Phát hiện kháng thể lớp IgG trong huyết thanh người bệnh để chẩn đoán bệnh do  Gnathostoma sp.\n2. Độ nhạy: 90,91%; Độ đặc hiệu: 90,80%\n3, Quy cách: 96 test/ Bộ đựng trong hộp",
+      "unit": "Bộ",
+      "quantity": 1400,
+      "unitPrice": 2877000,
+      "amount": 4027800000,
+      "contractorCode": "vn0304992275",
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HÓA CHẤT VIỆT SINH "
+      ],
+      "lotNo": "",
+      "decisionNo": "387/QĐ-VSR",
+      "decisionDate": "2025-12-09T23:59:59",
+      "resultPublishedDate": "2025-12-09T20:23:39"
+    },
+    {
+      "id": "b87c381a-94e1-441c-8712-bf8b47c1e3d4",
+      "name": "Bộ xét nghiệm kháng thể IgG kháng giun lươn",
+      "model": "KST6",
+      "brand": "KST6",
+      "manufacturer": "Công ty TNHH Sản xuất Thương mại Hóa chất Việt Sinh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "1. 'Phát hiện kháng thể lớp IgG trong huyết thanh người bệnh để chẩn đoán bệnh do  Strongyloides stercoralis.\n2. Độ nhạy: 92,00%; Độ đặc hiệu: 90,56%\n3. Quy cách: 96 test/ Bộ đựng trong hộp",
+      "unit": "Bộ",
+      "quantity": 1600,
+      "unitPrice": 2877000,
+      "amount": 4603200000,
+      "contractorCode": "vn0304992275",
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HÓA CHẤT VIỆT SINH "
+      ],
+      "lotNo": "",
+      "decisionNo": "387/QĐ-VSR",
+      "decisionDate": "2025-12-09T23:59:59",
+      "resultPublishedDate": "2025-12-09T20:23:39"
+    },
+    {
+      "id": "97767a2f-08e2-4aa3-a43c-36a9cfdaf8bf",
+      "name": "Bộ xét nghiệm kháng thể IgG kháng giun đũa chó",
+      "model": "KST7",
+      "brand": "KST7",
+      "manufacturer": "Công ty TNHH Sản xuất Thương mại Hóa chất Việt Sinh",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "1. Phát hiện kháng thể lớp IgG trong huyết thanh người bệnh để chẩn đoán bệnh do  Toxocara canis.\n2. Độ nhạy: 95,12%; Độ đặc hiệu: 98,74%\n3. Quy cách: 96 test/ Bộ đựng trong hộp",
+      "unit": "Bộ",
+      "quantity": 1600,
+      "unitPrice": 2877000,
+      "amount": 4603200000,
+      "contractorCode": "vn0304992275",
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HÓA CHẤT VIỆT SINH "
+      ],
+      "lotNo": "",
+      "decisionNo": "387/QĐ-VSR",
+      "decisionDate": "2025-12-09T23:59:59",
+      "resultPublishedDate": "2025-12-09T20:23:39"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -38,13 +263,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500405264",
-    "notifyId": "ecf4cefb-8ffa-4921-8bee-16ed91428c17",
-    "bidId": "e933df65-de0e-43f6-84f3-e97bde154b54",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:23.632Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T02:03:45.074Z"
 }

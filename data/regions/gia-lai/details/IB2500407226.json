@@ -1,9 +1,75 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "4a34b19c-007d-4011-a0a3-d4ba3bb0bbb3",
+      "contractorCode": "vn0310913521",
+      "taxCode": "0310913521",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ VIMEC",
+      "status": "lost",
+      "lotNo": "BP2500501653",
+      "lotName": "Gói 3: Hóa chất xét nghiệm kháng thể H.Pylori IgG tương thích với máy ELISA bán tự động",
+      "bidPrice": 3375000000,
+      "finalPrice": 3375000000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu của nhà thầu cao hơn giá dự thầu xếp hạng thứ nhất được lựa chọn trúng thầu",
+      "submittedAt": "2025-12-30T11:45:54.832",
+      "models": []
+    },
+    {
+      "id": "e8a0939c-08ea-444f-9071-770aa0041b7c",
+      "contractorCode": "vn0401517772",
+      "taxCode": "0401517772",
+      "contractorName": "Công ty Cổ phần Thương mại và Dịch vụ Artcare",
+      "status": "won",
+      "lotNo": "BP2500501653",
+      "lotName": "Gói 3: Hóa chất xét nghiệm kháng thể H.Pylori IgG tương thích với máy ELISA bán tự động",
+      "bidPrice": 2970000000,
+      "finalPrice": 2970000000,
+      "winningPrice": 2970000000,
+      "reason": "",
+      "submittedAt": "2025-12-30T11:45:54.832",
+      "models": []
+    },
+    {
+      "id": "2597e045-d752-4fc8-905e-bbe995379055",
+      "contractorCode": "vn0302376496",
+      "taxCode": "0302376496",
+      "contractorName": "CÔNG TY TNHH M.D.S. TRUNG THIỆN",
+      "status": "lost",
+      "lotNo": "BP2500501653",
+      "lotName": "Gói 3: Hóa chất xét nghiệm kháng thể H.Pylori IgG tương thích với máy ELISA bán tự động",
+      "bidPrice": 3307500000,
+      "finalPrice": 3307500000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu của nhà thầu cao hơn giá dự thầu xếp hạng thứ nhất được lựa chọn trúng thầu",
+      "submittedAt": "2025-12-30T11:45:54.832",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "3cc400f5-f97f-4c50-b549-6f596241be95",
+      "name": "Bộ xét nghiệm kháng thể H.Pylori IgG",
+      "model": "TK046",
+      "brand": "Vitrotest",
+      "manufacturer": "Vitrotest Bioreagent LLC",
+      "origin": "Ukraine",
+      "manufactureYear": "2025",
+      "specification": "Xét nghiệm miễn dịch hấp thụ liên kết (ELISA) nhằm xác định định lượng và bán định lượng các kháng thể IgG đối với CagA của Helicobacter pylori trong huyết thanh hoặc huyết tương người.\n- Quy trình: 3 bước ủ (tổng 75 phút).\n- Độ nhạy: 98.8%.\n- Đặc hiệu: 97.5%.\n(Thực hiện trên máy phân tích ELISA).",
+      "unit": "Hộp",
+      "quantity": 900,
+      "unitPrice": 3300000,
+      "winnerNames": [
+        "Công ty Cổ phần Thương mại và Dịch vụ Artcare"
+      ],
+      "decisionNo": "489/QĐ-VSR",
+      "decisionDate": "2025-12-30T23:59:59",
+      "resultPublishedDate": "2025-12-30T11:45:58"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +94,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500407226",
-    "notifyId": "f9a95394-4b4b-4a75-a460-24f8f008a315",
-    "bidId": "9cc5a71e-7e42-4a19-9523-787bcc2c9c21",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:22.651Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T02:03:44.628Z"
 }

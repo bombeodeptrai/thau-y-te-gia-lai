@@ -1,9 +1,75 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "fe3e8acb-df40-49ed-842c-a4133f637e9c",
+      "contractorCode": "vn0310913521",
+      "taxCode": "0310913521",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ VIMEC",
+      "status": "lost",
+      "lotNo": "BP2500501630",
+      "lotName": "Gói 2: Hóa chất xét nghiệm kháng thể H.Pylori IgM tương thích với máy ELISA bán tự động",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không đáp ứng E-HSĐXKT",
+      "submittedAt": "2025-12-10T11:10:13.229",
+      "models": []
+    },
+    {
+      "id": "b770dfdc-0665-4c70-8bbb-3d89a2f6d5d2",
+      "contractorCode": "vn0302376496",
+      "taxCode": "0302376496",
+      "contractorName": "CÔNG TY TNHH M.D.S. TRUNG THIỆN",
+      "status": "won",
+      "lotNo": "BP2500501630",
+      "lotName": "Gói 2: Hóa chất xét nghiệm kháng thể H.Pylori IgM tương thích với máy ELISA bán tự động",
+      "bidPrice": 1837500000,
+      "finalPrice": 1837500000,
+      "winningPrice": 1837500000,
+      "reason": "",
+      "submittedAt": "2025-12-10T11:10:13.229",
+      "models": []
+    },
+    {
+      "id": "87ba26cb-b5e2-46c8-9218-8ba31bbdb3be",
+      "contractorCode": "vn0304222357",
+      "taxCode": "0304222357",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI Y TẾ PHÚ GIA",
+      "status": "lost",
+      "lotNo": "BP2500501630",
+      "lotName": "Gói 2: Hóa chất xét nghiệm kháng thể H.Pylori IgM tương thích với máy ELISA bán tự động",
+      "bidPrice": 2352735000,
+      "finalPrice": 2352735000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu của nhà thầu vượt giá gói thầu",
+      "submittedAt": "2025-12-10T11:10:13.229",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "fb0c179b-349b-4df9-ac0a-b22a8ee40950",
+      "name": "Bộ xét nghiệm kháng thể H.Pylori IgM",
+      "model": "HELM0220",
+      "brand": "Helicobacter Pylori IgM",
+      "manufacturer": "Gold Standard Diagnostics Frankfurt GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "- Bộ xét nghiệm kháng thể H.Pylori dùng để phát hiện kháng thể IgM kháng Helicobacter pylori trong huyết thanh người.\r\n- Độ nhạy: 94.59%\r\n- Độ đặc hiệu: 97.06%\r\nQuy cách: 96 test/ hộp",
+      "unit": "Hộp",
+      "quantity": 500,
+      "unitPrice": 3675000,
+      "winnerNames": [
+        "CÔNG TY TNHH M.D.S. TRUNG THIỆN"
+      ],
+      "decisionNo": "386/QĐ-VSR",
+      "decisionDate": "2025-12-10T23:59:59",
+      "resultPublishedDate": "2025-12-10T11:10:44"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +94,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500405396",
-    "notifyId": "a93790e8-cebd-48e2-a607-fb69d96630b7",
-    "bidId": "f5f0237d-30b6-4907-aadf-116803c937fb",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:24.076Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-09-29T02:03:45.932Z"
 }

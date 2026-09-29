@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "d153a592-5ab3-4d5f-9d05-070a6f5b330f",
+      "contractorCode": "vn0301445732",
+      "taxCode": "0301445732",
+      "contractorName": "CÔNG TY TNHH Y TẾ VIỆT TIẾN",
+      "status": "won",
+      "lotNo": "BP2500525880",
+      "lotName": "Mua sắm 01 máy siêu âm chuyên tim mạch phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 2339000000,
+      "reason": "",
+      "submittedAt": "2025-09-22T09:48:56.871",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "471f4040-0ef5-4ffc-810d-11281e2bab05",
+      "name": "Máy siêu âm chuyên tim mạch",
+      "model": "LOGIQ P10",
+      "brand": "LOGIQ P10",
+      "manufacturer": "GE Ultrasound Korea Ltd.,",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Thân máy chính : 01 cái\nMàn hình hiển thị : 01 cái\nĐầu dò Convex, model: C1-6-D : 01 cái\nĐầu dò Linear, model: L3-12-RS : 01 \ncái\nĐầu dò Sector cho tim người lớn, \nmodel: M5Sc-RS: 01 cái\nPhụ kiện kèm theo, bao gồm:\nBộ máy tính : 01 bộ\nDây điện tim ECG : 01 dây\nMáy in màu laser : 01 máy\nBộ lưu điện UPS online 2kVA : 01 cái\nTài liệu hướng dẫn sử dụng : 01 bộ",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 2339000000,
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ VIỆT TIẾN"
+      ],
+      "decisionNo": "1463/QĐ-BVĐKTT",
+      "decisionDate": "2025-09-18T23:59:59",
+      "resultPublishedDate": "2025-09-22T09:49:10"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500410709",
-    "notifyId": "IB2500410709",
-    "bidId": "43d1f845-5018-4244-b9b2-7091f70c76f6",
-    "bidForm": "MSTT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:20.667Z"
+  "fetchedAt": "2026-09-29T02:03:42.261Z"
 }
