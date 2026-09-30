@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-30T05:32:50.773Z",
+  "rescuedAt": "2026-09-30T14:56:08.864Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 213,
+      "count": 225,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 416,
+      "count": 428,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
@@ -72,13 +72,13 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 22,
+      "count": 28,
       "error": ""
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 28,
+      "count": 31,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 43,
+      "count": 36,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 106,
+      "count": 111,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 58,
+      "count": 59,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 13,
+      "count": 21,
       "error": ""
     },
     {
@@ -276,19 +276,19 @@
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 1,
+      "count": 3,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1120,
-  "acceptedCount": 47,
-  "rejectedCount": 1073,
+  "candidateCount": 1154,
+  "acceptedCount": 49,
+  "rejectedCount": 1105,
   "rejectedReasons": {
-    "excluded:tu van": 298,
-    "excluded:xay dung": 294,
-    "insufficient-medical-context": 276,
-    "excluded:sua chua": 43,
+    "excluded:tu van": 308,
+    "excluded:xay dung": 299,
+    "insufficient-medical-context": 289,
+    "excluded:sua chua": 45,
     "excluded:xay lap": 41,
     "excluded:cai tao": 34,
     "excluded:bao hiem": 18,
@@ -299,12 +299,13 @@
     "excluded:bao ve": 5,
     "excluded:trang phuc": 5,
     "excluded:bao tri": 4,
+    "excluded:rac thai": 3,
     "excluded:may in": 3,
     "excluded:thuoc generic": 3,
     "excluded:phan bon": 3,
     "excluded:may chu": 3,
     "excluded:kiem dinh": 3,
-    "excluded:rac thai": 2,
+    "excluded:cong nghe thong tin": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:cap dien": 1,
     "excluded:tram bien ap": 1,
@@ -312,10 +313,25 @@
     "excluded:thu y": 1,
     "excluded:bao duong": 1,
     "excluded:quan ly du an": 1,
-    "excluded:cong nghe thong tin": 1,
     "excluded:chat thai": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600552637",
+      "name": "Mua sắm phụ tùng thay thế cho hệ thống Máy CT- Scanner 128 lát cắt SOMATOM Definition AS của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 170,
+      "reason": "explicit-medical-title+medical-investor+machine-usage-context",
+      "matched": [
+        "may ct scanner",
+        "benh vien",
+        "da khoa",
+        "cho he thong",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600559863",
       "name": "Mua sắm bổ sung vật tư y tế, hóa chất (lần 9)",
@@ -909,37 +925,139 @@
       ]
     },
     {
-      "notifyNo": "DC2600000882",
-      "name": "mua sắm Máy Garo hơi tự động phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Đa Khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "notifyNo": "DC2600026554",
+      "name": "Cung cấp dịch vụ sửa chữa và thay thế linh kiện, phụ kiện một số thiết bị y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai quý III năm 2026",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
       "accepted": true,
-      "score": 65,
-      "reason": "medical-investor",
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
       "matched": [
+        "thiet bi y te",
         "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam",
-        "kham benh",
-        "chua benh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600000283",
-      "name": "Lắp đặt vách ngăn các Kho thuốc; Vật tư y tế Khoa Dược thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "benh vien",
-        "da khoa",
-        "vat tu"
+        "sua chua",
+        "cung cap"
       ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600561719",
+      "name": "Gói thầu số 07: Cung cấp, lắp đặt thiết bị, phần mềm",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "so y te",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600558447",
+      "name": "Toàn bộ khối lượng xây dựng công trình: Xây dựng đường BTXM từ QL19C đến Trường THCS (cơ sở 2), thôn 3",
+      "investor": "UBND xã Vân Canh",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600561168",
+      "name": "Gói thầu số 03: Mua 140 bộ máy bơm nước chữa cháy (đồng bộ thiết bị chữa cháy rừng) nhập kho dự trữ quốc gia tại các Chi cục Dự trữ Nhà nước khu vực II, XI, XII, XIII, XIV, XV",
+      "investor": "Cục Dự trữ Nhà nước",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600560241",
+      "name": "Mua sắm lắp đặt thiết bị",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562365",
+      "name": "Trang bị hệ thống thiết bị vô tuyến 5G và dịch vụ",
+      "investor": "Tổng công ty Hạ tầng mạng",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600559549",
+      "name": "Hạng mục hạ tầng kỹ thuật công nghệ thông tin",
+      "investor": "Phòng Văn hóa - Xã hội xã Biển Hồ",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cong nghe thong tin",
+      "matched": [
+        "cong nghe thong tin"
+      ]
+    },
+    {
+      "notifyNo": "IB2600559874",
+      "name": "Thi công xây dựng và lắp đặt thiết bị",
+      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600560931",
+      "name": "GL-Cw-04: Đầu tư cơ sở hạ tầng xã Hra và Ayun năm 2026",
+      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600559596",
+      "name": "GL-Cw-02: Đầu tư cơ sở hạ tầng xã Đak Sơ Mei năm 2026",
+      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600546739",
+      "name": "Gói thầu số 05: Tư vấn giám sát thi công công trình",
+      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600561886",
+      "name": "Mua túi nhựa đựng rác thải y tế, hộp đựng vật sắc nhọn, thùng rác y tế phục vụ công tác vệ sinh của Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026",
+      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:rac thai",
+      "matched": [
+        "rac thai"
+      ]
+    },
     {
       "notifyNo": "IB2600546616",
       "name": "Toàn bộ khối lượng xây lắp công trình",
@@ -1264,131 +1382,12 @@
         "xay dung",
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "IB2600541271",
-      "name": "Gói thầu số 26.2026.TĐAK: Cung cấp, lắp đặt sửa chữa, thay thế các tuyến cáp quang nội bộ ADSS-24FO tại Nhà máy Thủy điện An Khê và Nhà máy thủy điện Ka Nak",
-      "investor": "Ban Quản lý dự án EVNGENCO2- Chi nhánh Tổng công ty phát điện 2",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600553863",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Ban Quản lý phường Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600549776",
-      "name": "Gói thầu số 02: Mua hóa chất sát trùng dùng trên cạn thực hiện công tác tiêu độc sát trùng phục vụ công tác phòng, chống dịch bệnh trên gia súc, gia cầm trên địa bàn tỉnh năm 2026",
-      "investor": "CHI CỤC CHĂN NUÔI VÀ THÚ Y",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat",
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552188",
-      "name": "Gói thầu số 01: Thi công xây dựng",
-      "investor": "Ban quản lý phường Pleiku",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600502276",
-      "name": "Gói thầu số 25.2026.TĐAK: Cung cấp vật tư thiết bị và các dịch vụ kỹ thuật kèm theo để đại tu hệ thống tuabin Tổ máy H2 - Nhà máy Thủy điện Ka Nak",
-      "investor": "Ban Quản lý dự án EVNGENCO2- Chi nhánh Tổng công ty phát điện 2",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu",
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600551845",
-      "name": "Xây dựng công trình",
-      "investor": "Phòng Kinh tế xã Chơ Long",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600546740",
-      "name": "Gói thầu số 01: Thuê dịch vụ công nghệ số Hệ thống CSDL về giá trên địa bàn tỉnh giai đoạn 2026-2029",
-      "investor": "Sở Tài chính Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600543161",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600548604",
-      "name": "26.55.HH Vật tư phụ kiện điện phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600550518",
-      "name": "26.52.HH Sứ đứng phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552432",
-      "name": "Tổ chức chương trình du lịch năm 2026 cho CBCNV",
-      "investor": "CÔNG TY CỔ PHẦN CNG VIỆT NAM",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1064,
-  "afterCount": 1064,
+  "beforeCount": 1066,
+  "afterCount": 1066,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v11"
 }

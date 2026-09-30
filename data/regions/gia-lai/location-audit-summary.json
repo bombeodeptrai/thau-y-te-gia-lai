@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-30T05:32:15.747Z",
+  "auditedAt": "2026-09-30T14:55:28.742Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 416,
+      "count": 428,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
@@ -62,13 +62,13 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 22,
+      "count": 28,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 28,
+      "count": 31,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 43,
+      "count": 36,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 106,
+      "count": 111,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 58,
+      "count": 59,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 13,
+      "count": 21,
       "error": ""
     },
     {
@@ -266,20 +266,20 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 1,
+      "count": 3,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1053,
-  "acceptedCount": 42,
-  "rejectedCount": 1011,
+  "candidateCount": 1084,
+  "acceptedCount": 44,
+  "rejectedCount": 1040,
   "rejectedReasons": {
-    "excluded:tu van": 297,
-    "excluded:xay dung": 275,
-    "insufficient-medical-context": 247,
+    "excluded:tu van": 307,
+    "excluded:xay dung": 280,
+    "insufficient-medical-context": 258,
+    "excluded:sua chua": 40,
     "excluded:xay lap": 39,
-    "excluded:sua chua": 38,
     "excluded:cai tao": 34,
     "excluded:bao hiem": 18,
     "excluded:suat an": 8,
@@ -292,8 +292,8 @@
     "excluded:phan bon": 3,
     "excluded:kiem dinh": 3,
     "excluded:may in": 3,
+    "excluded:rac thai": 3,
     "excluded:may chu": 2,
-    "excluded:rac thai": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:cap dien": 1,
     "excluded:thuoc generic": 1,
@@ -304,6 +304,36 @@
     "excluded:chat thai": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600552637",
+      "name": "Mua sắm phụ tùng thay thế cho hệ thống Máy CT- Scanner 128 lát cắt SOMATOM Definition AS của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 170,
+      "reason": "explicit-medical-title+medical-investor+machine-usage-context",
+      "matched": [
+        "may ct scanner",
+        "benh vien",
+        "da khoa",
+        "cho he thong",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "DC2600026554",
+      "name": "Cung cấp dịch vụ sửa chữa và thay thế linh kiện, phụ kiện một số thiết bị y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai quý III năm 2026",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "thiet bi y te",
+        "benh vien",
+        "sua chua",
+        "cung cap"
+      ]
+    },
     {
       "notifyNo": "IB2600559863",
       "name": "Mua sắm bổ sung vật tư y tế, hóa chất (lần 9)",
@@ -906,38 +936,119 @@
         "hoa chat",
         "sinh pham"
       ]
-    },
-    {
-      "notifyNo": "IB2600550475",
-      "name": "Gói 3: Dụng cụ, vật tư tiêu hao",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 105,
-      "reason": "medical-investor+medical-context-supply",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "vat tu tieu hao",
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600506798",
-      "name": "Mua sắm Hệ thống thu nhận ảnh X-quang kỹ thuật số bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "x quang",
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600561719",
+      "name": "Gói thầu số 07: Cung cấp, lắp đặt thiết bị, phần mềm",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "so y te",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600026551",
+      "name": "Tư vấn lập Báo cáo kinh tế kỹ thuật dự án Nâng cấp, sửa chữa hệ thống điện cáp ngầm từ trạm khí tượng Vũng Chua đến trạm phát sóng Vũng Chua",
+      "investor": "BÁO VÀ PHÁT THANH, TRUYỀN HÌNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600026534",
+      "name": "Thẩm tra thiết kế và dự toán thuộc dự án Nâng cấp, sửa chữa hệ thống điện cáp ngầm từ trạm khí tượng Vũng Chua đến trạm phát sóng Vũng Chua",
+      "investor": "BÁO VÀ PHÁT THANH, TRUYỀN HÌNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600025697",
+      "name": "Lắp màn hình LED",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600025684",
+      "name": "Mua máy lạnh",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600560931",
+      "name": "GL-Cw-04: Đầu tư cơ sở hạ tầng xã Hra và Ayun năm 2026",
+      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600559596",
+      "name": "GL-Cw-02: Đầu tư cơ sở hạ tầng xã Đak Sơ Mei năm 2026",
+      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600546739",
+      "name": "Gói thầu số 05: Tư vấn giám sát thi công công trình",
+      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600027467",
+      "name": "Bảo hiểm xây dựng công trình",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "bao hiem"
+      ]
+    },
+    {
+      "notifyNo": "DC2600021692",
+      "name": "Mua sắm máy lạnh cho Khối phụ - sản tại Bệnh viện Sản - Nhi tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "DC2600019544",
       "name": "Tư vấn thẩm tra báo cáo Kinh tế - kỹ thuật điều chỉnh, bổ sung",
@@ -1266,127 +1377,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600557056",
-      "name": "Bảo hiểm công trình",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao hiem",
-      "matched": [
-        "bao hiem"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557054",
-      "name": "Tư vấn giám sát thi công xây dựng",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557053",
-      "name": "Lập hồ sơ mời thầu, đánh giá hồ sơ dự thầu thi công xây dựng",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557051",
-      "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557046",
-      "name": "Tư vấn giám sát khảo sát công trình: Kè suối Bình Trị (đoạn hạ lưu đập Cây Kê)",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557044",
-      "name": "Tư vấn giám sát khảo sát",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557043",
-      "name": "Tư vấn giám sát thi công xây dựng công trình",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557042",
-      "name": "Bảo hiểm công trình",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao hiem",
-      "matched": [
-        "bao hiem"
-      ]
-    },
-    {
-      "notifyNo": "DC2600019883",
-      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - Dự toán",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600006302",
-      "name": "Gói thầu số 15: Sửa chữa, bảo dưỡng xe ô tô Đợt 6 năm 2026 tại khu vực Gia Lai.",
-      "investor": "CỤC HẬU CẦN - KỸ THUẬT/TỔNG CỤC HẬU CẦN - KỸ THUẬT",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "bao duong"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1064,
-  "afterCount": 1064,
+  "beforeCount": 1066,
+  "afterCount": 1066,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v11"
 }
