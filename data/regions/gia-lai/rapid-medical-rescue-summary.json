@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-29T22:27:33.588Z",
+  "rescuedAt": "2026-09-30T05:45:44.342Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 108,
+      "count": 106,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 245,
+      "count": 230,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 17,
+      "count": 15,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 2,
+      "count": 0,
       "error": ""
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -138,13 +138,13 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 15,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 64,
+      "count": 66,
       "error": ""
     },
     {
@@ -210,25 +210,25 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 46,
+      "count": 50,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 27,
+      "count": 25,
       "error": ""
     },
     {
@@ -240,7 +240,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 9,
+      "count": 6,
       "error": ""
     },
     {
@@ -281,27 +281,27 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 669,
-  "acceptedCount": 18,
-  "rejectedCount": 651,
+  "candidateCount": 662,
+  "acceptedCount": 17,
+  "rejectedCount": 645,
   "rejectedReasons": {
-    "excluded:xay dung": 197,
-    "excluded:tu van": 195,
-    "insufficient-medical-context": 141,
+    "excluded:tu van": 201,
+    "excluded:xay dung": 194,
+    "insufficient-medical-context": 134,
     "excluded:sua chua": 29,
-    "excluded:xay lap": 24,
     "excluded:cai tao": 23,
+    "excluded:xay lap": 22,
     "excluded:bao hiem": 10,
-    "excluded:thuc pham": 5,
+    "excluded:thuc pham": 6,
     "excluded:bao ve": 4,
     "excluded:tham dinh": 4,
     "excluded:may tinh": 3,
     "excluded:trang phuc": 3,
     "excluded:suat an": 3,
-    "excluded:thuoc generic": 2,
     "excluded:bao tri": 2,
     "excluded:cap dien": 1,
     "excluded:may in": 1,
+    "excluded:thuoc generic": 1,
     "excluded:may chu": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1,
@@ -526,20 +526,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600000283",
-      "name": "Lắp đặt vách ngăn các Kho thuốc; Vật tư y tế Khoa Dược thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "benh vien",
-        "da khoa",
-        "vat tu"
-      ]
-    },
-    {
       "notifyNo": "IB2600560280",
       "name": "Mua sắm vật tư y tế, hoá chất, sinh phẩm y tế năm 2026",
       "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
@@ -587,6 +573,31 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600546616",
+      "name": "Toàn bộ khối lượng xây lắp công trình",
+      "investor": "Ban Quản lý xã Tây Sơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600552784",
+      "name": "Gói 1: Cung cấp dịch vụ tư vấn khảo sát xây dựng, lập BCKTKT, lập HSMT, dự toán gói thầu và các thỏa thuận chuyên ngành.Dự án: Trang bị thiết bị bảo vệ đảm bảo thời gian loại trừ sự cố các đường dây 110kV lưới điện PTC3.",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "bao ve",
+        "duong day"
+      ]
+    },
     {
       "notifyNo": "IB2600554554",
       "name": "Toàn bộ khối lượng xây dựng và thiết bị",
@@ -1005,28 +1016,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600547516",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban Quản lý xã Phù Mỹ Nam",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600543927",
-      "name": "Cung cấp và lắp đặt thiết bị",
-      "investor": "Trường Đại học Sư phạm Thành phố Hồ Chí Minh",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,
