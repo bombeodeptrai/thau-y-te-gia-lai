@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-29T23:44:38.877Z",
+  "rescuedAt": "2026-09-30T05:32:50.773Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 211,
+      "count": 213,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 415,
+      "count": 416,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 18,
       "error": ""
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 24,
+      "count": 28,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 102,
+      "count": 106,
       "error": ""
     },
     {
@@ -210,19 +210,19 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 71,
+      "count": 75,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -240,7 +240,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -281,19 +281,19 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1105,
+  "candidateCount": 1120,
   "acceptedCount": 47,
-  "rejectedCount": 1058,
+  "rejectedCount": 1073,
   "rejectedReasons": {
-    "excluded:xay dung": 291,
-    "excluded:tu van": 288,
+    "excluded:tu van": 298,
+    "excluded:xay dung": 294,
     "insufficient-medical-context": 276,
     "excluded:sua chua": 43,
-    "excluded:xay lap": 40,
+    "excluded:xay lap": 41,
     "excluded:cai tao": 34,
     "excluded:bao hiem": 18,
     "excluded:suat an": 8,
-    "excluded:thuc pham": 7,
+    "excluded:thuc pham": 8,
     "excluded:may tinh": 6,
     "excluded:tham dinh": 6,
     "excluded:bao ve": 5,
@@ -941,6 +941,31 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600546616",
+      "name": "Toàn bộ khối lượng xây lắp công trình",
+      "investor": "Ban Quản lý xã Tây Sơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600552784",
+      "name": "Gói 1: Cung cấp dịch vụ tư vấn khảo sát xây dựng, lập BCKTKT, lập HSMT, dự toán gói thầu và các thỏa thuận chuyên ngành.Dự án: Trang bị thiết bị bảo vệ đảm bảo thời gian loại trừ sự cố các đường dây 110kV lưới điện PTC3.",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "bao ve",
+        "duong day"
+      ]
+    },
+    {
       "notifyNo": "IB2600554554",
       "name": "Toàn bộ khối lượng xây dựng và thiết bị",
       "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
@@ -1358,28 +1383,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600547516",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban Quản lý xã Phù Mỹ Nam",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600543927",
-      "name": "Cung cấp và lắp đặt thiết bị",
-      "investor": "Trường Đại học Sư phạm Thành phố Hồ Chí Minh",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,

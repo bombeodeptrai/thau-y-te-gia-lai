@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-29T23:43:56.826Z",
+  "auditedAt": "2026-09-30T05:32:15.747Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 415,
+      "count": 416,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 18,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 24,
+      "count": 28,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 102,
+      "count": 106,
       "error": ""
     },
     {
@@ -200,19 +200,19 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 71,
+      "count": 75,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -230,7 +230,7 @@
     {
       "term": "Hoài Ân",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -271,19 +271,19 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1039,
+  "candidateCount": 1053,
   "acceptedCount": 42,
-  "rejectedCount": 997,
+  "rejectedCount": 1011,
   "rejectedReasons": {
-    "excluded:tu van": 287,
-    "excluded:xay dung": 273,
+    "excluded:tu van": 297,
+    "excluded:xay dung": 275,
     "insufficient-medical-context": 247,
+    "excluded:xay lap": 39,
     "excluded:sua chua": 38,
-    "excluded:xay lap": 38,
     "excluded:cai tao": 34,
     "excluded:bao hiem": 18,
     "excluded:suat an": 8,
-    "excluded:thuc pham": 7,
+    "excluded:thuc pham": 8,
     "excluded:may tinh": 6,
     "excluded:tham dinh": 6,
     "excluded:trang phuc": 5,
@@ -939,6 +939,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600019544",
+      "name": "Tư vấn thẩm tra báo cáo Kinh tế - kỹ thuật điều chỉnh, bổ sung",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "DC2600025786",
       "name": "Tư vấn lập Hồ sơ mời thầu, đánh giá Hồ sơ dự thầu",
       "investor": "Công an tỉnh Gia Lai",
@@ -1369,18 +1380,6 @@
       "matched": [
         "sua chua",
         "bao duong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600010071",
-      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Võ Văn Kiệt (nay là Trường trung học phổ thông Trần Quốc Tuấn), hạng mục: Xây mới khối nhà 02 tầng, gồm 04 phòng lý thuyết, 03 phòng bộ môn và các hạng mục phụ trợ.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "quan ly du an"
       ]
     }
   ],
