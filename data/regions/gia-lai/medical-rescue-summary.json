@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-09-30T14:56:08.864Z",
+  "rescuedAt": "2026-09-30T20:49:46.332Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 225,
+      "count": 230,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1154,
+  "candidateCount": 1159,
   "acceptedCount": 49,
-  "rejectedCount": 1105,
+  "rejectedCount": 1110,
   "rejectedReasons": {
     "excluded:tu van": 308,
     "excluded:xay dung": 299,
-    "insufficient-medical-context": 289,
+    "insufficient-medical-context": 293,
     "excluded:sua chua": 45,
     "excluded:xay lap": 41,
     "excluded:cai tao": 34,
@@ -307,6 +307,7 @@
     "excluded:kiem dinh": 3,
     "excluded:cong nghe thong tin": 2,
     "excluded:giam sat thi cong": 2,
+    "excluded:bao ho lao dong": 1,
     "excluded:cap dien": 1,
     "excluded:tram bien ap": 1,
     "excluded:may phat dien": 1,
@@ -941,6 +942,67 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600562796",
+      "name": "Gói thầu MS-01: Mua sắm vật tư dụng cụ bảo hộ lao động",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ho lao dong",
+      "matched": [
+        "bao ho lao dong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562739",
+      "name": "Gói thầu MS-06: Mua sắm vật tư, vật liệu phục vụ xử lý",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562674",
+      "name": "Gói thầu MS-03: Mua sắm thùng nhựa",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562644",
+      "name": "Gói thầu MS-04: Mua hoá chất hữu cơ phục vụ xử lý",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat",
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562629",
+      "name": "Gói thầu MS-05: Mua sắm hóa chất vô cơ phục vụ xử lý",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600561719",
       "name": "Gói thầu số 07: Cung cấp, lắp đặt thiết bị, phần mềm",
       "investor": "Sở Y tế tỉnh Gia Lai",
@@ -1324,63 +1386,6 @@
       "matched": [
         "sua chua",
         "bao duong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600551862",
-      "name": "Gói thầu 26.22/HH: Cung cấp Vật liệu điện",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600551561",
-      "name": "Gói thầu 26.21/HH: Cung cấp cáp điện",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cap dien",
-      "matched": [
-        "cap dien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600520486",
-      "name": "Gói thầu số 10: Khảo sát, lập phương án, dự toán thi công rà phá bom mìn, vật nổ và tư vấn giám sát thi công rà phá bom mìn, vật nổ",
-      "investor": "TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600554464",
-      "name": "Gói thầu số 1: Thi công xây lắp và cung cấp vật tư, phụ kiện lắp đặt",
-      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600160712",
-      "name": "Gói thầu số 04: Tư vấn giám sát xây dựng công trình.",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
       ]
     }
   ],
