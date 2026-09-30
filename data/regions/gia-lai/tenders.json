@@ -1,6 +1,46 @@
 {
   "tenders": [
     {
+      "id": "e0c4b16e-60fb-4984-80e9-4cf84286cf54",
+      "notifyId": "e0c4b16e-60fb-4984-80e9-4cf84286cf54",
+      "bidId": "99a016e3-1557-4dab-843a-2f3c131752bc",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "DTRR",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-1-tbmt",
+      "notifyNo": "IB2600552637",
+      "name": "Mua sắm phụ tùng thay thế cho hệ thống Máy CT- Scanner 128 lát cắt SOMATOM Definition AS của Bệnh viện Đa khoa Gia Lai",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "location": "Phường Pleiku",
+      "closeDate": "2026-10-09T08:00:00",
+      "publicDate": "2026-09-30T17:18:25.232",
+      "price": 2240450000,
+      "category": "Thiết bị y tế",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=e0c4b16e-60fb-4984-80e9-4cf84286cf54&notifyId=e0c4b16e-60fb-4984-80e9-4cf84286cf54&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600552637&planNo=PL2600312938&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": ""
+    },
+    {
       "id": "617b0a79-4004-4fbd-ac17-c84b1dce5035",
       "notifyId": "617b0a79-4004-4fbd-ac17-c84b1dce5035",
       "bidId": "8b966c80-2b18-4bed-9715-001f4d144363",
@@ -79,8 +119,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "IB2600560280",
@@ -108,7 +147,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 0,
+      "bidderCount": 1,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
@@ -212,8 +251,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "dd189ec9-5ce6-4ca8-8ee1-d616ec0b6738",
@@ -651,7 +689,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 0,
+      "bidderCount": 1,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH THIẾT BỊ Y TẾ VŨ GIA PHÁT ",
@@ -740,7 +778,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 0,
+      "bidderCount": 1,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY CP CHỨNG NHẬN VÀ KIỂM ĐỊNH VINACONTROL"
@@ -64188,7 +64226,7 @@
       "losingModelDisclosure": "Nguồn công khai chưa công bố"
     }
   ],
-  "fetchedAt": "2026-09-30T08:28:07.561Z",
+  "fetchedAt": "2026-09-30T12:46:02.564Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -64196,15 +64234,15 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 1067,
+  "detailTenderCount": 1013,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
     "refreshDays": 2,
     "statusSchemaVersion": 4,
     "lastScanDays": 2,
-    "lastScanTenderCount": 19,
-    "lastProvinceTenderCount": 19,
+    "lastScanTenderCount": 22,
+    "lastProvinceTenderCount": 22,
     "lastHistoricalFallbackTenderCount": 0,
     "lastHistoricalFallbackFailureCount": 0,
     "lastHistoricalFallbackComplete": true,
@@ -64221,15 +64259,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v11",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v11",
-    "lastMedicalRescueAt": "2026-09-30T08:28:07.561Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 656,
-    "lastMedicalRescueMedicalCount": 17,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    ]
   }
 }
