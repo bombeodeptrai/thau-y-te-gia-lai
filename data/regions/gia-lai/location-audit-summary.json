@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-09-30T20:49:03.774Z",
+  "auditedAt": "2026-10-01T05:52:21.237Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 428,
+      "count": 437,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 52,
+      "count": 53,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 28,
+      "count": 29,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 22,
+      "count": 24,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 111,
+      "count": 114,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 59,
+      "count": 61,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 7,
+      "count": 12,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1084,
+  "candidateCount": 1111,
   "acceptedCount": 44,
-  "rejectedCount": 1040,
+  "rejectedCount": 1067,
   "rejectedReasons": {
-    "excluded:tu van": 307,
-    "excluded:xay dung": 280,
-    "insufficient-medical-context": 258,
-    "excluded:sua chua": 40,
-    "excluded:xay lap": 39,
+    "excluded:tu van": 316,
+    "excluded:xay dung": 288,
+    "insufficient-medical-context": 264,
+    "excluded:xay lap": 41,
+    "excluded:sua chua": 41,
     "excluded:cai tao": 34,
     "excluded:bao hiem": 18,
     "excluded:suat an": 8,
@@ -293,9 +293,9 @@
     "excluded:kiem dinh": 3,
     "excluded:may in": 3,
     "excluded:rac thai": 3,
+    "excluded:cap dien": 2,
     "excluded:may chu": 2,
     "excluded:giam sat thi cong": 2,
-    "excluded:cap dien": 1,
     "excluded:thuoc generic": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1,
@@ -940,6 +940,112 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600029369",
+      "name": "Lắp đặt, mở rộng hệ thống 3 đường khí khoa Hồi Sức Tích Cức Chống Độc của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": false,
+      "score": 55,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "hoi suc"
+      ]
+    },
+    {
+      "notifyNo": "IB2600559797",
+      "name": "Mua sắm xe chữa cháy cho Khu công nghiệp",
+      "investor": "Công ty phát triển hạ tầng khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "DC2600011105",
+      "name": "Xây dựng và triển khai Bộ Quy tắc ứng xử của cán bộ, viên chức, người lao động trong các đơn vị sự nghiệp y tế nhằm nâng cao sự hài lòng của người dân đối với dịch vụ y tế công trên địa bàn tỉnh Gia Lai năm 2026",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600563008",
+      "name": "Gói thầu số 3/TN: Thí nghiệm VTTB A cấp và thí nghiệm hệ thống tiếp địaCông trình: Cấp điện Công ty cổ phần Tiến Thịnh Gia Lai năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cap dien",
+      "matched": [
+        "cap dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600563001",
+      "name": "Gói thầu số 4/TV: Tư vấn giám sát thi công xây dựng toàn bộ công trìnhCấp điện Công ty cổ phần Tiến Thịnh Gia Lai năm 2026 thuộc dự án: Các dự án Cấp điện khách hàng chuyên dùng trong và ngoài KCN tỉnh Gia Lai năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong",
+        "cap dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562991",
+      "name": "Gói thầu số 2/XL: Thi công xây lắp và xử lý hành lang tuyến công trình Cấp điện Công ty cổ phần Tiến Thịnh Gia Lai năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap",
+        "cap dien"
+      ]
+    },
+    {
+      "notifyNo": "DC2600028887",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Chi cục Thủy lợi tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600021037",
+      "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600020908",
+      "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600561719",
       "name": "Gói thầu số 07: Cung cấp, lắp đặt thiết bị, phần mềm",
       "investor": "Sở Y tế tỉnh Gia Lai",
@@ -1281,108 +1387,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "DC2600013714",
-      "name": "Thẩm định giá xác định giá trị bồi thường các hạng mục công trình hạ tầng kỹ thuật xây dựng trên đất của 12 Doanh nghiệp bị ảnh hưởng do GPMB để thực hiện dự án Di dời các Doanh nghiệp trong Cụm công nghiệp Nhơn Bình",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600020900",
-      "name": "Thuê phòng nghỉ lưu trú cho Đoàn học tập kinh nghiệm mô hình hợp tác xã kiểu mới trong lĩnh vực nông nghiệp và quỹ tín dụng nhân dân hoạt động hiệu quả tại tỉnh Gia Lai",
-      "investor": "LIÊN MINH HỢP TÁC XÃ THÀNH PHỐ ĐỒNG NAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600556218",
-      "name": "26-80/XL: thi công Sửa chữa phần xây dựng TBA 110kV Ayunpa + Chư Sê + Krông Pa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557804",
-      "name": "Tư vấn lập HSMT, đánh giá HSDT",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600019873",
-      "name": "Gói 2: cung cấp dịch vụ hội trường, ăn, nghỉ lớp tập huấn bồi dưỡng nghiệp vụ công tác Hội cho cán bộ hội nông dân tổ chức tại Pleiku",
-      "investor": "Hội Nông dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600554510",
-      "name": "26-81/XL: thi công Sửa chữa phần xây dựng TBA 110kV An Khê + Kbang + Nhơn Tân + Đồn Phó + Tam Quan",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600017270",
-      "name": "Lập Nhiệm vụ quy hoạch và dự toán Quy hoạch chung xã Ia Chia, tỉnh Gia Lai đến năm 2045",
-      "investor": "Phòng kinh tế xã Ia Chia",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600557063",
-      "name": "Tư vấn giám sát khảo sát công trình: Kè suối Cát (đoạn từ đường Lê Lợi đến đập dâng Bộng Tư)",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557060",
-      "name": "Kiểm toán độc lập",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1066,
-  "afterCount": 1066,
+  "beforeCount": 1067,
+  "afterCount": 1067,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v11"
 }
