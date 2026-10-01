@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-01T00:00:14.202Z",
+  "rescuedAt": "2026-10-01T05:45:27.696Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,19 +18,19 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 227,
+      "count": 226,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 37,
+      "count": 36,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 0,
+      "count": 1,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 19,
+      "count": 21,
       "error": ""
     },
     {
@@ -132,13 +132,13 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 20,
+      "count": 17,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 67,
+      "count": 69,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 37,
+      "count": 39,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 3,
+      "count": 8,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
@@ -281,34 +281,49 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 682,
+  "candidateCount": 692,
   "acceptedCount": 19,
-  "rejectedCount": 663,
+  "rejectedCount": 673,
   "rejectedReasons": {
-    "excluded:tu van": 208,
-    "excluded:xay dung": 204,
-    "insufficient-medical-context": 145,
-    "excluded:sua chua": 27,
-    "excluded:xay lap": 22,
-    "excluded:cai tao": 16,
+    "excluded:tu van": 217,
+    "excluded:xay dung": 206,
+    "insufficient-medical-context": 141,
+    "excluded:sua chua": 28,
+    "excluded:xay lap": 24,
+    "excluded:cai tao": 15,
     "excluded:bao hiem": 10,
     "excluded:thuc pham": 6,
     "excluded:bao ve": 4,
     "excluded:may tinh": 3,
     "excluded:tham dinh": 3,
     "excluded:suat an": 3,
+    "excluded:cap dien": 2,
     "excluded:bao tri": 2,
     "excluded:trang phuc": 2,
     "excluded:bao ho lao dong": 1,
     "excluded:cong nghe thong tin": 1,
     "excluded:rac thai": 1,
-    "excluded:cap dien": 1,
     "excluded:may in": 1,
     "excluded:may chu": 1,
     "excluded:thu y": 1,
     "excluded:kiem dinh": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600562074",
+      "name": "Mua sắm Vật tư-Hóa chất năm 2026 lần 3 (danh mục không lựa chọn được nhà thầu) thuộc kế hoạch lựa chọn nhà thầu mua sắm Vật tư-Hóa chất năm 2026 của Bệnh viện 331",
+      "investor": "Bệnh viện 331",
+      "accepted": true,
+      "score": 100,
+      "reason": "medical-investor+laboratory-supply+medical-supply-bundle",
+      "matched": [
+        "benh vien",
+        "hoa chat",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600552637",
       "name": "Mua sắm phụ tùng thay thế cho hệ thống Máy CT- Scanner 128 lát cắt SOMATOM Definition AS của Bệnh viện Đa khoa Gia Lai",
@@ -575,21 +590,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600000978",
-      "name": "“Cung cấp dịch vụ Kiểm định, hiệu chuẩn máy móc, Thiết bị y tế năm 2026”",
-      "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "thiet bi y te",
-        "benh vien",
-        "kiem dinh",
-        "hieu chuan",
-        "cung cap"
-      ]
-    },
-    {
       "notifyNo": "IB2600552058",
       "name": "Gói thầu số KYT 01/2026: Cung cấp các loại khí y tế cho Bệnh viện Hữu nghị Việt Đức cơ sở Ninh Bình",
       "investor": "Bệnh viện Hữu Nghị Việt Đức",
@@ -604,6 +604,46 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600563361",
+      "name": "Mua sắm thuốc Morphin hydroclorid 10mg/ml năm 2026",
+      "investor": "Trung Tâm Y Tế Ayun Pa",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600559797",
+      "name": "Mua sắm xe chữa cháy cho Khu công nghiệp",
+      "investor": "Công ty phát triển hạ tầng khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600563075",
+      "name": "Mua sắm thuốc Lao hàng 1 bổ sung phục vụ khám bệnh, chữa bệnh năm 2026",
+      "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
+      "accepted": false,
+      "score": 55,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "mua",
+        "mua sam",
+        "kham benh",
+        "chua benh"
+      ]
+    },
     {
       "notifyNo": "IB2600562796",
       "name": "Gói thầu MS-01: Mua sắm vật tư dụng cụ bảo hộ lao động",
@@ -1018,44 +1058,12 @@
       "matched": [
         "xay lap"
       ]
-    },
-    {
-      "notifyNo": "IB2600552238",
-      "name": "26.45.HH Dụng cụ an toàn, thi công, bảo hộ an toàn điện năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600497438",
-      "name": "Thuê dịch vụ cung cấp kênh truyền mạng WAN kết nối các NHNN chi nhánh và Chi Cục CNTT tại TP.Hồ Chí Minh đến Trung tâm dữ liệu NHNN",
-      "investor": "Cục Công nghệ thông tin - Ngân hàng Nhà nước Việt nam",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600542381",
-      "name": "VTTB phục vụ công tác sửa chữa, bảo dưỡng thiết bị Nhà máy thủy điện Sê San 4",
-      "investor": "CÔNG TY PHÁT TRIỂN THỦY ĐIỆN SÊ SAN - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "bao duong"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1066,
-  "afterCount": 1066,
-  "newCount": 0,
+  "afterCount": 1067,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v11"
 }
