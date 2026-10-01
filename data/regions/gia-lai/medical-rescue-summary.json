@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-01T05:53:11.352Z",
+  "rescuedAt": "2026-10-01T15:28:09.230Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 234,
+      "count": 236,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 437,
+      "count": 452,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 24,
+      "count": 28,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 114,
+      "count": 123,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 35,
+      "count": 40,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 61,
+      "count": 64,
       "error": ""
     },
     {
@@ -210,13 +210,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 75,
+      "count": 77,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 18,
+      "count": 22,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 31,
+      "count": 30,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -281,21 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1187,
-  "acceptedCount": 50,
-  "rejectedCount": 1137,
+  "candidateCount": 1228,
+  "acceptedCount": 51,
+  "rejectedCount": 1177,
   "rejectedReasons": {
-    "excluded:tu van": 317,
-    "excluded:xay dung": 307,
-    "insufficient-medical-context": 299,
-    "excluded:sua chua": 46,
+    "excluded:tu van": 335,
+    "excluded:xay dung": 320,
+    "insufficient-medical-context": 305,
+    "excluded:sua chua": 48,
     "excluded:xay lap": 43,
-    "excluded:cai tao": 34,
-    "excluded:bao hiem": 18,
+    "excluded:cai tao": 35,
+    "excluded:bao hiem": 19,
+    "excluded:thuc pham": 9,
     "excluded:suat an": 8,
-    "excluded:thuc pham": 8,
-    "excluded:may tinh": 6,
     "excluded:tham dinh": 6,
+    "excluded:may tinh": 5,
     "excluded:bao ve": 5,
     "excluded:trang phuc": 5,
     "excluded:bao tri": 4,
@@ -313,10 +313,25 @@
     "excluded:may phat dien": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1,
-    "excluded:quan ly du an": 1,
-    "excluded:chat thai": 1
+    "excluded:quan ly du an": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600562254",
+      "name": "Mua sắm dụng cụ dùng cho phẫu thuật phục vụ công tác khám bệnh, chữa bệnh của Trung tâm Y tế An Nhơn năm 2026",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "phau thuat",
+        "trung tam y te",
+        "mua",
+        "mua sam",
+        "kham benh",
+        "chua benh"
+      ]
+    },
     {
       "notifyNo": "IB2600562074",
       "name": "Mua sắm Vật tư-Hóa chất năm 2026 lần 3 (danh mục không lựa chọn được nhà thầu) thuộc kế hoạch lựa chọn nhà thầu mua sắm Vật tư-Hóa chất năm 2026 của Bệnh viện 331",
@@ -925,23 +940,33 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600503446",
-      "name": "Mua sắm test ma túy 05 thành phần (Mã 17.2026)",
-      "investor": "Trung tâm Y tế Phù Mỹ",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "test ma tuy",
-        "trung tam y te",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600560678",
+      "name": "Mua sắm lắp đặt thiết bị",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600560992",
+      "name": "Mua sắm xe ô tô phục vụ công tác chung",
+      "investor": "Văn phòng HĐND và UBND xã Phù Mỹ",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600563361",
       "name": "Mua sắm thuốc Morphin hydroclorid 10mg/ml năm 2026",
@@ -1373,35 +1398,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600547282",
-      "name": "Toàn bộ khối lượng thi công công trình Cải tạo, sửa chữa nghĩa trang liệt sĩ Quy Nhơn",
-      "investor": "Sở Nội vụ tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600554340",
-      "name": "Xây lắp công trình",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1067,
-  "afterCount": 1067,
+  "beforeCount": 1068,
+  "afterCount": 1068,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v11"
 }
