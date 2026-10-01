@@ -1,6 +1,47 @@
 {
   "tenders": [
     {
+      "id": "5e11bb50-89e3-4284-a68e-13ed410b3112",
+      "notifyId": "5e11bb50-89e3-4284-a68e-13ed410b3112",
+      "bidId": "64a01d14-5a01-4cf1-9c0a-24f434385678",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "CGTTRG",
+      "processApply": "LDT",
+      "stepCode": "reoffer-price-step-1",
+      "notifyNo": "IB2600562254",
+      "name": "Mua sắm dụng cụ dùng cho phẫu thuật phục vụ công tác khám bệnh, chữa bệnh của Trung tâm Y tế An Nhơn năm 2026",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "location": "Phường An Nhơn Đông",
+      "closeDate": "2026-10-09T08:30:00",
+      "publicDate": "2026-10-01T14:51:39.819",
+      "price": 135800000,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=5e11bb50-89e3-4284-a68e-13ed410b3112&notifyId=5e11bb50-89e3-4284-a68e-13ed410b3112&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600562254&planNo=PL2600327163&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "deb1916a-ce89-403c-9717-6a933fa4c70e",
       "notifyId": "deb1916a-ce89-403c-9717-6a933fa4c70e",
       "bidId": "da932799-e49d-4424-91da-2b5e6a3bc6db",
@@ -380890,9 +380931,9 @@
       "losingModelDisclosure": "Nguồn công khai chưa công bố"
     }
   ],
-  "fetchedAt": "2026-10-01T06:11:01.625Z",
+  "fetchedAt": "2026-10-01T09:24:16.730Z",
   "source": "muasamcong-public-api-central-region",
-  "detailTenderCount": 3823,
+  "detailTenderCount": 3824,
   "regions": [
     {
       "slug": "thanh-hoa",
@@ -381009,12 +381050,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 1067,
+      "tenderCount": 1068,
       "bidderCount": 7543,
       "equipmentCount": 8804,
-      "detailTenderCount": 1069,
+      "detailTenderCount": 1070,
       "coverageDays": 1095,
-      "fetchedAt": "2026-10-01T06:11:01.625Z",
+      "fetchedAt": "2026-10-01T09:24:16.730Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -381073,6 +381114,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 3937
+    "scannedTenderCount": 3938
   }
 }
