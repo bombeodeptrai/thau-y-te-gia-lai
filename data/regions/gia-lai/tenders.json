@@ -38,7 +38,8 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
     },
     {
       "id": "e0c4b16e-60fb-4984-80e9-4cf84286cf54",
@@ -78,7 +79,8 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
     },
     {
       "id": "DC2600026554",
@@ -106,7 +108,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI XUẤT NHẬP KHẨU AN AN"
@@ -206,7 +208,8 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
     },
     {
       "id": "IB2600560280",
@@ -234,7 +237,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
@@ -338,7 +341,8 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
     },
     {
       "id": "dd189ec9-5ce6-4ca8-8ee1-d616ec0b6738",
@@ -776,7 +780,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH THIẾT BỊ Y TẾ VŨ GIA PHÁT ",
@@ -64484,7 +64488,7 @@
       "losingModelDisclosure": "Nguồn công khai chưa công bố"
     }
   ],
-  "fetchedAt": "2026-10-01T06:07:46.440Z",
+  "fetchedAt": "2026-10-01T06:11:01.625Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -64492,7 +64496,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 1015,
+  "detailTenderCount": 1069,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
@@ -64517,6 +64521,15 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "filterStrategy": "unified-medical-scope-v11",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v11",
+    "lastMedicalRescueAt": "2026-10-01T06:11:01.625Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 692,
+    "lastMedicalRescueMedicalCount": 19,
+    "lastMedicalRescueNewCount": 0,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
