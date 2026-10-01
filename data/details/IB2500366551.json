@@ -1,9 +1,83 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "be7fea1b-fd26-4bb0-9db2-2c8c54272c28",
+      "contractorCode": "vnz000034484",
+      "taxCode": "8704183555-001",
+      "contractorName": "HỘ KINH DOANH HÀ MIỄN",
+      "status": "won",
+      "lotNo": "BP2500523950",
+      "lotName": "Vật tư tiêu hao phục vụ công tác khám sức khỏe",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 16765000,
+      "reason": "",
+      "submittedAt": "2025-08-28T10:58:14.664",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "ec10476b-3586-4477-9105-484faa800b0f",
+      "name": "Xà phòng giặt",
+      "model": "OMO3",
+      "brand": "Bột giặt OMO 3kg",
+      "manufacturer": "CÔNG TY TNHH QUỐC TẾ UNILEVER VIỆT NAM",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Thành phần: Sodium Linear Alkybenzene Sulphonate, Sodium Tripoly Phosphate, Sodium Silicate, Sodium Carbonate, Sodium Carboxy Methyl Cellulose, Zeolite, Sodium Sulphate, Disodium Distyrylbiphenyl Disulfonate, Colour Speckle, Chất thơm.\nTính năng: sử dụng cho cả giặt tay và giặt máy, giúp loại bỏ các vết bẩn cứng đầu trên vải.",
+      "unit": "Túi",
+      "quantity": 7,
+      "unitPrice": 145000,
+      "winnerNames": [
+        "HỘ KINH DOANH HÀ MIỄN"
+      ],
+      "decisionNo": "956/QĐ-CAT-PH10",
+      "decisionDate": "2025-08-25T23:59:59",
+      "resultPublishedDate": "2025-08-28T10:58:50"
+    },
+    {
+      "id": "2c0e6d00-61b3-432c-8238-c93f74fd7252",
+      "name": "Xà phòng thơm rửa tay",
+      "model": "LIFEBUOY90",
+      "brand": "Xà bông cục Lifebuoy 90g",
+      "manufacturer": "CÔNG TY TNHH QUỐC TẾ UNILEVER VIỆT NAM",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Thành phần: Alpha-Terpineol, Glycerol (Glycerin), Natri Clorid,  Phenoxyethanol, Bạc.\n- Tính năng: vệ sinh tay, giúp diệt khuẩn.",
+      "unit": "Bánh",
+      "quantity": 210,
+      "unitPrice": 15000,
+      "winnerNames": [
+        "HỘ KINH DOANH HÀ MIỄN"
+      ],
+      "decisionNo": "956/QĐ-CAT-PH10",
+      "decisionDate": "2025-08-25T23:59:59",
+      "resultPublishedDate": "2025-08-28T10:58:50"
+    },
+    {
+      "id": "de4bb694-3fa2-4b4f-a99d-fba23688944f",
+      "name": "Khăn mặt lau tay",
+      "model": "KHAN30",
+      "brand": "Khăn lau đa năng cao cấp 30*30cm",
+      "manufacturer": "Công ty TNHH Fuver Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu: 100% cotton\nTính năng: dùng để lau khô tay sau khi rửa",
+      "unit": "Chiếc",
+      "quantity": 420,
+      "unitPrice": 30000,
+      "winnerNames": [
+        "HỘ KINH DOANH HÀ MIỄN"
+      ],
+      "decisionNo": "956/QĐ-CAT-PH10",
+      "decisionDate": "2025-08-25T23:59:59",
+      "resultPublishedDate": "2025-08-28T10:58:50"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +103,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500366551",
-    "notifyId": "IB2500366551",
-    "bidId": "9ae9ce97-cfdf-4753-bc6c-83a856ac3a45",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:29.741Z"
+  "fetchedAt": "2026-10-01T19:37:33.634Z"
 }

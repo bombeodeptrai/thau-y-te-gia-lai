@@ -1,9 +1,75 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "bd152968-8d16-4965-9d1d-52aa39024e89",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "lost",
+      "lotNo": "BP2500490241",
+      "lotName": "Gói số 1. Vật tư tiêu hao thông thường gồm 01 mặt hàng, 1 phần (lô)",
+      "bidPrice": 89544000,
+      "finalPrice": 89544000,
+      "winningPrice": 0,
+      "reason": "Không đạt về kỹ thuật",
+      "submittedAt": "2025-10-09T16:23:17.012",
+      "models": []
+    },
+    {
+      "id": "4c449ff3-0ec1-4c30-b7ed-b71ca9ff8e8f",
+      "contractorCode": "vn0600810461",
+      "taxCode": "0600810461",
+      "contractorName": "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI AN LÀNH",
+      "status": "won",
+      "lotNo": "BP2500490241",
+      "lotName": "Gói số 1. Vật tư tiêu hao thông thường gồm 01 mặt hàng, 1 phần (lô)",
+      "bidPrice": 88200000,
+      "finalPrice": 88200000,
+      "winningPrice": 88200000,
+      "reason": "",
+      "submittedAt": "2025-10-09T16:23:17.012",
+      "models": []
+    },
+    {
+      "id": "7156b476-2cb6-4ba5-bc93-153ff792cb07",
+      "contractorCode": "vn0400102101",
+      "taxCode": "0400102101",
+      "contractorName": "TỔNG CÔNG TY CỔ PHẦN Y TẾ DANAMECO",
+      "status": "lost",
+      "lotNo": "BP2500490241",
+      "lotName": "Gói số 1. Vật tư tiêu hao thông thường gồm 01 mặt hàng, 1 phần (lô)",
+      "bidPrice": 106932000,
+      "finalPrice": 106932000,
+      "winningPrice": 0,
+      "reason": "xếp hạng 2",
+      "submittedAt": "2025-10-09T16:23:17.012",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "7ab3ea0f-16d3-4271-bb5c-257ca69bb6ea",
+      "name": "Bông gạc đắp vết thương 8*20cm",
+      "model": "BGDVT7",
+      "brand": "An Lành",
+      "manufacturer": "Công ty TNHH Đầu tư và Thương mại An Lành",
+      "origin": "Việt Nam",
+      "manufactureYear": "từ năm 2025 trở đi",
+      "specification": "Kích thước 8*20 cm, vô trùng",
+      "unit": "Miếng",
+      "quantity": 84000,
+      "unitPrice": 1050,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI AN LÀNH"
+      ],
+      "decisionNo": "972/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-09T23:59:59",
+      "resultPublishedDate": "2025-10-09T16:23:29"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +94,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500368066",
-    "notifyId": "92fce66b-3511-45be-96c2-97ecb3a6afec",
-    "bidId": "2765f46c-9450-44bd-9cdd-450fab90ede4",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:28.741Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-01T19:37:32.058Z"
 }

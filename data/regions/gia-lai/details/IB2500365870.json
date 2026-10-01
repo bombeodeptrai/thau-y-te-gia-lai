@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "98bb2dcf-bef3-4d7a-9acf-ed86c27245b7",
+      "contractorCode": "vn6001614229",
+      "taxCode": "6001614229",
+      "contractorName": "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN",
+      "status": "won",
+      "lotNo": "BP2500491445",
+      "lotName": "Gói số 16. Hóa chất sử dụng cho máy nước tiểu 13 thông số gồm 01 mặt hàng, 1 phần (lô)",
+      "bidPrice": 320000000,
+      "finalPrice": 320000000,
+      "winningPrice": 320000000,
+      "reason": "",
+      "submittedAt": "2025-12-23T14:18:37.451",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "09141bc1-6626-459d-a7a9-e806bc316627",
+      "name": "Que thử nước tiểu 13 thông số",
+      "model": "U031-131",
+      "brand": "Que thử phân tích nước tiểu 13 thông số",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Que thử nước tiểu đọc được các thông số: Protein, Glucose, Bilirubin, Urobilinogen, pH, Blood, Ketones, Nitrite, Leucocyte, SG, Albumin, Creatinine, Ascorbic Acid (vitamin C).",
+      "unit": "Que",
+      "quantity": 20000,
+      "unitPrice": 16000,
+      "winnerNames": [
+        "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN"
+      ],
+      "decisionNo": "1247/QĐ-BVĐKGL",
+      "decisionDate": "2025-12-23T23:59:59",
+      "resultPublishedDate": "2025-12-23T14:18:44"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500365870",
-    "notifyId": "35b6f63a-9fcb-4cd5-9631-c5c79c7f9b0f",
-    "bidId": "786415e2-4358-498b-8b38-55656425c0ea",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:43.797Z"
+  "fetchedAt": "2026-10-01T19:37:31.181Z"
 }

@@ -1,9 +1,90 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "c9882f7a-8ba7-4818-81b5-fe08d476954a",
+      "contractorCode": "vn0104090569",
+      "taxCode": "0104090569",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐĂNG PHÁT VN",
+      "status": "won",
+      "lotNo": "BP2500491239",
+      "lotName": "Gói số 7. Test ma túy 05 chỉ số gồm 01 mặt hàng, 1 phần (lô)",
+      "bidPrice": 13708800,
+      "finalPrice": 13708800,
+      "winningPrice": 13708800,
+      "reason": "",
+      "submittedAt": "2025-10-15T15:33:14.405",
+      "models": []
+    },
+    {
+      "id": "8a3dddaa-441f-4ead-b154-1737fa48fe85",
+      "contractorCode": "vn5500527178",
+      "taxCode": "5500527178",
+      "contractorName": "CÔNG TY CỔ PHẦN SINH",
+      "status": "lost",
+      "lotNo": "BP2500491239",
+      "lotName": "Gói số 7. Test ma túy 05 chỉ số gồm 01 mặt hàng, 1 phần (lô)",
+      "bidPrice": 28800000,
+      "finalPrice": 28800000,
+      "winningPrice": 0,
+      "reason": "không đạt năng lực kinh nghiệm",
+      "submittedAt": "2025-10-15T15:33:14.405",
+      "models": []
+    },
+    {
+      "id": "6667ac69-6a8a-4269-a284-8b84abb42280",
+      "contractorCode": "vn0316960510",
+      "taxCode": "0316960510",
+      "contractorName": "CÔNG TY TNHH BKS DIAGNOSTICS",
+      "status": "lost",
+      "lotNo": "BP2500491239",
+      "lotName": "Gói số 7. Test ma túy 05 chỉ số gồm 01 mặt hàng, 1 phần (lô)",
+      "bidPrice": 14784000,
+      "finalPrice": 14784000,
+      "winningPrice": 0,
+      "reason": "xếp hạng 2",
+      "submittedAt": "2025-10-15T15:33:14.405",
+      "models": []
+    },
+    {
+      "id": "1a7cf59e-0eb5-4817-8ab9-525af239619c",
+      "contractorCode": "vn6001614229",
+      "taxCode": "6001614229",
+      "contractorName": "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN",
+      "status": "lost",
+      "lotNo": "BP2500491239",
+      "lotName": "Gói số 7. Test ma túy 05 chỉ số gồm 01 mặt hàng, 1 phần (lô)",
+      "bidPrice": 25600000,
+      "finalPrice": 25600000,
+      "winningPrice": 0,
+      "reason": "xếp hạng 3",
+      "submittedAt": "2025-10-15T15:33:14.405",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "fc7c20b9-7e73-488a-b5f9-d3607175ca40",
+      "name": "Test ma túy 5 chỉ số",
+      "model": "MD -U55 (MOP/COD/HER/THC/AMP)",
+      "brand": "FASTEP",
+      "manufacturer": "Assure Tech. (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "- Là một xét nghiệm miễn dịch sắc ký nhanh để phát hiện 5 chất gây nghiện có trong mẫu nước tiểu của người Morphine (MOP), Codein (COD), Amphetamine (AMP), Marijuana (THC) và 6-Monoacetylmorphine (HER)\n- MOP: Ngưỡng cut-off: 300 ng/ml, \n- COD: Ngưỡng cut-off: 250 ng/ml\n- AMP: Ngưỡng cut-off: 500 ng/ml \n- THC: Ngưỡng cut-off: 50 ng/ml \n- HER: Ngưỡng cut-off: 10 ng/ml \n- Độ chính xác : > 99%\n- Đạt chứng nhận ISO 13485:2016, EC\n- Quy cách: Hộp/25 test",
+      "unit": "Test",
+      "quantity": 640,
+      "unitPrice": 21420,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐĂNG PHÁT VN"
+      ],
+      "decisionNo": "986/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-15T23:59:59",
+      "resultPublishedDate": "2025-10-15T15:33:19"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +109,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500368064",
-    "notifyId": "823a7a41-5979-40c9-9c72-b57a1293ec4f",
-    "bidId": "945a8e6d-4b66-4a61-a5db-c206a548262f",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:44.526Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-01T19:37:32.262Z"
 }

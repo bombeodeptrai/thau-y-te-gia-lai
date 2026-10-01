@@ -1,9 +1,136 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 5,
+  "bidders": [
+    {
+      "id": "a486dcea-cb49-4e19-b916-7a47219a9f0c",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "won",
+      "lotNo": "BP2500491212",
+      "lotName": "Gói số 5. Hóa chất, sinh phẩm sử dụng trong xét nghiệm nhóm máu gồm 05 mặt hàng, 1 phần (lô)",
+      "bidPrice": 385200000,
+      "finalPrice": 385200000,
+      "winningPrice": 385200000,
+      "reason": "",
+      "submittedAt": "2025-10-09T14:18:45.258",
+      "models": []
+    },
+    {
+      "id": "c8f78e95-38de-4966-8852-5a5a3a405fa0",
+      "contractorCode": "vn0310913521",
+      "taxCode": "0310913521",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ VIMEC",
+      "status": "lost",
+      "lotNo": "BP2500491212",
+      "lotName": "Gói số 5. Hóa chất, sinh phẩm sử dụng trong xét nghiệm nhóm máu gồm 05 mặt hàng, 1 phần (lô)",
+      "bidPrice": 459450000,
+      "finalPrice": 459450000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2",
+      "submittedAt": "2025-10-09T14:18:45.258",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "05918b47-f396-47ec-8968-e43c00574237",
+      "name": "Thẻ định nhóm máu",
+      "model": "SERAFOL ABO",
+      "brand": "Sifin Diagnostics GmbH",
+      "manufacturer": "Sifin Diagnostics GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Thẻ định nhóm máu đầu giường trước truyền máu\r\nThành phần: \r\n-  Anti - A chứa kháng thể đơn dòng Anti -A IgM\r\n-  Anti -B chứa kháng thể đơn dòng Anti - B IgM\r\n- Chất ổn định: ≤ 0.1% NaN3 ,\r\nChất bảo quản: Sodium azide < 1,0mg/ml trong test xét nghiệm \r\n+ Xuất xứ: G7\r\n+ TCCL: ISO, CE",
+      "unit": "Test",
+      "quantity": 20000,
+      "unitPrice": 14500,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "969/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-09T23:59:59",
+      "resultPublishedDate": "2025-10-09T14:19:07"
+    },
+    {
+      "id": "4f02ea7a-58a1-45bb-b011-6cfb31bd0f48",
+      "name": "Anti AB",
+      "model": "Anti-AB (IgM)",
+      "brand": "SPECTRUM",
+      "manufacturer": "SPECTRUM",
+      "origin": "Ai Cập",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Hiệu giá ≥ 256\r\nĐộ nhạy < 5 giây\r\nKhông gây hiện tượng prozone\r\n10ml/lọ",
+      "unit": "Lọ",
+      "quantity": 30,
+      "unitPrice": 140000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "969/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-09T23:59:59",
+      "resultPublishedDate": "2025-10-09T14:19:07"
+    },
+    {
+      "id": "2db812f6-fc81-4d67-97dc-d82f6cf91021",
+      "name": "Anti A",
+      "model": "Anti-A (IgM)",
+      "brand": "SPECTRUM",
+      "manufacturer": "SPECTRUM",
+      "origin": "Ai Cập",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Hiệu giá ≥ 256\r\nĐộ nhạy < 5 giây\r\nKhông gây hiện tượng prozone\r\n10ml/lọ",
+      "unit": "Lọ",
+      "quantity": 240,
+      "unitPrice": 140000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "969/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-09T23:59:59",
+      "resultPublishedDate": "2025-10-09T14:19:07"
+    },
+    {
+      "id": "668785f7-d654-49d8-bd4f-ec0cf633021e",
+      "name": "Anti B",
+      "model": "Anti-B (IgM)",
+      "brand": "SPECTRUM",
+      "manufacturer": "SPECTRUM",
+      "origin": "Ai Cập",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Hiệu giá ≥ 256\r\nĐộ nhạy < 5 giây\r\nKhông gây hiện tượng prozone\r\n10ml/lọ",
+      "unit": "Lọ",
+      "quantity": 240,
+      "unitPrice": 140000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "969/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-09T23:59:59",
+      "resultPublishedDate": "2025-10-09T14:19:07"
+    },
+    {
+      "id": "0563a7cd-def3-4f8d-ad89-62aa44591d4f",
+      "name": "Anti D",
+      "model": "Anti D (IgM+IgG)",
+      "brand": "SPECTRUM",
+      "manufacturer": "SPECTRUM",
+      "origin": "Ai Cập",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Hiệu giá ≥ 32, loại IgM + IgG\r\n10ml/lọ",
+      "unit": "Lọ",
+      "quantity": 140,
+      "unitPrice": 170000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "969/QĐ-BVĐKGL",
+      "decisionDate": "2025-10-09T23:59:59",
+      "resultPublishedDate": "2025-10-09T14:19:07"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +155,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500363845",
-    "notifyId": "24f19f1b-8391-4da5-b12b-92e2d8767868",
-    "bidId": "6a241d43-2280-4d7f-a68b-adfc7947df32",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:31.020Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-01T19:37:35.006Z"
 }
