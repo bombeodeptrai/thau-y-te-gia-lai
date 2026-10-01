@@ -1,9 +1,116 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "4af7f78b-684b-4365-a22d-1199ff5ccb8c",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "lost",
+      "lotNo": "PP2500400591",
+      "lotName": "Phim X-quang 20x25cm",
+      "bidPrice": 145200000,
+      "finalPrice": 145200000,
+      "winningPrice": 0,
+      "reason": "Giá cao hơn nhà thầu Xếp hạng 1",
+      "submittedAt": "2025-10-16T08:25:54.431",
+      "models": []
+    },
+    {
+      "id": "cea7d39b-eaed-47bd-96c9-579a020d6ad0",
+      "contractorCode": "vn5901186140",
+      "taxCode": "5901186140",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN KHANG HIỆP PHÁT",
+      "status": "lost",
+      "lotNo": "PP2500400591",
+      "lotName": "Phim X-quang 20x25cm",
+      "bidPrice": 170500000,
+      "finalPrice": 170500000,
+      "winningPrice": 0,
+      "reason": "Giá cao hơn nhà thầu Xếp hạng 1",
+      "submittedAt": "2025-10-16T08:25:54.431",
+      "models": []
+    },
+    {
+      "id": "59b76fb8-fe92-4e1b-b990-810c7d2e0d60",
+      "contractorCode": "vn0313103885",
+      "taxCode": "0313103885",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY",
+      "status": "won",
+      "lotNo": "PP2500400591",
+      "lotName": "Phim X-quang 20x25cm",
+      "bidPrice": 143770000,
+      "finalPrice": 143770000,
+      "winningPrice": 143770000,
+      "reason": "",
+      "submittedAt": "2025-10-16T08:25:54.431",
+      "models": [
+        "DI-HL 20 X 25"
+      ]
+    },
+    {
+      "id": "187db98a-3633-44e0-be7f-de751957d4d7",
+      "contractorCode": "vn0313103885",
+      "taxCode": "0313103885",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY",
+      "status": "lost",
+      "lotNo": "PP2500400592",
+      "lotName": "Phim X-quang nha khoa 3x4cm",
+      "bidPrice": 9420000,
+      "finalPrice": 9420000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu của HSMT",
+      "submittedAt": "2025-10-16T08:25:54.431",
+      "models": [
+        "DI-HL 20 X 25"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2500400591",
+      "name": "Phim X-quang 20x25cm",
+      "model": "DI-HL 20 X 25",
+      "brand": "Phim X-ray khô DI-HL 20 X 25",
+      "manufacturer": "FUJIFILM SHIZUOKA Co. Ltd., Nhật Bản",
+      "origin": "Fujifilm Corporation, Nhật Bản",
+      "manufactureYear": "2025",
+      "specification": "Phim khô kỹ thuật số công nghệ in laser - Tương thích với các dòng máy in Drypix \r\nseries & Tự động nhận diện được số lượng \r\nphim thay hộp mới - Xuất xứ: Các nước công nghiệp phát triển  G7 - Cấu tạo phim 4 lớp \r\n+ Lớp trên: ≥ 86% gelatin, độ dày: ≥ 2,3 µm \r\n+ Lớp nền xanh: ≥ 95,5% polyethylene \r\nterephthalate, độ dày: ≥ 170 µm \r\n+ Lớp nhạy: ≥ 36% light sensitive agents, \r\nđộ dày: ≥ 10,6 µm \r\n+ Lớp dưới: ≥ 88% gelatin, độ dày: ≥ 3,5 \r\nµm - Có chứng nhận đạt tiêu chuẩn: ISO 9001/ \r\nISO 13485/ CFS",
+      "unit": "Tấm",
+      "quantity": 11000,
+      "unitPrice": 0,
+      "amount": 143770000,
+      "contractorCode": "vn0313103885",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "lotNo": "PP2500400591",
+      "decisionNo": "144/QĐ-TTVT",
+      "decisionDate": "2025-10-15T23:59:59",
+      "resultPublishedDate": "2025-10-16T08:26:16"
+    },
+    {
+      "id": "f94c8850-0a90-4742-b6b8-db348e8b51ae",
+      "name": "Phim X-quang 20x25cm",
+      "model": "DI-HL 20 X 25",
+      "brand": "Phim X-ray khô DI-HL 20 X 25",
+      "manufacturer": "FUJIFILM SHIZUOKA \r\nCo. Ltd., Nhật Bản",
+      "origin": "Fujifilm Corporation, \r\nNhật Bản",
+      "manufactureYear": "2025",
+      "specification": "Phim khô kỹ thuật số công nghệ in laser - Tương thích với các dòng máy in Drypix \r\nseries & Tự động nhận diện được số lượng \r\nphim thay hộp mới - Xuất xứ: Các nước công nghiệp phát triển  G7 - Cấu tạo phim 4 lớp \r\n+ Lớp trên: ≥ 86% gelatin, độ dày: ≥ 2,3 µm \r\n+ Lớp nền xanh: ≥ 95,5% polyethylene \r\nterephthalate, độ dày: ≥ 170 µm \r\n+ Lớp nhạy: ≥ 36% light sensitive agents, \r\nđộ dày: ≥ 10,6 µm \r\n+ Lớp dưới: ≥ 88% gelatin, độ dày: ≥ 3,5 \r\nµm - Có chứng nhận đạt tiêu chuẩn: ISO 9001/ \r\nISO 13485/ CFS",
+      "unit": "Tấm",
+      "quantity": 11000,
+      "unitPrice": 13070,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "144/QĐ-TTVT",
+      "decisionDate": "2025-10-15T23:59:59",
+      "resultPublishedDate": "2025-10-16T08:26:16"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -38,13 +145,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500357683",
-    "notifyId": "f72f42f4-826e-4ced-9357-da1e200eb857",
-    "bidId": "5b2e8f4a-1069-4a38-a1a3-3b3a1e17dd8b",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:31.140Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-01T23:57:43.129Z"
 }

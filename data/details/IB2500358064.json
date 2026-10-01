@@ -1,9 +1,95 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "7c122b59-64a3-48de-8933-3c8677cca774",
+      "contractorCode": "vn0108608971",
+      "taxCode": "0108608971",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ THIẾT BỊ Y TẾ TRANG MINH",
+      "status": "lost",
+      "lotNo": "BP2500509039",
+      "lotName": "Gói thầu số 1: Mua sắm Máy điều trị nội nha năm 2025",
+      "bidPrice": 50900000,
+      "finalPrice": 50900000,
+      "winningPrice": 0,
+      "reason": "Giá cao hơn giá trúng thầu",
+      "submittedAt": "2025-09-08T15:21:12.048",
+      "models": []
+    },
+    {
+      "id": "9f489911-727e-443c-bdde-3593c634c234",
+      "contractorCode": "vn0402154553",
+      "taxCode": "0402154553",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT CAO MEKONG",
+      "status": "lost",
+      "lotNo": "BP2500509039",
+      "lotName": "Gói thầu số 1: Mua sắm Máy điều trị nội nha năm 2025",
+      "bidPrice": 47800000,
+      "finalPrice": 47800000,
+      "winningPrice": 0,
+      "reason": "Giá cao hơn giá trúng thầu",
+      "submittedAt": "2025-09-08T15:21:12.048",
+      "models": []
+    },
+    {
+      "id": "06728a6f-2851-40df-93c6-232b7f477a25",
+      "contractorCode": "vn5901186140",
+      "taxCode": "5901186140",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN KHANG HIỆP PHÁT",
+      "status": "lost",
+      "lotNo": "BP2500509039",
+      "lotName": "Gói thầu số 1: Mua sắm Máy điều trị nội nha năm 2025",
+      "bidPrice": 49500000,
+      "finalPrice": 49500000,
+      "winningPrice": 0,
+      "reason": "Giá cao hơn giá trúng thầu",
+      "submittedAt": "2025-09-08T15:21:12.048",
+      "models": []
+    },
+    {
+      "id": "1b83d747-90a4-4d69-9f0f-fbc9a1bdd6e1",
+      "contractorCode": "vn6001781808",
+      "taxCode": "6001781808",
+      "contractorName": "CÔNG TY TNHH MEDITECH AUTOMATION",
+      "status": "won",
+      "lotNo": "BP2500509039",
+      "lotName": "Gói thầu số 1: Mua sắm Máy điều trị nội nha năm 2025",
+      "bidPrice": 45000000,
+      "finalPrice": 45000000,
+      "winningPrice": 45000000,
+      "reason": "",
+      "submittedAt": "2025-09-08T15:21:12.048",
+      "models": [
+        "ENDO-MATE AT"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "0fa4d178-6bbb-49bf-9a25-96baca2154b7",
+      "name": "Máy điều trị nội nha",
+      "model": "ENDO-MATE AT",
+      "brand": "ENDO-MATE AT",
+      "manufacturer": "NAKANISHI INC.,",
+      "origin": "NHẬT BẢN",
+      "manufactureYear": "2024-2025",
+      "specification": "1. Cấu hình:\n- Bộ điều khiển: 01 bộ\n- Động cơ và dây: 01 bộ\n- Đầu iFX75 ( 16:1 ): 01 chiếc\n- Giá đỡ tay khoan: 01 chiếc\n- Bộ nguồn AC: 01 bộ\n2. Đặc tính kỹ thuật:\n- Nguồn điện: AC 230V 50/60Hz\n- Số chương trình: 09\n- Lực xoắn tối đa: 7 Ncm ( khi sử dụng đầu 20:1)\n- Tốc độ: 100-13,000 min -1 ( tùy thuộc vào đầu truyền động 20:1, 4:1, 1:1)\n- Kích thước: W268 x D230 x H103 (mm)\n- Trọng lượng: 342g ( bao gồm motor tay khoan và dây)",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 45000000,
+      "amount": 45000000,
+      "contractorCode": "vn6001781808",
+      "winnerNames": [
+        "CÔNG TY TNHH MEDITECH AUTOMATION"
+      ],
+      "lotNo": "",
+      "decisionNo": "Quyết định số 233/QĐ-TTPLE",
+      "decisionDate": "2025-09-08T15:11:54",
+      "resultPublishedDate": "2025-09-08T15:21:18"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,13 +144,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500358064",
-    "notifyId": "61482d22-235d-4973-8cbf-7157803d8536",
-    "bidId": "ac089245-7713-45a9-9f8e-9d9a5d2a65a3",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:46.072Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-01T23:57:44.416Z"
 }
