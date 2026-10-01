@@ -1,9 +1,129 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "b55de618-5a4c-4313-bf8d-f7d6752dc91a",
+      "contractorCode": "vn0314029345",
+      "taxCode": "0314029345",
+      "contractorName": "CÔNG TY TNHH CHANU",
+      "status": "lost",
+      "lotNo": "PP2500415360",
+      "lotName": "PHỤ KIỆN CHO MÁY SẮC KÝ LỎNG HIỆU NĂNG CAO AGILENT 1260 Infinity",
+      "bidPrice": 44884800,
+      "finalPrice": 44884800,
+      "winningPrice": 0,
+      "reason": "Không đánh giá",
+      "submittedAt": "2025-10-14T15:01:27.824",
+      "models": [
+        "5020-07345"
+      ]
+    },
+    {
+      "id": "d1759a2e-faff-4675-9d03-212b311a0a94",
+      "contractorCode": "vn0108774104",
+      "taxCode": "0108774104",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ LABMALL",
+      "status": "won",
+      "lotNo": "PP2500415360",
+      "lotName": "PHỤ KIỆN CHO MÁY SẮC KÝ LỎNG HIỆU NĂNG CAO AGILENT 1260 Infinity",
+      "bidPrice": 41514000,
+      "finalPrice": 41514000,
+      "winningPrice": 41514000,
+      "reason": "",
+      "submittedAt": "2025-10-14T15:01:27.824",
+      "models": [
+        "CTS-A11454",
+        "11-4109"
+      ]
+    },
+    {
+      "id": "818ce6af-2ba4-46c3-ba8f-d43e1148df02",
+      "contractorCode": "vn0314029345",
+      "taxCode": "0314029345",
+      "contractorName": "CÔNG TY TNHH CHANU",
+      "status": "won",
+      "lotNo": "PP2500415361",
+      "lotName": "CỘT SẮC KÝ DÙNG CHO MÁY SẮC KÝ LỎNG HIỆU NĂNG CAO",
+      "bidPrice": 30240000,
+      "finalPrice": 30240000,
+      "winningPrice": 30240000,
+      "reason": "",
+      "submittedAt": "2025-10-14T15:01:27.824",
+      "models": [
+        "5020-07345"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "38716909-b955-4490-8cd2-45965168b962",
+      "name": "Cột sắc ký C18",
+      "model": "5020-07345",
+      "brand": "InertSustain C18 Analytical Column5μm 150mm x 4.6mm",
+      "manufacturer": "GL Science - Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024-2025",
+      "specification": "Kích thước: 150mm x 4,6 mm\r\n- Cỡ hạt: 5 µm \r\n- Khoảng pH: 1 ÷ 10\r\n- Tải lượng Carbon: 14%\r\n- End capping: hoàn toàn\r\n- Kích thước lỗ: 10nm\r\n- Thể tích lỗ: 0,85ml/g",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 15120000,
+      "amount": 30240000,
+      "contractorCode": "vn0314029345",
+      "winnerNames": [
+        "CÔNG TY TNHH CHANU"
+      ],
+      "lotNo": "",
+      "decisionNo": "348/QĐ-TTKN",
+      "decisionDate": "2025-10-14T23:59:59",
+      "resultPublishedDate": "2025-10-14T15:03:39"
+    },
+    {
+      "id": "6a421cb7-401c-42d9-96de-ae463efb6776",
+      "name": "Bơm (Pump Gold Seal)",
+      "model": "CTS-A11454",
+      "brand": "Sciencix",
+      "manufacturer": "Sciencix",
+      "origin": "G20",
+      "manufactureYear": "Đáp ứng yêu cầu bên mời thầu",
+      "specification": "Nhà thầu chào mã hàng CTS-A11454 phù hợp với các dòng model bơm Agilent 1050, 1090, 1100, 1200, 1220, 1260, 1290.",
+      "unit": "Túi/01 cái",
+      "quantity": 2,
+      "unitPrice": 1221000,
+      "amount": 2442000,
+      "contractorCode": "vn0108774104",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ LABMALL"
+      ],
+      "lotNo": "",
+      "decisionNo": "348/QĐ-TTKN",
+      "decisionDate": "2025-10-14T23:59:59",
+      "resultPublishedDate": "2025-10-14T15:03:39"
+    },
+    {
+      "id": "171b6eae-4252-4671-9859-fd6a1860b978",
+      "name": "Đèn Deuterium (D2) HPLC - DAD - Agilent",
+      "model": "11-4109",
+      "brand": "Sciencix",
+      "manufacturer": "Sciencix",
+      "origin": "G20",
+      "manufactureYear": "Đáp ứng yêu cầu bên mời thầu",
+      "specification": "Nhà thầu chào mã hàng 11-4109 phù hợp với các dòng detetor Agilent 1290, G4212A/B (1200), G7117A/B/C/D (1260)",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 39072000,
+      "amount": 39072000,
+      "contractorCode": "vn0108774104",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ LABMALL"
+      ],
+      "lotNo": "",
+      "decisionNo": "348/QĐ-TTKN",
+      "decisionDate": "2025-10-14T23:59:59",
+      "resultPublishedDate": "2025-10-14T15:03:39"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -48,13 +168,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500388253",
-    "notifyId": "48d4af7e-4224-4bcc-b3e5-27d386b9d5f2",
-    "bidId": "06c30997-3159-4f9f-9ac3-83171a9d966b",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:41.182Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-01T13:30:28.183Z"
 }

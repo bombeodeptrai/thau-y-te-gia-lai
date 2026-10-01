@@ -1,9 +1,121 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 5,
+  "bidders": [
+    {
+      "id": "14117f40-dca6-43a6-9a57-51d483beb148",
+      "contractorCode": "vn0101268476",
+      "taxCode": "0101268476",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ MINH TÂM",
+      "status": "won",
+      "lotNo": "BP2500544030",
+      "lotName": "Mua sắm vật tư sửa chữa máy xét nghiệm sinh hóa AU-480",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 75733900,
+      "reason": "",
+      "submittedAt": "2025-09-05T14:20:37.892",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "c77ba400-a349-4643-bba8-b78fd52538ee",
+      "name": "Bóng đèn 12V-20W (photometer Lamp)",
+      "model": "MU988800",
+      "brand": "Beckman Coulter/ Nhật Bản",
+      "manufacturer": "Beckman Coulter/ Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Bóng đèn 12V-20W (photometer Lamp)",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 4071100,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ MINH TÂM"
+      ],
+      "decisionNo": "1360/QĐ-BVĐKTT",
+      "decisionDate": "2025-09-05T23:59:59",
+      "resultPublishedDate": "2025-09-05T14:20:45"
+    },
+    {
+      "id": "e4ae1310-0272-434d-9e9b-a5a2d975a180",
+      "name": "Dây bơm (Roller Tube)",
+      "model": "MU962300",
+      "brand": "Beckman Coulter / Trung Quốc",
+      "manufacturer": "Beckman Coulter/ Trung Quốc",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Dây bơm (Roller Tube)",
+      "unit": "Cái",
+      "quantity": 4,
+      "unitPrice": 1318900,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ MINH TÂM"
+      ],
+      "decisionNo": "1360/QĐ-BVĐKTT",
+      "decisionDate": "2025-09-05T23:59:59",
+      "resultPublishedDate": "2025-09-05T14:20:45"
+    },
+    {
+      "id": "25ea6ef7-62c6-435a-9f67-cd7258c652b1",
+      "name": "CPU (Bộ nguồn)",
+      "model": "C64440",
+      "brand": "Beckman Coulter/ Nhật Bản",
+      "manufacturer": "Beckman Coulter/ Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "CPU (Bộ nguồn)",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 22049500,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ MINH TÂM"
+      ],
+      "decisionNo": "1360/QĐ-BVĐKTT",
+      "decisionDate": "2025-09-05T23:59:59",
+      "resultPublishedDate": "2025-09-05T14:20:45"
+    },
+    {
+      "id": "f4ac7d0e-45fb-4230-bec6-7c7f59be186c",
+      "name": "Xylanh hút hóa chất",
+      "model": "ZM011200",
+      "brand": "Beckman Coulter/ Nhật Bản",
+      "manufacturer": "Beckman Coulter/ Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Xylanh hút hóa chất",
+      "unit": "Chiếc",
+      "quantity": 2,
+      "unitPrice": 15986300,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ MINH TÂM"
+      ],
+      "decisionNo": "1360/QĐ-BVĐKTT",
+      "decisionDate": "2025-09-05T23:59:59",
+      "resultPublishedDate": "2025-09-05T14:20:45"
+    },
+    {
+      "id": "8d674f3c-98e8-4412-85f8-e3176b3e8233",
+      "name": "Vỏ xylanh",
+      "model": "MU837000",
+      "brand": "Beckman Coulter/ Nhật Bản",
+      "manufacturer": "Beckman Coulter/ Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Vỏ xylanh",
+      "unit": "Chiếc",
+      "quantity": 2,
+      "unitPrice": 4147000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ MINH TÂM"
+      ],
+      "decisionNo": "1360/QĐ-BVĐKTT",
+      "decisionDate": "2025-09-05T23:59:59",
+      "resultPublishedDate": "2025-09-05T14:20:45"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +141,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500379197",
-    "notifyId": "IB2500379197",
-    "bidId": "4454d3be-6cbc-4f2a-bbd6-9943aa8077f0",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:41.681Z"
+  "fetchedAt": "2026-10-01T13:30:28.506Z"
 }
