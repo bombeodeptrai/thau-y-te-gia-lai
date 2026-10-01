@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "21619e2d-1d2d-4ae7-9b93-059464b255c0",
+      "contractorCode": "vn0305559441",
+      "taxCode": "0305559441",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ ĐẦU TƯ VĨ LONG",
+      "status": "won",
+      "lotNo": "BP2600756132",
+      "lotName": "Thuốc bó dược liệu của Bệnh viện Y dược cổ truyền và Phục hồi chức năng Pleiku năm 2026",
+      "bidPrice": 70210000,
+      "finalPrice": 70210000,
+      "winningPrice": 70210000,
+      "reason": "",
+      "submittedAt": "2026-10-01T09:48:24.362",
+      "models": [
+        "-"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "cf4960e5-06dc-4168-bc48-4db3df1eeb9c",
+      "name": "Thuốc bó dược liệu",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Công ty TNHH Đông dược Xuân Quang",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Thành phần: Huyết giác, Đinh Hương, Quế; Tinh dầu Bạc hà, Đại hồi, Bạc hà, Một dược, Nhũ hương, Tinh dầu Long nhãn, Tinh dầu Quế, Nghệ, Ethanol 70%. Quy cách: túi vải 17x11 cm, may dằn chỉ thành dạng đệm dày khoảng 0,3–1 cm; khối lượng ≥ 70 g.",
+      "unit": "Gói",
+      "quantity": 590,
+      "unitPrice": 119000,
+      "amount": 70210000,
+      "contractorCode": "vn0305559441",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ ĐẦU TƯ VĨ LONG"
+      ],
+      "lotNo": "",
+      "decisionNo": "197/QĐ-YDCTPLE",
+      "decisionDate": "2026-09-30T16:05:03",
+      "resultPublishedDate": "2026-10-01T09:48:59"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-30T23:56:48.068Z"
+  "fetchedAt": "2026-10-01T06:07:40.273Z"
 }

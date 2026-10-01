@@ -1,9 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "f7d7a65a-91bc-44b3-9de8-3717a0a9f3d3",
+      "contractorCode": "vn0401781689",
+      "taxCode": "0401781689",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HUDOPHA",
+      "status": "won",
+      "lotNo": "BP2500576854",
+      "lotName": "Mua sắm vật tư sửa chữa máy thở Oxylog 2000 Plus",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 63020000,
+      "reason": "",
+      "submittedAt": "2025-09-22T14:30:42.898",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "11d854cc-3d8c-4e1f-932b-90452084fc30",
+      "name": "Van thở cho máy (Van thở ra)",
+      "model": "8412001",
+      "brand": "Drager",
+      "manufacturer": "Drager",
+      "origin": "Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Sử dụng cho máy thở xách tay\nModel: Oxylog 2000 Plus",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 11380000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HUDOPHA"
+      ],
+      "decisionNo": "1469/QĐ-BVĐKTT",
+      "decisionDate": "2025-09-19T23:59:59",
+      "resultPublishedDate": "2025-09-22T14:30:49"
+    },
+    {
+      "id": "cec6d319-8b2f-4fa0-9847-15573705f7da",
+      "name": "Pin tích điện/ sạc (Pin dự phòng)",
+      "model": "2M86733",
+      "brand": "Drager",
+      "manufacturer": "Drager",
+      "origin": "Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Sử dụng cho máy thở xách tay\nModel: Oxylog 2000 Plus",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 51640000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HUDOPHA"
+      ],
+      "decisionNo": "1469/QĐ-BVĐKTT",
+      "decisionDate": "2025-09-19T23:59:59",
+      "resultPublishedDate": "2025-09-22T14:30:49"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500411438",
-    "notifyId": "IB2500411438",
-    "bidId": "9c21868e-0baf-48df-851a-4888adcd1e85",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:39.570Z"
+  "fetchedAt": "2026-10-01T06:07:46.128Z"
 }

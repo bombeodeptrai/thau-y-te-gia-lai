@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "a8071805-3bad-4de0-a499-f7c79e53ee41",
+      "contractorCode": "vn0314247671",
+      "taxCode": "0314247671",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM HIỆP MINH",
+      "status": "lost",
+      "lotNo": "BP2500616674",
+      "lotName": "theo phụ lục đính kèm QĐ",
+      "bidPrice": 11700000,
+      "finalPrice": 11700000,
+      "winningPrice": 0,
+      "reason": "không vượt qua yếu tố kỹ thuật",
+      "submittedAt": "2025-10-22T15:13:18.473",
+      "models": []
+    },
+    {
+      "id": "28c2a54d-4af2-4799-bd4f-559db1fdd5c3",
+      "contractorCode": "vn0105568576",
+      "taxCode": "0105568576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRANG VINH",
+      "status": "won",
+      "lotNo": "BP2500616674",
+      "lotName": "theo phụ lục đính kèm QĐ",
+      "bidPrice": 658858320,
+      "finalPrice": 658858320,
+      "winningPrice": 658858320,
+      "reason": "",
+      "submittedAt": "2025-10-22T15:13:18.473",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +59,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500443390",
-    "notifyId": "8b4ec77f-456e-4eff-9e0a-3530cf8696b1",
-    "bidId": "727fab28-d19b-47cb-a8b9-da000e0766c6",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:38.472Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-01T06:07:45.085Z"
 }
