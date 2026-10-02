@@ -2,7 +2,68 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "d2abdd47-f33c-4ecd-b5e3-81e3cc7b5b96",
+      "contractorCode": "vn0101268476",
+      "taxCode": "0101268476",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ MINH TÂM",
+      "status": "lost",
+      "lotNo": "PP2500352174",
+      "lotName": "Phần 1: Máy xét nghiệm sinh hóa tự động",
+      "bidPrice": 665700000,
+      "finalPrice": 665700000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu về kỹ thuật",
+      "submittedAt": "2025-08-29T16:42:54.598",
+      "models": []
+    },
+    {
+      "id": "ca598400-82e1-424a-a950-8acb9d7ed47b",
+      "contractorCode": "vn5901019333",
+      "taxCode": "5901019333",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI",
+      "status": "won",
+      "lotNo": "PP2500352174",
+      "lotName": "Phần 1: Máy xét nghiệm sinh hóa tự động",
+      "bidPrice": 836000000,
+      "finalPrice": 836000000,
+      "winningPrice": 836000000,
+      "reason": "",
+      "submittedAt": "2025-08-29T16:42:54.598",
+      "models": []
+    },
+    {
+      "id": "891d9fce-e0f0-4521-ad97-230cd10d9608",
+      "contractorCode": "vn5901019333",
+      "taxCode": "5901019333",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI",
+      "status": "won",
+      "lotNo": "PP2500352175",
+      "lotName": "Phần 2: Máy siêu âm tổng quát",
+      "bidPrice": 589500000,
+      "finalPrice": 589500000,
+      "winningPrice": 589500000,
+      "reason": "",
+      "submittedAt": "2025-08-29T16:42:54.598",
+      "models": []
+    },
+    {
+      "id": "baea78ca-1a11-4f34-b08a-20965e74048f",
+      "contractorCode": "vn5901019333",
+      "taxCode": "5901019333",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI",
+      "status": "won",
+      "lotNo": "PP2500352176",
+      "lotName": "Phần 3: Máy nén ép trị liệu có màn hình cảm ứng",
+      "bidPrice": 61500000,
+      "finalPrice": 61500000,
+      "winningPrice": 61500000,
+      "reason": "",
+      "submittedAt": "2025-08-29T16:42:54.598",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 3,
@@ -48,13 +109,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500324861",
-    "notifyId": "b220006f-6343-42d6-88d2-4567a506f090",
-    "bidId": "2bdba2d2-1d0c-4c93-b6e0-18d7e8d172aa",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:39.276Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-02T12:49:11.179Z"
 }
