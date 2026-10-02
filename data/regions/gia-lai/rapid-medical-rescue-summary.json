@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-02T00:01:26.767Z",
+  "rescuedAt": "2026-10-02T05:54:13.702Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 113,
+      "count": 114,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 231,
+      "count": 247,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 36,
+      "count": 35,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 9,
+      "count": 12,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 71,
+      "count": 72,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 24,
+      "count": 23,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 41,
+      "count": 42,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 51,
+      "count": 53,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 25,
+      "count": 27,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 16,
+      "count": 14,
       "error": ""
     },
     {
@@ -281,29 +281,30 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 703,
+  "candidateCount": 728,
   "acceptedCount": 20,
-  "rejectedCount": 683,
+  "rejectedCount": 708,
   "rejectedReasons": {
-    "excluded:tu van": 224,
-    "excluded:xay dung": 213,
-    "insufficient-medical-context": 137,
-    "excluded:sua chua": 27,
-    "excluded:xay lap": 23,
-    "excluded:cai tao": 16,
+    "excluded:tu van": 237,
+    "excluded:xay dung": 215,
+    "insufficient-medical-context": 143,
+    "excluded:sua chua": 26,
+    "excluded:xay lap": 22,
+    "excluded:cai tao": 20,
     "excluded:bao hiem": 11,
     "excluded:thuc pham": 7,
     "excluded:may tinh": 3,
     "excluded:bao ve": 3,
     "excluded:tham dinh": 3,
     "excluded:suat an": 3,
+    "excluded:cong nghe thong tin": 2,
     "excluded:cap dien": 2,
     "excluded:bao tri": 2,
     "excluded:trang phuc": 2,
     "excluded:bao ho lao dong": 1,
-    "excluded:cong nghe thong tin": 1,
     "excluded:rac thai": 1,
     "excluded:may in": 1,
+    "excluded:giam sat thi cong": 1,
     "excluded:may chu": 1,
     "excluded:thu y": 1,
     "excluded:kiem dinh": 1
@@ -620,6 +621,60 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600552443",
+      "name": "SCL2027-06: Mua sắm Dầu tuabin và Chổi than phục vụ SCL năm 2027",
+      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600563644",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban Quản lý dịch vụ công ích và Phát triển quỹ đất phường Tam Quan",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600559371",
+      "name": "GT04- Thi công xây dựng và lắp đặt thiết bị",
+      "investor": "Trường Cao đẳng Cơ điện Xây dựng và Nông Lâm Trung bộ",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600561255",
+      "name": "Đầu tư hạ tầng internet công cộng tại nhà văn hóa thôn đặc biệt khó khăn",
+      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600559361",
+      "name": "GT04- Thi công xây dựng và lắp đặt thiết bị",
+      "investor": "Trường Cao đẳng Cơ điện Xây dựng và Nông Lâm Trung bộ",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600560678",
       "name": "Mua sắm lắp đặt thiết bị",
@@ -1014,66 +1069,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600558112",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "ỦY ban nhân dân xã Canh Liên",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600556218",
-      "name": "26-80/XL: thi công Sửa chữa phần xây dựng TBA 110kV Ayunpa + Chư Sê + Krông Pa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600556114",
-      "name": "Gói 10/SCL2027/PTC3:Cung cấp điều hòa nhiệt độ (bao gồm lắp đặt)",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600554510",
-      "name": "26-81/XL: thi công Sửa chữa phần xây dựng TBA 110kV An Khê + Kbang + Nhơn Tân + Đồn Phó + Tam Quan",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600549463",
-      "name": "MS-02: Mua sắm vật tư hóa chất",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat",
-        "vat tu",
-        "mua",
-        "mua sam"
       ]
     }
   ],
