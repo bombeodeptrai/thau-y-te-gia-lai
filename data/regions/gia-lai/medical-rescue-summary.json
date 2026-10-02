@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-02T05:37:12.899Z",
+  "rescuedAt": "2026-10-02T14:45:24.441Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 241,
+      "count": 243,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 470,
+      "count": 471,
       "error": ""
     },
     {
@@ -66,13 +66,13 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 20,
+      "count": 26,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 31,
+      "count": 33,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 124,
+      "count": 125,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 40,
+      "count": 41,
       "error": ""
     },
     {
@@ -210,13 +210,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 79,
+      "count": 83,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 32,
+      "count": 37,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -281,23 +281,23 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1260,
+  "candidateCount": 1283,
   "acceptedCount": 51,
-  "rejectedCount": 1209,
+  "rejectedCount": 1232,
   "rejectedReasons": {
-    "excluded:tu van": 348,
-    "excluded:xay dung": 327,
-    "insufficient-medical-context": 311,
-    "excluded:sua chua": 48,
+    "excluded:tu van": 355,
+    "excluded:xay dung": 337,
+    "insufficient-medical-context": 312,
+    "excluded:sua chua": 50,
     "excluded:xay lap": 43,
     "excluded:cai tao": 39,
     "excluded:bao hiem": 19,
     "excluded:thuc pham": 9,
     "excluded:suat an": 8,
+    "excluded:trang phuc": 7,
+    "excluded:may tinh": 6,
     "excluded:tham dinh": 6,
-    "excluded:may tinh": 5,
     "excluded:bao ve": 5,
-    "excluded:trang phuc": 5,
     "excluded:bao tri": 4,
     "excluded:cong nghe thong tin": 3,
     "excluded:rac thai": 3,
@@ -944,6 +944,35 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600565813",
+      "name": "Chương trình Teambuilding 16 năm vận hành an toàn giàn nén khí mỏ Rồng (DVN-DV-3755/26-KHI-TTH)",
+      "investor": "Liên doanh Việt-Nga Vietsovpetro",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600564953",
+      "name": "Mua sắm máy tính, phần mềm",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may tinh",
+      "matched": [
+        "may tinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600563454",
+      "name": "26.50.HH Cột bê tông ly tâm, móng cột khu vực phía Đông Gia Lai",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600552443",
       "name": "SCL2027-06: Mua sắm Dầu tuabin và Chổi than phục vụ SCL năm 2027",
       "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
@@ -1360,38 +1389,6 @@
       "score": 10,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600558549",
-      "name": "XL01-Gia công lắp đặt khung giàn và thi công hệ thống điện",
-      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600556116",
-      "name": "26.56.HH Mua sắm bản quyền phần mềm enjiCAD",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557380",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Ban Quản lý xã Đức Cơ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,

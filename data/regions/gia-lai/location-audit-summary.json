@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-02T05:36:35.325Z",
+  "auditedAt": "2026-10-02T14:44:47.768Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 470,
+      "count": 471,
       "error": ""
     },
     {
@@ -56,13 +56,13 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 20,
+      "count": 26,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 31,
+      "count": 33,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 124,
+      "count": 125,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 40,
+      "count": 41,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 79,
+      "count": 83,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -218,13 +218,13 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 32,
+      "count": 37,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -271,22 +271,22 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1180,
+  "candidateCount": 1203,
   "acceptedCount": 45,
-  "rejectedCount": 1135,
+  "rejectedCount": 1158,
   "rejectedReasons": {
-    "excluded:tu van": 347,
-    "excluded:xay dung": 305,
-    "insufficient-medical-context": 275,
-    "excluded:sua chua": 43,
+    "excluded:tu van": 354,
+    "excluded:xay dung": 315,
+    "insufficient-medical-context": 276,
+    "excluded:sua chua": 45,
     "excluded:xay lap": 41,
     "excluded:cai tao": 39,
     "excluded:bao hiem": 19,
     "excluded:thuc pham": 9,
     "excluded:suat an": 8,
+    "excluded:trang phuc": 7,
+    "excluded:may tinh": 6,
     "excluded:tham dinh": 6,
-    "excluded:may tinh": 5,
-    "excluded:trang phuc": 5,
     "excluded:bao ve": 4,
     "excluded:bao tri": 4,
     "excluded:giam sat thi cong": 3,
@@ -939,6 +939,38 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600030606",
+      "name": "Thẩm định giá: Mua vật tư, phụ kiện đồng hồ nước sạch DN15 phục vụ công tác sửa chữa, thay thế đồng hồ nước bị hư hỏng năm 2026",
+      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600564953",
+      "name": "Mua sắm máy tính, phần mềm",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may tinh",
+      "matched": [
+        "may tinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600563454",
+      "name": "26.50.HH Cột bê tông ly tâm, móng cột khu vực phía Đông Gia Lai",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "DC2600019164",
       "name": "Mua sắm thiết bị công nghệ thông tin phục vụ Đơn vị điều trị dịch vụ của Bệnh viện Đa khoa Gia Lai (Đợt 1)",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -1344,43 +1376,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600563008",
-      "name": "Gói thầu số 3/TN: Thí nghiệm VTTB A cấp và thí nghiệm hệ thống tiếp địaCông trình: Cấp điện Công ty cổ phần Tiến Thịnh Gia Lai năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cap dien",
-      "matched": [
-        "cap dien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600563001",
-      "name": "Gói thầu số 4/TV: Tư vấn giám sát thi công xây dựng toàn bộ công trìnhCấp điện Công ty cổ phần Tiến Thịnh Gia Lai năm 2026 thuộc dự án: Các dự án Cấp điện khách hàng chuyên dùng trong và ngoài KCN tỉnh Gia Lai năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong",
-        "cap dien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562991",
-      "name": "Gói thầu số 2/XL: Thi công xây lắp và xử lý hành lang tuyến công trình Cấp điện Công ty cổ phần Tiến Thịnh Gia Lai năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "cap dien"
       ]
     }
   ],
