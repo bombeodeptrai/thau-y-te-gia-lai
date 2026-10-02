@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "30b9154f-6b29-49e0-a688-73088e753e00",
+      "contractorCode": "vn0400101404",
+      "taxCode": "0400101404",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+      "status": "lost",
+      "lotNo": "BP2500369337",
+      "lotName": "Gói số 48. Hóa chất sử dụng cho máy nước tiểu 11 thông số",
+      "bidPrice": 116000000,
+      "finalPrice": 116000000,
+      "winningPrice": 0,
+      "reason": "Không xét vì Tổ chuyên gia đánh giá theo quy trình 2",
+      "submittedAt": "2025-09-16T09:07:34.565",
+      "models": []
+    },
+    {
+      "id": "d97ab763-e305-44f5-bb07-e4c186c03b75",
+      "contractorCode": "vn6001614229",
+      "taxCode": "6001614229",
+      "contractorName": "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN",
+      "status": "won",
+      "lotNo": "BP2500369337",
+      "lotName": "Gói số 48. Hóa chất sử dụng cho máy nước tiểu 11 thông số",
+      "bidPrice": 108000000,
+      "finalPrice": 108000000,
+      "winningPrice": 108000000,
+      "reason": "",
+      "submittedAt": "2025-09-16T09:07:34.565",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +59,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500314667",
-    "notifyId": "32a3ca62-888c-4e59-afc8-49e4fe84cdd5",
-    "bidId": "0e8d2ad7-ef3a-4090-8a58-8a056a40d311",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:49.343Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-02T23:52:03.641Z"
 }

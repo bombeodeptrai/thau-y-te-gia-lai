@@ -1,9 +1,128 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "656e2b28-1755-488d-898f-b5354ae664d2",
+      "contractorCode": "vn0402257301",
+      "taxCode": "0402257301",
+      "contractorName": "CÔNG TY TNHH NTB SÔNG HÀN",
+      "status": "won",
+      "lotNo": "PP2500350910",
+      "lotName": "Điện cực trung tính dùng 1 lần",
+      "bidPrice": 7087500,
+      "finalPrice": 7087500,
+      "winningPrice": 7087500,
+      "reason": "",
+      "submittedAt": "2025-08-18T09:29:24.578",
+      "models": [
+        "Không yêu cầu"
+      ]
+    },
+    {
+      "id": "666a4a3f-bb9e-462c-8c02-f40a0e91824d",
+      "contractorCode": "vn4300898906",
+      "taxCode": "4300898906",
+      "contractorName": "CÔNG TY TNHH TMDV PN FOOD",
+      "status": "won",
+      "lotNo": "PP2500350911",
+      "lotName": "Kim gây tê răng",
+      "bidPrice": 7500000,
+      "finalPrice": 7500000,
+      "winningPrice": 7500000,
+      "reason": "",
+      "submittedAt": "2025-08-18T09:29:24.578",
+      "models": [
+        "Không yêu cầu"
+      ]
+    },
+    {
+      "id": "504bd1c1-cbc8-4f08-8118-479f14119807",
+      "contractorCode": "vn0101837789",
+      "taxCode": "0101837789",
+      "contractorName": "CÔNG TY TNHH GIẢI PHÁP KHỎE THÁI DƯƠNG",
+      "status": "won",
+      "lotNo": "PP2500350912",
+      "lotName": "Thẻ định nhóm máu ABO tại giường",
+      "bidPrice": 30870000,
+      "finalPrice": 30870000,
+      "winningPrice": 30870000,
+      "reason": "",
+      "submittedAt": "2025-08-18T09:29:24.578",
+      "models": [
+        "Không yêu cầu"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "cd9bc5ae-7ccd-4879-9f9e-ee9a7c905719",
+      "name": "Thẻ định nhóm máu ABO tại giường",
+      "model": "Không yêu cầu",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Eldon Biologicals A/S\n",
+      "origin": "Đan Mạch\n",
+      "manufactureYear": "Từ năm 2024 trở về sau\n",
+      "specification": "* Thành phần: Gồm 2 bảng chứa thuốc thử\n + Anti - A chứa kháng thể đơn dòng Anti -A IgM chuột. \n+ Anti -B chứa kháng thể đơn dòng Anti - B IgM chuột.\n + Chất chứng không chứa kháng thể nhưng chứa cùng chất đệm photphat. \n+ Trước khi đông khô thuốc thử có độ pH là 7,2. \nTiêu chuẩn: ISO",
+      "unit": "Test",
+      "quantity": 2000,
+      "unitPrice": 15435,
+      "amount": 30870000,
+      "contractorCode": "vn0101837789",
+      "winnerNames": [
+        "CÔNG TY TNHH GIẢI PHÁP KHỎE THÁI DƯƠNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "248/QĐ-BVBS",
+      "decisionDate": "2025-08-07T14:14:51",
+      "resultPublishedDate": "2025-08-18T09:30:17"
+    },
+    {
+      "id": "8669fcbe-b650-455e-bf4e-90f944125344",
+      "name": "Kim gây tê răng",
+      "model": "Không yêu cầu\n",
+      "brand": "Không yêu cầu\n",
+      "manufacturer": " Shinhung Co.,Ltd \n",
+      "origin": " Korea \n",
+      "manufactureYear": "Từ năm 2024 trở về sau\n",
+      "specification": "Kim sắc nhọn nhờ sử dụng công nghệ cắt vát 2 lần. \n- Cỡ kim được phân biệt bằng màu sắc trên đốc kim theo tiêu chuẩn ISO. \n- Cán kim dài dễ cầm khi chọc nhiều vùng ven khác nhau. Cỡ kim: 27Gx1/16. \n- Quy cách đóng gói: 100 cái/hộp, đóng gói từng chiếc bằng vỏ nhựa cứng đảm bảo an toàn.",
+      "unit": "Cái",
+      "quantity": 3000,
+      "unitPrice": 2500,
+      "amount": 7500000,
+      "contractorCode": "vn4300898906",
+      "winnerNames": [
+        "CÔNG TY TNHH TMDV PN FOOD"
+      ],
+      "lotNo": "",
+      "decisionNo": "248/QĐ-BVBS",
+      "decisionDate": "2025-08-07T14:14:51",
+      "resultPublishedDate": "2025-08-18T09:30:17"
+    },
+    {
+      "id": "554fa5fb-efae-482c-8ab9-cf699f95c332",
+      "name": "Điện cực trung tính dùng 1 lần",
+      "model": "Không yêu cầu\n",
+      "brand": "Không yêu cầu\n",
+      "manufacturer": "Shenzhen Mecun Medical Supply Co., Ltd\n",
+      "origin": "Trung Quốc\n",
+      "manufactureYear": "Từ năm 2024 trở về sau\n",
+      "specification": "* Vật liệu: PE Keo dính: dẫn xuất hydrogel; Lớp nền bảo vệ PETP film.\n* Hình oval, sử dụng được mọi hướng. Có vòng đẳng thế chia tấm điện cực thành 2 phần đối xứng nhau, diện tích được phân bố đều ở hai bản cực mà không bỏng giảm trở kháng.\n* Kích thước: Khoảng 176mm x 122mm. Độ dày ≥ 1mm. Diện tích bề mặt dán: khoảng 169 cm²; Diện tích vùng dẫn: khoảng 110 cm²; Độ tăng nhiệt trong 60s: <5độC/350mA.\n* Đạt tiêu chuẩn: CE, ISO.",
+      "unit": "Cái",
+      "quantity": 300,
+      "unitPrice": 23625,
+      "amount": 7087500,
+      "contractorCode": "vn0402257301",
+      "winnerNames": [
+        "CÔNG TY TNHH NTB SÔNG HÀN"
+      ],
+      "lotNo": "",
+      "decisionNo": "248/QĐ-BVBS",
+      "decisionDate": "2025-08-07T14:14:51",
+      "resultPublishedDate": "2025-08-18T09:30:17"
+    }
+  ],
   "requirements": {
     "total": 5,
     "items": [
@@ -187,12 +306,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500319156",
-    "notifyId": "7e546465-c59f-48c3-9a3a-10ff5085f813",
-    "bidId": "ecf2cb4a-a8bb-411e-b564-51d879841936",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:43.003Z"
+  "fetchedAt": "2026-10-02T23:51:58.779Z"
 }
