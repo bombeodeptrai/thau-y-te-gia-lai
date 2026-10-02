@@ -1,9 +1,80 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "fc5dd3b9-89ce-4c82-91ca-a84e08c88a2d",
+      "contractorCode": "vn0401823561",
+      "taxCode": "0401823561",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ Y TẾ THANH LỘC PHÁT",
+      "status": "lost",
+      "lotNo": "PP2500371397",
+      "lotName": "Phần 1: Sinh phẩm y tế",
+      "bidPrice": 525130000,
+      "finalPrice": 525130000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu về kỹ thuât",
+      "submittedAt": "2025-09-18T14:37:43.844",
+      "models": []
+    },
+    {
+      "id": "7fc40b3a-1e1a-4b30-b43c-aa2e79e6b544",
+      "contractorCode": "vn0313417031",
+      "taxCode": "0313417031",
+      "contractorName": "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH",
+      "status": "lost",
+      "lotNo": "PP2500371397",
+      "lotName": "Phần 1: Sinh phẩm y tế",
+      "bidPrice": 534690500,
+      "finalPrice": 534690500,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu về kỹ thuât",
+      "submittedAt": "2025-09-18T14:37:43.844",
+      "models": []
+    },
+    {
+      "id": "9a296ac3-6ce8-47aa-89ed-7c1fe24f8442",
+      "contractorCode": "vn5900980625",
+      "taxCode": "5900980625",
+      "contractorName": "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI",
+      "status": "won",
+      "lotNo": "PP2500371398",
+      "lotName": "Phần 2: Oxy y tế",
+      "bidPrice": 144000000,
+      "finalPrice": 144000000,
+      "winningPrice": 144000000,
+      "reason": "",
+      "submittedAt": "2025-09-18T14:37:43.844",
+      "models": [
+        "O2"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "d34cabf9-263f-4841-aefd-865dcf728269",
+      "name": "Khí oxy y tế",
+      "model": "O2",
+      "brand": "Oxygen",
+      "manufacturer": "Messer",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Oxy có hàm lượng >= 99,6%; Không màu, không mùi, không vị; đóng trong bình thép chịu áp lực, bình 40 lít",
+      "unit": "Bình",
+      "quantity": 1200,
+      "unitPrice": 120000,
+      "amount": 144000000,
+      "contractorCode": "vn5900980625",
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "481/QĐ-TTYT",
+      "decisionDate": "2025-09-18T23:59:59",
+      "resultPublishedDate": "2025-09-18T14:38:22"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -38,13 +109,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500347880",
-    "notifyId": "c2f78356-8160-415a-b9ce-00ba33f0cda8",
-    "bidId": "e284aabc-e4f5-49f5-a306-aacc77c6a565",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:34.301Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-02T05:50:33.789Z"
 }

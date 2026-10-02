@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "9103e49c-ae79-4340-bda3-d88ccb5bc13b",
+      "contractorCode": "vn0102277113",
+      "taxCode": "0102277113",
+      "contractorName": "CÔNG TY CỔ PHẦN Y TẾ QUANG MINH",
+      "status": "lost",
+      "lotNo": "BP2500449166",
+      "lotName": "Gói thầu số 1: Mua sắm trang thiết bị y tế của Trung tâm Y tế Chư Pưh năm 2025",
+      "bidPrice": 644700000,
+      "finalPrice": 644700000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2 về giá",
+      "submittedAt": "2025-09-16T14:46:06.595",
+      "models": []
+    },
+    {
+      "id": "a506024a-53eb-4e10-9ddd-421dbed466d8",
+      "contractorCode": "vn5901019333",
+      "taxCode": "5901019333",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HUỲNH VÂN GIA LAI",
+      "status": "won",
+      "lotNo": "BP2500449166",
+      "lotName": "Gói thầu số 1: Mua sắm trang thiết bị y tế của Trung tâm Y tế Chư Pưh năm 2025",
+      "bidPrice": 601000000,
+      "finalPrice": 601000000,
+      "winningPrice": 601000000,
+      "reason": "",
+      "submittedAt": "2025-09-16T14:46:06.595",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +59,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500326528",
-    "notifyId": "15424b60-1c8e-4689-bfd3-738c8eb059da",
-    "bidId": "22792d66-1e7e-4dac-8786-b92ae5f90f76",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:36.937Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-02T05:50:37.170Z"
 }
