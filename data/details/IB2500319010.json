@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "6ec04a53-771c-4f61-80c9-900289277bed",
+      "contractorCode": "vn0401823561",
+      "taxCode": "0401823561",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ Y TẾ THANH LỘC PHÁT",
+      "status": "lost",
+      "lotNo": "PP2500318275",
+      "lotName": "Phần 2: Dụng cụ y tế",
+      "bidPrice": 134196200,
+      "finalPrice": 134196200,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu về ky thuật",
+      "submittedAt": "2025-08-14T19:27:44.455",
+      "models": []
+    },
+    {
+      "id": "ad00a570-b6cf-47be-a303-26262bc5ebf9",
+      "contractorCode": "vn5900980625",
+      "taxCode": "5900980625",
+      "contractorName": "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI",
+      "status": "won",
+      "lotNo": "PP2500318276",
+      "lotName": "Phần 3: Khí oxy y tế",
+      "bidPrice": 38760000,
+      "finalPrice": 38760000,
+      "winningPrice": 38760000,
+      "reason": "",
+      "submittedAt": "2025-08-14T19:27:44.455",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 5,
@@ -68,13 +99,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500319010",
-    "notifyId": "a5ffa564-bf3d-4797-880b-2f02f91e0650",
-    "bidId": "f2ab502c-16dc-46d8-ab84-e647f93d4105",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:42.122Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-02T19:24:25.596Z"
 }

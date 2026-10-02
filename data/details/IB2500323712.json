@@ -2,7 +2,53 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "c569b501-cb73-4788-9460-2397d5a7450e",
+      "contractorCode": "vn5901044026",
+      "taxCode": "5901044026",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN GIA KHẢI TIẾN",
+      "status": "lost",
+      "lotNo": "BP2500449999",
+      "lotName": "Mua sắm vật tư tiêu hao thông dụng - Bệnh viện Đa khoa tỉnh Gia Lai",
+      "bidPrice": 2010001000,
+      "finalPrice": 2010001000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 3 về giá, Không đánh giá",
+      "submittedAt": "2025-08-29T15:03:41.372",
+      "models": []
+    },
+    {
+      "id": "172a22e8-f5b1-4456-8e14-bbd103dcb5ae",
+      "contractorCode": "vn5901122450",
+      "taxCode": "5901122450",
+      "contractorName": "CÔNG TY TNHH PHÁT TRIỂN 6 GEM",
+      "status": "won",
+      "lotNo": "BP2500449999",
+      "lotName": "Mua sắm vật tư tiêu hao thông dụng - Bệnh viện Đa khoa tỉnh Gia Lai",
+      "bidPrice": 1938556500,
+      "finalPrice": 1938556500,
+      "winningPrice": 1938556500,
+      "reason": "",
+      "submittedAt": "2025-08-29T15:03:41.372",
+      "models": []
+    },
+    {
+      "id": "497a2e54-9ee1-448f-a359-ed431142f792",
+      "contractorCode": "vn3301582621",
+      "taxCode": "3301582621",
+      "contractorName": "CÔNG TY TNHH TỔNG HỢP XUẤT NHẬP KHẨU PHÚC THỊNH",
+      "status": "lost",
+      "lotNo": "BP2500449999",
+      "lotName": "Mua sắm vật tư tiêu hao thông dụng - Bệnh viện Đa khoa tỉnh Gia Lai",
+      "bidPrice": 1453791600,
+      "finalPrice": 1453791600,
+      "winningPrice": 0,
+      "reason": "Không đạt tính hợp lệ E-HSDT",
+      "submittedAt": "2025-08-29T15:03:41.372",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +74,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500323712",
-    "notifyId": "bbb607cd-0e26-4d56-8a61-4faab30d3d47",
-    "bidId": "87bc0aaa-272b-4db0-b17c-9b8da2bf0779",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T10:19:42.070Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-02T19:24:25.434Z"
 }
