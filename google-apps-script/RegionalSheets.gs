@@ -44,9 +44,13 @@ function setupMienTrungSheets() {
     mtSyncRegion_(SpreadsheetApp.getActive(), giaLai);
     PropertiesService.getScriptProperties().setProperty(MT_CURSOR_KEY, "0");
   });
+  // Gia Lai không nằm trong hàng đợi xoay vòng của syncMienTrungSheets, nên
+  // phải có trigger riêng. Nếu thiếu trigger này, Gia Lai chỉ được ghi một lần
+  // lúc cài đặt và không bao giờ tự cập nhật lại.
+  ScriptApp.newTrigger("syncGiaLaiSheets").timeBased().everyHours(1).create();
   ScriptApp.newTrigger("syncMienTrungSheets").timeBased().everyMinutes(15).create();
   SpreadsheetApp.getActive().toast(
-    "Đã đồng bộ Gia Lai. Các tỉnh khác sẽ tự cập nhật lần lượt mỗi 15 phút vào tab riêng.",
+    "Đã đồng bộ Gia Lai. Gia Lai sẽ cập nhật mỗi giờ; các tỉnh khác lần lượt mỗi 15 phút.",
     "Thầu Y tế Miền Trung",
     10
   );
@@ -94,8 +98,9 @@ function stopMienTrungSheets() {
 }
 
 function mtRemoveSyncTriggers_() {
+  const handlers = ["syncMienTrungSheets", "syncGiaLaiSheets"];
   ScriptApp.getProjectTriggers()
-    .filter(function(trigger) { return trigger.getHandlerFunction() === "syncMienTrungSheets"; })
+    .filter(function(trigger) { return handlers.indexOf(trigger.getHandlerFunction()) >= 0; })
     .forEach(function(trigger) { ScriptApp.deleteTrigger(trigger); });
 }
 

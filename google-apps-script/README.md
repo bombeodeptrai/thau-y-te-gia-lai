@@ -17,3 +17,16 @@ Hệ thống không gửi 241 gói hiện có trong lần khởi tạo. Từ l�
 - Bật/tắt thông báo: sheet `Cấu hình`, ô `B3`.
 - Có thể dùng menu **Thầu Y tế Gia Lai → Cập nhật ngay** hoặc **Gửi email thử**.
 - Trigger tự động chạy mỗi giờ, kể cả khi không mở Google Sheet.
+
+## Các tab `DBMT - ...` cho toàn miền Trung
+
+1. Trong cùng dự án Apps Script, tạo thêm tệp `RegionalSheets.gs` và sao chép
+   nội dung tệp cùng tên trong repository.
+2. Chạy `setupMienTrungSheets` một lần và chấp nhận quyền truy cập.
+3. Gia Lai được cập nhật riêng mỗi giờ. Các tỉnh còn lại được xoay vòng, mỗi
+   15 phút xử lý một tỉnh để tránh vượt thời gian chạy của Apps Script.
+4. Khi cần cập nhật Gia Lai ngay, chạy `syncGiaLaiSheets`.
+
+Nếu đã cài bản cũ, cần chạy lại `setupMienTrungSheets` sau khi thay mã để tạo
+trigger Gia Lai. Việc cập nhật JSON trên GitHub Pages không tự sửa trigger bên
+trong Google Sheet đã được cài trước đó.
