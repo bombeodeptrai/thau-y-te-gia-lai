@@ -1,9 +1,60 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "653af73b-c6ca-4fe7-9fee-5c1ee3362f6b",
+      "contractorCode": "vn0108936926",
+      "taxCode": "0108936926",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VÀ DỊCH VỤ Y TẾ VIỆT NAM",
+      "status": "won",
+      "lotNo": "BP2500426747",
+      "lotName": "Mua sắm thiết bị y tế năm 2025 phục vụ công tác khám bệnh, chữa bệnh của Bệnh viện Lao và Bệnh phổi Bình Định",
+      "bidPrice": 1450000000,
+      "finalPrice": 1450000000,
+      "winningPrice": 1450000000,
+      "reason": "",
+      "submittedAt": "2025-08-08T18:01:12.246",
+      "models": []
+    },
+    {
+      "id": "3f3f9e75-268d-475d-b753-73e98612a70d",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "lost",
+      "lotNo": "BP2500426747",
+      "lotName": "Mua sắm thiết bị y tế năm 2025 phục vụ công tác khám bệnh, chữa bệnh của Bệnh viện Lao và Bệnh phổi Bình Định",
+      "bidPrice": 1750000000,
+      "finalPrice": 1750000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2025-08-08T18:01:12.246",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "6b3e6b84-ad53-4a16-9aa2-1d9b52aede32",
+      "name": "Máy đo/ phân tích chức năng hô hấp (Máy phân tích chức năng hô hấp công nghệ sóng siêu âm toàn thân)",
+      "model": "Vyntus BODY",
+      "brand": "Jaeger",
+      "manufacturer": "Jaeger Medical GmbH",
+      "origin": "Xuất xứ máy chính: Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Theo bảng tính năng kỹ thuật",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1450000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VÀ DỊCH VỤ Y TẾ VIỆT NAM "
+      ],
+      "decisionNo": "Số 244/QĐ-BVLPQN",
+      "decisionDate": "2025-08-08T23:59:59",
+      "resultPublishedDate": "2025-08-08T18:01:42"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +79,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500299415",
-    "notifyId": "11f3ec33-8821-45a5-9e53-aee0ee8229b4",
-    "bidId": "8f23d126-db3f-48d3-bd3f-e5c298aa1f51",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:15.883Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:49:18.709Z"
 }

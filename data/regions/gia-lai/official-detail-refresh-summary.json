@@ -1,25 +1,16 @@
 {
   "schemaVersion": 1,
   "regionSlug": "gia-lai",
-  "refreshedAt": "2026-10-03T11:37:23.192Z",
+  "refreshedAt": "2026-10-03T11:48:38.951Z",
   "limit": 80,
-  "refreshedCount": 8,
+  "refreshedCount": 9,
   "results": [
     {
-      "notifyNo": "IB2600563361",
-      "requirementCount": 1,
-      "technicalCount": 1,
+      "notifyNo": "IB2600520631",
+      "requirementCount": 12,
+      "technicalCount": 0,
       "requirementDisclosure": "public-plan-lots",
-      "technicalDisclosure": "public-structured-hsmt",
-      "success": true,
-      "error": ""
-    },
-    {
-      "notifyNo": "IB2600563075",
-      "requirementCount": 7,
-      "technicalCount": 7,
-      "requirementDisclosure": "public-plan-lots",
-      "technicalDisclosure": "public-structured-hsmt",
+      "technicalDisclosure": "official-captcha-required",
       "success": true,
       "error": ""
     },
@@ -69,6 +60,15 @@
       "error": ""
     },
     {
+      "notifyNo": "IB2600539805",
+      "requirementCount": 5,
+      "technicalCount": 5,
+      "requirementDisclosure": "public-plan-lots",
+      "technicalDisclosure": "public-structured-hsmt",
+      "success": true,
+      "error": ""
+    },
+    {
       "notifyNo": "DC2600000283",
       "requirementCount": 1,
       "technicalCount": 0,
@@ -76,10 +76,19 @@
       "technicalDisclosure": "official-captcha-required",
       "success": true,
       "error": ""
+    },
+    {
+      "notifyNo": "IB2600534284",
+      "requirementCount": 4,
+      "technicalCount": 4,
+      "requirementDisclosure": "public-plan-lots",
+      "technicalDisclosure": "public-structured-hsmt",
+      "success": true,
+      "error": ""
     }
   ],
-  "detailTenderCount": 1073,
-  "requirementCount": 19102,
-  "technicalCount": 2877,
+  "detailTenderCount": 1076,
+  "requirementCount": 19123,
+  "technicalCount": 2886,
   "strategy": "official-identity-plan-and-public-technical-details"
 }
