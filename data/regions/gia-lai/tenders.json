@@ -38,7 +38,8 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
     },
     {
       "id": "deb1916a-ce89-403c-9717-6a933fa4c70e",
@@ -148,7 +149,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI XUẤT NHẬP KHẨU AN AN"
@@ -318,7 +319,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
@@ -864,7 +865,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH THIẾT BỊ Y TẾ VŨ GIA PHÁT ",
@@ -68387,7 +68388,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-03T05:27:31.431Z",
+  "fetchedAt": "2026-10-03T05:31:11.904Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -68395,7 +68396,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 1015,
+  "detailTenderCount": 1071,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
@@ -68420,6 +68421,15 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "filterStrategy": "unified-medical-scope-v12",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v12",
+    "lastMedicalRescueAt": "2026-10-03T05:31:11.904Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 724,
+    "lastMedicalRescueMedicalCount": 20,
+    "lastMedicalRescueNewCount": 0,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
