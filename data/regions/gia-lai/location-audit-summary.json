@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-03T13:24:00.989Z",
+  "auditedAt": "2026-10-03T19:14:32.380Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 29,
+      "count": 35,
       "error": ""
     },
     {
@@ -206,7 +206,7 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1201,
+  "candidateCount": 1206,
   "acceptedCount": 47,
-  "rejectedCount": 1154,
+  "rejectedCount": 1159,
   "rejectedReasons": {
-    "excluded:tu van": 360,
-    "excluded:xay dung": 311,
-    "insufficient-medical-context": 269,
+    "excluded:tu van": 361,
+    "excluded:xay dung": 310,
+    "insufficient-medical-context": 274,
     "excluded:sua chua": 45,
     "excluded:cai tao": 41,
     "excluded:xay lap": 41,
