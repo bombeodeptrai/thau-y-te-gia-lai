@@ -152,6 +152,11 @@ for (const file of artifactWorkflows) {
     || text.includes('tar -czf "artifacts/${{ matrix.region }}.tgz" "data/regions/${{ matrix.region }}"')) {
     throw new Error(`${file} còn đóng gói toàn bộ thư mục vùng và có thể ghi đè dữ liệu mới của workflow khác`);
   }
+  if (!text.includes("artifacts/concurrent/base-tenders.json")
+    || !text.includes("artifacts/concurrent/current-tenders.json")
+    || !text.includes("merge-concurrent-tenders.mjs")) {
+    throw new Error(`${file} chưa bảo toàn thay đổi trên main phát sinh trong lúc artifact đang quét`);
+  }
 }
 for (const reportName of [
   "rapid-medical-rescue-summary.json",

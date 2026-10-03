@@ -38,6 +38,7 @@ jobs:
           node --test scripts/source-time.test.mjs
           node --test scripts/display-time.test.mjs
           node --test scripts/google-sheets-sync.test.mjs
+          node --test scripts/merge-concurrent-tenders.test.mjs
           node --check display-time.js
           node --check scripts/run-region-scan.mjs
           node --check scripts/fetch-data.mjs
@@ -48,6 +49,7 @@ jobs:
           node --check scripts/fetch-competitor-history.mjs
           node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
+          node --check scripts/merge-concurrent-tenders.mjs
           node --check scripts/apply-manual-equipment-overrides.mjs
           node --check scripts/build-pages.mjs
           node --check scripts/build-region-shards.mjs
