@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-03T05:18:29.585Z",
+  "auditedAt": "2026-10-03T11:36:07.356Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 471,
+      "count": 474,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 27,
+      "count": 28,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 127,
+      "count": 126,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 41,
+      "count": 40,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 83,
+      "count": 80,
       "error": ""
     },
     {
@@ -212,13 +212,13 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 37,
+      "count": 36,
       "error": ""
     },
     {
@@ -271,33 +271,32 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1204,
-  "acceptedCount": 46,
-  "rejectedCount": 1158,
+  "candidateCount": 1200,
+  "acceptedCount": 47,
+  "rejectedCount": 1153,
   "rejectedReasons": {
-    "excluded:tu van": 355,
-    "excluded:xay dung": 314,
-    "insufficient-medical-context": 275,
+    "excluded:tu van": 359,
+    "excluded:xay dung": 311,
+    "insufficient-medical-context": 269,
     "excluded:sua chua": 45,
     "excluded:cai tao": 41,
     "excluded:xay lap": 41,
     "excluded:bao hiem": 19,
     "excluded:thuc pham": 9,
+    "excluded:tham dinh": 8,
     "excluded:suat an": 8,
     "excluded:trang phuc": 7,
     "excluded:may tinh": 6,
-    "excluded:tham dinh": 6,
     "excluded:bao ve": 4,
     "excluded:bao tri": 4,
     "excluded:giam sat thi cong": 3,
     "excluded:phan bon": 3,
     "excluded:kiem dinh": 3,
     "excluded:may in": 3,
-    "excluded:cong nghe thong tin": 2,
     "excluded:cap dien": 2,
     "excluded:may chu": 2,
     "excluded:rac thai": 2,
-    "excluded:thuoc generic": 1,
+    "excluded:cong nghe thong tin": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1,
     "excluded:quan ly du an": 1
@@ -351,6 +350,20 @@
       ]
     },
     {
+      "notifyNo": "DC2600016442",
+      "name": "Cung cấp, lắp đặt hệ thống điện cấp nguồn cho Máy Cộng hưởng từ (MRI) thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 135,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "thuoc",
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600558508",
       "name": "Lựa chọn đơn vị cung cấp dịch vụ tổ chức các khóa đào tạo Bồi dưỡng về Y học gia đình cho bác sỹ tại các TYT xã/phường trọng điểm thuộc 02 tỉnh Gia Lai và Lâm Đồng;",
       "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
@@ -359,6 +372,7 @@
       "reason": "explicit-medical-title",
       "matched": [
         "y hoc gia dinh",
+        "thuoc",
         "cung cap"
       ]
     },
@@ -414,12 +428,13 @@
       "name": "Lắp đặt vách ngăn các Kho thuốc; Vật tư y tế Khoa Dược thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
+      "score": 235,
+      "reason": "explicit-medical-title+medical-investor+medical-drug-supply",
       "matched": [
         "vat tu y te",
         "benh vien",
         "da khoa",
+        "thuoc",
         "vat tu"
       ]
     },
@@ -450,6 +465,21 @@
         "benh vien",
         "hoa chat",
         "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600534284",
+      "name": "Mua sắm thuốc Generic bổ sung lần 1",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "thuoc",
         "mua",
         "mua sam"
       ]
@@ -630,52 +660,19 @@
       ]
     },
     {
-      "notifyNo": "IB2600502262",
-      "name": "Gói 3. Hóa chất sử dụng trên máy miễn dịch tự động gồm 08 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "notifyNo": "IB2600563075",
+      "name": "Mua sắm thuốc Lao hàng 1 bổ sung phục vụ khám bệnh, chữa bệnh năm 2026",
+      "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
       "accepted": true,
-      "score": 135,
-      "reason": "medical-investor+laboratory-supply+laboratory-analyzer-context+machine-usage-context",
+      "score": 145,
+      "reason": "medical-investor+medical-drug-supply",
       "matched": [
         "benh vien",
-        "da khoa",
-        "hoa chat",
-        "mien dich",
-        "may mien dich",
-        "su dung tren may",
-        "dung tren may"
-      ]
-    },
-    {
-      "notifyNo": "IB2600502186",
-      "name": "Gói 2. Hóa chất sử dụng trên máy phân tích huyết học tự động gồm 07 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 235,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+machine-usage-context",
-      "matched": [
-        "may phan tich",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "huyet hoc",
-        "su dung tren may",
-        "dung tren may"
-      ]
-    },
-    {
-      "notifyNo": "IB2600504083",
-      "name": "“Mua sắm Bộ kit trong lọc máu liên tục, Bộ kit dùng trong lọc huyết tương, Túi dịch thải của Bệnh viện Đa khoa Gia Lai”.",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "loc mau",
-        "benh vien",
-        "da khoa",
+        "thuoc",
         "mua",
-        "mua sam"
+        "mua sam",
+        "kham benh",
+        "chua benh"
       ]
     },
     {
@@ -716,12 +713,14 @@
       "name": "Thuốc bó dược liệu của Bệnh viện Y dược cổ truyền và Phục hồi chức năng Pleiku năm 2026",
       "investor": "BỆNH VIỆN Y DƯỢC CỔ TRUYỀN VÀ PHỤC HỒI CHỨC NĂNG PLEIKU",
       "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
+      "score": 225,
+      "reason": "explicit-medical-title+medical-investor+medical-drug-supply",
       "matched": [
         "thuoc bo",
         "benh vien",
-        "y duoc"
+        "y duoc",
+        "thuoc",
+        "duoc lieu"
       ]
     },
     {
@@ -756,6 +755,20 @@
         "trung tam y te",
         "sua chua",
         "ghe nha khoa"
+      ]
+    },
+    {
+      "notifyNo": "IB2600563361",
+      "name": "Mua sắm thuốc Morphin hydroclorid 10mg/ml năm 2026",
+      "investor": "Trung Tâm Y Tế Ayun Pa",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "trung tam y te",
+        "thuoc",
+        "mua",
+        "mua sam"
       ]
     },
     {
@@ -922,23 +935,143 @@
       "matched": [
         "kham suc khoe"
       ]
-    },
-    {
-      "notifyNo": "IB2600550514",
-      "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600566379",
+      "name": "Tư vấn Lập quy hoạch tổng mặt bằng.Trường THPT Trần Phú, hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600034328",
+      "name": "Tư vấn Khảo sát địa hình, địa chất.Trường THPT Trần Phú, hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600034307",
+      "name": "Tư vấn Giám sát khảo sát.Trường THPT Trần Phú, hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600013507",
+      "name": "Tư vấn Lập nhiệm vụ khảo sát.Trường THPT Trần Phú, hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600022079",
+      "name": "Thẩm định giá",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tham dinh",
+      "matched": [
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600022058",
+      "name": "Tư vấn lập báo cáo kinh tế - kỹ thuật",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600022071",
+      "name": "Tư vấn thẩm tra Báo cáo kinh tế kỹ thuật",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600022029",
+      "name": "Tư vấn quản lý dự án",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600022001",
+      "name": "Tư vấn thẩm tra Báo cáo kinh tế kỹ thuật",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600022011",
+      "name": "Thẩm định giá",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tham dinh",
+      "matched": [
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600021996",
+      "name": "Tư vấn lập báo cáo kinh tế - kỹ thuật",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600021982",
+      "name": "Tư vấn quản lý dự án",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
     {
       "notifyNo": "DC2600034062",
       "name": "Tư vấn Lập quy hoạch tổng mặt bằng.Trường THPT Pleime, hạng mục: Dãy nhà 03 tầng 10 phòng học lý thuyết, 02 phòng học bộ môn; các hạng mục phụ và thiết bị.",
@@ -1169,6 +1302,7 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": [
+        "thuoc",
         "mua"
       ]
     },
@@ -1238,152 +1372,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "DC2600030586",
-      "name": "Tư vấn lập cơ sở dữ liệu GIS",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600030545",
-      "name": "Tư vấn giám sát khảo sát xây dựng",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600030504",
-      "name": "Tư vấn giám sát khảo sát xây dựng",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600030390",
-      "name": "Tư vấn lập hồ sơ đăng ký môi trường",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600030346",
-      "name": "Tư vấn lập hồ sơ đăng ký môi trường",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600020949",
-      "name": "Thẩm tra báo cáo kinh tế kỹ thuật công trình cải tạo, sửa chữa trụ sở BIDV Nam Gia Lai",
-      "investor": "NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN VIỆT NAM - CHI NHÁNH NAM GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600020935",
-      "name": "Tư vấn lập báo cáo KTKT",
-      "investor": "NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN VIỆT NAM - CHI NHÁNH NAM GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600027193",
-      "name": "Dịch vụ sửa chữa 01 máy đo loãng xương siêu âm REFSonost 3000",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600019438",
-      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Hà Huy Tập, hạng mục: Nhà 03 tầng gồm 12 phòng học lý thuyết, 02 phòng học bộ môn; nhà vệ sinh; sân bê tông; hệ thống phòng cháy, chữa cháy; thiết bị phòng cháy, chữa cháy, thiết bị dạy học.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "DC2600019418",
-      "name": "Tư vấn Quản lý dự án.Dự án: Trường THPT Lê Thánh Tông, hạng mục: Xây mới khối nhà 03 tầng, gồm 13 phòng và các hạng mục phụ, trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "DC2600029369",
-      "name": "Lắp đặt, mở rộng hệ thống 3 đường khí khoa Hồi Sức Tích Cức Chống Độc của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": 55,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "hoi suc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600559797",
-      "name": "Mua sắm xe chữa cháy cho Khu công nghiệp",
-      "investor": "Công ty phát triển hạ tầng khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1067,
-  "afterCount": 1067,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v12"
+  "afterCount": 1072,
+  "newCount": 5,
+  "filterStrategy": "unified-medical-scope-v13"
 }
