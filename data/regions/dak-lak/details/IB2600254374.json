@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "1d738994-2cda-4010-9498-c7235d41de98",
+      "contractorCode": "vn0315549643",
+      "taxCode": "0315549643",
+      "contractorName": "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ DƯỢC PHẨM HOÀNG NGỌC",
+      "status": "won",
+      "lotNo": "PP2600219914",
+      "lotName": "Erythropoietin",
+      "bidPrice": 1315000000,
+      "finalPrice": 1315000000,
+      "winningPrice": 1315000000,
+      "reason": "",
+      "submittedAt": "2026-06-26T09:33:41.396",
+      "models": [
+        "Nanokine",
+        "Nanokine 4000 IU"
+      ]
+    },
+    {
+      "id": "51dc4280-9d10-42f2-a93c-b9608766b127",
+      "contractorCode": "vn0315549643",
+      "taxCode": "0315549643",
+      "contractorName": "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ DƯỢC PHẨM HOÀNG NGỌC",
+      "status": "won",
+      "lotNo": "PP2600219915",
+      "lotName": "Erythropoietin",
+      "bidPrice": 7332000000,
+      "finalPrice": 7332000000,
+      "winningPrice": 7332000000,
+      "reason": "",
+      "submittedAt": "2026-06-26T09:33:41.396",
+      "models": [
+        "Nanokine",
+        "Nanokine 4000 IU"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600219914",
+      "name": "Nanokine",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bơm tiêm",
+      "quantity": 10000,
+      "unitPrice": 131500,
+      "amount": 1315000000,
+      "contractorCode": "vn0315549643",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ DƯỢC PHẨM HOÀNG NGỌC"
+      ],
+      "lotNo": "PP2600219914",
+      "decisionNo": "1081/QĐ-BVĐKPY",
+      "decisionDate": "2026-06-26T23:59:59",
+      "resultPublishedDate": "2026-06-26T09:33:46"
+    },
+    {
+      "id": "2600219915",
+      "name": "Nanokine 4000 IU",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bơm tiêm",
+      "quantity": 26000,
+      "unitPrice": 282000,
+      "amount": 7332000000,
+      "contractorCode": "vn0315549643",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ DƯỢC PHẨM HOÀNG NGỌC"
+      ],
+      "lotNo": "PP2600219915",
+      "decisionNo": "1081/QĐ-BVĐKPY",
+      "decisionDate": "2026-06-26T23:59:59",
+      "resultPublishedDate": "2026-06-26T09:33:46"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "a8029d4d-d590-4260-89d3-8356d2fcd697",
+        "lotNo": "PP2600219914",
+        "name": "Erythropoietin",
+        "quantity": 10000,
+        "unit": "Bơm tiêm",
+        "plannedPrice": 1350000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "3fb16290-186e-4ca6-825a-202f4ed3cedb",
+        "lotNo": "PP2600219915",
+        "name": "Erythropoietin",
+        "quantity": 26000,
+        "unit": "Bơm tiêm",
+        "plannedPrice": 7540000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "thuốc generic",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-03T11:46:23.137Z"
+}

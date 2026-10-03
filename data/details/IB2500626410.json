@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "79a28c59-bbaa-4034-bcfe-aad4270eef66",
+      "contractorCode": "vn2500228415",
+      "taxCode": "2500228415",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+      "status": "won",
+      "lotNo": "PP2500631157",
+      "lotName": "Oxytocin",
+      "bidPrice": 259560000,
+      "finalPrice": 259560000,
+      "winningPrice": 259560000,
+      "reason": "",
+      "submittedAt": "2026-01-08T10:35:32.588",
+      "models": [
+        "Vinphatoxin"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "863899e5-1ba3-4f0b-b159-d218160eef86",
+      "name": "Oxytocin",
+      "model": "Vinphatoxin",
+      "brand": "Vinphatoxin",
+      "manufacturer": "Công ty Cổ phần Dược phẩm Vĩnh Phúc",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "dung dịch tiêm, hàm lượng/nồng độ: 5IU/\nml, \nNhóm \n4",
+      "unit": "Ống",
+      "quantity": 40000,
+      "unitPrice": 6489,
+      "amount": 259560000,
+      "contractorCode": "vn2500228415",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
+      "lotNo": "",
+      "decisionNo": "04/QĐ-BVBBT",
+      "decisionDate": "2026-01-08T10:33:59",
+      "resultPublishedDate": "2026-01-08T10:35:56"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "a31addc7-2966-407c-930e-20726c93a912",
+        "lotNo": "PP2500631157",
+        "name": "Oxytocin",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 259560000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "95a43e5a-f4f3-454c-8eb0-ca8006c5ad07",
+        "lotNo": "PP2500631158",
+        "name": "Misoprostol",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 12000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc Oxytocin 5IU/ml và Misoprostol 200mcg phục vụ công tác cấp cứu sản khoa và điều trị",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "20251124152053348",
+        "position": "1.1",
+        "lotNo": "PP2500631157",
+        "lotName": "Oxytocin",
+        "name": "Oxytocin",
+        "unit": "Ống",
+        "quantity": 40000,
+        "code": "không",
+        "brand": "không",
+        "manufacturer": "Không đề xuất",
+        "origin": "Việt Nam",
+        "manufactureYear": "2025",
+        "specification": "5IU/ml, Nhóm 4",
+        "otherRequirement": "",
+        "projectPlace": "06 Hải Thượng Lãn Ông, xã Bắc Bình, tỉnh Lâm Đồng",
+        "earliestDeliveryDate": "trong vòng 24 giờ kể từ khi nhận đơn hàng",
+        "latestDeliveryDate": "72 giờ giờ kể từ khi nhận đơn hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "20251124152332692",
+        "position": "2.1",
+        "lotNo": "PP2500631158",
+        "lotName": "Misoprostol",
+        "name": "Misoprostol",
+        "unit": "Viên",
+        "quantity": 3000,
+        "code": "Không",
+        "brand": "Không",
+        "manufacturer": "Không đề xuất",
+        "origin": "Việt Nam",
+        "manufactureYear": "2025",
+        "specification": "200mcg, Nhóm 4",
+        "otherRequirement": "",
+        "projectPlace": "06 Hải Thượng Lãn Ông, xã Bắc Bình, tỉnh Lâm Đồng",
+        "earliestDeliveryDate": "trong vòng 24 giờ kể từ khi nhận đơn hàng",
+        "latestDeliveryDate": "72 giờ giờ kể từ khi nhận đơn hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-03T11:50:43.297Z"
+}

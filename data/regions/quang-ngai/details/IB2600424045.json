@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "50686024-658f-4299-8240-373369e9107b",
+      "contractorCode": "vn0402065575",
+      "taxCode": "0402065575",
+      "contractorName": "CÔNG TY TNHH HAVIPHARM ÂU CHÂU",
+      "status": "lost",
+      "lotNo": "PP2600320714",
+      "lotName": "Olanzapin 10 mg",
+      "bidPrice": 90000000,
+      "finalPrice": 90000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng nhà thầu: 2",
+      "submittedAt": "2026-08-19T14:23:18.372",
+      "models": []
+    },
+    {
+      "id": "ec63859b-ee10-4b7b-b0b3-a837a7880e3f",
+      "contractorCode": "vn4200562765",
+      "taxCode": "4200562765",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA",
+      "status": "won",
+      "lotNo": "PP2600320714",
+      "lotName": "Olanzapin 10 mg",
+      "bidPrice": 88500000,
+      "finalPrice": 88500000,
+      "winningPrice": 88500000,
+      "reason": "",
+      "submittedAt": "2026-08-19T14:23:18.372",
+      "models": [
+        "Không yêu cầu"
+      ]
+    },
+    {
+      "id": "a2ae8776-aabc-4c85-8ef7-843a7191e430",
+      "contractorCode": "vn0100109699",
+      "taxCode": "0100109699",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI",
+      "status": "won",
+      "lotNo": "PP2600320715",
+      "lotName": "Valproat natri 200 mg",
+      "bidPrice": 345000000,
+      "finalPrice": 345000000,
+      "winningPrice": 345000000,
+      "reason": "",
+      "submittedAt": "2026-08-19T14:23:18.372",
+      "models": [
+        "Không yêu cầu"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "ee1a89d8-657d-4f58-a670-455a49a0ebf0",
+      "name": "Valproat natri 200 mg",
+      "model": "Không yêu cầu",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Sun pharma Laboratores limited",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Nhóm 5",
+      "unit": "Viên",
+      "quantity": 300000,
+      "unitPrice": 1150,
+      "amount": 345000000,
+      "contractorCode": "vn0100109699",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI"
+      ],
+      "lotNo": "",
+      "decisionNo": "203/QĐ-BVTT",
+      "decisionDate": "2026-08-19T14:14:02",
+      "resultPublishedDate": "2026-08-19T14:23:29"
+    },
+    {
+      "id": "018398be-d142-4814-badc-4f2da8d633c9",
+      "name": "Olanzapin 10 mg",
+      "model": "Không yêu cầu",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Công ty Cổ phần Dược phẩm Khánh Hòa",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Nhóm 4",
+      "unit": "Viên",
+      "quantity": 300000,
+      "unitPrice": 295,
+      "amount": 88500000,
+      "contractorCode": "vn4200562765",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA"
+      ],
+      "lotNo": "",
+      "decisionNo": "203/QĐ-BVTT",
+      "decisionDate": "2026-08-19T14:14:02",
+      "resultPublishedDate": "2026-08-19T14:23:29"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "4de8b0f0-295a-487d-b8d7-bf47da5baaf5",
+        "lotNo": "PP2600320714",
+        "name": "Olanzapin 10 mg",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 630000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "929948d6-4fda-4d8c-8067-4882f2fdd6ea",
+        "lotNo": "PP2600320715",
+        "name": "Valproat natri 200 mg",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 354000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "10782762997023360",
+        "position": "1.1",
+        "lotNo": "PP2600320714",
+        "lotName": "Olanzapin 10 mg",
+        "name": "Olanzapin 10 mg",
+        "unit": "Viên",
+        "quantity": 300000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "Năm 2026 trở về sau",
+        "specification": "Nhóm 5",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Tâm thần Quảng Ngãi",
+        "earliestDeliveryDate": "5 ngày",
+        "latestDeliveryDate": "7 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "12535351256251852",
+        "position": "2.1",
+        "lotNo": "PP2600320715",
+        "lotName": "Valproat natri 200 mg",
+        "name": "Valproat natri 200 mg",
+        "unit": "Viên",
+        "quantity": 300000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "Năm 2026 trở về sau",
+        "specification": "Nhóm 5",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Tâm thần Quảng Ngãi",
+        "earliestDeliveryDate": "5 ngày",
+        "latestDeliveryDate": "7 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:43:41.758Z"
+}

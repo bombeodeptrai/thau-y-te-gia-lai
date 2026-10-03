@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 3,
+  "bidders": [
+    {
+      "id": "bb2039d4-7648-43f8-9fd7-2e162dd61726",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "lost",
+      "lotNo": "PP2600067072",
+      "lotName": "Lopinavir + ritonavir",
+      "bidPrice": 93027000,
+      "finalPrice": 93027000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ hai",
+      "submittedAt": "2026-04-02T15:58:24.231",
+      "models": [
+        "Avonza"
+      ]
+    },
+    {
+      "id": "9b8969b3-a5c5-457a-bcb4-38c9755bd701",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600067072",
+      "lotName": "Lopinavir + ritonavir",
+      "bidPrice": 92631000,
+      "finalPrice": 92631000,
+      "winningPrice": 92631000,
+      "reason": "",
+      "submittedAt": "2026-04-02T15:58:24.231",
+      "models": [
+        "TELDY",
+        "Ritocom"
+      ]
+    },
+    {
+      "id": "df04377c-1235-4aed-9f21-4c7d87ba0ca6",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600067073",
+      "lotName": "Tenoforvir + lamivudine + dolutegravir",
+      "bidPrice": 468952000,
+      "finalPrice": 468952000,
+      "winningPrice": 468952000,
+      "reason": "",
+      "submittedAt": "2026-04-02T15:58:24.231",
+      "models": [
+        "TELDY",
+        "Ritocom"
+      ]
+    },
+    {
+      "id": "5154f1af-7a82-4bac-be16-0b734eb04c4a",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "won",
+      "lotNo": "PP2600067074",
+      "lotName": "Tenofovir + lamivudin + efavirenz",
+      "bidPrice": 173250000,
+      "finalPrice": 173250000,
+      "winningPrice": 173250000,
+      "reason": "",
+      "submittedAt": "2026-04-02T15:58:24.231",
+      "models": [
+        "Avonza"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600067074",
+      "name": "Avonza",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 38500,
+      "unitPrice": 4500,
+      "amount": 173250000,
+      "contractorCode": "vn0100108536",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "lotNo": "PP2600067074",
+      "decisionNo": "277/QĐ-BVBT",
+      "decisionDate": "2026-04-02T23:59:59",
+      "resultPublishedDate": "2026-04-02T15:58:32"
+    },
+    {
+      "id": "2600067073",
+      "name": "TELDY",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 146000,
+      "unitPrice": 3212,
+      "amount": 468952000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2600067073",
+      "decisionNo": "277/QĐ-BVBT",
+      "decisionDate": "2026-04-02T23:59:59",
+      "resultPublishedDate": "2026-04-02T15:58:32"
+    },
+    {
+      "id": "2600067072",
+      "name": "Ritocom",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 16500,
+      "unitPrice": 5614,
+      "amount": 92631000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2600067072",
+      "decisionNo": "277/QĐ-BVBT",
+      "decisionDate": "2026-04-02T23:59:59",
+      "resultPublishedDate": "2026-04-02T15:58:32"
+    }
+  ],
+  "requirements": {
+    "total": 4,
+    "items": [
+      {
+        "id": "222585fd-4e57-402e-a58d-b6061424cdea",
+        "lotNo": "PP2600067071",
+        "name": "Lamivudine + Zidovudine",
+        "quantity": 10000,
+        "unit": "Viên",
+        "plannedPrice": 30000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "c90d9c5f-9dcc-4984-9f47-dae14f69f7d2",
+        "lotNo": "PP2600067072",
+        "name": "Lopinavir + ritonavir",
+        "quantity": 16500,
+        "unit": "Viên",
+        "plannedPrice": 130350000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "60afce93-d5f4-4087-8cfa-dc181d013062",
+        "lotNo": "PP2600067073",
+        "name": "Tenoforvir + lamivudine + dolutegravir",
+        "quantity": 146000,
+        "unit": "Viên",
+        "plannedPrice": 540200000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "d7cff08f-892b-4db4-b61a-6e72a56649b7",
+        "lotNo": "PP2600067074",
+        "name": "Tenofovir + lamivudin + efavirenz",
+        "quantity": 38500,
+        "unit": "Viên",
+        "plannedPrice": 173250000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm 04 mặt hàng thuốc ARV cho nhu cầu khám, chữa bệnh của Bệnh viện Đa khoa Bình Thuận",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:50:37.945Z"
+}

@@ -1,25 +1,117 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 4,
   "bidders": [
     {
-      "id": "500c7eac-b718-4d62-983d-afc33a7b60b0",
+      "id": "6d61cc08-dc80-4ac4-972c-0de922cc7f21",
       "contractorCode": "vn0314295548",
-      "taxCode": "",
+      "taxCode": "0314295548",
       "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ TÍN PHÁT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600715367",
       "lotName": "Mua sắm Thiết bị y tế (Máy cắt lát mô, Máy rửa dụng cụ, Máy siêu âm tổng quát)",
       "bidPrice": 2319800000,
       "finalPrice": 2319800000,
-      "winningPrice": 0,
+      "winningPrice": 2319800000,
       "reason": "",
-      "submittedAt": "2026-09-21T08:04:11.357",
+      "submittedAt": "2026-09-30T10:48:00.607",
+      "models": []
+    },
+    {
+      "id": "9548e1cf-8d7a-4099-bb7c-3bb27ec35dcb",
+      "contractorCode": "vn0316957941",
+      "taxCode": "0316957941",
+      "contractorName": "CÔNG TY TNHH Y TẾ 2M",
+      "status": "won",
+      "lotNo": "BP2600715367",
+      "lotName": "Mua sắm Thiết bị y tế (Máy cắt lát mô, Máy rửa dụng cụ, Máy siêu âm tổng quát)",
+      "bidPrice": 2319800000,
+      "finalPrice": 2319800000,
+      "winningPrice": 2319800000,
+      "reason": "",
+      "submittedAt": "2026-09-30T10:48:00.607",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "060f9deb-88b7-4d94-b563-f467e488e17d",
+      "name": "MÁY RỬA DỤNG CỤ",
+      "model": "LWD-220M",
+      "brand": "Infitex",
+      "manufacturer": "Infitek Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Theo bảng đặc tính thông số kỹ thuật hàng hoá",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 594000000,
+      "winnerNames": [
+        "LIÊN DANH TÍN PHÁT - 2M"
+      ],
+      "decisionNo": "1391/QĐ-BVĐKT2",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T10:48:05"
+    },
+    {
+      "id": "58f41a8e-19db-4a78-b0dd-e4b07e5cbcdb",
+      "name": "MÁY SIÊU ÂM TỔNG QUÁT (2 đầu dò)",
+      "model": "P20 Elite",
+      "brand": "Sonoscape",
+      "manufacturer": "Sonoscape Medical Corp",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Theo bảng đặc tính thông số kỹ thuật hàng hoá",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 580000000,
+      "winnerNames": [
+        "LIÊN DANH TÍN PHÁT - 2M"
+      ],
+      "decisionNo": "1391/QĐ-BVĐKT2",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T10:48:05"
+    },
+    {
+      "id": "1ff20ad3-de9b-489d-aaab-8bab44ce8ca2",
+      "name": "MÁY SIÊU ÂM TỔNG QUÁT (3 đầu dò)",
+      "model": "P50 Elite",
+      "brand": "Sonoscape",
+      "manufacturer": "Sonoscape Medical Corp",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Theo bảng đặc tính thông số kỹ thuật hàng hoá",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 829000000,
+      "winnerNames": [
+        "LIÊN DANH TÍN PHÁT - 2M"
+      ],
+      "decisionNo": "1391/QĐ-BVĐKT2",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T10:48:05"
+    },
+    {
+      "id": "a432f108-0d4f-4875-8cd1-ed1f270af04a",
+      "name": "MÁY CẮT LÁT MÔ",
+      "model": "RMT-SA500",
+      "brand": "Infitex",
+      "manufacturer": "Infitek Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Theo bảng đặc tính thông số kỹ thuật hàng hoá",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 316800000,
+      "winnerNames": [
+        "LIÊN DANH TÍN PHÁT - 2M"
+      ],
+      "decisionNo": "1391/QĐ-BVĐKT2",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T10:48:05"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +137,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:44:49.504Z"
+  "fetchedAt": "2026-10-03T11:44:01.236Z"
 }

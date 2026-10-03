@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 3,
+  "bidders": [
+    {
+      "id": "de6ad5de-66d0-4dda-b23b-f49a03adadf0",
+      "contractorCode": "vn0400101404",
+      "taxCode": "0400101404",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+      "status": "won",
+      "lotNo": "PP2600189725",
+      "lotName": "Alteplase",
+      "bidPrice": 324900000,
+      "finalPrice": 324900000,
+      "winningPrice": 324900000,
+      "reason": "",
+      "submittedAt": "2026-05-29T14:12:33.397",
+      "models": [
+        "Depo-Medrol",
+        "Actilyse"
+      ]
+    },
+    {
+      "id": "1c447480-a991-4ac0-9ead-6f0b79cd5d7c",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "won",
+      "lotNo": "PP2600189726",
+      "lotName": "Zoledronic acid",
+      "bidPrice": 202844670,
+      "finalPrice": 202844670,
+      "winningPrice": 202844670,
+      "reason": "",
+      "submittedAt": "2026-05-29T14:12:33.397",
+      "models": [
+        "Aclasta"
+      ]
+    },
+    {
+      "id": "34ac2cd8-81f3-4c53-ba72-6c11ee40fcc0",
+      "contractorCode": "vn0400101404",
+      "taxCode": "0400101404",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+      "status": "won",
+      "lotNo": "PP2600189727",
+      "lotName": "Methylprednisolon acetat",
+      "bidPrice": 3467000,
+      "finalPrice": 3467000,
+      "winningPrice": 3467000,
+      "reason": "",
+      "submittedAt": "2026-05-29T14:12:33.397",
+      "models": [
+        "Depo-Medrol",
+        "Actilyse"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600189727",
+      "name": "Depo-Medrol",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Belgium",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 100,
+      "unitPrice": 34670,
+      "amount": 3467000,
+      "contractorCode": "vn0400101404",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG"
+      ],
+      "lotNo": "PP2600189727",
+      "decisionNo": "433/QĐ-BV",
+      "decisionDate": "2026-05-29T23:59:59",
+      "resultPublishedDate": "2026-05-29T14:15:34"
+    },
+    {
+      "id": "2600189725",
+      "name": "Actilyse",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Đức",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 30,
+      "unitPrice": 10830000,
+      "amount": 324900000,
+      "contractorCode": "vn0400101404",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG"
+      ],
+      "lotNo": "PP2600189725",
+      "decisionNo": "433/QĐ-BV",
+      "decisionDate": "2026-05-29T23:59:59",
+      "resultPublishedDate": "2026-05-29T14:15:34"
+    },
+    {
+      "id": "2600189726",
+      "name": "Aclasta",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "CSSX bán thành phẩm và đóng gói sơ cấp: Áo ; CS đóng gói thứ cấp và xuất xưởng: Slovenia",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Chai",
+      "quantity": 30,
+      "unitPrice": 6761489,
+      "amount": 202844670,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "PP2600189726",
+      "decisionNo": "433/QĐ-BV",
+      "decisionDate": "2026-05-29T23:59:59",
+      "resultPublishedDate": "2026-05-29T14:15:34"
+    }
+  ],
+  "requirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "1945a58c-2f09-44e2-a717-51941474980b",
+        "lotNo": "PP2600189725",
+        "name": "Alteplase",
+        "quantity": 30,
+        "unit": "Lọ",
+        "plannedPrice": 324900000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "afbd54b2-a7ba-4715-a1cb-e90139988dee",
+        "lotNo": "PP2600189726",
+        "name": "Zoledronic acid",
+        "quantity": 30,
+        "unit": "Chai",
+        "plannedPrice": 202844670,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "ea741326-ea6c-48b9-aa08-3fb007b932ad",
+        "lotNo": "PP2600189727",
+        "name": "Methylprednisolon acetat",
+        "quantity": 100,
+        "unit": "Lọ",
+        "plannedPrice": 3467000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc biệt dược gốc sử dụng năm 2026 tại Bệnh viện Đa khoa khu vực Quảng Nam",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-03T11:43:12.119Z"
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "49f34fff-f2c4-4fc9-9ec8-11075b479a29",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "won",
+      "lotNo": "PP2600264427",
+      "lotName": "Gadobutrol",
+      "bidPrice": 163800000,
+      "finalPrice": 163800000,
+      "winningPrice": 163800000,
+      "reason": "",
+      "submittedAt": "2026-08-25T15:00:50.823",
+      "models": [
+        "Gadovist",
+        "Femara"
+      ]
+    },
+    {
+      "id": "6130e799-9fe8-4275-8455-0ecc360eb392",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "lost",
+      "lotNo": "PP2600264428",
+      "lotName": "Iodixanol",
+      "bidPrice": 51975000,
+      "finalPrice": 51975000,
+      "winningPrice": 0,
+      "reason": "giá dự thầu cao hơn giá kế hoạch",
+      "submittedAt": "2026-08-25T15:00:50.823",
+      "models": [
+        "Gadovist",
+        "Femara"
+      ]
+    },
+    {
+      "id": "0363b783-f5d1-4a79-823d-8b4997e5a629",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "won",
+      "lotNo": "PP2600264429",
+      "lotName": "Letrozole",
+      "bidPrice": 266393400,
+      "finalPrice": 266393400,
+      "winningPrice": 266393400,
+      "reason": "",
+      "submittedAt": "2026-08-25T15:00:50.823",
+      "models": [
+        "Gadovist",
+        "Femara"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600264427",
+      "name": "Gadovist",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Đức",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bơm tiêm",
+      "quantity": 300,
+      "unitPrice": 546000,
+      "amount": 163800000,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "PP2600264427",
+      "decisionNo": "311/QĐ-BVUB",
+      "decisionDate": "2026-08-25T23:59:59",
+      "resultPublishedDate": "2026-08-25T15:01:19"
+    },
+    {
+      "id": "2600264429",
+      "name": "Femara",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Cơ sở sản xuất: Thụy Sỹ; Cơ sở đóng gói và xuất xưởng: Ý",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 3900,
+      "unitPrice": 68306,
+      "amount": 266393400,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "PP2600264429",
+      "decisionNo": "311/QĐ-BVUB",
+      "decisionDate": "2026-08-25T23:59:59",
+      "resultPublishedDate": "2026-08-25T15:01:19"
+    }
+  ],
+  "requirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "729f0b5f-bc7a-4839-8adb-e16bbec03f47",
+        "lotNo": "PP2600264427",
+        "name": "Gadobutrol",
+        "quantity": 300,
+        "unit": "Bơm tiêm",
+        "plannedPrice": 163800000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "66b5b82d-2a7c-405d-924e-a69a1b14a4de",
+        "lotNo": "PP2600264428",
+        "name": "Iodixanol",
+        "quantity": 50,
+        "unit": "Chai/lọ/ống/túi",
+        "plannedPrice": 49612500,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "cdfaf84a-1c2e-4a2c-ad02-04e368a0f239",
+        "lotNo": "PP2600264429",
+        "name": "Letrozole",
+        "quantity": 3900,
+        "unit": "Viên",
+        "plannedPrice": 266393400,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Lựa chọn nhà thầu cung cấp thuốc Biệt dược gốc để phục vụ cho công tác khám, chữa bệnh của bệnh viện năm 2026. Gói thầu gồm 03 mặt hàng",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:48:27.022Z"
+}

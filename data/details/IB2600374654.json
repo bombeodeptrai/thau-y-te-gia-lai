@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "d61c2dc8-d165-437b-be8f-cf11f48c57a3",
+      "contractorCode": "vn0317222883",
+      "taxCode": "0317222883",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ PHÚC AN",
+      "status": "won",
+      "lotNo": "PP2600294097",
+      "lotName": "Thuốc gây tê nha khoa (Hoạt chất: Lidocain 2% + Epinephrine (Adrenalin) 0,001%, ống 1,8ml)",
+      "bidPrice": 14625000,
+      "finalPrice": 14625000,
+      "winningPrice": 14625000,
+      "reason": "",
+      "submittedAt": "2026-07-23T16:41:21.375",
+      "models": [
+        "300110796724"
+      ]
+    },
+    {
+      "id": "a749bbbf-78ea-468a-bc4d-be7af09de212",
+      "contractorCode": "vn1600699279",
+      "taxCode": "1600699279",
+      "contractorName": "CÔNG TY CP DƯỢC PHẨM AGIMEXPHARM",
+      "status": "lost",
+      "lotNo": "PP2600294098",
+      "lotName": "Diosmin 450mg + hesperidin 50mg",
+      "bidPrice": 22048000,
+      "finalPrice": 22048000,
+      "winningPrice": 0,
+      "reason": "xếp hạng 2",
+      "submittedAt": "2026-07-23T16:41:21.375",
+      "models": []
+    },
+    {
+      "id": "a2e5addf-7dda-46c3-baa3-9ad7dd047601",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "won",
+      "lotNo": "PP2600294098",
+      "lotName": "Diosmin 450mg + hesperidin 50mg",
+      "bidPrice": 21760000,
+      "finalPrice": 21760000,
+      "winningPrice": 21760000,
+      "reason": "",
+      "submittedAt": "2026-07-23T16:41:21.375",
+      "models": [
+        "893100112200"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "5c16b122-eaad-4a62-9d70-d749dcbcbd95",
+      "name": "Thuốc gây tê nha khoa (Hoạt chất: Lidocain 2% + Epinephrine (Adrenalin) 0,001%, ống 1,8ml)",
+      "model": "300110796724",
+      "brand": "Lignospan Standard",
+      "manufacturer": "Septodont",
+      "origin": "Pháp",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Hoạt chất, Nồng độ/ Hàm lượng: Lidocain 36mg + Epinephrine (Adrenalin) 18,13mcg, ống 1,8ml\r\n- Nhóm kỹ thuật: Nhóm 1\r\n- Đường dùng: Tiêm\r\n- Dạng bào chế: Dung dịch tiêm dùng trong nha khoa",
+      "unit": "Ống cartridge",
+      "quantity": 900,
+      "unitPrice": 16250,
+      "amount": 14625000,
+      "contractorCode": "vn0317222883",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN  DƯỢC PHẨM THIẾT BỊ Y TẾ PHÚC AN"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-TTYT",
+      "decisionDate": "2026-07-23T16:03:58",
+      "resultPublishedDate": "2026-07-23T16:41:55"
+    },
+    {
+      "id": "5fb1f48a-8156-4f72-ace3-cbd641d098bb",
+      "name": "Diosmin 450mg + hesperidin 50mg",
+      "model": "893100112200",
+      "brand": "Traflon - 500",
+      "manufacturer": "Công ty TNHH Traphaco Hưng Yên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Hoạt chất, Nồng độ/ Hàm lượng: Diosmin 450mg + hesperidin 50mg\r\n- Nhóm kỹ thuật: Nhóm 4\r\n- Đường dùng: Uống\r\n- Dạng bào chế: Viên nén bao phim",
+      "unit": "Viên",
+      "quantity": 32000,
+      "unitPrice": 680,
+      "amount": 21760000,
+      "contractorCode": "vn4300213253",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "457/QĐ-TTYT",
+      "decisionDate": "2026-07-23T16:03:58",
+      "resultPublishedDate": "2026-07-23T16:41:55"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "ecd288cd-860a-4be8-8187-526692837e65",
+        "lotNo": "PP2600294097",
+        "name": "Thuốc gây tê nha khoa (Hoạt chất: Lidocain 2% + Epinephrine (Adrenalin) 0,001%, ống 1,8ml)",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 14625000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "8842009d-e246-4d13-9519-26f6708d3fba",
+        "lotNo": "PP2600294098",
+        "name": "Diosmin 450mg + hesperidin 50mg",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 22720000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc generic trong thời gian chờ thầu tập trung phục vụ công tác khám chữa bệnh 06 tháng cuối năm 2026 của Trung tâm Y tế Nghĩa Hành",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "10809842290329684",
+        "position": "1.1",
+        "lotNo": "PP2600294097",
+        "lotName": "Thuốc gây tê nha khoa (Hoạt chất: Lidocain 2% + Epinephrine (Adrenalin) 0,001%, ống 1,8ml)",
+        "name": "Thuốc gây tê nha khoa (Hoạt chất: Lidocain 2% + Epinephrine (Adrenalin) 0,001%, ống 1,8ml)",
+        "unit": "Ống cartridge",
+        "quantity": 900,
+        "code": "không yêu cầu",
+        "brand": "không yêu cầu",
+        "manufacturer": "không yêu cầu",
+        "origin": "không yêu cầu",
+        "manufactureYear": "2025 trở về sau",
+        "specification": "Hoạt chất, Nồng độ/ Hàm lượng: Lidocain 2% + Epinephrine (Adrenalin) 0,001%, ống 1,8ml. Nhóm kỹ thuật: Nhóm 1. Đường dùng: Tiêm/Tiêm truyền. Dạng bào chế: Dung dịch tiêm được đóng gói trong Ống cartridge",
+        "otherRequirement": "Nhà thầu nộp hồ sơ sản phẩm đáp ứng yêu cầu về thông số kỹ thuật nếu trúng thầu. Hàng sẽ chia thành nhiều đợt dự trù.",
+        "projectPlace": "Trung tâm Y tế Nghĩa Hành",
+        "earliestDeliveryDate": "1",
+        "latestDeliveryDate": "3",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "9906657107557504",
+        "position": "2.1",
+        "lotNo": "PP2600294098",
+        "lotName": "Diosmin 450mg + hesperidin 50mg",
+        "name": "Diosmin 450mg + hesperidin 50mg",
+        "unit": "Viên",
+        "quantity": 32000,
+        "code": "không yêu cầu",
+        "brand": "không yêu cầu",
+        "manufacturer": "không yêu cầu",
+        "origin": "không yêu cầu",
+        "manufactureYear": "2025 trở về sau",
+        "specification": "Hoạt chất, Nồng độ/ Hàm lượng: Diosmin 450mg + hesperidin 50mg. Nhóm kỹ thuật: Nhóm 4. Đường dùng: Uống. Dạng bào chế: Viên",
+        "otherRequirement": "Nhà thầu nộp hồ sơ sản phẩm đáp ứng yêu cầu về thông số kỹ thuật nếu trúng thầu. Hàng sẽ chia thành nhiều đợt dự trù.",
+        "projectPlace": "Trung tâm Y tế Nghĩa Hành",
+        "earliestDeliveryDate": "1",
+        "latestDeliveryDate": "3",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:43:43.086Z"
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "7304ede1-abea-41fa-8b17-edf9d031f893",
+      "contractorCode": "vn0315599066",
+      "taxCode": "0315599066",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI ALASKA",
+      "status": "won",
+      "lotNo": "PP2600308384",
+      "lotName": "Diệp hạ châu; Chua ngút; Cỏ nhọ nồi",
+      "bidPrice": 7700000000,
+      "finalPrice": 7700000000,
+      "winningPrice": 7700000000,
+      "reason": "",
+      "submittedAt": "2026-09-17T10:57:28.775",
+      "models": [
+        "Virelsea"
+      ]
+    },
+    {
+      "id": "877b1d6c-1506-4c47-8453-261d1e765c90",
+      "contractorCode": "vn0315659452",
+      "taxCode": "0315659452",
+      "contractorName": "CÔNG TY CỔ PHẦN TMDV DƯỢC PHẨM THIÊN LỘC",
+      "status": "lost",
+      "lotNo": "PP2600308385",
+      "lotName": "Cao khô milk thistle (Extractum Silybum marianum siccum)",
+      "bidPrice": 1200000000,
+      "finalPrice": 1200000000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu về kỹ thuật",
+      "submittedAt": "2026-09-17T10:57:28.775",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2600308384",
+      "name": "Virelsea",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 2200000,
+      "unitPrice": 3500,
+      "amount": 7700000000,
+      "contractorCode": "vn0315599066",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI ALASKA"
+      ],
+      "lotNo": "PP2600308384",
+      "decisionNo": "281/QĐ-BVNĐ",
+      "decisionDate": "2026-09-17T23:59:59",
+      "resultPublishedDate": "2026-09-17T10:57:36"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "4f6be477-146d-4260-be4b-e9b721920053",
+        "lotNo": "PP2600308384",
+        "name": "Diệp hạ châu; Chua ngút; Cỏ nhọ nồi",
+        "quantity": 2200000,
+        "unit": "Viên",
+        "plannedPrice": 7700000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "4f4c08cd-3d48-4af6-8cb6-18233013893c",
+        "lotNo": "PP2600308385",
+        "name": "Cao khô milk thistle (Extractum Silybum marianum siccum)",
+        "quantity": 300000,
+        "unit": "Viên",
+        "plannedPrice": 1350000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc dược liệu sử dụng tại Bệnh viện bệnh Nhiệt đới Khánh Hòa",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:48:23.698Z"
+}

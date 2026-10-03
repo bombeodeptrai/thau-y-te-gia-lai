@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 0,
+  "bidders": [
+    {
+      "id": "e579c28d-1dc2-4558-8feb-b2edebfeeb67",
+      "contractorCode": "vn0304153199",
+      "taxCode": "0304153199",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM PHÚC THIỆN",
+      "status": "lost",
+      "lotNo": "BP2500446818",
+      "lotName": "Thuốc Generic",
+      "bidPrice": 430186,
+      "finalPrice": 430186,
+      "winningPrice": 0,
+      "reason": "KHÔNG ĐẠT",
+      "submittedAt": "2025-08-11T15:21:21.347",
+      "models": []
+    },
+    {
+      "id": "4377c0cc-54c6-44c4-9d67-980c532b2d29",
+      "contractorCode": "vn0400459581",
+      "taxCode": "0400459581",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+      "status": "won",
+      "lotNo": "BP2500446818",
+      "lotName": "Thuốc Generic",
+      "bidPrice": 215093000,
+      "finalPrice": 215093000,
+      "winningPrice": 215093000,
+      "reason": "",
+      "submittedAt": "2025-08-11T15:21:21.347",
+      "models": []
+    },
+    {
+      "id": "8b650728-8b7e-4df8-9ec2-5e904e618d85",
+      "contractorCode": "vn0105993690",
+      "taxCode": "0105993690",
+      "contractorName": "CÔNG TY TNHH AMV PHARMACEUTICAL",
+      "status": "lost",
+      "lotNo": "BP2500446818",
+      "lotName": "Thuốc Generic",
+      "bidPrice": 215093000,
+      "finalPrice": 215093000,
+      "winningPrice": 0,
+      "reason": "XẾP HẠNG 2",
+      "submittedAt": "2025-08-11T15:21:21.347",
+      "models": []
+    }
+  ],
+  "items": [],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "93572aae-80de-412b-ac50-fe7cbc01bc8c",
+        "lotNo": "BP2500446818",
+        "name": "Huyết thanh kháng dại",
+        "quantity": 500,
+        "unit": "lọ/ống",
+        "plannedPrice": 215093000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "01 mặt hàng tương ứng với 01 mã phần (lô)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:48:45.616Z"
+}

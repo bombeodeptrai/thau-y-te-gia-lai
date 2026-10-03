@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "7d9b799e-1603-4cf5-8eaf-5f786478f181",
+      "contractorCode": "vn0400459581",
+      "taxCode": "0400459581",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+      "status": "won",
+      "lotNo": "BP2600506930",
+      "lotName": "Huyết thanh kháng uốn ván",
+      "bidPrice": 898484560,
+      "finalPrice": 898484560,
+      "winningPrice": 898484560,
+      "reason": "",
+      "submittedAt": "2026-07-28T15:07:54.967",
+      "models": [
+        "Huyết thanh kháng độc tố uốn ván tinh chế (SAT)"
+      ]
+    },
+    {
+      "id": "43ef74d3-13bb-4847-abc3-eb2dcbf444ae",
+      "contractorCode": "vn0102325568",
+      "taxCode": "0102325568",
+      "contractorName": "CÔNG TY TNHH VACXIN SINH PHẨM VÀ THIẾT BỊ Y TẾ PHƯƠNG ANH",
+      "status": "lost",
+      "lotNo": "BP2600506930",
+      "lotName": "Huyết thanh kháng uốn ván",
+      "bidPrice": 898484560,
+      "finalPrice": 898484560,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 02",
+      "submittedAt": "2026-07-28T15:07:54.967",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2600506930",
+      "name": "Huyết thanh kháng độc tố uốn ván tinh chế (SAT)",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Ống",
+      "quantity": 25780,
+      "unitPrice": 34852,
+      "amount": 898484560,
+      "contractorCode": "vn0400459581",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ"
+      ],
+      "lotNo": "BP2600506930",
+      "decisionNo": "2276/QĐ-BVĐKKH",
+      "decisionDate": "2026-07-28T23:59:59",
+      "resultPublishedDate": "2026-07-28T15:08:08"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "7c76065f-447c-4f4f-b2c0-26ebc602f2e3",
+        "lotNo": "BP2600506930",
+        "name": "Huyết thanh kháng uốn ván",
+        "quantity": 25780,
+        "unit": "Ống",
+        "plannedPrice": 898484560,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "01 mặt hàng",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:48:28.171Z"
+}

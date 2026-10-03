@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "8a6ab93d-ce59-4e4c-82e1-b63430d72048",
+      "contractorCode": "vn3300314838",
+      "taxCode": "3300314838",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+      "status": "lost",
+      "lotNo": "PP2600034706",
+      "lotName": "Actiso, Biển súc/Rau đắng đất, Bìm bìm/Bìm bìm biếc, (Diệp hạ châu), (Nghệ)",
+      "bidPrice": 130000000,
+      "finalPrice": 130000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-04-06T16:13:57.716",
+      "models": [
+        "Kiện huyết ích não"
+      ]
+    },
+    {
+      "id": "e4ffdffb-4153-4978-94d1-2db826102bba",
+      "contractorCode": "vn2802930003",
+      "taxCode": "2802930003",
+      "contractorName": "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+      "status": "won",
+      "lotNo": "PP2600034706",
+      "lotName": "Actiso, Biển súc/Rau đắng đất, Bìm bìm/Bìm bìm biếc, (Diệp hạ châu), (Nghệ)",
+      "bidPrice": 128625000,
+      "finalPrice": 128625000,
+      "winningPrice": 128625000,
+      "reason": "",
+      "submittedAt": "2026-04-06T16:13:57.716",
+      "models": [
+        "Gaphyton"
+      ]
+    },
+    {
+      "id": "bdd09777-9734-4792-9ec8-658c0e866901",
+      "contractorCode": "vn3300314838",
+      "taxCode": "3300314838",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+      "status": "won",
+      "lotNo": "PP2600034707",
+      "lotName": "Đinh lăng, Bạch quả",
+      "bidPrice": 38600000,
+      "finalPrice": 38600000,
+      "winningPrice": 38600000,
+      "reason": "",
+      "submittedAt": "2026-04-06T16:13:57.716",
+      "models": [
+        "Kiện huyết ích não"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600034707",
+      "name": "Kiện huyết ích não",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "viên",
+      "quantity": 100000,
+      "unitPrice": 386,
+      "amount": 38600000,
+      "contractorCode": "vn3300314838",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ"
+      ],
+      "lotNo": "PP2600034707",
+      "decisionNo": "132/QĐ-BVTTH",
+      "decisionDate": "2026-04-06T23:59:59",
+      "resultPublishedDate": "2026-04-06T16:16:30"
+    },
+    {
+      "id": "2600034706",
+      "name": "Gaphyton",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 250000,
+      "unitPrice": 514.5,
+      "amount": 128625000,
+      "contractorCode": "vn2802930003",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP"
+      ],
+      "lotNo": "PP2600034706",
+      "decisionNo": "132/QĐ-BVTTH",
+      "decisionDate": "2026-04-06T23:59:59",
+      "resultPublishedDate": "2026-04-06T16:16:30"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "b7e95c36-9b32-450f-b297-0c59a26c98a4",
+        "lotNo": "PP2600034706",
+        "name": "Actiso, Biển súc/Rau đắng đất, Bìm bìm/Bìm bìm biếc, (Diệp hạ châu), (Nghệ)",
+        "quantity": 250000,
+        "unit": "Viên",
+        "plannedPrice": 130000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "0809eba8-b25c-4281-862a-ad7d321a4484",
+        "lotNo": "PP2600034707",
+        "name": "Đinh lăng, Bạch quả",
+        "quantity": 100000,
+        "unit": "Viên",
+        "plannedPrice": 38600000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Lựa chọn nhà thầu mua sắm thuốc phục vụ công tác khám chữa bệnh cho Bệnh viện Tâm thần Huế giai đoạn năm 2026 - 2027. Gói thầu gồm 02 mặt hàng, trong đó: - Nhóm 1: 01 loại - Nhóm 2: 01 loại",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:41:39.253Z"
+}

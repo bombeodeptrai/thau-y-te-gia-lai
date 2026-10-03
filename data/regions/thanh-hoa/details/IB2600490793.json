@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "00d25696-a272-44de-abba-dd3e628c1283",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "won",
+      "lotNo": "PP2600366175",
+      "lotName": "Fentanyl",
+      "bidPrice": 25200000,
+      "finalPrice": 25200000,
+      "winningPrice": 25200000,
+      "reason": "",
+      "submittedAt": "2026-09-15T09:28:32.366",
+      "models": [
+        "690111337925 (VN-18482-14)"
+      ]
+    },
+    {
+      "id": "6867e4f9-bc13-43c9-b459-91ee1d39435e",
+      "contractorCode": "vn2801906015",
+      "taxCode": "2801906015",
+      "contractorName": "CÔNG TY CỔ PHẦN THANH DƯỢC",
+      "status": "won",
+      "lotNo": "PP2600366178",
+      "lotName": "Acetyl leucin",
+      "bidPrice": 185220000,
+      "finalPrice": 185220000,
+      "winningPrice": 185220000,
+      "reason": "",
+      "submittedAt": "2026-09-15T09:28:32.366",
+      "models": [
+        "893110032524"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "cd07b827-a9f6-43a2-b251-eb7a5d00da6e",
+      "name": "Fentanyl",
+      "model": "690111337925 (VN-18482-14)",
+      "brand": "Thuốc tiêm Fentanyl citrate",
+      "manufacturer": "Yichang Humanwell Pharmaceutical Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "48 tháng",
+      "specification": "0,5mg/10 ml; dung dịch tiêm, dùng đường tiêm; Hộp 2 ống x 10ml; Hộp 5 ống x 10ml – Nhóm 5",
+      "unit": "Chai/Lọ/ Ống/Túi/ Gói",
+      "quantity": 900,
+      "unitPrice": 28000,
+      "amount": 25200000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1063/QĐ-BVTT",
+      "decisionDate": "2026-09-15T09:24:42",
+      "resultPublishedDate": "2026-09-15T09:28:40"
+    },
+    {
+      "id": "34ace05f-8c91-4277-8ae7-bdff6cfea389",
+      "name": "Acetyl leucin",
+      "model": "893110032524",
+      "brand": "Acetamin",
+      "manufacturer": "Công ty cổ phần Dược vật tư y tế Hải Dương",
+      "origin": "Việt Nam",
+      "manufactureYear": "36 tháng",
+      "specification": "500mg/5 ml; dung dịch tiêm, dùng đường tiêm; Hộp 5 ống, hộp 10 ống x 5ml – Nhóm 4",
+      "unit": "Chai/Lọ/ Ống/Túi/ Gói",
+      "quantity": 20000,
+      "unitPrice": 9261,
+      "amount": 185220000,
+      "contractorCode": "vn2801906015",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THANH DƯỢC"
+      ],
+      "lotNo": "",
+      "decisionNo": "1063/QĐ-BVTT",
+      "decisionDate": "2026-09-15T09:24:42",
+      "resultPublishedDate": "2026-09-15T09:28:40"
+    }
+  ],
+  "requirements": {
+    "total": 5,
+    "items": [
+      {
+        "id": "29379efb-1b22-4af7-bd29-48a8f007cba6",
+        "lotNo": "PP2600366175",
+        "name": "Fentanyl",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 25200000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "cccb539f-9206-431a-a4bf-7ae157ced27a",
+        "lotNo": "PP2600366176",
+        "name": "Paracetamol (acetaminophen)",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 42535000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "8e9a9ade-e0ef-4bca-b69e-519d53a34f71",
+        "lotNo": "PP2600366177",
+        "name": "Huyết thanh kháng uốn ván",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 20911200,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "ce75a160-0efd-43c1-8b4e-9533aee19753",
+        "lotNo": "PP2600366178",
+        "name": "Acetyl leucin",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 205800000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "20d5d02f-855a-4227-94ca-7119474b8a57",
+        "lotNo": "PP2600366179",
+        "name": "Natri clorid + kali clorid + natri citrat + glucose khan + kẽm",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 27170000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua bổ sung thuốc",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 5,
+    "items": [
+      {
+        "id": "2026727104454861",
+        "position": "1.1",
+        "lotNo": "PP2600366175",
+        "lotName": "Fentanyl",
+        "name": "Fentanyl",
+        "unit": "Chai/Lọ/ Ống/Túi/ Gói",
+        "quantity": 900,
+        "code": "Không đề xuất",
+        "brand": "Không đề xuất",
+        "manufacturer": "Không đề xuất",
+        "origin": "Không đề xuất",
+        "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+        "specification": "Tên hoạt chất: Fentanyl;  Nồng độ/Hàm lượng: 0,5mg(dạng muối)/10ml;  Dạng bào chế: Thuốc tiêm/tiêm truyền;  Đáp ứng tiêu chí kỹ thuật nhóm 5 theo Thông tư số 40/2025/TT-BYT.",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Đa khoa Thạch Thành",
+        "earliestDeliveryDate": "1 ngày",
+        "latestDeliveryDate": "5 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "202672710462453",
+        "position": "2.1",
+        "lotNo": "PP2600366176",
+        "lotName": "Paracetamol (acetaminophen)",
+        "name": "Paracetamol (acetaminophen)",
+        "unit": "Chai/Lọ/ Ống/Túi/ Gói",
+        "quantity": 5000,
+        "code": "Không đề xuất",
+        "brand": "Không đề xuất",
+        "manufacturer": "Không đề xuất",
+        "origin": "Không đề xuất",
+        "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+        "specification": "Tên hoạt chất: Paracetamol (acetaminophen);  Nồng độ/Hàm lượng: 1g/100ml;  Dạng bào chế: Thuốc tiêm/tiêm truyền;  Đáp ứng tiêu chí kỹ thuật nhóm 4 theo Thông tư số 40/2025/TT-BYT.",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Đa khoa Thạch Thành",
+        "earliestDeliveryDate": "1 ngày",
+        "latestDeliveryDate": "5 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "2026727104648678",
+        "position": "3.1",
+        "lotNo": "PP2600366177",
+        "lotName": "Huyết thanh kháng uốn ván",
+        "name": "Huyết thanh kháng uốn ván",
+        "unit": "Chai/Lọ/ Ống/Túi/ Gói",
+        "quantity": 600,
+        "code": "Không đề xuất",
+        "brand": "Không đề xuất",
+        "manufacturer": "Không đề xuất",
+        "origin": "Không đề xuất",
+        "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+        "specification": "Tên hoạt chất: Huyết thanh kháng uốn ván;  Nồng độ/Hàm lượng: 1.500 IU;  Dạng bào chế: Thuốc tiêm/tiêm truyền;  Đáp ứng tiêu chí kỹ thuật nhóm 4 theo Thông tư số 40/2025/TT-BYT.",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Đa khoa Thạch Thành",
+        "earliestDeliveryDate": "1 ngày",
+        "latestDeliveryDate": "5 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "202672710474285",
+        "position": "4.1",
+        "lotNo": "PP2600366178",
+        "lotName": "Acetyl leucin",
+        "name": "Acetyl leucin",
+        "unit": "Chai/Lọ/ Ống/Túi/ Gói",
+        "quantity": 20000,
+        "code": "Không đề xuất",
+        "brand": "Không đề xuất",
+        "manufacturer": "Không đề xuất",
+        "origin": "Không đề xuất",
+        "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+        "specification": "Tên hoạt chất: Acetyl leucin;  Nồng độ/Hàm lượng: 500mg/5ml;  Dạng bào chế: Thuốc tiêm/tiêm truyền;  Đáp ứng tiêu chí kỹ thuật nhóm 4 theo Thông tư số 40/2025/TT-BYT.",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Đa khoa Thạch Thành",
+        "earliestDeliveryDate": "1 ngày",
+        "latestDeliveryDate": "5 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "2026727104833494",
+        "position": "5.1",
+        "lotNo": "PP2600366179",
+        "lotName": "Natri clorid + kali clorid + natri citrat + glucose khan + kẽm",
+        "name": "Natri clorid + kali clorid + natri citrat + glucose khan + kẽm",
+        "unit": "Chai/Lọ/ Ống/Túi/ Gói",
+        "quantity": 10000,
+        "code": "Không đề xuất",
+        "brand": "Không đề xuất",
+        "manufacturer": "Không đề xuất",
+        "origin": "Không đề xuất",
+        "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+        "specification": "Tên hoạt chất: Natri clorid + kali clorid + natri citrat + glucose khan + kẽm;  Nồng độ/Hàm lượng: 520mg + 300mg + 580mg + 2700mg + 5mg;  Dạng bào chế: Bột/cốm/hạt pha uống;  Đáp ứng tiêu chí kỹ thuật nhóm 4 theo Thông tư số 40/2025/TT-BYT.",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Đa khoa Thạch Thành",
+        "earliestDeliveryDate": "1 ngày",
+        "latestDeliveryDate": "5 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-03T11:37:15.287Z"
+}

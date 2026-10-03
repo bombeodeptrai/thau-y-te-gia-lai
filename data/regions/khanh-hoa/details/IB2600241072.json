@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "21ba447a-4303-490b-8a30-a65d24e37b46",
+      "contractorCode": "vn4500200808",
+      "taxCode": "4500200808",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ Y TẾ NINH THUẬN",
+      "status": "won",
+      "lotNo": "PP2600204626",
+      "lotName": "Amoxicilin + acid clavulanic",
+      "bidPrice": 948000000,
+      "finalPrice": 948000000,
+      "winningPrice": 948000000,
+      "reason": "",
+      "submittedAt": "2026-06-18T10:51:55.982",
+      "models": [
+        "Iba-mentin 1000mg/62,5mg"
+      ]
+    },
+    {
+      "id": "3bb0aee7-390b-4fd9-b969-cdcfcb45faaa",
+      "contractorCode": "vn0314391643",
+      "taxCode": "0314391643",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM MINH TÍN",
+      "status": "lost",
+      "lotNo": "PP2600204626",
+      "lotName": "Amoxicilin + acid clavulanic",
+      "bidPrice": 954000000,
+      "finalPrice": 954000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng nhà thầu thứ 2",
+      "submittedAt": "2026-06-18T10:51:55.982",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2a5d0752-2e7a-4a36-863f-21654945b828",
+      "name": "Amoxicilin + acid clavulanic",
+      "model": "Iba-mentin 1000mg/62,5mg",
+      "brand": "Iba-mentin 1000mg/62,5mg",
+      "manufacturer": "Công ty cổ phần Dược phẩm Trung ương I - Pharbaco",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025  trở về sau",
+      "specification": "1000mg + 62,5mg",
+      "unit": "Viên",
+      "quantity": 60000,
+      "unitPrice": 15800,
+      "amount": 948000000,
+      "contractorCode": "vn4500200808",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ Y TẾ  NINH THUẬN"
+      ],
+      "lotNo": "",
+      "decisionNo": "139/QĐ-BVPNT",
+      "decisionDate": "2026-06-18T10:51:05",
+      "resultPublishedDate": "2026-06-18T10:52:10"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "5c76c755-5c51-4240-a28c-1ef509262751",
+        "lotNo": "PP2600204626",
+        "name": "Amoxicilin + acid clavulanic",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 954000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "8253f058-20a9-4619-a22c-601287631bc6",
+        "lotNo": "PP2600204627",
+        "name": "Ringer lactat",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 33250000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc generic giai đoạn 2026–2027",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "202642782253376",
+        "position": "1.1",
+        "lotNo": "PP2600204626",
+        "lotName": "Amoxicilin + acid clavulanic",
+        "name": "Amoxicilin + acid clavulanic",
+        "unit": "Viên",
+        "quantity": 60000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Đáp ứng kỹ thuật nhóm 4",
+        "origin": "Đáp ứng kỹ thuật nhóm 4",
+        "manufactureYear": "Đảm bảo hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho Bệnh viện phải đảm bảo tối thiểu 12 tháng đối với thuốc có hạn dùng từ 02 năm trở lên",
+        "specification": "1000mg + 62,5mg",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Phổi Ninh Thuận",
+        "earliestDeliveryDate": "05 ngày kể từ ngày đặt hàng",
+        "latestDeliveryDate": "07 ngày kể từ ngày đặt hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "202642782443280",
+        "position": "2.1",
+        "lotNo": "PP2600204627",
+        "lotName": "Ringer lactat",
+        "name": "Ringer lactat",
+        "unit": "Chai",
+        "quantity": 6000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Đáp ứng kỹ thuật nhóm 4",
+        "origin": "Đáp ứng kỹ thuật nhóm 4",
+        "manufactureYear": "Đảm bảo hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho Bệnh viện phải đảm bảo tối thiểu 12 tháng đối với thuốc có hạn dùng từ 02 năm trở lên",
+        "specification": "Đảm bảo hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho Bệnh viện phải đảm bảo tối thiểu 12 tháng đối với thuốc có hạn dùng từ 02 năm trở lên",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện Phổi Ninh Thuậ",
+        "earliestDeliveryDate": "05 ngày kể từ ngày đặt hàng",
+        "latestDeliveryDate": "07 ngày kể từ ngày đặt hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:48:31.399Z"
+}

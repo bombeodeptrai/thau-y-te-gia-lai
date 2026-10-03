@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "630008e7-3648-4b0b-8e51-c6aaf7a112f2",
+      "contractorCode": "vn2500228415",
+      "taxCode": "2500228415",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+      "status": "won",
+      "lotNo": "PP2600395245",
+      "lotName": "Acetyl leucin",
+      "bidPrice": 240000000,
+      "finalPrice": 240000000,
+      "winningPrice": 240000000,
+      "reason": "",
+      "submittedAt": "2026-09-23T13:50:00.069",
+      "models": [
+        "893110339924 (VD-27160-17) (CV gia hạn số 331/QĐ-QLD ngày 27/05/2024)"
+      ]
+    },
+    {
+      "id": "9a88d3d4-8365-4b5f-98f3-5624c998cc44",
+      "contractorCode": "vn2801906015",
+      "taxCode": "2801906015",
+      "contractorName": "CÔNG TY CỔ PHẦN THANH DƯỢC",
+      "status": "won",
+      "lotNo": "PP2600395246",
+      "lotName": "Acetyl leucin",
+      "bidPrice": 335790000,
+      "finalPrice": 335790000,
+      "winningPrice": 335790000,
+      "reason": "",
+      "submittedAt": "2026-09-23T13:50:00.069",
+      "models": [
+        "893110032524"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "e25a5d42-92cf-4132-89e0-46f09268ba9f",
+      "name": "Acetyl leucin",
+      "model": "893110032524",
+      "brand": "Không có                                                                  ",
+      "manufacturer": "Công ty cổ phần Dược vật tư y tế Hải Dương",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ năm 2025 trờ về sau",
+      "specification": "-\tTên thuốc:  Acetacmin\n-\t Tên hoạt chất: Acetyl leucin\n-\tNồng độ, hàm lượng: 500mg/5ml \n-\tĐường dùng : Tiêm          \n-\tDạng bào chế: Dung dịch tiêm    \n-\tQuy cách: Hộp 5 ống, hộp 10 ống x 5ml\n-\tNhóm thuốc: N4\n-\tHạn dùng (Tuổi thọ): 36 tháng",
+      "unit": "Chai/lọ/ống/túi",
+      "quantity": 30000,
+      "unitPrice": 11193,
+      "amount": 335790000,
+      "contractorCode": "vn2801906015",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN THANH DƯỢC"
+      ],
+      "lotNo": "",
+      "decisionNo": "785/QĐ-BVBT",
+      "decisionDate": "2026-09-23T13:48:23",
+      "resultPublishedDate": "2026-09-23T13:50:04"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "fc0a88b5-118f-4a80-9571-b016794f8c60",
+        "lotNo": "PP2600395245",
+        "name": "Acetyl leucin",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 240000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "142ce3ba-d03f-4562-9ce1-5008cfc8d7a9",
+        "lotNo": "PP2600395246",
+        "name": "Acetyl leucin",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 335790000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Cung cấp thuốc Generic",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "8348692540367077",
+        "position": "1.1",
+        "lotNo": "PP2600395245",
+        "lotName": "Acetyl leucin",
+        "name": "Acetyl leucin",
+        "unit": "Chai/lọ/ống/túi",
+        "quantity": 10000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "Không yêu cầu",
+        "specification": "- Tên hoạt chất: Acetyl leucin\n- Nhóm TCKT: 4\n- Nồng độ/Hàm lượng: 1000mg/10ml\n- Đường dùng: Tiêm/Tiêm truyền\n- Dạng bào chế: Thuốc tiêm/Thuốc tiêm truyền",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện đa khoa Bá Thước",
+        "earliestDeliveryDate": "5",
+        "latestDeliveryDate": "365",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "9542774630690152",
+        "position": "2.1",
+        "lotNo": "PP2600395246",
+        "lotName": "Acetyl leucin",
+        "name": "Acetyl leucin",
+        "unit": "Chai/lọ/ống/túi",
+        "quantity": 30000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "Không yêu cầu",
+        "specification": "- Tên hoạt chất: Acetyl leucin\n- Nhóm TCKT: 4\n- Nồng độ/Hàm lượng: 500mg/5ml\n- Đường dùng: Tiêm/Tiêm truyền\n- Dạng bào chế: Thuốc tiêm/Thuốc tiêm truyền",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện đa khoa Bá Thước",
+        "earliestDeliveryDate": "5",
+        "latestDeliveryDate": "365",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-03T11:37:14.002Z"
+}

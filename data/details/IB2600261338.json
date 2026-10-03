@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "615e40f8-aac8-475b-b124-75b138942f38",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "won",
+      "lotNo": "PP2600227636",
+      "lotName": "Ropivacain HCl (dưới dạng Ropivacain HCl monohydrat)",
+      "bidPrice": 398034000,
+      "finalPrice": 398034000,
+      "winningPrice": 398034000,
+      "reason": "",
+      "submittedAt": "2026-07-06T08:45:25.163",
+      "models": [
+        "Anaropin"
+      ]
+    },
+    {
+      "id": "2c124e07-688d-4796-a40c-a5353a1b0389",
+      "contractorCode": "vn1300382591",
+      "taxCode": "1300382591",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+      "status": "won",
+      "lotNo": "PP2600227637",
+      "lotName": "Vinpocetine",
+      "bidPrice": 33750000,
+      "finalPrice": 33750000,
+      "winningPrice": 33750000,
+      "reason": "",
+      "submittedAt": "2026-07-06T08:45:25.163",
+      "models": [
+        "Cavinton"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600227637",
+      "name": "Cavinton",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Hungary",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Ống",
+      "quantity": 1500,
+      "unitPrice": 22500,
+      "amount": 33750000,
+      "contractorCode": "vn1300382591",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE"
+      ],
+      "lotNo": "PP2600227637",
+      "decisionNo": "2031/QĐ-BVĐKKH",
+      "decisionDate": "2026-07-06T23:59:59",
+      "resultPublishedDate": "2026-07-06T08:45:46"
+    },
+    {
+      "id": "2600227636",
+      "name": "Anaropin",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Thụy Điển",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Ống",
+      "quantity": 2600,
+      "unitPrice": 153090,
+      "amount": 398034000,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "PP2600227636",
+      "decisionNo": "2031/QĐ-BVĐKKH",
+      "decisionDate": "2026-07-06T23:59:59",
+      "resultPublishedDate": "2026-07-06T08:45:46"
+    }
+  ],
+  "requirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "c66c2248-c8a5-4b88-9174-abba10ca4101",
+        "lotNo": "PP2600227636",
+        "name": "Ropivacain HCl (dưới dạng Ropivacain HCl monohydrat)",
+        "quantity": 2600,
+        "unit": "Ống",
+        "plannedPrice": 398034000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "b0dbfae5-eb26-43c5-b387-f8ec00cb08ee",
+        "lotNo": "PP2600227637",
+        "name": "Vinpocetine",
+        "quantity": 1500,
+        "unit": "Ống",
+        "plannedPrice": 33750000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "6f5a4982-c7d1-4ea4-81e1-e55223e7fdcc",
+        "lotNo": "PP2600227638",
+        "name": "Fosfomycin",
+        "quantity": 5000,
+        "unit": "Viên",
+        "plannedPrice": 109500000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "03 mặt hàng",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-03T11:48:30.917Z"
+}

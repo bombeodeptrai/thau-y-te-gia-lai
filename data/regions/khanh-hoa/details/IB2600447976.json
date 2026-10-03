@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "28865796-bfdf-4835-a47f-a157be0d9cf3",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "lost",
+      "lotNo": "PP2600304301",
+      "lotName": "Insulin người (rDNA) 70% insulin isophane và 30% insulin hòa tan)",
+      "bidPrice": 260000000,
+      "finalPrice": 260000000,
+      "winningPrice": 0,
+      "reason": "Vượt giá dự toán",
+      "submittedAt": "2026-09-18T10:44:30.152",
+      "models": [
+        "Zapnex-5",
+        "TELDY"
+      ]
+    },
+    {
+      "id": "6388998e-2643-4c02-a9f7-880d47a591ac",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600304303",
+      "lotName": "Olanzapin",
+      "bidPrice": 167200000,
+      "finalPrice": 167200000,
+      "winningPrice": 167200000,
+      "reason": "",
+      "submittedAt": "2026-09-18T10:44:30.152",
+      "models": [
+        "Zapnex-5",
+        "TELDY"
+      ]
+    },
+    {
+      "id": "e12a66f6-4a55-411f-a727-f72817cb1f18",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600304305",
+      "lotName": "Dolutegravir (tương đương Dolutegravir natri 52,6mg), Lamivudin 300mg; and Tenofovir disoproxil fumarat (tương đương Tenofovir disoproxil 245mg) 300mg",
+      "bidPrice": 378056880,
+      "finalPrice": 378056880,
+      "winningPrice": 378056880,
+      "reason": "",
+      "submittedAt": "2026-09-18T10:44:30.152",
+      "models": [
+        "Zapnex-5",
+        "TELDY"
+      ]
+    },
+    {
+      "id": "61d4ce50-218b-4b13-a893-56dd0371ab5d",
+      "contractorCode": "vn0309829522",
+      "taxCode": "0309829522",
+      "contractorName": "CÔNG TY CỔ PHẦN GONSA",
+      "status": "lost",
+      "lotNo": "PP2600304306",
+      "lotName": "Lamivudine + Zidovudine",
+      "bidPrice": 16200000,
+      "finalPrice": 16200000,
+      "winningPrice": 0,
+      "reason": "Vượt giá dự toán",
+      "submittedAt": "2026-09-18T10:44:30.152",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2600304303",
+      "name": "Zapnex-5",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 400000,
+      "unitPrice": 418,
+      "amount": 167200000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2600304303",
+      "decisionNo": "635",
+      "decisionDate": "2026-09-18T23:59:59",
+      "resultPublishedDate": "2026-09-18T10:44:52"
+    },
+    {
+      "id": "2600304305",
+      "name": "TELDY",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 110640,
+      "unitPrice": 3417,
+      "amount": 378056880,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2600304305",
+      "decisionNo": "635",
+      "decisionDate": "2026-09-18T23:59:59",
+      "resultPublishedDate": "2026-09-18T10:44:52"
+    }
+  ],
+  "requirements": {
+    "total": 6,
+    "items": [
+      {
+        "id": "6328f655-d95d-4857-974c-0b55b12e6834",
+        "lotNo": "PP2600304301",
+        "name": "Insulin người (rDNA) 70% insulin isophane và 30% insulin hòa tan)",
+        "quantity": 4000,
+        "unit": "Lọ",
+        "plannedPrice": 217200000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "b47b0a1b-3161-4c18-8c14-6e3f2716e4d6",
+        "lotNo": "PP2600304302",
+        "name": "Insulin human trộn hỗn hợp",
+        "quantity": 4000,
+        "unit": "Bút tiêm",
+        "plannedPrice": 394000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "4f8391b4-4f59-440f-b8be-bae1a1a678e1",
+        "lotNo": "PP2600304303",
+        "name": "Olanzapin",
+        "quantity": 400000,
+        "unit": "Viên",
+        "plannedPrice": 167200000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "50c1e1f0-c8d1-427f-9796-87225e62ca45",
+        "lotNo": "PP2600304304",
+        "name": "Mirtazapin (dưới dạng Mirtazapin hemihydrat)",
+        "quantity": 40000,
+        "unit": "Viên",
+        "plannedPrice": 29200000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "4d1f22a7-9d58-480b-b27a-27ffaac4636c",
+        "lotNo": "PP2600304305",
+        "name": "Dolutegravir (tương đương Dolutegravir natri 52,6mg), Lamivudin 300mg; and Tenofovir disoproxil fumarat (tương đương Tenofovir disoproxil 245mg) 300mg",
+        "quantity": 110640,
+        "unit": "Viên",
+        "plannedPrice": 378388800,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "19586c9f-e5d1-4ea5-acdc-41f67e67a463",
+        "lotNo": "PP2600304306",
+        "name": "Lamivudine + Zidovudine",
+        "quantity": 3600,
+        "unit": "Viên",
+        "plannedPrice": 10800000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm 06 mặt hàng thuốc Generic",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:48:23.153Z"
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "762748b4-3880-49d1-8c88-7f9bbcf544f9",
+      "contractorCode": "vn0400101404",
+      "taxCode": "0400101404",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+      "status": "lost",
+      "lotNo": "PP2600127292",
+      "lotName": "Albumin",
+      "bidPrice": 1583400000,
+      "finalPrice": 1583400000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 3",
+      "submittedAt": "2026-05-13T16:26:48.757",
+      "models": []
+    },
+    {
+      "id": "8ba33adf-bd27-4d4f-bec5-5d5f0f8a41b3",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "lost",
+      "lotNo": "PP2600127292",
+      "lotName": "Albumin",
+      "bidPrice": 1431000000,
+      "finalPrice": 1431000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2",
+      "submittedAt": "2026-05-13T16:26:48.757",
+      "models": []
+    },
+    {
+      "id": "23fc547c-6225-49f4-b1e7-77f41a6bdbe3",
+      "contractorCode": "vn0303114528",
+      "taxCode": "0303114528",
+      "contractorName": "CÔNG TY TNHH BÌNH VIỆT ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600127292",
+      "lotName": "Albumin",
+      "bidPrice": 1425776000,
+      "finalPrice": 1425776000,
+      "winningPrice": 1425776000,
+      "reason": "",
+      "submittedAt": "2026-05-13T16:26:48.758",
+      "models": [
+        "Albunorm 20%"
+      ]
+    },
+    {
+      "id": "29b332dd-a143-48a5-b16a-a92521cdf73c",
+      "contractorCode": "vn0400101404",
+      "taxCode": "0400101404",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+      "status": "lost",
+      "lotNo": "PP2600127293",
+      "lotName": "Albumin",
+      "bidPrice": 1511107000,
+      "finalPrice": 1511107000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2",
+      "submittedAt": "2026-05-13T16:26:48.758",
+      "models": []
+    },
+    {
+      "id": "f32e22a0-f9ba-46c1-8621-63af7f669543",
+      "contractorCode": "vn0303114528",
+      "taxCode": "0303114528",
+      "contractorName": "CÔNG TY TNHH BÌNH VIỆT ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600127293",
+      "lotName": "Albumin",
+      "bidPrice": 1498000000,
+      "finalPrice": 1498000000,
+      "winningPrice": 1498000000,
+      "reason": "",
+      "submittedAt": "2026-05-13T16:26:48.758",
+      "models": [
+        "Albunorm 20%"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600127293",
+      "name": "Albunorm 20%",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Germany",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 1000,
+      "unitPrice": 1498000,
+      "amount": 1498000000,
+      "contractorCode": "vn0303114528",
+      "winnerNames": [
+        "CÔNG TY TNHH BÌNH VIỆT ĐỨC"
+      ],
+      "lotNo": "PP2600127293",
+      "decisionNo": "652/QĐ-BV",
+      "decisionDate": "2026-05-13T23:59:59",
+      "resultPublishedDate": "2026-05-13T16:26:54"
+    },
+    {
+      "id": "2600127292",
+      "name": "Albunorm 20%",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Germany",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 2000,
+      "unitPrice": 712888,
+      "amount": 1425776000,
+      "contractorCode": "vn0303114528",
+      "winnerNames": [
+        "CÔNG TY TNHH BÌNH VIỆT ĐỨC"
+      ],
+      "lotNo": "PP2600127292",
+      "decisionNo": "652/QĐ-BV",
+      "decisionDate": "2026-05-13T23:59:59",
+      "resultPublishedDate": "2026-05-13T16:26:54"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "4b650856-08c6-4462-b7ff-b2b91f34eff4",
+        "lotNo": "PP2600127292",
+        "name": "Albumin",
+        "quantity": 2000,
+        "unit": "Chai/Lọ/Túi",
+        "plannedPrice": 1700000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "347d8391-ec0a-4f5b-8377-fd513fe16cce",
+        "lotNo": "PP2600127293",
+        "name": "Albumin",
+        "quantity": 1000,
+        "unit": "Chai/Lọ/Túi",
+        "plannedPrice": 1511107000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua thuốc phục vụ nhu cầu khám, chữa bệnh năm 2026",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:43:17.762Z"
+}

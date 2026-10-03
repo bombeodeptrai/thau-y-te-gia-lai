@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "159b7455-df9a-4ae6-a153-3916b95fce5b",
+      "contractorCode": "vn6000449389",
+      "taxCode": "6000449389",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK",
+      "status": "won",
+      "lotNo": "PP2600275579",
+      "lotName": "Vắc xin phòng bệnh dại bất hoạt dùng cho người",
+      "bidPrice": 574245000,
+      "finalPrice": 574245000,
+      "winningPrice": 574245000,
+      "reason": "",
+      "submittedAt": "2026-08-25T09:32:10.091",
+      "models": [
+        "IVACRIG (Huyết thanh kháng dại tinh chế)",
+        "Abhayrab"
+      ]
+    },
+    {
+      "id": "714e7658-88c7-47d6-8fd4-acd33beb492b",
+      "contractorCode": "vn6000449389",
+      "taxCode": "6000449389",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK",
+      "status": "won",
+      "lotNo": "PP2600275580",
+      "lotName": "Kháng thể kháng virut dại: Nồng độ: 1000 IU/lọ 5ml, Natri Clorid và tá dược bảo quản",
+      "bidPrice": 36135624,
+      "finalPrice": 36135624,
+      "winningPrice": 36135624,
+      "reason": "",
+      "submittedAt": "2026-08-25T09:32:10.091",
+      "models": [
+        "IVACRIG (Huyết thanh kháng dại tinh chế)",
+        "Abhayrab"
+      ]
+    },
+    {
+      "id": "02113c4d-6ef7-48e2-8643-cd89262cbf04",
+      "contractorCode": "vn0304153199",
+      "taxCode": "0304153199",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM PHÚC THIỆN",
+      "status": "lost",
+      "lotNo": "PP2600275580",
+      "lotName": "Kháng thể kháng virut dại: Nồng độ: 1000 IU/lọ 5ml, Natri Clorid và tá dược bảo quản",
+      "bidPrice": 36135624,
+      "finalPrice": 36135624,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 0",
+      "submittedAt": "2026-08-25T09:32:10.091",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2600275580",
+      "name": "IVACRIG (Huyết thanh kháng dại tinh chế)",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 84,
+      "unitPrice": 430186,
+      "amount": 36135624,
+      "contractorCode": "vn6000449389",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK"
+      ],
+      "lotNo": "PP2600275580",
+      "decisionNo": "0242/QĐ-KSBT",
+      "decisionDate": "2026-08-24T23:59:59",
+      "resultPublishedDate": "2026-08-25T09:32:33"
+    },
+    {
+      "id": "2600275579",
+      "name": "Abhayrab",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 3000,
+      "unitPrice": 191415,
+      "amount": 574245000,
+      "contractorCode": "vn6000449389",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK"
+      ],
+      "lotNo": "PP2600275579",
+      "decisionNo": "0242/QĐ-KSBT",
+      "decisionDate": "2026-08-24T23:59:59",
+      "resultPublishedDate": "2026-08-25T09:32:33"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "df506f9d-8e6e-48d0-b00f-1b18190025e4",
+        "lotNo": "PP2600275579",
+        "name": "Vắc xin phòng bệnh dại bất hoạt dùng cho người",
+        "quantity": 3000,
+        "unit": "Bơm tiêm/hộp lọ/liều/ống xylanh",
+        "plannedPrice": 574245000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "a9a20f69-b489-4231-950f-90a8ba01b5dc",
+        "lotNo": "PP2600275580",
+        "name": "Kháng thể kháng virut dại: Nồng độ: 1000 IU/lọ 5ml, Natri Clorid và tá dược bảo quản",
+        "quantity": 84,
+        "unit": "Bơm tiêm/hộp lọ/liều/ống xylanh",
+        "plannedPrice": 36135624,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm 02 mặt hàng vắc vắc xin phòng, chống bệnh Dại trên địa bàn tỉnh Đắk Lắk năm 2026",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:46:14.209Z"
+}

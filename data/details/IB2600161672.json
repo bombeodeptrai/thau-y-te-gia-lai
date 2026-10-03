@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "40eb4ba9-f267-44f1-ba0b-8852bfb4e88b",
+      "contractorCode": "vn6400304980",
+      "taxCode": "6400304980",
+      "contractorName": "Công ty TNHH Dược & Vật tư y tế Thiên Tâm",
+      "status": "won",
+      "lotNo": "BP2600201862",
+      "lotName": "Đinh lăng, Bạch quả, (Đậu tương).",
+      "bidPrice": 88200000,
+      "finalPrice": 88200000,
+      "winningPrice": 88200000,
+      "reason": "",
+      "submittedAt": "2026-06-02T14:51:32.971",
+      "models": [
+        "Ceginkton"
+      ]
+    },
+    {
+      "id": "9e0b4231-51f5-4e22-9fdf-ae21ea1ffcf0",
+      "contractorCode": "vn5801451412",
+      "taxCode": "5801451412",
+      "contractorName": "Công ty Trách nhiệm Hữu hạn Dược phẩm Vĩnh Đông",
+      "status": "lost",
+      "lotNo": "BP2600201862",
+      "lotName": "Đinh lăng, Bạch quả, (Đậu tương).",
+      "bidPrice": 110250000,
+      "finalPrice": 110250000,
+      "winningPrice": 0,
+      "reason": "không xếp hạng 1",
+      "submittedAt": "2026-06-02T14:51:32.971",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2600201862",
+      "name": "Ceginkton",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 35000,
+      "unitPrice": 2520,
+      "amount": 88200000,
+      "contractorCode": "vn6400304980",
+      "winnerNames": [
+        "Công ty TNHH Dược & Vật tư y tế Thiên Tâm"
+      ],
+      "lotNo": "BP2600201862",
+      "decisionNo": "546/QĐ-BVĐK",
+      "decisionDate": "2026-06-02T23:59:59",
+      "resultPublishedDate": "2026-06-02T14:51:38"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "b184e310-3290-419f-8a3f-ad0c851a86be",
+        "lotNo": "BP2600201862",
+        "name": "Đinh lăng, Bạch quả, (Đậu tương).",
+        "quantity": 35000,
+        "unit": "Viên",
+        "plannedPrice": 110250000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Cung cấp thuốc cho Nhà thuốc của Bệnh viện đa khoa tỉnh Lâm Đồng năm 2026-2027 (lần 2)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:50:34.091Z"
+}

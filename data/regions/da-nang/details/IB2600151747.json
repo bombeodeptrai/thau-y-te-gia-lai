@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 3,
+  "bidders": [
+    {
+      "id": "b3a60ad8-4552-465d-8425-25224ca1999e",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600144180",
+      "lotName": "Lamivudin-Tenofovir disoproxil fumarat-Dolutegravir 300/300/50mg",
+      "bidPrice": 122395770,
+      "finalPrice": 122395770,
+      "winningPrice": 122395770,
+      "reason": "",
+      "submittedAt": "2026-05-29T15:09:49.07",
+      "models": [
+        "TELDY"
+      ]
+    },
+    {
+      "id": "ac701165-440a-4942-978e-800144ca786f",
+      "contractorCode": "vn1400384433",
+      "taxCode": "1400384433",
+      "contractorName": "CÔNG TY CP DƯỢC PHẨM IMEXPHARM",
+      "status": "won",
+      "lotNo": "PP2600144181",
+      "lotName": "Ethambutol hydroclorid",
+      "bidPrice": 89775000,
+      "finalPrice": 89775000,
+      "winningPrice": 89775000,
+      "reason": "",
+      "submittedAt": "2026-05-29T15:09:49.07",
+      "models": [
+        "Ethambutol 400 mg"
+      ]
+    },
+    {
+      "id": "df7814a2-0def-441a-aecb-dc8c78d79c84",
+      "contractorCode": "vn0600206147",
+      "taxCode": "0600206147",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
+      "status": "won",
+      "lotNo": "PP2600144184",
+      "lotName": "Rifampicin + Isoniazid",
+      "bidPrice": 139840000,
+      "finalPrice": 139840000,
+      "winningPrice": 139840000,
+      "reason": "",
+      "submittedAt": "2026-05-29T15:09:49.07",
+      "models": [
+        "Turbe"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600144181",
+      "name": "Ethambutol 400 mg",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 57000,
+      "unitPrice": 1575,
+      "amount": 89775000,
+      "contractorCode": "vn1400384433",
+      "winnerNames": [
+        "CÔNG TY CP DƯỢC PHẨM IMEXPHARM"
+      ],
+      "lotNo": "PP2600144181",
+      "decisionNo": "309/QĐ-YTST",
+      "decisionDate": "2026-05-29T23:59:59",
+      "resultPublishedDate": "2026-05-29T15:18:14"
+    },
+    {
+      "id": "2600144184",
+      "name": "Turbe",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 80000,
+      "unitPrice": 1748,
+      "amount": 139840000,
+      "contractorCode": "vn0600206147",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
+      ],
+      "lotNo": "PP2600144184",
+      "decisionNo": "309/QĐ-YTST",
+      "decisionDate": "2026-05-29T23:59:59",
+      "resultPublishedDate": "2026-05-29T15:18:14"
+    },
+    {
+      "id": "2600144180",
+      "name": "TELDY",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 36330,
+      "unitPrice": 3369,
+      "amount": 122395770,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2600144180",
+      "decisionNo": "309/QĐ-YTST",
+      "decisionDate": "2026-05-29T23:59:59",
+      "resultPublishedDate": "2026-05-29T15:18:14"
+    }
+  ],
+  "requirements": {
+    "total": 8,
+    "items": [
+      {
+        "id": "c129c0ed-3c58-472e-af18-bdc14dc18d3e",
+        "lotNo": "PP2600144179",
+        "name": "Lamivudin-Tenofovir disoproxil fumarat-Efavirenz 300/300/400mg",
+        "quantity": 3600,
+        "unit": "Viên",
+        "plannedPrice": 14472000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "bc230531-f723-4716-940a-1780566639f5",
+        "lotNo": "PP2600144180",
+        "name": "Lamivudin-Tenofovir disoproxil fumarat-Dolutegravir 300/300/50mg",
+        "quantity": 36330,
+        "unit": "Viên",
+        "plannedPrice": 143321850,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "58587414-4d1f-479d-8ae4-3bc827879be5",
+        "lotNo": "PP2600144181",
+        "name": "Ethambutol hydroclorid",
+        "quantity": 57000,
+        "unit": "Viên",
+        "plannedPrice": 89775000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "86c537a2-87f9-4b11-8066-71bd7f680937",
+        "lotNo": "PP2600144182",
+        "name": "Pyrazinamide",
+        "quantity": 15000,
+        "unit": "Viên",
+        "plannedPrice": 9000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "dc9de471-02ff-4022-99f4-eb12e0081125",
+        "lotNo": "PP2600144183",
+        "name": "Rifampicin",
+        "quantity": 1000,
+        "unit": "Viên",
+        "plannedPrice": 2520000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "8cd46ea2-ad1c-4d48-a3ac-56002f736520",
+        "lotNo": "PP2600144184",
+        "name": "Rifampicin + Isoniazid",
+        "quantity": 80000,
+        "unit": "Viên",
+        "plannedPrice": 139840000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "a1a47d0e-9bf8-4e90-8a6c-d28d46a7f94c",
+        "lotNo": "PP2600144185",
+        "name": "Streptomycin",
+        "quantity": 200,
+        "unit": "Lọ",
+        "plannedPrice": 857800,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "37643594-0caf-48ef-8206-dd023f89eb10",
+        "lotNo": "PP2600144186",
+        "name": "Isoniazid",
+        "quantity": 1600,
+        "unit": "Viên",
+        "plannedPrice": 880000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-03T11:43:15.583Z"
+}

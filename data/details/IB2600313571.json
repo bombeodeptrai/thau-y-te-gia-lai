@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "9fb16f01-6467-4ffe-99c3-af8d372ce88f",
+      "contractorCode": "vn6001763164",
+      "taxCode": "6001763164",
+      "contractorName": "CÔNG TY TNHH XDTM PHAN GIA",
+      "status": "lost",
+      "lotNo": "BP2600436729",
+      "lotName": "Mua sắm túi đựng rác thải y tế chuyên dụng cho máy hấp rác năm 2026-2027 của Bệnh viện Đa khoa Buôn Ma Thuột",
+      "bidPrice": 72000000,
+      "finalPrice": 72000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2",
+      "submittedAt": "2026-07-21T15:23:10.002",
+      "models": []
+    },
+    {
+      "id": "78188d82-1c78-4d18-b495-09538f13c211",
+      "contractorCode": "vn6001817483",
+      "taxCode": "6001817483",
+      "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
+      "status": "won",
+      "lotNo": "BP2600436729",
+      "lotName": "Mua sắm túi đựng rác thải y tế chuyên dụng cho máy hấp rác năm 2026-2027 của Bệnh viện Đa khoa Buôn Ma Thuột",
+      "bidPrice": 71928000,
+      "finalPrice": 71928000,
+      "winningPrice": 71928000,
+      "reason": "",
+      "submittedAt": "2026-07-21T15:23:10.002",
+      "models": [
+        "TR"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "9c946f22-e875-437d-b637-3896dddb18e1",
+      "name": "Túi đựng rác thải y tế chuyên dụng cho máy hấp rác ( hấp ướt)",
+      "model": "TR",
+      "brand": "Hộ kinh doanh cơ sở Tương Lai",
+      "manufacturer": "Hộ kinh doanh cơ sở Tương Lai",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Bao nylon chịu nhiệt màu đỏ\n-  Chất liệu Polypropylene (PP)\n- Kích thước 65cmx90cm\n- Độ dày bao ≥0.05mm\n- Nhiệt độ chịu được tối đa: 135 °C\n- Áp suất chịu tối đa: 3.5 atm",
+      "unit": "cái",
+      "quantity": 2400,
+      "unitPrice": 29970,
+      "amount": 71928000,
+      "contractorCode": "vn6001817483",
+      "winnerNames": [
+        "CÔNG TY TNHH PHƯỚC PHÁT EAKAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "01176/QĐ-BVBMT",
+      "decisionDate": "2026-07-21T15:22:34",
+      "resultPublishedDate": "2026-07-21T15:23:22"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "ee99a283-6166-4573-983b-1bb21febeb68",
+        "lotNo": "BP2600436729",
+        "name": "Mua sắm túi đựng rác thải y tế chuyên dụng cho máy hấp rác năm 2026-2027 của Bệnh viện Đa khoa Buôn Ma Thuột",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 72000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm túi đựng rác thải y tế chuyên dụng cho máy hấp rác năm 2026-2027 của Bệnh viện Đa khoa Buôn Ma Thuột",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "2026523151926574",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Túi đựng rác thải y tế chuyên dụng cho máy hấp rác ( hấp ướt)",
+        "unit": "cái",
+        "quantity": 2400,
+        "code": "không",
+        "brand": "không",
+        "manufacturer": "không",
+        "origin": "không",
+        "manufactureYear": "không",
+        "specification": "-Chất liệu Polypropylene (PP) - Kích thước 65cmx90cm - Độ dày bao ≥0.05mm - Nhiệt độ chịu được tối đa: 135 °C - Màu sắc: đỏ hoặc vàng - Có độ bền, dẻo cao, không bị biến dạng hay rò rỉ khi hấp - Quy cách: 200 cái/ bao",
+        "otherRequirement": "không",
+        "projectPlace": "Bệnh viện đa khoa Buôn Ma Thuột, số 62 Nguyễn Đình Chiểu, Phường Buôn Ma Thuột, Đắk Lắk",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1958",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1958",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:46:18.529Z"
+}

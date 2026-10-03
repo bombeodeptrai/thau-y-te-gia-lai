@@ -1,9 +1,184 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "58d117bb-348d-458b-b3c4-f5e5a95e2e31",
+      "contractorCode": "vn2500228415",
+      "taxCode": "2500228415",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+      "status": "won",
+      "lotNo": "PP2600395183",
+      "lotName": "Hyoscin butylbromid",
+      "bidPrice": 48600000,
+      "finalPrice": 48600000,
+      "winningPrice": 48600000,
+      "reason": "",
+      "submittedAt": "2026-09-29T15:05:07.977",
+      "models": [
+        "Tiêm"
+      ]
+    },
+    {
+      "id": "715d2579-5d95-4c46-9dca-2d1efeb8bd9a",
+      "contractorCode": "vn0400102091",
+      "taxCode": "0400102091",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+      "status": "won",
+      "lotNo": "PP2600395184",
+      "lotName": "Papaverin hydroclorid",
+      "bidPrice": 27090000,
+      "finalPrice": 27090000,
+      "winningPrice": 27090000,
+      "reason": "",
+      "submittedAt": "2026-09-29T15:05:07.977",
+      "models": [
+        "Tiêm"
+      ]
+    },
+    {
+      "id": "4309b114-872b-4748-ad65-153f1111a4cb",
+      "contractorCode": "vn2500228415",
+      "taxCode": "2500228415",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+      "status": "lost",
+      "lotNo": "PP2600395184",
+      "lotName": "Papaverin hydroclorid",
+      "bidPrice": 30100000,
+      "finalPrice": 30100000,
+      "winningPrice": 0,
+      "reason": "xếp hạng 2",
+      "submittedAt": "2026-09-29T15:05:07.977",
+      "models": [
+        "Tiêm"
+      ]
+    },
+    {
+      "id": "056b5598-d84b-4a07-b2d2-069fe4ca1a2b",
+      "contractorCode": "vn0400459581",
+      "taxCode": "0400459581",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+      "status": "won",
+      "lotNo": "PP2600395185",
+      "lotName": "Huyết thanh kháng nọc rắn hổ đất",
+      "bidPrice": 15210420,
+      "finalPrice": 15210420,
+      "winningPrice": 15210420,
+      "reason": "",
+      "submittedAt": "2026-09-29T15:05:07.977",
+      "models": [
+        "Tiêm"
+      ]
+    },
+    {
+      "id": "9fa0bbd2-6960-4a26-9adb-88f811b0cc98",
+      "contractorCode": "vn0300523385",
+      "taxCode": "0300523385",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC SÀI GÒN",
+      "status": "won",
+      "lotNo": "PP2600395186",
+      "lotName": "Insulin người tác dụng nhanh, ngắn",
+      "bidPrice": 81900000,
+      "finalPrice": 81900000,
+      "winningPrice": 81900000,
+      "reason": "",
+      "submittedAt": "2026-09-29T15:05:07.977",
+      "models": [
+        "Tiêm"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "34a14a61-7bc6-47d1-ba72-48cde1bdb8a3",
+      "name": "Huyết thanh kháng nọc rắn hổ đất",
+      "model": "Tiêm",
+      "brand": "Dung dịch tiêm",
+      "manufacturer": "Viện Vắc xin và Sinh phẩm Y tế (IVAC)",
+      "origin": "Việt Nam",
+      "manufactureYear": "24 tháng",
+      "specification": "1000 LD 50",
+      "unit": "Lọ/Ống",
+      "quantity": 30,
+      "unitPrice": 507014,
+      "amount": 15210420,
+      "contractorCode": "vn0400459581",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ"
+      ],
+      "lotNo": "",
+      "decisionNo": "2895/QĐ-BVĐKTT",
+      "decisionDate": "2026-09-29T14:58:46",
+      "resultPublishedDate": "2026-09-29T15:06:32"
+    },
+    {
+      "id": "04b85667-708b-41c7-8c11-a92681a1cfb7",
+      "name": "Insulin người tác dụng nhanh, ngắn",
+      "model": "Tiêm",
+      "brand": "Dung dịch tiêm",
+      "manufacturer": "Wockhardt Limited",
+      "origin": "Ấn Độ",
+      "manufactureYear": "24 tháng",
+      "specification": "40IU/ml",
+      "unit": "Lọ/Ống",
+      "quantity": 900,
+      "unitPrice": 91000,
+      "amount": 81900000,
+      "contractorCode": "vn0300523385",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC SÀI GÒN"
+      ],
+      "lotNo": "",
+      "decisionNo": "2895/QĐ-BVĐKTT",
+      "decisionDate": "2026-09-29T14:58:46",
+      "resultPublishedDate": "2026-09-29T15:06:32"
+    },
+    {
+      "id": "e9de7365-a95c-4f3f-aaf5-e030355a7666",
+      "name": "Hyoscin butylbromid",
+      "model": "Tiêm",
+      "brand": "Dung dịch tiêm",
+      "manufacturer": "Công ty Cổ phần Dược phẩm Vĩnh Phúc",
+      "origin": "Việt Nam",
+      "manufactureYear": "36 tháng",
+      "specification": "20mg/1ml",
+      "unit": "Lọ/Ống",
+      "quantity": 18000,
+      "unitPrice": 2700,
+      "amount": 48600000,
+      "contractorCode": "vn2500228415",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
+      "lotNo": "",
+      "decisionNo": "2895/QĐ-BVĐKTT",
+      "decisionDate": "2026-09-29T14:58:46",
+      "resultPublishedDate": "2026-09-29T15:06:32"
+    },
+    {
+      "id": "a7ec2853-96c6-435d-a24e-c2fdd2f6876c",
+      "name": "Papaverin hydroclorid",
+      "model": "Tiêm",
+      "brand": "Dung dịch tiêm",
+      "manufacturer": "Công ty Cổ phần Dược Danapha",
+      "origin": "Việt Nam",
+      "manufactureYear": "36 tháng",
+      "specification": "40mg/ 2ml",
+      "unit": "Lọ/Ống",
+      "quantity": 14000,
+      "unitPrice": 1935,
+      "amount": 27090000,
+      "contractorCode": "vn0400102091",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA "
+      ],
+      "lotNo": "",
+      "decisionNo": "2895/QĐ-BVĐKTT",
+      "decisionDate": "2026-09-29T14:58:46",
+      "resultPublishedDate": "2026-09-29T15:06:32"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -154,13 +329,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2600534284",
-    "notifyId": "27e1e81d-5799-46be-89aa-c73e2667730f",
-    "bidId": "95609622-727b-4541-aa4e-cb39d64f0175",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-10-03T11:48:38.458Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:47:38.789Z"
 }

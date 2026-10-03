@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "91b47be9-b749-46cc-89ad-b67589154b02",
+      "contractorCode": "vn4200562765",
+      "taxCode": "4200562765",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA",
+      "status": "lost",
+      "lotNo": "BP2600778341",
+      "lotName": "Mua sắm thuốc Sorbitol trong thời gian chờ thầu tập trung phục vụ công tác khám chữa bệnh của Bệnh viện Đa khoa khu vực Nghĩa Hành (03 tháng)",
+      "bidPrice": 4460000,
+      "finalPrice": 4460000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-10-01T15:53:39.988",
+      "models": []
+    },
+    {
+      "id": "f8ef1daf-4b14-4034-b47a-5a769f944b00",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "won",
+      "lotNo": "BP2600778341",
+      "lotName": "Mua sắm thuốc Sorbitol trong thời gian chờ thầu tập trung phục vụ công tác khám chữa bệnh của Bệnh viện Đa khoa khu vực Nghĩa Hành (03 tháng)",
+      "bidPrice": 4250000,
+      "finalPrice": 4250000,
+      "winningPrice": 4250000,
+      "reason": "",
+      "submittedAt": "2026-10-01T15:53:39.988",
+      "models": [
+        "893100376823 (VD-20905-14)"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "066ef240-0578-4f5e-aa02-96e33350349d",
+      "name": "Sorbitol gói 5g",
+      "model": "893100376823 (VD-20905-14)",
+      "brand": "Sorbitol",
+      "manufacturer": "Công ty Cổ phần dược và vật tư y tế Bình Thuận",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Hoạt chất, Nồng độ/ Hàm lượng: Sorbitol, gói 5g.\r\n- Nhóm kỹ thuật: Nhóm 4.\r\n- Đường dùng: Uống.\r\n- Dạng bào chế: Bột/Cốm/Hạt pha uống.",
+      "unit": "Gói",
+      "quantity": 5000,
+      "unitPrice": 850,
+      "amount": 4250000,
+      "contractorCode": "vn4300213253",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "244/QĐ-BVĐk",
+      "decisionDate": "2026-10-01T15:52:19",
+      "resultPublishedDate": "2026-10-01T15:53:45"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "7e344d7e-b748-4049-b5e8-666ea40731db",
+        "lotNo": "BP2600778341",
+        "name": "Mua sắm thuốc Sorbitol trong thời gian chờ thầu tập trung phục vụ công tác khám chữa bệnh của Bệnh viện Đa khoa khu vực Nghĩa Hành (03 tháng)",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 4500000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc Sorbitol trong thời gian chờ thầu tập trung phục vụ công tác khám chữa bệnh của Bệnh viện Đa khoa khu vực Nghĩa Hành (03 tháng)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "10745245971259896",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Sorbitol gói 5g",
+        "unit": "Gói",
+        "quantity": 5000,
+        "code": "-",
+        "brand": "-",
+        "manufacturer": "-",
+        "origin": "-",
+        "manufactureYear": "2025 trở về sau",
+        "specification": "- Hoạt chất, Nồng độ/ Hàm lượng: Sorbitol, gói 5g. - Nhóm kỹ thuật: Nhóm 4. Đường dùng: Uống. Dạng bào chế: Bột/Cốm/Hạt pha uống",
+        "otherRequirement": "Nhà thầu nộp hồ sơ sản phẩm chứng minh đáp ứng yêu cầu kỹ thuật nếu trúng thầu",
+        "projectPlace": "Bệnh viện Đa khoa khu vực Nghĩa Hành",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1958",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1958",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:43:40.780Z"
+}

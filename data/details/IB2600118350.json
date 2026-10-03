@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "d4ef2dac-9a3c-49ab-a388-4a208667ebfe",
+      "contractorCode": "vn0103053042",
+      "taxCode": "0103053042",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2",
+      "status": "lost",
+      "lotNo": "PP2600105585",
+      "lotName": "Ciprofloxacin",
+      "bidPrice": 254838000,
+      "finalPrice": 254838000,
+      "winningPrice": 0,
+      "reason": "Chi tiết tại QĐ đính kèm",
+      "submittedAt": "2026-05-08T15:35:15.221",
+      "models": [
+        "Rocephin 1g I.V",
+        "Meronem"
+      ]
+    },
+    {
+      "id": "484622ab-adfa-4c47-8da1-e6e325926ad6",
+      "contractorCode": "vn0103053042",
+      "taxCode": "0103053042",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2",
+      "status": "won",
+      "lotNo": "PP2600105586",
+      "lotName": "Ceftriaxon",
+      "bidPrice": 140416000,
+      "finalPrice": 140416000,
+      "winningPrice": 140416000,
+      "reason": "",
+      "submittedAt": "2026-05-08T15:35:15.221",
+      "models": [
+        "Rocephin 1g I.V",
+        "Meronem"
+      ]
+    },
+    {
+      "id": "2d1196f5-7877-41a8-8555-be9c0c698baa",
+      "contractorCode": "vn0103053042",
+      "taxCode": "0103053042",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2",
+      "status": "won",
+      "lotNo": "PP2600105587",
+      "lotName": "Meropenem",
+      "bidPrice": 549947000,
+      "finalPrice": 549947000,
+      "winningPrice": 549947000,
+      "reason": "",
+      "submittedAt": "2026-05-08T15:35:15.221",
+      "models": [
+        "Rocephin 1g I.V",
+        "Meronem"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600105586",
+      "name": "Rocephin 1g I.V",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Thụy Sỹ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 1000,
+      "unitPrice": 140416,
+      "amount": 140416000,
+      "contractorCode": "vn0103053042",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2"
+      ],
+      "lotNo": "PP2600105586",
+      "decisionNo": "452/QĐ-TTYT",
+      "decisionDate": "2026-05-08T23:59:59",
+      "resultPublishedDate": "2026-05-08T15:35:20"
+    },
+    {
+      "id": "2600105587",
+      "name": "Meronem",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Cơ sở sản xuất: Ý, Cơ sở đóng gói và xuất xưởng: Thụy Sỹ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 1000,
+      "unitPrice": 549947,
+      "amount": 549947000,
+      "contractorCode": "vn0103053042",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2"
+      ],
+      "lotNo": "PP2600105587",
+      "decisionNo": "452/QĐ-TTYT",
+      "decisionDate": "2026-05-08T23:59:59",
+      "resultPublishedDate": "2026-05-08T15:35:20"
+    }
+  ],
+  "requirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "abce6ce1-7dfa-438f-920c-a7264e560e02",
+        "lotNo": "PP2600105585",
+        "name": "Ciprofloxacin",
+        "quantity": 1000,
+        "unit": "Lọ",
+        "plannedPrice": 254838000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "4414d8dd-3b32-4101-a527-49e64db0b450",
+        "lotNo": "PP2600105586",
+        "name": "Ceftriaxon",
+        "quantity": 1000,
+        "unit": "Lọ",
+        "plannedPrice": 140416000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "ea07b6f0-e0b9-4eca-baa1-fe51ad17966d",
+        "lotNo": "PP2600105587",
+        "name": "Meropenem",
+        "quantity": 1000,
+        "unit": "Lọ",
+        "plannedPrice": 549947000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Gói thầu 02: Mua sắm thuốc biệt dược gốc năm 2026",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:39:18.315Z"
+}

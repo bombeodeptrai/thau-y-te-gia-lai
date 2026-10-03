@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "f080f0af-eee9-4ff6-ad34-38042c3ac408",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "won",
+      "lotNo": "PP2600335138",
+      "lotName": "Heparin natri",
+      "bidPrice": 39900000,
+      "finalPrice": 39900000,
+      "winningPrice": 39900000,
+      "reason": "",
+      "submittedAt": "2026-09-30T14:20:27.653",
+      "models": [
+        "400410303124"
+      ]
+    },
+    {
+      "id": "02a9142a-7ca5-4b04-a83f-5f5b611896e5",
+      "contractorCode": "vn0101841961",
+      "taxCode": "0101841961",
+      "contractorName": "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU Y TẾ THÁI AN",
+      "status": "won",
+      "lotNo": "PP2600335139",
+      "lotName": "Recombinant Human Erythropoietin Alfa",
+      "bidPrice": 383216000,
+      "finalPrice": 383216000,
+      "winningPrice": 383216000,
+      "reason": "",
+      "submittedAt": "2026-09-30T14:20:27.653",
+      "models": [
+        "890410176300"
+      ]
+    },
+    {
+      "id": "fe9068ab-0bb3-4821-968d-dd17764b3c65",
+      "contractorCode": "vn0308966519",
+      "taxCode": "0308966519",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC NEWSUN",
+      "status": "lost",
+      "lotNo": "PP2600335139",
+      "lotName": "Recombinant Human Erythropoietin Alfa",
+      "bidPrice": 383600000,
+      "finalPrice": 383600000,
+      "winningPrice": 0,
+      "reason": "XẾP HẠNG THỨ 2",
+      "submittedAt": "2026-09-30T14:20:27.653",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "6824e5fd-20ee-41e6-93c7-efd2686c0e79",
+      "name": "Recombinant Human Erythropoietin Alfa",
+      "model": "890410176300",
+      "brand": "Reliporex 4000 IU",
+      "manufacturer": "Reliance Life Sciences Pvt. Ltd.",
+      "origin": "Ấn Độ",
+      "manufactureYear": "Hạng dùng: 24 tháng",
+      "specification": "Nhóm TCKT: nhóm 5, hàm lượng: 4000IU/ 0,4ml, Dạng bào chế: Dung dịch tiêm, đường dùng: Tiêm",
+      "unit": "Bút tiêm",
+      "quantity": 2000,
+      "unitPrice": 191608,
+      "amount": 383216000,
+      "contractorCode": "vn0101841961",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU Y TẾ THÁI AN"
+      ],
+      "lotNo": "",
+      "decisionNo": "309/QĐ-TTYT",
+      "decisionDate": "2026-09-30T13:50:15",
+      "resultPublishedDate": "2026-09-30T14:21:19"
+    },
+    {
+      "id": "03acbd28-50ac-47bc-849c-4771281a304d",
+      "name": "Heparin natri",
+      "model": "400410303124",
+      "brand": "Heparin Sodium Panpharma 5000 IU/ml",
+      "manufacturer": "Panpharma GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Hạng dùng: 60 tháng",
+      "specification": "Nhóm TCKT: nhóm 1, hàm lượng: 5000IU/ml; 5ml, Dạng bào chế: Dung dịch tiêm, đường dùng: Tiêm",
+      "unit": "Lọ",
+      "quantity": 200,
+      "unitPrice": 199500,
+      "amount": 39900000,
+      "contractorCode": "vn0100108536",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "lotNo": "",
+      "decisionNo": "309/QĐ-TTYT",
+      "decisionDate": "2026-09-30T13:50:15",
+      "resultPublishedDate": "2026-09-30T14:21:19"
+    }
+  ],
+  "requirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "2ef87553-00fc-4ced-8741-42f7b7ff41ba",
+        "lotNo": "PP2600335138",
+        "name": "Heparin natri",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 39900000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "4961aeae-16c9-4b9d-b2ec-5dcd30e85da2",
+        "lotNo": "PP2600335139",
+        "name": "Recombinant Human Erythropoietin Alfa",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 383732000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "219796a4-e4b0-4723-8591-cff11d26fe6c",
+        "lotNo": "PP2600335140",
+        "name": "Enoxaparin natri",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 2100000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc Generic cho chạy thận nhân tạo trong thời gian chờ kết quả đấu thầu tập trung của Sở Y tế",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "9002456611172756",
+        "position": "1.1",
+        "lotNo": "PP2600335138",
+        "lotName": "Heparin natri",
+        "name": "Heparin natri",
+        "unit": "Lọ",
+        "quantity": 200,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Đáp ứng tiêu chí kỹ thuật Nhóm 1; theo Thông tư 40/2025/TT-\u0002BYT",
+        "origin": "Đáp ứng tiêu chí kỹ thuật Nhóm 1; theo Thông tư 40/2025/TT-\u0002BYT",
+        "manufactureYear": "Trong thời hạn sử dụng (Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải đảm bảo tối thiểu 12 tháng trở lên",
+        "specification": "Thuốc có nhóm TCKT: Nhóm 1; nồng độ, hàm lượng: 25000IU/5ml; Đường dùng: Tiêm; Dạng bào chế: Dung dịch tiêm",
+        "otherRequirement": "Sau khi có kết quả chào giá, nếu nhà thầu xếp hạng số 1 và được đề nghị trúng thầu, Đề nghị Nhà thầu cung cấp \nthêm \ncác \nthông \ntin về \nsản \nphẩm \nbao \ngồm: \nGiấy \nđăng \nkí lưu \nhành/\nGiấy \nphép \nnhập \nkhẩu, \nquy \ncách \nđóng \ngói, \nhạn \ndùng \n(tuổi \nthọ) \ncủa \nthuốc và \nGiấy \ntờ \npháp \nlý của \nnhà \nthầu \n(Giấy \nđăng \nký \nkinh \ndoanh,\nGiấy \nCN đủ\nđiều \nkiện \nkinh \ndoanh \ndược, \nGDP, \nGSP \nvà \ngiấy tờ \nkhác \nliên \nquan \nnếu có) gửi \nvề \nkhoa \ndược \nTrung tâm Y tế khu vực Hàm Thuận Bắc (Địa chỉ: Km17, đường 8/4, thôn Lâm Hoà, xã Hàm Thuận, tỉnh Lâm Đồng)",
+        "projectPlace": "Trung tâm Y tế khu vực Hàm Thuận Bắc (Địa chỉ: Km17, đường 8/4, thôn Lâm Hoà, xã Hàm Thuận, tỉnh Lâm Đồng)",
+        "earliestDeliveryDate": "3 ngày kể từ ngày nhận được yêu cầu giao hàng",
+        "latestDeliveryDate": "5 ngày kể từ ngày nhận được yêu cầu giao hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "6688169633009024",
+        "position": "2.1",
+        "lotNo": "PP2600335139",
+        "lotName": "Recombinant Human Erythropoietin Alfa",
+        "name": "Recombinant Human Erythropoietin Alfa",
+        "unit": "Bút tiêm",
+        "quantity": 2000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Đáp ứng tiêu chí kỹ thuật Nhóm 5; theo Thông tư 40/2025/TT-\u0002BYT",
+        "origin": "Đáp ứng tiêu chí kỹ thuật Nhóm 5; theo Thông tư 40/2025/TT-\u0002BYT",
+        "manufactureYear": "Trong thời hạn sử dụng (Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải đảm bảo tối thiểu 12 tháng trở lên",
+        "specification": "Thuốc có nhóm TCKT: Nhóm 5; nồng độ, hàm lượng: 4000IU/ 0,4ml; Đường dùng: Tiêm; Dạng bào chế: Dung dịch tiêm",
+        "otherRequirement": "Sau khi có kết quả chào giá, nếu nhà thầu xếp hạng số 1 và được đề nghị trúng thầu, Đề nghị Nhà thầu cung cấp \nthêm \ncác \nthông \ntin về \nsản \nphẩm \nbao \ngồm: \nGiấy \nđăng \nkí lưu \nhành/\nGiấy \nphép \nnhập \nkhẩu, \nquy \ncách \nđóng \ngói, \nhạn \ndùng \n(tuổi \nthọ) \ncủa \nthuốc và \nGiấy \ntờ \npháp \nlý của \nnhà \nthầu \n(Giấy \nđăng \nký \nkinh \ndoanh,\nGiấy \nCN đủ\nđiều \nkiện \nkinh \ndoanh \ndược, \nGDP, \nGSP \nvà \ngiấy tờ \nkhác \nliên \nquan \nnếu có) gửi \nvề \nkhoa \ndược \nTrung tâm Y tế khu vực Hàm Thuận Bắc (Địa chỉ: Km17, đường 8/4, thôn Lâm Hoà, xã Hàm Thuận, tỉnh Lâm Đồng)",
+        "projectPlace": "Trung tâm Y tế khu vực Hàm Thuận Bắc (Địa chỉ: Km17, đường 8/4, thôn Lâm Hoà, xã Hàm Thuận, tỉnh Lâm Đồng)",
+        "earliestDeliveryDate": "3 ngày kể từ ngày nhận được yêu cầu giao hàng",
+        "latestDeliveryDate": "5 ngày kể từ ngày nhận được yêu cầu giao hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "10869866699167096",
+        "position": "3.1",
+        "lotNo": "PP2600335140",
+        "lotName": "Enoxaparin natri",
+        "name": "Enoxaparin natri",
+        "unit": "Ống",
+        "quantity": 30,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Đáp ứng tiêu chí kỹ thuật Nhóm 1; theo Thông tư 40/2025/TT- BYT",
+        "origin": "Đáp ứng tiêu chí kỹ thuật Nhóm 1; theo Thông tư 40/2025/TT- BYT",
+        "manufactureYear": "Trong thời hạn sử dụng (Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải đảm bảo tối thiểu 12 tháng trở lên",
+        "specification": "Thuốc có nhóm TCKT: Nhóm 1; nồng độ, hàm lượng: 40mg/0.4ml; Đường dùng: Tiêm; Dạng bào chế: Dung dịch tiêm",
+        "otherRequirement": "Sau khi có kết quả chào giá, nếu nhà thầu xếp hạng số 1 và được đề nghị trúng thầu, Đề nghị Nhà thầu cung cấp \nthêm \ncác \nthông \ntin về \nsản \nphẩm \nbao \ngồm: \nGiấy \nđăng \nkí lưu \nhành/\nGiấy \nphép \nnhập \nkhẩu, \nquy \ncách \nđóng \ngói, \nhạn \ndùng \n(tuổi \nthọ) \ncủa \nthuốc và \nGiấy \ntờ \npháp \nlý của \nnhà \nthầu \n(Giấy \nđăng \nký \nkinh \ndoanh,\nGiấy \nCN đủ\nđiều \nkiện \nkinh \ndoanh \ndược, \nGDP, \nGSP \nvà \ngiấy tờ \nkhác \nliên \nquan \nnếu có) gửi \nvề \nkhoa \ndược \nTrung tâm Y tế khu vực Hàm Thuận Bắc (Địa chỉ: Km17, đường 8/4, thôn Lâm Hoà, xã Hàm Thuận, tỉnh Lâm Đồng)",
+        "projectPlace": "Trung tâm Y tế khu vực Hàm Thuận Bắc (Địa chỉ: Km17, đường 8/4, thôn Lâm Hoà, xã Hàm Thuận, tỉnh Lâm Đồng)",
+        "earliestDeliveryDate": "3 ngày kể từ ngày nhận được yêu cầu giao hàng",
+        "latestDeliveryDate": "5 ngày kể từ ngày nhận được yêu cầu giao hàng",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:50:22.120Z"
+}

@@ -1,9 +1,89 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "5bac60d8-e072-4a83-a38d-82f7d0bc3c41",
+      "contractorCode": "vn0303453513",
+      "taxCode": "0303453513",
+      "contractorName": "CÔNG TY TNHH Y TẾ CÁNH CỬA VIỆT",
+      "status": "won",
+      "lotNo": "PP2600397275",
+      "lotName": "Monobasic natri phosphat + dibasic natri phosphat",
+      "bidPrice": 59000000,
+      "finalPrice": 59000000,
+      "winningPrice": 59000000,
+      "reason": "",
+      "submittedAt": "2026-09-30T14:04:37.726",
+      "models": [
+        "Không"
+      ]
+    },
+    {
+      "id": "6d2eadc2-c4c7-4244-9c67-3a029a31602b",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "won",
+      "lotNo": "PP2600397278",
+      "lotName": "Tropicamide; Phenylephrine hydroclorid",
+      "bidPrice": 2700000,
+      "finalPrice": 2700000,
+      "winningPrice": 2700000,
+      "reason": "",
+      "submittedAt": "2026-09-30T14:04:37.726",
+      "models": [
+        "Không"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "4a11f838-5452-4385-8c6c-5abda797a232",
+      "name": "Monobasic natri phosphat + dibasic natri phosphat",
+      "model": "Không",
+      "brand": "Không",
+      "manufacturer": "C.B Fleet Company Inc",
+      "origin": "Mỹ",
+      "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+      "specification": "Nhóm tiêu chí kĩ thuật: 1; Nồng độ, hàm lượng: (19g + 7g)/118ml; 133ml , Đường dùng: Thụt trực tràng ;\r\nDạng bào chế: Dung dịch thụt trực tràng",
+      "unit": "Chai/Lọ",
+      "quantity": 1000,
+      "unitPrice": 59000,
+      "amount": 59000000,
+      "contractorCode": "vn0303453513",
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ CÁNH CỬA VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "817/QĐ-BVBS",
+      "decisionDate": "2026-09-30T14:03:10",
+      "resultPublishedDate": "2026-09-30T14:04:44"
+    },
+    {
+      "id": "321f7b37-9c53-467a-a3cb-3f3fdbfc5f3e",
+      "name": "Tropicamide; Phenylephrine hydroclorid",
+      "model": "Không",
+      "brand": "Không",
+      "manufacturer": " Santen Pharmaceutical Co., Ltd., Nhà máy Shiga",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+      "specification": "Nhóm tiêu chí kĩ thuật: 1; Nồng độ, hàm lượng: (0,5%+0,5%) /10ml, Đường dùng: Nhỏ mắt;\r\nDạng bào chế: Dung dịch nhỏ mắt",
+      "unit": "Lọ",
+      "quantity": 40,
+      "unitPrice": 67500,
+      "amount": 2700000,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "",
+      "decisionNo": "817/QĐ-BVBS",
+      "decisionDate": "2026-09-30T14:03:10",
+      "resultPublishedDate": "2026-09-30T14:04:44"
+    }
+  ],
   "requirements": {
     "total": 5,
     "items": [
@@ -187,12 +267,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2600539805",
-    "notifyId": "f3b23573-7fb2-4954-97fd-450d5240d28d",
-    "bidId": "13364a0d-6318-46ac-91b8-314f1197cad2",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-10-03T11:48:37.620Z"
+  "fetchedAt": "2026-10-03T11:47:37.854Z"
 }

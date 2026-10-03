@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "2626e26b-bb7e-40b3-a875-64d37eb7fe8c",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "won",
+      "lotNo": "PP2500590879",
+      "lotName": "Lopinavir + ritonavir (LPV/r)",
+      "bidPrice": 45993600,
+      "finalPrice": 45993600,
+      "winningPrice": 45993600,
+      "reason": "",
+      "submittedAt": "2026-03-16T14:21:53.832",
+      "models": [
+        "Lopimune Tablets"
+      ]
+    },
+    {
+      "id": "73257dec-c1ce-48de-a0c2-cda8902c24c0",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "lost",
+      "lotNo": "PP2500590879",
+      "lotName": "Lopinavir + ritonavir (LPV/r)",
+      "bidPrice": 53056800,
+      "finalPrice": 53056800,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-03-16T14:21:53.832",
+      "models": [
+        "TELDY"
+      ]
+    },
+    {
+      "id": "349520ce-3b6a-4ae5-b2fa-e8e56a822dc6",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "lost",
+      "lotNo": "PP2500590880",
+      "lotName": "Lamivudine+ zidovudin",
+      "bidPrice": 10800000,
+      "finalPrice": 10800000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn giá kế hoạch, nhà thầu không chào lại giá",
+      "submittedAt": "2026-03-16T14:21:53.832",
+      "models": [
+        "Lopimune Tablets"
+      ]
+    },
+    {
+      "id": "343582e4-6470-4c77-a2c6-eab828a3baf0",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "lost",
+      "lotNo": "PP2500590881",
+      "lotName": "Tenoforvir + lamivudine + dolutegravir",
+      "bidPrice": 969624000,
+      "finalPrice": 969624000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-03-16T14:21:53.832",
+      "models": [
+        "Lopimune Tablets"
+      ]
+    },
+    {
+      "id": "f16f0e24-7591-44ca-afcf-9c2856c352a6",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2500590881",
+      "lotName": "Tenoforvir + lamivudine + dolutegravir",
+      "bidPrice": 941881980,
+      "finalPrice": 941881980,
+      "winningPrice": 941881980,
+      "reason": "",
+      "submittedAt": "2026-03-16T14:21:53.832",
+      "models": [
+        "TELDY"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2500590881",
+      "name": "TELDY",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 269340,
+      "unitPrice": 3497,
+      "amount": 941881980,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2500590881",
+      "decisionNo": "274/QĐ-BVĐKGL",
+      "decisionDate": "2026-03-16T23:59:59",
+      "resultPublishedDate": "2026-03-16T14:23:30"
+    },
+    {
+      "id": "2500590879",
+      "name": "Lopimune Tablets",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 7200,
+      "unitPrice": 6388,
+      "amount": 45993600,
+      "contractorCode": "vn0100108536",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "lotNo": "PP2500590879",
+      "decisionNo": "274/QĐ-BVĐKGL",
+      "decisionDate": "2026-03-16T23:59:59",
+      "resultPublishedDate": "2026-03-16T14:23:30"
+    }
+  ],
+  "requirements": {
+    "total": 3,
+    "items": [
+      {
+        "id": "192bb3ae-0154-4763-bffc-4ff603d7d0d6",
+        "lotNo": "PP2500590879",
+        "name": "Lopinavir + ritonavir (LPV/r)",
+        "quantity": 7200,
+        "unit": "viên",
+        "plannedPrice": 61192800,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "64969fd2-c70f-4bdd-b1c2-d7e720599c7a",
+        "lotNo": "PP2500590880",
+        "name": "Lamivudine+ zidovudin",
+        "quantity": 3600,
+        "unit": "viên",
+        "plannedPrice": 10080000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "aef65d91-438c-4c85-8e48-a651b6a30228",
+        "lotNo": "PP2500590881",
+        "name": "Tenoforvir + lamivudine + dolutegravir",
+        "quantity": 269340,
+        "unit": "viên",
+        "plannedPrice": 1062546300,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc gồm 03 danh mục (Nhóm 2: 01; Nhóm 5: 02)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:47:54.519Z"
+}

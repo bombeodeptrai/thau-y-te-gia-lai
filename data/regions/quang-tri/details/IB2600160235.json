@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "35ef92d8-7426-4f17-99ba-3f657ca629d0",
+      "contractorCode": "vn2901830592",
+      "taxCode": "2901830592",
+      "contractorName": "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+      "status": "won",
+      "lotNo": "BP2600226599",
+      "lotName": "Gói số 2: Gói thầu mua sắm vị thuốc cổ truyền",
+      "bidPrice": 22300000,
+      "finalPrice": 22300000,
+      "winningPrice": 22300000,
+      "reason": "",
+      "submittedAt": "2026-05-07T10:42:13.523",
+      "models": [
+        "VCT-00185-22"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "62da3ca9-a7d3-445e-ac53-1dbfc66a7142",
+      "name": "Vị thuốc cổ truyền Ngải cứu",
+      "model": "VCT-00185-22",
+      "brand": "Vị thuốc cổ truyền Ngải cứu",
+      "manufacturer": "Công ty cổ phần Dược liệu Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "Trong thời hạn hiệu lực của số đăng ký",
+      "specification": "Túi 1kg, 2kg - Sơ chế",
+      "unit": "Gam",
+      "quantity": 150000,
+      "unitPrice": 148.66666666666666,
+      "amount": 22300000,
+      "contractorCode": "vn2901830592",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC"
+      ],
+      "lotNo": "",
+      "decisionNo": "140/QĐ-BV",
+      "decisionDate": "2026-05-07T10:40:31",
+      "resultPublishedDate": "2026-05-07T10:42:18"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "ee1301b0-8688-412a-b15a-3aa809328719",
+        "lotNo": "BP2600226599",
+        "name": "Gói số 2: Gói thầu mua sắm vị thuốc cổ truyền",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 22365000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm 1 vị thuốc cổ truyền",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "2026317165919705",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Vị thuốc cổ truyền Ngải cứu",
+        "unit": "Gam",
+        "quantity": 150000,
+        "code": "VCT-00185-22",
+        "brand": "Vị thuốc cổ truyền Ngải cứu",
+        "manufacturer": "Công ty cổ phần Dược liệu Việt Nam",
+        "origin": "Việt Nam",
+        "manufactureYear": "Trong thời hạn hiệu lực của giấy phép lưu hành",
+        "specification": "Herba Artemisiae vulgaris",
+        "otherRequirement": "Túi 1kg, 2kg; Sơ chế; Nhóm 2",
+        "projectPlace": "Bệnh viện YHCT và PHCN Nam Quảng Trị",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1958",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1958",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-03T11:39:46.490Z"
+}
