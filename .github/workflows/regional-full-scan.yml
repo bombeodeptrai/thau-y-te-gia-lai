@@ -131,6 +131,17 @@ jobs:
       - name: Khôi phục dữ liệu Gia Lai nếu bản hiện tại bị rỗng
         run: node scripts/restore-legacy-gia-lai.mjs
 
+      - name: Ghi nhớ thay đổi phát sinh trên main trong lúc quét
+        shell: bash
+        run: |
+          mkdir -p artifacts/concurrent
+          cp data/tenders.json artifacts/concurrent/current-tenders.json
+          if git cat-file -e "${GITHUB_SHA}:data/tenders.json" 2>/dev/null; then
+            git show "${GITHUB_SHA}:data/tenders.json" > artifacts/concurrent/base-tenders.json
+          else
+            cp artifacts/concurrent/current-tenders.json artifacts/concurrent/base-tenders.json
+          fi
+
       - name: Tải dữ liệu các tỉnh quét thành công
         continue-on-error: true
         uses: actions/download-artifact@v4
@@ -148,6 +159,7 @@ jobs:
           else
             echo "Không có tỉnh nào quét thành công; giữ dữ liệu gần nhất."
           fi
+          node scripts/merge-concurrent-tenders.mjs artifacts/concurrent/base-tenders.json artifacts/concurrent/current-tenders.json
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
           node -e 'const d=require("./data/tenders.json"); if (!d.tenders?.length) throw new Error("Từ chối triển khai cơ sở dữ liệu rỗng");'

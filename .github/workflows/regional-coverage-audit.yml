@@ -147,6 +147,17 @@ jobs:
         with:
           node-version: 22
 
+      - name: Ghi nhớ thay đổi phát sinh trên main trong lúc đối chiếu
+        shell: bash
+        run: |
+          mkdir -p artifacts/concurrent
+          cp data/tenders.json artifacts/concurrent/current-tenders.json
+          if git cat-file -e "${GITHUB_SHA}:data/tenders.json" 2>/dev/null; then
+            git show "${GITHUB_SHA}:data/tenders.json" > artifacts/concurrent/base-tenders.json
+          else
+            cp artifacts/concurrent/current-tenders.json artifacts/concurrent/base-tenders.json
+          fi
+
       - name: Tải dữ liệu Gia Lai đã đối chiếu thành công
         continue-on-error: true
         uses: actions/download-artifact@v4
@@ -164,6 +175,7 @@ jobs:
           else
             echo "Không có artifact mới; giữ nguyên cơ sở dữ liệu gần nhất."
           fi
+          node scripts/merge-concurrent-tenders.mjs artifacts/concurrent/base-tenders.json artifacts/concurrent/current-tenders.json
           node scripts/restore-legacy-gia-lai.mjs
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
