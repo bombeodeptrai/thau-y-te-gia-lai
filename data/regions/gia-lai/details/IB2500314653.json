@@ -2,7 +2,23 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "bb5b41d8-d966-4e4c-b02f-bc3a328402a9",
+      "contractorCode": "vn0312549927",
+      "taxCode": "0312549927",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ TBR",
+      "status": "lost",
+      "lotNo": "BP2500369752",
+      "lotName": "Gói số 54. Hóa chất sử dụng cho Hệ thống Real-time PCR (AriaDX) và Hệ thống tách chiết DNA/RNA (MAELSTROM 9600)",
+      "bidPrice": 455320000,
+      "finalPrice": 455320000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu EHSMT về kỹ thuật",
+      "submittedAt": "2025-10-17T16:31:30.591",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +44,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500314653",
-    "notifyId": "70212922-ee4f-4583-ae32-8793b77d5c24",
-    "bidId": "6624ae9d-5a70-42a2-8da7-e967524df75f",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:50.669Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T05:27:29.161Z"
 }
