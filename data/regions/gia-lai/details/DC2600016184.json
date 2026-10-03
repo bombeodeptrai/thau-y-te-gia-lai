@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "0b2d4781-8aaf-4c5d-a18b-71c50b69729b",
+      "contractorCode": "vn0600206147",
+      "taxCode": "0600206147",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
+      "status": "won",
+      "lotNo": "BP2600796370",
+      "lotName": "Mua sắm thuốc Pyrazinamide điều trị bệnh lao tại các Trạm y tế (Mã19.2026)",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 15600000,
+      "reason": "",
+      "submittedAt": "2026-09-24T16:26:23.685",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "a270a214-0b7d-4ab0-9799-c44dd2704443",
+      "name": "Pyrazinamide",
+      "model": "Pyrazinamid",
+      "brand": "Công ty Cổ phần Dược phẩm Nam Hà",
+      "manufacturer": "Công ty Cổ phần Dược phẩm Nam Hà",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "500mg; đường dùng: uống; dạng bào chế: viên nén; Hộp 10 vĩ x 10 viên",
+      "unit": "Viên",
+      "quantity": 20000,
+      "unitPrice": 780,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
+      ],
+      "decisionNo": "451/QĐ-TTYT",
+      "decisionDate": "2026-09-24T23:59:59",
+      "resultPublishedDate": "2026-09-24T16:26:32"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "DC2600016184",
-    "notifyId": "DC2600016184",
-    "bidId": "1e4e02cb-c25f-4c58-858e-bbbab68bcd71",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-10-03T16:35:03.171Z"
+  "fetchedAt": "2026-10-03T21:26:20.158Z"
 }
