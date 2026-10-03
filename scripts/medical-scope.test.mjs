@@ -208,6 +208,38 @@ test("nhận gói thuốc bó dược liệu của bệnh viện y dược cổ 
   assert.ok(result.matched.includes("thuoc bo"));
 });
 
+for (const [notifyNo, title, investor] of [
+  [
+    "IB2600563361-00",
+    "Mua sắm thuốc Morphin hydroclorid 10mg/ml năm 2026",
+    "Trung Tâm Y Tế Ayun Pa",
+  ],
+  [
+    "IB2600563075-00",
+    "Mua sắm thuốc Lao hàng 1 bổ sung phục vụ khám bệnh, chữa bệnh năm 2026",
+    "Bệnh viện Lao và Bệnh phổi Pleiku",
+  ],
+]) {
+  test(`nhận thuốc điều trị do cơ sở y tế mua: ${notifyNo}`, () => {
+    const result = classifyMedicalTender({ notifyNo, bidName: [title], investorName: investor });
+    assert.equal(result.accepted, true, result.reason);
+    assert.equal(result.category, "Vật tư & hóa chất");
+    assert.ok(result.reason.includes("medical-drug-supply"), result.reason);
+    assert.ok(result.matched.includes("thuoc"));
+  });
+}
+
+for (const [title, investor] of [
+  ["Mua thuốc bảo vệ thực vật phục vụ khuôn viên", "Bệnh viện Đa khoa tỉnh"],
+  ["Mua thuốc lá phục vụ cửa hàng", "Trung tâm Y tế huyện"],
+  ["Cung cấp cây giống và dược liệu phục vụ mô hình nông nghiệp", "Trung tâm dịch vụ nông nghiệp"],
+]) {
+  test(`không mở rộng quy tắc thuốc sang hàng hóa ngoài y tế: ${title}`, () => {
+    const result = classifyMedicalTender({ bidName: [title], investorName: investor });
+    assert.equal(result.accepted, false, result.reason);
+  });
+}
+
 test("nhận vật tư thu gom rác thải y tế và vật sắc nhọn", () => {
   const result = classifyMedicalTender({
     notifyNo: "IB2600561886-00",
