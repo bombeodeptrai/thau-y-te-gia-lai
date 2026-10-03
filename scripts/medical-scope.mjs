@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v11";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v12";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -83,6 +83,17 @@ const MEDICAL_CONTEXT_SUPPLY_TERMS = [
   "chat boi tron", "bao cao su",
 ];
 
+// Vật tư thu gom chất thải lây nhiễm/vật sắc nhọn là vật tư y tế, nhưng cần
+// cụm từ chuyên biệt để không kéo nhầm mọi gói vệ sinh hoặc thu gom rác.
+const MEDICAL_WASTE_TITLE_TERMS = [
+  "rac thai y te", "chat thai y te", "thung rac y te",
+  "hop dung vat sac nhon", "hop chua vat sac nhon",
+];
+
+const EXPLICIT_MEDICAL_WASTE_TERMS = [
+  "rac thai y te", "chat thai y te", "thung rac y te",
+];
+
 const MEDICAL_INVESTOR_TERMS = [
   "so y te", "benh vien", "trung tam y te", "tram y te", "phong kham", "benh xa",
   "trung tam kiem soat benh tat", "cdc", "trung tam kiem nghiem",
@@ -154,6 +165,10 @@ export function classifyMedicalTender(item) {
   const equipmentService = matchedTerms(title, MEDICAL_EQUIPMENT_SERVICE_TERMS);
   const equipmentObject = matchedTerms(title, MEDICAL_EQUIPMENT_OBJECT_TERMS);
   const contextualSupply = matchedTerms(title, MEDICAL_CONTEXT_SUPPLY_TERMS);
+  const medicalWasteTitle = matchedTerms(title, MEDICAL_WASTE_TITLE_TERMS);
+  const explicitMedicalWaste = matchedTerms(title, EXPLICIT_MEDICAL_WASTE_TERMS);
+  const medicalWaste = medicalWasteTitle.length > 0
+    && (explicitMedicalWaste.length > 0 || medicalInvestor.length > 0);
   const contextualMedicalSupplies = medicalInvestor.length > 0
     && contextualSupply.length > 0;
   const nonServiceExcluded = excluded.filter((term) => !equipmentService.includes(term));
@@ -162,8 +177,13 @@ export function classifyMedicalTender(item) {
     && nonServiceExcluded.length === 0;
   const contextualAllowedExcluded = contextualMedicalSupplies
     && excluded.every((term) => term === "hoa chat tay rua");
+  const medicalWasteAllowedExcluded = medicalWaste
+    && excluded.every((term) => term === "rac thai" || term === "chat thai");
 
-  if (excluded.length && !medicalEquipmentService && !contextualAllowedExcluded) {
+  if (excluded.length
+    && !medicalEquipmentService
+    && !contextualAllowedExcluded
+    && !medicalWasteAllowedExcluded) {
     return {
       accepted: false,
       category: "",
@@ -230,6 +250,10 @@ export function classifyMedicalTender(item) {
     score += 60;
     reasons.push("medical-context-supply");
   }
+  if (medicalWaste) {
+    score += 90;
+    reasons.push("medical-waste-supply");
+  }
   if (genericSupply.length) score += 10;
   if (clinical.length) score += 20;
 
@@ -241,7 +265,8 @@ export function classifyMedicalTender(item) {
     || (medicalInvestor.length > 0 && genericSupply.length > 0 && clinical.length > 0)
     || bundledMedicalSupplies
     || bundledMedicalLabSupplies
-    || contextualMedicalSupplies;
+    || contextualMedicalSupplies
+    || medicalWaste;
 
   return {
     accepted,
@@ -254,6 +279,7 @@ export function classifyMedicalTender(item) {
       ...equipmentService,
       ...equipmentObject,
       ...contextualSupply,
+      ...medicalWasteTitle,
       ...labSupply,
       ...labAnalyzer,
       ...machineUsage,
@@ -275,6 +301,7 @@ export function medicalCategory(name) {
     "kim", "stent", "catheter", "reagent", "thuoc thu", "dung dich", "gioang", "dem",
     "tui mau", "thuoc bo",
     "chat boi tron", "bao cao su",
+    ...MEDICAL_WASTE_TITLE_TERMS,
   ]).length
     ? "Vật tư & hóa chất"
     : "Thiết bị y tế";

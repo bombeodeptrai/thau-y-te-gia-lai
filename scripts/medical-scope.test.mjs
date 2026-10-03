@@ -208,6 +208,34 @@ test("nhận gói thuốc bó dược liệu của bệnh viện y dược cổ 
   assert.ok(result.matched.includes("thuoc bo"));
 });
 
+test("nhận vật tư thu gom rác thải y tế và vật sắc nhọn", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600561886-00",
+    bidName: ["Mua túi nhựa đựng rác thải y tế, hộp đựng vật sắc nhọn, thùng rác y tế phục vụ công tác vệ sinh của Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026"],
+    investorName: "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.reason.includes("medical-waste-supply"), result.reason);
+});
+
+test("không nhận thùng rác sinh hoạt nếu không có ngữ cảnh y tế", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Mua thùng rác sinh hoạt và dịch vụ thu gom rác thải"],
+    investorName: "Ban quản lý dịch vụ công",
+  });
+  assert.equal(result.accepted, false, result.reason);
+});
+
+test("không nhận hộp chứa vật sắc nhọn của đơn vị ngoài y tế", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Mua hộp chứa vật sắc nhọn cho xưởng cơ khí"],
+    investorName: "Công ty cơ khí công nghiệp",
+  });
+  assert.equal(result.accepted, false, result.reason);
+});
+
 test("không mở rộng từ thuốc bó sang mọi gói dược liệu", () => {
   const result = classifyMedicalTender({
     bidName: ["Cung cấp cây giống và dược liệu phục vụ mô hình nông nghiệp"],

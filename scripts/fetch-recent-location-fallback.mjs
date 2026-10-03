@@ -3,6 +3,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
+import { isMedicalTender, medicalCategory } from "./medical-scope.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const LOOKBACK_HOURS = 72;
@@ -45,19 +46,12 @@ const TITLE_TERMS = [
   "dụng cụ y tế",
   "phẫu thuật",
   "máy",
+  "rác thải y tế",
+  "vật sắc nhọn",
 ];
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const tendersPath = resolve(root, "data/tenders.json");
-
-function normalizeText(value) {
-  return String(value || "")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/đ/g, "d")
-    .replace(/Đ/g, "D")
-    .toLowerCase();
-}
 
 function compactText(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
@@ -137,59 +131,6 @@ function searchPayload(pageNumber, from, to, locationTerm, titleTerm) {
   }];
 }
 
-function isMedical(item) {
-  const originalTitle = compactText(item.bidName?.join(" ") || "").toLocaleLowerCase("vi-VN");
-  const title = normalizeText(originalTitle);
-  const investor = normalizeText(item.investorName);
-
-  const excludedTerms = [
-    "xay lap", "xay dung", "cai tao", "sua chua", "bao tri", "bao duong",
-    "tu van", "tham dinh", "lap e-hsmt", "danh gia e-hsdt", "giam sat thi cong",
-    "may tinh", "may in", "tin hoc", "cong nghe thong tin", "may chu",
-    "van phong pham", "thuc pham", "suat an", "bao ve", "ve sinh cong nghiep",
-    "vat tu dien", "vat tu nuoc", "dien nuoc", "xang dau", "phan bon",
-    "bao ve thuc vat", "benh dong vat", "thang may", "may phat dien", "dieu hoa khong khi",
-  ];
-  if (excludedTerms.some((term) => title.includes(term))) return false;
-
-  const explicitTerms = [
-    "thiết bị y tế", "trang thiết bị y tế", "vật tư y tế", "vật tư xét nghiệm",
-    "dụng cụ y tế", "y cụ", "hóa chất y tế", "hoá chất y tế", "hóa chất xét nghiệm",
-    "hoá chất xét nghiệm", "hóa chất khử khuẩn", "hoá chất khử khuẩn",
-    "sinh phẩm y tế", "sinh phẩm xét nghiệm", "khí y tế", "oxy y tế",
-    "máy siêu âm", "máy xét nghiệm", "máy thở", "máy điện tim", "máy theo dõi bệnh nhân",
-    "dụng cụ phẫu thuật", "vật tư phẫu thuật", "nội soi", "lọc máu", "chạy thận",
-    "catheter", "stent", "implant", "đinh, nẹp, vít", "đinh nẹp vít",
-    "bơm tiêm", "kim tiêm", "gạc phẫu thuật", "găng tay y tế", "khẩu trang y tế",
-  ];
-  if (explicitTerms.some((term) => originalTitle.includes(term))) return true;
-
-  const medicalInvestors = [
-    "so y te", "benh vien", "trung tam y te", "tram y te", "cdc", "phong kham",
-    "benh xa", "y khoa", "y duoc", "da khoa", "chuyen khoa", "trung tam kiem nghiem",
-  ];
-  const isMedicalInvestor = medicalInvestors.some((term) => investor.includes(term));
-  if (!isMedicalInvestor) return false;
-
-  const hasMedicalSupply = ["vat tu", "hoa chat", "sinh pham", "dung cu", "khi y te"]
-    .some((term) => title.includes(term));
-  const hasClinicalContext = ["kham benh", "chua benh", "dieu tri", "xet nghiem", "phau thuat"]
-    .some((term) => title.includes(term));
-  const hasBundle = title.includes("mua sam")
-    && title.includes("vat tu")
-    && (title.includes("hoa chat") || title.includes("sinh pham"));
-
-  return hasBundle || (hasMedicalSupply && hasClinicalContext);
-}
-
-function categoryOf(name) {
-  const text = String(name || "").toLocaleLowerCase("vi-VN");
-  return ["vật tư", "hóa chất", "hoá chất", "sinh phẩm", "dụng cụ", "gạc", "găng", "kim", "stent", "khớp"]
-    .some((term) => text.includes(term))
-    ? "Vật tư & hóa chất"
-    : "Thiết bị y tế";
-}
-
 function statusOf(item) {
   const sourceStatus = String(item.status || "").toUpperCase();
   const notifyStatus = String(item.statusForNotify || "").toUpperCase();
@@ -224,7 +165,7 @@ function normalizeTender(item) {
     closeDate: item.bidCloseDate || "",
     publicDate: item.publicDate || "",
     price: (item.bidPrice || []).reduce((sum, value) => sum + (Number(value) || 0), 0),
-    category: categoryOf(name),
+    category: medicalCategory(name),
     status: statusOf(item),
     sourceStatus: item.status || "",
     statusForNotify: item.statusForNotify || "",
@@ -272,7 +213,7 @@ resultGroups.flat().forEach((item) => {
 });
 
 const recentMedical = [...rawUnique.values()]
-  .filter(isMedical)
+  .filter(isMedicalTender)
   .map(normalizeTender);
 
 const merged = new Map((manifest.tenders || []).map((tender) => [tender.notifyNo || tender.id, tender]));
