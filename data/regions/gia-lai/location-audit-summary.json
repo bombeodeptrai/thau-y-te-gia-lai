@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-03T00:41:48.939Z",
+  "auditedAt": "2026-10-03T05:18:29.585Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -14,7 +14,7 @@
     {
       "term": "Bình Định",
       "success": true,
-      "count": 27,
+      "count": 28,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 125,
+      "count": 127,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -271,16 +271,16 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1203,
+  "candidateCount": 1204,
   "acceptedCount": 46,
-  "rejectedCount": 1157,
+  "rejectedCount": 1158,
   "rejectedReasons": {
-    "excluded:tu van": 354,
-    "excluded:xay dung": 315,
-    "insufficient-medical-context": 276,
+    "excluded:tu van": 355,
+    "excluded:xay dung": 314,
+    "insufficient-medical-context": 275,
     "excluded:sua chua": 45,
+    "excluded:cai tao": 41,
     "excluded:xay lap": 41,
-    "excluded:cai tao": 39,
     "excluded:bao hiem": 19,
     "excluded:thuc pham": 9,
     "excluded:suat an": 8,
@@ -940,6 +940,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600034062",
+      "name": "Tư vấn Lập quy hoạch tổng mặt bằng.Trường THPT Pleime, hạng mục: Dãy nhà 03 tầng 10 phòng học lý thuyết, 02 phòng học bộ môn; các hạng mục phụ và thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "DC2600030606",
       "name": "Thẩm định giá: Mua vật tư, phụ kiện đồng hồ nước sạch DN15 phục vụ công tác sửa chữa, thay thế đồng hồ nước bị hư hỏng năm 2026",
       "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
@@ -1367,23 +1378,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "DC2600011105",
-      "name": "Xây dựng và triển khai Bộ Quy tắc ứng xử của cán bộ, viên chức, người lao động trong các đơn vị sự nghiệp y tế nhằm nâng cao sự hài lòng của người dân đối với dịch vụ y tế công trên địa bàn tỉnh Gia Lai năm 2026",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1066,
+  "beforeCount": 1067,
   "afterCount": 1067,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v12"
 }

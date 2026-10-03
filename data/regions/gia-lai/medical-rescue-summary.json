@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-03T00:42:31.285Z",
+  "rescuedAt": "2026-10-03T05:19:08.255Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -24,7 +24,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 27,
+      "count": 28,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 125,
+      "count": 127,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1283,
+  "candidateCount": 1285,
   "acceptedCount": 52,
-  "rejectedCount": 1231,
+  "rejectedCount": 1233,
   "rejectedReasons": {
-    "excluded:tu van": 355,
-    "excluded:xay dung": 337,
+    "excluded:tu van": 356,
+    "excluded:xay dung": 336,
     "insufficient-medical-context": 312,
     "excluded:sua chua": 50,
     "excluded:xay lap": 43,
-    "excluded:cai tao": 39,
+    "excluded:cai tao": 41,
     "excluded:bao hiem": 19,
     "excluded:thuc pham": 9,
     "excluded:suat an": 8,
@@ -944,6 +944,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600563188",
+      "name": "Lắp đặt thiết bị dây chuyền",
+      "investor": "NHÀ MÁY VI SINH - CHI NHÁNH TỔNG CÔNG TY 15",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600565813",
       "name": "Chương trình Teambuilding 16 năm vận hành an toàn giàn nén khí mỏ Rồng (DVN-DV-3755/26-KHI-TTH)",
       "investor": "Liên doanh Việt-Nga Vietsovpetro",
@@ -1376,15 +1385,6 @@
       "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
       "accepted": false,
       "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600558549",
-      "name": "XL01-Gia công lắp đặt khung giàn và thi công hệ thống điện",
-      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
-      "accepted": false,
-      "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
     }
