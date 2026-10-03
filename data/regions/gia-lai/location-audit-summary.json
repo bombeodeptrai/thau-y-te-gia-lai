@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-03T11:36:07.356Z",
+  "auditedAt": "2026-10-03T12:07:47.258Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 28,
+      "count": 29,
       "error": ""
     },
     {
@@ -271,11 +271,11 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1200,
+  "candidateCount": 1201,
   "acceptedCount": 47,
-  "rejectedCount": 1153,
+  "rejectedCount": 1154,
   "rejectedReasons": {
-    "excluded:tu van": 359,
+    "excluded:tu van": 360,
     "excluded:xay dung": 311,
     "insufficient-medical-context": 269,
     "excluded:sua chua": 45,
@@ -1376,8 +1376,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1067,
-  "afterCount": 1072,
-  "newCount": 5,
+  "beforeCount": 1166,
+  "afterCount": 1166,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v13"
 }
