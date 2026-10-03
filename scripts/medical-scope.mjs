@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v12";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v13";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -26,7 +26,7 @@ const HARD_EXCLUDED_TITLE_TERMS = [
   "cong nghe thong tin", "may chu", "thiet bi tuong lua", "bao mat du lieu",
   "thang may", "may phat dien", "dieu hoa khong khi", "vat tu dien luc",
   "thiet bi dien", "duong day", "tram bien ap", "cap dien", "tu dien",
-  "phan bon", "bao ve thuc vat", "thu y", "thuoc generic", "duoc pham",
+  "phan bon", "bao ve thuc vat", "thu y", "thuoc la", "thuoc generic", "duoc pham",
   "hoa chat xu ly nuoc", "hoa chat xu ly nuoc thai", "hoa chat giat la",
   "hoa chat tay rua", "hoa chat ve sinh", "hoa chat ho boi",
   "hoa chat phong chay", "hoa chat cong nghiep", "may giat", "may say",
@@ -102,6 +102,13 @@ const MEDICAL_INVESTOR_TERMS = [
   "cuc phong benh", "cuc phong chong hiv aids",
 ];
 
+// Tên thuốc/dược phẩm thường không kèm hậu tố "y tế". Chỉ nhận nhóm rộng
+// này khi bên mua là cơ sở y tế; các cụm thuốc lá, thú y và bảo vệ thực vật
+// vẫn bị chặn bởi danh sách loại trừ ở trên.
+const MEDICAL_DRUG_TITLE_TERMS = [
+  "thuoc", "duoc pham", "duoc lieu", "duoc chat",
+];
+
 const LAB_SUPPLY_TERMS = [
   "hoa chat", "sinh pham", "thuoc thu", "chat hieu chuan", "chat kiem soat",
   "calibrator", "control", "reagent", "vat tu xet nghiem", "dung dich",
@@ -167,6 +174,8 @@ export function classifyMedicalTender(item) {
   const contextualSupply = matchedTerms(title, MEDICAL_CONTEXT_SUPPLY_TERMS);
   const medicalWasteTitle = matchedTerms(title, MEDICAL_WASTE_TITLE_TERMS);
   const explicitMedicalWaste = matchedTerms(title, EXPLICIT_MEDICAL_WASTE_TERMS);
+  const medicalDrugTitle = matchedTerms(title, MEDICAL_DRUG_TITLE_TERMS);
+  const medicalDrugSupply = medicalInvestor.length > 0 && medicalDrugTitle.length > 0;
   const medicalWaste = medicalWasteTitle.length > 0
     && (explicitMedicalWaste.length > 0 || medicalInvestor.length > 0);
   const contextualMedicalSupplies = medicalInvestor.length > 0
@@ -179,11 +188,14 @@ export function classifyMedicalTender(item) {
     && excluded.every((term) => term === "hoa chat tay rua");
   const medicalWasteAllowedExcluded = medicalWaste
     && excluded.every((term) => term === "rac thai" || term === "chat thai");
+  const medicalDrugAllowedExcluded = medicalDrugSupply
+    && excluded.every((term) => term === "thuoc generic" || term === "duoc pham");
 
   if (excluded.length
     && !medicalEquipmentService
     && !contextualAllowedExcluded
-    && !medicalWasteAllowedExcluded) {
+    && !medicalWasteAllowedExcluded
+    && !medicalDrugAllowedExcluded) {
     return {
       accepted: false,
       category: "",
@@ -254,6 +266,10 @@ export function classifyMedicalTender(item) {
     score += 90;
     reasons.push("medical-waste-supply");
   }
+  if (medicalDrugSupply) {
+    score += 90;
+    reasons.push("medical-drug-supply");
+  }
   if (genericSupply.length) score += 10;
   if (clinical.length) score += 20;
 
@@ -266,7 +282,8 @@ export function classifyMedicalTender(item) {
     || bundledMedicalSupplies
     || bundledMedicalLabSupplies
     || contextualMedicalSupplies
-    || medicalWaste;
+    || medicalWaste
+    || medicalDrugSupply;
 
   return {
     accepted,
@@ -280,6 +297,7 @@ export function classifyMedicalTender(item) {
       ...equipmentObject,
       ...contextualSupply,
       ...medicalWasteTitle,
+      ...medicalDrugTitle,
       ...labSupply,
       ...labAnalyzer,
       ...machineUsage,
@@ -300,6 +318,7 @@ export function medicalCategory(name) {
     "vat tu", "hoa chat", "sinh pham", "dung cu", "kit", "test", "gac", "gang",
     "kim", "stent", "catheter", "reagent", "thuoc thu", "dung dich", "gioang", "dem",
     "tui mau", "thuoc bo",
+    "thuoc", "duoc pham", "duoc lieu", "duoc chat",
     "chat boi tron", "bao cao su",
     ...MEDICAL_WASTE_TITLE_TERMS,
   ]).length
