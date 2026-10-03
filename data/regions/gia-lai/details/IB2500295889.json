@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "07237e99-e1b4-4fec-8322-f3f2396d4d58",
+      "contractorCode": "vn0109589270",
+      "taxCode": "0109589270",
+      "contractorName": "CÔNG TY CỔ PHẦN TƯ VẤN VÀ KIỂM ĐỊNH Y TẾ MDC VIỆT NAM",
+      "status": "won",
+      "lotNo": "BP2500423245",
+      "lotName": "Cung cấp dịch vụ Kiểm định an toàn và tính năng kỹ thuật cho các thiết bị y tế",
+      "bidPrice": 144180000,
+      "finalPrice": 144180000,
+      "winningPrice": 144180000,
+      "reason": "",
+      "submittedAt": "2025-08-13T09:09:04.147",
+      "models": []
+    },
+    {
+      "id": "de8d2e0a-e590-4384-a3fe-2e8f6dc5f5c2",
+      "contractorCode": "vn0313388214",
+      "taxCode": "0313388214",
+      "contractorName": "VIỆN KIỂM ĐỊNH THIẾT BỊ VÀ ĐO LƯỜNG",
+      "status": "lost",
+      "lotNo": "BP2500423245",
+      "lotName": "Cung cấp dịch vụ Kiểm định an toàn và tính năng kỹ thuật cho các thiết bị y tế",
+      "bidPrice": 153720000,
+      "finalPrice": 153720000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng nhà thầu thứ 2",
+      "submittedAt": "2025-08-13T09:09:04.147",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +59,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500295889",
-    "notifyId": "5c70a3a8-8ce2-4302-b744-4bd02d9bd448",
-    "bidId": "96a55133-aea3-4dae-aa46-fafd8d6163a0",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:53.660Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:55:14.103Z"
 }

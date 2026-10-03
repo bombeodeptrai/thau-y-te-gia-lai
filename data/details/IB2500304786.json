@@ -2,7 +2,68 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "0587c7dc-f32a-4e19-b448-ef870bd2f129",
+      "contractorCode": "vn0314917855",
+      "taxCode": "0314917855",
+      "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI SẢN XUẤT VITA",
+      "status": "lost",
+      "lotNo": "PP2500302985",
+      "lotName": "Máy giúp thở",
+      "bidPrice": 6741000000,
+      "finalPrice": 6741000000,
+      "winningPrice": 0,
+      "reason": "Không đạt về kỹ thuật",
+      "submittedAt": "2025-08-28T09:06:55.3",
+      "models": []
+    },
+    {
+      "id": "a8a71eb5-adb2-427c-9d99-677a3fa60e71",
+      "contractorCode": "vn0401310979",
+      "taxCode": "0401310979",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ NGUYÊN ĐÔ",
+      "status": "won",
+      "lotNo": "PP2500302985",
+      "lotName": "Máy giúp thở",
+      "bidPrice": 7371000000,
+      "finalPrice": 7371000000,
+      "winningPrice": 7371000000,
+      "reason": "",
+      "submittedAt": "2025-08-28T09:06:55.3",
+      "models": []
+    },
+    {
+      "id": "9a23e7c7-45c1-4c2f-8a54-b3c0478dc322",
+      "contractorCode": "vn0301445732",
+      "taxCode": "0301445732",
+      "contractorName": "CÔNG TY TNHH Y TẾ VIỆT TIẾN",
+      "status": "won",
+      "lotNo": "PP2500302986",
+      "lotName": "Bộ phẫu thuật cột sống",
+      "bidPrice": 439000149,
+      "finalPrice": 439000149,
+      "winningPrice": 439000149,
+      "reason": "",
+      "submittedAt": "2025-08-28T09:06:55.3",
+      "models": []
+    },
+    {
+      "id": "6e8b8273-ccd0-4400-a01c-a3a2f3094284",
+      "contractorCode": "vn0312699087",
+      "taxCode": "0312699087",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ AN THỊNH HEALTH",
+      "status": "won",
+      "lotNo": "PP2500302987",
+      "lotName": "Máy X quang C-arm",
+      "bidPrice": 3468000000,
+      "finalPrice": 3468000000,
+      "winningPrice": 3468000000,
+      "reason": "",
+      "submittedAt": "2025-08-28T09:06:55.3",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 3,
@@ -48,13 +109,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500304786",
-    "notifyId": "087b3868-97a0-4d81-a257-d0c2f8c048bd",
-    "bidId": "44864775-8a1f-46cc-a024-2bcfdcde4777",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:17.777Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-03T11:55:13.095Z"
 }
