@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-02T23:56:13.537Z",
+  "rescuedAt": "2026-10-03T00:43:13.336Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -282,8 +282,8 @@
   ],
   "successfulStrategyCount": 45,
   "candidateCount": 719,
-  "acceptedCount": 19,
-  "rejectedCount": 700,
+  "acceptedCount": 20,
+  "rejectedCount": 699,
   "rejectedReasons": {
     "excluded:tu van": 233,
     "excluded:xay dung": 216,
@@ -302,7 +302,6 @@
     "excluded:tham dinh": 2,
     "excluded:bao tri": 2,
     "excluded:bao ho lao dong": 1,
-    "excluded:rac thai": 1,
     "excluded:may in": 1,
     "excluded:giam sat thi cong": 1,
     "excluded:may chu": 1,
@@ -355,6 +354,21 @@
         "cho he thong",
         "mua",
         "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600561886",
+      "name": "Mua túi nhựa đựng rác thải y tế, hộp đựng vật sắc nhọn, thùng rác y tế phục vụ công tác vệ sinh của Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026",
+      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+medical-waste-supply",
+      "matched": [
+        "benh vien",
+        "rac thai y te",
+        "thung rac y te",
+        "hop dung vat sac nhon",
+        "mua"
       ]
     },
     {
@@ -923,17 +937,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600561886",
-      "name": "Mua túi nhựa đựng rác thải y tế, hộp đựng vật sắc nhọn, thùng rác y tế phục vụ công tác vệ sinh của Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026",
-      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:rac thai",
-      "matched": [
-        "rac thai"
-      ]
-    },
-    {
       "notifyNo": "IB2600546616",
       "name": "Toàn bộ khối lượng xây lắp công trình",
       "investor": "Ban Quản lý xã Tây Sơn",
@@ -1053,12 +1056,21 @@
       "score": 10,
       "reason": "insufficient-medical-context",
       "matched": []
+    },
+    {
+      "notifyNo": "IB2600558549",
+      "name": "XL01-Gia công lắp đặt khung giàn và thi công hệ thống điện",
+      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1066,
-  "afterCount": 1066,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v11"
+  "afterCount": 1067,
+  "newCount": 1,
+  "filterStrategy": "unified-medical-scope-v12"
 }
