@@ -2,7 +2,53 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "b7a5482c-df72-4083-ae04-98568f1eacfd",
+      "contractorCode": "vn4100259564",
+      "taxCode": "4100259564",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+      "status": "won",
+      "lotNo": "BP2500131485",
+      "lotName": "Cung cấp dịch vụ bảo dưỡng thiết bị y tế của Trung tâm Y tế huyện Tuy Phước năm 2025",
+      "bidPrice": 21800000,
+      "finalPrice": 21800000,
+      "winningPrice": 21800000,
+      "reason": "",
+      "submittedAt": "2025-04-24T14:31:03.863",
+      "models": []
+    },
+    {
+      "id": "c798124a-c9ff-4fa3-bbe2-d0bf9da5501b",
+      "contractorCode": "vn4101615832",
+      "taxCode": "4101615832",
+      "contractorName": "CÔNG TY TNHH MTV HƯNG THỦY",
+      "status": "lost",
+      "lotNo": "BP2500131485",
+      "lotName": "Cung cấp dịch vụ bảo dưỡng thiết bị y tế của Trung tâm Y tế huyện Tuy Phước năm 2025",
+      "bidPrice": 31700000,
+      "finalPrice": 31700000,
+      "winningPrice": 0,
+      "reason": "Đánh giá theo Quy trình 2. Chỉ đánh giá nhà thầu xếp hạng 1",
+      "submittedAt": "2025-04-24T14:31:03.863",
+      "models": []
+    },
+    {
+      "id": "952ce067-449f-413c-99ba-f183d3ac3623",
+      "contractorCode": "vn0401823561",
+      "taxCode": "0401823561",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ Y TẾ THANH LỘC PHÁT",
+      "status": "lost",
+      "lotNo": "BP2500131485",
+      "lotName": "Cung cấp dịch vụ bảo dưỡng thiết bị y tế của Trung tâm Y tế huyện Tuy Phước năm 2025",
+      "bidPrice": 32450000,
+      "finalPrice": 32450000,
+      "winningPrice": 0,
+      "reason": "Đánh giá theo Quy trình 2. Chỉ đánh giá nhà thầu xếp hạng 1",
+      "submittedAt": "2025-04-24T14:31:03.863",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +74,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500108197",
-    "notifyId": "9cedd0a8-1268-4b53-b8ae-d6703313831b",
-    "bidId": "663634be-3fcc-485f-972b-8dd707caf901",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:38.735Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:31:52.875Z"
 }

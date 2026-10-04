@@ -1,9 +1,79 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "28e45b11-5fd8-4f24-a6a3-655e57c1b3c3",
+      "contractorCode": "vn0100109191",
+      "taxCode": "0100109191",
+      "contractorName": "CÔNG TY CỔ PHẦN ARMEPHACO",
+      "status": "lost",
+      "lotNo": "BP2400901239",
+      "lotName": "Cung cấp, lắp đặt thiết bị y tế",
+      "bidPrice": 100655000000,
+      "finalPrice": 100655000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng thứ 2",
+      "submittedAt": "2024-12-31T08:37:05.695",
+      "models": []
+    },
+    {
+      "id": "fabe6da9-ab8e-40c8-aa90-cf3c44c64eff",
+      "contractorCode": "vn0102351046",
+      "taxCode": "0102351046",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ Y TẾ VIỆT MỸ",
+      "status": "won",
+      "lotNo": "BP2400901239",
+      "lotName": "Cung cấp, lắp đặt thiết bị y tế",
+      "bidPrice": 83000000000,
+      "finalPrice": 83000000000,
+      "winningPrice": 83000000000,
+      "reason": "",
+      "submittedAt": "2024-12-31T08:37:05.695",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "c38f7ebd-c387-44b0-8657-ef5227634a80",
+      "name": "Máy gia tốc tuyến tính đa mức năng lượng (máy xạ trị)",
+      "model": "Elekta Infinity",
+      "brand": "Elekta Beijing Medical Systems Co., Ltd",
+      "manufacturer": "Elekta Beijing Medical Systems Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Chi tiết theo Bảng so sánh đáp ứng kỹ thuật",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 66000000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ Y TẾ VIỆT MỸ"
+      ],
+      "decisionNo": "KQ2400562576_2412281914",
+      "decisionDate": "2024-12-29T23:59:59",
+      "resultPublishedDate": "2024-12-31T08:37:34"
+    },
+    {
+      "id": "85ad94c8-30ce-4b2c-a103-b1c7ac46d126",
+      "name": "Máy CT mô phỏng xạ trị (CT Simulator)",
+      "model": "Discovery RT",
+      "brand": "GE Hangwei Medical Systems Co. Ltd",
+      "manufacturer": "GE Hangwei Medical Systems Co. Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Chi tiết theo Bảng so sánh đáp ứng kỹ thuật",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 17000000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ Y TẾ VIỆT MỸ"
+      ],
+      "decisionNo": "KQ2400562576_2412281914",
+      "decisionDate": "2024-12-29T23:59:59",
+      "resultPublishedDate": "2024-12-31T08:37:34"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +98,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2400562576",
-    "notifyId": "9492d24d-6467-481b-b628-f711db530824",
-    "bidId": "fa6f3c91-67a7-4028-bffc-5027283294d2",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T16:23:42.107Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:32:17.392Z"
 }

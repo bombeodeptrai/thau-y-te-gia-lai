@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "15cf29df-3192-44ea-b64a-8eb77f584d25",
+      "contractorCode": "vn0302375372",
+      "taxCode": "0302375372",
+      "contractorName": "CÔNG TY TNHH KỸ THUẬT Y TẾ TOÀN DIỆN",
+      "status": "won",
+      "lotNo": "BP2500136172",
+      "lotName": "Mua sắm Đầu dò siêu âm tim thay thế cho Máy siêu âm Vivid T8 trang bị cho khoa Tim mạch phục vụ công tác khám chữa bệnh của Bệnh viện Đa khoa tỉnh Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 81700000,
+      "reason": "",
+      "submittedAt": "2025-03-18T13:39:00.692",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "f9178ee8-6573-4db8-a85f-20aa817e471e",
+      "name": "Đầu dò siêu âm tim",
+      "model": "H45041DL",
+      "brand": "H45041DL",
+      "manufacturer": "GE MEDICAL SYSTEM (CHINA) CO.,LTD",
+      "origin": "TRUNG QUỐC",
+      "manufactureYear": "2025",
+      "specification": "Kết nối và sử dụng trên Máy siêu âm (Model: Vivid T8; Hãng/Nước sản xuất GE Healthcare/Trung Quốc)",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 81700000,
+      "winnerNames": [
+        "CÔNG TY TNHH KỸ THUẬT Y TẾ TOÀN DIỆN"
+      ],
+      "decisionNo": "492/QĐ-BV",
+      "decisionDate": "2025-03-17T23:59:59",
+      "resultPublishedDate": "2025-03-18T13:39:05"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500093760",
-    "notifyId": "IB2500093760",
-    "bidId": "4defd497-00a0-4cac-84ed-058446bcf924",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:40.574Z"
+  "fetchedAt": "2026-10-04T20:31:55.818Z"
 }

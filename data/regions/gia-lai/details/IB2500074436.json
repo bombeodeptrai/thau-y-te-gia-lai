@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "3e125670-b07c-4213-a4f3-e20434a28769",
+      "contractorCode": "vn0302438819",
+      "taxCode": "0302438819",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI & DỊCH VỤ VIỆT CAN",
+      "status": "won",
+      "lotNo": "BP2500108957",
+      "lotName": "Mua sắm tay cầm phẫu thuật cho máy mổ Phaco Nidek CV-30000 – Bệnh viện đa khoa tỉnh Bình Định",
+      "bidPrice": 187000000,
+      "finalPrice": 187000000,
+      "winningPrice": 187000000,
+      "reason": "",
+      "submittedAt": "2025-05-15T15:48:04.479",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "9f52deec-08f0-4be4-9ed5-5617ae07e046",
+      "name": "Tay cầm phẫu thuật Phaco",
+      "model": "18241-1600",
+      "brand": "NIDEK",
+      "manufacturer": "NIDEK",
+      "origin": "Nhật Bản hoặc Mỹ",
+      "manufactureYear": "2024 trở về đây",
+      "specification": "Tương thích với máy mổ Phaco Nidek CV-30000",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 187000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI & DỊCH VỤ VIỆT CAN "
+      ],
+      "decisionNo": "KQ2500074436_2505141628",
+      "decisionDate": "2025-05-14T23:59:59",
+      "resultPublishedDate": "2025-05-15T15:48:13"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500074436",
-    "notifyId": "29945f0d-9aac-435a-8a56-0d7f7019302d",
-    "bidId": "edf9a60c-7466-4324-ad68-ec824342c136",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:59.341Z"
+  "fetchedAt": "2026-10-04T20:31:51.894Z"
 }

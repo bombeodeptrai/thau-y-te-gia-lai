@@ -1,9 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "96ea77dc-9c75-47e8-8656-56752b3914c9",
+      "contractorCode": "vn0312466808",
+      "taxCode": "0312466808",
+      "contractorName": "Công ty TNHH Thiết Bị Y Tế Nhất Tâm",
+      "status": "won",
+      "lotNo": "BP2500068306",
+      "lotName": "Mua sắm hóa chất, sinh phẩm xét nghiệm trong chờ kết quả đấu thầu mới",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 82380000,
+      "reason": "",
+      "submittedAt": "2025-02-18T09:22:14.52",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "1aa8204b-534a-4526-a2c3-80bdf953c5b1",
+      "name": "Test thử ma túy tổng hợp (5in1)",
+      "model": "108585",
+      "brand": "Testsealabs",
+      "manufacturer": "Testsealabs",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024",
+      "specification": "Bảng xét nghiệm sàng lọc nhiều loại thuốc là xét nghiệm miễn dịch sắc ký dòng bên\nđể phát hiện định tính nhiều loại thuốc và chất chuyển hóa thuốc trong nước tiểu ở nồng độ ngưỡng sau : \nMOP 300ng/ml ; AMP 500ng/ml; THC 50ng/ml; COD 300ng/ml ; HER 10ng/ml\nTheo GC/MS \nĐộ nhạy : MOP≥99.9 ; AMP≥99.9 ; THC≥99.9; COD≥ 99 ; HER≥99  \nĐộ chính xác : MOP≥99.9 ; AMP≥99.9 ; THC≥99.9; COD≥ 99 ; HER≥99 \nTỷ trọng mẫu nước tiểu ở các mức độ cao, thấp, bình thường (1.000-1.037) không có ảnh hưởng đến kết quả của test.\nĐộ pH của mẫu nước tiểu từ 5-9 không làm thay đổi kết quả của test .\nKhông phản ứng chéo với các cơ chất Acetylsalicylic acid , Tetracycline, Verapamil\nThời gian đọc kết quả 3- 5 phút nhưng không đọc sau 10 phút \nQuy cách 25 test/hộp\nNhiệt độ bảo quản 4-30 độ C",
+      "unit": "Test",
+      "quantity": 1500,
+      "unitPrice": 52000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "176/QĐ-TTYT",
+      "decisionDate": "2025-02-18T23:59:59",
+      "resultPublishedDate": "2025-02-18T09:23:14"
+    },
+    {
+      "id": "f969e50d-cb02-46ee-afcd-f9ca0f5097de",
+      "name": "Họ thuốc nhuộm vi sinh Ziehl NeelSen",
+      "model": "04002",
+      "brand": "Nam Khoa /",
+      "manufacturer": "Nam Khoa /",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024",
+      "specification": "Bộ nhuộm dùng để thực hiện xét nghiệm soi nhuộn Ziehl Neelsen tìm trực khuẩn kháng acid. Bao gồm 03 dung dịch thuốc nhuộm thành phần là: Carbon Fucshin, Alcohol acid, Methylen blue.",
+      "unit": "Bộ 3 chai",
+      "quantity": 12,
+      "unitPrice": 365000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "176/QĐ-TTYT",
+      "decisionDate": "2025-02-18T23:59:59",
+      "resultPublishedDate": "2025-02-18T09:23:14"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500050312",
-    "notifyId": "IB2500050312",
-    "bidId": "00a00d36-bf88-4d3f-a02a-9b67acbc451b",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T16:23:31.978Z"
+  "fetchedAt": "2026-10-04T20:32:03.234Z"
 }

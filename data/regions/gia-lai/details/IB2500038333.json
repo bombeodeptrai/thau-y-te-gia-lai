@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "0f96d03a-0381-4b37-bba9-1da8c590fcef",
+      "contractorCode": "vn4100259564",
+      "taxCode": "4100259564",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+      "status": "lost",
+      "lotNo": "BP2500051436",
+      "lotName": "Cung cấp dịch vụ bảo trì, bảo dưỡng thiết bị y tế của Trung tâm Y tế huyện Phù Cát năm 2025",
+      "bidPrice": 55710000,
+      "finalPrice": 55710000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2 trở lên",
+      "submittedAt": "2025-03-14T15:33:44.307",
+      "models": []
+    },
+    {
+      "id": "4d621e3a-539c-4ba5-9b29-1af4edd18584",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "won",
+      "lotNo": "BP2500051436",
+      "lotName": "Cung cấp dịch vụ bảo trì, bảo dưỡng thiết bị y tế của Trung tâm Y tế huyện Phù Cát năm 2025",
+      "bidPrice": 41100000,
+      "finalPrice": 41100000,
+      "winningPrice": 41100000,
+      "reason": "",
+      "submittedAt": "2025-03-14T15:33:44.307",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +59,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500038333",
-    "notifyId": "3d1feb1b-3437-4cf3-b2db-d4dede75936c",
-    "bidId": "eda3e46a-83db-45bb-9614-14bf778f7c3d",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:27:01.786Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:32:04.475Z"
 }

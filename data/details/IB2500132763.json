@@ -1,9 +1,820 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 41,
+  "bidders": [
+    {
+      "id": "01eb4a91-e5a3-451d-9527-16bd738e9dc4",
+      "contractorCode": "vn0318418504",
+      "taxCode": "0318418504",
+      "contractorName": "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN",
+      "status": "won",
+      "lotNo": "BP2500173700",
+      "lotName": "Mua sắm vật tư, công cụ, dụng cụ, vật rẻ tiền mau hỏng phục vụ công tác khám chữa bệnh của Bệnh viện Lao và Bệnh phổi Bình Định năm 2025",
+      "bidPrice": 129890700,
+      "finalPrice": 129890700,
+      "winningPrice": 129890700,
+      "reason": "",
+      "submittedAt": "2025-06-02T13:54:52.201",
+      "models": []
+    },
+    {
+      "id": "0a66a5bd-3a96-4063-9588-28d23a15f6e5",
+      "contractorCode": "vn4100235316",
+      "taxCode": "4100235316",
+      "contractorName": "Nguyễn Thị Hồng Phận",
+      "status": "lost",
+      "lotNo": "BP2500173700",
+      "lotName": "Mua sắm vật tư, công cụ, dụng cụ, vật rẻ tiền mau hỏng phục vụ công tác khám chữa bệnh của Bệnh viện Lao và Bệnh phổi Bình Định năm 2025",
+      "bidPrice": 144177000,
+      "finalPrice": 144177000,
+      "winningPrice": 0,
+      "reason": "Không đạt yêu cầu về kỹ thuật theo quy định của E-HSMT",
+      "submittedAt": "2025-06-02T13:54:52.201",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "4d4ab9da-4098-446d-80ae-56642b7b30d9",
+      "name": "Chổi quét trần nhà",
+      "model": "Chổi quét trần nhà",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Đầu chổi bằng nhựa, có cán dài",
+      "unit": "Cái",
+      "quantity": 11,
+      "unitPrice": 143000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "030a20c3-286c-4f78-844e-58e29c34d9dd",
+      "name": "Xô nhỏ",
+      "model": "Xô nhỏ",
+      "brand": "Duy tân",
+      "manufacturer": "Duy tân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu nhựa PolyPropylene cao cấp,\r\n  không nắp, dung tích 10 lít",
+      "unit": "Cái",
+      "quantity": 20,
+      "unitPrice": 40700,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "07198b58-9d04-44ef-93d7-eb79e061e12e",
+      "name": "Thùng nhỏ",
+      "model": "Thùng nhỏ",
+      "brand": "Duy tân",
+      "manufacturer": "Duy tân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu nhựa PolyPropylene cao cấp, có nắp, dung tích 60 lít",
+      "unit": "Cái",
+      "quantity": 6,
+      "unitPrice": 270000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "7627dbd7-f017-4f0d-bd9b-63d0a2f8cb3a",
+      "name": "Tải lau sàn công nghiệp",
+      "model": "Tải lau sàn công nghiệp",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Bàn lau bằng sợi san hô dài 60cm",
+      "unit": "Cái",
+      "quantity": 50,
+      "unitPrice": 77000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "f1a59be0-3de8-40bb-948c-c3997782972a",
+      "name": "Giấy vệ sinh",
+      "model": "Giấy vệ sinh",
+      "brand": "BiBi",
+      "manufacturer": "Tiến Hiếu",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "100% bột giấy, không chất tẩy độc hại, bề mặt giấy mềm mịn",
+      "unit": "Cuộn",
+      "quantity": 150,
+      "unitPrice": 5500,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "a9fc4419-3318-47c9-95c2-b2a25283ca0c",
+      "name": "Nước lau nhà",
+      "model": "Nước lau nhà",
+      "brand": "Suzon",
+      "manufacturer": "Trung Quân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Can 3,58 lít",
+      "unit": "Can",
+      "quantity": 106,
+      "unitPrice": 70000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "8d7c4ef4-ca29-4bec-b288-87941141968d",
+      "name": "Nước rửa cầu",
+      "model": "Nước rửa cầu",
+      "brand": "Vim",
+      "manufacturer": "Unilever",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chai 870 ml",
+      "unit": "Chai",
+      "quantity": 450,
+      "unitPrice": 20000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "5f13ad38-28dc-4118-96aa-63299900fb01",
+      "name": "Nước lau kính",
+      "model": "Nước lau kính",
+      "brand": "Ring",
+      "manufacturer": "Mỹ Hảo",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chai 500 ml",
+      "unit": "Chai",
+      "quantity": 110,
+      "unitPrice": 37000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "c3dc0c0a-c28e-4a52-af7a-dc758ab8aa3e",
+      "name": "Chổi quét nước",
+      "model": "Chổi quét nước",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Đầu chổi bằng nhựa, có cán dài",
+      "unit": "Cây",
+      "quantity": 54,
+      "unitPrice": 55000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "00ccd6a5-3480-4b82-8a2c-7a80c5586710",
+      "name": "Chổi cọ vệ sinh bồn cầu",
+      "model": "Chổi cọ vệ sinh bồn cầu",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Đầu bàn chải hình tròn, \r\nbằng nhựa, có cán",
+      "unit": "Cây",
+      "quantity": 217,
+      "unitPrice": 20900,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "ce2a2cec-dfde-49b5-8fde-127859800f93",
+      "name": "Hốt rác",
+      "model": "Hốt rác",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa, cán dài 60cm",
+      "unit": "Cái",
+      "quantity": 41,
+      "unitPrice": 39600,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "d5315a2f-cb22-491e-b8ac-038499e24117",
+      "name": "Khăn lau đa năng",
+      "model": "Khăn lau đa năng",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu vải bông, thấm hút tốt, 25cm x 25cm",
+      "unit": "Cái",
+      "quantity": 180,
+      "unitPrice": 11000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "2a53b394-bbfb-40b7-b5d0-0745b5944607",
+      "name": "Thau",
+      "model": "Thau",
+      "brand": "Vĩ Hưng",
+      "manufacturer": "Vĩ Hưng",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa, hình tròn, kích thước 60 x 60 x 22 cm",
+      "unit": "Cái",
+      "quantity": 5,
+      "unitPrice": 138600,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "2b215afe-5325-4d56-a62b-c462fac45b13",
+      "name": "Cây lau nhà xoay 360 độ",
+      "model": "Cây lau nhà xoay 360 độ",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Hai khúc thân cây bằng inox; đĩa lau inox được gắn sẵn bông lau",
+      "unit": "Cái",
+      "quantity": 17,
+      "unitPrice": 143000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "39e7757c-4f1d-474a-86c0-49ef14a9e531",
+      "name": "Chai xịt kiến",
+      "model": "Chai xịt kiến",
+      "brand": "Raid",
+      "manufacturer": "S. C. Johnson & Son",
+      "origin": "Mỹ",
+      "manufactureYear": "2025",
+      "specification": "Chai 600 ml",
+      "unit": "Chai",
+      "quantity": 12,
+      "unitPrice": 55000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "7c0e570d-b675-45c8-bf46-ebbfac5a1a9c",
+      "name": "Cây gạc nước cán dài",
+      "model": "Cây gạc nước cán dài",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Inhouse",
+      "manufactureYear": "2025",
+      "specification": "Cán inox, miếng gạt nước bằng cao su",
+      "unit": "Cái",
+      "quantity": 18,
+      "unitPrice": 110000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "aa1f254b-943f-4dcb-8cdd-d15fabb08360",
+      "name": "Nước tẩy trắng",
+      "model": "Nước tẩy trắng",
+      "brand": "Javel",
+      "manufacturer": "Mỹ Hảo",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chai 500 ml",
+      "unit": "Chai",
+      "quantity": 86,
+      "unitPrice": 12000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "5ac2903b-0b73-48d3-ade8-def1ae6b5b55",
+      "name": "Bộ cây lau kính cán dài",
+      "model": "Bộ cây lau kính cán dài",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Inox đa năng gồm có cán dài 1,4m, tay gạt kính, tay lau bông thỏ",
+      "unit": "Bộ",
+      "quantity": 17,
+      "unitPrice": 160600,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "c4af0b3c-fa41-407a-8545-265dfd6fccc4",
+      "name": "Khăn trắng",
+      "model": "Khăn trắng",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu sợi cotton 100%, màu trắng, dày, 25 cm x 25 cm",
+      "unit": "Cái",
+      "quantity": 300,
+      "unitPrice": 5500,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "915f4327-f5f7-4f8f-aa34-c62632071a44",
+      "name": "Bàn chải cước",
+      "model": "Bàn chải cước",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa cầm tay, lông chải mềm",
+      "unit": "Cái",
+      "quantity": 20,
+      "unitPrice": 11000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "cec44bfe-6760-4b88-ac60-c96af232b9c4",
+      "name": "Cây lau sàn công nghiệp",
+      "model": "Cây lau sàn công nghiệp",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Tấm lau bằng sợi tổng hợp hình dạng san hô,  thấm hút tốt, kích thước 60 x16 cm. Cán thẳng khung inox chắc chắn, dài 132 cm",
+      "unit": "Cây",
+      "quantity": 8,
+      "unitPrice": 165000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "ae42f7f4-51c3-487c-aa31-7557d7dc89b8",
+      "name": "Bộ lau nhà xoay tay 360 độ",
+      "model": "Bộ lau nhà xoay tay 360 độ",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Thùng lau bằng nhựa, kèm rổ inox, có quai xách bằng nhựa; hai khúc thân cây bằng inox; đĩa lau inox được gắn sẵn bông lau",
+      "unit": "Bộ",
+      "quantity": 17,
+      "unitPrice": 285000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "4c340b6b-2684-4a31-92e9-b6ebb358c767",
+      "name": "Mùng",
+      "model": "Mùng",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu: TUYN polyester lỗ mịn thoáng, ngăn muỗi. Kích thước dài 2m x rộng 1m x cao 1,6 m - 1,8 m. Kiểu:  4 góc treo không cửa, có xếp góc rộng rãi không bị eo góc",
+      "unit": "Cái",
+      "quantity": 52,
+      "unitPrice": 80000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "921f6dd9-6603-4e6e-bfb7-1f64525df919",
+      "name": "Rổ nhỏ có quai xách",
+      "model": "Rổ nhỏ có quai xách",
+      "brand": "Giỏ Nắp Đại Plus",
+      "manufacturer": "Duy tân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa, kích thước:  46,6 x 32,5 x 31,1 cm, có quai xách",
+      "unit": "Cái",
+      "quantity": 10,
+      "unitPrice": 350000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "0b7104bb-aa61-464f-a880-ce426e1e7998",
+      "name": "Nước rửa chén",
+      "model": "Nước rửa chén",
+      "brand": "Suzon",
+      "manufacturer": "Trung Quân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Can 3,40 lít (3,6 kg)",
+      "unit": "Can",
+      "quantity": 25,
+      "unitPrice": 95000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "719a9595-ef97-4af7-9a33-154497ab76ce",
+      "name": "Nước rửa tay",
+      "model": "Nước rửa tay",
+      "brand": "Suzon",
+      "manufacturer": "Trung Quân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chai 450g, dạng  sữa",
+      "unit": "Chai",
+      "quantity": 616,
+      "unitPrice": 35000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "b92f2c51-3f4d-469a-a964-913afa5e6ded",
+      "name": "Chổi dừa",
+      "model": "Chổi dừa",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Làm bằng cọng lá dừa, cán dài",
+      "unit": "Cây",
+      "quantity": 56,
+      "unitPrice": 37000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "d3460011-11f3-459e-95b7-a8108ac6cfa3",
+      "name": "Cây kẹp rác",
+      "model": "Cây kẹp rác",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Bằng inox, cán dài",
+      "unit": "Cái",
+      "quantity": 36,
+      "unitPrice": 18700,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "724b576b-6f2f-4bcc-b523-5bcc6c37b46b",
+      "name": "Xô lớn",
+      "model": "Xô lớn",
+      "brand": "Duy tân",
+      "manufacturer": "Duy tân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu nhựa PolyPropylene cao cấp, không nắp, dung tích 20 lít",
+      "unit": "Cái",
+      "quantity": 10,
+      "unitPrice": 75000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "ccb46166-d8b8-4b3d-bd6b-78869705ba05",
+      "name": "Thùng lớn",
+      "model": "Thùng lớn",
+      "brand": "Vĩ Hưng",
+      "manufacturer": "Vĩ Hưng",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu nhựa PolyPropylene cao cấp, có nắp, dung tích 80 lít",
+      "unit": "Cái",
+      "quantity": 3,
+      "unitPrice": 374000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "2bcab168-107c-4da1-9e86-496fc757b8ec",
+      "name": "Rổ nhỏ không có quai xách",
+      "model": "Rổ Chữ Nhật Cao 1T7",
+      "brand": "Duy tân",
+      "manufacturer": "Duy tân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa, kích thước: 17 x 23,5 x 8cm",
+      "unit": "Cái",
+      "quantity": 12,
+      "unitPrice": 8500,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "5d722174-fd22-43fe-8c41-d6aaf6ddb599",
+      "name": "Dép nhựa tổ ong",
+      "model": "Dép nhựa tổ ong",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa cao cấp, đế chống trơn trượt, size từ 38 đến 42",
+      "unit": "Đôi",
+      "quantity": 48,
+      "unitPrice": 48000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "4be33ac9-f016-43f3-96c4-65e72a85e239",
+      "name": "Chổi đót",
+      "model": "Chổi đót",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Bông đót, cán nhựa",
+      "unit": "Cây",
+      "quantity": 172,
+      "unitPrice": 48000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "0fd540f4-52e3-43e8-8739-5a95548ca8d2",
+      "name": "Xà phòng",
+      "model": "Xà phòng",
+      "brand": "Lix",
+      "manufacturer": "Lixco",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Dạng bột, đóng bì, khối lượng 5,5 kg",
+      "unit": "Bì",
+      "quantity": 75,
+      "unitPrice": 130000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "8e360308-a998-4aea-9601-0162827f1da3",
+      "name": "Hộp nhựa hai quai",
+      "model": "Hộp nhựa hai quai",
+      "brand": "Duy tân",
+      "manufacturer": "Duy tân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa,  kích thước 33 x 20,5 x 15 cm, có quai xách",
+      "unit": "Cái",
+      "quantity": 12,
+      "unitPrice": 101200,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "d147a255-c83e-4a80-b4b4-e1c6877c7152",
+      "name": "Chiếu",
+      "model": "Chiếu",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa, 0.9m x 2 m",
+      "unit": "Chiếc",
+      "quantity": 142,
+      "unitPrice": 70000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "18269247-0a0a-4832-b7a6-fa9d95b6741f",
+      "name": "Rổ lớn không có quai xách",
+      "model": "Rổ Chữ Nhật 3T0",
+      "brand": "Duy tân",
+      "manufacturer": "Duy tân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa, kích thước: 47,5x37,5x15cm",
+      "unit": "Cái",
+      "quantity": 20,
+      "unitPrice": 41000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "c5448bd5-5e6f-41f7-9cd9-8e8e91066d96",
+      "name": "Gàu nhựa",
+      "model": "Gàu nhựa",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa, 5 lít, có quai cầm",
+      "unit": "Cái",
+      "quantity": 30,
+      "unitPrice": 55000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "30ca8645-793f-4eed-bdad-f0648d8a5d70",
+      "name": "Thùng tưới cây",
+      "model": "Thùng tưới cây",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng tôn, có tay cầm, dung tích 10 lít",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 220000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "df762732-4e6e-4885-87f5-cfc07b914fbe",
+      "name": "Rổ lớn có quai xách",
+      "model": "Rổ lớn có quai xách",
+      "brand": "Duy tân",
+      "manufacturer": "Duy tân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Bằng nhựa, kích thước: 60,9x42,4x25cm, có quai xách",
+      "unit": "Cái",
+      "quantity": 8,
+      "unitPrice": 125000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    },
+    {
+      "id": "99f3ebc4-5480-4ce9-8811-a9c3be03136f",
+      "name": "Miếng rửa chén",
+      "model": "Miếng rửa chén",
+      "brand": "Phan Nguyên",
+      "manufacturer": "Phan Nguyên",
+      "origin": "Phan Nguyên",
+      "manufactureYear": "2025",
+      "specification": "Xốp dày, bọc bên ngoài sợi kim tuyến",
+      "unit": "Cái",
+      "quantity": 36,
+      "unitPrice": 10000,
+      "winnerNames": [
+        "CÔNG TY TNHH VĂN PHÒNG PHẨM TIÊU CHUẨN"
+      ],
+      "decisionNo": "KQ2500132763_2506020827",
+      "decisionDate": "2025-06-02T23:59:59",
+      "resultPublishedDate": "2025-06-02T13:55:32"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +839,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500132763",
-    "notifyId": "f1ee4fda-dd3d-4340-b269-b872caaec753",
-    "bidId": "fa026dbc-696c-47db-8e5f-584e79e84304",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:34.358Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:31:41.958Z"
 }

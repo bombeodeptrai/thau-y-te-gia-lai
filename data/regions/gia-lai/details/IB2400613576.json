@@ -1,9 +1,147 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "2a59e642-b8e2-4a62-b3c5-6bb3f520482f",
+      "contractorCode": "vn0301445732",
+      "taxCode": "0301445732",
+      "contractorName": "CÔNG TY TNHH Y TẾ VIỆT TIẾN",
+      "status": "won",
+      "lotNo": "PP2400378301",
+      "lotName": "Máy siêu âm tổng quát",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 2580000000,
+      "reason": "",
+      "submittedAt": "2024-12-25T17:29:18.368",
+      "models": []
+    },
+    {
+      "id": "088213c4-7a99-4425-9ecf-43fc7689f50c",
+      "contractorCode": "vn0102045497",
+      "taxCode": "0102045497",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DƯỢC PHẨM TÂN THÀNH",
+      "status": "won",
+      "lotNo": "PP2400378302",
+      "lotName": "Máy thở không xâm lấn",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 537900000,
+      "reason": "",
+      "submittedAt": "2024-12-25T17:29:18.368",
+      "models": []
+    },
+    {
+      "id": "751e953e-137c-4100-9aaf-937f627a5909",
+      "contractorCode": "vn0312695702",
+      "taxCode": "0312695702",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y KHOA ĐÔNG DƯƠNG",
+      "status": "won",
+      "lotNo": "PP2400378303",
+      "lotName": "Máy trợ thở áp lực dương liên tục - CPAP (Máy thở CPAP)",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 197000000,
+      "reason": "",
+      "submittedAt": "2024-12-25T17:29:18.368",
+      "models": []
+    },
+    {
+      "id": "c87f5b92-e7c2-42bb-94e8-f13708ecd850",
+      "contractorCode": "vn4100730085",
+      "taxCode": "4100730085",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
+      "status": "won",
+      "lotNo": "PP2400378304",
+      "lotName": "Bộ dụng cụ phẫu thuật nội soi sản phụ khoa",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 504656703,
+      "reason": "",
+      "submittedAt": "2024-12-25T17:29:18.368",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "46ccdb58-419c-4c40-b6eb-adff91eb2cc8",
+      "name": "Máy siêu âm tổng quát",
+      "model": "LOGIQ P10",
+      "brand": "GE Ultrasound Korea Ltd.,",
+      "manufacturer": "GE Ultrasound Korea Ltd.,",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2024",
+      "specification": "Chi tiết theo phụ lục QĐ",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 2580000000,
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ VIỆT TIẾN"
+      ],
+      "decisionNo": "3053/QĐ-BVĐKT",
+      "decisionDate": "2024-11-12T23:59:59",
+      "resultPublishedDate": "2024-12-25T17:30:25"
+    },
+    {
+      "id": "62a18053-b3a6-4c51-8f9b-bd472d815a74",
+      "name": "Bộ dụng cụ phẫu thuật nội soi sản phụ khoa",
+      "model": "FENTEX Medical GmbH - Đức + GIMMI GmbH – Đức + AYGÜN CERRAHİ ALETLER SANAYİ VE TİCARET A.Ş. - Thổ Nhĩ Kỳ",
+      "brand": "FENTEX Medical GmbH - Đức + GIMMI GmbH – Đức + AYGÜN CERRAHİ ALETLER SANAYİ VE TİCARET A.Ş. - Thổ Nhĩ Kỳ",
+      "manufacturer": "FENTEX Medical GmbH - Đức + GIMMI GmbH – Đức + AYGÜN CERRAHİ ALETLER SANAYİ VE TİCARET A.Ş. - Thổ Nhĩ Kỳ",
+      "origin": "Đức + Thổ Nhĩ Kỳ",
+      "manufactureYear": "2024",
+      "specification": "Chi tiết như phụ lục QĐ",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 504656703,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI"
+      ],
+      "decisionNo": "3053/QĐ-BVĐKT",
+      "decisionDate": "2024-11-12T23:59:59",
+      "resultPublishedDate": "2024-12-25T17:30:25"
+    },
+    {
+      "id": "60dfa0a0-61b7-45df-a302-14f6c35199dc",
+      "name": "Máy thở",
+      "model": "Savina 300",
+      "brand": "Dragerwerk AG & Co. KGaA",
+      "manufacturer": "Dragerwerk AG & Co. KGaA",
+      "origin": "Đức",
+      "manufactureYear": "2024",
+      "specification": "Chi tiết theo phụ lục QĐ",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 537900000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DƯỢC PHẨM TÂN THÀNH"
+      ],
+      "decisionNo": "3053/QĐ-BVĐKT",
+      "decisionDate": "2024-11-12T23:59:59",
+      "resultPublishedDate": "2024-12-25T17:30:25"
+    },
+    {
+      "id": "8cb8f160-4653-4ff0-8f25-1705cf4a8931",
+      "name": "Máy trợ thở áp lực dương liên tục - CPAP",
+      "model": "Dolphin",
+      "brand": "Công ty TNHH Chuyển giao công nghệ và dịch vụ y tế",
+      "manufacturer": "Công ty TNHH Chuyển giao công nghệ và dịch vụ y tế",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024",
+      "specification": "Chi tiết như phụ lục QĐ",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 197000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y KHOA ĐÔNG DƯƠNG"
+      ],
+      "decisionNo": "3053/QĐ-BVĐKT",
+      "decisionDate": "2024-11-12T23:59:59",
+      "resultPublishedDate": "2024-12-25T17:30:25"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -59,12 +197,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2400613576",
-    "notifyId": "IB2400613576",
-    "bidId": "0c2e0a13-38e0-4cac-8e2e-2cd02bb8c53d",
-    "bidForm": "MSTT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:27:03.041Z"
+  "fetchedAt": "2026-10-04T20:32:11.446Z"
 }

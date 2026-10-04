@@ -1,9 +1,113 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "00f1346d-bf01-4380-bad3-b8833e81335b",
+      "contractorCode": "vn0600810461",
+      "taxCode": "0600810461",
+      "contractorName": "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI AN LÀNH",
+      "status": "won",
+      "lotNo": "PP2500146622",
+      "lotName": "Bông thay băng",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 41250000,
+      "reason": "",
+      "submittedAt": "2025-03-28T15:05:33.946",
+      "models": []
+    },
+    {
+      "id": "8bf34194-6fc7-45f6-90fe-4179f66705ef",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "won",
+      "lotNo": "PP2500146623",
+      "lotName": "Dây truyền dịch tránh ánh sáng",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 7527360,
+      "reason": "",
+      "submittedAt": "2025-03-28T15:05:33.946",
+      "models": []
+    },
+    {
+      "id": "11e3d6b6-fd30-42a4-b28d-b8190de5937d",
+      "contractorCode": "vn0401340331",
+      "taxCode": "0401340331",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THƯƠNG MẠI VÂN THÔNG",
+      "status": "won",
+      "lotNo": "PP2500146624",
+      "lotName": "Sáp cầm máu xương",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 23877360,
+      "reason": "",
+      "submittedAt": "2025-03-28T15:05:33.946",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "4fe7aa4d-012c-4f06-98c0-4048f1a5223b",
+      "name": "INTRAFIX SAFESET UV-PROTECT.LL, 180CM",
+      "model": "4063131",
+      "brand": "4063131",
+      "manufacturer": "Công ty TNHH B.Braun Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024-2025",
+      "specification": "* Chiều dài: ≥ 180cm\r\n* Chất liệu: nhựa dùng trong y tế.\r\n* Có bầu đếm giọt 2 ngăn cứng - mềm\r\n* Dây màu cam có khả năng tránh ánh sáng.\r\n* Không có chất phụ gia DEHP.\r\n* Màng lọc khuẩn 0,2µm tại van thông khí.\r\n* Đầu khóa Luer Lock.\r\n* Đường kính trong dây: 3 mm. đường kính ngoài 4.1 mm.",
+      "unit": "Cái",
+      "quantity": 240,
+      "unitPrice": 31364,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "decisionNo": "551/QĐ-BVĐKT",
+      "decisionDate": "2025-03-25T23:59:59",
+      "resultPublishedDate": "2025-03-28T15:09:08"
+    },
+    {
+      "id": "40256776-59d9-4697-a279-317387ac9ad5",
+      "name": "Bông viên y tế 500g (Fi30)",
+      "model": "BHNV14",
+      "brand": "BHNV14",
+      "manufacturer": "An Lành",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "* Bông thay băng 30mm x 30mm\r\n* Gói 0,5kg",
+      "unit": "Kg",
+      "quantity": 330,
+      "unitPrice": 125000,
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI AN LÀNH"
+      ],
+      "decisionNo": "551/QĐ-BVĐKT",
+      "decisionDate": "2025-03-25T23:59:59",
+      "resultPublishedDate": "2025-03-28T15:09:08"
+    },
+    {
+      "id": "e73caf1b-2ec9-40c3-b212-d0a35b6df123",
+      "name": "Sáp cầm máu xương BONEWAX 2.5 gram",
+      "model": "W31C",
+      "brand": "W31C",
+      "manufacturer": "Johnson & Johnson do Brasil Indústria e Comércio de Produtos para Saúde Ltda.",
+      "origin": "Brazil",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "* Thành phần: sáp ong (85%), Isopropyl\r\nPalmitate (15%).\r\n* Khối lượng: 2,0g→3,0g.\r\n* Tiệt trùng bằng tia gama từng miếng\r\n* Đạt tiêu chuẩn Mỹ (FDA)",
+      "unit": "Miếng",
+      "quantity": 720,
+      "unitPrice": 33163,
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THƯƠNG MẠI VÂN THÔNG"
+      ],
+      "decisionNo": "551/QĐ-BVĐKT",
+      "decisionDate": "2025-03-25T23:59:59",
+      "resultPublishedDate": "2025-03-28T15:09:08"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -49,12 +153,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500116361",
-    "notifyId": "IB2500116361",
-    "bidId": "06462017-7ab5-4d54-a8fb-b36b9845d399",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:38.424Z"
+  "fetchedAt": "2026-10-04T20:31:51.034Z"
 }

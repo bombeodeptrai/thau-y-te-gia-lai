@@ -1,9 +1,113 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "44bdbf4f-7b96-4f30-ba0a-764dbdd69c7a",
+      "contractorCode": "vn4101579542",
+      "taxCode": "4101579542",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP",
+      "status": "won",
+      "lotNo": "PP2500174721",
+      "lotName": "Dung dịch rửa tay phẫu thuật.",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 120000,
+      "reason": "",
+      "submittedAt": "2025-04-09T15:58:39.841",
+      "models": []
+    },
+    {
+      "id": "f2e46a6c-851b-4039-8edd-42488ac77ed6",
+      "contractorCode": "vn4101579542",
+      "taxCode": "4101579542",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP",
+      "status": "won",
+      "lotNo": "PP2500174722",
+      "lotName": "Dung dịch tẩy rửa dụng cụ",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 192500,
+      "reason": "",
+      "submittedAt": "2025-04-09T15:58:39.841",
+      "models": []
+    },
+    {
+      "id": "3ccc7bc8-75e9-44eb-b384-86dc25f763f1",
+      "contractorCode": "vn4101579542",
+      "taxCode": "4101579542",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP",
+      "status": "won",
+      "lotNo": "PP2500174723",
+      "lotName": "Cồn sát khuẩn",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 42500,
+      "reason": "",
+      "submittedAt": "2025-04-09T15:58:39.841",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "f0e668d7-4af7-4337-88bb-70b03261225b",
+      "name": "Dung dịch rửa tay phẫu thuật.",
+      "model": "ASC 1L",
+      "brand": "ASC 1L",
+      "manufacturer": "Minh Hưng",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024",
+      "specification": "* Thành phần: Chlorhexidine digluconate 4%, pH = 5.5.\r\n* Can 5 Lít",
+      "unit": "Lít",
+      "quantity": 40,
+      "unitPrice": 120000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP"
+      ],
+      "decisionNo": "559/QĐ-BVM",
+      "decisionDate": "2025-04-09T23:59:59",
+      "resultPublishedDate": "2025-04-10T08:12:37"
+    },
+    {
+      "id": "5d1067bf-ee4c-42f9-8a8e-ab745bdd902c",
+      "name": "Dung dịch tẩy rửa dụng cụ",
+      "model": "AZ 1L",
+      "brand": "AZ 1L",
+      "manufacturer": "Asimec\r\n Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024",
+      "specification": "* Thành phần: Hỗn hợp enzyme (Protease, Lipase, Amylase, Cellulase, Mannanase), chất hoạt động bề mặt không ion và anion, chất cô lập các ion kim loại, chất ổn định, thành phần khác hoặc tương đương.\r\n* Chai 1 Lít",
+      "unit": "Lít",
+      "quantity": 8,
+      "unitPrice": 192500,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP"
+      ],
+      "decisionNo": "559/QĐ-BVM",
+      "decisionDate": "2025-04-09T23:59:59",
+      "resultPublishedDate": "2025-04-10T08:12:37"
+    },
+    {
+      "id": "996ebdba-67ee-4eac-bbb4-f8bda32fae90",
+      "name": "Cồn sát khuẩn",
+      "model": "Lê Gia",
+      "brand": "Lê Gia",
+      "manufacturer": "Lê Gia",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024",
+      "specification": "Cồn 96 ̊(96 độ)",
+      "unit": "Lít",
+      "quantity": 120,
+      "unitPrice": 42500,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP"
+      ],
+      "decisionNo": "559/QĐ-BVM",
+      "decisionDate": "2025-04-09T23:59:59",
+      "resultPublishedDate": "2025-04-10T08:12:37"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -49,12 +153,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500137195",
-    "notifyId": "IB2500137195",
-    "bidId": "74feff70-665f-4b19-a5ad-f105ec409cf4",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:36.330Z"
+  "fetchedAt": "2026-10-04T20:31:47.384Z"
 }

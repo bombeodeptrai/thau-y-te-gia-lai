@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "abb09129-9ed4-4773-a55d-9131b7b6df5a",
+      "contractorCode": "vn0302375372",
+      "taxCode": "0302375372",
+      "contractorName": "CÔNG TY TNHH PHÁT TRIỂN KỸ THUẬT Y TẾ TD",
+      "status": "won",
+      "lotNo": "BP2400854154",
+      "lotName": "Mua sắm thiết bị y tế năm 2024 (đợt 2) thuộc Đề án nâng cao năng lực hoạt động hệ thống y tế cơ sở của tỉnh Bình Định giai đoạn 2022-2025 do Trung tâm Y tế huyện Tuy Phước thực hiện",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 1460000000,
+      "reason": "",
+      "submittedAt": "2024-12-16T08:20:41.996",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "afdd93c4-6aca-498a-a196-83d664eeea29",
+      "name": "Máy siêu âm tổng quát",
+      "model": "VOLUSON S8",
+      "brand": "VOLUSON S8",
+      "manufacturer": "GE Ultrasound Korea, Ltd.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2024",
+      "specification": "Chi tiết tại phụ lục đính kèm Quyết định",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1460000000,
+      "winnerNames": [
+        "CÔNG TY TNHH PHÁT TRIỂN KỸ THUẬT Y TẾ TD"
+      ],
+      "decisionNo": "516/QĐ-TTYT",
+      "decisionDate": "2024-12-13T23:59:59",
+      "resultPublishedDate": "2024-12-16T08:20:53"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2400584515",
-    "notifyId": "IB2400584515",
-    "bidId": "f537ce07-b84c-4ffb-be08-65ed914e6403",
-    "bidForm": "MSTT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T16:23:38.479Z"
+  "fetchedAt": "2026-10-04T20:32:13.769Z"
 }

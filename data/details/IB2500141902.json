@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "77f0beb6-4beb-45f7-b923-5a738eb77d61",
+      "contractorCode": "vn0302375372",
+      "taxCode": "0302375372",
+      "contractorName": "CÔNG TY TNHH KỸ THUẬT Y TẾ TOÀN DIỆN",
+      "status": "won",
+      "lotNo": "BP2500204069",
+      "lotName": "Mua sắm Đầu dò cho máy siêu âm chuyên tim 2D của Bệnh viện Đa khoa tỉnh Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 81700000,
+      "reason": "",
+      "submittedAt": "2025-04-11T14:18:16.493",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "affda3eb-4b36-4157-8995-c5fa88606919",
+      "name": "Đầu dò 3SC-RS",
+      "model": "0",
+      "brand": "H45041DL",
+      "manufacturer": "GE MEDICAL SYSTEM (CHINA) CO., LTD",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024",
+      "specification": "+ Ứng dụng: tim người lớn, bụng, nhi, thận, xuyên sọ\n+ Tần số hoạt động: 1.3 – 4.0 MHz\n+ Trường nhìn: 120°\n+ Độ sâu khảo sát tối đa: 30cm\n+ Có thể sử dụng với bộ gá sinh thiết",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 81700000,
+      "winnerNames": [
+        "CÔNG TY TNHH KỸ THUẬT Y TẾ TOÀN DIỆN"
+      ],
+      "decisionNo": "704/QĐ-BV",
+      "decisionDate": "2025-04-11T23:59:59",
+      "resultPublishedDate": "2025-04-11T14:18:44"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500141902",
-    "notifyId": "IB2500141902",
-    "bidId": "a0eee8d0-bdc3-44c4-8bc0-cb715a569fce",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:35.209Z"
+  "fetchedAt": "2026-10-04T20:31:44.503Z"
 }

@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "0089f5e6-cbb1-40d1-b065-851fa75c69dd",
+      "contractorCode": "vn0316612129",
+      "taxCode": "0316612129",
+      "contractorName": "CÔNG TY TNHH DỊCH VỤ KỸ THUẬT P&E",
+      "status": "lost",
+      "lotNo": "BP2400726499",
+      "lotName": "Sửa chữa Máy siêu âm hiệu HITACHI F37 phục vụ công tác khám, chữa bệnh của Bệnh viện Lao và Bệnh phổi Bình Định.",
+      "bidPrice": 88000000,
+      "finalPrice": 88000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2025-01-15T10:07:08.816",
+      "models": []
+    },
+    {
+      "id": "eb8356e9-0374-4b29-95ea-88e857178e28",
+      "contractorCode": "vn0317476648",
+      "taxCode": "0317476648",
+      "contractorName": "CÔNG TY TNHH HAI THÀNH VIÊN XUÂN ĐÀI 5.0",
+      "status": "won",
+      "lotNo": "BP2400726499",
+      "lotName": "Sửa chữa Máy siêu âm hiệu HITACHI F37 phục vụ công tác khám, chữa bệnh của Bệnh viện Lao và Bệnh phổi Bình Định.",
+      "bidPrice": 86400000,
+      "finalPrice": 86400000,
+      "winningPrice": 86400000,
+      "reason": "",
+      "submittedAt": "2025-01-15T10:07:08.816",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +59,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2400578813",
-    "notifyId": "98455f64-8ec1-4d0c-b00b-2f1efce0f870",
-    "bidId": "f4e5a75b-8397-47e8-add8-078dc5a8e6ee",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:27:03.943Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:32:13.626Z"
 }

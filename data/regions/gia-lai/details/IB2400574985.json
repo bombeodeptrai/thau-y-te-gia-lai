@@ -2,7 +2,38 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "2974d31a-350a-4696-99f4-2f0b7e0f44af",
+      "contractorCode": "vn4100259564",
+      "taxCode": "4100259564",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+      "status": "won",
+      "lotNo": "BP2400876679",
+      "lotName": "Cung cấp dịch vụ bảo trì, bảo dưỡng thiết bị y tế của Trung tâm y tế thành phố Quy Nhơn năm 2024",
+      "bidPrice": 66370000,
+      "finalPrice": 66370000,
+      "winningPrice": 66370000,
+      "reason": "",
+      "submittedAt": "2025-02-04T08:43:17.463",
+      "models": []
+    },
+    {
+      "id": "e8e94480-9dac-495a-b62c-7ce5b14cf3c1",
+      "contractorCode": "vn0401823561",
+      "taxCode": "0401823561",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ Y TẾ THANH LỘC PHÁT",
+      "status": "lost",
+      "lotNo": "BP2400876679",
+      "lotName": "Cung cấp dịch vụ bảo trì, bảo dưỡng thiết bị y tế của Trung tâm y tế thành phố Quy Nhơn năm 2024",
+      "bidPrice": 91000000,
+      "finalPrice": 91000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2 trở lên",
+      "submittedAt": "2025-02-04T08:43:17.463",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 1,
@@ -28,13 +59,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2400574985",
-    "notifyId": "5d79881f-3e4c-4993-acd6-619c8c083ac9",
-    "bidId": "a09944b7-b0e7-40f7-b331-5aaf563a82d5",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:27:03.358Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:32:11.305Z"
 }

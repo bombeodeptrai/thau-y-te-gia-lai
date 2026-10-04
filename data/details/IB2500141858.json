@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "99d2dc71-5547-4296-8e9e-b82258653ed4",
+      "contractorCode": "vn0317476648",
+      "taxCode": "0317476648",
+      "contractorName": "CÔNG TY TNHH HAI THÀNH VIÊN XUÂN ĐÀI 5.0",
+      "status": "won",
+      "lotNo": "BP2500203431",
+      "lotName": "Mua sắm phụ tùng thay thế cho máy siêu âm Affiniti của Bệnh viện Đa khoa tỉnh Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 48600000,
+      "reason": "",
+      "submittedAt": "2025-04-11T14:10:17.845",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "59a7c785-40ec-4d1a-bb3c-e48fa69dadba",
+      "name": "Dịch vụ sửa chữa màn hình hiển thị (System Display, 21.5 in)",
+      "model": "0",
+      "brand": "Sửa chữa màn hình hỏng của hệ thống máy siêu âm Philips Affiniti 50G",
+      "manufacturer": "Sửa chữa màn hình hỏng của hệ thống máy siêu âm Philips Affiniti 50G",
+      "origin": "Sửa chữa màn hình hỏng của hệ thống máy siêu âm Philips Affiniti 50G",
+      "manufactureYear": "2025",
+      "specification": "Sửa chữa màn hình hỏng của hệ thống máy siêu âm Philips Affiniti 50G",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 48600000,
+      "winnerNames": [
+        "CÔNG TY TNHH HAI THÀNH VIÊN XUÂN ĐÀI 5.0"
+      ],
+      "decisionNo": "703/QĐ-BV",
+      "decisionDate": "2025-04-11T23:59:59",
+      "resultPublishedDate": "2025-04-11T14:10:44"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500141858",
-    "notifyId": "IB2500141858",
-    "bidId": "d8cf83b2-c0c6-479e-bdf2-17d66fe1b366",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:35.774Z"
+  "fetchedAt": "2026-10-04T20:31:46.095Z"
 }

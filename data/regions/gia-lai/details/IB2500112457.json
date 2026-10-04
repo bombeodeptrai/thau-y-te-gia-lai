@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "9405a508-3c31-496c-a303-83ce75a8872a",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "won",
+      "lotNo": "BP2500125549",
+      "lotName": "Mua sắm máy điện châm để phục vụ công tác điều trị của Bệnh viện Y học cổ truyền và Phục hồi chức năng năm 2025.",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 98000000,
+      "reason": "",
+      "submittedAt": "2025-03-27T09:22:16.692",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "b9a31723-8e6b-49a8-a5c3-48ba53ec3268",
+      "name": "Máy điện châm 5 cọc",
+      "model": "Model: 1529-ET-TK21",
+      "brand": "Model: 1529-ET-TK21",
+      "manufacturer": "Công ty TNHH Hội Vũ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Model: 1529-ET-TK21 Máy điện châm 5 giắc: Hộp đỏ 1529 – ET – TK21 - Nguồn điện: 6V (4 pin x 1.5V) - Dạng xung: dạng dao động nghẹt sử dụng cả phần âm và dương. - Tần số: K1 từ 2Hz đến 60Hz, K2 từ 0.5Hz đến 40Hz - Biên độ xung ra: 90 đến 120V ± 10%",
+      "unit": "Bộ",
+      "quantity": 200,
+      "unitPrice": 490000,
+      "winnerNames": [
+        "CÔNG TY TNHH KIẾN TẠO"
+      ],
+      "decisionNo": "106/QĐ-BV.YHCT&PHCN",
+      "decisionDate": "2025-03-25T23:59:59",
+      "resultPublishedDate": "2025-03-27T09:23:49"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500112457",
-    "notifyId": "IB2500112457",
-    "bidId": "52f65880-67a2-4e02-9904-8668c30a3187",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:27:00.037Z"
+  "fetchedAt": "2026-10-04T20:31:52.680Z"
 }

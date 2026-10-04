@@ -1,9 +1,79 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "b0a96030-fc0d-4dc1-9e94-4663858ac200",
+      "contractorCode": "vn0400408435",
+      "taxCode": "0400408435",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+      "status": "won",
+      "lotNo": "PP2500058446",
+      "lotName": "Chai cấy máu BHI",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 47250000,
+      "reason": "",
+      "submittedAt": "2025-02-13T16:28:08.243",
+      "models": []
+    },
+    {
+      "id": "e4dae69f-162f-41ae-8c31-9af3084a6963",
+      "contractorCode": "vn0309781158",
+      "taxCode": "0309781158",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH",
+      "status": "won",
+      "lotNo": "PP2500058447",
+      "lotName": "Dung dịch pha loãng cho xét nghiệm HCG+β, CA 125, CA 15-3 …. )",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 1713285,
+      "reason": "",
+      "submittedAt": "2025-02-13T16:28:08.243",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "ce97cf4d-56ff-419f-99cd-17e83b1fcd16",
+      "name": "Chai cấy máu BHI",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": "Nam Khoa",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024",
+      "specification": "Chai cấy máu hai pha: pha đặc và pha lỏng tách rời nhau. Sử dụng cấy máu người lớn với thể tích từ 8-10ml máu. Pha đặc láng mịn, pha lỏng có màu đồng nhất không cặn. Chai cấu tạo bằng nhựa PET, có nắp vặn bằng nhựa, Bảo quản ở nhiệt độ phòng.",
+      "unit": "Chai",
+      "quantity": 1050,
+      "unitPrice": 45000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C "
+      ],
+      "decisionNo": "215/QĐ-BV",
+      "decisionDate": "2025-02-13T23:59:59",
+      "resultPublishedDate": "2025-02-13T16:28:13"
+    },
+    {
+      "id": "12b675da-5e52-41d1-a415-9f4d9f0a8d7a",
+      "name": "Dung dịch pha loãng cho xét nghiệm HCG+β, CA 125, CA 15-3 ….   )",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": "Germany",
+      "origin": "Roche Diagnostics GmbH",
+      "manufactureYear": "2024",
+      "specification": "Diluent Universal được dán nhãn Dil. Uni. 2 chai, mỗi chai chứa 16 mLThành phần: Hỗn hợp protein; chất bảo quản ≤ 0.1 %. 2 x 16 ml/hộp",
+      "unit": "hộp",
+      "quantity": 1,
+      "unitPrice": 1713285,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "215/QĐ-BV",
+      "decisionDate": "2025-02-13T23:59:59",
+      "resultPublishedDate": "2025-02-13T16:28:13"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -39,12 +109,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500045902",
-    "notifyId": "IB2500045902",
-    "bidId": "1386595e-9816-4dce-836c-abfe54e31666",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:27:01.755Z"
+  "fetchedAt": "2026-10-04T20:32:03.584Z"
 }
