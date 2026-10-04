@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-04T08:37:23.932Z",
+  "rescuedAt": "2026-10-04T15:31:16.324Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 107,
+      "count": 108,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 715,
+  "candidateCount": 716,
   "acceptedCount": 24,
-  "rejectedCount": 691,
+  "rejectedCount": 692,
   "rejectedReasons": {
     "excluded:tu van": 226,
-    "excluded:xay dung": 210,
+    "excluded:xay dung": 211,
     "insufficient-medical-context": 145,
     "excluded:sua chua": 26,
     "excluded:xay lap": 21,
@@ -682,6 +682,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600566641",
+      "name": "Xây dựng video chuỗi phóng sự; in pano tuyên truyền",
+      "investor": "Cục Cảnh sát quản lý hành chính về trật tự xã hội",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600561003",
       "name": "Mua sắm lắp đặt thiết bị",
@@ -1113,21 +1124,12 @@
       "matched": [
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "IB2600531885",
-      "name": "GL-G-01: Thiết bị văn phòng BQL dự án",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1166,
-  "afterCount": 1166,
+  "beforeCount": 1165,
+  "afterCount": 1165,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v13"
 }
