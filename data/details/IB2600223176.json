@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "74ee19e3-0b4e-4393-87a0-42b20f139ff7",
+      "contractorCode": "vn0103053042",
+      "taxCode": "0103053042",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2",
+      "status": "lost",
+      "lotNo": "PP2600207449",
+      "lotName": "Metformin",
+      "bidPrice": 190200000,
+      "finalPrice": 190200000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ ba",
+      "submittedAt": "2026-06-04T07:59:37.043",
+      "models": []
+    },
+    {
+      "id": "286db5af-3d18-48db-9e20-d45be21ffe3d",
+      "contractorCode": "vn0303923529",
+      "taxCode": "0303923529",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+      "status": "won",
+      "lotNo": "PP2600207449",
+      "lotName": "Metformin",
+      "bidPrice": 135000000,
+      "finalPrice": 135000000,
+      "winningPrice": 135000000,
+      "reason": "",
+      "submittedAt": "2026-06-04T07:59:37.043",
+      "models": [
+        "Metsav 500"
+      ]
+    },
+    {
+      "id": "edb2faa5-629c-4030-92f0-8b82b72ba757",
+      "contractorCode": "vn1400460395",
+      "taxCode": "1400460395",
+      "contractorName": "CÔNG TY CP XUẤT NHẬP KHẨU Y TẾ DOMESCO",
+      "status": "lost",
+      "lotNo": "PP2600207449",
+      "lotName": "Metformin",
+      "bidPrice": 168000000,
+      "finalPrice": 168000000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ hai",
+      "submittedAt": "2026-06-04T07:59:37.043",
+      "models": []
+    },
+    {
+      "id": "b3106e89-ecf7-4c35-9729-2cd2c0f10d26",
+      "contractorCode": "vn2801943708",
+      "taxCode": "2801943708",
+      "contractorName": "Công ty cổ phần thương mại dược phẩm Trường Thọ",
+      "status": "won",
+      "lotNo": "PP2600207450",
+      "lotName": "Acetyl leucin",
+      "bidPrice": 198000000,
+      "finalPrice": 198000000,
+      "winningPrice": 198000000,
+      "reason": "",
+      "submittedAt": "2026-06-04T07:59:37.043",
+      "models": [
+        "Pain-Tavic"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "446a286c-9b0c-4e69-98ac-96e19c13a836",
+      "name": "Metformin",
+      "model": "Metsav 500",
+      "brand": "Công ty CPDP SaVi",
+      "manufacturer": "Công ty CPDP SaVi",
+      "origin": "Việt Nam",
+      "manufactureYear": "48 tháng",
+      "specification": "Nhóm 3",
+      "unit": "Viên",
+      "quantity": 300000,
+      "unitPrice": 450,
+      "amount": 135000000,
+      "contractorCode": "vn0303923529",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI"
+      ],
+      "lotNo": "",
+      "decisionNo": "Số:173 /QĐ-BVHT",
+      "decisionDate": "2026-06-03T16:28:54",
+      "resultPublishedDate": "2026-06-04T07:59:41"
+    },
+    {
+      "id": "ec237217-44aa-4a72-bac2-6e2c6f8231cc",
+      "name": "Acetyl leucin",
+      "model": "Pain-Tavic",
+      "brand": "Cophavina",
+      "manufacturer": "Cophavina",
+      "origin": "Việt Nam",
+      "manufactureYear": "36 tháng",
+      "specification": "Nhóm 3",
+      "unit": "Viên",
+      "quantity": 90000,
+      "unitPrice": 2200,
+      "amount": 198000000,
+      "contractorCode": "vn2801943708",
+      "winnerNames": [
+        "Công ty cổ phần thương mại dược phẩm Trường Thọ"
+      ],
+      "lotNo": "",
+      "decisionNo": "Số:173 /QĐ-BVHT",
+      "decisionDate": "2026-06-03T16:28:54",
+      "resultPublishedDate": "2026-06-04T07:59:41"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "7146df95-8973-4fc6-b990-0cdc39871ac4",
+        "lotNo": "PP2600207449",
+        "name": "Metformin",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 190200000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "f196cfea-3868-4af6-9a2a-60e1ca18181a",
+        "lotNo": "PP2600207450",
+        "name": "Acetyl leucin",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 198000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua thuốc bổ sung sử dụng tại Bệnh viện Đa khoa Hạc Thành lần 1 năm 2026",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "8768998280956193",
+        "position": "1.1",
+        "lotNo": "PP2600207449",
+        "lotName": "Metformin",
+        "name": "Metformin",
+        "unit": "Viên",
+        "quantity": 300000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+        "specification": "Tên hoạt chất: Metformin;  Nồng độ: 500mg; Đường dùng: Uống; Dạng bào Chế: Viên. Đáp ứng tiêu chí kỹ thuật nhóm 3 theo Thông tư số 40/2025/ TT-BYT",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện đa khoa Hạc Thành",
+        "earliestDeliveryDate": "5",
+        "latestDeliveryDate": "365",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "10273725398497208",
+        "position": "2.1",
+        "lotNo": "PP2600207450",
+        "lotName": "Acetyl leucin",
+        "name": "Acetyl leucin",
+        "unit": "Viên",
+        "quantity": 90000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Không yêu cầu",
+        "origin": "Không yêu cầu",
+        "manufactureYear": "Trong thời hạn sử dụng (Đảm bảo còn hạn sử dụng: Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+        "specification": "Tên hoạt chất: Acetyl leucin; Nồng độ: 500mg; Đường dùng: Uống; Dạng bào Chế: Viên. Đáp ứng tiêu chí kỹ thuật nhóm 3 theo Thông tư số 40/2025/ TT-BYT",
+        "otherRequirement": "",
+        "projectPlace": "Bệnh viện đa khoa Hạc Thành",
+        "earliestDeliveryDate": "5",
+        "latestDeliveryDate": "365",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:12:31.178Z"
+}

@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "d0d5b234-abae-44c4-8092-3f6f0eb539d2",
+      "contractorCode": "vn0309324289",
+      "taxCode": "0309324289",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ QUỐC TẾ PHÚ MỸ",
+      "status": "won",
+      "lotNo": "BP2500394255",
+      "lotName": "Gói thầu số 02: Mua sắm Máy thở",
+      "bidPrice": 698000000,
+      "finalPrice": 667986000,
+      "winningPrice": 667986000,
+      "reason": "",
+      "submittedAt": "2025-09-19T18:40:54.064",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "f48c8126-e3db-44a4-b461-e0720a535a23",
+      "name": "Máy Thở",
+      "model": "Lyra x1",
+      "brand": "Lyra x1",
+      "manufacturer": "aXcent medical GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "I Yêu cầu chung:\n1 Năm sản xuất: năm 2024 trở về sau, mới 100%\n2 Nhà sản xuất phải đạt tiêu chuẩn ISO 13485 và CE (đối với máy chính)\n3 Nguồn điện cung cấp: 110 ~ 240 AC/50 ~60 Hz\n4 Môi trường hoạt động:\n  + Nhiệt độ: từ 5 đến 40°C\n  + Độ ẩm: từ 10 đến 95 %\n5 Nguồn điện cung cấp: 100-240 VAC, 50/60Hz\n6 Xuất xứ: Nhóm các nước công nghiệp phát triển (G7) đối với máy chính (Đức).\nII Cấu hình cung cấp:\n1 Máy chính: 01 cái\n2 Màn hình cảm ứng tích hợp 12.1\": 01 cái\n3 Xe đẩy máy: 01 cái\n4 Bộ làm ấm, làm ẩm khí thở: 01 bộ\n5 Dây thở sử dụng nhiều lần người lớn: 01 bộ\n6 Dây thở sử dụng nhiều lần trẻ em: 01 bộ\n7 Phổi giả kiểm tra máy: 01 cái\n8 Cảm biến lưu lượng: 01 cái\n9 Cảm biến oxy: 01 cái\n10 Dây nguồn: 01 cái\nIII Tính năng, thông số kỹ thuật\n1 Đặc tính chung:\n - Đối tượng sử dụng: người lớn, trẻ em, trẻ sơ sinh\n - Máy thở tích hợp tubin nhỏ gọn, đa chức năng\n2 Chế độ thông khí xâm lấn có tối thiểu:\n - VCV (Thông khí kiểm soát thể tích)\n - PCV (Thông khí kiểm soát áp lực)\n - VSIMV (Thông khí kiểm soát thể tích đồng bộ ngắt quãng)\n - PSIMV (Thông khí kiểm soát áp lực đồng bộ ngắt quãng)\n - CPAP / PSV (Thông khí áp lực dương liên tục đường thở/ Thông khí hỗ trợ áp lực)\n - PRVC (Điều chỉnh áp lực kiểm soát thể tích)\n - V + SIMV (PRVC + SIMV)\n - BPAP (Thông khí hai mức áp lực dương đường thở)\n - APRV (Thông khí giải phóng áp lực đường thở)\n - Thông khí ngưng thở\n3 Chế độ thông khí không xâm lấn có tối thiểu:\n - PCV (Thông khí kiểm soát áp lực)\n - PSIMV (Thông khí kiểm soát áp lực đồng bộ ngắt quãng)\n - CPAP / PSV (Thông khí áp lực dương liên tục đường thở/ Thông khí hỗ trợ áp lực)\n - BPAP (Thông khí hai mức áp lực dương đường thở)\n - APRV (Thông khí giải phóng áp lực đường thở)\n4 Các thông số được kiểm soát::\n - % O2: 21-100% (giá trị điều chỉnh 1%)\n - VT (Thể tích khí lưu thông): \n    + Người lớn: 100 - 2000 mL \n    + Trẻ em: 20 - 300 mL / Trẻ sơ sinh: 2 - 300 mL \n - f (Tần số thông khí): 1 - 80 bpm / Trẻ sơ sinh: 1- 150 bpm\n - Phạm vi I:E : 4:1 - 1:10 \n - Tinsp: 0,20 - 10 giây \n - Tslope: 0 - 2.00 giây \n - Thigh: 0,2 – 30 giây \n - Tlow: 0,2 - 30 giây \n - Tpause: 5% - 60%, tắt\n - ΔPinsp: 5 - 60 cmH2O \n - Δ Psupp: 0 - 60 cmH2O \n - Phigh: 0 - 60 cmH2O\n - Plow: 0 - 45 cmH2O \n - PEEP: 1 - 45 cmH2O \n - Flow trigger: 0,5 - 15 L / phút \n - Pressure trigger: -10 đến -0,5 cm H2O \n - % Exp: 10 - 85% Tự động\n5 Thông khí ngưng thở:\n - Vtapnea: \n    + Người lớn: 100 - 2000 mL\n    + Trẻ em: 20 - 300 mL \n    + Trẻ sơ sinh: 2- 300 mL \n - ΔPapnea: 5- 60 cm H2O \n - Fapnea: 1- 80 bpm \n - apnea Tinsp: 0,20 - 10 giây.\n6 Thở dài (Sigh):\n - Công tắc thở dài: Bật, Tắt\n - Khoảng thời gian: 20 giây - 180 phút\n - Chu kỳ thở dài: 1- 20\n - Δint.PEEP: 1 - 45 cmH2O, Tắt\n7 Các thông số được giám sát tối thiểu:\n - Paw - Vte -        Cdyn\n - Ppeak - VTi -        Cstat\n - Pplat - Nồng độ oxy -        Rcexp\n - Pmean - VTe spn -        WOB\n - PEEP - VTe/IBW -        RSBI\n - Insp Flow - ftotal -        NIF\n - Exp Flow - fmand -        P0.1\n - MV - fspn - PEEP nội sinh: PEEPi \n - MV leak - Re - Lưu lượng liên tục (O Therapy)\n8 Kiểm soát độ chính xác:\n - % O2: ± (3 vol.% + 1% cài đặt)\n - TV: ± (10 mL + 10% cài đặt)\n - Tinsp: ± 0,1 s hoặc ± 10% cài đặt, tùy theo giá trị nào lớn hơn\n - I:E  2:1 đến 1:4: ± 10% cài đặt, phạm vi khác: ± 15% cài đặt\n - f: ± 1 bpm\n - fSIMV: ± 1 bpm\n - Tslope: ± (0,2 giây + 20% cài đặt)\n - PEEP: ± (2,0 cm H2O + 5% cài đặt)\n - ΔPinsp: ± (2,0 cm H2O + 5% cài đặt)\n - ΔPsupp ± (2,0 cm H2O + 5% cài đặt)\n - Phigh: ± (2,0 cm H2O + 5% cài đặt)\n - Plow: ± (2,0 cm H2O + 5% thiết lập)\n - Thigh: ± 0,2 s hoặc ± 10% cài đặt, tùy theo giá trị nào lớn hơn\n - Tlow:  ± 0,2 s hoặc ± 10% cài đặt, tùy theo giá trị nào lớn hơn\n - Pressure trigger: ± (1,0 cm H2O + 10% cài đặt)\n - Flow trigger: ± (1,0 L / phút + 10% cài đặt)\n - Δint.PEEP:  ± (2,0 cm H2O + 5% cài đặt)\n - % Exp:  ± 10%\n - fapnea: ± 1 bpm\n - ΔPapnea: ± (2,0 cm H2O + 5% cài đặt)\n - Tvapnea:  ± (10 mL + 10% cài đặt)\n - Apnea Tinsp:  ± 0,1 s hoặc ± 10% cài đặt, tùy theo giá trị nào lớn hơn\n9 Cài đặt báo động các thông số:\n - Thể tích khí lưu thông: Cao / Thấp\n - Lưu lượng phút: Cao / Thấp\n - Áp lực đường thở: Cao / Thấp\n - Tần số: Cao / Thấp\n - Nồng độ Oxy (FiO2): Cao / Thấp\n - EtCO2: Cao / Thấp\n - Thời gian báo động ngưng thở: ≤ 5 - ≥ 60 giây.\n10 O2 Therapy:\n - Các thông số được kiểm soát\n - % O2:  21-100%\n - Lưu lượng:  4 - 60 L / phút\n - Độ chính xác được kiểm soát\n - % O2:  ± (3 vol.% + 1% cài đặt)\n - Lưu lượng:  ± (2 L / phút + 10% cài đặt).\n11 Pin dự phòng:\n - Pin bên trong\n - Thời gian hoạt động của pin: 3 giờ có thể nâng cấp 6 giờ làm việc tiêu chuẩn\nIV Yêu cầu khác\n - Bảo hành: 12 tháng, bảo trì ít nhất 02 lần/năm (06 tháng/lần)\n - Máy phải được kiểm định về an toàn và tính năng kỹ thuật theo Điều 5 TT05/2022/TT-BYT ngày 01/8/2022.\n - Đào tạo, cam kết hướng dẫn sử dụng và chuyển giao công nghệ cho người sử dụng tại đơn vị sử dụng\n - Cam kết cung cấp các chứng nhận xuất xứ (C/O), chứng nhận chất lượng (C/Q), tờ khai hải quan, hóa đơn thương mại (Invoice).",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 333993000,
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ QUỐC TẾ PHÚ MỸ"
+      ],
+      "decisionNo": "106/QĐ-TTTS",
+      "decisionDate": "2025-09-19T23:59:59",
+      "resultPublishedDate": "2025-09-19T18:41:35"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500276812",
-    "notifyId": "31da628d-fffe-4d12-a991-4e26549ef17e",
-    "bidId": "39bf443a-2c1c-4087-ab36-2a1322927fbc",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:18.895Z"
+  "fetchedAt": "2026-10-04T20:23:26.462Z"
 }

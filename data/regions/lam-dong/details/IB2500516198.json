@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "c8749417-4f63-40d7-a606-40ee92f26add",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "lost",
+      "lotNo": "BP2500738977",
+      "lotName": "Mua sắm thuốc kháng Vi rút",
+      "bidPrice": 121280000,
+      "finalPrice": 121280000,
+      "winningPrice": 0,
+      "reason": "xếp hạng 2",
+      "submittedAt": "2025-12-11T10:01:44.064",
+      "models": []
+    },
+    {
+      "id": "42af803e-124b-49bf-b69a-2d05be6588fa",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "BP2500738977",
+      "lotName": "Mua sắm thuốc kháng Vi rút",
+      "bidPrice": 118400000,
+      "finalPrice": 118400000,
+      "winningPrice": 118400000,
+      "reason": "",
+      "submittedAt": "2025-12-11T10:01:44.064",
+      "models": [
+        "890110445523"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "76e88b7e-f974-4bb4-9a48-67ed2251a286",
+      "name": "Dolutegravir, Lamivudine, Tenofovir",
+      "model": "890110445523",
+      "brand": "Dolutegravir, Lamivudine and Tenofovir disoproxil fumarate tablets 50/300/300mg",
+      "manufacturer": "Hetero Labs Limited ",
+      "origin": "Ấn Độ",
+      "manufactureYear": "không",
+      "specification": "Nhóm TCKT: 5; Nồng độ - hàm lượng: 50,300,300; Đường dùng: Uống; Dạng bào chế: Viên nén",
+      "unit": "Viên",
+      "quantity": 32000,
+      "unitPrice": 3700,
+      "amount": 118400000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "",
+      "decisionNo": "447/QĐ-TTYT",
+      "decisionDate": "2025-12-11T09:41:46",
+      "resultPublishedDate": "2025-12-11T10:02:30"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "f051a36f-1040-45f4-9f08-23317b25efc4",
+        "lotNo": "BP2500738977",
+        "name": "Mua sắm thuốc kháng Vi rút",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 126240000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc kháng Vi rút",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "11749107475307990",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Dolutegravir, Lamivudine, Tenofovir",
+        "unit": "Viên",
+        "quantity": 32000,
+        "code": "Không yêu cầu",
+        "brand": "Không yêu cầu",
+        "manufacturer": "Đáp ứng tiêu chí kỹ thuật nhóm 5, Thông tư số 40/2025/TT-BYT ngày 25/10/2025 của BYT Quy định về đấu thầu thuốc tại cơ sở y tế công lập",
+        "origin": "Đáp ứng tiêu chí kỹ thuật nhóm 5, Thông tư số 40/2025/TT-BYT ngày 25/10/2025 của BYT Quy định về đấu thầu thuốc tại cơ sở y tế công lập",
+        "manufactureYear": "Trong thời hạn sử dụng (Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải đảm bảo tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên, 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm)",
+        "specification": "Nhóm TCKT: 5; Nồng độ - hàm lượng: 50,300,300; Đường dùng: Uống; Dạng bào chế: Viên nén",
+        "otherRequirement": "Sau khi xác nhận chấp thuận được trao hợp đồng đề nghị nhà thầu trúng thầu cung cấp bộ hồ sơ gốc về Khoa Dược TTYT khu vực Hàm Tân và gủi  File qua Gmail: dsduc1982@gmail.com gồm: Đơn dự thầu, Bảng giá dự thầu, Hồ sơ kỹ thuật của thuốc, hồ sơ năng lực,…",
+        "projectPlace": "Trung tâm Y tế khu vực Hàm Tân, tỉnh Lâm Đồng",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1958",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1958",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:26:25.905Z"
+}

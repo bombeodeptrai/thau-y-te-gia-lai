@@ -1,9 +1,88 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "c32147c9-b7d4-4255-8490-695a55f06f16",
+      "contractorCode": "vn0301187062",
+      "taxCode": "0301187062",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ KHOA HỌC VIỆT KHOA",
+      "status": "lost",
+      "lotNo": "BP2500340982",
+      "lotName": "Mua sắm Tủ an toàn sinh học và máy ly tâm phục vụ cho công tác xét nghiệm tại TTYT huyện Phù Mỹ",
+      "bidPrice": 267500000,
+      "finalPrice": 267500000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2025-06-10T16:24:19.469",
+      "models": []
+    },
+    {
+      "id": "46b1bde1-6247-4b66-b41e-fa1909384618",
+      "contractorCode": "vn0312763053",
+      "taxCode": "0312763053",
+      "contractorName": "CÔNG TY CỔ PHẦN REXTON",
+      "status": "won",
+      "lotNo": "BP2500340982",
+      "lotName": "Mua sắm Tủ an toàn sinh học và máy ly tâm phục vụ cho công tác xét nghiệm tại TTYT huyện Phù Mỹ",
+      "bidPrice": 265000000,
+      "finalPrice": 265000000,
+      "winningPrice": 265000000,
+      "reason": "",
+      "submittedAt": "2025-06-10T16:24:19.469",
+      "models": [
+        "SC2-4E1",
+        "EBA 200"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "b70050f1-947c-4e24-91e4-d725f1fd0d2f",
+      "name": "Tủ an toàn sinh học các loại (cấp II)",
+      "model": "SC2-4E1",
+      "brand": "Esco",
+      "manufacturer": "PT Esco Bintan Indonesia",
+      "origin": "Indonesia",
+      "manufactureYear": "2024",
+      "specification": "I. Yêu cầu chung\r\n- Tình trạng: Chất lượng hàng hóa mới 100%, \r\n- Đạt tiêu chuẩn EN 12469, đã được hiệu chuẩn và dán tem hiệu chuẩn có thời hạn ≥ 12 tháng.\r\n- Nguồn điện: 220V, 50Hz.\r\n- Loại A, PTN số: 180000412/PCBA-HN\r\nII. Cấu hình cung cấp\r\n1. Tủ chính: 01 cái\r\n2. Chân để tủ CPC-4A0: 01 cái\r\n3. Đèn UV-30A: 01 cái\r\n4.Tài liệu hướng dẫn sử dụng: 01 bộ\r\nIII. Thông số kỹ thuật\r\n1. Tủ chính\r\n1.1. Cấu tạo tủ\r\n- Thân tủ: Bằng thép mạ kẽm dày 1.2 mm (0.05 “), 18 gauge, phủ sơn tĩnh điện epoxy-polyester kháng khuẩn Isocide\r\n-Khu vực làm việc:  Khay làm việc đa tấm, làm bằng thép không gỉ SS304 dày 1.5 mm (0.06”)/16 gauge, với vách bên bằng kính\r\n- Cửa trượt phía trước: Kính cường lực; mở thủ công hoặc bằng điện\r\n1.2. Kích thước buồng làm việc\r\n- Kích thước trong:1.220 x 580 x 670mm\r\n1.3. Điều khiển \r\n- Có sẵn Bảng điều khiển và Màn hình hiển thị LCD\r\n- Có các chức năng: Bật/ Tắt đèn chiếu sáng, Đèn UV; Hẹn giờ đèn UV; Thời gian sử dụng bộ lọc.\r\n1.4. Hiệu suất \r\n- Tốc độ trung bình của dòng khí đi vào (m/s):  0,45 (89 fpm)\r\n- Tốc độ trung bình của dòng khí đi xuống (m/s): 0,30 (60 fpm)\r\n- Tỷ lệ dòng khí xả (%): 30±10 \r\n- Độ sáng đèn (lux): 1.118\r\n- Độ ồn (dBA): NSF:60/EN:57\r\n1.5. Bộ lọc \r\n- Hiệu suất bộ lọc MPPS: 99,999%\r\n- Đường kính MPPS: trong khoảng 0,1 ÷ 0,3 μm",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 223314607,
+      "amount": 223314607,
+      "contractorCode": "vn0312763053",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN REXTON"
+      ],
+      "lotNo": "",
+      "decisionNo": "KQ2500232331_2506101513",
+      "decisionDate": "2025-06-10T16:22:45",
+      "resultPublishedDate": "2025-06-10T16:24:28"
+    },
+    {
+      "id": "37815d03-8ab3-49a2-a84e-3ca4be347b57",
+      "name": "Máy ly tâm",
+      "model": "EBA 200",
+      "brand": "Hettich ",
+      "manufacturer": "Andreas HettichGmbH & Co.KG",
+      "origin": "Đức ",
+      "manufactureYear": "2024",
+      "specification": "I. Yêu cầu chung\r\n1. Tình trạng:Hàng hóa mới 100%\r\n2. Đạt tiêu chuẩn ISO 13485, đã được hiệu chuẩn và dán tem hiệu chuẩn có thời hạn ≥ 12 tháng.\r\n4.  Nguồn điện: 220V, 50Hz.\r\n5. Thiết bị Loại A, PTN số: 180000412/PCBA-HN\r\nII. Yêu cầu cấu hình\r\n1. Máy chính: 01 máy\r\n2.Rotor góc 8 vị trí:01 máy\r\n3. Adapter cho ống máu: 08 cái\r\n4. Tài liệu hướng dẫn sử dụng: 01 bộ\r\nIII. Thông số kỹ thuật\r\n1. Máy chính\r\n1.1. Cấu tạo máy\r\n- Vỏ máy bằng nhựa\r\n- Nắp máy bằng kim loại\r\n- Trên nắp máy có cổng quan sát\r\n- Có thể khóa nắp bằng một tay\r\n- Bảo vệ nắp chống rơi\r\n- Có thể mở nắp trong trường hợp khẩn cấp\r\n- Buồng ly tâm bằng hợp kim nhẹ\r\n- Động cơ không chổi than\r\n- Máy ly tâm nhỏ bao gồm rotor góc có 8 vị trí\r\n- Thể tích ly tâm tối đa: 8 x 15 ml\r\n-  Dung tích tối đa:  8x 15 ml. \r\n- Công suất: 100 VA\r\n1.2. Màn hình, hiển thị\r\n- Hiển thị lỗi trên màn hình\r\n- Theo dõi cân bằng và tự ngắt khi mất cân bằng\r\n- Bảng điều khiển hiển thị giá trị thực của tất cả tham số\r\n- Có thể lựa chọn 3 tín hiệu hoàn tất quá trình ly tâm (âm báo và hình ảnh)\r\n- Vận hành với các phím\r\n- Mức chỉnh 10 vòng/phút\r\n1.3. Tính năng an toàn\r\n- Tuân thủ IVD theo 98/79/EC hoặc tương đương\r\n- Phát xạ, miễn nhiễm: EN/IEC 61326-1, class B \r\n1.4. Tốc độ, lực ly tâm\r\n- Độ ồn tối đa (dBA) ≤ 50\r\n- Có  2 cấp tăng tốc và  giảm tốc\r\n- Tốc độ ly tâm tối đa: 6.000 vòng/phút\r\n- Lực ly tâm (RCF) tối đa: 3.461 \r\n- Thời gian ly tâm: Từ 1 phút  đến  99 phút, ly tâm liên tục, chế độ ly tâm chu kỳ ngắn (phím xung)",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 41685393,
+      "amount": 41685393,
+      "contractorCode": "vn0312763053",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN REXTON"
+      ],
+      "lotNo": "",
+      "decisionNo": "KQ2500232331_2506101513",
+      "decisionDate": "2025-06-10T16:22:45",
+      "resultPublishedDate": "2025-06-10T16:24:28"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -80,13 +159,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500232331",
-    "notifyId": "52cf79f5-6eae-40d6-8b5e-692633c2449a",
-    "bidId": "5a2a057b-df03-4176-99b3-2bc7056d0e3d",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:59.397Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:23:38.073Z"
 }

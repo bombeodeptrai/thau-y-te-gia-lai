@@ -1,9 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "c42a2db2-4b2f-4fc7-88bc-a06902aba99a",
+      "contractorCode": "vn5901106307",
+      "taxCode": "5901106307",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ TRUNG THỊNH PHÁT",
+      "status": "won",
+      "lotNo": "BP2500393722",
+      "lotName": "Mua sắm trang thiết bị y tế năm 2025 của Trung tâm y tế thị xã An Khê",
+      "bidPrice": 2154600000,
+      "finalPrice": 2154600000,
+      "winningPrice": 2154600000,
+      "reason": "",
+      "submittedAt": "2025-07-23T15:21:03.738",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "48ad8eb8-f258-4cf2-b711-4d83549ed8eb",
+      "name": "Máy siêu âm tổng quát (4 đầu dò)",
+      "model": "ECUBE 8",
+      "brand": "Alpinion",
+      "manufacturer": "Alpinion Medical Systems Co., Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2024 về sau",
+      "specification": "Cấu hình, tính năng kỹ thuật cơ bản theo phụ lục đính kèm E-HSDT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1010000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ TRUNG THỊNH PHÁT"
+      ],
+      "decisionNo": "63/QĐ-TTAK",
+      "decisionDate": "2025-07-23T23:59:59",
+      "resultPublishedDate": "2025-07-23T15:21:29"
+    },
+    {
+      "id": "67d732af-378f-4610-bc4c-af16286c8e8f",
+      "name": "Máy xét nghiệm sinh hóa tự động",
+      "model": "Biolis 30i",
+      "brand": "Biolis 30i",
+      "manufacturer": "F and F Co., Ltd; Hãng, nước chủ sở hữu: Tokyo Boeki Medisys Inc.,/ Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 về sau",
+      "specification": "Cấu hình, tính năng kỹ thuật cơ bản theo phụ lục đính kèm E-HSDT",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 1144600000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ TRUNG THỊNH PHÁT"
+      ],
+      "decisionNo": "63/QĐ-TTAK",
+      "decisionDate": "2025-07-23T23:59:59",
+      "resultPublishedDate": "2025-07-23T15:21:29"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500286198",
-    "notifyId": "a6ef729e-a230-4e3a-acec-701f85383513",
-    "bidId": "3f0b43cf-b06f-4f7d-a193-8ea7d5e75e8e",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:20.552Z"
+  "fetchedAt": "2026-10-04T20:23:27.591Z"
 }

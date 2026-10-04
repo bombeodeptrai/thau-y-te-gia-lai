@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "c999b79b-c4ec-48db-a1c2-203a1cd4646e",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "won",
+      "lotNo": "PP2500573051",
+      "lotName": "Diosmin + hesperidin",
+      "bidPrice": 11191680,
+      "finalPrice": 11191680,
+      "winningPrice": 11191680,
+      "reason": "",
+      "submittedAt": "2026-02-02T14:31:54.824",
+      "models": [
+        "Daflon 500mg"
+      ]
+    },
+    {
+      "id": "e224142d-1527-41b7-adc7-3466ab0d0347",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "lost",
+      "lotNo": "PP2500573052",
+      "lotName": "Drotaverin hydroclorid",
+      "bidPrice": 917280,
+      "finalPrice": 917280,
+      "winningPrice": 0,
+      "reason": "Mặt hàng dự thầu giá cao hơn mời thầu",
+      "submittedAt": "2026-02-02T14:31:54.824",
+      "models": [
+        "Xatral XL 10mg"
+      ]
+    },
+    {
+      "id": "058a7f85-d115-4964-bd86-5a5fe11f16db",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2500573054",
+      "lotName": "Alfuzosin",
+      "bidPrice": 27523800,
+      "finalPrice": 27523800,
+      "winningPrice": 27523800,
+      "reason": "",
+      "submittedAt": "2026-02-02T14:31:54.824",
+      "models": [
+        "Xatral XL 10mg"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2500573051",
+      "name": "Daflon 500mg",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Pháp",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 2880,
+      "unitPrice": 3886,
+      "amount": 11191680,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "PP2500573051",
+      "decisionNo": "156/QĐ-BVĐKPY",
+      "decisionDate": "2026-02-02T23:59:59",
+      "resultPublishedDate": "2026-02-02T14:32:04"
+    },
+    {
+      "id": "2500573054",
+      "name": "Xatral XL 10mg",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Pháp",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 1800,
+      "unitPrice": 15291,
+      "amount": 27523800,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2500573054",
+      "decisionNo": "156/QĐ-BVĐKPY",
+      "decisionDate": "2026-02-02T23:59:59",
+      "resultPublishedDate": "2026-02-02T14:32:04"
+    }
+  ],
+  "requirements": {
+    "total": 4,
+    "items": [
+      {
+        "id": "7cfa6c4b-6466-4d1d-88f1-e0cfcfd80470",
+        "lotNo": "PP2500573051",
+        "name": "Diosmin + hesperidin",
+        "quantity": 2880,
+        "unit": "Viên",
+        "plannedPrice": 11191680,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "bbd18d84-2313-4218-bdcd-84d184b399fc",
+        "lotNo": "PP2500573052",
+        "name": "Drotaverin hydroclorid",
+        "quantity": 720,
+        "unit": "Viên",
+        "plannedPrice": 833760,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "e86042fb-2fe8-4512-923b-b39139e8868a",
+        "lotNo": "PP2500573053",
+        "name": "Telmisartan",
+        "quantity": 1800,
+        "unit": "Viên",
+        "plannedPrice": 17697600,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "fa425641-ef98-44f7-b25d-c25d9d553a6a",
+        "lotNo": "PP2500573054",
+        "name": "Alfuzosin",
+        "quantity": 1800,
+        "unit": "Viên",
+        "plannedPrice": 27523800,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Thuốc BDG",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:23:22.652Z"
+}

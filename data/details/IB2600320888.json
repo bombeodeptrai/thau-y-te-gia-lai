@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "d9cdc155-0095-4d43-b5a6-05c12be7b9a2",
+      "contractorCode": "vn2801906015",
+      "taxCode": "2801906015",
+      "contractorName": "CÔNG TY CỔ PHẦN THANH DƯỢC",
+      "status": "won",
+      "lotNo": "PP2600262611",
+      "lotName": "Gliclazid + metformin",
+      "bidPrice": 115050000,
+      "finalPrice": 115050000,
+      "winningPrice": 115050000,
+      "reason": "",
+      "submittedAt": "2026-07-06T16:07:49.412",
+      "models": [
+        "Melanov-M"
+      ]
+    },
+    {
+      "id": "9c46a266-abbb-4cb6-b52c-9d80ffc36bb6",
+      "contractorCode": "vn2800231948",
+      "taxCode": "2800231948",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - VẬT TƯ Y TẾ THANH HOÁ",
+      "status": "won",
+      "lotNo": "PP2600262612",
+      "lotName": "Glimepirid + metformin hydrochloride",
+      "bidPrice": 74910000,
+      "finalPrice": 74910000,
+      "winningPrice": 74910000,
+      "reason": "",
+      "submittedAt": "2026-07-06T16:07:49.412",
+      "models": [
+        "Comiaryl 2mg/500mg"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "69b489ac-a7e0-4a70-92a7-0c17f67f124a",
+      "name": "Gliclazid + metformin",
+      "model": "Melanov-M",
+      "brand": "Không có",
+      "manufacturer": "Micro Labs Limited",
+      "origin": "Ấn Độ",
+      "manufactureYear": "Hạn sử dụng còn lại của thuốc tính đến thời điểm thuốc cung ứng cho đơn vị phải đảm bảo tối thiếu 03 tháng đối với thuốc có HSD từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 1 năm ",
+      "specification": "Nhóm TCKT: Nhóm 3; Nồng độ, hàm lượng: 80mg + 500mg; Đường dùng: uống; Dạng bào chế: viên nén",
+      "unit": "Viên",
+      "quantity": 30000,
+      "unitPrice": 3835,
+      "amount": 115050000,
+      "contractorCode": "vn2801906015",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THANH DƯỢC"
+      ],
+      "lotNo": "",
+      "decisionNo": "415/QĐ-BVQH",
+      "decisionDate": "2026-07-06T16:05:34",
+      "resultPublishedDate": "2026-07-06T16:08:00"
+    },
+    {
+      "id": "bd3b693d-094f-44c9-b844-3e29696abca0",
+      "name": "Glimepirid + metformin hydrochloride",
+      "model": "Comiaryl 2mg/500mg",
+      "brand": "Không có",
+      "manufacturer": "CT TNHH Hasan-Dermapharm - Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "Hạn sử dụng còn lại của thuốc tính đến thời điểm thuốc cung ứng cho đơn vị phải đảm bảo tối thiếu 03 tháng đối với thuốc có HSD từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 1 năm ",
+      "specification": "Nhóm TCKT: Nhóm 4; Nồng độ, hàm lượng: 2mg + 500mg (dạng muối); Đường dùng: uống; Dạng bào chế: viên nén bao phim",
+      "unit": "Viên",
+      "quantity": 30000,
+      "unitPrice": 2497,
+      "amount": 74910000,
+      "contractorCode": "vn2800231948",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - VẬT TƯ Y TẾ THANH HOÁ"
+      ],
+      "lotNo": "",
+      "decisionNo": "415/QĐ-BVQH",
+      "decisionDate": "2026-07-06T16:05:34",
+      "resultPublishedDate": "2026-07-06T16:08:00"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "215b3181-6b19-43dc-a32b-cb381f4432b0",
+        "lotNo": "PP2600262611",
+        "name": "Gliclazid + metformin",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 115050000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "ef879d67-3e75-4860-a113-bbbf72811ea3",
+        "lotNo": "PP2600262612",
+        "name": "Glimepirid + metformin hydrochloride",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 74910000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Cung cấp thuốc Generic",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "10259907445931672",
+        "position": "1.1",
+        "lotNo": "PP2600262611",
+        "lotName": "Gliclazid + metformin",
+        "name": "Gliclazid + metformin",
+        "unit": "Viên",
+        "quantity": 30000,
+        "code": "phù hợp với thông số kỹ thuật của thuốc",
+        "brand": "phù hợp với thông số kỹ thuật của thuốc",
+        "manufacturer": "phù hợp với thông số kỹ thuật của thuốc",
+        "origin": "phù hợp với thông số kỹ thuật của thuốc",
+        "manufactureYear": "Hạn sử dụng còn lại của thuốc tính đến thời điểm thuốc cung ứng cho đơn vị phải đảm bảo tối thiếu 03 tháng đối với thuốc có HSD từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 1 năm",
+        "specification": "Nhóm TCKT: Nhóm 3; Nồng độ, hàm lượng: 80mg + 500mg; Đường dùng: uống; Dạng bào chế: viên",
+        "otherRequirement": "Sau khi có kết quả chào giá, nếu nhà thầu xếp thứ 1 và được đề nghị trúng thầu, nhà thầu gửi đến bệnh viện 01 bộ hồ sơ chứng minh thông số kỹ thuật của thuốc đáp ứng yêu cầu mời thầu và các tài liệu chứng minh tư cách hợp lệ của nhà thầu ( bản PDF và bản cứng có đóng dấu của nhà thầu)",
+        "projectPlace": "BVĐK Quan Hóa, thôn 4, xã Hồi Xuân, tỉnh Thanh Hóa",
+        "earliestDeliveryDate": "01 ngày",
+        "latestDeliveryDate": "7 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      },
+      {
+        "id": "8964579274694463",
+        "position": "2.1",
+        "lotNo": "PP2600262612",
+        "lotName": "Glimepirid + metformin hydrochloride",
+        "name": "Glimepirid + metformin hydrochloride",
+        "unit": "Viên",
+        "quantity": 30000,
+        "code": "phù hợp với thông số kỹ thuật của thuốc",
+        "brand": "phù hợp với thông số kỹ thuật của thuốc",
+        "manufacturer": "phù hợp với thông số kỹ thuật của thuốc",
+        "origin": "phù hợp với thông số kỹ thuật của thuốc",
+        "manufactureYear": "Hạn sử dụng còn lại của thuốc tính đến thời điểm thuốc cung ứng cho đơn vị phải đảm bảo tối thiếu 03 tháng đối với thuốc có HSD từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 1 năm",
+        "specification": "Nhóm TCKT: Nhóm 4; Nồng độ, hàm lượng: 2mg + 500mg (dạng muối); Đường dùng: uống; Dạng bào chế: viên",
+        "otherRequirement": "Sau khi có kết quả chào giá, nếu nhà thầu xếp thứ 1 và được đề nghị trúng thầu, nhà thầu gửi đến bệnh viện 01 bộ hồ sơ chứng minh thông số kỹ thuật của thuốc đáp ứng yêu cầu mời thầu và các tài liệu chứng minh tư cách hợp lệ của nhà thầu ( bản PDF và bản cứng có đóng dấu của nhà thầu)",
+        "projectPlace": "BVĐK Quan Hóa, thôn 4, xã Hồi Xuân, tỉnh Thanh Hóa",
+        "earliestDeliveryDate": "01 ngày",
+        "latestDeliveryDate": "7 ngày",
+        "formCode": "BD.DT.02.1960",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1960",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "as-published",
+  "fetchedAt": "2026-10-04T20:12:23.351Z"
+}

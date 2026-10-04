@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "0edcd5c1-9401-4f97-b3b6-a55f8d8dde46",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "won",
+      "lotNo": "PP2600011656",
+      "lotName": "Efavirenz/ Lamivudin/ Tenofovir Disoproxil Fumarate",
+      "bidPrice": 201600000,
+      "finalPrice": 201600000,
+      "winningPrice": 201600000,
+      "reason": "",
+      "submittedAt": "2026-02-11T16:44:43.623",
+      "models": [
+        "Avonza"
+      ]
+    },
+    {
+      "id": "fd427725-9f4a-4512-b472-3d07fcd8b551",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "lost",
+      "lotNo": "PP2600011657",
+      "lotName": "Lamivudin/Tenofovir Disoproxil fumarate/Dolutegravir",
+      "bidPrice": 1263312000,
+      "finalPrice": 1263312000,
+      "winningPrice": 0,
+      "reason": "xếp hạng 2",
+      "submittedAt": "2026-02-11T16:44:43.623",
+      "models": [
+        "Avonza"
+      ]
+    },
+    {
+      "id": "313a77d8-237d-4d83-86b8-4b3b3b1b758d",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600011657",
+      "lotName": "Lamivudin/Tenofovir Disoproxil fumarate/Dolutegravir",
+      "bidPrice": 1227167240,
+      "finalPrice": 1227167240,
+      "winningPrice": 1227167240,
+      "reason": "",
+      "submittedAt": "2026-02-11T16:44:43.623",
+      "models": [
+        "TELDY"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600011656",
+      "name": "Avonza",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "India",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 50400,
+      "unitPrice": 4000,
+      "amount": 201600000,
+      "contractorCode": "vn0100108536",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "lotNo": "PP2600011656",
+      "decisionNo": "Số 88/QĐ-TTYT",
+      "decisionDate": "2026-02-11T23:59:59",
+      "resultPublishedDate": "2026-02-11T16:49:08"
+    },
+    {
+      "id": "2600011657",
+      "name": "TELDY",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 350920,
+      "unitPrice": 3497,
+      "amount": 1227167240,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2600011657",
+      "decisionNo": "Số 88/QĐ-TTYT",
+      "decisionDate": "2026-02-11T23:59:59",
+      "resultPublishedDate": "2026-02-11T16:49:08"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "4972bcbd-05f1-445a-89d8-5e59806699e9",
+        "lotNo": "PP2600011656",
+        "name": "Efavirenz/ Lamivudin/ Tenofovir Disoproxil Fumarate",
+        "quantity": 50400,
+        "unit": "Viên",
+        "plannedPrice": 201600000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "39b1cb26-7a5e-40d3-be64-85ead01ef6cc",
+        "lotNo": "PP2600011657",
+        "name": "Lamivudin/Tenofovir Disoproxil fumarate/Dolutegravir",
+        "quantity": 350920,
+        "unit": "Viên",
+        "plannedPrice": 1298404000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua sắm thuốc ARV (02 thuốc)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:18:26.566Z"
+}

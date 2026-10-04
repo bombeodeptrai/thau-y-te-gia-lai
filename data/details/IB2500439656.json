@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "a4f9d3d3-578d-426d-9b22-4811ea9aab7b",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "won",
+      "lotNo": "BP2500623270",
+      "lotName": "Gói thầu mua sắm máy sắc thuốc phục vụ công tác chuyên môn của Trung tâm Y tế khu vực Hải Lăng",
+      "bidPrice": 66000000,
+      "finalPrice": 66000000,
+      "winningPrice": 66000000,
+      "reason": "",
+      "submittedAt": "2025-11-26T16:13:40.571",
+      "models": []
+    },
+    {
+      "id": "5568aba2-729b-437a-8c58-240090ea7d0a",
+      "contractorCode": "vn3101112467",
+      "taxCode": "3101112467",
+      "contractorName": "CÔNG TY TNHH TM VÀ DV GIA PHÁT",
+      "status": "lost",
+      "lotNo": "BP2500623270",
+      "lotName": "Gói thầu mua sắm máy sắc thuốc phục vụ công tác chuyên môn của Trung tâm Y tế khu vực Hải Lăng",
+      "bidPrice": 56000000,
+      "finalPrice": 56000000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu về kỹ thuật",
+      "submittedAt": "2025-11-26T16:13:40.571",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "4ef828f2-3472-4c2a-8cc6-b135ede3a508",
+      "name": "Máy sắc thuốc đông y",
+      "model": "BĐY32-04-KITA",
+      "brand": "KITA",
+      "manufacturer": "Công ty TNHH Kiến Tạo",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Nhà thầuđính kèm theo E- HSDT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 66000000,
+      "winnerNames": [
+        "CÔNG TY TNHH KIẾN TẠO"
+      ],
+      "decisionNo": "511/QĐ-TTYT",
+      "decisionDate": "2025-11-26T23:59:59",
+      "resultPublishedDate": "2025-11-26T16:13:59"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "d1787b61-bbab-40ff-8137-483d6f83a1bf",
+        "lotNo": "BP2500623270",
+        "name": "Gói thầu mua sắm máy sắc thuốc phục vụ công tác chuyên môn của Trung tâm Y tế khu vực Hải Lăng",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 69000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Gói thầu mua sắm máy sắc thuốc phục vụ công tác chuyên môn của Trung tâm Y tế khu vực Hải Lăng, gồm 01 mặt hàng (Chi tiết theo phụ lục I đính kèm)",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:15:15.632Z"
+}

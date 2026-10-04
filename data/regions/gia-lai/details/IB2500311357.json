@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "2340a952-303d-4ab6-9cb8-a19b60ff21c7",
+      "contractorCode": "vn0302366480",
+      "taxCode": "0302366480",
+      "contractorName": "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU Y TẾ THÀNH PHỐ HỒ CHÍ MINH",
+      "status": "won",
+      "lotNo": "BP2500442498",
+      "lotName": "Thuốc Generic (Oxytocin10IU/ml)",
+      "bidPrice": 368500000,
+      "finalPrice": 368500000,
+      "winningPrice": 368500000,
+      "reason": "",
+      "submittedAt": "2025-07-25T10:45:00.732",
+      "models": [
+        "."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "ff8d15b0-3383-4431-b99b-db439dfa490d",
+      "name": "Oxytocin",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": "Panpharma GmbH/Đức\n",
+      "origin": "Panpharma GmbH/Đức\n",
+      "manufactureYear": ".",
+      "specification": "Oxytocin 10IU/ml",
+      "unit": "Ống",
+      "quantity": 33500,
+      "unitPrice": 11000,
+      "amount": 368500000,
+      "contractorCode": "vn0302366480",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU Y TẾ THÀNH PHỐ HỒ CHÍ MINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "126/QĐ-BVBS",
+      "decisionDate": "2025-07-24T15:08:22",
+      "resultPublishedDate": "2025-07-25T10:45:28"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,12 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500311357",
-    "notifyId": "70b08adc-fbf7-47ff-9cfa-fd3e809cbaf1",
-    "bidId": "c219d487-e425-4b90-9286-f02a6fe22a79",
-    "bidForm": "CGTTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-10-03T11:54:27.744Z"
+  "fetchedAt": "2026-10-04T20:23:24.462Z"
 }

@@ -1,9 +1,531 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 20,
+  "bidders": [
+    {
+      "id": "9e962aba-1a4b-4376-8835-ac5a3dcf107c",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "won",
+      "lotNo": "PP2500257380",
+      "lotName": "Test nhanh chẩn đoán các loại",
+      "bidPrice": 190330000,
+      "finalPrice": 190330000,
+      "winningPrice": 190330000,
+      "reason": "",
+      "submittedAt": "2025-07-15T14:06:52.558",
+      "models": [
+        "STANDARD™ Q HCV Ab Test",
+        "IHBSG-301",
+        "Diagnostic Kit for Hepatitis B e Antigen (Colloidal gold)",
+        "H. pylori Antibodies Rapid Test"
+      ]
+    },
+    {
+      "id": "33f9c85f-7090-4175-b295-a4453476b7d8",
+      "contractorCode": "vn0309068162",
+      "taxCode": "0309068162",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ THÀNH PHÁT",
+      "status": "won",
+      "lotNo": "PP2500257381",
+      "lotName": "Hóa chất Máy phân tích huyết học 5 thành phần, 28 thông số chính (TP)",
+      "bidPrice": 59851050,
+      "finalPrice": 59851050,
+      "winningPrice": 59851050,
+      "reason": "",
+      "submittedAt": "2025-07-15T14:06:52.558",
+      "models": [
+        "DY-10422",
+        "DY-20425",
+        "DY-20465"
+      ]
+    },
+    {
+      "id": "e245f9d6-c866-4e93-b6f6-df9aeed2ad22",
+      "contractorCode": "vn0108602112",
+      "taxCode": "0108602112",
+      "contractorName": "CÔNG TY TNHH CTMED VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2500257382",
+      "lotName": "Hóa chất sử dụng cho máy Xét nghiệm sinh hóa tự động (BS-600)",
+      "bidPrice": 62561540,
+      "finalPrice": 62561540,
+      "winningPrice": 62561540,
+      "reason": "",
+      "submittedAt": "2025-07-15T14:06:52.558",
+      "models": [
+        "105-000888-00",
+        "105-000859-00",
+        "105-000860-00",
+        "105-000874-00",
+        "105-000853-00",
+        "105-000854-00",
+        "105-000856-00",
+        "105-000887-00",
+        "105-000863-00"
+      ]
+    },
+    {
+      "id": "c9861a6e-c800-4861-afb8-5febb36c40ab",
+      "contractorCode": "vn0102277113",
+      "taxCode": "0102277113",
+      "contractorName": "CÔNG TY CỔ PHẦN Y TẾ QUANG MINH",
+      "status": "won",
+      "lotNo": "PP2500257383",
+      "lotName": "Hóa chất sử dụng trên máy xét nghiệm tự động HbA1C",
+      "bidPrice": 273786000,
+      "finalPrice": 273786000,
+      "winningPrice": 273786000,
+      "reason": "",
+      "submittedAt": "2025-07-15T14:06:52.558",
+      "models": [
+        "71262",
+        "71263",
+        "107349"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "1987f349-c963-42ab-aa62-9323a5f96551",
+      "name": "Định lượng Glucose",
+      "model": "105-000888-00",
+      "brand": "Glucose Kit (GOD-POD Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Để xác định định lượng nồng độ Glu trong huyết thanh và huyết tương trên hệ thống đo quang trong chẩn đoán in vitro\r\nPhương pháp: Glucose oxidasePeroxidase (GOD-POD) method \r\nDải tuyến tính: 0.3-25 mmol/L\r\nThành phần gồm:\r\nHóa chất R1:\r\nPhosphate buffer 100 mmol/L\r\nAscorbate oxidase 4700 U/L\r\nGlucose oxidase 4000 U/L\r\nHóa chất R2:\r\nPhosphate buffer 100 mmol/L\r\nPeroxidase 6700 U/L\r\n4-Aminoantipyrine 0.7 mmol/L\r\np-Hydroxybenzoic acid sodium 1.3 mmol/L  \r\nQuy cách: R1:4*40 mL+R2: 2*20 mL",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 1092960,
+      "amount": 1092960,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "da6c4c1c-41fa-4a8f-a1b8-137119617467",
+      "name": "Định lượng Cholesterol toàn phần",
+      "model": "105-000859-00",
+      "brand": "Total Cholesterol Kit (CHOD-POD Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Để xác định định lượng nồng độ Total Cholesterol trong huyết thanh và huyết tương người trên hệ thống đo quang trong chẩn đoán in vitro.\r\nPhương pháp đo:CHOD-POD Method \r\nDải tuyến tính: 0.1 -20.0 mmol/L\r\nThành phần gồm:\r\n- Hóa chất R:\r\nPhosphate buffer 100 mmol/L\r\nPhenol 5 mmol/L\r\n4-Aminoantipyrine 0.3 mmol/L\r\nCholesterol esterase >150 KU/L\r\nCholesterol oxidase >100 KU/L\r\nPeroxidase 5 KU/L. \r\nQuy cách:  R:6*40 mL",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 2055080,
+      "amount": 2055080,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "c2f2c9b6-f68e-46a0-8b65-df5ae5364059",
+      "name": "Định lượng Triglycerid",
+      "model": "105-000860-00",
+      "brand": "Triglycerides Kit (GPO-POD Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Để xác định định lượng nồng độ TG trong huyết thanh và huyết tương người trên hệ thống đo quang trong chẩn đoán in vitro\r\nPhương pháp đo:GPO-POD Method \r\nDải tuyến tính: 0.1 -12.5 mmol/L\r\nThành phần gồm:\r\n- Hóa chất R:\r\nPhosphate buffer 50 mmol/L\r\n4-Chlorophenol 5 mmol/L\r\nATP 2 mmol/L\r\nMg2+: 4.5 mmol/L\r\nGlycerokinase ≥0.4 U/mL\r\nPeroxidase ≥0.5 U/mL\r\nLipoprotein lipase ≥1.3 U/mL\r\n4-Aminoantipyrine 0.25 mmol/L\r\nGlycerol-3-phosphate-oxidase ≥1.5 U/mL. . \r\nQuy cách:   R:6*40 mL",
+      "unit": "Hộp",
+      "quantity": 2,
+      "unitPrice": 4400960,
+      "amount": 8801920,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "9291958651151148",
+      "name": "Định lượng HDL –C (High density lipoprotein cholesterol)",
+      "model": "105-000874-00",
+      "brand": "HDL-Cholesterol Kit (Direct Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Để xác định định lượng nồng độ HDL- C trong huyết thanh trên hệ thống đo quang trong chẩn đoán in vitro.\r\nPhương pháp đo: Direct Method \r\nDải tuyến tính: 0.05-6.0 mmol/L\r\nThành phần gồm:\r\n- Hóa chất R1:\r\nGood’s buffer 100 mmol/L\r\nCholesterol esterase 600 U/L\r\nCholesterol oxidase 380 U/L\r\nCatalase 600 KU/L\r\nHDAOS 0.42 mmol/L\r\n- Hóa chất R2:Good’s buffer 100 mmol/L\r\n4-aminoantipyrine 1.0mmol/L\r\nPeroxidase >2.8 U/mL\r\nSurfactant ＜ 2%. . \r\nQuy cách: R1:4*40 mL+R2: 2*28 mL",
+      "unit": "Hộp",
+      "quantity": 3,
+      "unitPrice": 0,
+      "amount": 32847450,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "ee639b22-9c62-4691-9537-97599fd45f7f",
+      "name": "Đo hoạt độ ALT (GPT)",
+      "model": "105-000853-00",
+      "brand": "Alanine Aminotransferase (ALT) Kit (IFCC Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Để xác định định lượng hoạt tính Alanine Aminotransferase trong huyết thanh và huyết tương trên hệ thống đo quang trong chẩn đoán in vitro.\r\nPhương pháp đo: IFCC Method mà không có hoạt hóa pyridoxal phosphate \r\nDải tuyến tính: 4-1000 U/L\r\nThành phần gồm:\r\nHóa chất R1:\r\n- Tris-buffer: 150 mmol/L\r\n- L-Alanine: 750 mmol/L\r\n- LDH ≥1200 U/L\r\n- NADH: 0.4 mmol/L\r\nHóa chất R2:\r\n- α-Oxoglutarate: 90 mmol/L\r\n- NADH: 0.9 mmol/L . \r\nQuy cách: R1:6*40 mL+R2: 2*32 Ml",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 2414450,
+      "amount": 2414450,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "e7005022-128b-4948-bc13-adbf37bead30",
+      "name": "Đo hoạt độ AST (GOT)",
+      "model": "105-000854-00",
+      "brand": "Aspartate Aminotransferase (AST) Kit (IFCC Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Thuốc thử AST dùng để xác định định lượng hoạt độ AST trong huyết thanh hoặc huyết tương trên hệ thống đo quang trong chẩn đoán in vitro. \r\nPhương pháp đo: IFCC method mà không có hoạt hóa pyridoxal phosphate Dải tuyến tính: 4-800 U/L\r\nThành phần gồm:\r\nHóa chất R1:\r\n- Tris Buffer: 100 mmol/L\r\n- L-aspartate: 300 mmol/L\r\n- LDH ≥ 900 U/L\r\n- MDH ≥ 600 U/L\r\n- NADH: 0.4 mmol/L\r\nHóa chất R2:\r\n- α-oxoglutarate: 60 mmol/L\r\n- NADH: 0.9 mmol/L. . \r\nQuy cách:R1:6*40 mL+R2: 2*32 mL",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 2414450,
+      "amount": 2414450,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "fba57144-0f7c-4936-9d26-ec8618e6b756",
+      "name": "Đo hoạt độ GGT ( Gama Glutamyl Transferase)",
+      "model": "105-000856-00",
+      "brand": "Gamma-Glutamyltransferase (GGT) Kit (Szasz Method/ IFCC stand)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Thuốc thử GGT dùng để xác định định lượng Gamma-Glutamyltransferase hoạt động trong huyết thanh hoặc huyết tương người trên hệ thống trắc quang\r\nPhương pháp đo: Szasz Method/IFCC stand \r\nDải tuyến tính: 4-650 U/L (0.07－ 10.83 μkat/L\r\nThành phần gồm:\r\nHóa chất R1:\r\n-TRIS buffer 100 mmol/L\r\n- Glycyl-glycine 150 mmol/L\r\nHóa chất R 2:\r\n- L-γ-glutamyl-3- carboxy-4-nitroanilide 20 mmol/L  \r\nQuy cách: R1:6*40 mL+R2: 2*32 mL",
+      "unit": "Hộp",
+      "quantity": 2,
+      "unitPrice": 3239790,
+      "amount": 6479580,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "5b6f9d07-6880-40cb-8277-ce7c8e9686fb",
+      "name": "Định lượng Acid Uric",
+      "model": "105-000887-00",
+      "brand": "Uric Acid Kit (Uricase-Peroxidase Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Để xác định định lượng nồng độ uric acid trong huyết thanh, huyết tương hoặc nước tiểu người trên hệ thống đo quang trong chẩn đoán in vitro\r\nPhương pháp đo: Uricase-Peroxidase Method Dải tuyến tính: 20.8- 1500 μmol/L\r\nThành phần gồm:\r\n- Hóa chất R1:\r\nPhosphate buffer 70 mmol/L\r\nPeroxidase 5000 U/L\r\nAscorbate oxidase 3000 U/L\r\nTOOS 0.72 mmol/L\r\nHóa chất R2: \r\nPhosphate buffer 70 mmol/L\r\nPeroxidase 10000 U/L\r\n4-Aminoantipyrine 1.7 mmol/L\r\nUricase 750 U/L  \r\nQuy cách: R1:6*40 mL+R2: 2*32 mL",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 3946800,
+      "amount": 3946800,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "43dc5fe5-34c3-4e63-af10-b053d4e69e3e",
+      "name": "Định lượng Ure",
+      "model": "105-000863-00",
+      "brand": "Urea kit (Urease-GLDH, UV Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Để xác định định lượng nồng độ Urea trong huyết thanh, huyết tương và nước tiểu người trên hệ thống đo quang trong chẩn đoán in vitro\r\nPhương pháp đo:Urease-GLDH, UV Method \r\nDải tuyến tính:0.9-40.0 mmol/L\r\nThành phần gồm:\r\n- Hóa chất R1:\r\nTris buffer 120 mmol/L\r\nADP 750 mmol/L\r\nUrease ≥40 KU/L\r\nGLDH ≥0.4 KU/L\r\n- Hóa chất R2:\r\nNADH 1.2 mmol/L\r\nα-Oxoglutarate 25 mmol/L. \r\nQuy cách:  R1:6*40 mL+R2: 2*32 mL",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 2508850,
+      "amount": 2508850,
+      "contractorCode": "vn0108602112",
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "c644c4ab-fa79-46e2-a3ab-a6770a150707",
+      "name": "Dung dịch pha loãng hồng cầu, bạch cầu",
+      "model": "DY-10422",
+      "brand": "NormaDil/ Sheath CD 3.2",
+      "manufacturer": "Norma Instruments Zrt- Hungary",
+      "origin": "Hungary",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "- Đóng gói: Thùng 20 lít\r\n- Bảo quản: 2- 35°C.\r\n- Hạn dùng (chưa mở nắp): 48 tháng kể từ ngày sản xuất\r\n- Sử dụng trong vòng 180 ngày sau khi mở hộp.\r\n-Dung dịch pha loãng hồng cầu, bạch cầu sử dụng máy huyết học 5 thành phần bạch cầu; ≥ 28 thông số chính.\r\nDung dịch điện giải đệm, ổn định và vi lọc để pha loãng máu dùng để đo hồng cầu, bạch cầu (WBC), tiểu cầu (PLT), Nồng độ hemoglobin (HGB)\r\nThành phần:\r\nSodium chloride  < 1.0 %\r\nBuffers< 1.0 %\r\nStabilizers < 0.5 %\r\nPreservatives  < 0.5 %\r\nin ion-free water\r\nĐạt các tiêu chuẩn ISO, CE",
+      "unit": "Thùng",
+      "quantity": 11,
+      "unitPrice": 2500050,
+      "amount": 27500550,
+      "contractorCode": "vn0309068162",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ THÀNH PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "35905c8e-fe73-43a9-b089-c233e63cbe61",
+      "name": "Dung dịch dịch ly giải bạch cầu",
+      "model": "DY-20425",
+      "brand": "NormaLyse CD 3.2",
+      "manufacturer": "Norma Instruments Zrt- Hungary",
+      "origin": "Hungary",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "- Đóng gói: Thùng 5 lít\r\n- Bảo quản: 2- 35°C.\r\n- Hạn dùng (chưa mở nắp): 36 tháng kể từ ngày sản xuất\r\n- Sử dụng trong vòng 180 ngày sau khi mở hộp.\r\n-Dung dịch dịch ly giải bạch cầu sử dụng cho máy huyết học 5 thành phần bạch cầu; ≥ 28 thông số chính.\r\n- Là chất ly giải ổn định và được lọc vi mô để phân giải mô tế bào hồng cầu (RBC), để xác định định lượng bạch cầu (WBC) và đo sự biệt hóa 5 phần bạch cầu (LYM, MONO, NEU, EO, BA) trong máu người.  \r\n'Detergents  < 2.2 %\r\nBuffers < 0.8 %\r\nStabilizers . < 0.4 %\r\nPreservatives  < 0.4 %\r\nin ion-free water\r\nĐạt các tiêu chuẩn ISO, CE",
+      "unit": "Thùng",
+      "quantity": 5,
+      "unitPrice": 5000100,
+      "amount": 25000500,
+      "contractorCode": "vn0309068162",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ THÀNH PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "2aeeff8c-ab1c-4602-a5f8-9e3eeae7dc60",
+      "name": "Dung dịch phân tích (phá vỡ) hồng cầu",
+      "model": "DY-20465",
+      "brand": "NormaGlobin CD 3.2",
+      "manufacturer": "Norma Instruments Zrt- Hungary",
+      "origin": "Hungary",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "-Đóng gói: Thùng 5 lít\r\n- Bảo quản: 2- 35°C.\r\n- Hạn dùng (chưa mở nắp): 60 tháng kể từ ngày sản xuất\r\n- Sử dụng trong vòng 180 ngày sau khi mở hộp.\r\n-Dung dịch phân tích ( phá vỡ) hồng cầu. Dung dịch ly giải và phân tích tích hemoglobin sử dụng cho máy huyết học 5 thành phần bạch cầu; ≥ 28 thông số chính.\r\n- Là chất ly giải ổn định và được lọc vi mô để phân hủy tế bào hồng cầu (RBC), để xác định định lượng bạch cầu(WBC), biệt hóa 3 phần bạch cầu (LYM, MID, GRAN) và đo nồng độ hemoglobin(HGB) đo trong máu người\r\nThành phần:\r\nSurfactants < 4.5 %\r\nBuffers < 1.0 %\r\nStabilizers  < 0.4 %\r\nPreservatives < 0.4 %\r\nin ion-free water\r\nĐạt các tiêu chuẩn ISO, CE",
+      "unit": "Thùng",
+      "quantity": 1,
+      "unitPrice": 7350000,
+      "amount": 7350000,
+      "contractorCode": "vn0309068162",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ THÀNH PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "aecfa987-55eb-461e-af8d-e675e39678b5",
+      "name": "Dung dịch rửa đẩy hemogolobin A",
+      "model": "71262",
+      "brand": "ELUENT 80A",
+      "manufacturer": "ARKRAY Factory, Inc.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Theo Bảng đáp ứng về kỹ thuật của hàng hóa chào thầu trong E-HSDT",
+      "unit": "Hộp",
+      "quantity": 7,
+      "unitPrice": 12298000,
+      "amount": 86086000,
+      "contractorCode": "vn0102277113",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN Y TẾ QUANG MINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "2b3c623e-e98c-46ad-8d52-8ef9fe4960bd",
+      "name": "Dung dịch rửa đẩy hemogolobin B",
+      "model": "71263",
+      "brand": "ELUENT 80B",
+      "manufacturer": "ARKRAY Factory, Inc.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Theo Bảng đáp ứng về kỹ thuật của hàng hóa chào thầu trong E-HSDT",
+      "unit": "Hộp",
+      "quantity": 4,
+      "unitPrice": 5300000,
+      "amount": 21200000,
+      "contractorCode": "vn0102277113",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN Y TẾ QUANG MINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "2e6fe05d-358c-4f17-b935-886715c74c9c",
+      "name": "Dung dịch ly giải hồng cầu và rửa máy",
+      "model": "107349",
+      "brand": "HEMOLYSIS WASHING SOLUTION 80H",
+      "manufacturer": "ARKRAY Factory, Inc.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Theo Bảng đáp ứng về kỹ thuật của hàng hóa chào thầu trong E-HSDT",
+      "unit": "Hộp",
+      "quantity": 9,
+      "unitPrice": 18500000,
+      "amount": 166500000,
+      "contractorCode": "vn0102277113",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN Y TẾ QUANG MINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "4066ea34-2068-403b-abb4-fee816f508b1",
+      "name": "Test HCV ( Test nhanh)",
+      "model": "STANDARD™ Q HCV Ab Test",
+      "brand": "SD Biosensor,\r\nInc.",
+      "manufacturer": "SD Biosensor,Inc.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2024-2025",
+      "specification": "Độ nhạy 100%, Độ đặc hiệu ≥ 99,4%\r\nThời gian đọc kết quả: 5 – 20 phút\r\nDạng bào chế: Khay nhựa có giếng nhỏ mẫu, túi nhôm,  mỗi thanh thử được đóng gói riêng trong từng túi nhôm\r\nĐược WHO qualifile",
+      "unit": "Test",
+      "quantity": 4200,
+      "unitPrice": 19400,
+      "amount": 81480000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "a4b3cb3f-4a4d-4a82-a7d1-5b9b1dbe959a",
+      "name": "Test HbsAg ( Test nhanh)",
+      "model": "IHBSG-301",
+      "brand": "Trueline",
+      "manufacturer": "Công ty TNHH Medicon",
+      "origin": "Việt Nam",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Que thử xét nghiệm định tính kháng nguyên HBsAg (dạng que) trong huyết thanh và huyết tương người, dạng que nhúng, đóng gói riêng từng que, bề rộng 5mm.",
+      "unit": "Test",
+      "quantity": 4200,
+      "unitPrice": 5500,
+      "amount": 23100000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "70853c0e-647e-4c5c-bfbe-bb9865b7f9d0",
+      "name": "Test HbeAg ( Test nhanh)",
+      "model": "Diagnostic Kit for Hepatitis B e Antigen (Colloidal gold)",
+      "brand": "InTec PRODUCTS, INC.",
+      "manufacturer": "InTec PRODUCTS, INC.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024-2025",
+      "specification": "Phát hiện định tính HBeAg trong mẫu huyết thanh huyết tương người.\r\n Độ nhạy: ≥95,5%  Độ đặc hiệu: ≥ 98,6% .\r\nĐọc kết quả: ≤ 20 phút\r\nKhông có phản ứng chéo với các mẫu chứa yếu tố dạng thấp, chứa kháng thể kháng HCV, HIV và phụ nữ mang thai",
+      "unit": "Test",
+      "quantity": 3500,
+      "unitPrice": 8900,
+      "amount": 31150000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "36422da0-e768-407f-8b38-e772e518ee30",
+      "name": "Test H.pylori ( Test nhanh)",
+      "model": "H. pylori Antibodies Rapid Test",
+      "brand": "Fastep Rapid Diagnostic Test",
+      "manufacturer": "sure Tech. (Hangzhou) Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024-2025",
+      "specification": "Phát hiện định tính các kháng thể đặc hiệu với H.pylori trong huyết thanh, huyết tương hoặc máu toàn phần của người.",
+      "unit": "Test",
+      "quantity": 4200,
+      "unitPrice": 13000,
+      "amount": 54600000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    },
+    {
+      "id": "19eaec26-e6c4-445e-9d65-faa1c9dd62eb",
+      "name": "Định lượng HDL –C (High density lipoprotein  cholesterol)",
+      "model": "105-000874-00",
+      "brand": "HDL-Cholesterol Kit (Direct Method)",
+      "manufacturer": "Shenzhen Mindray Bio- Medical Electronics Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Để xác định định lượng nồng độ HDL- C trong huyết thanh trên hệ thống đo quang trong chẩn đoán in vitro.\r\nPhương pháp đo: Direct Method \r\nDải tuyến tính: 0.05-6.0 mmol/L\r\nThành phần gồm:\r\n- Hóa chất R1:\r\nGood’s buffer 100 mmol/L\r\nCholesterol esterase 600 U/L\r\nCholesterol oxidase 380 U/L\r\nCatalase 600 KU/L\r\nHDAOS 0.42 mmol/L\r\n- Hóa chất R2:Good’s buffer 100 mmol/L\r\n4-aminoantipyrine 1.0mmol/L\r\nPeroxidase >2.8 U/mL\r\nSurfactant ＜ 2%. . \r\nQuy cách: R1:4*40 mL+R2: 2*28 mL",
+      "unit": "Hộp",
+      "quantity": 3,
+      "unitPrice": 10949150,
+      "winnerNames": [
+        "CÔNG TY TNHH CTMED VIỆT NAM"
+      ],
+      "decisionNo": "180/QĐ-BVGL",
+      "decisionDate": "2025-07-15T23:59:59",
+      "resultPublishedDate": "2025-07-15T14:07:47"
+    }
+  ],
   "requirements": {
     "total": 6,
     "items": [
@@ -79,12 +601,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500277808",
-    "notifyId": "582e0460-6dde-4a32-af84-83fa6f1b45a7",
-    "bidId": "9ebd4339-79e1-424a-8805-98ea6c6c8e1f",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:22.224Z"
+  "fetchedAt": "2026-10-04T20:23:30.465Z"
 }

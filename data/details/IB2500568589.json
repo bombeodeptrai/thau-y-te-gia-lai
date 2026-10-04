@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "cff0ba75-ebb5-48ff-8e83-99bd80b108fc",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "lost",
+      "lotNo": "PP2500585000",
+      "lotName": "Lamivudin-Tenofovir disoproxil fumarat-Dolutegravir",
+      "bidPrice": 1921975200,
+      "finalPrice": 1921975200,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2",
+      "submittedAt": "2026-02-02T16:59:19.154",
+      "models": []
+    },
+    {
+      "id": "c432e111-7afb-4222-866a-510ceedc41e3",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2500585000",
+      "lotName": "Lamivudin-Tenofovir disoproxil fumarat-Dolutegravir",
+      "bidPrice": 1809859980,
+      "finalPrice": 1809859980,
+      "winningPrice": 1809859980,
+      "reason": "",
+      "submittedAt": "2026-02-02T16:59:19.154",
+      "models": [
+        "TELDY",
+        "Ritocom"
+      ]
+    },
+    {
+      "id": "256ffcf0-69fe-46f3-a06d-edb3ebd0667f",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "lost",
+      "lotNo": "PP2500585001",
+      "lotName": "Lopinavir-Ritonavir",
+      "bidPrice": 947281200,
+      "finalPrice": 947281200,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 3",
+      "submittedAt": "2026-02-02T16:59:19.154",
+      "models": []
+    },
+    {
+      "id": "4ccba246-b47f-431a-84e7-9383098f8339",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "lost",
+      "lotNo": "PP2500585001",
+      "lotName": "Lopinavir-Ritonavir",
+      "bidPrice": 536190000,
+      "finalPrice": 536190000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2",
+      "submittedAt": "2026-02-02T16:59:19.154",
+      "models": []
+    },
+    {
+      "id": "b4aa6d83-06a8-4506-a8f3-fb8e1f30901f",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2500585001",
+      "lotName": "Lopinavir-Ritonavir",
+      "bidPrice": 523380000,
+      "finalPrice": 523380000,
+      "winningPrice": 523380000,
+      "reason": "",
+      "submittedAt": "2026-02-02T16:59:19.154",
+      "models": [
+        "TELDY",
+        "Ritocom"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2500585000",
+      "name": "TELDY",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 533882,
+      "unitPrice": 3390,
+      "amount": 1809859980,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2500585000",
+      "decisionNo": "53/QĐ-BV",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T11:04:04"
+    },
+    {
+      "id": "2500585001",
+      "name": "Ritocom",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 73200,
+      "unitPrice": 7150,
+      "amount": 523380000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2500585001",
+      "decisionNo": "53/QĐ-BV",
+      "decisionDate": "2026-01-20T23:59:59",
+      "resultPublishedDate": "2026-01-20T11:04:04"
+    }
+  ],
+  "requirements": {
+    "total": 4,
+    "items": [
+      {
+        "id": "90c15cb6-071d-4e7c-9381-11ebc49fc4d8",
+        "lotNo": "PP2500584999",
+        "name": "Lamivudin",
+        "quantity": 13500,
+        "unit": "Viên",
+        "plannedPrice": 12825000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "619ea241-5afb-42d6-aac4-f6499fb6cbfe",
+        "lotNo": "PP2500585000",
+        "name": "Lamivudin-Tenofovir disoproxil fumarat-Dolutegravir",
+        "quantity": 533882,
+        "unit": "Viên",
+        "plannedPrice": 2106164490,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "111c21e5-c0e9-42ab-9455-43eee933929c",
+        "lotNo": "PP2500585001",
+        "name": "Lopinavir-Ritonavir",
+        "quantity": 73200,
+        "unit": "Viên",
+        "plannedPrice": 947281200,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "0a8f2cf2-2e34-4c1e-9064-9b7a46deb0ed",
+        "lotNo": "PP2500585002",
+        "name": "Tenofovir disoproxil fumarat",
+        "quantity": 5170,
+        "unit": "Viên",
+        "plannedPrice": 7212150,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Cung cấp thuốc ARV sử dụng năm 2026-2027 tại Bệnh viện đa khoa Quảng Nam",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:18:33.704Z"
+}

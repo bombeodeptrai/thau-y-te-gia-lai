@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "0355b316-4745-4ca7-938e-28a0fb0a92a3",
+      "contractorCode": "vn0100274124",
+      "taxCode": "0100274124",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM ĐÔNG Á",
+      "status": "lost",
+      "lotNo": "BP2500543084",
+      "lotName": "Mua màng đóng túi thuốc sắc",
+      "bidPrice": 130000000,
+      "finalPrice": 130000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2025-09-18T09:56:14.682",
+      "models": []
+    },
+    {
+      "id": "343dbadb-7aaf-4540-870c-6482e18e1db3",
+      "contractorCode": "vn0110983803",
+      "taxCode": "0110983803",
+      "contractorName": "CÔNG TY TNHH TBYT VIỆT NAM CBN",
+      "status": "won",
+      "lotNo": "BP2500543084",
+      "lotName": "Mua màng đóng túi thuốc sắc",
+      "bidPrice": 120000000,
+      "finalPrice": 120000000,
+      "winningPrice": 120000000,
+      "reason": "",
+      "submittedAt": "2025-09-18T09:56:14.682",
+      "models": [
+        "Màng sắc thuốc"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "6c104d73-25ea-46ab-81d8-31c3f1bc3387",
+      "name": "Màng đóng túi thuốc sắc",
+      "model": "Màng sắc thuốc",
+      "brand": ".-",
+      "manufacturer": "Đỗ Minh-Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Chất liệu PA/PE/PET/… dai bền, chịu nhiệt, đảm bảo an toàn, vệ sinh;\r\nChiều rộng: 10cm có lõi;\r\nThiết kế in màu theo nhu cầu của bệnh viện",
+      "unit": "Cuộn",
+      "quantity": 200,
+      "unitPrice": 600000,
+      "amount": 120000000,
+      "contractorCode": "vn0110983803",
+      "winnerNames": [
+        "CÔNG TY TNHH TBYT VIỆT NAM CBN"
+      ],
+      "lotNo": "",
+      "decisionNo": "0153/QĐ-BVYHCT",
+      "decisionDate": "2025-09-18T09:48:40",
+      "resultPublishedDate": "2025-09-18T09:57:07"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "e7df3c23-07a2-4f20-aa69-8e8b815968a5",
+        "lotNo": "BP2500543084",
+        "name": "Mua màng đóng túi thuốc sắc",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 157712400,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua màng đóng túi thuốc sắc",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "9380868931193930",
+        "position": "1",
+        "lotNo": "",
+        "lotName": "",
+        "name": "Màng đóng túi thuốc sắc",
+        "unit": "Cuộn",
+        "quantity": 200,
+        "code": "0",
+        "brand": "0",
+        "manufacturer": "0",
+        "origin": "Việt Nam",
+        "manufactureYear": "2024-2025",
+        "specification": "Chất liệu PA/PE/PET/… dai bền, chịu nhiệt, đảm bảo an toàn, vệ sinh;Chiều rộng: 10cm có lõi;Thiết kế in màu theo nhu cầu của bệnh viện",
+        "otherRequirement": "Sau khi có kết quả chào giá, nếu nhà thầu xếp hạng số 1 và được đề nghị trúng thầu, nhà thầu phải cung cấp thêm Giấy kiểm nghiệm chất lượng sản phẩm.",
+        "projectPlace": "Bệnh viện Y học cổ truyền Tỉnh Đắk Lắk",
+        "earliestDeliveryDate": "",
+        "latestDeliveryDate": "",
+        "formCode": "BD.DT.02.1958",
+        "chapterName": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "sourceStage": "invitation-technical"
+      }
+    ],
+    "chapters": [
+      {
+        "code": "BD.DT.02.1958",
+        "name": "Mẫu số 02B. PHẠM VI CUNG CẤP HÀNG HÓA (áp dụng đối với loại hợp đồng theo đơn giá)",
+        "parentCode": "",
+        "orderIndex": 1
+      }
+    ],
+    "files": [],
+    "disclosure": "public-structured-hsmt"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:23:32.694Z"
+}

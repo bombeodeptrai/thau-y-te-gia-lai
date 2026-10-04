@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "b807ef39-47f3-433b-8ef9-d10d44f0daf9",
+      "contractorCode": "vn0316277551",
+      "taxCode": "0316277551",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM KHƯƠNG PHÚC AN",
+      "status": "won",
+      "lotNo": "PP2500586710",
+      "lotName": "Bạch mao căn, Đương quy, Kim tiền thảo, Xa tiền tử, Ý dĩ, Sinh địa.",
+      "bidPrice": 285600000,
+      "finalPrice": 285600000,
+      "winningPrice": 285600000,
+      "reason": "",
+      "submittedAt": "2026-05-04T15:32:46.385",
+      "models": [
+        "Bài thạch Trường Phúc"
+      ]
+    },
+    {
+      "id": "8db97858-b896-492c-bccc-d71fb9835cad",
+      "contractorCode": "vn6001580837",
+      "taxCode": "6001580837",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC AVISPHARM BMT",
+      "status": "lost",
+      "lotNo": "PP2500586711",
+      "lotName": "Đương quy, Đỗ trọng, Cẩu tích, Đan sâm, Liên nhục, Tục đoạn, Thiên ma, Cốt toái bổ, Độc hoạt, Sinh địa, Uy linh tiên, Thông thảo, Khương hoạt, Hà thủ ô đỏ.",
+      "bidPrice": 900000000,
+      "finalPrice": 900000000,
+      "winningPrice": 0,
+      "reason": "SĐK TCT-00352-26 chưa được kê khai đầy đủ thông tin về số giấy đăng ký lưu hành (GĐKLH), về giá kê khai do Cục Quản lý Dược hoặc Cục Quản lý Y, Dược cổ truyền cấp, hồ sơ cung cấp chưa chưa chứng minh được cơ sở pháp lý cao hơn vì vậy thuốc không đảm bảo điều kiện trúng thầu tại thời điểm hiện tại",
+      "submittedAt": "2026-05-04T15:32:46.385",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2500586710",
+      "name": "Bài thạch Trường Phúc",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 140000,
+      "unitPrice": 2040,
+      "amount": 285600000,
+      "contractorCode": "vn0316277551",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM KHƯƠNG PHÚC AN"
+      ],
+      "lotNo": "PP2500586710",
+      "decisionNo": "0125/QĐ-TTYT",
+      "decisionDate": "2026-05-04T23:59:59",
+      "resultPublishedDate": "2026-05-04T15:33:11"
+    }
+  ],
+  "requirements": {
+    "total": 2,
+    "items": [
+      {
+        "id": "f6145fa2-4d16-4452-9982-67b5274fa9d3",
+        "lotNo": "PP2500586710",
+        "name": "Bạch mao căn, Đương quy, Kim tiền thảo, Xa tiền tử, Ý dĩ, Sinh địa.",
+        "quantity": 140000,
+        "unit": "Viên",
+        "plannedPrice": 285600000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "9f75df94-4ba1-4a56-8355-904477f0b5ee",
+        "lotNo": "PP2500586711",
+        "name": "Đương quy, Đỗ trọng, Cẩu tích, Đan sâm, Liên nhục, Tục đoạn, Thiên ma, Cốt toái bổ, Độc hoạt, Sinh địa, Uy linh tiên, Thông thảo, Khương hoạt, Hà thủ ô đỏ.",
+        "quantity": 200000,
+        "unit": "Viên",
+        "plannedPrice": 900000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua thuốc phục vụ công tác khám, chữa bệnh",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:23:14.560Z"
+}

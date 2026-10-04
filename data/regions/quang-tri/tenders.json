@@ -263,7 +263,7 @@
       "publicDate": "2026-09-30T11:15:24.487",
       "price": 1968050000,
       "category": "Thiết bị y tế",
-      "status": "open",
+      "status": "urgent",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": null,
@@ -303,7 +303,7 @@
       "publicDate": "2026-09-30T10:21:23.432",
       "price": 1988300000,
       "category": "Vật tư & hóa chất",
-      "status": "open",
+      "status": "urgent",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": null,
@@ -343,7 +343,7 @@
       "publicDate": "2026-09-29T14:32:58.857",
       "price": 1287889650,
       "category": "Thiết bị y tế",
-      "status": "open",
+      "status": "urgent",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": null,
@@ -423,7 +423,7 @@
       "publicDate": "2026-09-28T11:01:11.371",
       "price": 211300000,
       "category": "Thiết bị y tế",
-      "status": "open",
+      "status": "urgent",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": null,
@@ -473,7 +473,11 @@
       "decisionDate": "",
       "resultPublishedDate": "",
       "hasResult": false,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY TNHH TM VÀ DV LONG CHÂU",
+        "CÔNG TY TNHH THIẾT BỊ VẬT TƯ HOÀNG BẢO"
+      ],
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [],
@@ -804,7 +808,10 @@
       ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "ALK809-46",
+        "ALK601GC-46"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -1318,7 +1325,13 @@
       ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "IC-41735",
+        "IC-81731",
+        "IC-21731",
+        "NIC-032KN",
+        "IC-11735"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -1586,7 +1599,6 @@
         }
       ],
       "winningModels": [
-        "SD-S",
         "264037",
         "CHI_22MLOTH3P5L1",
         "264235",
@@ -1594,20 +1606,7 @@
         ".",
         " ECG-0001",
         "GSA-3006",
-        "GT30A26",
-        "BC17",
-        "Germisep®",
-        "GPTGLOVES",
-        "GPTVT7",
-        "GPTVT31",
-        "11#",
-        "Nichipore 2,5cmx6m",
-        "GM-003-001;Suction catheter",
-        "Có bóng",
-        "SM5",
-        "18-110..114",
-        "08-189..192",
-        "200600;Guedel Airway",
+        "SD-S",
         "BT10.VHK",
         "BT5.VHK",
         "M2",
@@ -1618,10 +1617,7 @@
         "BHN1",
         "I-Med",
         "KT06",
-        "BT1.VHK"
-      ],
-      "losingModels": [
-        "SD-S",
+        "BT1.VHK",
         "GT30A26",
         "BC17",
         "Germisep®",
@@ -1635,7 +1631,10 @@
         "SM5",
         "18-110..114",
         "08-189..192",
-        "200600;Guedel Airway",
+        "200600;Guedel Airway"
+      ],
+      "losingModels": [
+        "SD-S",
         "BT10.VHK",
         "BT5.VHK",
         "M2",
@@ -1648,6 +1647,20 @@
         "I-Med",
         "KT06",
         "BT1.VHK",
+        "GT30A26",
+        "BC17",
+        "Germisep®",
+        "GPTGLOVES",
+        "GPTVT7",
+        "GPTVT31",
+        "11#",
+        "Nichipore 2,5cmx6m",
+        "GM-003-001;Suction catheter",
+        "Có bóng",
+        "SM5",
+        "18-110..114",
+        "08-189..192",
+        "200600;Guedel Airway",
         "264037",
         "CHI_22MLOTH3P5L1",
         "264235",
@@ -1914,7 +1927,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 1,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=a70b3cb5-24c3-42a0-89a1-f5683c10c0fb&notifyId=a70b3cb5-24c3-42a0-89a1-f5683c10c0fb&inputResultId=381c5e5f-5259-4bc0-a60e-0c7ad23a60e6&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600482407&planNo=PL2600272509&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM THÀNH LONG"
@@ -1923,10 +1936,23 @@
       "decisionDate": "2026-09-28T10:10:54",
       "resultPublishedDate": "2026-09-28T16:45:13",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM THÀNH LONG"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "F00012106",
+        "F00011948",
+        "F00011877",
+        "F00011873",
+        "F00001212",
+        "F40018668",
+        "SOI_05",
+        "26.ZOLITE",
+        "26.HATJACOBI",
+        "26.THANJACOBI"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -27601,24 +27627,42 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 5,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=19e5a3f1-b7df-4469-b1e4-b797ba12d170&notifyId=19e5a3f1-b7df-4469-b1e4-b797ba12d170&inputResultId=fe19fdbd-0471-4df8-acdd-539dae5193da&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500530613&planNo=PL2500302021&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY TNHH THƯƠNG MẠI DƯỢC THUẬN GIA",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM SÔNG NHUỆ",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC ",
         "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
-        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)"
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC"
       ],
       "winningPrice": 264147000,
       "decisionDate": "2025-12-08T10:04:57",
       "resultPublishedDate": "2025-12-08T10:09:36",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC THUẬN GIA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM SÔNG NHUỆ",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        }
+      ],
+      "winningModels": [
+        "."
+      ],
+      "losingModels": [
+        "."
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -27860,7 +27904,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 6,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=9b7d1ad2-2bb0-443c-a1cc-a644a12f0256&notifyId=9b7d1ad2-2bb0-443c-a1cc-a644a12f0256&inputResultId=073431a1-b564-44f0-94c7-9ab2ba240dc4&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500529636&planNo=PL2500296681&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
@@ -27874,10 +27918,27 @@
       "decisionDate": "2025-12-01T10:27:42",
       "resultPublishedDate": "2025-12-01T10:29:19",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+        "CÔNG TY TNHH DP-TBYT BẢO MINH",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NHA KHOA HOÀN CẦU"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "VN-17438-13",
+        "893110448424 (VD-32552-19)",
+        "400110022023",
+        "300110796724 (VN-16049-12)",
+        "400114074223 (VN-20612-17)",
+        "893110688824",
+        "893110688924",
+        "599110417523 (VN-9211-09)",
+        "893410250823 (QLSP-1037-17)"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -28049,17 +28110,284 @@
         "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
         "CÔNG TY TNHH DP-TBYT BẢO MINH",
         "CÔNG TY TNHH DƯỢC PHẨM PHƯƠNG BÌNH AN",
-        "CÔNG TY CỔ PHẦN DƯỢC VACOPHARM"
+        "CÔNG TY CỔ PHẦN DƯỢC VACOPHARM",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TV.PHARM",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HOÀNG ĐỨC"
       ],
       "winningPrice": 5100258552,
       "decisionDate": "2026-02-12T23:59:59",
       "resultPublishedDate": "2026-02-12T15:46:23",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH BÌNH VIỆT ĐỨC",
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIỆT HÀ",
+        "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY CỔ PHẦN 5A FARMA",
+        "CÔNG TY TNHH DP-TBYT BẢO MINH",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ ĐẦU TƯ THĂNG LONG SÀI GÒN",
+        "CÔNG TY TNHH DƯỢC VÀ VẬT TƯ Y TẾ KIÊN ĐAN",
+        "CÔNG TY CỔ PHẦN GONSA",
+        "CÔNG TY CP DƯỢC PHẨM IMEXPHARM",
+        "CÔNG TY TNHH AN TÂM PHARMA",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HD",
+        "CÔNG TY TNHH DƯỢC PHẨM PHƯƠNG BÌNH AN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM RELIV",
+        "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TV.PHARM",
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+        "CÔNG TY TNHH DƯỢC PHẨM VNP",
+        "CÔNG TY CỔ PHẦN DƯỢC VACOPHARM",
+        "CÔNG TY TNHH TM DP-TBYT SAVA GLOBAL",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DỊCH VỤ DƯỢC PHẨM MINH LONG",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ THUẬN PHÁT",
+        "CÔNG TY TNHH DƯỢC PHẨM STABLED",
+        "CÔNG TY TNHH DƯỢC PHẨM ANH NGUYÊN ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+        "Công ty TNHH Dược phẩm HQ",
+        "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HOÀNG ĐỨC"
+      ],
+      "loserNames": [
+        "CÔNG TY TNHH BÌNH VIỆT ĐỨC",
+        "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIỆT HÀ",
+        "CÔNG TY TNHH DƯỢC VÀ VẬT TƯ Y TẾ KIÊN ĐAN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM RELIV",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TV.PHARM",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DỊCH VỤ DƯỢC PHẨM MINH LONG",
+        "CÔNG TY TNHH DP-TBYT BẢO MINH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+        "Công ty TNHH Dược phẩm HQ",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH BÌNH VIỆT ĐỨC",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIỆT HÀ",
+          "reason": "Vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC VÀ VẬT TƯ Y TẾ KIÊN ĐAN",
+          "reason": "Vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM RELIV",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+          "reason": "Không đáp ứng yêu cầu kĩ thuật"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TV.PHARM",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DỊCH VỤ DƯỢC PHẨM MINH LONG",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DP-TBYT BẢO MINH",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+          "reason": "Vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "Công ty TNHH Dược phẩm HQ",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+          "reason": "Giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        }
+      ],
+      "winningModels": [
+        "Natriclorid 0,9%",
+        "Mannitol",
+        "Cerebrolysin",
+        "AMIDOROL",
+        "Nanokine 2000 IU",
+        "Lambertu",
+        "Vinphylin",
+        "Atimecox 15 inj",
+        "Imedoxim 200",
+        "Dexamoxi",
+        "Forug Plus",
+        "Wosulin 30/70",
+        "Kydheamo-2B",
+        "Myspa",
+        "Meseca Advanced",
+        "Tidinject",
+        "Hydrocortison 100 mg",
+        "Alanboss XL 10",
+        "Metformin XR 500",
+        "Milepsy 200",
+        "SaViFibrat 200M",
+        "Glumidtab 600",
+        "Human Albumin 20% Behring, low salt",
+        "Huyết thanh kháng độc tố uốn ván tinh chế (SAT)",
+        "Vinstigmin",
+        "Vinphatoxin",
+        "Omeprazol",
+        "Moxsanti",
+        "Tearbalance Ophthalmic solution 0.1%",
+        "TV-Zidim 1g",
+        "Sorbitol",
+        "Bexita 50/500",
+        "Maxitrol",
+        "Bifudin H",
+        "Silygamma",
+        "Qbisalic",
+        "Fresofol 1% Mct/Lct",
+        "Phenylephrine Aguettant 50 Microgrammes/ml",
+        "Glucose 20% 250ml",
+        "Dubemin injection",
+        "Atropin sulfat",
+        "Micezym 100",
+        "Basaglar",
+        "Lidocain",
+        "Vaxcel Heparin Sodium Injection 5000 IU/ml",
+        "Clingel",
+        "Vinocam",
+        "Simvastatin Savi 40",
+        "Chamcromus 0,03%",
+        "Imidu 60 MG",
+        "Milurit",
+        "Terbinafin 1%",
+        "Prednisolon 5 mg",
+        "Zinkast",
+        "Kydheamo-3A",
+        "Betamethason",
+        "Vinpamol",
+        "Kama-BFS",
+        "Cetirizine STELLA 10 mg",
+        "Lidocain- BFS 200mg",
+        "Ultravist 300",
+        "Aricamun",
+        "Traflon-500",
+        "A.T Ibuprofen syrup",
+        "Beynit 5",
+        "Acyclovir 3%",
+        "Oxytocin injection BP 10 Units",
+        "Oresol",
+        "DH-Metglu XR 1000",
+        "Quantopic 0.1%",
+        "A.T Mometasone furoate 0,1%",
+        "Barole 20",
+        "Albutol",
+        "Brometic 2mg/10ml",
+        "Vinsolon",
+        "Nikoramyl 10",
+        "Nước cất pha tiêm 10ml",
+        "Arges",
+        "Terpin-Codein 15",
+        "Dimedrol",
+        "Buscopan"
+      ],
+      "losingModels": [
+        "Forug Plus",
+        "Tidinject",
+        "Vaxcel Heparin Sodium Injection 5000 IU/ml",
+        "Zinkast",
+        "Milurit",
+        "Myspa",
+        "Sorbitol",
+        "Betamethason",
+        "Oresol",
+        "Alanboss XL 10",
+        "Milepsy 200",
+        "Micezym 100",
+        "Imidu 60 MG",
+        "DH-Metglu XR 1000",
+        "Kydheamo-2B",
+        "Bifudin H",
+        "Kydheamo-3A",
+        "Nước cất pha tiêm 10ml",
+        "Natriclorid 0,9%",
+        "Mannitol",
+        "Qbisalic",
+        "Glucose 20% 250ml",
+        "Terbinafin 1%",
+        "Acyclovir 3%",
+        "Quantopic 0.1%",
+        "Metformin XR 500",
+        "Omeprazol",
+        "TV-Zidim 1g",
+        "Prednisolon 5 mg",
+        "Terpin-Codein 15",
+        "Cerebrolysin",
+        "Oxytocin injection BP 10 Units",
+        "Albutol",
+        "Vinphylin",
+        "Hydrocortison 100 mg",
+        "Vinstigmin",
+        "Vinphatoxin",
+        "Atropin sulfat",
+        "Lidocain",
+        "Vinocam",
+        "Vinpamol",
+        "Vinsolon",
+        "Dimedrol",
+        "Tearbalance Ophthalmic solution 0.1%",
+        "Maxitrol",
+        "Phenylephrine Aguettant 50 Microgrammes/ml",
+        "Basaglar",
+        "Chamcromus 0,03%",
+        "Cetirizine STELLA 10 mg"
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -28088,7 +28416,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 8,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=33789c5b-1f68-4879-bdbe-eff546a4e1f9&notifyId=33789c5b-1f68-4879-bdbe-eff546a4e1f9&inputResultId=c9fa4204-f483-47fc-8591-63fb2e6e2300&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500507577&planNo=PL2500287671&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
@@ -28098,16 +28426,29 @@
         "CÔNG TY TNHH DƯỢC PHẨM ĐÔNG ĐÔ ",
         "CÔNG TY CỔ PHẦN DƯỢC DANAPHA ",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
-        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)"
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+        "CÔNG TY TNHH DƯỢC PHẨM ĐÔNG ĐÔ",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA"
       ],
       "winningPrice": 1987742200,
       "decisionDate": "2025-11-25T15:33:41",
       "resultPublishedDate": "2025-11-26T09:35:04",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY TNHH DƯỢC PHẨM ĐÔNG ĐÔ",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "."
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -28146,12 +28487,24 @@
       "decisionDate": "2025-12-09T23:59:59",
       "resultPublishedDate": "2025-12-09T10:49:03",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC TRUNG ƯƠNG 3",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ QUỐC TẾ VIỆT Á"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ QUỐC TẾ VIỆT Á"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ QUỐC TẾ VIỆT Á",
+          "reason": "Nhà thầu xếp hạng 2"
+        }
+      ],
+      "winningModels": [
+        "Hepaforter MKP"
+      ],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "d76359a2-d101-450b-86fa-e9344d83e4e8",
@@ -28194,17 +28547,162 @@
         "CÔNG TY TNHH MTV DƯỢC TRÍ TÍN HẢI",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
         "CÔNG TY CỔ PHẦN DƯỢC DANAPHA ",
-        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA"
       ],
       "winningPrice": 6744265230,
       "decisionDate": "2025-12-15T23:59:59",
       "resultPublishedDate": "2025-12-15T10:45:26",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "Công ty Cổ Phần Thương Mại Dược Phẩm 3A",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM FREMED",
+        "CÔNG TY CỔ PHẦN GONSA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+        "CÔNG TY TNHH DƯỢC PHẨM ĐỨC PHÚC",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM HÀ TÂY",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DƯỢC PHẨM KHÁNH MINH",
+        "CÔNG TY TNHH DƯỢC PHẨM STABLED",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY TNHH MTV DƯỢC TRÍ TÍN HẢI",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "loserNames": [
+        "Công ty Cổ Phần Thương Mại Dược Phẩm 3A",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+        "CÔNG TY TNHH DƯỢC PHẨM ĐỨC PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM HÀ TÂY",
+        "CÔNG TY TNHH DƯỢC PHẨM STABLED",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "Công ty Cổ Phần Thương Mại Dược Phẩm 3A",
+          "reason": "Giá dự thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+          "reason": "Hạng 2 về giá"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM ĐỨC PHÚC",
+          "reason": "Không đạt về kỹ thuật (Nồng độ/ Hàm lượng)"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+          "reason": "Giá dự thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+          "reason": "Giá dự thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+          "reason": "Hạng 2 về điểm kỹ thuật"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+          "reason": "Hạng 2 về giá"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM HÀ TÂY",
+          "reason": "Hạng 2 về giá"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM STABLED",
+          "reason": "Hạng 3 về giá"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+          "reason": "Không đạt về kỹ thuật (Dạng bào chế)"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+          "reason": "Giá dự thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+          "reason": "Hạng 2 về giá"
+        }
+      ],
+      "winningModels": [
+        "Aluvia",
+        "Coversyl Plus Arginine 5mg/1.25mg",
+        "Fucicort",
+        "Vitamin B1B6B12",
+        "Levomaz 25",
+        "Amitriptylin 10mg",
+        "Olanxol",
+        "Wosulin 30/70",
+        "Dolutegravir, Lamivudine and Tenofovir disoproxil fumarate tablets 50/300/300mg",
+        "Quanazol",
+        "QUITIDE 25",
+        "Thyrozol 5mg",
+        "Lamivudine and Zidovudine Tablets 150mg/300mg",
+        "Dalekine 500",
+        "Thyrozol 10mg",
+        "AD Tamy",
+        "Neuropyl 400",
+        "Levothyrox",
+        "Asbesone",
+        "Bivixim 5",
+        "Fucidin H",
+        "Propylthiouracil",
+        "Jewell",
+        "Haloperidol 1,5 mg",
+        "Garnotal",
+        "Metformin STELLA 850 mg",
+        "Dalekine",
+        "Desloratadine Danapha",
+        "Tofisopam 50mg Danapha",
+        "Risperstad 2",
+        "LETRAM-500",
+        "Lepigin 25",
+        "Epirozin-Xepa Ointment 2% w/w",
+        "Aminazin 25mg",
+        "Lonitez",
+        "Carbamazepin 200 mg",
+        "Viluvit"
+      ],
+      "losingModels": [
+        "Asbesone",
+        "Epirozin-Xepa Ointment 2% w/w",
+        "Metformin STELLA 850 mg",
+        "Risperstad 2",
+        "Dolutegravir, Lamivudine and Tenofovir disoproxil fumarate tablets 50/300/300mg",
+        "Jewell",
+        "Levomaz 25",
+        "Amitriptylin 10mg",
+        "Olanxol",
+        "Dalekine 500",
+        "Neuropyl 400",
+        "Haloperidol 1,5 mg",
+        "Garnotal",
+        "Dalekine",
+        "Desloratadine Danapha",
+        "Tofisopam 50mg Danapha",
+        "Lepigin 25",
+        "Aminazin 25mg",
+        "Carbamazepin 200 mg",
+        "Bivixim 5",
+        "Aluvia",
+        "Coversyl Plus Arginine 5mg/1.25mg",
+        "Thyrozol 5mg",
+        "Thyrozol 10mg",
+        "Levothyrox",
+        "Lamivudine and Zidovudine Tablets 150mg/300mg"
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -28244,10 +28742,26 @@
       "decisionDate": "2025-12-05T23:59:59",
       "resultPublishedDate": "2025-12-05T09:51:20",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "Diamicron MR 60mg",
+        "Levothyrox",
+        "Glucophage 850mg",
+        "Vastarel MR",
+        "Concor 5mg",
+        "Diamicron MR",
+        "Glucophage XR 750mg",
+        "Lantus solostar",
+        "Viacoram 7mg/5mg",
+        "NovoMix 30 FlexPen",
+        "Glucovance 500mg/5mg"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -28286,16 +28800,34 @@
         "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
         "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ 2B",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC ",
-        "CÔNG TY TNHH BẢO AN PHARMA"
+        "CÔNG TY TNHH BẢO AN PHARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC"
       ],
       "winningPrice": 480614000,
       "decisionDate": "2025-12-05T23:59:59",
       "resultPublishedDate": "2025-12-05T15:03:38",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ THUẬN PHÁT",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY TNHH BẢO AN PHARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+        "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ 2B"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "Thuốc ho người lớn OPC",
+        "Đại tràng TP",
+        "Thông huyết tiêu nề DHĐ",
+        "Thấp khớp Vinaplant",
+        "Hoạt huyết B/P",
+        "Bài thạch Trường Phúc",
+        "Tuần hoàn não thái dương",
+        "Dưỡng tâm an thần ĐDV"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -28346,11 +28878,66 @@
       "decisionDate": "2025-12-05T23:59:59",
       "resultPublishedDate": "2025-12-05T15:01:54",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM BẢO CHÂU",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĂN LAM",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM FREMED",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIAN",
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ 2B",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ THUẬN PHÁT",
+        "CÔNG TY TNHH DƯỢC PHẨM THẾ ANH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY TNHH DƯỢC PHẨM SHINPOONG DAEWOO",
+        "CÔNG TY TNHH DƯỢC PHẨM THIÊN MINH"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM FREMED",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ THUẬN PHÁT"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+          "reason": "Đánh giá về tài chính"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM FREMED",
+          "reason": "Đánh giá về tài chính"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ THUẬN PHÁT",
+          "reason": "Đánh giá về tài chính"
+        }
+      ],
+      "winningModels": [
+        "Povidon iod 10%",
+        "Enpovid Fe - Folic",
+        "Parabamol 400/325",
+        "Zencombi",
+        "Vorifend 500",
+        "Mazzgin",
+        "Varogel S",
+        "Felodipine STELLA 5 mg retard",
+        "Oresol",
+        "Ulcomez",
+        "Zentanil",
+        "Biosubtyl-II",
+        "Dixirein tab 250",
+        "Lidocain Kabi 2% 2 ml",
+        "Cloxacillin 1 g",
+        "Metoclopramid Kabi",
+        "Ringer lactate",
+        "Setblood",
+        "Companity"
+      ],
+      "losingModels": [
+        "Vorifend 500"
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -28387,17 +28974,65 @@
         "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP",
         "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC ",
-        "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA"
+        "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC"
       ],
       "winningPrice": 612937965,
       "decisionDate": "2025-12-05T23:59:59",
       "resultPublishedDate": "2025-12-05T14:59:39",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẮC NINH",
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+        "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP"
+      ],
+      "loserNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẮC NINH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP",
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA",
+          "reason": "Đánh giá về tài chính"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẮC NINH",
+          "reason": "Đánh giá về tài chính"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+          "reason": "Đánh giá về tài chính"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+          "reason": "Đánh giá về tài chính"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP",
+          "reason": "Đánh giá về tài chính"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+          "reason": "Đánh giá về tài chính"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+          "reason": "Đánh giá về kỹ thuật"
+        }
+      ],
+      "winningModels": [
+        "Hàng hóa chưa có tên"
+      ],
+      "losingModels": [
+        "Hàng hóa chưa có tên"
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -28787,17 +29422,257 @@
         "CÔNG TY TNHH DƯỢC PHẨM HOÀNG HẢI",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM VÀ Y TẾ NAM ÂU",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
-        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)"
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY TNHH DƯỢC PHẨM ĐÔNG ĐÔ",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM"
       ],
       "winningPrice": 34654778000,
       "decisionDate": "2026-01-20T23:59:59",
       "resultPublishedDate": "2026-01-20T18:22:20",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC SÀI GÒN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NHA KHOA HOÀN CẦU",
+        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ DENTECH",
+        "CÔNG TY CỔ PHẦN 5A FARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VÀ Y TẾ NAM ÂU",
+        "CÔNG TY TNHH DƯỢC PHẨM HOÀNG HẢI",
+        "CÔNG TY TNHH MTV DƯỢC PHẨM TUẤN TRÀ",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HD",
+        "CÔNG TY TNHH DƯỢC PHẨM ĐÔNG ĐÔ",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEZA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM FREMED",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY TNHH KENKO PHARMA",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG I - PHARBACO",
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
+        "CÔNG TY CỔ PHẦN ARMEPHACO",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+        "CÔNG TY CỔ PHẦN DƯỢC L - B",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "CÔNG TY CỔ PHẦN AFP GIA VŨ",
+        "CÔNG TY CP DƯỢC PHẨM AGIMEXPHARM",
+        "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+        "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+        "CÔNG TY TNHH DƯỢC PHẨM HIỆP THUẬN THÀNH",
+        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM ĐAN THANH",
+        "CÔNG TY CỔ PHẦN CASSANA PHARMA",
+        "CÔNG TY TNHH TM DP-TBYT SAVA GLOBAL",
+        "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU Y TẾ THÀNH PHỐ HỒ CHÍ MINH",
+        "CÔNG TY TNHH RM HEALTHCARE"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ DENTECH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+        "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC SÀI GÒN",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HD",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+        "CÔNG TY TNHH MTV DƯỢC PHẨM TUẤN TRÀ",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY CỔ PHẦN DƯỢC L - B",
+        "CÔNG TY CP DƯỢC PHẨM AGIMEXPHARM",
+        "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM ĐAN THANH"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+          "reason": "Xếp hạng 1, vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ DENTECH",
+          "reason": "Không đáp ứng yêu cầu về dạng bào chế mời thầu: Thuốc tiêm/ Thuốc tiêm truyền quy định tại Phụ lục I Thông tư 40/2025/TT-BYT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+          "reason": "Xếp hạng 1, vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC SÀI GÒN",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "EU-GMP hết hiệu lực ngày 20/4/2025, nhà thầu không chứng minh tồn kho, không bổ sung EU-GMP còn hiệu lực"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HD",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+          "reason": "Xếp hạng 1, vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH MTV DƯỢC PHẨM TUẤN TRÀ",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC L - B",
+          "reason": "Xếp hạng 1, cùng giá với CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG nhưng điểm kỹ thuật thấp hơn"
+        },
+        {
+          "contractorName": "CÔNG TY CP DƯỢC PHẨM AGIMEXPHARM",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM ĐAN THANH",
+          "reason": "Không xếp hạng 1"
+        }
+      ],
+      "winningModels": [
+        "Incepavit 400 capsule",
+        "Diclofenac",
+        "Lisonorm",
+        "Dopamin-BFS",
+        "Dicifepim 2g",
+        "Ketofen-Drop",
+        "Bigemax 200",
+        "Cetachit 1g",
+        "Cefazolin 1g",
+        "Elumast 4mg",
+        "Etoposid Bidiphar",
+        "Ketamine Hydrochloride injection",
+        "Lignospan Standard",
+        "Meconeuro",
+        "Cephazomid 2g",
+        "Bendamustine Mylan",
+        "Vinceryl 5 mg/5 ml",
+        "Heradrea",
+        "Milepsy 200",
+        "Aminosteril N-Hepa 8%",
+        "Mepoly",
+        "Vinphason",
+        "Triamcinolon",
+        "Huyết thanh kháng độc tố uốn ván tinh chế (SAT)",
+        "Aopevin",
+        "Vinsolon",
+        "Fentanyl - Hameln 50mcg/ml",
+        "Thuốc tiêm Fentanyl citrate",
+        "Atropin sulfat",
+        "Bilumid",
+        "Moxsanti",
+        "Symbicort Turbuhaler",
+        "Ramistell 10",
+        "Epokine Prefilled injection 4000 IU/0,4 ml",
+        "Tofipam",
+        "Dapagliflozin 10 mg Danapha",
+        "DigoxineQualy",
+        "Volulyte 6%",
+        "Mannitol",
+        "Glyceryl trinitrate 1mg/ml",
+        "Viluvit",
+        "Nifedipin T20 retard",
+        "Dalekine",
+        "Garnotal",
+        "Treeton",
+        "Pamintu 10mg/ml",
+        "Ultibro Breezhaler",
+        "Glucose 5%",
+        "Garnotal Inj",
+        "Fegamed 5",
+        "Ephedrine Aguettant 30mg/ml",
+        "Calcolife",
+        "Alumag-S",
+        "Atovze 80/10",
+        "Secolin",
+        "Nanokine 2000 IU",
+        "Maxitrol",
+        "AFATIN 40",
+        "Bigemax 1g",
+        "Dung dịch sát khuẩn tay",
+        "Wosulin 30/70",
+        "Mvasi",
+        "Dimedrol",
+        "Smecta",
+        "Atovze 40/10",
+        "Deworm",
+        "Endoxan",
+        "Cyrabol",
+        "Aritear",
+        "Alcaine 0,5%",
+        "Huyết thanh kháng nọc rắn lục tre tinh chế (SAV)"
+      ],
+      "losingModels": [
+        "Aminosteril N-Hepa 8%",
+        "Symbicort Turbuhaler",
+        "Volulyte 6%",
+        "Ultibro Breezhaler",
+        "Ketamine Hydrochloride injection",
+        "Ephedrine Aguettant 30mg/ml",
+        "Thuốc tiêm Fentanyl citrate",
+        "Glyceryl trinitrate 1mg/ml",
+        "Fentanyl - Hameln 50mcg/ml",
+        "Bilumid",
+        "Heradrea",
+        "Maxitrol",
+        "Endoxan",
+        "Alcaine 0,5%",
+        "AFATIN 40",
+        "Smecta",
+        "Ramistell 10",
+        "Nifedipin T20 retard",
+        "Atovze 80/10",
+        "Secolin",
+        "Atovze 40/10",
+        "DigoxineQualy",
+        "Alumag-S",
+        "Milepsy 200"
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -28845,17 +29720,124 @@
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM NHA KHOA HOÀN CẦU",
         "CÔNG TY TNHH DP-TBYT BẢO MINH",
         "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
-        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY TNHH DƯỢC PHẨM TÂN AN"
       ],
       "winningPrice": 1808235400,
       "decisionDate": "2025-12-04T23:59:59",
       "resultPublishedDate": "2025-12-04T16:01:29",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NHA KHOA HOÀN CẦU",
+        "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU Y TẾ THÀNH PHỐ HỒ CHÍ MINH",
+        "CÔNG TY TNHH DP-TBYT BẢO MINH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM ECCE",
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+        "CÔNG TY CỔ PHẦN PYMEPHARCO",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+        "CÔNG TY TNHH DƯỢC PHẨM STABLED",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI XUẤT NHẬP KHẨU APEC",
+        "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+        "CÔNG TY TNHH DƯỢC PHẨM THIÊN MINH",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU Y TẾ THÀNH PHỐ HỒ CHÍ MINH",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+        "CÔNG TY CỔ PHẦN PYMEPHARCO",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM ECCE",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI XUẤT NHẬP KHẨU APEC"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU Y TẾ THÀNH PHỐ HỒ CHÍ MINH",
+          "reason": "Bằng giá có điểm kỹ thuật thấp hơn"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+          "reason": "Giá dự thầu vượt giá kê hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+          "reason": "Bằng giá có điểm kỹ thuật thấp hơn"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN PYMEPHARCO",
+          "reason": "Giá cao hơn nhà thầu đứng thứ nhất"
+        },
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+          "reason": "Giá cao hơn nhà thầu đứng thứ nhất"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM ECCE",
+          "reason": "Giá dự thầu vượt giá kê hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+          "reason": "Giá cao hơn nhà thầu đứng thứ nhất"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI XUẤT NHẬP KHẨU APEC",
+          "reason": "Bằng giá có điểm kỹ thuật thấp hơn"
+        }
+      ],
+      "winningModels": [
+        "Hapacol 150",
+        "Statripsine",
+        "Katrypsin",
+        "Vinsolon",
+        "Deslora",
+        "Glipizid DWP 2,5mg",
+        "Prednisolon DWP 10mg",
+        "Vinphylin",
+        "Vicefoxitin 0,5g",
+        "Noradrenalin 10mg/10ml",
+        "Oxytocin injection BP 10 Units",
+        "Gelactive",
+        "Acetylcysteine 200mg",
+        "Setblood",
+        "Rocuronium 50mg",
+        "Ofloxacin 200mg/100ml",
+        "Vicicefxim",
+        "Vorifend 500",
+        "Biosubtyl-II",
+        "Misoprostol Stella 200 mcg",
+        "Omeprazole STADA 40mg",
+        "Paracetamol Macopharma",
+        "Flodicar 5 mg MR",
+        "Lidocain",
+        "Lignospan Standard",
+        "Grafort",
+        "ForminHasan XR 500",
+        "Wosulin-R",
+        "Vinphatoxin",
+        "Huyết thanh kháng độc tố uốn ván tinh chế (SAT)",
+        "Bromhexin DHT Solution 8/5",
+        "Kagasdine",
+        "Duphaston"
+      ],
+      "losingModels": [
+        "Duphaston",
+        "Katrypsin",
+        "Acetylcysteine 200mg",
+        "Kagasdine",
+        "Omeprazole STADA 40mg"
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -29278,12 +30260,32 @@
       "decisionDate": "2025-12-02T23:59:59",
       "resultPublishedDate": "2025-12-02T08:58:53",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ PHÁT TRIỂN KHAI TUỆ",
+        "CÔNG TY TNHH TK MEDICAL",
+        "CÔNG TY TNHH Y DƯỢC MINH ANH"
+      ],
+      "loserNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ PHÁT TRIỂN KHAI TUỆ",
+        "CÔNG TY TNHH Y DƯỢC MINH ANH"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH ĐẦU TƯ VÀ PHÁT TRIỂN KHAI TUỆ",
+          "reason": "Không đánh giá nhà thầu (theo Quy trình 2)"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH Y DƯỢC MINH ANH",
+          "reason": "Không đáp ứng kỹ thuật theo hồ sơ bên mời thầu đưa ra."
+        }
+      ],
+      "winningModels": [
+        "Babivita plus",
+        "Fefolic pro",
+        "Babivita"
+      ],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "202223b2-8b6a-4ec8-b3bd-3e81ace2892d",
@@ -29311,7 +30313,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 19,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=202223b2-8b6a-4ec8-b3bd-3e81ace2892d&notifyId=202223b2-8b6a-4ec8-b3bd-3e81ace2892d&inputResultId=c20062e5-c5ec-4534-8f60-812be1481716&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500469786&planNo=PL2500264499&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
@@ -29331,17 +30333,97 @@
         "CÔNG TY CỔ PHẦN DƯỢC DANAPHA ",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA",
-        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NHA KHOA HOÀN CẦU"
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NHA KHOA HOÀN CẦU",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA"
       ],
       "winningPrice": 1083449800,
       "decisionDate": "2025-11-05T14:03:57",
       "resultPublishedDate": "2025-11-05T14:08:15",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NHA KHOA HOÀN CẦU",
+        "CÔNG TY CỔ PHẦN TMDV THĂNG LONG",
+        "CÔNG TY CỔ PHẦN GONSA",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CP DƯỢC PHẨM IMEXPHARM",
+        "CÔNG TY TNHH MTV DƯỢC TRÍ TÍN HẢI",
+        "CÔNG TY TNHH DƯỢC PHẨM ANH NGUYÊN ĐỨC",
+        "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY TNHH DƯỢC PHẨM STABLED",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ THUẬN PHÁT",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+          "reason": "Xếp hạng 2"
+        }
+      ],
+      "winningModels": [
+        "VN-22745-21",
+        "VD-35583-22",
+        "893115676324\r\n(VD-24254-16)",
+        "VN-17438-13",
+        "893110069625",
+        "VD-21846-14",
+        "893110151925 (VD-28340-17)",
+        "893110039623",
+        "893100051524",
+        "400100083323",
+        "300110796724 (VN-16049-12)",
+        "893400175300 (QLSP-955-16)",
+        "VN-19096-15 QĐ gia hạn số 265/QĐ-QLD, hạn visa đến đến 11/5/2027",
+        "893110433024 (VD-31612-19)",
+        "893110456023",
+        "VD-26377-17",
+        "VN-19955-16",
+        "893100314323 (VD-23879-15)",
+        "893110305923 (VD-29913-18)",
+        "893110063324",
+        "VD-19567-13",
+        "VD-23172-15",
+        "VN-18634-15",
+        "893110829424",
+        "893110216900",
+        "893110138924",
+        "893110887124 (VD-33470-19)",
+        "VD-17592-12 (CV gia hạn số 854/QĐ-QLD ngày 30/12/2022)",
+        "VD-21779-14 CV gia hạn số 277/QĐ-QLD",
+        "VD-36020-22",
+        "893400175300\r\n(QLSP-955-16)",
+        "300110796724\r\n(VN-16049-12)"
+      ],
+      "losingModels": [
+        "893110039623",
+        "VN-19096-15 QĐ gia hạn số 265/QĐ-QLD, hạn visa đến đến 11/5/2027",
+        "VD-26377-17",
+        "VD-19567-13",
+        "VD-23172-15",
+        "893110829424",
+        "VD-36020-22",
+        "893110069625"
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -29837,12 +30919,37 @@
       "decisionDate": "2025-11-25T23:59:59",
       "resultPublishedDate": "2025-11-25T16:47:48",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH ĐẦU TƯ VÀ PHÁT TRIỂN KHAI TUỆ",
+        "CÔNG TY TNHH MRO PLUS",
+        "CÔNG TY TNHH TK MEDICAL",
+        "CÔNG TY TNHH Y DƯỢC MINH ANH"
+      ],
+      "loserNames": [
+        "CÔNG TY TNHH MRO PLUS",
+        "CÔNG TY TNHH TK MEDICAL",
+        "CÔNG TY TNHH Y DƯỢC MINH ANH"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH MRO PLUS",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH TK MEDICAL",
+          "reason": "Không đạt về kỹ thuật"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH Y DƯỢC MINH ANH",
+          "reason": "xếp hạng 2"
+        }
+      ],
+      "winningModels": [
+        "Thực phẩm bảo vệ sức khỏe MULTI – VITA",
+        "Thực phẩm bảo vệ sức khỏe FEFOLIC PRO"
+      ],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "98643a8b-e903-46d2-9a64-902d59269c55",
@@ -29993,7 +31100,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 2,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=e0f574a9-1727-4b9e-b806-312c7cb2004d&notifyId=e0f574a9-1727-4b9e-b806-312c7cb2004d&inputResultId=5f4311ad-6e5c-4874-afd1-b51f4ca7c2a2&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500456681&planNo=PL2500255446&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
@@ -30003,10 +31110,18 @@
       "decisionDate": "2025-10-29T16:58:58",
       "resultPublishedDate": "2025-10-29T16:59:48",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "VN-17269-13",
+        "893110688924",
+        "893110448424\n(VD-32552-19)",
+        "VD-24342-16"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -30045,12 +31160,55 @@
       "decisionDate": "2025-11-20T23:59:59",
       "resultPublishedDate": "2025-11-24T10:31:44",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ TN",
+        "CÔNG TY TNHH TM VÀ DV LONG CHÂU",
+        "CÔNG TY TNHH Y DƯỢC MINH ANH"
+      ],
+      "loserNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ TN",
+        "CÔNG TY TNHH Y DƯỢC MINH ANH"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ TN",
+          "reason": "Xếp thứ 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH Y DƯỢC MINH ANH",
+          "reason": "Xếp thứ 3"
+        }
+      ],
+      "winningModels": [
+        "YRBB-20",
+        "BK-04",
+        "103-01",
+        "39-295",
+        "20L",
+        "Zebra DS9308",
+        "39-291",
+        "GT012-300A",
+        "BK-05",
+        "BKPK-3A",
+        "DCP-T730DW",
+        "103-21",
+        "3-150",
+        "Treo Tường (BRM-VN-03)",
+        "TU982-3K",
+        "CT16",
+        "11-120",
+        "DC15250-i5U165W11SLU",
+        "CD01",
+        "103-16",
+        "3-160",
+        "MFP 4103Fdw",
+        "TCS-200A",
+        "103-18",
+        "103-19",
+        "7A-23D"
+      ],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "6dee7de8-f638-43f6-8eaa-dca4cfa32f0f",
@@ -30264,12 +31422,24 @@
       "decisionDate": "2025-11-26T23:59:59",
       "resultPublishedDate": "2025-11-26T16:13:59",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH KIẾN TẠO",
+        "CÔNG TY TNHH TM VÀ DV GIA PHÁT"
+      ],
+      "loserNames": [
+        "CÔNG TY TNHH TM VÀ DV GIA PHÁT"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH TM VÀ DV GIA PHÁT",
+          "reason": "Không đáp ứng yêu cầu về kỹ thuật"
+        }
+      ],
+      "winningModels": [
+        "BĐY32-04-KITA"
+      ],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "6b3cb9dd-7f76-4d26-993f-fdec4412b791",
@@ -31233,12 +32403,29 @@
       "decisionDate": "2025-11-05T23:59:59",
       "resultPublishedDate": "2025-11-05T10:06:07",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN AMERIVER VIỆT NAM",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ FP",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM HÀ TÂY",
+        "CÔNG TY TNHH TM DP-TBYT SAVA GLOBAL"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "d9b07ec3-597e-45d9-8844-ea3cdffaf4dc",
@@ -31276,12 +32463,27 @@
       "decisionDate": "2025-11-26T23:59:59",
       "resultPublishedDate": "2025-11-26T16:21:44",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU VIỆT NAM",
+        "Công ty TNHH Đông Dược Văn Hương"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU VIỆT NAM",
+        "Công ty TNHH Đông Dược Văn Hương"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU VIỆT NAM",
+          "reason": "không phải nhà thầu xếp hạng thứ nhất"
+        },
+        {
+          "contractorName": "Công ty TNHH Đông Dược Văn Hương",
+          "reason": "không phải nhà thầu xếp hạng thứ nhất"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "3be50890-fc9d-4029-be8d-232837d422f1",
@@ -31476,7 +32678,10 @@
       "decisionDate": "2025-10-29T23:59:59",
       "resultPublishedDate": "2025-10-29T11:09:03",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [],
@@ -31533,12 +32738,86 @@
       "decisionDate": "2025-12-04T23:59:59",
       "resultPublishedDate": "2025-12-04T16:22:39",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM ĐAN THANH",
+        "CÔNG TY TNHH DƯỢC PHẨM A&B",
+        "CÔNG TY CỔ PHẦN 5A FARMA",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI FAMED",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+        "CÔNG TY TNHH DƯỢC PHẨM GIGAMED",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN TÂY ÂU",
+        "CÔNG TY CỔ PHẦN AMERIVER VIỆT NAM",
+        "CÔNG TY TNHH DƯỢC PHẨM THẾ ANH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+        "CÔNG TY TNHH DƯỢC VÀ TTBYT PHƯƠNG NGÂN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEDBOLIDE"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEDBOLIDE",
+        "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+          "reason": "Đánh giá tính hợp lệ của E-HSDT: Không đạt"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "Không đáp ứng dạng bào chế của E-HSMT (mời thầu thuốc nhỏ mắt, dự thầu dung dịch nhỏ tai)"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "Nhà thầu xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+          "reason": "Giá dự thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+          "reason": "Giá dự thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+          "reason": "Nhà thầu xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+          "reason": "Nhà thầu xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEDBOLIDE",
+          "reason": "Đánh giá tính hợp lệ của E-HSDT: Không đạt"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+          "reason": "Nhà thầu xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+          "reason": "Nhà thầu xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+          "reason": "Giá dự thầu vượt giá kế hoạch"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "c2bebffb-550b-46c4-9267-161c9c18b352",
@@ -31640,7 +32919,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 1,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=c32aed3b-f276-4729-99a4-1814e5dc8d90&notifyId=c32aed3b-f276-4729-99a4-1814e5dc8d90&inputResultId=3352f2d7-27c3-4851-9d6b-cc77710cd796&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500407544&planNo=PL2500226338&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
@@ -31649,10 +32928,14 @@
       "decisionDate": "2025-10-02T10:40:29",
       "resultPublishedDate": "2025-10-02T14:45:46",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "Không yêu cầu"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -31682,21 +32965,28 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 3,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=95e25b45-5116-4c6f-8044-2cd965f5d11f&notifyId=95e25b45-5116-4c6f-8044-2cd965f5d11f&inputResultId=fe260e78-00f3-4722-8458-c62b6c6813d3&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500407469&planNo=PL2500226338&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DƯỢC PHẨM SINH PHÚC",
         "CÔNG TY CỔ PHẦN DƯỢC DANAPHA ",
-        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA"
       ],
       "winningPrice": 382651000,
       "decisionDate": "2025-10-02T10:32:11",
       "resultPublishedDate": "2025-10-24T14:13:02",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DƯỢC PHẨM SINH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "Không yêu cầu"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -32897,18 +34187,88 @@
         "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP",
         "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC ",
-        "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA"
+        "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC"
       ],
       "winningPrice": 863284900,
       "decisionDate": "2025-11-18T23:59:59",
       "resultPublishedDate": "2025-11-21T10:54:54",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+        "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+        "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+        "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA",
+        "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+          "reason": "Không đáp ứng tính hợp lệ của vị thuốc dự thầu"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+          "reason": "Đánh giá về tài chính, giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+          "reason": "Đánh giá về tài chính, giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+          "reason": "Đánh giá về tài chính, giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+          "reason": "Không đáp ứng tính hợp lệ của vị thuốc dự thầu"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM FITOPHARMA",
+          "reason": "Đánh giá về tài chính, giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+          "reason": "Đánh giá về tài chính, giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP",
+          "reason": "Không đáp ứng về phương pháp chế biến"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU NINH HIỆP",
+          "reason": "Đánh giá về tài chính, giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+          "reason": "Không đáp ứng về phương pháp chế biến"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+          "reason": "Không đáp ứng về phương pháp chế biến"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+          "reason": "Đánh giá về tài chính, giá dự thầu sau giảm giá cao hơn nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+          "reason": "Cùng hạng 1 với Công ty CPTM dược VTYT Khải Hà, Công ty CPTM dược VTYT Khải Hà được lựa chọn trúng thầu vì đáp ứng điểm b, khoản 18, điều 140, Nghị định 214/ NĐ-CP."
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "d697f261-8cf6-445a-b17b-575e90ce20fa",
@@ -32972,18 +34332,197 @@
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI",
         "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
-        "CÔNG TY TNHH DP-TBYT BẢO MINH"
+        "CÔNG TY TNHH DP-TBYT BẢO MINH",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM"
       ],
       "winningPrice": 3985934500,
       "decisionDate": "2025-10-29T23:59:59",
       "resultPublishedDate": "2025-10-30T14:42:43",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEZA",
+        "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY TNHH DƯỢC PHẨM BẢO CHÂU",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI",
+        "CÔNG TY TNHH DƯỢC PHẨM ANH NGUYÊN ĐỨC",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM LAN TIẾN",
+        "CÔNG TY TNHH DP-TBYT BẢO MINH",
+        "CÔNG TY TNHH AN TÂM PHARMA",
+        "CÔNG TY CP DƯỢC PHẨM IMEXPHARM",
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ VẬT TƯ Y TẾ QUANG MINH",
+        "CÔNG TY TNHH LEX PHARMA VIỆT NAM",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+        "CÔNG TY TNHH MTV DƯỢC TRÍ TÍN HẢI",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIAN",
+        "CÔNG TY TNHH DƯỢC PHẨM STABLED",
+        "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+        "CÔNG TY CỔ PHẦN AFP GIA VŨ",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY TNHH TM DP-TBYT SAVA GLOBAL",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BẾN TRE",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "CÔNG TY TNHH DƯỢC PHẨM BELLA",
+        "CÔNG TY TNHH DƯỢC PHẨM THIÊN MINH",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+        "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+        "CÔNG TY TNHH DƯỢC PHẨM SHINPOONG DAEWOO",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VINACARE",
+        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM AN PHA",
+        "CÔNG TY TNHH DƯỢC PHẨM AT & C",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ QUỐC TẾ VIỆT Á"
+      ],
+      "loserNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM BẢO CHÂU",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEZA",
+        "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+        "CÔNG TY CP DƯỢC PHẨM IMEXPHARM",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ VẬT TƯ Y TẾ QUANG MINH",
+        "CÔNG TY TNHH LEX PHARMA VIỆT NAM",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY TNHH DƯỢC PHẨM BELLA",
+        "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VINACARE",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM AN PHA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM BẢO CHÂU",
+          "reason": "không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEZA",
+          "reason": "vượt giá kế hoạch LCNT"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+          "reason": "vượt giá kế hoạch LCNT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+          "reason": "Vượt giá kế hoạch LCNT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CP DƯỢC PHẨM IMEXPHARM",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ VẬT TƯ Y TẾ QUANG MINH",
+          "reason": "không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH LEX PHARMA VIỆT NAM",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ VẬT TƯ Y TẾ QUANG MINH",
+          "reason": "Không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM BELLA",
+          "reason": "Không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "Không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+          "reason": "vượt giá kế hoạch LCNT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+          "reason": "Không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+          "reason": "Không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+          "reason": "Không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+          "reason": "vượt giá kế hoạch LCNT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VINACARE",
+          "reason": "Không đáp ứng theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM BOSTON VIỆT NAM",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM AN PHA",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+          "reason": "vượt giá kế hoạch LCNT"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "faa54d57-fa18-41ae-b339-bd7d5762b4a3",
@@ -33356,7 +34895,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 3,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=e4f0b02e-ec47-494b-957d-81929a54c002&notifyId=e4f0b02e-ec47-494b-957d-81929a54c002&inputResultId=f45e8ce7-2e19-4620-8c8b-9b66a38d0406&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500364110&planNo=PL2500198928&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
@@ -33367,10 +34906,19 @@
       "decisionDate": "2025-09-10T15:21:24",
       "resultPublishedDate": "2025-09-10T17:06:06",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "VD-21137-14 CV gia hạn số 198/QĐ-QLD",
+        "893110688824\r\n (CV gia hạn số 550/QĐ-QLD ngày 02/08/2024)",
+        "893110306123 (CV gia hạn số 737/QĐ-QLD ngày 09/10/2023)",
+        "VD-35348-21"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -34540,7 +36088,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": null,
+      "bidderCount": 2,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=be615a7a-c1f6-4306-aebb-fe9f500f6cff&notifyId=be615a7a-c1f6-4306-aebb-fe9f500f6cff&inputResultId=1ccbb19f-7d45-46b4-9509-cd4fd91259a9&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2500333603&planNo=PL2500181027&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
@@ -34550,10 +36098,16 @@
       "decisionDate": "2025-08-11T17:48:03",
       "resultPublishedDate": "2025-08-11T17:58:17",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "Số ĐKLH: 893110219923",
+        "Số ĐKLH: 893110618424 \r\n(VD-33912-19)"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -34597,12 +36151,61 @@
       "decisionDate": "2025-09-12T23:59:59",
       "resultPublishedDate": "2025-09-15T15:37:30",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+        "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+        "Công ty TNHH Đông Dược Văn Hương",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+        "CÔNG TY TNHH DƯỢC HỌC CỔ TRUYỀN THẮNG ĐOAN"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+        "Công ty TNHH Đông Dược Văn Hương",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+        "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+        "CÔNG TY TNHH DƯỢC HỌC CỔ TRUYỀN THẮNG ĐOAN"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "Công ty TNHH Đông Dược Văn Hương",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC HỌC CỔ TRUYỀN THẮNG ĐOAN",
+          "reason": "Không phải nhà thầu xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+          "reason": "Cùng hạng Công ty TNHH dược học cổ truyền Thắng Đoan nhưng Công ty TNHH dược học cổ truyền Thắng Đoan được trao thầu vì đáp ứng tiêu chí \"điểm a, khoản 18 điều 140, NĐ 214\""
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "368a679d-ab11-4957-adbe-3a1a6b0247b0",
@@ -34641,18 +36244,39 @@
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC ",
         "CÔNG TY TNHH ĐÔNG DƯỢC PHÚC HƯNG",
         "CÔNG TY CỔ PHẦN DƯỢC DANAPHA ",
-        "CÔNG TY TNHH BẢO AN PHARMA"
+        "CÔNG TY TNHH BẢO AN PHARMA",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC"
       ],
       "winningPrice": 1246440000,
       "decisionDate": "2025-09-29T23:59:59",
       "resultPublishedDate": "2025-09-30T20:49:48",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY TNHH BẢO AN PHARMA",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ QUỐC TẾ VIỆT Á",
+        "CÔNG TY TNHH ĐÔNG DƯỢC PHÚC HƯNG",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM",
+        "CÔNG TY CỔ PHẦN GONSA",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC"
+      ],
+      "loserNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+          "reason": "Không phải nhà thầu xếp thứ nhất"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "536d1668-c28f-48e6-a9f7-715c2db4aabf",
@@ -34694,18 +36318,41 @@
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM VINACARE",
         "CÔNG TY CỔ PHẦN DƯỢC DANAPHA ",
         "CÔNG TY CỔ PHẦN DƯỢC VACOPHARM",
-        "CÔNG TY TNHH BẢO AN PHARMA"
+        "CÔNG TY TNHH BẢO AN PHARMA",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM"
       ],
       "winningPrice": 1215335000,
       "decisionDate": "2025-10-08T23:59:59",
       "resultPublishedDate": "2025-10-09T14:17:13",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VINACARE",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ QUỐC TẾ VIỆT Á",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIAN",
+        "CÔNG TY CỔ PHẦN DƯỢC DANAPHA",
+        "CÔNG TY CỔ PHẦN DƯỢC VACOPHARM",
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+        "CÔNG TY TNHH BẢO AN PHARMA",
+        "CÔNG TY TNHH THƯƠNG MẠI & DƯỢC PHẨM TÂM TOÀN PHÁT",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC ĐỒNG TÂM",
+        "CÔNG TY CỔ PHẦN GONSA",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIAN"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIAN",
+          "reason": "không đáp ứng thành phần của thuốc"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "cb0c05fb-f13b-433b-9c67-97591201fccd",
@@ -34747,12 +36394,57 @@
       "decisionDate": "2025-09-16T23:59:59",
       "resultPublishedDate": "2025-09-19T13:51:00",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+        "Công ty TNHH Đông Dược Văn Hương",
+        "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY TNHH DƯỢC HỌC CỔ TRUYỀN THẮNG ĐOAN",
+        "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+        "Công ty TNHH Đông Dược Văn Hương",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+        "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+        "CÔNG TY TNHH DƯỢC HỌC CỔ TRUYỀN THẮNG ĐOAN",
+        "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN TRUNG ƯƠNG FISAMEC",
+          "reason": "cao hơn nhà thầu xếp hạng thứ nhất"
+        },
+        {
+          "contractorName": "Công ty TNHH Đông Dược Văn Hương",
+          "reason": "cao hơn nhà thầu xếp hạng thứ nhất"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+          "reason": "cao hơn nhà thầu xếp hạng thứ nhất"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐÔNG Y DƯỢC THĂNG LONG",
+          "reason": "cao hơn nhà thầu xếp hạng thứ nhất"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC VẬT TƯ Y TẾ KHẢI HÀ",
+          "reason": "cao hơn nhà thầu xếp hạng thứ nhất"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC HỌC CỔ TRUYỀN THẮNG ĐOAN",
+          "reason": "cao hơn nhà thầu xếp hạng thứ nhất"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC LIỆU HÀ NỘI GMP",
+          "reason": "cao hơn nhà thầu xếp hạng thứ nhất"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "40dcf438-0dac-49ad-8b0e-977428147235",
@@ -36624,18 +38316,110 @@
         "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
         "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
-        "CÔNG TY TNHH DP-TBYT BẢO MINH"
+        "CÔNG TY TNHH DP-TBYT BẢO MINH",
+        "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM"
       ],
       "winningPrice": 4063463600,
       "decisionDate": "2025-09-18T23:59:59",
       "resultPublishedDate": "2025-09-18T16:37:48",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUỐC TẾ - WINSACOM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĂN LAM",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TND VIỆT NAM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEZA",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+        "CÔNG TY TNHH MTV DƯỢC TRÍ TÍN HẢI",
+        "CÔNG TY TNHH DP-TBYT BẢO MINH",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM HIỆP BÁCH NIÊN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+        "CÔNG TY CỔ PHẦN DƯỢC - VẬT TƯ Y TẾ KON TUM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+        "Công Ty TNHH Dược Phẩm Anh Thu",
+        "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM",
+        "CÔNG TY TNHH DƯỢC PHẨM THIÊN MINH"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+        "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĂN LAM",
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+        "Công Ty TNHH Dược Phẩm Anh Thu",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+          "reason": "Chào thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+          "reason": "2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+          "reason": "GMP cơ sở sản xuất hết hiệu lực, không có cam kết và chứng minh tồn kho, bổ sung quá hạn theo yêu cầu làm rõ"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+          "reason": "Chào thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+          "reason": "2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĂN LAM",
+          "reason": "2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "3"
+        },
+        {
+          "contractorName": "Công Ty TNHH Dược Phẩm Anh Thu",
+          "reason": "2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+          "reason": "2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+          "reason": "2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI DƯỢC PHẨM MẠNH TÝ - VIỆT MỸ",
+          "reason": "Chào thầu vượt giá kế hoạch"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+          "reason": "4"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+          "reason": "2"
+        },
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM HỒNG LAN",
+          "reason": "3"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "73664418-3bbd-47d7-9ad0-b55c80b75c34",
@@ -36670,13 +38454,21 @@
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG 3",
         "CÔNG TY TNHH DƯỢC PHẨM  ATIPHARM",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC ",
-        "CÔNG TY CỔ PHẦN DƯỢC MEDIBROS MIỀN TRUNG"
+        "CÔNG TY CỔ PHẦN DƯỢC MEDIBROS MIỀN TRUNG",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC"
       ],
       "winningPrice": 306740000,
       "decisionDate": "2025-10-09T23:59:59",
       "resultPublishedDate": "2025-10-09T15:50:57",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ QUỐC TẾ VIỆT Á",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG 3",
+        "CÔNG TY CỔ PHẦN DƯỢC MEDIBROS MIỀN TRUNG",
+        "CÔNG TY TNHH DƯỢC PHẨM ATIPHARM",
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC"
+      ],
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [],
@@ -37592,7 +39384,7 @@
       "losingModelDisclosure": "Nguồn công khai chưa công bố"
     }
   ],
-  "fetchedAt": "2026-10-03T11:39:55.223Z",
+  "fetchedAt": "2026-10-04T20:15:41.242Z",
   "source": "muasamcong-public-api",
   "regionSlug": "quang-tri",
   "region": "Quảng Trị",
@@ -37600,19 +39392,19 @@
     "44",
     "45"
   ],
-  "detailTenderCount": 291,
+  "detailTenderCount": 325,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
     "refreshDays": 14,
     "statusSchemaVersion": 4,
     "lastScanDays": 1095,
-    "lastScanTenderCount": 2022,
-    "lastProvinceTenderCount": 2022,
+    "lastScanTenderCount": 2024,
+    "lastProvinceTenderCount": 2024,
     "lastHistoricalFallbackTenderCount": 0,
     "lastHistoricalFallbackFailureCount": 0,
     "lastHistoricalFallbackComplete": true,
-    "scannedTenderCount": 2022,
+    "scannedTenderCount": 2024,
     "keywords": [
       "thiết bị y tế",
       "vật tư tiêu hao",

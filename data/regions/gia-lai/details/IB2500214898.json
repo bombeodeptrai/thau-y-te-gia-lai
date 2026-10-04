@@ -1,9 +1,459 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 22,
+  "bidders": [
+    {
+      "id": "a1e7a41f-3c10-4eb1-a756-47663a8badd9",
+      "contractorCode": "vn0306089887",
+      "taxCode": "0306089887",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ KHOA HỌC KỸ THUẬT ĐỨC TUẤN",
+      "status": "lost",
+      "lotNo": "BP2500294699",
+      "lotName": "Mua sắm hóa chất y tế và sinh phẩm chẩn đoán invitro",
+      "bidPrice": 238560384,
+      "finalPrice": 238560384,
+      "winningPrice": 0,
+      "reason": "Giá cao hơn nhà thầu Xếp hạng 1",
+      "submittedAt": "2025-08-29T16:50:30.631",
+      "models": []
+    },
+    {
+      "id": "fa208efe-12cd-48ad-a2e0-1587b838031d",
+      "contractorCode": "vn0313103885",
+      "taxCode": "0313103885",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY",
+      "status": "won",
+      "lotNo": "BP2500294699",
+      "lotName": "Mua sắm hóa chất y tế và sinh phẩm chẩn đoán invitro",
+      "bidPrice": 213863700,
+      "finalPrice": 213863700,
+      "winningPrice": 213863700,
+      "reason": "",
+      "submittedAt": "2025-08-29T16:50:30.631",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "bb1671c8-90b8-4dcf-a653-941974078e38",
+      "name": "Hóa chất định nhóm \nmáu B (Anti B)",
+      "model": "Anti B (IgM)\"",
+      "brand": "Anti B-Spectrum Ai Cập\"",
+      "manufacturer": "Spectrum / Ai Cập",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025",
+      "specification": "* Thành phần: Kháng thể đơn dòng Anti B.\n* Đóng gói 1 lọ ≥ 10ml",
+      "unit": "lọ",
+      "quantity": 4,
+      "unitPrice": 89000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "d7d823cb-f7d7-46ae-91ce-e0c8760ec7f1",
+      "name": "Hóa chất hiện hình",
+      "model": "E.O.S. Dev.",
+      "brand": "Hóa chất hiện hình\"",
+      "manufacturer": "Agfa NV,Agfa NV, Belgium",
+      "origin": "Belgium",
+      "manufactureYear": "2025",
+      "specification": "Phù hợp với tất cả các loại phim X-Quang thông thường. Bộ hóa chất gồm 02 phần. Phần 1 ≥ 4,73 lít; phần 2 ≥ 0,473 lít. Sản phẩm đạt tiêu chuẩn Châu Âu (CE).",
+      "unit": "Bộ",
+      "quantity": 24,
+      "unitPrice": 882000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "b00aa33b-ac34-42fd-9303-5d1a9fcf37ab",
+      "name": "Định lượng Bilirubin trực tiếp",
+      "model": "BILIRUBIN DIRECT",
+      "brand": "BIL D 330 - R1:6X 44ML , R2:3 X 22ML",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "*Thành phần: \nR1: Sulphanilic Acid 28,87 mmol/l HCl 23 mmol/l,\nR2: Sodium Nitrite 2,9 mmol/l,\n*Bộ gồm R1: 2 lọ 44 ml , R2: 22ml.\n* Tiêu chuẩn chất lượng: ISO/CE",
+      "unit": "Bộ",
+      "quantity": 2,
+      "unitPrice": 220000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "28d6ba42-85a4-4da3-b654-f96e4cd0b648",
+      "name": "Test chẩn đoán viêm gan B (HBsAg)",
+      "model": "THSG30AM",
+      "brand": "Quick Test Hbsag",
+      "manufacturer": "Công ty CP SXKD Sinh Phẩm Chẩn Đoán Y Tế Việt Mỹ/ Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "* Dùng xét nghiệm nhanh chẩn đoán viêm gan B. Định tính phát hiện kháng nguyên bề mặt vi rút viêm gan B trong huyết thanh hoặc huyết tương của người.\n* Độ nhạy: 100%\n* Độ đặc hiệu: ≥ 98% \n* Tỷ lệ phép thử hỏng: ≤ 5%\n* Tiêu chuẩn chất lượng:ISO 13485",
+      "unit": "Test",
+      "quantity": 1500,
+      "unitPrice": 5500,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "d49e6b19-b9ca-47b5-b169-df0849b68b45",
+      "name": "Định lượng Protein",
+      "model": "TOTAL PROTEIN",
+      "brand": "TP 440 - 10 X 44 ML",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "* Thành phần: \nCopper II Sulphate 12 mmol/l\nPotassium Sodium Tartrate 31,9 mmol/l\nPotassium Iodide 30,1 mmol/l\nSodium Hydroxide 0,6 mol/l.\n* Lọ: 44ml.\n* Tiêu chuẩn chất lượng: ISO 13485",
+      "unit": "Lọ",
+      "quantity": 4,
+      "unitPrice": 80000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "68374dea-bae4-4114-8328-cf5b14f73d4e",
+      "name": "Đo hoạt độ SGPT/\nALT",
+      "model": "ALT/GPT",
+      "brand": "ALT/GPT 330 - R1:6X44ML, R2:3X22ML\"",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "*Thành phần:\nR1: Tris Buffer (pH 7,5) 137,5 mmol/l, L-Alanine 709 mmol/l, LDH (microbial) ≥ 2000 U/l, \nR2: CAPSO 20 mmol/l, 2-oxoglutarate 85 mmol/l, NADH 1.05 mmol\n*Bộ gồm: R1: 44ml, R2: 11ml.\n* Tiêu chuẩn chất lượng: ISO 13485",
+      "unit": "Bộ",
+      "quantity": 21,
+      "unitPrice": 115000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "b1f1550c-48da-4656-8f18-1b994b93c0dd",
+      "name": "Hóa chất hãm hình",
+      "model": "E.O.S. Fix",
+      "brand": "Hóa chất hãm hình",
+      "manufacturer": "Agfa NV,Agfa NV, Belgium",
+      "origin": "Belgium",
+      "manufactureYear": "2025",
+      "specification": "Phù hợp với tất cả các loại phim X-Quang thông thường. Bộ hóa chất gồm 02 phần. Phần 1 ≥ 3,785 lít; Phần 2 ≥ 0,473 lít. Sản phẩm đạt tiêu chuẩn Châu Âu (CE).",
+      "unit": "Bộ",
+      "quantity": 24,
+      "unitPrice": 693000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "0772ed4e-7592-4169-9d05-09ce7e848271",
+      "name": "Vôi Soda",
+      "model": "Litholyme",
+      "brand": "\"\t\nVôi soda Litholyme hấp thụ CO2 chuyển từ trắng sang tím dùng trong phòng mổ ( 2 bình 5 lít/thùng ). \"",
+      "manufacturer": "Allied Healthcare Products, Inc./ USA",
+      "origin": "USA",
+      "manufactureYear": "2025",
+      "specification": "Vôi soda gồm 02 thành phần chính là NAOH và CA(OH)2 (Vôi Soda hấp thụ CO2 dùng cho máy gây mê)",
+      "unit": "Kg",
+      "quantity": 5,
+      "unitPrice": 195500,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "938b5753-6427-4c38-9905-9ec64b03cb8a",
+      "name": "Cồn 90 độ",
+      "model": "BIDOPHA",
+      "brand": "Cồn 90 độ chai 1 lít Bidopha (th/15c)\"",
+      "manufacturer": "Công ty cổ phần dược phẩm Bidopharma USA – Chi nhánh Long An/ Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Cồn 90 độ chai 500ml, dung dịch trong suốt không màu dễ bay hơi vị nóng có mùi thơm của cồn chế phẩm phải thể hiện phép thử định tính của Ethanol",
+      "unit": "Chai",
+      "quantity": 20,
+      "unitPrice": 37000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "a6a1c937-1f72-44ab-98af-33c299d32d76",
+      "name": "Định lượng Bilirubin toàn phần",
+      "model": "BILIRUBIN TOTAL",
+      "brand": "BIL T 330 - R1:6X 44ML , R2:3 X 22ML",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "*Thành phần: \nR1: Sulphanilic Acid 28,87 mmol/l HCl 58,8 mmol/l Cetrimide 68,6 mmol/l, \nR2: Sodium Nitrite 2,90 mmol/l\n*Bộ gồm R1:  2 lọ 44 ml, R2: 22ml.\n* Tiêu chuẩn chất lượng: ISO/CE.",
+      "unit": "Bộ",
+      "quantity": 2,
+      "unitPrice": 220000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "8e37298d-b4ff-45ce-a6a5-3c391b5d954b",
+      "name": "Định lượng HDL-Cholesterol",
+      "model": "HDL DIRECT",
+      "brand": "HDL C160 (4x30ml+4x10ml)\"",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "* Bộ gồm: R1: 01 lọ 30 ml, R2: 01 lọ 10ml.\n* Thành phần: \n- R1 MES buffer (pH 6,5) 6,5 mmol/l TODB N, N-Bis(4-sulfobutyl)-3-methylaniline) 3 mmol/l Polyvinyl sulfonic acid 50 mg/l Polyethylene-glycol-methyl ester 30 ml/l MgCl2 2 mmol/l; \n- R2 MES buffer (pH 6.5) 50 mmol/l Cholesterol esterase 5 kU/l Cholesterol oxidase 20 kU/l Peroxidase 5 kU/l 4-aminoantipyrine 0,9 g/l Detergent 0,5 %.\n* Tiêu chuẩn chất lượng: ISO 13485",
+      "unit": "Bộ",
+      "quantity": 34,
+      "unitPrice": 654800,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "45efc126-b21f-4553-9068-015702776a5d",
+      "name": "Định lượng Urea",
+      "model": "UREA",
+      "brand": "UREA 275(5x44ml ;5x11ml)",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "*Thành phần:\nR1:Tris Buffer 100 mmol/l\nα-Ketoglutarate 5,49 mmol/l\nUrease (Jack Bean) ≥10 KU/l\nGLDH (Microorganism) ≥ 2,5 KU/l\nR2: NADH 1,66 mmol/l.\n* Bộ gồm R1: 44ml, R2: 11ml.\n* Tiêu chuẩn chất lượng:ISO 13485",
+      "unit": "Bộ",
+      "quantity": 20,
+      "unitPrice": 135000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "b0212e7a-9b0b-48bc-b1e9-20f4f57a2e3b",
+      "name": "Định lượng Uric Acid",
+      "model": "URIC ACID (SINGER REAGENT)",
+      "brand": "UA 440 - 10 x 44 ML",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "*Thành phần: R1 + R2\nPipes Buffer (pH 7,0) 50 mmol/l\nTOOS 0,48 mmol/l\nUricase 200 U/l\nPeroxidase 5000 U/l\n4-Aminoantipyrine 1,5 mmol/l. \n* Lọ: 44ml.\n* Tiêu chuẩn chất lượng: ISO 13485",
+      "unit": "Lọ",
+      "quantity": 21,
+      "unitPrice": 135000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "3e0b6a22-de65-476a-b41f-483acf48af63",
+      "name": "Nội kiểm mức bình thường cho máy sinh hóa",
+      "model": "ERBA NORM",
+      "brand": "Erba norm 4x5ml",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "* Bộ gồm: Dung dịch R1:4 lọ x 5 ml; Dung dịch R2: 1 lọ x 20ml. \n* Thành phần: Được điều chế từ huyết thanh của con người với các chất phụ gia hoá học và các chất chiết xuất mô có nguồn gốc con người và động vật. Được thêm vào một số loại vi khuẩn,được cung cấp ở dạng đông khô để tăng tính ổn định\n* Tiêu chuẩn chất lượng: ISO 13485",
+      "unit": "Bộ",
+      "quantity": 6,
+      "unitPrice": 1150000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "a1795295-4300-4b83-9666-a08bf9727ba9",
+      "name": "Hóa chất định nhóm\n máu A (Anti A)",
+      "model": "Anti A (IgM)\"",
+      "brand": "Anti A-Spectrum Ai Cập",
+      "manufacturer": "Spectrum / Ai Cập",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025",
+      "specification": "* Thành phần: Kháng thể đơn dòng Anti A.\n* Đóng gói 1 lọ ≥ 10ml",
+      "unit": "lọ",
+      "quantity": 4,
+      "unitPrice": 89000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "2a11d02f-d7d5-401e-a56b-84c7b7c44e4e",
+      "name": "Test thử nước tiểu \n10 thông số",
+      "model": "Multistix 10 SG",
+      "brand": "Que thử phân tích nước tiểu 10 thông số",
+      "manufacturer": "Siemens Healthcare Diagnostics Inc/ Mỹ",
+      "origin": "Mỹ",
+      "manufactureYear": "2025",
+      "specification": "* Bao gồm 11 vạch trong đó có 10 vạch thể hiện 10 \nthông số theo thứ tự lần lượt: bilirubin, blood (occult), \nglucose, ketone (acetoacetic acid), SG, leukocytes, \nnitrite, pH, protein, urobilinogen và cuối cùng là 01 \nvạch chứng",
+      "unit": "Test",
+      "quantity": 11000,
+      "unitPrice": 6900,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "5ebf212f-6170-4779-955c-e61e24abb73d",
+      "name": "Test xét nghiệm nhanh chẩn đoán viêm gan C",
+      "model": "THCV30AM",
+      "brand": "Định tính phát hiện virus HCV trong huyết thanh , huyết tương và máu toán phần của người",
+      "manufacturer": "Công ty CP SXKD Sinh Phẩm Chẩn Đoán Y Tế Việt Mỹ/ Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "* Dùng xét nghiệm nhanh chẩn đoán viêm gan C. Định tính phát hiện các kháng thể kháng HCV trong huyết thanh hoặc huyết tương người. \n* Độ nhạy: ≥ 98%\n* Độ đặc hiệu: ≥ 97% \n* Tiêu chuẩn chất lượng: ISO 13485",
+      "unit": "Test",
+      "quantity": 500,
+      "unitPrice": 6930,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "f2d64f66-035d-4650-807b-f377377a3d9b",
+      "name": "Định lượng Triglycerid",
+      "model": "TRIGLYCERIDES",
+      "brand": "TG 440 - 10 x 44 ML",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "* Thành phần: PIPES buffer (pH 7,0) 50 mmol/l, ATP 2.85 mmol/l, Mg 60 mmol/l Glycerol Kinase (GK) 1,5 U/ml Glycerol-3-phosphate oxidase (GPO) 6,0 U/ml Toos 0,48 mmol/l\n* Lọ: 44ml.\n* Tiêu chuẩn chất lượng: ISO/CE,",
+      "unit": "Lọ",
+      "quantity": 32,
+      "unitPrice": 180000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "a23d7abc-50af-43f2-b048-bdb728aa4b75",
+      "name": "Nội kiểm mức bệnh lý cho máy sinh hóa",
+      "model": "ERBA PATH",
+      "brand": "Erba path 4x5ml",
+      "manufacturer": "Erba Lachema s.r.o/ Czech Republic",
+      "origin": "Czech Republic",
+      "manufactureYear": "2025",
+      "specification": "* Bộ gồm: Dung dịch R1:4 lọ x 5 ml; Dung dịch R2: 1 lọ x 20ml. \n*Thành phần: Được điều chế từ huyết thanh của con người với các chất phụ gia hoá học và các chất chiết xuất mô có nguồn gốc con người và động vật. Được thêm vào một số loại vi khuẩn,được cung cấp ở dạng đông khô để tăng tính ổn định\n* Tiêu chuẩn chất lượng: ISO 13485",
+      "unit": "Bộ",
+      "quantity": 6,
+      "unitPrice": 1150000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "cc587e3f-c0ad-4b14-8a08-eb050a0a7b74",
+      "name": "Hóa chất định \nnhóm máu AB (Anti AB)",
+      "model": "Anti AB (IgM)\"",
+      "brand": "Anti AB-Spectrum Ai Cập\"",
+      "manufacturer": "Spectrum / Ai Cập",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025",
+      "specification": "* Thành phần: Kháng thể đơn dòng Anti A.\n* Đóng gói 1 lọ ≥ 10ml",
+      "unit": "lọ",
+      "quantity": 4,
+      "unitPrice": 89000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "ab5c7db1-218e-4768-8fdc-adce8e89599d",
+      "name": "Test chẩn đoán HIV",
+      "model": "HIV 1&2",
+      "brand": "Quick Test HIV 1&2",
+      "manufacturer": "Công ty CP SXKD Sinh Phẩm Chẩn Đoán Y Tế Việt Mỹ/ Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "* Dùng xét nghiệm nhanh chẩn đoán HIV. Định tính phát hiện các kháng thể kháng HIV trong máu toàn phần, huyết thanh hoặc huyết tương của người.\n* Độ nhạy 99,9%, độ đặc hiệu 99,6%, độ chính xác tương quan 99,8%.\n* Tiêu chuẩn chất lượng:ISO 13485",
+      "unit": "Test",
+      "quantity": 500,
+      "unitPrice": 9980,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    },
+    {
+      "id": "2638963e-8a50-425e-a909-95bf1f47a6c8",
+      "name": "Cloramin B",
+      "model": "Chloramine-B",
+      "brand": "Sản phẩm hóa chất Chloramin B\"",
+      "manufacturer": "Công ty CP hóa chất cơ bản Miền Nam/ Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Thành phần: Sodium Benzen sulfochloramin  (Hàm lượng Clo  hoạt tính tối thiểu 25%)",
+      "unit": "Kg",
+      "quantity": 250,
+      "unitPrice": 118800,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "93/QĐ-TTVT",
+      "decisionDate": "2025-08-29T23:59:59",
+      "resultPublishedDate": "2025-08-29T16:51:02"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -28,13 +478,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500214898",
-    "notifyId": "d836b552-0f32-432d-a86a-0621d6bde56f",
-    "bidId": "7b6dff1e-3b06-400c-a1da-916e7150dc37",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:19.829Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:23:27.681Z"
 }

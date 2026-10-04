@@ -1,9 +1,200 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 6,
+  "bidders": [
+    {
+      "id": "84878370-928c-482a-aa72-099edc69faf8",
+      "contractorCode": "vn0309324289",
+      "taxCode": "0309324289",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ QUỐC TẾ PHÚ MỸ",
+      "status": "lost",
+      "lotNo": "PP2500265280",
+      "lotName": "Máy gây mê kèm thở",
+      "bidPrice": 394000000,
+      "finalPrice": 394000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2025-07-21T10:37:52.421",
+      "models": []
+    },
+    {
+      "id": "4de60732-36c8-48a7-9226-1624805b3bec",
+      "contractorCode": "vn0107650360",
+      "taxCode": "0107650360",
+      "contractorName": "CÔNG TY TNHH NANOMED",
+      "status": "won",
+      "lotNo": "PP2500265280",
+      "lotName": "Máy gây mê kèm thở",
+      "bidPrice": 392300000,
+      "finalPrice": 392300000,
+      "winningPrice": 392300000,
+      "reason": "",
+      "submittedAt": "2025-07-21T10:37:52.421",
+      "models": [
+        "APUS x1"
+      ]
+    },
+    {
+      "id": "830c0513-5e3e-4bfc-9cb0-2369ba7c5aad",
+      "contractorCode": "vn4100730085",
+      "taxCode": "4100730085",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
+      "status": "won",
+      "lotNo": "PP2500265281",
+      "lotName": "Máy phá rung tim",
+      "bidPrice": 146580000,
+      "finalPrice": 146580000,
+      "winningPrice": 146580000,
+      "reason": "",
+      "submittedAt": "2025-07-21T10:37:52.421",
+      "models": [
+        "CardioAid 360-B"
+      ]
+    },
+    {
+      "id": "457848bc-f11b-4c37-8535-6505d63c5191",
+      "contractorCode": "vn0316361429",
+      "taxCode": "0316361429",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ CAO SAVINA",
+      "status": "won",
+      "lotNo": "PP2500265282",
+      "lotName": "Máy siêu âm tổng quát",
+      "bidPrice": 1420000000,
+      "finalPrice": 1420000000,
+      "winningPrice": 1420000000,
+      "reason": "",
+      "submittedAt": "2025-07-21T10:37:52.421",
+      "models": [
+        "LOGIQ P8"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2500265281",
+      "name": "Máy phá rung tim",
+      "model": "CardioAid 360-B",
+      "brand": "Innomed Medical Zrt.",
+      "manufacturer": "Hãng sản xuất: Innomed Medical Zrt./Hungary",
+      "origin": "Hungary",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "'I. Yêu cầu chung\n- Năm sản xuất: Năm 2024  \n- Chất lượng: mới 100%\n- Chứng chỉ chất lượng: ISO 13485,CE\nII. Yêu cầu cấu hình:\nMáy chính với máy in nhiệt: 01 cái\nPhụ kiện kèm theo:\n- Dây nguồn chuẩn: 01 cái\n- Điện cực sốc cầm tay cho người lớn và trẻ em: 01 bộ\n- Cáp đo điện tim 5 kênh: 01 cái\n- Điện cực tim, dùng 1 lần: 01 bộ (30 cái)\n- Máy tạo nhịp ngoài tích hợp (Pacermaker): 01 máy\n- Điện cực tạo nhịp, dùng 1 bệnh nhân: 10 cặp\n- Pin sạc tích hợp\n- Giấy in: 02 cuộn\n- Gel bôi trơn: 02 chai\n- Xe đẩy: 1 cái\nIII. Yêu cầu tính năng, thông số kỹ thuật:\n- Tính năng:\n+ Phương pháp: 02 pha\n+ Máy phá rung tim (có tạo nhịp)\n- Thông số kỹ thuật:\n* Chức năng khử rung\n- Chế độ sốc: bằng tay, đồng bộ và tự động sốc ngoài (AED)\n- Năng lượng sốc ngoài: 2 - 360J\n- Năng lượng sốc trong: 1 - 50J\n- Phạm vi trở kháng: 15 đến 200 ohm\n- Tự động xả năng lượng nếu không sốc: 30 giây\n- Thời gian đồng bộ: 40 mili giây\n- Thời gian nạp: 2.7 giây đến 200J và 4.5 giây đến 360J\n- Chọn mức năng lượng sốc: trên tay cầm hoặc phím điều chỉnh ở mặt trước máy\n* Chức năng tạo nhịp:\n- Chế độ: cố định và yêu cầu\n- Kiểu tạo nhịp: không xâm nhập qua lồng ngực\n+ Dạng xung tạo nhịp: thẳng, liên tục\n- Dòng ngõ ra: 0 và 20 đến 200mA\n- Tần số tạo nhịp: 30 đến 200 nhịp/phút\n- Dải trở kháng bệnh nhân: 0 đến 1000 ohms\n* Chức năng theo dõi ECG:\n- Nguồn tín hiệu: Tấm điện cực tạo nhịp/ Bản sốc ngoài: Cáp 3, 5 và 10 đầu và cáp ECG từ nguồn ngoài.\n- Số lượng chuyển đạo: 12 chuyển đạo đồng thời\n- Độ nhạy: 2,5; 5; 10; 20mm/mV và tự động\n- Tốc độ điện tim: 5, 10, 25, 50 mm/giây\n- Lọc nhiễu: High-pass, nguồn chính (main 50/60Hz) và điều chỉnh lọc nhiễu Low-pass.\n- Hiển thị dải nhịp tim: 15 đến 300 nhịp/ phút\n- Các cảnh báo: nhịp tim (HR), suy tim, rung thất (VF), nhanh thất (VT).\n\n- Bảo vệ khử rung: Tối đa 400J\n- Thời gian phục hồi: < 3 giây\n* Màn hình:\n- Kích thước: 7 inches\n* Nguồn cung cấp:\n- Nguồn AC: 90 – 240 V; 47-63Hz\n+ Ắc quy sạc trong máy:  5 giờ theo dõi liên tục; hoặc 200 lần sốc ở 200J.\n+ Loại ắc quy: 3000mAh\n- Thời gian sạc pin: < 2 giờ cho việc sạc đầy\n* Máy in:\n+ Loại máy in: in nhiệt\n- Tốc độ in: 25, 50 mm/giây\n- Có tính năng tự động in\n+ Số kênh in: 01 hoặc 03\n* Lưu trữ dữ liệu:\n+ Loại: Bộ nhớ trong\n+ Lưu trữ dữ liệu: Điều kiện cảnh báo, các sự kiện, lần sử dụng\n+ Dung lượng: 10.000 sự kiện\n+ Xuất dữ liệu: USB\n+ Phần mềm báo cáo: Trên máy tính, dữ liệu USB",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 0,
+      "amount": 146580000,
+      "contractorCode": "vn4100730085",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI"
+      ],
+      "lotNo": "PP2500265281",
+      "decisionNo": "67/QĐ-TTTP",
+      "decisionDate": "2025-07-21T23:59:59",
+      "resultPublishedDate": "2025-07-21T10:38:59"
+    },
+    {
+      "id": "2500265282",
+      "name": "Máy siêu âm tổng quát",
+      "model": "LOGIQ P8",
+      "brand": "LOGIQ P8",
+      "manufacturer": "GE Ultrasound Korea, Ltd.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Từ 2024 trở về sau.",
+      "specification": "Máy siêu âm màu dạng xe đẩy, model: LOGIQ P8 : 01 hệ thống \r\nĐầu dò Convex, model C1-5-RS : 01 cái\r\nĐầu dò Linear, model L6-12-RS  : 01 cái\r\nĐầu dò Tim (Sector), model 3SC-RS : 01 cái \r\nPhần mềm siêu âm Doppler liên tục (CW)\r\nPhần mềm siêu âm Doppler mô cơ tim (TVI)\r\nPhần mềm đàn hồi mô định lượng (Shear Wave Elastography)\r\nPhần mềm tự đông đo độ dày lớp nội trung mạc (Auto IMT)\r\nPhần mềm DICOM\r\nPhần mềm kéo dài trường nhìn (LOGIQ View)\r\nPhần mềm tạo báo cáo (Report Writer)\r\nPhần mềm tự động doppler  (Auto doppler)\r\nTài liệu hướng dẫn bằng tiếng Anh và tiếng Việt : 01 bộ \r\nBộ máy vi tính kèm phần mềm trả kết quả siêu âm: 01 bộ\r\nMáy in phun màu : 01 cái \r\nBộ lưu điện UPS online 1 kVA : 01 bộ \r\nMáy in nhiệt trắng đen : 01 cái",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 0,
+      "amount": 1420000000,
+      "contractorCode": "vn0316361429",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ CAO SAVINA"
+      ],
+      "lotNo": "PP2500265282",
+      "decisionNo": "67/QĐ-TTTP",
+      "decisionDate": "2025-07-21T23:59:59",
+      "resultPublishedDate": "2025-07-21T10:38:59"
+    },
+    {
+      "id": "2500265280",
+      "name": "Máy gây mê kèm thở",
+      "model": "APUS x1",
+      "brand": "aXcent medical GmbH",
+      "manufacturer": "aXcent medical GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Theo Bảng đáp ứng kỹ thuật",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 0,
+      "amount": 392300000,
+      "contractorCode": "vn0107650360",
+      "winnerNames": [
+        "CÔNG TY TNHH NANOMED"
+      ],
+      "lotNo": "PP2500265280",
+      "decisionNo": "67/QĐ-TTTP",
+      "decisionDate": "2025-07-21T23:59:59",
+      "resultPublishedDate": "2025-07-21T10:38:59"
+    },
+    {
+      "id": "3d8703fd-cba1-4c01-a70d-b5a168f24356",
+      "name": "Máy siêu âm tổng quát",
+      "model": "LOGIQ P8",
+      "brand": "LOGIQ P8",
+      "manufacturer": "GE Ultrasound Korea, Ltd.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Từ 2024 \r\ntrở về sau.",
+      "specification": "Máy siêu âm màu dạng xe đẩy, model: LOGIQ P8 : 01 hệ thống \r\nĐầu dò Convex, model C1-5-RS : 01 cái\r\nĐầu dò Linear, model L6-12-RS  : 01 cái\r\nĐầu dò Tim (Sector), model 3SC-RS : 01 cái \r\nPhần mềm siêu âm Doppler liên tục (CW)\r\nPhần mềm siêu âm Doppler mô cơ tim (TVI)\r\nPhần mềm đàn hồi mô định lượng (Shear Wave Elastography)\r\nPhần mềm tự đông đo độ dày lớp nội trung mạc (Auto IMT)\r\nPhần mềm DICOM\r\nPhần mềm kéo dài trường nhìn (LOGIQ View)\r\nPhần mềm tạo báo cáo (Report Writer)\r\nPhần mềm tự động doppler  (Auto doppler)\r\nTài liệu hướng dẫn bằng tiếng Anh và tiếng Việt : 01 bộ \r\nBộ máy vi tính kèm phần mềm trả kết quả siêu âm: 01 bộ\r\nMáy in phun màu : 01 cái \r\nBộ lưu điện UPS online 1 kVA : 01 bộ \r\nMáy in nhiệt trắng đen : 01 cái",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1420000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ CAO SAVINA"
+      ],
+      "decisionNo": "67/QĐ-TTTP",
+      "decisionDate": "2025-07-21T23:59:59",
+      "resultPublishedDate": "2025-07-21T10:38:59"
+    },
+    {
+      "id": "b84fc09a-dac5-45b9-9869-2b2307134805",
+      "name": "Máy gây mê kèm thở",
+      "model": "APUS x1",
+      "brand": "aXcent medical GmbH",
+      "manufacturer": "aXcent medical GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "Theo Bảng đáp ứng kỹ thuật",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 392300000,
+      "winnerNames": [
+        "CÔNG TY TNHH NANOMED"
+      ],
+      "decisionNo": "67/QĐ-TTTP",
+      "decisionDate": "2025-07-21T23:59:59",
+      "resultPublishedDate": "2025-07-21T10:38:59"
+    },
+    {
+      "id": "e7926d3d-3aeb-4e99-bcea-3335900b8156",
+      "name": "Máy phá rung tim",
+      "model": "CardioAid 360-B",
+      "brand": "Innomed Medical Zrt.",
+      "manufacturer": "Hãng sản xuất: Innomed Medical Zrt./Hungary",
+      "origin": "Hungary",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "I. Yêu cầu chung\n- Năm sản xuất: Năm 2024  \n- Chất lượng: mới 100%\n- Chứng chỉ chất lượng: ISO 13485,CE\nII. Yêu cầu cấu hình:\nMáy chính với máy in nhiệt: 01 cái\nPhụ kiện kèm theo:\n- Dây nguồn chuẩn: 01 cái\n- Điện cực sốc cầm tay cho người lớn và trẻ em: 01 bộ\n- Cáp đo điện tim 5 kênh: 01 cái\n- Điện cực tim, dùng 1 lần: 01 bộ (30 cái)\n- Máy tạo nhịp ngoài tích hợp (Pacermaker): 01 máy\n- Điện cực tạo nhịp, dùng 1 bệnh nhân: 10 cặp\n- Pin sạc tích hợp\n- Giấy in: 02 cuộn\n- Gel bôi trơn: 02 chai\n- Xe đẩy: 1 cái\nIII. Yêu cầu tính năng, thông số kỹ thuật:\n- Tính năng:\n+ Phương pháp: 02 pha\n+ Máy phá rung tim (có tạo nhịp)\n- Thông số kỹ thuật:\n* Chức năng khử rung\n- Chế độ sốc: bằng tay, đồng bộ và tự động sốc ngoài (AED)\n- Năng lượng sốc ngoài: 2 - 360J\n- Năng lượng sốc trong: 1 - 50J\n- Phạm vi trở kháng: 15 đến 200 ohm\n- Tự động xả năng lượng nếu không sốc: 30 giây\n- Thời gian đồng bộ: 40 mili giây\n- Thời gian nạp: 2.7 giây đến 200J và 4.5 giây đến 360J\n- Chọn mức năng lượng sốc: trên tay cầm hoặc phím điều chỉnh ở mặt trước máy\n* Chức năng tạo nhịp:\n- Chế độ: cố định và yêu cầu\n- Kiểu tạo nhịp: không xâm nhập qua lồng ngực\n+ Dạng xung tạo nhịp: thẳng, liên tục\n- Dòng ngõ ra: 0 và 20 đến 200mA\n- Tần số tạo nhịp: 30 đến 200 nhịp/phút\n- Dải trở kháng bệnh nhân: 0 đến 1000 ohms\n* Chức năng theo dõi ECG:\n- Nguồn tín hiệu: Tấm điện cực tạo nhịp/ Bản sốc ngoài: Cáp 3, 5 và 10 đầu và cáp ECG từ nguồn ngoài.\n- Số lượng chuyển đạo: 12 chuyển đạo đồng thời\n- Độ nhạy: 2,5; 5; 10; 20mm/mV và tự động\n- Tốc độ điện tim: 5, 10, 25, 50 mm/giây\n- Lọc nhiễu: High-pass, nguồn chính (main 50/60Hz) và điều chỉnh lọc nhiễu Low-pass.\n- Hiển thị dải nhịp tim: 15 đến 300 nhịp/ phút\n- Các cảnh báo: nhịp tim (HR), suy tim, rung thất (VF), nhanh thất (VT).\n\n- Bảo vệ khử rung: Tối đa 400J\n- Thời gian phục hồi: < 3 giây\n* Màn hình:\n- Kích thước: 7 inches\n* Nguồn cung cấp:\n- Nguồn AC: 90 – 240 V; 47-63Hz\n+ Ắc quy sạc trong máy:  5 giờ theo dõi liên tục; hoặc 200 lần sốc ở 200J.\n+ Loại ắc quy: 3000mAh\n- Thời gian sạc pin: < 2 giờ cho việc sạc đầy\n* Máy in:\n+ Loại máy in: in nhiệt\n- Tốc độ in: 25, 50 mm/giây\n- Có tính năng tự động in\n+ Số kênh in: 01 hoặc 03\n* Lưu trữ dữ liệu:\n+ Loại: Bộ nhớ trong\n+ Lưu trữ dữ liệu: Điều kiện cảnh báo, các sự kiện, lần sử dụng\n+ Dung lượng: 10.000 sự kiện\n+ Xuất dữ liệu: USB\n+ Phần mềm báo cáo: Trên máy tính, dữ liệu USB",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 146580000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI"
+      ],
+      "decisionNo": "67/QĐ-TTTP",
+      "decisionDate": "2025-07-21T23:59:59",
+      "resultPublishedDate": "2025-07-21T10:38:59"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -48,13 +239,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500260293",
-    "notifyId": "6fa3bda0-21e9-4d86-a938-23fb64538a79",
-    "bidId": "dbe960c2-077a-4538-a482-c33a78490938",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:23.148Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:23:32.451Z"
 }

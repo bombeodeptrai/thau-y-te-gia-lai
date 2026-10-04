@@ -1,9 +1,124 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "c0dbe78d-cb2e-4866-ab2b-38cb0367e599",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "won",
+      "lotNo": "PP2500246651",
+      "lotName": "Diaclean-NK Diff (h19203)",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 350000,
+      "reason": "",
+      "submittedAt": "2025-05-20T11:28:12.421",
+      "models": []
+    },
+    {
+      "id": "9bea1632-4175-4569-8c54-4424faef4b08",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "won",
+      "lotNo": "PP2500246652",
+      "lotName": "Diaterge-NK (h19202)",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 250000,
+      "reason": "",
+      "submittedAt": "2025-05-20T11:28:12.421",
+      "models": []
+    },
+    {
+      "id": "6ae508bd-49c2-480f-9f1a-ab20eedfc22c",
+      "contractorCode": "vn0313103885",
+      "taxCode": "0313103885",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY",
+      "status": "won",
+      "lotNo": "PP2500246653",
+      "lotName": "ALCOHOL Ethanol",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 3700000,
+      "reason": "",
+      "submittedAt": "2025-05-20T11:28:12.421",
+      "models": []
+    },
+    {
+      "id": "28a9a2c7-f14a-46b3-b62f-6fc140817948",
+      "contractorCode": "vn0313103885",
+      "taxCode": "0313103885",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY",
+      "status": "won",
+      "lotNo": "PP2500246654",
+      "lotName": "Rotor 120 Cell 5mm Light Path (Cuvette phản ứng cho máy sinh hóa XL 180)",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 1350000,
+      "reason": "",
+      "submittedAt": "2025-05-20T11:28:12.421",
+      "models": []
+    },
+    {
+      "id": "557ad44c-360b-4390-95cc-848b34e5b3be",
+      "contractorCode": "vn0313103885",
+      "taxCode": "0313103885",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY",
+      "status": "won",
+      "lotNo": "PP2500246655",
+      "lotName": "Đai xương đòn",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 30000,
+      "reason": "",
+      "submittedAt": "2025-05-20T11:28:12.421",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "cb57cd94-c1a5-4e23-af24-264dff613c62",
+      "name": "Diaterge-NK (h19202)",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Diagon Ltd",
+      "origin": "Hungary",
+      "manufactureYear": "-",
+      "specification": "* Thành phần: \r\nSodium Choloride < 0,9 % ; \r\nDetergent < 1,1%; Buffer  < 0,3%;\r\nStabiliser < 0,3 %; Dye < 0,0001 %.\r\nThùng 5 lít.",
+      "unit": "Lít",
+      "quantity": 120,
+      "unitPrice": 250000,
+      "winnerNames": [
+        "CÔNG TY TNHH KIẾN TẠO"
+      ],
+      "decisionNo": "310/QĐ-TTYT",
+      "decisionDate": "2025-05-19T23:59:59",
+      "resultPublishedDate": "2025-05-20T11:29:05"
+    },
+    {
+      "id": "3f3e303e-e557-4a34-9e34-cb32194f7890",
+      "name": "Diaclean-NK Diff (h19203)",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Diagon Ltd",
+      "origin": "Hungary",
+      "manufactureYear": "-",
+      "specification": "* Thành phần: \r\nSodium hypochloride < 5,0 %;\r\nSodium hydroxide < 1,0%;\r\nDetergent   < 1,0%.\r\nThùng 5 lít.",
+      "unit": "Lít",
+      "quantity": 60,
+      "unitPrice": 350000,
+      "winnerNames": [
+        "CÔNG TY TNHH KIẾN TẠO"
+      ],
+      "decisionNo": "310/QĐ-TTYT",
+      "decisionDate": "2025-05-19T23:59:59",
+      "resultPublishedDate": "2025-05-20T11:29:05"
+    }
+  ],
   "requirements": {
     "total": 5,
     "items": [
@@ -69,12 +184,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500219111",
-    "notifyId": "IB2500219111",
-    "bidId": "8005cf66-4034-47fe-915d-3f2b7df89fd8",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T12:31:29.545Z"
+  "fetchedAt": "2026-10-04T20:23:41.027Z"
 }

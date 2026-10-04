@@ -1,9 +1,145 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "45df27f2-d0d6-4e7a-b30a-593b09955f67",
+      "contractorCode": "vn4101615832",
+      "taxCode": "4101615832",
+      "contractorName": "CÔNG TY TNHH MTV HƯNG THỦY",
+      "status": "won",
+      "lotNo": "PP2500253909",
+      "lotName": "Lô 1: Máy điện tim",
+      "bidPrice": 94000000,
+      "finalPrice": 94000000,
+      "winningPrice": 94000000,
+      "reason": "",
+      "submittedAt": "2025-07-04T11:19:37.447",
+      "models": [
+        "ECG-3250"
+      ]
+    },
+    {
+      "id": "69842f53-cacb-42e1-a5f2-ade4890e4a8a",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "won",
+      "lotNo": "PP2500253910",
+      "lotName": "Lô 2: Máy phân tích huyết học",
+      "bidPrice": 272500000,
+      "finalPrice": 272500000,
+      "winningPrice": 272500000,
+      "reason": "",
+      "submittedAt": "2025-07-04T11:19:37.447",
+      "models": [
+        "MEK - 1301"
+      ]
+    },
+    {
+      "id": "29fab2c4-5816-4e7d-944b-73eff42c43aa",
+      "contractorCode": "vn4101134695",
+      "taxCode": "4101134695",
+      "contractorName": "CÔNG TY TNHH KIẾN TẠO",
+      "status": "lost",
+      "lotNo": "PP2500253911",
+      "lotName": "Lô 3: Máy xét nghiệm nước tiểu",
+      "bidPrice": 40500000,
+      "finalPrice": 40500000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu giá thấp nhất đạt tất cả các yêu cầu. Nên không đánh giá.",
+      "submittedAt": "2025-07-04T11:19:37.447",
+      "models": [
+        "MEK - 1301"
+      ]
+    },
+    {
+      "id": "ee636c06-aabb-44ca-921a-8ac085ba5dea",
+      "contractorCode": "vn0309932833",
+      "taxCode": "0309932833",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ VÀ ĐẦU TƯ Y TẾ PHƯƠNG NAM",
+      "status": "won",
+      "lotNo": "PP2500253911",
+      "lotName": "Lô 3: Máy xét nghiệm nước tiểu",
+      "bidPrice": 35000000,
+      "finalPrice": 35000000,
+      "winningPrice": 35000000,
+      "reason": "",
+      "submittedAt": "2025-07-04T11:19:37.447",
+      "models": [
+        "CL-50-2000"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "7ac4f67d-1de1-412a-a371-635c56d90098",
+      "name": "Máy xét nghiệm nước tiểu",
+      "model": "CL-50-2000",
+      "brand": "CL-50 Plus",
+      "manufacturer": "High Technology, Inc",
+      "origin": "Mỹ",
+      "manufactureYear": "2025",
+      "specification": "I. Yêu cầu chung:\n- Chất lượng hàng hóa mới 100%, sản xuất năm 2024 trở về sau.\n- Đạt tiêu chuẩn chất lượng ISO 13485 và chứng nhận FDA. \n- Nước sản xuất: Mỹ\n- Tài liệu hướng dẫn sử dụng bằng Tiếng Việt: 01 bộ.\nII. Yêu cầu cấu hình\n- Máy chính: 01 máy\n- Giá đặt que thử (Strip holder): 01 cái\n- Giấy in: 01 cuộn\n- Hộp que nước tiểu: 01 hộp\nIII. Yêu cầu kỹ thuật\n1. Thông số: Đo 14 thông số. Bao gồm: pH, Nitrite, Protein, Special Gravity, Blood, Glucose, Bilirubin, Urobilinogen, Ketone, Leucocytes, Calcium, Creatinine, Ascorbic Acid và Microalbumin.\n2. Chế độ chạy bình thường: 60 mẫu/ giờ\n3. Nguyên lý đo: Là máy phân tích nước tiểu dựa trên nguyên tắc trắc quang phản xạ bước sóng kép kết hợp với điện, quang học và cơ khí.\n- In kết quả bằng máy in nhiệt\n- Đọc mã barcode\n- Hiệu chuẩn: Tự động\n4. Cổng kết nối: Serial RS232\nCó khả năng kết nối và truyền dữ liệu qua máy tính\nIV. Yêu cầu khác\n- Thời gian bảo hành: 12 tháng kể từ khi nghiệm thu thiết bị đưa vào sử dụng, bảo trì trong suốt thời gian bảo hành. \n- Bảo trì định kỳ trong thời gian bảo hành: 06 tháng/lần.\n- Đào tạo, hướng dẫn sử dụng thành thạo, bảo quản thiết bị và chuyển giao công nghệ cho người sử dụng tại đơn vị sử dụng (cấp giấy chứng nhận hướng dẫn đào tạo cho tất cả người sử dụng).\n- Cung cấp các chứng từ CO, CQ đối với thiết bị nhập khẩu và một số giấy tờ khác khi chủ đầu tư yêu cầu.",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 35000000,
+      "amount": 35000000,
+      "contractorCode": "vn0309932833",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ VÀ ĐẦU TƯ Y TẾ PHƯƠNG NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "0109",
+      "decisionDate": "2025-07-04T23:59:59",
+      "resultPublishedDate": "2025-07-04T11:20:11"
+    },
+    {
+      "id": "dd365ba0-a635-49ba-a5e0-1292ffbc232d",
+      "name": "Máy điện tim",
+      "model": "ECG-3250",
+      "brand": "Nihon Koden Corporation",
+      "manufacturer": "Nihon Koden Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "I. Yêu cầu chung:\n- Chất lượng hàng hóa mới 100%, sản xuất năm 2024 trở về sau.\n- Đạt tiêu chuẩn chất lượng ISO 13485, ISO 9001, EU\n- Nước sản xuất: Nhóm các nước công nghiệp phát triển (G7) – Nhật Bản\n- Tài liệu hướng dẫn sử dụng bằng Tiếng Việt: 01 bộ.\nII. Đáp ứng cấu hình\n- Máy chính: 01 máy\n- Cáp điện tim: 01 cái\n- Điện cực chi: 04 cái\n- Điện cực ngực: 06 cái\n- Giấy in theo máy: 01 xấp\n- Bút lau đầu máy ghi nhiệt: 01 cái\n- Pin sạc: 01 cái",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 94000000,
+      "amount": 94000000,
+      "contractorCode": "vn4101615832",
+      "winnerNames": [
+        "CÔNG TY TNHH MTV HƯNG THỦY"
+      ],
+      "lotNo": "",
+      "decisionNo": "0109",
+      "decisionDate": "2025-07-04T23:59:59",
+      "resultPublishedDate": "2025-07-04T11:20:11"
+    },
+    {
+      "id": "65d248a3-8735-4d60-a4e5-c5a3c9a8ebb5",
+      "name": "Máy phân tích huyết học",
+      "model": "MEK - 1301",
+      "brand": "Nihon Koden Corporation",
+      "manufacturer": "Nihon Koden Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "I. Yêu cầu chung:\n- Thiết bị được sản xuất năm 2024 trở về sau, mới 100%\n- Nhà sản xuất có chứng chỉ ISO 13485\n- Xuất xứ máy chính: Nhật Bản\n- Tài liệu hướng dẫn sử dụng bằng Tiếng Việt: 01 bộ.\nII. Yêu cầu về cấu hình\n- Máy chính: 01 máy\n- Phụ tùng tiêu chuẩn kèm theo: 01 bộ\n- Máy tính (mua trong nước): 01bộ\n- Máy in (mua trong nước): 01 cái\n- Đầu đọc barcode: 01 cái\n- Bộ hóa chất thử máy: 01 bộ\n+ Isotonac 3 (18L): 01 can\n+ Hemolynac 310 (250ml): 01 can\n+ Cleanac 710 (2L): 01 can\n+ Cleanac 3 (5L): 01 can",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 272500000,
+      "amount": 272500000,
+      "contractorCode": "vn4101134695",
+      "winnerNames": [
+        "CÔNG TY TNHH KIẾN TẠO"
+      ],
+      "lotNo": "",
+      "decisionNo": "0109",
+      "decisionDate": "2025-07-04T23:59:59",
+      "resultPublishedDate": "2025-07-04T11:20:11"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -48,13 +184,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500239840",
-    "notifyId": "a0c85e4e-6318-49b8-bf15-3a3800bb5894",
-    "bidId": "c8b28665-6620-4c62-a0a6-aab7ac55e7b2",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-09-28T06:26:56.559Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:23:34.885Z"
 }

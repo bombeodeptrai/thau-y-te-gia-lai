@@ -2,7 +2,68 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "27885555-f8ff-4422-a25d-f02922fce81d",
+      "contractorCode": "vn0300533351",
+      "taxCode": "0300533351",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VÀ SINH HỌC Y TẾ",
+      "status": "won",
+      "lotNo": "PP2500344567",
+      "lotName": "Enalapril maleat",
+      "bidPrice": 185,
+      "finalPrice": 185,
+      "winningPrice": 74000000,
+      "reason": "",
+      "submittedAt": "2025-08-05T09:28:31.378",
+      "models": []
+    },
+    {
+      "id": "050571cf-f6be-4dd8-96d2-16e096523332",
+      "contractorCode": "vn0302339800",
+      "taxCode": "0302339800",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+      "status": "won",
+      "lotNo": "PP2500344569",
+      "lotName": "Glibenclamid + metformin hydroclorid",
+      "bidPrice": 34860000,
+      "finalPrice": 34860000,
+      "winningPrice": 34860000,
+      "reason": "",
+      "submittedAt": "2025-08-05T09:28:31.378",
+      "models": []
+    },
+    {
+      "id": "5960d63a-60f5-49de-8c21-7a0df3b0ccd9",
+      "contractorCode": "vn0302339800",
+      "taxCode": "0302339800",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+      "status": "won",
+      "lotNo": "PP2500344570",
+      "lotName": "Glimepirid + metformin hydroclorid",
+      "bidPrice": 446040000,
+      "finalPrice": 446040000,
+      "winningPrice": 446040000,
+      "reason": "",
+      "submittedAt": "2025-08-05T09:28:31.378",
+      "models": []
+    },
+    {
+      "id": "1b167fec-1ff2-4e33-8143-dd6f866f7c1e",
+      "contractorCode": "vn0302339800",
+      "taxCode": "0302339800",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+      "status": "lost",
+      "lotNo": "PP2500344571",
+      "lotName": "Nifedipin",
+      "bidPrice": 100800000,
+      "finalPrice": 100800000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu vượt giá kế hoạch, nhà thầu không đồng ý giảm giá về thấp hơn hoặc bằng giá kế hoạch",
+      "submittedAt": "2025-08-05T09:28:31.378",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 5,
@@ -68,13 +129,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2500311502",
-    "notifyId": "f85afdf6-155a-435a-8e79-adce622ae28d",
-    "bidId": "3d4656cf-5ff4-4fd8-94a7-a787709ad6a8",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-10-03T11:54:26.619Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-04T20:23:23.721Z"
 }
