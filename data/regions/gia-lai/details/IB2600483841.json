@@ -1,9 +1,73 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "9e276a8a-f9e8-4c7f-ac8e-32fa6798b540",
+      "contractorCode": "vn0304241487",
+      "taxCode": "0304241487",
+      "contractorName": "CÔNG TY TNHH KHẢ LỘC",
+      "status": "won",
+      "lotNo": "BP2600677782",
+      "lotName": "Mua sắm dụng cụ nội soi tai mũi họng phục vụ công tác khám, chữa bệnh của Bệnh viện ĐKKV Bồng Sơn",
+      "bidPrice": 142275000,
+      "finalPrice": 142275000,
+      "winningPrice": 142275000,
+      "reason": "",
+      "submittedAt": "2026-09-30T09:35:27.881",
+      "models": [
+        "SS40C.01",
+        "SS28A.02"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "dcbe84fe-7701-4c7e-bee5-bc27c6f94048",
+      "name": "Ống nội soi tai mũi họng (Optic 70°)",
+      "model": "SS40C.01",
+      "brand": ".",
+      "manufacturer": "Emos\nTechnology\nGmbH",
+      "origin": "Đức",
+      "manufactureYear": "Từ\nnăm\n2025\ntrở về\nsau",
+      "specification": "Ống soi quang học, góc\nsoi nghiêng 70°, mặt vát\nhướng lên tầm nhìn mở\nrộng, đường kính 4mm, dài\n175mm, hấp tiệt trùng\nđược.\n- Tương thích với hệ thống\nphẫu thuật nội soi tai mũi\nhọng (model: Telecam C3,\nHãng sản xuất: Karl Storz)",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 48825000,
+      "amount": 48825000,
+      "contractorCode": "vn0304241487",
+      "winnerNames": [
+        "CÔNG TY TNHH KHẢ LỘC"
+      ],
+      "lotNo": "",
+      "decisionNo": "813/QĐ-BVBS",
+      "decisionDate": "2026-09-30T09:34:09",
+      "resultPublishedDate": "2026-09-30T09:35:37"
+    },
+    {
+      "id": "d899c6d5-e1db-48a0-9eb5-5eea967bad58",
+      "name": "Ống nội soi tai mũi họng (Optic 0°)",
+      "model": "SS28A.02",
+      "brand": ".",
+      "manufacturer": "Emos\nTechnology\nGmbH",
+      "origin": "Đức",
+      "manufactureYear": "Từ\nnăm\n2025\ntrở về\nsau",
+      "specification": "- Ống soi quang học, góc\nsoi nghiêng 0°, đường\nkính 2.8 mm, dài 110mm,\nhấp tiệt trùng được.\n- Tương thích với hệ thống phẫu thuật nội soi\ntai mũi họng (model:\nTelecam C3, Hãng sản\nxuất: Karl Storz)",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 46725000,
+      "amount": 46725000,
+      "contractorCode": "vn0304241487",
+      "winnerNames": [
+        "CÔNG TY TNHH KHẢ LỘC"
+      ],
+      "lotNo": "",
+      "decisionNo": "813/QĐ-BVBS",
+      "decisionDate": "2026-09-30T09:34:09",
+      "resultPublishedDate": "2026-09-30T09:35:37"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -103,5 +167,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-03T05:27:15.648Z"
+  "fetchedAt": "2026-10-04T05:43:53.335Z"
 }
