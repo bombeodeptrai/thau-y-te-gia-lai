@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-03T23:04:16.266Z",
+  "auditedAt": "2026-10-04T05:43:51.286Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 474,
+      "count": 473,
       "error": ""
     },
     {
@@ -62,13 +62,13 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 21,
+      "count": 18,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 29,
+      "count": 28,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 14,
+      "count": 12,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 36,
+      "count": 35,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 40,
+      "count": 38,
       "error": ""
     },
     {
@@ -206,7 +206,7 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1206,
+  "candidateCount": 1195,
   "acceptedCount": 47,
-  "rejectedCount": 1159,
+  "rejectedCount": 1148,
   "rejectedReasons": {
-    "excluded:tu van": 361,
+    "excluded:tu van": 358,
     "excluded:xay dung": 310,
-    "insufficient-medical-context": 274,
+    "insufficient-medical-context": 268,
     "excluded:sua chua": 45,
     "excluded:cai tao": 41,
     "excluded:xay lap": 41,
@@ -285,16 +285,16 @@
     "excluded:thuc pham": 9,
     "excluded:tham dinh": 8,
     "excluded:suat an": 8,
-    "excluded:trang phuc": 7,
     "excluded:may tinh": 6,
+    "excluded:trang phuc": 6,
     "excluded:bao ve": 4,
     "excluded:bao tri": 4,
     "excluded:giam sat thi cong": 3,
-    "excluded:phan bon": 3,
     "excluded:kiem dinh": 3,
     "excluded:may in": 3,
     "excluded:cap dien": 2,
     "excluded:may chu": 2,
+    "excluded:phan bon": 2,
     "excluded:rac thai": 2,
     "excluded:cong nghe thong tin": 1,
     "excluded:thu y": 1,
@@ -939,6 +939,51 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600022892",
+      "name": "Tư vấn Giám sát thi công xây dựng công trình và lắp đặt thiết bị Công trình: Trường PTDTNT THPT Số 1 tỉnh Gia Lai. HM: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy. chữa, cải tạo hệ thống phòng cháy chữa cháy.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "cai tao",
+        "sua chua",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600028504",
+      "name": "Tư vấn Giám sát thi công xây dựng công trình và lắp đặt thiết bị Công trình: Trường trung học phổ thông số 1 Nguyễn Thái Học (nay là Trường trung học phổ thông số 1 Trần Cao Vân). HM: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "cai tao",
+        "sua chua",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600022848",
+      "name": "Tư vấn Giám sát thi công xây dựng công trình và lắp đặt thiết bị Công trình: Trường THPT Chuyên Lê Quý Đôn. HM: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "cai tao",
+        "sua chua",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
       "notifyNo": "IB2600566379",
       "name": "Tư vấn Lập quy hoạch tổng mặt bằng.Trường THPT Trần Phú, hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1336,41 +1381,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600030659",
-      "name": "Tư vấn khảo sát địa hình, địa chất xây dựng",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600030624",
-      "name": "Tư vấn lập cơ sở dữ liệu GIS",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600030574",
-      "name": "Mua sắm ti vi và phụ kiện",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
       ]
     }
   ],
