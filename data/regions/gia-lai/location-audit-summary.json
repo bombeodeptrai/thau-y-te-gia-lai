@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-04T05:53:02.372Z",
+  "auditedAt": "2026-10-04T14:05:42.878Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 473,
+      "count": 454,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 28,
+      "count": 26,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 53,
+      "count": 52,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 126,
+      "count": 123,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1195,
-  "acceptedCount": 47,
-  "rejectedCount": 1148,
+  "candidateCount": 1167,
+  "acceptedCount": 37,
+  "rejectedCount": 1130,
   "rejectedReasons": {
-    "excluded:tu van": 358,
+    "excluded:tu van": 356,
     "excluded:xay dung": 310,
-    "insufficient-medical-context": 268,
+    "insufficient-medical-context": 253,
     "excluded:sua chua": 45,
     "excluded:cai tao": 41,
     "excluded:xay lap": 41,
@@ -298,8 +298,7 @@
     "excluded:rac thai": 2,
     "excluded:cong nghe thong tin": 1,
     "excluded:thu y": 1,
-    "excluded:bao duong": 1,
-    "excluded:quan ly du an": 1
+    "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
     {
@@ -516,147 +515,6 @@
         "hoa chat",
         "pcr",
         "real time"
-      ]
-    },
-    {
-      "notifyNo": "IB2600481169",
-      "name": "Gói 12. Hóa chất xét nghiệm trên Máy Miễn dịch tự động phương pháp điện hóa phát quang gồm 48 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "hoa chat xet nghiem",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "xet nghiem",
-        "mien dich",
-        "may mien dich"
-      ]
-    },
-    {
-      "notifyNo": "IB2600477120",
-      "name": "Gói 6. Hóa chất xét nghiệm sử dụng trên máy đông máu gồm 13 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 255,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+machine-usage-context",
-      "matched": [
-        "hoa chat xet nghiem",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "xet nghiem",
-        "dong mau",
-        "may dong mau",
-        "su dung tren may",
-        "dung tren may"
-      ]
-    },
-    {
-      "notifyNo": "IB2600476871",
-      "name": "Gói số 5. Hóa chất sử dụng trên Hệ thống nuôi cấy VITEK 2 gồm 3 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+machine-usage-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "tren he thong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600480565",
-      "name": "Gói 10. Hóa chất xét nghiệm nước tiểu gồm 03 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "hoa chat xet nghiem",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "xet nghiem"
-      ]
-    },
-    {
-      "notifyNo": "IB2600480422",
-      "name": "Gói 9. Hóa chất xét nghiệm trên máy sinh hóa tự động gồm 42 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "hoa chat xet nghiem",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "xet nghiem",
-        "sinh hoa",
-        "may sinh hoa"
-      ]
-    },
-    {
-      "notifyNo": "IB2600477590",
-      "name": "Gói 8.Hóa chất sử dụng trên máy sinh hóa BS 600 gồm30 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 135,
-      "reason": "medical-investor+laboratory-supply+laboratory-analyzer-context+machine-usage-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "sinh hoa",
-        "may sinh hoa",
-        "su dung tren may",
-        "dung tren may"
-      ]
-    },
-    {
-      "notifyNo": "IB2600477436",
-      "name": "Gói 7.Hóa chất xét nghiệm khí máu gồm 09 mặt hàng 01 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "hoa chat xet nghiem",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "xet nghiem"
-      ]
-    },
-    {
-      "notifyNo": "IB2600463157",
-      "name": "Gói 4. Túi máu các loại gồm 02 mặt hàng 02 phần (lô)",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "tui mau",
-        "benh vien",
-        "da khoa"
-      ]
-    },
-    {
-      "notifyNo": "IB2600507777",
-      "name": "Dịch vụ kiểm định an toàn và tính năng kỹ thuật cho các thiết bị y tế năm 2026 - Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "thiet bi y te",
-        "benh vien",
-        "da khoa",
-        "kiem dinh"
       ]
     },
     {
@@ -934,6 +792,94 @@
       "reason": "explicit-medical-title",
       "matched": [
         "kham suc khoe"
+      ]
+    },
+    {
+      "notifyNo": "IB2600550514",
+      "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": true,
+      "score": 100,
+      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "hoa chat",
+        "sinh pham"
+      ]
+    },
+    {
+      "notifyNo": "IB2600550501",
+      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": true,
+      "score": 100,
+      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "hoa chat",
+        "sinh pham"
+      ]
+    },
+    {
+      "notifyNo": "IB2600550475",
+      "name": "Gói 3: Dụng cụ, vật tư tiêu hao",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": true,
+      "score": 105,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "vat tu tieu hao",
+        "vat tu"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562254",
+      "name": "Mua sắm dụng cụ dùng cho phẫu thuật phục vụ công tác khám bệnh, chữa bệnh của Trung tâm Y tế An Nhơn năm 2026",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "phau thuat",
+        "trung tam y te",
+        "mua",
+        "mua sam",
+        "kham benh",
+        "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600520648",
+      "name": "Cung cấp dịch vụ kiểm định, hiệu chuẩn thiết bị y tế của Trung tâm Y tế An Nhơn năm 2026 (Lần 2)",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "thiet bi y te",
+        "trung tam y te",
+        "kiem dinh",
+        "hieu chuan",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600016184",
+      "name": "Mua sắm thuốc Pyrazinamide điều trị bệnh lao tại các Trạm y tế (Mã19.2026)",
+      "investor": "Trung tâm Y tế Phù Mỹ",
+      "accepted": true,
+      "score": 145,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "trung tam y te",
+        "thuoc",
+        "mua",
+        "mua sam",
+        "dieu tri"
       ]
     }
   ],
