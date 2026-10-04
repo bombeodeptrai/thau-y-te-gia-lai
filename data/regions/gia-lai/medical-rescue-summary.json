@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-04T14:06:22.669Z",
+  "rescuedAt": "2026-10-04T19:38:52.794Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -156,7 +156,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1247,
-  "acceptedCount": 45,
-  "rejectedCount": 1202,
+  "candidateCount": 1245,
+  "acceptedCount": 44,
+  "rejectedCount": 1201,
   "rejectedReasons": {
     "excluded:tu van": 357,
     "excluded:xay dung": 332,
-    "insufficient-medical-context": 290,
+    "insufficient-medical-context": 289,
     "excluded:sua chua": 50,
     "excluded:xay lap": 42,
     "excluded:cai tao": 41,
@@ -1385,8 +1385,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1166,
-  "afterCount": 1166,
+  "beforeCount": 1165,
+  "afterCount": 1165,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v13"
 }

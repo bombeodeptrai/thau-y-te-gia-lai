@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-04T14:05:42.878Z",
+  "auditedAt": "2026-10-04T19:38:08.282Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1167,
-  "acceptedCount": 37,
-  "rejectedCount": 1130,
+  "candidateCount": 1165,
+  "acceptedCount": 36,
+  "rejectedCount": 1129,
   "rejectedReasons": {
     "excluded:tu van": 356,
     "excluded:xay dung": 310,
-    "insufficient-medical-context": 253,
+    "insufficient-medical-context": 252,
     "excluded:sua chua": 45,
     "excluded:cai tao": 41,
     "excluded:xay lap": 41,
@@ -678,23 +678,6 @@
         "sinh pham",
         "chan doan",
         "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600505799",
-      "name": "Mua sắm một số mặt hàng hóa chất, sinh phẩm chẩn đoán y tế trong thời gian chờ tổ chức đấu thầu năm 2026-2027",
-      "investor": "Trung tâm Y tế Chư Prông",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "sinh pham chan doan",
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "chan doan",
         "mua",
         "mua sam"
       ]
@@ -1332,8 +1315,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1166,
-  "afterCount": 1166,
+  "beforeCount": 1165,
+  "afterCount": 1165,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v13"
 }
