@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-05T00:55:07.844Z",
+  "rescuedAt": "2026-10-05T05:41:22.626Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,13 +18,13 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 457,
+      "count": 458,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 26,
+      "count": 29,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 123,
+      "count": 124,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 65,
+      "count": 79,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 7,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 80,
+      "count": 81,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -281,22 +281,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1248,
+  "candidateCount": 1273,
   "acceptedCount": 44,
-  "rejectedCount": 1204,
+  "rejectedCount": 1229,
   "rejectedReasons": {
-    "excluded:tu van": 359,
-    "excluded:xay dung": 333,
-    "insufficient-medical-context": 289,
+    "excluded:tu van": 372,
+    "excluded:xay dung": 340,
+    "insufficient-medical-context": 291,
     "excluded:sua chua": 50,
-    "excluded:xay lap": 42,
-    "excluded:cai tao": 41,
+    "excluded:cai tao": 43,
+    "excluded:xay lap": 41,
     "excluded:bao hiem": 19,
+    "excluded:tham dinh": 9,
     "excluded:thuc pham": 9,
-    "excluded:tham dinh": 8,
     "excluded:suat an": 8,
+    "excluded:trang phuc": 7,
     "excluded:may tinh": 6,
-    "excluded:trang phuc": 6,
     "excluded:bao ve": 5,
     "excluded:bao tri": 4,
     "excluded:may in": 3,
@@ -940,6 +940,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600558231",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ban quản lý xã Bình Khê",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600566641",
       "name": "Xây dựng video chuỗi phóng sự; in pano tuyên truyền",
       "investor": "Cục Cảnh sát quản lý hành chính về trật tự xã hội",
@@ -1370,17 +1381,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600558045",
-      "name": "Cung cấp và lắp đặt thiết bị",
-      "investor": "Trường Đại học Sư phạm Thành phố Hồ Chí Minh",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,

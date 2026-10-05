@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-05T00:54:25.599Z",
+  "auditedAt": "2026-10-05T05:40:38.409Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 457,
+      "count": 458,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 26,
+      "count": 29,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
@@ -140,7 +140,7 @@
     {
       "term": "Mang Yang",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 123,
+      "count": 124,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 65,
+      "count": 79,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 7,
+      "count": 9,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 80,
+      "count": 81,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -271,22 +271,22 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1168,
+  "candidateCount": 1192,
   "acceptedCount": 36,
-  "rejectedCount": 1132,
+  "rejectedCount": 1156,
   "rejectedReasons": {
-    "excluded:tu van": 358,
-    "excluded:xay dung": 311,
-    "insufficient-medical-context": 252,
+    "excluded:tu van": 371,
+    "excluded:xay dung": 317,
+    "insufficient-medical-context": 254,
     "excluded:sua chua": 45,
-    "excluded:cai tao": 41,
-    "excluded:xay lap": 41,
+    "excluded:cai tao": 43,
+    "excluded:xay lap": 40,
     "excluded:bao hiem": 19,
+    "excluded:tham dinh": 9,
     "excluded:thuc pham": 9,
-    "excluded:tham dinh": 8,
     "excluded:suat an": 8,
+    "excluded:trang phuc": 7,
     "excluded:may tinh": 6,
-    "excluded:trang phuc": 6,
     "excluded:bao ve": 4,
     "excluded:bao tri": 4,
     "excluded:giam sat thi cong": 3,
@@ -868,6 +868,26 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600567134",
+      "name": "Thuê dịch vụ công nghệ số Hệ thống giám sát và phân tích thông tin trên Internet",
+      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600035015",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "DC2600029634",
       "name": "Tư vấn lập BCKTKT xây dựng công trình",
       "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
@@ -1289,29 +1309,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600564604",
-      "name": "Tư vấn lập thiết kế bản vẽ thi công và dự toán",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600023104",
-      "name": "Mua sách giáo khoa trang bị cho thư viện phục vụ học sinh mượn từ năm học 2026 - 2027 thuộc dự toán: Mua sách giáo khoa trang bị cho thư viện phục vụ học sinh mượn từ năm học 2026 - 2027",
-      "investor": "Phòng Văn hóa Xã hội xã Hra, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "thuoc",
-        "mua"
       ]
     }
   ],
