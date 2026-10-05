@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-04T23:10:59.032Z",
+  "auditedAt": "2026-10-05T00:54:25.599Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 454,
+      "count": 457,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1165,
+  "candidateCount": 1168,
   "acceptedCount": 36,
-  "rejectedCount": 1129,
+  "rejectedCount": 1132,
   "rejectedReasons": {
-    "excluded:tu van": 356,
-    "excluded:xay dung": 310,
+    "excluded:tu van": 358,
+    "excluded:xay dung": 311,
     "insufficient-medical-context": 252,
     "excluded:sua chua": 45,
     "excluded:cai tao": 41,
@@ -868,6 +868,40 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600029634",
+      "name": "Tư vấn lập BCKTKT xây dựng công trình",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600029967",
+      "name": "Tư vấn thẩm tra hồ sơ thiết kế XD và hồ sơ Dự toán XD (BCKTKT)",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600033499",
+      "name": "Tư vấn Giám sát công tác khảo sát địa hình, địa chất",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "DC2600022892",
       "name": "Tư vấn Giám sát thi công xây dựng công trình và lắp đặt thiết bị Công trình: Trường PTDTNT THPT Số 1 tỉnh Gia Lai. HM: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy. chữa, cải tạo hệ thống phòng cháy chữa cháy.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1278,38 +1312,6 @@
       "matched": [
         "thuoc",
         "mua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600002386",
-      "name": "Thử nghiệm, đánh giá sự phù hợp, chứng nhận hợp quy đối với Công trình kiểm soát tải trọng xe trên tuyến Quốc lộ 19 mới và Quốc lộ 19C",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600030701",
-      "name": "Tư vấn khảo sát địa hình, địa chất xây dựng",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600029427",
-      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
       ]
     }
   ],
