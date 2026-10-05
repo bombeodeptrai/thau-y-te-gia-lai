@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-05T09:25:40.383Z",
+  "rescuedAt": "2026-10-05T11:45:04.963Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 109,
+      "count": 106,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 227,
+      "count": 218,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 73,
+      "count": 71,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 18,
+      "count": 16,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 54,
+      "count": 52,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 33,
+      "count": 30,
       "error": ""
     },
     {
@@ -281,21 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 729,
+  "candidateCount": 713,
   "acceptedCount": 25,
-  "rejectedCount": 704,
+  "rejectedCount": 688,
   "rejectedReasons": {
-    "excluded:tu van": 237,
-    "excluded:xay dung": 216,
-    "insufficient-medical-context": 143,
-    "excluded:sua chua": 26,
-    "excluded:cai tao": 19,
-    "excluded:xay lap": 18,
+    "excluded:tu van": 229,
+    "excluded:xay dung": 215,
+    "insufficient-medical-context": 140,
+    "excluded:sua chua": 25,
+    "excluded:cai tao": 18,
+    "excluded:xay lap": 17,
     "excluded:bao hiem": 10,
     "excluded:tham dinh": 5,
     "excluded:trang phuc": 5,
     "excluded:thuc pham": 5,
-    "excluded:may tinh": 4,
+    "excluded:may tinh": 3,
     "excluded:bao ve": 3,
     "excluded:cong nghe thong tin": 2,
     "excluded:cap dien": 2,
@@ -694,6 +694,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600567492",
+      "name": "Gói thầu 01: Thi công xây dựng công trình",
+      "investor": "Ban Quản lý xã Mang Yang, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600552091",
       "name": "Toàn bộ khối lượng thi công xây dựng hoàn thành công trình",
@@ -1127,23 +1138,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600557001",
-      "name": "Thi công xây dựng + Thiết bị",
-      "investor": "Ban quản lý phường Pleiku",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1165,
+  "beforeCount": 1167,
   "afterCount": 1167,
-  "newCount": 2,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v13"
 }
