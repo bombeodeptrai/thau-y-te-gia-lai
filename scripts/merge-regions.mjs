@@ -6,6 +6,7 @@ import {
   mergeTenderRegionSlugs,
   tenderBelongsToRegion,
 } from "./region-membership.mjs";
+import { isOfficialDetailFileName } from "./official-detail-preservation.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = resolve(root, "data");
@@ -181,7 +182,9 @@ await rm(detailsDir, { recursive: true, force: true });
 await mkdir(detailsDir, { recursive: true });
 const copiedDetails = new Map();
 for (const { region, detailDir } of stagedSources) {
-  const files = (await readdir(detailDir).catch(() => [])).filter((name) => /^IB\d{10}\.json$/.test(name));
+  const files = (await readdir(detailDir).catch(() => []))
+    .filter(isOfficialDetailFileName)
+    .sort((left, right) => left.localeCompare(right, "en"));
   for (const fileName of files) {
     const sourcePath = resolve(detailDir, fileName);
     const current = copiedDetails.get(fileName);

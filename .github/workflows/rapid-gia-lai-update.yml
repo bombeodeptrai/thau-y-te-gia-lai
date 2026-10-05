@@ -55,7 +55,9 @@ jobs:
           node --test scripts/rescue-runtime.test.mjs
           node --test scripts/official-source.test.mjs
           node --test scripts/source-time.test.mjs
+          node --test scripts/official-detail-preservation.test.mjs
           node --check scripts/repair-official-tender-identities.mjs
+          node --check scripts/official-detail-preservation.mjs
           node --check scripts/refresh-official-tender-details.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs
 

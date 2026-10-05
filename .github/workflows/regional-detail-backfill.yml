@@ -54,6 +54,7 @@ jobs:
         run: |
           node --test scripts/medical-scope.test.mjs
           node --test scripts/scan-baseline.test.mjs
+          node --test scripts/official-detail-preservation.test.mjs
           node scripts/repair-official-tender-identities.mjs "${{ matrix.region }}"
 
       - name: Tạo hồ sơ tối thiểu từ định danh chính thức

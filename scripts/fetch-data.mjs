@@ -7,6 +7,7 @@ import { shouldRetainStoredTender } from "./scan-baseline.mjs";
 import { formatMuasamcongDateTime, muasamcongDateRange } from "./source-time.mjs";
 import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
 import { mapLimitedSettled } from "./resilient-source-scan.mjs";
+import { isOfficialDetailFileName } from "./official-detail-preservation.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
@@ -1074,7 +1075,9 @@ async function previousData() {
     const manifest = JSON.parse(await readFile(outputPath, "utf8"));
     const detailsByNotifyNo = { ...(manifest.detailsByNotifyNo || {}) };
     try {
-      const files = (await readdir(detailsDir)).filter((name) => /^IB\d{10}\.json$/.test(name));
+      const files = (await readdir(detailsDir))
+        .filter(isOfficialDetailFileName)
+        .sort((left, right) => left.localeCompare(right, "en"));
       await mapLimited(files, 10, async (name) => {
         detailsByNotifyNo[name.replace(/\.json$/, "")] = JSON.parse(await readFile(resolve(detailsDir, name), "utf8"));
       });
