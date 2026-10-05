@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "030ff749-a015-4a91-b388-8de77a770f0b",
+      "contractorCode": "vn0101031452",
+      "taxCode": "0101031452",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ CÔNG NGHỆ BẮC HÀ",
+      "status": "won",
+      "lotNo": "BP2400827078",
+      "lotName": "Mua sắm Máy theo dõi bệnh nhân của Trung tâm Y tế huyện Vân Canh năm 2024, thuộc Đề án nâng cao năng lực hoạt động hệ thống y tế cơ sở của tỉnh Bình Định giai đoạn 2022 -2025",
+      "bidPrice": 290000000,
+      "finalPrice": 290000000,
+      "winningPrice": 290000000,
+      "reason": "",
+      "submittedAt": "2024-12-20T15:27:36.683",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "44dab23d-8bfa-4315-a93a-7cba32aef1e4",
+      "name": "Máy theo dõi bệnh nhân",
+      "model": "PVM-4761",
+      "brand": "Vismo",
+      "manufacturer": "Nihon Kohden Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2023 trở về sau",
+      "specification": "Chi tiết theo bảng",
+      "unit": "Máy",
+      "quantity": 2,
+      "unitPrice": 145000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ CÔNG NGHỆ BẮC HÀ "
+      ],
+      "decisionNo": "365/QĐ-TTYT",
+      "decisionDate": "2024-12-20T23:59:59",
+      "resultPublishedDate": "2024-12-20T15:27:44"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -29,12 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2400535641",
-    "notifyId": "21fa5b46-b26b-46eb-978d-c2e43927ad64",
-    "bidId": "b54c3dc5-e4f7-484c-845d-4ef2ae18aec6",
-    "bidForm": "CHCT",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T16:23:45.062Z"
+  "fetchedAt": "2026-10-05T00:54:44.383Z"
 }
