@@ -2,6 +2,10 @@ import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
+import {
+  detailFilesForManifest,
+  mergeOfficialDetail,
+} from "./official-detail-preservation.mjs";
 
 const PLAN_BID_DETAIL_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt/bid-po-bidp-plan-project-view/get-bidp-plan-detail-by-id?token=public";
 const ONLINE_REOFFER_HSMT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt_tbmcgtt_hsmt";
@@ -172,7 +176,9 @@ async function refreshTender(tender) {
     fetchRequirements(tender),
     fetchTechnicalRequirements(tender),
   ]);
-  const detail = {
+  const detailPath = resolve(detailsDir, `${tender.notifyNo}.json`);
+  const previous = await readJson(detailPath, {});
+  const refreshed = {
     schemaVersion: 3,
     resultItemParserVersion: 3,
     total: 0,
@@ -190,19 +196,20 @@ async function refreshTender(tender) {
     },
     fetchedAt: new Date().toISOString(),
   };
-  await writeFile(resolve(detailsDir, `${tender.notifyNo}.json`), `${JSON.stringify(detail, null, 2)}\n`);
+  const detail = mergeOfficialDetail(previous, refreshed);
+  await writeFile(detailPath, `${JSON.stringify(detail, null, 2)}\n`);
   return {
     notifyNo: tender.notifyNo,
-    requirementCount: requirements.items?.length || 0,
-    technicalCount: technicalRequirements.items?.length || 0,
-    requirementDisclosure: requirements.disclosure || "",
-    technicalDisclosure: technicalRequirements.disclosure || "",
+    requirementCount: detail.requirements?.items?.length || 0,
+    technicalCount: detail.technicalRequirements?.items?.length || 0,
+    requirementDisclosure: detail.requirements?.disclosure || "",
+    technicalDisclosure: detail.technicalRequirements?.disclosure || "",
   };
 }
 
 async function rebuildAggregates(manifest) {
   const tenderByNotifyNo = new Map((manifest.tenders || []).map((item) => [item.notifyNo, item]));
-  const files = (await readdir(detailsDir)).filter((name) => /^IB\d{10}\.json$/.test(name));
+  const files = detailFilesForManifest(await readdir(detailsDir), manifest.tenders || []);
   const details = await mapLimited(files, 10, async (name) => ({
     notifyNo: name.replace(/\.json$/, ""),
     detail: await readJson(resolve(detailsDir, name), {}),
@@ -237,7 +244,7 @@ async function rebuildAggregates(manifest) {
 
 const manifest = await readJson(tendersPath, { tenders: [] });
 await mkdir(detailsDir, { recursive: true });
-const existingFiles = new Set((await readdir(detailsDir)).filter((name) => /^IB\d{10}\.json$/.test(name)));
+const existingFiles = new Set(detailFilesForManifest(await readdir(detailsDir), manifest.tenders || []));
 const statusPriority = { urgent: 500, open: 450, evaluating: 400, closed: 300, awarded: 200 };
 const candidates = (manifest.tenders || [])
   .filter((tender) => tender.notifyNo && tender.notifyId)

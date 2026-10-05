@@ -27,6 +27,7 @@ jobs:
       - name: Kiểm tra cú pháp và bộ lọc dữ liệu
         run: |
           node --test scripts/technical-requirements.test.mjs
+          node --test scripts/official-detail-preservation.test.mjs
           node --test scripts/medical-scope.test.mjs
           node --test scripts/official-source.test.mjs
           node --test scripts/regional-data.test.mjs
@@ -42,6 +43,7 @@ jobs:
           node --check display-time.js
           node --check scripts/run-region-scan.mjs
           node --check scripts/fetch-data.mjs
+          node --check scripts/official-detail-preservation.mjs
           node --check scripts/resilient-source-scan.mjs
           node --check scripts/fetch-recent-location-audit.mjs
           node --check scripts/fetch-recent-medical-rescue.mjs

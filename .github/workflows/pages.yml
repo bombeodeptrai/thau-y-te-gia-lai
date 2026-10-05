@@ -44,6 +44,7 @@ jobs:
       - name: Kiểm tra mã nguồn
         run: |
           node --test scripts/technical-requirements.test.mjs
+          node --test scripts/official-detail-preservation.test.mjs
           node --test scripts/medical-scope.test.mjs
           node --test scripts/official-source.test.mjs
           node --test scripts/regional-data.test.mjs
@@ -52,6 +53,7 @@ jobs:
           node --test scripts/contractor-search.test.mjs
           node --test scripts/display-time.test.mjs
           node --check scripts/run-region-scan.mjs
+          node --check scripts/official-detail-preservation.mjs
           node --check scripts/restore-legacy-gia-lai.mjs
           node --check scripts/merge-regions.mjs
           node --check scripts/apply-manual-equipment-overrides.mjs

@@ -14,6 +14,7 @@ for (const file of [
   "scripts/fetch-recent-medical-rescue.mjs",
   "scripts/rescue-runtime.mjs",
   "scripts/repair-official-tender-identities.mjs",
+  "scripts/official-detail-preservation.mjs",
   "scripts/refresh-official-tender-details.mjs",
   "scripts/merge-regions.mjs",
   "scripts/apply-manual-equipment-overrides.mjs",
@@ -29,6 +30,7 @@ execFileSync(process.execPath, ["--test", "scripts/contractor-search.test.mjs"],
 execFileSync(process.execPath, ["--test", "scripts/source-time.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/rescue-runtime.test.mjs"], { stdio: "inherit" });
 execFileSync(process.execPath, ["--test", "scripts/display-time.test.mjs"], { stdio: "inherit" });
+execFileSync(process.execPath, ["--test", "scripts/official-detail-preservation.test.mjs"], { stdio: "inherit" });
 
 const fullScanPath = ".github/workflows/regional-full-scan.yml";
 const detailPath = ".github/workflows/regional-detail-backfill.yml";
@@ -437,8 +439,17 @@ const detailScript = await readFile("scripts/refresh-official-tender-details.mjs
 if (!detailScript.includes("PLAN_BID_DETAIL_URL")
   || !detailScript.includes("ONLINE_REOFFER_HSMT_URL")
   || !detailScript.includes("official-identity-plan-and-public-technical-details")
+  || !detailScript.includes("mergeOfficialDetail")
+  || !detailScript.includes("detailFilesForManifest")
   || /IB\d{10}/.test(detailScript)) {
-  throw new Error("Bộ tạo hồ sơ chi tiết chưa dùng định danh chính thức hoặc còn mã gói viết cứng");
+  throw new Error("Bộ tạo hồ sơ chi tiết chưa giữ kết quả cũ, chưa nhận đủ loại thông báo hoặc còn mã gói viết cứng");
+}
+
+for (const file of ["scripts/fetch-data.mjs", "scripts/merge-regions.mjs"]) {
+  const text = await readFile(file, "utf8");
+  if (!text.includes("isOfficialDetailFileName") || /\^IB\\d/.test(text)) {
+    throw new Error(`${file} còn bỏ qua hồ sơ DC khi tải hoặc hợp nhất dữ liệu`);
+  }
 }
 
 console.log("Gia Lai dùng nguồn chính thức, sửa định danh và tạo chi tiết; 10 tỉnh còn lại chỉ quét mỗi tuần.");
