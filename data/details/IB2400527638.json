@@ -1,9 +1,177 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "d7c84b48-080e-4463-9e28-dee1145e4df4",
+      "contractorCode": "vn0106279168",
+      "taxCode": "0106279168",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI QUỐC TẾ MEDITOP",
+      "status": "lost",
+      "lotNo": "PP2400461911",
+      "lotName": "Bơm tiêm điện",
+      "bidPrice": 704850000,
+      "finalPrice": 704850000,
+      "winningPrice": 0,
+      "reason": "Đối chiếu HSDT không thành công theo ĐIỂM E, TIẾT 29.3, MỤC 29, CHƯƠNG I",
+      "submittedAt": "2024-12-19T16:46:14.579",
+      "models": []
+    },
+    {
+      "id": "274a0e9a-d33b-4f01-874e-ed6398617a53",
+      "contractorCode": "vn0401321018",
+      "taxCode": "0401321018",
+      "contractorName": "CÔNG TY TNHH K.A.L.H.U",
+      "status": "won",
+      "lotNo": "PP2400461911",
+      "lotName": "Bơm tiêm điện",
+      "bidPrice": 819000000,
+      "finalPrice": 819000000,
+      "winningPrice": 819000000,
+      "reason": "",
+      "submittedAt": "2024-12-19T16:46:14.579",
+      "models": []
+    },
+    {
+      "id": "a75f2590-6869-40b9-91c3-ae471deb4150",
+      "contractorCode": "vn0309068162",
+      "taxCode": "0309068162",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ THÀNH PHÁT",
+      "status": "won",
+      "lotNo": "PP2400461912",
+      "lotName": "Máy lọc máu liên tục",
+      "bidPrice": 1099875000,
+      "finalPrice": 1099875000,
+      "winningPrice": 1099875000,
+      "reason": "",
+      "submittedAt": "2024-12-19T16:46:14.579",
+      "models": []
+    },
+    {
+      "id": "9455aa19-28b0-4e59-9b6f-0c03f61019c6",
+      "contractorCode": "vn0106836595",
+      "taxCode": "0106836595",
+      "contractorName": "CÔNG TY TNHH VẬT TƯ THIẾT BỊ Y TẾ AN PHÁT",
+      "status": "won",
+      "lotNo": "PP2400461913",
+      "lotName": "Bàn mổ điện - thủy lực đa năng",
+      "bidPrice": 968000000,
+      "finalPrice": 968000000,
+      "winningPrice": 968000000,
+      "reason": "",
+      "submittedAt": "2024-12-19T16:46:14.579",
+      "models": []
+    },
+    {
+      "id": "460008ac-af49-4cb5-a282-710d52a626dc",
+      "contractorCode": "vn0306470041",
+      "taxCode": "0306470041",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN NGÔI SAO Y TẾ",
+      "status": "lost",
+      "lotNo": "PP2400461913",
+      "lotName": "Bàn mổ điện - thủy lực đa năng",
+      "bidPrice": 898000000,
+      "finalPrice": 898000000,
+      "winningPrice": 0,
+      "reason": "koohn đáp ứng yêu cầu về năng lực và kinh nghiệm",
+      "submittedAt": "2024-12-19T16:46:14.579",
+      "models": []
+    },
+    {
+      "id": "32ec32d8-ff36-4478-a26a-469633cc476f",
+      "contractorCode": "vn0401310979",
+      "taxCode": "0401310979",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ NGUYÊN ĐÔ",
+      "status": "won",
+      "lotNo": "PP2400461914",
+      "lotName": "Máy phá rung tim",
+      "bidPrice": 647340000,
+      "finalPrice": 647340000,
+      "winningPrice": 647340000,
+      "reason": "",
+      "submittedAt": "2024-12-19T16:46:14.579",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "547eac2a-ae4f-4b9b-9b21-f3158d9f8eb7",
+      "name": "Bàn mổ điện – thủy lực đa năng",
+      "model": "KERNA",
+      "brand": "Steris",
+      "manufacturer": "Steris SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Theo bảng chào đáp ứng thông số kỹ thuật",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 968000000,
+      "winnerNames": [
+        "CÔNG TY TNHH VẬT TƯ THIẾT BỊ Y TẾ AN PHÁT"
+      ],
+      "decisionNo": "986/QĐ-BV",
+      "decisionDate": "2024-12-17T23:59:59",
+      "resultPublishedDate": "2024-12-19T17:06:37"
+    },
+    {
+      "id": "80a6ee83-811f-44c6-97f8-58b3011a467b",
+      "name": "Máy phá rung tim",
+      "model": "TEC-5631",
+      "brand": "Nihon Kohden",
+      "manufacturer": "Nihon Kohden Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024 trở về sau",
+      "specification": "Tham chiếu Bảng đáp ứng kỹ thuật và Tài liệu kỹ thuật đính kèm E-HSDT",
+      "unit": "Máy",
+      "quantity": 3,
+      "unitPrice": 215780000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ NGUYÊN ĐÔ"
+      ],
+      "decisionNo": "986/QĐ-BV",
+      "decisionDate": "2024-12-17T23:59:59",
+      "resultPublishedDate": "2024-12-19T17:06:37"
+    },
+    {
+      "id": "45351d6a-45a5-4e0a-bada-59e773873db9",
+      "name": "Máy lọc máu liên tục",
+      "model": "\r\nMã số: 7107505",
+      "brand": "Máy lọc máu liên tục\r\nModel: OMNI\r\nMã số: 7107505",
+      "manufacturer": "B.Braun Avitum AG - Đức",
+      "origin": "CHLB Đức",
+      "manufactureYear": "Năm 2024 trở về sau",
+      "specification": "I. MÁY LỌC MÁU LIÊN TỤC \r\n- Model: OMNI - Mã số: 7107505\r\n- Hãng sản xuất/ Nước sản xuất: B.Braun Avitum AG – Đức\r\n- Hãng chủ sở hữu: B.Braun Avitum AG\r\n- Xuất xứ: CHLB Đức\r\n- Năm sản xuất: từ năm 2024 trở về sau, mới 100%\r\n- Tiêu chuẩn hệ thống quản lý chất lượng của nhà sản xuất: ISO 13485 hoặc tương đương\r\n- Nhà thầu có giấy Ủy Quyền của Nhà sản xuất hoặc Nhà nhập khẩu trực tiếp Trang thiết bị.\r\nII. Cấu hình thiết bị:\r\n- Máy chính: 01 Máy\r\n- Pin tích hợp: 01 Bộ\r\n- Bộ làm ấm dịch tích hợp: 01 Bộ\r\n- Cây treo dịch truyền: 01 Bộ\r\n- Bộ phận chống đông tích hợp: 01 Bộ\r\n- Bộ dây máu và quả lọc liên tục: 01 Bộ\r\n- Bộ dây máu và quả lọc tách huyết tương: 01 Bộ\r\n- Tài liệu hướng dẫn sử dụng, bảo trì bằng tiếng Anh + tiếng Việt: 01 Bộ\r\nIII. Thông số kỹ thuật:\r\n1.Lọc máu liên tục với dãy liệu pháp điều trị rộng với các phương thức lọc máu liên tục tối thiểu có:\r\n- Siêu lọc liên tục chậm (SCUF – Slow Continous Ultrafiltration)\r\n- Siêu lọc máu tĩnh mạch - tĩnh mạch liên tục ( CVVH - Continous Venous Venous Hemofiltration )\r\n- Thẩm tách máu tĩnh mạch - tĩnh mạch liên tục \r\n(CVVHD - Continous Venous Venous Hemodialysis)\r\n- Thẩm tách - siêu lọc tĩnh mạch - tĩnh mạch liên tục (Continous Venous Venous Hemodiafiltration)\r\n2. Các chế độ bù dịch:\r\n- Bù trước màng\r\n- Bù sau màng\r\n- Bù trước & sau màng\r\n- Bù sau & sau màng\r\n3. Các phương pháp chống đông tối thiểu:\r\n- Không cần chống đông\r\n- Kháng đông bằng heparin\r\n- Kháng đông máu bằng Citrate và Canxi\r\n- Có phương thức tách huyết tương TPE\r\nLoại bỏ  CO2 trong máu khi kết hợp quả lọc CO2\r\nLọc máu hấp phụ khi kết hợp quả lọc Hấp phụ\r\n4. Hệ thống an toàn:\r\n- Hệ thống an toàn kênh đôi\r\n- Đọc mã vạch (barcode scanner)\r\n- Pin dự trữ hoạt động 30 phút.\r\n- Ghi dữ liệu và quản lý dữ liệu bệnh nhân: Lưu dữ liệu điều trị cho 10 bệnh nhân\r\n- Bộ làm ấm bằng sứ tích hợp sẵn trong máy, giúp kiểm soát nhiệt độ dịch 30 độ C trong trường hợp ngưng tim, đến 40 độ C khi chạy siêu lọc tốc độ cao.\r\n5. Bơm dịch và máu:\r\n- Bơm máu - Blood Pump\r\n- Bơm dịch thẩm tách - Dialysate Pump\r\n- Bơm dịch thay thế - Subtitute Pump\r\n- Bơm dịch thải - Filtrate Pump\r\n- Một bơm heparin chống đông và calcium\r\n6. Bơm máu\r\n- Dải lưu lượng: Từ 10 đến 500ml/ phút khi sử dụng bơm heparin (hoặc không); từ 10 đến 250ml/ phút khi sử dụng citrate.\r\n-  Độ sai lệch: Từ -5 đến +10%.\r\n7. Bơm dịch thay thế\r\n- Dải lưu lượng: Từ 50 đến 8000ml/giờ.\r\n- Độ chính xác: ± 0,3% hoặc ± 10ml thể tích được cung cấp mỗi ngày (tùy vào giá trị nào cao hơn)\r\n8. Bơm dịch thẩm tách\r\n- Dải lưu lượng: Từ 50 đến 8000 ml/giờ.\r\n- Độ chính xác: ± 0,3% hoặc ± 10ml thể tích được cung cấp mỗi ngày (tùy vào giá trị nào cao hơn)\r\n9. Lưu lượng dịch thải: \r\n- Lưu lượng dịch thải bỏ thực trong CRRT: 0 – 2000 ml/giờ\r\n- Độ chính xác: ± 30 ml mỗi giờ, ± 70 ml mỗi 3giờ, ± 300 ml mỗi ngày\r\n10. Tốc độ thay thế huyết tương: \r\nKhoảng cung cấp: Từ 0 đến 1000 ml/giờ.\r\n11. Bơm Heparin:\r\n- Lưu lượng bơm Heparin (Syringe pump): Từ 0,5 đến 20 ml/giờ\r\n- Độ sai lệch: ±5% hoặc ±0,2 ml/giờ tùy vào giá trị nào cao hơn\r\n- Lưu lượng truyền nhanh Heparin: khoảng 600 ml/h\r\n12. Bộ phát hiện khí trong máu:\r\n- Bộ phận phát hiện khí: Áp dụng kỹ thuật sóng siêu âm.\r\n- Độ chính xác đường kính: 3,3 mm với tốc độ 500 ml/ giờ.\r\n- Giới hạn báo động của hệ thống bảo vệ: \r\n  + Bọt khí do tiêm > 0,2ml\r\n  + Bọt khí tích tụ > 0,8ml.\r\n13. Phát hiện rò rỉ máu: \r\n- Đầu dò quang kế, đánh giá kênh đôi\r\n- Giới hạn báo động: <0,35 ml/phút ở mức 32% HCT và lưu lượng dịch thải tối đa\r\n14. Các thông số hiển thị tối thiểu trong quá trình điều trị: \r\n- Các thông số hiển thị tối thiểu có: Áp lực động mạch hiện tại, áp lực tĩnh mạch hiện tại, lưu lượng dịch thẩm tách, Lưu lượng dịch thải bỏ thực, Định lượng thận mục tiêu ml/kg/h, Nhiệt độ, Heparin bolus\r\n15. Báo động: \r\nBằng chữ và âm thanh và có hướng dẫn xử lý.\r\n16. Hệ thống cân\r\n- Cảm biến tải trọng bên trái; Cảm biến tải trọng trung tâm; Cảm biến tải trọng bên phải 0 đến 15.000 g;\r\n- Cảm biến tải trọng citrate: Dải đo lường: 0 - 3.000 g\r\nIV. Yêu cầu khác\r\n-    Thiết bị được bảo hành 12 tháng \r\n-    Nhà thầu chịu trách nhiệm lắp đặt chạy thử, bàn giao và hướng dẫn vận hành cho người sử dụng, hướng dẫn việc bảo quản và sửa chữa cho nhân viên kỹ thuật.\r\n-   Nhà cung cấp cam kết cung cấp phụ tùng thay thế trong vòng ít nhất 10 năm\r\n-   Nhà cung cấp trao đầy đủ tài liệu hướng dẫn sử dụng, hướng dẫn sửa chữa, bảo quản bằng tiếng Anh và tiếng Việt",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1099875000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ THÀNH PHÁT"
+      ],
+      "decisionNo": "986/QĐ-BV",
+      "decisionDate": "2024-12-17T23:59:59",
+      "resultPublishedDate": "2024-12-19T17:06:37"
+    },
+    {
+      "id": "f914a241-ae86-4d51-ab6b-3473f9b08a8f",
+      "name": "Bơm tiêm điện",
+      "model": "TE-SS730",
+      "brand": "TERUMO",
+      "manufacturer": "Ashitaka Factory of Terumo Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2024",
+      "specification": "* Cấu hình thiết bị: \r\n- Máy chính: 01 máy\r\n- Dây nguồn: 01 cái\r\n- Giá kẹp cọc truyền: 01 cái\r\n- Pin sạc: 01 bộ (nằm bên trong máy)\r\n- Tài liệu hướng dẫn sử dụng, bảo trì bằng tiếng Anh + tiếng Việt: 01 Bộ\r\n* Tính năng kỹ thuật cơ bản:\r\n- Màn hình LCD 4.3 inch.\r\n- Sử dụng 07 nút bấm và một núm xoay để điều khiển \r\n- Độ chính xác máy: ±1%",
+      "unit": "Cái",
+      "quantity": 30,
+      "unitPrice": 27300000,
+      "winnerNames": [
+        "CÔNG TY TNHH K.A.L.H.U"
+      ],
+      "decisionNo": "986/QĐ-BV",
+      "decisionDate": "2024-12-17T23:59:59",
+      "resultPublishedDate": "2024-12-19T17:06:37"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -58,13 +226,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2400527638",
-    "notifyId": "191508c2-48d7-4e14-a334-eb763772447c",
-    "bidId": "047d0ded-3984-4cc7-9b9b-133a5a54fece",
-    "bidForm": "DTRR",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T16:23:46.266Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-05T05:53:28.525Z"
 }
