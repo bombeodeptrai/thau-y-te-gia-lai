@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-05T22:53:04.099Z",
+  "rescuedAt": "2026-10-06T06:42:08.651Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 107,
+      "count": 110,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 229,
+      "count": 222,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 20,
+      "count": 22,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 26,
+      "count": 23,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 21,
+      "count": 17,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 54,
+      "count": 57,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 16,
+      "count": 18,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 54,
+      "count": 56,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 30,
+      "count": 31,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 724,
+  "candidateCount": 714,
   "acceptedCount": 25,
-  "rejectedCount": 699,
+  "rejectedCount": 689,
   "rejectedReasons": {
-    "excluded:tu van": 235,
-    "excluded:xay dung": 217,
-    "insufficient-medical-context": 141,
+    "excluded:tu van": 233,
+    "excluded:xay dung": 211,
+    "insufficient-medical-context": 139,
     "excluded:sua chua": 25,
     "excluded:cai tao": 20,
     "excluded:xay lap": 17,
@@ -695,6 +695,44 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600565046",
+      "name": "In túi vé xổ số bóc biết kết quả ngay dạng bì",
+      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT BÌNH ĐỊNH",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600565047",
+      "name": "In vé xổ số bóc biết kết quả ngay dạng bì",
+      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT BÌNH ĐỊNH",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600565349",
+      "name": "Quan trắc môi trường lao động năm 2026",
+      "investor": "CÔNG TY VIỄN THÔNG ĐIỆN LỰC VÀ CÔNG NGHỆ THÔNG TIN - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600566284",
+      "name": "Toàn bộ khối lượng thi công xây dựng hoàn thành dự án",
+      "investor": "Ban Quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn Nam",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600561561",
       "name": "Mua giấy in trắng A4; giấy màu A4, A5 đáp ứng nhu cầu hoạt động thường xuyên của Bệnh viện đa khoa trung tâm tỉnh Gia Lai năm 2026",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -1094,51 +1132,6 @@
         "tu van",
         "bao ve",
         "duong day"
-      ]
-    },
-    {
-      "notifyNo": "IB2600554554",
-      "name": "Toàn bộ khối lượng xây dựng và thiết bị",
-      "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600518463",
-      "name": "Thi công xây dựng",
-      "investor": "CÔNG TY CỔ PHẦN THỰC PHẨM MIỀN BẮC",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600551775",
-      "name": "Sửa chữa xe cứu hỏa Titan E-One 4x4",
-      "investor": "CẢNG HÀNG KHÔNG PLEIKU - CHI NHÁNH TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600557670",
-      "name": "26-82/XL: thi công Sửa chữa phần xây dựng TBA 110kV Pleiku + MangYang + Đức Cơ + Đăk Đoa + Diên Hồng + Chư Prông",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
       ]
     }
   ],
