@@ -1,9 +1,116 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "5ec22cf9-5f51-446a-9f61-e91c46f02f53",
+      "contractorCode": "vn0110983803",
+      "taxCode": "0110983803",
+      "contractorName": "CÔNG TY TNHH TBYT VIỆT NAM CBN",
+      "status": "won",
+      "lotNo": "PP2600411909",
+      "lotName": "Phim X- quang khô Laser",
+      "bidPrice": 347500000,
+      "finalPrice": 347500000,
+      "winningPrice": 347500000,
+      "reason": "",
+      "submittedAt": "2026-10-06T10:02:24.135",
+      "models": [
+        "SD-Q2"
+      ]
+    },
+    {
+      "id": "326b5932-3f80-41b7-9892-b25d652873f6",
+      "contractorCode": "vn0312376664",
+      "taxCode": "0312376664",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+      "status": "lost",
+      "lotNo": "PP2600411909",
+      "lotName": "Phim X- quang khô Laser",
+      "bidPrice": 348600000,
+      "finalPrice": 348600000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2",
+      "submittedAt": "2026-10-06T10:02:24.135",
+      "models": []
+    },
+    {
+      "id": "ac0ab0cd-10ca-4734-a4a9-163eebeaaf27",
+      "contractorCode": "vn0110983803",
+      "taxCode": "0110983803",
+      "contractorName": "CÔNG TY TNHH TBYT VIỆT NAM CBN",
+      "status": "won",
+      "lotNo": "PP2600411910",
+      "lotName": "Phim X- quang khô Laser",
+      "bidPrice": 155600000,
+      "finalPrice": 155600000,
+      "winningPrice": 155600000,
+      "reason": "",
+      "submittedAt": "2026-10-06T10:02:24.135",
+      "models": [
+        "SD-Q2"
+      ]
+    },
+    {
+      "id": "f4dbcd63-41dc-4ea3-8854-745463a11c89",
+      "contractorCode": "vn0312376664",
+      "taxCode": "0312376664",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+      "status": "lost",
+      "lotNo": "PP2600411910",
+      "lotName": "Phim X- quang khô Laser",
+      "bidPrice": 156240000,
+      "finalPrice": 156240000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2",
+      "submittedAt": "2026-10-06T10:02:24.135",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "10726123610302660",
+      "name": "Phim X- quang khô Laser",
+      "model": "SD-Q2",
+      "brand": "Konica Minolta Technoproducts Co.,Ltd",
+      "manufacturer": "Konica Minolta Technoproducts Co.,Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Từ 2026 trở về sau",
+      "specification": "Kích thước (8 x 10) inch tương đương (20x25)cm.\r\nThành phần chính: polyethylene terephthalate (PET) 85-95%, polymers 1-10%, organic silver 1-10%, gelatine 1-10%, additives 0,1-15%, silver halides 0,05-1%.  Tương thích máy in phim khô laser Konica.",
+      "unit": "Tấm",
+      "quantity": 20000,
+      "unitPrice": 17375,
+      "amount": 347500000,
+      "contractorCode": "vn0110983803",
+      "winnerNames": [
+        "CÔNG TY TNHH TBYT VIỆT NAM CBN"
+      ],
+      "lotNo": "",
+      "decisionNo": "828/QĐ-bvbs",
+      "decisionDate": "2026-10-06T10:01:17",
+      "resultPublishedDate": "2026-10-06T10:02:29"
+    },
+    {
+      "id": "f064c1ff-3bdf-4ca5-8250-4cef131753c1",
+      "name": "Phim X- quang  khô Laser",
+      "model": "SD-Q2",
+      "brand": "Konica Minolta Technoproducts Co.,Ltd",
+      "manufacturer": "Konica Minolta Technoproducts Co.,Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Từ 2026 trở về sau",
+      "specification": "Kích thước (8 x 10) inch tương đương (20x25)cm.\r\nThành phần chính: polyethylene terephthalate (PET) 85-95%, polymers 1-10%, organic silver 1-10%, gelatine 1-10%, additives 0,1-15%, silver halides 0,05-1%.  Tương thích máy in phim khô laser Konica.",
+      "unit": "Tấm",
+      "quantity": 20000,
+      "unitPrice": 17375,
+      "winnerNames": [
+        "CÔNG TY TNHH TBYT VIỆT NAM CBN"
+      ],
+      "decisionNo": "828/QĐ-bvbs",
+      "decisionDate": "2026-10-06T10:01:17",
+      "resultPublishedDate": "2026-10-06T10:02:29"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +197,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-06T06:32:08.148Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-06T15:18:38.203Z"
 }
