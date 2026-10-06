@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-06T11:17:47.913Z",
+  "auditedAt": "2026-10-06T18:23:29.837Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 488,
+      "count": 491,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 33,
+      "count": 34,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -271,18 +271,18 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1241,
+  "candidateCount": 1244,
   "acceptedCount": 41,
-  "rejectedCount": 1200,
+  "rejectedCount": 1203,
   "rejectedReasons": {
-    "excluded:tu van": 384,
+    "excluded:tu van": 386,
     "excluded:xay dung": 333,
     "insufficient-medical-context": 261,
     "excluded:sua chua": 47,
     "excluded:cai tao": 45,
     "excluded:xay lap": 41,
     "excluded:bao hiem": 20,
-    "excluded:tham dinh": 13,
+    "excluded:tham dinh": 14,
     "excluded:thuc pham": 9,
     "excluded:trang phuc": 7,
     "excluded:suat an": 7,
@@ -929,6 +929,43 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600569597",
+      "name": "Tư vấn thẩm định giá",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600039624",
+      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600039619",
+      "name": "Tư vấn lập E-HSMT và đánh giá E-HSDT",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "lap e hsmt",
+        "danh gia e hsdt"
+      ]
+    },
+    {
       "notifyNo": "DC2600039515",
       "name": "Thẩm định giá",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1352,57 +1389,12 @@
       "matched": [
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "DC2600022892",
-      "name": "Tư vấn Giám sát thi công xây dựng công trình và lắp đặt thiết bị Công trình: Trường PTDTNT THPT Số 1 tỉnh Gia Lai. HM: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy. chữa, cải tạo hệ thống phòng cháy chữa cháy.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "cai tao",
-        "sua chua",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600028504",
-      "name": "Tư vấn Giám sát thi công xây dựng công trình và lắp đặt thiết bị Công trình: Trường trung học phổ thông số 1 Nguyễn Thái Học (nay là Trường trung học phổ thông số 1 Trần Cao Vân). HM: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "cai tao",
-        "sua chua",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600022848",
-      "name": "Tư vấn Giám sát thi công xây dựng công trình và lắp đặt thiết bị Công trình: Trường THPT Chuyên Lê Quý Đôn. HM: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "cai tao",
-        "sua chua",
-        "tu van",
-        "giam sat thi cong"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1165,
+  "beforeCount": 1168,
   "afterCount": 1168,
-  "newCount": 3,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v13"
 }
