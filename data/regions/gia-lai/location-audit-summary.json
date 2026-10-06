@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-05T17:10:10.756Z",
+  "auditedAt": "2026-10-06T01:20:22.811Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 81,
+      "count": 82,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1218,
+  "candidateCount": 1219,
   "acceptedCount": 38,
-  "rejectedCount": 1180,
+  "rejectedCount": 1181,
   "rejectedReasons": {
     "excluded:tu van": 379,
-    "excluded:xay dung": 326,
+    "excluded:xay dung": 327,
     "insufficient-medical-context": 258,
     "excluded:sua chua": 46,
     "excluded:cai tao": 45,
@@ -1364,8 +1364,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1166,
-  "afterCount": 1166,
+  "beforeCount": 1165,
+  "afterCount": 1165,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v13"
 }
