@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-06T23:49:58.177Z",
+  "auditedAt": "2026-10-07T05:59:44.314Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 491,
+      "count": 487,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 25,
+      "count": 22,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 34,
+      "count": 32,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 85,
+      "count": 90,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 21,
+      "count": 19,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 17,
+      "count": 15,
       "error": ""
     },
     {
@@ -271,22 +271,22 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1244,
+  "candidateCount": 1237,
   "acceptedCount": 41,
-  "rejectedCount": 1203,
+  "rejectedCount": 1196,
   "rejectedReasons": {
-    "excluded:tu van": 386,
-    "excluded:xay dung": 333,
-    "insufficient-medical-context": 261,
+    "excluded:tu van": 385,
+    "excluded:xay dung": 335,
+    "insufficient-medical-context": 263,
     "excluded:sua chua": 47,
-    "excluded:cai tao": 45,
-    "excluded:xay lap": 41,
-    "excluded:bao hiem": 20,
-    "excluded:tham dinh": 14,
+    "excluded:cai tao": 42,
+    "excluded:xay lap": 40,
+    "excluded:bao hiem": 19,
+    "excluded:tham dinh": 13,
     "excluded:thuc pham": 9,
     "excluded:trang phuc": 7,
-    "excluded:suat an": 7,
-    "excluded:may tinh": 6,
+    "excluded:may tinh": 5,
+    "excluded:suat an": 5,
     "excluded:bao ve": 4,
     "excluded:bao tri": 4,
     "excluded:giam sat thi cong": 3,
@@ -296,7 +296,6 @@
     "excluded:may chu": 2,
     "excluded:phan bon": 2,
     "excluded:cong nghe thong tin": 1,
-    "excluded:rac thai": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1
   },
@@ -929,6 +928,82 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600020079",
+      "name": "Tư vấn thẩm tra thiết kế bản vẽ thi công và dự toán điều chỉnh",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600564864",
+      "name": "Thuê dịch vụ CNTT đối với Hệ thống phòng họp không giấy",
+      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600036472",
+      "name": "Tư vấn khảo sát xây dựng, lập Báo cáo nghiên cứu khả thi và lập mô hình thông tin công trình (BIM)",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600036507",
+      "name": "Tư vấn giám sát công tác khảo sát xây dựng",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600036441",
+      "name": "Tư vấn lập hồ sơ đăng kí môi trường",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600033902",
+      "name": "Thuê hạ tầng vận hành Hệ thống đánh giá nhiệm vụ theo KPI",
+      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600035196",
+      "name": "Mua sắm gói phần mềm trợ lý ảo phục vụ cán bộ, công chức, viên chức",
+      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600569597",
       "name": "Tư vấn thẩm định giá",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1312,82 +1387,6 @@
       "reason": "excluded:tham dinh",
       "matched": [
         "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600567427",
-      "name": "Gói thầu số1/SC: Thi công sửa chữa máy biến áp thuộc Công trình Sửa chữa máy biến áp đợt 6 khu vực Tỉnh Gia lai năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600015613",
-      "name": "Gói thầu 01: Thi công xây dựng công trình",
-      "investor": "Ban Quản lý xã Mang Yang, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600567134",
-      "name": "Thuê dịch vụ công nghệ số Hệ thống giám sát và phân tích thông tin trên Internet",
-      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600035015",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600029634",
-      "name": "Tư vấn lập BCKTKT xây dựng công trình",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600029967",
-      "name": "Tư vấn thẩm tra hồ sơ thiết kế XD và hồ sơ Dự toán XD (BCKTKT)",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600033499",
-      "name": "Tư vấn Giám sát công tác khảo sát địa hình, địa chất",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
       ]
     }
   ],
