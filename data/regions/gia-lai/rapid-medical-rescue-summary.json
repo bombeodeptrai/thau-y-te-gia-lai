@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-07T08:58:05.095Z",
+  "rescuedAt": "2026-10-07T17:37:40.283Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 104,
+      "count": 106,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 220,
+      "count": 226,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 24,
+      "count": 22,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -114,13 +114,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 30,
+      "count": 39,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -132,19 +132,19 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 11,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 2,
+      "count": 4,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 71,
+      "count": 72,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 18,
+      "count": 21,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 49,
+      "count": 48,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 31,
+      "count": 26,
       "error": ""
     },
     {
@@ -281,19 +281,19 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 680,
+  "candidateCount": 691,
   "acceptedCount": 25,
-  "rejectedCount": 655,
+  "rejectedCount": 666,
   "rejectedReasons": {
-    "excluded:tu van": 221,
+    "excluded:tu van": 229,
     "excluded:xay dung": 198,
-    "insufficient-medical-context": 128,
-    "excluded:sua chua": 22,
-    "excluded:cai tao": 22,
+    "insufficient-medical-context": 131,
+    "excluded:sua chua": 21,
+    "excluded:cai tao": 21,
     "excluded:xay lap": 17,
-    "excluded:bao hiem": 12,
+    "excluded:bao hiem": 13,
     "excluded:tham dinh": 9,
-    "excluded:trang phuc": 5,
+    "excluded:trang phuc": 6,
     "excluded:thuc pham": 4,
     "excluded:bao ve": 3,
     "excluded:bao ho lao dong": 2,
@@ -700,6 +700,64 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600568841",
+      "name": "Mua thiết bị thay thế Bộ thiết bị tra cứu, khai thác dữ liệu quốc gia về dân cư và Bộ thu nhận hồ sơ cấp căn cước",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600566241",
+      "name": "Mua sắm lắp đặt thiết bị",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600567368",
+      "name": "Gói thầu số 04: Cung cấp thuốc điều trị ung thư và điều hòa miễn dịch cho các cơ sở y tế giai đoạn 2026-2028 (Mã hiệu: ĐTTT.04.2026.1)",
+      "investor": "Trung tâm Mua sắm tập trung thuốc Quốc gia",
+      "accepted": false,
+      "score": 55,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "thuoc",
+        "mien dich",
+        "cung cap",
+        "dieu tri"
+      ]
+    },
+    {
+      "notifyNo": "IB2600567353",
+      "name": "Gói thầu số 03: Cung cấp thuốc cho các tỉnh Miền Nam giai đoạn 2026-2028 (Mã hiệu: ĐTTT.03.2026.1)",
+      "investor": "Trung tâm Mua sắm tập trung thuốc Quốc gia",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "thuoc",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600560931",
+      "name": "GL-Cw-04: Đầu tư cơ sở hạ tầng xã Hra và Ayun năm 2026",
+      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600559596",
       "name": "GL-Cw-02: Đầu tư cơ sở hạ tầng xã Đak Sơ Mei năm 2026",
       "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
@@ -1063,68 +1121,6 @@
       "reason": "excluded:bao ho lao dong",
       "matched": [
         "bao ho lao dong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562739",
-      "name": "Gói thầu MS-06: Mua sắm vật tư, vật liệu phục vụ xử lý",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562674",
-      "name": "Gói thầu MS-03: Mua sắm thùng nhựa",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562644",
-      "name": "Gói thầu MS-04: Mua hoá chất hữu cơ phục vụ xử lý",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat",
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562629",
-      "name": "Gói thầu MS-05: Mua sắm hóa chất vô cơ phục vụ xử lý",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600561719",
-      "name": "Gói thầu số 07: Cung cấp, lắp đặt thiết bị, phần mềm",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "so y te",
-        "cung cap"
       ]
     }
   ],
