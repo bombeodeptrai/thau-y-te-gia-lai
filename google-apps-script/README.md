@@ -29,4 +29,6 @@ Hệ thống không gửi 241 gói hiện có trong lần khởi tạo. Từ l�
 
 Nếu đã cài bản cũ, cần chạy lại `setupMienTrungSheets` sau khi thay mã để tạo
 trigger Gia Lai. Việc cập nhật JSON trên GitHub Pages không tự sửa trigger bên
-trong Google Sheet đã được cài trước đó.
+trong Google Sheet đã được cài trước đó. Từ phiên bản hiện tại, trigger xoay
+vòng cũng tự đồng bộ lại Gia Lai nếu lần ghi gần nhất đã quá 90 phút, nên một
+trigger riêng bị thiếu sẽ không làm ba tab Gia Lai ngừng cập nhật vĩnh viễn.

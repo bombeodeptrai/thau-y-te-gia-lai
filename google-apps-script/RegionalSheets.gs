@@ -5,6 +5,7 @@ const MT_OWNER_VALUE = "2";
 const MT_DEFAULT_REGION_SLUG = "gia-lai";
 const MT_CURSOR_KEY = "MT_REGION_CURSOR_V2";
 const MT_LAST_SYNC_PREFIX = "MT_LAST_SYNC_";
+const MT_DEFAULT_REGION_MAX_AGE_MS = 90 * 60 * 1000;
 const MT_BATCH_ROWS = 1500;
 const MT_OFFICIAL_SEARCH_URL = "https://muasamcong.mpi.gov.vn/web/guest/home";
 
@@ -71,6 +72,18 @@ function syncMienTrungSheets() {
   mtWithLock_(function() {
     const metadata = mtLoadMetadata_();
     const ss = SpreadsheetApp.getActive();
+    const properties = PropertiesService.getScriptProperties();
+    const defaultRegion = metadata.regions.filter(function(region) {
+      return region.slug === MT_DEFAULT_REGION_SLUG;
+    })[0];
+
+    // Trigger riêng có thể bị thiếu nếu Sheet từng cài một phiên bản cũ hoặc
+    // trigger bị Google xóa. Trigger xoay vòng sẽ tự cứu Gia Lai khi dữ liệu
+    // chi tiết đã quá 90 phút chưa được ghi, thay vì chỉ làm mới hàng tổng hợp.
+    const defaultLastSync = properties.getProperty(MT_LAST_SYNC_PREFIX + MT_DEFAULT_REGION_SLUG);
+    if (defaultRegion && mtRegionSyncIsStale_(defaultLastSync, Date.now())) {
+      mtSyncRegion_(ss, defaultRegion);
+    }
     mtWriteSummary_(ss, metadata.regions, metadata.coverage, metadata.fetchedAt);
 
     const queue = metadata.regions.filter(function(region) {
@@ -78,7 +91,6 @@ function syncMienTrungSheets() {
     });
     if (!queue.length) return;
 
-    const properties = PropertiesService.getScriptProperties();
     let cursor = Number(properties.getProperty(MT_CURSOR_KEY)) || 0;
     cursor = Math.max(0, cursor % queue.length);
     const region = queue[cursor];
@@ -90,6 +102,14 @@ function syncMienTrungSheets() {
       7
     );
   });
+}
+
+function mtRegionSyncIsStale_(lastSyncValue, nowMs) {
+  const lastSyncMs = new Date(lastSyncValue || 0).getTime();
+  const checkedAtMs = Number(nowMs) || Date.now();
+  return !isFinite(lastSyncMs)
+    || lastSyncMs <= 0
+    || checkedAtMs - lastSyncMs >= MT_DEFAULT_REGION_MAX_AGE_MS;
 }
 
 function stopMienTrungSheets() {
