@@ -229,6 +229,22 @@ for (const [notifyNo, title, investor] of [
   });
 }
 
+test("nhận gói thuốc tập trung quốc gia áp dụng cho nhiều tỉnh", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600567368-00",
+    bidName: [
+      "Gói thầu số 04: Cung cấp thuốc điều trị ung thư và điều hòa miễn dịch cho các cơ sở y tế giai đoạn 2026-2028",
+    ],
+    investorName: "Trung tâm Mua sắm tập trung thuốc Quốc gia",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.reason.includes("medical-investor"), result.reason);
+  assert.ok(result.reason.includes("medical-drug-supply"), result.reason);
+  assert.ok(result.matched.includes("thuoc"));
+});
+
 for (const [title, investor] of [
   ["Mua thuốc bảo vệ thực vật phục vụ khuôn viên", "Bệnh viện Đa khoa tỉnh"],
   ["Mua thuốc lá phục vụ cửa hàng", "Trung tâm Y tế huyện"],
