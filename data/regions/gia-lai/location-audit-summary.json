@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-08T06:04:04.385Z",
+  "auditedAt": "2026-10-08T11:47:54.712Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 505,
+      "count": 504,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 55,
+      "count": 53,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 25,
+      "count": 24,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 31,
+      "count": 32,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 85,
+      "count": 87,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 85,
+      "count": 82,
       "error": ""
     },
     {
@@ -271,17 +271,17 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1257,
+  "candidateCount": 1256,
   "acceptedCount": 43,
-  "rejectedCount": 1214,
+  "rejectedCount": 1213,
   "rejectedReasons": {
     "excluded:tu van": 405,
-    "excluded:xay dung": 337,
-    "insufficient-medical-context": 258,
+    "excluded:xay dung": 334,
+    "insufficient-medical-context": 263,
     "excluded:sua chua": 46,
     "excluded:cai tao": 44,
-    "excluded:xay lap": 37,
-    "excluded:bao hiem": 21,
+    "excluded:xay lap": 36,
+    "excluded:bao hiem": 19,
     "excluded:tham dinh": 13,
     "excluded:trang phuc": 8,
     "excluded:thuc pham": 7,
@@ -648,20 +648,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600517233",
-      "name": "Gói thầu số 1: Sửa chữa Ghế nha khoa, Máy Xquang C-Arm, Hệ thống rửa tay tự động và Tủ sấy năm 2026",
-      "investor": "TRUNG TÂM Y TẾ PLEIKU",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "nha khoa",
-        "trung tam y te",
-        "sua chua",
-        "ghe nha khoa"
-      ]
-    },
-    {
       "notifyNo": "IB2600563361",
       "name": "Mua sắm thuốc Morphin hydroclorid 10mg/ml năm 2026",
       "investor": "Trung Tâm Y Tế Ayun Pa",
@@ -914,6 +900,21 @@
       ]
     },
     {
+      "notifyNo": "IB2600569155",
+      "name": "Mua bì đựng thuốc, bì đựng phim xquang - CT, In các mẫu - sổ phục vụ khám, chữa bệnh tại Trung tâm Y tế An Nhơn",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 145,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "trung tam y te",
+        "thuoc",
+        "mua",
+        "kham chua benh",
+        "chua benh"
+      ]
+    },
+    {
       "notifyNo": "DC2600025558",
       "name": "Mua sắm que test ma túy cho Công an phường Đông Hòa, Tân Khánh, Chánh Hưng, Khánh Hội, An Nhơn, Thạnh Mỹ Tây, Vĩnh Hội, Đồn CA KCN Thị xã Tân Uyên và xã Phú Giáo",
       "investor": "Công an Thành phố Hồ Chí Minh",
@@ -928,6 +929,98 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600568548",
+      "name": "Gói thầu số 2: Mua sắm hóa chất khử trùng, diệt muỗi, côn trùng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": false,
+      "score": 75,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam kiem soat benh tat",
+        "hoa chat",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600571291",
+      "name": "Mua sắm màn hình hiển thị và thiết bị phụ kiện cho phòng học lý thuyết",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600571255",
+      "name": "Mua sắm máy vi tính",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "DC2600039328",
+      "name": "Trang bị Logo và bảng biểu cho đơn vị điều trị dịch vụ - Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": false,
+      "score": 55,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "dieu tri"
+      ]
+    },
+    {
+      "notifyNo": "DC2600033449",
+      "name": "Dịch vụ chuyển đổi dữ liệu công chứng tỉnh Gia Lai vào Cơ sở dữ liệu công chứng tập trung của Bộ Tư pháp",
+      "investor": "SỞ TƯ PHÁP TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600043610",
+      "name": "Gói thầu số 01",
+      "investor": "BAN QUẢN LÝ PHƯỜNG AN KHÊ, TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600038148",
+      "name": "Sửa chữa bảo hành công trình",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600566342",
+      "name": "Tư vấn xác định Đơn giá nhân công xây dựng, Giá ca máy và thiết bị thi công xây dựng trên địa bàn tỉnh Gia Lai năm 2026",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "DC2600039395",
       "name": "Mua máy scan phục vụ công tác số hóa của phòng PV06",
@@ -1283,105 +1376,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "DC2600036472",
-      "name": "Tư vấn khảo sát xây dựng, lập Báo cáo nghiên cứu khả thi và lập mô hình thông tin công trình (BIM)",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600036507",
-      "name": "Tư vấn giám sát công tác khảo sát xây dựng",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600036441",
-      "name": "Tư vấn lập hồ sơ đăng kí môi trường",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600033902",
-      "name": "Thuê hạ tầng vận hành Hệ thống đánh giá nhiệm vụ theo KPI",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600035196",
-      "name": "Mua sắm gói phần mềm trợ lý ảo phục vụ cán bộ, công chức, viên chức",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600569597",
-      "name": "Tư vấn thẩm định giá",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600039624",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600039619",
-      "name": "Tư vấn lập E-HSMT và đánh giá E-HSDT",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "lap e hsmt",
-        "danh gia e hsdt"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1170,
-  "afterCount": 1173,
-  "newCount": 3,
+  "beforeCount": 1174,
+  "afterCount": 1174,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v14"
 }
