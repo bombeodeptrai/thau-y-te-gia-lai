@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-08T01:00:42.654Z",
+  "rescuedAt": "2026-10-08T06:24:44.599Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 106,
+      "count": 110,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 227,
+      "count": 228,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -156,7 +156,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 4,
+      "count": 2,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 48,
+      "count": 44,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 14,
+      "count": 12,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 51,
+      "count": 49,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -281,33 +281,65 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 690,
-  "acceptedCount": 27,
-  "rejectedCount": 663,
+  "candidateCount": 688,
+  "acceptedCount": 30,
+  "rejectedCount": 658,
   "rejectedReasons": {
     "excluded:tu van": 229,
-    "excluded:xay dung": 198,
-    "insufficient-medical-context": 128,
-    "excluded:sua chua": 21,
-    "excluded:cai tao": 21,
-    "excluded:xay lap": 18,
+    "excluded:xay dung": 192,
+    "insufficient-medical-context": 124,
+    "excluded:cai tao": 24,
+    "excluded:sua chua": 23,
+    "excluded:xay lap": 17,
     "excluded:bao hiem": 13,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 5,
     "excluded:thuc pham": 4,
     "excluded:bao ve": 3,
+    "excluded:kiem dinh": 2,
     "excluded:bao ho lao dong": 2,
     "excluded:cong nghe thong tin": 2,
     "excluded:cap dien": 2,
     "excluded:bao tri": 2,
     "excluded:may tinh": 1,
     "excluded:giam sat thi cong": 1,
-    "excluded:may chu": 1,
-    "excluded:kiem dinh": 1,
     "excluded:suat an": 1,
-    "excluded:tram bien ap": 1
+    "excluded:tram bien ap": 1,
+    "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600561302",
+      "name": "Dịch vụ sửa chữa, kiểm định 01 máy thở Elisa 300",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 260,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor+laboratory-analyzer-context",
+      "matched": [
+        "may tho",
+        "benh vien",
+        "da khoa",
+        "sua chua",
+        "kiem dinh",
+        "elisa"
+      ]
+    },
+    {
+      "notifyNo": "IB2600548742",
+      "name": "Mua sắm hóa chất xét nghiệm năm 2026 - 2027",
+      "investor": "Trung tâm Y tế Kbang",
+      "accepted": true,
+      "score": 230,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
+      "matched": [
+        "hoa chat xet nghiem",
+        "trung tam y te",
+        "hoa chat",
+        "xet nghiem",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600567368",
       "name": "Gói thầu số 04: Cung cấp thuốc điều trị ung thư và điều hòa miễn dịch cho các cơ sở y tế giai đoạn 2026-2028 (Mã hiệu: ĐTTT.04.2026.1)",
@@ -639,6 +671,18 @@
       ]
     },
     {
+      "notifyNo": "DC2600040931",
+      "name": "Mua que test ma tuý phục vụ công tác",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": true,
+      "score": 100,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "test ma tuy",
+        "mua"
+      ]
+    },
+    {
       "notifyNo": "DC2600026554",
       "name": "Cung cấp dịch vụ sửa chữa và thay thế linh kiện, phụ kiện một số thiết bị y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai quý III năm 2026",
       "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
@@ -727,6 +771,40 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600569142",
+      "name": "Kiểm định chất lượng chương trình đào tạo trình độ đại học của 07 ngành: Sư phạm Toán học, Sư phạm Hóa học, Sư phạm Lịch sử - Địa lý, Sư phạm Khoa học tự nhiên, Giáo dục mầm non, Giáo dục tiểu học, Giáo dục thể chất theo tiêu chuẩn của Bộ Giáo dục và Đào tạo",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:kiem dinh",
+      "matched": [
+        "kiem dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600567332",
+      "name": "Mua sắm lắp đặt thiết bị",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600569819",
+      "name": "Gói số 4: Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Phòng kinh tế xã An Vinh",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600568841",
       "name": "Mua thiết bị thay thế Bộ thiết bị tra cứu, khai thác dữ liệu quốc gia về dân cư và Bộ thu nhận hồ sơ cấp căn cước",
@@ -1113,48 +1191,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600562796",
-      "name": "Gói thầu MS-01: Mua sắm vật tư dụng cụ bảo hộ lao động",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ho lao dong",
-      "matched": [
-        "bao ho lao dong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562739",
-      "name": "Gói thầu MS-06: Mua sắm vật tư, vật liệu phục vụ xử lý",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562674",
-      "name": "Gói thầu MS-03: Mua sắm thùng nhựa",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1170,
-  "afterCount": 1170,
+  "beforeCount": 1173,
+  "afterCount": 1173,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v14"
 }
