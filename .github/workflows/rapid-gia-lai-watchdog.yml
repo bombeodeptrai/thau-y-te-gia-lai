@@ -1,6 +1,9 @@
 name: Giám sát lịch quét nhanh Gia Lai
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Kiểm tra dày hơn lịch quét nhanh để một mốc cron watchdog bị bỏ qua
     # không làm dữ liệu chậm gần một giờ. Ngưỡng 25 phút bên dưới tạo
@@ -14,6 +17,10 @@ permissions:
 
 jobs:
   ensure-rapid-scan:
+    if: >-
+      github.event_name != 'push' ||
+      contains(github.event.head_commit.message, '[watchdog-repair]') ||
+      contains(github.event.head_commit.message, '[rapid-gia-lai]')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
