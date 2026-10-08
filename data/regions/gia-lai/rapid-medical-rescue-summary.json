@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-08T11:57:06.082Z",
+  "rescuedAt": "2026-10-08T13:52:54.469Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 658,
+  "candidateCount": 657,
   "acceptedCount": 27,
-  "rejectedCount": 631,
+  "rejectedCount": 630,
   "rejectedReasons": {
     "excluded:tu van": 213,
     "excluded:xay dung": 177,
     "insufficient-medical-context": 130,
     "excluded:cai tao": 24,
     "excluded:sua chua": 23,
-    "excluded:xay lap": 17,
+    "excluded:xay lap": 16,
     "excluded:bao hiem": 12,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 5,
@@ -1162,8 +1162,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1174,
-  "afterCount": 1174,
+  "beforeCount": 1173,
+  "afterCount": 1173,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v14"
 }
