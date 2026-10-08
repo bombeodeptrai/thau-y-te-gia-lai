@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-07T21:20:12.594Z",
+  "auditedAt": "2026-10-08T00:55:33.245Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 499,
+      "count": 500,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 34,
+      "count": 35,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 124,
+      "count": 123,
       "error": ""
     },
     {
@@ -276,11 +276,11 @@
   "rejectedCount": 1216,
   "rejectedReasons": {
     "excluded:tu van": 404,
-    "excluded:xay dung": 338,
-    "insufficient-medical-context": 262,
+    "excluded:xay dung": 339,
+    "insufficient-medical-context": 260,
     "excluded:sua chua": 47,
     "excluded:cai tao": 41,
-    "excluded:xay lap": 38,
+    "excluded:xay lap": 39,
     "excluded:bao hiem": 21,
     "excluded:tham dinh": 13,
     "excluded:trang phuc": 8,
@@ -930,6 +930,19 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600040636",
+      "name": "Toàn bộ khối lượng xây lắp. Công trình: Trường PTDTNT THCS & THPT AyunPa. Hạng mục: Sửa chữa, cải tạo nhà ở học sinh và các hạng mục phụ trợ khác.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap",
+        "cai tao",
+        "sua chua"
+      ]
+    },
+    {
       "notifyNo": "IB2600568841",
       "name": "Mua thiết bị thay thế Bộ thiết bị tra cứu, khai thác dữ liệu quốc gia về dân cư và Bộ thu nhận hồ sơ cấp căn cước",
       "investor": "Công an tỉnh Gia Lai",
@@ -1364,17 +1377,6 @@
         "xay dung",
         "bao hiem"
       ]
-    },
-    {
-      "notifyNo": "DC2600036846",
-      "name": "Bảo hiểm công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao hiem",
-      "matched": [
-        "bao hiem"
-      ]
     }
   ],
   "removedManualCount": 0,
@@ -1382,5 +1384,5 @@
   "beforeCount": 1168,
   "afterCount": 1168,
   "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v13"
+  "filterStrategy": "unified-medical-scope-v14"
 }

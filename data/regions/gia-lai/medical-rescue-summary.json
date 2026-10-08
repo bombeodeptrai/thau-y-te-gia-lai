@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-07T21:21:03.211Z",
+  "rescuedAt": "2026-10-08T00:56:18.643Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,13 +18,13 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 499,
+      "count": 500,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 34,
+      "count": 35,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 124,
+      "count": 123,
       "error": ""
     },
     {
@@ -282,15 +282,15 @@
   ],
   "successfulStrategyCount": 45,
   "candidateCount": 1337,
-  "acceptedCount": 49,
-  "rejectedCount": 1288,
+  "acceptedCount": 51,
+  "rejectedCount": 1286,
   "rejectedReasons": {
     "excluded:tu van": 405,
-    "excluded:xay dung": 359,
-    "insufficient-medical-context": 302,
+    "excluded:xay dung": 360,
+    "insufficient-medical-context": 298,
     "excluded:sua chua": 51,
     "excluded:cai tao": 41,
-    "excluded:xay lap": 39,
+    "excluded:xay lap": 40,
     "excluded:bao hiem": 21,
     "excluded:tham dinh": 13,
     "excluded:trang phuc": 8,
@@ -313,6 +313,34 @@
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600567368",
+      "name": "Gói thầu số 04: Cung cấp thuốc điều trị ung thư và điều hòa miễn dịch cho các cơ sở y tế giai đoạn 2026-2028 (Mã hiệu: ĐTTT.04.2026.1)",
+      "investor": "Trung tâm Mua sắm tập trung thuốc Quốc gia",
+      "accepted": true,
+      "score": 180,
+      "reason": "medical-investor+laboratory-analyzer-context+medical-drug-supply",
+      "matched": [
+        "trung tam mua sam tap trung thuoc",
+        "thuoc",
+        "mien dich",
+        "cung cap",
+        "dieu tri"
+      ]
+    },
+    {
+      "notifyNo": "IB2600567353",
+      "name": "Gói thầu số 03: Cung cấp thuốc cho các tỉnh Miền Nam giai đoạn 2026-2028 (Mã hiệu: ĐTTT.03.2026.1)",
+      "investor": "Trung tâm Mua sắm tập trung thuốc Quốc gia",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "trung tam mua sam tap trung thuoc",
+        "thuoc",
+        "cung cap"
+      ]
+    },
     {
       "notifyNo": "IB2600569309",
       "name": "Đầu tư, mua sắm Thiết bị, Dụng cụ y tế phục vụ Khu khám bệnh, chữa bệnh theo yêu cầu - Đợt 1 của Bệnh viện Đa khoa Gia Lai",
@@ -901,36 +929,6 @@
         "sua chua",
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "DC2600016442",
-      "name": "Cung cấp, lắp đặt hệ thống điện cấp nguồn cho Máy Cộng hưởng từ (MRI) thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 135,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "thuoc",
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600000882",
-      "name": "mua sắm Máy Garo hơi tự động phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Đa Khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 65,
-      "reason": "medical-investor",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam",
-        "kham benh",
-        "chua benh"
-      ]
     }
   ],
   "rejectedDiagnostics": [
@@ -955,32 +953,6 @@
       "matched": [
         "mua",
         "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600567368",
-      "name": "Gói thầu số 04: Cung cấp thuốc điều trị ung thư và điều hòa miễn dịch cho các cơ sở y tế giai đoạn 2026-2028 (Mã hiệu: ĐTTT.04.2026.1)",
-      "investor": "Trung tâm Mua sắm tập trung thuốc Quốc gia",
-      "accepted": false,
-      "score": 55,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "thuoc",
-        "mien dich",
-        "cung cap",
-        "dieu tri"
-      ]
-    },
-    {
-      "notifyNo": "IB2600567353",
-      "name": "Gói thầu số 03: Cung cấp thuốc cho các tỉnh Miền Nam giai đoạn 2026-2028 (Mã hiệu: ĐTTT.03.2026.1)",
-      "investor": "Trung tâm Mua sắm tập trung thuốc Quốc gia",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "thuoc",
-        "cung cap"
       ]
     },
     {
@@ -1357,12 +1329,37 @@
       "matched": [
         "bao ho lao dong"
       ]
+    },
+    {
+      "notifyNo": "IB2600562739",
+      "name": "Gói thầu MS-06: Mua sắm vật tư, vật liệu phục vụ xử lý",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562674",
+      "name": "Gói thầu MS-03: Mua sắm thùng nhựa",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1168,
-  "afterCount": 1168,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v13"
+  "afterCount": 1170,
+  "newCount": 2,
+  "filterStrategy": "unified-medical-scope-v14"
 }
