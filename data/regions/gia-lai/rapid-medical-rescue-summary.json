@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-08T06:24:44.599Z",
+  "rescuedAt": "2026-10-08T11:42:11.399Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 110,
+      "count": 107,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 228,
+      "count": 227,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 20,
+      "count": 18,
       "error": ""
     },
     {
@@ -78,13 +78,13 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 14,
+      "count": 12,
       "error": ""
     },
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 13,
+      "count": 10,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 12,
+      "count": 6,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 72,
+      "count": 70,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 22,
+      "count": 20,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 12,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 49,
+      "count": 48,
       "error": ""
     },
     {
@@ -240,7 +240,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
@@ -281,21 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 688,
-  "acceptedCount": 30,
-  "rejectedCount": 658,
+  "candidateCount": 658,
+  "acceptedCount": 27,
+  "rejectedCount": 631,
   "rejectedReasons": {
-    "excluded:tu van": 229,
-    "excluded:xay dung": 192,
-    "insufficient-medical-context": 124,
+    "excluded:tu van": 213,
+    "excluded:xay dung": 177,
+    "insufficient-medical-context": 130,
     "excluded:cai tao": 24,
     "excluded:sua chua": 23,
     "excluded:xay lap": 17,
-    "excluded:bao hiem": 13,
+    "excluded:bao hiem": 12,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 5,
-    "excluded:thuc pham": 4,
     "excluded:bao ve": 3,
+    "excluded:thuc pham": 3,
     "excluded:kiem dinh": 2,
     "excluded:bao ho lao dong": 2,
     "excluded:cong nghe thong tin": 2,
@@ -308,6 +308,21 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600569155",
+      "name": "Mua bì đựng thuốc, bì đựng phim xquang - CT, In các mẫu - sổ phục vụ khám, chữa bệnh tại Trung tâm Y tế An Nhơn",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 145,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "trung tam y te",
+        "thuoc",
+        "mua",
+        "kham chua benh",
+        "chua benh"
+      ]
+    },
     {
       "notifyNo": "IB2600561302",
       "name": "Dịch vụ sửa chữa, kiểm định 01 máy thở Elisa 300",
@@ -632,45 +647,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600527982",
-      "name": "Gói thầu số 04: Cung cấp và phân phối Chất bôi trơn cho 17 tỉnh/thành phố",
-      "investor": "Cục Phòng bệnh",
-      "accepted": true,
-      "score": 95,
-      "reason": "medical-investor+medical-context-supply",
-      "matched": [
-        "cuc phong benh",
-        "chat boi tron",
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552197",
-      "name": "Khám sức khỏe sinh viên",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
-      "matched": [
-        "kham suc khoe"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552700",
-      "name": "Mua sắm 02 mặt hàng phim X-quang khô Laser",
-      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "x quang",
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600040931",
       "name": "Mua que test ma tuý phục vụ công tác",
       "investor": "Công an tỉnh Gia Lai",
@@ -753,33 +729,32 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "DC2600016184",
-      "name": "Mua sắm thuốc Pyrazinamide điều trị bệnh lao tại các Trạm y tế (Mã19.2026)",
-      "investor": "Trung tâm Y tế Phù Mỹ",
-      "accepted": true,
-      "score": 145,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "trung tam y te",
-        "thuoc",
-        "mua",
-        "mua sam",
-        "dieu tri"
-      ]
     }
   ],
   "rejectedDiagnostics": [
     {
-      "notifyNo": "IB2600569142",
-      "name": "Kiểm định chất lượng chương trình đào tạo trình độ đại học của 07 ngành: Sư phạm Toán học, Sư phạm Hóa học, Sư phạm Lịch sử - Địa lý, Sư phạm Khoa học tự nhiên, Giáo dục mầm non, Giáo dục tiểu học, Giáo dục thể chất theo tiêu chuẩn của Bộ Giáo dục và Đào tạo",
-      "investor": "Trường Đại học Quy Nhơn",
+      "notifyNo": "IB2600572198",
+      "name": "Mua Cây cà phê giống TRS1",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
       "accepted": false,
-      "score": -100,
-      "reason": "excluded:kiem dinh",
+      "score": 0,
+      "reason": "insufficient-medical-context",
       "matched": [
-        "kiem dinh"
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600568548",
+      "name": "Gói thầu số 2: Mua sắm hóa chất khử trùng, diệt muỗi, côn trùng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": false,
+      "score": 75,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam kiem soat benh tat",
+        "hoa chat",
+        "mua",
+        "mua sam"
       ]
     },
     {
@@ -792,6 +767,76 @@
       "matched": [
         "mua",
         "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600571291",
+      "name": "Mua sắm màn hình hiển thị và thiết bị phụ kiện cho phòng học lý thuyết",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600571255",
+      "name": "Mua sắm máy vi tính",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600566906",
+      "name": "Cung cấp đồ vải, quần áo người bệnh tại Trung tâm Y tế Phù Cát năm 2026",
+      "investor": "Trung tâm Y tế Phù Cát",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600558447",
+      "name": "Toàn bộ khối lượng xây dựng công trình: Xây dựng đường BTXM từ QL19C đến Trường THCS (cơ sở 2), thôn 3",
+      "investor": "UBND xã Vân Canh",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600566342",
+      "name": "Tư vấn xác định Đơn giá nhân công xây dựng, Giá ca máy và thiết bị thi công xây dựng trên địa bàn tỉnh Gia Lai năm 2026",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600569142",
+      "name": "Kiểm định chất lượng chương trình đào tạo trình độ đại học của 07 ngành: Sư phạm Toán học, Sư phạm Hóa học, Sư phạm Lịch sử - Địa lý, Sư phạm Khoa học tự nhiên, Giáo dục mầm non, Giáo dục tiểu học, Giáo dục thể chất theo tiêu chuẩn của Bộ Giáo dục và Đào tạo",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:kiem dinh",
+      "matched": [
+        "kiem dinh"
       ]
     },
     {
@@ -872,17 +917,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600558447",
-      "name": "Toàn bộ khối lượng xây dựng công trình: Xây dựng đường BTXM từ QL19C đến Trường THCS (cơ sở 2), thôn 3",
-      "investor": "UBND xã Vân Canh",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     },
     {
       "notifyNo": "IB2600569459",
@@ -1124,79 +1158,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600559371",
-      "name": "GT04- Thi công xây dựng và lắp đặt thiết bị",
-      "investor": "Trường Cao đẳng Cơ điện Xây dựng và Nông Lâm Trung bộ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600561255",
-      "name": "Đầu tư hạ tầng internet công cộng tại nhà văn hóa thôn đặc biệt khó khăn",
-      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600559361",
-      "name": "GT04- Thi công xây dựng và lắp đặt thiết bị",
-      "investor": "Trường Cao đẳng Cơ điện Xây dựng và Nông Lâm Trung bộ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600560678",
-      "name": "Mua sắm lắp đặt thiết bị",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600560992",
-      "name": "Mua sắm xe ô tô phục vụ công tác chung",
-      "investor": "Văn phòng HĐND và UBND xã Phù Mỹ",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600559797",
-      "name": "Mua sắm xe chữa cháy cho Khu công nghiệp",
-      "investor": "Công ty phát triển hạ tầng khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1173,
-  "afterCount": 1173,
-  "newCount": 0,
+  "afterCount": 1174,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v14"
 }
