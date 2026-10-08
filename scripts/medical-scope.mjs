@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v13";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v14";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -100,6 +100,9 @@ const MEDICAL_INVESTOR_TERMS = [
   "trung tam phap y", "y khoa", "y duoc", "da khoa", "chuyen khoa",
   "vien sot ret", "ky sinh trung con trung",
   "cuc phong benh", "cuc phong chong hiv aids",
+  // Các gói thuốc tập trung cấp quốc gia có thể áp dụng đồng thời cho nhiều
+  // tỉnh nhưng tên chủ đầu tư không chứa "y tế" hay "bệnh viện".
+  "trung tam mua sam tap trung thuoc",
 ];
 
 // Tên thuốc/dược phẩm thường không kèm hậu tố "y tế". Chỉ nhận nhóm rộng
