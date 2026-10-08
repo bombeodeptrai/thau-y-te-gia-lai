@@ -2,6 +2,7 @@ name: Giám sát lịch quét nhanh Gia Lai
 
 on:
   push:
+    # Đường phục hồi chủ động khi GitHub bỏ lỡ đồng thời các lịch cron.
     branches:
       - main
   schedule:
