@@ -8,6 +8,7 @@ import {
   medicalCategory,
 } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
+import { preserveTenderBidderCount } from "./official-detail-preservation.mjs";
 import { createRescueRuntime } from "./rescue-runtime.mjs";
 import { shouldReplaceRescueCollectionMetadata } from "./scan-baseline.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
@@ -285,6 +286,7 @@ function mergeTender(previous, current) {
     winningPrice: Number(current.winningPrice) || Number(previous.winningPrice) || 0,
     price: Number(current.price) || Number(previous.price) || 0,
   };
+  merged.bidderCount = preserveTenderBidderCount(previous, current, merged);
   delete merged.manualTenderOverride;
   delete merged.manualTenderVerifiedAt;
   delete merged.sourceNotifyNo;
