@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-09T09:21:55.629Z",
+  "rescuedAt": "2026-10-09T17:10:24.697Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 106,
+      "count": 107,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 224,
+      "count": 230,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 24,
+      "count": 23,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -198,13 +198,13 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 31,
+      "count": 34,
       "error": ""
     },
     {
@@ -281,22 +281,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 665,
-  "acceptedCount": 30,
-  "rejectedCount": 635,
+  "candidateCount": 672,
+  "acceptedCount": 31,
+  "rejectedCount": 641,
   "rejectedReasons": {
-    "excluded:tu van": 230,
-    "excluded:xay dung": 169,
-    "insufficient-medical-context": 127,
-    "excluded:cai tao": 24,
-    "excluded:sua chua": 21,
-    "excluded:xay lap": 14,
+    "excluded:tu van": 232,
+    "excluded:xay dung": 172,
+    "insufficient-medical-context": 130,
+    "excluded:sua chua": 22,
+    "excluded:cai tao": 22,
+    "excluded:xay lap": 12,
     "excluded:bao hiem": 11,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 6,
+    "excluded:bao ve": 4,
     "excluded:thuc pham": 4,
     "excluded:cong nghe thong tin": 3,
-    "excluded:bao ve": 3,
     "excluded:kiem dinh": 2,
     "excluded:bao ho lao dong": 2,
     "excluded:bao tri": 2,
@@ -310,6 +310,21 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600573479",
+      "name": "Mua sắm bổ sung vật tư phục vụ công tác khám sức khỏe toàn dân của Trung tâm Y tế Tuy Phước năm 2026",
+      "investor": "Trung tâm Y tế Tuy Phước",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "kham suc khoe",
+        "trung tam y te",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600571425",
       "name": "Mua bao bì đựng chất thải y tế, túi cấp phát thuốc, đựng phim X-Quang, CT và cốc nhựa sinh học dùng 1 lần của Trung tâm Y tế Tây Sơn năm 2026",
@@ -773,6 +788,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600572994",
+      "name": "Tư vấn lập Quy hoạch chung đô thị Quy Nhơn",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600572478",
+      "name": "Gói thầu 26.54.HH Cấu kiện phục vụ sửa chữa lớn bổ sung",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
       "notifyNo": "IB2600572821",
       "name": "Mua sắm Bản quyền phần mềm phục vụ hoạt động chuyên môn của Trung tâm Y tế An Nhơn",
       "investor": "TRUNG TÂM Y TẾ AN NHƠN",
@@ -1180,30 +1217,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600563188",
-      "name": "Lắp đặt thiết bị dây chuyền",
-      "investor": "NHÀ MÁY VI SINH - CHI NHÁNH TỔNG CÔNG TY 15",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600565813",
-      "name": "Chương trình Teambuilding 16 năm vận hành an toàn giàn nén khí mỏ Rồng (DVN-DV-3755/26-KHI-TTH)",
-      "investor": "Liên doanh Việt-Nga Vietsovpetro",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1175,
-  "afterCount": 1176,
-  "newCount": 1,
+  "beforeCount": 1177,
+  "afterCount": 1177,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v15"
 }
