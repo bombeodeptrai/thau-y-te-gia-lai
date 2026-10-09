@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v14";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v15";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -78,6 +78,11 @@ const MEDICAL_CONTEXT_SUPPLY_TERMS = [
   "dau do sieu am", "truyen dich", "truyen mau", "dinh nhom mau",
   "ampu bop bong", "que de luoi", "day garo", "micropipet",
   "binh nito luu tru mau", "chung vi sinh", "y dung cu",
+  // Hóa chất phòng dịch do CDC/cơ sở y tế mua và đồ vải dành trực tiếp cho
+  // người bệnh đều là vật tư y tế; yêu cầu đồng thời tên bên mua thuộc ngành
+  // y tế để không kéo nhầm thuốc diệt côn trùng hay quần áo thông thường.
+  "hoa chat khu trung", "diet muoi", "diet con trung",
+  "do vai nguoi benh", "quan ao nguoi benh",
   // Vật tư giảm hại/phòng lây nhiễm thường được Cục Phòng bệnh đặt tên rất
   // ngắn, không kèm các từ "y tế" hoặc "HIV/AIDS" trong tên gói.
   "chat boi tron", "bao cao su",
@@ -323,6 +328,8 @@ export function medicalCategory(name) {
     "tui mau", "thuoc bo",
     "thuoc", "duoc pham", "duoc lieu", "duoc chat",
     "chat boi tron", "bao cao su",
+    "hoa chat khu trung", "diet muoi", "diet con trung",
+    "do vai nguoi benh", "quan ao nguoi benh",
     ...MEDICAL_WASTE_TITLE_TERMS,
   ]).length
     ? "Vật tư & hóa chất"
