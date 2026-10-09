@@ -70,3 +70,17 @@ export function mergeOfficialDetail(previous = {}, current = {}) {
     ),
   };
 }
+
+export function preserveTenderBidderCount(previous = {}, current = {}, merged = {}) {
+  const counts = [previous?.bidderCount, current?.bidderCount]
+    .map((value) => Number(value))
+    .filter((value) => Number.isFinite(value) && value >= 0);
+  const disclosedNames = new Set([
+    ...(merged?.winnerNames || []),
+    ...(merged?.participantNames || []),
+  ].filter(Boolean)).size;
+  if (!counts.length && disclosedNames === 0) {
+    return current?.bidderCount ?? previous?.bidderCount ?? null;
+  }
+  return Math.max(0, disclosedNames, ...counts);
+}

@@ -7,6 +7,7 @@ import {
   medicalCategory,
 } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
+import { preserveTenderBidderCount } from "./official-detail-preservation.mjs";
 
 const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
 const PAGE_SIZE = 10;
@@ -204,6 +205,7 @@ function mergeOfficial(previous, current) {
     winningPrice: Number(current.winningPrice) || Number(previous?.winningPrice) || 0,
     price: Number(current.price) || Number(previous?.price) || 0,
   };
+  merged.bidderCount = preserveTenderBidderCount(previous, current, merged);
   delete merged.manualTenderOverride;
   delete merged.manualTenderVerifiedAt;
   delete merged.sourceNotifyNo;

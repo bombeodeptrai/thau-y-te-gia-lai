@@ -4,6 +4,7 @@ import {
   detailFilesForManifest,
   isOfficialDetailFileName,
   mergeOfficialDetail,
+  preserveTenderBidderCount,
 } from "./official-detail-preservation.mjs";
 
 test("nhận cả hồ sơ IB và DC, chỉ giữ tệp thuộc manifest theo thứ tự ổn định", () => {
@@ -74,4 +75,23 @@ test("dùng dữ liệu mới khi nguồn chính thức trả về nội dung đ
   assert.equal(merged.items.length, 2);
   assert.equal(merged.requirements.items[0].name, "Lô mới");
   assert.equal(merged.technicalRequirements.items[0].content, "Mới");
+});
+
+test("không để quét nhanh ghi đè số nhà thầu đã bổ sung chi tiết về 0", () => {
+  assert.equal(
+    preserveTenderBidderCount(
+      { bidderCount: 1, winnerNames: ["Nhà thầu A"] },
+      { bidderCount: 0, winnerNames: [] },
+      { winnerNames: ["Nhà thầu A"], participantNames: [] },
+    ),
+    1,
+  );
+  assert.equal(
+    preserveTenderBidderCount(
+      { bidderCount: null },
+      { bidderCount: 0 },
+      { winnerNames: ["Nhà thầu A", "Nhà thầu B"] },
+    ),
+    2,
+  );
 });
