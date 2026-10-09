@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-08T21:20:52.027Z",
+  "auditedAt": "2026-10-09T05:50:50.976Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 504,
+      "count": 502,
       "error": ""
     },
     {
@@ -20,13 +20,13 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 53,
+      "count": 58,
       "error": ""
     },
     {
       "term": "Thành phố Pleiku",
       "success": true,
-      "count": 0,
+      "count": 3,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 16,
+      "count": 19,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 31,
+      "count": 29,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 32,
+      "count": 31,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 87,
+      "count": 90,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 82,
+      "count": 79,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 40,
+      "count": 44,
       "error": ""
     },
     {
@@ -271,29 +271,30 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1252,
-  "acceptedCount": 43,
-  "rejectedCount": 1209,
+  "candidateCount": 1253,
+  "acceptedCount": 45,
+  "rejectedCount": 1208,
   "rejectedReasons": {
-    "excluded:tu van": 405,
-    "excluded:xay dung": 330,
-    "insufficient-medical-context": 263,
-    "excluded:sua chua": 46,
-    "excluded:cai tao": 44,
-    "excluded:xay lap": 36,
-    "excluded:bao hiem": 19,
+    "excluded:tu van": 407,
+    "excluded:xay dung": 332,
+    "insufficient-medical-context": 264,
+    "excluded:sua chua": 45,
+    "excluded:cai tao": 42,
+    "excluded:xay lap": 35,
+    "excluded:bao hiem": 18,
     "excluded:tham dinh": 13,
     "excluded:trang phuc": 8,
-    "excluded:thuc pham": 7,
+    "excluded:thuc pham": 8,
     "excluded:may tinh": 5,
     "excluded:suat an": 5,
     "excluded:bao ve": 4,
-    "excluded:bao tri": 4,
-    "excluded:kiem dinh": 4,
     "excluded:giam sat thi cong": 3,
+    "excluded:bao tri": 3,
     "excluded:cap dien": 2,
     "excluded:may chu": 2,
+    "excluded:kiem dinh": 2,
     "excluded:may in": 2,
+    "excluded:duong day": 1,
     "excluded:cong nghe thong tin": 1,
     "excluded:phan bon": 1,
     "excluded:thu y": 1,
@@ -303,6 +304,22 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600568548",
+      "name": "Gói thầu số 2: Mua sắm hóa chất khử trùng, diệt muỗi, côn trùng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": true,
+      "score": 135,
+      "reason": "medical-investor+laboratory-supply+medical-context-supply",
+      "matched": [
+        "trung tam kiem soat benh tat",
+        "hoa chat khu trung",
+        "diet muoi",
+        "hoa chat",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "DC2600040931",
       "name": "Mua que test ma tuý phục vụ công tác",
@@ -628,26 +645,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600520572",
-      "name": "Gói thầu số 1: Mua sắm Hoá chất xét nghiệm sử dụng cho máy sinh hoá BX3010 năm 2026 (Lần 3)",
-      "investor": "TRUNG TÂM Y TẾ PLEIKU",
-      "accepted": true,
-      "score": 255,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+machine-usage-context",
-      "matched": [
-        "hoa chat xet nghiem",
-        "trung tam y te",
-        "hoa chat",
-        "xet nghiem",
-        "sinh hoa",
-        "may sinh hoa",
-        "su dung cho may",
-        "dung cho may",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "IB2600563361",
       "name": "Mua sắm thuốc Morphin hydroclorid 10mg/ml năm 2026",
       "investor": "Trung Tâm Y Tế Ayun Pa",
@@ -930,17 +927,58 @@
   ],
   "rejectedDiagnostics": [
     {
-      "notifyNo": "IB2600568548",
-      "name": "Gói thầu số 2: Mua sắm hóa chất khử trùng, diệt muỗi, côn trùng năm 2026",
-      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "notifyNo": "DC2600044225",
+      "name": "Lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Sở Y tế tỉnh Gia Lai",
       "accepted": false,
-      "score": 75,
+      "score": 35,
       "reason": "insufficient-medical-context",
       "matched": [
-        "trung tam kiem soat benh tat",
-        "hoa chat",
-        "mua",
-        "mua sam"
+        "so y te"
+      ]
+    },
+    {
+      "notifyNo": "DC2600037526",
+      "name": "Điều chỉnh cục bộ Quy hoạch phân khu xây dựng phường Yên Đỗ, thành phố Pleiku (cũ), tỉnh Gia Lai",
+      "investor": "Phòng Nông nghiệp, Hạ tầng và Đô thị Phường Diên Hồng",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600037579",
+      "name": "Điều chỉnh cục bộ Quy hoạch phân khu xây dựng khu đô thị Diên Phú, thành phố Pleiku (cũ), tỉnh Gia Lai",
+      "investor": "Phòng Nông nghiệp, Hạ tầng và Đô thị Phường Diên Hồng",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600037575",
+      "name": "Điều chỉnh cục bộ Quy hoạch phân khu xây dựng phường Ia Kring và phường Diên Hồng, thành phố Pleiku (cũ), tỉnh Gia Lai",
+      "investor": "Phòng Nông nghiệp, Hạ tầng và Đô thị Phường Diên Hồng",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600572450",
+      "name": "Gói 73/SCL2026/PTC3: Thi công xử lý độ cao pha đất các tuyến đường dây 220kV - Phần Truyền tải điện Gia Lai thực hiện",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:duong day",
+      "matched": [
+        "duong day"
       ]
     },
     {
@@ -1334,54 +1372,12 @@
         "sua chua",
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "IB2600569512",
-      "name": "GL-Cw-05: Đầu tư cơ sở hạ tầng xã Kon Chiêng và Lơ Pang năm 2026",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600026378",
-      "name": "Tư vấn khảo sát, lập báo cáo kinh tế - kỹ thuật công trình cải tạo, sửa chữa trụ sở làm việc số 1057 Trần Hưng Đạo, phường Quy Nhơn của Sở Công Thương",
-      "investor": "Sở Công Thương Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600020079",
-      "name": "Tư vấn thẩm tra thiết kế bản vẽ thi công và dự toán điều chỉnh",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600564864",
-      "name": "Thuê dịch vụ CNTT đối với Hệ thống phòng họp không giấy",
-      "investor": "Trung tâm Phục vụ hành chính công tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1173,
-  "afterCount": 1173,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v14"
+  "beforeCount": 1174,
+  "afterCount": 1176,
+  "newCount": 2,
+  "filterStrategy": "unified-medical-scope-v15"
 }
