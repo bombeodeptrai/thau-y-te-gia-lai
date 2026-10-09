@@ -91,6 +91,36 @@ test("không dùng một nhóm hóa chất chung tại viện y tế làm điề
   assert.equal(result.accepted, false, result.reason);
 });
 
+for (const [notifyNo, title, investor] of [
+  [
+    "IB2600568548-00",
+    "Gói thầu số 2: Mua sắm hóa chất khử trùng, diệt muỗi, côn trùng năm 2026",
+    "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+  ],
+  [
+    "IB2600566906-00",
+    "Cung cấp đồ vải, quần áo người bệnh tại Trung tâm Y tế Phù Cát năm 2026",
+    "Trung tâm Y tế Phù Cát",
+  ],
+]) {
+  test(`nhận vật tư phòng dịch hoặc dùng trực tiếp cho người bệnh: ${notifyNo}`, () => {
+    const result = classifyMedicalTender({ notifyNo, bidName: [title], investorName: investor });
+    assert.equal(result.accepted, true, result.reason);
+    assert.equal(result.category, "Vật tư & hóa chất");
+    assert.ok(result.reason.includes("medical-context-supply"), result.reason);
+  });
+}
+
+test("không mở rộng vật tư phòng dịch hoặc đồ vải sang đơn vị ngoài y tế", () => {
+  for (const [title, investor] of [
+    ["Mua hóa chất diệt muỗi phục vụ vườn ươm", "Trung tâm dịch vụ nông nghiệp"],
+    ["Cung cấp đồ vải, quần áo cho khu nghỉ dưỡng", "Công ty du lịch"],
+  ]) {
+    const result = classifyMedicalTender({ bidName: [title], investorName: investor });
+    assert.equal(result.accepted, false, result.reason);
+  }
+});
+
 test("nhận gói vật tư giảm hại HIV/AIDS của Cục Phòng bệnh", () => {
   const result = classifyMedicalTender({
     notifyNo: "IB2600527982-00",

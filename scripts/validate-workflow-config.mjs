@@ -266,7 +266,7 @@ if (!medicalRescue.includes("RESCUE_SUMMARY_FILE")
 }
 
 const medicalScope = await readFile("scripts/medical-scope.mjs", "utf8");
-if (!medicalScope.includes('export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v14"')) {
+if (!medicalScope.includes('export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v15"')) {
   throw new Error("Bộ lọc y tế chưa công bố phiên bản chuẩn dùng chung");
 }
 for (const file of [
