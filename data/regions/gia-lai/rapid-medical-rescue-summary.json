@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-10T06:08:44.485Z",
+  "rescuedAt": "2026-10-10T11:31:27.618Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 108,
+      "count": 109,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 242,
+      "count": 229,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 9,
+      "count": 11,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 67,
+      "count": 68,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 42,
+      "count": 43,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 46,
+      "count": 31,
       "error": ""
     },
     {
@@ -281,22 +281,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 685,
+  "candidateCount": 672,
   "acceptedCount": 31,
-  "rejectedCount": 654,
+  "rejectedCount": 641,
   "rejectedReasons": {
-    "excluded:tu van": 243,
-    "excluded:xay dung": 174,
+    "excluded:tu van": 238,
+    "excluded:xay dung": 169,
     "insufficient-medical-context": 132,
-    "excluded:sua chua": 22,
+    "excluded:sua chua": 21,
     "excluded:cai tao": 21,
-    "excluded:xay lap": 12,
-    "excluded:bao hiem": 10,
+    "excluded:xay lap": 13,
     "excluded:tham dinh": 9,
+    "excluded:bao hiem": 8,
     "excluded:trang phuc": 6,
-    "excluded:bao ve": 4,
     "excluded:thuc pham": 4,
     "excluded:cong nghe thong tin": 3,
+    "excluded:bao ve": 3,
     "excluded:kiem dinh": 2,
     "excluded:bao ho lao dong": 2,
     "excluded:bao tri": 2,
@@ -788,6 +788,38 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600572778",
+      "name": "Mua sắm lắp đặt thiết bị",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600572504",
+      "name": "Cung cấp xi măng thực hiện Chương trình bê tông hóa giao thông nông thôn và kiên cố hóa kênh mương trên địa bàn phường Hoài Nhơn Nam năm 2026",
+      "investor": "Ban Quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn Nam",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600530812",
+      "name": "Gói thầu MS-01",
+      "investor": "Binh đoàn 15",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600572291",
       "name": "Gói thầu số 1: Mua vật liệu xây dựng, vách nhôm kính, bàn ghế, ống nhựa PVC và các vật tư khác",
       "investor": "LỮ ĐOÀN 132-BINH CHỦNG THÔNG TIN LIÊN LẠC",
@@ -1181,40 +1213,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600558231",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban quản lý xã Bình Khê",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600566641",
-      "name": "Xây dựng video chuỗi phóng sự; in pano tuyên truyền",
-      "investor": "Cục Cảnh sát quản lý hành chính về trật tự xã hội",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600561003",
-      "name": "Mua sắm lắp đặt thiết bị",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
       ]
     }
   ],
