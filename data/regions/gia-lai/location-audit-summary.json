@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-10T05:53:10.049Z",
+  "auditedAt": "2026-10-10T14:29:02.566Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 519,
+      "count": 510,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 34,
+      "count": 33,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 18,
+      "count": 21,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 122,
+      "count": 124,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 87,
+      "count": 88,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 82,
+      "count": 80,
       "error": ""
     },
     {
@@ -271,14 +271,14 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1294,
-  "acceptedCount": 46,
-  "rejectedCount": 1248,
+  "candidateCount": 1286,
+  "acceptedCount": 45,
+  "rejectedCount": 1241,
   "rejectedReasons": {
-    "excluded:tu van": 444,
+    "excluded:tu van": 445,
     "excluded:xay dung": 341,
-    "insufficient-medical-context": 256,
-    "excluded:sua chua": 46,
+    "insufficient-medical-context": 249,
+    "excluded:sua chua": 45,
     "excluded:cai tao": 44,
     "excluded:xay lap": 34,
     "excluded:bao hiem": 18,
@@ -710,25 +710,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600525594",
-      "name": "Mua sắm vật tư, hóa chất, sinh phẩm chẩn đoán y tế trong khi chờ kết quả lựa chọn nhà thầu năm 2026 của Bệnh viện đa khoa cao su Chư Prông",
-      "investor": "CHI NHÁNH CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG - BỆNH VIỆN ĐA KHOA CAO SU CHƯ PRÔNG",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "sinh pham chan doan",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "sinh pham",
-        "chan doan",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "IB2600552058",
       "name": "Gói thầu số KYT 01/2026: Cung cấp các loại khí y tế cho Bệnh viện Hữu nghị Việt Đức cơ sở Ninh Bình",
       "investor": "Bệnh viện Hữu Nghị Việt Đức",
@@ -922,9 +903,36 @@
         "kham benh",
         "chua benh"
       ]
+    },
+    {
+      "notifyNo": "IB2600520648",
+      "name": "Cung cấp dịch vụ kiểm định, hiệu chuẩn thiết bị y tế của Trung tâm Y tế An Nhơn năm 2026 (Lần 2)",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "thiet bi y te",
+        "trung tam y te",
+        "kiem dinh",
+        "hieu chuan",
+        "cung cap"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600574161",
+      "name": "Gói thầu xây lắp XL.03: Xây dựng nền, mặt đường, công trình thoát nước và xây dựng hệ thống giám sát, điều hành giao thông đoạn Km60+000 - Km77+510",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap",
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "DC2600047867",
       "name": "Tư vấn Lập quy hoạch tổng mặt bằng.Dự án: Trường THPT An Lương (nay là Trường trung học cơ sở và trung học phổ thông An Lương), hạng mục: Xây mới nhà hành chính quản trị; các hạng mục phụ trợ và trang thiết bị.",
@@ -1354,17 +1362,6 @@
     {
       "notifyNo": "DC2600037579",
       "name": "Điều chỉnh cục bộ Quy hoạch phân khu xây dựng khu đô thị Diên Phú, thành phố Pleiku (cũ), tỉnh Gia Lai",
-      "investor": "Phòng Nông nghiệp, Hạ tầng và Đô thị Phường Diên Hồng",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600037575",
-      "name": "Điều chỉnh cục bộ Quy hoạch phân khu xây dựng phường Ia Kring và phường Diên Hồng, thành phố Pleiku (cũ), tỉnh Gia Lai",
       "investor": "Phòng Nông nghiệp, Hạ tầng và Đô thị Phường Diên Hồng",
       "accepted": false,
       "score": -100,
