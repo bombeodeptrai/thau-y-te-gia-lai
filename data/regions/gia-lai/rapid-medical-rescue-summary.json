@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-09T22:51:27.186Z",
+  "rescuedAt": "2026-10-10T06:08:44.485Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 107,
+      "count": 108,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 230,
+      "count": 242,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 21,
+      "count": 23,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 11,
+      "count": 9,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 12,
+      "count": 14,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 45,
+      "count": 42,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 51,
+      "count": 46,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 15,
+      "count": 20,
       "error": ""
     },
     {
@@ -281,17 +281,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 672,
+  "candidateCount": 685,
   "acceptedCount": 31,
-  "rejectedCount": 641,
+  "rejectedCount": 654,
   "rejectedReasons": {
-    "excluded:tu van": 232,
-    "excluded:xay dung": 172,
-    "insufficient-medical-context": 130,
+    "excluded:tu van": 243,
+    "excluded:xay dung": 174,
+    "insufficient-medical-context": 132,
     "excluded:sua chua": 22,
-    "excluded:cai tao": 22,
+    "excluded:cai tao": 21,
     "excluded:xay lap": 12,
-    "excluded:bao hiem": 11,
+    "excluded:bao hiem": 10,
     "excluded:tham dinh": 9,
     "excluded:trang phuc": 6,
     "excluded:bao ve": 4,
@@ -788,6 +788,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600572291",
+      "name": "Gói thầu số 1: Mua vật liệu xây dựng, vách nhôm kính, bàn ghế, ống nhựa PVC và các vật tư khác",
+      "investor": "LỮ ĐOÀN 132-BINH CHỦNG THÔNG TIN LIÊN LẠC",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600572994",
       "name": "Tư vấn lập Quy hoạch chung đô thị Quy Nhơn",
       "investor": "Sở Xây dựng Gia Lai",
@@ -1200,18 +1211,6 @@
       "investor": "Trường Đại học Quy Nhơn",
       "accepted": false,
       "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600566136",
-      "name": "Gói thầu MS-01: Mua sắm lúa tẻ bảo đảm đời sống bộ đội đợt 2/2026",
-      "investor": "Sư đoàn bộ binh 2/Quân khu 5",
-      "accepted": false,
-      "score": 0,
       "reason": "insufficient-medical-context",
       "matched": [
         "mua",
