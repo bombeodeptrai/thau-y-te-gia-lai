@@ -1296,7 +1296,7 @@
       "publicDate": "2026-09-28T14:56:41.153",
       "price": 905828000,
       "category": "Vật tư & hóa chất",
-      "status": "closed",
+      "status": "no_bidder",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": 0,
@@ -1437,8 +1437,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "e7b53bac-0786-4914-b34b-e9e8d37f3ada",
@@ -2013,14 +2012,31 @@
       "stepCode": "notify-contractor-step-4-kqlcnt",
       "notifyNo": "IB2600518070",
       "name": "Mua sắm xe lăn hỗ trợ cho nạn nhân chất độc da cam/dioxin Việt Nam",
-      "regionSlug": "gia-lai",
-      "region": "Gia Lai",
+      "regionSlug": "lam-dong",
+      "region": "Lâm Đồng",
       "provinceCodes": [
         "52",
-        "64"
+        "64",
+        "38",
+        "40",
+        "42",
+        "44",
+        "45",
+        "46",
+        "48",
+        "49",
+        "51",
+        "62",
+        "54",
+        "66",
+        "56",
+        "58",
+        "60",
+        "67",
+        "68"
       ],
       "investor": "QUỸ NẠN NHÂN CHẤT ĐỘC DA CAM/DIOXIN VIỆT NAM",
-      "location": "Tỉnh Cao Bằng, Tỉnh Lạng Sơn, Tỉnh Thái Nguyên, Tỉnh Tuyên Quang, Tỉnh Lào Cai, Tỉnh Lai Châu, Tỉnh Điện Biên, Tỉnh Sơn La, Tỉnh Phú Thọ, Thành phố Hà Nội, Tỉnh Bắc Ninh, Thành phố Quảng Ninh, Thành phố Hải Phòng, Tỉnh Hưng Yên, Tỉnh Ninh Bình, Tỉnh Thanh Hóa, Tỉnh Nghệ An, Tỉnh Hà Tĩnh, Tỉnh Quảng…",
+      "location": "Tỉnh Cao Bằng, Tỉnh Lạng Sơn, Tỉnh Thái Nguyên, Tỉnh Tuyên Quang, Tỉnh Lào Cai, Tỉnh Lai Châu, Tỉnh Điện Biên, Tỉnh Sơn La, Tỉnh Phú Thọ, Thành phố Hà Nội, Tỉnh Bắc Ninh, Thành phố Quảng Ninh, Thành phố Hải Phòng, Tỉnh Hưng Yên, Tỉnh Ninh Bình, Tỉnh Thanh Hóa, Tỉnh Nghệ An, Tỉnh Hà Tĩnh, Tỉnh Quảng Trị, Thành phố Huế, Thành phố Đà Nẵng, Tỉnh Quảng Ngãi, Tỉnh Gia Lai, Tỉnh Đắk Lắk, Tỉnh Khánh Hòa, Tỉnh Lâm Đồng, Thành phố Đồng Nai, Thành phố Hồ Chí Minh, Tỉnh Tây Ninh, Tỉnh Đồng Tháp, Tỉnh Vĩnh Long, Thành phố Cần Thơ, Tỉnh An Giang, Tỉnh Cà Mau",
       "closeDate": "2026-09-24T10:00:00",
       "publicDate": "2026-09-15T16:33:16.289",
       "price": 1084510021,
@@ -2048,6 +2064,19 @@
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
+      "regionSlugs": [
+        "gia-lai",
+        "thanh-hoa",
+        "nghe-an",
+        "ha-tinh",
+        "quang-tri",
+        "hue",
+        "da-nang",
+        "quang-ngai",
+        "dak-lak",
+        "khanh-hoa",
+        "lam-dong"
+      ],
       "sourceStage": "official-public-search"
     },
     {
@@ -86624,7 +86653,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-11T23:44:08.123Z",
+  "fetchedAt": "2026-10-11T23:45:08.617Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -86657,20 +86686,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v15",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v15",
-    "lastMedicalRescueAt": "2026-10-11T23:44:08.123Z",
-    "lastMedicalRescueDays": 30,
-    "lastMedicalRescueCandidateCount": 1303,
-    "lastMedicalRescueMedicalCount": 53,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0,
-    "lastLocationAuditAt": "2026-10-11T23:43:21.536Z",
-    "lastLocationAuditDays": 30,
-    "lastLocationAuditCandidateCount": 1234,
-    "lastLocationAuditMedicalCount": 44,
-    "lastLocationAuditNewCount": 0
+    ]
   }
 }
