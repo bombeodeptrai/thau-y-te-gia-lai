@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "27f696ba-56a0-4e7e-8cf4-938b30100b06",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "won",
+      "lotNo": "PP2500545086",
+      "lotName": "Zidovudin + Lamivudine",
+      "bidPrice": 120600000,
+      "finalPrice": 120600000,
+      "winningPrice": 120600000,
+      "reason": "",
+      "submittedAt": "2026-02-06T15:08:41.671",
+      "models": [
+        "Lamivudine and Zidovudine Tablets 150mg/300mg"
+      ]
+    },
+    {
+      "id": "d0b59905-30d1-4e97-997a-1a30649aca2c",
+      "contractorCode": "vn0100108536",
+      "taxCode": "0100108536",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
+      "status": "lost",
+      "lotNo": "PP2500545087",
+      "lotName": "Lamivudine; Tenofovir disoproxil fumarate; Dolutegravir",
+      "bidPrice": 2169612000,
+      "finalPrice": 2169612000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-02-06T15:08:41.671",
+      "models": [
+        "Lamivudine and Zidovudine Tablets 150mg/300mg"
+      ]
+    },
+    {
+      "id": "470231ec-2af1-4e53-9e1a-627a567a9a5c",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2500545087",
+      "lotName": "Lamivudine; Tenofovir disoproxil fumarate; Dolutegravir",
+      "bidPrice": 2043051300,
+      "finalPrice": 2043051300,
+      "winningPrice": 2043051300,
+      "reason": "",
+      "submittedAt": "2026-02-06T15:08:41.671",
+      "models": [
+        "TELDY"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2500545087",
+      "name": "TELDY",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 602670,
+      "unitPrice": 3390,
+      "amount": 2043051300,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2500545087",
+      "decisionNo": "48/QĐ-KSBT",
+      "decisionDate": "2026-02-06T23:59:59",
+      "resultPublishedDate": "2026-02-06T15:08:46"
+    },
+    {
+      "id": "2500545086",
+      "name": "Lamivudine and Zidovudine Tablets 150mg/300mg",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ấn Độ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 40200,
+      "unitPrice": 3000,
+      "amount": 120600000,
+      "contractorCode": "vn0100108536",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "lotNo": "PP2500545086",
+      "decisionNo": "48/QĐ-KSBT",
+      "decisionDate": "2026-02-06T23:59:59",
+      "resultPublishedDate": "2026-02-06T15:08:46"
+    }
+  ],
+  "requirements": {
+    "total": 5,
+    "items": [
+      {
+        "id": "c8492559-d374-4cfc-99fa-42bf9fbcc236",
+        "lotNo": "PP2500545083",
+        "name": "Tenofovir disoproxil fumarat",
+        "quantity": 16920,
+        "unit": "Viên",
+        "plannedPrice": 23603400,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "6312e97d-a006-4b9c-814d-9aac9b0373c2",
+        "lotNo": "PP2500545084",
+        "name": "Lamivudine",
+        "quantity": 33840,
+        "unit": "Viên",
+        "plannedPrice": 32148000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "613d474b-b179-4001-82c9-4ffcfc825e26",
+        "lotNo": "PP2500545085",
+        "name": "Lopinavir + Ritonavir",
+        "quantity": 148080,
+        "unit": "Viên",
+        "plannedPrice": 1849667280,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "3cfed86b-582a-494f-88ce-0ca55fbc7ca4",
+        "lotNo": "PP2500545086",
+        "name": "Zidovudin + Lamivudine",
+        "quantity": 40200,
+        "unit": "Viên",
+        "plannedPrice": 120600000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "94bd14b4-4e24-476b-ad81-725301136fef",
+        "lotNo": "PP2500545087",
+        "name": "Lamivudine; Tenofovir disoproxil fumarate; Dolutegravir",
+        "quantity": 602670,
+        "unit": "Viên",
+        "plannedPrice": 2377533150,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua thuốc ARV tại Trung tâm Kiểm soát bệnh tật tỉnh Thanh Hóa năm 2026 - 2027",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-11T21:00:27.875Z"
+}

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 2,
+  "bidders": [
+    {
+      "id": "5dd78de9-0d67-4ffe-bbf0-3e442cbd8fc4",
+      "contractorCode": "vn1400384433",
+      "taxCode": "1400384433",
+      "contractorName": "CÔNG TY CP DƯỢC PHẨM IMEXPHARM",
+      "status": "won",
+      "lotNo": "PP2600035519",
+      "lotName": "Ethambutol hydrochlorid",
+      "bidPrice": 2878485750,
+      "finalPrice": 2878485750,
+      "winningPrice": 2878485750,
+      "reason": "",
+      "submittedAt": "2026-03-17T14:34:28.444",
+      "models": [
+        "Ethambutol 400mg"
+      ]
+    },
+    {
+      "id": "8f15a323-62c6-4487-9154-9f519b2d91c9",
+      "contractorCode": "vn0600206147",
+      "taxCode": "0600206147",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
+      "status": "lost",
+      "lotNo": "PP2600035521",
+      "lotName": "Pyrazinamid",
+      "bidPrice": 24726000,
+      "finalPrice": 24726000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn giá kế hoạch, Nhà thầu chào lại giá nhưng giữ nguyên giá dự thầu.",
+      "submittedAt": "2026-03-17T14:34:28.444",
+      "models": [
+        "Turbe"
+      ]
+    },
+    {
+      "id": "d53f7617-36dd-46bf-828d-1bdc5de72a21",
+      "contractorCode": "vn0600206147",
+      "taxCode": "0600206147",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
+      "status": "won",
+      "lotNo": "PP2600035523",
+      "lotName": "Rifampicin + Isoniazid",
+      "bidPrice": 3041513008,
+      "finalPrice": 3041513008,
+      "winningPrice": 3041513008,
+      "reason": "",
+      "submittedAt": "2026-03-17T14:34:28.444",
+      "models": [
+        "Turbe"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2600035523",
+      "name": "Turbe",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 1739996,
+      "unitPrice": 1748,
+      "amount": 3041513008,
+      "contractorCode": "vn0600206147",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
+      ],
+      "lotNo": "PP2600035523",
+      "decisionNo": "405/QĐ-BVP",
+      "decisionDate": "2026-03-17T23:59:59",
+      "resultPublishedDate": "2026-03-17T14:35:21"
+    },
+    {
+      "id": "2600035519",
+      "name": "Ethambutol 400mg",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 1827610,
+      "unitPrice": 1575,
+      "amount": 2878485750,
+      "contractorCode": "vn1400384433",
+      "winnerNames": [
+        "CÔNG TY CP DƯỢC PHẨM IMEXPHARM"
+      ],
+      "lotNo": "PP2600035519",
+      "decisionNo": "405/QĐ-BVP",
+      "decisionDate": "2026-03-17T23:59:59",
+      "resultPublishedDate": "2026-03-17T14:35:21"
+    }
+  ],
+  "requirements": {
+    "total": 6,
+    "items": [
+      {
+        "id": "8ebc6441-1f56-4266-b42c-2a058e1e5c0d",
+        "lotNo": "PP2600035519",
+        "name": "Ethambutol hydrochlorid",
+        "quantity": 1827610,
+        "unit": "Viên",
+        "plannedPrice": 2878485750,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "477fa1b9-5c8d-425a-ac20-edcfdc26e546",
+        "lotNo": "PP2600035520",
+        "name": "Isoniazid",
+        "quantity": 13800,
+        "unit": "Viên",
+        "plannedPrice": 6030600,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "925525fd-d0e7-4ba1-9b6a-4c4f5f29e1a3",
+        "lotNo": "PP2600035521",
+        "name": "Pyrazinamid",
+        "quantity": 31700,
+        "unit": "Viên",
+        "plannedPrice": 19020000,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "76735d29-3b96-4091-81fd-a72d063cad8e",
+        "lotNo": "PP2600035522",
+        "name": "Rifampicin",
+        "quantity": 10800,
+        "unit": "Viên",
+        "plannedPrice": 25174800,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "1b961614-56bf-4381-ad06-03fc71ecae9e",
+        "lotNo": "PP2600035523",
+        "name": "Rifampicin + Isoniazid",
+        "quantity": 1739996,
+        "unit": "Viên",
+        "plannedPrice": 3041513008,
+        "specification": "",
+        "sourceStage": "invitation"
+      },
+      {
+        "id": "29c591e9-be13-4312-a53f-589f7eeb45eb",
+        "lotNo": "PP2600035524",
+        "name": "Streptomycin",
+        "quantity": 5000,
+        "unit": "Lọ",
+        "plannedPrice": 21490000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua thuốc điều trị lao sử dụng năm 2026-2027(24 tháng) cho các cơ sở điều trị bệnh lao trên địa bàn tỉnh Thanh Hóa",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-11T21:00:17.902Z"
+}

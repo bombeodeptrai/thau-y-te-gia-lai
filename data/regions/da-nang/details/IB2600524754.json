@@ -1,40 +1,79 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "e73c5870-a367-4d22-abf8-1e0432b47841",
-      "contractorCode": "vn0109953586",
-      "taxCode": "",
-      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDIVINA",
-      "status": "participating",
-      "lotNo": "BP2600721420",
-      "lotName": "Mua sắm Thiết bị y tế đợt 2 năm 2026",
-      "bidPrice": 361620000,
-      "finalPrice": 361620000,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-21T08:03:18.53",
-      "models": []
-    },
-    {
-      "id": "8ddfb6bc-5b5f-4bf9-8c89-0bd5270185c8",
+      "id": "fcdded0d-f3e4-41f2-9d96-51583644d741",
       "contractorCode": "vn0101268476",
-      "taxCode": "",
+      "taxCode": "0101268476",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ MINH TÂM",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600721420",
       "lotName": "Mua sắm Thiết bị y tế đợt 2 năm 2026",
       "bidPrice": 618252500,
       "finalPrice": 618252500,
       "winningPrice": 0,
+      "reason": "Giá đề nghị trúng thầu cao hơn nhà thầu xếp thứ 1",
+      "submittedAt": "2026-10-07T10:45:01.412",
+      "models": []
+    },
+    {
+      "id": "3e8ee4e5-cff8-4369-a860-5ed72b16966b",
+      "contractorCode": "vn0109953586",
+      "taxCode": "0109953586",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDIVINA",
+      "status": "won",
+      "lotNo": "BP2600721420",
+      "lotName": "Mua sắm Thiết bị y tế đợt 2 năm 2026",
+      "bidPrice": 361620000,
+      "finalPrice": 361620000,
+      "winningPrice": 361620000,
       "reason": "",
-      "submittedAt": "2026-09-21T08:03:18.757",
+      "submittedAt": "2026-10-07T10:45:01.412",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "ed4091c4-4227-4859-9410-f2651e23d11a",
+      "name": "Máy xét nghiệm huyết học tự động",
+      "model": "Chủng loại/ Model (máy chính): Medonic M-series M32B",
+      "brand": "Nhãn hiệu (máy chính): Medonic M-series M32B",
+      "manufacturer": "Boule Medical AB",
+      "origin": "Thụy Điển",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại bảng đáp ứng thông số kỹ thuật chào thầu",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 278880000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDIVINA"
+      ],
+      "decisionNo": "291/QĐ-BVYHCT",
+      "decisionDate": "2026-10-07T23:59:59",
+      "resultPublishedDate": "2026-10-07T10:45:10"
+    },
+    {
+      "id": "55e425f3-b313-45d9-abbe-1c2ca20cbc09",
+      "name": "Máy xét nghiệm nước tiểu bán tự động",
+      "model": "Chủng loại/ Model (máy chính): UC-58",
+      "brand": "Nhãn hiệu (máy chính): UC-58",
+      "manufacturer": "URIT Medical Electronic Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại bảng đáp ứng thông số kỹ thuật chào thầu",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 82740000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDIVINA"
+      ],
+      "decisionNo": "291/QĐ-BVYHCT",
+      "decisionDate": "2026-10-07T23:59:59",
+      "resultPublishedDate": "2026-10-07T10:45:10"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +98,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-04T20:18:51.388Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-11T21:07:56.792Z"
 }

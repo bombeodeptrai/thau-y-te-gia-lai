@@ -1,9 +1,242 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 6,
+  "bidders": [
+    {
+      "id": "f145b6e2-2f16-44a7-b0fa-466d42db5e7e",
+      "contractorCode": "vn4300361082",
+      "taxCode": "4300361082",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI",
+      "status": "won",
+      "lotNo": "PP2600375500",
+      "lotName": "Tủ thuốc cấp cứu",
+      "bidPrice": 10500000,
+      "finalPrice": 10500000,
+      "winningPrice": 10500000,
+      "reason": "",
+      "submittedAt": "2026-10-06T08:08:01.22",
+      "models": [
+        "Không yêu cầu"
+      ]
+    },
+    {
+      "id": "1bbd869b-4e09-414d-bd36-2f75b95c7d7c",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "PP2600375501",
+      "lotName": "Máy thở khí dung ( máy xông khí xông)",
+      "bidPrice": 13500000,
+      "finalPrice": 13500000,
+      "winningPrice": 13500000,
+      "reason": "",
+      "submittedAt": "2026-10-06T08:08:01.22",
+      "models": [
+        "Không yêu cầu",
+        "NEB"
+      ]
+    },
+    {
+      "id": "6b2c77a2-3f8b-47d6-9b81-c822e4d26536",
+      "contractorCode": "vn4300795516",
+      "taxCode": "4300795516",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO",
+      "status": "lost",
+      "lotNo": "PP2600375501",
+      "lotName": "Máy thở khí dung ( máy xông khí xông)",
+      "bidPrice": 13900000,
+      "finalPrice": 13900000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-10-06T08:08:01.22",
+      "models": [
+        "003B4055500"
+      ]
+    },
+    {
+      "id": "7aa4648d-ae3d-49fe-95d1-7b7dfd9f6745",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "lost",
+      "lotNo": "PP2600375502",
+      "lotName": "Bóng đen Halogen ( máy CA -270)",
+      "bidPrice": 11000000,
+      "finalPrice": 11000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-10-06T08:08:01.22",
+      "models": [
+        "Không yêu cầu",
+        "NEB"
+      ]
+    },
+    {
+      "id": "d313c1ac-2e6e-463b-a1ec-f35f37d42c11",
+      "contractorCode": "vn4300795516",
+      "taxCode": "4300795516",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO",
+      "status": "won",
+      "lotNo": "PP2600375502",
+      "lotName": "Bóng đen Halogen ( máy CA -270)",
+      "bidPrice": 10900000,
+      "finalPrice": 10900000,
+      "winningPrice": 10900000,
+      "reason": "",
+      "submittedAt": "2026-10-06T08:08:01.22",
+      "models": [
+        "003B4055500"
+      ]
+    },
+    {
+      "id": "1748a361-43a7-40d4-820e-0d9e093b4081",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "PP2600375503",
+      "lotName": "Hộp an toàn",
+      "bidPrice": 7106080,
+      "finalPrice": 7106080,
+      "winningPrice": 7106080,
+      "reason": "",
+      "submittedAt": "2026-10-06T08:08:01.22",
+      "models": [
+        "Không yêu cầu",
+        "NEB"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "279aeea0-1837-422d-ba15-3e072bae3e2c",
+      "name": "Hộp an toàn",
+      "model": "Không yêu cầu",
+      "brand": "Không yêu cầu",
+      "manufacturer": "An Phú",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Hộp an toàn, dung tích 5 lít, màu vàng, được tráng PE\r\n cả mặt trong và mặt ngoài",
+      "unit": "Cái",
+      "quantity": 460,
+      "unitPrice": 15448,
+      "amount": 7106080,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "898/QĐ-BVLBP",
+      "decisionDate": "2026-10-05T09:12:21",
+      "resultPublishedDate": "2026-10-06T08:08:08"
+    },
+    {
+      "id": "8687689539067603",
+      "name": "Bóng đen Halogen ( máy CA -270)",
+      "model": "003B4055500",
+      "brand": "Furuno",
+      "manufacturer": "Furono Electric Co., Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Bóng đèn Halogen, 12V, \r\nsử dụng trên máy sinh hóa \r\nCA - 270",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 5450000,
+      "amount": 10900000,
+      "contractorCode": "vn4300795516",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "898/QĐ-BVLBP",
+      "decisionDate": "2026-10-05T09:12:21",
+      "resultPublishedDate": "2026-10-06T08:08:08"
+    },
+    {
+      "id": "11026281803522868",
+      "name": "Máy thở khí dung ( máy xông khí xông)",
+      "model": "NEB",
+      "brand": "NEB200",
+      "manufacturer": "Globalcare Medical Technology Co.,Ltd",
+      "origin": "Microlife Corporation",
+      "manufactureYear": "Từ năm 2025 trở lên",
+      "specification": "Loại máy xông nén khí \r\n - Máy khí dung tối thiểu bao gồm tối thiểu: Máy nén khí, bộ xông, ống dẫn khí (tối thiểu PVC 200cm), ống ngậm, mặt nạ người lớn (tối thiểu PVC), mặt nạ trẻ em (tối thiểu PVC),  5 miếng lọc dự phòng, hướng dẫn cách sử dụng;            - Kích thước hạt: Khoảng 3µm MMAD* (MMAD = đường kính trung bình khí động học);  \r\n  - Dung tích cốc: tối đa 7ml; - Lượng thuốc thích hợp: Tối thiểu 2ml  - tối đa 7ml;  Tốc độ phun khoảng 0,4 ml/phút\"",
+      "unit": "Cái",
+      "quantity": 13,
+      "unitPrice": 1038461.5385,
+      "amount": 13500000,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "898/QĐ-BVLBP",
+      "decisionDate": "2026-10-05T09:12:21",
+      "resultPublishedDate": "2026-10-06T08:08:08"
+    },
+    {
+      "id": "84d17da7-d06b-43f3-93c4-91f359d13f86",
+      "name": "Tủ thuốc cấp cứu",
+      "model": "Không yêu cầu",
+      "brand": "3A Medical",
+      "manufacturer": "Công ty cổ phần \r\nĐTTM&Sản xuất \r\nthiết bị y tế 3A",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm2026",
+      "specification": "Kích thước: Dài: 800 x  Rộng: 400 x Cao: 1600mm ±5% Chất liệu: Khung bằng inox 201; kính và mặt tôn inox 430 \r\n         Gồm 2 khoang: \r\n  + Khoang trên cao 900mm có 2 cánh lắp kính dày 5mm, có 2 sàn phẳng bằng kính.\r\n  + Khoang dưới cao 600mm có 2 cánh bằng inox, có 1 sàn phẳng bằng inox",
+      "unit": "Cái",
+      "quantity": 3,
+      "unitPrice": 3500000,
+      "amount": 10500000,
+      "contractorCode": "vn4300361082",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI"
+      ],
+      "lotNo": "",
+      "decisionNo": "898/QĐ-BVLBP",
+      "decisionDate": "2026-10-05T09:12:21",
+      "resultPublishedDate": "2026-10-06T08:08:08"
+    },
+    {
+      "id": "b36bc214-3cf0-43c2-9b77-0ec2d4959fdc",
+      "name": "Máy thở khí dung \r\n( máy xông khí xông)",
+      "model": "NEB",
+      "brand": "NEB200",
+      "manufacturer": "Globalcare Medical \r\nTechnology  Co.,Ltd",
+      "origin": "\r\n\r\n\r\n\r\nMicrolife Corporation\r\n",
+      "manufactureYear": "Từ năm 2025 trở lên",
+      "specification": "Loại máy xông nén khí \r\n - Máy khí dung tối thiểu bao gồm tối thiểu: Máy nén khí, bộ xông, ống dẫn khí (tối thiểu PVC 200cm), ống ngậm, mặt nạ người lớn (tối thiểu PVC), mặt nạ trẻ em (tối thiểu PVC),  5 miếng lọc dự phòng, hướng dẫn cách sử dụng;            - Kích thước hạt: Khoảng 3µm MMAD* (MMAD = đường kính trung bình khí động học);  \r\n  - Dung tích cốc: tối đa 7ml; - Lượng thuốc thích hợp: Tối thiểu 2ml  - tối đa 7ml;  Tốc độ phun khoảng 0,4 ml/phút",
+      "unit": "Cái",
+      "quantity": 13,
+      "unitPrice": 1038461.5385,
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "decisionNo": "898/QĐ-BVLBP",
+      "decisionDate": "2026-10-05T09:12:21",
+      "resultPublishedDate": "2026-10-06T08:08:08"
+    },
+    {
+      "id": "9aeceb97-ff0a-412e-98ba-90c4fcadbdc8",
+      "name": "Bóng đen Halogen \r\n( máy CA -270)",
+      "model": "003B4055500",
+      "brand": "Furuno",
+      "manufacturer": "Furono\r\n Electric Co., Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Bóng đèn Halogen, 12V, \r\nsử dụng trên máy sinh hóa \r\nCA - 270",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 5450000,
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO"
+      ],
+      "decisionNo": "898/QĐ-BVLBP",
+      "decisionDate": "2026-10-05T09:12:21",
+      "resultPublishedDate": "2026-10-06T08:08:08"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -154,6 +387,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-04T20:20:24.432Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-11T21:09:36.038Z"
 }

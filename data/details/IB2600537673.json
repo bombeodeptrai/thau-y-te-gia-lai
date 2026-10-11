@@ -1,25 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "3bef75c4-031c-4da5-bb58-0a0082ccde16",
+      "id": "86a8c1ec-7a3a-4ade-b646-47b061c0ebf5",
       "contractorCode": "vn0101268476",
-      "taxCode": "",
+      "taxCode": "0101268476",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ MINH TÂM",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600740101",
       "lotName": "Gói thầu số 3: Cung cấp sinh phẩm xét nghiệm lao giai đoạn 2026-2027",
       "bidPrice": 2646000000,
       "finalPrice": 2646000000,
-      "winningPrice": 0,
+      "winningPrice": 2646000000,
       "reason": "",
-      "submittedAt": "2026-09-28T10:00:57.631",
+      "submittedAt": "2026-10-06T14:22:30.355",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "9e029036-4342-4543-8c25-3faedd76119d",
+      "name": "Sinh phẩm chẩn đoán Mycobacterium Tuberculosis và tính kháng rifampicin",
+      "model": "GXMTB/RIF-ULTRA-10",
+      "brand": "- Tên tiếng Việt: Bộ xét nghiệm bán định lượng DNA phức hợp vi khuẩn lao và phát hiện kháng Rifampin - Chủng loại: Xpert MTB/RIF Ultra - Quy cách: Hộp 10 test (xét nghiệm)",
+      "manufacturer": "Cepheid AB, Thụy Điển",
+      "origin": "Thụy Điển",
+      "manufactureYear": "Từ năm 2025 trở đi",
+      "specification": "Hóa chất xét nghiệm sử dụng để phát hiện đồng thời DNA của vi khuẩn lao và vi khuẩn lao kháng Rifampicin Ultra. Tích hợp chất chứng trong bộ hóa chất để kiểm soát quá trình phản ứng và vật liệu kiểm soát xử lý mẫu; Loại mẫu: mẫu đờm hoặc cặn đờm, dịch nghi lao hoặc bệnh phẩm khác nghi lao; Độ nhạy (soi kính (+)/nuôi cấy (+)) : 99.5% ; Độ đặc hiệu: 95.5%; Đạt ISO 13485",
+      "unit": "Test",
+      "quantity": 4000,
+      "unitPrice": 661500,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ MINH TÂM"
+      ],
+      "decisionNo": "149/QĐ-BVP",
+      "decisionDate": "2026-10-06T23:59:59",
+      "resultPublishedDate": "2026-10-06T14:23:03"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-04T20:17:54.186Z"
+  "fetchedAt": "2026-10-11T21:06:32.155Z"
 }

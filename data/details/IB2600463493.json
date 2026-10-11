@@ -1,25 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "19e8542b-a0e3-4341-a2ac-e3837f2c97f1",
+      "id": "3e6151bd-eb64-4a47-bdc6-8faa306485fa",
       "contractorCode": "vn0302547303",
-      "taxCode": "",
+      "taxCode": "0302547303",
       "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ PHƯƠNG NAM",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600645588",
       "lotName": "Mua sắm Máy siêu âm tổng quát của Bệnh viện đa khoa tỉnh Lâm Đồng từ nguồn tài trợ của Công ty TNHH MTV Xổ số Kiến thiết Lâm Đồng năm 2026",
       "bidPrice": 1678500000,
       "finalPrice": 1678500000,
-      "winningPrice": 0,
+      "winningPrice": 1678500000,
       "reason": "",
-      "submittedAt": "2026-09-03T09:33:42.435",
+      "submittedAt": "2026-10-02T09:44:33.979",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "c686ba26-8c35-4978-95ab-c1ddc324ba4a",
+      "name": "Máy siêu âm tổng quát",
+      "model": "V6",
+      "brand": "Samsung Medison Co.,Ltd",
+      "manufacturer": "Samsung Medison Co.,Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Theo Bảng chào đáp ứng thông số kỹ thuật của nhà thầu",
+      "unit": "cái",
+      "quantity": 1,
+      "unitPrice": 1678500000,
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ PHƯƠNG NAM"
+      ],
+      "decisionNo": "966/QĐ-BVĐK",
+      "decisionDate": "2026-10-02T23:59:59",
+      "resultPublishedDate": "2026-10-02T09:44:39"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:52:41.919Z"
+  "fetchedAt": "2026-10-11T21:20:20.011Z"
 }

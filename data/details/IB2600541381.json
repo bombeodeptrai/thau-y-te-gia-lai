@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "9a8d7d25-b210-4761-998a-ff2c056c134b",
+      "contractorCode": "vn0300470246",
+      "taxCode": "0300470246",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG VIDIPHA",
+      "status": "won",
+      "lotNo": "BP2600743007",
+      "lotName": "Mua sắm thuốc Methadone điều trị cho đối tượng nghiện các chất dạng thuốc phiện bằng thuốc thay thế Methadone năm 2026",
+      "bidPrice": 84730800,
+      "finalPrice": 84730800,
+      "winningPrice": 84730800,
+      "reason": "",
+      "submittedAt": "2026-10-07T11:03:58.688",
+      "models": [
+        "893111684824"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "90482314-bc32-4871-b513-64425506a84f",
+      "name": "Methadone",
+      "model": "893111684824",
+      "brand": "Methadon",
+      "manufacturer": "Vidipha",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Tên hoạt chất: \nMethadone hydrochloride\n; Nồng độ/hàm lượng: 10mg/1ml; Đường dùng: Uống; Dạng bào chế: Dung dịch uống",
+      "unit": "Chai/lít",
+      "quantity": 308,
+      "unitPrice": 275100,
+      "amount": 84730800,
+      "contractorCode": "vn0300470246",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG VIDIPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "347",
+      "decisionDate": "2026-10-07T10:38:54",
+      "resultPublishedDate": "2026-10-07T11:04:24"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-04T20:20:23.350Z"
+  "fetchedAt": "2026-10-11T21:09:33.780Z"
 }

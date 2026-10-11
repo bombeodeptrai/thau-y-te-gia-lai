@@ -1,25 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "d53ed3dd-4c5e-4d75-94c6-6369adf4c1bc",
+      "id": "fadf1252-58a8-4f0a-ba8c-18f355d2e46f",
       "contractorCode": "vn4400425371",
-      "taxCode": "",
+      "taxCode": "4400425371",
       "contractorName": "CÔNG TY CP KHÍ CÔNG NGHIỆP TUY HÒA",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600585148",
       "lotName": "Gói thầu 02-2026: mua sắm khí Oxy y tế phục vụ nhu cầu điều trị tại Bệnh viện Phục hồi chức năng tỉnh Đắk Lắk giai đoạn từ Quý III/2026 đến hết Quý II/2027",
       "bidPrice": 187000000,
       "finalPrice": 187000000,
-      "winningPrice": 0,
+      "winningPrice": 187000000,
       "reason": "",
-      "submittedAt": "2026-09-24T09:23:10.75",
+      "submittedAt": "2026-10-01T14:18:48.766",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "18972db9-15ae-4690-8679-ef975a95dbc9",
+      "name": "Oxy y tế",
+      "model": "OXY",
+      "brand": "Oxygen",
+      "manufacturer": "Công ty CP khí công nghiệp Tuy Hòa (Tuygasco)",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở đi",
+      "specification": "- Oxy y tế dạng khí, hàm lượng khí Oxy tinh khiết ≥ 99,6%V; - Chứa trong chai/bình thép chịu áp lực, dung tích V = 40 lít, tương đương 6,0 m3 khí/chai (bình); - Áp suất nạp: 140 bar - 145 bar, đáp ứng quy định về an toàn áp lực và tiêu chuẩn khí y tế theo quy định hiện hành;",
+      "unit": "Bình",
+      "quantity": 2500,
+      "unitPrice": 74800,
+      "winnerNames": [
+        "CÔNG TY CP KHÍ CÔNG NGHIỆP TUY HÒA"
+      ],
+      "decisionNo": "159/QĐ-PHCN",
+      "decisionDate": "2026-10-01T23:59:59",
+      "resultPublishedDate": "2026-10-01T14:18:58"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:47:04.456Z"
+  "fetchedAt": "2026-10-11T21:13:08.163Z"
 }

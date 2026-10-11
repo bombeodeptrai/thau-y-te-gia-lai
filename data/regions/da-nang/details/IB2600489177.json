@@ -1,25 +1,246 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 10,
   "bidders": [
     {
-      "id": "7e11dc8c-900b-4a6d-9fe0-a82246c81e1f",
+      "id": "41de07de-291d-4e31-a01b-788fa5e112da",
       "contractorCode": "vn0401428000",
-      "taxCode": "",
+      "taxCode": "0401428000",
       "contractorName": "CÔNG TY TNHH AVH",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600669661",
       "lotName": "Gói thầu số 01: Mua sắm thiết bị y tế năm 2026 tại Trung tâm Y tế khu vực Nam Giang",
       "bidPrice": 7024600000,
       "finalPrice": 7024600000,
-      "winningPrice": 0,
+      "winningPrice": 7024600000,
       "reason": "",
-      "submittedAt": "2026-09-11T08:28:27.652",
+      "submittedAt": "2026-09-28T14:20:37.189",
+      "models": []
+    },
+    {
+      "id": "fd185d0d-7ecd-4fb9-93ce-41b7b0500b42",
+      "contractorCode": "vn0100778964",
+      "taxCode": "0100778964",
+      "contractorName": "CÔNG TY TNHH VIỆT QUANG",
+      "status": "won",
+      "lotNo": "BP2600669661",
+      "lotName": "Gói thầu số 01: Mua sắm thiết bị y tế năm 2026 tại Trung tâm Y tế khu vực Nam Giang",
+      "bidPrice": 7024600000,
+      "finalPrice": 7024600000,
+      "winningPrice": 7024600000,
+      "reason": "",
+      "submittedAt": "2026-09-28T14:20:37.189",
+      "models": []
+    },
+    {
+      "id": "a2735f61-6903-4402-a49e-7838d42c9e03",
+      "contractorCode": "vn0315988866",
+      "taxCode": "0315988866",
+      "contractorName": "CÔNG TY TNHH PHÂN PHỐI THIẾT BỊ Y TẾ MOSNEURO",
+      "status": "won",
+      "lotNo": "BP2600669661",
+      "lotName": "Gói thầu số 01: Mua sắm thiết bị y tế năm 2026 tại Trung tâm Y tế khu vực Nam Giang",
+      "bidPrice": 7024600000,
+      "finalPrice": 7024600000,
+      "winningPrice": 7024600000,
+      "reason": "",
+      "submittedAt": "2026-09-28T14:20:37.189",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "b423224c-098f-4002-bca4-6edf3d736592",
+      "name": "Máy gây mê",
+      "model": "Model/ Ký mã hiệu máy chính: Atlan A100",
+      "brand": "Dräger",
+      "manufacturer": "Hãng sản xuất máy chính: Drägerwerk AG & Co. KGaA",
+      "origin": "Xuất xứ máy chính: Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng về kỹ thuật của Hàng hóa chào thầu (đính kèm E-HSDT)",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1010000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "cea7a5de-377c-4e4f-a277-caf62f80af5f",
+      "name": "Máy theo dõi bệnh nhân",
+      "model": "BLU12",
+      "brand": "Mediblu",
+      "manufacturer": "Mediblu Medical, LLC",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng thông số kỹ thuật (đính kèm E-HSDT)",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 125000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "88c47ff9-afa3-4069-b13c-1e7ec53a1844",
+      "name": "Máy soi cổ tử cung",
+      "model": "ViCo S HD",
+      "brand": "Karl Kaps",
+      "manufacturer": "Karl Kaps GmbH & Co. KG",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng thông số kỹ thuật (đính kèm E-HSDT)",
+      "unit": "Máy",
+      "quantity": 2,
+      "unitPrice": 293000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "a0b72f5c-126d-4d8b-aa4f-0bbcd185fab0",
+      "name": "Hệ thống nội soi tai mũi họng",
+      "model": "V1 SMART",
+      "brand": "DONG-A CHAMMED",
+      "manufacturer": "DONG-A CHAMMED CO., LTD",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng thông số kỹ thuật (đính kèm E-HSDT)",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 420000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "76f2245c-3571-48fc-b275-568ddb48914d",
+      "name": "Đèn mổ di động",
+      "model": "EMALED 300 M",
+      "brand": "EMA-LED",
+      "manufacturer": "EMA-LED GMBH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng thông số kỹ thuật (đính kèm E-HSDT)",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 181000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "339ad959-0a5f-4627-9199-6213156dc6d5",
+      "name": "Máy điện não",
+      "model": "Ký mã hiệu/ Model/ Chủng loại máy chính: Neuron-Spectrum-5",
+      "brand": "Nhãn hiệu máy chính: Neurosoft",
+      "manufacturer": "Hãng sản xuất máy chính: Neurosoft LLC",
+      "origin": "Xuất xứ máy chính: LB Nga",
+      "manufactureYear": "Năm sản xuất máy chính: 2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng Thông số kỹ thuật hàng hóa (đính kèm E-HSDT)",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 719600000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "49714822-3ee8-4d7d-8c15-1aa11201d7c6",
+      "name": "Máy X quang kỹ thuật số chụp tổng quát",
+      "model": "Model/ Ký mã hiệu máy chính: FDR Smart FGX-52S",
+      "brand": "Fujifilm",
+      "manufacturer": "Hãng sản xuất máy chính: DRGEM Corporation (Hãng, nước chủ sở hữu: FUJIFILM Corporation, Nhật Bản)",
+      "origin": "Xuất xứ máy chính: Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng về kỹ thuật của Hàng hóa chào thầu (đính kèm E-HSDT)",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 3195000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "488d50d7-35a3-4134-b322-582373e84831",
+      "name": "Máy xét nghiệm HbA1C",
+      "model": "Pocketchem A1c",
+      "brand": "EKF-diagnostic",
+      "manufacturer": "EKF-diagnostic GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng về kỹ thuật của Hàng hóa chào thầu (đính kèm E-HSDT)",
+      "unit": "Máy",
+      "quantity": 2,
+      "unitPrice": 49000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "205c9181-ff31-448b-a318-829d998ff504",
+      "name": "Máy theo dõi sản khoa 2 chức năng",
+      "model": "FM10",
+      "brand": "Mediblu",
+      "manufacturer": "Mediblu Medical, LLC",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng thông số kỹ thuật (đính kèm E-HSDT)",
+      "unit": "Máy",
+      "quantity": 2,
+      "unitPrice": 130000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    },
+    {
+      "id": "1a63646e-d0c9-4dbf-831d-9695543e568f",
+      "name": "Tủ an toàn sinh học cấp II",
+      "model": "PURICUBE NEO 1200",
+      "brand": "NOVAPRO",
+      "manufacturer": "NOVAPRO CO., LTD",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng thông số kỹ thuật (đính kèm E-HSDT)",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 215000000,
+      "winnerNames": [
+        "Liên danh Công ty AVH - VIỆT QUANG - MOSNEURO"
+      ],
+      "decisionNo": "202/QĐ-TTYTKV",
+      "decisionDate": "2026-09-28T23:59:59",
+      "resultPublishedDate": "2026-09-28T14:20:42"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +266,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:34:41.781Z"
+  "fetchedAt": "2026-10-11T21:07:58.752Z"
 }

@@ -1,25 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "29c0f935-d683-45af-82df-236bdc78309d",
+      "id": "868d87f4-d0c5-41f4-87be-60e401d0a3b2",
       "contractorCode": "vn1601914426",
-      "taxCode": "",
+      "taxCode": "1601914426",
       "contractorName": "CÔNG TY TNHH VẬT TƯ THIẾT BỊ Y TẾ THỊNH PHÁT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600656495",
       "lotName": "Gói thầu số 01: Mua sắm thiết bị y tế năm 2026 tại Trung tâm Y tế khu vực Đơn Dương",
       "bidPrice": 3336900000,
       "finalPrice": 3336900000,
-      "winningPrice": 0,
+      "winningPrice": 3336900000,
       "reason": "",
-      "submittedAt": "2026-09-14T10:06:58.771",
+      "submittedAt": "2026-10-02T15:02:28.599",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2c327c28-8c2b-40a3-af0c-a88e59faebb1",
+      "name": "Hệ thống nội soi tiêu hoá",
+      "model": "EP-6000",
+      "brand": "FUJIFILM",
+      "manufacturer": "Hãng sản xuất: FUJIFILM Healthcare Manufacturing Corporation Sano Office Hãng/ nước chủ sở hữu máy chính: FUJIFILM Corporation/ Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng Đáp ứng TNKT",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 2352000000,
+      "winnerNames": [
+        "CÔNG TY TNHH VẬT TƯ THIẾT BỊ Y TẾ THỊNH PHÁT"
+      ],
+      "decisionNo": "248/QĐ-YT",
+      "decisionDate": "2026-10-02T23:59:59",
+      "resultPublishedDate": "2026-10-02T15:02:51"
+    },
+    {
+      "id": "4d5d7de2-a42c-428e-a92b-e25934ef6aa5",
+      "name": "Máy siêu âm sản khoa",
+      "model": "ARIETTA 50",
+      "brand": "FUJIFILM",
+      "manufacturer": "Hãng sản xuất: FUJIFILM Healthcare Manufacturing Corporation Kashiwa Office Hãng/ nước chủ sở hữu: FUJIFILM/ Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng Đáp ứng TNKT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 984900000,
+      "winnerNames": [
+        "CÔNG TY TNHH VẬT TƯ THIẾT BỊ Y TẾ THỊNH PHÁT"
+      ],
+      "decisionNo": "248/QĐ-YT",
+      "decisionDate": "2026-10-02T23:59:59",
+      "resultPublishedDate": "2026-10-02T15:02:51"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:52:39.706Z"
+  "fetchedAt": "2026-10-11T21:20:19.044Z"
 }

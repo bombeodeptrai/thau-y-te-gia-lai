@@ -1,9 +1,80 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "fe0ce7de-7082-48ed-bc22-a5836152860b",
+      "contractorCode": "vn0312836512",
+      "taxCode": "0312836512",
+      "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ KỸ THUẬT TÂM VIỆT",
+      "status": "lost",
+      "lotNo": "BP2600743762",
+      "lotName": "Gói thầu số 33/2026/PTV:Dịch vụ sửa chữa máy siêu âm",
+      "bidPrice": 193000000,
+      "finalPrice": 193000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-10-08T13:56:42.436",
+      "models": []
+    },
+    {
+      "id": "7519156f-386d-40a4-9aa4-0f75bb8bb5f0",
+      "contractorCode": "vn0318978231",
+      "taxCode": "0318978231",
+      "contractorName": "CÔNG TY TNHH GOLDTECH VN",
+      "status": "lost",
+      "lotNo": "BP2600743762",
+      "lotName": "Gói thầu số 33/2026/PTV:Dịch vụ sửa chữa máy siêu âm",
+      "bidPrice": 194000000,
+      "finalPrice": 194000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-10-08T13:56:42.436",
+      "models": []
+    },
+    {
+      "id": "9ba66c89-898d-45cb-bc38-110c4ebff235",
+      "contractorCode": "vn5901221677",
+      "taxCode": "5901221677",
+      "contractorName": "CÔNG TY TNHH THIÊN PHÚ MED",
+      "status": "won",
+      "lotNo": "BP2600743762",
+      "lotName": "Gói thầu số 33/2026/PTV:Dịch vụ sửa chữa máy siêu âm",
+      "bidPrice": 190000000,
+      "finalPrice": 190000000,
+      "winningPrice": 190000000,
+      "reason": "",
+      "submittedAt": "2026-10-08T13:56:42.436",
+      "models": [
+        "Dịch vụ sửa chữa máy siêu âm -Hãng Philips. -Model: Affinity 50; -Số máy: US316D0917"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2026810112642177",
+      "name": "Dịch vụ sửa chữa máy siêu âm -Hãng Philips. -Model: Affinity 50; -Số máy: US316D0917",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 190000000,
+      "amount": 190000000,
+      "contractorCode": "vn5901221677",
+      "winnerNames": [
+        "CÔNG TY TNHH THIÊN PHÚ MED"
+      ],
+      "lotNo": "",
+      "decisionNo": "1893/QĐ-BVĐKPY",
+      "decisionDate": "2026-10-08T13:55:14",
+      "resultPublishedDate": "2026-10-08T13:56:48"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -64,6 +135,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:47:03.230Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-11T21:13:04.679Z"
 }

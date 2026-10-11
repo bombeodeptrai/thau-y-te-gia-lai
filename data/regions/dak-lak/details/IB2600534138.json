@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "5649a841-8afc-48ad-bafb-e6c1a6c87877",
+      "contractorCode": "vn1801350632",
+      "taxCode": "1801350632",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DỊCH VỤ KỸ THUẬT Y KHOA NAM VIỆT LONG",
+      "status": "lost",
+      "lotNo": "PP2600388481",
+      "lotName": "Bộ catheter đường hầm dùng trong lọc máu dài hạn",
+      "bidPrice": 105000000,
+      "finalPrice": 105000000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng kỹ thuật",
+      "submittedAt": "2026-10-02T15:53:11.402",
+      "models": []
+    },
+    {
+      "id": "a436c55a-4b1b-4827-aa24-405561b13e65",
+      "contractorCode": "vn0317272820",
+      "taxCode": "0317272820",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI CÔNG NGHỆ TÂM Y",
+      "status": "won",
+      "lotNo": "PP2600388482",
+      "lotName": "Bộ catheter tĩnh mạch trung tâm 2 nòng",
+      "bidPrice": 18879000,
+      "finalPrice": 18879000,
+      "winningPrice": 18879000,
+      "reason": "",
+      "submittedAt": "2026-10-02T15:53:11.403",
+      "models": [
+        "MMCVCBJ2-70-20"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "e263b351-722b-4450-9ebb-1aa418ff28fd",
+      "name": "Bộ catheter tĩnh mạch trung tâm 2 nòng",
+      "model": "MMCVCBJ2-70-20",
+      "brand": "Target Medical",
+      "manufacturer": "Beijing Target Medical Technologies, Inc.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Số nòng: 2 nòng\r\n- Kích cỡ: 7 Fr\r\n- Chiều dài: 20 cm\r\n- Chất liệu: polyurethane y tế \r\n- Có cản quang\r\n- Có vạch chia chiều dài\r\n- Đầu catheter mềm\r\n- Dây dẫn: 0.035 inch, Đầu J (J-tip) \r\n- Có kim chọc và dilator đồng bộ\r\n- Bộ tối thiểu gồm catheter 2 nòng, kim chọc, dây dẫn, dilator, bơm tiêm 5 cc, dao rạch da nhỏ, nắp đậy.",
+      "unit": "Bộ",
+      "quantity": 100,
+      "unitPrice": 188790,
+      "amount": 18879000,
+      "contractorCode": "vn0317272820",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI CÔNG NGHỆ TÂM Y"
+      ],
+      "lotNo": "",
+      "decisionNo": "1875/QĐ-BVĐKPY",
+      "decisionDate": "2026-10-02T15:52:46",
+      "resultPublishedDate": "2026-10-02T15:53:25"
+    }
+  ],
   "requirements": {
     "total": 10,
     "items": [
@@ -346,6 +402,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:47:03.448Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-11T21:13:05.292Z"
 }

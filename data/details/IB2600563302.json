@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "e8578552-7cfc-42d9-88e8-aa3341edbe6f",
+      "contractorCode": "vn0102936831",
+      "taxCode": "0102936831",
+      "contractorName": "Công ty Cổ Phần Thương Mại dược phẩm Việt Đức",
+      "status": "won",
+      "lotNo": "BP2600826599",
+      "lotName": "Gói thầu thuốc generic",
+      "bidPrice": 279972000,
+      "finalPrice": 279972000,
+      "winningPrice": 279972000,
+      "reason": "",
+      "submittedAt": "2026-10-09T11:52:51.222",
+      "models": [
+        "-"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "acdc5fa4-32a5-4c37-9e7b-8256c7c2ef17",
+      "name": "Paracetamol 10mg/ml",
+      "model": "-",
+      "brand": "Số GPLH: 893110055900 (VD-33956-19)",
+      "manufacturer": "Công ty TNHH dược phẩm Allomed",
+      "origin": "Việt Nam",
+      "manufactureYear": "Trong thời hạn sử dụng (hạn sử dụng còn lại của thuốc tính từ thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu còn 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên, 1/4 hạn dùng đối với  thuốc có hạn dùng dưới 01 năm",
+      "specification": "Hoạt chất: Paracetamol - Hàm lượng: 10mg/ml; 100ml - Dạng bào chế: Thuốc tiêm truyền - Đáp ứng tiêu chí kỹ thuật của nhóm 4 của Thông tư 40/2025/TT-BYT ngày 25/10/2025 của Bộ Y tế",
+      "unit": "Túi/Chai",
+      "quantity": 33000,
+      "unitPrice": 8484,
+      "amount": 279972000,
+      "contractorCode": "vn0102936831",
+      "winnerNames": [
+        "Công ty Cổ Phần Thương Mại dược phẩm Việt Đức"
+      ],
+      "lotNo": "",
+      "decisionNo": "3880/QĐ-BV",
+      "decisionDate": "2026-10-09T11:52:19",
+      "resultPublishedDate": "2026-10-09T11:52:59"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-03T11:37:13.061Z"
+  "fetchedAt": "2026-10-11T21:00:27.381Z"
 }

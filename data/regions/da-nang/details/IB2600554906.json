@@ -1,9 +1,91 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "95a7a5e8-41e1-4574-937e-3d3aae17191e",
+      "contractorCode": "vn0101268476",
+      "taxCode": "0101268476",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ MINH TÂM",
+      "status": "won",
+      "lotNo": "PP2600413403",
+      "lotName": "Dung dịch rửa dùng cho máy đông máu tự động",
+      "bidPrice": 142128000,
+      "finalPrice": 142128000,
+      "winningPrice": 142128000,
+      "reason": "",
+      "submittedAt": "2026-10-01T17:02:55.009",
+      "models": [
+        "0020302400",
+        "0009831700"
+      ]
+    },
+    {
+      "id": "ea755433-fc43-44e4-a23d-66309c7ab64c",
+      "contractorCode": "vn0101268476",
+      "taxCode": "0101268476",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ MINH TÂM",
+      "status": "won",
+      "lotNo": "PP2600413404",
+      "lotName": "Dung dịch rửa",
+      "bidPrice": 16170000,
+      "finalPrice": 16170000,
+      "winningPrice": 16170000,
+      "reason": "",
+      "submittedAt": "2026-10-01T17:02:55.009",
+      "models": [
+        "0020302400",
+        "0009831700"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "87aaf59e-d0c1-4f3c-b2d2-6c0d013172fe",
+      "name": "Dung dịch rửa dùng cho máy đông máu tự động",
+      "model": "0020302400",
+      "brand": "HemosIL Rinse solution\n",
+      "manufacturer": "Instrumentation Laboratory Company\n",
+      "origin": "Mỹ\n",
+      "manufactureYear": "2025 trở về sau\n",
+      "specification": "Hóa chất dung dịch dùng để xúc rửa trên hệ thống phân tích đông máu tự động bằng phương pháp đo quang.\n- Hóa chất tương thích với hóa chất và y cụ đi kèm để xét nghiệm chức năng đông máu tự động thực hiện trên cùng 1 nguyên lý xét nghiệm. Máy có thể nạp mẫu và hóa chất mà không cần dừng máy.\n- Có ≥ 40 vị trí chứa thuốc thử trên máy. Có ≥ 80 vị trí đặt mẫu. Có chương trình quản lý chất lượng xét nghiệm (biểu đồ Levey Jenning/ X-bar). Có khả năng phân tích chất lượng mẫu, gồm: kiểm tra lượng mẫu, đánh giá chất lượng mẫu.\n- Nhà thầu cam kết hỗ trợ toàn bộ chi phí hóa chất và phí tham gia chương trình ngoại kiểm tra.",
+      "unit": "mL",
+      "quantity": 144000,
+      "unitPrice": 987,
+      "amount": 142128000,
+      "contractorCode": "vn0101268476",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ MINH TÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1943/QĐ-BVĐN",
+      "decisionDate": "2026-10-01T17:01:47",
+      "resultPublishedDate": "2026-10-01T17:03:00"
+    },
+    {
+      "id": "68a7d6c7-6038-449e-bdec-a9282f22099c",
+      "name": "Dung dịch rửa",
+      "model": "0009831700\n",
+      "brand": "HemosIL Cleaning solution\n",
+      "manufacturer": "Instrumentation Laboratory Company",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau\n",
+      "specification": "Hóa chất dung dịch dùng để xúc rửa trên máy đông máu tự động bằng phương pháp đo quang.\n- Hóa chất tương thích với hóa chất và y cụ đi kèm để xét nghiệm chức năng đông máu tự động thực hiện trên cùng 1 nguyên lý xét nghiệm. Máy có thể nạp mẫu và hóa chất mà không cần dừng máy.\n- Có ≥ 40 vị trí chứa thuốc thử trên máy. Có ≥ 80 vị trí đặt mẫu. Có chương trình quản lý chất lượng xét nghiệm (biểu đồ Levey Jenning/ X-bar). Có khả năng phân tích chất lượng mẫu, gồm: kiểm tra lượng mẫu, đánh giá chất lượng mẫu.\n- Nhà thầu cam kết hỗ trợ toàn bộ chi phí hóa chất và phí tham gia chương trình ngoại kiểm tra.",
+      "unit": "mL",
+      "quantity": 3500,
+      "unitPrice": 4620,
+      "amount": 16170000,
+      "contractorCode": "vn0101268476",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ MINH TÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1943/QĐ-BVĐN",
+      "decisionDate": "2026-10-01T17:01:47",
+      "resultPublishedDate": "2026-10-01T17:03:00"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,5 +173,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T06:15:17.219Z"
+  "fetchedAt": "2026-10-11T21:07:51.701Z"
 }

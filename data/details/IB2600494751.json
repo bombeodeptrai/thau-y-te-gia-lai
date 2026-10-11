@@ -1,40 +1,91 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "89b74285-6a9d-4c38-ad40-4f1cd186a4de",
+      "id": "fd9e3ff0-dd2a-41d4-a2a0-5065d7e66b6a",
       "contractorCode": "vn0400408435",
-      "taxCode": "",
+      "taxCode": "0400408435",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600354147",
       "lotName": "Ethanol 70 độ",
-      "bidPrice": 115500000,
+      "bidPrice": 100000000,
       "finalPrice": 100000000,
-      "winningPrice": 0,
+      "winningPrice": 100000000,
       "reason": "",
-      "submittedAt": "2026-09-18T09:47:02.562",
-      "models": []
+      "submittedAt": "2026-09-25T08:16:39.434",
+      "models": [
+        "CE70°",
+        "CE90°"
+      ]
     },
     {
-      "id": "d7979514-704c-4a12-87d0-114deaab8c44",
+      "id": "d5e9b3f7-adfe-4174-ae62-79620579a2c5",
       "contractorCode": "vn0400408435",
-      "taxCode": "",
+      "taxCode": "0400408435",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600354148",
       "lotName": "Ethanol 90 độ",
-      "bidPrice": 115500000,
+      "bidPrice": 15500000,
       "finalPrice": 15500000,
-      "winningPrice": 0,
+      "winningPrice": 15500000,
       "reason": "",
-      "submittedAt": "2026-09-18T09:47:02.562",
-      "models": []
+      "submittedAt": "2026-09-25T08:16:39.434",
+      "models": [
+        "CE70°",
+        "CE90°"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "f4c8ead9-4d2b-4a36-adb8-bb50c02b8da5",
+      "name": "Ethanol 70 độ",
+      "model": "CE70°",
+      "brand": "Thuận Phát",
+      "manufacturer": "CÔNG TY TNHH HÓA CHẤT VÀ TRANG THIẾT BỊ Y TẾ THUẬN PHÁT",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất lỏng, trong suốt, đạt nồng độ ≥ 70 độ",
+      "unit": "ml",
+      "quantity": 4000000,
+      "unitPrice": 25,
+      "amount": 100000000,
+      "contractorCode": "vn0400408435",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C "
+      ],
+      "lotNo": "",
+      "decisionNo": "2855/QĐ-BV",
+      "decisionDate": "2026-09-25T23:59:59",
+      "resultPublishedDate": "2026-09-25T08:16:47"
+    },
+    {
+      "id": "8dc0fdab-dbd2-4bba-ac70-97f10f48ecc8",
+      "name": "Ethanol 90 độ",
+      "model": "CE90°",
+      "brand": "Thuận Phát",
+      "manufacturer": "CÔNG TY TNHH HÓA CHẤT VÀ TRANG THIẾT BỊ Y TẾ THUẬN PHÁT",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất lỏng, trong suốt, đạt nồng độ ≥ 90 độ",
+      "unit": "ml",
+      "quantity": 500000,
+      "unitPrice": 31,
+      "amount": 15500000,
+      "contractorCode": "vn0400408435",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C "
+      ],
+      "lotNo": "",
+      "decisionNo": "2855/QĐ-BV",
+      "decisionDate": "2026-09-25T23:59:59",
+      "resultPublishedDate": "2026-09-25T08:16:47"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -70,5 +121,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:34:40.740Z"
+  "fetchedAt": "2026-10-11T21:07:57.190Z"
 }

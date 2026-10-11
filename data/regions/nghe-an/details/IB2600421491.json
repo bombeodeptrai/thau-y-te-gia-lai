@@ -1,55 +1,75 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "e5e77b06-0580-4f16-8c0c-7de4b32a9860",
-      "contractorCode": "vn0101596614",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI GIA HIỂN",
-      "status": "participating",
+      "id": "16e20630-d9b5-46b0-aeb0-37ded1662846",
+      "contractorCode": "vn0500555666",
+      "taxCode": "0500555666",
+      "contractorName": "CÔNG TY CỔ PHẦN BAO BÌ NHỰA APS",
+      "status": "won",
       "lotNo": "BP2600593115",
       "lotName": "Gói thầu số 01: Cung cấp và phân phối Chai đựng thuốc Methadone cho 06 tỉnh/ thành phố",
-      "bidPrice": 4099865080,
-      "finalPrice": 4099865080,
-      "winningPrice": 0,
+      "bidPrice": 3414053880,
+      "finalPrice": 3414053880,
+      "winningPrice": 3414053880,
       "reason": "",
-      "submittedAt": "2026-08-21T10:25:10.524",
+      "submittedAt": "2026-10-09T16:20:23.073",
       "models": []
     },
     {
-      "id": "bc1bce07-5f5a-4c53-81d5-5bfd33881ce0",
+      "id": "746a58f4-004e-44ed-a65f-eeb6a397e46c",
       "contractorCode": "vn0900108278",
-      "taxCode": "",
+      "taxCode": "0900108278",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM HƯNG YÊN",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600593115",
       "lotName": "Gói thầu số 01: Cung cấp và phân phối Chai đựng thuốc Methadone cho 06 tỉnh/ thành phố",
       "bidPrice": 4256315760,
       "finalPrice": 4256315760,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-08-21T10:25:10.734",
+      "reason": "Nhà thầu xếp hạng thứ 2",
+      "submittedAt": "2026-10-09T16:20:23.073",
       "models": []
     },
     {
-      "id": "222a96c2-ea5e-40b2-8a5a-70b290db0eac",
-      "contractorCode": "vn0500555666",
-      "taxCode": "",
-      "contractorName": "CÔNG TY CỔ PHẦN BAO BÌ NHỰA APS",
-      "status": "participating",
+      "id": "19ea11b7-1394-42ad-b414-72294e907886",
+      "contractorCode": "vn0101596614",
+      "taxCode": "0101596614",
+      "contractorName": "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI GIA HIỂN",
+      "status": "lost",
       "lotNo": "BP2600593115",
       "lotName": "Gói thầu số 01: Cung cấp và phân phối Chai đựng thuốc Methadone cho 06 tỉnh/ thành phố",
-      "bidPrice": 3414053880,
-      "finalPrice": 3414053880,
+      "bidPrice": 4099865080,
+      "finalPrice": 4099865080,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-08-21T10:25:10.883",
+      "reason": "Nhà thầu không đáp ứng yêu cầu của E-HSMT (không đạt về kỹ thuật)",
+      "submittedAt": "2026-10-09T16:20:23.073",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "d4946fb3-e5df-448f-bca0-029dd031b65c",
+      "name": "Chai đựng thuốc Methadone",
+      "model": "C0441/N0023/PK166",
+      "brand": "APS",
+      "manufacturer": "Công ty cổ phần bao bì Nhựa APS",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Bộ sản phẩm gồm chai, nắp xé và nhãn dán. Dùng để cấp phát thuốc cho bệnh nhân mang về",
+      "unit": "Chai",
+      "quantity": 2143160,
+      "unitPrice": 1593,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN BAO BÌ NHỰA APS"
+      ],
+      "decisionNo": "187/QĐ-PB",
+      "decisionDate": "2026-10-09T23:59:59",
+      "resultPublishedDate": "2026-10-09T16:21:00"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +94,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-03T11:37:14.876Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-11T21:00:35.397Z"
 }

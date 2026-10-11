@@ -1,9 +1,186 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 5,
+  "bidders": [
+    {
+      "id": "881e45a4-1e40-4b41-98c0-b0c01c6c91b2",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "won",
+      "lotNo": "PP2600417456",
+      "lotName": "Sevofluran",
+      "bidPrice": 15487500,
+      "finalPrice": 15487500,
+      "winningPrice": 15487500,
+      "reason": "",
+      "submittedAt": "2026-10-08T09:51:11.395",
+      "models": [
+        "Không"
+      ]
+    },
+    {
+      "id": "70bf400b-d5be-4097-82de-bae3c90bd0cc",
+      "contractorCode": "vn0400459581",
+      "taxCode": "0400459581",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+      "status": "won",
+      "lotNo": "PP2600417457",
+      "lotName": "A/Missouri/11/2025 (H1N1)pdm09-like strain (A/Missouri/11/2025, IVR-279) A/Darwin/1454/2025 (H3N2)-like strain (A/Michigan/105/2025, SAN-049A) B/Tokyo/EIS13-175/2025-like strain (B/Tokyo/EIS13-175/2025, wild type)",
+      "bidPrice": 52800000,
+      "finalPrice": 52800000,
+      "winningPrice": 52800000,
+      "reason": "",
+      "submittedAt": "2026-10-08T09:51:11.395",
+      "models": [
+        "Không"
+      ]
+    },
+    {
+      "id": "0e1078c2-afd0-4062-946e-dc96b3239576",
+      "contractorCode": "vn2500228415",
+      "taxCode": "2500228415",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+      "status": "won",
+      "lotNo": "PP2600417458",
+      "lotName": "Terbutalin sulfat",
+      "bidPrice": 3180000,
+      "finalPrice": 3180000,
+      "winningPrice": 3180000,
+      "reason": "",
+      "submittedAt": "2026-10-08T09:51:11.395",
+      "models": [
+        "Không"
+      ]
+    },
+    {
+      "id": "aac2858f-8149-460a-a039-38c52d3d7927",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600417459",
+      "lotName": "Salbutamol",
+      "bidPrice": 31500000,
+      "finalPrice": 31500000,
+      "winningPrice": 31500000,
+      "reason": "",
+      "submittedAt": "2026-10-08T09:51:11.395",
+      "models": [
+        "Không"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "92f89598-2b2d-4dbb-bb8b-97c5fde8a5f1",
+      "name": "Terbutalin sulfat",
+      "model": "Không",
+      "brand": "Không",
+      "manufacturer": "Công ty Cổ phần Dược phẩm Vĩnh Phúc",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở lên",
+      "specification": "0,5mg/1ml",
+      "unit": "Ống",
+      "quantity": 600,
+      "unitPrice": 5300,
+      "amount": 3180000,
+      "contractorCode": "vn2500228415",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
+      "lotNo": "",
+      "decisionNo": "531/QĐ-BVĐK",
+      "decisionDate": "2026-10-08T09:46:47",
+      "resultPublishedDate": "2026-10-08T09:51:34"
+    },
+    {
+      "id": "12214404117997128",
+      "name": "A/Missouri/11/2025 (H1N1)pdm09-like strain (A/Missouri/11/2025, IVR-279) A/Darwin/1454/2025 (H3N2)-like strain (A/Michigan/105/2025, SAN-049A) B/Tokyo/EIS13-175/2025-like strain (B/Tokyo/EIS13-175/2025, wild type)",
+      "model": "Không",
+      "brand": "Không",
+      "manufacturer": "Abbott Biologicals B.V.",
+      "origin": "Hà Lan",
+      "manufactureYear": "Năm 2026 trở lên",
+      "specification": "Mỗi 0,5 ml vắc xin chứa:\r\nA/Missouri/11/2025 (H1N1)pdm09-like strain (A/Missouri/11/2025, IVR-279) 15 µg haemagglutinin\r\nA/Darwin/1454/2025 (H3N2)-like strain (A/Michigan/105/2025, SAN-049A) 15 µg haemagglutinin\r\nB/Tokyo/EIS13-175/2025-like strain (B/Tokyo/EIS13-175/2025, wild type) 15 µg haemagglutinin",
+      "unit": "Xy lanh",
+      "quantity": 200,
+      "unitPrice": 264000,
+      "amount": 52800000,
+      "contractorCode": "vn0400459581",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ"
+      ],
+      "lotNo": "",
+      "decisionNo": "531/QĐ-BVĐK",
+      "decisionDate": "2026-10-08T09:46:47",
+      "resultPublishedDate": "2026-10-08T09:51:34"
+    },
+    {
+      "id": "f79632b9-64f5-4cca-b577-6900af8e3211",
+      "name": "Sevofluran",
+      "model": "Không",
+      "brand": "Không",
+      "manufacturer": "Piramal Critical Care, Inc",
+      "origin": "Mỹ",
+      "manufactureYear": "Năm 2026 trở lên",
+      "specification": "100%/250ml",
+      "unit": "Bình/Lọ",
+      "quantity": 10,
+      "unitPrice": 1548750,
+      "amount": 15487500,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "531/QĐ-BVĐK",
+      "decisionDate": "2026-10-08T09:46:47",
+      "resultPublishedDate": "2026-10-08T09:51:34"
+    },
+    {
+      "id": "b17e467c-4848-4faa-a1e9-591a1c92d14e",
+      "name": "Salbutamol",
+      "model": "Không",
+      "brand": "Không",
+      "manufacturer": "Getz Pharma (Private) Limited",
+      "origin": "Pakistan",
+      "manufactureYear": "Năm 2026 trở lên",
+      "specification": "100mcg/ liều x 200 liều",
+      "unit": "Bình/Chai/Lọ",
+      "quantity": 700,
+      "unitPrice": 45000,
+      "amount": 31500000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "",
+      "decisionNo": "531/QĐ-BVĐK",
+      "decisionDate": "2026-10-08T09:46:47",
+      "resultPublishedDate": "2026-10-08T09:51:34"
+    },
+    {
+      "id": "a4b02142-4433-4e0d-bd60-43373baf2aaa",
+      "name": "A/Missouri/11/2025 (H1N1)pdm09-like strain (A/Missouri/11/2025, IVR-279) \r\nA/Darwin/1454/2025 (H3N2)-like strain (A/Michigan/105/2025, SAN-049A) \r\nB/Tokyo/EIS13-175/2025-like strain (B/Tokyo/EIS13-175/2025, wild type)",
+      "model": "Không",
+      "brand": "Không",
+      "manufacturer": "Abbott Biologicals B.V.",
+      "origin": "Hà Lan",
+      "manufactureYear": "Năm 2026 trở lên",
+      "specification": "Mỗi 0,5 ml vắc xin chứa:\r\nA/Missouri/11/2025 (H1N1)pdm09-like strain (A/Missouri/11/2025, IVR-279) 15 µg haemagglutinin\r\nA/Darwin/1454/2025 (H3N2)-like strain (A/Michigan/105/2025, SAN-049A) 15 µg haemagglutinin\r\nB/Tokyo/EIS13-175/2025-like strain (B/Tokyo/EIS13-175/2025, wild type) 15 µg haemagglutinin",
+      "unit": "Xy lanh",
+      "quantity": 200,
+      "unitPrice": 264000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ"
+      ],
+      "decisionNo": "531/QĐ-BVĐK",
+      "decisionDate": "2026-10-08T09:46:47",
+      "resultPublishedDate": "2026-10-08T09:51:34"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -155,5 +332,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-04T20:15:23.289Z"
+  "fetchedAt": "2026-10-11T21:03:40.688Z"
 }
