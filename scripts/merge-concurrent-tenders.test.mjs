@@ -79,6 +79,7 @@ test("bổ sung chi tiết không được làm mất gói biên còn có trên 
       notifyNo: "IB2300267784",
       regionSlug: "gia-lai",
       name: "Mua sắm linh kiện cho các máy xét nghiệm sinh hoá",
+      investor: "Bệnh viện Đa khoa tỉnh Gia Lai",
       publicDate: "2023-10-12T10:49:56",
     },
   ];
@@ -87,9 +88,28 @@ test("bổ sung chi tiết không được làm mất gói biên còn có trên 
     regions[0],
     regions,
     current,
+    { now: Date.parse("2026-10-11T02:49:55.000Z") },
   );
   assert.equal(result.restored, 1);
   assert.deepEqual(result.payload.tenders.map((item) => item.notifyNo), ["IB2300267784"]);
+});
+
+test("không giữ lại gói đã hết phạm vi 1.095 ngày", () => {
+  const result = preserveMissingCurrentTenders(
+    { tenders: [] },
+    regions[0],
+    regions,
+    [{
+      notifyNo: "IB2300267784",
+      regionSlug: "gia-lai",
+      name: "Mua sắm linh kiện cho các máy xét nghiệm sinh hoá",
+      investor: "Bệnh viện Đa khoa tỉnh Gia Lai",
+      publicDate: "2023-10-12T10:49:56",
+    }],
+    { now: Date.parse("2026-10-11T10:49:57.000Z") },
+  );
+  assert.equal(result.restored, 0);
+  assert.equal(result.payload.tenders.length, 0);
 });
 
 test("giữ dữ liệu quét sâu khi gói hiện tại đã có trong kết quả", () => {

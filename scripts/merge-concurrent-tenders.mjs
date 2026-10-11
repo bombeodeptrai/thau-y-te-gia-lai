@@ -6,6 +6,7 @@ import {
   mergeTenderRegionSlugs,
   tenderBelongsToRegion,
 } from "./region-membership.mjs";
+import { shouldRetainStoredTender } from "./scan-baseline.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -88,7 +89,13 @@ export function applyConcurrentTenderDelta(payload, region, regions, delta) {
   };
 }
 
-export function preserveMissingCurrentTenders(payload, region, regions, currentTenders = []) {
+export function preserveMissingCurrentTenders(
+  payload,
+  region,
+  regions,
+  currentTenders = [],
+  { scanDays = 1095, now = Date.now() } = {},
+) {
   const tenderMap = new Map(
     (payload.tenders || []).map((item) => [tenderKey(item), item]).filter(([key]) => key),
   );
@@ -97,6 +104,7 @@ export function preserveMissingCurrentTenders(payload, region, regions, currentT
   for (const current of currentTenders) {
     const key = tenderKey(current);
     if (!key || tenderMap.has(key)) continue;
+    if (!shouldRetainStoredTender(current, { scanDays, now })) continue;
     const inferredRegionSlugs = inferTenderRegionSlugs(current, regions);
     const tagged = {
       ...current,
