@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-11T05:48:10.590Z",
+  "auditedAt": "2026-10-11T11:37:54.320Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 507,
+      "count": 490,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 26,
+      "count": 24,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 48,
+      "count": 47,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 85,
+      "count": 74,
       "error": ""
     },
     {
@@ -194,19 +194,19 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 80,
+      "count": 79,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 15,
+      "count": 10,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -271,25 +271,25 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1273,
-  "acceptedCount": 45,
-  "rejectedCount": 1228,
+  "candidateCount": 1234,
+  "acceptedCount": 44,
+  "rejectedCount": 1190,
   "rejectedReasons": {
-    "excluded:tu van": 442,
-    "excluded:xay dung": 338,
-    "insufficient-medical-context": 242,
-    "excluded:sua chua": 45,
-    "excluded:cai tao": 44,
+    "excluded:tu van": 418,
+    "excluded:xay dung": 336,
+    "insufficient-medical-context": 236,
+    "excluded:sua chua": 43,
+    "excluded:cai tao": 43,
     "excluded:xay lap": 34,
-    "excluded:bao hiem": 18,
+    "excluded:bao hiem": 16,
     "excluded:tham dinh": 13,
     "excluded:thuc pham": 9,
     "excluded:trang phuc": 8,
     "excluded:bao ve": 5,
     "excluded:may tinh": 4,
-    "excluded:suat an": 4,
     "excluded:giam sat thi cong": 3,
     "excluded:bao tri": 3,
+    "excluded:suat an": 3,
     "excluded:cong nghe thong tin": 2,
     "excluded:cap dien": 2,
     "excluded:kiem dinh": 2,
@@ -905,22 +905,33 @@
       ]
     },
     {
-      "notifyNo": "IB2600520648",
-      "name": "Cung cấp dịch vụ kiểm định, hiệu chuẩn thiết bị y tế của Trung tâm Y tế An Nhơn năm 2026 (Lần 2)",
-      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "notifyNo": "IB2600573479",
+      "name": "Mua sắm bổ sung vật tư phục vụ công tác khám sức khỏe toàn dân của Trung tâm Y tế Tuy Phước năm 2026",
+      "investor": "Trung tâm Y tế Tuy Phước",
       "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
       "matched": [
-        "thiet bi y te",
+        "kham suc khoe",
         "trung tam y te",
-        "kiem dinh",
-        "hieu chuan",
-        "cung cap"
+        "vat tu",
+        "mua",
+        "mua sam"
       ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "DC2600040826",
+      "name": "Thi công xây dựng",
+      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "DC2600047229",
       "name": "Khảo sát, lập phương án kỹ thuật thi công Rà phá bom mìn, vật nổ các Khu tái định cư thôn Cửu Thành, thôn Trung Hội, thôn An Lạc 2, thôn Thạnh An, thôn Đại Thuận, thôn Tân Xuân, thôn Hội Vân, thôn Hòa Đại, Bình Thuận 1, Khu tái định cư Bình Thuận 2, Tây An, Thiết Tràng 2, Thiết Tràng 4, Nhơn Khánh, đường Trần Nguyên Hãn, An Sơn, Cảnh An, Bình An 2, Bình An 1",
@@ -1355,17 +1366,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "so y te"
-      ]
-    },
-    {
-      "notifyNo": "DC2600037526",
-      "name": "Điều chỉnh cục bộ Quy hoạch phân khu xây dựng phường Yên Đỗ, thành phố Pleiku (cũ), tỉnh Gia Lai",
-      "investor": "Phòng Nông nghiệp, Hạ tầng và Đô thị Phường Diên Hồng",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
