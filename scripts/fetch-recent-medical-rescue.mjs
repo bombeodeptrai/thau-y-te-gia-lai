@@ -214,13 +214,15 @@ async function runStrategy(name, task, strategyResults) {
 
 function statusOf(item) {
   const sourceStatus = String(item.statusForNotify || item.status || "").toUpperCase();
-  if (sourceStatus.includes("HUY") || sourceStatus === "CANCELLED") return "cancelled";
+  const bidStatus = String(item.status || "").toUpperCase();
+  if (sourceStatus.includes("HUY") || ["CANCELLED", "DHT", "DHTBMT"].includes(sourceStatus) || bidStatus === "CANCEL_BID") return "cancelled";
   if (item.inputResultId || item.contractorName?.length || sourceStatus === "CNTTT") return "awarded";
   if (sourceStatus === "DXT" || String(item.status || "").toUpperCase() === "OPEN_BID") return "evaluating";
   const closeTime = new Date(item.bidCloseDate || item.closeDate || 0).getTime();
   const remaining = closeTime - Date.now();
   if (remaining > 0 && remaining <= 3 * 86_400_000) return "urgent";
   if (remaining > 0) return "open";
+  if (item.numBidderJoin != null && Number(item.numBidderJoin) === 0) return "no_bidder";
   return "closed";
 }
 
