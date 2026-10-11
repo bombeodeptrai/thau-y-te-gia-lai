@@ -88,6 +88,36 @@ export function applyConcurrentTenderDelta(payload, region, regions, delta) {
   };
 }
 
+export function preserveMissingCurrentTenders(payload, region, regions, currentTenders = []) {
+  const tenderMap = new Map(
+    (payload.tenders || []).map((item) => [tenderKey(item), item]).filter(([key]) => key),
+  );
+  let restored = 0;
+
+  for (const current of currentTenders) {
+    const key = tenderKey(current);
+    if (!key || tenderMap.has(key)) continue;
+    const inferredRegionSlugs = inferTenderRegionSlugs(current, regions);
+    const tagged = {
+      ...current,
+      regionSlugs: inferredRegionSlugs.length > 1 ? inferredRegionSlugs : current.regionSlugs,
+    };
+    if (!tenderBelongsToRegion(tagged, region.slug)) continue;
+    tenderMap.set(key, tagged);
+    restored += 1;
+  }
+
+  return {
+    payload: {
+      ...payload,
+      tenders: [...tenderMap.values()].sort(
+        (left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0),
+      ),
+    },
+    restored,
+  };
+}
+
 async function readJson(path, fallback) {
   try {
     return JSON.parse(await readFile(path, "utf8"));
@@ -97,7 +127,7 @@ async function readJson(path, fallback) {
 }
 
 async function main() {
-  const [basePath, currentPath] = process.argv.slice(2);
+  const [basePath, currentPath, mode] = process.argv.slice(2);
   if (!basePath || !currentPath) {
     throw new Error("Cần truyền tệp tenders nền lúc bắt đầu quét và tenders hiện tại trên main");
   }
@@ -108,24 +138,33 @@ async function main() {
     readJson(resolve(root, "data", "regions.json"), { regions: [] }),
   ]);
   const delta = buildConcurrentTenderDelta(base.tenders, current.tenders);
+  const preserveCurrentMissing = mode === "--preserve-current-missing";
   let changedRegionCount = 0;
   let changedRecordCount = 0;
+  let restoredRecordCount = 0;
 
   for (const region of config.regions || []) {
     const path = resolve(root, "data", "regions", region.slug, "tenders.json");
     const payload = await readJson(path, null);
     if (!payload) continue;
     const applied = applyConcurrentTenderDelta(payload, region, config.regions || [], delta);
-    if (!applied.changed) continue;
-    await writeFile(path, `${JSON.stringify(applied.payload, null, 2)}\n`);
+    const preserved = preserveCurrentMissing
+      ? preserveMissingCurrentTenders(applied.payload, region, config.regions || [], current.tenders)
+      : { payload: applied.payload, restored: 0 };
+    if (!applied.changed && !preserved.restored) continue;
+    await writeFile(path, `${JSON.stringify(preserved.payload, null, 2)}\n`);
     changedRegionCount += 1;
-    changedRecordCount += applied.changed;
+    changedRecordCount += applied.changed + preserved.restored;
+    restoredRecordCount += preserved.restored;
   }
 
   process.stdout.write(
     `Đã bảo toàn ${delta.upserts.length} bản ghi thêm/sửa và ${delta.removed.size} bản ghi xóa `
     + `phát sinh trong lúc quét; cập nhật ${changedRecordCount} membership tại ${changedRegionCount} vùng.\n`,
   );
+  if (preserveCurrentMissing) {
+    process.stdout.write(`Đã giữ lại ${restoredRecordCount} gói còn có trên main nhưng lượt bổ sung chi tiết bỏ sót.\n`);
+  }
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
