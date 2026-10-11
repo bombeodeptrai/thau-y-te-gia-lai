@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import vm from "node:vm";
 
-for (const file of ["fetch-recent-location-audit.mjs", "fetch-recent-medical-rescue.mjs"]) {
+for (const file of ["fetch-recent-location-audit.mjs", "fetch-recent-medical-rescue.mjs", "repair-official-tender-identities.mjs"]) {
   const source = readFileSync(new URL(file, import.meta.url), "utf8");
   const body = source.match(/function statusOf\(item\) \{[\s\S]*?\n\}/u)[0];
   const statusOf = vm.runInNewContext(`(${body})`);
