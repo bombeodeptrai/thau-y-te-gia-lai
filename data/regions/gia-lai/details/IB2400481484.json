@@ -1,9 +1,113 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "ab3d59dd-dfec-49a6-b388-144733dd5e9c",
+      "contractorCode": "vn4101450299",
+      "taxCode": "4101450299",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ Y TẾ ĐẠI VIỆT",
+      "status": "won",
+      "lotNo": "PP2400427278",
+      "lotName": "Giấy in máy điện tim 6 kênh",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 12000000,
+      "reason": "",
+      "submittedAt": "2024-11-11T15:16:21.729",
+      "models": []
+    },
+    {
+      "id": "fd1b0120-ab31-485d-a789-f4e0e3769053",
+      "contractorCode": "vn0313103885",
+      "taxCode": "0313103885",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY",
+      "status": "won",
+      "lotNo": "PP2400427279",
+      "lotName": "Rapid Anti - HCV",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 5600000,
+      "reason": "",
+      "submittedAt": "2024-11-11T15:16:21.729",
+      "models": []
+    },
+    {
+      "id": "7a23165a-06c4-4205-a7ff-58929e7ba969",
+      "contractorCode": "vn0313103885",
+      "taxCode": "0313103885",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY",
+      "status": "won",
+      "lotNo": "PP2400427280",
+      "lotName": "Que thử phân tích nước tiểu 10 thông số",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 27920000,
+      "reason": "",
+      "submittedAt": "2024-11-11T15:16:21.729",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "155e4264-0530-4238-b378-1257c8412d84",
+      "name": "Giấy in máy điện tim 6 kênh",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Tianjin Grand Paper Industry Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024",
+      "specification": "-",
+      "unit": "Cuộn",
+      "quantity": 400,
+      "unitPrice": 30000,
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ Y TẾ ĐẠI VIỆT"
+      ],
+      "decisionNo": "701/QĐ-TTYT",
+      "decisionDate": "2024-11-06T23:59:59",
+      "resultPublishedDate": "2024-11-21T08:59:14"
+    },
+    {
+      "id": "800abf7e-1e4d-411a-b388-bda9fa9b3e94",
+      "name": "Que thử phân tích nước tiểu 10 thông số",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Kimball Electronics",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024",
+      "specification": "-",
+      "unit": "Test",
+      "quantity": 4000,
+      "unitPrice": 6980,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "701/QĐ-TTYT",
+      "decisionDate": "2024-11-06T23:59:59",
+      "resultPublishedDate": "2024-11-21T08:59:14"
+    },
+    {
+      "id": "b7e23acf-72de-457e-b35f-6f37ef76c71f",
+      "name": "Rapid Anti - HCV",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Intec",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2024",
+      "specification": "-",
+      "unit": "Test",
+      "quantity": 700,
+      "unitPrice": 8000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT LONG THỦY"
+      ],
+      "decisionNo": "701/QĐ-TTYT",
+      "decisionDate": "2024-11-06T23:59:59",
+      "resultPublishedDate": "2024-11-21T08:59:14"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -49,12 +153,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "sourceIdentity": {
-    "notifyNo": "IB2400481484",
-    "notifyId": "IB2400481484",
-    "bidId": "9d606ec5-8ac1-4b16-8a45-2ee8af8d5dce",
-    "bidForm": "CDTRG",
-    "sourceStage": "official-public-search"
-  },
-  "fetchedAt": "2026-08-05T16:23:48.698Z"
+  "fetchedAt": "2026-10-11T11:49:06.047Z"
 }
