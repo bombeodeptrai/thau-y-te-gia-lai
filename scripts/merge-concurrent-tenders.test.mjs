@@ -3,6 +3,7 @@ import test from "node:test";
 import {
   applyConcurrentTenderDelta,
   buildConcurrentTenderDelta,
+  preserveMissingCurrentTenders,
 } from "./merge-concurrent-tenders.mjs";
 
 const regions = [
@@ -70,4 +71,34 @@ test("áp dụng thay đổi membership đa tỉnh mà không làm mất dữ li
   assert.deepEqual(multi.regionSlugs, ["gia-lai", "lam-dong"]);
   assert.deepEqual(multi.winningModels, ["Model A"]);
   assert.ok(result.payload.tenders.some((item) => item.notifyNo === "IB-DEEP"));
+});
+
+test("bổ sung chi tiết không được làm mất gói biên còn có trên main: IB2300267784", () => {
+  const current = [
+    {
+      notifyNo: "IB2300267784",
+      regionSlug: "gia-lai",
+      name: "Mua sắm linh kiện cho các máy xét nghiệm sinh hoá",
+      publicDate: "2023-10-12T10:49:56",
+    },
+  ];
+  const result = preserveMissingCurrentTenders(
+    { tenders: [] },
+    regions[0],
+    regions,
+    current,
+  );
+  assert.equal(result.restored, 1);
+  assert.deepEqual(result.payload.tenders.map((item) => item.notifyNo), ["IB2300267784"]);
+});
+
+test("giữ dữ liệu quét sâu khi gói hiện tại đã có trong kết quả", () => {
+  const result = preserveMissingCurrentTenders(
+    { tenders: [{ notifyNo: "IB-KEEP", regionSlug: "gia-lai", winningModels: ["Model sâu"] }] },
+    regions[0],
+    regions,
+    [{ notifyNo: "IB-KEEP", regionSlug: "gia-lai", winningModels: [] }],
+  );
+  assert.equal(result.restored, 0);
+  assert.deepEqual(result.payload.tenders[0].winningModels, ["Model sâu"]);
 });

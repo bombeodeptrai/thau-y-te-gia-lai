@@ -187,7 +187,7 @@ jobs:
           else
             echo "Chưa có hồ sơ chi tiết mới; giữ nguyên dữ liệu hiện tại."
           fi
-          node scripts/merge-concurrent-tenders.mjs artifacts/concurrent/base-tenders.json artifacts/concurrent/current-tenders.json
+          node scripts/merge-concurrent-tenders.mjs artifacts/concurrent/base-tenders.json artifacts/concurrent/current-tenders.json --preserve-current-missing
           node scripts/merge-regions.mjs
           node scripts/apply-manual-equipment-overrides.mjs
           node scripts/data-health-check.mjs
