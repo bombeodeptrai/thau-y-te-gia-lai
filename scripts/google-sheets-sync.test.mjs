@@ -52,3 +52,23 @@ test("trigger xoay vòng tự cứu Gia Lai khi trigger riêng bị thiếu", ()
     false,
   );
 });
+
+for (const handler of ["setupMienTrungSheets", "syncGiaLaiSheets", "syncMienTrungSheets"]) {
+  test(`${handler} ghi mốc tổng hợp sau khi đồng bộ dữ liệu thành công`, () => {
+    const events = [];
+    const context = {
+      SpreadsheetApp: { getActive: () => ({ toast() {} }) },
+      ScriptApp: { newTrigger: () => ({ timeBased() { return this; }, everyHours() { return this; }, everyMinutes() { return this; }, create() {} }) },
+      PropertiesService: { getScriptProperties: () => ({ getProperty: () => "2026-10-11T00:00:00Z", setProperty() {} }) },
+    };
+    vm.runInNewContext(source, context);
+    context.mtWithLock_ = callback => callback();
+    context.mtRemoveSyncTriggers_ = () => {};
+    context.mtLoadMetadata_ = () => ({ regions: [{slug: "gia-lai"}, {slug: "hue"}], coverage: {} });
+    context.mtSyncRegion_ = () => events.push("sync");
+    context.mtWriteSummary_ = () => events.push("summary");
+    context[handler]();
+    assert.equal(events.at(-1), "summary");
+    assert.ok(events.includes("sync"));
+  });
+}

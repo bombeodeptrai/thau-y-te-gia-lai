@@ -43,6 +43,7 @@ function setupMienTrungSheets() {
     const giaLai = metadata.regions.filter(function(region) { return region.slug === MT_DEFAULT_REGION_SLUG; })[0];
     if (!giaLai) throw new Error("Không tìm thấy cấu hình Gia Lai");
     mtSyncRegion_(SpreadsheetApp.getActive(), giaLai);
+    mtWriteSummary_(SpreadsheetApp.getActive(), metadata.regions, metadata.coverage, metadata.fetchedAt);
     PropertiesService.getScriptProperties().setProperty(MT_CURSOR_KEY, "0");
   });
   // Gia Lai không nằm trong hàng đợi xoay vòng của syncMienTrungSheets, nên
@@ -64,6 +65,7 @@ function syncGiaLaiSheets() {
     const region = metadata.regions.filter(function(item) { return item.slug === MT_DEFAULT_REGION_SLUG; })[0];
     if (!region) throw new Error("Không tìm thấy cấu hình Gia Lai");
     mtSyncRegion_(SpreadsheetApp.getActive(), region);
+    mtWriteSummary_(SpreadsheetApp.getActive(), metadata.regions, metadata.coverage, metadata.fetchedAt);
   });
   SpreadsheetApp.getActive().toast("Đã cập nhật riêng dữ liệu Gia Lai.", "Thầu Y tế Miền Trung", 7);
 }
@@ -95,6 +97,7 @@ function syncMienTrungSheets() {
     cursor = Math.max(0, cursor % queue.length);
     const region = queue[cursor];
     mtSyncRegion_(ss, region);
+    mtWriteSummary_(ss, metadata.regions, metadata.coverage, metadata.fetchedAt);
     properties.setProperty(MT_CURSOR_KEY, String((cursor + 1) % queue.length));
     ss.toast(
       "Đã cập nhật " + region.name + ". Lượt tiếp theo sẽ xử lý tỉnh kế tiếp.",
