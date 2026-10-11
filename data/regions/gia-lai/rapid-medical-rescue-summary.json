@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-11T06:06:10.759Z",
+  "rescuedAt": "2026-10-11T21:30:48.165Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 230,
+      "count": 231,
       "error": ""
     },
     {
@@ -198,13 +198,13 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 8,
+      "count": 6,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 671,
+  "candidateCount": 669,
   "acceptedCount": 31,
-  "rejectedCount": 640,
+  "rejectedCount": 638,
   "rejectedReasons": {
-    "excluded:tu van": 236,
-    "excluded:xay dung": 169,
-    "insufficient-medical-context": 133,
+    "excluded:tu van": 235,
+    "excluded:xay dung": 170,
+    "insufficient-medical-context": 131,
     "excluded:sua chua": 21,
     "excluded:cai tao": 21,
     "excluded:xay lap": 13,
@@ -1218,8 +1218,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1177,
-  "afterCount": 1177,
+  "beforeCount": 1181,
+  "afterCount": 1181,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v15"
 }
