@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v16";
+// Quét bù toàn bộ phạm vi sau hồi quy IB2600572488.\nexport const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v16";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
