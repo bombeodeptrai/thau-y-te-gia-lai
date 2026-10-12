@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v15";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v16";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -66,6 +66,13 @@ const MEDICAL_EQUIPMENT_OBJECT_TERMS = [
   "may xet nghiem", "may sieu am", "may tho", "may dien tim",
   "may theo doi benh nhan", "may loc mau", "may chay than", "may chup",
   "x quang", "noi soi", "ghe nha khoa",
+];
+
+// Một số đơn vị kiểm nghiệm y tế gọi chung tài sản chuyên môn là "thiết bị,
+// phương tiện đo". Chỉ nhận cụm này khi bên mua thuộc ngành y tế để tránh kéo
+// nhầm dịch vụ hiệu chuẩn đo lường công nghiệp.
+const MEDICAL_MEASUREMENT_SERVICE_OBJECT_TERMS = [
+  "thiet bi phuong tien do",
 ];
 
 // Các gói bệnh viện thường chỉ ghi tên vật tư chuyên khoa hoặc "vật tư tiêu
@@ -179,6 +186,7 @@ export function classifyMedicalTender(item) {
   const medicalInvestor = matchedTerms(investor, MEDICAL_INVESTOR_TERMS);
   const equipmentService = matchedTerms(title, MEDICAL_EQUIPMENT_SERVICE_TERMS);
   const equipmentObject = matchedTerms(title, MEDICAL_EQUIPMENT_OBJECT_TERMS);
+  const measurementServiceObject = matchedTerms(title, MEDICAL_MEASUREMENT_SERVICE_OBJECT_TERMS);
   const contextualSupply = matchedTerms(title, MEDICAL_CONTEXT_SUPPLY_TERMS);
   const medicalWasteTitle = matchedTerms(title, MEDICAL_WASTE_TITLE_TERMS);
   const explicitMedicalWaste = matchedTerms(title, EXPLICIT_MEDICAL_WASTE_TERMS);
@@ -190,7 +198,8 @@ export function classifyMedicalTender(item) {
     && contextualSupply.length > 0;
   const nonServiceExcluded = excluded.filter((term) => !equipmentService.includes(term));
   const medicalEquipmentService = equipmentService.length > 0
-    && equipmentObject.length > 0
+    && (equipmentObject.length > 0
+      || (medicalInvestor.length > 0 && measurementServiceObject.length > 0))
     && nonServiceExcluded.length === 0;
   const contextualAllowedExcluded = contextualMedicalSupplies
     && excluded.every((term) => term === "hoa chat tay rua");
@@ -303,6 +312,7 @@ export function classifyMedicalTender(item) {
       ...medicalInvestor,
       ...equipmentService,
       ...equipmentObject,
+      ...measurementServiceObject,
       ...contextualSupply,
       ...medicalWasteTitle,
       ...medicalDrugTitle,

@@ -353,6 +353,27 @@ test("không mở rộng từ thuốc bó sang mọi gói dược liệu", () =>
   assert.equal(result.accepted, false, result.reason);
 });
 
+test("nhận dịch vụ hiệu chuẩn, bảo trì thiết bị đo của trung tâm kiểm nghiệm y tế: IB2600572488", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600572488",
+    bidName: ["Gói thầu Dịch vụ hiệu chuẩn, bảo trì thiết bị, phương tiện đo năm 2026"],
+    investorName: "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Thiết bị y tế");
+  assert.ok(result.reason.includes("medical-equipment-service"), result.reason);
+  assert.ok(result.matched.includes("thiet bi phuong tien do"));
+});
+
+test("không mở rộng thiết bị, phương tiện đo sang đơn vị ngoài y tế", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Dịch vụ hiệu chuẩn, bảo trì thiết bị, phương tiện đo năm 2026"],
+    investorName: "Công ty đo lường công nghiệp",
+  });
+  assert.equal(result.accepted, false, result.reason);
+});
+
 for (const [notifyNo, title, investor] of [
   [
     "IB2600520648-00",
