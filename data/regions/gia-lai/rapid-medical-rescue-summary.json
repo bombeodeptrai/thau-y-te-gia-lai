@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-12T06:14:34.960Z",
+  "rescuedAt": "2026-10-12T08:08:56.969Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 111,
+      "count": 108,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 230,
+      "count": 225,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 22,
+      "count": 20,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 10,
+      "count": 8,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 39,
+      "count": 34,
       "error": ""
     },
     {
@@ -138,13 +138,13 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 9,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 43,
+      "count": 41,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 21,
+      "count": 25,
       "error": ""
     },
     {
@@ -281,17 +281,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 667,
-  "acceptedCount": 34,
-  "rejectedCount": 633,
+  "candidateCount": 661,
+  "acceptedCount": 33,
+  "rejectedCount": 628,
   "rejectedReasons": {
     "excluded:tu van": 236,
-    "excluded:xay dung": 167,
-    "insufficient-medical-context": 127,
-    "excluded:sua chua": 21,
+    "excluded:xay dung": 165,
+    "insufficient-medical-context": 126,
     "excluded:cai tao": 21,
+    "excluded:sua chua": 20,
     "excluded:xay lap": 14,
-    "excluded:tham dinh": 9,
+    "excluded:tham dinh": 8,
     "excluded:bao hiem": 8,
     "excluded:trang phuc": 6,
     "excluded:thuc pham": 4,
@@ -709,36 +709,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600558508",
-      "name": "Lựa chọn đơn vị cung cấp dịch vụ tổ chức các khóa đào tạo Bồi dưỡng về Y học gia đình cho bác sỹ tại các TYT xã/phường trọng điểm thuộc 02 tỉnh Gia Lai và Lâm Đồng;",
-      "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
-      "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
-      "matched": [
-        "y hoc gia dinh",
-        "thuoc",
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600558343",
-      "name": "Mua sắm một số vật tư phục vụ bệnh nhân Khu xạ trị của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 65,
-      "reason": "medical-investor",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "vat tu",
-        "mua",
-        "mua sam",
-        "xa tri",
-        "benh nhan"
-      ]
-    },
-    {
       "notifyNo": "DC2600040931",
       "name": "Mua que test ma tuý phục vụ công tác",
       "investor": "Công an tỉnh Gia Lai",
@@ -810,6 +780,21 @@
       ]
     },
     {
+      "notifyNo": "DC2600046185",
+      "name": "Mua sắm bổ sung vật tư, hóa chất năm 2026 (lần 2)",
+      "investor": "Trung tâm Y tế Krông Pa",
+      "accepted": true,
+      "score": 100,
+      "reason": "medical-investor+laboratory-supply+medical-supply-bundle",
+      "matched": [
+        "trung tam y te",
+        "hoa chat",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "DC2600025558",
       "name": "Mua sắm que test ma túy cho Công an phường Đông Hòa, Tân Khánh, Chánh Hưng, Khánh Hội, An Nhơn, Thạnh Mỹ Tây, Vĩnh Hội, Đồn CA KCN Thị xã Tân Uyên và xã Phú Giáo",
       "investor": "Công an Thành phố Hồ Chí Minh",
@@ -839,6 +824,15 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600573207",
+      "name": "Số 02:Tổ chức tham quan du lịch năm 2026",
+      "investor": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HOA TIÊU HÀNG HẢI MIỀN BẮC",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600573205",
       "name": "SCL2026-XL/40: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lưới điện trung hạ áp khu vực An Khê năm 2026",
@@ -1254,23 +1248,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600566284",
-      "name": "Toàn bộ khối lượng thi công xây dựng hoàn thành dự án",
-      "investor": "Ban Quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn Nam",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1184,
-  "afterCount": 1184,
-  "newCount": 0,
+  "afterCount": 1185,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v16"
 }

@@ -1,6 +1,49 @@
 {
   "tenders": [
     {
+      "id": "DC2600046185",
+      "notifyId": "DC2600046185",
+      "bidId": "cf877a42-38eb-4a90-a482-e0a7fcb372c1",
+      "bidOpenId": "",
+      "inputResultId": "3dc6bb31-feca-41a5-9da7-ea8284eeefb5",
+      "bidForm": "CDTRG",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-4-kqlcnt",
+      "notifyNo": "DC2600046185",
+      "name": "Mua sắm bổ sung vật tư, hóa chất năm 2026 (lần 2)",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Trung tâm Y tế Krông Pa",
+      "location": "Gia Lai",
+      "closeDate": "2026-10-12T14:22:58.435",
+      "publicDate": "2026-10-12T14:22:50",
+      "price": 199546000,
+      "category": "Vật tư & hóa chất",
+      "status": "awarded",
+      "sourceStatus": "IS_PUBLISH",
+      "statusForNotify": "CNTTT",
+      "bidderCount": 0,
+      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN THIẾT BỊ Y TẾ BIMED"
+      ],
+      "winningPrice": 199546000,
+      "decisionDate": "2026-10-12T23:59:59",
+      "resultPublishedDate": "2026-10-12T14:22:50",
+      "hasResult": true,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "db899081-d50c-493e-ba46-8a15c617853f",
       "notifyId": "db899081-d50c-493e-ba46-8a15c617853f",
       "bidId": "d72520f4-b8c0-46db-bfb0-21521ec98d43",
@@ -86800,7 +86843,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-12T06:14:34.960Z",
+  "fetchedAt": "2026-10-12T08:08:56.969Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -86808,7 +86851,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 1128,
+  "detailTenderCount": 1129,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
@@ -86836,11 +86879,11 @@
     ],
     "filterStrategy": "unified-medical-scope-v16",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v16",
-    "lastMedicalRescueAt": "2026-10-12T06:14:34.960Z",
+    "lastMedicalRescueAt": "2026-10-12T08:08:56.969Z",
     "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 667,
-    "lastMedicalRescueMedicalCount": 34,
-    "lastMedicalRescueNewCount": 0,
+    "lastMedicalRescueCandidateCount": 661,
+    "lastMedicalRescueMedicalCount": 33,
+    "lastMedicalRescueNewCount": 1,
     "lastRemovedManualTenderCount": 0,
     "lastRemovedRejectedStoredCount": 0
   }
