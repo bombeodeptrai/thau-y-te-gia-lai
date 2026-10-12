@@ -102,6 +102,26 @@ for (const [notifyNo, title, investor] of [
     "Cung cấp đồ vải, quần áo người bệnh tại Trung tâm Y tế Phù Cát năm 2026",
     "Trung tâm Y tế Phù Cát",
   ],
+  [
+    "IB2500589526",
+    "Mua sắm hóa chất diệt muỗi trưởng thành phòng, chống dịch bệnh sốt xuất huyết năm 2025 của Trung tâm Y tế Ia Pa",
+    "Trung tâm Y tế Ia Pa",
+  ],
+  [
+    "IB2500264045",
+    "Mua sắm hóa chất diệt muỗi và máy phun hóa chất (máy phun ULV) phục vụ chương trình Sốt xuất huyết năm 2025 của Trung tâm Y tế huyện Chư Păh",
+    "Trung tâm Y tế huyện Chư Păh",
+  ],
+  [
+    "IB2500216704",
+    "Gói thầu số 3: Mua sắm hóa chất khử trùng, diệt muỗi, côn trùng năm 2025",
+    "Trung tâm Kiểm soát bệnh tật tỉnh Bình Định",
+  ],
+  [
+    "IB2400292987",
+    "Gói thầu số 3: Mua sắm hóa chất diệt muỗi, côn trùng năm 2024",
+    "Trung tâm Kiểm soát bệnh tật tỉnh Bình Định",
+  ],
 ]) {
   test(`nhận vật tư phòng dịch hoặc dùng trực tiếp cho người bệnh: ${notifyNo}`, () => {
     const result = classifyMedicalTender({ notifyNo, bidName: [title], investorName: investor });
@@ -110,6 +130,16 @@ for (const [notifyNo, title, investor] of [
     assert.ok(result.reason.includes("medical-context-supply"), result.reason);
   });
 }
+
+test("nhận gói thuốc đa tỉnh đã khôi phục: IB2500539164", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2500539164",
+    bidName: ["Cung cấp thuốc cho các cơ sở y tế giai đoạn 2024-2026 đợt 3"],
+    investorName: "Trung tâm Mua sắm tập trung thuốc Quốc gia",
+  });
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+});
 
 test("không mở rộng vật tư phòng dịch hoặc đồ vải sang đơn vị ngoài y tế", () => {
   for (const [title, investor] of [
