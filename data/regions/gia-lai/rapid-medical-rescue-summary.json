@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-11T21:30:48.165Z",
+  "rescuedAt": "2026-10-12T01:48:20.911Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 109,
+      "count": 110,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 231,
+      "count": 230,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 23,
+      "count": 24,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 669,
+  "candidateCount": 668,
   "acceptedCount": 31,
-  "rejectedCount": 638,
+  "rejectedCount": 637,
   "rejectedReasons": {
     "excluded:tu van": 235,
     "excluded:xay dung": 170,
-    "insufficient-medical-context": 131,
+    "insufficient-medical-context": 130,
     "excluded:sua chua": 21,
     "excluded:cai tao": 21,
     "excluded:xay lap": 13,
@@ -788,6 +788,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600573233",
+      "name": "Toàn bộ khối lượng thi công xây dựng",
+      "investor": "Ban Quản lý xã An Nhơn Tây",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600572778",
       "name": "Mua sắm lắp đặt thiết bị",
       "investor": "Trường Đại học Quy Nhơn",
@@ -1197,17 +1208,6 @@
       "notifyNo": "IB2600567492",
       "name": "Gói thầu 01: Thi công xây dựng công trình",
       "investor": "Ban Quản lý xã Mang Yang, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552091",
-      "name": "Toàn bộ khối lượng thi công xây dựng hoàn thành công trình",
-      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",
