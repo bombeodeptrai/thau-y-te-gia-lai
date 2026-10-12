@@ -17,7 +17,7 @@
         "52",
         "64"
       ],
-      "investor": "TRUNG TÂM Y TẾ PHÚ THIỆN",
+      "investor": "TRUNG TÂM Y TẾ  PHÚ THIỆN",
       "location": "Xã Phú Thiện",
       "closeDate": "2026-10-19T10:00:00",
       "publicDate": "2026-10-12T11:32:36.205",
@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=db899081-d50c-493e-ba46-8a15c617853f&notifyId=db899081-d50c-493e-ba46-8a15c617853f&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600574948&planNo=PL2600344129&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,8 +38,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "4b58a242-148d-4b95-8308-abee0358dc00",
@@ -67,7 +66,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=4b58a242-148d-4b95-8308-abee0358dc00&notifyId=4b58a242-148d-4b95-8308-abee0358dc00&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600573546&planNo=PL2600343824&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -79,8 +78,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "1bbfc312-ec36-4277-8443-5f494869aa51",
@@ -99,7 +97,7 @@
         "52",
         "64"
       ],
-      "investor": "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
+      "investor": "Trung tâm Kiểm nghiệm  thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
       "location": "Phường Quy Nhơn, Phường Pleiku",
       "closeDate": "2026-10-21T15:00:00",
       "publicDate": "2026-10-12T10:36:16.839",
@@ -120,8 +118,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "7e482c97-d2e3-44b9-98cc-975e2eea1681",
@@ -1419,7 +1416,7 @@
       "publicDate": "2026-09-28T14:56:41.153",
       "price": 905828000,
       "category": "Vật tư & hóa chất",
-      "status": "closed",
+      "status": "no_bidder",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": 0,
@@ -1695,12 +1692,17 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+          "reason": "Xếp hạng thứ 2"
+        }
+      ],
       "winningModels": [
         "SD-Q2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search"
     },
     {
@@ -1870,7 +1872,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 2,
+      "bidderCount": 1,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH THIẾT BỊ Y TẾ VŨ GIA PHÁT ",
@@ -2251,7 +2253,16 @@
         "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI THẢO PHÁT",
         "CÔNG TY TNHH THIẾT BỊ VẬT TƯ Y TẾ QUỐC ANH"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI THẢO PHÁT",
+          "reason": "Xếp hạng thứ 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ VẬT TƯ Y TẾ QUỐC ANH",
+          "reason": "Xếp hạng thứ 2"
+        }
+      ],
       "winningModels": [
         "CT-67512D10",
         "7518",
@@ -2318,7 +2329,12 @@
       "loserNames": [
         "CÔNG TY TNHH MỘT THÀNH VIÊN KHANG HIỆP PHÁT"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN KHANG HIỆP PHÁT",
+          "reason": "Nhà thầu xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "152*150*200",
         "32002",
@@ -2327,7 +2343,7 @@
         "- Chủng loại: Enzydip-5 AM"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search"
     },
     {
@@ -2356,7 +2372,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": 5,
+      "bidderCount": 4,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=27e1e81d-5799-46be-89aa-c73e2667730f&notifyId=27e1e81d-5799-46be-89aa-c73e2667730f&inputResultId=b100ff8d-a5e1-4546-b018-853a4df8d46c&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600534284&planNo=PL2600303848&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
@@ -2378,7 +2394,12 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+          "reason": "xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "Tiêm"
       ],
@@ -86776,7 +86797,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-12T05:59:50.825Z",
+  "fetchedAt": "2026-10-12T06:09:55.595Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -86791,8 +86812,8 @@
     "refreshDays": 2,
     "statusSchemaVersion": 4,
     "lastScanDays": 2,
-    "lastScanTenderCount": 4,
-    "lastProvinceTenderCount": 4,
+    "lastScanTenderCount": 9,
+    "lastProvinceTenderCount": 9,
     "lastHistoricalFallbackTenderCount": 0,
     "lastHistoricalFallbackFailureCount": 0,
     "lastHistoricalFallbackComplete": true,
@@ -86809,15 +86830,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v16",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v16",
-    "lastMedicalRescueAt": "2026-10-12T05:59:50.825Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 667,
-    "lastMedicalRescueMedicalCount": 34,
-    "lastMedicalRescueNewCount": 1,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    ]
   }
 }
