@@ -68,7 +68,14 @@ const MEDICAL_EQUIPMENT_OBJECT_TERMS = [
   "x quang", "noi soi", "ghe nha khoa",
 ];
 
-// Một số đơn vị kiểm nghiệm y tế gọi chung tài sản chuyên môn là "thiết bị,\n// phương tiện đo". Chỉ nhận cụm này khi bên mua thuộc ngành y tế để tránh kéo\n// nhầm dịch vụ hiệu chuẩn đo lường công nghiệp.\nconst MEDICAL_MEASUREMENT_SERVICE_OBJECT_TERMS = [\n  "thiet bi phuong tien do",\n];\n\n// Các gói bệnh viện thường chỉ ghi tên vật tư chuyên khoa hoặc "vật tư tiêu
+// Một số đơn vị kiểm nghiệm y tế gọi chung tài sản chuyên môn là "thiết bị,
+// phương tiện đo". Chỉ nhận cụm này khi bên mua thuộc ngành y tế để tránh kéo
+// nhầm dịch vụ hiệu chuẩn đo lường công nghiệp.
+const MEDICAL_MEASUREMENT_SERVICE_OBJECT_TERMS = [
+  "thiet bi phuong tien do",
+];
+
+// Các gói bệnh viện thường chỉ ghi tên vật tư chuyên khoa hoặc "vật tư tiêu
 // hao" mà không lặp lại hậu tố "y tế". Chỉ dùng nhóm này khi bên mua là cơ sở
 // y tế để không kéo nhầm vật tư công nghiệp, hàng không hay giáo dục.
 const MEDICAL_CONTEXT_SUPPLY_TERMS = [
@@ -178,7 +185,8 @@ export function classifyMedicalTender(item) {
   const explicit = matchedTerms(title, EXPLICIT_MEDICAL_TITLE_TERMS);
   const medicalInvestor = matchedTerms(investor, MEDICAL_INVESTOR_TERMS);
   const equipmentService = matchedTerms(title, MEDICAL_EQUIPMENT_SERVICE_TERMS);
-  const equipmentObject = matchedTerms(title, MEDICAL_EQUIPMENT_OBJECT_TERMS);\n  const measurementServiceObject = matchedTerms(title, MEDICAL_MEASUREMENT_SERVICE_OBJECT_TERMS);
+  const equipmentObject = matchedTerms(title, MEDICAL_EQUIPMENT_OBJECT_TERMS);
+  const measurementServiceObject = matchedTerms(title, MEDICAL_MEASUREMENT_SERVICE_OBJECT_TERMS);
   const contextualSupply = matchedTerms(title, MEDICAL_CONTEXT_SUPPLY_TERMS);
   const medicalWasteTitle = matchedTerms(title, MEDICAL_WASTE_TITLE_TERMS);
   const explicitMedicalWaste = matchedTerms(title, EXPLICIT_MEDICAL_WASTE_TERMS);
@@ -189,7 +197,10 @@ export function classifyMedicalTender(item) {
   const contextualMedicalSupplies = medicalInvestor.length > 0
     && contextualSupply.length > 0;
   const nonServiceExcluded = excluded.filter((term) => !equipmentService.includes(term));
-  const medicalEquipmentService = equipmentService.length > 0\n    && (equipmentObject.length > 0\n      || (medicalInvestor.length > 0 && measurementServiceObject.length > 0))\n    && nonServiceExcluded.length === 0;
+  const medicalEquipmentService = equipmentService.length > 0
+    && (equipmentObject.length > 0
+      || (medicalInvestor.length > 0 && measurementServiceObject.length > 0))
+    && nonServiceExcluded.length === 0;
   const contextualAllowedExcluded = contextualMedicalSupplies
     && excluded.every((term) => term === "hoa chat tay rua");
   const medicalWasteAllowedExcluded = medicalWaste
@@ -300,7 +311,9 @@ export function classifyMedicalTender(item) {
       ...explicit,
       ...medicalInvestor,
       ...equipmentService,
-      ...equipmentObject,\n      ...measurementServiceObject,\n      ...contextualSupply,
+      ...equipmentObject,
+      ...measurementServiceObject,
+      ...contextualSupply,
       ...medicalWasteTitle,
       ...medicalDrugTitle,
       ...labSupply,
