@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-12T11:38:52.314Z",
+  "auditedAt": "2026-10-12T17:54:30.565Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1259,
+  "candidateCount": 1260,
   "acceptedCount": 50,
-  "rejectedCount": 1209,
+  "rejectedCount": 1210,
   "rejectedReasons": {
     "excluded:tu van": 424,
-    "excluded:xay dung": 343,
+    "excluded:xay dung": 344,
     "insufficient-medical-context": 240,
     "excluded:sua chua": 43,
     "excluded:cai tao": 43,
@@ -1385,7 +1385,7 @@
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1185,
-  "afterCount": 1187,
-  "newCount": 2,
+  "afterCount": 1185,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v16"
 }

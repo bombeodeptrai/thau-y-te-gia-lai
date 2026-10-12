@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-12T11:39:35.117Z",
+  "rescuedAt": "2026-10-12T17:55:16.629Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 229,
+      "count": 231,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1328,
+  "candidateCount": 1330,
   "acceptedCount": 59,
-  "rejectedCount": 1269,
+  "rejectedCount": 1271,
   "rejectedReasons": {
     "excluded:tu van": 425,
-    "excluded:xay dung": 361,
-    "insufficient-medical-context": 275,
+    "excluded:xay dung": 362,
+    "insufficient-medical-context": 276,
     "excluded:sua chua": 46,
     "excluded:cai tao": 43,
     "excluded:xay lap": 36,
@@ -933,6 +933,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600568348",
+      "name": "SCL2027-07: Cung cấp VTTB và dịch vụ phục vụ SCL thiết bị chính năm 2027",
+      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600571687",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ban Quản lý phường An Nhơn Bắc",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600575276",
       "name": "Hệ thống màn hình Led Phòng họp truyền thống, Hội trường Nhà văn hóa và Cổng Công ty",
       "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
@@ -1338,30 +1360,12 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "IB2600565046",
-      "name": "In túi vé xổ số bóc biết kết quả ngay dạng bì",
-      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT BÌNH ĐỊNH",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600565047",
-      "name": "In vé xổ số bóc biết kết quả ngay dạng bì",
-      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT BÌNH ĐỊNH",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1187,
-  "afterCount": 1187,
+  "beforeCount": 1185,
+  "afterCount": 1185,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v16"
 }
