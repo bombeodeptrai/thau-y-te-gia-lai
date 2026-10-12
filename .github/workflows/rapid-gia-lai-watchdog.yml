@@ -6,6 +6,8 @@ on:
     branches:
       - main
   schedule:
+    # Re-save mốc giám sát khi GitHub bỏ lỡ nhiều lịch liên tiếp; push sửa chữa
+    # bên dưới đồng thời gọi cả watchdog và quét nhanh bù.
     # Kiểm tra dày hơn lịch quét nhanh để một mốc cron watchdog bị bỏ qua
     # không làm dữ liệu chậm gần một giờ. Ngưỡng 25 phút bên dưới tạo
     # khoảng đệm để lượt chạy trễ vẫn gọi quét bù trước mốc 30 phút.
