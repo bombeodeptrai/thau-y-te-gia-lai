@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-12T08:08:56.969Z",
+  "rescuedAt": "2026-10-12T08:22:23.966Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -66,7 +66,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 661,
+  "candidateCount": 663,
   "acceptedCount": 33,
-  "rejectedCount": 628,
+  "rejectedCount": 630,
   "rejectedReasons": {
     "excluded:tu van": 236,
-    "excluded:xay dung": 165,
-    "insufficient-medical-context": 126,
+    "excluded:xay dung": 166,
+    "insufficient-medical-context": 127,
     "excluded:cai tao": 21,
     "excluded:sua chua": 20,
     "excluded:xay lap": 14,
@@ -1252,8 +1252,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1184,
+  "beforeCount": 1185,
   "afterCount": 1185,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v16"
 }
