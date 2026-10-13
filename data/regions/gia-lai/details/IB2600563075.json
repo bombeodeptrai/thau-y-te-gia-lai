@@ -1,9 +1,89 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "827d6d84-ed31-4436-95b6-57e9786b9f0d",
+      "contractorCode": "vn1400384433",
+      "taxCode": "1400384433",
+      "contractorName": "CÔNG TY CP DƯỢC PHẨM IMEXPHARM",
+      "status": "won",
+      "lotNo": "PP2600424945",
+      "lotName": "Ethambutol HCl",
+      "bidPrice": 22050000,
+      "finalPrice": 22050000,
+      "winningPrice": 22050000,
+      "reason": "",
+      "submittedAt": "2026-10-13T17:37:48.925",
+      "models": [
+        "E"
+      ]
+    },
+    {
+      "id": "7192bd0a-9a0e-44b2-84e3-2f0fa914541b",
+      "contractorCode": "vn0600206147",
+      "taxCode": "0600206147",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
+      "status": "won",
+      "lotNo": "PP2600424949",
+      "lotName": "Rifampicin + Isoniazid",
+      "bidPrice": 32300000,
+      "finalPrice": 32300000,
+      "winningPrice": 32300000,
+      "reason": "",
+      "submittedAt": "2026-10-13T17:37:48.925",
+      "models": [
+        "RH"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "36ca0bea-9c8d-4a0e-979a-e3fb6c3d22ed",
+      "name": "Ethambutol HCl",
+      "model": "E",
+      "brand": "Ethambutol\n400mg\n",
+      "manufacturer": "Công ty Cổ\nphần Dược\nphẩm\nImexpharm\n",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Nhóm 3",
+      "unit": "Viên",
+      "quantity": 14000,
+      "unitPrice": 1575,
+      "amount": 22050000,
+      "contractorCode": "vn1400384433",
+      "winnerNames": [
+        "CÔNG TY CP DƯỢC PHẨM IMEXPHARM"
+      ],
+      "lotNo": "",
+      "decisionNo": "183/QĐ-BVLBPPLE",
+      "decisionDate": "2026-10-13T17:33:14",
+      "resultPublishedDate": "2026-10-13T17:38:00"
+    },
+    {
+      "id": "afbcd205-345d-4f22-9325-470dbf8fe11e",
+      "name": "Rifampicin + Isoniazid",
+      "model": "RH",
+      "brand": "Turbe",
+      "manufacturer": "Công ty cổ phần dược phẩm Nam Hà",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Nhóm 3",
+      "unit": "Viên",
+      "quantity": 17000,
+      "unitPrice": 1900,
+      "amount": 32300000,
+      "contractorCode": "vn0600206147",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
+      ],
+      "lotNo": "",
+      "decisionNo": "183/QĐ-BVLBPPLE",
+      "decisionDate": "2026-10-13T17:33:14",
+      "resultPublishedDate": "2026-10-13T17:38:00"
+    }
+  ],
   "requirements": {
     "total": 7,
     "items": [
@@ -251,5 +331,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-13T06:53:34.925Z"
+  "fetchedAt": "2026-10-13T16:07:00.150Z"
 }
