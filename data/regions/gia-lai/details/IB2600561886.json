@@ -1,9 +1,287 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 10,
+  "bidders": [
+    {
+      "id": "252741f9-742d-471d-8b03-f57b878c7e86",
+      "contractorCode": "vn0106149049",
+      "taxCode": "0106149049",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
+      "status": "lost",
+      "lotNo": "BP2600797823",
+      "lotName": "Mua túi nhựa đựng rác thải y tế, hộp đựng vật sắc nhọn, thùng rác y tế phục vụ công tác vệ sinh của Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026",
+      "bidPrice": 63000000,
+      "finalPrice": 63000000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-10-13T10:04:40.776",
+      "models": []
+    },
+    {
+      "id": "ede0a668-53a4-4f1f-9be5-12dfeb54bbc7",
+      "contractorCode": "vn0106685434",
+      "taxCode": "0106685434",
+      "contractorName": "Công ty TNHH thương mại, sản xuất Sao Khuê",
+      "status": "won",
+      "lotNo": "BP2600797823",
+      "lotName": "Mua túi nhựa đựng rác thải y tế, hộp đựng vật sắc nhọn, thùng rác y tế phục vụ công tác vệ sinh của Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026",
+      "bidPrice": 62200000,
+      "finalPrice": 62200000,
+      "winningPrice": 62200000,
+      "reason": "",
+      "submittedAt": "2026-10-13T10:04:40.776",
+      "models": [
+        "HH1",
+        "HH2",
+        "HH3",
+        "HH4",
+        "HH5",
+        "HH6",
+        "HH7",
+        "HH8",
+        "HH9",
+        "HH10"
+      ]
+    },
+    {
+      "id": "bba377df-0098-4baf-807c-8b40e82ac258",
+      "contractorCode": "vn4101556859",
+      "taxCode": "4101556859",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC",
+      "status": "lost",
+      "lotNo": "BP2600797823",
+      "lotName": "Mua túi nhựa đựng rác thải y tế, hộp đựng vật sắc nhọn, thùng rác y tế phục vụ công tác vệ sinh của Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026",
+      "bidPrice": 73550000,
+      "finalPrice": 73550000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-10-13T10:04:40.776",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "cd951dad-79c2-4049-966e-57563aea927c",
+      "name": "Túi nhựa màu xanh sinh học tự huỷ đựng rác thải sinh hoạt 0,6m x 1,1m",
+      "model": "HH1",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Độ dày của túi tối thiểu 0,1mm, túi được làm bằng chất liệu thân thiện với môi trường, dễ bị phân hủy, có biểu tượng chất thải thông thường và có dây buộc ở miệng túi.",
+      "unit": "Kg",
+      "quantity": 350,
+      "unitPrice": 125628,
+      "amount": 43970000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "f1e98da3-b1c7-4659-a3c0-a678c4aeb07b",
+      "name": "Túi nhựa màu xanh sinh học tự huỷ đựng rác thải sinh hoạt 0,4m x 0,75m",
+      "model": "HH2",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Độ dày của túi tối thiểu 0,1mm, túi được làm bằng chất liệu thân thiện với môi trường, dễ bị phân hủy, có biểu tượng chất thải thông thường và có dây buộc ở miệng túi.",
+      "unit": "Kg",
+      "quantity": 100,
+      "unitPrice": 35900,
+      "amount": 3590000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "6aa2b82f-ee39-4801-bcd8-20c0733aa83a",
+      "name": "Túi nhựa màu trắng sinh học tự huỷ đựng rác thải sinh hoạt 0,4m x 0,75m",
+      "model": "HH3",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Độ dày của túi tối thiểu 0,1mm, túi được làm bằng chất liệu thân thiện với môi trường, dễ bị phân hủy, có biểu tượng chất thải tái chế và có dây buộc ở miệng túi.",
+      "unit": "Kg",
+      "quantity": 100,
+      "unitPrice": 35900,
+      "amount": 3590000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "74bb2a1e-0939-4a4f-81b6-03ea5e1a5e78",
+      "name": "Túi nhựa màu vàng sinh học tự huỷ đựng rác thải sinh hoạt 0,4m x 0,75m",
+      "model": "HH4",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Độ dày của túi tối thiểu 0,1mm, túi được làm bằng chất liệu thân thiện với môi trường, dễ bị phân hủy, có biểu tượng chất thải nguy hại và có dây buộc ở miệng túi.",
+      "unit": "Kg",
+      "quantity": 140,
+      "unitPrice": 50250,
+      "amount": 7035000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "6ec59eca-3992-46b8-98a9-56279adcc89c",
+      "name": "Túi nhựa màu xanh sinh học tự huỷ đựng rác thải sinh hoạt 0,3m x 0,6m",
+      "model": "HH5",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Độ dày của túi tối thiểu 0,1mm, túi được làm bằng chất liệu thân thiện với môi trường, dễ bị phân hủy, có biểu tượng chất thải thông thường và có dây buộc ở miệng túi.",
+      "unit": "Kg",
+      "quantity": 20,
+      "unitPrice": 7200,
+      "amount": 144000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "cce55a68-0654-44c3-83a1-794dff5624b3",
+      "name": "Túi nhựa màu vàng sinh học tự huỷ đựng rác thải sinh hoạt 0,3m x 0,6m",
+      "model": "HH6",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Độ dày của túi tối thiểu 0,1mm, túi được làm bằng chất liệu thân thiện với môi trường, dễ bị phân hủy, có biểu tượng chất thải nguy hại và có dây buộc ở miệng túi.",
+      "unit": "Kg",
+      "quantity": 20,
+      "unitPrice": 7200,
+      "amount": 144000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "bf456685-8839-4a74-a4d6-a09a1a0363f8",
+      "name": "Hộp đựng vật sắc nhọn y tế",
+      "model": "HH7",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Được làm bằng chất liệu nhựa HDPE nguyên sinh 100% có độ bền cơ học cao, chống sự ăn mòn của hóa chất, màu vàng, dung tích 5 lít.",
+      "unit": "Hộp",
+      "quantity": 50,
+      "unitPrice": 20680,
+      "amount": 1034000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "1e4aa12b-aead-4438-8766-8225aa94f065",
+      "name": "Thùng rác y tế 120 lít màu xanh",
+      "model": "HH8",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Kích thước 55 x 49 x 93 cm, dung tích 120 lít, chất liệu nhựa chính phẩm HDPE.",
+      "unit": "Thùng",
+      "quantity": 20,
+      "unitPrice": 117350,
+      "amount": 2347000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "e2dddeed-f865-43a6-ade2-1ed3eb53ad6d",
+      "name": "Thùng rác y tế 25 lít màu xanh",
+      "model": "HH9",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Kích thước 345 x 340 x 440 mm, dung tích 25 lít, chất liệu nhựa chính phẩm PP.",
+      "unit": "Thùng",
+      "quantity": 10,
+      "unitPrice": 17300,
+      "amount": 173000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    },
+    {
+      "id": "78d37f06-372d-4528-9f25-469c56eec997",
+      "name": "Thùng rác y tế 25 lít màu trắng",
+      "model": "HH10",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Không yêu cầu",
+      "origin": "Không yêu cầu",
+      "manufactureYear": "2026",
+      "specification": "Kích thước 345 x 340 x 440 mm, dung tích 25 lít, chất liệu nhựa chính phẩm PP.",
+      "unit": "Thùng",
+      "quantity": 10,
+      "unitPrice": 17300,
+      "amount": 173000,
+      "contractorCode": "vn0106685434",
+      "winnerNames": [
+        "Công ty TNHH thương mại, sản xuất Sao Khuê"
+      ],
+      "lotNo": "",
+      "decisionNo": "1389/QĐ-BVLPQN",
+      "decisionDate": "2026-10-13T10:00:40",
+      "resultPublishedDate": "2026-10-13T10:04:45"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -256,6 +534,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-12T23:03:56.784Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-13T06:53:50.708Z"
 }
