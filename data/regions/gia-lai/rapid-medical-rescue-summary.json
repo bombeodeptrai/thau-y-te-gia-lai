@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-13T11:36:38.006Z",
+  "rescuedAt": "2026-10-13T16:11:56.378Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -24,7 +24,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 17,
+      "count": 19,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 672,
+  "candidateCount": 674,
   "acceptedCount": 32,
-  "rejectedCount": 640,
+  "rejectedCount": 642,
   "rejectedReasons": {
     "excluded:tu van": 256,
-    "excluded:xay dung": 155,
+    "excluded:xay dung": 157,
     "insufficient-medical-context": 133,
     "excluded:cai tao": 18,
     "excluded:sua chua": 16,
@@ -1244,8 +1244,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1188,
-  "afterCount": 1188,
+  "beforeCount": 1187,
+  "afterCount": 1187,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v16"
 }
