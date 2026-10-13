@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-12T17:54:30.565Z",
+  "auditedAt": "2026-10-13T02:01:28.505Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 47,
+      "count": 49,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 30,
+      "count": 32,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1260,
+  "candidateCount": 1264,
   "acceptedCount": 50,
-  "rejectedCount": 1210,
+  "rejectedCount": 1214,
   "rejectedReasons": {
     "excluded:tu van": 424,
-    "excluded:xay dung": 344,
-    "insufficient-medical-context": 240,
+    "excluded:xay dung": 347,
+    "insufficient-medical-context": 241,
     "excluded:sua chua": 43,
     "excluded:cai tao": 43,
     "excluded:xay lap": 35,
