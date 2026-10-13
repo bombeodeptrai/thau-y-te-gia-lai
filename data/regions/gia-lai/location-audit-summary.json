@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-13T11:47:47.421Z",
+  "auditedAt": "2026-10-13T19:17:20.189Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -14,7 +14,7 @@
     {
       "term": "Bình Định",
       "success": true,
-      "count": 35,
+      "count": 37,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 22,
+      "count": 20,
       "error": ""
     },
     {
@@ -276,11 +276,11 @@
   "rejectedCount": 1300,
   "rejectedReasons": {
     "excluded:tu van": 468,
-    "excluded:xay dung": 359,
+    "excluded:xay dung": 361,
     "insufficient-medical-context": 255,
     "excluded:sua chua": 44,
-    "excluded:cai tao": 43,
-    "excluded:xay lap": 38,
+    "excluded:cai tao": 42,
+    "excluded:xay lap": 37,
     "excluded:bao hiem": 17,
     "excluded:thuc pham": 17,
     "excluded:tham dinh": 14,
@@ -1383,8 +1383,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1188,
-  "afterCount": 1188,
+  "beforeCount": 1187,
+  "afterCount": 1187,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v16"
 }
