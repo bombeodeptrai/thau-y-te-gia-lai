@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-14T11:38:48.883Z",
+  "auditedAt": "2026-10-14T11:51:58.268Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -272,12 +272,12 @@
   ],
   "successfulTermCount": 44,
   "candidateCount": 1381,
-  "acceptedCount": 51,
-  "rejectedCount": 1330,
+  "acceptedCount": 52,
+  "rejectedCount": 1329,
   "rejectedReasons": {
     "excluded:tu van": 473,
     "excluded:xay dung": 365,
-    "insufficient-medical-context": 277,
+    "insufficient-medical-context": 276,
     "excluded:sua chua": 42,
     "excluded:cai tao": 42,
     "excluded:xay lap": 37,
@@ -304,6 +304,21 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600577852",
+      "name": "“Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026”",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 105,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "benh vien",
+        "tai san thiet bi phuc vu chuyen mon",
+        "thiet bi phuc vu chuyen mon",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600544991",
       "name": "Mua sắm vật tư y tế, hoá chất thông thường",
@@ -922,20 +937,6 @@
         "hoa chat",
         "sinh pham"
       ]
-    },
-    {
-      "notifyNo": "IB2600550501",
-      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
     }
   ],
   "rejectedDiagnostics": [
@@ -978,19 +979,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600577852",
-      "name": "“Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026”",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "mua",
-        "mua sam"
-      ]
     },
     {
       "notifyNo": "DC2600048033",
@@ -1381,12 +1369,23 @@
       "matched": [
         "tu van"
       ]
+    },
+    {
+      "notifyNo": "DC2600048509",
+      "name": "Tư vấn khảo sát, lập Thiết kế bản vẽ thi công Dự toán Nghĩa trang nhân dân Đồi Pháo (Giai đoạn 2)",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1187,
-  "afterCount": 1187,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v16"
+  "afterCount": 1188,
+  "newCount": 1,
+  "filterStrategy": "unified-medical-scope-v17"
 }
