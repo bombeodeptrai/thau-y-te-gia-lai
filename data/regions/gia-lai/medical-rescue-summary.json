@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-14T00:42:03.882Z",
+  "rescuedAt": "2026-10-14T04:53:33.558Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 241,
+      "count": 246,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 537,
+      "count": 540,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 61,
+      "count": 59,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 129,
+      "count": 126,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 66,
+      "count": 67,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 95,
+      "count": 96,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 31,
+      "count": 30,
       "error": ""
     },
     {
@@ -210,31 +210,31 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 81,
+      "count": 84,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 52,
+      "count": 54,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 37,
+      "count": 39,
       "error": ""
     },
     {
@@ -270,29 +270,29 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1425,
-  "acceptedCount": 62,
-  "rejectedCount": 1363,
+  "candidateCount": 1438,
+  "acceptedCount": 61,
+  "rejectedCount": 1377,
   "rejectedReasons": {
-    "excluded:tu van": 469,
-    "excluded:xay dung": 379,
-    "insufficient-medical-context": 293,
-    "excluded:sua chua": 47,
+    "excluded:tu van": 470,
+    "excluded:xay dung": 387,
+    "insufficient-medical-context": 299,
+    "excluded:sua chua": 46,
     "excluded:cai tao": 42,
-    "excluded:xay lap": 38,
-    "excluded:bao hiem": 17,
+    "excluded:xay lap": 39,
     "excluded:thuc pham": 17,
+    "excluded:bao hiem": 16,
     "excluded:tham dinh": 14,
     "excluded:trang phuc": 8,
     "excluded:bao ve": 6,
@@ -937,6 +937,76 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600577852",
+      "name": "“Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026”",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600577166",
+      "name": "Xây lắp: Cầu đầu làng Canh Giao",
+      "investor": "Ban quản lý dự án xã Vân Canh",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600577497",
+      "name": "Mua sắm xi măng",
+      "investor": "BAN QUẢN LÝ PHƯỜNG HỘI PHÚ",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600574954",
+      "name": "Xây lắp công trình, hệ thống PCCC và trang thiết bị",
+      "investor": "phòng kinh tế xã Ia Hrung",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600573317",
+      "name": "Thi công xây dựng toàn bộ khối lượng công trình",
+      "investor": "Ban Quản lý phường Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600575633",
+      "name": "Chi phí mua sắm xi măng PCP40 thực hiện Chương Trình bê tông hóa giao thông nông thôn năm 2026",
+      "investor": "BAN QUẢN LÝ XÃ BÌNH DƯƠNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600577068",
       "name": "Thi công xây dựng tuyến đường Hoàng Sa (đoạn Nguyễn Văn Cừ - KCN Diên Phú)",
       "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
@@ -1315,67 +1385,6 @@
       "matched": [
         "kiem dinh"
       ]
-    },
-    {
-      "notifyNo": "IB2600569819",
-      "name": "Gói số 4: Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Phòng kinh tế xã An Vinh",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600568841",
-      "name": "Mua thiết bị thay thế Bộ thiết bị tra cứu, khai thác dữ liệu quốc gia về dân cư và Bộ thu nhận hồ sơ cấp căn cước",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600566241",
-      "name": "Mua sắm lắp đặt thiết bị",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600560931",
-      "name": "GL-Cw-04: Đầu tư cơ sở hạ tầng xã Hra và Ayun năm 2026",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600559596",
-      "name": "GL-Cw-02: Đầu tư cơ sở hạ tầng xã Đak Sơ Mei năm 2026",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600565195",
-      "name": "GL-Cw-01: Đầu tư cơ sở hạ tầng xã Ia Pia và Ia Bòong năm 2026",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
