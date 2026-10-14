@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-14T12:11:17.832Z",
+  "rescuedAt": "2026-10-14T13:55:32.492Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 115,
+      "count": 116,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 263,
+      "count": 264,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -287,7 +287,7 @@
   "rejectedReasons": {
     "excluded:tu van": 247,
     "excluded:xay dung": 162,
-    "insufficient-medical-context": 152,
+    "insufficient-medical-context": 151,
     "excluded:cai tao": 19,
     "excluded:xay lap": 14,
     "excluded:sua chua": 14,
@@ -295,12 +295,12 @@
     "excluded:tham dinh": 10,
     "excluded:trang phuc": 6,
     "excluded:bao hiem": 5,
+    "excluded:bao tri": 3,
     "excluded:bao ve": 2,
     "excluded:kiem dinh": 2,
     "excluded:may tinh": 2,
     "excluded:bao ho lao dong": 2,
     "excluded:cong nghe thong tin": 2,
-    "excluded:bao tri": 2,
     "excluded:duong day": 1,
     "excluded:giam sat thi cong": 1,
     "excluded:cap dien": 1,
@@ -771,6 +771,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600573048",
+      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao tri",
+      "matched": [
+        "bao tri",
+        "bao duong"
+      ]
+    },
+    {
       "notifyNo": "IB2600574040",
       "name": "Mua sắm lắp đặt thiết bị",
       "investor": "Trường Đại học Quy Nhơn",
@@ -1206,15 +1218,6 @@
       "matched": [
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "IB2600572969",
-      "name": "Thuê Dịch vụ làm đất",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
