@@ -1,5 +1,5 @@
-// Quét bù toàn bộ phạm vi sau hồi quy IB2600572488.
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v16";
+// Quét bù toàn bộ phạm vi sau hồi quy IB2600577852.
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v17";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -94,6 +94,10 @@ const MEDICAL_CONTEXT_SUPPLY_TERMS = [
   // Vật tư giảm hại/phòng lây nhiễm thường được Cục Phòng bệnh đặt tên rất
   // ngắn, không kèm các từ "y tế" hoặc "HIV/AIDS" trong tên gói.
   "chat boi tron", "bao cao su",
+  // Một số bệnh viện đặt tên gói chung là tài sản/thiết bị phục vụ chuyên
+  // môn. Chỉ nhận cụm này khi bên mua thuộc ngành y tế, tránh kéo nhầm thiết
+  // bị chuyên môn của trường học, cơ quan hành chính hoặc doanh nghiệp.
+  "tai san thiet bi phuc vu chuyen mon", "thiet bi phuc vu chuyen mon",
 ];
 
 // Vật tư thu gom chất thải lây nhiễm/vật sắc nhọn là vật tư y tế, nhưng cần

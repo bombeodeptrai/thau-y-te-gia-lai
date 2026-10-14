@@ -353,9 +353,13 @@ function ensureConfigSheet_() {
 
 function updateLastSync_(fetchedAt, total, newCount) {
   const sheet = ensureConfigSheet_();
-  const syncedAt = toDate_(fetchedAt) || new Date();
+  const syncedAt = new Date();
+  const sourceUpdatedAt = toDate_(fetchedAt);
   sheet.getRange("B5").setValue(Utilities.formatDate(syncedAt, "Asia/Ho_Chi_Minh", "dd/MM/yyyy HH:mm:ss"));
-  sheet.getRange("B6").setValue(`Đang lưu ${total} gói; phát hiện ${newCount} gói mới trong lần này`);
+  const sourceText = sourceUpdatedAt
+    ? `; nguồn cập nhật ${Utilities.formatDate(sourceUpdatedAt, "Asia/Ho_Chi_Minh", "dd/MM/yyyy HH:mm:ss")}`
+    : "";
+  sheet.getRange("B6").setValue(`Đang lưu ${total} gói; phát hiện ${newCount} gói mới trong lần này${sourceText}`);
 }
 
 function alertsEnabled_() {
