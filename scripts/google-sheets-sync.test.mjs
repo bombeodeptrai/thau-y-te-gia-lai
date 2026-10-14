@@ -7,6 +7,10 @@ const source = await readFile(
   new URL("../google-apps-script/RegionalSheets.gs", import.meta.url),
   "utf8",
 );
+const coreSource = await readFile(
+  new URL("../google-apps-script/Code.gs", import.meta.url),
+  "utf8",
+);
 
 test("cài trigger riêng để Gia Lai tiếp tục tự đồng bộ sau lần khởi tạo", () => {
   assert.match(
@@ -72,3 +76,13 @@ for (const handler of ["setupMienTrungSheets", "syncGiaLaiSheets", "syncMienTrun
     assert.ok(events.includes("sync"));
   });
 }
+
+test("mốc lần đồng bộ dùng thời điểm ghi Sheet, không dùng lại thời điểm nguồn", () => {
+  const update = coreSource.match(
+    /function updateLastSync_\(fetchedAt, total, newCount\) \{([\s\S]*?)\n\}/,
+  );
+  assert.ok(update, "không tìm thấy hàm cập nhật mốc đồng bộ");
+  assert.match(update[1], /const syncedAt = new Date\(\)/);
+  assert.match(update[1], /const sourceUpdatedAt = toDate_\(fetchedAt\)/);
+  assert.doesNotMatch(update[1], /const syncedAt = toDate_\(fetchedAt\)/);
+});

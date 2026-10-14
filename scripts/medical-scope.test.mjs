@@ -165,6 +165,28 @@ test("nhận gói vật tư giảm hại HIV/AIDS của Cục Phòng bệnh", ()
   assert.ok(result.matched.includes("cuc phong benh"));
 });
 
+test("nhận tài sản thiết bị phục vụ chuyên môn của bệnh viện: IB2600577852", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600577852-00",
+    bidName: ["Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026"],
+    investorName: "Bệnh viện Sản - Nhi tỉnh Gia Lai",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Thiết bị y tế");
+  assert.ok(result.reason.includes("medical-context-supply"), result.reason);
+  assert.ok(result.matched.includes("thiet bi phuc vu chuyen mon"));
+});
+
+test("không nhận thiết bị phục vụ chuyên môn của đơn vị ngoài ngành y tế", () => {
+  const result = classifyMedicalTender({
+    bidName: ["Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026"],
+    investorName: "Trường Đại học Quy Nhơn",
+  });
+
+  assert.equal(result.accepted, false, result.reason);
+});
+
 test("không nhận chất bôi trơn công nghiệp của đơn vị ngoài ngành y tế", () => {
   const result = classifyMedicalTender({
     bidName: ["Cung cấp chất bôi trơn cho tua-bin và máy phát điện"],
