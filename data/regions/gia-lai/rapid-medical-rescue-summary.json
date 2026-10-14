@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-13T21:26:45.212Z",
+  "rescuedAt": "2026-10-14T01:22:19.198Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 109,
+      "count": 110,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 261,
+      "count": 264,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 37,
+      "count": 38,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 674,
+  "candidateCount": 680,
   "acceptedCount": 32,
-  "rejectedCount": 642,
+  "rejectedCount": 648,
   "rejectedReasons": {
-    "excluded:tu van": 256,
-    "excluded:xay dung": 157,
-    "insufficient-medical-context": 133,
+    "excluded:tu van": 257,
+    "excluded:xay dung": 160,
+    "insufficient-medical-context": 135,
     "excluded:cai tao": 18,
     "excluded:sua chua": 16,
     "excluded:xay lap": 12,
@@ -801,6 +801,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600575633",
+      "name": "Chi phí mua sắm xi măng PCP40 thực hiện Chương Trình bê tông hóa giao thông nông thôn năm 2026",
+      "investor": "BAN QUẢN LÝ XÃ BÌNH DƯƠNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600577068",
       "name": "Thi công xây dựng tuyến đường Hoàng Sa (đoạn Nguyễn Văn Cừ - KCN Diên Phú)",
       "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
@@ -1226,15 +1238,6 @@
     {
       "notifyNo": "IB2600559596",
       "name": "GL-Cw-02: Đầu tư cơ sở hạ tầng xã Đak Sơ Mei năm 2026",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600565195",
-      "name": "GL-Cw-01: Đầu tư cơ sở hạ tầng xã Ia Pia và Ia Bòong năm 2026",
       "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
       "accepted": false,
       "score": 0,
