@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-14T11:52:51.846Z",
+  "rescuedAt": "2026-10-14T20:13:22.003Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 247,
+      "count": 248,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 529,
+      "count": 530,
       "error": ""
     },
     {
@@ -281,9 +281,9 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1452,
+  "candidateCount": 1453,
   "acceptedCount": 60,
-  "rejectedCount": 1392,
+  "rejectedCount": 1393,
   "rejectedReasons": {
     "excluded:tu van": 474,
     "excluded:xay dung": 383,
@@ -295,9 +295,9 @@
     "excluded:bao hiem": 16,
     "excluded:tham dinh": 15,
     "excluded:trang phuc": 9,
+    "excluded:bao tri": 6,
     "excluded:bao ve": 6,
     "excluded:may tinh": 5,
-    "excluded:bao tri": 5,
     "excluded:kiem dinh": 3,
     "excluded:cong nghe thong tin": 3,
     "excluded:suat an": 3,
@@ -939,6 +939,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600573048",
+      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao tri",
+      "matched": [
+        "bao tri",
+        "bao duong"
+      ]
+    },
+    {
       "notifyNo": "IB2600574040",
       "name": "Mua sắm lắp đặt thiết bị",
       "investor": "Trường Đại học Quy Nhơn",
@@ -1374,21 +1386,12 @@
       "matched": [
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "IB2600572969",
-      "name": "Thuê Dịch vụ làm đất",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1188,
-  "afterCount": 1188,
+  "beforeCount": 1187,
+  "afterCount": 1187,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v17"
 }

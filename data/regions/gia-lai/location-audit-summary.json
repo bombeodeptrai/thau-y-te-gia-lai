@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-14T11:51:58.268Z",
+  "auditedAt": "2026-10-14T20:12:39.976Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 529,
+      "count": 530,
       "error": ""
     },
     {
@@ -271,9 +271,9 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1381,
+  "candidateCount": 1382,
   "acceptedCount": 52,
-  "rejectedCount": 1329,
+  "rejectedCount": 1330,
   "rejectedReasons": {
     "excluded:tu van": 473,
     "excluded:xay dung": 365,
@@ -285,9 +285,9 @@
     "excluded:bao hiem": 16,
     "excluded:tham dinh": 15,
     "excluded:trang phuc": 9,
+    "excluded:bao tri": 6,
     "excluded:bao ve": 6,
     "excluded:may tinh": 5,
-    "excluded:bao tri": 5,
     "excluded:kiem dinh": 3,
     "excluded:suat an": 3,
     "excluded:cong nghe thong tin": 2,
@@ -941,6 +941,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600573048",
+      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao tri",
+      "matched": [
+        "bao tri",
+        "bao duong"
+      ]
+    },
+    {
       "notifyNo": "DC2600055491",
       "name": "Tổ chức Phiên chợ giới thiệu sản phẩm vùng đồng bào dân tộc thiểu số và miền núi tại xã Mang Yang 2026",
       "investor": "TRUNG TÂM KHUYẾN CÔNG VÀ XÚC TIẾN THƯƠNG MẠI TỈNH GIA LAI",
@@ -1369,23 +1381,12 @@
       "matched": [
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "DC2600048509",
-      "name": "Tư vấn khảo sát, lập Thiết kế bản vẽ thi công Dự toán Nghĩa trang nhân dân Đồi Pháo (Giai đoạn 2)",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1187,
-  "afterCount": 1188,
-  "newCount": 1,
+  "afterCount": 1187,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v17"
 }
