@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-14T04:53:33.558Z",
+  "rescuedAt": "2026-10-14T11:39:41.304Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 246,
+      "count": 247,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 540,
+      "count": 529,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 37,
+      "count": 35,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 29,
+      "count": 31,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 49,
+      "count": 54,
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 126,
+      "count": 132,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 67,
+      "count": 66,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 96,
+      "count": 98,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 30,
+      "count": 31,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 11,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 84,
+      "count": 85,
       "error": ""
     },
     {
@@ -234,13 +234,13 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 39,
+      "count": 44,
       "error": ""
     },
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 7,
+      "count": 14,
       "error": ""
     },
     {
@@ -281,20 +281,20 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1438,
-  "acceptedCount": 61,
-  "rejectedCount": 1377,
+  "candidateCount": 1452,
+  "acceptedCount": 59,
+  "rejectedCount": 1393,
   "rejectedReasons": {
-    "excluded:tu van": 470,
-    "excluded:xay dung": 387,
-    "insufficient-medical-context": 299,
-    "excluded:sua chua": 46,
+    "excluded:tu van": 474,
+    "excluded:xay dung": 383,
+    "insufficient-medical-context": 315,
+    "excluded:sua chua": 45,
     "excluded:cai tao": 42,
-    "excluded:xay lap": 39,
+    "excluded:xay lap": 38,
     "excluded:thuc pham": 17,
     "excluded:bao hiem": 16,
-    "excluded:tham dinh": 14,
-    "excluded:trang phuc": 8,
+    "excluded:tham dinh": 15,
+    "excluded:trang phuc": 9,
     "excluded:bao ve": 6,
     "excluded:may tinh": 5,
     "excluded:bao tri": 5,
@@ -937,6 +937,143 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600574040",
+      "name": "Mua sắm lắp đặt thiết bị",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600578525",
+      "name": "Thi công xây dựng tuyến đường Nguyễn Thái Học",
+      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600562629",
+      "name": "Gói thầu MS-05: Mua sắm hóa chất vô cơ phục vụ xử lý",
+      "investor": "Viện Hóa học Môi trường quân sự",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "hoa chat",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600572496",
+      "name": "Toàn bộ khối lượng thi công xây dựng hoàn thành công trình",
+      "investor": "Ban Quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn Nam",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600572291",
+      "name": "Gói thầu số 1: Mua vật liệu xây dựng, vách nhôm kính, bàn ghế, ống nhựa PVC và các vật tư khác",
+      "investor": "LỮ ĐOÀN 132-BINH CHỦNG THÔNG TIN LIÊN LẠC",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600575110",
+      "name": "Mua sắm xe bán tải phục vụ công tác phòng chống dịch, vận chuyển vắc xin",
+      "investor": "Trung Tâm Y Tế Ayun Pa",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600578021",
+      "name": "Gói 03/SX2026/TTĐGL: Cung cấp thiết bị và gói cước dịch vụ truyền tin báo cháy Gsafe tại các cơ sở do Truyền tải điện Gia Lai quản lý",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600578079",
+      "name": "Gói XL-02: Thi công xây dựng Hồ chứa nước 02 (lót màng HDPE & hàng rào)",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600559410",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình điều chỉnh, bổ sung",
+      "investor": "ỦY BAN NHÂN DÂN PHƯỜNG HOÀI NHƠN ĐÔNG",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600576053",
+      "name": "Gói thầu số 01: Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh",
+      "investor": "Trung tâm Y tế Đức Cơ",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "chan doan"
+      ]
+    },
+    {
+      "notifyNo": "IB2600576056",
+      "name": "Trang bị 01 xe ô tô bán tải cho Cảng hàng không Pleiku",
+      "investor": "CẢNG HÀNG KHÔNG PLEIKU - CHI NHÁNH TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600573464",
+      "name": "Thuê phần mềm quản lý bệnh viện (HIS), phần mềm bệnh án điện tử (EMR) và phần mềm quản lý chẩn đoán hình ảnh (PACS) cho Trung tâm Y tế Quy Nhơn",
+      "investor": "Trung tâm Y tế Quy Nhơn",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "chan doan"
+      ]
+    },
+    {
       "notifyNo": "IB2600577852",
       "name": "“Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026”",
       "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
@@ -1204,17 +1341,6 @@
       "matched": []
     },
     {
-      "notifyNo": "IB2600572291",
-      "name": "Gói thầu số 1: Mua vật liệu xây dựng, vách nhôm kính, bàn ghế, ống nhựa PVC và các vật tư khác",
-      "investor": "LỮ ĐOÀN 132-BINH CHỦNG THÔNG TIN LIÊN LẠC",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
       "notifyNo": "IB2600572994",
       "name": "Tư vấn lập Quy hoạch chung đô thị Quy Nhơn",
       "investor": "Sở Xây dựng Gia Lai",
@@ -1258,132 +1384,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572969",
-      "name": "Thuê Dịch vụ làm đất",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600572598",
-      "name": "Mua sắm Vôi bột",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572552",
-      "name": "Mua phân lân bón lót",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572489",
-      "name": "Mua sắm phân hữu cơ vi sinh",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vi sinh",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572198",
-      "name": "Mua Cây cà phê giống TRS1",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600567332",
-      "name": "Mua sắm lắp đặt thiết bị",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600571291",
-      "name": "Mua sắm màn hình hiển thị và thiết bị phụ kiện cho phòng học lý thuyết",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600571255",
-      "name": "Mua sắm máy vi tính",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600558447",
-      "name": "Toàn bộ khối lượng xây dựng công trình: Xây dựng đường BTXM từ QL19C đến Trường THCS (cơ sở 2), thôn 3",
-      "investor": "UBND xã Vân Canh",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600566342",
-      "name": "Tư vấn xác định Đơn giá nhân công xây dựng, Giá ca máy và thiết bị thi công xây dựng trên địa bàn tỉnh Gia Lai năm 2026",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600569142",
-      "name": "Kiểm định chất lượng chương trình đào tạo trình độ đại học của 07 ngành: Sư phạm Toán học, Sư phạm Hóa học, Sư phạm Lịch sử - Địa lý, Sư phạm Khoa học tự nhiên, Giáo dục mầm non, Giáo dục tiểu học, Giáo dục thể chất theo tiêu chuẩn của Bộ Giáo dục và Đào tạo",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:kiem dinh",
-      "matched": [
-        "kiem dinh"
       ]
     }
   ],
