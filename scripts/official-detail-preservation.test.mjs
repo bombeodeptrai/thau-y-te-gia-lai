@@ -1,11 +1,36 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { mkdtemp, mkdir, copyFile, writeFile, readFile, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { resolve } from "node:path";
+import { execFileSync } from "node:child_process";
 import {
   detailFilesForManifest,
   isOfficialDetailFileName,
   mergeOfficialDetail,
   preserveTenderBidderCount,
 } from "./official-detail-preservation.mjs";
+
+test("ghép audit đếm hồ sơ hiện có thay cho bộ đếm artifact cũ: IB2600573048", async t => {
+  const root = await mkdtemp(resolve(tmpdir(), "merge-detail-count-"));
+  t.after(() => rm(root, {recursive:true,force:true}));
+  await mkdir(resolve(root,"scripts"),{recursive:true});
+  const region = resolve(root,"data/regions/gia-lai");
+  await mkdir(resolve(region,"details"),{recursive:true});
+  for (const file of ["merge-regions.mjs","region-membership.mjs","official-detail-preservation.mjs"]) {
+    await copyFile(new URL(file,import.meta.url),resolve(root,"scripts",file));
+  }
+  await writeFile(resolve(root,"data/regions.json"),JSON.stringify({regions:[{slug:"gia-lai",name:"Gia Lai",provinceCodes:["52","64"]}]}));
+  await writeFile(resolve(region,"tenders.json"),JSON.stringify({tenders:[{notifyNo:"IB2600573048",regionSlug:"gia-lai"}],detailTenderCount:0,collection:{days:1095}}));
+  await writeFile(resolve(region,"details/IB2600573048.json"),"{}");
+  await writeFile(resolve(region,"details/IB2300271301.json"),"{}");
+  execFileSync(process.execPath,[resolve(root,"scripts/merge-regions.mjs")],{stdio:"pipe"});
+  const manifest=JSON.parse(await readFile(resolve(region,"tenders.json"),"utf8"));
+  const coverage=JSON.parse(await readFile(resolve(root,"data/region-coverage.json"),"utf8"));
+  assert.equal(manifest.detailTenderCount,1);
+  assert.equal(coverage.regions[0].detailTenderCount,1);
+  assert.equal(manifest.tenders[0].notifyNo,"IB2600573048");
+});
 
 test("nhận cả hồ sơ IB và DC, chỉ giữ tệp thuộc manifest theo thứ tự ổn định", () => {
   assert.equal(isOfficialDetailFileName("IB2600000001.json"), true);
