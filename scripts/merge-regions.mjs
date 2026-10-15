@@ -6,7 +6,7 @@ import {
   mergeTenderRegionSlugs,
   tenderBelongsToRegion,
 } from "./region-membership.mjs";
-import { isOfficialDetailFileName } from "./official-detail-preservation.mjs";
+import { detailFilesForManifest, isOfficialDetailFileName } from "./official-detail-preservation.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = resolve(root, "data");
@@ -111,6 +111,22 @@ for (const region of config.regions || []) {
   const fetchedAt = tenderPayload.fetchedAt || equipmentPayload.fetchedAt || "";
   if (fetchedAt) fetchedTimes.push(fetchedAt);
   const coverageDays = Number(tenderPayload.collection?.days) || 0;
+  const sourceDetailsDir = useRegional
+    ? resolve(regionDir, "details")
+    : (useLegacy ? resolve(dataDir, "details") : "");
+  // Audit chỉ sở hữu danh sách gói, không sở hữu hồ sơ chi tiết. Bộ đếm
+  // trong artifact có thể cũ hơn các tệp vừa được luồng khác bổ sung.
+  if (sourceDetailsDir && await directoryExists(sourceDetailsDir)) {
+    const detailCount = detailFilesForManifest(
+      await readdir(sourceDetailsDir), tenderPayload.tenders || [],
+    ).length;
+    if (tenderPayload.detailTenderCount !== detailCount) {
+      tenderPayload.detailTenderCount = detailCount;
+      if (useRegional) {
+        await writeFile(resolve(regionDir, "tenders.json"), `${JSON.stringify(tenderPayload, null, 2)}\n`);
+      }
+    }
+  }
 
   regionCoverage.push({
     slug: region.slug,
@@ -142,9 +158,6 @@ for (const region of config.regions || []) {
     tenderMap.set(notifyNo, mergeTender(tenderMap.get(notifyNo), tagged));
   }
 
-  const sourceDetailsDir = useRegional
-    ? resolve(regionDir, "details")
-    : (useLegacy ? resolve(dataDir, "details") : "");
   if (sourceDetailsDir && await directoryExists(sourceDetailsDir)) {
     detailSources.push({ region, detailDir: sourceDetailsDir });
   }
