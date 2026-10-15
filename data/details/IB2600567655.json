@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "0d8fe36f-25ff-4c18-950f-2eb3d6d46f64",
+      "contractorCode": "vn0317222883",
+      "taxCode": "0317222883",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ PHÚC AN",
+      "status": "won",
+      "lotNo": "PP2600430505",
+      "lotName": "Lidocain + epinephrin (adrenalin)",
+      "bidPrice": 9750000,
+      "finalPrice": 9750000,
+      "winningPrice": 9750000,
+      "reason": "",
+      "submittedAt": "2026-10-15T09:03:47.197",
+      "models": [
+        "Lignospan Standard"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "f39524fd-89cb-4350-8ec7-feee2b4db200",
+      "name": "Lignospan Standard",
+      "model": "Lignospan Standard",
+      "brand": "Lignospan Standard",
+      "manufacturer": "Septodont",
+      "origin": "Pháp",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Lidocaine hydrochloride + Epinephrine (Adrenalin)/ (36mg+ 0,018mg) /1,8ml; Nhóm TCKT: Nhóm 1",
+      "unit": "Ống",
+      "quantity": 600,
+      "unitPrice": 16250,
+      "amount": 9750000,
+      "contractorCode": "vn0317222883",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN  DƯỢC PHẨM THIẾT BỊ Y TẾ PHÚC AN"
+      ],
+      "lotNo": "",
+      "decisionNo": "360/QĐ-TTPLE",
+      "decisionDate": "2026-10-15T09:02:26",
+      "resultPublishedDate": "2026-10-15T09:03:57"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -155,5 +196,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-14T23:18:21.947Z"
+  "fetchedAt": "2026-10-15T04:51:49.556Z"
 }

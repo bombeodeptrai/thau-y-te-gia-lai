@@ -1,9 +1,73 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "b6d3ecfb-f3cc-466f-a924-0d1546fa5931",
+      "contractorCode": "vn0401781689",
+      "taxCode": "0401781689",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HUDOPHA",
+      "status": "won",
+      "lotNo": "BP2600756013",
+      "lotName": "Dịch vụ sửa chữa 02 máy thở Servo",
+      "bidPrice": 278150000,
+      "finalPrice": 278150000,
+      "winningPrice": 278150000,
+      "reason": "",
+      "submittedAt": "2026-10-15T11:25:27.411",
+      "models": [
+        "Sửa chữa 01 máy thở Servo-s SN: 22246 Hãng sản xuất: Maquet Xuất xứ: Thụy Điển",
+        "Sửa chữa 01 máy thở Servo-i SN: 34536 Hãng sản xuất: Maquet Xuất xứ: Thụy Điển"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "8947825150217594",
+      "name": "Sửa chữa 01 máy thở Servo-s SN: 22246 Hãng sản xuất: Maquet Xuất xứ: Thụy Điển",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 11500000.000000004,
+      "amount": 11500000.000000002,
+      "contractorCode": "vn0401781689",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HUDOPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "3088/QĐ-BVĐKTT",
+      "decisionDate": "2026-10-09T08:27:34",
+      "resultPublishedDate": "2026-10-15T11:25:31"
+    },
+    {
+      "id": "9739348104286118",
+      "name": "Sửa chữa 01 máy thở Servo-i SN: 34536 Hãng sản xuất: Maquet Xuất xứ: Thụy Điển",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 5000000.000000002,
+      "amount": 5000000.000000001,
+      "contractorCode": "vn0401781689",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HUDOPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "3088/QĐ-BVĐKTT",
+      "decisionDate": "2026-10-09T08:27:34",
+      "resultPublishedDate": "2026-10-15T11:25:31"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -329,5 +393,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-14T23:18:24.944Z"
+  "fetchedAt": "2026-10-15T04:51:50.642Z"
 }
