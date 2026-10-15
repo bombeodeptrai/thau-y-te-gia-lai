@@ -1,5 +1,5 @@
-// Quét bù toàn bộ phạm vi sau hồi quy IB2600577852.
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v17";
+// Quét bù toàn bộ phạm vi sau hồi quy IB2600573048.
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v18";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -74,6 +74,9 @@ const MEDICAL_EQUIPMENT_OBJECT_TERMS = [
 // nhầm dịch vụ hiệu chuẩn đo lường công nghiệp.
 const MEDICAL_MEASUREMENT_SERVICE_OBJECT_TERMS = [
   "thiet bi phuong tien do",
+  // CDC/cơ sở y tế có thể gọi thiết bị xét nghiệm chung là thiết bị chuyên
+  // môn. Vẫn yêu cầu bên mua y tế và không có đối tượng điện/CNTT/xây dựng.
+  "thiet bi phuc vu cong tac chuyen mon", "may moc thiet bi chuyen mon",
 ];
 
 // Các gói bệnh viện thường chỉ ghi tên vật tư chuyên khoa hoặc "vật tư tiêu
