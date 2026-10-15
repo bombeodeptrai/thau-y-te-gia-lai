@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-14T23:15:25.114Z",
+  "rescuedAt": "2026-10-15T04:39:11.982Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 248,
+      "count": 247,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 530,
+      "count": 538,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 59,
+      "count": 56,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 25,
+      "count": 24,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 19,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 132,
+      "count": 130,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 98,
+      "count": 101,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 31,
+      "count": 32,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 13,
+      "count": 15,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 85,
+      "count": 93,
       "error": ""
     },
     {
@@ -281,22 +281,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1453,
-  "acceptedCount": 60,
-  "rejectedCount": 1393,
+  "candidateCount": 1463,
+  "acceptedCount": 59,
+  "rejectedCount": 1404,
   "rejectedReasons": {
-    "excluded:tu van": 474,
-    "excluded:xay dung": 383,
-    "insufficient-medical-context": 314,
-    "excluded:sua chua": 45,
+    "excluded:tu van": 484,
+    "excluded:xay dung": 385,
+    "insufficient-medical-context": 311,
+    "excluded:sua chua": 47,
     "excluded:cai tao": 42,
-    "excluded:xay lap": 38,
-    "excluded:thuc pham": 17,
+    "excluded:xay lap": 39,
+    "excluded:thuc pham": 18,
     "excluded:bao hiem": 16,
-    "excluded:tham dinh": 15,
+    "excluded:tham dinh": 14,
     "excluded:trang phuc": 9,
-    "excluded:bao tri": 6,
     "excluded:bao ve": 6,
+    "excluded:bao tri": 5,
     "excluded:may tinh": 5,
     "excluded:kiem dinh": 3,
     "excluded:cong nghe thong tin": 3,
@@ -939,6 +939,40 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600578903",
+      "name": "xây lắp",
+      "investor": "BAN QUẢN LÝ PHƯỜNG HỘI PHÚ",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600577384",
+      "name": "Mua két làm mát ổ đỡ máy phát, ổ hướng trên, ổ hướng dưới nhà máy thủy điện Sê San 3A năm 2027",
+      "investor": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN ĐIỆN SÊ SAN 3A",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600576966",
+      "name": "Mua vật tư thiết bị phục vụ sửa chữa, bảo dưỡng NMTĐ Sê San 3A năm 2027",
+      "investor": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN ĐIỆN SÊ SAN 3A",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua",
+        "bao duong"
+      ]
+    },
+    {
       "notifyNo": "IB2600573048",
       "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
       "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
@@ -1350,41 +1384,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572478",
-      "name": "Gói thầu 26.54.HH Cấu kiện phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572821",
-      "name": "Mua sắm Bản quyền phần mềm phục vụ hoạt động chuyên môn của Trung tâm Y tế An Nhơn",
-      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600567828",
-      "name": "Cung cấp xi măng thực hiện Chương trình bê tông hóa giao thông nông thôn và kiên cố hóa kênh mương trên địa bàn phường Bồng Sơn năm 2026",
-      "investor": "Ban Quản lý phường Bồng Sơn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
       ]
     }
   ],
