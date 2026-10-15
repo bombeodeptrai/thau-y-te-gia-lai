@@ -1562,16 +1562,7 @@
         "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
         "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
-          "reason": "Xếp hạng 2"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC",
-          "reason": "Xếp hạng 3"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "HH1",
         "HH2",
@@ -1585,7 +1576,7 @@
         "HH10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceStage": "official-public-search"
     },
     {
@@ -1689,36 +1680,7 @@
         "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
         "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
-          "reason": "Xếp hạng 2"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH KỸ THUẬT VÀ THIẾT BỊ Y TẾ HUY PHÁT",
-          "reason": "Xếp hạng 5"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
-          "reason": "Xếp hạng 2"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
-          "reason": "Xếp hạng 4"
-        },
-        {
-          "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
-          "reason": "Xếp hạng 3"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
-          "reason": "Xếp hạng 2"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B",
-          "reason": "Xếp hạng 2"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "1050044",
         "04917049190",
@@ -1994,7 +1956,7 @@
       "publicDate": "2026-09-28T14:56:41.153",
       "price": 905828000,
       "category": "Vật tư & hóa chất",
-      "status": "no_bidder",
+      "status": "closed",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": 0,
@@ -2273,17 +2235,12 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
-          "reason": "Xếp hạng thứ 2"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "SD-Q2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceStage": "official-public-search"
     },
     {
@@ -2453,7 +2410,7 @@
       "status": "awarded",
       "sourceStatus": "IS_PUBLISH",
       "statusForNotify": "CNTTT",
-      "bidderCount": 1,
+      "bidderCount": 2,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
       "winnerNames": [
         "CÔNG TY TNHH THIẾT BỊ Y TẾ VŨ GIA PHÁT ",
@@ -88308,7 +88265,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-15T11:47:08.573Z",
+  "fetchedAt": "2026-10-15T13:26:55.124Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -88344,12 +88301,17 @@
     ],
     "filterStrategy": "unified-medical-scope-v18",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
-    "lastMedicalRescueAt": "2026-10-15T11:47:08.573Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 667,
-    "lastMedicalRescueMedicalCount": 28,
+    "lastMedicalRescueAt": "2026-10-15T13:26:55.124Z",
+    "lastMedicalRescueDays": 30,
+    "lastMedicalRescueCandidateCount": 1462,
+    "lastMedicalRescueMedicalCount": 57,
     "lastMedicalRescueNewCount": 0,
     "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    "lastRemovedRejectedStoredCount": 0,
+    "lastLocationAuditAt": "2026-10-15T13:26:07.266Z",
+    "lastLocationAuditDays": 30,
+    "lastLocationAuditCandidateCount": 1389,
+    "lastLocationAuditMedicalCount": 50,
+    "lastLocationAuditNewCount": 0
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-15T11:33:43.511Z",
+  "rescuedAt": "2026-10-15T13:26:55.124Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 246,
+      "count": 245,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1463,
+  "candidateCount": 1462,
   "acceptedCount": 57,
-  "rejectedCount": 1406,
+  "rejectedCount": 1405,
   "rejectedReasons": {
     "excluded:tu van": 485,
     "excluded:xay dung": 382,
-    "insufficient-medical-context": 314,
+    "insufficient-medical-context": 313,
     "excluded:sua chua": 49,
     "excluded:cai tao": 42,
     "excluded:xay lap": 39,
@@ -1387,8 +1387,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1189,
-  "afterCount": 1189,
+  "beforeCount": 1188,
+  "afterCount": 1188,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
