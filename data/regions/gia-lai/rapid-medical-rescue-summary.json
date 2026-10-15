@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-15T05:44:36.730Z",
+  "rescuedAt": "2026-10-15T09:25:31.624Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 111,
+      "count": 113,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 268,
+      "count": 269,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 35,
+      "count": 33,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 51,
+      "count": 49,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 42,
+      "count": 40,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 60,
+      "count": 59,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 12,
+      "count": 14,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 42,
+      "count": 44,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 24,
+      "count": 26,
       "error": ""
     },
     {
@@ -281,22 +281,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 682,
+  "candidateCount": 678,
   "acceptedCount": 28,
-  "rejectedCount": 654,
+  "rejectedCount": 650,
   "rejectedReasons": {
-    "excluded:tu van": 249,
-    "excluded:xay dung": 160,
+    "excluded:tu van": 248,
+    "excluded:xay dung": 158,
     "insufficient-medical-context": 148,
-    "excluded:cai tao": 19,
-    "excluded:sua chua": 16,
+    "excluded:cai tao": 18,
+    "excluded:sua chua": 15,
     "excluded:xay lap": 13,
-    "excluded:thuc pham": 12,
+    "excluded:thuc pham": 11,
     "excluded:tham dinh": 10,
-    "excluded:trang phuc": 6,
+    "excluded:trang phuc": 7,
     "excluded:bao hiem": 5,
+    "excluded:kiem dinh": 3,
     "excluded:bao ve": 2,
-    "excluded:kiem dinh": 2,
     "excluded:may tinh": 2,
     "excluded:cong nghe thong tin": 2,
     "excluded:bao tri": 2,
@@ -636,19 +636,19 @@
       ]
     },
     {
-      "notifyNo": "IB2600562254",
-      "name": "Mua sắm dụng cụ dùng cho phẫu thuật phục vụ công tác khám bệnh, chữa bệnh của Trung tâm Y tế An Nhơn năm 2026",
-      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "notifyNo": "DC2600054417",
+      "name": "Mua sắm vật tư tiêu hao thông dụng - Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
       "accepted": true,
-      "score": 165,
-      "reason": "explicit-medical-title+medical-investor",
+      "score": 105,
+      "reason": "medical-investor+medical-context-supply",
       "matched": [
-        "phau thuat",
-        "trung tam y te",
+        "benh vien",
+        "da khoa",
+        "vat tu tieu hao",
+        "vat tu",
         "mua",
-        "mua sam",
-        "kham benh",
-        "chua benh"
+        "mua sam"
       ]
     },
     {
@@ -738,6 +738,50 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600578946",
+      "name": "Mua sắm trang thiết bị nhằm thực hiện chuẩn hoá năng lực, hoạt động của tổ chức kiểm định, hiệu chuẩn, thử nghiệm theo Đề án 996",
+      "investor": "Trung tâm Phân tích và Đo lường Chất lượng",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:kiem dinh",
+      "matched": [
+        "kiem dinh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600579518",
+      "name": "Tuyển chọn đơn vị tư vấn “Hỗ trợ triển khai mô hình Trạm y tế xã hoạt động theo nguyên lý y học gia đình”",
+      "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600578930",
+      "name": "May trang phục y tế cho viên chức và người lao động tại Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn năm 2026",
+      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:trang phuc",
+      "matched": [
+        "trang phuc"
+      ]
+    },
+    {
+      "notifyNo": "IB2600578039",
+      "name": "Cung cấp xi măng thực hiện Chương trình Bê tông hóa giao thông nông thôn và Kiên cố hóa kênh mương trên địa bàn phường năm 2026",
+      "investor": "Ban Quản lý phường An Nhơn",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
     {
       "notifyNo": "IB2600578903",
       "name": "xây lắp",
@@ -1142,54 +1186,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600572504",
-      "name": "Cung cấp xi măng thực hiện Chương trình bê tông hóa giao thông nông thôn và kiên cố hóa kênh mương trên địa bàn phường Hoài Nhơn Nam năm 2026",
-      "investor": "Ban Quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn Nam",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600530812",
-      "name": "Gói thầu MS-01",
-      "investor": "Binh đoàn 15",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600572994",
-      "name": "Tư vấn lập Quy hoạch chung đô thị Quy Nhơn",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572478",
-      "name": "Gói thầu 26.54.HH Cấu kiện phục vụ sửa chữa lớn bổ sung",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1188,
-  "afterCount": 1188,
-  "newCount": 0,
+  "afterCount": 1189,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
