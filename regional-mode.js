@@ -140,7 +140,7 @@
     const initialized = Number(coverage.initializedRegionCount) || 0;
     const configured = Number(coverage.configuredRegionCount) || regionConfig.length;
     const days = Number(coverage.completeCoverageDays) || 0;
-    const tenders = Number(coverage.totalTenderCount) || 0;
+    const tenders = state.fetchedAt ? state.tenders.length : Number(coverage.totalTenderCount) || 0;
     const models = Number(coverage.totalEquipmentCount) || 0;
     return `<b>${initialized}/${configured}</b> tỉnh thành đã khởi tạo · <b>${tenders}</b> gói · <b>${models}</b> thiết bị/model${days ? ` · tối thiểu ${days} ngày dữ liệu` : ""}`;
   }
@@ -249,13 +249,25 @@
       rerender();
     });
 
-    elements.refresh?.addEventListener("click", () => setTimeout(() => {
-      updateRegionOptions();
-      updateCoverageStrip();
-    }, 1800));
   }
 
   function patchApplication() {
+    const baseRender = render;
+    let renderedTenders;
+    render = function regionalRender(...args) {
+      if (renderedTenders !== state.tenders) {
+        renderedTenders = state.tenders;
+        // loadData renders only after the new snapshot is installed. A timer
+        // tied to the click can fire before a slow download has completed.
+        updateRegionOptions();
+        updateCoverageStrip();
+        void fetchJson(COVERAGE_URL, coverage).then((payload) => {
+          coverage = payload;
+          updateCoverageStrip();
+        });
+      }
+      return baseRender(...args);
+    };
     basePeriodTenders = periodTenders;
     baseFilteredTenders = filteredTenders;
     baseTenderMarkup = tenderMarkup;
