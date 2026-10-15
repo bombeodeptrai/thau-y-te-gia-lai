@@ -388,6 +388,15 @@ test("nhận dịch vụ hiệu chuẩn, bảo trì thiết bị đo của trung
   assert.ok(result.matched.includes("thiet bi phuong tien do"));
 });
 
+test("nhận dịch vụ thiết bị chuyên môn của CDC: IB2600573048", () => {
+  const name = "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026";
+  const result = classifyMedicalTender({ notifyNo: "IB2600573048", name, investor: "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai" });
+  assert.equal(result.accepted, true, result.reason);
+  assert.ok(result.reason.includes("medical-equipment-service"));
+  assert.equal(classifyMedicalTender({ name, investor: "Trường Đại học Quy Nhơn" }).accepted, false);
+  assert.equal(classifyMedicalTender({ name: `${name}, máy tính và máy phát điện`, investor: "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai" }).accepted, false);
+});
+
 test("không mở rộng thiết bị, phương tiện đo sang đơn vị ngoài y tế", () => {
   const result = classifyMedicalTender({
     bidName: ["Dịch vụ hiệu chuẩn, bảo trì thiết bị, phương tiện đo năm 2026"],
