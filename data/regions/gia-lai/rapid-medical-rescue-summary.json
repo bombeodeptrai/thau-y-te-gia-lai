@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-15T04:56:50.888Z",
+  "rescuedAt": "2026-10-15T05:39:30.094Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -282,8 +282,8 @@
   ],
   "successfulStrategyCount": 45,
   "candidateCount": 682,
-  "acceptedCount": 27,
-  "rejectedCount": 655,
+  "acceptedCount": 28,
+  "rejectedCount": 654,
   "rejectedReasons": {
     "excluded:tu van": 249,
     "excluded:xay dung": 160,
@@ -295,11 +295,11 @@
     "excluded:tham dinh": 10,
     "excluded:trang phuc": 6,
     "excluded:bao hiem": 5,
-    "excluded:bao tri": 3,
     "excluded:bao ve": 2,
     "excluded:kiem dinh": 2,
     "excluded:may tinh": 2,
     "excluded:cong nghe thong tin": 2,
+    "excluded:bao tri": 2,
     "excluded:duong day": 1,
     "excluded:giam sat thi cong": 1,
     "excluded:tram bien ap": 1,
@@ -308,6 +308,21 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600573048",
+      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-equipment-service+medical-investor",
+      "matched": [
+        "trung tam kiem soat benh tat",
+        "bao tri",
+        "bao duong",
+        "hieu chuan",
+        "thiet bi phuc vu cong tac chuyen mon"
+      ]
+    },
     {
       "notifyNo": "IB2600577852",
       "name": "“Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026”",
@@ -758,18 +773,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600573048",
-      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
-      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao tri",
-      "matched": [
-        "bao tri",
-        "bao duong"
-      ]
-    },
-    {
       "notifyNo": "IB2600574040",
       "name": "Mua sắm lắp đặt thiết bị",
       "investor": "Trường Đại học Quy Nhơn",
@@ -1170,12 +1173,23 @@
       "matched": [
         "tu van"
       ]
+    },
+    {
+      "notifyNo": "IB2600572478",
+      "name": "Gói thầu 26.54.HH Cấu kiện phục vụ sửa chữa lớn bổ sung",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1187,
-  "afterCount": 1187,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v17"
+  "afterCount": 1188,
+  "newCount": 1,
+  "filterStrategy": "unified-medical-scope-v18"
 }
