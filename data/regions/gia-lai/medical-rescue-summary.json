@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-15T04:39:11.982Z",
+  "rescuedAt": "2026-10-15T05:38:51.783Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 247,
+      "count": 246,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 538,
+      "count": 537,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1463,
-  "acceptedCount": 59,
-  "rejectedCount": 1404,
+  "candidateCount": 1462,
+  "acceptedCount": 60,
+  "rejectedCount": 1402,
   "rejectedReasons": {
     "excluded:tu van": 484,
-    "excluded:xay dung": 385,
+    "excluded:xay dung": 384,
     "insufficient-medical-context": 311,
     "excluded:sua chua": 47,
     "excluded:cai tao": 42,
@@ -296,8 +296,8 @@
     "excluded:tham dinh": 14,
     "excluded:trang phuc": 9,
     "excluded:bao ve": 6,
-    "excluded:bao tri": 5,
     "excluded:may tinh": 5,
+    "excluded:bao tri": 4,
     "excluded:kiem dinh": 3,
     "excluded:cong nghe thong tin": 3,
     "excluded:suat an": 3,
@@ -314,6 +314,21 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600573048",
+      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-equipment-service+medical-investor",
+      "matched": [
+        "trung tam kiem soat benh tat",
+        "bao tri",
+        "bao duong",
+        "hieu chuan",
+        "thiet bi phuc vu cong tac chuyen mon"
+      ]
+    },
     {
       "notifyNo": "IB2600577852",
       "name": "“Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026”",
@@ -920,21 +935,6 @@
         "da khoa",
         "sua chua"
       ]
-    },
-    {
-      "notifyNo": "IB2600539805",
-      "name": "Mua sắm 05 mặt hàng thuốc Generic",
-      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "thuoc",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
@@ -969,18 +969,6 @@
       "reason": "excluded:sua chua",
       "matched": [
         "sua chua",
-        "bao duong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600573048",
-      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
-      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao tri",
-      "matched": [
-        "bao tri",
         "bao duong"
       ]
     },
@@ -1385,12 +1373,23 @@
       "matched": [
         "tu van"
       ]
+    },
+    {
+      "notifyNo": "IB2600572478",
+      "name": "Gói thầu 26.54.HH Cấu kiện phục vụ sửa chữa lớn bổ sung",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1187,
-  "afterCount": 1187,
+  "beforeCount": 1188,
+  "afterCount": 1188,
   "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v17"
+  "filterStrategy": "unified-medical-scope-v18"
 }

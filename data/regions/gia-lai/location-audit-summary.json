@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-15T04:38:18.154Z",
+  "auditedAt": "2026-10-15T05:38:14.959Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 538,
+      "count": 537,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1390,
-  "acceptedCount": 51,
-  "rejectedCount": 1339,
+  "candidateCount": 1389,
+  "acceptedCount": 52,
+  "rejectedCount": 1337,
   "rejectedReasons": {
     "excluded:tu van": 483,
-    "excluded:xay dung": 367,
+    "excluded:xay dung": 366,
     "insufficient-medical-context": 273,
     "excluded:sua chua": 43,
     "excluded:cai tao": 42,
@@ -286,8 +286,8 @@
     "excluded:tham dinh": 14,
     "excluded:trang phuc": 9,
     "excluded:bao ve": 6,
-    "excluded:bao tri": 5,
     "excluded:may tinh": 5,
+    "excluded:bao tri": 4,
     "excluded:kiem dinh": 3,
     "excluded:suat an": 3,
     "excluded:cong nghe thong tin": 2,
@@ -304,6 +304,21 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600573048",
+      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-equipment-service+medical-investor",
+      "matched": [
+        "trung tam kiem soat benh tat",
+        "bao tri",
+        "bao duong",
+        "hieu chuan",
+        "thiet bi phuc vu cong tac chuyen mon"
+      ]
+    },
     {
       "notifyNo": "IB2600577852",
       "name": "“Mua sắm tài sản thiết bị phục vụ chuyên môn năm 2026”",
@@ -918,20 +933,6 @@
         "hoa chat",
         "sinh pham"
       ]
-    },
-    {
-      "notifyNo": "IB2600550501",
-      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
     }
   ],
   "rejectedDiagnostics": [
@@ -1079,18 +1080,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600573048",
-      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
-      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao tri",
-      "matched": [
-        "bao tri",
-        "bao duong"
       ]
     },
     {
@@ -1379,12 +1368,24 @@
         "xay dung",
         "tu van"
       ]
+    },
+    {
+      "notifyNo": "IB2600569294",
+      "name": "Gói thầu số 1: Cung cấp cây giống, vật tư, phân bón và trồng, chăm sóc bảo vệ rừng trồng thay thế (trồng rừng phòng hộ) 33,15 ha giai đoạn năm 2026 -2030 của Ban quản lý rừng phòng hộ Gia Lai.",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ve",
+      "matched": [
+        "bao ve",
+        "phan bon"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1187,
-  "afterCount": 1187,
-  "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v17"
+  "afterCount": 1188,
+  "newCount": 1,
+  "filterStrategy": "unified-medical-scope-v18"
 }
