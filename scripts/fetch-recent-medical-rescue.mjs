@@ -394,7 +394,15 @@ for (const [key, item] of sourceUnique) {
   }
 }
 
-const previousRows = previous.tenders || [];
+const bidderPayload = await readJson(resolve(regionDir, "bidders.json"), { bidders: [] });
+const biddersByNotice = new Map();
+for (const bidder of bidderPayload.bidders || []) {
+  const rows = biddersByNotice.get(bidder.notifyNo) || [];
+  rows.push(bidder);
+  biddersByNotice.set(bidder.notifyNo, rows);
+}
+const previousRows = (previous.tenders || []).map(tender =>
+  normalizeTenderDisclosedNames(tender, biddersByNotice.get(tender.notifyNo) || []));
 const officialPreviousRows = previousRows.filter((item) => !isManualTender(item));
 const removedManualCount = previousRows.length - officialPreviousRows.length;
 const previousKeys = new Set(officialPreviousRows
@@ -417,13 +425,6 @@ const beforeCount = previousKeys.size;
 const newCount = [...accepted.keys()].filter((key) => !previousKeys.has(key)).length;
 for (const [key, item] of accepted) merged.set(key, mergeTender(merged.get(key), item));
 // Chuẩn hóa cả phần lịch sử còn lưu, không chỉ các gói trong cửa sổ quét nhanh.
-const bidderPayload = await readJson(resolve(regionDir, "bidders.json"), { bidders: [] });
-const biddersByNotice = new Map();
-for (const bidder of bidderPayload.bidders || []) {
-  const rows = biddersByNotice.get(bidder.notifyNo) || [];
-  rows.push(bidder);
-  biddersByNotice.set(bidder.notifyNo, rows);
-}
 const tenders = [...merged.values()].map(tender =>
   normalizeTenderDisclosedNames(tender, biddersByNotice.get(tender.notifyNo) || [])).sort(
   (left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0),
