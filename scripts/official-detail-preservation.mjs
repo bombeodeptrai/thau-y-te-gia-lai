@@ -71,14 +71,39 @@ export function mergeOfficialDetail(previous = {}, current = {}) {
   };
 }
 
+export function uniqueDisclosedNames(values = []) {
+  return [...new Set(values.map(value => String(value ?? "").replace(/\s+/g, " ").trim()).filter(Boolean))];
+}
+
+export function normalizeTenderDisclosedNames(tender, bidders = []) {
+  const rawNames = new Set([...(tender.winnerNames || []), ...(tender.participantNames || [])].filter(Boolean));
+  const names = uniqueDisclosedNames([...rawNames]);
+  const normalized = { ...tender };
+  for (const field of ["winnerNames", "participantNames", "loserNames"]) {
+    if (Array.isArray(tender[field])) normalized[field] = uniqueDisclosedNames(tender[field]);
+  }
+  // Chỉ sửa bộ đếm lịch sử suy ra từ tên trùng ở gói chỉ định thầu khi
+  // hồ sơ chính thức có cùng một định danh nhà thầu. Không hạ số đã biết
+  // của gói cạnh tranh hoặc bộ đếm lớn hơn số tên đã công bố.
+  const identities = new Set(bidders.map(b => b.taxCode || b.contractorCode).filter(Boolean));
+  if (/^DC\d{10}$/.test(tender.notifyNo || "")
+      && rawNames.size > names.length && names.length === 1
+      && Number(tender.bidderCount) === rawNames.size
+      && identities.size === 1 && bidders.length > 0
+      && bidders.every(b => uniqueDisclosedNames([b.contractorName])[0] === names[0])) {
+    normalized.bidderCount = 1;
+  }
+  return normalized;
+}
+
 export function preserveTenderBidderCount(previous = {}, current = {}, merged = {}) {
   const counts = [previous?.bidderCount, current?.bidderCount]
     .map((value) => Number(value))
     .filter((value) => Number.isFinite(value) && value >= 0);
-  const disclosedNames = new Set([
+  const disclosedNames = uniqueDisclosedNames([
     ...(merged?.winnerNames || []),
     ...(merged?.participantNames || []),
-  ].filter(Boolean)).size;
+  ]).length;
   if (!counts.length && disclosedNames === 0) {
     return current?.bidderCount ?? previous?.bidderCount ?? null;
   }
