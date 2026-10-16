@@ -74,7 +74,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f0cc5062-05c9-4e5d-a1b0-59409dc88488&notifyId=f0cc5062-05c9-4e5d-a1b0-59409dc88488&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600573048&planNo=PL2600331136&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -86,9 +86,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search",
-      "sourceBidderCount": null
+      "losingModelDisclosure": ""
     },
     {
       "id": "ce63ba1c-e6ab-4f64-89ae-edb02fc08224",
@@ -5793,7 +5791,16 @@
         "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
         "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC",
+          "reason": "Xếp hạng 3"
+        }
+      ],
       "winningModels": [
         "HH1",
         "HH2",
@@ -5807,7 +5814,7 @@
         "HH10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search"
     },
     {
@@ -6150,7 +6157,36 @@
         "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
         "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH KỸ THUẬT VÀ THIẾT BỊ Y TẾ HUY PHÁT",
+          "reason": "Xếp hạng 5"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 4"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B",
+          "reason": "Xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "1050044",
         "04917049190",
@@ -8439,12 +8475,17 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+          "reason": "Xếp hạng thứ 2"
+        }
+      ],
       "winningModels": [
         "SD-Q2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search"
     },
     {
@@ -558058,7 +558099,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-16T05:48:07.316Z",
+  "fetchedAt": "2026-10-16T07:19:50.406Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5197,
   "regions": [
@@ -558182,7 +558223,7 @@
       "equipmentCount": 17865,
       "detailTenderCount": 1133,
       "coverageDays": 1095,
-      "fetchedAt": "2026-10-16T05:48:07.316Z",
+      "fetchedAt": "2026-10-16T07:19:50.406Z",
       "initialized": true,
       "source": "regional-scan"
     },
