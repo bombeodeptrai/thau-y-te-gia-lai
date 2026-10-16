@@ -469,8 +469,11 @@ function summarizeWinningEquipment_(items, fallbackModels) {
 }
 
 function toDate_(value) {
-  if (!value) return "";
-  const date = new Date(value);
+  if (value == null || value === "") return "";
+  const text = String(value).trim();
+  const local = /^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}/.test(text);
+  const zoned = /(?:Z|[+-]\d{2}:?\d{2})$/i.test(text);
+  const date = value instanceof Date ? value : new Date(local && !zoned ? text + "+07:00" : value);
   return Number.isNaN(date.getTime()) ? "" : date;
 }
 

@@ -12,6 +12,27 @@ const coreSource = await readFile(
   "utf8",
 );
 
+for (const [name, code] of [["mtDate_", source], ["toDate_", coreSource]]) {
+  test(`${name} đọc giờ nguồn Việt Nam độc lập múi giờ runtime`, () => {
+    const context = {};
+    vm.runInNewContext(code, context);
+    for (const value of ["2026-10-15T16:21:12", "2026-10-15 16:21:12", "2026-10-15T16:21:12+07:00", "2026-10-15T09:21:12Z"]) {
+      assert.equal(context[name](value).toISOString(), "2026-10-15T09:21:12.000Z");
+    }
+    for (const value of [null, undefined, "", "invalid"]) assert.equal(context[name](value), "");
+  });
+}
+
+test("tổng hợp không báo Sheet khỏe chỉ vì dữ liệu nguồn đã khởi tạo", () => {
+  let rows;
+  const context = { PropertiesService: { getScriptProperties: () => ({ getProperty: () => "2026-07-29T07:24:00Z" }) } };
+  vm.runInNewContext(source, context);
+  context.mtManagedSheet_ = () => ({});
+  context.mtWriteTable_ = (_sheet, _title, _headers, values) => { rows = values; };
+  context.mtWriteSummary_({}, [{slug: "gia-lai", name: "Gia Lai"}], {regions: [{slug: "gia-lai", initialized: true}]}, "2026-10-16T00:00:00Z");
+  assert.equal(rows[0][9], "Sheet chưa đồng bộ hoặc đã trễ");
+});
+
 test("cài trigger riêng để Gia Lai tiếp tục tự đồng bộ sau lần khởi tạo", () => {
   assert.match(
     source,

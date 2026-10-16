@@ -195,6 +195,7 @@ function mtWriteSummary_(ss, regions, coverage, fetchedAt) {
   const headers = ["Tỉnh/thành", "Mã nguồn", "Số gói", "Nhà thầu", "Thiết bị/model", "Hồ sơ chi tiết", "Số ngày dữ liệu", "Cập nhật nguồn", "Đồng bộ Sheet", "Trạng thái"];
   const rows = regions.map(function(region) {
     const item = bySlug[region.slug] || {};
+    const lastSync = properties.getProperty(MT_LAST_SYNC_PREFIX + region.slug);
     return [
       region.name,
       (region.provinceCodes || []).join(", "),
@@ -204,8 +205,9 @@ function mtWriteSummary_(ss, regions, coverage, fetchedAt) {
       Number(item.detailTenderCount) || 0,
       Number(item.coverageDays) || 0,
       mtDate_(item.fetchedAt || fetchedAt),
-      mtDate_(properties.getProperty(MT_LAST_SYNC_PREFIX + region.slug)),
-      item.initialized ? "Đã có dữ liệu" : "Đang khởi tạo"
+      mtDate_(lastSync),
+      !item.initialized ? "Đang khởi tạo" : mtRegionSyncIsStale_(lastSync, Date.now())
+        ? "Sheet chưa đồng bộ hoặc đã trễ" : "Đã đồng bộ Sheet"
     ];
   });
   mtWriteTable_(mtManagedSheet_(ss, "Tổng hợp"), "Cơ sở dữ liệu đấu thầu y tế khu vực miền Trung", headers, rows, 0);
@@ -379,7 +381,16 @@ function mtList_(values) {
 }
 
 function mtSheetName_(name) { return String(name).replace(/[\/?*\[\]:]/g, " ").slice(0, 99); }
-function mtDate_(value) { const date = new Date(value || 0); return isNaN(date.getTime()) ? "" : date; }
+function mtDate_(value) {
+  if (value == null || value === "") return "";
+  const text = String(value).trim();
+  // Ngày công bố/đóng thầu của nguồn là giờ Việt Nam không kèm múi giờ.
+  // Không phụ thuộc múi giờ mặc định của dự án Apps Script.
+  const local = /^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}/.test(text);
+  const zoned = /(?:Z|[+-]\d{2}:?\d{2})$/i.test(text);
+  const date = value instanceof Date ? value : new Date(local && !zoned ? text + "+07:00" : value);
+  return isNaN(date.getTime()) ? "" : date;
+}
 function mtNumber_(value) { const number = Number(value); return isFinite(number) && number !== 0 ? number : ""; }
 function mtStatus_(value) { return ({ open: "Đang mở", urgent: "Sắp đóng", evaluating: "Đang xét thầu", closed: "Chưa có kết quả", no_bidder: "Không có nhà thầu", awarded: "Đã có kết quả", cancelled: "Đã hủy" })[value] || value || ""; }
 function mtBidderStatus_(value) { return ({ won: "Trúng thầu", lost: "Không trúng", participating: "Tham dự" })[value] || value || ""; }
