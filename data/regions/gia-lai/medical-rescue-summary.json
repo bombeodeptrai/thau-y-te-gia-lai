@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-15T23:05:58.845Z",
+  "rescuedAt": "2026-10-16T04:32:30.722Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,19 +18,19 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 546,
+      "count": 538,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 35,
+      "count": 33,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 55,
+      "count": 56,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 6,
+      "count": 4,
       "error": ""
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 24,
+      "count": 23,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 54,
+      "count": 56,
       "error": ""
     },
     {
@@ -144,7 +144,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 132,
+      "count": 131,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 15,
+      "count": 17,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 55,
+      "count": 53,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 46,
+      "count": 49,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 17,
+      "count": 14,
       "error": ""
     },
     {
@@ -281,21 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1462,
-  "acceptedCount": 57,
-  "rejectedCount": 1405,
+  "candidateCount": 1456,
+  "acceptedCount": 56,
+  "rejectedCount": 1400,
   "rejectedReasons": {
-    "excluded:tu van": 485,
-    "excluded:xay dung": 382,
+    "excluded:tu van": 482,
+    "excluded:xay dung": 380,
     "insufficient-medical-context": 313,
-    "excluded:sua chua": 49,
+    "excluded:sua chua": 50,
     "excluded:cai tao": 42,
-    "excluded:xay lap": 39,
+    "excluded:xay lap": 37,
     "excluded:thuc pham": 18,
     "excluded:bao hiem": 15,
     "excluded:tham dinh": 14,
     "excluded:trang phuc": 10,
-    "excluded:bao ve": 6,
+    "excluded:bao ve": 7,
     "excluded:may tinh": 5,
     "excluded:kiem dinh": 4,
     "excluded:bao tri": 4,
@@ -939,6 +939,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600576611",
+      "name": "Gói thầu số 01: Thi công xây dựng",
+      "investor": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN - TẬP ĐOÀN ĐƯỜNG SẮT QUỐC GIA VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600573018",
+      "name": "Gói thầu 26.41/HH: Cung cấp VTTB sửa chữa hệ thống pin mặt trời",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
       "notifyNo": "IB2600574146",
       "name": "SCL2027-08: Cung cấp VTTB sửa chữa hệ thống NKT tổ máy H3 và NKT MBA T3 Nhà máy Thủy điện Ialy",
       "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
@@ -1365,24 +1387,6 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600575276",
-      "name": "Hệ thống màn hình Led Phòng họp truyền thống, Hội trường Nhà văn hóa và Cổng Công ty",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600573207",
-      "name": "Số 02:Tổ chức tham quan du lịch năm 2026",
-      "investor": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HOA TIÊU HÀNG HẢI MIỀN BẮC",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
