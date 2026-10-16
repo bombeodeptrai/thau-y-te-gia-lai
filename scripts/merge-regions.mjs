@@ -6,7 +6,7 @@ import {
   mergeTenderRegionSlugs,
   tenderBelongsToRegion,
 } from "./region-membership.mjs";
-import { detailFilesForManifest, isOfficialDetailFileName } from "./official-detail-preservation.mjs";
+import { detailFilesForManifest, isOfficialDetailFileName, normalizeTenderDisclosedNames, uniqueDisclosedNames } from "./official-detail-preservation.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = resolve(root, "data");
@@ -64,9 +64,9 @@ function mergeTender(previous, current) {
     regionSlugs: regionSlugs.length > 1 ? regionSlugs : undefined,
     region: preferred.region || other.region,
     provinceCodes: [...new Set([...(other.provinceCodes || []), ...(preferred.provinceCodes || [])])],
-    winnerNames: [...new Set([...(other.winnerNames || []), ...(preferred.winnerNames || [])].filter(Boolean))],
-    participantNames: [...new Set([...(other.participantNames || []), ...(preferred.participantNames || [])].filter(Boolean))],
-    loserNames: [...new Set([...(other.loserNames || []), ...(preferred.loserNames || [])].filter(Boolean))],
+    winnerNames: uniqueDisclosedNames([...(other.winnerNames || []), ...(preferred.winnerNames || [])]),
+    participantNames: uniqueDisclosedNames([...(other.participantNames || []), ...(preferred.participantNames || [])]),
+    loserNames: uniqueDisclosedNames([...(other.loserNames || []), ...(preferred.loserNames || [])]),
     winningModels: [...new Set([...(other.winningModels || []), ...(preferred.winningModels || [])].filter(Boolean))],
     losingModels: [...new Set([...(other.losingModels || []), ...(preferred.losingModels || [])].filter(Boolean))],
     winningPrice: Number(preferred.winningPrice) || Number(other.winningPrice) || 0,
@@ -107,6 +107,19 @@ for (const region of config.regions || []) {
   const equipmentPayload = useRegional
     ? await readJson(resolve(regionDir, "equipment.json"), { equipment: [] })
     : (useLegacy ? await readJson(resolve(dataDir, "equipment.json"), { equipment: [] }) : { equipment: [] });
+
+  const biddersByNotice = new Map();
+  for (const bidder of bidderPayload.bidders || []) {
+    const rows = biddersByNotice.get(bidder.notifyNo) || [];
+    rows.push(bidder);
+    biddersByNotice.set(bidder.notifyNo, rows);
+  }
+  const normalizedTenders = (tenderPayload.tenders || []).map(tender =>
+    normalizeTenderDisclosedNames(tender, region.slug === "gia-lai" ? biddersByNotice.get(tender.notifyNo) || [] : []));
+  if (JSON.stringify(normalizedTenders) !== JSON.stringify(tenderPayload.tenders || [])) {
+    tenderPayload.tenders = normalizedTenders;
+    if (useRegional) await writeFile(resolve(regionDir, "tenders.json"), `${JSON.stringify(tenderPayload, null, 2)}\n`);
+  }
 
   const fetchedAt = tenderPayload.fetchedAt || equipmentPayload.fetchedAt || "";
   if (fetchedAt) fetchedTimes.push(fetchedAt);

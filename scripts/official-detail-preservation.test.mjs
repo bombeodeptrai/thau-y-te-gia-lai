@@ -9,7 +9,22 @@ import {
   isOfficialDetailFileName,
   mergeOfficialDetail,
   preserveTenderBidderCount,
+  normalizeTenderDisclosedNames,
 } from "./official-detail-preservation.mjs";
+
+test("DC2600000882 không đếm hai tên khác khoảng trắng thành hai nhà thầu", () => {
+  const name = "CÔNG TY TNHH THIẾT BỊ Y TẾ VŨ GIA PHÁT";
+  const tender = {notifyNo:"DC2600000882", bidderCount:2, winnerNames:[name+" ",name], participantNames:[name]};
+  assert.equal(preserveTenderBidderCount({}, {bidderCount:0}, tender), 1);
+  const result = normalizeTenderDisclosedNames(tender, [{taxCode:"0110122265",contractorName:name}]);
+  assert.equal(result.bidderCount,1);
+  assert.deepEqual(result.winnerNames,[name]);
+  assert.equal(normalizeTenderDisclosedNames(tender, []).bidderCount,2);
+  assert.equal(normalizeTenderDisclosedNames({...tender,notifyNo:"IB2600567655"}, [{taxCode:"0110122265",contractorName:name}]).bidderCount,1);
+  assert.equal(normalizeTenderDisclosedNames({...tender,sourceBidderCount:2}, [{taxCode:"0110122265",contractorName:name}]).bidderCount,2);
+  assert.equal(normalizeTenderDisclosedNames({...tender,bidderCount:5}, [{taxCode:"0110122265",contractorName:name}]).bidderCount,5);
+  assert.equal(preserveTenderBidderCount({bidderCount:3},{bidderCount:0},tender),3);
+});
 
 test("ghép audit đếm hồ sơ hiện có thay cho bộ đếm artifact cũ: IB2600573048", async t => {
   const root = await mkdtemp(resolve(tmpdir(), "merge-detail-count-"));

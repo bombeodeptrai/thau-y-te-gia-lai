@@ -8,7 +8,7 @@ import {
   medicalCategory,
 } from "./medical-scope.mjs";
 import { buildOfficialSourceUrl } from "./official-source.mjs";
-import { preserveTenderBidderCount } from "./official-detail-preservation.mjs";
+import { preserveTenderBidderCount, normalizeTenderDisclosedNames, uniqueDisclosedNames } from "./official-detail-preservation.mjs";
 import { createRescueRuntime } from "./rescue-runtime.mjs";
 import { shouldReplaceRescueCollectionMetadata } from "./scan-baseline.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
@@ -44,7 +44,7 @@ function compact(value, maxLength = 1500) {
 }
 
 function unique(values) {
-  return [...new Set((values || []).filter(Boolean))];
+  return uniqueDisclosedNames(values || []);
 }
 
 function isManualTender(item) {
@@ -258,6 +258,7 @@ function normalizeItem(item, region) {
     sourceStatus: compact(item.status || "", 80),
     statusForNotify: compact(item.statusForNotify, 80),
     bidderCount: item.numBidderJoin == null ? null : Number(item.numBidderJoin),
+    sourceBidderCount: item.numBidderJoin == null ? null : Number(item.numBidderJoin),
     sourceUrl: buildOfficialSourceUrl(item),
     winnerNames,
     winningPrice,
@@ -394,7 +395,15 @@ for (const [key, item] of sourceUnique) {
   }
 }
 
-const previousRows = previous.tenders || [];
+const bidderPayload = await readJson(resolve(regionDir, "bidders.json"), { bidders: [] });
+const biddersByNotice = new Map();
+for (const bidder of bidderPayload.bidders || []) {
+  const rows = biddersByNotice.get(bidder.notifyNo) || [];
+  rows.push(bidder);
+  biddersByNotice.set(bidder.notifyNo, rows);
+}
+const previousRows = (previous.tenders || []).map(tender =>
+  normalizeTenderDisclosedNames(tender, biddersByNotice.get(tender.notifyNo) || []));
 const officialPreviousRows = previousRows.filter((item) => !isManualTender(item));
 const removedManualCount = previousRows.length - officialPreviousRows.length;
 const previousKeys = new Set(officialPreviousRows
@@ -416,7 +425,9 @@ for (const item of revalidatedPreviousRows) {
 const beforeCount = previousKeys.size;
 const newCount = [...accepted.keys()].filter((key) => !previousKeys.has(key)).length;
 for (const [key, item] of accepted) merged.set(key, mergeTender(merged.get(key), item));
-const tenders = [...merged.values()].sort(
+// Chuẩn hóa cả phần lịch sử còn lưu, không chỉ các gói trong cửa sổ quét nhanh.
+const tenders = [...merged.values()].map(tender =>
+  normalizeTenderDisclosedNames(tender, biddersByNotice.get(tender.notifyNo) || [])).sort(
   (left, right) => new Date(right.publicDate || 0) - new Date(left.publicDate || 0),
 );
 const fetchedAt = new Date().toISOString();
