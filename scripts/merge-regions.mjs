@@ -115,7 +115,7 @@ for (const region of config.regions || []) {
     biddersByNotice.set(bidder.notifyNo, rows);
   }
   const normalizedTenders = (tenderPayload.tenders || []).map(tender =>
-    normalizeTenderDisclosedNames(tender, biddersByNotice.get(tender.notifyNo) || []));
+    normalizeTenderDisclosedNames(tender, region.slug === "gia-lai" ? biddersByNotice.get(tender.notifyNo) || [] : []));
   if (JSON.stringify(normalizedTenders) !== JSON.stringify(tenderPayload.tenders || [])) {
     tenderPayload.tenders = normalizedTenders;
     if (useRegional) await writeFile(resolve(regionDir, "tenders.json"), `${JSON.stringify(tenderPayload, null, 2)}\n`);

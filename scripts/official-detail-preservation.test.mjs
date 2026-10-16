@@ -20,7 +20,8 @@ test("DC2600000882 không đếm hai tên khác khoảng trắng thành hai nhà
   assert.equal(result.bidderCount,1);
   assert.deepEqual(result.winnerNames,[name]);
   assert.equal(normalizeTenderDisclosedNames(tender, []).bidderCount,2);
-  assert.equal(normalizeTenderDisclosedNames({...tender,notifyNo:"IB2600000882"}, [{taxCode:"0110122265",contractorName:name}]).bidderCount,2);
+  assert.equal(normalizeTenderDisclosedNames({...tender,notifyNo:"IB2600567655"}, [{taxCode:"0110122265",contractorName:name}]).bidderCount,1);
+  assert.equal(normalizeTenderDisclosedNames({...tender,sourceBidderCount:2}, [{taxCode:"0110122265",contractorName:name}]).bidderCount,2);
   assert.equal(normalizeTenderDisclosedNames({...tender,bidderCount:5}, [{taxCode:"0110122265",contractorName:name}]).bidderCount,5);
   assert.equal(preserveTenderBidderCount({bidderCount:3},{bidderCount:0},tender),3);
 });

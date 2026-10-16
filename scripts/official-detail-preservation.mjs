@@ -82,12 +82,13 @@ export function normalizeTenderDisclosedNames(tender, bidders = []) {
   for (const field of ["winnerNames", "participantNames", "loserNames"]) {
     if (Array.isArray(tender[field])) normalized[field] = uniqueDisclosedNames(tender[field]);
   }
-  // Chỉ sửa bộ đếm lịch sử suy ra từ tên trùng ở gói chỉ định thầu khi
+  // Chỉ sửa bộ đếm lịch sử suy ra từ tên trùng khi
   // hồ sơ chính thức có cùng một định danh nhà thầu. Không hạ số đã biết
-  // của gói cạnh tranh hoặc bộ đếm lớn hơn số tên đã công bố.
+  // nguồn đã công bố số lớn hơn hoặc bộ đếm lớn hơn số tên đã công bố.
   const identities = new Set(bidders.map(b => b.taxCode || b.contractorCode).filter(Boolean));
-  if (/^DC\d{10}$/.test(tender.notifyNo || "")
+  if (OFFICIAL_NOTIFY_NO.test(tender.notifyNo || "")
       && rawNames.size > names.length && names.length === 1
+      && !(Number(tender.sourceBidderCount) > 1)
       && Number(tender.bidderCount) === rawNames.size
       && identities.size === 1 && bidders.length > 0
       && bidders.every(b => uniqueDisclosedNames([b.contractorName])[0] === names[0])) {

@@ -258,6 +258,7 @@ function normalizeItem(item, region) {
     sourceStatus: compact(item.status || "", 80),
     statusForNotify: compact(item.statusForNotify, 80),
     bidderCount: item.numBidderJoin == null ? null : Number(item.numBidderJoin),
+    sourceBidderCount: item.numBidderJoin == null ? null : Number(item.numBidderJoin),
     sourceUrl: buildOfficialSourceUrl(item),
     winnerNames,
     winningPrice,
