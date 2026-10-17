@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-16T07:25:03.418Z",
+  "rescuedAt": "2026-10-17T00:45:21.446Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 114,
+      "count": 115,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 258,
+      "count": 263,
       "error": ""
     },
     {
@@ -66,13 +66,13 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 7,
+      "count": 2,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 34,
+      "count": 37,
       "error": ""
     },
     {
@@ -126,19 +126,19 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 6,
+      "count": 4,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 44,
+      "count": 46,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 38,
+      "count": 40,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 58,
+      "count": 60,
       "error": ""
     },
     {
@@ -204,19 +204,19 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 12,
+      "count": 14,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 39,
+      "count": 38,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 7,
+      "count": 8,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 25,
+      "count": 22,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 29,
+      "count": 28,
       "error": ""
     },
     {
@@ -276,37 +276,51 @@
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 650,
-  "acceptedCount": 28,
-  "rejectedCount": 622,
+  "candidateCount": 656,
+  "acceptedCount": 29,
+  "rejectedCount": 627,
   "rejectedReasons": {
-    "excluded:tu van": 229,
-    "excluded:xay dung": 150,
-    "insufficient-medical-context": 150,
-    "excluded:sua chua": 17,
-    "excluded:xay lap": 14,
-    "excluded:cai tao": 14,
-    "excluded:thuc pham": 11,
+    "excluded:tu van": 236,
+    "insufficient-medical-context": 156,
+    "excluded:xay dung": 144,
+    "excluded:cai tao": 16,
+    "excluded:sua chua": 15,
+    "excluded:xay lap": 15,
+    "excluded:thuc pham": 12,
     "excluded:tham dinh": 10,
-    "excluded:trang phuc": 7,
+    "excluded:trang phuc": 5,
     "excluded:bao hiem": 4,
     "excluded:kiem dinh": 3,
-    "excluded:bao ve": 3,
-    "excluded:may tinh": 2,
+    "excluded:bao ve": 2,
     "excluded:bao tri": 2,
     "excluded:cong nghe thong tin": 1,
     "excluded:duong day": 1,
+    "excluded:may tinh": 1,
     "excluded:tram bien ap": 1,
     "excluded:quan ly du an": 1,
     "excluded:bao ho lao dong": 1,
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600580813",
+      "name": "Mua sắm một số y dụng cụ, tài sản của Bệnh viện Sản - Nhi tỉnh Gia Lai quý IV năm 2026",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 105,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "benh vien",
+        "y dung cu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600573048",
       "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
@@ -738,6 +752,44 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600580514",
+      "name": "Gói thầu MS01",
+      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600576660",
+      "name": "Thuê đo kiểm đánh giá chất lượng các dịch vụ viễn thông năm 2026",
+      "investor": "BAN KHAI THÁC MẠNG – CHI NHÁNH TỔNG CÔNG TY HẠ TẦNG MẠNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600580653",
+      "name": "Mua bầu cây giống cao su (gói số 2)",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600578370",
+      "name": "Gói 42/SX2026/PTC3 “Trang bị phần mềm có bản quyền năm 2026”",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600576611",
       "name": "Gói thầu số 01: Thi công xây dựng",
       "investor": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN - TẬP ĐOÀN ĐƯỜNG SẮT QUỐC GIA VIỆT NAM",
@@ -1142,56 +1194,12 @@
         "bao ve",
         "phan bon"
       ]
-    },
-    {
-      "notifyNo": "IB2600576298",
-      "name": "Mua hàng BDĐH tháng 10+11+12 năm 2026",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600574956",
-      "name": "Thuê dịch vụ đánh giá, công nhận hệ thống phòng thử nghiệm theo tiêu chuẩn ISO/IEC 17025:2017 lĩnh vực hóa học, sinh học Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
-      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam kiem soat benh tat"
-      ]
-    },
-    {
-      "notifyNo": "IB2600568348",
-      "name": "SCL2027-07: Cung cấp VTTB và dịch vụ phục vụ SCL thiết bị chính năm 2027",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600571687",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban Quản lý phường An Nhơn Bắc",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1188,
-  "afterCount": 1188,
-  "newCount": 0,
+  "afterCount": 1189,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
