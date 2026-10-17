@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-17T07:07:57.974Z",
+  "rescuedAt": "2026-10-17T11:37:28.378Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 114,
+      "count": 113,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 270,
+      "count": 281,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 1,
+      "count": 9,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 40,
+      "count": 43,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 60,
+      "count": 63,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 41,
+      "count": 43,
       "error": ""
     },
     {
@@ -281,18 +281,18 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 659,
+  "candidateCount": 676,
   "acceptedCount": 29,
-  "rejectedCount": 630,
+  "rejectedCount": 647,
   "rejectedReasons": {
-    "excluded:tu van": 244,
+    "excluded:tu van": 260,
     "insufficient-medical-context": 155,
     "excluded:xay dung": 144,
     "excluded:sua chua": 15,
     "excluded:xay lap": 15,
     "excluded:cai tao": 14,
     "excluded:thuc pham": 12,
-    "excluded:tham dinh": 8,
+    "excluded:tham dinh": 9,
     "excluded:trang phuc": 5,
     "excluded:bao hiem": 4,
     "excluded:kiem dinh": 3,
@@ -752,6 +752,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600580795",
+      "name": "Tư vấn lập Quy hoạch chung đô thị Pleiku",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600561023",
       "name": "Toàn bộ khối lượng thi công xây dựng và lắp đặt thiết bị công trình",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -1184,15 +1195,6 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600572523",
-      "name": "Trang bị bản quyền phần mềm Ran Sharing cho các trạm vô tuyến",
-      "investor": "Tổng công ty Hạ tầng mạng",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
