@@ -13,7 +13,7 @@ import { createRescueRuntime } from "./rescue-runtime.mjs";
 import { shouldReplaceRescueCollectionMetadata } from "./scan-baseline.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
 
-const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
+const SEARCH_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-home/services/smart/search";
 const RESCUE_DAYS = Math.max(7, Number(process.env.RESCUE_DAYS) || 21);
 // API tìm kiếm công khai chỉ ổn định với 10 bản ghi/trang. Giá trị 50/100 gây HTTP 400.
 const PAGE_SIZE = Math.max(1, Math.min(10, Number(process.env.PAGE_SIZE) || 10));
@@ -87,8 +87,8 @@ async function postJson(body, timeoutMs = rescueRuntime.nextRequestTimeoutMs()) 
           Accept: "application/json",
           "Accept-Language": "vi-VN,vi;q=0.9",
           "Content-Type": "application/json",
-          Origin: "https://muasamcong.mpi.gov.vn",
-          Referer: "https://muasamcong.mpi.gov.vn/",
+          Origin: "https://muasamcong.mof.gov.vn",
+          Referer: "https://muasamcong.mof.gov.vn/",
           "User-Agent": `thau-y-te-medical-rescue-${slug}/4.0`,
         },
         body: JSON.stringify(body),

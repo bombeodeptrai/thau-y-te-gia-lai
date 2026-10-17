@@ -80,6 +80,12 @@ jobs:
           FORCE_FULL_REFRESH: "0"
         run: node scripts/run-region-scan.mjs "${{ matrix.region }}"
 
+      - name: Không báo thành công khi quét chi tiết nguồn thật lỗi
+        if: steps.eligibility.outputs.eligible == 'true' && steps.detail_scan.outcome != 'success'
+        run: |
+          echo "::error::Quét chi tiết nguồn thật thất bại; không ghi nhận đồng bộ mới từ dữ liệu cũ."
+          exit 1
+
       - name: Xác nhận dữ liệu chi tiết dùng định danh chính thức
         if: steps.official_detail_refresh.outcome == 'success' || steps.detail_scan.outcome == 'success'
         run: |

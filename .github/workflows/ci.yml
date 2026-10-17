@@ -30,6 +30,7 @@ jobs:
           node --test scripts/official-detail-preservation.test.mjs
           node --test scripts/medical-scope.test.mjs
           node --test scripts/official-source.test.mjs
+          node --test scripts/official-domain.test.mjs
           node --test scripts/regional-data.test.mjs
           node --test scripts/region-membership.test.mjs
           node --test scripts/scan-baseline.test.mjs

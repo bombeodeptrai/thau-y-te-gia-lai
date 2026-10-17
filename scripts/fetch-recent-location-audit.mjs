@@ -12,7 +12,7 @@ import { preserveTenderBidderCount } from "./official-detail-preservation.mjs";
 import { createRescueRuntime } from "./rescue-runtime.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
 
-const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
+const SEARCH_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-home/services/smart/search";
 const AUDIT_DAYS = Math.max(7, Number(process.env.AUDIT_DAYS) || 30);
 const PAGE_SIZE = Math.max(1, Math.min(10, Number(process.env.PAGE_SIZE) || 10));
 const auditRuntime = createRescueRuntime(process.env);
@@ -81,8 +81,8 @@ async function postJson(body, timeoutMs = auditRuntime.nextRequestTimeoutMs()) {
           Accept: "application/json",
           "Accept-Language": "vi-VN,vi;q=0.9",
           "Content-Type": "application/json",
-          Origin: "https://muasamcong.mpi.gov.vn",
-          Referer: "https://muasamcong.mpi.gov.vn/",
+          Origin: "https://muasamcong.mof.gov.vn",
+          Referer: "https://muasamcong.mof.gov.vn/",
           "User-Agent": `thau-y-te-location-audit-${slug}/4.0`,
         },
         body: JSON.stringify(body),

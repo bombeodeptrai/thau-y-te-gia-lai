@@ -7,11 +7,11 @@ const MT_CURSOR_KEY = "MT_REGION_CURSOR_V2";
 const MT_LAST_SYNC_PREFIX = "MT_LAST_SYNC_";
 const MT_DEFAULT_REGION_MAX_AGE_MS = 90 * 60 * 1000;
 const MT_BATCH_ROWS = 1500;
-const MT_OFFICIAL_SEARCH_URL = "https://muasamcong.mpi.gov.vn/web/guest/home";
+const MT_OFFICIAL_SEARCH_URL = "https://muasamcong.mof.gov.vn/web/guest/home";
 
 function mtOfficialTenderUrl_(value) {
-  const url = String(value || "");
-  if (url.indexOf("https://muasamcong.mpi.gov.vn/") !== 0) return url;
+  const url = String(value || "").replace(/^https:\/\/muasamcong\.mpi\.gov\.vn\//, "https://muasamcong.mof.gov.vn/");
+  if (url.indexOf("https://muasamcong.mof.gov.vn/") !== 0) return url;
   if (url.indexOf("/web/guest/home") >= 0) return MT_OFFICIAL_SEARCH_URL;
   const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
   const idMatches = [url.match(/[?&]id=([^&]*)/i), url.match(/[?&]notifyId=([^&]*)/i)];

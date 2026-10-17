@@ -9,7 +9,7 @@ import {
 import { buildOfficialSourceUrl } from "./official-source.mjs";
 import { preserveTenderBidderCount } from "./official-detail-preservation.mjs";
 
-const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
+const SEARCH_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-home/services/smart/search";
 const PAGE_SIZE = 10;
 const MAX_ATTEMPTS = 6;
 const CONCURRENCY = 2;
@@ -74,8 +74,8 @@ async function postJson(body, timeoutMs = 30_000) {
           Accept: "application/json",
           "Accept-Language": "vi-VN,vi;q=0.9",
           "Content-Type": "application/json",
-          Origin: "https://muasamcong.mpi.gov.vn",
-          Referer: "https://muasamcong.mpi.gov.vn/",
+          Origin: "https://muasamcong.mof.gov.vn",
+          Referer: "https://muasamcong.mof.gov.vn/",
           "User-Agent": `thau-y-te-official-identity-repair-${slug}/1.0`,
         },
         body: JSON.stringify(body),

@@ -7,8 +7,8 @@ import {
   mergeOfficialDetail,
 } from "./official-detail-preservation.mjs";
 
-const PLAN_BID_DETAIL_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt/bid-po-bidp-plan-project-view/get-bidp-plan-detail-by-id?token=public";
-const ONLINE_REOFFER_HSMT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt_tbmcgtt_hsmt";
+const PLAN_BID_DETAIL_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt/bid-po-bidp-plan-project-view/get-bidp-plan-detail-by-id?token=public";
+const ONLINE_REOFFER_HSMT_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt_tbmcgtt_hsmt";
 const MAX_ATTEMPTS = 5;
 const DETAIL_LIMIT = Math.max(1, Math.min(200, Number(process.env.DETAIL_LIMIT) || 80));
 const CONCURRENCY = 3;
@@ -62,8 +62,8 @@ async function postJson(url, body, timeoutMs = 40_000) {
           Accept: "application/json",
           "Accept-Language": "vi-VN,vi;q=0.9",
           "Content-Type": "application/json",
-          Origin: "https://muasamcong.mpi.gov.vn",
-          Referer: "https://muasamcong.mpi.gov.vn/",
+          Origin: "https://muasamcong.mof.gov.vn",
+          Referer: "https://muasamcong.mof.gov.vn/",
           "User-Agent": `thau-y-te-official-detail-refresh-${slug}/1.0`,
         },
         body: JSON.stringify(body),

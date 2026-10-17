@@ -1,4 +1,4 @@
-const OFFICIAL_ORIGIN = "https://muasamcong.mpi.gov.vn";
+const OFFICIAL_ORIGIN = "https://muasamcong.mof.gov.vn";
 const OFFICIAL_PATH = "/web/guest/contractor-selection";
 const OFFICIAL_SEARCH_PATH = "/web/guest/home";
 const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -68,9 +68,10 @@ export function buildOfficialSourceUrl(item = {}) {
 export function repairOfficialSourceUrl(value) {
   try {
     const url = new URL(value);
-    if (url.protocol !== "https:" || url.hostname !== "muasamcong.mpi.gov.vn") {
+    if (url.protocol !== "https:" || !["muasamcong.mof.gov.vn", "muasamcong.mpi.gov.vn"].includes(url.hostname)) {
       return `${OFFICIAL_ORIGIN}/`;
     }
+    url.hostname = "muasamcong.mof.gov.vn";
 
     const render = cleanParam(
       url.searchParams.get("_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render"),

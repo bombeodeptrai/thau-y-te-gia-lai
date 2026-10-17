@@ -9,13 +9,13 @@ import { extractOnlineReofferTechnicalRequirements } from "./technical-requireme
 import { mapLimitedSettled } from "./resilient-source-scan.mjs";
 import { isOfficialDetailFileName } from "./official-detail-preservation.mjs";
 
-const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
-const WINNING_PRICE_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
-const BID_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/bid-open?token=public";
-const LOT_OPEN_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/lotOpenDetail?token=public";
-const CONTRACTOR_RESULT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=public";
-const PLAN_BID_DETAIL_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt/bid-po-bidp-plan-project-view/get-bidp-plan-detail-by-id?token=public";
-const ONLINE_REOFFER_HSMT_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt_tbmcgtt_hsmt";
+const SEARCH_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-home/services/smart/search";
+const WINNING_PRICE_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
+const BID_OPEN_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/bid-open?token=public";
+const LOT_OPEN_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/ldtkqmt/bid-notification-p/lotOpenDetail?token=public";
+const CONTRACTOR_RESULT_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-contractor-selection-v2/services/expose/contractor-input-result/get?token=public";
+const PLAN_BID_DETAIL_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt/bid-po-bidp-plan-project-view/get-bidp-plan-detail-by-id?token=public";
+const ONLINE_REOFFER_HSMT_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-contractor-selection-v2/services/lcnt_tbmcgtt_hsmt";
 const PROVINCE_CODE = "52";
 const DAYS = 3 * 365;
 const INCREMENTAL_DAYS = 14;
@@ -163,8 +163,8 @@ async function postJson(url, body, timeoutMs = 25_000) {
           Accept: "application/json",
           "Accept-Language": "vi-VN,vi;q=0.9",
           "Content-Type": "application/json",
-          Origin: "https://muasamcong.mpi.gov.vn",
-          Referer: "https://muasamcong.mpi.gov.vn/",
+          Origin: "https://muasamcong.mof.gov.vn",
+          Referer: "https://muasamcong.mof.gov.vn/",
           "User-Agent": "thau-y-te-gia-lai-public-data/2.0",
         },
         body: JSON.stringify(body),
