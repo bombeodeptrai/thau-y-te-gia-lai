@@ -170,7 +170,21 @@ function mtSyncRegion_(ss, region) {
   mtWriteTenderSheet_(ss, region, tenderPayload.tenders || [], fetchedAt);
   mtWriteBidderSheet_(ss, region, bidderPayload.bidders || [], fetchedAt);
   mtWriteEquipmentSheet_(ss, region, equipmentPayload.equipment || [], fetchedAt);
+  mtRepairGiaLaiLegacyView_(ss, region);
   PropertiesService.getScriptProperties().setProperty(MT_LAST_SYNC_PREFIX + region.slug, new Date().toISOString());
+}
+
+function mtRepairGiaLaiLegacyView_(ss, region) {
+  if (region.slug !== "gia-lai") return;
+  const sheet = ss.getSheetByName("Gói thầu");
+  if (!sheet) return;
+  const anchor = sheet.getRange("A3");
+  const formula = anchor.getFormula();
+  // Chỉ sửa bản xem đã liên kết DBMT, không ghi đè bảng nhập tay hay công thức khác.
+  if (!/^=FILTER\(/i.test(formula) || !formula.includes("'DBMT - Gia Lai'!A")) return;
+  // INDIRECT giữ điểm bắt đầu ở dòng 3 khi dữ liệu nguồn được chèn dòng đầu.
+  const stableFormula = '=FILTER(INDIRECT("\'DBMT - Gia Lai\'!A3:T");INDIRECT("\'DBMT - Gia Lai\'!A3:A")<>"")';
+  if (formula !== stableFormula) anchor.setFormula(stableFormula);
 }
 
 function mtParseResponse_(response, label) {
