@@ -3,6 +3,7 @@ import { dirname, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildContractorSearchRows } from "./contractor-search.mjs";
 import { loadRegionalCollection } from "./regional-data.mjs";
+import { createHash } from "node:crypto";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const output = resolve(root, "dist-pages");
@@ -79,6 +80,11 @@ for (const entry of [
       : undefined,
   });
 }
+
+// Đổi URL mã tải dữ liệu khi nội dung thay đổi, tránh chạy lại app.js cũ từ cache.
+const appVersion = createHash("sha256").update(await readFile(resolve(output, "app.js"))).digest("hex").slice(0, 16);
+const indexPath = resolve(output, "index.html");
+await writeFile(indexPath, (await readFile(indexPath, "utf8")).replace('src="./app.js"', `src="./app.js?v=${appVersion}"`));
 
 const tenderData = JSON.parse(await readFile(resolve(dataDir, "tenders.json"), "utf8"));
 const bidderData = await loadRegionalCollection(dataDir, "bidders.json", "bidders");

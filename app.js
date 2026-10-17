@@ -782,7 +782,7 @@ function render() {
   elements.pagination.innerHTML = tenders.length ? paginationMarkup(state.page, totalPages) : "";
 }
 
-async function loadData(cacheBust = false) {
+async function loadData(cacheBust = true) {
   elements.refresh.disabled = true;
   elements.dataState.dataset.state = "loading";
   elements.sourceLabel.textContent = "Đang tải dữ liệu";
