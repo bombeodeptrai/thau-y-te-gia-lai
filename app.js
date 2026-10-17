@@ -1,7 +1,7 @@
 const DATA_URL = "./data/tenders.json";
 const EQUIPMENT_SEARCH_URL = "./data/equipment-search.json";
 const CONTRACTOR_SEARCH_URL = "./data/contractor-search.json";
-const OFFICIAL_HOME_URL = "https://muasamcong.mpi.gov.vn/web/guest/home";
+const OFFICIAL_HOME_URL = "https://muasamcong.mof.gov.vn/web/guest/home";
 const SAVED_KEY = "gia-lai-medical-tender-watchlist";
 const TENDERS_PER_PAGE = 10;
 
@@ -196,9 +196,10 @@ function isUuid(value) {
 function officialLinkInfo(value) {
   try {
     const url = new URL(value);
-    if (url.protocol !== "https:" || url.hostname !== "muasamcong.mpi.gov.vn") {
+    if (url.protocol !== "https:" || !["muasamcong.mof.gov.vn", "muasamcong.mpi.gov.vn"].includes(url.hostname)) {
       return { href: OFFICIAL_HOME_URL, direct: false };
     }
+    url.hostname = "muasamcong.mof.gov.vn";
 
     const hasParam = (name) => {
       const text = String(url.searchParams.get(name) || "").trim();

@@ -49,7 +49,7 @@ test("gói thiếu UUID dùng trang tra cứu chính thức thay vì link detail
   assert.equal(hasOfficialDetailId(item), false);
   assert.equal(buildOfficialSourceUrl(item), officialSearchUrl());
 
-  const broken = "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection"
+  const broken = "https://muasamcong.mof.gov.vn/web/guest/contractor-selection"
     + "?_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2"
     + "&id=IB2600525594&notifyId=IB2600525594&notifyNo=IB2600525594";
   assert.equal(repairOfficialSourceUrl(broken), officialSearchUrl());

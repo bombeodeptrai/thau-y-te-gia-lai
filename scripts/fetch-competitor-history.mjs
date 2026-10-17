@@ -6,7 +6,7 @@ import { buildOfficialSourceUrl } from "./official-source.mjs";
 import { loadRegionalCollection } from "./regional-data.mjs";
 import { muasamcongDateRange } from "./source-time.mjs";
 
-const SEARCH_URL = "https://muasamcong.mpi.gov.vn/o/egp-portal-home/services/smart/search";
+const SEARCH_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-home/services/smart/search";
 const COVERAGE_DAYS = 3 * 365;
 const CACHE_HOURS = 20;
 const PAGE_SIZE = 50;
@@ -64,8 +64,8 @@ async function postJson(body, timeoutMs = 30_000) {
           Accept: "application/json",
           "Accept-Language": "vi-VN,vi;q=0.9",
           "Content-Type": "application/json",
-          Origin: "https://muasamcong.mpi.gov.vn",
-          Referer: "https://muasamcong.mpi.gov.vn/",
+          Origin: "https://muasamcong.mof.gov.vn",
+          Referer: "https://muasamcong.mof.gov.vn/",
           "User-Agent": "thau-y-te-gia-lai-competitor-history/1.0",
         },
         body: JSON.stringify(body),
