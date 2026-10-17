@@ -39,15 +39,27 @@ test("giữ gói ở ngày biên của phạm vi Gia Lai 1.095 ngày", () => {
 });
 
 test("số Gia Lai mặc định trên giao diện khớp dữ liệu vùng", async () => {
-  const [merged, coverage] = await Promise.all([
+  const [merged, coverage, app, html] = await Promise.all([
     readFile(resolve(root, "data/tenders.json"), "utf8").then(JSON.parse),
     readFile(resolve(root, "data/region-coverage.json"), "utf8").then(JSON.parse),
+    readFile(resolve(root, "app.js"), "utf8"),
+    readFile(resolve(root, "index.html"), "utf8"),
   ]);
+  const defaultDays = Number(app.match(/\bdays:\s*(\d+)/)?.[1]);
+  assert.equal(defaultDays, 3650, "Mặc định phải hiện toàn bộ dữ liệu đang lưu, không làm mất gói lịch sử ở ngày biên");
+  assert.match(html, /value="3650" selected/);
   const giaLai = coverage.regions.find((item) => item.slug === "gia-lai");
   const visible = (merged.tenders || []).filter((tender) =>
     tenderBelongsToRegion(tender, "gia-lai")
-      && withinSnapshotDays(tender.publicDate, 1095, merged.fetchedAt));
+      && withinSnapshotDays(tender.publicDate, defaultDays, merged.fetchedAt));
 
   assert.ok(giaLai, "Thiếu vùng Gia Lai trong báo cáo phủ dữ liệu");
   assert.equal(visible.length, giaLai.tenderCount);
+});
+
+test("gói lịch sử không biến mất khi nguồn được quét sang ngày mới", () => {
+  const fetchedAt = "2026-10-17T00:44:33.105Z";
+  const historicDate = "2023-10-17T10:02:00";
+  assert.equal(withinSnapshotDays(historicDate, 3650, fetchedAt), true);
+  assert.equal(withinSnapshotDays("2023-10-16T10:02:00", 1095, fetchedAt), false);
 });
