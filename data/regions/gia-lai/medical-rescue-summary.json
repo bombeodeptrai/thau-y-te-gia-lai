@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-17T00:44:33.105Z",
+  "rescuedAt": "2026-10-17T04:25:42.686Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 245,
+      "count": 242,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 533,
+      "count": 541,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 56,
+      "count": 54,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 26,
+      "count": 23,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 130,
+      "count": 131,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 69,
+      "count": 68,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 34,
+      "count": 38,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 96,
+      "count": 99,
       "error": ""
     },
     {
@@ -282,15 +282,15 @@
   ],
   "successfulStrategyCount": 45,
   "candidateCount": 1464,
-  "acceptedCount": 55,
-  "rejectedCount": 1409,
+  "acceptedCount": 54,
+  "rejectedCount": 1410,
   "rejectedReasons": {
-    "excluded:tu van": 492,
-    "excluded:xay dung": 386,
-    "insufficient-medical-context": 315,
+    "excluded:tu van": 507,
+    "excluded:xay dung": 380,
+    "insufficient-medical-context": 308,
     "excluded:sua chua": 47,
     "excluded:xay lap": 38,
-    "excluded:cai tao": 37,
+    "excluded:cai tao": 36,
     "excluded:thuc pham": 19,
     "excluded:bao hiem": 15,
     "excluded:tham dinh": 13,
@@ -938,6 +938,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600561023",
+      "name": "Toàn bộ khối lượng thi công xây dựng và lắp đặt thiết bị công trình",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600580514",
       "name": "Gói thầu MS01",
       "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
@@ -1368,24 +1379,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600569294",
-      "name": "Gói thầu số 1: Cung cấp cây giống, vật tư, phân bón và trồng, chăm sóc bảo vệ rừng trồng thay thế (trồng rừng phòng hộ) 33,15 ha giai đoạn năm 2026 -2030 của Ban quản lý rừng phòng hộ Gia Lai.",
-      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ve",
-      "matched": [
-        "bao ve",
-        "phan bon"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1189,
-  "afterCount": 1189,
+  "beforeCount": 1187,
+  "afterCount": 1187,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }

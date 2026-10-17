@@ -1831,9 +1831,9 @@
       "loserDetails": [],
       "winningModels": [
         "GT205-403",
-        " ECG-0001",
-        "EDT_22MLO\r\nK23P1L1",
-        "ONG_35MLN\r\nON3P7N0",
+        "ECG-0001",
+        "EDT_22MLO K23P1L1",
+        "ONG_35MLN ON3P7N0",
         "810001; 810002",
         "FRINTING PAPER",
         "HEP_22MLOTH3P2L1",
@@ -1849,7 +1849,7 @@
         "822001 822002",
         "C.70.VP30",
         "USGEL",
-        " L031-11211",
+        "L031-11211",
         "1322-24MM",
         "BTK1: MPV",
         "BTK10: MPV",
@@ -1871,16 +1871,11 @@
         "ODD: MPV",
         "GT054-200",
         "GKTCB",
-        " GPT",
+        "GPT",
         "Disposable Surgical Blade",
         "DRYSTAR DT 5.000I B",
         "BG1722",
-        "AF202005",
-        "ECG-0001",
-        "EDT_22MLO K23P1L1",
-        "ONG_35MLN ON3P7N0",
-        "L031-11211",
-        "GPT"
+        "AF202005"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -2031,14 +2026,11 @@
       "stepCode": "notify-contractor-step-1-tbmt",
       "notifyNo": "IB2600558508",
       "name": "Lựa chọn đơn vị cung cấp dịch vụ tổ chức các khóa đào tạo Bồi dưỡng về Y học gia đình cho bác sỹ tại các TYT xã/phường trọng điểm thuộc 02 tỉnh Gia Lai và Lâm Đồng;",
-      "regionSlug": "lam-dong",
-      "region": "Lâm Đồng",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
       "provinceCodes": [
         "52",
-        "64",
-        "60",
-        "67",
-        "68"
+        "64"
       ],
       "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
       "location": "Tỉnh Gia Lai, Tỉnh Lâm Đồng",
@@ -2049,8 +2041,8 @@
       "status": "closed",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
-      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=bb190e74-82cf-4aed-be58-c5ce131f9594&notifyId=bb190e74-82cf-4aed-be58-c5ce131f9594&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=KHAC&bidMode=1_MTHS&notifyNo=IB2600558508&planNo=PL2600314078&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
+      "bidderCount": 0,
+      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=bb190e74-82cf-4aed-be58-c5ce131f9594&notifyId=bb190e74-82cf-4aed-be58-c5ce131f9594&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=KHAC&bidMode=1_MTHS&notifyNo=IB2600558508&planNo=PL2600314078&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
       "decisionDate": "",
@@ -2170,12 +2162,7 @@
       "region": "Gia Lai",
       "provinceCodes": [
         "52",
-        "64",
-        "38",
-        "42",
-        "46",
-        "48",
-        "49"
+        "64"
       ],
       "investor": "Cục Phòng bệnh",
       "location": "Tỉnh Phú Thọ, Tỉnh Bắc Ninh, Tỉnh Sơn La, Tỉnh Điện Biên, Thành phố Hải Phòng, Tỉnh Thanh Hóa, Thành phố Đà Nẵng, Thành phố Huế, Thành phố Hồ Chí Minh, Tỉnh Tây Ninh, Thành phố Cần Thơ, Tỉnh An Giang, Tỉnh Cà Mau, Tỉnh Hưng Yên, Tỉnh Hà Tĩnh, Tỉnh Gia Lai, Tỉnh Vĩnh Long",
@@ -88129,7 +88116,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-17T00:52:47.960Z",
+  "fetchedAt": "2026-10-17T04:25:42.686Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -88165,12 +88152,17 @@
     ],
     "filterStrategy": "unified-medical-scope-v18",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
-    "lastMedicalRescueAt": "2026-10-17T00:52:47.960Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 656,
-    "lastMedicalRescueMedicalCount": 29,
+    "lastMedicalRescueAt": "2026-10-17T04:25:42.686Z",
+    "lastMedicalRescueDays": 30,
+    "lastMedicalRescueCandidateCount": 1464,
+    "lastMedicalRescueMedicalCount": 54,
     "lastMedicalRescueNewCount": 0,
     "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    "lastRemovedRejectedStoredCount": 0,
+    "lastLocationAuditAt": "2026-10-17T04:25:03.967Z",
+    "lastLocationAuditDays": 30,
+    "lastLocationAuditCandidateCount": 1393,
+    "lastLocationAuditMedicalCount": 49,
+    "lastLocationAuditNewCount": 0
   }
 }
