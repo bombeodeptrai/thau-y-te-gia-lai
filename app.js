@@ -15,7 +15,7 @@ const state = {
   fetchedAt: "",
   query: "",
   category: "all",
-  days: 1095,
+  days: 3650,
   status: "all",
   investor: "",
   contractorText: "",
