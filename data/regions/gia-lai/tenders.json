@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=d3f49c27-10d7-4f3c-b120-ef88ffe26310&notifyId=d3f49c27-10d7-4f3c-b120-ef88ffe26310&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600580813&planNo=PL2600354619&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,7 +38,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "DC2600054417",
@@ -88157,7 +88159,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-17T07:03:12.993Z",
+  "fetchedAt": "2026-10-17T07:07:57.974Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -88190,6 +88192,15 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "filterStrategy": "unified-medical-scope-v18",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
+    "lastMedicalRescueAt": "2026-10-17T07:07:57.974Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 659,
+    "lastMedicalRescueMedicalCount": 29,
+    "lastMedicalRescueNewCount": 0,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
