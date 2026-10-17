@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-17T04:25:42.686Z",
+  "rescuedAt": "2026-10-17T12:12:17.553Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 242,
+      "count": 233,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 541,
+      "count": 542,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 54,
+      "count": 55,
       "error": ""
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 23,
+      "count": 21,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 15,
+      "count": 23,
       "error": ""
     },
     {
@@ -120,7 +120,7 @@
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 131,
+      "count": 123,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 68,
+      "count": 69,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 103,
+      "count": 105,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 99,
+      "count": 100,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 48,
+      "count": 45,
       "error": ""
     },
     {
@@ -281,21 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1464,
+  "candidateCount": 1453,
   "acceptedCount": 54,
-  "rejectedCount": 1410,
+  "rejectedCount": 1399,
   "rejectedReasons": {
-    "excluded:tu van": 507,
-    "excluded:xay dung": 380,
-    "insufficient-medical-context": 308,
-    "excluded:sua chua": 47,
+    "excluded:tu van": 515,
+    "excluded:xay dung": 373,
+    "insufficient-medical-context": 299,
+    "excluded:sua chua": 44,
     "excluded:xay lap": 38,
     "excluded:cai tao": 36,
     "excluded:thuc pham": 19,
     "excluded:bao hiem": 15,
-    "excluded:tham dinh": 13,
+    "excluded:tham dinh": 14,
     "excluded:trang phuc": 9,
-    "excluded:bao ve": 7,
+    "excluded:bao ve": 6,
     "excluded:may tinh": 5,
     "excluded:kiem dinh": 4,
     "excluded:bao tri": 4,
@@ -938,6 +938,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600580795",
+      "name": "Tư vấn lập Quy hoạch chung đô thị Pleiku",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600561023",
       "name": "Toàn bộ khối lượng thi công xây dựng và lắp đặt thiết bị công trình",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -1370,15 +1381,6 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600572523",
-      "name": "Trang bị bản quyền phần mềm Ran Sharing cho các trạm vô tuyến",
-      "investor": "Tổng công ty Hạ tầng mạng",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,

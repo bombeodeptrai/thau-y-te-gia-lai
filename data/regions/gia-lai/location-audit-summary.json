@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-17T04:25:03.967Z",
+  "auditedAt": "2026-10-17T12:11:36.397Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 541,
+      "count": 542,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 54,
+      "count": 55,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 23,
+      "count": 21,
       "error": ""
     },
     {
@@ -74,7 +74,7 @@
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 15,
+      "count": 23,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 131,
+      "count": 123,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 68,
+      "count": 69,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 103,
+      "count": 105,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 99,
+      "count": 100,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 48,
+      "count": 45,
       "error": ""
     },
     {
@@ -271,21 +271,21 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1393,
+  "candidateCount": 1383,
   "acceptedCount": 49,
-  "rejectedCount": 1344,
+  "rejectedCount": 1334,
   "rejectedReasons": {
-    "excluded:tu van": 505,
-    "excluded:xay dung": 363,
-    "insufficient-medical-context": 271,
-    "excluded:sua chua": 42,
+    "excluded:tu van": 513,
+    "excluded:xay dung": 356,
+    "insufficient-medical-context": 262,
+    "excluded:sua chua": 40,
     "excluded:cai tao": 36,
     "excluded:xay lap": 36,
     "excluded:thuc pham": 19,
     "excluded:bao hiem": 15,
-    "excluded:tham dinh": 13,
+    "excluded:tham dinh": 14,
     "excluded:trang phuc": 9,
-    "excluded:bao ve": 7,
+    "excluded:bao ve": 6,
     "excluded:may tinh": 5,
     "excluded:bao tri": 4,
     "excluded:kiem dinh": 3,
@@ -933,6 +933,160 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600058727",
+      "name": "Thẩm tra Báo cáo kinh tế - kỹ thuật (thiết kế và dự toán)",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "so y te"
+      ]
+    },
+    {
+      "notifyNo": "DC2600056316",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư Nhơn Thọ, phường An Nhơn Nam",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600056350",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư đường Trần Nguyên Hãn, phường An Nhơn Nam",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600580795",
+      "name": "Tư vấn lập Quy hoạch chung đô thị Pleiku",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600054877",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư Cảnh An, xã Tuy Phước Tây",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600055741",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư Bình Thuận 2, xã Bình Hiệp",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600056585",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu cải táng phường Bồng Sơn",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600056567",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu cải táng phường Hoài Nhơn Nam",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600056489",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu cải táng phường Hoài Nhơn Bắc",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600056279",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư phía Đông đường Tân Lập 4, xã An Nhơn Tây",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600055571",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư thôn Trung Hội, xã Phù Mỹ Tây",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600055638",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư thôn Thạnh An, xã Phù Mỹ Nam",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600055480",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư Khu phố Hội Phú, phường Hoài Nhơn Tây",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600055515",
+      "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư Khu phố Thiết Đính Nam, phường Bồng Sơn",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "DC2600055814",
       "name": "Tư vấn thẩm tra Thiết kế bản vẽ thi công - dự toán Khu tái định cư Tây An, xã Bình Hiệp",
       "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
@@ -1220,151 +1374,6 @@
         "sua chua",
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "DC2600047520",
-      "name": "Gói thầu TV02",
-      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600047526",
-      "name": "Gói thầu TV03",
-      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600060601",
-      "name": "Gói thầu số 01",
-      "investor": "BAN QUẢN LÝ PHƯỜNG AN KHÊ, TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600052492",
-      "name": "Tư vấn Lập Báo cáo kinh tế, kỹ thuật. Dự án: Trường THPT chuyên Hùng Vương, hạng mục: Ký túc xá và các hạng mục phụ.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600059938",
-      "name": "Gói thầu số 1: Cung cấp dịch vụ tổ chức 02 lớp tập huấn tại cụm Pleiku (Hội trường, maket, giải khát giữa giờ, phòng ngủ)",
-      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600059931",
-      "name": "Gói thầu số 2: Cung cấp dịch vụ tổ chức 02 lớp tập huấn tại cụm Quy Nhơn (Hội trường, maket, giải khát giữa giờ, phòng ngủ)",
-      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600573018",
-      "name": "Gói thầu 26.41/HH: Cung cấp VTTB sửa chữa hệ thống pin mặt trời",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600059068",
-      "name": "Gói thầu: Cung cấp dịch vụ tài liệu tiếng Nhật phục vụ Đoàn công tác của tỉnh Gia Lai đi làm việc tại Nhật Bản",
-      "investor": "Trung tâm Xúc tiến Đầu tư tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600573015",
-      "name": "Gói thầu số 02: Xử lý, phân loại sơ bộ tài liệu lưu trữ cấp huyện trước đây theo Kế hoạch số 256/KH-UBND ngày 24/6/2026 của UBND tỉnh",
-      "investor": "Trung tâm Lưu trữ Lịch sử tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600047578",
-      "name": "Tư vấn khảo sát, lập Thiết kế bản vẽ thi công Dự toán Khu tái định cư thôn Đại Thuận, xã Phù Mỹ nam",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600058980",
-      "name": "Tư vấn thẩm định HSMT và KQLCNT",
-      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600058914",
-      "name": "Tư vấn lập HSMT và đánh giá HSDT",
-      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600047650",
-      "name": "Tư vấn khảo sát, lập Thiết kế bản vẽ thi công Dự toán Khu tái định cư thôn Thạnh An, xã Phù Mỹ Nam",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600058678",
-      "name": "PTV-01",
-      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH ĐÔNG GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
