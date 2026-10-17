@@ -12,6 +12,27 @@ const coreSource = await readFile(
   "utf8",
 );
 
+test("bản xem Gói thầu không mất 10 gói khi tham chiếu bị dịch xuống A13", () => {
+  let formula = '=FILTER(\'DBMT - Gia Lai\'!A13:T;\'DBMT - Gia Lai\'!A13:A<>"")';
+  const context = {};
+  vm.runInNewContext(source, context);
+  const anchor = { getFormula: () => formula, setFormula: value => { formula = value; } };
+  context.mtRepairGiaLaiLegacyView_({ getSheetByName: () => ({ getRange: () => anchor }) }, { slug: "gia-lai" });
+  assert.equal(formula, '=FILTER(INDIRECT("\'DBMT - Gia Lai\'!A3:T");INDIRECT("\'DBMT - Gia Lai\'!A3:A")<>"")');
+  assert.match(source, /mtRepairGiaLaiLegacyView_\(ss, region\);/);
+});
+
+test("sửa bản xem không ghi đè dữ liệu nhập tay hay công thức không liên quan", () => {
+  const context = {};
+  vm.runInNewContext(source, context);
+  for (const formula of ["", "=SUM(A1:A2)", '=FILTER(Other!A3:T;Other!A3:A<>"")']) {
+    const anchor = { getFormula: () => formula, setFormula: () => assert.fail("ghi đè ngoài phạm vi") };
+    context.mtRepairGiaLaiLegacyView_({ getSheetByName: () => ({ getRange: () => anchor }) }, { slug: "gia-lai" });
+  }
+  context.mtRepairGiaLaiLegacyView_({ getSheetByName: () => assert.fail("sửa tỉnh khác") }, { slug: "hue" });
+  context.mtRepairGiaLaiLegacyView_({ getSheetByName: () => null }, { slug: "gia-lai" });
+});
+
 for (const [name, code] of [["mtDate_", source], ["toDate_", coreSource]]) {
   test(`${name} đọc giờ nguồn Việt Nam độc lập múi giờ runtime`, () => {
     const context = {};
