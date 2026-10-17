@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=d3f49c27-10d7-4f3c-b120-ef88ffe26310&notifyId=d3f49c27-10d7-4f3c-b120-ef88ffe26310&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600580813&planNo=PL2600354619&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,9 +38,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "DC2600054417",
@@ -5841,7 +5839,16 @@
         "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
         "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC",
+          "reason": "Xếp hạng 3"
+        }
+      ],
       "winningModels": [
         "HH1",
         "HH2",
@@ -5855,7 +5862,7 @@
         "HH10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -6200,7 +6207,36 @@
         "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
         "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH KỸ THUẬT VÀ THIẾT BỊ Y TẾ HUY PHÁT",
+          "reason": "Xếp hạng 5"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 4"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B",
+          "reason": "Xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "1050044",
         "04917049190",
@@ -6439,9 +6475,9 @@
       "loserDetails": [],
       "winningModels": [
         "GT205-403",
-        "ECG-0001",
-        "EDT_22MLO K23P1L1",
-        "ONG_35MLN ON3P7N0",
+        " ECG-0001",
+        "EDT_22MLO\r\nK23P1L1",
+        "ONG_35MLN\r\nON3P7N0",
         "810001; 810002",
         "FRINTING PAPER",
         "HEP_22MLOTH3P2L1",
@@ -6457,7 +6493,7 @@
         "822001 822002",
         "C.70.VP30",
         "USGEL",
-        "L031-11211",
+        " L031-11211",
         "1322-24MM",
         "BTK1: MPV",
         "BTK10: MPV",
@@ -6479,7 +6515,7 @@
         "ODD: MPV",
         "GT054-200",
         "GKTCB",
-        "GPT",
+        " GPT",
         "Disposable Surgical Blade",
         "DRYSTAR DT 5.000I B",
         "BG1722",
@@ -8500,12 +8536,17 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+          "reason": "Xếp hạng thứ 2"
+        }
+      ],
       "winningModels": [
         "SD-Q2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -557943,100 +557984,9 @@
       "winningModels": [],
       "losingModels": [],
       "losingModelDisclosure": ""
-    },
-    {
-      "id": "IB2300275638",
-      "notifyId": "IB2300275638",
-      "bidId": "b6905237-d113-4cbd-babf-43f352649914",
-      "bidOpenId": "",
-      "inputResultId": "d9c69dbf-397d-43bf-929b-582b1ba34c8a",
-      "bidForm": "CDTRG",
-      "processApply": "LDT",
-      "stepCode": "notify-contractor-step-4-kqlcnt",
-      "notifyNo": "IB2300275638",
-      "name": "Lắp đặt 02 bộ máy điều hòa nhiệt độ Khoa phẫu thuật-Gây mê hồi sức",
-      "regionSlug": "gia-lai",
-      "region": "Gia Lai",
-      "provinceCodes": [
-        "52",
-        "64"
-      ],
-      "investor": "Trung tâm y tế thành phố Quy Nhơn",
-      "location": "Gia Lai",
-      "closeDate": "2024-02-20T21:16:38.854",
-      "publicDate": "2023-10-18T11:36:51",
-      "price": 24516000,
-      "category": "Thiết bị y tế",
-      "status": "awarded",
-      "sourceStatus": "IS_PUBLISH",
-      "statusForNotify": "CNTTT",
-      "bidderCount": 1,
-      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/home",
-      "winnerNames": [
-        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ ĐIỆN LẠNH ĐỨC LONG"
-      ],
-      "winningPrice": 24516000,
-      "decisionDate": "2023-10-17T23:59:59",
-      "resultPublishedDate": "2023-10-18T11:36:51",
-      "hasResult": true,
-      "participantNames": [
-        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ ĐIỆN LẠNH ĐỨC LONG"
-      ],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [
-        "Caspet"
-      ],
-      "losingModels": [],
-      "losingModelDisclosure": ""
-    },
-    {
-      "id": "85892441-21d5-4c6b-85c7-da18e54a48bf",
-      "notifyId": "85892441-21d5-4c6b-85c7-da18e54a48bf",
-      "bidId": "a01ba38d-6c87-4982-bc1b-3e887f0e7b9b",
-      "bidOpenId": "326c950c-7d6d-4676-a1a2-1d58a5d13c9a",
-      "inputResultId": "354ba1f8-bee8-4667-96cd-99cdaf240f18",
-      "bidForm": "CHCT",
-      "processApply": "LDT",
-      "stepCode": "notify-contractor-step-4-kqlcnt",
-      "notifyNo": "IB2300275238",
-      "name": "Mua sắm vật tư y tế, sinh phẩm chẩn đoán invitro phục vụ công tác khám chữa bệnh của Trung tâm Y tế thành phố Quy Nhơn đến hết tháng 12/2023 (đấu thầu bổ sung lần 3)",
-      "regionSlug": "gia-lai",
-      "region": "Gia Lai",
-      "provinceCodes": [
-        "52",
-        "64"
-      ],
-      "investor": "Trung tâm y tế thành phố Quy Nhơn",
-      "location": "Thành phố Quy Nhơn",
-      "closeDate": "2023-10-27T09:00:00",
-      "publicDate": "2023-10-18T11:13:51.382",
-      "price": 297293140,
-      "category": "Vật tư & hóa chất",
-      "status": "awarded",
-      "sourceStatus": "IS_PUBLISH",
-      "statusForNotify": "CNTTT",
-      "bidderCount": 5,
-      "sourceUrl": "https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=85892441-21d5-4c6b-85c7-da18e54a48bf&notifyId=85892441-21d5-4c6b-85c7-da18e54a48bf&inputResultId=354ba1f8-bee8-4667-96cd-99cdaf240f18&bidOpenId=326c950c-7d6d-4676-a1a2-1d58a5d13c9a&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300275238&planNo=PL2300186821&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CHCT",
-      "winnerNames": [
-        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
-        "CÔNG TY CỔ PHẦN Y DƯỢC BẮC NAM",
-        "CÔNG TY TNHH THIẾT BỊ Y TẾ PHƯƠNG ĐÔNG",
-        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ TỔNG HỢP BẢO HÂN"
-      ],
-      "winningPrice": 265910350,
-      "decisionDate": "2023-11-07T03:01:23",
-      "resultPublishedDate": "2023-11-09T10:20:59",
-      "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
-      "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-17T12:12:17.553Z",
+  "fetchedAt": "2026-10-17T12:15:52.498Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5198,
   "regions": [
@@ -558155,12 +558105,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 1187,
-      "bidderCount": 18953,
-      "equipmentCount": 17865,
-      "detailTenderCount": 1132,
+      "tenderCount": 1185,
+      "bidderCount": 18952,
+      "equipmentCount": 17864,
+      "detailTenderCount": 1130,
       "coverageDays": 1095,
-      "fetchedAt": "2026-10-17T12:12:17.553Z",
+      "fetchedAt": "2026-10-17T12:15:52.498Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -558219,6 +558169,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 5431
+    "scannedTenderCount": 5429
   }
 }
