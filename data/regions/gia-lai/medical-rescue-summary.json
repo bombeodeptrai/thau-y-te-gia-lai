@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-17T22:18:59.856Z",
+  "rescuedAt": "2026-10-18T04:33:06.832Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 233,
+      "count": 230,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 542,
+      "count": 556,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 55,
+      "count": 54,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
@@ -156,7 +156,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 15,
+      "count": 14,
       "error": ""
     },
     {
@@ -198,25 +198,25 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 39,
+      "count": 40,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 100,
+      "count": 101,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 17,
+      "count": 19,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 45,
+      "count": 44,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1453,
+  "candidateCount": 1464,
   "acceptedCount": 54,
-  "rejectedCount": 1399,
+  "rejectedCount": 1410,
   "rejectedReasons": {
-    "excluded:tu van": 515,
-    "excluded:xay dung": 373,
-    "insufficient-medical-context": 299,
-    "excluded:sua chua": 44,
+    "excluded:tu van": 528,
+    "excluded:xay dung": 372,
+    "insufficient-medical-context": 298,
+    "excluded:sua chua": 43,
     "excluded:xay lap": 38,
-    "excluded:cai tao": 36,
+    "excluded:cai tao": 37,
     "excluded:thuc pham": 19,
     "excluded:bao hiem": 15,
     "excluded:tham dinh": 14,
@@ -938,6 +938,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600578271",
+      "name": "Xây lắp công trình",
+      "investor": "phòng kinh tế xã Ia Hrung",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
       "notifyNo": "IB2600580795",
       "name": "Tư vấn lập Quy hoạch chung đô thị Pleiku",
       "investor": "Sở Xây dựng Gia Lai",
@@ -1367,19 +1378,6 @@
         "benh vien",
         "da khoa",
         "chan doan"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572980",
-      "name": "Mua sắm bàn, ghế cho phòng hội trường của Trung tâm Y tế Hoài Nhơn",
-      "investor": "Trung tâm Y tế Hoài Nhơn",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te",
-        "mua",
-        "mua sam"
       ]
     }
   ],
