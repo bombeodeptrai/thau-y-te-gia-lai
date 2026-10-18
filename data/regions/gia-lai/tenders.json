@@ -1842,9 +1842,9 @@
       "loserDetails": [],
       "winningModels": [
         "GT205-403",
-        "ECG-0001",
-        "EDT_22MLO K23P1L1",
-        "ONG_35MLN ON3P7N0",
+        " ECG-0001",
+        "EDT_22MLO\r\nK23P1L1",
+        "ONG_35MLN\r\nON3P7N0",
         "810001; 810002",
         "FRINTING PAPER",
         "HEP_22MLOTH3P2L1",
@@ -1860,7 +1860,7 @@
         "822001 822002",
         "C.70.VP30",
         "USGEL",
-        "L031-11211",
+        " L031-11211",
         "1322-24MM",
         "BTK1: MPV",
         "BTK10: MPV",
@@ -1882,11 +1882,16 @@
         "ODD: MPV",
         "GT054-200",
         "GKTCB",
-        "GPT",
+        " GPT",
         "Disposable Surgical Blade",
         "DRYSTAR DT 5.000I B",
         "BG1722",
-        "AF202005"
+        "AF202005",
+        "ECG-0001",
+        "EDT_22MLO K23P1L1",
+        "ONG_35MLN ON3P7N0",
+        "L031-11211",
+        "GPT"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -2037,11 +2042,14 @@
       "stepCode": "notify-contractor-step-1-tbmt",
       "notifyNo": "IB2600558508",
       "name": "Lựa chọn đơn vị cung cấp dịch vụ tổ chức các khóa đào tạo Bồi dưỡng về Y học gia đình cho bác sỹ tại các TYT xã/phường trọng điểm thuộc 02 tỉnh Gia Lai và Lâm Đồng;",
-      "regionSlug": "gia-lai",
-      "region": "Gia Lai",
+      "regionSlug": "lam-dong",
+      "region": "Lâm Đồng",
       "provinceCodes": [
         "52",
-        "64"
+        "64",
+        "60",
+        "67",
+        "68"
       ],
       "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
       "location": "Tỉnh Gia Lai, Tỉnh Lâm Đồng",
@@ -2052,7 +2060,7 @@
       "status": "closed",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=bb190e74-82cf-4aed-be58-c5ce131f9594&notifyId=bb190e74-82cf-4aed-be58-c5ce131f9594&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=KHAC&bidMode=1_MTHS&notifyNo=IB2600558508&planNo=PL2600314078&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
@@ -2066,7 +2074,11 @@
       "losingModels": [],
       "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
-      "sourceBidderCount": null
+      "sourceBidderCount": null,
+      "regionSlugs": [
+        "gia-lai",
+        "lam-dong"
+      ]
     },
     {
       "id": "4c765e04-c0df-461c-82c0-8eafa27562dd",
@@ -2195,9 +2207,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": 2,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "e7b53bac-0786-4914-b34b-e9e8d37f3ada",
@@ -88019,7 +88029,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-18T22:28:07.940Z",
+  "fetchedAt": "2026-10-18T22:30:17.694Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -88052,20 +88062,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v18",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
-    "lastMedicalRescueAt": "2026-10-18T22:28:07.940Z",
-    "lastMedicalRescueDays": 30,
-    "lastMedicalRescueCandidateCount": 1439,
-    "lastMedicalRescueMedicalCount": 53,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0,
-    "lastLocationAuditAt": "2026-10-18T22:27:26.533Z",
-    "lastLocationAuditDays": 30,
-    "lastLocationAuditCandidateCount": 1370,
-    "lastLocationAuditMedicalCount": 48,
-    "lastLocationAuditNewCount": 0
+    ]
   }
 }
