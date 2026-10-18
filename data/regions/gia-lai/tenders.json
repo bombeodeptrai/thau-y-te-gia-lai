@@ -784,7 +784,18 @@
       "decisionDate": "",
       "resultPublishedDate": "",
       "hasResult": false,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY TNHH CHANU",
+        "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ VẠN YÊN",
+        "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ THÚ Y",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ & PHÁT TRIỂN TM QUỐC TẾ NHẬT MINH",
+        "HỘ KINH DOANH NGUYỄN KIM LIÊN CỬA HÀNG TRANG THIẾT BỊ Y TẾ HUY HOÀNG",
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP",
+        "CÔNG TY TNHH HÓA CHẤT VÀ THIẾT BỊ VẬT TƯ HOÀNG HÀ",
+        "CÔNG TY TNHH KỸ THƯƠNG MINH LONG",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ LIÊN DOANH VIỆT ANH",
+        "Công ty TNHH Hóa Chất Á Đông"
+      ],
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [],
@@ -87988,7 +87999,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-18T09:53:36.411Z",
+  "fetchedAt": "2026-10-18T11:21:44.151Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -88003,8 +88014,8 @@
     "refreshDays": 2,
     "statusSchemaVersion": 4,
     "lastScanDays": 2,
-    "lastScanTenderCount": 8,
-    "lastProvinceTenderCount": 8,
+    "lastScanTenderCount": 3,
+    "lastProvinceTenderCount": 3,
     "lastHistoricalFallbackTenderCount": 0,
     "lastHistoricalFallbackFailureCount": 0,
     "lastHistoricalFallbackComplete": true,
@@ -88021,15 +88032,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v18",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
-    "lastMedicalRescueAt": "2026-10-18T09:53:36.411Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 684,
-    "lastMedicalRescueMedicalCount": 29,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    ]
   }
 }
