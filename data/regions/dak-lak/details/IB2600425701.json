@@ -1,40 +1,342 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 13,
   "bidders": [
     {
-      "id": "4e69418a-bb4b-437a-9803-31cf16b78724",
+      "id": "263b7edc-7ead-40e0-8642-7229803774e0",
       "contractorCode": "vn4400979355",
-      "taxCode": "",
+      "taxCode": "4400979355",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600308812",
       "lotName": "HÓA CHẤT SỬ DỤNG CHO MÁY HORIBA PENTRA XRL",
       "bidPrice": 1110899955,
       "finalPrice": 1110899955,
-      "winningPrice": 0,
+      "winningPrice": 1110899955,
       "reason": "",
-      "submittedAt": "2026-08-21T08:46:47.008",
-      "models": []
+      "submittedAt": "2026-09-30T17:00:00.085",
+      "models": [
+        "0901020",
+        "0906013",
+        "0903010",
+        "0906003",
+        "0206010",
+        "0401005",
+        "2062203",
+        "2062207",
+        "2062208"
+      ]
     },
     {
-      "id": "48ab3624-f2fd-4d70-a4be-1ebed6f38ae2",
+      "id": "bcb35572-f37f-4024-8e48-e7c4fec09f57",
       "contractorCode": "vn0106174694",
-      "taxCode": "",
+      "taxCode": "0106174694",
       "contractorName": "CÔNG TY TNHH CÔNG NGHỆ Y TẾ ANH KIÊN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600308813",
       "lotName": "HÓA CHẤT SỬ DỤNG CHO MÁY PHÂN TÍCH ĐIỆN GIẢI ĐỒ CBS- 400",
       "bidPrice": 14000000,
       "finalPrice": 14000000,
-      "winningPrice": 0,
+      "winningPrice": 14000000,
       "reason": "",
-      "submittedAt": "2026-08-21T08:46:47.231",
-      "models": []
+      "submittedAt": "2026-09-30T17:00:00.085",
+      "models": [
+        "90202",
+        "90105",
+        "90103",
+        "90104"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "0a7b9655-bfd8-42f5-9b47-f37f351dc12c",
+      "name": "Hóa chất pha loãng",
+      "model": "0901020",
+      "brand": "ABX DILUENT 20L",
+      "manufacturer": "HORIBA ABX SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thành phần: + Dung dịch đệm hữu cơ (Organic buffer) < 5% + Chất bảo quản (Preservative) < 0,1% + Chất diện hoạt (Surfactant) < 0,1% - Nhiệt độ bảo quản: + Điều kiện bảo quản (trước khi mở): 18-25°C (6577°F). Không để đông lạnh. + Độ ổn định sau khi mở: Tối đa 6 tháng ở 18-25°C (65-77°F) sau khi mở. - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485",
+      "unit": "Lít",
+      "quantity": 960,
+      "unitPrice": 200000,
+      "amount": 192000000,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "333d681c-18e9-499e-a424-050c8625aba4",
+      "name": "Hóa chất ly giải hồng cầu và đo Hemoglobin",
+      "model": "0906013",
+      "brand": "ABX LYSEBIO 0.4L",
+      "manufacturer": "HORIBA ABX SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thành phần: + Dung dịch đệm hữu cơ (Organic buffer) < 5% + Chất tẩy rửa (Detergent) < 2,5% - Nhiệt độ bảo quản: + Điều kiện bảo quản (trước khi mở): 15-30°C (5986°F). Bảo vệ tránh ánh sáng. Không để đông lạnh. + Độ ổn định sau khi mở: Tối đa 3 tháng ở 15-30°C (59-86°F) sau khi mở và trong giới hạn hạn dùng. - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485",
+      "unit": "ml",
+      "quantity": 16800,
+      "unitPrice": 10500,
+      "amount": 176400000,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "ca2bfa4b-8d3e-40ab-8c05-6c37df770a00",
+      "name": "Hóa chất rửa máy",
+      "model": "0903010",
+      "brand": "ABX CLEANER 1L",
+      "manufacturer": "HORIBA ABX SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thành phần: + Dung dịch đệm hữu cơ (Organic buffer) < 5% + Enzym thủy phân protein (Proteolytic enzyme) < 1% + Chất bảo quản (Preservative) < 1% - Nhiệt độ bảo quản: + Điều kiện bảo quản: 18-25°C (65-77°F). Không để đông lạnh. + Độ ổn định sau khi mở: Tối đa 3 tháng ở 18-25°C (65-77°F) sau khi mở. - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485",
+      "unit": "Lít",
+      "quantity": 40,
+      "unitPrice": 2500000,
+      "amount": 100000000,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "e89427b5-9e40-4c00-bfab-74050f052abd",
+      "name": "Hóa chất ly giải và nhuộm bạch cầu Basophil",
+      "model": "0906003",
+      "brand": "ABX BASOLYSE II 1L",
+      "manufacturer": "HORIBA ABX SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Dung dịch nước trong suốt và không màu, nhạy cảm ánh sáng. - Thành phần: + Dung dịch đệm hữu cơ (Organic buffer) < 5% + Chất tẩy rửa (Detergent) < 1% + Chất bảo quản (Preservative) < 0,1% - Nhiệt độ bảo quản: + Điều kiện bảo quản: 18-25°C (65-77°F). Không để đông lạnh. + Độ ổn định sau khi mở: Tối đa 10 tháng ở 18-25°C (65-77°F) sau khi mở - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485",
+      "unit": "Lít",
+      "quantity": 75,
+      "unitPrice": 5000000,
+      "amount": 375000000,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "5fb25820-6eaa-407d-9d4d-b1bcd10e629a",
+      "name": "Hóa chất ly giải và nhuộm bạch cầu Eosinophil",
+      "model": "0206010",
+      "brand": "ABX EOSINOFIX 1L",
+      "manufacturer": "HORIBA ABX SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "+ Dung dịch đệm hữu cơ (Organic buffer) < 5% + Chất tẩy rửa (Detergent) < 1% + Cồn (Alcohol) < 10 % + Chất bảo quản (Preservative) < 0,1% + Phân giải erythrocytes(RBC), ổn định leucocytes(WBC) theo các dạng tự nhiên và biến màu các nhân eosinophil với khả năng nhuộm màu cụ thể. - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485.",
+      "unit": "Lít",
+      "quantity": 35,
+      "unitPrice": 4200000,
+      "amount": 147000000,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "fa9106cb-a308-4576-838d-f62249a9cfaf",
+      "name": "Hóa chất rửa cuối ngày trước khi tắt máy hoặc ngâm buồng đếm cho máy huyết học",
+      "model": "0401005",
+      "brand": "ABX MINOCLAIR 0.5L",
+      "manufacturer": "HORIBA ABX SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Dung dịch nước base, trong suốt, màu vàng nhạt, có mùi chất tẩy trắng - Thuốc thử này được phân loại là không nguy hại theo đúng quy định (EC) Số 1272/2008 - Thành phần: + Chất làm sạch hóa chất (Chemical cleaning agent) < 5% + Chất ổn định hóa học (Stabilizer) < 1% - Nhiệt độ bảo quản: + Điều kiện bảo quản (trước khi mở): 18-25°C. Không để đông lạnh. + Độ ổn định sau khi mở: Tối đa 6 tháng ở 18-25°C sau khi mở. - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485",
+      "unit": "ml",
+      "quantity": 14000,
+      "unitPrice": 2500,
+      "amount": 35000000,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "6acc9600-6c14-498f-a0f5-d959e73bc38e",
+      "name": "Hóa chất kiểm chứng đa thông số mức N",
+      "model": "2062203",
+      "brand": "ABX DIFFTROL 2N",
+      "manufacturer": "R&D Systems Inc.",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thành phần: ABX Difftrol chứa bạch cầu (WBC), hồng cầu (RBC) và tiểu cầu (PLT) của động vật có vú được làm thành hỗn dịch ở dạng dịch giống như huyết tương. - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485",
+      "unit": "ml",
+      "quantity": 45,
+      "unitPrice": 633333,
+      "amount": 28499985,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "5815dfd1-26f3-4ad5-92e4-8fee32462133",
+      "name": "Hóa chất kiểm chứng đa thông số mức L",
+      "model": "2062207",
+      "brand": "ABX DIFFTROL 2L",
+      "manufacturer": "R&D Systems Inc.",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Thành phần: ABX Difftrol chứa bạch cầu (WBC), hồng cầu (RBC) và tiểu cầu (PLT) của động vật có vú được làm thành hỗn dịch ở dạng dịch giống như huyết tương. - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485",
+      "unit": "ml",
+      "quantity": 45,
+      "unitPrice": 633333,
+      "amount": 28499985,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "31f9bfee-fbb2-4d76-b78f-21c1f408f7b1",
+      "name": "Hóa chất kiểm chứng đa thông số mức H",
+      "model": "2062208",
+      "brand": "ABX DIFFTROL 2H",
+      "manufacturer": "R&D Systems Inc.",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Huyết thanh kiểm tra mức cao - Thành phần: ABX Difftrol chứa bạch cầu (WBC), hồng cầu (RBC) và tiểu cầu (PLT) của động vật có vú được làm thành hỗn dịch ở dạng dịch giống như huyết tương. - Tiêu chuẩn chất lượng: ISO 9001, ISO 13485",
+      "unit": "ml",
+      "quantity": 45,
+      "unitPrice": 633333,
+      "amount": 28499985,
+      "contractorCode": "vn4400979355",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG LÂM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "73e38a27-d409-46c7-80dd-2265ec727a6e",
+      "name": "Bộ hóa chất điện giải kèm điện cực (Electrode + Reagent Pack)",
+      "model": "90202",
+      "brand": "B&E Bio-Technology",
+      "manufacturer": "B&E Bio-Technology",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở đi",
+      "specification": "Chi tiết theo Bản Danh mục hàng hoá dự thầu trong E-HSDT",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 8300000,
+      "amount": 8300000,
+      "contractorCode": "vn0106174694",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ ANH KIÊN"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "35a6dd59-3fd7-4f9f-ad39-98125ec4b01d",
+      "name": "Dung dịch rửa máy phân tích điện giải",
+      "model": "90105",
+      "brand": "B&E Bio-Technology",
+      "manufacturer": "B&E Bio-Technology",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở đi",
+      "specification": "Chi tiết theo Bản Danh mục hàng hoá dự thầu trong E-HSDT",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 1900000,
+      "amount": 1900000,
+      "contractorCode": "vn0106174694",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ ANH KIÊN"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "6764a384-7e49-4ff0-8977-882f74087f9d",
+      "name": "Dung dịch control máy điện giải",
+      "model": "90103",
+      "brand": "B&E Bio-Technology",
+      "manufacturer": "B&E Bio-Technology",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở đi",
+      "specification": "Chi tiết theo Bản Danh mục hàng hoá dự thầu trong E-HSDT",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 1900000,
+      "amount": 1900000,
+      "contractorCode": "vn0106174694",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ ANH KIÊN"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    },
+    {
+      "id": "bef9b0ba-d6b6-43ca-9934-f28d8af68922",
+      "name": "Dung dịch chuẩn máy điện giải",
+      "model": "90104",
+      "brand": "B&E Bio-Technology",
+      "manufacturer": "B&E Bio-Technology",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở đi",
+      "specification": "Chi tiết theo Bản Danh mục hàng hoá dự thầu trong E-HSDT",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 1900000,
+      "amount": 1900000,
+      "contractorCode": "vn0106174694",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ ANH KIÊN"
+      ],
+      "lotNo": "",
+      "decisionNo": "1868/QĐ-BVĐKPY",
+      "decisionDate": "2026-09-30T23:59:59",
+      "resultPublishedDate": "2026-09-30T17:00:45"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -80,5 +382,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:47:07.207Z"
+  "fetchedAt": "2026-10-18T19:36:30.857Z"
 }

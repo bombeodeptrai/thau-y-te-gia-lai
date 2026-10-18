@@ -1,25 +1,121 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 5,
   "bidders": [
     {
-      "id": "815f7d70-6091-4fc4-b715-709aea61170e",
+      "id": "25653969-6ec8-4eb0-acaf-edd8a2db4160",
       "contractorCode": "vn0309781158",
-      "taxCode": "",
+      "taxCode": "0309781158",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600604584",
       "lotName": "Gói thầu số 01: “Mua sắm vật tư, hóa chất, sinh phẩm dùng cho máy xét nghiệm sinh học phân tử bằng kỹ thuật NAT, nhà thầu trúng thầu phải cung cấp thiết bị”",
       "bidPrice": 17641050000,
       "finalPrice": 17641050000,
-      "winningPrice": 0,
+      "winningPrice": 17640050000,
       "reason": "",
-      "submittedAt": "2026-09-07T09:43:25.28",
+      "submittedAt": "2026-10-16T10:51:43.728",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "c740fe5c-7051-4c48-a79b-3e977889ec42",
+      "name": "Bộ vật tư tiêu hao đi cùng với máy để thực hiện kỹ thuật của đơn vị trúng thầu",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "mẫu",
+      "quantity": 105000,
+      "unitPrice": 42120,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "860/QĐ-HHTM",
+      "decisionDate": "2026-10-16T23:59:59",
+      "resultPublishedDate": "2026-10-16T10:52:13"
+    },
+    {
+      "id": "925b7d1d-2608-4491-9854-8014d794cbd4",
+      "name": "Hệ thống máy xét nghiệm sinh học phân tử bằng kỹ thuật NAT",
+      "model": "08707464001",
+      "brand": "cobas® 5800",
+      "manufacturer": "Roche Diagnostics International Ltd, Thụy Sỹ",
+      "origin": "Thụy Sỹ",
+      "manufactureYear": "2024",
+      "specification": "*Cấu hình cung cấp: - Máy chính: 01 máy - Bộ hóa chất chạy thử máy: 01 bộ - Bộ đọc hồng ngoại (RFID): 01 bộ - Máy tính: 01 bộ - Bộ lưu điện: 01 bộ - Máy in: 01 cái",
+      "unit": "bộ",
+      "quantity": 1,
+      "unitPrice": 0,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "860/QĐ-HHTM",
+      "decisionDate": "2026-10-16T23:59:59",
+      "resultPublishedDate": "2026-10-16T10:52:13"
+    },
+    {
+      "id": "d1924199-b343-4df9-bb8c-fbede463a21d",
+      "name": "Thuốc thử xét nghiệm HIV, HCV, HBV bằng kỹ thuật sinh học phân tử",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "mẫu",
+      "quantity": 105000,
+      "unitPrice": 100990,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "860/QĐ-HHTM",
+      "decisionDate": "2026-10-16T23:59:59",
+      "resultPublishedDate": "2026-10-16T10:52:13"
+    },
+    {
+      "id": "3d86ca21-059a-432b-93f9-e722403dcc08",
+      "name": "Vật liệu kiểm soát âm tính xét nghiệm phát hiện HIV, HCV, HBV",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "mẫu",
+      "quantity": 105000,
+      "unitPrice": 1200,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "860/QĐ-HHTM",
+      "decisionDate": "2026-10-16T23:59:59",
+      "resultPublishedDate": "2026-10-16T10:52:13"
+    },
+    {
+      "id": "0dac9113-30c6-470c-a487-aa978cea30ef",
+      "name": "Vật liệu kiểm soát dương tính xét nghiệm phát hiện HIV, HCV, HBV",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "mẫu",
+      "quantity": 105000,
+      "unitPrice": 23700,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "860/QĐ-HHTM",
+      "decisionDate": "2026-10-16T23:59:59",
+      "resultPublishedDate": "2026-10-16T10:52:13"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +141,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:16:16.683Z"
+  "fetchedAt": "2026-10-18T19:39:00.169Z"
 }

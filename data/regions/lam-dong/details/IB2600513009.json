@@ -1,25 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "29bd7887-50df-4564-85b2-0636f4d6adf7",
+      "id": "f4e11705-a568-4bc0-bd8c-06bee01526a7",
       "contractorCode": "vn0300483319",
-      "taxCode": "",
+      "taxCode": "0300483319",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600585286",
       "lotName": "Gói thầu mua sắm thiết bị y tế phục vụ phẫu thuật nội soi hệ Ngoại- Sản của Trung tâm Y tế khu vực Hàm Tân năm 2026",
       "bidPrice": 4326000000,
       "finalPrice": 4326000000,
-      "winningPrice": 0,
+      "winningPrice": 4326000000,
       "reason": "",
-      "submittedAt": "2026-09-17T10:03:10.953",
+      "submittedAt": "2026-10-12T09:05:05.154",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "de82caae-3dc1-49aa-9280-14b28bd5feed",
+      "name": "Máy gây mê",
+      "model": "Astra 3i",
+      "brand": "OES Medical",
+      "manufacturer": "OES Medical",
+      "origin": "Anh Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Theo bảng TNKT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 934500000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "355/QĐ-TTYT",
+      "decisionDate": "2026-10-12T23:59:59",
+      "resultPublishedDate": "2026-10-12T09:05:26"
+    },
+    {
+      "id": "28f7a344-f383-408a-adba-6ac56f94fbcb",
+      "name": "Hệ thống phẫu thuật nội soi",
+      "model": "Logic HD Camera Controller (Bộ điều khiển Camera Logic HD)/5525105",
+      "brand": "Richard Wolf GmbH",
+      "manufacturer": "Richard Wolf GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Theo bảng TNKT",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 3391500000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "decisionNo": "355/QĐ-TTYT",
+      "decisionDate": "2026-10-12T23:59:59",
+      "resultPublishedDate": "2026-10-12T09:05:26"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:20:07.197Z"
+  "fetchedAt": "2026-10-18T19:40:12.809Z"
 }

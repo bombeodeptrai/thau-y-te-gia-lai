@@ -1,40 +1,170 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 7,
   "bidders": [
     {
-      "id": "52bfc26b-999a-4e2e-940e-607ab42e9ca0",
+      "id": "d8267e34-ef48-4e2c-b614-651b620cf25c",
       "contractorCode": "vn0318151427",
-      "taxCode": "",
+      "taxCode": "0318151427",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ POLYNEX VIỆT NAM",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600634424",
       "lotName": "Gói thầu số 03: gói thầu mua sắm Vật tư tiêu hao thông dụng của Bệnh viện Y học cổ truyền Phạm Ngọc Thạch năm 2026",
       "bidPrice": 248870880,
       "finalPrice": 248870880,
-      "winningPrice": 0,
+      "winningPrice": 248870880,
       "reason": "",
-      "submittedAt": "2026-09-11T14:06:05.724",
+      "submittedAt": "2026-10-13T16:58:51.324",
       "models": []
     },
     {
-      "id": "84137346-01e9-48f8-a99e-7d60f2bdf5a7",
+      "id": "2d7bb971-c256-4bf3-9e26-7bc01d8b3e39",
       "contractorCode": "vn0317632752",
-      "taxCode": "",
+      "taxCode": "0317632752",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VĂN PHÒNG PHẨM QUỐC THẢO",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600634424",
       "lotName": "Gói thầu số 03: gói thầu mua sắm Vật tư tiêu hao thông dụng của Bệnh viện Y học cổ truyền Phạm Ngọc Thạch năm 2026",
       "bidPrice": 179608320,
       "finalPrice": 179608320,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-11T14:06:05.962",
+      "reason": "E-HSDT của nhà thầu không đáp ứng yêu cầu của E-HSMT",
+      "submittedAt": "2026-10-13T16:58:51.324",
+      "models": []
+    },
+    {
+      "id": "a84eb9d9-ee7c-4a17-bc0a-8a6ed9eae69b",
+      "contractorCode": "vn0318655255",
+      "taxCode": "0318655255",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI TỔNG HỢP DPH",
+      "status": "lost",
+      "lotNo": "BP2600634424",
+      "lotName": "Gói thầu số 03: gói thầu mua sắm Vật tư tiêu hao thông dụng của Bệnh viện Y học cổ truyền Phạm Ngọc Thạch năm 2026",
+      "bidPrice": 179608320,
+      "finalPrice": 179608320,
+      "winningPrice": 0,
+      "reason": "E-HSDT của nhà thầu không đáp ứng yêu cầu của E-HSMT",
+      "submittedAt": "2026-10-13T16:58:51.324",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "62b0dffe-cf52-4ea8-a2a4-2bc1893ce31c",
+      "name": "Giấy vệ sinh cuộn nhỏ",
+      "model": "GVS-CN",
+      "brand": "Japani",
+      "manufacturer": "Công ty Cổ phần Thế Giới Giấy",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Thành phần: Bột giấy nguyện chất 100%.Trọng lượng ≥130g/ cuộn. Đóng gói 10 cuộn x 3 lớp (1 lốc). Kích thước tờ 98x105mm, không bụi, dai, mềm, mịn.",
+      "unit": "Lốc",
+      "quantity": 1514,
+      "unitPrice": 78840,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ POLYNEX VIỆT NAM"
+      ],
+      "decisionNo": "11/QĐ-YHCT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T16:59:10"
+    },
+    {
+      "id": "ce232ee1-1825-4e82-8e84-fc5e6e3edc44",
+      "name": "Giấy vệ sinh cuộn lớn",
+      "model": "GVS-CL",
+      "brand": "An Khang",
+      "manufacturer": "Công ty Cổ phần Thế Giới Giấy",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "100% bột giấy nguyên chất. Trọng lượng ≥ 700g/cuộn, 2 lớp (10 cuộn/túi PE). Kích thước 9.5cm x 23cm. Đường kính lõi 8.4cm. Giấy dai, mềm, mịn, thấm hút tốt.",
+      "unit": "Cuộn",
+      "quantity": 202,
+      "unitPrice": 61560,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ POLYNEX VIỆT NAM"
+      ],
+      "decisionNo": "11/QĐ-YHCT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T16:59:10"
+    },
+    {
+      "id": "746cb877-57bb-4a38-94f4-d77d3808ac03",
+      "name": "Bì đựng rác loại sinh học tự phân hủy màu xanh",
+      "model": "BĐR-MX1",
+      "brand": "Bảo Tiên",
+      "manufacturer": "Công ty TNHH Thương mại Nhựa Tân Sài Gòn",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Bì đựng rác loại ≥1kg/ lốc. Lốc có 3 cuộn, size trung. Màu xanh. Loại sinh học tự phân hủy.",
+      "unit": "Lốc",
+      "quantity": 936,
+      "unitPrice": 43200,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ POLYNEX VIỆT NAM"
+      ],
+      "decisionNo": "11/QĐ-YHCT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T16:59:10"
+    },
+    {
+      "id": "409093a3-0131-4670-a962-a9fa4b01cd5b",
+      "name": "Bì đựng rác loại sinh học tự phân hủy màu vàng",
+      "model": "BĐR-MV",
+      "brand": "Bảo Tiên",
+      "manufacturer": "Công ty TNHH Thương mại Nhựa Tân Sài Gòn",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Bì đựng rác loại ≥1kg/ lốc Lốc có 3 cuộn, size trung. Màu vàng. Loại sinh học tự phân hủy.",
+      "unit": "Lốc",
+      "quantity": 270,
+      "unitPrice": 43200,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ POLYNEX VIỆT NAM"
+      ],
+      "decisionNo": "11/QĐ-YHCT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T16:59:10"
+    },
+    {
+      "id": "3d837a32-4db3-4662-8842-9075b1974bac",
+      "name": "Xà bông cục",
+      "model": "XBC",
+      "brand": "Lifebuoy",
+      "manufacturer": "Công ty TNHH Quốc tế Unilever Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Hình oval, lốc 10 cục, mỗi cục đựng trong 1 hộp giấy bìa carton, được dán seal. Trọng lượng ≥ 90gram",
+      "unit": "Cục",
+      "quantity": 240,
+      "unitPrice": 18900,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ POLYNEX VIỆT NAM"
+      ],
+      "decisionNo": "11/QĐ-YHCT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T16:59:10"
+    },
+    {
+      "id": "cb20420a-dc07-4d20-920a-7bbcd18a7bd0",
+      "name": "Xà phòng (bột giặt)",
+      "model": "XP-BG",
+      "brand": "OMO",
+      "manufacturer": "Công ty TNHH Quốc tế Unilever Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Túi loại ≥ 5,5kg/túi, bột giặt có công nghệ Enzyme sinh học; chỉ số độ PH từ 9-10%; có hạt lưu hương và công thức phân hủy sinh học đến 90% bảo vệ môi trường",
+      "unit": "Túi",
+      "quantity": 58,
+      "unitPrice": 237600,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ POLYNEX VIỆT NAM"
+      ],
+      "decisionNo": "11/QĐ-YHCT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T16:59:10"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +189,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:20:08.252Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-18T19:40:13.219Z"
 }

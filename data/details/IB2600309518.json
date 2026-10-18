@@ -1,40 +1,158 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 6,
   "bidders": [
     {
-      "id": "2e9b896f-9663-4732-968a-09f9f2f2c6a9",
+      "id": "e4e8529c-c121-4b9e-8380-a7b4ddc173a7",
       "contractorCode": "vn0300483319",
-      "taxCode": "",
+      "taxCode": "0300483319",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600231951",
       "lotName": "Phần số 1.Vật tư phẫu thuật Phaco",
       "bidPrice": 628104200,
       "finalPrice": 628104200,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-10T10:02:48.49",
+      "reason": "E-HSDT không đáp ứng yêu cầu của E-HSMT",
+      "submittedAt": "2026-10-08T17:01:39.057",
       "models": []
     },
     {
-      "id": "30b50bc8-2067-44c5-b2ec-19d9cd5f0b52",
+      "id": "af666866-9a8d-40c6-94b4-101e58bbe0d8",
       "contractorCode": "vn0101442741",
-      "taxCode": "",
+      "taxCode": "0101442741",
       "contractorName": "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600231951",
       "lotName": "Phần số 1.Vật tư phẫu thuật Phaco",
       "bidPrice": 678558000,
       "finalPrice": 678558000,
-      "winningPrice": 0,
+      "winningPrice": 678558000,
       "reason": "",
-      "submittedAt": "2026-07-10T10:02:48.76",
-      "models": []
+      "submittedAt": "2026-10-08T17:01:39.057",
+      "models": [
+        "640AD",
+        "S3550SQ",
+        "Biovis 1,6%",
+        "Auroblue",
+        "PE3015",
+        "Aurosleek/ KD28215HT"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "6e942251-fe34-42ce-af36-686726aa5c1e",
+      "name": "Thủy tinh thể nhân tạo mềm đơn tiêu",
+      "model": "640AD",
+      "brand": "640AD",
+      "manufacturer": "Medicontur Medical Engineering Ltd.",
+      "origin": "Hungary",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thủy tinh thể nhân tạo mềm đơn tiêu với 4 càng khép kín, góc càng 0 độ. \n- Chất liệu ngậm nước copolymer từ hydrophobic và hydrophilic.\n- Kính đi kèm với cartridge, đặt qua vết mổ nhỏ khoảng 1.8mm - 2.2mm \n- Đường kính Optic 6mm, chiều dài 10.7mm - 11mm \n- Cầu sai trung tính, dải công suất 0D đến +35D: 0D đến +9D và 31D đến +35D tăng đều 1D; từ +10D đến +30D tăng đều 0.5D\n- Chỉ số khúc xạ khoảng 1.46\n- Chỉ số ABBE: 58\n- Thủy tinh thể màu trong suốt, lọc UV",
+      "unit": "Cái",
+      "quantity": 240,
+      "unitPrice": 1380000,
+      "amount": 331200000,
+      "contractorCode": "vn0101442741",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1857/QĐ-BVNT",
+      "decisionDate": "2026-10-08T23:59:59",
+      "resultPublishedDate": "2026-10-08T17:01:49"
+    },
+    {
+      "id": "a194fd53-4a27-479b-8da1-27a609048417",
+      "name": "Thủy tinh thể nhân tạo cứng",
+      "model": "S3550SQ",
+      "brand": "S3550SQ",
+      "manufacturer": "Aurolab",
+      "origin": "Ấn Độ",
+      "manufactureYear": "2023 trở về sau",
+      "specification": "Thủy tinh thể nhân tạo cứng hậu phòng: \n- Chất liệu PMMA, thiết kế càng chữ C, góc càng 10 độ - Đường kính Optic 5.5mm, chiều dài 12mm \nDãy diop: 10.0 đến 30.0D \n- Tiệt trùng",
+      "unit": "Cái",
+      "quantity": 48,
+      "unitPrice": 250000,
+      "amount": 12000000,
+      "contractorCode": "vn0101442741",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1857/QĐ-BVNT",
+      "decisionDate": "2026-10-08T23:59:59",
+      "resultPublishedDate": "2026-10-08T17:01:49"
+    },
+    {
+      "id": "0abbaa64-0a38-48c3-8a0f-8ed70b96af2f",
+      "name": "Dịch nhầy sử dụng cho phẫu thuật Phaco",
+      "model": "Biovis 1,6%",
+      "brand": "Biovis 1,6%",
+      "manufacturer": "Medicontur Medical Engineering Ltd.",
+      "origin": "Hungary",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: Sodium Hyaluronate (NaHa), nồng độ NaHa 1.6%\n - Độ pH 6.8 - 7.6, độ thẩm thấu 300 - 350 (mOsmol/kg) \nỐng/ 1.1ml",
+      "unit": "Ống",
+      "quantity": 575,
+      "unitPrice": 450000,
+      "amount": 258750000,
+      "contractorCode": "vn0101442741",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1857/QĐ-BVNT",
+      "decisionDate": "2026-10-08T23:59:59",
+      "resultPublishedDate": "2026-10-08T17:01:49"
+    },
+    {
+      "id": "bd62b1af-e4ff-4bf3-9598-713e6f409185",
+      "name": "Mực nhuộm bao",
+      "model": "Auroblue",
+      "brand": "Auroblue",
+      "manufacturer": "Aurolab",
+      "origin": "Ấn Độ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Dung dịch nhuộm bao Trypan Blue 0.06%, màu xanh \nLọ 1ml, tiệt trùng",
+      "unit": "Lọ",
+      "quantity": 96,
+      "unitPrice": 93000,
+      "amount": 8928000,
+      "contractorCode": "vn0101442741",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1857/QĐ-BVNT",
+      "decisionDate": "2026-10-08T23:59:59",
+      "resultPublishedDate": "2026-10-08T17:01:49"
+    },
+    {
+      "id": "d50d184e-8ddb-43be-af2a-f0fe5b4a7879",
+      "name": "Dao phẫu thuật nhãn khoa",
+      "model": "PE3015",
+      "brand": "PE3015",
+      "manufacturer": "Oasis Medical, Inc.",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Chất liệu: lưỡi dao làm bằng thép không rỉ. \n- Dao thẳng, góc 15 độ, hai mặt vát, tạo độ sâu từ 3-5mm",
+      "unit": "Cái",
+      "quantity": 288,
+      "unitPrice": 135000,
+      "amount": 28800000,
+      "contractorCode": "vn0101442741",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1857/QĐ-BVNT",
+      "decisionDate": "2026-10-08T23:59:59",
+      "resultPublishedDate": "2026-10-08T17:01:49"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -69,6 +187,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-04T20:26:05.880Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-18T19:39:10.345Z"
 }

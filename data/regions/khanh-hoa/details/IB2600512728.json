@@ -1,40 +1,84 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "00d27829-f074-49eb-bdf3-d76e84e68b55",
+      "id": "5cced08e-e0a3-4c07-94d2-7e9d6d98c494",
+      "contractorCode": "vn0315582270",
+      "taxCode": "0315582270",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ MB REGENTOX VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600376808",
+      "lotName": "Găng tay y tế không bột",
+      "bidPrice": 13280000,
+      "finalPrice": 13280000,
+      "winningPrice": 13280000,
+      "reason": "",
+      "submittedAt": "2026-10-13T17:06:32.727",
+      "models": [
+        "GT01-REGENTOX"
+      ]
+    },
+    {
+      "id": "61c67c6b-f0e8-498c-89a8-7de14df7cb51",
       "contractorCode": "vn4201964749",
-      "taxCode": "",
+      "taxCode": "4201964749",
       "contractorName": "CÔNG TY TNHH TMDV KỸ THUẬT M&M",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600376808",
       "lotName": "Găng tay y tế không bột",
       "bidPrice": 16800000,
       "finalPrice": 16800000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-16T08:47:19.081",
-      "models": []
-    },
-    {
-      "id": "361b728e-b1f6-4daa-bda5-37644135496b",
-      "contractorCode": "vn0315582270",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ MB REGENTOX VIỆT NAM",
-      "status": "participating",
-      "lotNo": "PP2600376808",
-      "lotName": "Găng tay y tế không bột",
-      "bidPrice": 13280000,
-      "finalPrice": 13280000,
-      "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-16T08:47:19.337",
+      "reason": "Giá dự thầu không phải giá thấp nhất",
+      "submittedAt": "2026-10-13T17:06:32.727",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600376808",
+      "name": "Găng tay y tế không bột",
+      "model": "GT01-REGENTOX",
+      "brand": "REGENTOX",
+      "manufacturer": "Công ty Cổ Phần Găng Tay Bình Phước",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "'- Chất liệu: cao su thiên nhiên, không bột, được phủ polymer mặt trong và mặt ngoài. - Thiết kế găng tay có các ngón thẳng, phù hợp với hình dáng bàn tay của người sử dụng, se viền cổ tay, nhám ở đầu ngón tay, sử dụng được cho cả 2 tay, không phân biệt tay trái, phải. - Chiều dài găng tay (mm): 240 min - Size M - Hàm lượng protein ≤ 50µg/dm2 - Hàm lượng bột ≤ 2 mg/ găng tay",
+      "unit": "Đôi",
+      "quantity": 10000,
+      "unitPrice": 0,
+      "amount": 13280000,
+      "contractorCode": "vn0315582270",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ MB REGENTOX VIỆT NAM "
+      ],
+      "lotNo": "PP2600376808",
+      "decisionNo": "472/QĐ-KSBT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T17:06:38"
+    },
+    {
+      "id": "4c26b9f7-e131-46fa-8e2d-d47a8f92f18a",
+      "name": "Găng tay y tế không bột",
+      "model": "GT01-REGENTOX",
+      "brand": "REGENTOX",
+      "manufacturer": "Công ty Cổ Phần Găng Tay Bình Phước",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Chất liệu: cao su thiên nhiên, không bột, được phủ polymer mặt trong và mặt ngoài. - Thiết kế găng tay có các ngón thẳng, phù hợp với hình dáng bàn tay của người sử dụng, se viền cổ tay, nhám ở đầu ngón tay, sử dụng được cho cả 2 tay, không phân biệt tay trái, phải. - Chiều dài găng tay (mm): 240 min - Size M - Hàm lượng protein ≤ 50µg/dm2 - Hàm lượng bột ≤ 2 mg/ găng tay",
+      "unit": "Đôi",
+      "quantity": 10000,
+      "unitPrice": 1328,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ MB REGENTOX VIỆT NAM "
+      ],
+      "decisionNo": "472/QĐ-KSBT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T17:06:38"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -89,6 +133,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:16:14.008Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-18T19:38:58.306Z"
 }

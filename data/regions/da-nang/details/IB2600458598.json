@@ -1,40 +1,127 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 4,
   "bidders": [
     {
-      "id": "18a2fab5-7954-4a2d-bac5-e92db38e9d8c",
+      "id": "e64c1b9d-98aa-457b-9774-00a10384e8f5",
       "contractorCode": "vn0100954225",
-      "taxCode": "",
+      "taxCode": "0100954225",
       "contractorName": "CÔNG TY TNHH THANG MÁY SIN VIỆT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600340307",
       "lotName": "Hệ thống thang máy 11 điểm dừng; Số lượng: 02 hệ thống",
       "bidPrice": 4010000000,
       "finalPrice": 4010000000,
-      "winningPrice": 0,
+      "winningPrice": 4010000000,
       "reason": "",
-      "submittedAt": "2026-08-27T10:01:25.551",
-      "models": []
+      "submittedAt": "2026-09-25T10:58:17.371",
+      "models": [
+        "B-1600-2S-90"
+      ]
     },
     {
-      "id": "b17251c0-40d9-4e8e-ad2d-72b219018665",
+      "id": "4ac278c7-45d8-4ac3-acb8-63f2d5dcc0b5",
       "contractorCode": "vn0401687541",
-      "taxCode": "",
+      "taxCode": "0401687541",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ KHÁNH LÂM AN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600340308",
       "lotName": "Bộ dụng cụ phẫu thuật cột sống thắt lưng; gồm: 78 mục và 113 chi tiết; Số lượng: 01 bộ",
       "bidPrice": 880000000,
       "finalPrice": 880000000,
-      "winningPrice": 0,
+      "winningPrice": 880000000,
       "reason": "",
-      "submittedAt": "2026-08-27T10:01:25.751",
-      "models": []
+      "submittedAt": "2026-09-25T10:58:17.371",
+      "models": [
+        "Không có"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600340308",
+      "name": "Bộ dụng cụ phẫu thuật cột sống thắt lưng; gồm: 78 mục và 113 chi tiết",
+      "model": "Không có",
+      "brand": "Aesculap",
+      "manufacturer": "Aesculap AG/Đức",
+      "origin": "Đức, Ba Lan, Trung Quốc, Malaysia",
+      "manufactureYear": "2026",
+      "specification": "Theo bảng đáp ứng kỹ thuật",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 0,
+      "amount": 880000000,
+      "contractorCode": "vn0401687541",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ KHÁNH LÂM AN"
+      ],
+      "lotNo": "PP2600340308",
+      "decisionNo": "1521/QĐ-BVC",
+      "decisionDate": "2026-09-25T23:59:59",
+      "resultPublishedDate": "2026-09-25T10:58:49"
+    },
+    {
+      "id": "2600340307",
+      "name": "Hệ thống thang máy 11 điểm dừng",
+      "model": "B-1600-2S-90",
+      "brand": "SANYO",
+      "manufacturer": "SANYO",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026",
+      "specification": "Thang máy tải khách kèm cáng bệnh viện tải trọng 1600kg, tốc độ 90 m/phút, 11 điểm dừng, loại thang có phòng máy",
+      "unit": "Hệ thống",
+      "quantity": 2,
+      "unitPrice": 0,
+      "amount": 4010000000,
+      "contractorCode": "vn0100954225",
+      "winnerNames": [
+        "CÔNG TY TNHH THANG MÁY SIN VIỆT"
+      ],
+      "lotNo": "PP2600340307",
+      "decisionNo": "1521/QĐ-BVC",
+      "decisionDate": "2026-09-25T23:59:59",
+      "resultPublishedDate": "2026-09-25T10:58:49"
+    },
+    {
+      "id": "fd87b060-03ec-4cf7-88ff-5cb1d2427e9a",
+      "name": "Bộ dụng cụ phẫu thuật cột sống thắt lưng; gồm: 78 mục và 113 chi tiết",
+      "model": "Không có",
+      "brand": "Aesculap",
+      "manufacturer": "Aesculap AG/Đức",
+      "origin": "Đức, Ba Lan, Trung Quốc, Malaysia",
+      "manufactureYear": "2026",
+      "specification": "Theo bảng đáp ứng kỹ thuật",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 880000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ KHÁNH LÂM AN"
+      ],
+      "decisionNo": "1521/QĐ-BVC",
+      "decisionDate": "2026-09-25T23:59:59",
+      "resultPublishedDate": "2026-09-25T10:58:49"
+    },
+    {
+      "id": "0088d02a-876a-4181-9909-7067a8fa0c4e",
+      "name": "Hệ thống thang máy 11 điểm dừng",
+      "model": "B-1600-2S-90",
+      "brand": "SANYO",
+      "manufacturer": "SANYO",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026",
+      "specification": "Thang máy tải khách kèm cáng bệnh viện tải trọng 1600kg, tốc độ 90 m/phút, 11 điểm dừng, loại thang có phòng máy",
+      "unit": "Hệ thống",
+      "quantity": 2,
+      "unitPrice": 2005000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THANG MÁY SIN VIỆT"
+      ],
+      "decisionNo": "1521/QĐ-BVC",
+      "decisionDate": "2026-09-25T23:59:59",
+      "resultPublishedDate": "2026-09-25T10:58:49"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -70,5 +157,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-20T19:34:45.686Z"
+  "fetchedAt": "2026-10-18T19:32:49.427Z"
 }

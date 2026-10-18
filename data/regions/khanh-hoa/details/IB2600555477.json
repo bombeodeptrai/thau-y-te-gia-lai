@@ -1,9 +1,110 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "d49f4270-e22c-450d-bed3-1eeb15585b2d",
+      "contractorCode": "vn0110983803",
+      "taxCode": "0110983803",
+      "contractorName": "CÔNG TY TNHH TBYT VIỆT NAM CBN",
+      "status": "won",
+      "lotNo": "BP2600803449",
+      "lotName": "Mua sắm phim X-quang y tế (đợt 02)",
+      "bidPrice": 1770000000,
+      "finalPrice": 1770000000,
+      "winningPrice": 1770000000,
+      "reason": "",
+      "submittedAt": "2026-10-14T16:59:29.472",
+      "models": [
+        "DI-HL"
+      ]
+    },
+    {
+      "id": "8502b968-f098-465b-90de-7c9ca08c2c61",
+      "contractorCode": "vn0305332715",
+      "taxCode": "0305332715",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI - DỊCH VỤ - KỸ THUẬT - THIẾT BỊ Y TẾ AN QUỐC",
+      "status": "lost",
+      "lotNo": "BP2600803449",
+      "lotName": "Mua sắm phim X-quang y tế (đợt 02)",
+      "bidPrice": 1972000000,
+      "finalPrice": 1972000000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-10-14T16:59:29.472",
+      "models": []
+    },
+    {
+      "id": "53cce00b-d7c1-40db-9143-507b0c4feda0",
+      "contractorCode": "vn0314087033",
+      "taxCode": "0314087033",
+      "contractorName": "CÔNG TY TNHH NAMSION",
+      "status": "lost",
+      "lotNo": "BP2600803449",
+      "lotName": "Mua sắm phim X-quang y tế (đợt 02)",
+      "bidPrice": 1840000000,
+      "finalPrice": 1840000000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-10-14T16:59:29.472",
+      "models": []
+    },
+    {
+      "id": "38f04e02-e0eb-4a18-be30-ffcb54ebcf8b",
+      "contractorCode": "vn0317850969",
+      "taxCode": "0317850969",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ KỸ THUẬT TLT",
+      "status": "lost",
+      "lotNo": "BP2600803449",
+      "lotName": "Mua sắm phim X-quang y tế (đợt 02)",
+      "bidPrice": 1940000000,
+      "finalPrice": 1940000000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-10-14T16:59:29.472",
+      "models": []
+    },
+    {
+      "id": "2955a797-5065-4b74-a815-be9f86f21a3f",
+      "contractorCode": "vn0400408435",
+      "taxCode": "0400408435",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+      "status": "lost",
+      "lotNo": "BP2600803449",
+      "lotName": "Mua sắm phim X-quang y tế (đợt 02)",
+      "bidPrice": 1900000000,
+      "finalPrice": 1900000000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-10-14T16:59:29.472",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "61735a4c-c494-4742-a634-2297833305bc",
+      "name": "Phim dùng cho chụp X-quang y tế",
+      "model": "DI-HL",
+      "brand": "Fujifilm",
+      "manufacturer": "Fujifilm  Material Manufacturing Co.,Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Từ năm 2025 trở đi, hàng mới 100%",
+      "specification": "Kích thước: 35cm x 43cm\r\nTương thích với dòng máy in phim model: DryPix 6000 và DryPix 4000",
+      "unit": "Tấm",
+      "quantity": 22000,
+      "unitPrice": 44939.4114,
+      "amount": 988667051,
+      "contractorCode": "vn0110983803",
+      "winnerNames": [
+        "CÔNG TY TNHH TBYT VIỆT NAM CBN"
+      ],
+      "lotNo": "",
+      "decisionNo": "1873/QĐ-BVNT",
+      "decisionDate": "2026-10-14T16:58:48",
+      "resultPublishedDate": "2026-10-14T16:59:42"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -80,6 +181,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:16:08.179Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-18T19:38:56.503Z"
 }

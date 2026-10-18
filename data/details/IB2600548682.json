@@ -1,40 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "29c2b25c-930a-44ba-a9b8-7577e56f9a98",
+      "id": "d9076514-34c9-4822-85c4-f61f1d5a5c0f",
       "contractorCode": "vn0400459581",
-      "taxCode": "",
+      "taxCode": "0400459581",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600355564",
       "lotName": "Vắc xin phòng Viêm gan B",
       "bidPrice": 68544000,
       "finalPrice": 68544000,
-      "winningPrice": 0,
+      "winningPrice": 68544000,
       "reason": "",
-      "submittedAt": "2026-09-30T14:03:18.836",
-      "models": []
+      "submittedAt": "2026-10-16T16:23:54.444",
+      "models": [
+        "Vắc xin viêm gan B tái tổ hợp Gene - HBvax"
+      ]
     },
     {
-      "id": "b0feabdb-fa33-4d78-906c-6c0a1bb0a6c6",
+      "id": "0cadb9a2-931f-4d03-b96b-9ba1126c6496",
       "contractorCode": "vn0301140748",
-      "taxCode": "",
+      "taxCode": "0301140748",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600355565",
       "lotName": "Vắc xin phòng cúm mùa (tam giá)",
       "bidPrice": 2808000000,
       "finalPrice": 2808000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-30T14:03:18.597",
+      "reason": "Vượt giá kế hoạch",
+      "submittedAt": "2026-10-16T16:23:54.444",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600355564",
+      "name": "Vắc xin viêm gan B tái tổ hợp Gene - HBvax",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 850,
+      "unitPrice": 80640,
+      "amount": 68544000,
+      "contractorCode": "vn0400459581",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ"
+      ],
+      "lotNo": "PP2600355564",
+      "decisionNo": "3057/QĐ-BVĐKKH",
+      "decisionDate": "2026-10-16T23:59:59",
+      "resultPublishedDate": "2026-10-16T16:24:35"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -89,6 +114,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:16:10.990Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-18T19:38:57.123Z"
 }

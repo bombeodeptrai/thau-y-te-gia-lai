@@ -1,55 +1,128 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "6025553a-5b63-4c38-8bd2-18699cc3af61",
+      "id": "0c9c899c-203c-4b92-9d75-bfb0eb5e1a8a",
       "contractorCode": "vn0101309965",
-      "taxCode": "",
+      "taxCode": "0101309965",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIPHARCO",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600400968",
       "lotName": "Natri Bicarbonat 0,84g/ 10ml",
       "bidPrice": 115000000,
       "finalPrice": 115000000,
-      "winningPrice": 0,
+      "winningPrice": 115000000,
       "reason": "",
-      "submittedAt": "2026-10-01T09:38:36.591",
-      "models": []
+      "submittedAt": "2026-10-14T09:42:12.344",
+      "models": [
+        "Không có"
+      ]
     },
     {
-      "id": "9b7e0cf7-1d96-4cac-a3ef-98063e6d3d9e",
+      "id": "7254531d-b093-42df-9d9f-41f34e6a5c83",
       "contractorCode": "vn4100259564",
-      "taxCode": "",
+      "taxCode": "4100259564",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600400969",
       "lotName": "Natri clorid + Natri hydrocarbonat (Mỗi 1000ml chứa: 30,5g+ 66,0g)",
       "bidPrice": 774375000,
       "finalPrice": 774375000,
-      "winningPrice": 0,
+      "winningPrice": 774375000,
       "reason": "",
-      "submittedAt": "2026-10-01T09:38:36.157",
-      "models": []
+      "submittedAt": "2026-10-14T09:42:12.344",
+      "models": [
+        "Kydheamo-2B"
+      ]
     },
     {
-      "id": "e8ad56b0-cbcc-48c7-a779-4bf1e8b612fb",
+      "id": "a36cb728-7555-4e94-8d0f-7703cc80e93b",
       "contractorCode": "vn0302449627",
-      "taxCode": "",
+      "taxCode": "0302449627",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRANG THIẾT BỊ Y TẾ T.D",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600400970",
       "lotName": "Iopromide 623,4mg/ml (tương ứng với 300mg Iod), 50ml",
       "bidPrice": 764034000,
       "finalPrice": 764034000,
-      "winningPrice": 0,
+      "winningPrice": 764034000,
       "reason": "",
-      "submittedAt": "2026-10-01T09:38:36.424",
-      "models": []
+      "submittedAt": "2026-10-14T09:42:12.344",
+      "models": [
+        "Ultravist 300"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "6a427343-54df-4588-ade4-f58055e53d93",
+      "name": "Natri Bicarbonat",
+      "model": "Không có",
+      "brand": "Sodium Bicarbonate Renaudin 8,4%",
+      "manufacturer": "Laboratoire Renaudin",
+      "origin": "Pháp",
+      "manufactureYear": "2026",
+      "specification": "Hộp 2 vỉ x 5 ống x 10ml,dung dịch tiêm truyền ,Tiêm truyền",
+      "unit": "Ống",
+      "quantity": 5000,
+      "unitPrice": 23000,
+      "amount": 115000000,
+      "contractorCode": "vn0101309965",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VIPHARCO "
+      ],
+      "lotNo": "",
+      "decisionNo": "3237/QĐ-BV",
+      "decisionDate": "2026-10-14T23:59:59",
+      "resultPublishedDate": "2026-10-14T09:42:16"
+    },
+    {
+      "id": "2fdcee40-1143-42dd-9b34-55d6d253d8d9",
+      "name": "Natri clorid + Natri hydrocarbonat",
+      "model": "Kydheamo-2B",
+      "brand": "Kydheamo-2B",
+      "manufacturer": "Công ty cổ phần Dược-Trang thiết bị y tế Bình Định (Bidiphar)",
+      "origin": "Nước Việt Nam - Châu Á",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Natri clorid + Natri hydrocarbonat (Mỗi 1000ml chứa: 30,5g+ 66,0g)",
+      "unit": "Can",
+      "quantity": 5000,
+      "unitPrice": 154875,
+      "amount": 774375000,
+      "contractorCode": "vn4100259564",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH (BIDIPHAR)"
+      ],
+      "lotNo": "",
+      "decisionNo": "3237/QĐ-BV",
+      "decisionDate": "2026-10-14T23:59:59",
+      "resultPublishedDate": "2026-10-14T09:42:16"
+    },
+    {
+      "id": "f7f9d6a6-0a51-49c0-9843-f0d914b3fa69",
+      "name": "Iopromide",
+      "model": "Ultravist 300",
+      "brand": "Ultravist",
+      "manufacturer": "Bayer AG",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: Hoạt chất: 1ml chứa 0,623 g iopromide (tương đương với 300mg iodine) trong dung dịch giống nước. Tá dược: Calci dinatri edetat, tromethamine, acid hydrochlorid (để điều chỉnh pH), nước pha tiêm. Mô tả sản phẩm: Dung dịch để tiêm /tiêm truyền. Dung dịch trong suốt, không màu tới màu vàng nhạt.",
+      "unit": "Chai/Ống/Lọ",
+      "quantity": 3000,
+      "unitPrice": 254678,
+      "amount": 764034000,
+      "contractorCode": "vn0302449627",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM TRANG THIẾT BỊ Y TẾ T.D"
+      ],
+      "lotNo": "",
+      "decisionNo": "3237/QĐ-BV",
+      "decisionDate": "2026-10-14T23:59:59",
+      "resultPublishedDate": "2026-10-14T09:42:16"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -95,5 +168,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:07:40.931Z"
+  "fetchedAt": "2026-10-18T19:32:45.461Z"
 }

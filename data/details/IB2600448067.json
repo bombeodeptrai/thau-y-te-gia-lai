@@ -1,25 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "e560670f-4cef-4914-b770-1c3f8a801e47",
+      "id": "46bb64f8-28d7-41af-8d7a-a6922c8fd53f",
       "contractorCode": "vn0302597576",
-      "taxCode": "",
+      "taxCode": "0302597576",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600634294",
-      "lotName": "Gói thầu thuốc Generic: Mua sắm bổ sung thuốc Gadoxetate Disodium cho Bệnh viện Ung bướu Đà Nẵng năm 2026 - 2027",
+      "lotName": "Gadoxetate disodium",
       "bidPrice": 661500000,
       "finalPrice": 661500000,
-      "winningPrice": 0,
+      "winningPrice": 661500000,
       "reason": "",
-      "submittedAt": "2026-09-07T10:09:31.492",
-      "models": []
+      "submittedAt": "2026-10-05T16:16:16.926",
+      "models": [
+        "Primovist"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600634294",
+      "name": "Primovist",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Đức",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bơm tiêm",
+      "quantity": 150,
+      "unitPrice": 4410000,
+      "amount": 661500000,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "BP2600634294",
+      "decisionNo": "831/QĐ-BVUBĐN",
+      "decisionDate": "2026-10-05T23:59:59",
+      "resultPublishedDate": "2026-10-05T16:16:53"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +70,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-03T11:42:59.310Z"
+  "fetchedAt": "2026-10-18T19:32:47.365Z"
 }

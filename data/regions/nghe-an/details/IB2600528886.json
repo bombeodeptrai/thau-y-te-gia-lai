@@ -1,55 +1,132 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 4,
   "bidders": [
     {
-      "id": "e42f1aab-2b46-4e5e-94e0-b78bfd76edd8",
-      "contractorCode": "vn0106670188",
-      "taxCode": "",
-      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI KỸ THUẬT HKT VIỆT NAM",
-      "status": "participating",
+      "id": "f5c2a7f4-1217-4201-8502-61ef404063e4",
+      "contractorCode": "vn2900326174",
+      "taxCode": "2900326174",
+      "contractorName": "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN",
+      "status": "won",
       "lotNo": "BP2600701969",
       "lotName": "Mua sắm tài sản, thiết bị y tế phục vụ công tác chuyên môn năm 2026 của Trung tâm Y tế Tân Kỳ",
-      "bidPrice": 3445000000,
-      "finalPrice": 3445000000,
-      "winningPrice": 0,
+      "bidPrice": 3400000000,
+      "finalPrice": 3400000000,
+      "winningPrice": 3400000000,
       "reason": "",
-      "submittedAt": "2026-09-24T09:12:35.914",
+      "submittedAt": "2026-10-13T10:51:26.911",
       "models": []
     },
     {
-      "id": "e285acdd-1fe2-46d0-ba15-75e5be153e2e",
+      "id": "2dd643e9-b8eb-4195-aee4-d26cc8bfd031",
       "contractorCode": "vn0108407312",
-      "taxCode": "",
+      "taxCode": "0108407312",
       "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ ĐỨC THÀNH",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600701969",
       "lotName": "Mua sắm tài sản, thiết bị y tế phục vụ công tác chuyên môn năm 2026 của Trung tâm Y tế Tân Kỳ",
       "bidPrice": 3440000000,
       "finalPrice": 3440000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-24T09:12:36.17",
+      "reason": "Nhà thầu xếp hạng 2 không đánh giá",
+      "submittedAt": "2026-10-13T10:51:26.911",
       "models": []
     },
     {
-      "id": "6f78c868-e8ed-45c2-b9bf-1f02e38b2ce3",
-      "contractorCode": "vn2900326174",
-      "taxCode": "",
-      "contractorName": "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN",
-      "status": "participating",
+      "id": "0261b38b-56ae-4a4f-8e32-1ab6a6e33c4e",
+      "contractorCode": "vn0106670188",
+      "taxCode": "0106670188",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI KỸ THUẬT HKT VIỆT NAM",
+      "status": "lost",
       "lotNo": "BP2600701969",
       "lotName": "Mua sắm tài sản, thiết bị y tế phục vụ công tác chuyên môn năm 2026 của Trung tâm Y tế Tân Kỳ",
-      "bidPrice": 3400000000,
-      "finalPrice": 3400000000,
+      "bidPrice": 3445000000,
+      "finalPrice": 3445000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-24T09:12:36.371",
+      "reason": "Nhà thầu xếp hạng 3 không đánh giá",
+      "submittedAt": "2026-10-13T10:51:26.911",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "1322cb06-162c-4713-95bc-4e35b0b97543",
+      "name": "Máy đo độ loãng xương toàn thân bằng tia x",
+      "model": "EXCELLUS",
+      "brand": "OsteoSys",
+      "manufacturer": "OsteoSys Co., Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Theo bảng đáp ứng kỹ thuật kèm theo E-HSDT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1180000000,
+      "winnerNames": [
+        "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN"
+      ],
+      "decisionNo": "516/QĐ-TTYT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T10:51:49"
+    },
+    {
+      "id": "4a86f038-01e6-4728-8f46-4e65655d46aa",
+      "name": "Máy điều trị da laser CO2",
+      "model": "LC10-BG",
+      "brand": "Guangzhou ODI",
+      "manufacturer": "Guangzhou ODI Technology Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Theo bảng đáp ứng kỹ thuật kèm theo E-HSDT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 240000000,
+      "winnerNames": [
+        "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN"
+      ],
+      "decisionNo": "516/QĐ-TTYT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T10:51:49"
+    },
+    {
+      "id": "df7be059-c42e-41a1-8816-94b4c28e19b8",
+      "name": "Máy siêu âm chẩn đoán",
+      "model": "V6",
+      "brand": "Samsung",
+      "manufacturer": "Samsung Medison Co.,Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Theo bảng đáp ứng kỹ thuật kèm theo E-HSDT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 1660000000,
+      "winnerNames": [
+        "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN"
+      ],
+      "decisionNo": "516/QĐ-TTYT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T10:51:49"
+    },
+    {
+      "id": "8a1874ac-aefe-42f7-8989-19b3ee516fc9",
+      "name": "Máy kéo giãn cột sống, cổ, lưng",
+      "model": "CLTRAC",
+      "brand": "ZIMMER MEDIZIN SYSTEME GMBH",
+      "manufacturer": "ZIMMER MEDIZIN SYSTEME GMBH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Theo bảng đáp ứng kỹ thuật kèm theo E-HSDT",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 320000000,
+      "winnerNames": [
+        "CÔNG TY CP THIẾT BỊ VẬT TƯ Y TẾ VÀ DƯỢC PHẨM NGHỆ AN"
+      ],
+      "decisionNo": "516/QĐ-TTYT",
+      "decisionDate": "2026-10-13T23:59:59",
+      "resultPublishedDate": "2026-10-13T10:51:49"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +151,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:00:22.380Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-18T19:27:03.729Z"
 }

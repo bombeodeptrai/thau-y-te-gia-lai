@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "8d0dc1a0-160e-4ff1-b607-0a9eb721e38a",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "won",
+      "lotNo": "BP2600645694",
+      "lotName": "Gói thầu mua sắm Máy thở năm 2026.",
+      "bidPrice": 645000000,
+      "finalPrice": 645000000,
+      "winningPrice": 645000000,
+      "reason": "",
+      "submittedAt": "2026-10-13T10:58:06.389",
+      "models": [
+        "Savina 300"
+      ]
+    },
+    {
+      "id": "e0149cde-fb07-4542-996e-64ed75ed576e",
+      "contractorCode": "vn0310916106",
+      "taxCode": "0310916106",
+      "contractorName": "Công ty tnhh thiết bị y tế Đỗ Gia",
+      "status": "lost",
+      "lotNo": "BP2600645694",
+      "lotName": "Gói thầu mua sắm Máy thở năm 2026.",
+      "bidPrice": 650000000,
+      "finalPrice": 650000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-10-13T10:58:06.389",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "4ac5c488-3568-4953-b689-d822a317fc7b",
+      "name": "MÁY THỞ",
+      "model": "Savina 300",
+      "brand": "Dräger",
+      "manufacturer": "Dragerwerk AG & Co.KGaA",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở lên",
+      "specification": "MÁY THỞ\n- Máy chính với màn hình hiển thị LCD: 01 máy\n- Model: Savina 300\n- Hãng sản xuất: Dragerwerk AG & Co.KGaA\n- Nước sản xuất: Đức\nCác phụ kiện kèm theo:\n1. Bộ nén khí y tế tích hợp trong máy: 01 bộ\n2. Bộ dây nối khí O2 và đầu nối: 01 bộ\n3. Bộ dây thở sử dụng nhiều lần cho người lớn: 01 bộ\n4. Bộ dây thở sử dụng nhiều lần cho trẻ em: 01 bộ\n5. Mặt nạ thở, người lớn sử dụng nhiều lần: 01 cái\n6. Mặt nạ thở, trẻ em sử dụng nhiều lần: 01 cái\n7. Phổi giả: 01 cái\n8. Tay đỡ dây thở: 01 cái\n9. Van thở ra sử dụng nhiều lần, có thể hấp tiệt trùng: 01 cái\n10. Cảm biến lưu lượng: 05 cái\n11. Bộ làm ấm: 01 bộ\n12. Buồng làm ẩm người lớn: 01 cái\n13. Buồng làm ẩm trẻ em: 01 cái\n14. Gá treo bộ làm ấm làm ẩm: 01 bộ\n15. Xe đẩy đồng bộ máy chính: 01 bộ\n16. Dây nguồn: 01 cái\n17. Tài liệu hướng dẫn sử dụng: 01 bộ",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 645000000,
+      "amount": 645000000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "294/QĐ-TTYT",
+      "decisionDate": "2026-10-13T10:55:02",
+      "resultPublishedDate": "2026-10-13T10:58:27"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +114,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:20:01.553Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-18T19:40:12.865Z"
 }

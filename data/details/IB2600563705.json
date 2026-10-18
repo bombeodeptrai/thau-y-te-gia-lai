@@ -1,9 +1,319 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 12,
+  "bidders": [
+    {
+      "id": "1f297190-c216-49bd-9674-dfbf12557054",
+      "contractorCode": "vn3100137028",
+      "taxCode": "3100137028",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+      "status": "won",
+      "lotNo": "PP2600425122",
+      "lotName": "Phần 1. Vật tư y tế",
+      "bidPrice": 180840000,
+      "finalPrice": 180840000,
+      "winningPrice": 180840000,
+      "reason": "",
+      "submittedAt": "2026-10-15T08:52:25.662",
+      "models": [
+        "ONG_35MLNON3P7N0",
+        "V5020521",
+        "Ergonom-X",
+        "G33E41, G33E52",
+        "440402",
+        "35-8-3-18",
+        "CF/Zekrya®"
+      ]
+    },
+    {
+      "id": "ac2a309a-0078-4bd0-848d-eb477926413b",
+      "contractorCode": "vn0317031173",
+      "taxCode": "0317031173",
+      "contractorName": "CÔNG TY TNHH Y TẾ ĐẶNG GIA",
+      "status": "won",
+      "lotNo": "PP2600425123",
+      "lotName": "Phần 2: Hóa chất, vật tư cho xét nghiệm huyết học, đông máu, nước tiểu, miễn dịch",
+      "bidPrice": 137190000,
+      "finalPrice": 137190000,
+      "winningPrice": 137190000,
+      "reason": "",
+      "submittedAt": "2026-10-15T08:52:25.662",
+      "models": [
+        "315-456",
+        "315-470",
+        "CMO0301",
+        "CMO0401",
+        "CMO0201"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "68b5e479-d1f4-4abb-88d5-f42b333226d2",
+      "name": "Hoá chất rửa dùng cho máy xét nghiệm",
+      "model": "315-456",
+      "brand": "Pro-Clean",
+      "manufacturer": "MTI Diagnostics GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Thành phần chính: Sodium hypochlorite < 8.0%; Sodium hydrate < 2.0%\r\nSản phẩm có xuất xứ: Đức (thuộc các nước G7)\r\nTiêu chuẩn chất lượng ISO 13485:2016",
+      "unit": "Lọ",
+      "quantity": 12,
+      "unitPrice": 1500000,
+      "amount": 18000000,
+      "contractorCode": "vn0317031173",
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ ĐẶNG GIA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "dc2e43a5-8d84-4bd3-ac66-2935d89afd82",
+      "name": "Que thử xét nghiệm nước tiểu 11 thông số",
+      "model": "315-470",
+      "brand": "Urodip 11P",
+      "manufacturer": "MTI Diagnostics GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Thành phần chính: Ascorbic Acid: 2.6-dichloro-phenol-indophenol 0.5mg; Leukocytes: indoxyl ester 1.4mg;diazonium salt 0.7mg; Ketone: sodium nitroprusside 30.0mg; Nitrite: sulfanilamide 0.65mg;N-(naphthyl)-ethylenediammonium dihydrochloride 0.45mg; Urobilinogen: fast blue B salt 1.2mg; Bilirubin: 2.4-dichlorobenzene diazonium 14.3mg; Protein: tetrabromphenol blue 0.36mg; Glucose: glucose oxidase 6.2mg;peroxidase 2.8mg;4-aminoantipyrine 0.08mg; Specific Gravity: bromthymol blue 0.4mg;sodium poly methyl vinyl acetate maleic 16mg; Blood: cumene hydroperoxide 35.2mg;3,3',5,5'-tetramethylbenzidine 2.0mg. pH: bromocresol green 0.2mg; bromxylenol blue 3.3mg. Sản phẩm có xuất xứ: Đức (thuộc các nước G7)\r\nTiêu chuẩn chất lượng ISO 13485:2016",
+      "unit": "Hộp",
+      "quantity": 120,
+      "unitPrice": 842000,
+      "amount": 101040000,
+      "contractorCode": "vn0317031173",
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ ĐẶNG GIA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "e62020e8-3f8e-4491-975a-28e9ed5ff308",
+      "name": "Dung dịch đệm cho máy miễn dịch",
+      "model": "CMO0301",
+      "brand": "Wash Buffer",
+      "manufacturer": "Autobio Diagnostics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Thành phần chính: Phosphate buffer Tiêu chuẩn chất lượng ISO 13485:2016",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 4600000,
+      "amount": 4600000,
+      "contractorCode": "vn0317031173",
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ ĐẶNG GIA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "1d64bd98-08f1-48cd-a892-914db8aeb4d8",
+      "name": "Dung dịch rửa cho máy miễn dịch",
+      "model": "CMO0401",
+      "brand": "System Wash",
+      "manufacturer": "Autobio Diagnostics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Mục đích sử dụng: Dung dịch cô đặc dùng để vệ sinh pipet mẫu trong quá trình phản ứng phát hiện chất đo cho xét nghiệm phát hiện chẩn đoán trong ống nghiệm. Thành phần chính: Natri Hydroxide (tên gọi khác của Sodium Hydroxide) Tiêu chuẩn chất lượng ISO 13485:2016 .",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 8550000,
+      "amount": 8550000,
+      "contractorCode": "vn0317031173",
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ ĐẶNG GIA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "3a508b39-cef2-4c6b-afb1-ea3052210067",
+      "name": "Dung dịch pha loãng mẫu cho máy miễn dịch",
+      "model": "CMO0201",
+      "brand": "Diluent Universal",
+      "manufacturer": "Autobio Diagnostics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Thành phần chính: NaCl buffer Tiêu chuẩn chất lượng ISO 13485:2016",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 5000000,
+      "amount": 5000000,
+      "contractorCode": "vn0317031173",
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ ĐẶNG GIA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "07d5f169-99a2-4be9-af7e-992c0be5dc9d",
+      "name": "Ống nghiệm nhựa PS 5ml nắp trắng, không nhãn",
+      "model": "ONG_35MLNON3P7N0",
+      "brand": "Ống nghiệm nhựa PS 5ml nắp trắng, không nhãn",
+      "manufacturer": "Công ty CP Vật Tư Y Tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "từ 2024 trở về sau",
+      "specification": "Ống nghiệm nhựa PS trong suốt, kích thước 13 x 75mm, nắp nhựa màu trắng, không nhãn, dung tích tối đa 6 ± 0.1ml.",
+      "unit": "ống",
+      "quantity": 10000,
+      "unitPrice": 500,
+      "amount": 5000000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "b661b618-ba2a-446a-8bdf-76ea50fc44ff",
+      "name": "Ống nghiệm Heparin VMA 2ml",
+      "model": "V5020521",
+      "brand": "Ống nghiệm Heparin VMA 2ml",
+      "manufacturer": "Công ty CP Vật Tư Y Tế Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "từ 2024 trở về sau",
+      "specification": "Ống nghiệm nhựa, kích thước 13 x 75mm, nắp nhựa. Hóa chất bên trong là Heparin Lithium kháng đông cho 2ml máu.",
+      "unit": "ống",
+      "quantity": 4000,
+      "unitPrice": 880,
+      "amount": 3520000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "59ec9be1-1149-4a0c-9c76-e4631e1eaecc",
+      "name": "Phim X-quang nha khoa rửa nhanh",
+      "model": "Ergonom-X",
+      "brand": " Phim X-quang nha khoa rửa nhanh",
+      "manufacturer": "Dentalfilm FZCO",
+      "origin": "Các Tiểu Vương quốc Ả Rập Thống nhất",
+      "manufactureYear": "từ 2024 trở về sau",
+      "specification": "Phim và nước đóng sẵn trong 1 lá phim. Không cần buồng tối. Cho hình ảnh chỉ sau 1 phút. Lưu giữ độ sắc nét trong suốt 10 năm.",
+      "unit": "hộp",
+      "quantity": 24,
+      "unitPrice": 950000,
+      "amount": 22800000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "379b24ee-a459-4151-9fdf-fe782eb8c869",
+      "name": "Lưỡi bào, cắt, đốt Plasma dùng trong phẫu thuật nội soi Amidan & Adenoid",
+      "model": "G33E41,  G33E52",
+      "brand": "Lưỡi bào, cắt, đốt Plasma dùng trong phẫu thuật nội soi Amidan & Adenoid",
+      "manufacturer": "Beijing Jeswis Technology\r\nLtd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "từ 2024 trở về sau",
+      "specification": "Sử dung công nghệ Plasma nhiệt độ thấp giúp giảm tối đa tổn thương mô- Độ chính xác của lớp Plasma tập trung vào điện cực 100 micromet- Nhiệt độ hoạt động: 40°C - 70°C- Chiều dài: 125mm- đường kính đầu: 4.3/5.0mm- Góc đầu: 130-140 độ- Tích hợp đông máu lưỡng cực tích hợp giúp cầm máu hiệu quả.- Đầu kết nối với máy thiết kế 8 chân- Tần số: 100kHz ± 10kHz- Điện năng: 65V-330V- Thiết kế đầu bề mặt lưỡi bào 3 dây giúp thao tác nhanh trong quá trình phẫu thuật,  tích hợp chế độ hút trong quá trình cắt bỏ",
+      "unit": "cái",
+      "quantity": 20,
+      "unitPrice": 5400000,
+      "amount": 108000000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "873bed13-4219-4cb1-abb3-823ca068b97a",
+      "name": "Merocel Standard Nasal Dressing",
+      "model": "440402",
+      "brand": "Merocel Standard Nasal Dressing",
+      "manufacturer": "Medtronic Xomed Inc",
+      "origin": "Mỹ",
+      "manufactureYear": "từ 2024 trở về sau",
+      "specification": "Miếng cầm máu mũi. Chiều dài: 8cm; Độ dày: 1,5cm; Chiều cao: 2cm. Có dây. Khả năng thấm hút cao lên tới 21 lần trọng lượng của nó trong chất lỏng. Xuất xứ: G7",
+      "unit": "Miếng",
+      "quantity": 80,
+      "unitPrice": 135000,
+      "amount": 10800000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "16b1cbc4-3c6a-4e38-a712-c2ed1dce9aa6",
+      "name": "Vít xương cứng 3,5mm x 18mm",
+      "model": "35-8-3-18",
+      "brand": "Vít xương cứng 3,5mm",
+      "manufacturer": "Orthon Innovations",
+      "origin": "Pakistan",
+      "manufactureYear": "từ 2024 trở về sau",
+      "specification": "Chất liệu thép không rỉ\r\nĐường kính: 3,5 mm.\r\nChiều dài:18 mm.",
+      "unit": "cái",
+      "quantity": 40,
+      "unitPrice": 43000,
+      "amount": 1720000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    },
+    {
+      "id": "ba31ad7f-ddb1-43c3-8bf1-e9863e505e54",
+      "name": "Mũi khoan cắt xương",
+      "model": "CF/Zekrya®",
+      "brand": "Mũi khoan nha khoa",
+      "manufacturer": "Maillefer Instruments Holding Sàrl",
+      "origin": "Thụy Sĩ",
+      "manufactureYear": "từ 2024 trở về sau",
+      "specification": "Chiều dài tổng \r\nthể 26mm, 28mm",
+      "unit": "cái",
+      "quantity": 100,
+      "unitPrice": 290000,
+      "amount": 29000000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1593/QĐ-BVĐH",
+      "decisionDate": "2026-10-15T08:45:15",
+      "resultPublishedDate": "2026-10-15T08:52:31"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -311,5 +621,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:03:30.618Z"
+  "fetchedAt": "2026-10-18T19:29:32.542Z"
 }

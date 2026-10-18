@@ -1,40 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "f8427ed6-a441-4b9a-9c6f-1b440e744826",
+      "id": "8b133c10-7038-49be-a7a2-8effc2ec03c0",
       "contractorCode": "vn0400101404",
-      "taxCode": "",
+      "taxCode": "0400101404",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600397297",
       "lotName": "Rifampicin",
       "bidPrice": 20160000,
       "finalPrice": 20160000,
-      "winningPrice": 0,
+      "winningPrice": 20160000,
       "reason": "",
-      "submittedAt": "2026-09-30T15:02:28.27",
-      "models": []
+      "submittedAt": "2026-10-16T16:35:28.612",
+      "models": [
+        "Agifamcin 300"
+      ]
     },
     {
-      "id": "3175ca9a-803f-45da-9127-68ab47aca06d",
+      "id": "5ac6c034-a365-4382-8760-8c28d4165d47",
       "contractorCode": "vn0600206147",
-      "taxCode": "",
+      "taxCode": "0600206147",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600397298",
       "lotName": "Rifampicin + Isoniazid",
       "bidPrice": 5210940000,
       "finalPrice": 5210940000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-30T15:02:28.496",
+      "reason": "Vượt giá kế hoạch",
+      "submittedAt": "2026-10-16T16:35:28.612",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600397297",
+      "name": "Agifamcin 300",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 8000,
+      "unitPrice": 2520,
+      "amount": 20160000,
+      "contractorCode": "vn0400101404",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG"
+      ],
+      "lotNo": "PP2600397297",
+      "decisionNo": "157/QĐ-BVP",
+      "decisionDate": "2026-10-16T23:59:59",
+      "resultPublishedDate": "2026-10-16T16:35:35"
+    }
+  ],
   "requirements": {
     "total": 5,
     "items": [
@@ -99,6 +124,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:06:28.116Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-18T19:31:40.911Z"
 }
