@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=44edc744-3110-40fd-ae38-e087bbc39041&notifyId=44edc744-3110-40fd-ae38-e087bbc39041&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600582849&planNo=PL2600356055&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,9 +38,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "7ce1cec5-575f-4157-82df-9fd51d0b07ea",
@@ -8735,11 +8733,28 @@
       "decisionDate": "2026-10-19T16:36:20",
       "resultPublishedDate": "2026-10-19T16:38:02",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN"
+      ],
+      "loserNames": [
+        "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN",
+          "reason": "Không đạt yêu cầu kỹ thuật"
+        }
+      ],
+      "winningModels": [
+        "83931817",
+        "83932817",
+        "8389.911"
+      ],
+      "losingModels": [
+        "83931817",
+        "83932817",
+        "8389.911"
+      ],
       "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
@@ -9864,7 +9879,16 @@
         "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
         "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC",
+          "reason": "Xếp hạng 3"
+        }
+      ],
       "winningModels": [
         "HH1",
         "HH2",
@@ -9878,7 +9902,7 @@
         "HH10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -10339,7 +10363,36 @@
         "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
         "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH KỸ THUẬT VÀ THIẾT BỊ Y TẾ HUY PHÁT",
+          "reason": "Xếp hạng 5"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 4"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B",
+          "reason": "Xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "1050044",
         "04917049190",
@@ -10636,9 +10689,9 @@
       "loserDetails": [],
       "winningModels": [
         "GT205-403",
-        "ECG-0001",
-        "EDT_22MLO K23P1L1",
-        "ONG_35MLN ON3P7N0",
+        " ECG-0001",
+        "EDT_22MLO\r\nK23P1L1",
+        "ONG_35MLN\r\nON3P7N0",
         "810001; 810002",
         "FRINTING PAPER",
         "HEP_22MLOTH3P2L1",
@@ -10654,7 +10707,7 @@
         "822001 822002",
         "C.70.VP30",
         "USGEL",
-        "L031-11211",
+        " L031-11211",
         "1322-24MM",
         "BTK1: MPV",
         "BTK10: MPV",
@@ -10676,7 +10729,7 @@
         "ODD: MPV",
         "GT054-200",
         "GKTCB",
-        "GPT",
+        " GPT",
         "Disposable Surgical Blade",
         "DRYSTAR DT 5.000I B",
         "BG1722",
@@ -12899,12 +12952,17 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+          "reason": "Xếp hạng thứ 2"
+        }
+      ],
       "winningModels": [
         "SD-Q2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -34987,7 +35045,40 @@
       ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "W9124H",
+        "W9115H",
+        "VCP359H",
+        "C200",
+        "NK1030A20",
+        "PPN613D",
+        "2-0",
+        "3-0",
+        "6-0",
+        "VN0140L",
+        "NB450H12",
+        "PPN324D",
+        "VN326",
+        "W9125H",
+        "1",
+        "ST90D120",
+        "NB375I29",
+        "VN226",
+        "VN417",
+        "PN326L",
+        "PPM806D",
+        "NB275I42",
+        "VCP317H",
+        "VCP316H",
+        "VU0165",
+        "PPN225D",
+        "PPM422D",
+        "PPN517D",
+        "PPM710BD",
+        "5-0",
+        "NB175L18",
+        "PPB906"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -37626,7 +37717,33 @@
       ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "54840004020; 54840004025; 54840004030; 54840004035; 54840004040; 54840004045; 54840004525; 54840004530; 54840004535; 54840004540; 54840004545; 54840005020; 54840005025; 54840005030; 54840005035; 54840005040; 54840005045; 54840005050; 54840005525; 54840005530; 54840005535; 54840005540; 54840005545; 54840005550; 54840005555; 54840006035; 54840006040; 54840006045; 54840006530; 54840006535; 54840006540; 54840006545; 54840006550; 54840006555; 54840006560; 54840007530; 54840007535; 54840007540; 54840007545; 54840007550; 54840007555; 54840007560; 54840007565; 54840007570; 54840007580; 54840007590; 54840008540; 54840008545; 54840008550; 54840008555; 54840008560; 54840008565; 54840008570; 54840008580; 54840008590; 54840008500; 54840009540; 54840009545; 54840009550; 54840009555; 54840009560; 54840009565; 54840009570; 54840009580; 54840009590; 54840009500",
+        "5440030",
+        "1475000500",
+        "9392507; 9392508; 9392509; 9392510; 9392511; 9392512; 9392513; 9392514; 9392515; 9393007; 9393008; 9393009; 9393010; 9393011; 9393012; 9393013; 9393014; 9393015",
+        "7600110",
+        "Med V+ (T060417 gồm 2 mã con: T060418, T060419)",
+        "T060430/ T060431",
+        "C01A",
+        "6958710; 6958712; 6958714; 6958716; 6958718; 6958720; 6958722; 6958724; 6958726; 6958728; 6958730; 6958810; 6958812; 6958814; 6958816; 6958818; 6958820; 6958822; 6958824; 6958826; 6958828; 6958830; 6958832; 6958834; 6958836; 6958838; 6958840; 6958842; 6958844; 6958846; 6958848; 6958850; 6958852; 6958924; 6958926; 6958928; 6958930; 6958932; 6958934",
+        "6950315",
+        "6900240",
+        "6900280",
+        "6955406; 6955408; 6955410; 6955412; 6955414; 6955416; 6955418; 6955506; 6955508; 6955510; 6955512; 6955514; 6955516",
+        "36134030; 36134035; 36134040; 36134045; 36134050; 36134055; 36134060; 36134530; 36134535; 36134540; 36134545; 36134550; 36134555; 36134560; 36135030; 36135035; 36135040; 36135045; 36135050; 36135055; 36135060; 36135530; 36135535; 36135540; 36135545; 36135550; 36135555; 36135560; 36136030; 36136035; 36136040; 36136045; 36136050; 36136055; 36136060; 36136530; 36136535; 36136540; 36136545; 36136550; 36136555; 36136560; 36137030; 36137035; 36137040; 36137045; 36137050; 36137055; 36137060",
+        "36160013",
+        "36150050; 36150060; 36150070; 36150080; 36150090; 36150100; 36150110; 36150120; 36150160; 36150200; 36150240; 36150500; 36150550",
+        "SN307P; SN308P; SN309P; SN310P; SN311P; SN312P; SN313P; SN314P; SN315P; SN317P; SN337P; SN338P; SN339P; SN340P; SN341P; SN342P; SN343P; SN344P; SN345P; SN347P; SN367P; SN368P; SN369P; SN370P; SN371P; SN372P; SN373P; SN374P; SN375P; SN377P.",
+        "75444020; 75444025; 75444030; 75444035; 75444040; 75444520; 75444525; 75444530; 75444535; 75444540; 75445020; 75445025; 75445030; 75445035; 75445040; 75445045; 75445050; 75445525; 75445530; 75445535; 75445540; 75445545; 75445550; 75445555; 75446025; 75446030; 75446035; 75446040; 75446045; 75446525; 75446530; 75446535; 75446540; 75446545; 75446550; 75446555; 75446560; 75447525; 75447530; 75447535; 75447540; 75447545; 75447550; 75447560; 75448530; 75448535; 75448540; 75448545; 75448550; 75448555; 75448560; 75448565",
+        "7540020",
+        "869-021",
+        "8115522; 8115525; 8115528; 8115530; 8115531; 8115534; 8115536; 8115539; 8115545; 8115558",
+        "7575530; 7575535; 7575540; 7575545; 7575550; 7576535; 7576540; 7576545; 7576550; 7577530; 7577535; 7577540; 7577545; 7577550",
+        "7570955",
+        "8672030; 8672035; 8672040; 8672045; 8672050; 8672055; 8672060; 8672065; 8672070; 8672075; 8672080; 8672085; 8672090; 8672095",
+        "7571070; 7571080; 7571090; 7571100; 7571110; 7571120"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -567145,7 +567262,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-19T15:38:03.155Z",
+  "fetchedAt": "2026-10-19T20:01:47.040Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5319,
   "regions": [
@@ -567265,11 +567382,11 @@
         "64"
       ],
       "tenderCount": 1181,
-      "bidderCount": 18976,
-      "equipmentCount": 17864,
+      "bidderCount": 18980,
+      "equipmentCount": 17926,
       "detailTenderCount": 1127,
       "coverageDays": 1095,
-      "fetchedAt": "2026-10-19T15:38:03.155Z",
+      "fetchedAt": "2026-10-19T20:01:47.040Z",
       "initialized": true,
       "source": "regional-scan"
     },
