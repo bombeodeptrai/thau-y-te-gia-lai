@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-18T22:28:07.940Z",
+  "rescuedAt": "2026-10-19T04:41:52.873Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 224,
+      "count": 226,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 543,
+      "count": 569,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 122,
+      "count": 125,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 69,
+      "count": 70,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 103,
+      "count": 116,
       "error": ""
     },
     {
@@ -240,7 +240,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1439,
+  "candidateCount": 1474,
   "acceptedCount": 53,
-  "rejectedCount": 1386,
+  "rejectedCount": 1421,
   "rejectedReasons": {
-    "excluded:tu van": 516,
-    "excluded:xay dung": 372,
-    "insufficient-medical-context": 296,
+    "excluded:tu van": 539,
+    "excluded:xay dung": 378,
+    "insufficient-medical-context": 302,
     "excluded:sua chua": 41,
-    "excluded:xay lap": 38,
-    "excluded:cai tao": 33,
+    "excluded:xay lap": 37,
+    "excluded:cai tao": 34,
     "excluded:thuc pham": 17,
     "excluded:bao hiem": 14,
     "excluded:tham dinh": 13,
@@ -938,6 +938,24 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600582044",
+      "name": "Toàn bộ khối lượng thi công dự án: Nâng cấp, mở rộng đường vào làng nghề Nón ngựa Phú Gia",
+      "investor": "BAN QUẢN LÝ XÃ XUÂN AN",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600578785",
+      "name": "Toàn bộ khối lượng thi công dự án: Nâng cấp, mở rộng đường vào làng nghề Nón ngựa Phú Gia",
+      "investor": "BAN QUẢN LÝ XÃ XUÂN AN",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600578271",
       "name": "Xây lắp công trình",
       "investor": "phòng kinh tế xã Ia Hrung",
@@ -1354,30 +1372,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600576846",
-      "name": "Thi công xây dựng tuyến đường Lý Thái Tổ (Hùng Vương - Vạn Kiếp)",
-      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600571401",
-      "name": "Thuê bao phần mềm quản lý bệnh viện (HIS), phần mềm quản lý bệnh án điện tử (EMR) và phần mềm quản lý chẩn đoán hình ảnh (PACS) của Bệnh viện ĐKKV Bồng Sơn",
-      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
-      "accepted": false,
-      "score": 90,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "chan doan"
       ]
     }
   ],
