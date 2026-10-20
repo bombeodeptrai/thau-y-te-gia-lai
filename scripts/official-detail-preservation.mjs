@@ -10,6 +10,30 @@ function preserveRows(previous, current) {
   return Array.isArray(current) ? current : (Array.isArray(previous) ? previous : []);
 }
 
+// Kết quả lựa chọn có thể chỉ công bố một phần nhà thầu đã mở thầu.
+// Khóa nhà thầu + lô giữ lịch sử công khai, còn kết quả mới thắng khi trùng khóa.
+export function mergeDisclosedBidders(previous = [], current = []) {
+  if (!hasRows(current)) return preserveRows(previous, current);
+  const key = row => {
+    const contractor = String(row.contractorCode || row.taxCode || row.contractorName || "").trim();
+    const lot = String(row.lotNo || row.lotName || "").trim();
+    return contractor ? `${contractor}|${lot}` : "";
+  };
+  const merged = new Map();
+  for (const row of previous || []) if (key(row)) merged.set(key(row), row);
+  const unkeyed = [];
+  for (const row of current) {
+    const identity = key(row);
+    if (identity) {
+      const known = merged.get(identity) || {};
+      const keepResult = ['won', 'lost'].includes(known.status) && row.status === 'participating';
+      merged.set(identity, keepResult ? { ...row, ...known } : { ...known, ...row });
+    }
+    else unkeyed.push(row);
+  }
+  return [...merged.values(), ...unkeyed];
+}
+
 function preserveSection(previous = {}, current = {}) {
   const items = preserveRows(previous?.items, current?.items);
   const usePrevious = !hasRows(current?.items) && hasRows(previous?.items);
@@ -46,7 +70,7 @@ export function detailFilesForManifest(fileNames, tenders = []) {
 }
 
 export function mergeOfficialDetail(previous = {}, current = {}) {
-  const bidders = preserveRows(previous?.bidders, current?.bidders);
+  const bidders = mergeDisclosedBidders(previous?.bidders, current?.bidders);
   const items = preserveRows(previous?.items, current?.items);
   return {
     ...(previous || {}),

@@ -28,6 +28,8 @@ jobs:
         run: |
           node --test scripts/technical-requirements.test.mjs
           node --test scripts/official-detail-preservation.test.mjs
+          node --test scripts/reconcile-opening-bidders.test.mjs
+          node --check scripts/reconcile-opening-bidders.mjs
           node --test scripts/medical-scope.test.mjs
           node --test scripts/official-source.test.mjs
           node --test scripts/official-domain.test.mjs

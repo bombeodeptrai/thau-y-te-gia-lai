@@ -1,0 +1,49 @@
+name: Đối chiếu bảo toàn nhà thầu mở thầu Gia Lai
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  reconcile:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[reconcile-opening-bidders]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: regional-data-write
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Kiểm thử và đối chiếu toàn bộ hồ sơ kết quả có mở thầu
+        run: |
+          node --test scripts/official-detail-preservation.test.mjs scripts/reconcile-opening-bidders.test.mjs
+          node scripts/reconcile-opening-bidders.mjs gia-lai --apply
+          node scripts/merge-regions.mjs
+          node scripts/data-health-check.mjs
+          test ! -f data/bidders.json
+          test ! -f data/equipment.json
+      - name: Lưu dữ liệu có căn cứ từ nguồn công khai
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/regions/gia-lai data/tenders.json data/region-coverage.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: bảo toàn nhà thầu mở thầu công khai Gia Lai [skip central scan]'
+            git push origin HEAD:main
+          fi
+      - name: Triển khai Pages sau đối chiếu
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({owner: context.repo.owner, repo: context.repo.repo, workflow_id: 'pages.yml', ref: 'main'});

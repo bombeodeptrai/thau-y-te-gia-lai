@@ -10,7 +10,19 @@ import {
   mergeOfficialDetail,
   preserveTenderBidderCount,
   normalizeTenderDisclosedNames,
+  mergeDisclosedBidders,
 } from "./official-detail-preservation.mjs";
+
+test("IB2600313612 giữ 223 dòng mở thầu khi kết quả chỉ trả 167 dòng", () => {
+  const opening = Array.from({length:223}, (_, i) => ({contractorCode:`vn${i}`,lotNo:`PP${i}`,status:"participating",bidPrice:i+1}));
+  const result = opening.slice(0,167).map(row => ({...row,status:"won",winningPrice:row.bidPrice}));
+  const bidders = mergeDisclosedBidders(opening,result);
+  assert.equal(bidders.length,223);
+  assert.equal(bidders.filter(row=>row.status==="won").length,167);
+  assert.equal(bidders.filter(row=>row.status==="participating").length,56);
+  assert.deepEqual(mergeDisclosedBidders(bidders,result),bidders);
+  assert.equal(mergeOfficialDetail({bidders:opening},{bidders:result}).bidders.length,223);
+});
 
 test("DC2600000882 không đếm hai tên khác khoảng trắng thành hai nhà thầu", () => {
   const name = "CÔNG TY TNHH THIẾT BỊ Y TẾ VŨ GIA PHÁT";
