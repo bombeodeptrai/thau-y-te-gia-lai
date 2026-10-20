@@ -27,6 +27,7 @@ for (const title of [
   "Mua sắm thuốc thử sử dụng trên máy xét nghiệm",
   "Mua sắm stent mạch vành phủ thuốc", "Mua bì đựng thuốc",
   "Mua tủ bảo quản thuốc", "Mua bơm tiêm thuốc", "Sửa chữa máy CT thuộc Bệnh viện",
+  "IB2400369017: Mua sắm vật tư sử dụng cho máy đóng gói thuốc nước đông y",
 ]) {
   test(`không nhầm thuốc thử/thiết bị thành dược phẩm: ${title}`, () => assert.notEqual(medicalCategory(title), "Dược phẩm"));
 }
