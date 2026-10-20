@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-20T12:10:50.072Z",
+  "rescuedAt": "2026-10-20T17:28:49.390Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 114,
+      "count": 115,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 315,
+      "count": 313,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 723,
+  "candidateCount": 721,
   "acceptedCount": 27,
-  "rejectedCount": 696,
+  "rejectedCount": 694,
   "rejectedReasons": {
-    "excluded:tu van": 284,
-    "insufficient-medical-context": 164,
+    "excluded:tu van": 281,
+    "insufficient-medical-context": 165,
     "excluded:xay dung": 158,
     "excluded:xay lap": 20,
     "excluded:sua chua": 16,
@@ -730,6 +730,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600584740",
+      "name": "Gói thầu số 01: Tổ chức chương trình nghệ thuật Đêm hội cồng chiêng Gia Lai năm 2026",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600583390",
       "name": "Thi công xây dựng và lắp đặt thiết bị",
       "investor": "Ban Quản lý dự án Đầu tư xây dựng và Phát triển quỹ đất phường Quy Nhơn Tây",
@@ -1147,17 +1156,6 @@
       "notifyNo": "IB2600572496",
       "name": "Toàn bộ khối lượng thi công xây dựng hoàn thành công trình",
       "investor": "Ban Quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn Nam",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572291",
-      "name": "Gói thầu số 1: Mua vật liệu xây dựng, vách nhôm kính, bàn ghế, ống nhựa PVC và các vật tư khác",
-      "investor": "LỮ ĐOÀN 132-BINH CHỦNG THÔNG TIN LIÊN LẠC",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",
