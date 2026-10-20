@@ -345,7 +345,7 @@ export function medicalCategory(name) {
   // Thuốc thử là hóa chất xét nghiệm, không phải dược phẩm điều trị.
   const drugTitle = text.replace(/\bthuoc thu\b/g, "hoa chat xet nghiem");
   if (/^(?:thuoc|vi thuoc|duoc pham|duoc lieu|duoc chat)\b/.test(drugTitle)
-      || /\b(?:mua(?: sam)?|cung cap|cung ung|goi(?: thau)?|dau thau)(?: (?:so|cac|mot|loai|mat hang|[0-9]+))* (?:thuoc|vi thuoc|duoc pham|duoc lieu|duoc chat)\b/.test(drugTitle)) {
+      || /\b(?:mua(?: sam)?|cung cap|cung ung|goi thau|dau thau)(?: (?:so|cac|mot|loai|mat hang|[0-9]+))* (?:thuoc|vi thuoc|duoc pham|duoc lieu|duoc chat)\b/.test(drugTitle)) {
     return "Dược phẩm";
   }
   return matchedTerms(text, [

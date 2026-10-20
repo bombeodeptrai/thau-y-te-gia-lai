@@ -119,8 +119,9 @@ for (const region of config.regions || []) {
     const normalized = normalizeTenderDisclosedNames(tender, region.slug === "gia-lai" ? biddersByNotice.get(tender.notifyNo) || [] : []);
     // Sửa các gói thuốc đã lưu từ trước; không đổi membership, định danh,
     // thời điểm quét hay xóa dòng khi chuẩn hóa lại nhóm trên giao diện/Sheet.
-    return medicalCategory(normalized.name) === "Dược phẩm"
-      ? { ...normalized, category: "Dược phẩm" } : normalized;
+    const category = medicalCategory(normalized.name);
+    return category === "Dược phẩm" || normalized.category === "Dược phẩm"
+      ? { ...normalized, category } : normalized;
   });
   if (JSON.stringify(normalizedTenders) !== JSON.stringify(tenderPayload.tenders || [])) {
     tenderPayload.tenders = normalizedTenders;
