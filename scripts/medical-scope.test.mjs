@@ -4,9 +4,32 @@ import {
   canonicalNotifyNo,
   classifyMedicalTender,
   isMedicalTender,
+  medicalCategory,
 } from "./medical-scope.mjs";
 
 const hospital = "Bệnh viện Đa khoa tỉnh";
+
+test("DC2600063405 xuất hiện dưới bộ lọc Dược phẩm", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "DC2600063405",
+    bidName: ["Lựa chọn nhà thầu, dự toán mua sắm: Gói thầu thuốc Generic phục vụ cấp cứu, điều trị bệnh nhân năm 2026 (đợt 4) của Bệnh viện Sản - Nhi tỉnh Gia Lai"],
+    investorName: "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+  });
+  assert.equal(result.accepted, true);
+  assert.equal(result.category, "Dược phẩm");
+});
+
+for (const title of ["Mua sắm 05 mặt hàng thuốc Generic", "Gói thầu vị thuốc cổ truyền", "Mua dược liệu phục vụ điều trị"]) {
+  test(`phân nhóm dược phẩm: ${title}`, () => assert.equal(medicalCategory(title), "Dược phẩm"));
+}
+for (const title of [
+  "Cung cấp thuốc thử, chất hiệu chuẩn và vật tư xét nghiệm",
+  "Mua sắm thuốc thử sử dụng trên máy xét nghiệm",
+  "Mua sắm stent mạch vành phủ thuốc", "Mua bì đựng thuốc",
+  "Mua tủ bảo quản thuốc", "Mua bơm tiêm thuốc", "Sửa chữa máy CT thuộc Bệnh viện",
+]) {
+  test(`không nhầm thuốc thử/thiết bị thành dược phẩm: ${title}`, () => assert.notEqual(medicalCategory(title), "Dược phẩm"));
+}
 
 for (const title of [
   "Hóa chất sử dụng trên máy miễn dịch huỳnh quang gồm 02 mặt hàng",
@@ -138,7 +161,7 @@ test("nhận gói thuốc đa tỉnh đã khôi phục: IB2500539164", () => {
     investorName: "Trung tâm Mua sắm tập trung thuốc Quốc gia",
   });
   assert.equal(result.accepted, true, result.reason);
-  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.equal(result.category, "Dược phẩm");
 });
 
 test("không mở rộng vật tư phòng dịch hoặc đồ vải sang đơn vị ngoài y tế", () => {
@@ -285,7 +308,7 @@ test("nhận gói thuốc bó dược liệu của bệnh viện y dược cổ 
   });
 
   assert.equal(result.accepted, true, result.reason);
-  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.equal(result.category, "Dược phẩm");
   assert.ok(result.reason.includes("explicit-medical-title"));
   assert.ok(result.matched.includes("thuoc bo"));
 });
@@ -305,7 +328,7 @@ for (const [notifyNo, title, investor] of [
   test(`nhận thuốc điều trị do cơ sở y tế mua: ${notifyNo}`, () => {
     const result = classifyMedicalTender({ notifyNo, bidName: [title], investorName: investor });
     assert.equal(result.accepted, true, result.reason);
-    assert.equal(result.category, "Vật tư & hóa chất");
+    assert.equal(result.category, "Dược phẩm");
     assert.ok(result.reason.includes("medical-drug-supply"), result.reason);
     assert.ok(result.matched.includes("thuoc"));
   });
@@ -321,7 +344,7 @@ test("nhận gói thuốc tập trung quốc gia áp dụng cho nhiều tỉnh",
   });
 
   assert.equal(result.accepted, true, result.reason);
-  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.equal(result.category, "Dược phẩm");
   assert.ok(result.reason.includes("medical-investor"), result.reason);
   assert.ok(result.reason.includes("medical-drug-supply"), result.reason);
   assert.ok(result.matched.includes("thuoc"));
