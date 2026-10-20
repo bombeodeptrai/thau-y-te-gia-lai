@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-20T13:34:59.830Z",
+  "auditedAt": "2026-10-20T20:01:51.774Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 577,
+      "count": 578,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1449,
+  "candidateCount": 1450,
   "acceptedCount": 51,
-  "rejectedCount": 1398,
+  "rejectedCount": 1399,
   "rejectedReasons": {
     "excluded:tu van": 539,
     "excluded:xay dung": 377,
-    "insufficient-medical-context": 279,
+    "insufficient-medical-context": 280,
     "excluded:sua chua": 39,
     "excluded:xay lap": 38,
     "excluded:cai tao": 34,
@@ -938,6 +938,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600584740",
+      "name": "Gói thầu số 01: Tổ chức chương trình nghệ thuật Đêm hội cồng chiêng Gia Lai năm 2026",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "DC2600067151",
       "name": "Hỗ trợ giống lúa vụ Đông Xuân 2026 - 2027",
       "investor": "Phòng Kinh tế xã Ia Sao, tỉnh Gia Lai",
@@ -1389,17 +1398,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600582011",
-      "name": "Gói thầu 15/2027/XL - Thi công xây dựng và lắp đặt vật tư, thiết bị",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
