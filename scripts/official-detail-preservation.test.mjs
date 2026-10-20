@@ -44,7 +44,7 @@ test("ghép audit đếm hồ sơ hiện có thay cho bộ đếm artifact cũ: 
   await mkdir(resolve(root,"scripts"),{recursive:true});
   const region = resolve(root,"data/regions/gia-lai");
   await mkdir(resolve(region,"details"),{recursive:true});
-  for (const file of ["merge-regions.mjs","region-membership.mjs","official-detail-preservation.mjs"]) {
+  for (const file of ["merge-regions.mjs","region-membership.mjs","official-detail-preservation.mjs","medical-scope.mjs"]) {
     await copyFile(new URL(file,import.meta.url),resolve(root,"scripts",file));
   }
   await writeFile(resolve(root,"data/regions.json"),JSON.stringify({regions:[{slug:"gia-lai",name:"Gia Lai",provinceCodes:["52","64"]}]}));
