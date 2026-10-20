@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=44edc744-3110-40fd-ae38-e087bbc39041&notifyId=44edc744-3110-40fd-ae38-e087bbc39041&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600582849&planNo=PL2600356055&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,9 +38,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "7ce1cec5-575f-4157-82df-9fd51d0b07ea",
@@ -4928,10 +4926,14 @@
       "decisionDate": "2026-10-20T10:13:23",
       "resultPublishedDate": "2026-10-20T10:14:10",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "HỘ KINH DOANH CỬA HÀNG MÁY VĂN PHÒNG THANH BÌNH"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "-"
+      ],
       "losingModels": [],
       "losingModelDisclosure": "",
       "sourceBidderCount": null,
@@ -8743,7 +8745,12 @@
       "loserNames": [
         "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN",
+          "reason": "Không đạt yêu cầu kỹ thuật"
+        }
+      ],
       "winningModels": [
         "83931817",
         "83932817",
@@ -9878,7 +9885,16 @@
         "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
         "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC",
+          "reason": "Xếp hạng 3"
+        }
+      ],
       "winningModels": [
         "HH1",
         "HH2",
@@ -9892,7 +9908,7 @@
         "HH10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -10353,7 +10369,36 @@
         "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
         "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH KỸ THUẬT VÀ THIẾT BỊ Y TẾ HUY PHÁT",
+          "reason": "Xếp hạng 5"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 4"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B",
+          "reason": "Xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "1050044",
         "04917049190",
@@ -10650,9 +10695,9 @@
       "loserDetails": [],
       "winningModels": [
         "GT205-403",
-        "ECG-0001",
-        "EDT_22MLO K23P1L1",
-        "ONG_35MLN ON3P7N0",
+        " ECG-0001",
+        "EDT_22MLO\r\nK23P1L1",
+        "ONG_35MLN\r\nON3P7N0",
         "810001; 810002",
         "FRINTING PAPER",
         "HEP_22MLOTH3P2L1",
@@ -10668,7 +10713,7 @@
         "822001 822002",
         "C.70.VP30",
         "USGEL",
-        "L031-11211",
+        " L031-11211",
         "1322-24MM",
         "BTK1: MPV",
         "BTK10: MPV",
@@ -10690,7 +10735,7 @@
         "ODD: MPV",
         "GT054-200",
         "GKTCB",
-        "GPT",
+        " GPT",
         "Disposable Surgical Blade",
         "DRYSTAR DT 5.000I B",
         "BG1722",
@@ -12913,12 +12958,17 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+          "reason": "Xếp hạng thứ 2"
+        }
+      ],
       "winningModels": [
         "SD-Q2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -85144,58 +85194,58 @@
       "participantNames": [
         "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT XUẤT NHẬP KHẨU HUY HOÀNG",
         "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ ĐỨC TÍN",
-        "CÔNG TY CỔ PHẦN DƯỢC VINAPHAM",
-        "CÔNG TY CỔ PHẦN KHOA HỌC CÔNG NGHỆ SƠN PHÁT",
-        "CÔNG TY CP DƯỢC VÀ THIẾT BỊ Y TẾ NAM HÀ",
-        "CÔNG TY TNHH Y TẾ KHANG KHẢI",
-        "CÔNG TY TNHH K.A.L.H.U",
-        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ ĐẠI DƯƠNG",
         "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+        "CÔNG TY TNHH Y TẾ KHANG KHẢI",
+        "CÔNG TY CỔ PHẦN KHOA HỌC CÔNG NGHỆ SƠN PHÁT",
+        "CÔNG TY CỔ PHẦN DƯỢC VINAPHAM",
+        "CÔNG TY CP DƯỢC VÀ THIẾT BỊ Y TẾ NAM HÀ",
+        "CÔNG TY TNHH K.A.L.H.U",
+        "CÔNG TY TNHH VẬT TƯ KỸ THUẬT VÀ XÂY DỰNG MINH PHÚ",
+        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ ĐẠI DƯƠNG",
+        "TỔNG CÔNG TY CỔ PHẦN Y TẾ DANAMECO",
+        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HẠNH MINH",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ - XUẤT NHẬP KHẨU VIÊN PHÁT",
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ ANH HUY",
         "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT ĐỖ GIA",
         "CÔNG TY CỔ PHẦN HANMEDIC VIỆT NAM",
         "CÔNG TY CỔ PHẦN ĐẦU TƯ Y TẾ - DƯỢC PHẨM VIỆT NAM",
         "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ VNT",
         "CÔNG TY CỔ PHẦN Y TẾ VIỆT TIẾN",
         "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ PT",
+        "CÔNG TY TNHH DƯỢC PHẨM HIỆP KHANG",
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ TVT",
         "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
         "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ KỸ THUẬT GIA HÂN",
-        "CÔNG TY TNHH DƯỢC PHẨM HIỆP KHANG",
         "CÔNG TY CỔ PHẦN CÔNG NGHỆ Y TẾ MINH ANH",
-        "CÔNG TY TNHH DK MEDICAL",
         "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ ĐỈNH CAO",
+        "CÔNG TY TNHH DK MEDICAL",
         "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ TRỌNG MINH",
         "CÔNG TY TNHH MỘT THÀNH VIÊN KHẢI CA",
         "CÔNG TY TNHH Y KHOA TÂM AN",
-        "CÔNG TY TNHH THIẾT BỊ Y TẾ TVT",
-        "CÔNG TY TNHH TRANG THIẾT BỊ VÀ VẬT TƯ Y TẾ HOÀNG VIỆT LONG",
-        "CÔNG TY TNHH THƯƠNG MẠI CÔNG NGHỆ NTR",
-        "CÔNG TY CỔ PHẦN THƯƠNG MẠi VÀ DỊCH VỤ KỸ THUẬT TÂN KHANG",
-        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM ĐAN THANH",
-        "CÔNG TY TNHH VẬT TƯ KỸ THUẬT VÀ XÂY DỰNG MINH PHÚ",
-        "Công Ty TNHH Alexia",
-        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ HẠNH NGUYÊN",
-        "CÔNG TY TNHH VINACATECH",
-        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ VẬT TƯ Y TẾ TẤN KHOA",
-        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ MINH VIỆT",
-        "TỔNG CÔNG TY CỔ PHẦN Y TẾ DANAMECO",
-        "CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI HẠNH MINH",
-        "CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ - XUẤT NHẬP KHẨU VIÊN PHÁT",
-        "CÔNG TY TNHH THIẾT BỊ Y TẾ ANH HUY",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
         "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DỊCH VỤ KỸ THUẬT Y KHOA NAM VIỆT LONG",
+        "CÔNG TY TNHH TRANG THIẾT BỊ VÀ VẬT TƯ Y TẾ HOÀNG VIỆT LONG",
         "CÔNG TY CỔ PHẦN THƯƠNG MẠI CÔNG NGHỆ TÂM Y",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
         "CÔNG TY TNHH NTB SÔNG HÀN",
+        "CÔNG TY TNHH THƯƠNG MẠI CÔNG NGHỆ NTR",
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ VẬT TƯ Y TẾ TẤN KHOA",
         "CÔNG TY CỔ PHẦN ĐẦU TƯ HÙNG VĨ",
-        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DỊCH VỤ DƯỢC PHẨM MINH LONG"
+        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ HẠNH NGUYÊN",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠi VÀ DỊCH VỤ KỸ THUẬT TÂN KHANG",
+        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM ĐAN THANH",
+        "Công Ty TNHH Alexia",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DỊCH VỤ DƯỢC PHẨM MINH LONG",
+        "CÔNG TY TNHH VINACATECH",
+        "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ MINH VIỆT"
       ],
       "loserNames": [
+        "CÔNG TY TNHH Y TẾ KHANG KHẢI",
         "CÔNG TY CỔ PHẦN DƯỢC VINAPHAM",
         "CÔNG TY CP DƯỢC VÀ THIẾT BỊ Y TẾ NAM HÀ",
-        "CÔNG TY TNHH Y TẾ KHANG KHẢI",
         "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ ĐẠI DƯƠNG",
-        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT ĐỖ GIA",
         "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT XUẤT NHẬP KHẨU HUY HOÀNG",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT ĐỖ GIA",
         "CÔNG TY CỔ PHẦN ĐẦU TƯ Y TẾ - DƯỢC PHẨM VIỆT NAM",
         "CÔNG TY TNHH DƯỢC PHẨM HIỆP KHANG",
         "CÔNG TY TNHH K.A.L.H.U",
@@ -85212,6 +85262,10 @@
       ],
       "loserDetails": [
         {
+          "contractorName": "CÔNG TY TNHH Y TẾ KHANG KHẢI",
+          "reason": "Xếp hạng 2 trở xuống"
+        },
+        {
           "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VINAPHAM",
           "reason": "E-HSMT: Dây dẫn đường, chất liệu thép không gỉ. E-HSDT: Dây dẫn đường, chất liệu : Nitinol bọc plastic"
         },
@@ -85220,19 +85274,15 @@
           "reason": "Xếp hạng 2 trở xuống"
         },
         {
-          "contractorName": "CÔNG TY TNHH Y TẾ KHANG KHẢI",
-          "reason": "Xếp hạng 2 trở xuống"
-        },
-        {
           "contractorName": "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ ĐẠI DƯƠNG",
           "reason": "HSMT: 1 dây nối van khóa vòi 1 hướng HSDT: 1 dây nối van khóa vòi 2 hướng"
         },
         {
-          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT ĐỖ GIA",
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT XUẤT NHẬP KHẨU HUY HOÀNG",
           "reason": "Xếp hạng 2 trở xuống"
         },
         {
-          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT XUẤT NHẬP KHẨU HUY HOÀNG",
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ SẢN XUẤT ĐỖ GIA",
           "reason": "Xếp hạng 2 trở xuống"
         },
         {
@@ -85244,11 +85294,11 @@
           "reason": "Giá dự thầu cao hơn giá trị ước tính đã được phê duyệt"
         },
         {
-          "contractorName": "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ ĐẠI DƯƠNG",
+          "contractorName": "CÔNG TY TNHH K.A.L.H.U",
           "reason": "Xếp hạng 2 trở xuống"
         },
         {
-          "contractorName": "CÔNG TY TNHH K.A.L.H.U",
+          "contractorName": "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ ĐẠI DƯƠNG",
           "reason": "Xếp hạng 2 trở xuống"
         },
         {
@@ -85443,12 +85493,12 @@
         "RONYXxxxxxX"
       ],
       "losingModels": [
-        "AM0303",
-        "ZSQ1DB, ZSQ3DB, ZSQ10DB",
-        "ZSQ10DB",
         "MGW-18-260A",
         "GWO-35-220A; GWO-35-220S; GWO-35-260A; GWO-35-260S",
         "MGW-14-260A",
+        "AM0303",
+        "ZSQ1DB, ZSQ3DB, ZSQ10DB",
+        "ZSQ10DB",
         "ANPP3199",
         "ANPP3177",
         "PSI-4F-23-035, PSI-5F-23-035, PSI-6F-23-035, PSI-7F-23-035, PSI-8F-23-035, PSI-5F-23-038, PSI-6F-23-038, PSI-7F-23-038, PSI-8F-23-038",
@@ -536160,17 +536210,17 @@
         "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN",
         "CÔNG TY CỔ PHẦN Y DƯỢC BẢO AN",
         "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
-        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ THIẾT BỊ Y TẾ VIỆT ANH",
-        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM LAN TIẾN"
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM LAN TIẾN",
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ THIẾT BỊ Y TẾ VIỆT ANH"
       ],
       "loserNames": [
         "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
         "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG GIA HUY",
         "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN",
         "CÔNG TY CỔ PHẦN Y DƯỢC BẢO AN",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM LAN TIẾN",
         "CÔNG TY TNHH MEDICAL TD",
-        "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
-        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM LAN TIẾN"
+        "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C"
       ],
       "loserDetails": [
         {
@@ -536198,20 +536248,20 @@
           "reason": "Xếp hạng 2"
         },
         {
-          "contractorName": "CÔNG TY TNHH MEDICAL TD",
-          "reason": "Xếp hạng 3"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
-          "reason": "Xếp hạng 4"
-        },
-        {
           "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
           "reason": "Xếp hạng 5"
         },
         {
           "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM LAN TIẾN",
           "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH MEDICAL TD",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+          "reason": "Xếp hạng 4"
         }
       ],
       "winningModels": [
@@ -536670,21 +536720,21 @@
       "resultPublishedDate": "2025-07-01T21:57:50",
       "hasResult": true,
       "participantNames": [
-        "CÔNG TY CỔ PHẦN HOÁ CHẤT - THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ",
         "CÔNG TY TNHH VẬT TƯ KHOA HỌC CÔNG NGHỆ T&T",
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT - THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ",
         "CÔNG TY TNHH UNT VIỆT NAM",
         "CÔNG TY CỔ PHẦN CÔNG NGHỆ TBR",
         "CÔNG TY TNHH THƯƠNG MẠI Y TẾ PHÚ GIA",
-        "CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ KỸ THUẬT LỤC TỈNH",
         "CÔNG TY TNHH BKS DIAGNOSTICS",
-        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH"
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ KỸ THUẬT LỤC TỈNH"
       ],
       "loserNames": [
         "CÔNG TY TNHH VẬT TƯ KHOA HỌC CÔNG NGHỆ T&T",
         "CÔNG TY CỔ PHẦN HOÁ CHẤT - THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ",
-        "CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ KỸ THUẬT LỤC TỈNH",
         "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
         "CÔNG TY TNHH UNT VIỆT NAM",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ KỸ THUẬT LỤC TỈNH",
         "CÔNG TY TNHH BKS DIAGNOSTICS"
       ],
       "loserDetails": [
@@ -536705,15 +536755,15 @@
           "reason": "Nhà thầu xếp hạng 2 trở lên"
         },
         {
-          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ KỸ THUẬT LỤC TỈNH",
-          "reason": "Nhà thầu xếp hạng 2 trở lên"
-        },
-        {
           "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
           "reason": "Nhà thầu xếp hạng 2 trở lên"
         },
         {
           "contractorName": "CÔNG TY TNHH UNT VIỆT NAM",
+          "reason": "Nhà thầu xếp hạng 2 trở lên"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ KỸ THUẬT LỤC TỈNH",
           "reason": "Nhà thầu xếp hạng 2 trở lên"
         },
         {
@@ -568935,7 +568985,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-20T04:51:56.859Z",
+  "fetchedAt": "2026-10-20T05:02:08.019Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5319,
   "regions": [
@@ -569055,11 +569105,11 @@
         "64"
       ],
       "tenderCount": 1181,
-      "bidderCount": 28699,
-      "equipmentCount": 18160,
+      "bidderCount": 28700,
+      "equipmentCount": 18185,
       "detailTenderCount": 1127,
       "coverageDays": 1095,
-      "fetchedAt": "2026-10-20T04:51:56.859Z",
+      "fetchedAt": "2026-10-20T05:02:08.019Z",
       "initialized": true,
       "source": "regional-scan"
     },
