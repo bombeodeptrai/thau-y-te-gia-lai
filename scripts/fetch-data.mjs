@@ -7,7 +7,7 @@ import { shouldRetainStoredTender } from "./scan-baseline.mjs";
 import { formatMuasamcongDateTime, muasamcongDateRange } from "./source-time.mjs";
 import { extractOnlineReofferTechnicalRequirements } from "./technical-requirements.mjs";
 import { mapLimitedSettled } from "./resilient-source-scan.mjs";
-import { isOfficialDetailFileName } from "./official-detail-preservation.mjs";
+import { isOfficialDetailFileName, mergeOfficialDetail, mergeDisclosedBidders } from "./official-detail-preservation.mjs";
 
 const SEARCH_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-home/services/smart/search";
 const WINNING_PRICE_URL = "https://muasamcong.mof.gov.vn/o/egp-portal-winning-bid-data/services/smart/search_prc";
@@ -1010,15 +1010,22 @@ async function fetchTenderDetails(tender) {
   }));
 
   if (tender.inputResultId) {
-    const [resultResponse, pricingResponse] = await Promise.allSettled([
+    const [resultResponse, pricingResponse, openingResponse] = await Promise.allSettled([
       postJson(CONTRACTOR_RESULT_URL, { id: tender.inputResultId }, 35_000),
       fetchPricingDetails(tender.notifyNo),
+      tender.bidOpenId ? postJson(LOT_OPEN_URL, {
+        notifyNo: tender.notifyNo, notifyId: tender.notifyId || tender.id, type: "TBMT", packType: 0,
+      }, 35_000) : Promise.resolve([]),
     ]);
 
     if (resultResponse.status === "fulfilled") {
       const detail = resultDetails(resultResponse.value);
       bidders = detail.bidders;
       items = detail.items;
+    }
+
+    if (openingResponse.status === "fulfilled") {
+      bidders = mergeDisclosedBidders(openingDetails({}, openingResponse.value), bidders);
     }
 
     if (pricingResponse.status === "fulfilled") {
@@ -1217,7 +1224,9 @@ async function main() {
   process.stdout.write(`Chi tiết: làm mới ${detailsToRefresh.length}/${detailCandidates.length} gói mời thầu/mở thầu/kết quả\n`);
   await mapLimited(detailsToRefresh, 3, async (tender) => {
     try {
-      detailsByNotifyNo[tender.notifyNo] = await fetchTenderDetails(tender);
+      detailsByNotifyNo[tender.notifyNo] = mergeOfficialDetail(
+        detailsByNotifyNo[tender.notifyNo], await fetchTenderDetails(tender),
+      );
       const detail = detailsByNotifyNo[tender.notifyNo];
       process.stdout.write(
         `Chi tiết ${tender.notifyNo}: ${detail.requirements?.items?.length || 0} phần/lô mời, ${detail.technicalRequirements?.items?.length || 0} dòng kỹ thuật, ${detail.bidders.length} nhà thầu, ${detail.items.length} mặt hàng trúng\n`,
