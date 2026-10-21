@@ -65,7 +65,7 @@
         "52",
         "64"
       ],
-      "investor": "TRUNG TÂM Y TẾ  PHÚ THIỆN",
+      "investor": "TRUNG TÂM Y TẾ PHÚ THIỆN",
       "location": "Xã Phú Thiện",
       "closeDate": "2026-10-27T10:00:00",
       "publicDate": "2026-10-20T15:54:17.289",
@@ -74,7 +74,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=9041018a-33d2-4181-be88-aa5b6c982b64&notifyId=9041018a-33d2-4181-be88-aa5b6c982b64&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600584291&planNo=PL2600353011&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -86,7 +86,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "44edc744-3110-40fd-ae38-e087bbc39041",
@@ -114,7 +116,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=44edc744-3110-40fd-ae38-e087bbc39041&notifyId=44edc744-3110-40fd-ae38-e087bbc39041&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600582849&planNo=PL2600356055&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -126,7 +128,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "d3f49c27-10d7-4f3c-b120-ef88ffe26310",
@@ -89833,7 +89837,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-21T00:42:48.120Z",
+  "fetchedAt": "2026-10-21T00:49:44.665Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -89866,6 +89870,15 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "filterStrategy": "unified-medical-scope-v18",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
+    "lastMedicalRescueAt": "2026-10-21T00:49:44.665Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 725,
+    "lastMedicalRescueMedicalCount": 27,
+    "lastMedicalRescueNewCount": 0,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
