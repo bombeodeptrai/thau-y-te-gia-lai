@@ -65,7 +65,7 @@
         "52",
         "64"
       ],
-      "investor": "TRUNG TÂM Y TẾ PHÚ THIỆN",
+      "investor": "TRUNG TÂM Y TẾ  PHÚ THIỆN",
       "location": "Xã Phú Thiện",
       "closeDate": "2026-10-27T10:00:00",
       "publicDate": "2026-10-20T15:54:17.289",
@@ -74,7 +74,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=9041018a-33d2-4181-be88-aa5b6c982b64&notifyId=9041018a-33d2-4181-be88-aa5b6c982b64&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600584291&planNo=PL2600353011&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -86,9 +86,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "44edc744-3110-40fd-ae38-e087bbc39041",
@@ -4504,7 +4502,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": 2,
+      "bidderCount": 5,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=7e482c97-d2e3-44b9-98cc-975e2eea1681&notifyId=7e482c97-d2e3-44b9-98cc-975e2eea1681&inputResultId=dd535c21-bb19-40c2-abf0-ff1f69b0ef12&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600573479&planNo=PL2600343583&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY TNHH MTV THIẾT BỊ VẬT TƯ KHOA HỌC KỸ THUẬT THÀNH DANH",
@@ -4514,12 +4512,38 @@
       "decisionDate": "2026-10-21T14:25:25",
       "resultPublishedDate": "2026-10-21T14:31:21",
       "hasResult": true,
-      "participantNames": [],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
+      "participantNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ VẬT TƯ KHOA HỌC KỸ THUẬT THÀNH DANH",
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDISUN",
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ & HÓA CHẤT MEDITEK VIỆT NAM",
+        "CÔNG TY TNHH BIOTECH ASIA"
+      ],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDISUN",
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+        "CÔNG TY TNHH BIOTECH ASIA"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDISUN",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH BIOTECH ASIA",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        }
+      ],
+      "winningModels": [
+        "LON_260MNON3P3N1",
+        "Multistix 10 SG"
+      ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -8840,7 +8864,12 @@
       "loserNames": [
         "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN",
+          "reason": "Không đạt yêu cầu kỹ thuật"
+        }
+      ],
       "winningModels": [
         "83931817",
         "83932817",
@@ -9975,7 +10004,16 @@
         "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
         "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC",
+          "reason": "Xếp hạng 3"
+        }
+      ],
       "winningModels": [
         "HH1",
         "HH2",
@@ -9989,7 +10027,7 @@
         "HH10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -10450,7 +10488,36 @@
         "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
         "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH KỸ THUẬT VÀ THIẾT BỊ Y TẾ HUY PHÁT",
+          "reason": "Xếp hạng 5"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 4"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B",
+          "reason": "Xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "1050044",
         "04917049190",
@@ -10747,9 +10814,9 @@
       "loserDetails": [],
       "winningModels": [
         "GT205-403",
-        "ECG-0001",
-        "EDT_22MLO K23P1L1",
-        "ONG_35MLN ON3P7N0",
+        " ECG-0001",
+        "EDT_22MLO\r\nK23P1L1",
+        "ONG_35MLN\r\nON3P7N0",
         "810001; 810002",
         "FRINTING PAPER",
         "HEP_22MLOTH3P2L1",
@@ -10765,7 +10832,7 @@
         "822001 822002",
         "C.70.VP30",
         "USGEL",
-        "L031-11211",
+        " L031-11211",
         "1322-24MM",
         "BTK1: MPV",
         "BTK10: MPV",
@@ -10787,7 +10854,7 @@
         "ODD: MPV",
         "GT054-200",
         "GKTCB",
-        "GPT",
+        " GPT",
         "Disposable Surgical Blade",
         "DRYSTAR DT 5.000I B",
         "BG1722",
@@ -13010,12 +13077,17 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+          "reason": "Xếp hạng thứ 2"
+        }
+      ],
       "winningModels": [
         "SD-Q2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -568988,7 +569060,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-21T13:49:45.107Z",
+  "fetchedAt": "2026-10-21T13:57:19.507Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5321,
   "regions": [
@@ -569108,11 +569180,11 @@
         "64"
       ],
       "tenderCount": 1182,
-      "bidderCount": 28701,
-      "equipmentCount": 18185,
+      "bidderCount": 28706,
+      "equipmentCount": 18187,
       "detailTenderCount": 1128,
       "coverageDays": 1095,
-      "fetchedAt": "2026-10-21T13:49:45.107Z",
+      "fetchedAt": "2026-10-21T13:57:19.507Z",
       "initialized": true,
       "source": "regional-scan"
     },

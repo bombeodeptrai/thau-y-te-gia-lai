@@ -1,9 +1,134 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "e05b2fbd-99c1-495e-9b83-9b86e26b4dc1",
+      "contractorCode": "vn0107482451",
+      "taxCode": "0107482451",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ VẬT TƯ KHOA HỌC KỸ THUẬT THÀNH DANH",
+      "status": "won",
+      "lotNo": "PP2600435609",
+      "lotName": "Lọ nhựa đựng bệnh phẩm",
+      "bidPrice": 50000000,
+      "finalPrice": 50000000,
+      "winningPrice": 50000000,
+      "reason": "",
+      "submittedAt": "2026-10-21T14:31:09.813",
+      "models": [
+        "LON_260MNON3P3N1"
+      ]
+    },
+    {
+      "id": "6238ea97-e1a1-4f30-ab84-9641dc4459e4",
+      "contractorCode": "vn0110446823",
+      "taxCode": "0110446823",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDISUN",
+      "status": "lost",
+      "lotNo": "PP2600435609",
+      "lotName": "Lọ nhựa đựng bệnh phẩm",
+      "bidPrice": 51200000,
+      "finalPrice": 51200000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2 trở xuống",
+      "submittedAt": "2026-10-21T14:31:09.813",
+      "models": []
+    },
+    {
+      "id": "22e7f946-6021-4e37-9521-3203cd874ad4",
+      "contractorCode": "vn4100867273",
+      "taxCode": "4100867273",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+      "status": "lost",
+      "lotNo": "PP2600435609",
+      "lotName": "Lọ nhựa đựng bệnh phẩm",
+      "bidPrice": 50800000,
+      "finalPrice": 50800000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2 trở xuống",
+      "submittedAt": "2026-10-21T14:31:09.813",
+      "models": []
+    },
+    {
+      "id": "61b14c3c-cceb-4191-8f12-a910ba3c5a29",
+      "contractorCode": "vn0109950754",
+      "taxCode": "0109950754",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ & HÓA CHẤT MEDITEK VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600435610",
+      "lotName": "Test thử nước tiểu 10 thông số",
+      "bidPrice": 349880000,
+      "finalPrice": 349880000,
+      "winningPrice": 349880000,
+      "reason": "",
+      "submittedAt": "2026-10-21T14:31:09.813",
+      "models": [
+        "Multistix 10 SG"
+      ]
+    },
+    {
+      "id": "baa24679-8e1a-4034-8782-43d9b5c16805",
+      "contractorCode": "vn4300895831",
+      "taxCode": "4300895831",
+      "contractorName": "CÔNG TY TNHH BIOTECH ASIA",
+      "status": "lost",
+      "lotNo": "PP2600435610",
+      "lotName": "Test thử nước tiểu 10 thông số",
+      "bidPrice": 356000000,
+      "finalPrice": 356000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2 trở xuống",
+      "submittedAt": "2026-10-21T14:31:09.813",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2f0d7375-f94b-4df4-9c3d-4c26bbf52780",
+      "name": "Lọ nhựa đựng bệnh phẩm",
+      "model": "LON_260MNON3P3N1",
+      "brand": " ",
+      "manufacturer": "Hồng Thiện Mỹ ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Lọ nhựa trong suốt, có nắp nhựa, có nhãn, dung tích ≥ 55ml",
+      "unit": "Cái",
+      "quantity": 40000,
+      "unitPrice": 1250,
+      "amount": 50000000,
+      "contractorCode": "vn0107482451",
+      "winnerNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ VẬT TƯ KHOA HỌC KỸ THUẬT THÀNH DANH"
+      ],
+      "lotNo": "",
+      "decisionNo": "438/QĐ-TTTP",
+      "decisionDate": "2026-10-21T14:25:25",
+      "resultPublishedDate": "2026-10-21T14:31:21"
+    },
+    {
+      "id": "9a8b75ae-ea37-4872-adf6-8316b05996fd",
+      "name": "Test thử nước tiểu 10 thông số",
+      "model": "Multistix 10 SG",
+      "brand": " ",
+      "manufacturer": "Siemens ",
+      "origin": "Ba Lan",
+      "manufactureYear": "2026",
+      "specification": "Que thử nước tiểu 10 thông số. Gồm 11 vạch trong đó có 10 vạch thể hiện 10 thông số theo thứ tự  lần lượt: GLU,  BIL,  KET, SG, BLO,pH, PRO, URO, NIT, LEU và  cuối cùng là 01 vạch chứng. (Phù hợp với Máy xét nghiệm nước tiểu Clinitek Status+ Analyzer /Siemens).",
+      "unit": "Test",
+      "quantity": 40000,
+      "unitPrice": 8747,
+      "amount": 349880000,
+      "contractorCode": "vn0109950754",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ & HÓA CHẤT MEDITEK VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "438/QĐ-TTTP",
+      "decisionDate": "2026-10-21T14:25:25",
+      "resultPublishedDate": "2026-10-21T14:31:21"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +215,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-21T07:49:16.576Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-21T13:57:10.716Z"
 }
