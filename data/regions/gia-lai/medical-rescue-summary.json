@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-20T23:13:50.354Z",
+  "rescuedAt": "2026-10-21T04:47:24.702Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 234,
+      "count": 239,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 578,
+      "count": 585,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 37,
+      "count": 38,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 52,
+      "count": 46,
       "error": ""
     },
     {
@@ -96,7 +96,7 @@
     {
       "name": "Địa danh Đăk Đoa",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 125,
+      "count": 128,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 117,
+      "count": 119,
       "error": ""
     },
     {
@@ -198,25 +198,25 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 40,
+      "count": 39,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 102,
+      "count": 103,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -281,21 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1523,
+  "candidateCount": 1532,
   "acceptedCount": 56,
-  "rejectedCount": 1467,
+  "rejectedCount": 1476,
   "rejectedReasons": {
-    "excluded:tu van": 541,
-    "excluded:xay dung": 393,
-    "insufficient-medical-context": 318,
+    "excluded:tu van": 539,
+    "excluded:xay dung": 400,
+    "insufficient-medical-context": 321,
     "excluded:sua chua": 44,
     "excluded:xay lap": 41,
-    "excluded:cai tao": 34,
-    "excluded:thuc pham": 17,
+    "excluded:cai tao": 33,
+    "excluded:thuc pham": 18,
     "excluded:bao hiem": 14,
-    "excluded:tham dinh": 13,
+    "excluded:tham dinh": 12,
     "excluded:trang phuc": 9,
-    "excluded:bao ve": 7,
+    "excluded:bao ve": 8,
     "excluded:bao tri": 5,
     "excluded:may tinh": 5,
     "excluded:kiem dinh": 4,
@@ -305,6 +305,7 @@
     "excluded:cap dien": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
+    "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
     "excluded:may in": 1,
     "excluded:duong day": 1,
@@ -946,6 +947,52 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600582133",
+      "name": "Mua sắm văn phòng phẩm- In ấn năm 2026 của Bệnh viện 331",
+      "investor": "Bệnh viện 331",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:van phong pham",
+      "matched": [
+        "van phong pham",
+        "in an"
+      ]
+    },
+    {
+      "notifyNo": "IB2600583814",
+      "name": "Mua sắm màn hình Tivi 75 inch; Bổ sung thiết bị theo chương trình giáo dục phổ thông năm 2018 và Bàn ghế học sinh 2 chỗ ngồi",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600583574",
+      "name": "26-86/SC: thi công sửa chữa máy biến áp",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600577828",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600584740",
       "name": "Gói thầu số 01: Tổ chức chương trình nghệ thuật Đêm hội cồng chiêng Gia Lai năm 2026",
       "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
@@ -1330,53 +1377,6 @@
       "matched": [
         "sua chua",
         "bao duong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600574040",
-      "name": "Mua sắm lắp đặt thiết bị",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600578525",
-      "name": "Thi công xây dựng tuyến đường Nguyễn Thái Học",
-      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562629",
-      "name": "Gói thầu MS-05: Mua sắm hóa chất vô cơ phục vụ xử lý",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572496",
-      "name": "Toàn bộ khối lượng thi công xây dựng hoàn thành công trình",
-      "investor": "Ban Quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn Nam",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
