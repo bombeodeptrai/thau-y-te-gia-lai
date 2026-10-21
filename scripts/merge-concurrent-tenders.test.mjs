@@ -104,7 +104,7 @@ test("không giữ lại gói đã hết phạm vi 1.095 ngày", () => {
       regionSlug: "gia-lai",
       name: "Mua sắm linh kiện cho các máy xét nghiệm sinh hoá",
       investor: "Bệnh viện Đa khoa tỉnh Gia Lai",
-      publicDate: "2023-10-12T10:49:56",
+      publicDate: "2023-10-12T10:49:56.000Z",
     }],
     { now: Date.parse("2026-10-11T10:49:57.000Z") },
   );
