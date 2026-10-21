@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-21T07:57:15.794Z",
+  "rescuedAt": "2026-10-21T14:04:50.988Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 119,
+      "count": 116,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 327,
+      "count": 316,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 15,
+      "count": 19,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 9,
+      "count": 12,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 12,
+      "count": 16,
       "error": ""
     },
     {
@@ -114,13 +114,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 36,
+      "count": 33,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -144,13 +144,13 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 53,
+      "count": 51,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 60,
+      "count": 56,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 62,
+      "count": 60,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 28,
+      "count": 26,
       "error": ""
     },
     {
@@ -281,32 +281,32 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 749,
-  "acceptedCount": 27,
-  "rejectedCount": 722,
+  "candidateCount": 736,
+  "acceptedCount": 25,
+  "rejectedCount": 711,
   "rejectedReasons": {
-    "excluded:tu van": 289,
-    "insufficient-medical-context": 175,
-    "excluded:xay dung": 165,
-    "excluded:xay lap": 20,
-    "excluded:sua chua": 17,
+    "excluded:tu van": 278,
+    "insufficient-medical-context": 178,
+    "excluded:xay dung": 164,
+    "excluded:xay lap": 19,
+    "excluded:sua chua": 18,
     "excluded:thuc pham": 15,
-    "excluded:cai tao": 11,
+    "excluded:cai tao": 10,
     "excluded:bao ve": 4,
-    "excluded:trang phuc": 4,
     "excluded:bao tri": 3,
     "excluded:kiem dinh": 3,
+    "excluded:trang phuc": 3,
     "excluded:tham dinh": 3,
     "excluded:lap e hsmt": 2,
-    "excluded:bao hiem": 2,
+    "excluded:cong nghe thong tin": 2,
+    "excluded:cap dien": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
     "excluded:giam sat thi cong": 1,
-    "excluded:cong nghe thong tin": 1,
     "excluded:duong day": 1,
     "excluded:may tinh": 1,
+    "excluded:bao hiem": 1,
     "excluded:quan ly du an": 1,
-    "excluded:bao ho lao dong": 1,
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
@@ -595,34 +595,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600567368",
-      "name": "Gói thầu số 04: Cung cấp thuốc điều trị ung thư và điều hòa miễn dịch cho các cơ sở y tế giai đoạn 2026-2028 (Mã hiệu: ĐTTT.04.2026.1)",
-      "investor": "Trung tâm Mua sắm tập trung thuốc Quốc gia",
-      "accepted": true,
-      "score": 180,
-      "reason": "medical-investor+laboratory-analyzer-context+medical-drug-supply",
-      "matched": [
-        "trung tam mua sam tap trung thuoc",
-        "thuoc",
-        "mien dich",
-        "cung cap",
-        "dieu tri"
-      ]
-    },
-    {
-      "notifyNo": "IB2600567353",
-      "name": "Gói thầu số 03: Cung cấp thuốc cho các tỉnh Miền Nam giai đoạn 2026-2028 (Mã hiệu: ĐTTT.03.2026.1)",
-      "investor": "Trung tâm Mua sắm tập trung thuốc Quốc gia",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "trung tam mua sam tap trung thuoc",
-        "thuoc",
-        "cung cap"
-      ]
-    },
-    {
       "notifyNo": "DC2600063405",
       "name": "Lựa chọn nhà thầu, dự toán mua sắm: Gói thầu thuốc Generic phục vụ cấp cứu, điều trị bệnh nhân năm 2026 ( đợt 4 ) của Bệnh viện Sản - Nhi tỉnh Gia Lai",
       "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
@@ -729,6 +701,71 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600585083",
+      "name": "G09-VN-CSCC_GL_1322.3: Tiến hành trồng rừng ngập mặn phân tán có mục tiêu với sự tham gia của phụ nữ, các tổ chức do phụ nữ lãnh đạo",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600584337",
+      "name": "Gói thầu số 01: Mua sắm vật tư tiêu hao, hoá chất vận hành (06 Trạm Bình Định cũ)",
+      "investor": "Trung tâm Quan trắc tài nguyên và môi trường",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu tieu hao",
+        "hoa chat",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600583685",
+      "name": "Gói thầu số 02: Mua sắm phụ tùng thay thế (06 Trạm Bình Định cũ)",
+      "investor": "Trung tâm Quan trắc tài nguyên và môi trường",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600585688",
+      "name": "Gói thầu số 4: Hoán cải cẩu RTG và thi công hệ thống cấp điện cho cẩu RTG",
+      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cap dien",
+      "matched": [
+        "cap dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600580166",
+      "name": "In vé xổ số kiến thiết truyền thống Bình Định năm 2027",
+      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT BÌNH ĐỊNH",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600584698",
+      "name": "Dịch vụ chi trả trợ cấp ưu đãi người có công với cách mạng trên địa bàn tỉnh Gia Lai tháng 11, 12 năm 2026 và năm 2027",
+      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600584528",
       "name": "Thi công xây dựng công trình",
@@ -1094,72 +1131,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600578946",
-      "name": "Mua sắm trang thiết bị nhằm thực hiện chuẩn hoá năng lực, hoạt động của tổ chức kiểm định, hiệu chuẩn, thử nghiệm theo Đề án 996",
-      "investor": "Trung tâm Phân tích và Đo lường Chất lượng",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:kiem dinh",
-      "matched": [
-        "kiem dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600579518",
-      "name": "Tuyển chọn đơn vị tư vấn “Hỗ trợ triển khai mô hình Trạm y tế xã hoạt động theo nguyên lý y học gia đình”",
-      "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600578930",
-      "name": "May trang phục y tế cho viên chức và người lao động tại Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn năm 2026",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:trang phuc",
-      "matched": [
-        "trang phuc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600578039",
-      "name": "Cung cấp xi măng thực hiện Chương trình Bê tông hóa giao thông nông thôn và Kiên cố hóa kênh mương trên địa bàn phường năm 2026",
-      "investor": "Ban Quản lý phường An Nhơn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600578903",
-      "name": "xây lắp",
-      "investor": "BAN QUẢN LÝ PHƯỜNG HỘI PHÚ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600577384",
-      "name": "Mua két làm mát ổ đỡ máy phát, ổ hướng trên, ổ hướng dưới nhà máy thủy điện Sê San 3A năm 2027",
-      "investor": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN ĐIỆN SÊ SAN 3A",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
     }
   ],
   "removedManualCount": 0,
