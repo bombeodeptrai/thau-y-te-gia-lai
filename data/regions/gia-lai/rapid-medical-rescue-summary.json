@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-21T00:49:44.665Z",
+  "rescuedAt": "2026-10-21T07:57:15.794Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 115,
+      "count": 119,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 315,
+      "count": 327,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -96,7 +96,7 @@
     {
       "name": "Địa danh Đăk Đoa",
       "success": true,
-      "count": 0,
+      "count": 1,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 50,
+      "count": 53,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 51,
+      "count": 60,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 59,
+      "count": 62,
       "error": ""
     },
     {
@@ -198,25 +198,25 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 19,
+      "count": 17,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 43,
+      "count": 39,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 13,
+      "count": 15,
       "error": ""
     },
     {
@@ -281,30 +281,30 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 725,
+  "candidateCount": 749,
   "acceptedCount": 27,
-  "rejectedCount": 698,
+  "rejectedCount": 722,
   "rejectedReasons": {
-    "excluded:tu van": 281,
-    "insufficient-medical-context": 165,
-    "excluded:xay dung": 161,
+    "excluded:tu van": 289,
+    "insufficient-medical-context": 175,
+    "excluded:xay dung": 165,
     "excluded:xay lap": 20,
-    "excluded:sua chua": 16,
-    "excluded:cai tao": 12,
-    "excluded:thuc pham": 12,
+    "excluded:sua chua": 17,
+    "excluded:thuc pham": 15,
+    "excluded:cai tao": 11,
     "excluded:bao ve": 4,
     "excluded:trang phuc": 4,
     "excluded:bao tri": 3,
     "excluded:kiem dinh": 3,
     "excluded:tham dinh": 3,
-    "excluded:bao hiem": 3,
     "excluded:lap e hsmt": 2,
+    "excluded:bao hiem": 2,
+    "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
     "excluded:giam sat thi cong": 1,
     "excluded:cong nghe thong tin": 1,
     "excluded:duong day": 1,
     "excluded:may tinh": 1,
-    "excluded:tram bien ap": 1,
     "excluded:quan ly du an": 1,
     "excluded:bao ho lao dong": 1,
     "excluded:ve sinh cong nghiep": 1
@@ -730,6 +730,63 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600584528",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Phòng Kinh tế xã Ya Hội",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600582133",
+      "name": "Mua sắm văn phòng phẩm- In ấn năm 2026 của Bệnh viện 331",
+      "investor": "Bệnh viện 331",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:van phong pham",
+      "matched": [
+        "van phong pham",
+        "in an"
+      ]
+    },
+    {
+      "notifyNo": "IB2600583814",
+      "name": "Mua sắm màn hình Tivi 75 inch; Bổ sung thiết bị theo chương trình giáo dục phổ thông năm 2018 và Bàn ghế học sinh 2 chỗ ngồi",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600583574",
+      "name": "26-86/SC: thi công sửa chữa máy biến áp",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600577828",
+      "name": "Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600584740",
       "name": "Gói thầu số 01: Tổ chức chương trình nghệ thuật Đêm hội cồng chiêng Gia Lai năm 2026",
       "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
@@ -1102,65 +1159,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600576966",
-      "name": "Mua vật tư thiết bị phục vụ sửa chữa, bảo dưỡng NMTĐ Sê San 3A năm 2027",
-      "investor": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN ĐIỆN SÊ SAN 3A",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "bao duong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600574040",
-      "name": "Mua sắm lắp đặt thiết bị",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600578525",
-      "name": "Thi công xây dựng tuyến đường Nguyễn Thái Học",
-      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600562629",
-      "name": "Gói thầu MS-05: Mua sắm hóa chất vô cơ phục vụ xử lý",
-      "investor": "Viện Hóa học Môi trường quân sự",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "hoa chat",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572496",
-      "name": "Toàn bộ khối lượng thi công xây dựng hoàn thành công trình",
-      "investor": "Ban Quản lý dịch vụ đô thị và phát triển quỹ đất phường Hoài Nhơn Nam",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
