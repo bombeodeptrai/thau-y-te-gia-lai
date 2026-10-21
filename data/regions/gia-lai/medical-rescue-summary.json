@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-21T04:47:24.702Z",
+  "rescuedAt": "2026-10-21T13:49:45.107Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 239,
+      "count": 240,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 585,
+      "count": 589,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 38,
+      "count": 42,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 21,
+      "count": 20,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 23,
+      "count": 26,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 34,
+      "count": 37,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 12,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 128,
+      "count": 130,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 76,
+      "count": 81,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 119,
+      "count": 121,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 39,
+      "count": 37,
       "error": ""
     },
     {
@@ -210,13 +210,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 103,
+      "count": 100,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 55,
+      "count": 51,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -281,36 +281,35 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1532,
-  "acceptedCount": 56,
-  "rejectedCount": 1476,
+  "candidateCount": 1544,
+  "acceptedCount": 55,
+  "rejectedCount": 1489,
   "rejectedReasons": {
-    "excluded:tu van": 539,
-    "excluded:xay dung": 400,
-    "insufficient-medical-context": 321,
+    "excluded:tu van": 540,
+    "excluded:xay dung": 404,
+    "insufficient-medical-context": 333,
     "excluded:sua chua": 44,
-    "excluded:xay lap": 41,
-    "excluded:cai tao": 33,
-    "excluded:thuc pham": 18,
+    "excluded:xay lap": 37,
+    "excluded:cai tao": 32,
+    "excluded:thuc pham": 20,
     "excluded:bao hiem": 14,
     "excluded:tham dinh": 12,
     "excluded:trang phuc": 9,
     "excluded:bao ve": 8,
     "excluded:bao tri": 5,
-    "excluded:may tinh": 5,
     "excluded:kiem dinh": 4,
-    "excluded:cong nghe thong tin": 3,
-    "excluded:suat an": 3,
+    "excluded:may tinh": 4,
+    "excluded:cong nghe thong tin": 4,
+    "excluded:cap dien": 3,
     "excluded:bao ho lao dong": 2,
-    "excluded:cap dien": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
+    "excluded:suat an": 2,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
     "excluded:may in": 1,
     "excluded:duong day": 1,
     "excluded:may chu": 1,
-    "excluded:thu y": 1,
     "excluded:tram bien ap": 1,
     "excluded:quan ly du an": 1,
     "excluded:ve sinh cong nghiep": 1
@@ -947,6 +946,82 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600585083",
+      "name": "G09-VN-CSCC_GL_1322.3: Tiến hành trồng rừng ngập mặn phân tán có mục tiêu với sự tham gia của phụ nữ, các tổ chức do phụ nữ lãnh đạo",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600584337",
+      "name": "Gói thầu số 01: Mua sắm vật tư tiêu hao, hoá chất vận hành (06 Trạm Bình Định cũ)",
+      "investor": "Trung tâm Quan trắc tài nguyên và môi trường",
+      "accepted": false,
+      "score": 40,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu tieu hao",
+        "hoa chat",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600583685",
+      "name": "Gói thầu số 02: Mua sắm phụ tùng thay thế (06 Trạm Bình Định cũ)",
+      "investor": "Trung tâm Quan trắc tài nguyên và môi trường",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600585688",
+      "name": "Gói thầu số 4: Hoán cải cẩu RTG và thi công hệ thống cấp điện cho cẩu RTG",
+      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cap dien",
+      "matched": [
+        "cap dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600580166",
+      "name": "In vé xổ số kiến thiết truyền thống Bình Định năm 2027",
+      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT BÌNH ĐỊNH",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600584698",
+      "name": "Dịch vụ chi trả trợ cấp ưu đãi người có công với cách mạng trên địa bàn tỉnh Gia Lai tháng 11, 12 năm 2026 và năm 2027",
+      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600584528",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Phòng Kinh tế xã Ya Hội",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600582133",
       "name": "Mua sắm văn phòng phẩm- In ấn năm 2026 của Bệnh viện 331",
       "investor": "Bệnh viện 331",
@@ -1300,84 +1375,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600578946",
-      "name": "Mua sắm trang thiết bị nhằm thực hiện chuẩn hoá năng lực, hoạt động của tổ chức kiểm định, hiệu chuẩn, thử nghiệm theo Đề án 996",
-      "investor": "Trung tâm Phân tích và Đo lường Chất lượng",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:kiem dinh",
-      "matched": [
-        "kiem dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600579518",
-      "name": "Tuyển chọn đơn vị tư vấn “Hỗ trợ triển khai mô hình Trạm y tế xã hoạt động theo nguyên lý y học gia đình”",
-      "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600578930",
-      "name": "May trang phục y tế cho viên chức và người lao động tại Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn năm 2026",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:trang phuc",
-      "matched": [
-        "trang phuc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600578039",
-      "name": "Cung cấp xi măng thực hiện Chương trình Bê tông hóa giao thông nông thôn và Kiên cố hóa kênh mương trên địa bàn phường năm 2026",
-      "investor": "Ban Quản lý phường An Nhơn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600578903",
-      "name": "xây lắp",
-      "investor": "BAN QUẢN LÝ PHƯỜNG HỘI PHÚ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600577384",
-      "name": "Mua két làm mát ổ đỡ máy phát, ổ hướng trên, ổ hướng dưới nhà máy thủy điện Sê San 3A năm 2027",
-      "investor": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN ĐIỆN SÊ SAN 3A",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600576966",
-      "name": "Mua vật tư thiết bị phục vụ sửa chữa, bảo dưỡng NMTĐ Sê San 3A năm 2027",
-      "investor": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN ĐIỆN SÊ SAN 3A",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "bao duong"
-      ]
     }
   ],
   "removedManualCount": 0,
