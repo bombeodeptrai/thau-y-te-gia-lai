@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-22T13:49:05.867Z",
+  "auditedAt": "2026-10-22T20:08:46.169Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 593,
+      "count": 592,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1461,
+  "candidateCount": 1460,
   "acceptedCount": 50,
-  "rejectedCount": 1411,
+  "rejectedCount": 1410,
   "rejectedReasons": {
-    "excluded:tu van": 526,
-    "excluded:xay dung": 384,
+    "excluded:tu van": 524,
+    "excluded:xay dung": 385,
     "insufficient-medical-context": 293,
     "excluded:sua chua": 42,
     "excluded:xay lap": 37,
@@ -938,6 +938,41 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600054810",
+      "name": "Tư vấn kiểm toán",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600054957",
+      "name": "Tư vấn kiểm toán quyết toán",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600066862",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Sở Xây dựng Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
       "notifyNo": "DC2600063046",
       "name": "Tư vấn thẩm định HSMT và kết quả LCNT thi công xây dựng và thiết bị",
       "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
@@ -1349,45 +1384,12 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "DC2600038690",
-      "name": "Tư vấn lập hồ sơ đăng k ý môi trường",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600021222",
-      "name": "Tư vấn lập hồ sơ đăng kí môi trường",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600036365",
-      "name": "Tư vấn lập hồ sơ đăng ký môi trường",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1185,
-  "afterCount": 1185,
+  "beforeCount": 1183,
+  "afterCount": 1183,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
