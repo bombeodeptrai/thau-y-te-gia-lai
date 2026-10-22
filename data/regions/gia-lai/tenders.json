@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=b56e3fec-0789-4b88-9d46-7562b769b27b&notifyId=b56e3fec-0789-4b88-9d46-7562b769b27b&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600585028&planNo=PL2600359666&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,9 +38,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search",
-      "sourceBidderCount": null
+      "losingModelDisclosure": ""
     },
     {
       "id": "DC2600063405",
@@ -107,7 +105,7 @@
         "52",
         "64"
       ],
-      "investor": "TRUNG TÂM Y TẾ PHÚ THIỆN",
+      "investor": "TRUNG TÂM Y TẾ  PHÚ THIỆN",
       "location": "Xã Phú Thiện",
       "closeDate": "2026-10-27T10:00:00",
       "publicDate": "2026-10-20T15:54:17.289",
@@ -116,7 +114,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=9041018a-33d2-4181-be88-aa5b6c982b64&notifyId=9041018a-33d2-4181-be88-aa5b6c982b64&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600584291&planNo=PL2600353011&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -128,9 +126,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "44edc744-3110-40fd-ae38-e087bbc39041",
@@ -841,13 +837,26 @@
         "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
         "CÔNG TY TNHH BIOTECH ASIA"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDISUN",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH BIOTECH ASIA",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        }
+      ],
       "winningModels": [
         "LON_260MNON3P3N1",
         "Multistix 10 SG"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -1588,7 +1597,12 @@
       "loserNames": [
         "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN",
+          "reason": "Không đạt yêu cầu kỹ thuật"
+        }
+      ],
       "winningModels": [
         "83931817",
         "83932817",
@@ -1880,7 +1894,16 @@
         "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
         "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CỘNG ĐỒNG XANH",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HDC",
+          "reason": "Xếp hạng 3"
+        }
+      ],
       "winningModels": [
         "HH1",
         "HH2",
@@ -1894,7 +1917,7 @@
         "HH10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -2000,7 +2023,36 @@
         "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
         "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH KỸ THUẬT VÀ THIẾT BỊ Y TẾ HUY PHÁT",
+          "reason": "Xếp hạng 5"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+          "reason": "Xếp hạng 4"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ VÀ THIẾT BỊ THẮNG LỢI",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B",
+          "reason": "Xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "1050044",
         "04917049190",
@@ -2074,9 +2126,9 @@
       "loserDetails": [],
       "winningModels": [
         "GT205-403",
-        "ECG-0001",
-        "EDT_22MLO K23P1L1",
-        "ONG_35MLN ON3P7N0",
+        " ECG-0001",
+        "EDT_22MLO\r\nK23P1L1",
+        "ONG_35MLN\r\nON3P7N0",
         "810001; 810002",
         "FRINTING PAPER",
         "HEP_22MLOTH3P2L1",
@@ -2092,7 +2144,7 @@
         "822001 822002",
         "C.70.VP30",
         "USGEL",
-        "L031-11211",
+        " L031-11211",
         "1322-24MM",
         "BTK1: MPV",
         "BTK10: MPV",
@@ -2114,7 +2166,7 @@
         "ODD: MPV",
         "GT054-200",
         "GKTCB",
-        "GPT",
+        " GPT",
         "Disposable Surgical Blade",
         "DRYSTAR DT 5.000I B",
         "BG1722",
@@ -2570,12 +2622,17 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ 2H",
+          "reason": "Xếp hạng thứ 2"
+        }
+      ],
       "winningModels": [
         "SD-Q2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -89847,7 +89904,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-22T04:45:30.008Z",
+  "fetchedAt": "2026-10-22T05:02:41.070Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -89855,15 +89912,15 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 1128,
+  "detailTenderCount": 1129,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
     "refreshDays": 2,
     "statusSchemaVersion": 4,
     "lastScanDays": 2,
-    "lastScanTenderCount": 21,
-    "lastProvinceTenderCount": 21,
+    "lastScanTenderCount": 20,
+    "lastProvinceTenderCount": 20,
     "lastHistoricalFallbackTenderCount": 0,
     "lastHistoricalFallbackFailureCount": 0,
     "lastHistoricalFallbackComplete": true,
@@ -89880,20 +89937,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v18",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
-    "lastMedicalRescueAt": "2026-10-22T04:45:30.008Z",
-    "lastMedicalRescueDays": 30,
-    "lastMedicalRescueCandidateCount": 1544,
-    "lastMedicalRescueMedicalCount": 56,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0,
-    "lastLocationAuditAt": "2026-10-22T04:44:45.871Z",
-    "lastLocationAuditDays": 30,
-    "lastLocationAuditCandidateCount": 1470,
-    "lastLocationAuditMedicalCount": 51,
-    "lastLocationAuditNewCount": 1
+    ]
   }
 }
