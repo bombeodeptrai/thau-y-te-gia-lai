@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-21T23:20:58.916Z",
+  "rescuedAt": "2026-10-22T04:45:30.008Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 240,
+      "count": 241,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 45,
+      "count": 43,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -72,13 +72,13 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 37,
+      "count": 33,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 130,
+      "count": 131,
       "error": ""
     },
     {
@@ -216,13 +216,13 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 12,
+      "count": 18,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 45,
+      "count": 44,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 12,
+      "count": 15,
       "error": ""
     },
     {
@@ -281,21 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1542,
-  "acceptedCount": 55,
-  "rejectedCount": 1487,
+  "candidateCount": 1544,
+  "acceptedCount": 56,
+  "rejectedCount": 1488,
   "rejectedReasons": {
-    "excluded:tu van": 540,
-    "excluded:xay dung": 402,
-    "insufficient-medical-context": 333,
-    "excluded:sua chua": 44,
-    "excluded:xay lap": 37,
+    "excluded:tu van": 537,
+    "excluded:xay dung": 400,
+    "insufficient-medical-context": 330,
+    "excluded:sua chua": 46,
+    "excluded:xay lap": 39,
     "excluded:cai tao": 32,
     "excluded:thuc pham": 20,
     "excluded:bao hiem": 14,
-    "excluded:tham dinh": 12,
+    "excluded:tham dinh": 13,
+    "excluded:bao ve": 12,
     "excluded:trang phuc": 9,
-    "excluded:bao ve": 8,
     "excluded:bao tri": 5,
     "excluded:kiem dinh": 4,
     "excluded:may tinh": 4,
@@ -315,6 +315,21 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600585028",
+      "name": "Mua sắm Khí Y tế của Bệnh viện Đa khoa Gia Lai trong thời gian chờ kết quả đấu thầu tập trung cấp địa phương 2027-2028",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "khi y te",
+        "benh vien",
+        "da khoa",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600584291",
       "name": "Mua sắm hóa chất xét nghiệm năm 2026-2027 để phục vụ công tác chuyên môn của Trung Tâm Y Tế Phú Thiện",
@@ -928,23 +943,20 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600550514",
-      "name": "Gói 2: Hóa chất, sinh phẩm dùng cho đề tài",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600585956",
+      "name": "Toàn bộ khối lượng xây lắp công trình",
+      "investor": "Ban Quản lý xã Tây Sơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
     {
       "notifyNo": "IB2600585083",
       "name": "G09-VN-CSCC_GL_1322.3: Tiến hành trồng rừng ngập mặn phân tán có mục tiêu với sự tham gia của phụ nữ, các tổ chức do phụ nữ lãnh đạo",
@@ -1366,21 +1378,12 @@
         "trung tam y te",
         "chan doan"
       ]
-    },
-    {
-      "notifyNo": "IB2600573015",
-      "name": "Gói thầu số 02: Xử lý, phân loại sơ bộ tài liệu lưu trữ cấp huyện trước đây theo Kế hoạch số 256/KH-UBND ngày 24/6/2026 của UBND tỉnh",
-      "investor": "Trung tâm Lưu trữ Lịch sử tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1182,
-  "afterCount": 1182,
+  "beforeCount": 1183,
+  "afterCount": 1183,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
