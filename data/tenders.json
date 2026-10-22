@@ -59,7 +59,7 @@
         "52",
         "64"
       ],
-      "investor": "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
+      "investor": "Trung tâm Kiểm nghiệm  thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
       "location": "Phường Quy Nhơn, Phường Pleiku",
       "closeDate": "2026-10-29T15:00:00",
       "publicDate": "2026-10-22T16:48:42.853",
@@ -68,7 +68,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=974f8b90-d47e-4db4-8bfa-ecf95a70bfc2&notifyId=974f8b90-d47e-4db4-8bfa-ecf95a70bfc2&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600572488&planNo=PL2600332806&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
@@ -80,9 +80,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "f4f25859-8fc4-45f4-8a89-8b2958d95951",
@@ -110,8 +108,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
-      "sourceBidderCount": null,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=f4f25859-8fc4-45f4-8a89-8b2958d95951&notifyId=f4f25859-8fc4-45f4-8a89-8b2958d95951&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600586296&planNo=PL2600363314&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -123,8 +120,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "b56e3fec-0789-4b88-9d46-7562b769b27b",
@@ -152,7 +148,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=b56e3fec-0789-4b88-9d46-7562b769b27b&notifyId=b56e3fec-0789-4b88-9d46-7562b769b27b&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600585028&planNo=PL2600359666&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -164,9 +160,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "DC2600063405",
@@ -4652,13 +4646,26 @@
         "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
         "CÔNG TY TNHH BIOTECH ASIA"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDISUN",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH BIOTECH ASIA",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        }
+      ],
       "winningModels": [
         "LON_260MNON3P3N1",
         "Multistix 10 SG"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -569175,7 +569182,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-22T11:32:35.353Z",
+  "fetchedAt": "2026-10-22T12:06:16.812Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5324,
   "regions": [
@@ -569299,7 +569306,7 @@
       "equipmentCount": 18187,
       "detailTenderCount": 1131,
       "coverageDays": 1095,
-      "fetchedAt": "2026-10-22T11:32:35.353Z",
+      "fetchedAt": "2026-10-22T12:06:16.812Z",
       "initialized": true,
       "source": "regional-scan"
     },
