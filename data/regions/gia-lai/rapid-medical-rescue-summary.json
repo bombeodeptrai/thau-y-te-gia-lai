@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-21T23:35:49.489Z",
+  "rescuedAt": "2026-10-22T05:10:13.685Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 116,
+      "count": 113,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 315,
+      "count": 314,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 19,
+      "count": 16,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -72,13 +72,13 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -204,31 +204,31 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 39,
+      "count": 37,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 15,
+      "count": 17,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 3,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 6,
+      "count": 9,
       "error": ""
     },
     {
@@ -282,21 +282,21 @@
   ],
   "successfulStrategyCount": 45,
   "candidateCount": 728,
-  "acceptedCount": 25,
-  "rejectedCount": 703,
+  "acceptedCount": 23,
+  "rejectedCount": 705,
   "rejectedReasons": {
-    "excluded:tu van": 273,
+    "excluded:tu van": 270,
     "insufficient-medical-context": 176,
-    "excluded:xay dung": 164,
+    "excluded:xay dung": 167,
+    "excluded:xay lap": 20,
     "excluded:sua chua": 18,
-    "excluded:xay lap": 18,
     "excluded:thuc pham": 15,
-    "excluded:cai tao": 10,
-    "excluded:bao ve": 4,
+    "excluded:bao ve": 8,
+    "excluded:cai tao": 7,
+    "excluded:tham dinh": 4,
     "excluded:bao tri": 3,
-    "excluded:kiem dinh": 3,
     "excluded:trang phuc": 3,
-    "excluded:tham dinh": 3,
+    "excluded:kiem dinh": 2,
     "excluded:lap e hsmt": 2,
     "excluded:cong nghe thong tin": 2,
     "excluded:cap dien": 1,
@@ -306,10 +306,24 @@
     "excluded:duong day": 1,
     "excluded:may tinh": 1,
     "excluded:bao hiem": 1,
-    "excluded:quan ly du an": 1,
-    "excluded:ve sinh cong nghiep": 1
+    "excluded:quan ly du an": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600585028",
+      "name": "Mua sắm Khí Y tế của Bệnh viện Đa khoa Gia Lai trong thời gian chờ kết quả đấu thầu tập trung cấp địa phương 2027-2028",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "khi y te",
+        "benh vien",
+        "da khoa",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600584291",
       "name": "Mua sắm hóa chất xét nghiệm năm 2026-2027 để phục vụ công tác chuyên môn của Trung Tâm Y Tế Phú Thiện",
@@ -563,38 +577,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600561302",
-      "name": "Dịch vụ sửa chữa, kiểm định 01 máy thở Elisa 300",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 260,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "may tho",
-        "benh vien",
-        "da khoa",
-        "sua chua",
-        "kiem dinh",
-        "elisa"
-      ]
-    },
-    {
-      "notifyNo": "IB2600548742",
-      "name": "Mua sắm hóa chất xét nghiệm năm 2026 - 2027",
-      "investor": "Trung tâm Y tế Kbang",
-      "accepted": true,
-      "score": 230,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
-      "matched": [
-        "hoa chat xet nghiem",
-        "trung tam y te",
-        "hoa chat",
-        "xet nghiem",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600063405",
       "name": "Lựa chọn nhà thầu, dự toán mua sắm: Gói thầu thuốc Generic phục vụ cấp cứu, điều trị bệnh nhân năm 2026 ( đợt 4 ) của Bệnh viện Sản - Nhi tỉnh Gia Lai",
       "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
@@ -647,18 +629,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600040931",
-      "name": "Mua que test ma tuý phục vụ công tác",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
-      "matched": [
-        "test ma tuy",
-        "mua"
-      ]
-    },
-    {
       "notifyNo": "DC2600046185",
       "name": "Mua sắm bổ sung vật tư, hóa chất năm 2026 (lần 2)",
       "investor": "Trung tâm Y tế Krông Pa",
@@ -701,6 +671,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600585956",
+      "name": "Toàn bộ khối lượng xây lắp công trình",
+      "investor": "Ban Quản lý xã Tây Sơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
     {
       "notifyNo": "IB2600585083",
       "name": "G09-VN-CSCC_GL_1322.3: Tiến hành trồng rừng ngập mặn phân tán có mục tiêu với sự tham gia của phụ nữ, các tổ chức do phụ nữ lãnh đạo",
@@ -1122,21 +1103,12 @@
         "trung tam y te",
         "chan doan"
       ]
-    },
-    {
-      "notifyNo": "IB2600573015",
-      "name": "Gói thầu số 02: Xử lý, phân loại sơ bộ tài liệu lưu trữ cấp huyện trước đây theo Kế hoạch số 256/KH-UBND ngày 24/6/2026 của UBND tỉnh",
-      "investor": "Trung tâm Lưu trữ Lịch sử tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1182,
-  "afterCount": 1182,
+  "beforeCount": 1183,
+  "afterCount": 1183,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
