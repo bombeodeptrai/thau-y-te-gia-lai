@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-22T04:45:30.008Z",
+  "rescuedAt": "2026-10-22T13:49:44.588Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 241,
+      "count": 236,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 588,
+      "count": 593,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 43,
+      "count": 42,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 26,
+      "count": 31,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 33,
+      "count": 28,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 68,
+      "count": 67,
       "error": ""
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 19,
+      "count": 15,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 131,
+      "count": 127,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 80,
+      "count": 82,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 121,
+      "count": 120,
       "error": ""
     },
     {
@@ -198,25 +198,25 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 37,
+      "count": 31,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 19,
+      "count": 17,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 100,
+      "count": 98,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 23,
+      "count": 26,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 15,
+      "count": 18,
       "error": ""
     },
     {
@@ -281,17 +281,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1544,
-  "acceptedCount": 56,
-  "rejectedCount": 1488,
+  "candidateCount": 1534,
+  "acceptedCount": 55,
+  "rejectedCount": 1479,
   "rejectedReasons": {
-    "excluded:tu van": 537,
-    "excluded:xay dung": 400,
-    "insufficient-medical-context": 330,
+    "excluded:tu van": 528,
+    "excluded:xay dung": 403,
+    "insufficient-medical-context": 328,
     "excluded:sua chua": 46,
-    "excluded:xay lap": 39,
+    "excluded:xay lap": 40,
     "excluded:cai tao": 32,
-    "excluded:thuc pham": 20,
+    "excluded:thuc pham": 19,
     "excluded:bao hiem": 14,
     "excluded:tham dinh": 13,
     "excluded:bao ve": 12,
@@ -307,7 +307,6 @@
     "excluded:suat an": 2,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
-    "excluded:may in": 1,
     "excluded:duong day": 1,
     "excluded:may chu": 1,
     "excluded:tram bien ap": 1,
@@ -315,6 +314,37 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600572488",
+      "name": "Gói thầu Dịch vụ hiệu chuẩn, bảo trì thiết bị, phương tiện đo năm 2026",
+      "investor": "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-equipment-service+medical-investor",
+      "matched": [
+        "trung tam kiem nghiem",
+        "bao tri",
+        "hieu chuan",
+        "thiet bi phuong tien do"
+      ]
+    },
+    {
+      "notifyNo": "IB2600586296",
+      "name": "Mua sắm Máy xét nghiệm nước tiểu và que thử nước tiểu phục vụ công tác khám, chữa bệnh tại Trung tâm Y tế Tây Sơn năm 2026",
+      "investor": "Trung tâm Y tế Tây Sơn",
+      "accepted": true,
+      "score": 200,
+      "reason": "explicit-medical-title+medical-investor+laboratory-analyzer-context",
+      "matched": [
+        "may xet nghiem",
+        "trung tam y te",
+        "xet nghiem",
+        "mua",
+        "mua sam",
+        "kham chua benh",
+        "chua benh"
+      ]
+    },
     {
       "notifyNo": "IB2600585028",
       "name": "Mua sắm Khí Y tế của Bệnh viện Đa khoa Gia Lai trong thời gian chờ kết quả đấu thầu tập trung cấp địa phương 2027-2028",
@@ -492,20 +522,6 @@
         "mua sam",
         "kham chua benh",
         "chua benh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600572488",
-      "name": "Gói thầu Dịch vụ hiệu chuẩn, bảo trì thiết bị, phương tiện đo năm 2026",
-      "investor": "Trung tâm Kiểm nghiệm thuốc, mỹ phẩm, thực phẩm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-equipment-service+medical-investor",
-      "matched": [
-        "trung tam kiem nghiem",
-        "bao tri",
-        "hieu chuan",
-        "thiet bi phuong tien do"
       ]
     },
     {
@@ -928,24 +944,44 @@
       "matched": [
         "kham suc khoe"
       ]
-    },
-    {
-      "notifyNo": "IB2600552700",
-      "name": "Mua sắm 02 mặt hàng phim X-quang khô Laser",
-      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
-      "accepted": true,
-      "score": 135,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "x quang",
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600581340",
+      "name": "Mua sắm, lắp đặt nâng cấp hệ thống mạng LAN phục vụ hoạt động tại cơ quan Văn phòng Sở Y tế tỉnh Gia Lai",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "so y te",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600585708",
+      "name": "Mua Lịch Xuân Đinh Mùi - năm 2027",
+      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600585953",
+      "name": "Gói thầu số 02: Thi công xây dựng các hạng mục hạ tầng chung",
+      "investor": "Chi cục Thủy sản",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600585956",
       "name": "Toàn bộ khối lượng xây lắp công trình",
@@ -1344,46 +1380,12 @@
       "matched": [
         "sua chua"
       ]
-    },
-    {
-      "notifyNo": "IB2600574146",
-      "name": "SCL2027-08: Cung cấp VTTB sửa chữa hệ thống NKT tổ máy H3 và NKT MBA T3 Nhà máy Thủy điện Ialy",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600576816",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Ban Quản lý xã Đak Pơ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600482779",
-      "name": "Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh tại Trung tâm Y tế Vĩnh Thạnh năm 2026",
-      "investor": "TRUNG TÂM Y TẾ VĨNH THẠNH",
-      "accepted": false,
-      "score": 90,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te",
-        "chan doan"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1183,
-  "afterCount": 1183,
+  "beforeCount": 1185,
+  "afterCount": 1185,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
