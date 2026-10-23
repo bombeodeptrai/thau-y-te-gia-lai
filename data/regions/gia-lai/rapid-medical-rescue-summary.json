@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-23T07:50:02.349Z",
+  "rescuedAt": "2026-10-23T11:23:12.010Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 113,
+      "count": 111,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 335,
+      "count": 330,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 10,
+      "count": 8,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 4,
+      "count": 2,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 16,
+      "count": 12,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 27,
+      "count": 28,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 51,
+      "count": 44,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 58,
+      "count": 55,
       "error": ""
     },
     {
@@ -198,25 +198,25 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 33,
+      "count": 32,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 13,
+      "count": 8,
       "error": ""
     },
     {
@@ -276,23 +276,23 @@
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 729,
-  "acceptedCount": 23,
-  "rejectedCount": 706,
+  "candidateCount": 704,
+  "acceptedCount": 24,
+  "rejectedCount": 680,
   "rejectedReasons": {
-    "excluded:tu van": 264,
-    "excluded:xay dung": 178,
-    "insufficient-medical-context": 169,
-    "excluded:sua chua": 24,
-    "excluded:xay lap": 21,
-    "excluded:thuc pham": 14,
-    "excluded:bao ve": 8,
-    "excluded:cai tao": 7,
+    "excluded:tu van": 250,
+    "excluded:xay dung": 176,
+    "insufficient-medical-context": 162,
+    "excluded:xay lap": 22,
+    "excluded:sua chua": 22,
+    "excluded:thuc pham": 13,
+    "excluded:bao ve": 7,
+    "excluded:cai tao": 5,
     "excluded:tham dinh": 4,
     "excluded:bao tri": 3,
     "excluded:kiem dinh": 2,
@@ -302,7 +302,9 @@
     "excluded:cap dien": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
+    "excluded:rac thai": 1,
     "excluded:giam sat thi cong": 1,
+    "excluded:suat an": 1,
     "excluded:may tinh": 1,
     "excluded:cong nghe thong tin": 1,
     "excluded:bao hiem": 1
@@ -549,18 +551,25 @@
       ]
     },
     {
-      "notifyNo": "IB2600573479",
-      "name": "Mua sắm bổ sung vật tư phục vụ công tác khám sức khỏe toàn dân của Trung tâm Y tế Tuy Phước năm 2026",
-      "investor": "Trung tâm Y tế Tuy Phước",
+      "notifyNo": "IB2600588240",
+      "name": "Mua sắm hóa chất, sinh phẩm xét nghiệm, vật tư tiêu hao phục vụ khám chữa bệnh và sàng lọc theo hình thức mua sắm trực tiếp trong thời gian chờ kết quả đấu thầu năm 2026 -2027 của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
       "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
+      "score": 340,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle+medical-context-supply",
       "matched": [
-        "kham suc khoe",
-        "trung tam y te",
+        "sinh pham xet nghiem",
+        "benh vien",
+        "da khoa",
+        "vat tu tieu hao",
+        "hoa chat",
+        "sinh pham",
+        "xet nghiem",
         "vat tu",
         "mua",
-        "mua sam"
+        "mua sam",
+        "kham chua benh",
+        "chua benh"
       ]
     },
     {
@@ -630,6 +639,26 @@
       ]
     },
     {
+      "notifyNo": "DC2600074088",
+      "name": "Mua sắm vật tư - hóa chất xét nghiệm sinh hoá, huyết học và vật tư tiêu hao, hoá chất khác năm 2026",
+      "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
+      "accepted": true,
+      "score": 315,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-context-supply",
+      "matched": [
+        "hoa chat xet nghiem",
+        "benh vien",
+        "vat tu tieu hao",
+        "hoa chat",
+        "xet nghiem",
+        "sinh hoa",
+        "huyet hoc",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600556076",
       "name": "Gói số 8: Cung cấp hóa chất, vật tư tiêu hao bổ sung tại Bệnh viện Hữu nghị Việt Đức cơ sở Ngọc Hồi năm 2026",
       "investor": "Bệnh viện Hữu Nghị Việt Đức",
@@ -672,6 +701,53 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600587971",
+      "name": "Toàn bộ khối lượng thi công xây dựng và thiết bị",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600586461",
+      "name": "SCL2026-XL/42: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa lớn đường dây trung hạ áp khu vực Phú Phong năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua",
+        "duong day"
+      ]
+    },
+    {
+      "notifyNo": "IB2600584779",
+      "name": "Mua sắm xi măng",
+      "investor": "ỦY BAN NHÂN DÂN PHƯỜNG DIÊN HỒNG",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600585968",
+      "name": "Toàn bộ khối lượng xây lắp công trình và bảo đảm an toàn giao thông phục vụ thi công",
+      "investor": "Ban Quản lý xã Tây Sơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
     {
       "notifyNo": "IB2600583302",
       "name": "Toàn bộ khối lượng thi công xây dựng công trình",
@@ -1069,54 +1145,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600578785",
-      "name": "Toàn bộ khối lượng thi công dự án: Nâng cấp, mở rộng đường vào làng nghề Nón ngựa Phú Gia",
-      "investor": "BAN QUẢN LÝ XÃ XUÂN AN",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600578271",
-      "name": "Xây lắp công trình",
-      "investor": "phòng kinh tế xã Ia Hrung",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600580795",
-      "name": "Tư vấn lập Quy hoạch chung đô thị Pleiku",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600561023",
-      "name": "Toàn bộ khối lượng thi công xây dựng và lắp đặt thiết bị công trình",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1186,
-  "afterCount": 1186,
-  "newCount": 0,
+  "afterCount": 1188,
+  "newCount": 2,
   "filterStrategy": "unified-medical-scope-v18"
 }

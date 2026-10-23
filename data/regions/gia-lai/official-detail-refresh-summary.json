@@ -1,12 +1,21 @@
 {
   "schemaVersion": 1,
   "regionSlug": "gia-lai",
-  "refreshedAt": "2026-10-23T07:41:56.220Z",
+  "refreshedAt": "2026-10-23T11:23:14.885Z",
   "limit": 80,
-  "refreshedCount": 1,
+  "refreshedCount": 2,
   "results": [
     {
-      "notifyNo": "DC2600075907",
+      "notifyNo": "DC2600074088",
+      "requirementCount": 1,
+      "technicalCount": 0,
+      "requirementDisclosure": "public-plan-lots",
+      "technicalDisclosure": "official-captcha-required",
+      "success": true,
+      "error": ""
+    },
+    {
+      "notifyNo": "IB2600588240",
       "requirementCount": 1,
       "technicalCount": 0,
       "requirementDisclosure": "public-plan-lots",
@@ -15,8 +24,8 @@
       "error": ""
     }
   ],
-  "detailTenderCount": 1130,
-  "requirementCount": 21957,
+  "detailTenderCount": 1134,
+  "requirementCount": 22006,
   "technicalCount": 3382,
   "strategy": "official-identity-plan-and-public-technical-details"
 }
