@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-22T23:25:25.212Z",
+  "rescuedAt": "2026-10-23T04:49:59.016Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 235,
+      "count": 233,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 592,
+      "count": 590,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 42,
+      "count": 41,
       "error": ""
     },
     {
@@ -66,13 +66,13 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 31,
+      "count": 32,
       "error": ""
     },
     {
@@ -144,7 +144,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 7,
+      "count": 8,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 127,
+      "count": 125,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 82,
+      "count": 83,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 120,
+      "count": 121,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 98,
+      "count": 92,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 44,
+      "count": 43,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 18,
+      "count": 20,
       "error": ""
     },
     {
@@ -281,15 +281,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1532,
-  "acceptedCount": 55,
-  "rejectedCount": 1477,
+  "candidateCount": 1523,
+  "acceptedCount": 56,
+  "rejectedCount": 1467,
   "rejectedReasons": {
-    "excluded:tu van": 526,
-    "excluded:xay dung": 404,
+    "excluded:tu van": 525,
+    "excluded:xay dung": 398,
     "insufficient-medical-context": 327,
-    "excluded:sua chua": 46,
-    "excluded:xay lap": 40,
+    "excluded:sua chua": 47,
+    "excluded:xay lap": 39,
     "excluded:cai tao": 32,
     "excluded:thuc pham": 19,
     "excluded:bao hiem": 14,
@@ -298,17 +298,17 @@
     "excluded:trang phuc": 9,
     "excluded:bao tri": 5,
     "excluded:kiem dinh": 4,
-    "excluded:may tinh": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:cap dien": 3,
+    "excluded:may tinh": 2,
     "excluded:bao ho lao dong": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
-    "excluded:suat an": 2,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
     "excluded:duong day": 1,
     "excluded:may chu": 1,
+    "excluded:suat an": 1,
     "excluded:tram bien ap": 1,
     "excluded:quan ly du an": 1,
     "excluded:ve sinh cong nghiep": 1
@@ -1384,8 +1384,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1183,
-  "afterCount": 1183,
+  "beforeCount": 1184,
+  "afterCount": 1184,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }

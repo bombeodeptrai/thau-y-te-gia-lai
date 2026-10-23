@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-22T23:24:39.662Z",
+  "auditedAt": "2026-10-23T04:49:20.734Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 592,
+      "count": 590,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 42,
+      "count": 41,
       "error": ""
     },
     {
@@ -56,13 +56,13 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -74,7 +74,7 @@
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 31,
+      "count": 32,
       "error": ""
     },
     {
@@ -134,7 +134,7 @@
     {
       "term": "Krông Pa",
       "success": true,
-      "count": 7,
+      "count": 8,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 127,
+      "count": 125,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 82,
+      "count": 83,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 120,
+      "count": 121,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 98,
+      "count": 92,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 44,
+      "count": 43,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 18,
+      "count": 20,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1460,
-  "acceptedCount": 50,
-  "rejectedCount": 1410,
+  "candidateCount": 1452,
+  "acceptedCount": 51,
+  "rejectedCount": 1401,
   "rejectedReasons": {
-    "excluded:tu van": 524,
-    "excluded:xay dung": 385,
-    "insufficient-medical-context": 293,
-    "excluded:sua chua": 42,
-    "excluded:xay lap": 37,
+    "excluded:tu van": 523,
+    "excluded:xay dung": 379,
+    "insufficient-medical-context": 294,
+    "excluded:sua chua": 43,
+    "excluded:xay lap": 36,
     "excluded:cai tao": 32,
     "excluded:thuc pham": 19,
     "excluded:bao hiem": 14,
@@ -287,21 +287,35 @@
     "excluded:bao ve": 12,
     "excluded:trang phuc": 9,
     "excluded:bao tri": 5,
-    "excluded:may tinh": 4,
     "excluded:cong nghe thong tin": 3,
     "excluded:cap dien": 3,
     "excluded:kiem dinh": 3,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
-    "excluded:suat an": 2,
+    "excluded:may tinh": 2,
     "excluded:duong day": 1,
     "excluded:may chu": 1,
+    "excluded:suat an": 1,
     "excluded:tram bien ap": 1,
     "excluded:quan ly du an": 1,
     "excluded:bao ho lao dong": 1,
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "DC2600075907",
+      "name": "Dịch vụ sửa chữa 01 máy siêu âm Acuson P300",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "may sieu am",
+        "benh vien",
+        "da khoa",
+        "sua chua"
+      ]
+    },
     {
       "notifyNo": "IB2600572488",
       "name": "Gói thầu Dịch vụ hiệu chuẩn, bảo trì thiết bị, phương tiện đo năm 2026",
@@ -919,24 +933,86 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600569155",
-      "name": "Mua bì đựng thuốc, bì đựng phim xquang - CT, In các mẫu - sổ phục vụ khám, chữa bệnh tại Trung tâm Y tế An Nhơn",
-      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
-      "accepted": true,
-      "score": 145,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "trung tam y te",
-        "thuoc",
-        "mua",
-        "kham chua benh",
-        "chua benh"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600587838",
+      "name": "Báo điện tử 21",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600076100",
+      "name": "Mua máy móc phục vụ công tác",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600076099",
+      "name": "Tư vấn lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Trường Cao đẳng Y tế Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600075915",
+      "name": "Dịch vụ sửa chữa 01 máy ly tâm Sorvall RC3BP",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600071566",
+      "name": "Toàn bộ khối lượng xây dựng và lắp đặt thiết bị Sửa chữa, cải tạo Nhà Khoa Ngoại - Sản Trung tâm Y tế Krông Pa",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "cai tao",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600063870",
+      "name": "Tư vấn lập hồ sơ yêu cầu và đánh giá hồ sơ đề xuất gói 05",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600071367",
+      "name": "Tư vấn lập nhiệm vụ và dự toán các công việc chuẩn bị lập báo cáo nghiên cứu khả thi ĐTXD",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "DC2600054810",
       "name": "Tư vấn kiểm toán",
@@ -1306,90 +1382,12 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "DC2600060728",
-      "name": "Mô hình trồng lúa năng suất chất lượng cao theo hướng VietGAP",
-      "investor": "Phòng Kinh tế xã Ia Sao, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600052825",
-      "name": "Phê duyệt KHLCNT tư vấn giám sát thi công",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600052730",
-      "name": "Phê duyệt KHLCNT tư vấn giám sát thi công",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600052818",
-      "name": "Phê duyệt KHLCNT thi công xây dựng",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600052778",
-      "name": "Phê duyệt KHLCNT thi công xây dựng",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600052810",
-      "name": "Phê duyệt KHLCNT thi công xây dựng",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600052797",
-      "name": "Phê duyệt KHLCNT tư vấn giám sát thi công",
-      "investor": "Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam - Chi nhánh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "giam sat thi cong"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1183,
-  "afterCount": 1183,
-  "newCount": 0,
+  "afterCount": 1184,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
