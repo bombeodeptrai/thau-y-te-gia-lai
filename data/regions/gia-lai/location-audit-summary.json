@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-24T04:36:54.052Z",
+  "auditedAt": "2026-10-24T12:42:00.312Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 589,
+      "count": 579,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 40,
+      "count": 38,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 37,
+      "count": 35,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 24,
+      "count": 23,
       "error": ""
     },
     {
@@ -62,19 +62,19 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 22,
+      "count": 20,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 18,
+      "count": 16,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 31,
+      "count": 28,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 28,
+      "count": 22,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 82,
+      "count": 79,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 111,
+      "count": 109,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 29,
+      "count": 26,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 87,
+      "count": 84,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 27,
+      "count": 29,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -230,7 +230,7 @@
     {
       "term": "Hoài Ân",
       "success": true,
-      "count": 13,
+      "count": 11,
       "error": ""
     },
     {
@@ -271,19 +271,19 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1419,
-  "acceptedCount": 55,
-  "rejectedCount": 1364,
+  "candidateCount": 1379,
+  "acceptedCount": 53,
+  "rejectedCount": 1326,
   "rejectedReasons": {
-    "excluded:tu van": 512,
-    "excluded:xay dung": 366,
-    "insufficient-medical-context": 279,
-    "excluded:sua chua": 44,
-    "excluded:xay lap": 36,
+    "excluded:tu van": 496,
+    "excluded:xay dung": 353,
+    "insufficient-medical-context": 274,
+    "excluded:sua chua": 43,
+    "excluded:xay lap": 35,
     "excluded:cai tao": 31,
-    "excluded:thuc pham": 19,
-    "excluded:bao hiem": 14,
+    "excluded:thuc pham": 18,
     "excluded:tham dinh": 13,
+    "excluded:bao hiem": 13,
     "excluded:bao ve": 12,
     "excluded:trang phuc": 8,
     "excluded:bao tri": 5,
@@ -1417,8 +1417,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1188,
-  "afterCount": 1188,
+  "beforeCount": 1185,
+  "afterCount": 1185,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
