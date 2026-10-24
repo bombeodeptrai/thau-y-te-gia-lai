@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-24T10:35:22.653Z",
+  "rescuedAt": "2026-10-24T11:22:55.420Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 19,
+      "count": 20,
       "error": ""
     },
     {
@@ -281,11 +281,11 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 672,
+  "candidateCount": 673,
   "acceptedCount": 24,
-  "rejectedCount": 648,
+  "rejectedCount": 649,
   "rejectedReasons": {
-    "excluded:tu van": 230,
+    "excluded:tu van": 231,
     "excluded:xay dung": 171,
     "insufficient-medical-context": 156,
     "excluded:xay lap": 21,
@@ -1151,8 +1151,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1188,
-  "afterCount": 1188,
+  "beforeCount": 1185,
+  "afterCount": 1185,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
