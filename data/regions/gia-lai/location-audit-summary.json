@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-24T12:42:00.312Z",
+  "auditedAt": "2026-10-24T18:48:50.851Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 79,
+      "count": 80,
       "error": ""
     },
     {
@@ -271,11 +271,11 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1379,
+  "candidateCount": 1380,
   "acceptedCount": 53,
-  "rejectedCount": 1326,
+  "rejectedCount": 1327,
   "rejectedReasons": {
-    "excluded:tu van": 496,
+    "excluded:tu van": 497,
     "excluded:xay dung": 353,
     "insufficient-medical-context": 274,
     "excluded:sua chua": 43,
@@ -954,6 +954,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600588951",
+      "name": "Thuê phần mềm Quản lý bệnh viện (HIS), phần mềm Quản lý bệnh án điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Bệnh viện Mắt tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "chan doan"
+      ]
+    },
+    {
       "notifyNo": "DC2600075784",
       "name": "Tư vấn giám sát thi công",
       "investor": "Sở Y tế tỉnh Gia Lai",
@@ -1402,23 +1414,12 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "IB2600586553",
-      "name": "Gói thầu số 82-XL-2026: Thi công xây lắp dự án",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1185,
-  "afterCount": 1185,
+  "beforeCount": 1184,
+  "afterCount": 1184,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }

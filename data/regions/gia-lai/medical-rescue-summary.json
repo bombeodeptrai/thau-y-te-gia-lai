@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-24T12:42:37.967Z",
+  "rescuedAt": "2026-10-24T18:49:26.440Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 230,
+      "count": 231,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 79,
+      "count": 80,
       "error": ""
     },
     {
@@ -281,11 +281,11 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1445,
+  "candidateCount": 1446,
   "acceptedCount": 56,
-  "rejectedCount": 1389,
+  "rejectedCount": 1390,
   "rejectedReasons": {
-    "excluded:tu van": 498,
+    "excluded:tu van": 499,
     "excluded:xay dung": 371,
     "insufficient-medical-context": 305,
     "excluded:sua chua": 47,
@@ -955,6 +955,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600588951",
+      "name": "Thuê phần mềm Quản lý bệnh viện (HIS), phần mềm Quản lý bệnh án điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Bệnh viện Mắt tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "chan doan"
+      ]
+    },
+    {
       "notifyNo": "IB2600581454",
       "name": "Toàn bộ khối lượng xây dựng và lắp đặt thiết bị (Giai đoạn 1)",
       "investor": "Ban Quản lý xã Bình Hiệp",
@@ -1388,24 +1400,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600579981",
-      "name": "Cung cấp vật tư và in vé xổ số truyền thống 6 chữ số năm 2027",
-      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT TỈNH GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu",
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1185,
-  "afterCount": 1185,
+  "beforeCount": 1184,
+  "afterCount": 1184,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
