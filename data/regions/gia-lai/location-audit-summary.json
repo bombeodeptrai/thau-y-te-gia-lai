@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-23T23:10:04.395Z",
+  "auditedAt": "2026-10-24T04:36:54.052Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 596,
+      "count": 589,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 41,
+      "count": 40,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 41,
+      "count": 37,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 8,
+      "count": 6,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 125,
+      "count": 123,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 112,
+      "count": 111,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 31,
+      "count": 29,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 91,
+      "count": 87,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -271,33 +271,32 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1441,
+  "candidateCount": 1419,
   "acceptedCount": 55,
-  "rejectedCount": 1386,
+  "rejectedCount": 1364,
   "rejectedReasons": {
-    "excluded:tu van": 514,
-    "excluded:xay dung": 376,
-    "insufficient-medical-context": 287,
+    "excluded:tu van": 512,
+    "excluded:xay dung": 366,
+    "insufficient-medical-context": 279,
     "excluded:sua chua": 44,
-    "excluded:xay lap": 37,
+    "excluded:xay lap": 36,
     "excluded:cai tao": 31,
     "excluded:thuc pham": 19,
     "excluded:bao hiem": 14,
     "excluded:tham dinh": 13,
     "excluded:bao ve": 12,
-    "excluded:trang phuc": 9,
+    "excluded:trang phuc": 8,
     "excluded:bao tri": 5,
+    "excluded:may tinh": 3,
     "excluded:cong nghe thong tin": 3,
     "excluded:cap dien": 3,
     "excluded:kiem dinh": 3,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
-    "excluded:may tinh": 2,
     "excluded:suat an": 2,
     "excluded:rac thai": 1,
     "excluded:may in": 1,
     "excluded:duong day": 1,
-    "excluded:may chu": 1,
     "excluded:tram bien ap": 1,
     "excluded:quan ly du an": 1,
     "excluded:bao ho lao dong": 1,
@@ -955,6 +954,29 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600075784",
+      "name": "Tư vấn giám sát thi công",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600077093",
+      "name": "Mua máy tính xách tay trang bị cho các thôn quản lý, sử dụng, phục vụ công tác thường xuyên trên môi trường số",
+      "investor": "Văn phòng HĐND và UBND xã Bình Hiệp, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may tinh",
+      "matched": [
+        "may tinh"
+      ]
+    },
+    {
       "notifyNo": "IB2600587971",
       "name": "Toàn bộ khối lượng thi công xây dựng và thiết bị",
       "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
@@ -1390,28 +1412,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600017992",
-      "name": "Cung cấp vé máy bay cho cán bộ thuộc diện bảo vệ, chăm sóc sức khỏe cán bộ của tỉnh Gia Lai đi khám sức khỏe định kỳ",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ve",
-      "matched": [
-        "bao ve"
-      ]
-    },
-    {
-      "notifyNo": "DC2600024055",
-      "name": "Cung cấp dịch vụ khám sức khỏe định kỳ đợt 3 cho đoàn cán bộ nguyên chức sinh sống tại khu vực phía Tây thuộc diện bảo vệ, chăm sóc sức khỏe cán bộ của tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ve",
-      "matched": [
-        "bao ve"
       ]
     }
   ],
