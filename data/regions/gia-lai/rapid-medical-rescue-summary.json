@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-24T11:22:55.420Z",
+  "rescuedAt": "2026-10-24T16:12:48.807Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 108,
+      "count": 109,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 308,
+      "count": 309,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 55,
+      "count": 56,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 673,
+  "candidateCount": 676,
   "acceptedCount": 24,
-  "rejectedCount": 649,
+  "rejectedCount": 652,
   "rejectedReasons": {
-    "excluded:tu van": 231,
+    "excluded:tu van": 233,
     "excluded:xay dung": 171,
-    "insufficient-medical-context": 156,
+    "insufficient-medical-context": 157,
     "excluded:xay lap": 21,
     "excluded:sua chua": 21,
     "excluded:thuc pham": 13,
@@ -701,6 +701,18 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600588951",
+      "name": "Thuê phần mềm Quản lý bệnh viện (HIS), phần mềm Quản lý bệnh án điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Bệnh viện Mắt tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "chan doan"
+      ]
+    },
     {
       "notifyNo": "IB2600581454",
       "name": "Toàn bộ khối lượng xây dựng và lắp đặt thiết bị (Giai đoạn 1)",
@@ -1135,24 +1147,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600579981",
-      "name": "Cung cấp vật tư và in vé xổ số truyền thống 6 chữ số năm 2027",
-      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT TỈNH GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu",
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1185,
-  "afterCount": 1185,
+  "beforeCount": 1184,
+  "afterCount": 1184,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
