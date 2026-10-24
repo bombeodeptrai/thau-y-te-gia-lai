@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-24T04:55:02.742Z",
+  "rescuedAt": "2026-10-24T10:35:22.653Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 111,
+      "count": 108,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 315,
+      "count": 308,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 8,
+      "count": 5,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 62,
+      "count": 61,
       "error": ""
     },
     {
@@ -281,14 +281,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 683,
+  "candidateCount": 672,
   "acceptedCount": 24,
-  "rejectedCount": 659,
+  "rejectedCount": 648,
   "rejectedReasons": {
-    "excluded:tu van": 236,
+    "excluded:tu van": 230,
     "excluded:xay dung": 171,
-    "insufficient-medical-context": 160,
-    "excluded:xay lap": 22,
+    "insufficient-medical-context": 156,
+    "excluded:xay lap": 21,
     "excluded:sua chua": 21,
     "excluded:thuc pham": 13,
     "excluded:bao ve": 7,
@@ -701,6 +701,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600581454",
+      "name": "Toàn bộ khối lượng xây dựng và lắp đặt thiết bị (Giai đoạn 1)",
+      "investor": "Ban Quản lý xã Bình Hiệp",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600587971",
       "name": "Toàn bộ khối lượng thi công xây dựng và thiết bị",
@@ -1136,15 +1147,6 @@
         "vat tu",
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "IB2600582044",
-      "name": "Toàn bộ khối lượng thi công dự án: Nâng cấp, mở rộng đường vào làng nghề Nón ngựa Phú Gia",
-      "investor": "BAN QUẢN LÝ XÃ XUÂN AN",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
