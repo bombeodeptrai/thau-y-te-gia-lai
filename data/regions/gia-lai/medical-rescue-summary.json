@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-25T13:13:11.234Z",
+  "rescuedAt": "2026-10-25T19:05:08.837Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 564,
+      "count": 575,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 32,
+      "count": 33,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 79,
+      "count": 80,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -222,25 +222,25 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 42,
+      "count": 43,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 41,
+      "count": 42,
       "error": ""
     },
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1391,
+  "candidateCount": 1402,
   "acceptedCount": 55,
-  "rejectedCount": 1336,
+  "rejectedCount": 1347,
   "rejectedReasons": {
-    "excluded:tu van": 489,
-    "excluded:xay dung": 353,
+    "excluded:tu van": 496,
+    "excluded:xay dung": 355,
     "insufficient-medical-context": 293,
-    "excluded:sua chua": 44,
+    "excluded:sua chua": 45,
     "excluded:xay lap": 34,
-    "excluded:cai tao": 27,
+    "excluded:cai tao": 28,
     "excluded:thuc pham": 17,
     "excluded:tham dinh": 13,
     "excluded:bao ve": 12,
@@ -1405,8 +1405,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1183,
-  "afterCount": 1183,
+  "beforeCount": 1182,
+  "afterCount": 1182,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
