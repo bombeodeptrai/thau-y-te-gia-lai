@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-25T04:42:14.346Z",
+  "rescuedAt": "2026-10-25T13:13:11.234Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 230,
+      "count": 221,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 573,
+      "count": 564,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 34,
+      "count": 32,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
@@ -144,13 +144,13 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 119,
+      "count": 114,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 80,
+      "count": 79,
       "error": ""
     },
     {
@@ -198,13 +198,13 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 44,
+      "count": 42,
       "error": ""
     },
     {
@@ -281,17 +281,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1416,
-  "acceptedCount": 56,
-  "rejectedCount": 1360,
+  "candidateCount": 1391,
+  "acceptedCount": 55,
+  "rejectedCount": 1336,
   "rejectedReasons": {
-    "excluded:tu van": 492,
-    "excluded:xay dung": 357,
-    "insufficient-medical-context": 300,
-    "excluded:sua chua": 46,
-    "excluded:xay lap": 36,
-    "excluded:cai tao": 31,
-    "excluded:thuc pham": 18,
+    "excluded:tu van": 489,
+    "excluded:xay dung": 353,
+    "insufficient-medical-context": 293,
+    "excluded:sua chua": 44,
+    "excluded:xay lap": 34,
+    "excluded:cai tao": 27,
+    "excluded:thuc pham": 17,
     "excluded:tham dinh": 13,
     "excluded:bao ve": 12,
     "excluded:bao hiem": 12,
@@ -299,8 +299,8 @@
     "excluded:bao tri": 5,
     "excluded:kiem dinh": 4,
     "excluded:cong nghe thong tin": 4,
-    "excluded:cap dien": 3,
     "excluded:may tinh": 3,
+    "excluded:cap dien": 2,
     "excluded:bao ho lao dong": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
@@ -932,24 +932,25 @@
       ]
     },
     {
-      "notifyNo": "IB2600549987",
-      "name": "Mua sắm hóa chất xét nghiệm và sinh phẩm chẩn đoán In Vitro năm 2026-2027",
-      "investor": "Trung tâm Y tế Krông Pa",
+      "notifyNo": "IB2600588240",
+      "name": "Mua sắm hóa chất, sinh phẩm xét nghiệm, vật tư tiêu hao phục vụ khám chữa bệnh và sàng lọc theo hình thức mua sắm trực tiếp trong thời gian chờ kết quả đấu thầu năm 2026 -2027 của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
       "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "score": 340,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle+medical-context-supply",
       "matched": [
-        "hoa chat xet nghiem",
-        "sinh pham chan doan",
-        "chan doan in vitro",
-        "trung tam y te",
+        "sinh pham xet nghiem",
+        "benh vien",
+        "da khoa",
+        "vat tu tieu hao",
         "hoa chat",
         "sinh pham",
         "xet nghiem",
-        "chan doan",
-        "in vitro",
+        "vat tu",
         "mua",
-        "mua sam"
+        "mua sam",
+        "kham chua benh",
+        "chua benh"
       ]
     }
   ],
