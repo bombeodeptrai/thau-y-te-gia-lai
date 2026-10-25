@@ -1,40 +1,117 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 4,
   "bidders": [
     {
-      "id": "97e1d387-0e85-41b4-b740-74fe0f5db0de",
+      "id": "8642714f-f47d-470a-aa82-b734a6f5ed85",
       "contractorCode": "vn0304315019",
-      "taxCode": "",
+      "taxCode": "0304315019",
       "contractorName": "Công ty TNHH Thiết Bị Hoàng Long",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600628925",
       "lotName": "Gói thầu mua trang thiết bị phục vụ tiểu dự án 2 \"cải thiện dinh dưỡng\" thuộc Dự án 3 chương trình mục tiêu quốc gia Giảm nghèo bền vững năm 2026",
       "bidPrice": 303900000,
       "finalPrice": 303900000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-29T09:04:00.101",
+      "reason": "xếp hạng 2",
+      "submittedAt": "2026-10-23T14:19:42.934",
       "models": []
     },
     {
-      "id": "290acb77-2428-4766-aa28-87a9bdbd9d11",
+      "id": "360146ff-e663-4cbf-a7f9-de301a031093",
       "contractorCode": "vn0101596614",
-      "taxCode": "",
+      "taxCode": "0101596614",
       "contractorName": "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI GIA HIỂN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600628925",
       "lotName": "Gói thầu mua trang thiết bị phục vụ tiểu dự án 2 \"cải thiện dinh dưỡng\" thuộc Dự án 3 chương trình mục tiêu quốc gia Giảm nghèo bền vững năm 2026",
       "bidPrice": 299170000,
       "finalPrice": 299170000,
-      "winningPrice": 0,
+      "winningPrice": 299170000,
       "reason": "",
-      "submittedAt": "2026-09-29T09:04:00.338",
+      "submittedAt": "2026-10-23T14:19:42.934",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "27ddab58-c28a-44b7-9ed6-f54043587db0",
+      "name": "Thước đo chiều cao (loại nằm)",
+      "model": "TNT02N",
+      "brand": "Đức Thái",
+      "manufacturer": "Công ty cổ phần Đức Thái",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": ".- Tính năng: Đo chiều cao (loại nằm dùng cho trẻ sơ sinh và trẻ dưới 2 tuổi) - Chất liệu làm bằng gỗ tự nhiên xử lý chống ẩm mốc. - Đảm bảo không độc hại, an toàn tuyệt đối cho da trẻ nhỏ. - Độ chính xác: sai số cho phép nằm trong khoảng ± 5 mm - Điều kiện hoạt động của thước: Sử dụng được trong các điều kiện khí hậu, thời tiết khác nhau (khô, nóng, ẩm, ướt v.v). - Dễ dàng vận chuyển từ địa điểm này sang điểm khác do thước có thể gấp gọn thành một khối nhỏ, thuận tiện khi mang đi các điểm nhỏ thực hiện dự án.",
+      "unit": "Cái",
+      "quantity": 100,
+      "unitPrice": 800000,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI  GIA HIỂN"
+      ],
+      "decisionNo": "689/QĐ-KSBT",
+      "decisionDate": "2026-10-23T23:59:59",
+      "resultPublishedDate": "2026-10-23T14:19:53"
+    },
+    {
+      "id": "f155cc43-25a1-447b-8736-60a90f4beaea",
+      "name": "Cân trẻ sơ sinh, trẻ nhỏ (Cân lòng máng)",
+      "model": "CĐHTE20",
+      "brand": "Nhơn Hòa",
+      "manufacturer": "Công ty TNHH Sản Xuất Cân Nhơn Hòa",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Đặc điểm chính: - Phạm vi đo: 500g – 20kg - Sai số: tối thiểu ± 25g - tối đa: ± 75g - Chất liệu: Mặt số nhựa ABS, khay đặt trẻ được làm bằng chất liệu PP",
+      "unit": "Cái",
+      "quantity": 100,
+      "unitPrice": 800000,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI  GIA HIỂN"
+      ],
+      "decisionNo": "689/QĐ-KSBT",
+      "decisionDate": "2026-10-23T23:59:59",
+      "resultPublishedDate": "2026-10-23T14:19:53"
+    },
+    {
+      "id": "3671a453-4203-4cdd-a919-bb43afafb780",
+      "name": "Cân trọng lượng cơ thể",
+      "model": "RSB02-S",
+      "brand": "Rapido",
+      "manufacturer": "Guangdong Welland Technology Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Chức năng: Cân trọng lượng cơ thể Tải trọng tối đa 180 kg Chất lượng kính chịu lực: đảm bảo chịu được tải trọng tối đa trong thời gian thực hiện nhiệm vụ Màn hình LCD.",
+      "unit": "Cái",
+      "quantity": 120,
+      "unitPrice": 258500,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI  GIA HIỂN"
+      ],
+      "decisionNo": "689/QĐ-KSBT",
+      "decisionDate": "2026-10-23T23:59:59",
+      "resultPublishedDate": "2026-10-23T14:19:53"
+    },
+    {
+      "id": "511e1b47-0745-4efc-993c-1fe1a0003846",
+      "name": "Thước đo đứng",
+      "model": "TNT03",
+      "brand": "Đức Thái",
+      "manufacturer": "Công ty cổ phần Đức Thái",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Tính năng: Đo chiều cao đứng - Chất liệu: Gỗ - Thước có thang chia độ dài đến 1mm tại 2 bên mép thước. - Chiều cao của thước phù hợp với từng nhóm đối tượng được đo. - Độ chính xác: Thước đo cần đạt được độ chính xác với mức sai số là ± 1mm. - Khoảng đo: Lựa chọn thước đo phù hợp với trẻ em và người lớn, Từ 0 - 200 cm (hoặc 2.000 mm) - Điều kiện hoạt động của thước: đảm bảo sử dụng được trong các điều kiện khí hậu, thời tiết khác nhau (khô, nóng, ẩm, ướt v.v). - Dễ dàng vận chuyển từ địa điểm này sang điểm khác do thước có thể gấp gọn thành một khối nhỏ, thuận tiện khi mang đi các điểm nhỏ thực hiện dự án.",
+      "unit": "Cái",
+      "quantity": 105,
+      "unitPrice": 1030000,
+      "winnerNames": [
+        "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI  GIA HIỂN"
+      ],
+      "decisionNo": "689/QĐ-KSBT",
+      "decisionDate": "2026-10-23T23:59:59",
+      "resultPublishedDate": "2026-10-23T14:19:53"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +136,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:40:05.754Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-25T19:55:24.122Z"
 }

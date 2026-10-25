@@ -1,9 +1,121 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "1ba3c88e-f2ec-412a-9eaa-561874f6591c",
+      "contractorCode": "vn0107613344",
+      "taxCode": "0107613344",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600411840",
+      "lotName": "1",
+      "bidPrice": 209160000,
+      "finalPrice": 209160000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xếp hạng 1 về giá",
+      "submittedAt": "2026-09-30T17:16:14.469",
+      "models": []
+    },
+    {
+      "id": "571a772f-5f4e-47c2-9a43-fefcf8e369d7",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "PP2600411840",
+      "lotName": "1",
+      "bidPrice": 206000000,
+      "finalPrice": 206000000,
+      "winningPrice": 206000000,
+      "reason": "",
+      "submittedAt": "2026-09-30T17:16:14.469",
+      "models": [
+        "DTD01: MPV",
+        "BTI04: MPV"
+      ]
+    },
+    {
+      "id": "c5529f11-f1e1-45ac-b8fb-46eedcdec9a8",
+      "contractorCode": "vn0107613344",
+      "taxCode": "0107613344",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600411841",
+      "lotName": "2",
+      "bidPrice": 101200000,
+      "finalPrice": 101200000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xếp hạng 1 về giá",
+      "submittedAt": "2026-09-30T17:16:14.469",
+      "models": []
+    },
+    {
+      "id": "52575edb-76b5-439a-9df0-1aaa28b5c18c",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "PP2600411841",
+      "lotName": "2",
+      "bidPrice": 98450000,
+      "finalPrice": 98450000,
+      "winningPrice": 98450000,
+      "reason": "",
+      "submittedAt": "2026-09-30T17:16:14.469",
+      "models": [
+        "DTD01: MPV",
+        "BTI04: MPV"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "3e496653-b360-4043-8bb4-f4213165b671",
+      "name": "Bộ dây truyền dịch kim 2 cánh bướm",
+      "model": "DTD01: MPV",
+      "brand": "MPV",
+      "manufacturer": "MPV",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Kim chai làm bằng nhựa ABS nguyên sinh, van thoát khí có thiết kế màng lọc vô khuẩn. Khóa điều chỉnh làm bằng nhựa PP nguyên sinh, có thiết kế lỗ kẹp dây đảm bảo an toàn khi sử dụng Buồng nhỏ giọt thể tích ≥ 8,5ml, có màng lọc dịch ≤ 15µm ở cuối đường truyền. Dây dẫn cấu tạo từ chất liệu nhựa PVC nguyên sinh; Độ dài dây truyền ≥ 1500mm. Dây truyền dịch kèm kim hai cánh bướm 23Gx3/4\". Đầu nối Luer lock có cơ chế xoay giúp cho việc gắn kết với kim luồn chắc chắn và dễ thao tác khi sử dụng. Có chứng nhận EC cấp bởi tổ chức đánh giá sự phù hợp được Liên minh châu Âu chỉ định (Notified Body), TCVN 6591-4: 2008, tiêu chuẩn tiệt trùng EN ISO 11135: 2014, EN ISO 13485. - Xuất xứ: G7/Việt Nam",
+      "unit": "Bộ",
+      "quantity": 40000,
+      "unitPrice": 5150,
+      "amount": 206000000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "396/QĐ-BVNS",
+      "decisionDate": "2026-09-30T17:14:55",
+      "resultPublishedDate": "2026-09-30T17:16:48"
+    },
+    {
+      "id": "46337b26-4a8c-442e-a443-f0cca146941e",
+      "name": "Bơm tiêm insulin 1ml",
+      "model": "BTI04: MPV",
+      "brand": "MPV",
+      "manufacturer": "MPV",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Bơm tiêm dung tích 1ml dùng để tiêm insulin, có nắp chụp bảo vệ đầu kim và nắp chụp pít tông để ngăn dị vật vào lòng bơm khi sử dụng. - Bơm tiêm có 2 loại phù hợp với 2 loại thuốc 40UI và 100UI. - Đầu kim có vát 3 cạnh giúp tiêm sắc nhọn, không có gờ. Thân kim làm bằng thép không gỉ - Kim được đúc liền với vỏ xylanh, không thể tháo rời - Kim tiêm bao gồm các cỡ: 31Gx6mm, 32Gx6mm - Sản phẩm được tiệt trùng bằng khí Ethylene Oxide (E.O). - Có chứng nhận EC cấp bởi tổ chức đánh giá sự phù hợp được Liên minh châu Âu chỉ định (Notified Body) -Đạt tiêu chuẩn EN ISO 13485, EN ISO 11135:2014 - Xuất xứ: G7/Việt Nam",
+      "unit": "Cái",
+      "quantity": 55000,
+      "unitPrice": 1790,
+      "amount": 98450000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "396/QĐ-BVNS",
+      "decisionDate": "2026-09-30T17:14:55",
+      "resultPublishedDate": "2026-09-30T17:16:48"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +202,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-09-28T05:38:49.194Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-25T19:38:39.756Z"
 }

@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "92b01bdd-ee35-4e9f-9376-1563dc4888c9",
+      "contractorCode": "vn0108354389",
+      "taxCode": "0108354389",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ KHOA HỌC VÀ Y TẾ BTC",
+      "status": "won",
+      "lotNo": "BP2600842438",
+      "lotName": "Dịch vụ bảo dưỡng, sửa chữa Máy tán sỏi nội soi laser tại Bệnh viện đa khoa Ngọc Lặc",
+      "bidPrice": 104000000,
+      "finalPrice": 104000000,
+      "winningPrice": 104000000,
+      "reason": "",
+      "submittedAt": "2026-10-23T09:40:35.774",
+      "models": [
+        "Bảo dưỡng, sửa chữa Máy tán sỏi nội soi laser. Model: HZ-D S/N:05171025 Năm sản xuất: 2018"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "20269673447899",
+      "name": "Bảo dưỡng, sửa chữa Máy tán sỏi nội soi laser. Model: HZ-D S/N:05171025 Năm sản xuất: 2018",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "gói",
+      "quantity": 1,
+      "unitPrice": 104000000,
+      "amount": 104000000,
+      "contractorCode": "vn0108354389",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ KHOA HỌC VÀ Y TẾ BTC"
+      ],
+      "lotNo": "",
+      "decisionNo": "763/QĐ-BVNL",
+      "decisionDate": "2026-10-23T09:39:34",
+      "resultPublishedDate": "2026-10-23T09:41:14"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -65,5 +106,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:27:27.804Z"
+  "fetchedAt": "2026-10-25T19:38:34.020Z"
 }

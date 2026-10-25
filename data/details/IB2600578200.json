@@ -1,9 +1,754 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 13,
+  "bidders": [
+    {
+      "id": "64a8ef06-cfa7-4bf1-ab5f-30d91c55a1b3",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "lost",
+      "lotNo": "PP2600438884",
+      "lotName": "Bơm tiêm 5ml",
+      "bidPrice": 73000000,
+      "finalPrice": 73000000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "1001001; Disposable Infusion Set (Standard Type)",
+        "Sonde foley",
+        "Nylon Suture 4-0",
+        "Medwest 5002"
+      ]
+    },
+    {
+      "id": "34231037-4fe9-4809-881e-b4ceeb105ada",
+      "contractorCode": "vn0101471478",
+      "taxCode": "0101471478",
+      "contractorName": "CÔNG TY CỔ PHẦN KHÁNH PHONG VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600438884",
+      "lotName": "Bơm tiêm 5ml",
+      "bidPrice": 68000000,
+      "finalPrice": 68000000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": []
+    },
+    {
+      "id": "2576831c-6f10-4b24-a387-7de42022e21f",
+      "contractorCode": "vn1500202535",
+      "taxCode": "1500202535",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CỬU LONG",
+      "status": "lost",
+      "lotNo": "PP2600438884",
+      "lotName": "Bơm tiêm 5ml",
+      "bidPrice": 67850000,
+      "finalPrice": 67850000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": []
+    },
+    {
+      "id": "d101d51c-853c-46c5-bbf8-dd8e668fa681",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "won",
+      "lotNo": "PP2600438884",
+      "lotName": "Bơm tiêm 5ml",
+      "bidPrice": 59300000,
+      "finalPrice": 59300000,
+      "winningPrice": 59300000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "BLU001E",
+        "BTK5: ECO"
+      ]
+    },
+    {
+      "id": "4490b9a6-c40a-4696-af0f-b5ac8d0dd051",
+      "contractorCode": "vn0400408435",
+      "taxCode": "0400408435",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+      "status": "lost",
+      "lotNo": "PP2600438885",
+      "lotName": "Bông y tế",
+      "bidPrice": 4620000,
+      "finalPrice": 4620000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": []
+    },
+    {
+      "id": "57e4f881-f67e-4868-88d4-f0830e018fed",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "PP2600438885",
+      "lotName": "Bông y tế",
+      "bidPrice": 4333440,
+      "finalPrice": 4333440,
+      "winningPrice": 4333440,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "1001001; Disposable Infusion Set (Standard Type)",
+        "Sonde foley",
+        "Nylon Suture 4-0",
+        "Medwest 5002"
+      ]
+    },
+    {
+      "id": "48e14a5e-84d6-4d0c-b794-c4e921c2dadd",
+      "contractorCode": "vn0400476756",
+      "taxCode": "0400476756",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+      "status": "won",
+      "lotNo": "PP2600438887",
+      "lotName": "Chỉ nilon 4/0",
+      "bidPrice": 1920000,
+      "finalPrice": 1920000,
+      "winningPrice": 1920000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Chỉ nilon 4/0"
+      ]
+    },
+    {
+      "id": "93b200fe-9603-4803-9cfc-7cd019611588",
+      "contractorCode": "vn4300361082",
+      "taxCode": "4300361082",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI",
+      "status": "won",
+      "lotNo": "PP2600438890",
+      "lotName": "Dây thở oxy qua mũi",
+      "bidPrice": 315000,
+      "finalPrice": 315000,
+      "winningPrice": 315000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Dây truyền dịch",
+        "Dây thở oxy qua mũi"
+      ]
+    },
+    {
+      "id": "7be25461-7ce9-4e6f-bbc7-1d42eaf68e21",
+      "contractorCode": "vn0400408435",
+      "taxCode": "0400408435",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ THIẾT BỊ Y TẾ - KHOA HỌC KỸ THUẬT M.E.D.I.C",
+      "status": "lost",
+      "lotNo": "PP2600438891",
+      "lotName": "Dây truyền dịch",
+      "bidPrice": 5170000,
+      "finalPrice": 5170000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": []
+    },
+    {
+      "id": "769a5558-bc36-4b47-a746-d8899ad904c6",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "lost",
+      "lotNo": "PP2600438891",
+      "lotName": "Dây truyền dịch",
+      "bidPrice": 5392500,
+      "finalPrice": 5392500,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "1001001; Disposable Infusion Set (Standard Type)",
+        "Sonde foley",
+        "Nylon Suture 4-0",
+        "Medwest 5002"
+      ]
+    },
+    {
+      "id": "d2d18a52-5856-4ef4-83b5-045ddefec594",
+      "contractorCode": "vn4300361082",
+      "taxCode": "4300361082",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI",
+      "status": "won",
+      "lotNo": "PP2600438891",
+      "lotName": "Dây truyền dịch",
+      "bidPrice": 5100000,
+      "finalPrice": 5100000,
+      "winningPrice": 5100000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Dây truyền dịch",
+        "Dây thở oxy qua mũi"
+      ]
+    },
+    {
+      "id": "ff823734-eab6-414e-90c3-30c5489ebcf8",
+      "contractorCode": "vn6000420044",
+      "taxCode": "6000420044",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM QUỐC TẾ",
+      "status": "lost",
+      "lotNo": "PP2600438891",
+      "lotName": "Dây truyền dịch",
+      "bidPrice": 5512500,
+      "finalPrice": 5512500,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Kim châm cứu"
+      ]
+    },
+    {
+      "id": "fcfa6920-8532-40ca-b120-aaf33545c11c",
+      "contractorCode": "vn0101471478",
+      "taxCode": "0101471478",
+      "contractorName": "CÔNG TY CỔ PHẦN KHÁNH PHONG VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600438892",
+      "lotName": "Kim châm cứu",
+      "bidPrice": 70500000,
+      "finalPrice": 70500000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": []
+    },
+    {
+      "id": "b1383f7d-c49c-42c5-acac-e0784dc7176f",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "lost",
+      "lotNo": "PP2600438892",
+      "lotName": "Kim châm cứu",
+      "bidPrice": 74500000,
+      "finalPrice": 74500000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "1001001; Disposable Infusion Set (Standard Type)",
+        "Sonde foley",
+        "Nylon Suture 4-0",
+        "Medwest 5002"
+      ]
+    },
+    {
+      "id": "2a42b427-66b7-46c6-93b6-72eeff8e3adc",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "lost",
+      "lotNo": "PP2600438892",
+      "lotName": "Kim châm cứu",
+      "bidPrice": 68000000,
+      "finalPrice": 68000000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "BLU001E",
+        "BTK5: ECO"
+      ]
+    },
+    {
+      "id": "d79c114f-16d9-4c8e-84e0-66c43e6fdfe9",
+      "contractorCode": "vn4300361082",
+      "taxCode": "4300361082",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI",
+      "status": "lost",
+      "lotNo": "PP2600438892",
+      "lotName": "Kim châm cứu",
+      "bidPrice": 70400000,
+      "finalPrice": 70400000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Dây truyền dịch",
+        "Dây thở oxy qua mũi"
+      ]
+    },
+    {
+      "id": "e7bd73e5-8705-4f48-a6b4-f6a17f907f80",
+      "contractorCode": "vn6000420044",
+      "taxCode": "6000420044",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM QUỐC TẾ",
+      "status": "won",
+      "lotNo": "PP2600438892",
+      "lotName": "Kim châm cứu",
+      "bidPrice": 67750000,
+      "finalPrice": 67750000,
+      "winningPrice": 67750000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Kim châm cứu"
+      ]
+    },
+    {
+      "id": "c4bfa3b9-6704-4d40-aa47-3704cd71c4c1",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "PP2600438893",
+      "lotName": "Kim tiêm tiệt trùng",
+      "bidPrice": 2780000,
+      "finalPrice": 2780000,
+      "winningPrice": 2780000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "1001001; Disposable Infusion Set (Standard Type)",
+        "Sonde foley",
+        "Nylon Suture 4-0",
+        "Medwest 5002"
+      ]
+    },
+    {
+      "id": "edeb560e-d051-46b1-9737-a05ad4653afc",
+      "contractorCode": "vn4300361082",
+      "taxCode": "4300361082",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI",
+      "status": "lost",
+      "lotNo": "PP2600438893",
+      "lotName": "Kim tiêm tiệt trùng",
+      "bidPrice": 2850000,
+      "finalPrice": 2850000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Dây truyền dịch",
+        "Dây thở oxy qua mũi"
+      ]
+    },
+    {
+      "id": "97e047be-ae77-471d-aa17-769e0c8cdc18",
+      "contractorCode": "vn6000420044",
+      "taxCode": "6000420044",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM QUỐC TẾ",
+      "status": "lost",
+      "lotNo": "PP2600438893",
+      "lotName": "Kim tiêm tiệt trùng",
+      "bidPrice": 2940000,
+      "finalPrice": 2940000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Kim châm cứu"
+      ]
+    },
+    {
+      "id": "445b5257-039c-45e0-994a-8029ffe4b39f",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "PP2600438894",
+      "lotName": "Sonde foley",
+      "bidPrice": 944800,
+      "finalPrice": 944800,
+      "winningPrice": 944800,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "1001001; Disposable Infusion Set (Standard Type)",
+        "Sonde foley",
+        "Nylon Suture 4-0",
+        "Medwest 5002"
+      ]
+    },
+    {
+      "id": "b564e337-14d4-4cd6-8939-0320e0f45c0e",
+      "contractorCode": "vn0401962420",
+      "taxCode": "0401962420",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SUN",
+      "status": "won",
+      "lotNo": "PP2600438896",
+      "lotName": "Túi đựng nước tiểu",
+      "bidPrice": 640000,
+      "finalPrice": 640000,
+      "winningPrice": 640000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "1001001; Disposable Infusion Set (Standard Type)",
+        "Sonde foley",
+        "Nylon Suture 4-0",
+        "Medwest 5002"
+      ]
+    },
+    {
+      "id": "e386beba-9e45-4fcf-8371-4f9673a7db50",
+      "contractorCode": "vn0304728672",
+      "taxCode": "0304728672",
+      "contractorName": "CÔNG TY CP CÔNG NGHỆ SINH HỌC THỤY AN",
+      "status": "won",
+      "lotNo": "PP2600438897",
+      "lotName": "Bộ dây lọc máu chạy thận nhân tạo",
+      "bidPrice": 16560000,
+      "finalPrice": 16560000,
+      "winningPrice": 16560000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Bộ dây lọc máu chạy thận nhân tạo"
+      ]
+    },
+    {
+      "id": "ccbaba38-c8a9-4dcf-8192-0d4c59388e71",
+      "contractorCode": "vn0400476756",
+      "taxCode": "0400476756",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+      "status": "lost",
+      "lotNo": "PP2600438898",
+      "lotName": "Kim lọc thận nhân tạo",
+      "bidPrice": 53000000,
+      "finalPrice": 53000000,
+      "winningPrice": 0,
+      "reason": "Không phải nhà thầu xếp hạng 1",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "Chỉ nilon 4/0"
+      ]
+    },
+    {
+      "id": "da27a8f8-a3fb-4028-84f1-7585dd4c277c",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "won",
+      "lotNo": "PP2600438898",
+      "lotName": "Kim lọc thận nhân tạo",
+      "bidPrice": 50000000,
+      "finalPrice": 50000000,
+      "winningPrice": 50000000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "BLU001E",
+        "BTK5: ECO"
+      ]
+    },
+    {
+      "id": "19e5e998-5dd9-4d0e-9b7f-403e8a7ac67f",
+      "contractorCode": "vn0315008683",
+      "taxCode": "0315008683",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ QUANG HƯNG",
+      "status": "won",
+      "lotNo": "PP2600438899",
+      "lotName": "Quả lọc máu thận nhân tạo Sureflux- 130E hoặc tương đương",
+      "bidPrice": 120600000,
+      "finalPrice": 120600000,
+      "winningPrice": 120600000,
+      "reason": "",
+      "submittedAt": "2026-10-23T15:23:48.914",
+      "models": [
+        "SUREFLUX-13E"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "c7c40db1-9ec0-4be6-9e8b-38528209f8a9",
+      "name": "Chỉ nilon 4/0",
+      "model": "0",
+      "brand": "An Lành",
+      "manufacturer": "An Lành",
+      "origin": "Việt Nam",
+      "manufactureYear": "0",
+      "specification": "Bông dạng lớp, Sản xuất từ nguyên liệu bông xơ thiên nhiên 100% cotton. Bông trắng, không mùi, mềm mịn, dai, không bị tơi và có độ thấm hút rất cao, không lẫn tạp chất. Không độc tố và không gây dị ứng, không có tinh bột, không có xơ mùn hòa tan trong nước và dịch phủ tạng. Tốc độ hút nước =< 5 giây. Độ acid và độ kiềm: Trung tính; Hàm lượng chất béo: Không vượt quá 0.5%. Các chất tan trong nước:≤ 0,5%; Độ ẩm: ≤ 8%; Đạt tiêu chuẩn ISO 9001:2015; ISO 13485:2016; Chứng nhận FDA của Hoa Kỳ; CE",
+      "unit": "Tép",
+      "quantity": 240,
+      "unitPrice": 8000,
+      "amount": 1920000,
+      "contractorCode": "vn0400476756",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "fea952bd-1e56-4ff1-af0b-cf09bbf50b1b",
+      "name": "Túi đựng nước tiểu",
+      "model": "1001001; Disposable Infusion Set (Standard Type)",
+      "brand": "0",
+      "manufacturer": "Suzhou Yudu Medical Co., Ltd. / Trung Quốc",
+      "origin": "Trung Quốc",
+      "manufactureYear": "0",
+      "specification": "Kích thước kim: 21G. Có Flash ball (bầu cao su tiếp thuốc).\r\nKim tiêm chất lượng cao giúp giảm thiểu cảm giác đau khi luồn kim.\r\nĐầu kim sắc nhọn, vát 3 cạnh không có gờ, sản xuất từ vật liệu thép không gỉ và có nắp đậy bảo vệ. Van thoát khí có thiết kế màng lọc khí vô khuẩn.\r\nĐiều chỉnh được chính xác 20 giọt/ml. Buồng nhỏ giọt và ống nhỏ giọt có thiết kế màng lọc dịch và trong suốt để quan sát theo dõi đếm giọt.\r\nDây dẫn cấu tạo từ chất liệu nhựa PVC nguyên sinh không chứa DEHP, dây được tráng silicon mềm dẻo, dai, độ đàn hồi cao, không gây gập khi bảo quản và sử dụng.\r\nChiều dài dây dẫn 150cm. Chiều dài tổng thể 170cm.\r\nVan khóa điều chỉnh và kim chai sản xuất từ hạt nhựa ABS nguyên sinh. Con lăn di chuyển linh hoạt để chỉnh giọt và hiệu quả đảm bảo dòng chảy liên tục.\r\nKhông độc hại, không có chất gây sốt.\r\nTiệt trùng EO và đóng gói riêng cho từng sản phẩm.\r\nHạn sử dụng 5 năm.",
+      "unit": "Túi",
+      "quantity": 100,
+      "unitPrice": 6400,
+      "amount": 640000,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "59199d93-9655-4bd6-bef6-f1909aa90ae2",
+      "name": "Quả lọc máu thận nhân tạo Sureflux- 130E hoặc tương đương",
+      "model": "SUREFLUX-13E",
+      "brand": "0",
+      "manufacturer": "Nipro Corporation Odate Factory/ Nhật Bản",
+      "origin": "Nhật Bản",
+      "manufactureYear": "0",
+      "specification": "Nguyên liệu: màng lọc làm tự sợi thiên nhiên cellulose triacetate . Diện tích: 1,3 m2. Thể tích mồi: 78 ml. Hệ số siêu lọc: 17 (mL/giờ/mmHg). Độ dày thành sợi:  15 µm. Vỏ quả lọc: Polypropylene\r\nĐộ thanh thải (Qb: 300ml/min):\r\n Ure: 263 ml/min\r\n Creatinine : 229 ml/min\r\n Phosphate: 192 ml/min\r\n Vitamin B12: 116 ml/min\r\nTiệt trùng: Tia Gamma\r\nSản phẩm được đóng gói trong túi nhôm (Aluminum pouch), kèm túi hút oxy (oxygen scavenger)\r\nĐạt tiêu chuẩn ISO 13485:2016, EC",
+      "unit": "Quả",
+      "quantity": 360,
+      "unitPrice": 335000,
+      "amount": 120600000,
+      "contractorCode": "vn0315008683",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ QUANG HƯNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "5051d172-cded-49df-8070-d2850208c61d",
+      "name": "Sonde foley",
+      "model": "0",
+      "brand": "0",
+      "manufacturer": "CT TNHH SX và TM TBYT Hoàng Sơn",
+      "origin": "Việt Nam",
+      "manufactureYear": "0",
+      "specification": "Một nhánh, số 8\r\nSản xuất từ chất liệu nhựa PVC y tế\r\nChiều dài dây 400mm, ống dây mềm.\r\nTiệt trùng bằng khí E.O\r\n1 cái/túi, 10 túi/gói, 600 cái/thùng",
+      "unit": "Dây",
+      "quantity": 100,
+      "unitPrice": 9448,
+      "amount": 944800,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "cf9286c0-0fa3-4287-972a-a1f4bed83072",
+      "name": "Kim tiêm tiệt trùng",
+      "model": "Nylon Suture 4-0",
+      "brand": "Bee",
+      "manufacturer": "Huaiyin Medical Instruments Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "0",
+      "specification": "Chỉ khâu Nylon là chỉ phẫu thuật tổng hợp, không tiêu, đơn sợi, có kim \r\nĐóng gói: Đóng gói vô khuẩn, Tiệt trùng",
+      "unit": "Cây",
+      "quantity": 10000,
+      "unitPrice": 278,
+      "amount": 2780000,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "f32c6790-55cc-4835-8c0c-d2b60c97d9ff",
+      "name": "Kim châm cứu",
+      "model": "0",
+      "brand": "Greetmed",
+      "manufacturer": "Greetmed",
+      "origin": "Trung Quốc",
+      "manufactureYear": "0",
+      "specification": "- Sản xuất từ nhựa y tế PVC, không độc hại.\r\n- Kích cỡ 2000ml độ dày 1.2mm, phân vạch rõ ràng.\r\nCó vạch dung tích mỗi 100ml. Đảm bảo kín không rò rỉ.",
+      "unit": "Cây",
+      "quantity": 250000,
+      "unitPrice": 271,
+      "amount": 67750000,
+      "contractorCode": "vn6000420044",
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM QUỐC TẾ"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "7bc05544-177a-413c-8d41-8621242ec514",
+      "name": "Bông y tế",
+      "model": "Medwest 5002",
+      "brand": "Medwest A.V.Fistula Needle",
+      "manufacturer": "Wellmed International Industries Pvt.Ltd",
+      "origin": "Ấn Độ",
+      "manufactureYear": "0",
+      "specification": "Kim fistula động tĩnh mạch. Kích cỡ kim 17G x kim dài 25mm x dây dài 300mm, cánh bướm xoay được, có khóa cài, đầu nối Luer-lock",
+      "unit": "kg",
+      "quantity": 30,
+      "unitPrice": 144448,
+      "amount": 4333440,
+      "contractorCode": "vn0401962420",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SUN"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "974acc78-0b25-4d6c-b79f-00035176757f",
+      "name": "Dây truyền dịch",
+      "model": "0",
+      "brand": "Ningbo Weishan Technology Co., Ltd",
+      "manufacturer": "Ningbo Weishan Technology Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "0",
+      "specification": "Không chứa DEHP gây ung thư. \r\n- Sản xuất từ 100% cao su tự nhiên ,Phủ Silicon \r\n- Có bóng dung tích 5cc-30cc, bóng căng đều. \r\n- Lỗ thông tiểu tiểu lớn và trơn \r\n- Tráng silicon trong lòng ống \r\n- Tiệt trùng bằng phóng xạ Gamma hoặc khí ETO.\r\n- Tiêu chuẩn ISO13485, CE",
+      "unit": "Dây",
+      "quantity": 1500,
+      "unitPrice": 3400,
+      "amount": 5100000,
+      "contractorCode": "vn4300361082",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "e28cb3b8-e556-423e-bc6d-cf3910b46a79",
+      "name": "Bộ dây lọc máu chạy thận nhân tạo",
+      "model": "0",
+      "brand": "0",
+      "manufacturer": "WUJIANG JIACHEN\r\nACUPUNCTURE DEVICES\r\nCO.,LTD",
+      "origin": "CHINA",
+      "manufactureYear": "0",
+      "specification": "Các số  tiệt trùng, đóng gói riêng từng cây. Thân kim được làm bằng thép không gỉ, cán kim được cuộn bằng sợi thép. Đường kính thân kim 0.16mm đến 0.45mm, độ dài thân kim từ 13mm đến 300mm",
+      "unit": "Bộ",
+      "quantity": 360,
+      "unitPrice": 46000,
+      "amount": 16560000,
+      "contractorCode": "vn0304728672",
+      "winnerNames": [
+        "CÔNG TY CP CÔNG NGHỆ SINH HỌC THỤY AN"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "10370853555609124",
+      "name": "Dây thở oxy qua mũi",
+      "model": "",
+      "brand": "Tanaphar",
+      "manufacturer": "Tanaphar",
+      "origin": "Việt Nam",
+      "manufactureYear": "không yêu cầu",
+      "specification": "Kim: được làm bằng thép không gỉ mạ Crom hoặc Niken. Đầu kim vát 3 cạnh, sắc nhọn, có nắp chụp bảo vệ. Thân kim nhẵn, tròn đều, có đủ độ cứng cơ khí, không tạp chất bên trong, được phủ Silicone. Đốc kim có màu giúp phân biệt cỡ kim theo tiêu chuẩn quốc tế. Đóng gói trong túi riêng, không có độc tố và chất gây sốt, không DEHP. Đạt chứng nhận EN ISO 13485: 2016;",
+      "unit": "Dây",
+      "quantity": 100,
+      "unitPrice": 3150,
+      "amount": 315000,
+      "contractorCode": "vn4300361082",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "e497719d-9c8c-448f-8034-924ae11ab9e5",
+      "name": "Kim lọc thận nhân tạo",
+      "model": "BLU001E",
+      "brand": "Tubing Sets for Hemodialysis",
+      "manufacturer": "Vital Healthcare SDN. BHD.\r\n",
+      "origin": "Malaysia",
+      "manufactureYear": "0",
+      "specification": "Bộ dây chạy thận bao gồm dây động mạch (dài 3880 mm) và dây tĩnh mạch (dài 2830 mm), có 1 transducer. \r\nBầu nhỏ giọt đường kính ngoài OD: 19-30 mm, chiều dài L: 130 mm; \r\nĐoạn dây bơm (8,0x12x420) mm, chiều dài hiệu dụng 400mm.\r\nCổng tiêm ở dây động mạch có thiết kế dây chữ Y giúp điều dưỡng thao tác dễ dàng hơn. \r\nDây động mạch có nhánh dây đo áp lực: 3.5 x 5.5mm dài 500mm\r\nThể tích làm đầy 163±10% mL. \r\nChất liệu nhựa y tế không chứa Latex, NON-DEHP. \r\n- Tiệt trùng bằng khí EO, có chỉ thị tiệt trùng trên thùng hàng (thay đổi màu: đỏ -> xanh)",
+      "unit": "Cây",
+      "quantity": 10000,
+      "unitPrice": 5000,
+      "amount": 50000000,
+      "contractorCode": "vn4300213253",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "df085078-9159-4c21-b8bc-7b92562bb3c2",
+      "name": "Bơm tiêm 5ml",
+      "model": "BTK5: ECO",
+      "brand": "MPV",
+      "manufacturer": "Công ty Cổ phần Nhựa y tế Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "0",
+      "specification": "Bơm tiêm sử dụng một lần, Thể tích 5ml + kim",
+      "unit": "Cái",
+      "quantity": 100000,
+      "unitPrice": 593,
+      "amount": 59300000,
+      "contractorCode": "vn4300213253",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    },
+    {
+      "id": "916e3e87-90d1-4502-9c42-75f63f2a5f9b",
+      "name": "Dây thở  oxy qua mũi",
+      "model": "0",
+      "brand": "Tanaphar",
+      "manufacturer": "Tanaphar",
+      "origin": "Việt Nam",
+      "manufactureYear": "0",
+      "specification": "Kim: được làm bằng thép không gỉ mạ Crom hoặc Niken. Đầu kim vát 3 cạnh, sắc nhọn, có nắp chụp bảo vệ. Thân kim nhẵn, tròn đều, có đủ độ cứng cơ khí, không tạp chất bên trong, được phủ Silicone. Đốc kim có màu giúp phân biệt cỡ kim theo tiêu chuẩn quốc tế. Đóng gói trong túi riêng, không có độc tố và chất gây sốt, không DEHP. Đạt chứng nhận EN ISO 13485: 2016;",
+      "unit": "Dây",
+      "quantity": 100,
+      "unitPrice": 3150,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI"
+      ],
+      "decisionNo": "257",
+      "decisionDate": "2026-10-23T15:22:49",
+      "resultPublishedDate": "2026-10-23T15:24:18"
+    }
+  ],
   "requirements": {
     "total": 16,
     "items": [
@@ -538,6 +1283,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:33:49.915Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-25T19:48:07.967Z"
 }

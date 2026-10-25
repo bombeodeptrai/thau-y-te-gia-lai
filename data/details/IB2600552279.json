@@ -1,9 +1,169 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "8c2863d7-0f1d-4bbb-983c-ab94e69114ef",
+      "contractorCode": "vn2801104646",
+      "taxCode": "2801104646",
+      "contractorName": "Công ty cổ phần dược vật tư y tế và thương mại Thiên Việt",
+      "status": "won",
+      "lotNo": "PP2600409951",
+      "lotName": "1",
+      "bidPrice": 164000000,
+      "finalPrice": 164000000,
+      "winningPrice": 164000000,
+      "reason": "",
+      "submittedAt": "2026-10-08T11:03:56.239",
+      "models": [
+        "TCT-00127-23",
+        "VD-32590-19 (Có quyết định gia hạn số 165/QĐ-QLD ngày 14/11/2023)"
+      ]
+    },
+    {
+      "id": "2f5337c1-a60b-4655-9408-486c9487313a",
+      "contractorCode": "vn2801104646",
+      "taxCode": "2801104646",
+      "contractorName": "Công ty cổ phần dược vật tư y tế và thương mại Thiên Việt",
+      "status": "won",
+      "lotNo": "PP2600409952",
+      "lotName": "2",
+      "bidPrice": 765000000,
+      "finalPrice": 765000000,
+      "winningPrice": 765000000,
+      "reason": "",
+      "submittedAt": "2026-10-08T11:03:56.239",
+      "models": [
+        "TCT-00127-23",
+        "VD-32590-19 (Có quyết định gia hạn số 165/QĐ-QLD ngày 14/11/2023)"
+      ]
+    },
+    {
+      "id": "3163465b-4918-4eb9-9eec-0d740773651c",
+      "contractorCode": "vn2802437260",
+      "taxCode": "2802437260",
+      "contractorName": "CÔNG TY CỔ PHẦN Y TẾ TÂN HOÀNG",
+      "status": "won",
+      "lotNo": "PP2600409953",
+      "lotName": "3",
+      "bidPrice": 390000000,
+      "finalPrice": 390000000,
+      "winningPrice": 390000000,
+      "reason": "",
+      "submittedAt": "2026-10-08T11:03:56.239",
+      "models": [
+        "VN-19438-15; QĐ số 38/QĐ-YDCT gia hạn đến 31/12/2024"
+      ]
+    },
+    {
+      "id": "72023d92-4739-4a13-b0bb-cedea9be3c5e",
+      "contractorCode": "vn2801275521",
+      "taxCode": "2801275521",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC TH PHARMA",
+      "status": "won",
+      "lotNo": "PP2600409956",
+      "lotName": "6",
+      "bidPrice": 125000000,
+      "finalPrice": 125000000,
+      "winningPrice": 125000000,
+      "reason": "",
+      "submittedAt": "2026-10-08T11:03:56.239",
+      "models": [
+        "893200120100"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2bd8f729-780e-4445-8e5c-9ee6c17e758a",
+      "name": "Ngưu nhĩ phong, La liễu.",
+      "model": "VN-19438-15; QĐ số 38/QĐ-YDCT gia hạn đến 31/12/2024",
+      "brand": "Tràng hoàng vị khang",
+      "manufacturer": "Hainan Wanzhou Green Pharmaceutical Co., Ltd",
+      "origin": "Cộng hòa Nhân dân Trung Hoa",
+      "manufactureYear": "Tháng 6 năm 2025 trở về sau",
+      "specification": "Tên thuốc: Tràng hoàng vị khang;Tên hoạt chất:Cao khô Ngưu Nhĩ Phong tương đương dược liệu thô 4g; Cao khô La Liễu tương đương dược liệu thô 2g; L26Hàm lượng/Nồng độ: 4g; 2g; Đường dùng:Uống; Dạng bào chế: Viên nén bao đường; Quy cách: Hộp 1 túi x 2 vỉ x 12 viên; Hạn dùng (tuổi thọ): 36 tháng; Nhóm TCKT: Nhóm 4 theo Điều 4 chương II Thông tư 40/2025/TT-BYT ngày 25/10/2025",
+      "unit": "Viên",
+      "quantity": 50000,
+      "unitPrice": 7800,
+      "amount": 390000000,
+      "contractorCode": "vn2802437260",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN Y TẾ TÂN HOÀNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "683/QDD-BVHL",
+      "decisionDate": "2026-10-08T11:02:25",
+      "resultPublishedDate": "2026-10-08T11:04:53"
+    },
+    {
+      "id": "8156d297-1372-46eb-b323-c79f94c78c06",
+      "name": "Men bia ép tinh chế.",
+      "model": "893200120100",
+      "brand": "Biolusty",
+      "manufacturer": "Công ty cổ phần dược TH Pharma",
+      "origin": "Việt Nam",
+      "manufactureYear": "Tháng 6 năm 2025 trở về sau",
+      "specification": "Tên thuốc: Biolusty;Tên hoạt chất:Men bia ép tinh chế; L26Hàm lượng/Nồng độ: 4g/10ml; Đường dùng:Uống; Dạng bào chế: Dung dịch uống; Quy cách: Hộp 20 ống (thủy tinh) x 10ml; Hạn dùng (tuổi thọ): 36 tháng; Nhóm TCKT: Nhóm 3 theo Điều 4 chương II Thông tư 40/2025/TT-BYT ngày 25/10/2025",
+      "unit": "Chai/lọ/ống/túi/gói",
+      "quantity": 50000,
+      "unitPrice": 2500,
+      "amount": 125000000,
+      "contractorCode": "vn2801275521",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC TH PHARMA"
+      ],
+      "lotNo": "",
+      "decisionNo": "683/QDD-BVHL",
+      "decisionDate": "2026-10-08T11:02:25",
+      "resultPublishedDate": "2026-10-08T11:04:53"
+    },
+    {
+      "id": "d72e80db-94f9-4f3e-ad92-dcb4f76f1377",
+      "name": "Mã tiền chế, Đương qui, Đỗ trọng, Ngưu tất, Quế Chi, Độc hoạt, Thương truật, Thổ phục linh.",
+      "model": "TCT-00127-23",
+      "brand": "Phong tê thấp Bà Giằng",
+      "manufacturer": "Nhà máy sản xuất thuốc YHCT Bà Giằng - Công ty cổ phần dược phẩm Bagiaco - Chi nhánh Hà Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "Tháng 6 năm 2025 trở về sau",
+      "specification": "Tên thuốc: Phong tê thấp Bà Giằng;Tên hoạt chất:Bột mã tiền chế; Đương quy; Đỗ trọng; Ngưu tất; Quế chi; Thương truật; Độc hoạt; Thổ phục linh ; L26Hàm lượng/Nồng độ: (168mg + 168mg + 168mg+144mg+96mg+192mg+192mg+240mg) /Gói; Đường dùng:Uống; Dạng bào chế: Viên hoàn cứng; Quy cách: Hộp 15 gói x 12 viên hoàn cứng; Hạn dùng (tuổi thọ): 30 tháng; Nhóm TCKT: Nhóm 3 theo Điều 4 chương II Thông tư 40/2025/TT-BYT ngày 25/10/2025",
+      "unit": "Gói",
+      "quantity": 150000,
+      "unitPrice": 5100,
+      "amount": 765000000,
+      "contractorCode": "vn2801104646",
+      "winnerNames": [
+        "Công ty cổ phần dược vật tư y tế và thương mại Thiên Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "683/QDD-BVHL",
+      "decisionDate": "2026-10-08T11:02:25",
+      "resultPublishedDate": "2026-10-08T11:04:53"
+    },
+    {
+      "id": "802250de-d515-4b48-853f-a55a443292f0",
+      "name": "Bạch mao căn, Đương quy, Kim tiền thảo, Xa tiền tử, Ý dĩ, Sinh địa",
+      "model": "VD-32590-19 (Có quyết định gia hạn số 165/QĐ-QLD ngày 14/11/2023)",
+      "brand": "Bài Thạch Trường Phúc",
+      "manufacturer": " Công ty TNHH dược thảo Hoàng Thành",
+      "origin": "Việt Nam",
+      "manufactureYear": "Tháng 6 năm 2025 trở về sau",
+      "specification": "Tên thuốc: Bài Thạch Trường Phúc;Tên hoạt chất:Cao đặc hỗn hợp dược liệu bao gồm: Bạch mao căn; Đương quy; Kim tiền thảo; Xa tiền tử; Ý dĩ; Sinh địa; L26Hàm lượng/Nồng độ: 0,8g; 0,8g; 3,2g; 0,8g; 0,4g;  0,8g; Đường dùng:Uống; Dạng bào chế: Viên nén bao phim; Quy cách: Hộp 2 vỉ, 3 vỉ, 6 vỉ x 10 viên nén bao phim; Hạn dùng (tuổi thọ): 36 tháng; Nhóm TCKT: Nhóm 3 theo Điều 4 chương II Thông tư 40/2025/TT-BYT ngày 25/10/2025",
+      "unit": "Viên",
+      "quantity": 80000,
+      "unitPrice": 2050,
+      "amount": 164000000,
+      "contractorCode": "vn2801104646",
+      "winnerNames": [
+        "Công ty cổ phần dược vật tư y tế và thương mại Thiên Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "683/QDD-BVHL",
+      "decisionDate": "2026-10-08T11:02:25",
+      "resultPublishedDate": "2026-10-08T11:04:53"
+    }
+  ],
   "requirements": {
     "total": 6,
     "items": [
@@ -219,5 +379,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-03T11:37:08.585Z"
+  "fetchedAt": "2026-10-25T19:38:38.289Z"
 }

@@ -1,55 +1,75 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "eb170e81-6713-41e3-9c2c-e2f14f4167ef",
+      "id": "59782f37-ce37-41f7-b8ae-1646f7548347",
       "contractorCode": "vn0101060894",
-      "taxCode": "",
+      "taxCode": "0101060894",
       "contractorName": "CÔNG TY TNHH THANH PHƯƠNG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600570006",
       "lotName": "Mua sắm vật tư dùng trong lọc máu của Bệnh viện Đa khoa Ninh Thuận",
       "bidPrice": 5126000000,
       "finalPrice": 5126000000,
-      "winningPrice": 0,
+      "winningPrice": 5126000000,
       "reason": "",
-      "submittedAt": "2026-09-07T10:11:00.14",
+      "submittedAt": "2026-10-22T09:06:47.543",
       "models": []
     },
     {
-      "id": "4cf280a4-605d-4db4-989d-8c5d31b1dfc8",
+      "id": "6f06f33e-951f-4b9f-9bf5-ef9899f9dfdd",
       "contractorCode": "vn0304728672",
-      "taxCode": "",
+      "taxCode": "0304728672",
       "contractorName": "CÔNG TY CP CÔNG NGHỆ SINH HỌC THỤY AN",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600570006",
       "lotName": "Mua sắm vật tư dùng trong lọc máu của Bệnh viện Đa khoa Ninh Thuận",
       "bidPrice": 4530000000,
       "finalPrice": 4530000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-07T10:11:00.341",
+      "reason": "E-HSDT không đáp ứng yêu cầu về kỹ thuật của E-HSMT",
+      "submittedAt": "2026-10-22T09:06:47.543",
       "models": []
     },
     {
-      "id": "2010bc89-7401-4506-83fc-774ba3b9408e",
+      "id": "9b61cb57-41f5-40b9-8847-47b5e68e54e3",
       "contractorCode": "vn0102045497",
-      "taxCode": "",
+      "taxCode": "0102045497",
       "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DƯỢC PHẨM TÂN THÀNH",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600570006",
       "lotName": "Mua sắm vật tư dùng trong lọc máu của Bệnh viện Đa khoa Ninh Thuận",
       "bidPrice": 4994000000,
       "finalPrice": 4994000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-07T10:11:00.608",
+      "reason": "E-HSDT không đáp ứng yêu cầu về kỹ thuật của E-HSMT",
+      "submittedAt": "2026-10-22T09:06:47.543",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "7d4194d5-a9a2-4096-8bc8-d9cf1b73e60f",
+      "name": "Quả lọc hấp phụ",
+      "model": "HA230",
+      "brand": "Disposable Hemoperfusion Cartridge HA230",
+      "manufacturer": "Jafron Biomedical Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Chất liệu: Vật liệu hấp phụ: là các hạt Resin;  Styrene-divinyl Benzene Copolymers liên kết ngang kép (Double Cross-linked Styrene-divinylbenzene Copolymer).\nVỏ được làm bằng vật liệu Polycarbonate (PC).\nThể tích hấp phụ: 230ml\nThể tích khoang máu: 145ml\nTốc độ (Lưu lượng) máu: 100-350ml/phút. \nDải hấp phụ: 500 ~ 10kDa\nDiện tích hấp phụ: 70.000m2\nNội trở tối đa: 4kPa\nÁp suất chịu đựng tối đa: 100kPa\nĐộ chịu lực của hạt: 8.1N\nTiệt trùng bằng tia Gamma (Chiếu xạ)",
+      "unit": "Cái",
+      "quantity": 20,
+      "unitPrice": 6300000,
+      "winnerNames": [
+        "CÔNG TY TNHH THANH PHƯƠNG"
+      ],
+      "decisionNo": "1911/QĐ-BVNT",
+      "decisionDate": "2026-10-22T23:59:59",
+      "resultPublishedDate": "2026-10-22T09:07:25"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +94,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:38:54.161Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-25T19:54:21.063Z"
 }

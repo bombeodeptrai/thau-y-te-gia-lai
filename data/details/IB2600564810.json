@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "bf650aea-03ce-4e79-acff-c9e3b99241ba",
+      "contractorCode": "vn0315441167",
+      "taxCode": "0315441167",
+      "contractorName": "Công ty TNHH Asatek",
+      "status": "won",
+      "lotNo": "BP2600835119",
+      "lotName": "Máy theo dõi bệnh nhân 5 thông số (Monitor) năm 2026 của Bệnh viện đa khoa khu vực Triệu Phong",
+      "bidPrice": 40500000,
+      "finalPrice": 40500000,
+      "winningPrice": 40500000,
+      "reason": "",
+      "submittedAt": "2026-10-22T10:05:42.112",
+      "models": [
+        "Model: M8"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "f867666b-9fcf-4051-b3a2-2c7a0371032a",
+      "name": "Máy theo dõi bệnh nhân 5 thông số (Monittor)",
+      "model": "Model: M8",
+      "brand": "Model: M8",
+      "manufacturer": "Xuzhou Yongkang Electronic Science Technology",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở lên",
+      "specification": "1. Phạm vi ứng dụng: Người lớn/Nhi khoa/Sơ sinh/Nội khoa/Ngoại khoa/Phòng mổ/ICU /CCU  \n2. Màn hình hiển thị: Màn hình LED màu ≥8 inch  \n3. Nguồn điện: \nAC: 100 ~ 240V, 50Hz/60Hz; DC: Pin sạc tích hợp bên trong; Pin: ≥ 11V 24wh Pin Li-ion; Thời gian hoạt động: ≥ 2 giờ sau khi sạc đầy; Thời gian hoạt động: ≥ 5 phút sau khi có cảnh báo pin yếu  \n4. Thời gian lưu trữ: Biểu đồ/Bảng xu hướng: ≥ 720h; Xem lại NIBP: ≥ 10000 sự kiện; Xem lại sóng: ≥ 12h; Xem lại báo động: ≥ 200 sự kiện báo động; Hỗ trợ phân tích và điều chỉnh nồng độ thuốc\n5. Thông số kỹ thuật\nECG:  ≥ 5 đạo trình: RA, LA, LL, RL, V; Chế độ đạo trình:I,Ⅱ, Ⅲ, AVR, AVL,AVF, V; Độ khuếch đại: × ≥ 1.25mm/mV,2.5mm/mV, 5.0mm/mV, 10mm/mV, 20mm/mV (sai số ≤ 5%); Tốc độc quét: ≥ 6.25mm/s,12.5mm/s,25mm/s, 50mm/s (sai số ≤ ± 10%); Băng thông: Phẫu thuật ≤ 1 ~ ≥ 25 Hz; Theo dõi: ≤ 0.5 ~ ≥ 40 Hz; Chẩn đoán: ≤ 0.05 ~ ≥ 130 Hz; Độ nhạy: >200 μ V P-P; CMRR: ≥ 112dB; Trở kháng đầu vào vi sai: >5M; Điện thế lệch của điện cực: ±300mV; Điện áp phân cực: ≥ ± 500mV; Trở kháng đầu vào: ≥ 5 M; Điện áp hiệu chuẩn: 1mV ± 5%\nĐoạn ST: Dải đo đoạn ST: -2.0mV ~ +2.0mV; Độ chính xác: 0.02mV \nNIBP: Phương pháp: Phương pháp đo dao động; Chế độ đo: Đo thủ công, đo tự động, đo khẩn cấp (STAT); Khoảng đo ở chế độ tự động:1~5/10/15/30/60/90/120/180/240/480min; Chu kỳ đo ở chế độ STAT: 5min; Dải đo nhịp mạch: 40 ~ 240bpm; Dải đo và dải cảnh báo: \nNgười lớn: SYS 40 ~ 280mmHg; DIA 10 ~ 220mmHg; MEAN 20 ~ 240mmHg             \nTrẻ em: SYS 40 ~ 220mmHg; DIA 10 ~ 160mmHg; MEAN 20 ~ 170mmHg \nTrẻ sơ sinh: SYS 40 ~ 135mmHg;  DIA 10 ~ 100mmHg; MEAN 20 ~ 110mmHg      \nĐo áp suất tĩnh; Dải đo: 0 ~ 300mmHg; Độ chính xác : ± 3mmHg; Độ phân giải : 1mmHg         \n-  Độ chính xác: Sai số trung bình tối đa: ± 5mmHg; Độ lệch chuẩn tối đa: 8mmHg; \n-  Bảo vệ quá áp: Người lớn: 300mmHg; Trẻ em: 240mmHg; Trẻ sơ sinh: 150mmHg\nSpO2: Dải đo: 0 ~ 100%; Độ phân giải: 1%; Độ chính xác: 70% ~ 100% ±2%; 40% ~ 69% ± 3% 2%\n   \nNhịp mạch: Dải đo/cảnh báo: 20 ~ 300bpm; Độ phân giải : 1bpm; Độ chính xác : ± 3bpm\nResp: Phương pháp: Trở kháng hô hấp đo giữa điện cực RA – LL; Dải trở kháng: 0.3 ~ 3 Ω; Dải trở kháng nền: 200 Ω ~ 4000 Ω; Băng thông: 0.3 ~ 2.5Hz; Độ khuếch đại: × 0.25, × 0.5, × 1, × 2, × 4\n-  Tần số hô hấp:\nDải đo: Người lớn 0 ~ 120BrPM; Trẻ em/trẻ sơ sinh 0 ~ 150BrPM; Độ phân giải: 1BrPM; Độ chính xác: 0 ~ 6BrPM (Không xác định); Báo động ngưng thở: 10 ~ 40s\nNhiệt độ: Kênh: 2; Phạm vi đo và cảnh báo: 0 ~ 50 ℃; Độ phân giải: 0.1 ℃; Độ chính xác (không cảm biến): ±0.1 ℃ (0~50 ℃)      \n- Yêu cầu khác\nĐầy đủ phụ kiện đi kèm theo quy định của nhà sản xuất; Thời gian bảo hành: ≥ 12 tháng",
+      "unit": "Máy",
+      "quantity": 3,
+      "unitPrice": 13500000,
+      "amount": 40500000,
+      "contractorCode": "vn0315441167",
+      "winnerNames": [
+        "Công ty TNHH Asatek"
+      ],
+      "lotNo": "",
+      "decisionNo": "540/QĐ-BVĐK",
+      "decisionDate": "2026-10-22T08:29:50",
+      "resultPublishedDate": "2026-10-22T10:24:47"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:29:25.852Z"
+  "fetchedAt": "2026-10-25T19:41:39.663Z"
 }

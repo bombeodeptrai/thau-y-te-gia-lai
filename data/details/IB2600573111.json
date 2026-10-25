@@ -1,9 +1,89 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "eb21c034-0951-40a4-8c0c-8caf41976e38",
+      "contractorCode": "vn0307884750",
+      "taxCode": "0307884750",
+      "contractorName": "CÔNG TY TNHH KINH DOANH VẬT TƯ TRANG THIẾT BỊ Y TẾ VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600435589",
+      "lotName": "Mua sắm vật tư, linh kiện sửa chữa dây soi dạ dày model: GIF-H170",
+      "bidPrice": 99000000,
+      "finalPrice": 99000000,
+      "winningPrice": 99000000,
+      "reason": "",
+      "submittedAt": "2026-10-23T16:30:25.103",
+      "models": [
+        "Mua sắm vật tư, linh kiện sửa chữa dây soi dạ dày model: GIF-H170"
+      ]
+    },
+    {
+      "id": "b0e35164-635e-4bbc-9d30-f71c536b7a45",
+      "contractorCode": "vn0314926352",
+      "taxCode": "0314926352",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ T&T",
+      "status": "won",
+      "lotNo": "PP2600435590",
+      "lotName": "Mua sắm vật tư, linh kiện sửa chữa máy lọc máu liên tục Model: Omni",
+      "bidPrice": 154000000,
+      "finalPrice": 154000000,
+      "winningPrice": 154000000,
+      "reason": "",
+      "submittedAt": "2026-10-23T16:30:25.103",
+      "models": [
+        "Mua sắm vật tư, linh kiện sửa chữa máy lọc máu liên tục Model: Omni"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "11673670636889920",
+      "name": "Mua sắm vật tư, linh kiện sửa chữa máy lọc máu liên tục Model: Omni",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 154000000,
+      "amount": 154000000,
+      "contractorCode": "vn0314926352",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ T&T"
+      ],
+      "lotNo": "",
+      "decisionNo": "944/QĐ-BVIILĐ",
+      "decisionDate": "2026-10-23T16:29:28",
+      "resultPublishedDate": "2026-10-23T16:30:39"
+    },
+    {
+      "id": "9208771310192144",
+      "name": "Mua sắm vật tư, linh kiện sửa chữa dây soi dạ dày model: GIF-H170",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 99000000,
+      "amount": 99000000,
+      "contractorCode": "vn0307884750",
+      "winnerNames": [
+        "CÔNG TY TNHH KINH DOANH VẬT TƯ TRANG THIẾT BỊ Y TẾ VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "944/QĐ-BVIILĐ",
+      "decisionDate": "2026-10-23T16:29:28",
+      "resultPublishedDate": "2026-10-23T16:30:39"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -97,5 +177,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:40:01.019Z"
+  "fetchedAt": "2026-10-25T19:55:17.621Z"
 }

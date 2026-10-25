@@ -1,9 +1,174 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "1e19200a-7a24-4214-939d-15cf247c9082",
+      "contractorCode": "vn0107613344",
+      "taxCode": "0107613344",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600426150",
+      "lotName": "Vật tư, hoá chất sử dụng tương thích cho máy phân tích Hemoglobin D-10 - HÃNG: BIO-RAD/PHÁP",
+      "bidPrice": 464000000,
+      "finalPrice": 464000000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ hai (trích xuất trên hệ thống )",
+      "submittedAt": "2026-10-23T09:56:24.632",
+      "models": []
+    },
+    {
+      "id": "f91fb308-5f6d-4c5f-af79-81206309c148",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "PP2600426150",
+      "lotName": "Vật tư, hoá chất sử dụng tương thích cho máy phân tích Hemoglobin D-10 - HÃNG: BIO-RAD/PHÁP",
+      "bidPrice": 463000000,
+      "finalPrice": 463000000,
+      "winningPrice": 463000000,
+      "reason": "",
+      "submittedAt": "2026-10-23T09:56:24.632",
+      "models": [
+        "12000949",
+        "4097173",
+        "GM-004-005",
+        "3002721122"
+      ]
+    },
+    {
+      "id": "d0fbce66-d13a-49db-88b5-a968b5363e33",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "PP2600426151",
+      "lotName": "Vật tư, hoá chất, sử dụng tương thích cho máy sinh hoá tự động COBAS C501 ROCHE: Nhật Bản",
+      "bidPrice": 8748000,
+      "finalPrice": 8748000,
+      "winningPrice": 8748000,
+      "reason": "",
+      "submittedAt": "2026-10-23T09:56:24.632",
+      "models": [
+        "12000949",
+        "4097173",
+        "GM-004-005",
+        "3002721122"
+      ]
+    },
+    {
+      "id": "8abaae55-6a3a-4769-ad5b-8faca457d837",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "PP2600426152",
+      "lotName": "vật tư dây nối bơm tiêm điện, 3 chạc",
+      "bidPrice": 36600000,
+      "finalPrice": 36600000,
+      "winningPrice": 36600000,
+      "reason": "",
+      "submittedAt": "2026-10-23T09:56:24.632",
+      "models": [
+        "12000949",
+        "4097173",
+        "GM-004-005",
+        "3002721122"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "5b52c533-1bdb-44c1-89de-40788fb2b5ea",
+      "name": "Hóa chất định lượng HbA1c dùng cho hệ thống phân tích Hemoglobin tự động",
+      "model": "12000949",
+      "brand": "D-10",
+      "manufacturer": "Bio-Rad Laboratories, Inc",
+      "origin": "Mỹ",
+      "manufactureYear": "Năm 2026",
+      "specification": "Khả năng thực hiện xét nghiệm: xác định định lượng Hemoglobin A1c (IFCC mmol/mol và NGSP %) trong máu toàn phần của người sử dụng trên hệ thống sắc ký lỏng hiệu năng cao trao đổi ion (HPLC). Chứa đầy đủ các thành phần cho 400 xét nghiệm, bao gồm 02 bình chất đệm Buffer 1 chứa 2000 ml Bis-Tris/Phosphate, 01 bình chất đệm Buffer 2 chứa 1000 ml Bis-Tris/Phosphate, 01 bình chất rửa/pha loãng chứa 1600 ml nước khử ion, cột phân tích xử lý được 400 xét nghiệm kích thước 4.0 mm ID x 40 mm, 01 đĩa CD ROM, 01 bộ chất hiệu chuẩn/pha loãng, 01 bộ máu mồi, 01 bộ ống mẫu (50 ống 1.5 ml).",
+      "unit": "Bộ",
+      "quantity": 20,
+      "unitPrice": 23150000,
+      "amount": 463000000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "764/QĐ-BVNL",
+      "decisionDate": "2026-10-23T09:55:29",
+      "resultPublishedDate": "2026-10-23T09:56:33"
+    },
+    {
+      "id": "c6adc4cd-6fc7-4618-b7d0-bdb1d92ac013",
+      "name": "Dây nối dài dùng trong truyền dịch, bơm thuốc",
+      "model": "4097173",
+      "brand": "EXTENSION LINE TYPE HEIDELBERGER",
+      "manufacturer": "B.Braun",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026",
+      "specification": "- Không chứa latex\r\n- Chất liệu PVC, Không có chất phụ gia DEHP , thay thế bằng DEHT an toàn\r\n- Đường kính trong: 3 mm\r\n- Đường kính ngoài: 4.1mm\r\n- Thể tích mồi: 5.3 ml\r\n- Đầu nối Luer Lock\r\n- Đạt tiêu chuẩn EN ISO 13485:2016\r\n- Chứng nhận EC\r\n- Tốc độ 6,3ml/m : áp lực 2 bar",
+      "unit": "Cái",
+      "quantity": 2000,
+      "unitPrice": 13300,
+      "amount": 26600000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "764/QĐ-BVNL",
+      "decisionDate": "2026-10-23T09:55:29",
+      "resultPublishedDate": "2026-10-23T09:56:33"
+    },
+    {
+      "id": "e254d190-abab-41b1-9a82-c3848aa5b147",
+      "name": "Khóa 3 chạc không dây",
+      "model": "GM-004-005",
+      "brand": "Ningbo Great Mountain",
+      "manufacturer": "Ningbo Great Mountain Medical Instruments Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2026",
+      "specification": "- Làm bằng chất Polycarbonate, Polyethylene, ABS chất lượng cao dùng trong y tế, không gây độc, gây sốt, không gấy gập hoặc chảy nước.\r\n- Chạc 3 nòng trong trơn nhẵn đảm bảo dòng chảy; dễ tháo lắp, không rỉ nước. Có khả năng chịu nứt, gãy, cho áp suất lên tới 5 bars (72 psi)\r\n- Đầu nối khoá ren (xoay Lure lock) với một khóa chính và hai khóa phụ, giúp kết nối chặt chẽ và nhanh chóng, không bị rò rỉ khi truyền với nhũ dịch béo\r\n- Nhựa trong suốt nhẵn bóng; Nắp vặn khóa thiết kế đặc biệt có gờ cảm nhận đóng mở được, giúp xác nhận vị trí khóa, khóa ba chạc với khóa có thể xoay 360 độ; \r\n- Sản phẩm được tiệt trùng từng cái bằng EO\r\n- Sản phẩm đạt tiêu chuẩn chất lượng ISO 13485: 2016, CE",
+      "unit": "Cái",
+      "quantity": 2000,
+      "unitPrice": 5000,
+      "amount": 10000000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "764/QĐ-BVNL",
+      "decisionDate": "2026-10-23T09:55:29",
+      "resultPublishedDate": "2026-10-23T09:56:33"
+    },
+    {
+      "id": "0b021580-1002-413f-9782-59cf0a9ed547",
+      "name": "Thuốc thử xét nghiệm định lượng gamma‑glutamyltransferase",
+      "model": "3002721122",
+      "brand": "GGT-2",
+      "manufacturer": "Roche Diagnostics GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2026",
+      "specification": "R1 TRIS: 492 mmol/L, pH 8.25; glycylglycine: 492 mmol/L; chất bảo quản; chất phụ gia\r\nR2 L‐γ‐glutamyl‐3‐carboxy‐4‐nitroanilide: 22.5 mmol/L; acetate: 10 mmol/L, pH 4.5; chất ổn định; chất bảo quản\r\nR1 vào vị trí B và R2 vào vị trí C.",
+      "unit": "Test",
+      "quantity": 3600,
+      "unitPrice": 2430,
+      "amount": 8748000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "764/QĐ-BVNL",
+      "decisionDate": "2026-10-23T09:55:29",
+      "resultPublishedDate": "2026-10-23T09:56:33"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -144,6 +309,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:27:29.370Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-25T19:38:36.125Z"
 }

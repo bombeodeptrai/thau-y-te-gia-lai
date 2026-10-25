@@ -1,9 +1,91 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "b15392eb-c40a-48d5-833e-cf88482be2a7",
+      "contractorCode": "vn3100137028",
+      "taxCode": "3100137028",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+      "status": "won",
+      "lotNo": "PP2600435994",
+      "lotName": "Natri Clorid 0,9%",
+      "bidPrice": 3168000,
+      "finalPrice": 3168000,
+      "winningPrice": 3168000,
+      "reason": "",
+      "submittedAt": "2026-10-20T15:57:07.391",
+      "models": [
+        "N4.1",
+        "N4.2"
+      ]
+    },
+    {
+      "id": "1a5b2654-7a21-40b3-b426-279c2e72fc99",
+      "contractorCode": "vn3100137028",
+      "taxCode": "3100137028",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH",
+      "status": "won",
+      "lotNo": "PP2600435995",
+      "lotName": "Vitamin A-D",
+      "bidPrice": 20800000,
+      "finalPrice": 20800000,
+      "winningPrice": 20800000,
+      "reason": "",
+      "submittedAt": "2026-10-20T15:57:07.391",
+      "models": [
+        "N4.1",
+        "N4.2"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "d0e4c42e-32bb-44ba-84e4-3e193c526e04",
+      "name": "Natri Clorid 0,9%",
+      "model": "N4.1",
+      "brand": "Natri Clorid 0,9%",
+      "manufacturer": "Công ty cổ phần dược vật tư y tế Hải Dương",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Nồng độ- Hàm lượng: 0,9%/ 10ml; Đường dùng: Nhỏ mắt, mũi; Dạng bào chế: Dung dịch thuốc nhỏ mắt, mũi; Quy cách: đóng gói: Hộp 50 lọ/10m",
+      "unit": "Lọ",
+      "quantity": 2400,
+      "unitPrice": 1320,
+      "amount": 3168000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "479/QĐ-BVMBQT",
+      "decisionDate": "2026-10-20T15:55:48",
+      "resultPublishedDate": "2026-10-20T15:57:28"
+    },
+    {
+      "id": "7ccc045f-0665-4a97-b483-38510fa5e992",
+      "name": "Vitamin A-D",
+      "model": "N4.2",
+      "brand": "Vitamin A-D",
+      "manufacturer": "Nhà máy HDPHARMA EU-Công ty cổ phần dược VTYT Hải Dương",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Nồng độ- Hàm lượng: 2500IU+200IU; Đường dùng: uống; Dạng bào chế: Viên năng mềm; Quy cách đóng gói: Hộp 10  vỉ, 5 vỉ x10 viên",
+      "unit": "Viên",
+      "quantity": 65000,
+      "unitPrice": 320,
+      "amount": 20800000,
+      "contractorCode": "vn3100137028",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẢNG BÌNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "479/QĐ-BVMBQT",
+      "decisionDate": "2026-10-20T15:55:48",
+      "resultPublishedDate": "2026-10-20T15:57:28"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,5 +173,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:29:18.193Z"
+  "fetchedAt": "2026-10-25T19:41:37.982Z"
 }

@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "e117259f-0783-4dc1-b477-f4bb91db42c4",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "BP2600860867",
+      "lotName": "Mua dây truyền dịch bổ sung sử dụng tại Bệnh viện đa khoa Vĩnh Lộc năm 2026",
+      "bidPrice": 197000000,
+      "finalPrice": 197000000,
+      "winningPrice": 197000000,
+      "reason": "",
+      "submittedAt": "2026-10-16T08:42:20.51",
+      "models": [
+        "DTD07: HTA"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "503e733a-c6b7-4be9-9495-7bf0f4a104b4",
+      "name": "Dây truyền dịch MPV/ DTD07: HTA",
+      "model": "DTD07: HTA",
+      "brand": "MPV",
+      "manufacturer": "Công ty Cổ phần Nhựa y tế Việt Nam (MPV)",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Van khoá điều chỉnh, kim chai sản xuất từ hạt nhựa ABS nguyên sinh.\nVan thoát khí có thiết kế màng lọc khí vô khuẩn.\nBuồng nhỏ giọt thể tích ≥ 14ml, có màng lọc dịch ≤ 15µm.\nDây dẫn cấu tạo từ chất liệu nhựa PVC nguyên sinh, mềm dẻo, dai, độ đàn hồi cao, không gãy gập khi bảo quản và sử dụng; Độ dài dây truyền ≥ 1700mm. Dây truyền dịch kèm kim hai cánh bướm 22Gx3/4\".",
+      "unit": "Bộ",
+      "quantity": 50000,
+      "unitPrice": 3940,
+      "amount": 197000000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1096/QĐ-BVVL",
+      "decisionDate": "2026-10-16T08:39:03",
+      "resultPublishedDate": "2026-10-16T08:42:25"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-11T21:00:13.465Z"
+  "fetchedAt": "2026-10-25T19:38:36.223Z"
 }

@@ -1,9 +1,158 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "d1686f07-9d6f-4ce3-9406-e5cb1b2ec02c",
+      "contractorCode": "vn0312460161",
+      "taxCode": "0312460161",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HD",
+      "status": "won",
+      "lotNo": "PP2600437897",
+      "lotName": "Insulin Glargine (rDNA origin)",
+      "bidPrice": 246000000,
+      "finalPrice": 246000000,
+      "winningPrice": 246000000,
+      "reason": "",
+      "submittedAt": "2026-10-23T14:37:14.724",
+      "models": [
+        "Insulin Glargine (rDNA origin)"
+      ]
+    },
+    {
+      "id": "066e1871-258d-45bb-bec5-1db43ee569b1",
+      "contractorCode": "vn2500228415",
+      "taxCode": "2500228415",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+      "status": "won",
+      "lotNo": "PP2600437898",
+      "lotName": "Lidocain hydroclorid",
+      "bidPrice": 6800000,
+      "finalPrice": 6800000,
+      "winningPrice": 6800000,
+      "reason": "",
+      "submittedAt": "2026-10-23T14:37:14.724",
+      "models": [
+        "Lidocain hydroclorid"
+      ]
+    },
+    {
+      "id": "0113b831-bc11-4b9c-bb63-c3d7979c8530",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "lost",
+      "lotNo": "PP2600437898",
+      "lotName": "Lidocain hydroclorid",
+      "bidPrice": 7200000,
+      "finalPrice": 7200000,
+      "winningPrice": 0,
+      "reason": "Không xếp hạng 1",
+      "submittedAt": "2026-10-23T14:37:14.724",
+      "models": []
+    },
+    {
+      "id": "633f2cde-7d21-4d98-96c8-81c589160180",
+      "contractorCode": "vn4200562765",
+      "taxCode": "4200562765",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA",
+      "status": "won",
+      "lotNo": "PP2600437899",
+      "lotName": "Sorbitol",
+      "bidPrice": 8450000,
+      "finalPrice": 8450000,
+      "winningPrice": 8450000,
+      "reason": "",
+      "submittedAt": "2026-10-23T14:37:14.724",
+      "models": [
+        "Sorbitol"
+      ]
+    },
+    {
+      "id": "e61cea4a-1cea-4ec9-a477-78b03b4ca920",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "lost",
+      "lotNo": "PP2600437899",
+      "lotName": "Sorbitol",
+      "bidPrice": 8600000,
+      "finalPrice": 8600000,
+      "winningPrice": 0,
+      "reason": "Không xếp hạng 1",
+      "submittedAt": "2026-10-23T14:37:14.724",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "8d373489-2822-45f7-b84a-830a8b6f0cf7",
+      "name": "Sorbitol",
+      "model": "0",
+      "brand": "0",
+      "manufacturer": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA",
+      "origin": "Việt Nam",
+      "manufactureYear": "0",
+      "specification": "5g",
+      "unit": "Gói",
+      "quantity": 10000,
+      "unitPrice": 845,
+      "amount": 8450000,
+      "contractorCode": "vn4200562765",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA"
+      ],
+      "lotNo": "",
+      "decisionNo": "245",
+      "decisionDate": "2026-10-23T14:36:14",
+      "resultPublishedDate": "2026-10-23T14:38:35"
+    },
+    {
+      "id": "7f34f59f-b409-4485-82b2-ab6ed5fddfb9",
+      "name": "Insulin Glargine (rDNA origin)",
+      "model": "0",
+      "brand": "0",
+      "manufacturer": "Biocon Biologics Limited",
+      "origin": "India",
+      "manufactureYear": "0",
+      "specification": "100IU/ml",
+      "unit": "Bút tiêm",
+      "quantity": 1000,
+      "unitPrice": 246000,
+      "amount": 246000000,
+      "contractorCode": "vn0312460161",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HD"
+      ],
+      "lotNo": "",
+      "decisionNo": "245",
+      "decisionDate": "2026-10-23T14:36:14",
+      "resultPublishedDate": "2026-10-23T14:38:35"
+    },
+    {
+      "id": "ef562804-3212-43d9-a335-a4586ca35304",
+      "name": "Lidocain hydroclorid",
+      "model": "0",
+      "brand": "0",
+      "manufacturer": "Công ty Cổ phần Dược phẩm Vĩnh Phúc",
+      "origin": "Việt Nam",
+      "manufactureYear": "0",
+      "specification": "40mg/2ml",
+      "unit": "Ống",
+      "quantity": 10000,
+      "unitPrice": 680,
+      "amount": 6800000,
+      "contractorCode": "vn2500228415",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
+      "lotNo": "",
+      "decisionNo": "245",
+      "decisionDate": "2026-10-23T14:36:14",
+      "resultPublishedDate": "2026-10-23T14:38:35"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -122,6 +271,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:33:50.609Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-25T19:48:08.152Z"
 }

@@ -1,9 +1,218 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 7,
+  "bidders": [
+    {
+      "id": "dc4c9be2-443f-420d-9b4e-6b16b5e5a782",
+      "contractorCode": "vn0309503658",
+      "taxCode": "0309503658",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ VẠN KHANG",
+      "status": "won",
+      "lotNo": "BP2600882059",
+      "lotName": "Gói thầu mua sắm hóa chất xét nghiệm sinh hóa sử dụng cho máy A15 - BioSystems",
+      "bidPrice": 59388000,
+      "finalPrice": 59388000,
+      "winningPrice": 59388000,
+      "reason": "",
+      "submittedAt": "2026-10-21T17:13:44.632",
+      "models": [
+        "CHEM-CALIBRATOR",
+        "CHEM-CONTROL N",
+        "CREATININE 2V",
+        "GLUCOSE",
+        "AST / GOT 2V",
+        "ALT / GPT 2 V",
+        "UREA 2V"
+      ]
+    },
+    {
+      "id": "42b72d6f-c1e4-4c70-a502-82d205d524dd",
+      "contractorCode": "vn0315640941",
+      "taxCode": "0315640941",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ KHOLICO",
+      "status": "lost",
+      "lotNo": "BP2600882059",
+      "lotName": "Gói thầu mua sắm hóa chất xét nghiệm sinh hóa sử dụng cho máy A15 - BioSystems",
+      "bidPrice": 65800000,
+      "finalPrice": 65800000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xếp hạng 1",
+      "submittedAt": "2026-10-21T17:13:44.632",
+      "models": []
+    },
+    {
+      "id": "1f3e0895-f5aa-421e-ab5f-20276f68271b",
+      "contractorCode": "vn6001837095",
+      "taxCode": "6001837095",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ BÌNH MINH MEDICAL",
+      "status": "lost",
+      "lotNo": "BP2600882059",
+      "lotName": "Gói thầu mua sắm hóa chất xét nghiệm sinh hóa sử dụng cho máy A15 - BioSystems",
+      "bidPrice": 63000000,
+      "finalPrice": 63000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xếp hạng 1",
+      "submittedAt": "2026-10-21T17:13:44.632",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "37dfc088-3f9b-4c30-837c-ecc2637ebd1e",
+      "name": "Dung dịch hiệu chuẩn máy xét nghiệm sinh hóa",
+      "model": "CHEM-CALIBRATOR",
+      "brand": "bt products",
+      "manufacturer": "Bilimsel Tıbbi Ürünler ",
+      "origin": "Thổ Nhĩ Kỳ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất hiệu chuẩn xét nghiệm sinh hóa đa thành phần.\r\nTiêu chuẩn: ISO 13485\r\nQui cách: Hộp (3x3 ml)",
+      "unit": "ml",
+      "quantity": 24,
+      "unitPrice": 115500,
+      "amount": 2772000,
+      "contractorCode": "vn0309503658",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ VẠN KHANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "207/QĐ-TTYT",
+      "decisionDate": "2026-10-21T17:01:41",
+      "resultPublishedDate": "2026-10-21T17:15:33"
+    },
+    {
+      "id": "b9b85455-10d5-47a5-a014-331fc1c46c60",
+      "name": "Dung dịch nội kiểm máy xét nghiệm sinh hóa",
+      "model": "CHEM-CONTROL N",
+      "brand": "bt products",
+      "manufacturer": "Bilimsel Tıbbi Ürünler ",
+      "origin": "Thổ Nhĩ Kỳ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Vật liệu kiểm soát các xét nghiệm sinh hóa mức trung bình\r\nTiêu chuẩn: ISO 13485\r\nQui cách: Hộp (3x5 ml)",
+      "unit": "ml",
+      "quantity": 50,
+      "unitPrice": 79800,
+      "amount": 3990000,
+      "contractorCode": "vn0309503658",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ VẠN KHANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "207/QĐ-TTYT",
+      "decisionDate": "2026-10-21T17:01:41",
+      "resultPublishedDate": "2026-10-21T17:15:33"
+    },
+    {
+      "id": "ba0d7bc5-bcdb-4655-ba7b-8caaf22e1d8c",
+      "name": "Hóa chất xét nghiệm Creatinin",
+      "model": "CREATININE 2V",
+      "brand": "bt products",
+      "manufacturer": "Bilimsel Tıbbi Ürünler ",
+      "origin": "Thổ Nhĩ Kỳ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hóa chất xét nghiệm định lượng Creatinine.\r\nPhương pháp đo: Modified Jaffe\r\nThành phần:\r\n+ R1\r\nSodium hydroxide 350 mM\r\npH 13.0 ± 0.2\r\n+ R2\r\nPicric acid 10 mM\r\npH 2,6 ± 0.1\r\nTiêu chuẩn: ISO 13485\r\nQui cách: Hộp (R1: 3x100 ml, R2: 3x100 ml)",
+      "unit": "ml",
+      "quantity": 4500,
+      "unitPrice": 2268,
+      "amount": 10206000,
+      "contractorCode": "vn0309503658",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ VẠN KHANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "207/QĐ-TTYT",
+      "decisionDate": "2026-10-21T17:01:41",
+      "resultPublishedDate": "2026-10-21T17:15:33"
+    },
+    {
+      "id": "bef7d526-ae70-4dce-b634-88b36b0515a1",
+      "name": "Hóa chất xét nghiệm Glucose",
+      "model": "GLUCOSE",
+      "brand": "bt products",
+      "manufacturer": "Bilimsel Tıbbi Ürünler ",
+      "origin": "Thổ Nhĩ Kỳ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hóa chất xét nghiệm định lượng Glucose.\r\nPhương pháp đo: Glucose oxidase / Trinder\r\nThành phần:\r\nGlucose Oxidase ≤ 23 U/mL\r\nPeroxidase ≤ 0,75 U/mL\r\nAminoantipyrine 0,30 mM\r\n4-Chlorophenol < 10 mM\r\nNon-reactive stabilizers and fillers Sodium Azide 0,05%.\r\npH 7.4 ± 0.15\r\nTiêu chuẩn: ISO 13485\r\nQui cách: Hộp (6x100 ml)",
+      "unit": "ml",
+      "quantity": 2500,
+      "unitPrice": 1953,
+      "amount": 4882500,
+      "contractorCode": "vn0309503658",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ VẠN KHANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "207/QĐ-TTYT",
+      "decisionDate": "2026-10-21T17:01:41",
+      "resultPublishedDate": "2026-10-21T17:15:33"
+    },
+    {
+      "id": "9609d053-e85e-4d98-8b34-ee2c7d3fde42",
+      "name": "Hóa chất xét nghiệm SGOT",
+      "model": "AST / GOT 2V",
+      "brand": "bt products",
+      "manufacturer": "Bilimsel Tıbbi Ürünler ",
+      "origin": "Thổ Nhĩ Kỳ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hóa chất xét nghiệm định lượng GOT (AST).\r\nPhương pháp đo: Modified IFCC\r\nThành phần: \r\n+ R1\r\nTris Buffer 100 mM\r\nL-Aspartic acid 330 mM\r\nMalate dehydrogenase (MDH) >1000 U/L\r\nLDH (microbial) > 2000 U/L\r\npH 7.8 ± 0.1\r\n+ R2\r\nNADH 1,1 mM\r\nα-Ketoglutaric acid 78 mM\r\nSodium azide 0.01 %\r\npH 10.0 ± 0.1\r\nTiêu chuẩn: ISO 13485\r\nQui cách: Hộp (R1: 5x80 ml; R2: 1x100 ml)",
+      "unit": "ml",
+      "quantity": 2750,
+      "unitPrice": 3150,
+      "amount": 8662500,
+      "contractorCode": "vn0309503658",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ VẠN KHANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "207/QĐ-TTYT",
+      "decisionDate": "2026-10-21T17:01:41",
+      "resultPublishedDate": "2026-10-21T17:15:33"
+    },
+    {
+      "id": "85e97c4c-f4cc-4cf3-afb1-b49bdb64d5dd",
+      "name": "Hóa chất xét nghiệm SGPT",
+      "model": "ALT / GPT 2 V",
+      "brand": "bt products",
+      "manufacturer": "Bilimsel Tıbbi Ürünler ",
+      "origin": "Thổ Nhĩ Kỳ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hóa chất xét nghiệm định lượng GPT (ALT).\r\nPhương pháp đo: Modified IFCC\r\nThành phần: \r\n+ R1\r\nTris Buffer 125 mM\r\nL-Alanine 680 mM\r\nLDH (microbial)  > 2000 U/L\r\npH 7.5 ± 0.1\r\n+ R2\r\nα-ketoglutaric acid 97 mM\r\nNADH 1.1 mM\r\nSodium azide 0.01 %\r\npH 10.5 ± 0.1\r\nTiêu chuẩn: ISO 13485\r\nQui cách: Hộp (R1: 5x80 ml; R2: 1x100 ml)",
+      "unit": "ml",
+      "quantity": 2750,
+      "unitPrice": 3150,
+      "amount": 8662500,
+      "contractorCode": "vn0309503658",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ VẠN KHANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "207/QĐ-TTYT",
+      "decisionDate": "2026-10-21T17:01:41",
+      "resultPublishedDate": "2026-10-21T17:15:33"
+    },
+    {
+      "id": "55bc8e65-5a92-4d41-8f7c-d3f3ed9a9f99",
+      "name": "Hóa chất xét nghiệmUrê",
+      "model": "UREA 2V",
+      "brand": "bt products",
+      "manufacturer": "Bilimsel Tıbbi Ürünler ",
+      "origin": "Thổ Nhĩ Kỳ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hóa chất xét nghiệm định lượng Urea.\r\nPhương pháp đo: Urease-GLDH\r\nThành phần:\r\nBuffer\r\nα-Ketoglutarate < 4.0 mM\r\nUrease 7500 U/L\r\nGLDH 1000 U/L\r\nADP > 2.0 mM\r\nNADH 1,29 mM\r\nStabilizers and detergents\r\npH 7.4 ± 0.1\r\nTiêu chuẩn: ISO 13485\r\nQui cách: Hộp (R1: 5x80 ml, R2: 1x100 ml)",
+      "unit": "ml",
+      "quantity": 6250,
+      "unitPrice": 3234,
+      "amount": 20212500,
+      "contractorCode": "vn0309503658",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ VẠN KHANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "207/QĐ-TTYT",
+      "decisionDate": "2026-10-21T17:01:41",
+      "resultPublishedDate": "2026-10-21T17:15:33"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -190,6 +399,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:39:45.034Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-25T19:55:17.579Z"
 }

@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "f8128939-faa5-4509-a8ea-177fb0c20d47",
+      "contractorCode": "vn2902059076",
+      "taxCode": "2902059076",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM",
+      "status": "won",
+      "lotNo": "BP2600866214",
+      "lotName": "Thuê bóng phát tia X cho máy chụp cắt lớp vi tính tại Trung tâm Y tế Hồng Lĩnh năm 2026-2027.",
+      "bidPrice": 440000000,
+      "finalPrice": 440000000,
+      "winningPrice": 440000000,
+      "reason": "",
+      "submittedAt": "2026-10-21T09:06:43.031",
+      "models": [
+        "Thuê bóng phát tia chụp cắt lớp vi tính (CTScanner) model: Access CT, 6 dãy, 12 lát cắt; hãng sản xuất: Philips, Trung Quốc Thời gian thuê: 06 tháng"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2026912103441872",
+      "name": "Thuê bóng phát tia chụp cắt lớp vi tính (CTScanner) model: Access CT, 6 dãy, 12 lát cắt; hãng sản xuất: Philips, Trung Quốc Thời gian thuê: 06 tháng",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Ca",
+      "quantity": 1500,
+      "unitPrice": 293333.3333333333,
+      "amount": 440000000,
+      "contractorCode": "vn2902059076",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "213/QĐ-TTYT",
+      "decisionDate": "2026-10-21T09:05:26",
+      "resultPublishedDate": "2026-10-21T09:06:49"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -65,5 +106,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:29:09.964Z"
+  "fetchedAt": "2026-10-25T19:41:36.682Z"
 }

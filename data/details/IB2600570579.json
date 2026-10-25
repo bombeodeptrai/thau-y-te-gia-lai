@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "3b89db2b-925a-4d79-ab5e-9008438d7f31",
+      "contractorCode": "vn0110214734",
+      "taxCode": "0110214734",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á",
+      "status": "lost",
+      "lotNo": "BP2600854639",
+      "lotName": "Cung cấp định nhóm máu RH",
+      "bidPrice": 312500000,
+      "finalPrice": 312500000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng thứ 2",
+      "submittedAt": "2026-10-23T10:05:27.22",
+      "models": []
+    },
+    {
+      "id": "171f2f6b-55b1-4180-8fb7-a7e1997f5858",
+      "contractorCode": "vn0400459581",
+      "taxCode": "0400459581",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
+      "status": "won",
+      "lotNo": "BP2600854639",
+      "lotName": "Cung cấp định nhóm máu RH",
+      "bidPrice": 305000000,
+      "finalPrice": 305000000,
+      "winningPrice": 305000000,
+      "reason": "",
+      "submittedAt": "2026-10-23T10:05:27.22",
+      "models": [
+        "822001"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "7a29ce67-7bba-4607-9ef8-62df3c436988",
+      "name": "Định nhóm máu Rh",
+      "model": "822001",
+      "brand": "Thuốc thử xét nghiệm định danh nhóm máu type Rho (D)(Anti-D (Rho) Plus Monoclonal IgM & IgG Blood Grouping Reagent)",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) - Spectrum Diagnostics",
+      "origin": "Ai Cập",
+      "manufactureYear": "Mới nhất",
+      "specification": "Định nhóm máu Rh\nQuy cách: 10ml/lọ",
+      "unit": "Lọ",
+      "quantity": 2500,
+      "unitPrice": 122000,
+      "amount": 305000000,
+      "contractorCode": "vn0400459581",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ"
+      ],
+      "lotNo": "",
+      "decisionNo": "2584/QĐ-BVH",
+      "decisionDate": "2026-10-23T10:04:52",
+      "resultPublishedDate": "2026-10-23T10:05:34"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +114,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-18T19:31:35.123Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-25T19:44:54.583Z"
 }
