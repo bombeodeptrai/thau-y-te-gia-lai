@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-24T22:29:49.049Z",
+  "auditedAt": "2026-10-25T04:41:34.568Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 579,
+      "count": 573,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 23,
+      "count": 20,
       "error": ""
     },
     {
@@ -56,13 +56,13 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 26,
+      "count": 20,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 18,
       "error": ""
     },
     {
@@ -74,7 +74,7 @@
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 28,
+      "count": 26,
       "error": ""
     },
     {
@@ -104,13 +104,13 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 67,
+      "count": 66,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 123,
+      "count": 119,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 109,
+      "count": 107,
       "error": ""
     },
     {
@@ -218,13 +218,13 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 46,
+      "count": 44,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 42,
+      "count": 41,
       "error": ""
     },
     {
@@ -271,20 +271,20 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1380,
+  "candidateCount": 1350,
   "acceptedCount": 53,
-  "rejectedCount": 1327,
+  "rejectedCount": 1297,
   "rejectedReasons": {
-    "excluded:tu van": 497,
-    "excluded:xay dung": 353,
-    "insufficient-medical-context": 274,
-    "excluded:sua chua": 43,
-    "excluded:xay lap": 35,
+    "excluded:tu van": 490,
+    "excluded:xay dung": 339,
+    "insufficient-medical-context": 269,
+    "excluded:sua chua": 42,
+    "excluded:xay lap": 33,
     "excluded:cai tao": 31,
     "excluded:thuc pham": 18,
     "excluded:tham dinh": 13,
-    "excluded:bao hiem": 13,
     "excluded:bao ve": 12,
+    "excluded:bao hiem": 12,
     "excluded:trang phuc": 8,
     "excluded:bao tri": 5,
     "excluded:may tinh": 3,
