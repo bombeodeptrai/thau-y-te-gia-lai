@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-26T08:01:07.698Z",
+  "rescuedAt": "2026-10-26T10:36:02.061Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 107,
+      "count": 110,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 338,
+      "count": 342,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 15,
+      "count": 13,
       "error": ""
     },
     {
@@ -66,19 +66,19 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 7,
+      "count": 8,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
@@ -144,7 +144,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 62,
+      "count": 61,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -281,36 +281,51 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 706,
+  "candidateCount": 705,
   "acceptedCount": 22,
-  "rejectedCount": 684,
+  "rejectedCount": 683,
   "rejectedReasons": {
-    "excluded:tu van": 251,
-    "excluded:xay dung": 174,
+    "excluded:tu van": 252,
+    "excluded:xay dung": 172,
     "insufficient-medical-context": 161,
+    "excluded:xay lap": 22,
     "excluded:sua chua": 22,
-    "excluded:xay lap": 21,
     "excluded:thuc pham": 14,
     "excluded:bao ve": 7,
-    "excluded:cai tao": 6,
-    "excluded:bao tri": 5,
+    "excluded:cai tao": 7,
     "excluded:tham dinh": 4,
+    "excluded:bao tri": 3,
     "excluded:kiem dinh": 2,
     "excluded:trang phuc": 2,
     "excluded:bao hiem": 2,
-    "excluded:may tinh": 2,
     "excluded:lap e hsmt": 2,
     "excluded:may in": 1,
     "excluded:cap dien": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
+    "excluded:bao duong": 1,
     "excluded:in an": 1,
+    "excluded:may tinh": 1,
     "excluded:rac thai": 1,
     "excluded:giam sat thi cong": 1,
     "excluded:suat an": 1,
     "excluded:cong nghe thong tin": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600587591",
+      "name": "Mua vật tư y tế tiêu hao và nẹp vít khóa năm 2026-2027 của Bệnh viện Chỉnh hình và phục hồi chức năng Quy Nhơn",
+      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "vat tu",
+        "mua"
+      ]
+    },
     {
       "notifyNo": "IB2600589867",
       "name": "Mua sắm vật tư y tế, hóa chất, sinh phẩm phục vụ công tác khám bệnh, chữa bệnh tại Trung tâm Y tế An Lão giai đoạn 2027-2028",
@@ -517,22 +532,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600575740",
-      "name": "Đầu tư, mua sắm Thiết bị vật lý trị liệu-Phục hồi chức năng phục vụ Khu khám bệnh, chữa bệnh theo yêu cầu - Đợt 1 của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 65,
-      "reason": "medical-investor",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam",
-        "kham benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "IB2600588240",
       "name": "Mua sắm hóa chất, sinh phẩm xét nghiệm, vật tư tiêu hao phục vụ khám chữa bệnh và sàng lọc theo hình thức mua sắm trực tiếp trong thời gian chờ kết quả đấu thầu năm 2026 -2027 của Bệnh viện Đa khoa Gia Lai",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -668,6 +667,41 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600589310",
+      "name": "Xây lắp",
+      "investor": "Trung tâm cung ứng dịch vụ công xã Gào",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600590171",
+      "name": "Mua tủ bảo quản máu và máy đo huyết áp tự động",
+      "investor": "Trung tâm Y tế Chư Sê",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600561869",
+      "name": "Mua sắm",
+      "investor": "Ban quản lý xã Phú Túc",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600588875",
       "name": "Đầu tư nâng cấp các dây chuyền chế biến mủ",
@@ -1078,46 +1112,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600569294",
-      "name": "Gói thầu số 1: Cung cấp cây giống, vật tư, phân bón và trồng, chăm sóc bảo vệ rừng trồng thay thế (trồng rừng phòng hộ) 33,15 ha giai đoạn năm 2026 -2030 của Ban quản lý rừng phòng hộ Gia Lai.",
-      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ve",
-      "matched": [
-        "bao ve",
-        "phan bon"
-      ]
-    },
-    {
-      "notifyNo": "IB2600579066",
-      "name": "Gói thầu số 03: Thuê phần mềm HIS, EMR và PACS tại Trung tâm Y tế Krông Pa",
-      "investor": "Trung tâm Y tế Krông Pa",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te"
-      ]
-    },
-    {
-      "notifyNo": "IB2600573791",
-      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
-      "investor": "ỦY BAN NHÂN DÂN PHƯỜNG HOÀI NHƠN ĐÔNG",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1182,
-  "afterCount": 1182,
-  "newCount": 0,
+  "afterCount": 1183,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
