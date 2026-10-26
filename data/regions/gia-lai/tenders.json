@@ -59,8 +59,8 @@
         "DT F125 CH",
         "AZ F400 CH",
         "GL F400 CH",
-        " GT023-200",
-        "C.90.VP "
+        "GT023-200",
+        "C.90.VP"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -89819,7 +89819,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-10-26T00:29:04.498Z",
+  "fetchedAt": "2026-10-26T00:34:46.340Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -89852,6 +89852,15 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "filterStrategy": "unified-medical-scope-v18",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
+    "lastMedicalRescueAt": "2026-10-26T00:34:46.340Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 686,
+    "lastMedicalRescueMedicalCount": 24,
+    "lastMedicalRescueNewCount": 0,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
