@@ -1,25 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "b6486bf4-3050-4925-a49a-b039d428de6d",
+      "id": "2aca0f08-d3d8-4ccc-bf5f-f8cc61068e31",
       "contractorCode": "vn6000449389",
-      "taxCode": "",
+      "taxCode": "6000449389",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600350446",
       "lotName": "Gói 6. Hóa chất sử dụng trên máy miễn dịch huỳnh quang gồm 02 mặt hàng 01 phần (lô)",
       "bidPrice": 189000000,
       "finalPrice": 189000000,
-      "winningPrice": 0,
+      "winningPrice": 189000000,
       "reason": "",
-      "submittedAt": "2026-08-20T09:43:19.989",
+      "submittedAt": "2026-10-22T16:45:10.484",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "32379d4f-2efc-4c31-9b0a-e037337cd906",
+      "name": "Dengue IgM miễn dịch bán tự động",
+      "model": "FDEN01B",
+      "brand": "SD Biosensor",
+      "manufacturer": "SD Biosensor, InC",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "- Phát hiện các kháng thể đặc hiệu IgM, IgG của virus sốt xuất huyết bằng phương pháp miễn dịch huỳnh quang. Độ nhạy: 98%, độ đặc hiệu 99% (so sánh với pp ELISA).Thời gian đọc kết quả 15 phút. Mẫu: Huyết thanh, huyết tương, máu toàn phần tĩnh mạch, máu toàn phần mao mạch. - Thành phần: Vạch thử: kháng thể kháng IgM/IgG người. Đệm kháng nguyên: vi rút Dengue bất hoạt. Đệm liên hợp: kháng thể liên hợp europium (kháng thể đơn dòng kháng Dengue Env-Ep, kháng thể đơn dòng kháng Dengue NS1-Ep) - Đạt tiêu chuẩn ISO 13485: 2016",
+      "unit": "Test",
+      "quantity": 1000,
+      "unitPrice": 84000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK"
+      ],
+      "decisionNo": "1634/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-22T23:59:59",
+      "resultPublishedDate": "2026-10-22T16:45:19"
+    },
+    {
+      "id": "b23e41f7-d55c-47bc-ae91-9cae528a9d09",
+      "name": "Dengue Ns1 miễn dịch bán tự động",
+      "model": "FDEN01G",
+      "brand": "SD Biosensor",
+      "manufacturer": "SD Biosensor, InC",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "- Phát hiện kháng nguyên NS1 của virus sốt xuất huyết Dengue bằng phương pháp miễn dịch huỳnh quang. - Mẫu: huyết thanh, huyết tương, máu toàn phần tĩnh mạch, máu toàn phần mao mạch. - Độ nhạy: 100%, độ đặc hiệu 100% (so sánh với pp RT-PCR). - Thời gian đọc kết quả 15 phút. - Thành phần: Vạch thử: kháng thể kháng - Dengue NS1 Đệm liên hợp: Kháng thể đơn dòng kháng Dengue NS1 liên hợp Europium - Không phản ứng chéo với 74 loại vi rút/vi khuẩn tiềm tàng. - Đạt tiêu chuẩn ISO 13485: 2016",
+      "unit": "Test",
+      "quantity": 1000,
+      "unitPrice": 105000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK"
+      ],
+      "decisionNo": "1634/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-22T23:59:59",
+      "resultPublishedDate": "2026-10-22T16:45:19"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T16:34:27.188Z"
+  "fetchedAt": "2026-10-26T21:05:27.619Z"
 }

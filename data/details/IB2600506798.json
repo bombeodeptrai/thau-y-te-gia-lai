@@ -1,40 +1,60 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "4697b99b-6a01-4af2-ab9e-cafa40971107",
+      "id": "cec4addb-a2a7-475b-9456-3881d4028f37",
       "contractorCode": "vn0107308573",
-      "taxCode": "",
+      "taxCode": "0107308573",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ Y TẾ NAM THANH",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600633598",
       "lotName": "Mua sắm Hệ thống thu nhận ảnh X-quang kỹ thuật số bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
       "bidPrice": 799000000,
       "finalPrice": 799000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-16T09:55:21.74",
+      "reason": "Nhà thầu chào giá cao hơn giá của đơn vị trúng thầu",
+      "submittedAt": "2026-10-19T14:03:22.208",
       "models": []
     },
     {
-      "id": "4671a26a-42ac-44c4-9679-100c3c10edc7",
+      "id": "7d19c752-c454-442f-9868-5e5da3ed6c05",
       "contractorCode": "vn0302360457",
-      "taxCode": "",
+      "taxCode": "0302360457",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600633598",
       "lotName": "Mua sắm Hệ thống thu nhận ảnh X-quang kỹ thuật số bằng nguồn Quỹ phát triển hoạt động sự nghiệp của Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
       "bidPrice": 790000000,
       "finalPrice": 790000000,
-      "winningPrice": 0,
+      "winningPrice": 790000000,
       "reason": "",
-      "submittedAt": "2026-09-16T09:55:21.941",
+      "submittedAt": "2026-10-19T14:03:22.208",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "e375f08b-d84f-4cfd-9898-242c9fe2bc52",
+      "name": "Hệ thống thu nhận ảnh X-quang kỹ thuật số",
+      "model": "Chủng loại máy chính: SKR 3000; Model tấm nhận ảnh: P-85",
+      "brand": "KONICA MINOLTA",
+      "manufacturer": "Hãng sản xuất máy chính (tấm nhận ảnh): Konica Minolta Technoproducts Co., Ltd.; Hãng chủ sở hữu: Konica Minolta, Inc. -Nhật Bản)",
+      "origin": "Xuất xứ máy chính (tấm nhận ảnh): Nhật Bản",
+      "manufactureYear": "2026",
+      "specification": "Cấu hình cung cấp bao gồm: 1. Tấm thu nhận hình ảnh loại 14x17 inch: 01 tấm, Chủng loại: SKR3000 Model: P-85 (AeroDR3 1417HL), Nhãn hiệu: KONICA MINOLTA, Hãng sản xuất: Konica Minolta Technoproducts Co., Ltd., Nước sản xuất: Nhật bản, Hãng - Nước chủ sở hữu: Konica Minolta, Inc. – Nhật Bản; 2. Phần mềm xử lý ảnh CS-7: 01 phần mềm; 3. Trạm xử lý ảnh (Bộ máy tính Server): 01 bộ Model: ECT1250 TFPC82 (Thương hiệu Dell, Mua tại Việt Nam) - Phần mềm Window bản quyền: 01 bộ; 4. Màn hình hiển thị (loại màn hình y tế) 27 inch LCD: 01 bộ, Model: 27HS713C, Hãng/ Nước sản xuất: LG Electronics Nanjing New Technology Co., Ltd./ Trung Quốc, Hãng/ Nước chủ sở hữu: LG Electronics Inc./ Hàn Quốc, Năm sản xuất: 2026; 5. Bộ lưu điện (UPS) 3kVA online: 01 bộ, Model: ULT-W3KGMG, Xuất xứ: Trung Quốc; 6. Tài liệu hướng dẫn sử dụng: 01 bộ; (Tính năng kỹ thuật theo bảng Đáp ứng tính năng kỹ thuật theo yêu cầu của Hồ sơ mời thầu)",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 790000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT H.B"
+      ],
+      "decisionNo": "415/QĐ-VSR",
+      "decisionDate": "2026-10-19T23:59:59",
+      "resultPublishedDate": "2026-10-19T14:22:23"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +79,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T16:34:23.887Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-26T21:05:22.900Z"
 }

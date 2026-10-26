@@ -1,55 +1,113 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "73802066-5900-4e0f-ae93-80b3a14cf471",
+      "id": "b6a26390-439f-4f88-8969-288c850aacac",
       "contractorCode": "vn0316960510",
-      "taxCode": "",
+      "taxCode": "0316960510",
       "contractorName": "CÔNG TY TNHH BKS DIAGNOSTICS",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600350428",
       "lotName": "Gói 4. Hóa chất sử dụng trên máy Xét nghiệm HbA1C gồm 03 mặt hàng 01 phần (lô)",
       "bidPrice": 987840000,
       "finalPrice": 987840000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-08-10T09:49:46.497",
+      "reason": "Không đáp ứng yêu cầu kỹ thuật theo E-HSMT",
+      "submittedAt": "2026-10-22T16:43:47.24",
       "models": []
     },
     {
-      "id": "1e336b3d-906d-469e-90c2-c0071231d773",
+      "id": "00c505b3-4bd0-49ee-8859-6e05098ea026",
       "contractorCode": "vn0312862086",
-      "taxCode": "",
+      "taxCode": "0312862086",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ KHOA HỌC KỸ THUẬT QUANG PHÁT",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600350428",
       "lotName": "Gói 4. Hóa chất sử dụng trên máy Xét nghiệm HbA1C gồm 03 mặt hàng 01 phần (lô)",
       "bidPrice": 1457000000,
       "finalPrice": 1457000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-08-10T09:49:46.822",
+      "reason": "Không đáp ứng yêu cầu kỹ thuật theo E-HSMT",
+      "submittedAt": "2026-10-22T16:43:47.24",
       "models": []
     },
     {
-      "id": "027edc22-a05a-4fac-b9b3-331f50f08589",
+      "id": "5a23fd5d-f837-4043-a567-0c0d5050fb66",
       "contractorCode": "vn0106104400",
-      "taxCode": "",
+      "taxCode": "0106104400",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ TÂM PHÁT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600350428",
       "lotName": "Gói 4. Hóa chất sử dụng trên máy Xét nghiệm HbA1C gồm 03 mặt hàng 01 phần (lô)",
       "bidPrice": 1653680000,
       "finalPrice": 1653680000,
-      "winningPrice": 0,
+      "winningPrice": 1653680000,
       "reason": "",
-      "submittedAt": "2026-08-10T09:49:46.978",
+      "submittedAt": "2026-10-22T16:43:47.24",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "34704de4-116b-40ee-a5b6-1ebcab7c93df",
+      "name": "Hóa chất chuẩn HbA1c (Calibrator)",
+      "model": "51604003",
+      "brand": "Glycated Hemoglobin (HbA1c) Calibrator",
+      "manufacturer": "Agappe Diagnostics Ltd",
+      "origin": "Ấn Độ",
+      "manufactureYear": "2026 về sau",
+      "specification": "Chứa 2 cặp Hiệu chuẩn mỗi hộp. Đủ để chạy lại đường chuẩn mỗi khi bóc Kit mới (thay Cột sắc ký mới) theo bắt buộc của hãng.",
+      "unit": "Hộp",
+      "quantity": 16,
+      "unitPrice": 3190000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ TÂM PHÁT"
+      ],
+      "decisionNo": "1632/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-22T23:59:59",
+      "resultPublishedDate": "2026-10-22T16:43:54"
+    },
+    {
+      "id": "3b57156f-0190-4ba0-a817-03660d6aebcd",
+      "name": "Kit Hóa chất xét nghiệm HbA1c (Glycated Haemoglobin Reagent Kit)",
+      "model": "53001006",
+      "brand": "Glycated Hemoglobin Reagent Kit with Column",
+      "manufacturer": "Agappe Diagnostics Ltd",
+      "origin": "Ấn Độ",
+      "manufactureYear": "2026 về sau",
+      "specification": "Đã bao gồm trọn bộ: Cột sắc ký (Column), Dung dịch đệm rửa và Dung dịch ly giải tế bào chung một số Lô (Lot).",
+      "unit": "Kit",
+      "quantity": 26,
+      "unitPrice": 59000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ TÂM PHÁT"
+      ],
+      "decisionNo": "1632/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-22T23:59:59",
+      "resultPublishedDate": "2026-10-22T16:43:54"
+    },
+    {
+      "id": "16543637-6839-438a-baf1-c64b4e5559bf",
+      "name": "Hóa chất nội kiểm HbA1c (Control)",
+      "model": "51625005",
+      "brand": "Glycated Hemoglobin (HbA1c) Control",
+      "manufacturer": "Agappe Diagnostics Ltd",
+      "origin": "Ấn Độ",
+      "manufactureYear": "2026 về sau",
+      "specification": "Chứa 3 cặp Nội kiểm (Mức 1 & 2) mỗi hộp. Đảm bảo đủ lượng chạy kiểm tra chất lượng hàng ngày (daily) theo chuẩn BHYT.",
+      "unit": "Hộp",
+      "quantity": 16,
+      "unitPrice": 4290000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ TÂM PHÁT"
+      ],
+      "decisionNo": "1632/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-22T23:59:59",
+      "resultPublishedDate": "2026-10-22T16:43:54"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +132,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T16:34:27.630Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-10-26T21:05:28.044Z"
 }
