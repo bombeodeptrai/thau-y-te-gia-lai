@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-26T00:34:46.340Z",
+  "rescuedAt": "2026-10-26T04:42:02.424Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 108,
+      "count": 105,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 319,
+      "count": 322,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 10,
+      "count": 13,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 2,
+      "count": 1,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 45,
+      "count": 47,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 32,
+      "count": 33,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 9,
+      "count": 12,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
@@ -281,33 +281,34 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 686,
-  "acceptedCount": 24,
-  "rejectedCount": 662,
+  "candidateCount": 693,
+  "acceptedCount": 22,
+  "rejectedCount": 671,
   "rejectedReasons": {
-    "excluded:tu van": 241,
-    "excluded:xay dung": 171,
+    "excluded:tu van": 243,
+    "excluded:xay dung": 174,
     "insufficient-medical-context": 157,
     "excluded:sua chua": 22,
-    "excluded:xay lap": 21,
-    "excluded:thuc pham": 13,
+    "excluded:xay lap": 20,
+    "excluded:thuc pham": 14,
     "excluded:bao ve": 7,
     "excluded:cai tao": 6,
+    "excluded:bao tri": 5,
     "excluded:tham dinh": 4,
-    "excluded:bao tri": 3,
     "excluded:kiem dinh": 2,
     "excluded:trang phuc": 2,
+    "excluded:bao hiem": 2,
     "excluded:may tinh": 2,
     "excluded:lap e hsmt": 2,
     "excluded:may in": 1,
     "excluded:cap dien": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
+    "excluded:in an": 1,
     "excluded:rac thai": 1,
     "excluded:giam sat thi cong": 1,
     "excluded:suat an": 1,
-    "excluded:cong nghe thong tin": 1,
-    "excluded:bao hiem": 1
+    "excluded:cong nghe thong tin": 1
   },
   "acceptedDiagnostics": [
     {
@@ -513,44 +514,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600574948",
-      "name": "Mua sắm Sinh phẩm y tế năm 2026-2027 để phục vụ công tác chuyên môn của Trung Tâm Y Tế Phú Thiện",
-      "investor": "TRUNG TÂM Y TẾ PHÚ THIỆN",
-      "accepted": true,
-      "score": 175,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply",
-      "matched": [
-        "sinh pham y te",
-        "trung tam y te",
-        "sinh pham",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600573546",
-      "name": "Mua sắm bổ sung vật tư, công cụ, dụng cụ y tế, hóa chất, sinh phẩm chẩn đoán in vitro (lần 2) phục vụ công tác khám chữa bệnh của Trung tâm Y tế Quy Nhơn Quý IV năm 2026",
-      "investor": "Trung tâm Y tế Quy Nhơn",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "sinh pham chan doan",
-        "chan doan in vitro",
-        "dung cu y te",
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "chan doan",
-        "in vitro",
-        "vat tu",
-        "mua",
-        "mua sam",
-        "kham chua benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "IB2600588240",
       "name": "Mua sắm hóa chất, sinh phẩm xét nghiệm, vật tư tiêu hao phục vụ khám chữa bệnh và sàng lọc theo hình thức mua sắm trực tiếp trong thời gian chờ kết quả đấu thầu năm 2026 -2027 của Bệnh viện Đa khoa Gia Lai",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -701,6 +664,28 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600589586",
+      "name": "Thi công xây dựng tuyến đường Lý Thái Tổ (Hùng Vương - Vạn Kiếp)",
+      "investor": "Ban Quản lý dịch vụ công Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600585956",
+      "name": "Toàn bộ khối lượng xây lắp công trình",
+      "investor": "Ban Quản lý xã Tây Sơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
     {
       "notifyNo": "IB2600588951",
       "name": "Thuê phần mềm Quản lý bệnh viện (HIS), phần mềm Quản lý bệnh án điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Bệnh viện Mắt tỉnh Gia Lai",
@@ -870,17 +855,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600585956",
-      "name": "Toàn bộ khối lượng xây lắp công trình",
-      "investor": "Ban Quản lý xã Tây Sơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
       ]
     },
     {
@@ -1134,18 +1108,6 @@
       "reason": "excluded:sua chua",
       "matched": [
         "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600579971",
-      "name": "Mua sắm xe ô tô ép và vận chuyển rác",
-      "investor": "PHÒNG KINH TẾ XÃ TUY PHƯỚC",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
       ]
     }
   ],
