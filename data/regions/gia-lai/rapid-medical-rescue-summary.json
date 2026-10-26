@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-26T04:42:02.424Z",
+  "rescuedAt": "2026-10-26T08:01:07.698Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 105,
+      "count": 107,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 322,
+      "count": 338,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 13,
+      "count": 15,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 4,
+      "count": 7,
       "error": ""
     },
     {
@@ -138,13 +138,13 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 61,
+      "count": 62,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 9,
+      "count": 11,
       "error": ""
     },
     {
@@ -234,13 +234,13 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 21,
+      "count": 20,
       "error": ""
     },
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 9,
+      "count": 12,
       "error": ""
     },
     {
@@ -281,15 +281,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 693,
+  "candidateCount": 706,
   "acceptedCount": 22,
-  "rejectedCount": 671,
+  "rejectedCount": 684,
   "rejectedReasons": {
-    "excluded:tu van": 243,
+    "excluded:tu van": 251,
     "excluded:xay dung": 174,
-    "insufficient-medical-context": 157,
+    "insufficient-medical-context": 161,
     "excluded:sua chua": 22,
-    "excluded:xay lap": 20,
+    "excluded:xay lap": 21,
     "excluded:thuc pham": 14,
     "excluded:bao ve": 7,
     "excluded:cai tao": 6,
@@ -311,6 +311,25 @@
     "excluded:cong nghe thong tin": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600589867",
+      "name": "Mua sắm vật tư y tế, hóa chất, sinh phẩm phục vụ công tác khám bệnh, chữa bệnh tại Trung tâm Y tế An Lão giai đoạn 2027-2028",
+      "investor": "Trung tâm Y tế An Lão",
+      "accepted": true,
+      "score": 245,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "matched": [
+        "vat tu y te",
+        "trung tam y te",
+        "hoa chat",
+        "sinh pham",
+        "vat tu",
+        "mua",
+        "mua sam",
+        "kham benh",
+        "chua benh"
+      ]
+    },
     {
       "notifyNo": "IB2600568444",
       "name": "Gói thầu số 2: Mua sắm hoá chất y tế năm 2027-2028 (24 tháng)",
@@ -637,21 +656,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600046185",
-      "name": "Mua sắm bổ sung vật tư, hóa chất năm 2026 (lần 2)",
-      "investor": "Trung tâm Y tế Krông Pa",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-supply-bundle",
-      "matched": [
-        "trung tam y te",
-        "hoa chat",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600052389",
       "name": "Dịch vụ khám sức khỏe bao gồm: -Cân nặng, đo chiều cao, đo dấu hiệu sinh tồn. -Nội khoa: Tuần hoàn, hô hấp, tiêu hóa, thận, tiết niệu, thần kinh. -Khám chuyên khoa: Da liễu, Tai-mũi-họng, răng-hàm-mặt, mắt, cơ xương khớp. -Kết luận, phân loại sức khỏe theo tiêu chuẩn của Bộ y tế.",
       "investor": "Trường Trung học cơ sở Tây Sơn",
@@ -664,6 +668,27 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600588875",
+      "name": "Đầu tư nâng cấp các dây chuyền chế biến mủ",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ SÊ.",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600589258",
+      "name": "Thuê phần mềm Quản lý tổng thể Bệnh viện năm 2027",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "da khoa"
+      ]
+    },
     {
       "notifyNo": "IB2600589586",
       "name": "Thi công xây dựng tuyến đường Lý Thái Tổ (Hùng Vương - Vạn Kiếp)",
@@ -1087,34 +1112,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600581219",
-      "name": "Cung cấp xi măng PCB40",
-      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600565174",
-      "name": "Mua sắm công cụ, dụng cụ, thiết bị thí nghiệm phục vụ công tác sửa chữa",
-      "investor": "CÔNG TY PHÁT TRIỂN THỦY ĐIỆN SÊ SAN - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1181,
-  "afterCount": 1181,
+  "beforeCount": 1182,
+  "afterCount": 1182,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
