@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-27T11:38:16.162Z",
+  "rescuedAt": "2026-10-27T14:45:37.215Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 104,
+      "count": 105,
       "error": ""
     },
     {
@@ -24,7 +24,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 16,
+      "count": 14,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 675,
+  "candidateCount": 674,
   "acceptedCount": 19,
-  "rejectedCount": 656,
+  "rejectedCount": 655,
   "rejectedReasons": {
     "excluded:tu van": 231,
-    "excluded:xay dung": 169,
+    "excluded:xay dung": 168,
     "insufficient-medical-context": 159,
     "excluded:sua chua": 22,
     "excluded:xay lap": 22,
@@ -620,6 +620,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600584709",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban Quản lý phường Hoài Nhơn Tây",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600589288",
       "name": "Mua sắm trang thiết bị phục vụ công tác đảm bảo trật tự ATGT năm 2026",
@@ -1054,17 +1065,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600583608",
-      "name": "Gói thầu số 3 “Thi công sơn bảo trì đường cất hạ cánh, đường lăn”",
-      "investor": "CẢNG HÀNG KHÔNG PLEIKU - CHI NHÁNH TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao tri",
-      "matched": [
-        "bao tri"
       ]
     }
   ],
