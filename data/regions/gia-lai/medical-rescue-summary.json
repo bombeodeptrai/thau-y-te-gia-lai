@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-26T21:02:44.578Z",
+  "rescuedAt": "2026-10-27T05:04:33.275Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 228,
+      "count": 230,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 591,
+      "count": 602,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
@@ -84,13 +84,13 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 26,
+      "count": 24,
       "error": ""
     },
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 3,
+      "count": 5,
       "error": ""
     },
     {
@@ -120,7 +120,7 @@
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 2,
+      "count": 6,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 118,
+      "count": 121,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 105,
+      "count": 109,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 19,
+      "count": 20,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 65,
+      "count": 66,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 46,
+      "count": 48,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1426,
+  "candidateCount": 1450,
   "acceptedCount": 57,
-  "rejectedCount": 1369,
+  "rejectedCount": 1393,
   "rejectedReasons": {
-    "excluded:tu van": 502,
-    "excluded:xay dung": 357,
-    "insufficient-medical-context": 300,
-    "excluded:sua chua": 43,
+    "excluded:tu van": 513,
+    "excluded:xay dung": 362,
+    "insufficient-medical-context": 304,
+    "excluded:sua chua": 44,
     "excluded:xay lap": 38,
-    "excluded:cai tao": 31,
+    "excluded:cai tao": 33,
     "excluded:thuc pham": 18,
     "excluded:tham dinh": 13,
     "excluded:bao ve": 11,
@@ -300,9 +300,9 @@
     "excluded:kiem dinh": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:may tinh": 3,
+    "excluded:giam sat thi cong": 3,
     "excluded:cap dien": 2,
     "excluded:bao ho lao dong": 2,
-    "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
     "excluded:suat an": 2,
     "excluded:may in": 1,
@@ -952,6 +952,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600572550",
+      "name": "Gói thầu số 02: Mua 43.000 chiếc phao áo cứu sinh nhập kho dự trữ quốc gia tại các Chi cục Dự trữ Nhà nước khu vực II, X, XI, XII, XIII",
+      "investor": "Cục Dự trữ Nhà nước",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600589527",
+      "name": "26-83/XL: thi công sửa chữa nhà trực trạm cắt C22 và nhà điều hành Điện lực Phú Tài",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
       "notifyNo": "IB2600589310",
       "name": "Xây lắp",
       "investor": "Trung tâm cung ứng dịch vụ công xã Gào",
@@ -1374,34 +1396,12 @@
       "matched": [
         "sua chua"
       ]
-    },
-    {
-      "notifyNo": "IB2600580588",
-      "name": "Cung cấp Thiết bị tường lửa cho các hệ thống thông tin tại Công ty Quản lý bay miền Trung",
-      "investor": "CÔNG TY QUẢN LÝ BAY MIỀN TRUNG - TỔNG CÔNG TY QUẢN LÝ BAY VIỆT NAM - CÔNG TY TNHH",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:thiet bi tuong lua",
-      "matched": [
-        "thiet bi tuong lua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600582482",
-      "name": "Thi công xây dựng",
-      "investor": "Ban Quản lý dự án và Giải phóng mặt bằng Khu kinh tế",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1179,
-  "afterCount": 1179,
+  "beforeCount": 1176,
+  "afterCount": 1176,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
