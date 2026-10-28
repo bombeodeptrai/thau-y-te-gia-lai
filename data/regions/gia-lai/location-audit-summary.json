@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-27T20:42:34.030Z",
+  "auditedAt": "2026-10-28T05:41:55.023Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 625,
+      "count": 622,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 41,
+      "count": 40,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -62,19 +62,19 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 20,
+      "count": 18,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 24,
+      "count": 23,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 69,
+      "count": 67,
       "error": ""
     },
     {
@@ -134,7 +134,7 @@
     {
       "term": "Krông Pa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 82,
+      "count": 83,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 110,
+      "count": 111,
       "error": ""
     },
     {
@@ -194,19 +194,19 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 20,
+      "count": 24,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 68,
+      "count": 69,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 32,
+      "count": 33,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -271,16 +271,16 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1415,
+  "candidateCount": 1416,
   "acceptedCount": 55,
-  "rejectedCount": 1360,
+  "rejectedCount": 1361,
   "rejectedReasons": {
-    "excluded:tu van": 518,
-    "excluded:xay dung": 353,
-    "insufficient-medical-context": 283,
-    "excluded:sua chua": 41,
+    "excluded:tu van": 519,
+    "excluded:xay dung": 351,
+    "insufficient-medical-context": 281,
+    "excluded:sua chua": 42,
+    "excluded:xay lap": 36,
     "excluded:cai tao": 35,
-    "excluded:xay lap": 35,
     "excluded:thuc pham": 18,
     "excluded:tham dinh": 13,
     "excluded:bao ve": 11,
@@ -292,13 +292,14 @@
     "excluded:cong nghe thong tin": 3,
     "excluded:kiem dinh": 3,
     "excluded:lap e hsmt": 2,
+    "excluded:duong day": 2,
     "excluded:cap dien": 2,
     "excluded:suat an": 2,
     "excluded:in an": 1,
     "excluded:rac thai": 1,
     "excluded:may in": 1,
-    "excluded:duong day": 1,
     "excluded:tram bien ap": 1,
+    "excluded:bao duong": 1,
     "excluded:quan ly du an": 1,
     "excluded:bao ho lao dong": 1,
     "excluded:ve sinh cong nghiep": 1
@@ -940,6 +941,24 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600077905",
+      "name": "Truyền hình trực tiếp Chương trình nghệ thuật “Đêm hội cồng chiêng Gia Lai năm 2026”",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600080569",
+      "name": "Thi công, dàn dựng gian hàng tỉnh Gia Lai",
+      "investor": "TRUNG TÂM KHUYẾN CÔNG VÀ XÚC TIẾN THƯƠNG MẠI TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "DC2600083074",
       "name": "Tư vấn thiết kế phương án, giải pháp phá dỡ công trình hiện trạng",
       "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
@@ -1376,31 +1395,6 @@
         "sua chua",
         "tu van",
         "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600078315",
-      "name": "Tư vấn giám sát công tác khảo sát địa chất",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600083094",
-      "name": "Tư vấn Quản lý dự án. Công trình: Trung tâm GDNN-GDTX Mang Yang Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua",
-        "tu van",
-        "quan ly du an"
       ]
     }
   ],
