@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-28T15:06:42.306Z",
+  "auditedAt": "2026-10-28T21:04:30.265Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 619,
+      "count": 620,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 51,
+      "count": 53,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1411,
+  "candidateCount": 1414,
   "acceptedCount": 56,
-  "rejectedCount": 1355,
+  "rejectedCount": 1358,
   "rejectedReasons": {
-    "excluded:tu van": 525,
+    "excluded:tu van": 527,
     "excluded:xay dung": 347,
-    "insufficient-medical-context": 279,
+    "insufficient-medical-context": 280,
     "excluded:sua chua": 44,
     "excluded:cai tao": 34,
     "excluded:xay lap": 33,
@@ -945,6 +945,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600089831",
+      "name": "Cung cấp và lắp đặt Tivi cho nhà trường",
+      "investor": "Trường TH Chư Păh, Xã Chư Păh, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600587150",
       "name": "Gói thầu 26.34/HH: Cung cấp Biến dòng, biến áp 22, 35kV",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1376,19 +1387,6 @@
         "sua chua",
         "tu van",
         "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "DC2600040902",
-      "name": "Toàn bộ khối lượng xây lắp. Công trình: Trung tâm GDNN GDTX Mang Yang. Hạng mục: Sửa chữa, cải tạo hệ thống phòng cháy chữa cháy.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "cai tao",
-        "sua chua"
       ]
     }
   ],
