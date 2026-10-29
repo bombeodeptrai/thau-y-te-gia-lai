@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-29T15:14:49.173Z",
+  "auditedAt": "2026-10-29T21:08:18.051Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -271,11 +271,11 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1400,
+  "candidateCount": 1401,
   "acceptedCount": 54,
-  "rejectedCount": 1346,
+  "rejectedCount": 1347,
   "rejectedReasons": {
-    "excluded:tu van": 522,
+    "excluded:tu van": 523,
     "excluded:xay dung": 339,
     "insufficient-medical-context": 285,
     "excluded:sua chua": 40,
@@ -1402,8 +1402,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1184,
-  "afterCount": 1184,
+  "beforeCount": 1183,
+  "afterCount": 1183,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
