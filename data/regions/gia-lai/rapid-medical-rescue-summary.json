@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-29T02:11:39.423Z",
+  "rescuedAt": "2026-10-29T06:05:33.877Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 99,
+      "count": 98,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 325,
+      "count": 333,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
@@ -114,19 +114,19 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 5,
+      "count": 7,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 42,
+      "count": 43,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 43,
+      "count": 42,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 33,
+      "count": 26,
       "error": ""
     },
     {
@@ -281,20 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 656,
+  "candidateCount": 660,
   "acceptedCount": 22,
-  "rejectedCount": 634,
+  "rejectedCount": 638,
   "rejectedReasons": {
-    "excluded:tu van": 228,
-    "excluded:xay dung": 163,
-    "insufficient-medical-context": 144,
-    "excluded:sua chua": 26,
-    "excluded:xay lap": 20,
+    "excluded:tu van": 233,
+    "excluded:xay dung": 161,
+    "insufficient-medical-context": 142,
+    "excluded:sua chua": 25,
+    "excluded:xay lap": 24,
     "excluded:cai tao": 14,
     "excluded:bao ve": 7,
-    "excluded:thuc pham": 6,
+    "excluded:thuc pham": 5,
     "excluded:bao tri": 4,
     "excluded:trang phuc": 2,
+    "excluded:may tinh": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
     "excluded:tham dinh": 2,
@@ -306,7 +307,6 @@
     "excluded:kiem dinh": 1,
     "excluded:bao hiem": 1,
     "excluded:in an": 1,
-    "excluded:may tinh": 1,
     "excluded:rac thai": 1,
     "excluded:suat an": 1,
     "excluded:duong day": 1,
@@ -675,6 +675,28 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600591349",
+      "name": "26-87/XL: thi công sửa chữa công trình Sửa chữa Máy biến áp TBA 110kV Phù Cát + Phù Mỹ + Long Mỹ năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600592893",
+      "name": "CTC 2026XL/01: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Chỉnh trang cáp viễn thông khu vực Phú Tài, Tuy Phước, An Nhơn năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600593477",
       "name": "Gói thầu số 01: Mua lúa giống",
@@ -1105,29 +1127,6 @@
         "vat tu",
         "mua",
         "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600583685",
-      "name": "Gói thầu số 02: Mua sắm phụ tùng thay thế (06 Trạm Bình Định cũ)",
-      "investor": "Trung tâm Quan trắc tài nguyên và môi trường",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600585688",
-      "name": "Gói thầu số 4: Hoán cải cẩu RTG và thi công hệ thống cấp điện cho cẩu RTG",
-      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cap dien",
-      "matched": [
-        "cap dien"
       ]
     }
   ],
