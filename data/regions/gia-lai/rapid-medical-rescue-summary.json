@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-29T06:05:33.877Z",
+  "rescuedAt": "2026-10-29T08:24:53.339Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 98,
+      "count": 102,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 333,
+      "count": 334,
       "error": ""
     },
     {
@@ -78,19 +78,19 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 18,
+      "count": 27,
       "error": ""
     },
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -198,13 +198,13 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -222,19 +222,19 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -281,20 +281,19 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 660,
-  "acceptedCount": 22,
-  "rejectedCount": 638,
+  "candidateCount": 673,
+  "acceptedCount": 24,
+  "rejectedCount": 649,
   "rejectedReasons": {
-    "excluded:tu van": 233,
-    "excluded:xay dung": 161,
+    "excluded:tu van": 241,
+    "excluded:xay dung": 165,
     "insufficient-medical-context": 142,
-    "excluded:sua chua": 25,
+    "excluded:sua chua": 24,
     "excluded:xay lap": 24,
     "excluded:cai tao": 14,
-    "excluded:bao ve": 7,
+    "excluded:bao ve": 8,
     "excluded:thuc pham": 5,
     "excluded:bao tri": 4,
-    "excluded:trang phuc": 2,
     "excluded:may tinh": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
@@ -310,10 +309,46 @@
     "excluded:rac thai": 1,
     "excluded:suat an": 1,
     "excluded:duong day": 1,
+    "excluded:trang phuc": 1,
     "excluded:cong nghe thong tin": 1,
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600583667",
+      "name": "Gói thầu số 1: Mua sắm vật tư y tế, công cụ, dụng cụ",
+      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600583748",
+      "name": "Gói thầu số 2: Mua sắm hóa chất y tế và sinh phẩm chẩn đoán in vitro",
+      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
+      "accepted": true,
+      "score": 280,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "matched": [
+        "hoa chat y te",
+        "sinh pham chan doan",
+        "chan doan in vitro",
+        "benh vien",
+        "hoa chat",
+        "sinh pham",
+        "chan doan",
+        "in vitro",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600585403",
       "name": "Mua sắm Máy X quang kỹ thuật số chụp tổng quát phục vụ công tác khám bệnh, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -675,6 +710,52 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600592447",
+      "name": "Thuê phần mềm Quản lý Bệnh viện (HIS), phần mềm Quản lý Bệnh án Điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Trung tâm Y tế Vân Canh",
+      "investor": "Trung tâm Y tế Vân Canh",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "chan doan"
+      ]
+    },
+    {
+      "notifyNo": "IB2600587884",
+      "name": "Gói thầu XL9: Thi công xây dựng hạng mục công trình: San nền trong khu công nghiệp (San nền giai đoạn 2)",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ SÊ.",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600587573",
+      "name": "Gói thầu số 59/2027/XL: Thi công xây dựng công trình: Nhà nghỉ ca, nhà kho, nhà để xe Điện lực Đak Đoa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600589364",
+      "name": "Gói thầu số 7: Khảo sát, lập phương án, dự toán thi công rà phá bom mìn, vật nổ và tư vấn giám sát thi công rà phá bom mìn, vật nổ",
+      "investor": "TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
     {
       "notifyNo": "IB2600591349",
       "name": "26-87/XL: thi công sửa chữa công trình Sửa chữa Máy biến áp TBA 110kV Phù Cát + Phù Mỹ + Long Mỹ năm 2026",
@@ -1082,58 +1163,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600585708",
-      "name": "Mua Lịch Xuân Đinh Mùi - năm 2027",
-      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600585953",
-      "name": "Gói thầu số 02: Thi công xây dựng các hạng mục hạ tầng chung",
-      "investor": "Chi cục Thủy sản",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600585083",
-      "name": "G09-VN-CSCC_GL_1322.3: Tiến hành trồng rừng ngập mặn phân tán có mục tiêu với sự tham gia của phụ nữ, các tổ chức do phụ nữ lãnh đạo",
-      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600584337",
-      "name": "Gói thầu số 01: Mua sắm vật tư tiêu hao, hoá chất vận hành (06 Trạm Bình Định cũ)",
-      "investor": "Trung tâm Quan trắc tài nguyên và môi trường",
-      "accepted": false,
-      "score": 40,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu tieu hao",
-        "hoa chat",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1182,
-  "afterCount": 1182,
-  "newCount": 0,
+  "afterCount": 1184,
+  "newCount": 2,
   "filterStrategy": "unified-medical-scope-v18"
 }
