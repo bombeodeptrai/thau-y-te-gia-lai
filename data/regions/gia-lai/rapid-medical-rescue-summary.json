@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-29T13:25:14.279Z",
+  "rescuedAt": "2026-10-29T19:49:55.313Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 324,
+      "count": 325,
       "error": ""
     },
     {
@@ -156,7 +156,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -281,11 +281,11 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 666,
+  "candidateCount": 668,
   "acceptedCount": 24,
-  "rejectedCount": 642,
+  "rejectedCount": 644,
   "rejectedReasons": {
-    "excluded:tu van": 233,
+    "excluded:tu van": 234,
     "excluded:xay dung": 164,
     "insufficient-medical-context": 143,
     "excluded:xay lap": 25,
@@ -294,6 +294,7 @@
     "excluded:bao ve": 8,
     "excluded:thuc pham": 5,
     "excluded:bao tri": 4,
+    "excluded:bao hiem": 2,
     "excluded:may tinh": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
@@ -303,7 +304,6 @@
     "excluded:cap dien": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
-    "excluded:bao hiem": 1,
     "excluded:in an": 1,
     "excluded:rac thai": 1,
     "excluded:suat an": 1,
@@ -709,6 +709,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600588951",
+      "name": "Thuê phần mềm Quản lý bệnh viện (HIS), phần mềm Quản lý bệnh án điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Bệnh viện Mắt tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "benh vien",
+        "chan doan"
+      ]
+    },
+    {
       "notifyNo": "IB2600590169",
       "name": "SCL2027-01: Cung cấp VTTB và dịch vụ sửa chữa đường dây 500 kV-1L NMTĐ Ialy",
       "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
@@ -1038,18 +1050,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600588951",
-      "name": "Thuê phần mềm Quản lý bệnh viện (HIS), phần mềm Quản lý bệnh án điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Bệnh viện Mắt tỉnh Gia Lai",
-      "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
-      "accepted": false,
-      "score": 90,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "chan doan"
-      ]
-    },
-    {
       "notifyNo": "IB2600581454",
       "name": "Toàn bộ khối lượng xây dựng và lắp đặt thiết bị (Giai đoạn 1)",
       "investor": "Ban Quản lý xã Bình Hiệp",
@@ -1165,8 +1165,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1184,
-  "afterCount": 1184,
+  "beforeCount": 1183,
+  "afterCount": 1183,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
