@@ -1,25 +1,83 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "cd83b2c1-10f9-4623-b96c-d86874e14c6b",
+      "id": "8c2ac0fe-2ffd-4e8b-b47c-f50a2f92791f",
       "contractorCode": "vn0304390697",
-      "taxCode": "",
+      "taxCode": "0304390697",
       "contractorName": "CÔNG TY CỔ PHẦN SẢN XUẤT-THƯƠNG MẠI VÀ DỊCH VỤ HOÀN CHÂU",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600782494",
       "lotName": "Mua sắm phụ tùng thay thế cho hệ thống Máy CT- Scanner 128 lát cắt SOMATOM Definition AS của Bệnh viện Đa khoa Gia Lai",
       "bidPrice": 2238250000,
       "finalPrice": 2238250000,
-      "winningPrice": 0,
+      "winningPrice": 2238250000,
       "reason": "",
-      "submittedAt": "2026-10-09T08:23:24.562",
+      "submittedAt": "2026-10-29T10:12:29.641",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "ef083030-3dc6-46b6-a77c-ebe906165cc2",
+      "name": "Bộ biến đổi tần số (Frequency converter)",
+      "model": "Module: Frequency converter",
+      "brand": "Siemens",
+      "manufacturer": "Hãng cung cấp: Siemens Healthineers AG",
+      "origin": "Đức",
+      "manufactureYear": "-",
+      "specification": "Tương thích Hệ thống Máy CT-Scanner 128 lát cắt (Model: SOMATOM Definition AS; SN 96343; HSX/ NSX: Siemens/ Đức)\n- Chức năng: Biến đổi tần số, điều khiển tốc độ quay của gantry.\n- Đầu vào 3 pha: Điện áp 400-460VAC, dòng điện 13.1A, tần số 50/60Hz\n- Đầu ra 3 pha: Điện áp 0-400VAC, dòng điện 10A, biến đổi tần số trong dải 0-400Hz.\n- Các kết nối tới linh kiện bao gồm:\n+ 02 kết nối điều khiển thông qua giao tiếp cổng COM tới bo mạch điều khiển hệ thống UMAS và bộ biến tần của phần nghiêng Gantry.\n+ 02 giắc kết nối tới điện trở phanh\n+ 01 giắc kết nối cấp nguồn đầu vào 3 pha cho linh kiện.\n+ 01 giắc kết nối đầu ra đã được biến đổi tần số tới phần quay gantry.",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 479450000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN SẢN XUẤT-THƯƠNG MẠI VÀ DỊCH VỤ HOÀN CHÂU"
+      ],
+      "decisionNo": "1658/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:12:49"
+    },
+    {
+      "id": "258ff858-7770-4442-9534-4cc59cea85c8",
+      "name": "Bộ tái tạo hình ảnh (IRSmx4b)",
+      "model": "Module: IRSmx5b",
+      "brand": "Siemens",
+      "manufacturer": "Hãng cung cấp: Siemens Healthineers AG",
+      "origin": "Hà Lan",
+      "manufactureYear": "-",
+      "specification": "Tương thích Hệ thống Máy CT-Scanner 128 lát cắt (Model: SOMATOM Definition AS; SN 96343; HSX/ NSX: Siemens/ Đức)\n- Chức năng: Nhận dữ liệu đo đạc từ detector, tái tạo thành hình ảnh và chuyển tới máy tính ICS\n- Điện áp vào: 230 VAC\n- Phần mềm tương thích: Hỗ trợ phiên bản phần mềm từ VA48A - SP08, syngo.CT VB10\n- Lưu trữ: 07 ổ cứng SATA\n- Ổ đĩa quang: 01 Ổ DVD\n- Xử lý hình ảnh: 02 card đồ họa GPU Quadro P5000\n- Giao tiếp: 01 card nhận tín hiệu quang DIRex-D27\n- Kết nối:\n+ 03 cổng quang kết nối tới Gantry\n+ 02 cổng mạng kết nối tới tủ điện PDC\n+ 01 kết nối nguồn tới tủ điện PDC",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 1582400000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN SẢN XUẤT-THƯƠNG MẠI VÀ DỊCH VỤ HOÀN CHÂU"
+      ],
+      "decisionNo": "1658/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:12:49"
+    },
+    {
+      "id": "b185ab3b-7690-41fd-9275-cab5cedac0a0",
+      "name": "Điện trở phanh (Brake resistor)",
+      "model": "Module: Brake resistor",
+      "brand": "Siemens",
+      "manufacturer": "Hãng cung cấp: Siemens Healthineers AG",
+      "origin": "Đức",
+      "manufactureYear": "-",
+      "specification": "Tương thích Hệ thống Máy CT-Scanner 128 lát cắt (Model: SOMATOM Definition AS; SN 96343; HSX/ NSX: Siemens/ Đức)\n- Chức năng: Sử dụng cho chức năng phanh của động cơ quay gantry\n- Điện trở: 83 Ohm\n- Công suất: 600W",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 176400000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN SẢN XUẤT-THƯƠNG MẠI VÀ DỊCH VỤ HOÀN CHÂU"
+      ],
+      "decisionNo": "1658/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:12:49"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +103,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-28T22:42:11.709Z"
+  "fetchedAt": "2026-10-29T05:59:33.057Z"
 }
