@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "ee5fe19d-60fa-42f0-a59f-25a88412b92f",
+      "contractorCode": "vn4100867273",
+      "taxCode": "4100867273",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+      "status": "won",
+      "lotNo": "PP2600425190",
+      "lotName": "Máy điện xung trung tần",
+      "bidPrice": 96000000,
+      "finalPrice": 96000000,
+      "winningPrice": 96000000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:14:09.041",
+      "models": [
+        "XYZP-IB"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "38d6a64c-4438-4f36-93c9-985eb65c294c",
+      "name": "Máy điện xung trung tần",
+      "model": "XYZP-IB",
+      "brand": "Sunnyou Medical Co.,Ltd",
+      "manufacturer": "Sunnyou Medical Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Năm 2026",
+      "specification": "– Tần số sóng trung tần: 2kHz - 10kHz, dung sai tần số đơn ±10%\n– Tần số sóng thấp tần điều chỉnh: 0 – 150Hz, dung sai tần số đơn ±10% hoặc ±1Hz\n– Cường độ truy xuất lớn nhất: 0 – 100mA\n– Điện áp nguồn: 220V ±22V/50Hz ± 1Hz\n– Công suất truy nhập: ≤60VA\n– Số phác đồ điều trị ≥ 35\n– Phạm vi gia nhiệt tấm bản cực: 38°C – 55°C",
+      "unit": "Máy",
+      "quantity": 20,
+      "unitPrice": 4800000,
+      "amount": 96000000,
+      "contractorCode": "vn4100867273",
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH"
+      ],
+      "lotNo": "",
+      "decisionNo": "486/QĐ-BV",
+      "decisionDate": "2026-10-29T15:13:08",
+      "resultPublishedDate": "2026-10-29T15:14:18"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,5 +132,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-29T13:18:21.755Z"
+  "fetchedAt": "2026-10-29T19:43:43.125Z"
 }
