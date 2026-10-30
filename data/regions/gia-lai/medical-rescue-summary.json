@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-29T21:08:57.396Z",
+  "rescuedAt": "2026-10-30T05:48:41.338Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 240,
+      "count": 243,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 628,
+      "count": 639,
       "error": ""
     },
     {
@@ -66,13 +66,13 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
@@ -114,13 +114,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 56,
+      "count": 57,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -138,13 +138,13 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 14,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 111,
+      "count": 108,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 87,
+      "count": 89,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 106,
+      "count": 107,
       "error": ""
     },
     {
@@ -204,25 +204,25 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 26,
+      "count": 28,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 73,
+      "count": 69,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 21,
+      "count": 20,
       "error": ""
     },
     {
@@ -240,7 +240,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -281,17 +281,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1467,
+  "candidateCount": 1469,
   "acceptedCount": 58,
-  "rejectedCount": 1409,
+  "rejectedCount": 1411,
   "rejectedReasons": {
-    "excluded:tu van": 525,
-    "excluded:xay dung": 354,
-    "insufficient-medical-context": 316,
-    "excluded:sua chua": 44,
-    "excluded:xay lap": 41,
+    "excluded:tu van": 524,
+    "excluded:xay dung": 352,
+    "insufficient-medical-context": 318,
+    "excluded:sua chua": 47,
+    "excluded:xay lap": 42,
     "excluded:cai tao": 33,
-    "excluded:thuc pham": 18,
+    "excluded:thuc pham": 17,
     "excluded:tham dinh": 12,
     "excluded:bao ve": 10,
     "excluded:trang phuc": 8,
@@ -319,6 +319,20 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600587591",
+      "name": "Mua vật tư y tế tiêu hao và nẹp vít khóa năm 2026-2027 của Bệnh viện Chỉnh hình và phục hồi chức năng Quy Nhơn",
+      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "vat tu",
+        "mua"
+      ]
+    },
     {
       "notifyNo": "IB2600594830",
       "name": "Mua sắm thiết bị và dụng cụ y tế phục vụ chuyên môn năm 2026",
@@ -464,20 +478,6 @@
         "vat tu",
         "mua",
         "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600587591",
-      "name": "Mua vật tư y tế tiêu hao và nẹp vít khóa năm 2026-2027 của Bệnh viện Chỉnh hình và phục hồi chức năng Quy Nhơn",
-      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "benh vien",
-        "vat tu",
-        "mua"
       ]
     },
     {
@@ -955,6 +955,62 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600594188",
+      "name": "SCL2026- XL/57: Thi công Sửa chữa nhà Điện lực Krông Pa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600594052",
+      "name": "SCL2026- XL/56: Thi công Sửa chữa nhà Điện lực Chư Prông",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600593894",
+      "name": "SCL2026- XL/55: Thi công Sửa chữa nhà Điện lực Chư Păh, Sửa chữa nhà Điện lực Ia Grai",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600594135",
+      "name": "Thi công xây lắp và cung cấp lắp đặt thiết bị công trình",
+      "investor": "Ban Quản lý xã Đức Cơ",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600593412",
+      "name": "Mua sắm xi măng thực hiện Chương trình Bê tông hóa giao thông nông thôn và Kiên cố hóa kênh mương trên địa bàn phường năm 2026",
+      "investor": "Ban Quản lý phường An Nhơn Bắc",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600588951",
       "name": "Thuê phần mềm Quản lý bệnh viện (HIS), phần mềm Quản lý bệnh án điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Bệnh viện Mắt tỉnh Gia Lai",
       "investor": "BỆNH VIỆN MẮT TỈNH GIA LAI",
@@ -1351,61 +1407,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600583302",
-      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
-      "investor": "Ban Quản lý phường Hoài Nhơn Tây",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600586561",
-      "name": "SCL2026- XL/44: Thi công Sửa chữa mặt bằng mô hình huấn luyện Hotline năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600586548",
-      "name": "SCL2026- XL/42: Thi công sửa chữa Nhà ĐHSX, trạm cắt F10 Điện lực Kbang, Sửa chữa nhà kho Điện lực An Khê",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600586552",
-      "name": "SCL2026- XL/43: Thi công sửa chữa Nhà ĐHSX Điện lực Kông Chro",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600586254",
-      "name": "SCL2026- XL/41: Thi công sửa chữa nhà Điện lực Mang Yang, Sửa chữa nhà ĐHSX Điện lực Đăk Đoa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
       ]
     }
   ],
