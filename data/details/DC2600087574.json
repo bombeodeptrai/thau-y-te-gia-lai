@@ -1,9 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "bdb28709-69f5-42b0-9c32-d261fffa0037",
+      "contractorCode": "vn0310913521",
+      "taxCode": "0310913521",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ VIMEC",
+      "status": "won",
+      "lotNo": "BP2600946292",
+      "lotName": "Mua sắm linh kiện thay thế sử dụng cho thiết bị y tế thuộc Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 80000000,
+      "reason": "",
+      "submittedAt": "2026-10-30T17:14:01.218",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "e3755691-5c8e-4623-9baf-e8be075fc30b",
+      "name": "Linh kiện thay thế sử dụng cho thiết bị y tế",
+      "model": "Solios eCL-B",
+      "brand": "Optotherm",
+      "manufacturer": "Optotherm",
+      "origin": "Mỹ",
+      "manufactureYear": "Optotherm",
+      "specification": "Card thu nhận hình ảnh\nchuẩn Camera Link hoặc\ntương đương, đảm bảo\ntương thích hoàn toàn với\ncamera Optotherm IS640\nvà phần mềm Thermalyze\nđang sử dụng.",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 80000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ VIMEC"
+      ],
+      "decisionNo": "337/QĐ-TTKSBT",
+      "decisionDate": "2026-10-30T23:59:59",
+      "resultPublishedDate": "2026-10-30T17:15:13"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -36,5 +72,5 @@
     "bidForm": "CDTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-10-30T11:45:02.099Z"
+  "fetchedAt": "2026-10-30T13:10:29.892Z"
 }
