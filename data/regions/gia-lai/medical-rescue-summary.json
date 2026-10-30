@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-30T15:04:21.916Z",
+  "rescuedAt": "2026-10-30T20:50:24.225Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 245,
+      "count": 241,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1472,
+  "candidateCount": 1468,
   "acceptedCount": 59,
-  "rejectedCount": 1413,
+  "rejectedCount": 1409,
   "rejectedReasons": {
     "excluded:tu van": 526,
     "excluded:xay dung": 352,
-    "insufficient-medical-context": 319,
+    "insufficient-medical-context": 316,
     "excluded:sua chua": 45,
     "excluded:xay lap": 44,
     "excluded:cai tao": 33,
@@ -303,7 +303,6 @@
     "excluded:cong nghe thong tin": 3,
     "excluded:cap dien": 2,
     "excluded:bao duong": 2,
-    "excluded:bao ho lao dong": 2,
     "excluded:lap e hsmt": 2,
     "excluded:duong day": 2,
     "excluded:may chu": 1,
@@ -316,6 +315,7 @@
     "excluded:thu y": 1,
     "excluded:tram bien ap": 1,
     "excluded:quan ly du an": 1,
+    "excluded:bao ho lao dong": 1,
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
