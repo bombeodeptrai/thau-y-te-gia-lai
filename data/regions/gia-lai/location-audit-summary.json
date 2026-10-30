@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-30T05:48:02.734Z",
+  "auditedAt": "2026-10-30T15:03:41.811Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 639,
+      "count": 640,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -62,19 +62,19 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 18,
+      "count": 20,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 28,
+      "count": 22,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 27,
+      "count": 30,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 15,
+      "count": 18,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 10,
+      "count": 7,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 108,
+      "count": 107,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 107,
+      "count": 114,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -206,7 +206,7 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 34,
+      "count": 36,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 49,
+      "count": 41,
       "error": ""
     },
     {
@@ -266,20 +266,20 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1404,
-  "acceptedCount": 54,
-  "rejectedCount": 1350,
+  "candidateCount": 1407,
+  "acceptedCount": 55,
+  "rejectedCount": 1352,
   "rejectedReasons": {
-    "excluded:tu van": 522,
+    "excluded:tu van": 524,
     "excluded:xay dung": 338,
     "insufficient-medical-context": 287,
-    "excluded:sua chua": 43,
-    "excluded:xay lap": 38,
+    "excluded:sua chua": 41,
+    "excluded:xay lap": 40,
     "excluded:cai tao": 33,
     "excluded:thuc pham": 17,
     "excluded:tham dinh": 12,
@@ -307,6 +307,71 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "DC2600087574",
+      "name": "Mua sắm linh kiện thay thế sử dụng cho thiết bị y tế thuộc Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
+      "accepted": true,
+      "score": 235,
+      "reason": "explicit-medical-title+medical-investor+medical-drug-supply",
+      "matched": [
+        "thiet bi y te",
+        "trung tam kiem soat benh tat",
+        "thuoc",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600544991",
+      "name": "Mua sắm vật tư y tế, hoá chất thông thường",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 200,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+medical-supply-bundle",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "da khoa",
+        "hoa chat",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600584970",
+      "name": "Đầu tư, mua sắm Thiết bị y tế chuyên dùng phục vụ Đơn vị điều trị dịch vụ - Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "thiet bi y te",
+        "benh vien",
+        "da khoa",
+        "mua",
+        "mua sam",
+        "dieu tri"
+      ]
+    },
+    {
+      "notifyNo": "IB2600595778",
+      "name": "Mua sắm bổ sung vật tư y tế và hóa chất sử dụng cho chương trình ngoại kiểm tra chất lượng xét nghiệm của Bệnh viện Sản - Nhi tỉnh Gia Lai giai đoạn 2026-2028.",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 255,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
+      "matched": [
+        "vat tu y te",
+        "benh vien",
+        "hoa chat",
+        "xet nghiem",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600585403",
       "name": "Mua sắm Máy X quang kỹ thuật số chụp tổng quát phục vụ công tác khám bệnh, chữa bệnh của Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -526,23 +591,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600544991",
-      "name": "Mua sắm vật tư y tế, hoá chất thông thường",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 200,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+medical-supply-bundle",
-      "matched": [
-        "vat tu y te",
-        "benh vien",
-        "da khoa",
-        "hoa chat",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600041503",
       "name": "Mua sắm vật tư y tế, hóa chất sinh phẩm phục vụ công tác khám sức khỏe cho cán bộ đương chức và hưu trí năm 2026 của Bệnh viện Đa khoa Gia Lai",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -636,36 +684,6 @@
         "mua sam",
         "kham benh",
         "chua benh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600552637",
-      "name": "Mua sắm phụ tùng thay thế cho hệ thống Máy CT- Scanner 128 lát cắt SOMATOM Definition AS của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 170,
-      "reason": "explicit-medical-title+medical-investor+machine-usage-context",
-      "matched": [
-        "may ct scanner",
-        "benh vien",
-        "da khoa",
-        "cho he thong",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "DC2600026554",
-      "name": "Cung cấp dịch vụ sửa chữa và thay thế linh kiện, phụ kiện một số thiết bị y tế của Bệnh viện Sản - Nhi tỉnh Gia Lai quý III năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "thiet bi y te",
-        "benh vien",
-        "sua chua",
-        "cung cap"
       ]
     },
     {
@@ -922,32 +940,81 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600573546",
-      "name": "Mua sắm bổ sung vật tư, công cụ, dụng cụ y tế, hóa chất, sinh phẩm chẩn đoán in vitro (lần 2) phục vụ công tác khám chữa bệnh của Trung tâm Y tế Quy Nhơn Quý IV năm 2026",
-      "investor": "Trung tâm Y tế Quy Nhơn",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "sinh pham chan doan",
-        "chan doan in vitro",
-        "dung cu y te",
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "chan doan",
-        "in vitro",
-        "vat tu",
-        "mua",
-        "mua sam",
-        "kham chua benh",
-        "chua benh"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600596165",
+      "name": "111011- CĐTRG_VTNet_TV2026: Tư vấn lập báo cáo nghiên cứu khả thi: Dự án đầu tư xây dựng hạ tầng mở rộng mạng cáp quang năm 2026 tại Gia Lai",
+      "investor": "TỔNG CÔNG TY MẠNG LƯỚI VIETTEL - CHI NHÁNH TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600093187",
+      "name": "Sản xuất các sản phẩm báo chí tuyên truyền về CTMTQG phát triển văn hoá",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600595909",
+      "name": "Tư vấn quản lý, giám sát",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600595886",
+      "name": "Tư vấn quản lý, giám sát",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600591499",
+      "name": "Gói thầu số 1: Thi công xây dựng",
+      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600090218",
+      "name": "Đưa mốc giới ra thực địa Khu dân cư tại khu vực Bang Bang",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600090232",
+      "name": "Đưa mốc giới ra thực địa",
+      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "DC2600094082",
       "name": "Tư vấn lập Báo cáo kinh tế kỹ thuật",
@@ -1322,87 +1389,12 @@
       "matched": [
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "IB2600592467",
-      "name": "GL-Cs-05: Đánh giá nhu cầu nâng cao năng lực, đào tạo, làm cơ sở thiết kế, thực hiện chương trình phát triển năng lực của cán bộ nông, lâm nghiệp và các thành viên cộng đồng về QLRDVCĐ",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600587510",
-      "name": "Gói thầu số 59/2027/GS: Tư vấn giám sát thi công xây dựng công trình: Nhà nghỉ ca, nhà kho, nhà để xe Điện lực Đak Đoa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600089831",
-      "name": "Cung cấp và lắp đặt Tivi cho nhà trường",
-      "investor": "Trường TH Chư Păh, Xã Chư Păh, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600587150",
-      "name": "Gói thầu 26.34/HH: Cung cấp Biến dòng, biến áp 22, 35kV",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600590525",
-      "name": "26.60.HH Cung cấp ắc quy phục vụ sửa chữa lớn VTCNTT",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600083180",
-      "name": "Gói thầu cung cấp dịch vụ cho thuê hội trường và dịch vụ ăn uống phục vụ Hội nghị kỷ niệm 10 năm thành lập Agribank chi nhánh Đông Gia Lai",
-      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH ĐÔNG GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600077905",
-      "name": "Truyền hình trực tiếp Chương trình nghệ thuật “Đêm hội cồng chiêng Gia Lai năm 2026”",
-      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1183,
-  "afterCount": 1183,
+  "beforeCount": 1187,
+  "afterCount": 1187,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
