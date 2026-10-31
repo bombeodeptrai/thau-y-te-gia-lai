@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-31T05:40:42.756Z",
+  "rescuedAt": "2026-10-31T14:33:04.599Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 237,
+      "count": 234,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 641,
+      "count": 625,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 57,
+      "count": 55,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 103,
+      "count": 95,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 92,
+      "count": 87,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 112,
+      "count": 109,
       "error": ""
     },
     {
@@ -210,13 +210,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 69,
+      "count": 67,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 36,
+      "count": 32,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -281,22 +281,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1455,
-  "acceptedCount": 56,
-  "rejectedCount": 1399,
+  "candidateCount": 1414,
+  "acceptedCount": 55,
+  "rejectedCount": 1359,
   "rejectedReasons": {
-    "excluded:tu van": 521,
-    "excluded:xay dung": 350,
-    "insufficient-medical-context": 312,
-    "excluded:sua chua": 47,
+    "excluded:tu van": 505,
+    "excluded:xay dung": 338,
+    "insufficient-medical-context": 306,
+    "excluded:sua chua": 44,
     "excluded:xay lap": 43,
-    "excluded:cai tao": 34,
-    "excluded:thuc pham": 17,
+    "excluded:cai tao": 33,
+    "excluded:thuc pham": 16,
     "excluded:tham dinh": 12,
     "excluded:bao ve": 10,
     "excluded:trang phuc": 8,
-    "excluded:bao hiem": 7,
     "excluded:bao tri": 6,
+    "excluded:bao hiem": 6,
     "excluded:may tinh": 4,
     "excluded:kiem dinh": 3,
     "excluded:giam sat thi cong": 3,

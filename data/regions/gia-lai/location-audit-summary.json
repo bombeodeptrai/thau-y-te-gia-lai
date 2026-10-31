@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-31T05:40:02.782Z",
+  "auditedAt": "2026-10-31T14:32:26.052Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 641,
+      "count": 625,
       "error": ""
     },
     {
@@ -80,7 +80,7 @@
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 57,
+      "count": 55,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 103,
+      "count": 95,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 92,
+      "count": 87,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 112,
+      "count": 109,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 69,
+      "count": 67,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 36,
+      "count": 32,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -271,21 +271,21 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1395,
-  "acceptedCount": 53,
-  "rejectedCount": 1342,
+  "candidateCount": 1354,
+  "acceptedCount": 52,
+  "rejectedCount": 1302,
   "rejectedReasons": {
-    "excluded:tu van": 519,
-    "excluded:xay dung": 336,
-    "insufficient-medical-context": 283,
-    "excluded:sua chua": 43,
+    "excluded:tu van": 503,
+    "excluded:xay dung": 324,
+    "insufficient-medical-context": 277,
+    "excluded:sua chua": 40,
     "excluded:xay lap": 39,
-    "excluded:cai tao": 34,
-    "excluded:thuc pham": 17,
+    "excluded:cai tao": 33,
+    "excluded:thuc pham": 16,
     "excluded:tham dinh": 12,
     "excluded:bao ve": 10,
     "excluded:trang phuc": 8,
-    "excluded:bao hiem": 7,
+    "excluded:bao hiem": 6,
     "excluded:bao tri": 6,
     "excluded:may tinh": 4,
     "excluded:giam sat thi cong": 3,
