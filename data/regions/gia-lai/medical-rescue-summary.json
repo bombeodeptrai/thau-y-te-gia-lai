@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-31T14:33:04.599Z",
+  "rescuedAt": "2026-10-31T20:00:21.377Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 55,
+      "count": 53,
       "error": ""
     },
     {
@@ -281,11 +281,11 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1414,
+  "candidateCount": 1412,
   "acceptedCount": 55,
-  "rejectedCount": 1359,
+  "rejectedCount": 1357,
   "rejectedReasons": {
-    "excluded:tu van": 505,
+    "excluded:tu van": 503,
     "excluded:xay dung": 338,
     "insufficient-medical-context": 306,
     "excluded:sua chua": 44,
@@ -1413,8 +1413,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1187,
-  "afterCount": 1187,
+  "beforeCount": 1186,
+  "afterCount": 1186,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
