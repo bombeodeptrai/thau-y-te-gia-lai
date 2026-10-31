@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-10-31T06:02:05.813Z",
+  "rescuedAt": "2026-10-31T12:52:40.354Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 107,
+      "count": 106,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 324,
+      "count": 310,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 29,
+      "count": 21,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 42,
+      "count": 43,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 43,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 48,
+      "count": 45,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 18,
+      "count": 16,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 673,
+  "candidateCount": 652,
   "acceptedCount": 28,
-  "rejectedCount": 645,
+  "rejectedCount": 624,
   "rejectedReasons": {
-    "excluded:tu van": 229,
-    "excluded:xay dung": 169,
-    "insufficient-medical-context": 140,
+    "excluded:tu van": 210,
+    "excluded:xay dung": 170,
+    "insufficient-medical-context": 138,
     "excluded:xay lap": 28,
     "excluded:sua chua": 27,
     "excluded:cai tao": 13,
@@ -298,7 +298,6 @@
     "excluded:may tinh": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
-    "excluded:tham dinh": 2,
     "excluded:may chu": 1,
     "excluded:may in": 1,
     "excluded:cap dien": 1,
@@ -310,6 +309,7 @@
     "excluded:duong day": 1,
     "excluded:trang phuc": 1,
     "excluded:cong nghe thong tin": 1,
+    "excluded:tham dinh": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1
   },
