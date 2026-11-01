@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-01T06:03:29.752Z",
+  "rescuedAt": "2026-11-01T15:07:53.768Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 232,
+      "count": 229,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 611,
+      "count": 608,
       "error": ""
     },
     {
@@ -66,13 +66,13 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 22,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -132,13 +132,13 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 96,
+      "count": 95,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 87,
+      "count": 86,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 66,
+      "count": 62,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 41,
+      "count": 36,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 42,
+      "count": 41,
       "error": ""
     },
     {
@@ -281,24 +281,24 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1390,
+  "candidateCount": 1364,
   "acceptedCount": 55,
-  "rejectedCount": 1335,
+  "rejectedCount": 1309,
   "rejectedReasons": {
-    "excluded:tu van": 495,
-    "excluded:xay dung": 333,
+    "excluded:tu van": 486,
+    "excluded:xay dung": 322,
     "insufficient-medical-context": 300,
-    "excluded:sua chua": 47,
+    "excluded:sua chua": 45,
     "excluded:xay lap": 43,
     "excluded:cai tao": 29,
     "excluded:thuc pham": 16,
     "excluded:tham dinh": 12,
-    "excluded:bao ve": 10,
-    "excluded:trang phuc": 8,
+    "excluded:bao ve": 9,
     "excluded:bao tri": 6,
+    "excluded:trang phuc": 6,
     "excluded:bao hiem": 6,
-    "excluded:may tinh": 4,
     "excluded:kiem dinh": 3,
+    "excluded:may tinh": 3,
     "excluded:bao duong": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
@@ -957,6 +957,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600596700",
+      "name": "Bổ sung thiết bị môn Khoa học tự nhiên (phần Vật lí) cho 15 trường trung học cơ sở; Bổ sung thiết bị môn Vật lí cho 25 trường trung học phổ thông",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600594324",
       "name": "26-88/XL: thi công sửa chữa nhà trực ca Điện lực Phù Mỹ",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1397,18 +1406,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600561869",
-      "name": "Mua sắm",
-      "investor": "Ban quản lý xã Phú Túc",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
       ]
     }
   ],
