@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-01T06:28:16.180Z",
+  "rescuedAt": "2026-11-01T21:41:39.537Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 108,
+      "count": 109,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 298,
+      "count": 299,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 16,
+      "count": 8,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 12,
+      "count": 10,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 644,
+  "candidateCount": 636,
   "acceptedCount": 28,
-  "rejectedCount": 616,
+  "rejectedCount": 608,
   "rejectedReasons": {
-    "excluded:tu van": 202,
-    "excluded:xay dung": 168,
-    "insufficient-medical-context": 139,
+    "excluded:tu van": 201,
+    "excluded:xay dung": 159,
+    "insufficient-medical-context": 141,
     "excluded:sua chua": 30,
     "excluded:xay lap": 27,
     "excluded:cai tao": 12,
@@ -774,6 +774,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600596700",
+      "name": "Bổ sung thiết bị môn Khoa học tự nhiên (phần Vật lí) cho 15 trường trung học cơ sở; Bổ sung thiết bị môn Vật lí cho 25 trường trung học phổ thông",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600594324",
       "name": "26-88/XL: thi công sửa chữa nhà trực ca Điện lực Phù Mỹ",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1215,24 +1224,12 @@
       "matched": [
         "xay lap"
       ]
-    },
-    {
-      "notifyNo": "IB2600561869",
-      "name": "Mua sắm",
-      "investor": "Ban quản lý xã Phú Túc",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1186,
-  "afterCount": 1186,
+  "beforeCount": 1185,
+  "afterCount": 1185,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
