@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-10-31T23:24:55.010Z",
+  "auditedAt": "2026-11-01T06:02:46.479Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 625,
+      "count": 611,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 36,
+      "count": 38,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 18,
+      "count": 15,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 95,
+      "count": 96,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 109,
+      "count": 108,
       "error": ""
     },
     {
@@ -200,13 +200,13 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 67,
+      "count": 66,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 32,
+      "count": 35,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 43,
+      "count": 41,
       "error": ""
     },
     {
@@ -271,16 +271,16 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1352,
+  "candidateCount": 1334,
   "acceptedCount": 52,
-  "rejectedCount": 1300,
+  "rejectedCount": 1282,
   "rejectedReasons": {
-    "excluded:tu van": 501,
-    "excluded:xay dung": 324,
-    "insufficient-medical-context": 277,
-    "excluded:sua chua": 40,
+    "excluded:tu van": 493,
+    "excluded:xay dung": 322,
+    "insufficient-medical-context": 272,
+    "excluded:sua chua": 43,
     "excluded:xay lap": 39,
-    "excluded:cai tao": 33,
+    "excluded:cai tao": 29,
     "excluded:thuc pham": 16,
     "excluded:tham dinh": 12,
     "excluded:bao ve": 10,
@@ -288,9 +288,9 @@
     "excluded:bao hiem": 6,
     "excluded:bao tri": 6,
     "excluded:may tinh": 4,
-    "excluded:giam sat thi cong": 3,
-    "excluded:cong nghe thong tin": 3,
+    "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
+    "excluded:cong nghe thong tin": 2,
     "excluded:duong day": 2,
     "excluded:kiem dinh": 2,
     "excluded:in an": 1,
@@ -952,6 +952,48 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600090831",
+      "name": "Sản xuất phóng sự truyền hình",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600594324",
+      "name": "26-88/XL: thi công sửa chữa nhà trực ca Điện lực Phù Mỹ",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600592900",
+      "name": "26-44/SC: thi công sửa chữa Xe Ford Ranger 4x4 MT XL - màu bạc (81C-013.07)",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600593078",
+      "name": "26-45/SC: thi công Sửa chữa lớn xe ô tô tải thùng kín Dongben, biển kiểm soát 77C-207.24",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
       "notifyNo": "DC2600076986",
       "name": "Tư vấn Giám sát khảo sát. Dự án: Trường Trung học phổ thông Hoài Ân. Hạng mục: Xây mới nhà học 03 tầng 15 phòng học lý thuyết; nhà thi đấu đa năng; các hạng mục phụ và trang thiết bị.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1349,50 +1391,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600594352",
-      "name": "Tư vấn lập Báo cáo kinh tế - kỹ thuật",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600090626",
-      "name": "Tư vấn lập điều chỉnh cục bộ Quy hoạch chung xã Bàu Cạn, tỉnh Gia Lai",
-      "investor": "Phòng Kinh tế xã Bàu Cạn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600587573",
-      "name": "Gói thầu số 59/2027/XL: Thi công xây dựng công trình: Nhà nghỉ ca, nhà kho, nhà để xe Điện lực Đak Đoa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600591349",
-      "name": "26-87/XL: thi công sửa chữa công trình Sửa chữa Máy biến áp TBA 110kV Phù Cát + Phù Mỹ + Long Mỹ năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
       ]
     }
   ],
