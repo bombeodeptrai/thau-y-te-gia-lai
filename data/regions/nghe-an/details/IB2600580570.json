@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "13f5a05e-7447-45f5-a3b9-9f8e733850d1",
+      "contractorCode": "vn0108708260",
+      "taxCode": "0108708260",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SEMED",
+      "status": "lost",
+      "lotNo": "BP2600889142",
+      "lotName": "Gói thầu số 04: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát Essenta DR/Philips tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 49500000,
+      "finalPrice": 49500000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-10-29T15:45:50.156",
+      "models": []
+    },
+    {
+      "id": "e51bfa0f-43bd-4d6d-a747-8978507a2657",
+      "contractorCode": "vn2902059076",
+      "taxCode": "2902059076",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM",
+      "status": "won",
+      "lotNo": "BP2600889142",
+      "lotName": "Gói thầu số 04: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát Essenta DR/Philips tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 46800000,
+      "finalPrice": 46800000,
+      "winningPrice": 46800000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:45:50.156",
+      "models": [
+        "Dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát: - Model: Essenta DR - Hãng sản xuất: Philips - Số lượng: 01 Hệ thống"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2026916135250432",
+      "name": "Dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát: - Model: Essenta DR - Hãng sản xuất: Philips - Số lượng: 01 Hệ thống",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 46800000,
+      "amount": 46800000,
+      "contractorCode": "vn2902059076",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "4165/QĐ-BV",
+      "decisionDate": "2026-10-29T15:37:47",
+      "resultPublishedDate": "2026-10-29T15:46:00"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -64,6 +120,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:38:12.971Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:12:22.414Z"
 }

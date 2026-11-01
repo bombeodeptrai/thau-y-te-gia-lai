@@ -1,25 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "ca7808b2-a53a-43f7-84fe-3a4b58399bcc",
+      "id": "1abb6f29-7ad2-4d60-9c66-dddfbf0a9279",
       "contractorCode": "vn0301140748",
-      "taxCode": "",
+      "taxCode": "0301140748",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600829560",
-      "lotName": "Gói thầu BD-01/2026: Gói thầu cung ứng thuốc biệt dược gốc",
+      "lotName": "Phospholipid chiết xuất từ phổi lợn",
       "bidPrice": 209850000,
       "finalPrice": 209850000,
-      "winningPrice": 0,
+      "winningPrice": 209850000,
       "reason": "",
-      "submittedAt": "2026-10-15T08:02:42.44",
-      "models": []
+      "submittedAt": "2026-10-28T10:32:17.313",
+      "models": [
+        "Curosurf"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600829560",
+      "name": "Curosurf",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ý",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 15,
+      "unitPrice": 13990000,
+      "amount": 209850000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "BP2600829560",
+      "decisionNo": "790/QĐ-BVSN",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T10:32:27"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +70,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:51:09.243Z"
+  "fetchedAt": "2026-11-01T21:22:43.532Z"
 }

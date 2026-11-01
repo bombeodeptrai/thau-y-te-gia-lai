@@ -1,55 +1,94 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "2ed3e36d-1212-46d7-81f2-7b1fbc757333",
+      "id": "a61cf866-084c-48e6-9c6d-00d5451619a1",
       "contractorCode": "vn5900980625",
-      "taxCode": "",
+      "taxCode": "5900980625",
       "contractorName": "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600755943",
       "lotName": "Cung cấp Oxy y tế phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Phạm Ngọc Thạch Quảng Nam",
       "bidPrice": 518000000,
       "finalPrice": 518000000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-30T11:17:01.986",
+      "reason": "Không tiếp tục đánh giá E-HSDT theo phương pháp giá thấp nhất sau khi đã xác định nhà thầu xếp hạng tiếp theo đáp ứng yêu cầu của E-HSMT và được đề nghị trúng thầu.",
+      "submittedAt": "2026-10-29T09:31:09.452",
       "models": []
     },
     {
-      "id": "33d22f06-2d47-4792-8fb0-7793ce5af144",
+      "id": "bb5f474d-d652-4e67-9bab-30e32be201bc",
       "contractorCode": "vn0100103016",
-      "taxCode": "",
+      "taxCode": "0100103016",
       "contractorName": "CÔNG TY CỔ PHẦN KHÍ CÔNG NGHIỆP VIỆT NAM",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600755943",
       "lotName": "Cung cấp Oxy y tế phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Phạm Ngọc Thạch Quảng Nam",
       "bidPrice": 342144000,
       "finalPrice": 342144000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-30T11:17:02.178",
+      "reason": "E-HSDT không đáp ứng yêu cầu kỹ thuật về hồ sơ chứng minh kiểm định an toàn bình chứa Oxy y tế theo E-HSMT. Tài liệu làm rõ được nộp sau thời hạn quy định không được xem xét theo điểm 23.3 Mục 23 Chương I E-HSMT; do đó, nhà thầu không đáp ứng yêu cầu kỹ thuật của gói thầu.",
+      "submittedAt": "2026-10-29T09:31:09.452",
       "models": []
     },
     {
-      "id": "d0462095-f21b-44f9-8616-bcc8a219e90d",
+      "id": "3d494905-a277-435a-96db-bdada5074939",
       "contractorCode": "vn0400100591",
-      "taxCode": "",
+      "taxCode": "0400100591",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600755943",
       "lotName": "Cung cấp Oxy y tế phục vụ công tác khám bệnh, chữa bệnh tại Bệnh viện Phạm Ngọc Thạch Quảng Nam",
       "bidPrice": 389664000,
       "finalPrice": 389664000,
-      "winningPrice": 0,
+      "winningPrice": 389664000,
       "reason": "",
-      "submittedAt": "2026-09-30T11:17:02.339",
+      "submittedAt": "2026-10-29T09:31:09.452",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "b2227598-eaaf-4092-b1d4-3f134b224e43",
+      "name": "Oxy 1,5m3",
+      "model": "Oxy 1,5m3",
+      "brand": "DAGASCO",
+      "manufacturer": "Công ty Cổ phần Dưỡng khí Đà Nẵng",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Chất lượng sản phẩm: Hàm lượng ≥ 99,5% - Quy cách: đóng gói trong chai thép không hàn, áp suất ≥ 150kg/cm2 (≈ 150 bar), dung tích chai 10 lít, chứa được 1,5m3 oxy - Chai được kiểm định theo danh mục các loại máy, thiết bị, vật tư, chất có yêu cầu nghiêm ngặt về an toàn, vệ sinh lao động (Danh mục kèm theo thông tư số 36/2019/TT-BLĐTBXH ngày 30/12/2019 của Bộ Lao động - Thương binh và xã hội). - Nhãn hiệu DAGASCO, Việt Nam.",
+      "unit": "Bình",
+      "quantity": 200,
+      "unitPrice": 4320,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG"
+      ],
+      "decisionNo": "344/QĐ-BVPNT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T09:31:34"
+    },
+    {
+      "id": "cc37b5ca-d94a-4203-a9b7-784c8909766b",
+      "name": "Oxy 6m3",
+      "model": "Oxy 6m3",
+      "brand": "DAGASCO",
+      "manufacturer": "Công ty Cổ phần Dưỡng khí Đà Nẵng",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Chất lượng sản phẩm: Hàm lượng ≥ 99,5% - Quy cách: đóng gói trong chai thép không hàn, áp suất ≥ 150kg/cm2 (≈ 150 bar), dung tích chai 40 lít, chứa được 6m3 oxy - Chai được kiểm định theo danh mục các loại máy, thiết bị, vật tư, chất có yêu cầu nghiêm ngặt về an toàn, vệ sinh lao động (Danh mục kèm theo thông tư số 36/2019/TT-BLĐTBXH ngày 30/12/2019 của Bộ Lao động - Thương binh và xã hội). - Nhãn hiệu DAGASCO, Việt Nam.",
+      "unit": "Bình",
+      "quantity": 6000,
+      "unitPrice": 64800,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG"
+      ],
+      "decisionNo": "344/QĐ-BVPNT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T09:31:34"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +113,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:45:55.550Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:18:54.342Z"
 }

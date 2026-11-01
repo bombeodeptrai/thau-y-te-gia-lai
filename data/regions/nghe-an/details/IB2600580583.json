@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "5d4bdabf-4c9e-40e4-aad2-278a42a79607",
+      "contractorCode": "vn0106587405",
+      "taxCode": "0106587405",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ VÀ DỊCH VỤ THÁI BÌNH DƯƠNG",
+      "status": "won",
+      "lotNo": "BP2600889112",
+      "lotName": "Gói thầu số 01: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy chụp cắt lớp vi tính 64 dãy, 64 lát cắt/vòng quay Ingenuity CT/Philips tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 315000000,
+      "finalPrice": 315000000,
+      "winningPrice": 315000000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:48:22.837",
+      "models": [
+        "Dịch vụ bảo trì, bảo dưỡng Máy chụp cắt lớp vi tính 64 dãy, 64 lát cắt/vòng quay - Model: Ingenuity CT - Hãng sản xuất: Philips - Số lượng: 01 Hệ thống"
+      ]
+    },
+    {
+      "id": "fa6b34e8-51cc-466c-a987-bb7377465a33",
+      "contractorCode": "vn0108708260",
+      "taxCode": "0108708260",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SEMED",
+      "status": "lost",
+      "lotNo": "BP2600889112",
+      "lotName": "Gói thầu số 01: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy chụp cắt lớp vi tính 64 dãy, 64 lát cắt/vòng quay Ingenuity CT/Philips tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 349200000,
+      "finalPrice": 349200000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-10-29T15:48:22.837",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "202691613585140",
+      "name": "Dịch vụ bảo trì, bảo dưỡng Máy chụp cắt lớp vi tính 64 dãy, 64 lát cắt/vòng quay - Model: Ingenuity CT - Hãng sản xuất: Philips - Số lượng: 01 Hệ thống",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 315000000,
+      "amount": 315000000,
+      "contractorCode": "vn0106587405",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ VÀ DỊCH VỤ THÁI BÌNH DƯƠNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "4168/QĐ-BV",
+      "decisionDate": "2026-10-29T15:23:04",
+      "resultPublishedDate": "2026-10-29T15:48:34"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -64,6 +120,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:38:12.812Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:12:21.817Z"
 }

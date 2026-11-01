@@ -1,9 +1,80 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "a4f276f8-71e2-4c13-99a7-27c23abbb648",
+      "contractorCode": "vn0108708260",
+      "taxCode": "0108708260",
+      "contractorName": "CÔNG TY TNHH CÔNG NGHỆ SEMED",
+      "status": "won",
+      "lotNo": "BP2600889160",
+      "lotName": "Gói thầu số 05: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát GF 50/ Samsung tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 43000000,
+      "finalPrice": 43000000,
+      "winningPrice": 43000000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:45:02.867",
+      "models": [
+        "Dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát: - Model: GF 50 - Hãng sản xuất: Samsung - Số lượng: 01 Hệ thống"
+      ]
+    },
+    {
+      "id": "3ce0bc06-ec60-436f-80be-88656a4f608e",
+      "contractorCode": "vn2901837245",
+      "taxCode": "2901837245",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ MIỀN TRUNG",
+      "status": "lost",
+      "lotNo": "BP2600889160",
+      "lotName": "Gói thầu số 05: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát GF 50/ Samsung tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 44000000,
+      "finalPrice": 44000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-10-29T15:45:02.867",
+      "models": []
+    },
+    {
+      "id": "6731c2b3-c4d3-4167-aa4c-aec52cc3f3f5",
+      "contractorCode": "vn2902059076",
+      "taxCode": "2902059076",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM",
+      "status": "lost",
+      "lotNo": "BP2600889160",
+      "lotName": "Gói thầu số 05: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát GF 50/ Samsung tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 48000000,
+      "finalPrice": 48000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 3",
+      "submittedAt": "2026-10-29T15:45:02.867",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "202691614729975",
+      "name": "Dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát: - Model: GF 50 - Hãng sản xuất: Samsung - Số lượng: 01 Hệ thống",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 43000000,
+      "amount": 43000000,
+      "contractorCode": "vn0108708260",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ SEMED"
+      ],
+      "lotNo": "",
+      "decisionNo": "4164/QĐ-BV",
+      "decisionDate": "2026-10-29T15:39:46",
+      "resultPublishedDate": "2026-10-29T15:45:10"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -64,6 +135,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:38:11.743Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:12:20.795Z"
 }

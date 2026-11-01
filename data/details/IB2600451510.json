@@ -1,40 +1,94 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "8a08ce0e-3da4-467e-bccf-ca684fdf50ab",
+      "id": "2fcb1c8d-2544-4e1a-b75d-efaf15d4e82f",
       "contractorCode": "vn0314701454",
-      "taxCode": "",
+      "taxCode": "0314701454",
       "contractorName": "CÔNG TY CỔ PHẦN PHÁT TRIỂN THƯƠNG MẠI CÔNG NGHỆ SINH PHẨM NAM VIỆT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600629515",
       "lotName": "Gói thầu mua vi chất dinh dưỡng/sản phẩm dinh dưỡng cho trẻ em dưới 16 tuổi trên địa bàn tỉnh Lâm Đồng thuộc Chương trình mục tiêu quốc gia Giảm nghèo bền vững năm 2026",
       "bidPrice": 4676562000,
       "finalPrice": 4676562000,
-      "winningPrice": 0,
+      "winningPrice": 4676562000,
       "reason": "",
-      "submittedAt": "2026-10-05T15:26:32.747",
+      "submittedAt": "2026-10-26T14:44:40.588",
       "models": []
     },
     {
-      "id": "3653db49-8a34-4537-a10d-eaf9ea5fd11f",
+      "id": "922f2a74-da9e-4f5b-bd85-aefe6fe1cbef",
       "contractorCode": "vn0316291700",
-      "taxCode": "",
+      "taxCode": "0316291700",
       "contractorName": "CÔNG TY TNHH NUTRILAVIE",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600629515",
       "lotName": "Gói thầu mua vi chất dinh dưỡng/sản phẩm dinh dưỡng cho trẻ em dưới 16 tuổi trên địa bàn tỉnh Lâm Đồng thuộc Chương trình mục tiêu quốc gia Giảm nghèo bền vững năm 2026",
       "bidPrice": 4783699800,
       "finalPrice": 4783699800,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-10-05T15:26:32.926",
+      "reason": "Xếp hạng II",
+      "submittedAt": "2026-10-26T14:44:40.588",
+      "models": []
+    },
+    {
+      "id": "317f3efa-5d29-484b-9dec-ec7e3c0853ab",
+      "contractorCode": "vn0110128958",
+      "taxCode": "0110128958",
+      "contractorName": "CÔNG TY TNHH THỰC PHẨM DINH DƯỠNG KẾT ANH",
+      "status": "lost",
+      "lotNo": "BP2600629515",
+      "lotName": "Gói thầu mua vi chất dinh dưỡng/sản phẩm dinh dưỡng cho trẻ em dưới 16 tuổi trên địa bàn tỉnh Lâm Đồng thuộc Chương trình mục tiêu quốc gia Giảm nghèo bền vững năm 2026",
+      "bidPrice": 4783699800,
+      "finalPrice": 4783699800,
+      "winningPrice": 0,
+      "reason": "Xếp hạng II",
+      "submittedAt": "2026-10-26T14:44:40.588",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "16b61f1e-8984-4bca-b0ec-ad60d50cf618",
+      "name": "Sản phẩm bổ sung vi chất dinh dưỡng cho trẻ em từ 5 đến dưới 16 tuổi bị suy dinh dưỡng. (Sản phẩm 2)",
+      "model": "MULTIVITA",
+      "brand": "Thực phẩm bảo vệ sức khỏe MULTI-VITA",
+      "manufacturer": "Công ty cổ phần công nghệ sinh phẩm Nam Việt",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Trong 1 gói 1 g có chứa: Sắt: 12,5 mg Kẽm: 5 mg Vitamin A: 300 mcg Vitamin C: 30 mg Acid Folic: 80 mcg + Dạng bào chế: dạng bột + Đường dùng: đường uống + Quy cách: Hộp 60 gói/Gói 1 g + GPCB: 5841/2024/ĐKSP",
+      "unit": "Liều",
+      "quantity": 2112660,
+      "unitPrice": 1500,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN PHÁT TRIỂN THƯƠNG MẠI CÔNG NGHỆ SINH PHẨM NAM VIỆT"
+      ],
+      "decisionNo": "714/QĐ-KSBT",
+      "decisionDate": "2026-10-26T23:59:59",
+      "resultPublishedDate": "2026-10-26T14:44:56"
+    },
+    {
+      "id": "3f90a3f3-917b-4e8c-83c2-694cca954732",
+      "name": "Sản phẩm bổ sung vi chất dinh dưỡng cho trẻ em từ 6 tháng đến 59 tháng tuổi bị suy dinh dưỡng thấp còi. ( Sản phẩm 1)",
+      "model": "ATVITA",
+      "brand": "Thực phẩm bảo vệ sức khỏe ATVITA",
+      "manufacturer": "Công ty TNHH Pharmacy Global Diamond",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025",
+      "specification": "Trong 1 gói 1 g có chứa: Vitamin C: 30 mg Sắt: 10 mg Vitamin B3: 6 mg Vitamin E: 5 mg Kẽm: 4,1 mg Đồng: 0,56 mg Vitamin B1: 0,5 mg Vitamin B2: 0,5 mg Vitamin B6: 0,5 mg Vitamin A: 300 mcg Acid Folic: 90 mcg Iod: 90 mcg Selen: 17 mcg Vitamin D3: 5 mcg Vitamin B12: 0,9 mcg + Dạng bào chế: dạng bột cốm + Đường dùng: đường uống + Quy cách: Hộp 60 gói/Gói 1g + GPCB: 6514/2024/ĐKSP",
+      "unit": "Liều",
+      "quantity": 837540,
+      "unitPrice": 1800,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN PHÁT TRIỂN THƯƠNG MẠI CÔNG NGHỆ SINH PHẨM NAM VIỆT"
+      ],
+      "decisionNo": "714/QĐ-KSBT",
+      "decisionDate": "2026-10-26T23:59:59",
+      "resultPublishedDate": "2026-10-26T14:44:56"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +113,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:55:04.767Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:26:18.307Z"
 }

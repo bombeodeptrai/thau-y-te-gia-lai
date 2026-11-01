@@ -1,25 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "4811894b-0245-4732-a500-b584fef1c48c",
+      "id": "3dc5c2b7-0901-400d-b707-d0fb1a1c814e",
       "contractorCode": "vn0312949315",
-      "taxCode": "",
+      "taxCode": "0312949315",
       "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ Y TẾ TIẾN PHÁT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600550996",
       "lotName": "Mua sắm thiết bị phục vụ chạy thận nhân tạo",
       "bidPrice": 3880000000,
       "finalPrice": 3880000000,
-      "winningPrice": 0,
+      "winningPrice": 3880000000,
       "reason": "",
-      "submittedAt": "2026-09-04T10:03:33.625",
+      "submittedAt": "2026-10-28T16:41:01.031",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "b8db887a-f23d-4124-b497-38c54ff8e76c",
+      "name": "Máy thận nhân tạo",
+      "model": "4008S version: V10 /M204001",
+      "brand": "4008S\nversion: V10",
+      "manufacturer": "Fresenius Medical Care Deutschland GmbH Schweinfurt Plant",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Chi tiết tại danh mục đính kèm quyết định",
+      "unit": "Máy",
+      "quantity": 10,
+      "unitPrice": 358000000,
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ Y TẾ TIẾN PHÁT"
+      ],
+      "decisionNo": "2016/QĐ-BVNT",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:41:14"
+    },
+    {
+      "id": "6ca4b785-13de-4fb4-b5b2-46cee8b9b07f",
+      "name": "Ghế tựa y tế đa năng dùng trong bệnh viện",
+      "model": "PA-8210",
+      "brand": "PA-8210",
+      "manufacturer": "PT. PARAMOUNT BED INDONESIA",
+      "origin": "INDONESIA",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Chi tiết tại danh mục đính kèm quyết định",
+      "unit": "Cái",
+      "quantity": 5,
+      "unitPrice": 60000000,
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ Y TẾ TIẾN PHÁT"
+      ],
+      "decisionNo": "2016/QĐ-BVNT",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:41:14"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:54:14.225Z"
+  "fetchedAt": "2026-11-01T21:25:34.244Z"
 }

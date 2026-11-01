@@ -1,25 +1,64 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "6f2b7c1b-8490-4afb-8f41-4a1c0b7ada4a",
+      "id": "cdc6e77b-8d96-489b-9c9f-79d782de4e3b",
       "contractorCode": "vn0310175056",
-      "taxCode": "",
+      "taxCode": "0310175056",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT Y SINH",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600596817",
       "lotName": "Mua sắm thiết bị y tế phục vụ khám chữa bệnh của Bệnh viện ĐKKV La Gi",
       "bidPrice": 2210000000,
       "finalPrice": 2210000000,
-      "winningPrice": 0,
+      "winningPrice": 2210000000,
       "reason": "",
-      "submittedAt": "2026-10-01T10:22:30.06",
+      "submittedAt": "2026-10-28T10:43:28.081",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "b4276c1e-a51d-4dcc-8f01-976c45034099",
+      "name": "MÁY GÂY MÊ",
+      "model": "Prima 450 Anaesthetic Machine + BSM-3562",
+      "brand": "Penlon + Nihon Kohden",
+      "manufacturer": "Penlon Limited + Nihon Kohden Tomioka Corporation Tomioka Production Center.",
+      "origin": "Vương quốc Anh + Nhật Bản",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 1120000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT Y SINH"
+      ],
+      "decisionNo": "761/QĐ-BVLG",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T10:43:51"
+    },
+    {
+      "id": "1811111b-01a1-4b2e-a820-16211d2581ee",
+      "name": "BÀN MỔ (BÀN MỔ ĐA NĂNG)",
+      "model": "KM-401",
+      "brand": "Paramount Bed",
+      "manufacturer": "Takeuchi Manufacturing Co., Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Theo bảng đáp ứng TNKT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 1090000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT Y SINH"
+      ],
+      "decisionNo": "761/QĐ-BVLG",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T10:43:51"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +84,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:55:11.702Z"
+  "fetchedAt": "2026-11-01T21:26:26.192Z"
 }

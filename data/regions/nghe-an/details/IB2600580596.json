@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "46078541-92bf-43af-9f25-8e5cbc85faf6",
+      "contractorCode": "vn0101178800",
+      "taxCode": "0101178800",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ VIỆT NHẬT",
+      "status": "lost",
+      "lotNo": "BP2600889131",
+      "lotName": "Gói thầu số 03: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát GXR-40S/DRGEM tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 36000000,
+      "finalPrice": 36000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-10-29T15:46:43.099",
+      "models": []
+    },
+    {
+      "id": "0d148d32-0ace-4bce-9164-8f03610a4627",
+      "contractorCode": "vn2901837245",
+      "taxCode": "2901837245",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ MIỀN TRUNG",
+      "status": "won",
+      "lotNo": "BP2600889131",
+      "lotName": "Gói thầu số 03: Cung cấp dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát GXR-40S/DRGEM tại Bệnh viện Hữu nghị đa khoa Nghệ An",
+      "bidPrice": 35500000,
+      "finalPrice": 35500000,
+      "winningPrice": 35500000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:46:43.099",
+      "models": [
+        "Dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát: - Model: GXR-40S - Hãng sản xuất: DRGEM - Số lượng: 01 Hệ thống"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "202691614454488",
+      "name": "Dịch vụ bảo trì, bảo dưỡng Máy X-quang kỹ thuật số chụp tổng quát: - Model: GXR-40S - Hãng sản xuất: DRGEM - Số lượng: 01 Hệ thống",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 35500000,
+      "amount": 35500000,
+      "contractorCode": "vn2901837245",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ MIỀN TRUNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "4166/QĐ-BV",
+      "decisionDate": "2026-10-29T15:35:45",
+      "resultPublishedDate": "2026-10-29T15:46:59"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -64,6 +120,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:38:11.971Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:12:21.405Z"
 }

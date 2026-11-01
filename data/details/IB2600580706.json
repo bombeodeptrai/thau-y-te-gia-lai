@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "ed20d715-da84-4592-9695-052bc5b41e3e",
+      "contractorCode": "vn0300470246",
+      "taxCode": "0300470246",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG VIDIPHA",
+      "status": "won",
+      "lotNo": "BP2600896196",
+      "lotName": "Gói thầu Thuốc Generic: Mua sắm thuốc Methadone hydrocloride năm 2026",
+      "bidPrice": 59535000,
+      "finalPrice": 59535000,
+      "winningPrice": 59535000,
+      "reason": "",
+      "submittedAt": "2026-10-27T16:04:28.401",
+      "models": [
+        "Methadon"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "a0ab07b3-a8c9-4846-b8f7-5f2841ffeb1e",
+      "name": "Methadone hydrocloride",
+      "model": "Methadon",
+      "brand": "Methadon",
+      "manufacturer": "Công ty cổ phần dược phẩm trung ương Vidipha",
+      "origin": "Việt Nam",
+      "manufactureYear": "Hạn sử dụng còn lại của thuốc trúng thầu tính đến thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên; 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm. ",
+      "specification": "Hoạt chất: Methadone hydrochloride; Nồng độ, hàm lượng: 10mg/1ml; GĐKLH hoặc GPNK: 893111684824; Dạng bào chế: Dung dịch/hỗn dịch/ nhũ dịch uống; Nhóm TCKT: 4",
+      "unit": "chai/1000ml",
+      "quantity": 210,
+      "unitPrice": 283500,
+      "amount": 59535000,
+      "contractorCode": "vn0300470246",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG VIDIPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "372 /QĐ-KSBT",
+      "decisionDate": "2026-10-27T16:03:15",
+      "resultPublishedDate": "2026-10-27T16:05:18"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:44:43.549Z"
+  "fetchedAt": "2026-11-01T21:17:28.859Z"
 }

@@ -1,55 +1,380 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 14,
   "bidders": [
     {
-      "id": "c0c53d13-fe32-4978-a6a6-0ce082211830",
+      "id": "db570710-5546-4fd4-abc9-45eead51a618",
       "contractorCode": "vn0108538481",
-      "taxCode": "",
+      "taxCode": "0108538481",
       "contractorName": "Công ty TNHH Thiết bị y tế Ngôi Sao Việt",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600365867",
       "lotName": "HÓA CHẤT HUYẾT HỌC TƯƠNG THÍCH TRÊN MÁY MEK-9200",
       "bidPrice": 846099922,
       "finalPrice": 846099922,
-      "winningPrice": 0,
+      "winningPrice": 846099922,
       "reason": "",
-      "submittedAt": "2026-09-15T08:43:14.469",
-      "models": []
+      "submittedAt": "2026-10-29T16:59:16.672",
+      "models": [
+        "T436D",
+        "T493D",
+        "T496D",
+        "T438H",
+        "T438R",
+        "MEK-5DN",
+        "MEK-5DL",
+        "MEK-5DH",
+        "MEK-CAL",
+        "MK-110W",
+        "MK-RE1",
+        "MK-RE2"
+      ]
     },
     {
-      "id": "16f0ab78-e42f-4992-ad52-ba955554bd95",
+      "id": "b6bbd1d2-2ff4-4c1f-ba35-17528e36e3f2",
       "contractorCode": "vn0100985583",
-      "taxCode": "",
+      "taxCode": "0100985583",
       "contractorName": "CÔNG TY TNHH VIỆT PHAN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600365868",
       "lotName": "HÓA CHẤT TƯƠNG THÍCH TRÊN MÁY ĐIỆN GIẢI ĐỒ I-SMART 30 PRO",
       "bidPrice": 661800000,
       "finalPrice": 661800000,
-      "winningPrice": 0,
+      "winningPrice": 661800000,
       "reason": "",
-      "submittedAt": "2026-09-15T08:43:14.678",
-      "models": []
+      "submittedAt": "2026-10-29T16:59:16.672",
+      "models": [
+        "i-Smart 30 PRO Cartridge E4",
+        "i-Smart Electrolyte Quality Control"
+      ]
     },
     {
-      "id": "49dd7f8a-ba53-427d-aac4-61b15d266b2a",
+      "id": "e99cb5e3-5788-4759-88fe-8456e075cc4f",
       "contractorCode": "vn0103407083",
-      "taxCode": "",
+      "taxCode": "0103407083",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ VÀ HÓA CHẤT HÀ THÀNH",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600365868",
       "lotName": "HÓA CHẤT TƯƠNG THÍCH TRÊN MÁY ĐIỆN GIẢI ĐỒ I-SMART 30 PRO",
       "bidPrice": 661800000,
       "finalPrice": 661800000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-15T08:43:14.873",
+      "reason": "Không đạt yêu cầu về năng lực, kinh nghiệm",
+      "submittedAt": "2026-10-29T16:59:16.672",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "5d11e9ea-58d8-4cf3-ab5d-a85929abcfd8",
+      "name": "Hóa chất pha loãng dùng cho máy phân tích huyết học",
+      "model": "T436D",
+      "brand": "Isotonac·3/ MEK-640",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng làm chất pha loãng phù hợp máy phân tích huyết học Mek-9200 - Độ pH: 7.35 - 7.55 - Thành phần: Sodium chloride 0.44%, Sodium sulphate anhydrous 0.97% - Độ ổn định sau khi mở nắp: 60 ngày - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR (Tuyên bố phù hợp EU DoC số 4213). - Xuất xứ: Nhật Bản (G7)",
+      "unit": "ml",
+      "quantity": 2700000,
+      "unitPrice": 144,
+      "amount": 388800000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "49f72dd2-8830-4606-a127-eb764ce27e00",
+      "name": "Hóa chất ly giải hồng cầu dùng cho máy phân tích huyết học để đo Hemoglobin",
+      "model": "T493D",
+      "brand": "Hemolynac·310/ MK-310W",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng làm chất ly giải phù hợp máy phân tích huyết học Mek-9200 - Độ pH: 7.0 - 7.6 - Thành phần: Dodecyltrimethylammonium chloride: < 3.0%, Cetrimonium chloride: < 0.1%, Citric acid monohydrate: < 2.0% - Độ ổn định sau khi mở nắp: 90 ngày - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR (Tuyên bố phù hợp EU DoC số 4218). - Xuất xứ: Nhật Bản (G7)",
+      "unit": "ml",
+      "quantity": 12500,
+      "unitPrice": 11600,
+      "amount": 145000000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "fce55f8f-6d8a-483c-83d8-4708731ea15b",
+      "name": "Hóa chất ly giải hồng cầu dùng cho máy phân tích huyết học để bách phân bạch cầu",
+      "model": "T496D",
+      "brand": "Hemolynac·510/ MK-510W",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng làm chất ly giải phù hợp máy phân tích huyết học Mek-9200 - Độ pH: 8.0 - 8.6 - Thành phần: Sodium alkyl ether sulphate: 0.11% - Độ ổn định sau khi mở nắp 90 ngày. - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR (Tuyên bố phù hợp EU DoC số 4219). - Xuất xứ Nhật Bản (G7)",
+      "unit": "ml",
+      "quantity": 12500,
+      "unitPrice": 13000,
+      "amount": 162500000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "916896d3-64b5-413c-8adb-2acec79801c6",
+      "name": "Hóa chất rửa dùng cho máy phân tích huyết học",
+      "model": "T438H",
+      "brand": "Cleanac·710 / MK-710W",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng làm chất rửa phù hợp máy phân tích huyết học Mek-9200 - Độ pH: 8.0 - 8.6 - Thành phần: Sodium alkyl ether sulphate: 0.069% - Độ ổn định sau khi mở nắp: 90 ngày. - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR (Tuyên bố phù hợp EU DoC số 4220). - Xuất xứ Nhật Bản (G7)",
+      "unit": "ml",
+      "quantity": 28000,
+      "unitPrice": 1600,
+      "amount": 44800000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "40770ebf-b528-451a-a221-370a5c7b4b3a",
+      "name": "Hóa chất rửa dùng cho máy phân tích huyết học loại đậm đặc",
+      "model": "T438R",
+      "brand": "Cleanac·810/ MK-810W",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng làm chất rửa phù hợp máy phân tích huyết học Mek-9200 - Độ pH: 10 - 13 - Thành phần: Sodium hypochlorite: 6.1%, Sodium hydroxide <0.5% - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR (Tuyên bố phù hợp EU DoC số 4221). - Xuất xứ Nhật Bản (G7)",
+      "unit": "ml",
+      "quantity": 360,
+      "unitPrice": 102222,
+      "amount": 36799920,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "b78ba75e-b4dd-44c3-bfd6-2d52e3ce146d",
+      "name": "Hóa chất nội kiểm mức trung bình",
+      "model": "MEK-5DN",
+      "brand": "MEK-5DN",
+      "manufacturer": "R&D Systems, Inc.",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Chất kiểm chuẩn mức trung bình cho xét nghiệm huyết học 5 thành phần bạch cầu, phù hợp máy huyết học Mek-9200. - Độ ổn định sau khi mở nắp 14 ngày. - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR số V13 011765 0058 (Tuyên bố phù hợp EU DoC so 4207). - Xuất xứ: Hoa Kỳ (G7)",
+      "unit": "ml",
+      "quantity": 18,
+      "unitPrice": 1000000,
+      "amount": 18000000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "6bc5171e-e4fa-42ba-909d-5a8daf0c92ad",
+      "name": "Hóa chất nội kiểm mức thấp",
+      "model": "MEK-5DL",
+      "brand": "MEK-5DL",
+      "manufacturer": "R&D Systems, Inc.",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Chất kiểm chuẩn mức thấp cho xét nghiệm huyết học 5 thành phần bạch cầu, phù hợp máy huyết học Mek-9200. - Độ ổn định sau khi mở nắp 14 ngày. - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR số V13 011765 0058 (Tuyên bố phù hợp EU DoC so 4207) - Xuất xứ: Hoa Kỳ (G7)",
+      "unit": "ml",
+      "quantity": 18,
+      "unitPrice": 1000000,
+      "amount": 18000000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "902d961d-4d2a-43f5-bb98-3f933de81d5f",
+      "name": "Hóa chất nội kiểm mức cao",
+      "model": "MEK-5DH",
+      "brand": "MEK-5DH",
+      "manufacturer": "R&D Systems, Inc.",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Chất kiểm chuẩn mức cao cho xét nghiệm huyết học 5 thành phần bạch cầu, phù hợp máy huyết học Mek-9200. - Độ ổn định sau khi mở nắp 14 ngày. - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR số V13 011765 0058 (Tuyên bố phù hợp EU DoC so 4207). - Xuất xứ: Hoa Kỳ (G7)",
+      "unit": "ml",
+      "quantity": 18,
+      "unitPrice": 1000000,
+      "amount": 18000000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "001a02d8-69fa-4f0f-a683-432da537c65e",
+      "name": "Hóa chất dùng để hiệu chuẩn máy phân tích huyết học",
+      "model": "MEK-CAL",
+      "brand": "Hematology Calibrator/ MEK-CAL",
+      "manufacturer": "R&D Systems, Inc.",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng để hiệu chuẩn máy phân tích huyết học Mek-9200. - Thành phần: Hồng cầu người, bạch cầu mô phỏng và tiểu cầu của động vật có vú - Độ ổn định sau khi mở nắp: 7 ngày - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR số V13 011765 0058 (Tuyên bố phù hợp EU DoC so 4209) . - Xuất xứ: Hoa Kỳ (G7)",
+      "unit": "ml",
+      "quantity": 6,
+      "unitPrice": 900000,
+      "amount": 5400000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "07b9b42b-e494-4aee-bad9-6d741f428c51",
+      "name": "Hóa chất nhuộm dùng cho máy phân tích huyết học để đo hồng cầu lưới.",
+      "model": "MK-110W",
+      "brand": "Reticulonac / MK-110W",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Hóa chất nhuộm dùng để phân loại và đếm số lượng hồng cầu lưới phù hợp máy phân tích huyết học Mek-9200 - Độ pH: 7.2 - 8.2 - Độ ổn định sau khi mở nắp: 60 ngày - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR (Tuyên bố phù hợp EU DoC số 4217). - Xuất xứ: Nhật Bản (G7)",
+      "unit": "ml",
+      "quantity": 500,
+      "unitPrice": 9600,
+      "amount": 4800000,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "bf6891ea-e59d-4458-ac3a-b766c4a4acfc",
+      "name": "Hóa chất nội kiểm hồng cầu lưới mức 1",
+      "model": "MK-RE1",
+      "brand": "HEMATOLOGY CONTROL for reticulocyte / MK-RE1",
+      "manufacturer": "R&D Systems, Inc.",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Chất kiểm chuẩn xét nghiệm hồng cầu lưới mức 1 cho máy phân tích huyết học - Thành phần: hồng cầu người và hồng cầu động vật có vú, Cycloheximide - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR số V13 011765 0058 (Tuyên bố phù hợp EU DoC so 4210). - Xuất xứ: Hoa Kỳ (G7)",
+      "unit": "ml",
+      "quantity": 3,
+      "unitPrice": 666667,
+      "amount": 2000001,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "14576cfb-83ff-4112-a499-fde5038d71eb",
+      "name": "Hóa chất nội kiểm hồng cầu lưới mức 2",
+      "model": "MK-RE2",
+      "brand": "HEMATOLOGY CONTROL for reticulocyte / MK-RE2",
+      "manufacturer": "R&D Systems, Inc.",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Chất kiểm chuẩn xét nghiệm hồng cầu lưới mức 2 cho máy phân tích huyết học - Thành phần: hồng cầu người và hồng cầu động vật có vú, Cycloheximide - Đạt tiêu chuẩn ISO 13485: 2016, CE-IVDR số V13 011765 0058 (Tuyên bố phù hợp EU DoC so 4210) - Xuất xứ: Hoa Kỳ (G7)",
+      "unit": "ml",
+      "quantity": 3,
+      "unitPrice": 666667,
+      "amount": 2000001,
+      "contractorCode": "vn0108538481",
+      "winnerNames": [
+        "Công ty TNHH Thiết bị y tế Ngôi Sao Việt"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "d3da4631-ac14-4620-b2a1-28a7e75567f2",
+      "name": "Thuốc thử xét nghiệm định lượng các chất điện giải: Na+,K+, Cl-, Ca2+",
+      "model": "i-Smart 30 PRO Cartridge E4",
+      "brand": "i-SENS",
+      "manufacturer": "i-SENS Songdo Factory 2",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Phù hợp máy xét nghiệm điện giải i-Smart 30 PRO. - Thông số đo: Na+, K+, Cl-, Ca++ - Sử dụng 4 tuần sau khi mở. - Quy cách: 200 test/ hộp - Đạt tiêu chuẩn ISO 13485",
+      "unit": "test",
+      "quantity": 16200,
+      "unitPrice": 37500,
+      "amount": 607500000,
+      "contractorCode": "vn0100985583",
+      "winnerNames": [
+        "CÔNG TY TNHH VIỆT PHAN"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    },
+    {
+      "id": "27668e22-7862-4a87-8558-775ec9d0fbe3",
+      "name": "Vật liệu kiểm soát xét nghiệm định lượng các chất điện giải",
+      "model": "i-Smart Electrolyte Quality Control",
+      "brand": "i-SENS",
+      "manufacturer": "i-SENS Songdo Factory 2",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Vật liệu kiểm soát xét nghiệm điện giải (Na+, K+, Cl- và Ca2+) trên máy điện giải I-Smart 30 PRO. - Thành phần: Dung dịch nước chất đệm chứa: chất điện giải; chất bảo quản. - Đạt tiêu chuẩn ISO 13485",
+      "unit": "ml",
+      "quantity": 300,
+      "unitPrice": 181000,
+      "amount": 54300000,
+      "contractorCode": "vn0100985583",
+      "winnerNames": [
+        "CÔNG TY TNHH VIỆT PHAN"
+      ],
+      "lotNo": "",
+      "decisionNo": "585/QĐ-BVĐKY",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T16:59:25"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -84,6 +409,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:54:13.951Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:25:29.680Z"
 }

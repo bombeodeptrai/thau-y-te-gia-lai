@@ -1,9 +1,80 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "13f642c9-948e-465e-ac8f-191b7315b2ec",
+      "contractorCode": "vn0100103016",
+      "taxCode": "0100103016",
+      "contractorName": "CÔNG TY CỔ PHẦN KHÍ CÔNG NGHIỆP VIỆT NAM",
+      "status": "lost",
+      "lotNo": "BP2600871831",
+      "lotName": "Mua sắm khí y tế bổ sung năm 2026 tại Trung tâm Y tế khu vực Liên Chiểu",
+      "bidPrice": 49612500,
+      "finalPrice": 49612500,
+      "winningPrice": 0,
+      "reason": "xếp hạng 3",
+      "submittedAt": "2026-10-27T16:58:41.235",
+      "models": []
+    },
+    {
+      "id": "e245d4b9-5dcc-4e2d-be3e-b2872f8853d1",
+      "contractorCode": "vn0400100591",
+      "taxCode": "0400100591",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG",
+      "status": "won",
+      "lotNo": "BP2600871831",
+      "lotName": "Mua sắm khí y tế bổ sung năm 2026 tại Trung tâm Y tế khu vực Liên Chiểu",
+      "bidPrice": 45643500,
+      "finalPrice": 45643500,
+      "winningPrice": 45643500,
+      "reason": "",
+      "submittedAt": "2026-10-27T16:58:41.235",
+      "models": [
+        "O2"
+      ]
+    },
+    {
+      "id": "e9ccb204-3630-4009-88c7-001c64a8e2c4",
+      "contractorCode": "vn5900980625",
+      "taxCode": "5900980625",
+      "contractorName": "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI",
+      "status": "lost",
+      "lotNo": "BP2600871831",
+      "lotName": "Mua sắm khí y tế bổ sung năm 2026 tại Trung tâm Y tế khu vực Liên Chiểu",
+      "bidPrice": 49238875,
+      "finalPrice": 49238875,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-10-27T16:58:41.235",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "61465c23-553f-4989-b26b-6a782cf36746",
+      "name": "Oxy lỏng y tế",
+      "model": "O2",
+      "brand": "O2",
+      "manufacturer": "Công ty CP dưỡng khí Đà Nẵng",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "- Hàm lượng Oxy ≥99,6% \n- Không màu, không mùi, không vị, không độc.\n- Nạp vào bình chuyên dụng XL45 (tương đương dung tích 175 lít/bình) đã được kiểm định, hoặc nhà thầu cung cấp vỏ bình XL45 (đã được kiểm định) khi bệnh viện có nhu cầu.",
+      "unit": "Lít",
+      "quantity": 6125,
+      "unitPrice": 7452,
+      "amount": 45643500,
+      "contractorCode": "vn0400100591",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "700/QĐ-TTYT",
+      "decisionDate": "2026-10-27T16:32:13",
+      "resultPublishedDate": "2026-10-27T16:58:50"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +129,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:45:50.545Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:18:49.844Z"
 }

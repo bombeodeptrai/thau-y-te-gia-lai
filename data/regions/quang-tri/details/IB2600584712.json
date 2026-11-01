@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "eff03cec-8e4a-41f2-8781-dcc1e6229c6c",
+      "contractorCode": "vn5100252338",
+      "taxCode": "5100252338",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ DƯỢC PHẨM HOÀNG GIANG",
+      "status": "won",
+      "lotNo": "PP2600434794",
+      "lotName": "Actiso + Rau đắng đất + Bìm bìm",
+      "bidPrice": 43500000,
+      "finalPrice": 43500000,
+      "winningPrice": 43500000,
+      "reason": "",
+      "submittedAt": "2026-10-29T14:21:34.381",
+      "models": [
+        "V179-H02-19"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "2dcabf5e-55b4-4965-9027-4852374c9590",
+      "name": "Actiso + Rau đắng đất + Bìm bìm",
+      "model": "V179-H02-19",
+      "brand": "Mát gan tiêu độc",
+      "manufacturer": "CSSX thuốc Y học cổ truyền Bảo Phương",
+      "origin": "Việt Nam\n",
+      "manufactureYear": "2026",
+      "specification": "Nồng độ hàm lượng: 100mg + 75mg + 7,5mg; Dạng bào chế: Viên hoàn cứng; Đường dùng: Uống; N3",
+      "unit": "Viên",
+      "quantity": 30000,
+      "unitPrice": 1450,
+      "amount": 43500000,
+      "contractorCode": "vn5100252338",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN  THƯƠNG MẠI VÀ DƯỢC PHẨM HOÀNG GIANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "108/QĐ-TYT",
+      "decisionDate": "2026-10-29T14:18:46",
+      "resultPublishedDate": "2026-10-29T14:21:51"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,5 +132,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:41:22.672Z"
+  "fetchedAt": "2026-11-01T21:15:16.797Z"
 }

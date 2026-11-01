@@ -1,40 +1,345 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 16,
   "bidders": [
     {
-      "id": "21d7457a-f816-41ca-8adb-94b6cdd7ede7",
+      "id": "13030971-8cc2-4c3a-8e3f-db5af97ce442",
       "contractorCode": "vn0307715696",
-      "taxCode": "",
+      "taxCode": "0307715696",
       "contractorName": "CÔNG TY TNHH VIỆT DƯỢC MEDIC",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600821147",
       "lotName": "Mua sắm vật tư, sinh phẩm sử dụng trong chạy thận nhân tạo năm 2026",
       "bidPrice": 3722573250,
       "finalPrice": 3722573250,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-10-12T09:12:27.062",
+      "reason": "Không đạt yêu cầu kỹ thuật",
+      "submittedAt": "2026-10-27T15:32:54.696",
       "models": []
     },
     {
-      "id": "cab7fb68-f943-4fc4-92a1-2a87d8854000",
+      "id": "0d6ea97d-1e91-4d6a-af1b-a41e00556cd3",
       "contractorCode": "vn6000371421",
-      "taxCode": "",
+      "taxCode": "6000371421",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM HOÀNG VŨ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600821147",
       "lotName": "Mua sắm vật tư, sinh phẩm sử dụng trong chạy thận nhân tạo năm 2026",
       "bidPrice": 3956985000,
       "finalPrice": 3956985000,
-      "winningPrice": 0,
+      "winningPrice": 3956985000,
       "reason": "",
-      "submittedAt": "2026-10-12T09:12:27.288",
+      "submittedAt": "2026-10-27T15:32:54.696",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "21e56302-8bc6-4022-a654-5c04e8b51ce3",
+      "name": "Dịch lọc thận Bicarbonat",
+      "model": "8750304",
+      "brand": "HD PLUS 8,4 B",
+      "manufacturer": "Công ty TNHH B. Braun Việt Nam; Công ty Cổ phẩn Dược phẩm Hải Phòng",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Can 10 lít dd đậm đặc chứa: • Natri Bicarbonate: 840g • Dinatri Edetat. 2H2O: 0,5 g • Nước tinh khiết vừa đủ: 10 lít Tiêu chuẩn chất lượng: ISO 13485 và EC",
+      "unit": "Can",
+      "quantity": 9000,
+      "unitPrice": 165000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "de216f5d-a18d-4334-9d82-da32be9c4858",
+      "name": "Que thử hàm lượng Clo tổng dải thấp",
+      "model": "5167",
+      "brand": "Que thử hàm lượng Clo tổng dải thấp Serim® GUARDIAN™ HiSENSE Ultra 0.1™",
+      "manufacturer": "Serim Research Corporation",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Dùng để đo Clo tổng dải thấp",
+      "unit": "Que",
+      "quantity": 800,
+      "unitPrice": 8500,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "b1c3ffba-9781-45c5-90e1-4dacc0d6b4a2",
+      "name": "Găng tay phẫu thuật chưa tiệt trùng",
+      "model": "GPTAC",
+      "brand": "Găng tay latex phẫu thuật chưa tiệt trùng, có bột các số",
+      "manufacturer": "CÔNG TY CỔ PHẦN MERUFA",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Các số, chưa tiệt trùng",
+      "unit": "Đôi",
+      "quantity": 7300,
+      "unitPrice": 3500,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "917e89e1-158e-409e-bc22-cf99383644c7",
+      "name": "Kim cánh bướm thận 16G",
+      "model": "BAIN-A.V.F-002",
+      "brand": "Kim chạy thận nhân tạo",
+      "manufacturer": "Bain Medical Equipment (Guangzhou) Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Kim chạy thận16G xoay, 25mm, 30cm. Kim được cắt vát, mài nhẵn đầu kim, làm tròn cạnh. Có khe mắt ngăn cản hiện tượng hít thành mạch. Tất cả kim được tráng silicon. Kim được tiệt trùng",
+      "unit": "Cái",
+      "quantity": 11500,
+      "unitPrice": 5250,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "c8338757-6c3f-442b-8315-7085e0a5eaf6",
+      "name": "Que thử tồn dư peroxide trong nước",
+      "model": "5105",
+      "brand": "Que thử tồn dư Peroxide Serim® GUARDIAN™",
+      "manufacturer": "Serim Research Corporation",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Độ nhạy: 0 ppm, 1ppm, 3ppm, 5 ppm và 10 ppm",
+      "unit": "Que",
+      "quantity": 5000,
+      "unitPrice": 7000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "be2809b5-f127-465c-8001-fbb93a472051",
+      "name": "Quả lọc dịch thẩm tách siêu sạch",
+      "model": "7107366",
+      "brand": "DIACAP ULTRA DF-ONLINE FILTER",
+      "manufacturer": "B. Braun Avitum Saxonia GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Màng Polysulfone khả năng hấp thụ cao, có khả năng loại bỏ vi khuẩn và nội độc tố > 106 IU /ml, tuổi thọ màng lọc : 150 lần chạy thận/ khoảng 900 giờ, có tính ổn định cao tương thích với máy Dialog +",
+      "unit": "Cái",
+      "quantity": 15,
+      "unitPrice": 2680000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "440e5201-f200-40ac-9d5b-0300482113be",
+      "name": "Quả lọc thận nhân tạo",
+      "model": "720DL16G",
+      "brand": "Diacap Pro 16L",
+      "manufacturer": "B. Braun Avitum Saxonia GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Màng lọc thận Low Flux; chất liệu: α Polysulfone Pro; tiệt khuẩn tia Gamma không ôxy; diện tích bề mặt 1.6 ㎡, thể tích mồi : 100 ml , kuf =14 ml/h/mmHg. Tốc độ máu Qb=300ml/phút, Tốc độ dịch Qd= 500ml/phút, KoA Urea= 1123 ; độ thanh thải: Ure 269 ml/phút, Creatinin 242 ml/phút, Phosphate 187 ml/phút, Vitamin B12: 112 ml/phút.",
+      "unit": "Cái",
+      "quantity": 1600,
+      "unitPrice": 350000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "64d2de25-cdb9-430c-9008-ac6ccd2d7c2f",
+      "name": "Bộ tiêm chích",
+      "model": "BOT13ZV001",
+      "brand": "Bộ tiêm chích FAV",
+      "manufacturer": "TỔNG CÔNG TY CỔ PHẦN Y TẾ DANAMECO",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Gồm: 1. Gạc phẫu thuật không dệt 7.5 x 7.5 cm (4 cái) 2. Gạc lót đốc kim 3.5 x 5 cm (2 cái) 3. Khăn trải chống thấm 40 x 60 cm (1 cái) 4. Gạc thận nhân tạo 3.5 x 4.5 cm (2 cái/gói)",
+      "unit": "Gói",
+      "quantity": 20,
+      "unitPrice": 10500,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "7a6f931f-a73e-487e-a49e-d0e450d68bd4",
+      "name": "Băng keo cuộn 2.5cm x 9.1m",
+      "model": "- Chủng loại: YOUNG PLASTER-PAPER (white) - Ký mã hiệu: SWV025",
+      "brand": "Băng keo cuộn giấy YOUNG PLASTER-PAPER (white) 2.5cm x 9.1m",
+      "manufacturer": "Công ty TNHH Young Chemical Vina",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chất liệu giấy sợi không đan dệt (Non-woven paper), dễ xé nhanh bằng tay, định lượng 35g/m2. Độ bền kéo 1.8kg/12mm ± 300g. Phủ keo Acrylic, định lượng 50-70g/m2. Độ dính 420g/12mm ± 30g. Có kiểm tra vi sinh. Kích thước 2.5cm x 9.1m",
+      "unit": "Cuộn",
+      "quantity": 500,
+      "unitPrice": 26000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "b7884f91-2bd4-4b10-aac5-f2c485f1f26e",
+      "name": "Dịch lọc thận Acid HD",
+      "model": "8750303",
+      "brand": "HD PLUS 144 A",
+      "manufacturer": "Công ty TNHH B. Braun Việt Nam; Công ty Cổ phẩn Dược phẩm Hải Phòng",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Can 10 lít dd đậm đặc chứa: • Natri clorid: 2708.69g • Kali clorid: 67.10g • Calciclorid.2H2O: 99.24 g • Magnesi clorid.6H2O: 45.75g • Acid acetic băng: 81.00g • Glucose H2O : 494.99g • Nước tinh khiết vừa đủ: 10 lít Tiêu chuẩn chất lượng: ISO 13485 và EC",
+      "unit": "Can",
+      "quantity": 7500,
+      "unitPrice": 170000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "feea11da-25b1-4d87-9d48-1a46b42e2ed0",
+      "name": "Que thử Độ cứng của nước",
+      "model": "5129",
+      "brand": "Que thử nồng độ của nước Serim® GUARDIAN™ WATER HARDNESS",
+      "manufacturer": "Serim Research Corporation",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Dùng để đo độ cứng của nước",
+      "unit": "Que",
+      "quantity": 600,
+      "unitPrice": 15750,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "21fb5941-9856-49de-8021-5a74cb6d2113",
+      "name": "Dung dịch làm sạch và khử trùng quả lọc thận nhân tạo",
+      "model": "Hemoclean RP",
+      "brand": "Dung dịch làm sạch và khử trùng quả lọc thận nhân tạo",
+      "manufacturer": "Huons Meditech Co., Ltd.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thành phần: Peracetic acid: 4.5%, Hydrogen peroxide: 19.0%, Acetic Acid: 15.0%, các thành phần trơ khác: 61.5% Dung tích: Can 5 lít",
+      "unit": "Can",
+      "quantity": 50,
+      "unitPrice": 1900000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "10f1ae3e-03b5-4c73-a1af-cb39de948c99",
+      "name": "Muối tinh khiết NaCl",
+      "model": "Muối tinh khiết",
+      "brand": "Muối tinh khiết",
+      "manufacturer": "Thai Refined Salt Co., Ltd.",
+      "origin": "Thái Lan",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Muối tinh khiết NaCl không Iod",
+      "unit": "Kg",
+      "quantity": 600,
+      "unitPrice": 14000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "99681a98-d045-4a0a-a6f6-fc26dfc33881",
+      "name": "Dây máu cho thận nhân tạo",
+      "model": "BLU006E",
+      "brand": "Bộ dây chạy thận ( Tubing Sets For Hemodialysis)",
+      "manufacturer": "Vital Healthcare SDN. BHD",
+      "origin": "MALAYSIA",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Dây máu chạy thận có kèm 2 bộ bảo vệ cảm ứng, 1 túi nước thải, và 1 dây truyền dịch. thể tích làm đầy: ≤158 ml, chịu áp lực lên đến 2,5 bar.",
+      "unit": "Bộ",
+      "quantity": 5000,
+      "unitPrice": 58000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "c5eda67d-b9a3-4ee4-bfc2-5017da618d57",
+      "name": "Que thử nồng độ axit peracetic",
+      "model": "5106",
+      "brand": "Que thử nồng độ axit peracetic Serim® GUARDIAN™",
+      "manufacturer": "Serim Research Corporation",
+      "origin": "Mỹ",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Dùng để đo hoạt độ của axti peracetic khi ngâm dụng cụ quả lọc",
+      "unit": "Que",
+      "quantity": 500,
+      "unitPrice": 7000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    },
+    {
+      "id": "141ed2bf-a884-4b8f-aae8-f19a42a13e0f",
+      "name": "Dung dịch khử khuẩn máy thận nhân tạo",
+      "model": "INSPRADEZ C 50",
+      "brand": "Dung dịch khử trùng máy thận Inspradez C50",
+      "manufacturer": "Inspramed Medikal Sanayi ve Ticaret A.S",
+      "origin": "Turkey",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Dung dịch chứa thành phần Axit Citric Monohydrat nồng độ 50% cung cấp khả năng làm sạch, khử trùng (vi khuẩn, virus bao gồm HIV/HBV/HCV) và khử cặn (loại bỏ canxi cacbonat), sử dụng trên máy chạy thận nhân tạo. Tiêu chuẩn chất lượng: ISO 13485 và CE; Can 5 lít.",
+      "unit": "Can",
+      "quantity": 75,
+      "unitPrice": 660000,
+      "winnerNames": [
+        "CÔNG TY TNHH  DƯỢC PHẨM HOÀNG VŨ"
+      ],
+      "decisionNo": "354/QĐ-TTYT",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:33:05"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +364,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:51:10.434Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:22:45.383Z"
 }

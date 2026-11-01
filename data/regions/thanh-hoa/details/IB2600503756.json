@@ -1,25 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "cefbd0f1-f9f1-4d4a-8514-159814422603",
+      "id": "2cc4b01f-c130-4364-a37b-1eb05a905326",
       "contractorCode": "vn0600206147",
-      "taxCode": "",
+      "taxCode": "0600206147",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600711558",
-      "lotName": "Mua thuốc điều trị lao (RHZ) sử dụng năm 2026-2028 cho các cơ sở điều trị lao trên địa bàn tỉnh Thanh Hóa",
+      "lotName": "Rifampicin + Isoniazid + Pyrazinamid",
       "bidPrice": 2281388472,
       "finalPrice": 2281388472,
-      "winningPrice": 0,
+      "winningPrice": 2281388472,
       "reason": "",
-      "submittedAt": "2026-10-14T08:21:30.547",
-      "models": []
+      "submittedAt": "2026-10-27T17:13:11.847",
+      "models": [
+        "Turbezid"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600711558",
+      "name": "Turbezid",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 815364,
+      "unitPrice": 2798,
+      "amount": 2281388472,
+      "contractorCode": "vn0600206147",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
+      ],
+      "lotNo": "BP2600711558",
+      "decisionNo": "1659/QĐ-BVP",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T17:14:21"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +70,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:38:24.675Z"
+  "fetchedAt": "2026-11-01T21:12:58.134Z"
 }

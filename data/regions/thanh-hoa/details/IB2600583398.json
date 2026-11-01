@@ -1,9 +1,281 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 6,
+  "bidders": [
+    {
+      "id": "5ae37d0e-1707-4d97-b5cd-be9f73c5698c",
+      "contractorCode": "vn0104234387",
+      "taxCode": "0104234387",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VIHAPHA",
+      "status": "won",
+      "lotNo": "PP2600445083",
+      "lotName": "Allopurinol",
+      "bidPrice": 61776000,
+      "finalPrice": 61776000,
+      "winningPrice": 61776000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:28:47.126",
+      "models": [
+        "594110008325"
+      ]
+    },
+    {
+      "id": "54f12e8c-dc7d-4ec1-a4cc-ce9b9ff7d0ea",
+      "contractorCode": "vn2801577723",
+      "taxCode": "2801577723",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI ĐỨC LỘC",
+      "status": "won",
+      "lotNo": "PP2600445084",
+      "lotName": "Ampicilin + Sulbactam",
+      "bidPrice": 894930000,
+      "finalPrice": 894930000,
+      "winningPrice": 894930000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:28:47.126",
+      "models": [
+        "800110422525"
+      ]
+    },
+    {
+      "id": "17a6bb46-35ea-4092-a68b-3cf234c2c711",
+      "contractorCode": "vn2802448135",
+      "taxCode": "2802448135",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ VIỆT ANH SM",
+      "status": "won",
+      "lotNo": "PP2600445085",
+      "lotName": "Cefoxitin",
+      "bidPrice": 822000000,
+      "finalPrice": 822000000,
+      "winningPrice": 822000000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:28:47.126",
+      "models": [
+        "893110252423"
+      ]
+    },
+    {
+      "id": "95d4dffe-d283-47d4-91c6-dfa08bef661a",
+      "contractorCode": "vn0102936831",
+      "taxCode": "0102936831",
+      "contractorName": "Công ty Cổ Phần Thương Mại dược phẩm Việt Đức",
+      "status": "won",
+      "lotNo": "PP2600445086",
+      "lotName": "Glucose",
+      "bidPrice": 43800000,
+      "finalPrice": 43800000,
+      "winningPrice": 43800000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:28:47.126",
+      "models": [
+        "VD-35956-22",
+        "VD-35954-22"
+      ]
+    },
+    {
+      "id": "f30d7ee1-65b5-4576-b20b-36adf832d671",
+      "contractorCode": "vn2801804334",
+      "taxCode": "2801804334",
+      "contractorName": "Công ty Cổ phần Vinamed",
+      "status": "lost",
+      "lotNo": "PP2600445086",
+      "lotName": "Glucose",
+      "bidPrice": 44310000,
+      "finalPrice": 44310000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ 2",
+      "submittedAt": "2026-10-29T15:28:47.126",
+      "models": [
+        "893110118323"
+      ]
+    },
+    {
+      "id": "af79c298-74e8-496a-9b1d-0dab368c0b70",
+      "contractorCode": "vn0102936831",
+      "taxCode": "0102936831",
+      "contractorName": "Công ty Cổ Phần Thương Mại dược phẩm Việt Đức",
+      "status": "won",
+      "lotNo": "PP2600445087",
+      "lotName": "Natri clorid",
+      "bidPrice": 123600000,
+      "finalPrice": 123600000,
+      "winningPrice": 123600000,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:28:47.126",
+      "models": [
+        "VD-35956-22",
+        "VD-35954-22"
+      ]
+    },
+    {
+      "id": "19d6f9e7-949a-4de7-9c6b-43b475f64ad3",
+      "contractorCode": "vn2801804334",
+      "taxCode": "2801804334",
+      "contractorName": "Công ty Cổ phần Vinamed",
+      "status": "lost",
+      "lotNo": "PP2600445087",
+      "lotName": "Natri clorid",
+      "bidPrice": 124780000,
+      "finalPrice": 124780000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ 2",
+      "submittedAt": "2026-10-29T15:28:47.126",
+      "models": [
+        "893110118323"
+      ]
+    },
+    {
+      "id": "9d4f7c87-6452-431f-9290-f5cef0720bcd",
+      "contractorCode": "vn2801804334",
+      "taxCode": "2801804334",
+      "contractorName": "Công ty Cổ phần Vinamed",
+      "status": "won",
+      "lotNo": "PP2600445088",
+      "lotName": "Ringer lactat",
+      "bidPrice": 24865200,
+      "finalPrice": 24865200,
+      "winningPrice": 24865200,
+      "reason": "",
+      "submittedAt": "2026-10-29T15:28:47.126",
+      "models": [
+        "893110118323"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "3b1ad007-948c-4b34-82c1-3a02d5c97e84",
+      "name": "Ampicilin + Sulbactam",
+      "model": "800110422525",
+      "brand": "Không có",
+      "manufacturer": "Mitim S.r.l",
+      "origin": "Italia",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "‘Tên hoạt chất: Ampicilin + Sulbactam\r\n- Nhóm TCKT: Nhóm 1\r\n- Nồng độ, hàm lượng: 1g + 0,5g\r\n- Đường dùng: Tiêm\r\n- Dạng bào chế: Thuốc tiêm’",
+      "unit": "Chai/Lọ/Ống",
+      "quantity": 15000,
+      "unitPrice": 59662,
+      "amount": 894930000,
+      "contractorCode": "vn2801577723",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI ĐỨC LỘC"
+      ],
+      "lotNo": "",
+      "decisionNo": "1743/QĐ-BVYĐ",
+      "decisionDate": "2026-10-29T15:27:36",
+      "resultPublishedDate": "2026-10-29T15:28:55"
+    },
+    {
+      "id": "34581b31-7c5b-4fc1-a811-594a6e8129d9",
+      "name": "Ringer lactat",
+      "model": "893110118323",
+      "brand": "Không có",
+      "manufacturer": "Công ty cổ phần kỹ thuật Dược Bình Định",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "‘Tên hoạt chất: Ringer lactat\r\n- Nhóm TCKT: Nhóm 4\r\n- Nồng độ, hàm lượng: 500ml\r\n- Đường dùng: Tiêm/Tiêm truyền\r\n- Dạng bào chế: Thuốc tiêm/Thuốc tiêm truyền’",
+      "unit": "Chai/Lọ/Túi",
+      "quantity": 3600,
+      "unitPrice": 6907,
+      "amount": 24865200,
+      "contractorCode": "vn2801804334",
+      "winnerNames": [
+        "Công ty Cổ phần Vinamed"
+      ],
+      "lotNo": "",
+      "decisionNo": "1743/QĐ-BVYĐ",
+      "decisionDate": "2026-10-29T15:27:36",
+      "resultPublishedDate": "2026-10-29T15:28:55"
+    },
+    {
+      "id": "4ef672ea-39d7-4fb0-bc18-2e58d7fd72f0",
+      "name": "Allopurinol",
+      "model": "594110008325",
+      "brand": "Không có",
+      "manufacturer": "Arena Group S.A.",
+      "origin": "Romania",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "‘Tên hoạt chất: Allopurinol\r\n- Nhóm TCKT: Nhóm 1\r\n- Nồng độ, hàm lượng: 100mg\r\n- Đường dùng: Uống\r\n- Dạng bào chế: Viên’",
+      "unit": "Viên",
+      "quantity": 36000,
+      "unitPrice": 1716,
+      "amount": 61776000,
+      "contractorCode": "vn0104234387",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VIHAPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1743/QĐ-BVYĐ",
+      "decisionDate": "2026-10-29T15:27:36",
+      "resultPublishedDate": "2026-10-29T15:28:55"
+    },
+    {
+      "id": "d12a6285-ee0c-436c-b97c-0815e98d1bbf",
+      "name": "Natri clorid",
+      "model": "VD-35956-22",
+      "brand": "Không có",
+      "manufacturer": "Công ty cổ phần IVC",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "‘Tên hoạt chất: Natri clorid\r\n- Nhóm TCKT: Nhóm 4\r\n- Nồng độ, hàm lượng: 0,9%; 500ml\r\n- Đường dùng: Tiêm/Tiêm truyền\r\n- Dạng bào chế: Thuốc tiêm/Thuốc tiêm truyền’",
+      "unit": "Chai/Lọ/Túi",
+      "quantity": 20000,
+      "unitPrice": 6180,
+      "amount": 123600000,
+      "contractorCode": "vn0102936831",
+      "winnerNames": [
+        "Công ty Cổ Phần Thương Mại dược phẩm Việt Đức"
+      ],
+      "lotNo": "",
+      "decisionNo": "1743/QĐ-BVYĐ",
+      "decisionDate": "2026-10-29T15:27:36",
+      "resultPublishedDate": "2026-10-29T15:28:55"
+    },
+    {
+      "id": "5bcb2e55-d881-4f4a-a745-51bf5b6f8f06",
+      "name": "Glucose",
+      "model": "VD-35954-22",
+      "brand": "Không có",
+      "manufacturer": "Công ty cổ phần IVC",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "‘Tên hoạt chất: Glucose\r\n- Nhóm TCKT: Nhóm 4\r\n- Nồng độ, hàm lượng: 5%; 500ml\r\n- Đường dùng: Tiêm/Tiêm truyền\r\n- Dạng bào chế: Thuốc tiêm/Thuốc tiêm truyền’",
+      "unit": "Chai/Lọ/Túi",
+      "quantity": 6000,
+      "unitPrice": 7300,
+      "amount": 43800000,
+      "contractorCode": "vn0102936831",
+      "winnerNames": [
+        "Công ty Cổ Phần Thương Mại dược phẩm Việt Đức"
+      ],
+      "lotNo": "",
+      "decisionNo": "1743/QĐ-BVYĐ",
+      "decisionDate": "2026-10-29T15:27:36",
+      "resultPublishedDate": "2026-10-29T15:28:55"
+    },
+    {
+      "id": "d01129ac-22f0-40b7-9e24-ff33bc185f31",
+      "name": "Cefoxitin",
+      "model": "893110252423",
+      "brand": "Không có",
+      "manufacturer": "Chi nhánh 3 - Công ty cổ phần dược phẩm Imexpharm tại Bình Dương.",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "‘Tên hoạt chất: Cefoxitin\r\n- Nhóm TCKT: Nhóm 2\r\n- Nồng độ, hàm lượng: 1g (dạng muối)\r\n- Đường dùng: Tiêm\r\n- Dạng bào chế: Thuốc tiêm’",
+      "unit": "Chai/Lọ/Ống",
+      "quantity": 15000,
+      "unitPrice": 54800,
+      "amount": 822000000,
+      "contractorCode": "vn2802448135",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ VIỆT ANH SM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1743/QĐ-BVYĐ",
+      "decisionDate": "2026-10-29T15:27:36",
+      "resultPublishedDate": "2026-10-29T15:28:55"
+    }
+  ],
   "requirements": {
     "total": 6,
     "items": [
@@ -218,6 +490,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:38:10.469Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:12:53.323Z"
 }

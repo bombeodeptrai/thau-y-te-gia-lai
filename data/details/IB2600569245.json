@@ -1,9 +1,104 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "7ba58e17-149b-4aef-ab44-1b2c479e6da7",
+      "contractorCode": "vn0302912274",
+      "taxCode": "0302912274",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN HUY THÔNG",
+      "status": "won",
+      "lotNo": "PP2600430879",
+      "lotName": "Phần số 1: Catheter dẫn lưu mật qua da",
+      "bidPrice": 122010000,
+      "finalPrice": 122010000,
+      "winningPrice": 122010000,
+      "reason": "",
+      "submittedAt": "2026-10-26T15:34:15.158",
+      "models": [
+        "BT-PD1-0830-W BT-PD1-1030-W BT-PD1-1230-W BT-PD1-1430-W"
+      ]
+    },
+    {
+      "id": "4527d36e-9e2b-4db3-bd33-815dfdaca53f",
+      "contractorCode": "vn0305490038",
+      "taxCode": "0305490038",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI THIẾT BỊ Y TẾ THÀNH KHOA",
+      "status": "lost",
+      "lotNo": "PP2600430880",
+      "lotName": "Phần số 2: Catheter tĩnh mạch trung tâm",
+      "bidPrice": 360355782,
+      "finalPrice": 360355782,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu thứ nhất",
+      "submittedAt": "2026-10-26T15:34:15.158",
+      "models": []
+    },
+    {
+      "id": "86ff2ffb-60ca-45a4-a451-1442ddea4493",
+      "contractorCode": "vn0318745477",
+      "taxCode": "0318745477",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI LONG MINH CHÂU",
+      "status": "won",
+      "lotNo": "PP2600430880",
+      "lotName": "Phần số 2: Catheter tĩnh mạch trung tâm",
+      "bidPrice": 320000000,
+      "finalPrice": 320000000,
+      "winningPrice": 320000000,
+      "reason": "",
+      "submittedAt": "2026-10-26T15:34:15.158",
+      "models": [
+        "CV-15703-E"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "3bf997d6-d25f-4a3e-82c2-48a328b2f080",
+      "name": "Catheter dẫn lưu mật qua da",
+      "model": "BT-PD1-0830-W\r\nBT-PD1-1030-W\r\nBT-PD1-1230-W\r\nBT-PD1-1430-W",
+      "brand": "Pigtail Drainage Catheter Set (One Step Type)",
+      "manufacturer": "Bioteque \r\nCorporation",
+      "origin": "Đài Loan",
+      "manufactureYear": "Từ năm 2024 trở về sau, hàng mới 100%",
+      "specification": "Dùng trong thủ thuật dẫn lưu mật, thận ra da, dẫn lưu ổ áp xe.\r\n- Có phủ lớp ái nước \r\n- Kích cỡ: 8-14F\r\n- Một bộ gồm:  01 ống dẫn lưu phủ hydrophilic dạng pigtail có khóa string lock,  01 kim dẫn đường trocar stylet, 01 kim chọc trocar needle, 01 bộ duỗi thẳng pigtail spit straightener.",
+      "unit": "Bộ",
+      "quantity": 140,
+      "unitPrice": 871500,
+      "amount": 122010000,
+      "contractorCode": "vn0302912274",
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN HUY THÔNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1931/QĐ-BVNT",
+      "decisionDate": "2026-10-26T15:33:28",
+      "resultPublishedDate": "2026-10-26T15:34:37"
+    },
+    {
+      "id": "0a38116e-8359-4d6d-b154-2cb85c3f2a56",
+      "name": "Catheter tĩnh mạch trung tâm",
+      "model": "CV-15703-E",
+      "brand": "Central Venous Catheter (CVC)",
+      "manufacturer": " Arrow International CR, a.s",
+      "origin": "Séc",
+      "manufactureYear": "Từ năm 2025 trở về sau, hàng mới 100%",
+      "specification": "Chất liệu: Polyurethane.\r\nĐường kính: 7Fr; Chiều dài: 20cm\r\nLoại 3 nòng, kích cỡ nòng 16 - 18G\r\nDây kim loại dẫn đường có vạch đánh dấu, một đầu thẳng mềm, đầu còn lại hình chữ J.\r\nBơm tiêm 5ml có lỗ luồn dây dẫn đường.",
+      "unit": "Cái",
+      "quantity": 500,
+      "unitPrice": 640000,
+      "amount": 320000000,
+      "contractorCode": "vn0318745477",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI LONG MINH CHÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "1931/QĐ-BVNT",
+      "decisionDate": "2026-10-26T15:33:28",
+      "resultPublishedDate": "2026-10-26T15:34:37"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +185,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:54:06.233Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:25:24.504Z"
 }

@@ -1,9 +1,106 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "7d25d2d6-564d-4493-a6cb-61ef74fc32f1",
+      "contractorCode": "vn4300795516",
+      "taxCode": "4300795516",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO",
+      "status": "won",
+      "lotNo": "PP2600442663",
+      "lotName": "PocketChem A1c HbA1c Test Cartridges hoặc tương đương",
+      "bidPrice": 184000000,
+      "finalPrice": 184000000,
+      "winningPrice": 184000000,
+      "reason": "",
+      "submittedAt": "2026-10-26T16:26:25.344",
+      "models": [
+        "003B4055500",
+        "0130"
+      ]
+    },
+    {
+      "id": "146a51b1-27b8-4976-9879-a4b1de7aad44",
+      "contractorCode": "vn6001614229",
+      "taxCode": "6001614229",
+      "contractorName": "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN",
+      "status": "lost",
+      "lotNo": "PP2600442663",
+      "lotName": "PocketChem A1c HbA1c Test Cartridges hoặc tương đương",
+      "bidPrice": 189400000,
+      "finalPrice": 189400000,
+      "winningPrice": 0,
+      "reason": "xếp hạng 2",
+      "submittedAt": "2026-10-26T16:26:25.344",
+      "models": []
+    },
+    {
+      "id": "cb0953f5-8986-43cc-954b-d4b145cb0951",
+      "contractorCode": "vn4300795516",
+      "taxCode": "4300795516",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO",
+      "status": "won",
+      "lotNo": "PP2600442664",
+      "lotName": "Bóng đèn Halogen sử dụng cho máy xét nghiệm sinh hoá CA-270, 12v-20W",
+      "bidPrice": 11521000,
+      "finalPrice": 11521000,
+      "winningPrice": 11521000,
+      "reason": "",
+      "submittedAt": "2026-10-26T16:26:25.344",
+      "models": [
+        "003B4055500",
+        "0130"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "3d0fd356-6b11-4475-a26f-381eda21d33e",
+      "name": "HALOGEN LAMP",
+      "model": "003B4055500",
+      "brand": "HALOGEN LAMP",
+      "manufacturer": "Furuno Electric Co., Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Bóng đèn Halogen, 12v-20W, sử dụng cho máy sinh hóa CA-270.",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 5760500,
+      "amount": 11521000,
+      "contractorCode": "vn4300795516",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "311/QĐ-BVĐK",
+      "decisionDate": "2026-10-26T16:23:35",
+      "resultPublishedDate": "2026-10-26T16:26:29"
+    },
+    {
+      "id": "b415fe83-947c-437a-90dc-ff4e51bdaf2e",
+      "name": "PocketChem A1c HbA1c Test Cartridges hoặc tương đương",
+      "model": "0130",
+      "brand": "Pocketchem A1c Test\r\nKit",
+      "manufacturer": "EKF Diagnostic GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hóa chất chuẩn đoán trong xét nghiệm tiểu đường. *Thành phần bao gồm: \r\n -Cartridge Vial: PMMA Buffer\r\n+ Lysing reagent: Water; Ammonium Chloride; Sodium deoxychlolate Monhydrate; Sodium azide.\r\n -Cartridge top: Polypropylene\r\n -Desiccant: Molecular sieve -Ball bearing: Steel -A1c reagent (boronate conjugate): osin\r\n- 5thiouredylphenylboronic acid; triethylammonium salt\r\n -Sampling Stick: PMMA; EDTA; Triton X- 100\r\nĐạt tiêu chẩn: ISO",
+      "unit": "Test",
+      "quantity": 2000,
+      "unitPrice": 92000,
+      "amount": 184000000,
+      "contractorCode": "vn4300795516",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ ĐỈNH CAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "311/QĐ-BVĐK",
+      "decisionDate": "2026-10-26T16:23:35",
+      "resultPublishedDate": "2026-10-26T16:26:29"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +187,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:48:01.671Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-01T21:20:00.234Z"
 }

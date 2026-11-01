@@ -1,9 +1,128 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "4a5d6a99-c98c-49fd-9235-e449acd55314",
+      "contractorCode": "vn0313255623",
+      "taxCode": "0313255623",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ KỸ THUẬT V.T",
+      "status": "won",
+      "lotNo": "PP2600438082",
+      "lotName": "Dịch vụ sửa chữa, khắc phục hư hỏng khối SCM của Hệ thống chụp mạch Artis Zee Ceiling hãng sản xuất Siemens",
+      "bidPrice": 160000000,
+      "finalPrice": 160000000,
+      "winningPrice": 160000000,
+      "reason": "",
+      "submittedAt": "2026-10-27T08:37:17.138",
+      "models": [
+        "Dịch vụ sửa chữa, khắc phục hư hỏng khối SCM của Hệ thống chụp mạch Artis Zee Ceiling hãng sản xuất Siemens"
+      ]
+    },
+    {
+      "id": "b8bbbf6b-8e16-458b-876c-096e352ded02",
+      "contractorCode": "vn0317812145",
+      "taxCode": "0317812145",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT Y TẾ THÀNH HÙNG",
+      "status": "won",
+      "lotNo": "PP2600438083",
+      "lotName": "Dịch vụ sửa chữa, khắc phục hư hỏng khối ISIB của Hệ thống chụp mạch Artis Zee Ceiling hãng sản xuất Siemens",
+      "bidPrice": 224100000,
+      "finalPrice": 224100000,
+      "winningPrice": 224100000,
+      "reason": "",
+      "submittedAt": "2026-10-27T08:37:17.138",
+      "models": [
+        "Dịch vụ sửa chữa, khắc phục hư hỏng khối ISIB của Hệ thống chụp mạch Artis Zee Ceiling hãng sản xuất Siemens"
+      ]
+    },
+    {
+      "id": "7e8e4e57-7484-4cd4-b345-a5a04db02370",
+      "contractorCode": "vn0314819791",
+      "taxCode": "0314819791",
+      "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ VINTECH",
+      "status": "won",
+      "lotNo": "PP2600438084",
+      "lotName": "Dịch vụ sửa chữa đầu dò B hư hỏng của Máy siêu âm mắt, model: US-4000, hãng Nidek - Nhật Bản",
+      "bidPrice": 90000000,
+      "finalPrice": 90000000,
+      "winningPrice": 90000000,
+      "reason": "",
+      "submittedAt": "2026-10-27T08:37:17.138",
+      "models": [
+        "Dịch vụ sửa chữa đầu dò B hư hỏng của Máy siêu âm mắt, model: US-4000, hãng Nidek - Nhật Bản"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "202691510128179",
+      "name": "Dịch vụ sửa chữa, khắc phục hư hỏng khối ISIB của Hệ thống chụp mạch Artis Zee Ceiling hãng sản xuất Siemens",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "lần",
+      "quantity": 1,
+      "unitPrice": 224100000,
+      "amount": 224100000,
+      "contractorCode": "vn0317812145",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT Y TẾ THÀNH HÙNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1044/QĐ-BVĐK",
+      "decisionDate": "2026-10-27T08:36:15",
+      "resultPublishedDate": "2026-10-27T08:37:23"
+    },
+    {
+      "id": "2026915101236451",
+      "name": "Dịch vụ sửa chữa đầu dò B hư hỏng của Máy siêu âm mắt, model: US-4000, hãng Nidek - Nhật Bản",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "lần",
+      "quantity": 1,
+      "unitPrice": 90000000,
+      "amount": 90000000,
+      "contractorCode": "vn0314819791",
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ VINTECH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1044/QĐ-BVĐK",
+      "decisionDate": "2026-10-27T08:36:15",
+      "resultPublishedDate": "2026-10-27T08:37:23"
+    },
+    {
+      "id": "2026915101133283",
+      "name": "Dịch vụ sửa chữa, khắc phục hư hỏng khối SCM của Hệ thống chụp mạch Artis Zee Ceiling hãng sản xuất Siemens",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "lần",
+      "quantity": 1,
+      "unitPrice": 160000000,
+      "amount": 160000000,
+      "contractorCode": "vn0313255623",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ KỸ THUẬT V.T"
+      ],
+      "lotNo": "",
+      "decisionNo": "1044/QĐ-BVĐK",
+      "decisionDate": "2026-10-27T08:36:15",
+      "resultPublishedDate": "2026-10-27T08:37:23"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -129,5 +248,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:55:00.475Z"
+  "fetchedAt": "2026-11-01T21:26:15.647Z"
 }

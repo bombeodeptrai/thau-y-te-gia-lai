@@ -1,55 +1,130 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "c3ad11f4-4adc-4a9d-8675-d8d639b95bf4",
+      "id": "e61e1467-a351-4951-9d77-3818aa38cc96",
       "contractorCode": "vn4500200808",
-      "taxCode": "",
+      "taxCode": "4500200808",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ Y TẾ NINH THUẬN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600403444",
       "lotName": "Sắt Sulfat + acid folic",
-      "bidPrice": 280503960,
+      "bidPrice": 262224000,
       "finalPrice": 262224000,
-      "winningPrice": 0,
+      "winningPrice": 262224000,
       "reason": "",
-      "submittedAt": "2026-10-09T09:03:55.77",
-      "models": []
+      "submittedAt": "2026-10-29T15:38:00.532",
+      "models": [
+        "Fubenzon",
+        "Enpovid Fe-Folic"
+      ]
     },
     {
-      "id": "9cdbf1e7-e37b-4dd5-b7ec-10ac5bfe7a24",
+      "id": "02df3eba-53e4-459c-94b1-e2f2468da284",
       "contractorCode": "vn4500200808",
-      "taxCode": "",
+      "taxCode": "4500200808",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ Y TẾ NINH THUẬN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600403445",
       "lotName": "Mebendazol",
-      "bidPrice": 280503960,
+      "bidPrice": 18279960,
       "finalPrice": 18279960,
-      "winningPrice": 0,
+      "winningPrice": 18279960,
       "reason": "",
-      "submittedAt": "2026-10-09T09:03:55.77",
-      "models": []
+      "submittedAt": "2026-10-29T15:38:00.532",
+      "models": [
+        "Fubenzon",
+        "Enpovid Fe-Folic"
+      ]
     },
     {
-      "id": "006574ef-d157-43d5-83bf-d63bce1c1542",
+      "id": "48a6c075-3af6-487d-a501-df453134badd",
       "contractorCode": "vn0301140748",
-      "taxCode": "",
+      "taxCode": "0301140748",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600403446",
       "lotName": "Vắc xin phòng Cúm mùa tam giá (dạng mảnh, bất hoạt)",
       "bidPrice": 270000000,
       "finalPrice": 270000000,
-      "winningPrice": 0,
+      "winningPrice": 270000000,
       "reason": "",
-      "submittedAt": "2026-10-09T09:03:55.934",
-      "models": []
+      "submittedAt": "2026-10-29T15:38:00.532",
+      "models": [
+        "Vaxigrip"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600403445",
+      "name": "Fubenzon",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 4164,
+      "unitPrice": 4390,
+      "amount": 18279960,
+      "contractorCode": "vn4500200808",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ Y TẾ  NINH THUẬN"
+      ],
+      "lotNo": "PP2600403445",
+      "decisionNo": "717/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:38:06"
+    },
+    {
+      "id": "2600403444",
+      "name": "Enpovid Fe-Folic",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 327780,
+      "unitPrice": 800,
+      "amount": 262224000,
+      "contractorCode": "vn4500200808",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ Y TẾ  NINH THUẬN"
+      ],
+      "lotNo": "PP2600403444",
+      "decisionNo": "717/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:38:06"
+    },
+    {
+      "id": "2600403446",
+      "name": "Vaxigrip",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Pháp",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bơm tiêm",
+      "quantity": 1000,
+      "unitPrice": 270000,
+      "amount": 270000000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "PP2600403446",
+      "decisionNo": "717/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:38:06"
+    }
+  ],
   "requirements": {
     "total": 34,
     "items": [
@@ -405,5 +480,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:55:04.783Z"
+  "fetchedAt": "2026-11-01T21:26:18.818Z"
 }
