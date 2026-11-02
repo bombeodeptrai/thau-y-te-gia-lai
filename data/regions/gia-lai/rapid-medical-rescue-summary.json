@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-02T08:26:40.351Z",
+  "rescuedAt": "2026-11-02T18:02:57.572Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 108,
+      "count": 109,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 299,
+      "count": 295,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 25,
+      "count": 23,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 14,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -281,24 +281,23 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 628,
+  "candidateCount": 629,
   "acceptedCount": 29,
-  "rejectedCount": 599,
+  "rejectedCount": 600,
   "rejectedReasons": {
-    "excluded:tu van": 186,
+    "excluded:tu van": 188,
     "excluded:xay dung": 144,
-    "insufficient-medical-context": 140,
+    "insufficient-medical-context": 141,
     "excluded:xay lap": 48,
     "excluded:sua chua": 30,
     "excluded:cai tao": 11,
-    "excluded:bao ve": 8,
+    "excluded:bao ve": 7,
     "excluded:bao tri": 4,
     "excluded:thuc pham": 4,
     "excluded:bao hiem": 3,
     "excluded:tham dinh": 2,
     "excluded:may tinh": 2,
     "excluded:giam sat thi cong": 2,
-    "excluded:lap e hsmt": 2,
     "excluded:may chu": 1,
     "excluded:may in": 1,
     "excluded:cap dien": 1,
@@ -311,9 +310,23 @@
     "excluded:trang phuc": 1,
     "excluded:cong nghe thong tin": 1,
     "excluded:thu y": 1,
-    "excluded:bao duong": 1
+    "excluded:bao duong": 1,
+    "excluded:quan ly du an": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600591113",
+      "name": "Gói thầu thuốc Biệt dược gốc",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "thuoc"
+      ]
+    },
     {
       "notifyNo": "IB2600544991",
       "name": "Mua sắm vật tư y tế, hoá chất thông thường",
@@ -651,24 +664,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600582849",
-      "name": "Mua sắm vật tư, hóa chất, sinh phẩm để phục vụ công tác khám bệnh, chữa bệnh của Trung tâm Y tế Vĩnh Thạnh năm 2026 (bổ sung lần 4)",
-      "investor": "TRUNG TÂM Y TẾ VĨNH THẠNH",
-      "accepted": true,
-      "score": 145,
-      "reason": "medical-investor+laboratory-supply+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "vat tu",
-        "mua",
-        "mua sam",
-        "kham benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "DC2600090627",
       "name": "Cung cấp, lắp đặt giường inox, tủ đầu giường inox phục vụ bệnh nhân khoa Nhi thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -788,6 +783,29 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600595199",
+      "name": "Mua sắm xi măng PCP40 thực hiện Chương trình bê tông hóa giao thông nông thôn năm 2026 trên địa bàn xã Phù Cát",
+      "investor": "Ban Quản lý xã Phù Cát",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600597655",
+      "name": "Cung cấp 07 xe nâng/hạ phục vụ hành khách cần sự trợ giúp đặc biệt.",
+      "investor": "TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
     {
       "notifyNo": "IB2600589590",
       "name": "Gói thầu 01/XL: Cung cấp vật tư, thi công xây lắp công trình",
@@ -1213,35 +1231,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600584709",
-      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
-      "investor": "Ban Quản lý phường Hoài Nhơn Tây",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600589288",
-      "name": "Mua sắm trang thiết bị phục vụ công tác đảm bảo trật tự ATGT năm 2026",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1186,
-  "afterCount": 1186,
-  "newCount": 0,
+  "afterCount": 1187,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
