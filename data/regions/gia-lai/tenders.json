@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=2d5451c6-63ee-40d0-942b-e29a8e744306&notifyId=2d5451c6-63ee-40d0-942b-e29a8e744306&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600589924&planNo=PL2600361821&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,7 +38,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "f08296fb-939f-41ea-bd8c-1e528e258e0d",
@@ -66,7 +68,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f08296fb-939f-41ea-bd8c-1e528e258e0d&notifyId=f08296fb-939f-41ea-bd8c-1e528e258e0d&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600591113&planNo=PL2600371327&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -78,7 +80,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "DC2600090627",
@@ -865,8 +869,8 @@
         "MERUFA LUBE",
         "AZ F400 CH",
         "GL F400 CH",
-        " GT023-200",
-        "C.90.VP ",
+        "GT023-200",
+        "C.90.VP",
         "LD F060 CH",
         "DT F125 CH"
       ],
@@ -1180,7 +1184,7 @@
       "status": "awarded",
       "sourceStatus": "01",
       "statusForNotify": "CNTTT",
-      "bidderCount": 2,
+      "bidderCount": 3,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=f4f25859-8fc4-45f4-8a89-8b2958d95951&notifyId=f4f25859-8fc4-45f4-8a89-8b2958d95951&inputResultId=8451c003-b455-495c-91ac-2061a2599d6d&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600586296&planNo=PL2600363314&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [
         "CÔNG TY TNHH MEDITECH AUTOMATION",
@@ -1201,7 +1205,7 @@
       ],
       "loserDetails": [],
       "winningModels": [
-        " TC-720+",
+        "TC-720+",
         "URS-11"
       ],
       "losingModels": [
@@ -90360,7 +90364,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-03T12:04:10.880Z",
+  "fetchedAt": "2026-11-03T12:13:09.011Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -90393,6 +90397,15 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "filterStrategy": "unified-medical-scope-v18",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
+    "lastMedicalRescueAt": "2026-11-03T12:13:09.011Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 693,
+    "lastMedicalRescueMedicalCount": 28,
+    "lastMedicalRescueNewCount": 0,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
