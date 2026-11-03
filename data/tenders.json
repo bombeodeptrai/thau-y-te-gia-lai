@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=2d5451c6-63ee-40d0-942b-e29a8e744306&notifyId=2d5451c6-63ee-40d0-942b-e29a8e744306&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600589924&planNo=PL2600361821&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,9 +38,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceStage": "official-public-search",
-      "sourceBidderCount": null
+      "losingModelDisclosure": ""
     },
     {
       "id": "f08296fb-939f-41ea-bd8c-1e528e258e0d",
@@ -68,7 +66,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f08296fb-939f-41ea-bd8c-1e528e258e0d&notifyId=f08296fb-939f-41ea-bd8c-1e528e258e0d&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600591113&planNo=PL2600371327&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -80,9 +78,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "DC2600090627",
@@ -4560,8 +4556,8 @@
         "MERUFA LUBE",
         "AZ F400 CH",
         "GL F400 CH",
-        "GT023-200",
-        "C.90.VP",
+        " GT023-200",
+        "C.90.VP ",
         "LD F060 CH",
         "DT F125 CH"
       ],
@@ -10796,9 +10792,14 @@
       "loserNames": [
         "Công Ty TNHH Công Nghệ Tín Khang"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "Công Ty TNHH Công Nghệ Tín Khang",
+          "reason": "từ chối"
+        }
+      ],
       "winningModels": [
-        "E1000",
+        "E1000 ",
         "Commercial 14 B1MG (MS-14S1)",
         "LBP 2900",
         "Laser LBP 243dw II",
@@ -10807,7 +10808,7 @@
         "Scanjet Pro 3000S4"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -11918,12 +11919,17 @@
       "loserNames": [
         "CÔNG TY TNHH BẢO HÂN PLASTIC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH BẢO HÂN PLASTIC",
+          "reason": "cao hơn giá trúng thầu"
+        }
+      ],
       "winningModels": [
         "Không yêu cầu"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -12531,21 +12537,21 @@
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [
-        "ITP01001 -DS50",
-        "ITP01102 -DS50",
+        "ITP01001\r\n-DS50",
+        "ITP01102\r\n-DS50",
         "W041",
         "W109-C",
-        "ITP10002 -TC40",
+        "ITP10002\r\n-TC40",
         "R1001S",
         "Multistix 10 SG",
         "W112-C",
         "W071-C",
         "0055",
-        "810001 810002",
-        "814001 814002",
+        "810001\r\n810002",
+        "814001\r\n814002",
         "816001 816002",
-        "822001 822002",
-        "AC-301",
+        "822001\r\n822002",
+        " AC-301 ",
         "R0062C",
         "MEDI-TEST URYXXON STICK 10",
         "03FK10",
@@ -12558,9 +12564,13 @@
         "Dầu soi kính",
         "Mi 005ST",
         "CYT90",
-        "Cồn Ethanol",
-        "Acid Axetic 3%",
-        "DD-009"
+        " Cồn Ethanol ",
+        " Acid Axetic 3%",
+        "DD-009",
+        "ITP02006\r\n-DS50",
+        " CYT90",
+        "816001\r\n816002",
+        "Dầu  soi kính"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -12639,9 +12649,42 @@
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI",
         "CÔNG TY TNHH MEDICAL TD"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ TỔNG HỢP BẢO HÂN",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ KHÁNH LÂM AN",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH CÔNG NGHỆ VÀ DỊCH VỤ NTTN",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ SKY",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH VẬT TƯ Y TẾ HỒNG PHÁT",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "Hộ kinh doanh vận tải Trường Thịnh",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI",
+          "reason": "Không xếp hạng 1"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH MEDICAL TD",
+          "reason": "Không xếp hạng 1"
+        }
+      ],
       "winningModels": [
-        "PS2018",
+        " PS2018",
         "TE/B50600-003",
         "MG245050",
         "DI-HL",
@@ -12653,7 +12696,7 @@
         "-",
         "PKBD001",
         "Model: GJ-3, mã: J0200G",
-        "Model: GJ-3, mã: J0230G.",
+        "Model: GJ-3, mã: J0230G. ",
         "Model: GJ-3, mã: G4503X"
       ],
       "losingModels": [
@@ -13611,13 +13654,26 @@
         "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
         "CÔNG TY TNHH BIOTECH ASIA"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDISUN",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH BIOTECH ASIA",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        }
+      ],
       "winningModels": [
         "LON_260MNON3P3N1",
         "Multistix 10 SG"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -14787,10 +14843,18 @@
       "decisionDate": "2026-11-03T08:41:31",
       "resultPublishedDate": "2026-11-03T08:42:51",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI, DỊCH VỤ VÀ CÔNG NGHỆ KỸ THUẬT ĐĂNG NGUYÊN"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "- Sửa chữa Bảng mạch trộn khí (Sensor board w/o PAUX), mã: BE-480316;",
+        "- Sửa chữa Bộ trộn khí thở (Blender chamber), mã MA-480102;",
+        "- Sửa chữa Lọc khí turbine (Turbine filter cassette), mã: CM-480170;",
+        "- Sửa chữa Van điều chỉnh tỷ lệ oxy (Proportinal vallve), mã: CP-551404;",
+        "- Thực hiện kiểm định sau sửa chữa."
+      ],
       "losingModels": [],
       "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
@@ -16075,20 +16139,25 @@
       "loserNames": [
         "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ GM VIỆT NAM"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN THIẾT BỊ VÀ CÔNG NGHỆ GM VIỆT NAM",
+          "reason": "Xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "K2-2015M",
         "No.500-V",
         "CRW-23",
         "NEB 200",
-        "Model: RI-INTERGRAL MACINTOSH F.O Code: 8122",
+        "Model: RI-INTERGRAL MACINTOSH F.O\r\nCode: 8122",
         "Good-Lite Company",
         "1-083",
         "Stephens Instruments",
         "1-060"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -16458,7 +16527,12 @@
       "loserNames": [
         "CÔNG TY TNHH VATANY VN"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH VATANY VN",
+          "reason": "Không đạt về năng lực và kinh nghiệm"
+        }
+      ],
       "winningModels": [
         "998891",
         "995280",
@@ -16500,7 +16574,7 @@
         "TRIMAX TXE Imaging film"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": 2
     },
@@ -23469,11 +23543,18 @@
         "Bệnh Viện Phong Da Liễu Trung ương Quy Hòa",
         "CÔNG TY CỔ PHẦN DỊCH VỤ Y TẾ HÒA ĐỨC"
       ],
-      "loserNames": [],
-      "loserDetails": [],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN DỊCH VỤ Y TẾ HÒA ĐỨC"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DỊCH VỤ Y TẾ HÒA ĐỨC",
+          "reason": "Nhà thầu có giá dự thầu sau giảm giá xếp hạng thứ 2 (Không đánh giá)"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "DC2600016184",
@@ -38794,7 +38875,11 @@
       ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "21342",
+        "21341",
+        "22226"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -38837,11 +38922,21 @@
         "CÔNG TY TNHH MEDITECH AUTOMATION",
         "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN"
       ],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
+      "loserNames": [
+        "CÔNG TY TNHH MEDITECH AUTOMATION"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH MEDITECH AUTOMATION",
+          "reason": "Xếp hạng 2"
+        }
+      ],
+      "winningModels": [
+        "U021-011",
+        "U031-111"
+      ],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "2d75d7ba-03c1-4156-95ab-62409a5b1f10",
@@ -38928,7 +39023,44 @@
       ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "105-001597-00",
+        "105-009120-00",
+        "105-001626-00",
+        "105-001622-00",
+        "105-001595-00",
+        "105-025541-00",
+        "105-025543-00",
+        "115-084091-00",
+        "115-084089-00",
+        "105-004595-00",
+        "105-004597-00",
+        "105-025540-00",
+        "105-009119-00",
+        "105-000107-00",
+        "105-004592-00",
+        "105-004591-00",
+        "105-004601-00",
+        "105-004610-00",
+        "105-001585-00",
+        "105-001596-00",
+        "105-001624-00",
+        "105-004598-00",
+        "105-001598-00",
+        "105-001600-00",
+        "105-025539-00",
+        "115-084090-00",
+        "105-001132-00",
+        "99059",
+        "105-001623-00",
+        "105-001144-00",
+        "105-002225-00",
+        "105-004612-00",
+        "105-004594-00",
+        "574-973",
+        "99261",
+        "115-084088-00"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -39193,11 +39325,39 @@
         "CÔNG TY CỔ PHẦN MEDCOMTECH",
         "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DƯỢC VÀ TRANG THIẾT BỊ Y TẾ TATA"
       ],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
+      "loserNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ THIẾT BỊ Y TẾ THIÊN ÂN",
+        "CÔNG TY CỔ PHẦN Y SINH THIỆN ĐỨC",
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DƯỢC VÀ TRANG THIẾT BỊ Y TẾ TATA"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ THIẾT BỊ Y TẾ THIÊN ÂN",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN Y SINH THIỆN ĐỨC",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ THIẾT BỊ Y TẾ THIÊN ÂN",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DƯỢC VÀ TRANG THIẾT BỊ Y TẾ TATA",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN Y SINH THIỆN ĐỨC",
+          "reason": "Nhà thầu không cung cấp tài liệu làm rõ giá dự thầu thấp dưới 50% giá kế hoạch"
+        }
+      ],
+      "winningModels": [
+        "SC-250",
+        "DC-250"
+      ],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "Nguồn công khai chưa công bố"
     },
     {
       "id": "533cf5ea-25bd-4df0-8c9c-ead59752f62c",
@@ -40749,7 +40909,15 @@
       ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "52028022",
+        "52028013",
+        "52028024",
+        "52028020",
+        "52028021",
+        "52028023",
+        "52028025"
+      ],
       "losingModels": [],
       "losingModelDisclosure": ""
     },
@@ -582477,9 +582645,9 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-03T02:21:04.393Z",
+  "fetchedAt": "2026-11-03T03:32:38.857Z",
   "source": "muasamcong-public-api-central-region",
-  "detailTenderCount": 5493,
+  "detailTenderCount": 5494,
   "regions": [
     {
       "slug": "thanh-hoa",
@@ -582597,11 +582765,11 @@
         "64"
       ],
       "tenderCount": 1186,
-      "bidderCount": 28574,
-      "equipmentCount": 18388,
-      "detailTenderCount": 1133,
+      "bidderCount": 28575,
+      "equipmentCount": 18450,
+      "detailTenderCount": 1134,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-03T02:21:04.393Z",
+      "fetchedAt": "2026-11-03T03:32:38.857Z",
       "initialized": true,
       "source": "regional-scan"
     },

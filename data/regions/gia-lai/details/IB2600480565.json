@@ -1,40 +1,98 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "a4518231-81df-42e4-933a-3e025c9d21fb",
+      "id": "ae8beb92-2318-40c9-bada-2e45653645ad",
       "contractorCode": "vn6001781808",
-      "taxCode": "",
+      "taxCode": "6001781808",
       "contractorName": "CÔNG TY TNHH MEDITECH AUTOMATION",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600592383",
       "lotName": "Gói 10. Hóa chất xét nghiệm nước tiểu gồm 03 mặt hàng 01 phần (lô)",
       "bidPrice": 243360000,
       "finalPrice": 243360000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-14T09:54:03.55",
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-10-27T15:59:39.888",
       "models": []
     },
     {
-      "id": "585f42e9-8599-4374-8ac7-763d20a2f103",
+      "id": "f71edfac-1c38-419d-b69d-4f2dfb3a39ad",
       "contractorCode": "vn6001614229",
-      "taxCode": "",
+      "taxCode": "6001614229",
       "contractorName": "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600592383",
       "lotName": "Gói 10. Hóa chất xét nghiệm nước tiểu gồm 03 mặt hàng 01 phần (lô)",
       "bidPrice": 202560000,
       "finalPrice": 202560000,
-      "winningPrice": 0,
+      "winningPrice": 202560000,
       "reason": "",
-      "submittedAt": "2026-09-14T09:54:03.759",
+      "submittedAt": "2026-10-27T15:59:39.888",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "43af51fb-b265-47c1-bf79-303c1c108d65",
+      "name": "Nội kiểm tổng phân tích nước tiểu mức 2",
+      "model": "U021-011",
+      "brand": "Dung dịch chứng mission Liquid Urine Control",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Phù hợp với test xét nghiệm chính và Máy đặt",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 380000,
+      "winnerNames": [
+        "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN"
+      ],
+      "decisionNo": "1650/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:59:46"
+    },
+    {
+      "id": "9c2adab4-e37b-446e-be9b-398e6b318e1a",
+      "name": "Nội kiểm tổng phân tích nước tiểu mức 1",
+      "model": "U021-011",
+      "brand": "Dung dịch chứng mission Liquid Urine Control",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Phù hợp với test xét nghiệm chính và Máy đặt",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 380000,
+      "winnerNames": [
+        "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN"
+      ],
+      "decisionNo": "1650/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:59:46"
+    },
+    {
+      "id": "984e9400-fe8d-4b8c-aacf-d14672bddb87",
+      "name": "Hóa chất xét nghiệm tổng phân tích nước tiểu",
+      "model": "U031-111",
+      "brand": "Que thử phân tích nước tiểu 11 thông số",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Que thử nước tiểu đọc được các thông số: Leukocytes, Nitrite, Urobilinogen, Protein, pH, Blood, Specific Gravity, Ketone, Bilirubin, Glucose, Ascorbic Acid (vitamin C). (LEU/ NIT/ URO/ PRO/ pH/ BLO/ SG/ KET/ BIL/ GLU/ ASC).",
+      "unit": "Test",
+      "quantity": 60000,
+      "unitPrice": 3300,
+      "winnerNames": [
+        "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN"
+      ],
+      "decisionNo": "1650/QĐ-BVĐKGL",
+      "decisionDate": "2026-10-27T23:59:59",
+      "resultPublishedDate": "2026-10-27T15:59:46"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +117,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T20:36:24.819Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-03T03:32:34.542Z"
 }
