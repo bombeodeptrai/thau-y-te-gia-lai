@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-02T18:24:29.405Z",
+  "rescuedAt": "2026-11-03T02:21:04.393Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 234,
+      "count": 238,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 638,
+      "count": 648,
       "error": ""
     },
     {
@@ -114,13 +114,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 7,
+      "count": 10,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 113,
+      "count": 118,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -281,18 +281,18 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1407,
-  "acceptedCount": 57,
-  "rejectedCount": 1350,
+  "candidateCount": 1427,
+  "acceptedCount": 58,
+  "rejectedCount": 1369,
   "rejectedReasons": {
-    "excluded:tu van": 488,
-    "excluded:xay dung": 328,
-    "insufficient-medical-context": 307,
+    "excluded:tu van": 496,
+    "excluded:xay dung": 329,
+    "insufficient-medical-context": 315,
     "excluded:xay lap": 69,
     "excluded:sua chua": 46,
     "excluded:cai tao": 27,
     "excluded:thuc pham": 16,
-    "excluded:tham dinh": 11,
+    "excluded:tham dinh": 12,
     "excluded:bao ve": 9,
     "excluded:bao hiem": 7,
     "excluded:bao tri": 6,
@@ -300,6 +300,7 @@
     "excluded:kiem dinh": 3,
     "excluded:may tinh": 3,
     "excluded:bao duong": 2,
+    "excluded:tram bien ap": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
     "excluded:cong nghe thong tin": 2,
@@ -314,11 +315,25 @@
     "excluded:rac thai": 1,
     "excluded:suat an": 1,
     "excluded:thu y": 1,
-    "excluded:tram bien ap": 1,
     "excluded:bao ho lao dong": 1,
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600589924",
+      "name": "Dịch vụ sửa chữa, kiểm định 02 máy thở Bennett 840",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "may tho",
+        "benh vien",
+        "da khoa",
+        "sua chua",
+        "kiem dinh"
+      ]
+    },
     {
       "notifyNo": "IB2600591113",
       "name": "Gói thầu thuốc Biệt dược gốc",
@@ -932,26 +947,38 @@
         "thuoc",
         "cung cap"
       ]
-    },
-    {
-      "notifyNo": "IB2600569309",
-      "name": "Đầu tư, mua sắm Thiết bị, Dụng cụ y tế phục vụ Khu khám bệnh, chữa bệnh theo yêu cầu - Đợt 1 của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 165,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "dung cu y te",
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam",
-        "kham benh",
-        "chua benh"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600598308",
+      "name": "Trang bị thiết bị cho 15 câu lạc bộ tại 15 trường trung học cơ sở",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600598298",
+      "name": "Trang bị thiết bị cho 25 câu lạc bộ tại 25 trường trung học phổ thông",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600589678",
+      "name": "Gói 38/SCL2027/PTC3: Cung cấp biến dòng điện, biến điện áp, dao cách ly, tủ truyền động cho dao cách ly và dao tiếp địa, kèm phụ kiện liên quan",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
     {
       "notifyNo": "IB2600595199",
       "name": "Mua sắm xi măng PCP40 thực hiện Chương trình bê tông hóa giao thông nông thôn năm 2026 trên địa bàn xã Phù Cát",
@@ -1365,47 +1392,12 @@
       "matched": [
         "sua chua"
       ]
-    },
-    {
-      "notifyNo": "IB2600592890",
-      "name": "Hệ thống máy chủ",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may chu",
-      "matched": [
-        "may chu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600591890",
-      "name": "Mua sắm hệ thống Wifi",
-      "investor": "Công ty Vận chuyển và Kho vận Bưu điện, Tổng công ty Bưu điện Việt Nam",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600590907",
-      "name": "Mua sắm xi măng PCB40 thực hiện Chương trình bê tông hóa giao thông nông thôn trên địa bàn xã Phù Mỹ Bắc",
-      "investor": "Ban quản lý xã Phù Mỹ Bắc",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1187,
-  "afterCount": 1187,
+  "beforeCount": 1186,
+  "afterCount": 1186,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }

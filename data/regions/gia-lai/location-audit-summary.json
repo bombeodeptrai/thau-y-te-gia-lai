@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-02T18:23:45.591Z",
+  "auditedAt": "2026-11-03T02:20:19.046Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 638,
+      "count": 648,
       "error": ""
     },
     {
@@ -104,13 +104,13 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 44,
+      "count": 45,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 7,
+      "count": 10,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 113,
+      "count": 118,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -271,23 +271,24 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1350,
-  "acceptedCount": 54,
-  "rejectedCount": 1296,
+  "candidateCount": 1369,
+  "acceptedCount": 55,
+  "rejectedCount": 1314,
   "rejectedReasons": {
-    "excluded:tu van": 486,
-    "excluded:xay dung": 316,
-    "insufficient-medical-context": 280,
+    "excluded:tu van": 494,
+    "excluded:xay dung": 317,
+    "insufficient-medical-context": 287,
     "excluded:xay lap": 64,
     "excluded:sua chua": 42,
     "excluded:cai tao": 27,
     "excluded:thuc pham": 16,
-    "excluded:tham dinh": 11,
+    "excluded:tham dinh": 12,
     "excluded:bao ve": 9,
     "excluded:bao hiem": 7,
     "excluded:bao tri": 6,
     "excluded:trang phuc": 6,
     "excluded:may tinh": 3,
+    "excluded:tram bien ap": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
     "excluded:cong nghe thong tin": 2,
@@ -301,12 +302,26 @@
     "excluded:may chu": 1,
     "excluded:cap dien": 1,
     "excluded:thu y": 1,
-    "excluded:tram bien ap": 1,
     "excluded:bao duong": 1,
     "excluded:bao ho lao dong": 1,
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600589924",
+      "name": "Dịch vụ sửa chữa, kiểm định 02 máy thở Bennett 840",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 225,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
+      "matched": [
+        "may tho",
+        "benh vien",
+        "da khoa",
+        "sua chua",
+        "kiem dinh"
+      ]
+    },
     {
       "notifyNo": "IB2600591113",
       "name": "Gói thầu thuốc Biệt dược gốc",
@@ -918,29 +933,98 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600583748",
-      "name": "Gói thầu số 2: Mua sắm hóa chất y tế và sinh phẩm chẩn đoán in vitro",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "hoa chat y te",
-        "sinh pham chan doan",
-        "chan doan in vitro",
-        "benh vien",
-        "hoa chat",
-        "sinh pham",
-        "chan doan",
-        "in vitro",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600598607",
+      "name": "Gói thầu số 35/2027/CT - Thi công di dời công tơ",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600598562",
+      "name": "Gói thầu số 30/2027/GS - Tư vấn giám sát thi công xây dựng công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600598556",
+      "name": "Gói thầu số 30/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu"
+      ]
+    },
+    {
+      "notifyNo": "IB2600598550",
+      "name": "Gói thầu số 30/2027/HL - Thi công Hotline",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600598546",
+      "name": "Gói thầu số 30/2027/CT - Thi công di dời công tơ",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600100872",
+      "name": "Đánh giá chứng nhận tiêu chuẩn VietGAP cho cây đậu phộng năm 2026” tại xã Cát Tiến, tỉnh Gia Lai",
+      "investor": "Phòng Kinh tế xã Cát Tiến",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600598308",
+      "name": "Trang bị thiết bị cho 15 câu lạc bộ tại 15 trường trung học cơ sở",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600598298",
+      "name": "Trang bị thiết bị cho 25 câu lạc bộ tại 25 trường trung học phổ thông",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600598476",
+      "name": "Gói 44/SCL2027/PTC3: Tháo dỡ, lắp đặt và thí nghiệm hiệu chỉnh các hạng mục thuộc trạm biến áp tại Gia Lai năm 2027",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tram bien ap",
+      "matched": [
+        "tram bien ap"
+      ]
+    },
     {
       "notifyNo": "DC2600099031",
       "name": "Tư vấn thẩm tra Báo cáo kinh tế - kỹ thuật",
@@ -1274,113 +1358,12 @@
       "matched": [
         "xay lap"
       ]
-    },
-    {
-      "notifyNo": "DC2600079754",
-      "name": "Gói thầu 01: Thi công xây lắp",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600090773",
-      "name": "Sửa chữa dãy nhà 02 tầng của Khoa Sản 1-4 thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600079495",
-      "name": "Gói thầu 01: Thi công xây lắp",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600079751",
-      "name": "Gói thầu 01: Thi công xây lắp",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600079748",
-      "name": "Gói thầu 01: Thi công xây lắp",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600079840",
-      "name": "Gói thầu 02: Giám sát thi công xây lắp",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600079847",
-      "name": "Gói thầu 02: Giám sát thi công xây lắp",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN KHAI THÁC CÔNG TRÌNH THỦY LỢI GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600091240",
-      "name": "Tư vấn thẩm tra báo cáo nghiên cứu khả thi",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600091227",
-      "name": "Tư vấn giám sát khảo sát bước lập báo cáo nghiên cứu khả thi",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1187,
-  "afterCount": 1187,
-  "newCount": 0,
+  "beforeCount": 1185,
+  "afterCount": 1186,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
