@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-03T03:40:48.077Z",
+  "rescuedAt": "2026-11-03T07:25:42.526Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 113,
+      "count": 112,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 307,
+      "count": 329,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 38,
+      "count": 37,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 40,
+      "count": 42,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 16,
+      "count": 13,
       "error": ""
     },
     {
@@ -281,22 +281,23 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 641,
+  "candidateCount": 661,
   "acceptedCount": 30,
-  "rejectedCount": 611,
+  "rejectedCount": 631,
   "rejectedReasons": {
-    "excluded:tu van": 189,
-    "insufficient-medical-context": 152,
-    "excluded:xay dung": 142,
+    "excluded:tu van": 186,
+    "insufficient-medical-context": 170,
+    "excluded:xay dung": 145,
     "excluded:xay lap": 49,
     "excluded:sua chua": 30,
     "excluded:cai tao": 11,
     "excluded:bao ve": 6,
-    "excluded:bao tri": 4,
+    "excluded:bao tri": 5,
     "excluded:thuc pham": 4,
     "excluded:tham dinh": 3,
     "excluded:bao hiem": 3,
     "excluded:may tinh": 2,
+    "excluded:quan ly du an": 2,
     "excluded:may chu": 1,
     "excluded:may in": 1,
     "excluded:cap dien": 1,
@@ -311,8 +312,7 @@
     "excluded:giam sat thi cong": 1,
     "excluded:cong nghe thong tin": 1,
     "excluded:thu y": 1,
-    "excluded:bao duong": 1,
-    "excluded:quan ly du an": 1
+    "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
     {
