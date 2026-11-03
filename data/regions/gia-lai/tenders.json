@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=2d5451c6-63ee-40d0-942b-e29a8e744306&notifyId=2d5451c6-63ee-40d0-942b-e29a8e744306&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600589924&planNo=PL2600361821&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,9 +38,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "f08296fb-939f-41ea-bd8c-1e528e258e0d",
@@ -68,7 +66,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f08296fb-939f-41ea-bd8c-1e528e258e0d&notifyId=f08296fb-939f-41ea-bd8c-1e528e258e0d&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600591113&planNo=PL2600371327&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -80,9 +78,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "DC2600090627",
@@ -869,8 +865,8 @@
         "MERUFA LUBE",
         "AZ F400 CH",
         "GL F400 CH",
-        "GT023-200",
-        "C.90.VP",
+        " GT023-200",
+        "C.90.VP ",
         "LD F060 CH",
         "DT F125 CH"
       ],
@@ -1203,9 +1199,18 @@
         "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN THIẾT BỊ Y TẾ CHÂU THANH",
         "CÔNG TY TNHH MEDITECH AUTOMATION"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN THIẾT BỊ Y TẾ CHÂU THANH",
+          "reason": "Từ chối chấp thuận được trao hợp đồng"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH MEDITECH AUTOMATION",
+          "reason": "Bị loại xếp hạng nhà thầu"
+        }
+      ],
       "winningModels": [
-        "TC-720+",
+        " TC-720+",
         "URS-11"
       ],
       "losingModels": [
@@ -1577,13 +1582,14 @@
       ],
       "loserDetails": [],
       "winningModels": [
-        "E1000",
+        "E1000 ",
         "Commercial 14 B1MG (MS-14S1)",
         "LBP 2900",
         "Laser LBP 243dw II",
         "G500 USB203DPI",
         "ZK9500",
-        "Scanjet Pro 3000S4"
+        "Scanjet Pro 3000S4",
+        "E1000"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -1678,12 +1684,17 @@
       "loserNames": [
         "CÔNG TY TNHH BẢO HÂN PLASTIC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH BẢO HÂN PLASTIC",
+          "reason": "cao hơn giá trúng thầu"
+        }
+      ],
       "winningModels": [
         "Không yêu cầu"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -1932,21 +1943,21 @@
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [
-        "ITP01001 -DS50",
-        "ITP01102 -DS50",
+        "ITP01001\r\n-DS50",
+        "ITP01102\r\n-DS50",
         "W041",
         "W109-C",
-        "ITP10002 -TC40",
+        "ITP10002\r\n-TC40",
         "R1001S",
         "Multistix 10 SG",
         "W112-C",
         "W071-C",
         "0055",
-        "810001 810002",
-        "814001 814002",
+        "810001\r\n810002",
+        "814001\r\n814002",
         "816001 816002",
-        "822001 822002",
-        "AC-301",
+        "822001\r\n822002",
+        " AC-301 ",
         "R0062C",
         "MEDI-TEST URYXXON STICK 10",
         "03FK10",
@@ -1959,9 +1970,22 @@
         "Dầu soi kính",
         "Mi 005ST",
         "CYT90",
+        " Cồn Ethanol ",
+        " Acid Axetic 3%",
+        "DD-009",
+        "ITP02006\r\n-DS50",
+        " CYT90",
+        "816001\r\n816002",
+        "Dầu  soi kính",
+        "ITP01001 -DS50",
+        "ITP01102 -DS50",
+        "ITP10002 -TC40",
+        "810001 810002",
+        "814001 814002",
+        "822001 822002",
+        "AC-301",
         "Cồn Ethanol",
-        "Acid Axetic 3%",
-        "DD-009"
+        "Acid Axetic 3%"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -2042,7 +2066,7 @@
       ],
       "loserDetails": [],
       "winningModels": [
-        "PS2018",
+        " PS2018",
         "TE/B50600-003",
         "MG245050",
         "DI-HL",
@@ -2054,8 +2078,10 @@
         "-",
         "PKBD001",
         "Model: GJ-3, mã: J0200G",
-        "Model: GJ-3, mã: J0230G.",
-        "Model: GJ-3, mã: G4503X"
+        "Model: GJ-3, mã: J0230G. ",
+        "Model: GJ-3, mã: G4503X",
+        "PS2018",
+        "Model: GJ-3, mã: J0230G."
       ],
       "losingModels": [
         "-",
@@ -2113,13 +2139,26 @@
         "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
         "CÔNG TY TNHH BIOTECH ASIA"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ MEDISUN",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ - VẬT TƯ KHOA HỌC KỸ THUẬT LINH ANH",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH BIOTECH ASIA",
+          "reason": "Nhà thầu xếp hạng 2 trở xuống"
+        }
+      ],
       "winningModels": [
         "LON_260MNON3P3N1",
         "Multistix 10 SG"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -2749,11 +2788,12 @@
         "No.500-V",
         "CRW-23",
         "NEB 200",
-        "Model: RI-INTERGRAL MACINTOSH F.O Code: 8122",
+        "Model: RI-INTERGRAL MACINTOSH F.O\r\nCode: 8122",
         "Good-Lite Company",
         "1-083",
         "Stephens Instruments",
-        "1-060"
+        "1-060",
+        "Model: RI-INTERGRAL MACINTOSH F.O Code: 8122"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -2802,7 +2842,12 @@
       "loserNames": [
         "CÔNG TY TNHH VATANY VN"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH VATANY VN",
+          "reason": "Không đạt về năng lực và kinh nghiệm"
+        }
+      ],
       "winningModels": [
         "998891",
         "995280",
@@ -2844,7 +2889,7 @@
         "TRIMAX TXE Imaging film"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": 2
     },
@@ -12520,6 +12565,23 @@
         "HAJZ(Q)04 (S20300145036)",
         "HAJZ(Q)04 (S20300145040)",
         "HAJZ(Q)04 (S20300145046)",
+        "01FK10",
+        "05FK80",
+        "14FK10",
+        "11FK10",
+        "1 1300 99 10 021",
+        "1 1711 99 10 021",
+        "1 1130 99 10 021",
+        "1 0441 99 10 021",
+        "54007004",
+        "CF579595",
+        "ZPPAL337564",
+        "720017818",
+        "GT015-100",
+        "GS-3034",
+        "01.09.1F.01.13.11",
+        "PFA0050106",
+        "6-051",
         "PWAA48G",
         "M02HH06L30",
         "M15E18",
@@ -12541,23 +12603,6 @@
         "TDR Resin Aerobic",
         "52861",
         "M-B-8x10 in",
-        "01FK10",
-        "05FK80",
-        "14FK10",
-        "11FK10",
-        "1 1300 99 10 021",
-        "1 1711 99 10 021",
-        "1 1130 99 10 021",
-        "1 0441 99 10 021",
-        "54007004",
-        "CF579595",
-        "ZPPAL337564",
-        "720017818",
-        "GT015-100",
-        "GS-3034",
-        "01.09.1F.01.13.11",
-        "PFA0050106",
-        "6-051",
         "1 0210 99 10 021",
         "1 0220 99 10 021",
         "1 2601 99 10 021",
@@ -90347,7 +90392,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-03T19:32:58.361Z",
+  "fetchedAt": "2026-11-03T19:38:33.540Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -90380,20 +90425,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v18",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v18",
-    "lastMedicalRescueAt": "2026-11-03T19:32:58.361Z",
-    "lastMedicalRescueDays": 30,
-    "lastMedicalRescueCandidateCount": 1509,
-    "lastMedicalRescueMedicalCount": 58,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0,
-    "lastLocationAuditAt": "2026-11-03T19:32:18.591Z",
-    "lastLocationAuditDays": 30,
-    "lastLocationAuditCandidateCount": 1449,
-    "lastLocationAuditMedicalCount": 55,
-    "lastLocationAuditNewCount": 0
+    ]
   }
 }
