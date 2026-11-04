@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-04T00:38:04.322Z",
+  "auditedAt": "2026-11-04T12:09:04.507Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 708,
+      "count": 778,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 38,
+      "count": 36,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 34,
+      "count": 35,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 21,
+      "count": 31,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -140,7 +140,7 @@
     {
       "term": "Mang Yang",
       "success": true,
-      "count": 15,
+      "count": 12,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 94,
+      "count": 103,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 89,
+      "count": 93,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 122,
+      "count": 108,
       "error": ""
     },
     {
@@ -188,13 +188,13 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 23,
+      "count": 32,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 34,
+      "count": 32,
       "error": ""
     },
     {
@@ -212,13 +212,13 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 41,
+      "count": 39,
       "error": ""
     },
     {
@@ -271,29 +271,29 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1454,
-  "acceptedCount": 55,
-  "rejectedCount": 1399,
+  "candidateCount": 1536,
+  "acceptedCount": 56,
+  "rejectedCount": 1480,
   "rejectedReasons": {
-    "excluded:tu van": 499,
-    "insufficient-medical-context": 349,
-    "excluded:xay dung": 328,
-    "excluded:xay lap": 66,
-    "excluded:sua chua": 42,
-    "excluded:cai tao": 28,
+    "excluded:tu van": 496,
+    "insufficient-medical-context": 406,
+    "excluded:xay dung": 345,
+    "excluded:xay lap": 72,
+    "excluded:sua chua": 45,
+    "excluded:cai tao": 27,
     "excluded:thuc pham": 17,
-    "excluded:tham dinh": 12,
-    "excluded:bao ve": 9,
-    "excluded:bao hiem": 7,
+    "excluded:tham dinh": 10,
+    "excluded:bao ve": 10,
+    "excluded:bao hiem": 8,
     "excluded:bao tri": 7,
-    "excluded:trang phuc": 6,
-    "excluded:may tinh": 3,
+    "excluded:trang phuc": 5,
+    "excluded:may tinh": 4,
+    "excluded:cong nghe thong tin": 4,
     "excluded:quan ly du an": 3,
     "excluded:tram bien ap": 2,
     "excluded:may in": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
-    "excluded:cong nghe thong tin": 2,
     "excluded:duong day": 2,
     "excluded:kiem dinh": 2,
     "excluded:in an": 1,
@@ -730,6 +730,22 @@
       ]
     },
     {
+      "notifyNo": "DC2600106155",
+      "name": "Mua sắm thuốc Lao hàng 1 bổ sung phục vụ khám bệnh, chữa bệnh năm 2026 - lần 2",
+      "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
+      "accepted": true,
+      "score": 145,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "benh vien",
+        "thuoc",
+        "mua",
+        "mua sam",
+        "kham benh",
+        "chua benh"
+      ]
+    },
+    {
       "notifyNo": "IB2600590767",
       "name": "Mua sắm vật tư y tế và hóa chất xét nghiệm của Bệnh viện y dược cổ truyền và Phục hồi chức năng Pleiku năm 2026",
       "investor": "BỆNH VIỆN Y DƯỢC CỔ TRUYỀN VÀ PHỤC HỒI CHỨC NĂNG PLEIKU",
@@ -764,20 +780,6 @@
         "sinh hoa",
         "huyet hoc",
         "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600567655",
-      "name": "Gói thầu số 1: Mua sắm Thuốc generic bổ sung năm 2026 (đợt 2)",
-      "investor": "TRUNG TÂM Y TẾ PLEIKU",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "trung tam y te",
-        "thuoc",
         "mua",
         "mua sam"
       ]
@@ -906,29 +908,36 @@
       ]
     },
     {
-      "notifyNo": "IB2600587591",
-      "name": "Mua vật tư y tế tiêu hao và nẹp vít khóa năm 2026-2027 của Bệnh viện Chỉnh hình và phục hồi chức năng Quy Nhơn",
-      "investor": "BỆNH VIỆN CHỈNH HÌNH VÀ PHỤC HỒI CHỨC NĂNG QUY NHƠN",
+      "notifyNo": "IB2600584097",
+      "name": "Gói thầu số 1: Vật tư, công cụ, dụng cụ y tế, sinh phẩm chẩn đoán in vitro mua sắm năm 2027-2028",
+      "investor": "Trung tâm Y tế Quy Nhơn",
       "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
+      "score": 255,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
       "matched": [
-        "vat tu y te",
-        "benh vien",
+        "sinh pham chan doan",
+        "chan doan in vitro",
+        "dung cu y te",
+        "trung tam y te",
+        "sinh pham",
+        "chan doan",
+        "in vitro",
         "vat tu",
-        "mua"
+        "mua",
+        "mua sam"
       ]
     },
     {
-      "notifyNo": "IB2600583667",
-      "name": "Gói thầu số 1: Mua sắm vật tư y tế, công cụ, dụng cụ",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
+      "notifyNo": "IB2600589465",
+      "name": "Gói thầu số 2: Hóa chất, vật tư dùng trong xét nghiệm mua sắm năm 2027-2028",
+      "investor": "Trung tâm Y tế Quy Nhơn",
       "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
+      "score": 155,
+      "reason": "medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
       "matched": [
-        "vat tu y te",
-        "benh vien",
+        "trung tam y te",
+        "hoa chat",
+        "xet nghiem",
         "vat tu",
         "mua",
         "mua sam"
@@ -937,246 +946,92 @@
   ],
   "rejectedDiagnostics": [
     {
-      "notifyNo": "IB2600597988",
-      "name": "Gói thầu số 77/2026/TN - Thí nghiệm vật tư thiết bị, tiếp địa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "DC2600100142",
-      "name": "Mua sắm sửa chữa, cải tạo phòng khánh tiết của Báo và phát thanh, truyền hình Gia Lai",
-      "investor": "BÁO VÀ PHÁT THANH, TRUYỀN HÌNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600599603",
-      "name": "Gói thầu số 22/2027/TN: Thí nghiệm vật tư thiết bị A cấp",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600599596",
-      "name": "Gói thầu số 22/2027/CT: Thi công di dời công tơ",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599591",
-      "name": "Gói thầu số 22/2027/HL: Thi công hotline",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599582",
-      "name": "Gói thầu số 04/2027/TN: Thí nghiệm vật tư thiết bị",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600599577",
-      "name": "Gói thầu số 52/2027/TN - Thí nghiệm vật tư thiết bị",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600599574",
-      "name": "Gói thầu số 52/2027/HL - Thi công Hotline",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599559",
-      "name": "Gói thầu số: 50/2027/HL - Thi công Hotline",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599552",
-      "name": "Gói thầu số: 50/2027/TN - Thí nghiệm VTTB A cấp",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599543",
-      "name": "Gói thầu số 28/2027/TN - Thí nghiệm vật tư thiết bị",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600599035",
-      "name": "Gói thầu số 07/2027/HL - Thi công Hotline",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599047",
-      "name": "Gói thầu số 07/2027/TN - Thí nghiệm vật tư thiết bị",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600599058",
-      "name": "Gói thầu số 07/2027/GS - Tư vấn giám sát thi công xây dựng công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "notifyNo": "DC2600103731",
+      "name": "Tư vấn thẩm định hồ sơ mời thầu (E-HSMT) và thẩm định kết quả lựa chọn nhà thầu gói thầu G13-VN-CSCC_GL_1121.3: Hỗ trợ việc xây dựng các giải pháp giảm nhẹ rủi ro dựa vào cộng đồng có sự tham gia và các kế hoạch hành động đáp ứng nhu cầu và ưu tiên của cả phụ nữ và nam giới để triển khai thực hiện",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung",
         "tu van",
-        "giam sat thi cong"
+        "tham dinh"
       ]
     },
     {
-      "notifyNo": "IB2600599211",
-      "name": "Gói thầu số: 08/2027/TN - Thí nghiệm VTTB A cấp",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "notifyNo": "DC2600103728",
+      "name": "Tư vấn lập hồ sơ mời thầu (E-HSMT) và đánh giá hồ sơ dự thầu (E-HSDT) gói thầu G13-VN-CSCC_GL_1121.3: Hỗ trợ việc xây dựng các giải pháp giảm nhẹ rủi ro dựa vào cộng đồng có sự tham gia và các kế hoạch hành động đáp ứng nhu cầu và ưu tiên của cả phụ nữ và nam giới để triển khai thực hiện",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
       "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
     },
     {
-      "notifyNo": "IB2600599402",
-      "name": "Gói thầu số: 08/2027/HL - Thi công Hotline",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "notifyNo": "DC2600015365",
+      "name": "Sửa chữa xe ô tô cứu thương biển kiểm soát 81M-000.44",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
       "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
     },
     {
-      "notifyNo": "IB2600599481",
-      "name": "Gói thầu số: 08/2027/CT - Thi công di dời công tơ",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "notifyNo": "DC2600104370",
+      "name": "Tư vấn thí nghiệm điện đường dây 22kV và trạm biến áp",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
       "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "duong day",
+        "tram bien ap"
+      ]
     },
     {
-      "notifyNo": "IB2600599497",
-      "name": "Gói thầu số 11/2027/CT - Thi công di dời công tơ",
+      "notifyNo": "IB2600597558",
+      "name": "26-47/SC: thi công Sửa chữa lớn xe ôtô 7 chỗ TOYOTA FORTUNER (81A-027.76)",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
     },
     {
-      "notifyNo": "IB2600599503",
-      "name": "Gói thầu số 11/2027/HL - Thi công Hotline",
+      "notifyNo": "IB2600597482",
+      "name": "26-46/SC: thi công Sửa chữa lớn xe ô tô tải có gắn cẩu 3 tấn (81C-095.69)",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
     },
     {
-      "notifyNo": "IB2600599512",
-      "name": "Gói thầu số 11/2027/TN - Thí nghiệm vật tư thiết bị",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "notifyNo": "DC2600099857",
+      "name": "Gói thầu: Mua sắm bọc vải ghế và khăn trải bàn tại Trung tâm Hội nghị tỉnh phục vụ Quan chức cấp cao không chính thức (ISOM)",
+      "investor": "Trung tâm Văn hóa tỉnh Gia Lai",
       "accepted": false,
-      "score": 10,
+      "score": 0,
       "reason": "insufficient-medical-context",
       "matched": [
-        "vat tu"
+        "mua",
+        "mua sam"
       ]
     },
     {
-      "notifyNo": "IB2600599521",
-      "name": "Gói thầu số: 10/2026/TN - Thí nghiệm VTTB A cấp",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599527",
-      "name": "Gói thầu số 28/2027/CT - Thi công di dời công tơ",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599534",
-      "name": "Gói thầu số 28/2027/HL - Thi công Hotline",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599564",
-      "name": "Gói thầu số: 50/2027/CT - Thi công di dời công tơ",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600103217",
-      "name": "Tư vấn lập Báo cáo kinh tế kỹ thuật",
-      "investor": "Sở Nội vụ tỉnh Gia Lai",
+      "notifyNo": "DC2600105470",
+      "name": "Tư vấn giám sát lắp đặt thiết bị",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
       "accepted": false,
       "score": -100,
       "reason": "excluded:tu van",
@@ -1185,8 +1040,37 @@
       ]
     },
     {
-      "notifyNo": "IB2600599491",
-      "name": "Gói thầu số 31/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
+      "notifyNo": "DC2600100120",
+      "name": "Cung cấp các dịch vụ tuyên truyền, thi công trang trí khu gian hàng giới thiệu, quảng bá của doanh nghiệp kinh doanh hoạt động trong lĩnh vực logistics, xuất nhập khẩu tại Diễn đàn Logistics Việt Nam 2026",
+      "investor": "Sở Công Thương Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600098060",
+      "name": "Nâng cấp sàn thương mại điện tử Việt-Lào (Vietlao.vn) thành Việt-Lào-Campuchia (Vietlaocam.vn)",
+      "investor": "Sở Công Thương Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600098088",
+      "name": "Tổ chức Hội nghị tập huấn triển khai Khung hệ giá trị văn hóa, hệ giá trị con người Việt Nam trong tiêu dùng và Bộ quy tắc ứng xử trong văn hóa tiêu dùng của con người Việt Nam",
+      "investor": "Sở Công Thương Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600600348",
+      "name": "Gói thầu số 32/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": 10,
@@ -1196,8 +1080,8 @@
       ]
     },
     {
-      "notifyNo": "IB2600599484",
-      "name": "Gói thầu số 31/2027/HL - Thi công Hotline",
+      "notifyNo": "IB2600600346",
+      "name": "Gói thầu số 32/2027/HL - Thi công Hotline",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": 0,
@@ -1205,8 +1089,8 @@
       "matched": []
     },
     {
-      "notifyNo": "IB2600599476",
-      "name": "Gói thầu số 31/2027/CT - Thi công di dời công tơ",
+      "notifyNo": "IB2600600340",
+      "name": "Gói thầu số 32/2027/CT - Thi công di dời công tơ",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": 0,
@@ -1214,90 +1098,211 @@
       "matched": []
     },
     {
-      "notifyNo": "IB2600599342",
-      "name": "Gói thầu số 20/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600599330",
-      "name": "Gói thầu số 20/2027/HL - Thi công Hotline",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600599319",
-      "name": "Gói thầu số 20/2027/CT - Thi công di dời công tơ",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600101657",
-      "name": "Tư vấn lập hồ sơ mời thầu và đánh giá hồ sơ dự thầu các gói thầu xây lắp và tư vấn giám sát",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600597636",
-      "name": "Gói thầu số 36/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
-    },
-    {
-      "notifyNo": "IB2600597629",
-      "name": "Gói thầu số 36/2027/HL - Thi công Hotline",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600597611",
-      "name": "Gói thầu số 36/2027/CT - Thi công di dời công tơ",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600102428",
-      "name": "Tư vấn thẩm tra thiết kế xây dựng và dự toán xây dựng",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "notifyNo": "DC2600091107",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung",
-        "tu van"
+        "tu van",
+        "giam sat thi cong"
       ]
     },
     {
-      "notifyNo": "IB2600598971",
-      "name": "Gói thầu số 23/2027/GS - Tư vấn giám sát thi công xây dựng công trình",
+      "notifyNo": "DC2600091093",
+      "name": "Thi công xây dựng",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600091086",
+      "name": "Tư vấn giám sát thi công xây dựng + thiết bị",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600091081",
+      "name": "Thi công xây dựng + lắp đặt thiết bị",
+      "investor": "NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM - CHI NHÁNH TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600104503",
+      "name": "Đầu tư, sửa chữa đài truyền thanh ứng dụng công nghệ thông tin, viễn thông",
+      "investor": "Phòng Văn hóa - Xã hội xã Ya Hội, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua",
+        "cong nghe thong tin"
+      ]
+    },
+    {
+      "notifyNo": "IB2600600277",
+      "name": "Gói thầu số 13/2027/CT - Thi công di dời công tơ",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600600280",
+      "name": "Gói thầu số 13/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu"
+      ]
+    },
+    {
+      "notifyNo": "IB2600599949",
+      "name": "Gói thầu số 14/2027/HL: Thi công hotline",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600599945",
+      "name": "Gói thầu số: 12/2027/TN - Thí nghiệm VTTB A cấp",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600599942",
+      "name": "Gói thầu số: 10/2027/TN - Thí nghiệm VTTB A cấp",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600599938",
+      "name": "Gói thầu số 09/2027/TN - Thí nghiệm vật tư thiết bị",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu"
+      ]
+    },
+    {
+      "notifyNo": "IB2600599933",
+      "name": "Gói thầu số 09/2027/HL - Thi công Hotline",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600599920",
+      "name": "Gói thầu số 09/2027/CT - Thi công di dời công tơ",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600599959",
+      "name": "Gói thầu số 14/2027/TN: Thí nghiệm",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600599965",
+      "name": "Gói thầu số: 16/2027/TN - Thí nghiệm vật tư thiết bị A cấp, tiếp địa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu"
+      ]
+    },
+    {
+      "notifyNo": "IB2600599973",
+      "name": "Gói thầu số: 16/2027/HL - Thi công Hotline",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600599976",
+      "name": "Gói thầu số: 16/2027/CT - Thi công di dời công tơ",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600600105",
+      "name": "Gói thầu số: 46/2027/TN - Thí nghiệm vật tư thiết bị A cấp, tiếp địa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu"
+      ]
+    },
+    {
+      "notifyNo": "IB2600600110",
+      "name": "Gói thầu số: 46/2027/HL - Thi công Hotline",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600600112",
+      "name": "Gói thầu số: 46/2027/CT - Thi công di dời công tơ",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600600122",
+      "name": "Gói thầu số: 46/2027/GS - Tư vấn giám sát thi công xây dựng toàn bộ công trình",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": -100,
@@ -1309,8 +1314,17 @@
       ]
     },
     {
-      "notifyNo": "IB2600598957",
-      "name": "Gói thầu số 23/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
+      "notifyNo": "IB2600600154",
+      "name": "Gói thầu số 47/2027/CT - Thi công di dời công tơ",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600600158",
+      "name": "Gói thầu số 47/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": 10,
@@ -1320,8 +1334,8 @@
       ]
     },
     {
-      "notifyNo": "IB2600598954",
-      "name": "Gói thầu số 23/2027/HL - Thi công Hotline",
+      "notifyNo": "IB2600600168",
+      "name": "Gói thầu số 49/2027/CT - Thi công di dời công tơ",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": 0,
@@ -1329,19 +1343,30 @@
       "matched": []
     },
     {
-      "notifyNo": "IB2600598948",
-      "name": "Gói thầu số 23/2027/CT - Thi công di dời công tơ",
+      "notifyNo": "IB2600600177",
+      "name": "Gói thầu số 49/2027/HL - Thi công Hotline",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
+    },
+    {
+      "notifyNo": "IB2600600190",
+      "name": "Gói thầu số 49/2027/TN - Thí nghiệm vật tư thiết bị A cấp, tiếp địa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu"
+      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1186,
-  "afterCount": 1186,
-  "newCount": 0,
+  "beforeCount": 1188,
+  "afterCount": 1189,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
