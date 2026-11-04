@@ -1,9 +1,148 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "385acd49-7903-4184-a848-3f8c1dae5db7",
+      "contractorCode": "vn0400100591",
+      "taxCode": "0400100591",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG",
+      "status": "lost",
+      "lotNo": "BP2600909323",
+      "lotName": "Mua sắm Khí Y tế của Bệnh viện Đa khoa Gia Lai trong thời gian chờ kết quả đấu thầu tập trung cấp địa phương 2027-2028",
+      "bidPrice": 959016240,
+      "finalPrice": 959016240,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-11-04T16:55:21.432",
+      "models": []
+    },
+    {
+      "id": "9f5bd5f5-d28e-4853-b9a8-732f4dcf5eb0",
+      "contractorCode": "vn3600254682",
+      "taxCode": "3600254682",
+      "contractorName": "CÔNG TY TNHH OXY ĐỒNG NAI",
+      "status": "lost",
+      "lotNo": "BP2600909323",
+      "lotName": "Mua sắm Khí Y tế của Bệnh viện Đa khoa Gia Lai trong thời gian chờ kết quả đấu thầu tập trung cấp địa phương 2027-2028",
+      "bidPrice": 1017943200,
+      "finalPrice": 1017943200,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-11-04T16:55:21.432",
+      "models": []
+    },
+    {
+      "id": "141ff9f6-504f-48fd-8a80-423c1dfdc8af",
+      "contractorCode": "vn5900980625",
+      "taxCode": "5900980625",
+      "contractorName": "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI",
+      "status": "won",
+      "lotNo": "BP2600909323",
+      "lotName": "Mua sắm Khí Y tế của Bệnh viện Đa khoa Gia Lai trong thời gian chờ kết quả đấu thầu tập trung cấp địa phương 2027-2028",
+      "bidPrice": 885700000,
+      "finalPrice": 885700000,
+      "winningPrice": 885700000,
+      "reason": "",
+      "submittedAt": "2026-11-04T16:55:21.432",
+      "models": [
+        "LOX",
+        "O2",
+        "CO2"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "d4ece81b-5502-4f17-a1da-cbc013b7fb26",
+      "name": "Oxy lỏng y tế",
+      "model": "LOX",
+      "brand": "-",
+      "manufacturer": "Messer/\r\nViệt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Công thức hóa học: O2\r\n- Hàm lượng Oxy ≥ 99,6%V\r\n- Khí hóa lỏng, không màu, không mùi, không vị, không độc hại.\r\n- Chứa trong bồn chứa chuyên dụng (xitec) siêu lạnh đã được kiểm định. Nạp trực tiếp vào bồn chứa chuyên dụng của Bệnh viện.",
+      "unit": "Kg",
+      "quantity": 237600,
+      "unitPrice": 3471.745,
+      "amount": 824886600.9015,
+      "contractorCode": "vn5900980625",
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "1678/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-04T16:53:31",
+      "resultPublishedDate": "2026-11-04T16:55:33"
+    },
+    {
+      "id": "b26fcd00-e890-4c45-9bae-379ad4f266cf",
+      "name": "Hơi Oxy y tế loại lớn 6m3 (40 lít)",
+      "model": "O2",
+      "brand": "-",
+      "manufacturer": "Messer/\r\nViệt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Công thức hóa học: O2\r\n- Hàm lượng Oxy ≥ 99,6%V\r\n- Không màu, không mùi, không vị, không độc hại.\r\n- Đóng trong bình thép 40 lít đã được kiểm định. \r\nĐúng chủng loại, số lượng",
+      "unit": "Bình",
+      "quantity": 118,
+      "unitPrice": 86793.6238,
+      "amount": 10241647.6122,
+      "contractorCode": "vn5900980625",
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "1678/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-04T16:53:31",
+      "resultPublishedDate": "2026-11-04T16:55:33"
+    },
+    {
+      "id": "5c52e5e8-e501-47c7-985d-cb4c0c239e0f",
+      "name": "Hơi Oxy y tế loại nhỏ 1.5m3 (10 lít)",
+      "model": "O2",
+      "brand": "-",
+      "manufacturer": "Messer/\r\nViệt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Công thức hóa học: O2\r\n- Hàm lượng Oxy ≥ 99,6%V\r\n- Không màu, không mùi, không vị, không độc hại.\r\n- Đóng trong bình thép 10 lít đã được kiểm định.\r\n Đúng chủng loại, số lượng",
+      "unit": "Bình",
+      "quantity": 528,
+      "unitPrice": 43835.1636,
+      "amount": 23144966.3553,
+      "contractorCode": "vn5900980625",
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "1678/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-04T16:53:31",
+      "resultPublishedDate": "2026-11-04T16:55:33"
+    },
+    {
+      "id": "35034394-f37a-4d90-b9ab-1cb02b67392e",
+      "name": "Hơi CO2 y tế loại lớn 6m3 (40 lít)",
+      "model": "CO2",
+      "brand": "-",
+      "manufacturer": "Khoáng Sản Đăk Lăk/Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Công thức hóa học: CO2\r\n- Hàm lượng CO2 ≥ 99,9%V\r\n- Không màu, không mùi, không vị, không độc hại.\r\n- Đóng trong bình thép 40 lít đã được kiểm định. \r\nĐúng chủng loại, số lượng",
+      "unit": "Bình",
+      "quantity": 79,
+      "unitPrice": 347174.4953,
+      "amount": 27426785.131,
+      "contractorCode": "vn5900980625",
+      "winnerNames": [
+        "CÔNG TY TNHH OXYGEN TUẤN ANH - GIA LAI"
+      ],
+      "lotNo": "",
+      "decisionNo": "1678/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-04T16:53:31",
+      "resultPublishedDate": "2026-11-04T16:55:33"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -124,7 +263,7 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
+  "modelDisclosure": "winning-bidders-only",
   "sourceIdentity": {
     "notifyNo": "IB2600585028",
     "notifyId": "b56e3fec-0789-4b88-9d46-7562b769b27b",
@@ -132,5 +271,5 @@
     "bidForm": "CGTTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-04T09:29:12.366Z"
+  "fetchedAt": "2026-11-04T18:06:23.173Z"
 }
