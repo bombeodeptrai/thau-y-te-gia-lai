@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-03T19:32:18.591Z",
+  "auditedAt": "2026-11-04T00:38:04.322Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 707,
+      "count": 708,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 51,
+      "count": 52,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 32,
+      "count": 34,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 64,
+      "count": 65,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1449,
+  "candidateCount": 1454,
   "acceptedCount": 55,
-  "rejectedCount": 1394,
+  "rejectedCount": 1399,
   "rejectedReasons": {
     "excluded:tu van": 499,
-    "insufficient-medical-context": 347,
-    "excluded:xay dung": 326,
+    "insufficient-medical-context": 349,
+    "excluded:xay dung": 328,
     "excluded:xay lap": 66,
     "excluded:sua chua": 42,
     "excluded:cai tao": 28,
@@ -290,6 +290,7 @@
     "excluded:may tinh": 3,
     "excluded:quan ly du an": 3,
     "excluded:tram bien ap": 2,
+    "excluded:may in": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:lap e hsmt": 2,
     "excluded:cong nghe thong tin": 2,
@@ -297,7 +298,6 @@
     "excluded:kiem dinh": 2,
     "excluded:in an": 1,
     "excluded:rac thai": 1,
-    "excluded:may in": 1,
     "excluded:suat an": 1,
     "excluded:may chu": 1,
     "excluded:cap dien": 1,
@@ -937,6 +937,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600597988",
+      "name": "Gói thầu số 77/2026/TN - Thí nghiệm vật tư thiết bị, tiếp địa",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vat tu"
+      ]
+    },
+    {
       "notifyNo": "DC2600100142",
       "name": "Mua sắm sửa chữa, cải tạo phòng khánh tiết của Báo và phát thanh, truyền hình Gia Lai",
       "investor": "BÁO VÀ PHÁT THANH, TRUYỀN HÌNH GIA LAI",
@@ -1325,17 +1336,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600597892",
-      "name": "Gói thầu số 26/2027/TN - Thí nghiệm vật tư thiết bị, tiếp địa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
     }
   ],
   "removedManualCount": 0,
