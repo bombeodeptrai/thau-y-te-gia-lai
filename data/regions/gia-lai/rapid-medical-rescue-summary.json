@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-04T00:50:49.967Z",
+  "rescuedAt": "2026-11-04T01:28:51.019Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 109,
+      "count": 110,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 359,
+      "count": 364,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 36,
+      "count": 38,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 43,
+      "count": 42,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 4,
+      "count": 11,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -281,14 +281,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 702,
-  "acceptedCount": 28,
-  "rejectedCount": 674,
+  "candidateCount": 716,
+  "acceptedCount": 30,
+  "rejectedCount": 686,
   "rejectedReasons": {
-    "insufficient-medical-context": 210,
-    "excluded:tu van": 185,
-    "excluded:xay dung": 149,
-    "excluded:xay lap": 50,
+    "insufficient-medical-context": 215,
+    "excluded:tu van": 187,
+    "excluded:xay dung": 153,
+    "excluded:xay lap": 51,
     "excluded:sua chua": 28,
     "excluded:cai tao": 12,
     "excluded:bao ve": 5,
@@ -314,6 +314,42 @@
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600589465",
+      "name": "Gói thầu số 2: Hóa chất, vật tư dùng trong xét nghiệm mua sắm năm 2027-2028",
+      "investor": "Trung tâm Y tế Quy Nhơn",
+      "accepted": true,
+      "score": 155,
+      "reason": "medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
+      "matched": [
+        "trung tam y te",
+        "hoa chat",
+        "xet nghiem",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600584097",
+      "name": "Gói thầu số 1: Vật tư, công cụ, dụng cụ y tế, sinh phẩm chẩn đoán in vitro mua sắm năm 2027-2028",
+      "investor": "Trung tâm Y tế Quy Nhơn",
+      "accepted": true,
+      "score": 255,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
+      "matched": [
+        "sinh pham chan doan",
+        "chan doan in vitro",
+        "dung cu y te",
+        "trung tam y te",
+        "sinh pham",
+        "chan doan",
+        "in vitro",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600589924",
       "name": "Dịch vụ sửa chữa, kiểm định 02 máy thở Bennett 840",
@@ -1209,7 +1245,7 @@
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1186,
-  "afterCount": 1186,
-  "newCount": 0,
+  "afterCount": 1188,
+  "newCount": 2,
   "filterStrategy": "unified-medical-scope-v18"
 }
