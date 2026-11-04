@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-04T09:37:44.367Z",
+  "rescuedAt": "2026-11-04T18:16:48.495Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 108,
+      "count": 105,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 409,
+      "count": 404,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 16,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 40,
+      "count": 44,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 29,
+      "count": 31,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 18,
+      "count": 23,
       "error": ""
     },
     {
@@ -281,25 +281,25 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 759,
-  "acceptedCount": 30,
-  "rejectedCount": 729,
+  "candidateCount": 762,
+  "acceptedCount": 31,
+  "rejectedCount": 731,
   "rejectedReasons": {
-    "insufficient-medical-context": 250,
-    "excluded:tu van": 187,
-    "excluded:xay dung": 158,
-    "excluded:xay lap": 52,
-    "excluded:sua chua": 30,
+    "insufficient-medical-context": 242,
+    "excluded:tu van": 188,
+    "excluded:xay dung": 162,
+    "excluded:xay lap": 56,
+    "excluded:sua chua": 31,
     "excluded:cai tao": 13,
     "excluded:bao ve": 6,
+    "excluded:bao hiem": 4,
     "excluded:bao tri": 4,
     "excluded:tham dinh": 3,
-    "excluded:bao hiem": 3,
     "excluded:may tinh": 3,
-    "excluded:cong nghe thong tin": 3,
     "excluded:in an": 2,
     "excluded:may in": 2,
     "excluded:thuc pham": 2,
+    "excluded:cong nghe thong tin": 2,
     "excluded:quan ly du an": 2,
     "excluded:may chu": 1,
     "excluded:tram bien ap": 1,
@@ -760,6 +760,22 @@
         "benh vien",
         "da khoa",
         "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600106155",
+      "name": "Mua sắm thuốc Lao hàng 1 bổ sung phục vụ khám bệnh, chữa bệnh năm 2026 - lần 2",
+      "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
+      "accepted": true,
+      "score": 145,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "benh vien",
+        "thuoc",
+        "mua",
+        "mua sam",
+        "kham benh",
+        "chua benh"
       ]
     },
     {
@@ -1240,8 +1256,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1188,
-  "afterCount": 1188,
+  "beforeCount": 1189,
+  "afterCount": 1189,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
