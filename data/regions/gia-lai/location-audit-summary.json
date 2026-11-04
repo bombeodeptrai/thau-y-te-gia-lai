@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-04T12:09:04.507Z",
+  "auditedAt": "2026-11-04T19:46:58.314Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 778,
+      "count": 765,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 65,
+      "count": 63,
       "error": ""
     },
     {
@@ -218,13 +218,13 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 39,
+      "count": 44,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 49,
+      "count": 46,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 22,
+      "count": 21,
       "error": ""
     },
     {
@@ -271,16 +271,16 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1536,
+  "candidateCount": 1528,
   "acceptedCount": 56,
-  "rejectedCount": 1480,
+  "rejectedCount": 1472,
   "rejectedReasons": {
-    "excluded:tu van": 496,
-    "insufficient-medical-context": 406,
-    "excluded:xay dung": 345,
+    "excluded:tu van": 492,
+    "insufficient-medical-context": 405,
+    "excluded:xay dung": 343,
     "excluded:xay lap": 72,
-    "excluded:sua chua": 45,
-    "excluded:cai tao": 27,
+    "excluded:sua chua": 46,
+    "excluded:cai tao": 25,
     "excluded:thuc pham": 17,
     "excluded:tham dinh": 10,
     "excluded:bao ve": 10,
@@ -1365,8 +1365,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1188,
+  "beforeCount": 1189,
   "afterCount": 1189,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
