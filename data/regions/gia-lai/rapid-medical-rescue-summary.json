@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-03T19:49:06.008Z",
+  "rescuedAt": "2026-11-04T00:50:49.967Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 108,
+      "count": 109,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 353,
+      "count": 359,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 39,
+      "count": 36,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 44,
+      "count": 43,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 2,
+      "count": 4,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 18,
+      "count": 20,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -281,26 +281,26 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 693,
+  "candidateCount": 702,
   "acceptedCount": 28,
-  "rejectedCount": 665,
+  "rejectedCount": 674,
   "rejectedReasons": {
-    "insufficient-medical-context": 203,
-    "excluded:tu van": 184,
-    "excluded:xay dung": 148,
+    "insufficient-medical-context": 210,
+    "excluded:tu van": 185,
+    "excluded:xay dung": 149,
     "excluded:xay lap": 50,
     "excluded:sua chua": 28,
     "excluded:cai tao": 12,
-    "excluded:bao ve": 6,
+    "excluded:bao ve": 5,
     "excluded:thuc pham": 5,
     "excluded:bao tri": 4,
     "excluded:tham dinh": 3,
     "excluded:bao hiem": 3,
     "excluded:in an": 2,
+    "excluded:may in": 2,
     "excluded:may tinh": 2,
     "excluded:quan ly du an": 2,
     "excluded:may chu": 1,
-    "excluded:may in": 1,
     "excluded:cap dien": 1,
     "excluded:van phong pham": 1,
     "excluded:tram bien ap": 1,
@@ -766,6 +766,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600584771",
+      "name": "Mua sắm xi măng PCB40",
+      "investor": "Ban Quản lý xã Phù Mỹ Tây",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600599599",
       "name": "In ấn các sản phẩm truyền thông",
       "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
@@ -1191,17 +1203,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600593477",
-      "name": "Gói thầu số 01: Mua lúa giống",
-      "investor": "Ban Quản Lý Xã Ia Tul",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
       ]
     }
   ],

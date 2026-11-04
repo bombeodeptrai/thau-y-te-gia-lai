@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=2d5451c6-63ee-40d0-942b-e29a8e744306&notifyId=2d5451c6-63ee-40d0-942b-e29a8e744306&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600589924&planNo=PL2600361821&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,7 +38,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "f08296fb-939f-41ea-bd8c-1e528e258e0d",
@@ -66,7 +68,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f08296fb-939f-41ea-bd8c-1e528e258e0d&notifyId=f08296fb-939f-41ea-bd8c-1e528e258e0d&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600591113&planNo=PL2600371327&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -78,7 +80,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "DC2600090627",
@@ -4556,8 +4560,8 @@
         "MERUFA LUBE",
         "AZ F400 CH",
         "GL F400 CH",
-        " GT023-200",
-        "C.90.VP ",
+        "GT023-200",
+        "C.90.VP",
         "LD F060 CH",
         "DT F125 CH"
       ],
@@ -5639,18 +5643,9 @@
         "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN THIẾT BỊ Y TẾ CHÂU THANH",
         "CÔNG TY TNHH MEDITECH AUTOMATION"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN THIẾT BỊ Y TẾ CHÂU THANH",
-          "reason": "Từ chối chấp thuận được trao hợp đồng"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH MEDITECH AUTOMATION",
-          "reason": "Bị loại xếp hạng nhà thầu"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
-        " TC-720+",
+        "TC-720+",
         "URS-11"
       ],
       "losingModels": [
@@ -582616,7 +582611,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-04T00:42:46.849Z",
+  "fetchedAt": "2026-11-04T00:50:49.967Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5494,
   "regions": [
@@ -582740,7 +582735,7 @@
       "equipmentCount": 18452,
       "detailTenderCount": 1134,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-04T00:42:46.849Z",
+      "fetchedAt": "2026-11-04T00:50:49.967Z",
       "initialized": true,
       "source": "regional-scan"
     },
