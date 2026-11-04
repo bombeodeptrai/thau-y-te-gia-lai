@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-04T01:51:21.866Z",
+  "rescuedAt": "2026-11-04T09:37:44.367Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 110,
+      "count": 108,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 366,
+      "count": 409,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 14,
+      "count": 15,
       "error": ""
     },
     {
@@ -78,13 +78,13 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 19,
+      "count": 28,
       "error": ""
     },
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 22,
+      "count": 19,
       "error": ""
     },
     {
@@ -96,13 +96,13 @@
     {
       "name": "Địa danh Đăk Đoa",
       "success": true,
-      "count": 2,
+      "count": 1,
       "error": ""
     },
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 6,
+      "count": 2,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 38,
+      "count": 40,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 36,
+      "count": 29,
       "error": ""
     },
     {
@@ -204,25 +204,25 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 24,
+      "count": 22,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
@@ -281,35 +281,33 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 719,
+  "candidateCount": 759,
   "acceptedCount": 30,
-  "rejectedCount": 689,
+  "rejectedCount": 729,
   "rejectedReasons": {
-    "insufficient-medical-context": 216,
-    "excluded:tu van": 188,
-    "excluded:xay dung": 154,
-    "excluded:xay lap": 51,
-    "excluded:sua chua": 28,
-    "excluded:cai tao": 12,
-    "excluded:bao ve": 5,
-    "excluded:thuc pham": 5,
+    "insufficient-medical-context": 250,
+    "excluded:tu van": 187,
+    "excluded:xay dung": 158,
+    "excluded:xay lap": 52,
+    "excluded:sua chua": 30,
+    "excluded:cai tao": 13,
+    "excluded:bao ve": 6,
     "excluded:bao tri": 4,
     "excluded:tham dinh": 3,
     "excluded:bao hiem": 3,
+    "excluded:may tinh": 3,
+    "excluded:cong nghe thong tin": 3,
     "excluded:in an": 2,
     "excluded:may in": 2,
-    "excluded:may tinh": 2,
+    "excluded:thuc pham": 2,
     "excluded:quan ly du an": 2,
     "excluded:may chu": 1,
-    "excluded:cap dien": 1,
-    "excluded:van phong pham": 1,
     "excluded:tram bien ap": 1,
     "excluded:rac thai": 1,
     "excluded:suat an": 1,
     "excluded:duong day": 1,
     "excluded:trang phuc": 1,
     "excluded:giam sat thi cong": 1,
-    "excluded:cong nghe thong tin": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1
   },
@@ -802,6 +800,61 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600597558",
+      "name": "26-47/SC: thi công Sửa chữa lớn xe ôtô 7 chỗ TOYOTA FORTUNER (81A-027.76)",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600597482",
+      "name": "26-46/SC: thi công Sửa chữa lớn xe ô tô tải có gắn cẩu 3 tấn (81C-095.69)",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600593213",
+      "name": "Cung cấp và lắp đặt hệ thống mạng LAN và thiết bị lưu trữ",
+      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
+      "accepted": false,
+      "score": 45,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vien sot ret",
+        "ky sinh trung con trung",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600600544",
+      "name": "Triển khai, lắp đặt phát sóng thiết bị reuse cho các trạm bổ sung dung lượng mạng 4G",
+      "investor": "Trung tâm Mạng lưới MobiFone - Chi nhánh Tổng công ty Viễn thông MobiFone",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600594295",
+      "name": "Toàn bộ khối lượng xây dựng và lắp đặt thiết bị công trình",
+      "investor": "Ban quản lý xã Phù Mỹ Bắc",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600584771",
       "name": "Mua sắm xi măng PCB40",
       "investor": "Ban Quản lý xã Phù Mỹ Tây",
@@ -1048,6 +1101,17 @@
       ]
     },
     {
+      "notifyNo": "IB2600595876",
+      "name": "Tư vấn lập thiết kế bản vẽ thi công - dự toán phần HTKT, phần thô và hoàn thiện (không bao gồm phần thiết bị, nội thất và TBA)",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600591499",
       "name": "Gói thầu số 1: Thi công xây dựng",
       "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
@@ -1171,74 +1235,6 @@
       "matched": [
         "mua",
         "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600592447",
-      "name": "Thuê phần mềm Quản lý Bệnh viện (HIS), phần mềm Quản lý Bệnh án Điện tử (EMR), phần mềm Quản lý chẩn đoán hình ảnh (PACS) tại Trung tâm Y tế Vân Canh",
-      "investor": "Trung tâm Y tế Vân Canh",
-      "accepted": false,
-      "score": 90,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te",
-        "chan doan"
-      ]
-    },
-    {
-      "notifyNo": "IB2600587884",
-      "name": "Gói thầu XL9: Thi công xây dựng hạng mục công trình: San nền trong khu công nghiệp (San nền giai đoạn 2)",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ SÊ.",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600587573",
-      "name": "Gói thầu số 59/2027/XL: Thi công xây dựng công trình: Nhà nghỉ ca, nhà kho, nhà để xe Điện lực Đak Đoa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600589364",
-      "name": "Gói thầu số 7: Khảo sát, lập phương án, dự toán thi công rà phá bom mìn, vật nổ và tư vấn giám sát thi công rà phá bom mìn, vật nổ",
-      "investor": "TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600591349",
-      "name": "26-87/XL: thi công sửa chữa công trình Sửa chữa Máy biến áp TBA 110kV Phù Cát + Phù Mỹ + Long Mỹ năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600592893",
-      "name": "CTC 2026XL/01: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Chỉnh trang cáp viễn thông khu vực Phú Tài, Tuy Phước, An Nhơn năm 2026",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
