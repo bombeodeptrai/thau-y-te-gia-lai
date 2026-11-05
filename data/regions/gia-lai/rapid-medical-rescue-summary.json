@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-05T08:41:30.821Z",
+  "rescuedAt": "2026-11-05T09:45:20.052Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 110,
+      "count": 107,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 418,
+      "count": 415,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 21,
+      "count": 19,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -281,11 +281,11 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 791,
-  "acceptedCount": 32,
-  "rejectedCount": 759,
+  "candidateCount": 789,
+  "acceptedCount": 31,
+  "rejectedCount": 758,
   "rejectedReasons": {
-    "insufficient-medical-context": 251,
+    "insufficient-medical-context": 250,
     "excluded:tu van": 202,
     "excluded:xay dung": 174,
     "excluded:xay lap": 54,
@@ -675,23 +675,6 @@
         "bao tri",
         "hieu chuan",
         "thiet bi phuong tien do"
-      ]
-    },
-    {
-      "notifyNo": "IB2600586296",
-      "name": "Mua sắm Máy xét nghiệm nước tiểu và que thử nước tiểu phục vụ công tác khám, chữa bệnh tại Trung tâm Y tế Tây Sơn năm 2026",
-      "investor": "Trung tâm Y tế Tây Sơn",
-      "accepted": true,
-      "score": 200,
-      "reason": "explicit-medical-title+medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "may xet nghiem",
-        "trung tam y te",
-        "xet nghiem",
-        "mua",
-        "mua sam",
-        "kham chua benh",
-        "chua benh"
       ]
     },
     {
@@ -1267,8 +1250,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1190,
+  "beforeCount": 1191,
   "afterCount": 1191,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
