@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-05T12:20:50.360Z",
+  "auditedAt": "2026-11-05T22:00:53.628Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 783,
+      "count": 781,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 106,
+      "count": 107,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 94,
+      "count": 96,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1568,
+  "candidateCount": 1569,
   "acceptedCount": 55,
-  "rejectedCount": 1513,
+  "rejectedCount": 1514,
   "rejectedReasons": {
-    "excluded:tu van": 500,
-    "insufficient-medical-context": 421,
-    "excluded:xay dung": 363,
+    "excluded:tu van": 498,
+    "insufficient-medical-context": 422,
+    "excluded:xay dung": 365,
     "excluded:xay lap": 71,
     "excluded:sua chua": 46,
     "excluded:cai tao": 26,
@@ -939,6 +939,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600104607",
+      "name": "Tư vấn lập Điều chỉnh cục bộ Quy hoạch chung xã Uar, tỉnh Gia Lai bao gồm lập hồ sơ quy hoạch theo cơ sở dữ liệu địa lý (GIS)",
+      "investor": "Phòng Kinh tế xã Uar",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600601259",
       "name": "Xây dựng khung giá rừng trên địa bàn tỉnh Gia Lai",
       "investor": "Chi cục Kiểm lâm Gia Lai",
@@ -1375,17 +1386,6 @@
       "matched": [
         "mua",
         "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "DC2600105470",
-      "name": "Tư vấn giám sát lắp đặt thiết bị",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
       ]
     }
   ],
