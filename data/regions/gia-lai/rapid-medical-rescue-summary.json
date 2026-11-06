@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-06T10:00:59.694Z",
+  "rescuedAt": "2026-11-06T11:02:10.369Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 111,
+      "count": 112,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 421,
+      "count": 420,
       "error": ""
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 39,
+      "count": 40,
       "error": ""
     },
     {
@@ -240,7 +240,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -281,14 +281,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 817,
+  "candidateCount": 820,
   "acceptedCount": 30,
-  "rejectedCount": 787,
+  "rejectedCount": 790,
   "rejectedReasons": {
-    "insufficient-medical-context": 270,
+    "insufficient-medical-context": 272,
     "excluded:tu van": 204,
-    "excluded:xay dung": 183,
-    "excluded:xay lap": 53,
+    "excluded:xay dung": 181,
+    "excluded:xay lap": 55,
     "excluded:sua chua": 23,
     "excluded:cai tao": 14,
     "excluded:bao hiem": 6,
@@ -300,6 +300,7 @@
     "excluded:giam sat thi cong": 2,
     "excluded:thuc pham": 2,
     "excluded:cong nghe thong tin": 2,
+    "excluded:may in": 2,
     "excluded:quan ly du an": 2,
     "excluded:cap dien": 1,
     "excluded:may chu": 1,
@@ -307,7 +308,6 @@
     "excluded:tram bien ap": 1,
     "excluded:duong day": 1,
     "excluded:trang phuc": 1,
-    "excluded:may in": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1
   },
@@ -789,6 +789,29 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600603345",
+      "name": "Thuê dịch vụ phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh tại Trung tâm Y tế Hoài Ân;",
+      "investor": "TRUNG TÂM Y TẾ HOÀI ÂN",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "chan doan"
+      ]
+    },
+    {
+      "notifyNo": "IB2600601601",
+      "name": "Xây lắp + Thiết bị",
+      "investor": "Ban quản lý xã Pờ Tó",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
       "notifyNo": "IB2600602138",
       "name": "Gia hạn bản quyền phần mềm cho các thiết bị thuộc hệ thống Trung tâm tích hợp dữ liệu của tỉnh",
       "investor": "Trung tâm Chuyển đổi số",
@@ -1199,32 +1222,12 @@
       "score": 10,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600596889",
-      "name": "Gói số 4: Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Phòng Kinh tế xã An Toàn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600596700",
-      "name": "Bổ sung thiết bị môn Khoa học tự nhiên (phần Vật lí) cho 15 trường trung học cơ sở; Bổ sung thiết bị môn Vật lí cho 25 trường trung học phổ thông",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1192,
+  "beforeCount": 1195,
   "afterCount": 1195,
-  "newCount": 3,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
