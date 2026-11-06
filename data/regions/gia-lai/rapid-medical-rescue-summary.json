@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-05T23:52:57.467Z",
+  "rescuedAt": "2026-11-06T02:49:46.896Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 112,
+      "count": 113,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 413,
+      "count": 416,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -138,13 +138,13 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 2,
+      "count": 1,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 52,
+      "count": 53,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 34,
+      "count": 35,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 42,
+      "count": 41,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 21,
+      "count": 23,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 11,
+      "count": 9,
       "error": ""
     },
     {
@@ -281,15 +281,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 793,
-  "acceptedCount": 29,
-  "rejectedCount": 764,
+  "candidateCount": 799,
+  "acceptedCount": 28,
+  "rejectedCount": 771,
   "rejectedReasons": {
-    "insufficient-medical-context": 254,
+    "insufficient-medical-context": 259,
     "excluded:tu van": 205,
-    "excluded:xay dung": 173,
-    "excluded:xay lap": 54,
-    "excluded:sua chua": 28,
+    "excluded:xay dung": 175,
+    "excluded:xay lap": 55,
+    "excluded:sua chua": 27,
     "excluded:cai tao": 14,
     "excluded:bao hiem": 4,
     "excluded:bao tri": 4,
@@ -716,20 +716,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600075907",
-      "name": "Dịch vụ sửa chữa 01 máy siêu âm Acuson P300",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 225,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor",
-      "matched": [
-        "may sieu am",
-        "benh vien",
-        "da khoa",
-        "sua chua"
-      ]
-    },
-    {
       "notifyNo": "DC2600106155",
       "name": "Mua sắm thuốc Lao hàng 1 bổ sung phục vụ khám bệnh, chữa bệnh năm 2026 - lần 2",
       "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
@@ -783,6 +769,15 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600596459",
+      "name": "SCL2027-09: Phục hồi Bạc cánh hướng NMTĐ Ialy",
+      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600600897",
       "name": "GT04- Thi công xây dựng và lắp đặt thiết bị",
@@ -1207,17 +1202,6 @@
       "matched": [
         "benh vien",
         "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600595874",
-      "name": "Mua bầu cây giống cao su (gói số 4)",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua"
       ]
     }
   ],
