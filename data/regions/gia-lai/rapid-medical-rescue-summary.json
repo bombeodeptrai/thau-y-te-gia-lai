@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-06T02:49:46.896Z",
+  "rescuedAt": "2026-11-06T07:09:05.167Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 113,
+      "count": 114,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 416,
+      "count": 425,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 27,
+      "count": 32,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 53,
+      "count": 54,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 41,
+      "count": 40,
       "error": ""
     },
     {
@@ -281,22 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 799,
-  "acceptedCount": 28,
-  "rejectedCount": 771,
+  "candidateCount": 815,
+  "acceptedCount": 29,
+  "rejectedCount": 786,
   "rejectedReasons": {
-    "insufficient-medical-context": 259,
-    "excluded:tu van": 205,
-    "excluded:xay dung": 175,
-    "excluded:xay lap": 55,
+    "insufficient-medical-context": 266,
+    "excluded:tu van": 204,
+    "excluded:xay dung": 184,
+    "excluded:xay lap": 54,
     "excluded:sua chua": 27,
     "excluded:cai tao": 14,
-    "excluded:bao hiem": 4,
+    "excluded:bao hiem": 6,
     "excluded:bao tri": 4,
     "excluded:bao ve": 3,
     "excluded:may tinh": 3,
     "excluded:in an": 2,
-    "excluded:may in": 2,
     "excluded:tham dinh": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:thuc pham": 2,
@@ -308,6 +307,7 @@
     "excluded:suat an": 1,
     "excluded:duong day": 1,
     "excluded:trang phuc": 1,
+    "excluded:may in": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1
   },
@@ -664,6 +664,18 @@
       ]
     },
     {
+      "notifyNo": "DC2600107766",
+      "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026",
+      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 100,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "kham suc khoe",
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "DC2600090627",
       "name": "Cung cấp, lắp đặt giường inox, tủ đầu giường inox phục vụ bệnh nhân khoa Nhi thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
@@ -769,6 +781,37 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600602684",
+      "name": "Cung cấp vật tư, thiết bị để khắc phục tổn thất thuộc phạm vi bảo hiểm năm 2025 cho Công ty Quản lý bay miền Trung",
+      "investor": "CÔNG TY QUẢN LÝ BAY MIỀN TRUNG - TỔNG CÔNG TY QUẢN LÝ BAY VIỆT NAM - CÔNG TY TNHH",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao hiem",
+      "matched": [
+        "bao hiem"
+      ]
+    },
+    {
+      "notifyNo": "IB2600601436",
+      "name": "Thi công xây dựng và lắp đặt thiết bị",
+      "investor": "BAN QUẢN LÝ XÃ BÌNH DƯƠNG",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600592467",
+      "name": "GL-Cs-05: Đánh giá nhu cầu nâng cao năng lực, đào tạo, làm cơ sở thiết kế, thực hiện chương trình phát triển năng lực của cán bộ nông, lâm nghiệp và các thành viên cộng đồng về QLRDVCĐ",
+      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600596459",
       "name": "SCL2027-09: Phục hồi Bạc cánh hướng NMTĐ Ialy",
@@ -1169,46 +1212,12 @@
       "matched": [
         "sua chua"
       ]
-    },
-    {
-      "notifyNo": "IB2600592900",
-      "name": "26-44/SC: thi công sửa chữa Xe Ford Ranger 4x4 MT XL - màu bạc (81C-013.07)",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600593078",
-      "name": "26-45/SC: thi công Sửa chữa lớn xe ô tô tải thùng kín Dongben, biển kiểm soát 77C-207.24",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600589478",
-      "name": "Cung cấp hệ thống giám sát mạng",
-      "investor": "Bệnh Viện Phong Da Liễu Trung ương Quy Hòa",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1191,
-  "afterCount": 1191,
+  "beforeCount": 1192,
+  "afterCount": 1192,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
