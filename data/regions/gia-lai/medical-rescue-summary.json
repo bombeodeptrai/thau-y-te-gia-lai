@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-06T21:32:44.795Z",
+  "rescuedAt": "2026-11-07T05:59:43.462Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 248,
+      "count": 242,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 800,
+      "count": 798,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 36,
+      "count": 34,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 109,
+      "count": 112,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 59,
+      "count": 56,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1658,
-  "acceptedCount": 61,
-  "rejectedCount": 1597,
+  "candidateCount": 1652,
+  "acceptedCount": 58,
+  "rejectedCount": 1594,
   "rejectedReasons": {
-    "excluded:tu van": 501,
+    "excluded:tu van": 507,
     "insufficient-medical-context": 465,
-    "excluded:xay dung": 383,
-    "excluded:xay lap": 78,
-    "excluded:sua chua": 51,
-    "excluded:cai tao": 25,
+    "excluded:xay dung": 381,
+    "excluded:xay lap": 77,
+    "excluded:sua chua": 49,
+    "excluded:cai tao": 23,
     "excluded:thuc pham": 17,
     "excluded:bao ve": 11,
     "excluded:tham dinh": 8,
@@ -300,11 +300,11 @@
     "excluded:trang phuc": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
-    "excluded:kiem dinh": 3,
     "excluded:giam sat thi cong": 3,
     "excluded:quan ly du an": 3,
     "excluded:in an": 2,
     "excluded:cap dien": 2,
+    "excluded:kiem dinh": 2,
     "excluded:bao duong": 2,
     "excluded:lap e hsmt": 2,
     "excluded:duong day": 2,
@@ -315,8 +315,7 @@
     "excluded:tram bien ap": 1,
     "excluded:rac thai": 1,
     "excluded:suat an": 1,
-    "excluded:thu y": 1,
-    "excluded:ve sinh cong nghiep": 1
+    "excluded:thu y": 1
   },
   "acceptedDiagnostics": [
     {
