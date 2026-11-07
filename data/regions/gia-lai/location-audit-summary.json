@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-07T05:58:57.355Z",
+  "auditedAt": "2026-11-07T14:55:36.669Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 798,
+      "count": 795,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 36,
+      "count": 35,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 22,
+      "count": 20,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 6,
+      "count": 8,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 112,
+      "count": 111,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 103,
+      "count": 102,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 103,
+      "count": 101,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 34,
+      "count": 33,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 56,
+      "count": 58,
       "error": ""
     },
     {
@@ -212,7 +212,7 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1589,
-  "acceptedCount": 56,
-  "rejectedCount": 1533,
+  "candidateCount": 1576,
+  "acceptedCount": 53,
+  "rejectedCount": 1523,
   "rejectedReasons": {
-    "excluded:tu van": 505,
-    "insufficient-medical-context": 433,
-    "excluded:xay dung": 370,
+    "excluded:tu van": 503,
+    "insufficient-medical-context": 423,
+    "excluded:xay dung": 372,
     "excluded:xay lap": 71,
     "excluded:sua chua": 45,
     "excluded:cai tao": 23,
@@ -712,22 +712,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600568548",
-      "name": "Gói thầu số 2: Mua sắm hóa chất khử trùng, diệt muỗi, côn trùng năm 2026",
-      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
-      "accepted": true,
-      "score": 135,
-      "reason": "medical-investor+laboratory-supply+medical-context-supply",
-      "matched": [
-        "trung tam kiem soat benh tat",
-        "hoa chat khu trung",
-        "diet muoi",
-        "hoa chat",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600106155",
       "name": "Mua sắm thuốc Lao hàng 1 bổ sung phục vụ khám bệnh, chữa bệnh năm 2026 - lần 2",
       "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
@@ -936,9 +920,76 @@
         "mua",
         "mua sam"
       ]
+    },
+    {
+      "notifyNo": "IB2600583748",
+      "name": "Gói thầu số 2: Mua sắm hóa chất y tế và sinh phẩm chẩn đoán in vitro",
+      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
+      "accepted": true,
+      "score": 280,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "matched": [
+        "hoa chat y te",
+        "sinh pham chan doan",
+        "chan doan in vitro",
+        "benh vien",
+        "hoa chat",
+        "sinh pham",
+        "chan doan",
+        "in vitro",
+        "mua",
+        "mua sam"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "DC2600113905",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600603776",
+      "name": "Gói thầu MS01",
+      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600113895",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600113859",
+      "name": "Tư vấn khảo sát, lập Quy hoạch tổng mặt bằng xây dựng tỷ lệ 1/500",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "DC2600112285",
       "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Tăng Bạt Hổ. Hạng mục: Xây mới dãy nhà 2 tầng; các hạng mục phụ trợ và trang thiết bị.",
@@ -1368,56 +1419,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600602524",
-      "name": "Gói thầu số 01/2027/GS - Tư vấn giám sát thi công xây dựng công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600602519",
-      "name": "Gói thầu số 58/2027/GS - Tư vấn giám sát thi công xây dựng công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600602511",
-      "name": "Gói thầu số 57/2027/GS - Tư vấn giám sát thi công xây dựng công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600602507",
-      "name": "Gói thầu số 29/2027/TN - Thí nghiệm vật tư thiết bị và thí nghiệm tiếp địa",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vat tu"
-      ]
     }
   ],
   "removedManualCount": 0,

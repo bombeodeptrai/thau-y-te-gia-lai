@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-07T05:59:43.462Z",
+  "rescuedAt": "2026-11-07T14:56:28.660Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 242,
+      "count": 235,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 798,
+      "count": 795,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 36,
+      "count": 35,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 22,
+      "count": 20,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 6,
+      "count": 8,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 112,
+      "count": 111,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 103,
+      "count": 102,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 103,
+      "count": 101,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 34,
+      "count": 33,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 56,
+      "count": 58,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1652,
-  "acceptedCount": 58,
-  "rejectedCount": 1594,
+  "candidateCount": 1639,
+  "acceptedCount": 55,
+  "rejectedCount": 1584,
   "rejectedReasons": {
-    "excluded:tu van": 507,
-    "insufficient-medical-context": 465,
-    "excluded:xay dung": 381,
+    "excluded:tu van": 505,
+    "insufficient-medical-context": 455,
+    "excluded:xay dung": 383,
     "excluded:xay lap": 77,
     "excluded:sua chua": 49,
     "excluded:cai tao": 23,
@@ -963,6 +963,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600603776",
+      "name": "Gói thầu MS01",
+      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600587884",
       "name": "Gói thầu XL9: Thi công xây dựng hạng mục công trình: San nền trong khu công nghiệp (San nền giai đoạn 2)",
       "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ SÊ.",
@@ -1386,17 +1395,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600595311",
-      "name": "Toàn bộ khối lượng xây dựng và thiết bị",
-      "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
