@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-07T23:41:01.955Z",
+  "rescuedAt": "2026-11-08T06:01:41.773Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 235,
+      "count": 232,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 795,
+      "count": 791,
       "error": ""
     },
     {
@@ -30,13 +30,13 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 34,
+      "count": 28,
       "error": ""
     },
     {
       "name": "Địa danh Thành phố Pleiku",
       "success": true,
-      "count": 3,
+      "count": 0,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 17,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 111,
+      "count": 112,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 102,
+      "count": 101,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 101,
+      "count": 98,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 37,
+      "count": 36,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 46,
+      "count": 42,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 49,
+      "count": 54,
       "error": ""
     },
     {
@@ -281,40 +281,40 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1639,
-  "acceptedCount": 55,
-  "rejectedCount": 1584,
+  "candidateCount": 1626,
+  "acceptedCount": 54,
+  "rejectedCount": 1572,
   "rejectedReasons": {
-    "excluded:tu van": 505,
-    "insufficient-medical-context": 455,
-    "excluded:xay dung": 383,
-    "excluded:xay lap": 77,
+    "excluded:tu van": 503,
+    "insufficient-medical-context": 451,
+    "excluded:xay dung": 380,
+    "excluded:xay lap": 76,
     "excluded:sua chua": 49,
     "excluded:cai tao": 23,
-    "excluded:thuc pham": 17,
+    "excluded:thuc pham": 16,
     "excluded:bao ve": 11,
     "excluded:tham dinh": 8,
     "excluded:bao hiem": 7,
     "excluded:bao tri": 7,
     "excluded:may tinh": 5,
-    "excluded:trang phuc": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
+    "excluded:trang phuc": 3,
     "excluded:giam sat thi cong": 3,
     "excluded:quan ly du an": 3,
     "excluded:in an": 2,
     "excluded:cap dien": 2,
     "excluded:kiem dinh": 2,
     "excluded:bao duong": 2,
+    "excluded:cay xanh": 2,
     "excluded:lap e hsmt": 2,
-    "excluded:duong day": 2,
     "excluded:may chu": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
-    "excluded:cay xanh": 1,
     "excluded:tram bien ap": 1,
     "excluded:rac thai": 1,
     "excluded:suat an": 1,
+    "excluded:duong day": 1,
     "excluded:thu y": 1
   },
   "acceptedDiagnostics": [
@@ -946,22 +946,28 @@
       ]
     },
     {
-      "notifyNo": "IB2600571425",
-      "name": "Mua bao bì đựng chất thải y tế, túi cấp phát thuốc, đựng phim X-Quang, CT và cốc nhựa sinh học dùng 1 lần của Trung tâm Y tế Tây Sơn năm 2026",
-      "investor": "Trung tâm Y tế Tây Sơn",
+      "notifyNo": "DC2600107766",
+      "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026",
+      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
       "accepted": true,
-      "score": 315,
-      "reason": "explicit-medical-title+medical-investor+medical-waste-supply+medical-drug-supply",
+      "score": 100,
+      "reason": "explicit-medical-title",
       "matched": [
-        "x quang",
-        "trung tam y te",
-        "chat thai y te",
-        "thuoc",
-        "mua"
+        "kham suc khoe",
+        "cung cap"
       ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600599745",
+      "name": "Gói thầu số 7: Hỗ trợ sinh kế chăn nuôi bò và heo cho nạn nhân bom mìn và gia đình",
+      "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600603776",
       "name": "Gói thầu MS01",
@@ -1384,17 +1390,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600594588",
-      "name": "Gói 37/SCL2027/PTC3: Cung cấp sứ xuyên MBA 110kV",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
       ]
     }
   ],

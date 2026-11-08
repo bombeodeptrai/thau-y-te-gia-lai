@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-07T23:40:14.879Z",
+  "auditedAt": "2026-11-08T06:00:52.683Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 795,
+      "count": 791,
       "error": ""
     },
     {
@@ -20,13 +20,13 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 34,
+      "count": 28,
       "error": ""
     },
     {
       "term": "Thành phố Pleiku",
       "success": true,
-      "count": 3,
+      "count": 0,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 20,
+      "count": 17,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 111,
+      "count": 112,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 102,
+      "count": 101,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 101,
+      "count": 98,
       "error": ""
     },
     {
@@ -206,7 +206,7 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 37,
+      "count": 36,
       "error": ""
     },
     {
@@ -218,13 +218,13 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 46,
+      "count": 42,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 49,
+      "count": 54,
       "error": ""
     },
     {
@@ -271,35 +271,35 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1576,
-  "acceptedCount": 53,
-  "rejectedCount": 1523,
+  "candidateCount": 1563,
+  "acceptedCount": 52,
+  "rejectedCount": 1511,
   "rejectedReasons": {
-    "excluded:tu van": 503,
-    "insufficient-medical-context": 423,
-    "excluded:xay dung": 372,
-    "excluded:xay lap": 71,
+    "excluded:tu van": 501,
+    "insufficient-medical-context": 419,
+    "excluded:xay dung": 369,
+    "excluded:xay lap": 70,
     "excluded:sua chua": 45,
     "excluded:cai tao": 23,
-    "excluded:thuc pham": 17,
+    "excluded:thuc pham": 16,
     "excluded:bao ve": 11,
     "excluded:tham dinh": 8,
     "excluded:bao tri": 7,
     "excluded:bao hiem": 6,
     "excluded:may tinh": 5,
     "excluded:cong nghe thong tin": 4,
-    "excluded:trang phuc": 4,
     "excluded:may in": 3,
     "excluded:giam sat thi cong": 3,
+    "excluded:trang phuc": 3,
     "excluded:quan ly du an": 3,
+    "excluded:cay xanh": 2,
     "excluded:cap dien": 2,
     "excluded:lap e hsmt": 2,
-    "excluded:duong day": 2,
-    "excluded:cay xanh": 1,
     "excluded:tram bien ap": 1,
     "excluded:in an": 1,
     "excluded:rac thai": 1,
     "excluded:suat an": 1,
+    "excluded:duong day": 1,
     "excluded:may chu": 1,
     "excluded:kiem dinh": 1,
     "excluded:thu y": 1,
@@ -944,6 +944,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600113970",
+      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Võ Giữ. Hạng mục: Nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn; nhà để xe học sinh; mở rộng cổng chính; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
       "notifyNo": "DC2600113905",
       "name": "Tư vấn giám sát thi công xây dựng",
       "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
@@ -1410,15 +1422,6 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600592467",
-      "name": "GL-Cs-05: Đánh giá nhu cầu nâng cao năng lực, đào tạo, làm cơ sở thiết kế, thực hiện chương trình phát triển năng lực của cán bộ nông, lâm nghiệp và các thành viên cộng đồng về QLRDVCĐ",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
