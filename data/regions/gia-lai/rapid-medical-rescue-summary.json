@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-08T01:39:40.598Z",
+  "rescuedAt": "2026-11-08T09:03:05.779Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 113,
+      "count": 114,
       "error": ""
     },
     {
@@ -24,7 +24,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 56,
+      "count": 57,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 22,
+      "count": 27,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 848,
+  "candidateCount": 856,
   "acceptedCount": 31,
-  "rejectedCount": 817,
+  "rejectedCount": 825,
   "rejectedReasons": {
-    "insufficient-medical-context": 276,
-    "excluded:tu van": 219,
-    "excluded:xay dung": 186,
+    "insufficient-medical-context": 277,
+    "excluded:tu van": 222,
+    "excluded:xay dung": 189,
     "excluded:xay lap": 55,
     "excluded:sua chua": 25,
     "excluded:cai tao": 16,
@@ -297,6 +297,7 @@
     "excluded:bao ve": 3,
     "excluded:may tinh": 3,
     "excluded:in an": 2,
+    "excluded:cay xanh": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:thuc pham": 2,
     "excluded:cong nghe thong tin": 2,
@@ -304,7 +305,6 @@
     "excluded:quan ly du an": 2,
     "excluded:cap dien": 1,
     "excluded:may chu": 1,
-    "excluded:cay xanh": 1,
     "excluded:tram bien ap": 1,
     "excluded:duong day": 1,
     "excluded:trang phuc": 1,
@@ -808,6 +808,15 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600599745",
+      "name": "Gói thầu số 7: Hỗ trợ sinh kế chăn nuôi bò và heo cho nạn nhân bom mìn và gia đình",
+      "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600603776",
       "name": "Gói thầu MS01",
       "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
@@ -1229,17 +1238,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600594588",
-      "name": "Gói 37/SCL2027/PTC3: Cung cấp sứ xuyên MBA 110kV",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
       ]
     }
   ],
