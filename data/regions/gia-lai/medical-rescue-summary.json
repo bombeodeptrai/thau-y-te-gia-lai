@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-08T06:01:41.773Z",
+  "rescuedAt": "2026-11-08T15:13:37.214Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 232,
+      "count": 226,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 791,
+      "count": 777,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 28,
+      "count": 26,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 16,
+      "count": 14,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 6,
+      "count": 4,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 18,
+      "count": 14,
       "error": ""
     },
     {
@@ -126,13 +126,13 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 17,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 112,
+      "count": 105,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 101,
+      "count": 98,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 33,
+      "count": 32,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 58,
+      "count": 55,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 42,
+      "count": 35,
       "error": ""
     },
     {
@@ -281,33 +281,33 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1626,
-  "acceptedCount": 54,
-  "rejectedCount": 1572,
+  "candidateCount": 1574,
+  "acceptedCount": 52,
+  "rejectedCount": 1522,
   "rejectedReasons": {
-    "excluded:tu van": 503,
-    "insufficient-medical-context": 451,
-    "excluded:xay dung": 380,
+    "excluded:tu van": 479,
+    "insufficient-medical-context": 440,
+    "excluded:xay dung": 373,
     "excluded:xay lap": 76,
-    "excluded:sua chua": 49,
-    "excluded:cai tao": 23,
-    "excluded:thuc pham": 16,
-    "excluded:bao ve": 11,
+    "excluded:sua chua": 47,
+    "excluded:cai tao": 21,
+    "excluded:thuc pham": 15,
+    "excluded:bao ve": 10,
     "excluded:tham dinh": 8,
     "excluded:bao hiem": 7,
     "excluded:bao tri": 7,
     "excluded:may tinh": 5,
-    "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
     "excluded:trang phuc": 3,
     "excluded:giam sat thi cong": 3,
-    "excluded:quan ly du an": 3,
+    "excluded:cong nghe thong tin": 3,
     "excluded:in an": 2,
     "excluded:cap dien": 2,
     "excluded:kiem dinh": 2,
     "excluded:bao duong": 2,
     "excluded:cay xanh": 2,
     "excluded:lap e hsmt": 2,
+    "excluded:quan ly du an": 2,
     "excluded:may chu": 1,
     "excluded:van phong pham": 1,
     "excluded:thiet bi tuong lua": 1,
@@ -931,21 +931,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600573479",
-      "name": "Mua sắm bổ sung vật tư phục vụ công tác khám sức khỏe toàn dân của Trung tâm Y tế Tuy Phước năm 2026",
-      "investor": "Trung tâm Y tế Tuy Phước",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "kham suc khoe",
-        "trung tam y te",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600107766",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026",
       "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
@@ -955,6 +940,21 @@
       "matched": [
         "kham suc khoe",
         "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600090627",
+      "name": "Cung cấp, lắp đặt giường inox, tủ đầu giường inox phục vụ bệnh nhân khoa Nhi thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": true,
+      "score": 145,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "thuoc",
+        "cung cap",
+        "benh nhan"
       ]
     }
   ],
@@ -1395,8 +1395,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1194,
-  "afterCount": 1194,
+  "beforeCount": 1193,
+  "afterCount": 1193,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }

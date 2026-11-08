@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-08T06:00:52.683Z",
+  "auditedAt": "2026-11-08T15:13:00.277Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 791,
+      "count": 777,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 28,
+      "count": 26,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 16,
+      "count": 14,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 6,
+      "count": 4,
       "error": ""
     },
     {
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 18,
+      "count": 14,
       "error": ""
     },
     {
@@ -116,13 +116,13 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 17,
+      "count": 11,
       "error": ""
     },
     {
       "term": "Kbang",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 112,
+      "count": 105,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 101,
+      "count": 98,
       "error": ""
     },
     {
@@ -188,19 +188,19 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 28,
+      "count": 27,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 33,
+      "count": 32,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 58,
+      "count": 55,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 42,
+      "count": 35,
       "error": ""
     },
     {
@@ -271,30 +271,30 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1563,
-  "acceptedCount": 52,
-  "rejectedCount": 1511,
+  "candidateCount": 1512,
+  "acceptedCount": 50,
+  "rejectedCount": 1462,
   "rejectedReasons": {
-    "excluded:tu van": 501,
-    "insufficient-medical-context": 419,
-    "excluded:xay dung": 369,
+    "excluded:tu van": 477,
+    "insufficient-medical-context": 409,
+    "excluded:xay dung": 362,
     "excluded:xay lap": 70,
-    "excluded:sua chua": 45,
-    "excluded:cai tao": 23,
-    "excluded:thuc pham": 16,
-    "excluded:bao ve": 11,
+    "excluded:sua chua": 43,
+    "excluded:cai tao": 21,
+    "excluded:thuc pham": 15,
+    "excluded:bao ve": 10,
     "excluded:tham dinh": 8,
     "excluded:bao tri": 7,
     "excluded:bao hiem": 6,
     "excluded:may tinh": 5,
-    "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
     "excluded:giam sat thi cong": 3,
     "excluded:trang phuc": 3,
-    "excluded:quan ly du an": 3,
+    "excluded:cong nghe thong tin": 3,
     "excluded:cay xanh": 2,
     "excluded:cap dien": 2,
     "excluded:lap e hsmt": 2,
+    "excluded:quan ly du an": 2,
     "excluded:tram bien ap": 1,
     "excluded:in an": 1,
     "excluded:rac thai": 1,
@@ -1426,8 +1426,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1194,
-  "afterCount": 1194,
+  "beforeCount": 1193,
+  "afterCount": 1193,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
