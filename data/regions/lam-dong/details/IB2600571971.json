@@ -1,40 +1,91 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "5c0e58c0-5b39-4483-9ebc-a67d821cc119",
+      "id": "bf4149a7-6044-48c2-b47a-395ef0e3f0c4",
       "contractorCode": "vn5800000047",
-      "taxCode": "",
+      "taxCode": "5800000047",
       "contractorName": "CÔNG TY CP DƯỢC LÂM ĐỒNG (LADOPHAR)",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600432045",
       "lotName": "Diệp hạ châu",
-      "bidPrice": 18825000,
+      "bidPrice": 15750000,
       "finalPrice": 15750000,
-      "winningPrice": 0,
+      "winningPrice": 15750000,
       "reason": "",
-      "submittedAt": "2026-10-18T09:24:08.715",
-      "models": []
+      "submittedAt": "2026-11-05T08:19:29.011",
+      "models": [
+        "Bavegan",
+        "Diệp hạ châu"
+      ]
     },
     {
-      "id": "13032d91-521a-4264-821a-c1dba3dfbfd0",
+      "id": "1bfe845d-2394-443b-ab0a-0d663e117197",
       "contractorCode": "vn5800000047",
-      "taxCode": "",
+      "taxCode": "5800000047",
       "contractorName": "CÔNG TY CP DƯỢC LÂM ĐỒNG (LADOPHAR)",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600432046",
       "lotName": "Cao đặc Actiso; Cao đặc Rau đắng đất; Bìm bìm biếc.",
-      "bidPrice": 18825000,
+      "bidPrice": 3075000,
       "finalPrice": 3075000,
-      "winningPrice": 0,
+      "winningPrice": 3075000,
       "reason": "",
-      "submittedAt": "2026-10-18T09:24:08.715",
-      "models": []
+      "submittedAt": "2026-11-05T08:19:29.011",
+      "models": [
+        "Bavegan",
+        "Diệp hạ châu"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600432046",
+      "name": "Bavegan",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 15000,
+      "unitPrice": 205,
+      "amount": 3075000,
+      "contractorCode": "vn5800000047",
+      "winnerNames": [
+        "CÔNG TY CP DƯỢC LÂM ĐỒNG (LADOPHAR)"
+      ],
+      "lotNo": "PP2600432046",
+      "decisionNo": "1093/QĐ-BVĐK",
+      "decisionDate": "2026-11-05T23:59:59",
+      "resultPublishedDate": "2026-11-05T08:20:06"
+    },
+    {
+      "id": "2600432045",
+      "name": "Diệp hạ châu",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 50000,
+      "unitPrice": 315,
+      "amount": 15750000,
+      "contractorCode": "vn5800000047",
+      "winnerNames": [
+        "CÔNG TY CP DƯỢC LÂM ĐỒNG (LADOPHAR)"
+      ],
+      "lotNo": "PP2600432045",
+      "decisionNo": "1093/QĐ-BVĐK",
+      "decisionDate": "2026-11-05T23:59:59",
+      "resultPublishedDate": "2026-11-05T08:20:06"
+    }
+  ],
   "requirements": {
     "total": 5,
     "items": [
@@ -100,5 +151,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:26:01.768Z"
+  "fetchedAt": "2026-11-08T21:30:16.277Z"
 }

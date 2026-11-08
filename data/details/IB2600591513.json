@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "5d59c624-b550-4eca-9fdc-a3b06b1bf7ad",
+      "contractorCode": "vn0304726273",
+      "taxCode": "0304726273",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT MÊ KÔNG",
+      "status": "won",
+      "lotNo": "BP2600937191",
+      "lotName": "Gói thầu số 37/2026/TB-AL: Mua sắm máy chụp sóng máy cắt - NMTĐ A Lưới",
+      "bidPrice": 781000000,
+      "finalPrice": 781000000,
+      "winningPrice": 781000000,
+      "reason": "",
+      "submittedAt": "2026-11-05T14:15:03.408",
+      "models": [
+        "Egil 213 (P/N CM-21380)"
+      ]
+    },
+    {
+      "id": "d56d8499-efab-43e9-9670-141fb2d05e96",
+      "contractorCode": "vn0401689852",
+      "taxCode": "0401689852",
+      "contractorName": "CÔNG TY CỔ PHẦN NHƯ DƯƠNG",
+      "status": "lost",
+      "lotNo": "BP2600937191",
+      "lotName": "Gói thầu số 37/2026/TB-AL: Mua sắm máy chụp sóng máy cắt - NMTĐ A Lưới",
+      "bidPrice": 816279000,
+      "finalPrice": 816279000,
+      "winningPrice": 0,
+      "reason": "Giá cao hơn giá chào của nhà thầu có giá thấp nhấ",
+      "submittedAt": "2026-11-05T14:15:03.408",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "339e7a5f-dfb7-4ef8-b2d6-dd1ca0e5842d",
+      "name": "Máy chụp sóng máy cắt",
+      "model": "Egil 213 (P/N CM-21380)",
+      "brand": "Megger",
+      "manufacturer": "Megger",
+      "origin": "Thụy Điển",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Như trong hồ sơ CGTT",
+      "unit": "Trọn bộ",
+      "quantity": 1,
+      "unitPrice": 781000000,
+      "amount": 781000000,
+      "contractorCode": "vn0304726273",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ KỸ THUẬT MÊ KÔNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1457/QĐ-EVNCHP",
+      "decisionDate": "2026-11-05T14:14:25",
+      "resultPublishedDate": "2026-11-05T14:15:08"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +114,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:17:16.704Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:18:49.711Z"
 }

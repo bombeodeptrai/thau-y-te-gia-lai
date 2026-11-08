@@ -1,40 +1,86 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "66548fc4-708c-49ab-9e81-4e3f401affef",
+      "id": "8ea0d0e3-9bf3-48e3-b9a9-f1743074e9aa",
       "contractorCode": "vn0317656552",
-      "taxCode": "",
+      "taxCode": "0317656552",
       "contractorName": "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600428248",
       "lotName": "Máy điện tim",
-      "bidPrice": 178430000,
+      "bidPrice": 92580000,
       "finalPrice": 92580000,
-      "winningPrice": 0,
+      "winningPrice": 92580000,
       "reason": "",
-      "submittedAt": "2026-10-21T15:37:17.805",
-      "models": []
+      "submittedAt": "2026-11-06T14:23:43.973",
+      "models": [
+        "ECG-3250"
+      ]
     },
     {
-      "id": "5a36521a-dabc-4852-8fc1-2ccdc315620a",
+      "id": "b562a722-4fe6-44fc-8c71-fc1ab33f7d37",
       "contractorCode": "vn0317656552",
-      "taxCode": "",
+      "taxCode": "0317656552",
       "contractorName": "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600428249",
       "lotName": "Máy ly tâm",
-      "bidPrice": 178430000,
+      "bidPrice": 85850000,
       "finalPrice": 85850000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-10-21T15:37:17.805",
-      "models": []
+      "reason": "* Không đạt về năng lực và kinh nghiệm: + E-HSMT: Mã hàng hóa (HS) 8421. + E-HSDT: Không cung cấp hợp đồng tương tự có mã (HS) 8421 đáp ứng yêu cầu của E-HSMT",
+      "submittedAt": "2026-11-06T14:23:43.973",
+      "models": [
+        "ECG-3250"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600428248",
+      "name": "Máy điện tim",
+      "model": "ECG-3250",
+      "brand": "Nihon Kohden",
+      "manufacturer": "Nihon Kohden Tomioka Corporation Tomioka Production Center",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "1. Yêu cầu chung\r\n- Máy điện tim 6 kênh.\r\n- Thiết bị mới 100%.\r\n- Năm sản xuất: năm 2025 trở về sau.\r\n- Cơ sở sản xuất thiết bị y tế: Nhà sản xuất máy chính đạt tiêu chuẩn ISO 13485 hoặc tương đương.\r\n- Môi trường hoạt động: \r\n+ Nhiệt độ: trong khoảng 5 độ C đến 40 độ C hoặc rộng hơn.\r\n+ Độ ẩm tương đối: trong khoảng 25% đến 95%, không ngưng tụ, hoặc rộng hơn.\r\n- Xuất xứ theo nhóm nước: Xuất xứ máy chính thuộc nhóm các nước G7.\r\n2. Yêu cầu cấu hình cung cấp\r\n- Máy chính kèm màn hình màu ≥ 8 inch: 01 cái.\r\n- Phụ kiện đi kèm:\r\n+ Cáp điện tim: ≥ 01 cái.\r\n+ Dây nguồn: ≥ 01 cái.\r\n+ Điện cực chi: ≥ 04 cái.\r\n+ Điện cực ngực: ≥ 06 cái.\r\n+ Giấy in theo máy: ≥ 01 xấp.\r\n+ Bút lau đầu máy ghi nhiệt: ≥ 01 cái.\r\n+ Pin sạc: ≥  01 cái.\r\n+ Đĩa CD hoặc thiết bị lưu trữ điện tử chứa tài liệu kỹ thuật (Service Manual), phần mềm đọc kết quả điện tim, hướng dẫn sử dụng bằng tiếng Anh: ≥ 01 cái hoặc 01 bộ.\r\n+ Tài liệu hướng dẫn sử dụng tiếng Việt: 01 cuốn.\r\n3. Yêu cầu tính năng, thông số kỹ thuật\r\n3.1. Tính năng\r\n- Tương thích tiêu chuẩn IEC 60601-2-25 hoặc tương đương.\r\n- Máy điện tim kèm phần mềm phân tích kết quả điện tim, cung cấp khoảng ≥ 200 lỗi điện tim hoặc tương đương và phân tích chi tiết, có khả năng hỗ trợ diễn giải các dạng sóng điện tim bất thường, bao gồm loại Brugada hoặc tương đương.\r\n- Máy có màn hình màu ≥ 8.0 inch hiển thị được dạng sóng điện tim 12 đạo trình, có tin nhắn cảnh báo và chức năng hướng dẫn giúp người sử dụng kiểm tra nguyên nhân gây ra lỗi khi đo. Điện cực bị lỏng và đặt sai vị trí có thể được nhận biết và chỉ dẫn bằng tin nhắn cảnh báo.\r\n- Lưu được ≥ 3 phút gần nhất toàn bộ các đạo trình ECG vào bộ nhớ trong và có thể lựa chọn một phần để in và phân tích.\r\n- Có thể xuất dữ liệu qua mạng dây LAN hoặc qua mô-đun mạng không dây.\r\n- Có thể sử dụng thẻ nhớ USB hoặc thẻ nhớ SD làm bộ nhớ ngoài.\r\n- Thông tin của bệnh nhân có thể được nhận vào máy điện tim từ hệ thống thông tin bên ngoài\r\n- Có thể xuất báo cáo kết quả điện tim ở định dạng DICOM hoặc tương đương và chuyển dữ liệu vào hệ thống PACS của Trung tâm, hoặc file PDF để xuất vào phần mềm quản lý bệnh viện.\r\n3.2. Thông số kỹ thuật\r\n- Thu tín hiệu điện tim:\r\n+ Điện trở vào: ≥ 50 MΩ (tại 0.67Hz).\r\n+ Điện áp chống phân cực: ± 550 mV hoặc tương đương.\r\n+ Chức năng bảo vệ đầu vào: Có chức năng bảo vệ chống sốc tim.\r\n+ Hệ số nén nhiễu đồng pha: ≥ 105 dB hoặc tương đương.\r\n+ Dòng điện đầu vào: < 0.05 µA.\r\n+ Độ nhạy: 10 mm/mV ± 2%.\r\n+ Nhiễu trong: ≤ 20µVp-v hoặc tương đương.\r\n+ Giao thoa giữa các kênh: ≤ -40 dB.\r\n+ Tần số đáp ứng: với 10Hz 0.05-150Hz (+0.4dB/-3dB) hoặc tương đương.\r\n+ Tỷ lệ thu thập mẫu: ≥ 16.000 mẫu/giây/kênh.\r\n+ Đo nhịp tim:\r\n* Dải đo và hiển thị nhịp tim: từ 30 đến ≥ 300 nhịp/phút.\r\n* Độ chính xác: ± 10% (30 - 240 nhịp/phút).\r\n- Xử lý dữ liệu dạng sóng\r\n+ Số đạo trình: ≥ 12 đạo trình.\r\n+ Số kênh đầu vào: ≥ 1 kênh.\r\n+ Tỷ lệ lấy mẫu phân tích: ≥ 500 mẫu/giây, ≤ 1.25µv/LSB.\r\n+ Đáp ứng tín hiệu tối thiểu: ≤ 20µVp-v hoặc tương đương.\r\n+ Bộ lọc nhiễu điện cơ: 25/35 Hz (-3 dB) hoặc tương đương.\r\n+ Bộ lọc cao tần: 75, 100, 150 Hz (-3 dB) hoặc tương đương.\r\n+ Bộ lọc nhiễu xoay chiều: 50/60 Hz.\r\n+ Bộ lọc chống trôi đường cơ bản:\r\n• Yếu: 0.1 Hz (-20 dB).\r\n• Mạnh: 0.1 Hz (-34 dB).\r\n+ Hằng số thời gian: ≥ 3.2 giây.\r\n+ Độ nhạy: 5, 10, 20 mm/mV.\r\n+ Phát hiện tạo nhịp tim: Có.\r\n+ Chuyển đổi A/D: ≥ 24 bit.\r\n- Màn hình hiển thị\r\n+ Kích thước: ≥ 8.0 inch.\r\n+ Loại màn hình: LCD màu TFT hoặc tương đương.\r\n+ Độ phân giải: ≥ 800 x 480 dpi (dots Per Inch) hoặc tương đương.\r\n+ Hiển thị thông số: dạng sóng điện tim 12 đạo trình, thông tin bệnh nhân, cài đặt ghi, chế độ hoạt động, nhịp tim, thông số QRS, thông báo lỗi, tiếp xúc điện cực và nhiễu.\r\n- Máy ghi\r\n+ Chế độ in: in nhiệt.\r\n+ Mật độ in: ≥ 200 dpi.\r\n+ Mật độ quét dòng: 1 ms.\r\n+ Số kênh: 3, 4, 6.\r\n+ Tốc độ giấy: 5, 10, 12.5, 25, 50 mm/s.\r\n+ Độ chính xác tốc độ giấy: ≤ ± 5%.\r\n+ Thông số ghi: dạng sóng ECG, nhịp tim, tên đạo trình, phiên bản, ngày giờ, tốc độ giấy, độ nhạy, cài đặt bộ lọc, thông tin bệnh nhân, thông tin phép đo và đánh dấu sự kiện.\r\n+ Ghi mở rộng: có.\r\n+ Ghi dạng lưới: có.\r\n- Đầu vào/ đầu ra ngoại vi\r\n+ Đầu vào ngoại vi: ≥ 2 kênh, 10 mm/0.5V, trở kháng đầu vào ≥ 100 kΩ\r\n+ Đầu ra tín hiệu: ≥ 1 kênh, 0.5 V/mV ± 5%, trở kháng đầu ra ≤ 100 Ω.\r\n- Phân tích điện tim\r\n+ Tên chương trình: ECAPS 12C hoặc tương đương.\r\n+ Độ tuổi bệnh nhân: sơ sinh, trẻ em, người lớn.\r\n+ Mục tìm ra kết quả điện tim: gần 200 mục tìm kết quả hoặc tương đương.\r\n+ Mục phân tích kết quả: ≥ 5 mục phân tích kết quả hoặc tương đương.\r\n- Quản lý dữ liệu\r\n- Dữ liệu xuất ra: Dicom, PDF (với thẻ SD/USB) hoặc tương đương.\r\n- Máy in ngoài: có.\r\n- Pin \r\n+ Pin sạc ≥ 12V.\r\n+ Thời gian hoạt động của pin: hoạt động hơn ≥ 150 phút (khi pin đầy).\r\n+ Thời gian sạc: khoảng ≤ 3 giờ.\r\n- Cổng giao tiếp\r\n+ Cổng USB loại A: ≥ 2.\r\n+ Khe cắm thẻ nhớ: ≥ 1.\r\n+ Cổng mạng LAN: ≥ 1.",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 0,
+      "amount": 92580000,
+      "contractorCode": "vn0317656552",
+      "winnerNames": [
+        "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC"
+      ],
+      "lotNo": "PP2600428248",
+      "decisionNo": "541/QĐ-TTYT",
+      "decisionDate": "2026-11-06T23:59:59",
+      "resultPublishedDate": "2026-11-06T14:31:51"
+    },
+    {
+      "id": "fd5b637b-1a66-43ba-8a32-0353b0c05204",
+      "name": "Máy điện tim",
+      "model": "ECG-3250",
+      "brand": "Nihon Kohden",
+      "manufacturer": "Nihon Kohden Tomioka Corporation Tomioka Production Center",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "1. Yêu cầu chung\r\n- Máy điện tim 6 kênh.\r\n- Thiết bị mới 100%.\r\n- Năm sản xuất: năm 2025 trở về sau.\r\n- Cơ sở sản xuất thiết bị y tế: Nhà sản xuất máy chính đạt tiêu chuẩn ISO 13485 hoặc tương đương.\r\n- Môi trường hoạt động: \r\n+ Nhiệt độ: trong khoảng 5 độ C đến 40 độ C hoặc rộng hơn.\r\n+ Độ ẩm tương đối: trong khoảng 25% đến 95%, không ngưng tụ, hoặc rộng hơn.\r\n- Xuất xứ theo nhóm nước: Xuất xứ máy chính thuộc nhóm các nước G7.\r\n2. Yêu cầu cấu hình cung cấp\r\n- Máy chính kèm màn hình màu ≥ 8 inch: 01 cái.\r\n- Phụ kiện đi kèm:\r\n+ Cáp điện tim: ≥ 01 cái.\r\n+ Dây nguồn: ≥ 01 cái.\r\n+ Điện cực chi: ≥ 04 cái.\r\n+ Điện cực ngực: ≥ 06 cái.\r\n+ Giấy in theo máy: ≥ 01 xấp.\r\n+ Bút lau đầu máy ghi nhiệt: ≥ 01 cái.\r\n+ Pin sạc: ≥  01 cái.\r\n+ Đĩa CD hoặc thiết bị lưu trữ điện tử chứa tài liệu kỹ thuật (Service Manual), phần mềm đọc kết quả điện tim, hướng dẫn sử dụng bằng tiếng Anh: ≥ 01 cái hoặc 01 bộ.\r\n+ Tài liệu hướng dẫn sử dụng tiếng Việt: 01 cuốn.\r\n3. Yêu cầu tính năng, thông số kỹ thuật\r\n3.1. Tính năng\r\n- Tương thích tiêu chuẩn IEC 60601-2-25 hoặc tương đương.\r\n- Máy điện tim kèm phần mềm phân tích kết quả điện tim, cung cấp khoảng ≥ 200 lỗi điện tim hoặc tương đương và phân tích chi tiết, có khả năng hỗ trợ diễn giải các dạng sóng điện tim bất thường, bao gồm loại Brugada hoặc tương đương.\r\n- Máy có màn hình màu ≥ 8.0 inch hiển thị được dạng sóng điện tim 12 đạo trình, có tin nhắn cảnh báo và chức năng hướng dẫn giúp người sử dụng kiểm tra nguyên nhân gây ra lỗi khi đo. Điện cực bị lỏng và đặt sai vị trí có thể được nhận biết và chỉ dẫn bằng tin nhắn cảnh báo.\r\n- Lưu được ≥ 3 phút gần nhất toàn bộ các đạo trình ECG vào bộ nhớ trong và có thể lựa chọn một phần để in và phân tích.\r\n- Có thể xuất dữ liệu qua mạng dây LAN hoặc qua mô-đun mạng không dây.\r\n- Có thể sử dụng thẻ nhớ USB hoặc thẻ nhớ SD làm bộ nhớ ngoài.\r\n- Thông tin của bệnh nhân có thể được nhận vào máy điện tim từ hệ thống thông tin bên ngoài\r\n- Có thể xuất báo cáo kết quả điện tim ở định dạng DICOM hoặc tương đương và chuyển dữ liệu vào hệ thống PACS của Trung tâm, hoặc file PDF để xuất vào phần mềm quản lý bệnh viện.\r\n3.2. Thông số kỹ thuật\r\n- Thu tín hiệu điện tim:\r\n+ Điện trở vào: ≥ 50 MΩ (tại 0.67Hz).\r\n+ Điện áp chống phân cực: ± 550 mV hoặc tương đương.\r\n+ Chức năng bảo vệ đầu vào: Có chức năng bảo vệ chống sốc tim.\r\n+ Hệ số nén nhiễu đồng pha: ≥ 105 dB hoặc tương đương.\r\n+ Dòng điện đầu vào: < 0.05 µA.\r\n+ Độ nhạy: 10 mm/mV ± 2%.\r\n+ Nhiễu trong: ≤ 20µVp-v hoặc tương đương.\r\n+ Giao thoa giữa các kênh: ≤ -40 dB.\r\n+ Tần số đáp ứng: với 10Hz 0.05-150Hz (+0.4dB/-3dB) hoặc tương đương.\r\n+ Tỷ lệ thu thập mẫu: ≥ 16.000 mẫu/giây/kênh.\r\n+ Đo nhịp tim:\r\n* Dải đo và hiển thị nhịp tim: từ 30 đến ≥ 300 nhịp/phút.\r\n* Độ chính xác: ± 10% (30 - 240 nhịp/phút).\r\n- Xử lý dữ liệu dạng sóng\r\n+ Số đạo trình: ≥ 12 đạo trình.\r\n+ Số kênh đầu vào: ≥ 1 kênh.\r\n+ Tỷ lệ lấy mẫu phân tích: ≥ 500 mẫu/giây, ≤ 1.25µv/LSB.\r\n+ Đáp ứng tín hiệu tối thiểu: ≤ 20µVp-v hoặc tương đương.\r\n+ Bộ lọc nhiễu điện cơ: 25/35 Hz (-3 dB) hoặc tương đương.\r\n+ Bộ lọc cao tần: 75, 100, 150 Hz (-3 dB) hoặc tương đương.\r\n+ Bộ lọc nhiễu xoay chiều: 50/60 Hz.\r\n+ Bộ lọc chống trôi đường cơ bản:\r\n• Yếu: 0.1 Hz (-20 dB).\r\n• Mạnh: 0.1 Hz (-34 dB).\r\n+ Hằng số thời gian: ≥ 3.2 giây.\r\n+ Độ nhạy: 5, 10, 20 mm/mV.\r\n+ Phát hiện tạo nhịp tim: Có.\r\n+ Chuyển đổi A/D: ≥ 24 bit.\r\n- Màn hình hiển thị\r\n+ Kích thước: ≥ 8.0 inch.\r\n+ Loại màn hình: LCD màu TFT hoặc tương đương.\r\n+ Độ phân giải: ≥ 800 x 480 dpi (dots Per Inch) hoặc tương đương.\r\n+ Hiển thị thông số: dạng sóng điện tim 12 đạo trình, thông tin bệnh nhân, cài đặt ghi, chế độ hoạt động, nhịp tim, thông số QRS, thông báo lỗi, tiếp xúc điện cực và nhiễu.\r\n- Máy ghi\r\n+ Chế độ in: in nhiệt.\r\n+ Mật độ in: ≥ 200 dpi.\r\n+ Mật độ quét dòng: 1 ms.\r\n+ Số kênh: 3, 4, 6.\r\n+ Tốc độ giấy: 5, 10, 12.5, 25, 50 mm/s.\r\n+ Độ chính xác tốc độ giấy: ≤ ± 5%.\r\n+ Thông số ghi: dạng sóng ECG, nhịp tim, tên đạo trình, phiên bản, ngày giờ, tốc độ giấy, độ nhạy, cài đặt bộ lọc, thông tin bệnh nhân, thông tin phép đo và đánh dấu sự kiện.\r\n+ Ghi mở rộng: có.\r\n+ Ghi dạng lưới: có.\r\n- Đầu vào/ đầu ra ngoại vi\r\n+ Đầu vào ngoại vi: ≥ 2 kênh, 10 mm/0.5V, trở kháng đầu vào ≥ 100 kΩ\r\n+ Đầu ra tín hiệu: ≥ 1 kênh, 0.5 V/mV ± 5%, trở kháng đầu ra ≤ 100 Ω.\r\n- Phân tích điện tim\r\n+ Tên chương trình: ECAPS 12C hoặc tương đương.\r\n+ Độ tuổi bệnh nhân: sơ sinh, trẻ em, người lớn.\r\n+ Mục tìm ra kết quả điện tim: gần 200 mục tìm kết quả hoặc tương đương.\r\n+ Mục phân tích kết quả: ≥ 5 mục phân tích kết quả hoặc tương đương.\r\n- Quản lý dữ liệu\r\n- Dữ liệu xuất ra: Dicom, PDF (với thẻ SD/USB) hoặc tương đương.\r\n- Máy in ngoài: có.\r\n- Pin \r\n+ Pin sạc ≥ 12V.\r\n+ Thời gian hoạt động của pin: hoạt động hơn ≥ 150 phút (khi pin đầy).\r\n+ Thời gian sạc: khoảng ≤ 3 giờ.\r\n- Cổng giao tiếp\r\n+ Cổng USB loại A: ≥ 2.\r\n+ Khe cắm thẻ nhớ: ≥ 1.\r\n+ Cổng mạng LAN: ≥ 1.",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 92580000,
+      "winnerNames": [
+        "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC"
+      ],
+      "decisionNo": "541/QĐ-TTYT",
+      "decisionDate": "2026-11-06T23:59:59",
+      "resultPublishedDate": "2026-11-06T14:31:51"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -69,6 +115,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:22:33.036Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:26:14.848Z"
 }

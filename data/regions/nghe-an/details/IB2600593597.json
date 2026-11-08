@@ -1,9 +1,89 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "1beb25f8-14dd-48ac-b1b7-0dc04ff5a320",
+      "contractorCode": "vn0310631333",
+      "taxCode": "0310631333",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG",
+      "status": "won",
+      "lotNo": "PP2600465681",
+      "lotName": "Nhũ dịch lipid (Dầu đậu nành tinh chế 6,0g + triglycerid chuỗi trung bình 6,0g + dầu ô liu tinh chế 5,0g + dầu cá giàu acid béo omega-3 3g/ 100ml)",
+      "bidPrice": 1080880000,
+      "finalPrice": 1080880000,
+      "winningPrice": 1080880000,
+      "reason": "",
+      "submittedAt": "2026-11-05T17:15:10.566",
+      "models": [
+        "-"
+      ]
+    },
+    {
+      "id": "d179f953-8a57-4eb1-af3e-9874baa699cc",
+      "contractorCode": "vn0101343765",
+      "taxCode": "0101343765",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI TÂN Á CHÂU",
+      "status": "won",
+      "lotNo": "PP2600465682",
+      "lotName": "Zoledronic acid 4mg",
+      "bidPrice": 121895760,
+      "finalPrice": 121895760,
+      "winningPrice": 121895760,
+      "reason": "",
+      "submittedAt": "2026-11-05T17:15:10.566",
+      "models": [
+        "-"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "eeea8abb-c99f-42f0-9c22-24726f5c4baf",
+      "name": "Nhũ dịch lipid",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Fresenius Kabi Austria GmbH",
+      "origin": "Áo",
+      "manufactureYear": "Đảm bảo còn hạn sử dụng (Hạn sử dụng còn lại của thuốc tính từ thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu còn 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên, 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm.)",
+      "specification": "Tên thuốc: SMOFlipid 20%; Tên hoạt chất: Dầu đậu nành tinh chế + Triglycerid mạch trung bình + Dầu ô-liu tinh chế + Dầu cá tinh chế; Nồng độ, hàm lượng: (6g + 6g + 5g + 3g)/100ml; Đường dùng: Truyền tĩnh mạch ngoại vi hoặc tĩnh mạch trung tâm; Dạng bào chế: Nhũ tương tiêm truyền; Quy cách đóng gói: Thùng 10 chai 100 ml; Nhóm thuốc: Nhóm 1; Hạn dùng: 18 tháng; Số GĐKLH hoặc GPNK: VN-19955-16.",
+      "unit": "Chai/ bình/ túi/ lọ/ ống",
+      "quantity": 9160,
+      "unitPrice": 118000,
+      "amount": 1080880000,
+      "contractorCode": "vn0310631333",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "3360/QĐ-BVUB",
+      "decisionDate": "2026-11-05T17:13:59",
+      "resultPublishedDate": "2026-11-05T17:15:40"
+    },
+    {
+      "id": "8bb10ea3-fe1d-4d2c-a0d2-1c91afed984c",
+      "name": "Zoledronic acid",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Công ty cổ phần dược phẩm An Thiên",
+      "origin": "Việt Nam",
+      "manufactureYear": "Đảm bảo còn hạn sử dụng (Hạn sử dụng còn lại của thuốc tính từ thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu còn 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên, 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm.)",
+      "specification": "Tên thuốc: Zolexati 4 mg; Tên hoạt chất: Zoledronic acid (dưới dạng Zoledronic acid monohydrate); Nồng độ, hàm lượng: 4mg; Đường dùng: Tiêm truyền tĩnh mạch; Dạng bào chế: Thuốc tiêm đông khô; Quy cách đóng gói: Hộp 1 lọ thuốc tiêm đông khô + 1 ống dung môi 5ml ; Nhóm thuốc: Nhóm 4; Hạn dùng: 24 tháng; Số GĐKLH hoặc GPNK: VD-36211-22.",
+      "unit": "Chai/ bình/ túi/ lọ/ ống",
+      "quantity": 530,
+      "unitPrice": 229992,
+      "amount": 121895760,
+      "contractorCode": "vn0101343765",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI TÂN Á CHÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "3360/QĐ-BVUB",
+      "decisionDate": "2026-11-05T17:13:59",
+      "resultPublishedDate": "2026-11-05T17:15:40"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -123,5 +203,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:12:08.527Z"
+  "fetchedAt": "2026-11-08T21:11:21.882Z"
 }

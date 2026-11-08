@@ -1,9 +1,73 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "5c68474b-3cad-4d4d-a294-8b9b0ce48382",
+      "contractorCode": "vn0307884750",
+      "taxCode": "0307884750",
+      "contractorName": "CÔNG TY TNHH KINH DOANH VẬT TƯ TRANG THIẾT BỊ Y TẾ VIỆT NAM",
+      "status": "won",
+      "lotNo": "BP2600892455",
+      "lotName": "Sửa chữa ống nội soi dạ dày, đại tràng cho Trung tâm Tiêu hóa - Nội soi",
+      "bidPrice": 229100000,
+      "finalPrice": 229100000,
+      "winningPrice": 229100000,
+      "reason": "",
+      "submittedAt": "2026-11-06T15:57:28.962",
+      "models": [
+        "Sửa chữa, thay thế linh kiện cho ống nội soi dạ dày - Model: GIF-HQ190 - Hãng sản xuất: Olympus/Nhật",
+        "Sửa chữa, thay thế linh kiện cho ống nội soi đại tràng - Model: CF-HQ190I - Hãng sản xuất: Olympus/Nhật"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "9353350807545566",
+      "name": "Sửa chữa, thay thế linh kiện cho ống nội soi dạ dày - Model: GIF-HQ190 - Hãng sản xuất: Olympus/Nhật",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 101100000,
+      "amount": 101100000,
+      "contractorCode": "vn0307884750",
+      "winnerNames": [
+        "CÔNG TY TNHH KINH DOANH VẬT TƯ TRANG THIẾT BỊ Y TẾ VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "3260/QĐ-BVYD",
+      "decisionDate": "2026-11-06T15:56:31",
+      "resultPublishedDate": "2026-11-06T15:57:34"
+    },
+    {
+      "id": "8425025002353536",
+      "name": "Sửa chữa, thay thế linh kiện cho ống nội soi đại tràng - Model: CF-HQ190I - Hãng sản xuất: Olympus/Nhật",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 127999999.99999999,
+      "amount": 127999999.99999999,
+      "contractorCode": "vn0307884750",
+      "winnerNames": [
+        "CÔNG TY TNHH KINH DOANH VẬT TƯ TRANG THIẾT BỊ Y TẾ VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "3260/QĐ-BVYD",
+      "decisionDate": "2026-11-06T15:56:31",
+      "resultPublishedDate": "2026-11-06T15:57:34"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -87,5 +151,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:17:20.380Z"
+  "fetchedAt": "2026-11-08T21:18:49.800Z"
 }

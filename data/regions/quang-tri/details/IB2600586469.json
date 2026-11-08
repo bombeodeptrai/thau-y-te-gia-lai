@@ -1,9 +1,128 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "ad30df84-ec62-48e9-99fe-ac243cd6c11f",
+      "contractorCode": "vn0301445281",
+      "taxCode": "0301445281",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC THUẬN GIA",
+      "status": "won",
+      "lotNo": "PP2600458996",
+      "lotName": "Nystatin + neomycin + polymyxin B",
+      "bidPrice": 7140000,
+      "finalPrice": 7140000,
+      "winningPrice": 7140000,
+      "reason": "",
+      "submittedAt": "2026-11-05T14:55:52.016",
+      "models": [
+        "300110010524 (VN-21788-19), QĐ gia hạn 3/QĐ-QLD (đợt 117,2), hạn visa 03/01/2029"
+      ]
+    },
+    {
+      "id": "a2211662-9016-485e-9f60-31e21f79bb3c",
+      "contractorCode": "vn0107852007",
+      "taxCode": "0107852007",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM ĐỨC PHÚC",
+      "status": "won",
+      "lotNo": "PP2600458997",
+      "lotName": "Salicylic acid + betamethason dipropionat",
+      "bidPrice": 28500000,
+      "finalPrice": 28500000,
+      "winningPrice": 28500000,
+      "reason": "",
+      "submittedAt": "2026-11-05T14:55:52.016",
+      "models": [
+        "531110404223"
+      ]
+    },
+    {
+      "id": "0e84af46-27e3-4268-9cbd-a830912808de",
+      "contractorCode": "vn0104628198",
+      "taxCode": "0104628198",
+      "contractorName": "CÔNG TY CỔ PHẦN AFP GIA VŨ",
+      "status": "won",
+      "lotNo": "PP2600458999",
+      "lotName": "Citicolin",
+      "bidPrice": 17325000,
+      "finalPrice": 17325000,
+      "winningPrice": 17325000,
+      "reason": "",
+      "submittedAt": "2026-11-05T14:55:52.016",
+      "models": [
+        "893110073300 (VD-12948-10)"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "f3770f2e-3df9-4652-b2d1-9389d631c6fc",
+      "name": "Citi Brain 250",
+      "model": "893110073300\r\n(VD-12948-10)",
+      "brand": "Citi Brain 250",
+      "manufacturer": "Công ty Cổ phần Dược phẩm trung ương I - Pharbaco",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ 2025 trở đi",
+      "specification": "• Hoạt chất: Citicolin natri \r\n• Nồng độ, hàm lượng: 250mg/2ml\r\n• Nhóm TCKT: N4 \r\n• Đường dùng: Tiêm \r\n• Dạng bào chế: Thuốc tiêm\r\n• Quy cách: Hộp 10 ống thuốc tiêm 2ml\r\n• Hạn dùng (Tuổi thọ): 36 tháng\r\n• GĐKLH hoặc GPNK: 893110073300\r\n(VD-12948-10)",
+      "unit": "Chai/Lọ/Ống",
+      "quantity": 500,
+      "unitPrice": 34650,
+      "amount": 17325000,
+      "contractorCode": "vn0104628198",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN AFP GIA VŨ"
+      ],
+      "lotNo": "",
+      "decisionNo": "1199/QĐ-BV",
+      "decisionDate": "2026-11-05T14:54:43",
+      "resultPublishedDate": "2026-11-05T14:55:58"
+    },
+    {
+      "id": "91a913cd-ba82-4742-9e41-143abfe1517e",
+      "name": "Polygynax",
+      "model": "300110010524 (VN-21788-19), QĐ gia hạn 3/QĐ-QLD (đợt 117,2), hạn visa 03/01/2029",
+      "brand": "Polygynax",
+      "manufacturer": "CSSX bán thành phẩm: Catalent France Beinheim S.A/ CS đóng gói, kiểm soát chất lượng và xuất xưởng: Innothera Chouzy",
+      "origin": "Pháp",
+      "manufactureYear": "Từ 2026 trở đi",
+      "specification": "Tên hoạt chất:Nystatin + neomycin sulfat + polymyxin B sulfat,Nhóm TCKT: N1,Nồng độ, hàm lượng: 100000 IU;35000 IU;35000 IU,Đường dùng: Đặt âm đạo,Dạng bào chế: Viên nang mềm đặt âm đạo,Đơn vị tính: Viên; 300110010524 (VN-21788-19),\r\nQuy cách:Hộp 2 vỉ x 6 viên\r\nNhóm thuốc: N1\r\nHạn dùng (tuổi thọ):24 tháng GĐKLH hoặc GPNK: QĐ gia hạn 3/QĐ-QLD (đợt 117,2), hạn visa 03/01/2029",
+      "unit": "Viên",
+      "quantity": 700,
+      "unitPrice": 10200,
+      "amount": 7140000,
+      "contractorCode": "vn0301445281",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI DƯỢC THUẬN GIA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1199/QĐ-BV",
+      "decisionDate": "2026-11-05T14:54:43",
+      "resultPublishedDate": "2026-11-05T14:55:58"
+    },
+    {
+      "id": "b5db0b83-7b55-4b0c-913e-15f7f572085f",
+      "name": "Asosalic",
+      "model": "531110404223",
+      "brand": "Asosalic",
+      "manufacturer": "Replek Farm Ltd. Skopje",
+      "origin": "Macedonia",
+      "manufactureYear": "Từ 2026 trở đi",
+      "specification": "- Hoạt chất: Acid salicylic + Betamethason (dưới dạng betamethason dipropionat)\r\n- Nồng độ, hàm lượng: (3% + 0,05%), 30g\r\n- Nhóm TCKT: N2\r\n- Đường dùng: Dùng ngoài\r\n- Dạng bào chế: Thuốc mỡ bôi ngoài da\r\n- Quy cách: Hộp 1 tuýp x 30g\r\n- Hạn dùng (Tuổi thọ): 36 tháng\r\n- GĐKLH hoặc GPNK: 531110404223",
+      "unit": "Tuýp",
+      "quantity": 300,
+      "unitPrice": 95000,
+      "amount": 28500000,
+      "contractorCode": "vn0107852007",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM ĐỨC PHÚC"
+      ],
+      "lotNo": "",
+      "decisionNo": "1199/QĐ-BV",
+      "decisionDate": "2026-11-05T14:54:43",
+      "resultPublishedDate": "2026-11-05T14:55:58"
+    }
+  ],
   "requirements": {
     "total": 8,
     "items": [
@@ -283,5 +402,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:15:06.228Z"
+  "fetchedAt": "2026-11-08T21:15:08.754Z"
 }

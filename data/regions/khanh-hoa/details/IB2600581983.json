@@ -1,25 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "58ced8a4-d1d6-4df7-a2d8-99f64af5e783",
+      "id": "e6cde904-c500-48db-ad05-b4cc077fe41e",
       "contractorCode": "vn0100108536",
-      "taxCode": "",
+      "taxCode": "0100108536",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600886179",
-      "lotName": "Thuốc generic",
+      "lotName": "Ephedrin hydrochlorid",
       "bidPrice": 57750000,
       "finalPrice": 57750000,
-      "winningPrice": 0,
+      "winningPrice": 57750000,
       "reason": "",
-      "submittedAt": "2026-10-28T14:23:53.848",
-      "models": []
+      "submittedAt": "2026-11-05T09:19:35.07",
+      "models": [
+        "Ephedrine Aguettant 30mg/ml"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600886179",
+      "name": "Ephedrine Aguettant 30mg/ml",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Pháp",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Ống",
+      "quantity": 1000,
+      "unitPrice": 57750,
+      "amount": 57750000,
+      "contractorCode": "vn0100108536",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "lotNo": "BP2600886179",
+      "decisionNo": "3199/QĐ-BVĐKKH",
+      "decisionDate": "2026-11-05T23:59:59",
+      "resultPublishedDate": "2026-11-05T09:19:44"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +70,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:25:13.447Z"
+  "fetchedAt": "2026-11-08T21:28:08.296Z"
 }

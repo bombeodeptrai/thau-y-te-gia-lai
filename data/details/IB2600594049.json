@@ -1,9 +1,466 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 17,
+  "bidders": [
+    {
+      "id": "c482e018-3234-45a3-8b99-567b24dab14d",
+      "contractorCode": "vn2801615584",
+      "taxCode": "2801615584",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ AN SINH",
+      "status": "won",
+      "lotNo": "PP2600471420",
+      "lotName": "Vật tư, Sinh phẩm chẩn đoán",
+      "bidPrice": 136255000,
+      "finalPrice": 136255000,
+      "winningPrice": 136255000,
+      "reason": "",
+      "submittedAt": "2026-11-06T14:58:24.657",
+      "models": [
+        "PSN-5",
+        "ĐLG.TNP",
+        "Dengue NS1 Antigen Rapid Test",
+        "SPIROMETRY FILTER",
+        "19-140",
+        "Urgotul 10cm x 10cm"
+      ]
+    },
+    {
+      "id": "12bc58a8-b885-493c-8a7a-0ab733376438",
+      "contractorCode": "vn0106577044",
+      "taxCode": "0106577044",
+      "contractorName": "CÔNG TY CỔ PHẦN CÔNG NGHỆ PLASMA VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600471421",
+      "lotName": "Vật tư cho máy phát tia Plasma lạnh",
+      "bidPrice": 90000000,
+      "finalPrice": 90000000,
+      "winningPrice": 90000000,
+      "reason": "",
+      "submittedAt": "2026-11-06T14:58:24.657",
+      "models": [
+        "Khí AirMAC"
+      ]
+    },
+    {
+      "id": "9b4d7270-41be-450a-ad70-b4954ed160eb",
+      "contractorCode": "vn0100776036",
+      "taxCode": "0100776036",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM ĐÔNG ĐÔ",
+      "status": "won",
+      "lotNo": "PP2600471422",
+      "lotName": "Dung dịch bảo vệ thiết bị đặt trong mạch máu",
+      "bidPrice": 14750000,
+      "finalPrice": 14750000,
+      "winningPrice": 14750000,
+      "reason": "",
+      "submittedAt": "2026-11-06T14:58:24.657",
+      "models": [
+        "TP-02-10"
+      ]
+    },
+    {
+      "id": "b59d0200-587f-474f-8a4e-eca73816b178",
+      "contractorCode": "vn0101540844",
+      "taxCode": "0101540844",
+      "contractorName": "Công ty TNHH Vạn Niên",
+      "status": "won",
+      "lotNo": "PP2600471423",
+      "lotName": "Hoá chất dùng cho máy sinh hoá BS-620M, BS800-BS2000",
+      "bidPrice": 103495600,
+      "finalPrice": 103495600,
+      "winningPrice": 103495600,
+      "reason": "",
+      "submittedAt": "2026-11-06T14:58:24.657",
+      "models": [
+        "105-004591-00",
+        "105-004592-00",
+        "105-004612-00",
+        "105-001624-00",
+        "105-001596-00",
+        "105-001595-00",
+        "105-004597-00",
+        "105-009119-00",
+        "105-009120-00"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "4c03116a-5bbe-47d3-98a1-f12555572ad4",
+      "name": "ALT",
+      "model": "105-004591-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Để xác định định lượng hoạt tính Alanine Aminotransferase trong huyết thanh và huyết tương trên hệ thống đo quang trong chẩn đoán in vitro.\r\nPhương pháp đo:  IFCC Method mà không có hoạt hóa pyridoxal phosphate\r\nDải tuyến tính: 4-1000 U/L\r\nThành phần gồm:\r\nHóa chất R1:\r\n - Tris-buffer: 150 mmol/L\r\n - L-Alanine: 750 mmol/L\r\n - LDH ≥1200 U/L\r\n - NADH: 0.4 mmol/L\r\nHóa chất R2:\r\n- α-Oxoglutarate: 90 mmol/L\r\n - NADH: 0.9 mmol/L",
+      "unit": "ml",
+      "quantity": 876,
+      "unitPrice": 10700,
+      "amount": 9373200,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "db91bc7c-c675-47ca-8c0d-256d3814d08e",
+      "name": "AST",
+      "model": "105-004592-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thuốc thử AST dùng để xác định định lượng hoạt độ AST trong huyết thanh hoặc huyết tương trên hệ thống đo quang trong chẩn đoán in vitro.\r\nPhương pháp đo:  IFCC method mà không có hoạt hóa pyridoxal phosphate\r\nDải tuyến tính: 4-800 U/L\r\nThành phần gồm:\r\nHóa chất R1:\r\n -  Tris Buffer: 100 mmol/L\r\n -  L-aspartate: 300 mmol/L\r\n - LDH ≥ 900 U/L\r\n - MDH  ≥ 600 U/L\r\n - NADH: 0.4 mmol/L\r\nHóa chất R2:\r\n - α-oxoglutarate: 60 mmol/L\r\n - NADH: 0.9 mmol/L",
+      "unit": "ml",
+      "quantity": 876,
+      "unitPrice": 10700,
+      "amount": 9373200,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "1dabd1c8-ac81-42a8-8ea0-ac3f96dee990",
+      "name": "Creatinine",
+      "model": "105-004612-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Để xác định định lượng nồng độ creatinine trong huyết thanh, huyết tương và nước tiểu trên hệ thống đo quang trong chẩn đoán in vitro.\r\nPhương pháp đo: Sarcosine Oxidase Method\r\nDải tuyến tính:10-7000 μmol/L\r\nThành phần gồm:\r\nHóa chất R1:\r\n-  CRTase > 40KU/L\r\n - Sarcosine Oxidase >7KU/L\r\n - Ascorbic acid oxidase 2KU/L\r\n - Catalase >100KU/L\r\n - ESPMT 0.47mM\r\nHóa chất R2：\r\n - Creatininase >400KU/L\r\n - Peroxidase >50KU/L\r\n - 4-aminoantipyrine 2.95 mmol/L",
+      "unit": "ml",
+      "quantity": 1600,
+      "unitPrice": 34573,
+      "amount": 55316800,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "973b9ff0-52ea-4bbd-a067-20e95587af81",
+      "name": "Glucose",
+      "model": "105-001624-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Để xác định định lượng nồng độ Glu trong huyết thanh và huyết tương trên hệ thống đo quang trong chẩn đoán in vitro\r\nPhương pháp: Glucose oxidase-Peroxidase (GOD-POD) method \r\nDải tuyến tính: 0.3-25 mmol/L \r\nThành phần gồm:\r\nHóa chất R1:\r\n Phosphate buffer 100 mmol/L\r\nAscorbate oxidase 4700 U/L\r\nGlucose oxidase 4000 U/L\r\nHóa chất R2:\r\nPhosphate buffer 100 mmol/L\r\nPeroxidase 6700 U/L\r\n4-Aminoantipyrine 0.7 mmol/L\r\np-Hydroxybenzoic acid sodium 1.3 mmol/L",
+      "unit": "ml",
+      "quantity": 456,
+      "unitPrice": 9013,
+      "amount": 4109928,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "2d4fc1bb-2194-49df-8469-ae3ee38f8417",
+      "name": "Triglycerides",
+      "model": "105-001596-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Để xác định định lượng nồng độ TG  trong huyết thanh và huyết tương  người trên hệ thống đo quang trong chẩn đoán in vitro\r\nPhương pháp đo:GPO-POD Method\r\nDải tuyến tính: 0.1-12.5 mmol/L\r\nThành phần gồm:\r\n- Hóa chất R:\r\nPhosphate buffer 50 mmol/L\r\n4-Chlorophenol 5 mmol/L\r\nATP 2 mmol/L\r\n Mg2+:  4.5 mmol/L\r\nGlycerokinase ≥0.4 U/mL\r\nPeroxidase ≥0.5 U/mL\r\nLipoprotein lipase ≥1.3 U/mL\r\n4-Aminoantipyrine 0.25 mmol/L\r\nGlycerol-3-phosphate-oxidase ≥1.5 U/mL",
+      "unit": "ml",
+      "quantity": 360,
+      "unitPrice": 18021,
+      "amount": 6487560,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "462ab7f5-9b95-4160-ab85-b4031dc47144",
+      "name": "Total Cholesterol",
+      "model": "105-001595-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Để xác định định lượng nồng độ TC  trong huyết thanh và huyết tương  người trên hệ thống đo quang trong chẩn đoán in vitro.\r\nPhương pháp đo:CHOD-POD Method\r\nDải tuyến tính: 0.1-20.0 mmol/L\r\nThành phần gồm:\r\n- Hóa chất R:\r\nPhosphate buffer 100 mmol/L\r\nPhenol 5 mmol/L\r\n4-Aminoantipyrine 0.3 mmol/L\r\nCholesterol esterase >150 KU/L\r\nCholesterol oxidase >100 KU/L\r\nPeroxidase 5 KU/L",
+      "unit": "ml",
+      "quantity": 360,
+      "unitPrice": 8976,
+      "amount": 3231360,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "7f1b0809-4ef1-4ce8-8829-6ba1ba08e13b",
+      "name": "Urea",
+      "model": "105-004597-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Để xác định định lượng nồng độ  Urea  trong huyết thanh, huyết tương và nước tiểu người  trên hệ thống đo quang trong chẩn đoán in vitro\r\nPhương pháp đo:Urease-GLDH, UV Method\r\nDải tuyến tính:0.9-40.0 mmol/L\r\nThành phần gồm:\r\n- Hóa chất R1:\r\nTris buffer 120 mmol/L\r\nADP 750 mmol/L\r\nUrease ≥40 KU/L\r\nGLDH ≥0.4 KU/L\r\n- Hóa chất R2: \r\nNADH 1.2 mmol/L\r\nα-Oxoglutarate 25 mmol/L",
+      "unit": "ml",
+      "quantity": 1332,
+      "unitPrice": 8336,
+      "amount": 11103552,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "d934ab97-c9d4-46c7-8a58-1afb8863ba1e",
+      "name": "Chất chứng mức thấp hóa chất sinh hóa",
+      "model": "105-009119-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "ClinChem Multi Control (level 1) được sử dụng trong kiểm soát chất lượng chất phân tích hóa học thông thường bằng cách giám sát độ chính xác và độ chụm của hệ thống đo Mindray BS và khả năng xét nghiệm của phòng xét nghiệm lâm sàng\r\nClinChem Multi Control (level 1) là chất kiểm soát đông khô dựa trên huyết thanh người",
+      "unit": "ml",
+      "quantity": 10,
+      "unitPrice": 225000,
+      "amount": 2250000,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "51bfd81a-236a-49a1-a57e-7a417f2e468a",
+      "name": "Chất chứng mức cao hóa chất sinh hóa",
+      "model": "105-009120-00",
+      "brand": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-Medical Electronics Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "ClinChem Multi Control (level 2) được sử dụng trong kiểm soát chất lượng chất phân tích hóa học thông thường bằng cách giám sát độ chính xác và độ chụm của hệ thống đo Mindray BS và khả năng xét nghiệm của phòng xét nghiệm lâm sàng\r\nClinChem Multi Control (level 2) là chất kiểm soát đông khô dựa trên huyết thanh người",
+      "unit": "ml",
+      "quantity": 10,
+      "unitPrice": 225000,
+      "amount": 2250000,
+      "contractorCode": "vn0101540844",
+      "winnerNames": [
+        "Công ty TNHH Vạn Niên"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "abfa9100-fe85-4c4f-b8ac-cb1d6991fd29",
+      "name": "Vật tư tiêu hao sử dụng cho máy phát tia Plasma lạnh hỗ trợ điều trị vết thương",
+      "model": "Khí AirMAC",
+      "brand": "AirMAC",
+      "manufacturer": "Công ty TNHH Medigas Việt Nam ",
+      "origin": "Việt nam ",
+      "manufactureYear": "2026 trở về sau ",
+      "specification": "Khí AirMAC được sản xuất từ thành phần chính là khí Argon độ tinh khiết 99,9999% (6.0)\r\n- Thành phần vết các hợp chất được kiểm soát là: H2O ≤ 0.2ppm; O2 ≤ 0.2 ppm; N2 ≤ 0.5 ppm; CO2 và CO ≤ 0.1 ppm.\r\n- Dùng cho Máy Plasma lạnh hỗ trợ điều trị vết thương (PLASMAMED)\r\n* Bình chứa:\r\n- Bình hợp kim nhôm dung tích 8 lít\r\n- Kích thước bao gồm quai xách: 160 x 700 (mm)(±5%)\r\n- Áp suất an toàn của bình chứa: 225 Bar\r\n- Áp suất làm việc tối đa: 150 Bar\r\n- Áp suất khí nén khi đầy: 130Bar (±5%)\r\n* Kết nối:\r\n- Chuẩn kết nối CGA 870  \r\n- Giao diện nối điện tử: HDMI (Để truy xuất nguồn gốc nhằm kiểm soát chất lượng sản phẩm)\r\n* Lưu ý: Sản phẩm là hỗn hợp khí trong bình, không bao gồm vỏ bình và các bộ phận đi kèm.",
+      "unit": "Bình",
+      "quantity": 30,
+      "unitPrice": 3000000,
+      "amount": 90000000,
+      "contractorCode": "vn0106577044",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN CÔNG NGHỆ PLASMA VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "acf3856f-3414-4440-8f04-89b94c156d58",
+      "name": "Ống nghiệm nhựa có nắp 5ml",
+      "model": "PSN-5",
+      "brand": "An Phú ",
+      "manufacturer": "Công ty Cổ phần Đầu tư y tế An Phú ",
+      "origin": "Việt Nam ",
+      "manufactureYear": "2025 trở đi ",
+      "specification": "Chất liệu: Ống được làm bằng nhựa y tế PS, kích thước 12x75mm, nắp trắng, mới 100%",
+      "unit": "Ống",
+      "quantity": 50000,
+      "unitPrice": 450,
+      "amount": 22500000,
+      "contractorCode": "vn2801615584",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ AN SINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "ab9e6ce5-e992-410b-aedf-128cb26aaeea",
+      "name": "Que đè lưỡi gỗ",
+      "model": "ĐLG.TNP",
+      "brand": "Tanaphar",
+      "manufacturer": "Công ty CP\r\nTanaphar",
+      "origin": "Việt Nam ",
+      "manufactureYear": "2025 trở đi ",
+      "specification": "- Que đè lưỡi gỗ: Gỗ tự nhiên, thớ mịn, đồng nhất, không lõi, không cong vênh. Gỗ được hấp chín trước khi đưa vào sản xuất và sấy khô, đánh bóng khi ra thành phẩm nên đạt độ cứng, nhẵn cao, an toàn trong sử dụng.\r\n- Tổng số nấm men + mốc< 2.0 x 10¹ CFU/g;  vi khuẩn hiếu khí < 2.0 x 10¹ CFU/g\r\n- Kích thước: 150mm x 20mm x 2mm.\r\n- Sản phẩm được tiệt trùng bằng khí Ethylene Oxide (E.O)",
+      "unit": "Cái",
+      "quantity": 1000,
+      "unitPrice": 355,
+      "amount": 355000,
+      "contractorCode": "vn2801615584",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ AN SINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "507d5d7c-8b23-4ce9-9335-3395308672e1",
+      "name": "Test nhanh chuẩn đoán sốt xuất huyết",
+      "model": "Dengue NS1 Antigen Rapid Test",
+      "brand": "Biorex Heathcare",
+      "manufacturer": "Qingdao Hightop Biotech Co.,Ltd",
+      "origin": "Trung Quốc ",
+      "manufactureYear": "2025 trở đi ",
+      "specification": "Xét nghiệm nhanh kháng nguyên sốt xuất huyết NS1\r\nĐược sử dụng để phát hiện định tính kháng nguyên sốt xuất huyết NS1 trong huyết thanh, huyết tương và máu toàn phần để hỗ trợ chẩn đoán nhiễm virus sốt xuất huyết.\r\nThành phần: Tấm mẫu, miếng đệm liên hợp vàng keo, màng nitrocellulose, miếng thấm hút, tấm PVC. Miếng đệm liên hợp vàng keo được dán nhãn kháng thể Dengue NS1 1, màng nitrocellulose phủ kháng thể sốt xuất huyết NS1 2.\r\nChất pha loãng mẫu: Dung dịch đệm chứa phốt phát. Ống hút nhựa dùng một lần (tùy chọn).\r\n- Độ nhạy tương đối: 97,92%\r\n- Độ đặc hiệu tương đối: 99,02%\r\n- Độ chính xác: 98,67%\r\nTính đặc hiệu phân tích\r\n- Chất gây nhiễu: 1000µmol/L bilirubin, 5.65mmol/L triglyceride, 6.5g/L hemoglobin Hemoglobin không ảnh hưởng đến kết quả xét nghiệm\r\n- Bộ thử không bị ảnh hưởng bởi kháng thể kháng nhân và kháng thể kháng ty thể.\r\n- Phản ứng chéo: Khi thử với kháng thể HBV, HAV, HCV, HIV không ảnh hưởng đến kết quả xét nghiệm.",
+      "unit": "Test",
+      "quantity": 100,
+      "unitPrice": 30000,
+      "amount": 3000000,
+      "contractorCode": "vn2801615584",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ AN SINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "ab4f5021-82ba-42b0-b884-3f850ad6bf03",
+      "name": "Filter lọc khuẩn",
+      "model": "SPIROMETRY FILTER ",
+      "brand": "Hitec ",
+      "manufacturer": "Hitec Medical Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở đi ",
+      "specification": "Filter dùng cho máy đo chức năng hô hấp: \r\n- Trụ lọc bằng nhựa ABS \r\n- Phin lọc: cotton tĩnh điện \r\n- Tiệt trùng bằng khí EO \r\n- Mức thoát độ ẩm cao (>33mgH2O/L) \r\n- Hiệu quả lọc khuẩn và virus: 99,9999% \r\n- Đóng gói riêng lẻ.",
+      "unit": "Cái",
+      "quantity": 3000,
+      "unitPrice": 20000,
+      "amount": 60000000,
+      "contractorCode": "vn2801615584",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ AN SINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "81b01a50-d120-4440-9524-3096df35dfe7",
+      "name": "Hộp chống sốc",
+      "model": "19-140",
+      "brand": "19-140",
+      "manufacturer": "Prime Tech Surgico",
+      "origin": "Pakistan",
+      "manufactureYear": "2025 trở đi ",
+      "specification": "Hộp inox y tế có nắp dùng để bảo quản dụng cụ y tế\r\n- Chất liệu: Inox không gỉ\r\n- Kiểu dáng: Hộp chữ nhật kích thước 22 x 12 x 5 cm\r\n- Bề mặt : Inox sáng/bóng",
+      "unit": "cái",
+      "quantity": 1,
+      "unitPrice": 100000,
+      "amount": 100000,
+      "contractorCode": "vn2801615584",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ AN SINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "eecd89a7-c2e8-49c5-a94c-d96c02ae4867",
+      "name": "Gạc mỡ chống dính",
+      "model": "Urgotul 10cm x 10cm",
+      "brand": "Urgo",
+      "manufacturer": "URGO HEALTHCARE PRODUCTS CO., LTD.",
+      "origin": "Thái Lan",
+      "manufactureYear": "2025 trở đi ",
+      "specification": "- Gạc lưới thông thoáng và linh hoạt được cấu tạo bởi các mắt lưới polyester có tẩm các hạt hydrocolloid phân tán trong sáp dầu khoáng (petroleum jelly). Sản phẩm chứa hydrocolloid (carboxymethylcellulose), dầu parafin, sáp dầu khoáng và các dẫn xuất polymer\r\n- Kích thước: 10 x 10 cm",
+      "unit": "Miếng",
+      "quantity": 1000,
+      "unitPrice": 50300,
+      "amount": 50300000,
+      "contractorCode": "vn2801615584",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ AN SINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    },
+    {
+      "id": "e3bf18dc-3a9e-4059-a8e8-d1e17bbc15c8",
+      "name": "Dung dịch bảo quản catheter",
+      "model": "TP-02-10",
+      "brand": "Tauro Lock™ - HEP 500",
+      "manufacturer": "TauroPharm GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2026",
+      "specification": "Taurolidine 1,35%,  Citrate 4% và Heparin 500IU/ml.",
+      "unit": "Lọ",
+      "quantity": 50,
+      "unitPrice": 295000,
+      "amount": 14750000,
+      "contractorCode": "vn0100776036",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM ĐÔNG ĐÔ "
+      ],
+      "lotNo": "",
+      "decisionNo": "636/QĐ-TĐT-BVNC",
+      "decisionDate": "2026-11-06T14:57:23",
+      "resultPublishedDate": "2026-11-06T14:59:26"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -441,5 +898,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:12:32.431Z"
+  "fetchedAt": "2026-11-08T21:11:42.230Z"
 }

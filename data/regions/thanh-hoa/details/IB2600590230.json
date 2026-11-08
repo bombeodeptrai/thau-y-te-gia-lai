@@ -1,9 +1,304 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 10,
+  "bidders": [
+    {
+      "id": "094736a7-098d-4f1a-9501-4055dfb3babc",
+      "contractorCode": "vn0109589270",
+      "taxCode": "0109589270",
+      "contractorName": "CÔNG TY CỔ PHẦN TƯ VẤN VÀ KIỂM ĐỊNH Y TẾ MDC VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600463784",
+      "lotName": "Kiểm định thiết bị theo Thông tư 05/2022/TT-BYT",
+      "bidPrice": 110808000,
+      "finalPrice": 110808000,
+      "winningPrice": 110808000,
+      "reason": "",
+      "submittedAt": "2026-11-06T10:42:42.668",
+      "models": [
+        "Máy thở các loại (máy trợ thở, máy thở xâm lấn/không xâm lấn, máy thở chức năng cao)",
+        "Dao mổ điện cao tần",
+        "Máy gây mê kèm thở",
+        "Máy phá rung tim/Máy sốc điện",
+        "Máy lọc máu liên tục (máy thận nhân tạo)"
+      ]
+    },
+    {
+      "id": "7047b424-cc66-4f54-b76c-16196d734754",
+      "contractorCode": "vn0104215779",
+      "taxCode": "0104215779",
+      "contractorName": "CÔNG TY CP CHỨNG NHẬN VÀ KIỂM ĐỊNH VINACONTROL",
+      "status": "won",
+      "lotNo": "PP2600463785",
+      "lotName": "Kiểm định hệ thống oxy trung tâm",
+      "bidPrice": 29000000,
+      "finalPrice": 29000000,
+      "winningPrice": 29000000,
+      "reason": "",
+      "submittedAt": "2026-11-06T10:42:42.668",
+      "models": [
+        "Hệ thống đường dẫn khí oxy",
+        "Van an toàn",
+        "Áp kế"
+      ]
+    },
+    {
+      "id": "70b66392-9c88-4af3-b4d1-92b53813d005",
+      "contractorCode": "vn0202326043",
+      "taxCode": "0202326043",
+      "contractorName": "Công ty Cổ phần Dịch vụ Tiêu chuẩn Đo lường và An toàn Lao động",
+      "status": "lost",
+      "lotNo": "PP2600463785",
+      "lotName": "Kiểm định hệ thống oxy trung tâm",
+      "bidPrice": 29268000,
+      "finalPrice": 29268000,
+      "winningPrice": 0,
+      "reason": "Giá chào cao hơn giá chào của nhà thầu xếp hạng thứ nhất",
+      "submittedAt": "2026-11-06T10:42:42.668",
+      "models": []
+    },
+    {
+      "id": "b55d6ad6-baa0-4c24-aa46-c9efde5a2709",
+      "contractorCode": "vnz000034910",
+      "taxCode": "0101712469-001",
+      "contractorName": "TRUNG TÂM ỨNG DỤNG KHOA HỌC CÔNG NGHỆ Y SINH",
+      "status": "won",
+      "lotNo": "PP2600463786",
+      "lotName": "Hiệu chuẩn thiết bị y tế khoa vi sinh",
+      "bidPrice": 6780000,
+      "finalPrice": 6780000,
+      "winningPrice": 6780000,
+      "reason": "",
+      "submittedAt": "2026-11-06T10:42:42.668",
+      "models": [
+        "Máy nuôi cấy vi khuẩn lao Bactec Mgit 960",
+        "Tủ lạnh âm sâu -80"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "8438825432659536",
+      "name": "Hệ thống đường dẫn khí oxy",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 26431859.68781228,
+      "amount": 26431859.687812276,
+      "contractorCode": "vn0104215779",
+      "winnerNames": [
+        "CÔNG TY CP CHỨNG NHẬN VÀ KIỂM ĐỊNH VINACONTROL"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "6413977485096963",
+      "name": "Van an toàn",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 159884.22177044212,
+      "amount": 319768.4435408842,
+      "contractorCode": "vn0104215779",
+      "winnerNames": [
+        "CÔNG TY CP CHỨNG NHẬN VÀ KIỂM ĐỊNH VINACONTROL"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "8863588939644362",
+      "name": "Áp kế",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 15,
+      "unitPrice": 149891.4579097895,
+      "amount": 2248371.868646842,
+      "contractorCode": "vn0104215779",
+      "winnerNames": [
+        "CÔNG TY CP CHỨNG NHẬN VÀ KIỂM ĐỊNH VINACONTROL"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "10720053353352632",
+      "name": "Máy nuôi cấy vi khuẩn lao Bactec Mgit 960",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 4959283.887468031,
+      "amount": 4959283.887468031,
+      "contractorCode": "vnz000034910",
+      "winnerNames": [
+        "TRUNG TÂM ỨNG DỤNG KHOA HỌC CÔNG NGHỆ Y SINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "11497349604782458",
+      "name": "Tủ lạnh âm sâu -80",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 1820716.1125319693,
+      "amount": 1820716.1125319693,
+      "contractorCode": "vnz000034910",
+      "winnerNames": [
+        "TRUNG TÂM ỨNG DỤNG KHOA HỌC CÔNG NGHỆ Y SINH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "7844991421914563",
+      "name": "Máy thở các loại (máy trợ thở, máy thở xâm lấn/không xâm lấn, máy thở chức năng cao)",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 83,
+      "unitPrice": 1188000,
+      "amount": 98604000,
+      "contractorCode": "vn0109589270",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN TƯ VẤN VÀ KIỂM ĐỊNH Y TẾ MDC VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "7763836551709155",
+      "name": "Dao mổ điện cao tần",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 4,
+      "unitPrice": 1188000,
+      "amount": 4752000,
+      "contractorCode": "vn0109589270",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN TƯ VẤN VÀ KIỂM ĐỊNH Y TẾ MDC VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "11431522752709816",
+      "name": "Máy gây mê kèm thở",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 1188000,
+      "amount": 2376000,
+      "contractorCode": "vn0109589270",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN TƯ VẤN VÀ KIỂM ĐỊNH Y TẾ MDC VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "9350846747105276",
+      "name": "Máy phá rung tim/Máy sốc điện",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 1269000,
+      "amount": 2538000,
+      "contractorCode": "vn0109589270",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN TƯ VẤN VÀ KIỂM ĐỊNH Y TẾ MDC VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    },
+    {
+      "id": "8670789566720820",
+      "name": "Máy lọc máu liên tục (máy thận nhân tạo)",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 1269000,
+      "amount": 2538000,
+      "contractorCode": "vn0109589270",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN TƯ VẤN VÀ KIỂM ĐỊNH Y TẾ MDC VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1713/QĐ-BVP",
+      "decisionDate": "2026-11-06T10:38:43",
+      "resultPublishedDate": "2026-11-06T10:42:47"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -282,6 +577,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:12:28.457Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:11:42.692Z"
 }

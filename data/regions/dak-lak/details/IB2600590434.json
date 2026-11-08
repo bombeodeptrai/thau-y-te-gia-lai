@@ -1,9 +1,184 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "374c88b4-95da-4c4a-a707-6bb8e36735fe",
+      "contractorCode": "vn0600337774",
+      "taxCode": "0600337774",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM MINH DÂN",
+      "status": "won",
+      "lotNo": "PP2600464100",
+      "lotName": "Ciprofloxacin",
+      "bidPrice": 11010000,
+      "finalPrice": 11010000,
+      "winningPrice": 11010000,
+      "reason": "",
+      "submittedAt": "2026-11-03T07:07:04.64",
+      "models": [
+        "893115246625"
+      ]
+    },
+    {
+      "id": "1bf5e4bb-5bd7-4527-b6a9-497a0e1485d1",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "lost",
+      "lotNo": "PP2600464100",
+      "lotName": "Ciprofloxacin",
+      "bidPrice": 11025000,
+      "finalPrice": 11025000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-11-03T07:07:04.64",
+      "models": [
+        "893110492424 (VD-25877-16)"
+      ]
+    },
+    {
+      "id": "fead33a1-5a4d-4080-8639-274c985cec58",
+      "contractorCode": "vn0312424558",
+      "taxCode": "0312424558",
+      "contractorName": "CÔNG TY TNHH DƯỢC VÀ THIẾT BỊ Y TẾ VIỆT ÂU",
+      "status": "won",
+      "lotNo": "PP2600464107",
+      "lotName": "Kẽm sulfat",
+      "bidPrice": 144000000,
+      "finalPrice": 144000000,
+      "winningPrice": 144000000,
+      "reason": "",
+      "submittedAt": "2026-11-03T07:07:04.64",
+      "models": [
+        "893100067200"
+      ]
+    },
+    {
+      "id": "ecff5170-704f-46da-a506-faae9c516452",
+      "contractorCode": "vn4300213253",
+      "taxCode": "4300213253",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT",
+      "status": "won",
+      "lotNo": "PP2600464109",
+      "lotName": "Natri hydrocarbonat",
+      "bidPrice": 864000,
+      "finalPrice": 864000,
+      "winningPrice": 864000,
+      "reason": "",
+      "submittedAt": "2026-11-03T07:07:04.64",
+      "models": [
+        "893110492424 (VD-25877-16)"
+      ]
+    },
+    {
+      "id": "b381a47d-8ae0-45f2-b5e4-39e221feebb1",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "won",
+      "lotNo": "PP2600464110",
+      "lotName": "Phenobarbital",
+      "bidPrice": 500000,
+      "finalPrice": 500000,
+      "winningPrice": 500000,
+      "reason": "",
+      "submittedAt": "2026-11-03T07:07:04.64",
+      "models": [
+        "893112685524 (VD-30561-18)"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "e719a199-344b-44fb-90a0-2a96e9dcde92",
+      "name": "Ciprofloxacin",
+      "model": "893115246625",
+      "brand": "Ciprofloxacin 400mg/200ml",
+      "manufacturer": "Công ty CPDP Minh Dân – \r\nViệt Nam\r\n",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Tên hoạt chất: Ciprofloxacin (dạng ciprofloxacin hydroclorid);\r\nNhóm TCKT: Nhóm 4;\r\nNồng độ, hàm lượng: 400mg/\r\n200ml\r\nĐường dùng: Tiêm truyền;\r\nDạng bào chế: Thuốc tiêm truyền",
+      "unit": "Chai/Lọ/Ống/Túi/Bịch",
+      "quantity": 300,
+      "unitPrice": 36700,
+      "amount": 11010000,
+      "contractorCode": "vn0600337774",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM MINH DÂN"
+      ],
+      "lotNo": "",
+      "decisionNo": "816/QĐ-BVSN",
+      "decisionDate": "2026-11-03T07:04:05",
+      "resultPublishedDate": "2026-11-03T07:07:12"
+    },
+    {
+      "id": "f672b7e0-686d-49bb-896f-af678fec36e9",
+      "name": "Phenobarbital",
+      "model": "893112685524 (VD-30561-18)",
+      "brand": "Phenobarbital 0,1 g",
+      "manufacturer": "Chi nhánh Công ty cổ phần dược phẩm Trung ương Vidipha Bình Dương – Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Tên hoạt chất: Phenobarbital;\r\nNhóm TCKT: Nhóm 4;\r\nNồng độ, hàm lượng: 100mg;\r\nĐường dùng: Uống;\r\nDạng bào chế: Viên nén",
+      "unit": "Viên",
+      "quantity": 1000,
+      "unitPrice": 500,
+      "amount": 500000,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "816/QĐ-BVSN",
+      "decisionDate": "2026-11-03T07:04:05",
+      "resultPublishedDate": "2026-11-03T07:07:12"
+    },
+    {
+      "id": "f168abec-b03a-4847-a79e-a23e8b8820c2",
+      "name": "Natri hydrocarbonat",
+      "model": "893110492424 (VD-25877-16)",
+      "brand": "Natri bicarbonat 1,4%",
+      "manufacturer": "Công ty Cổ phần Fresenius Kabi Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Tên hoạt chất: Natri hydrocarbonat (natri bicarbonat) ;\r\nNhóm TCKT: Nhóm 4;\r\nNồng độ, hàm lượng: 1,4% - 250ml;\r\nĐường dùng: Tiêm truyền;\r\nDạng bào chế: Dung dịch tiêm truyền",
+      "unit": "Chai/Lọ/Ống/Túi/Bịch",
+      "quantity": 20,
+      "unitPrice": 43200,
+      "amount": 864000,
+      "contractorCode": "vn4300213253",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM TRUNG VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "816/QĐ-BVSN",
+      "decisionDate": "2026-11-03T07:04:05",
+      "resultPublishedDate": "2026-11-03T07:07:12"
+    },
+    {
+      "id": "0347d7cc-a81a-4ea8-ab29-62d64ffbeeff",
+      "name": "Kẽm sulfat",
+      "model": "893100067200",
+      "brand": "Atisyrup zinc",
+      "manufacturer": "Công ty Cổ phần Dược phẩm An Thiên – Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Tên hoạt chất: Kẽm sulfat;\r\nNhóm TCKT: Nhóm 4;\r\nNồng độ, hàm lượng: 10mg/5ml;5ml;\r\nĐường dùng: Uống;\r\nDạng bào chế: Siro",
+      "unit": "Gói/Túi/Chai/Lọ/Ống/Bịch",
+      "quantity": 30000,
+      "unitPrice": 4800,
+      "amount": 144000000,
+      "contractorCode": "vn0312424558",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC VÀ THIẾT BỊ Y TẾ VIỆT ÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "816/QĐ-BVSN",
+      "decisionDate": "2026-11-03T07:04:05",
+      "resultPublishedDate": "2026-11-03T07:07:12"
+    }
+  ],
   "requirements": {
     "total": 13,
     "items": [
@@ -442,6 +617,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:22:24.898Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:26:13.457Z"
 }

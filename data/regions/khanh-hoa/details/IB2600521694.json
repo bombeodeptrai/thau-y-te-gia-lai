@@ -1,25 +1,83 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "e20e23f8-b6e9-43fe-a4a1-f13d8e8c1978",
+      "id": "6727c222-44ff-40c6-a5d4-23f1026b8069",
       "contractorCode": "vn4201823787",
-      "taxCode": "",
+      "taxCode": "4201823787",
       "contractorName": "CÔNG TY TNHH KHÍ OXY LHT KHÁNH HÒA",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600664594",
       "lotName": "Oxy y tế dạng (lỏng và khí ) sử dụng tại Bệnh viện Phổi Khánh Hòa từ 11/2026 - 10/2027",
       "bidPrice": 197350000,
       "finalPrice": 197350000,
-      "winningPrice": 0,
+      "winningPrice": 197350000,
       "reason": "",
-      "submittedAt": "2026-09-30T09:21:37.524",
+      "submittedAt": "2026-11-03T14:57:26.611",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "d17db1f3-2268-4e3f-aea8-21c267e32293",
+      "name": "Khí oxy y tế (dạng lỏng)",
+      "model": "O2",
+      "brand": "LHT KHÁNH HÒA",
+      "manufacturer": "AIR WATER",
+      "origin": "VIỆT NAM",
+      "manufactureYear": "2026",
+      "specification": "O2≥ 99.6%",
+      "unit": "kg",
+      "quantity": 25000,
+      "unitPrice": 7600,
+      "winnerNames": [
+        "CÔNG TY TNHH KHÍ OXY LHT KHÁNH HÒA"
+      ],
+      "decisionNo": "255/QĐ-BVPKH",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-03T14:57:57"
+    },
+    {
+      "id": "9769dec0-96e8-4792-824f-d3f02c2211d9",
+      "name": "Khí oxy y tế (dạng khí) Quy cách: Chai 6m3",
+      "model": "O2",
+      "brand": "LHT KHÁNH HÒA",
+      "manufacturer": "AIR WATER",
+      "origin": "VIỆT NAM",
+      "manufactureYear": "2026",
+      "specification": "O2 ≥ 99%",
+      "unit": "Chai",
+      "quantity": 45,
+      "unitPrice": 90000,
+      "winnerNames": [
+        "CÔNG TY TNHH KHÍ OXY LHT KHÁNH HÒA"
+      ],
+      "decisionNo": "255/QĐ-BVPKH",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-03T14:57:57"
+    },
+    {
+      "id": "d790c14a-37e0-41f4-96df-d56c6ecf5d02",
+      "name": "Khí oxy y tế (dạng khí) Quy cách: Chai 3m3",
+      "model": "O2",
+      "brand": "LHT KHÁNH HÒA",
+      "manufacturer": "AIR WATER",
+      "origin": "VIỆT NAM",
+      "manufactureYear": "2026",
+      "specification": "O2 ≥ 99%",
+      "unit": "Chai",
+      "quantity": 55,
+      "unitPrice": 60000,
+      "winnerNames": [
+        "CÔNG TY TNHH KHÍ OXY LHT KHÁNH HÒA"
+      ],
+      "decisionNo": "255/QĐ-BVPKH",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-03T14:57:57"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +103,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:25:23.057Z"
+  "fetchedAt": "2026-11-08T21:28:13.533Z"
 }

@@ -1,25 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "720f42be-383c-4d03-abfa-512453fb2a82",
+      "id": "a44e94e4-59ff-4ce6-8a12-8e820203256d",
       "contractorCode": "vn0401428000",
-      "taxCode": "",
+      "taxCode": "0401428000",
       "contractorName": "CÔNG TY TNHH AVH",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600878508",
       "lotName": "Mua sắm máymóc, trang thiết bị y tế năm 2026",
       "bidPrice": 7195000000,
       "finalPrice": 7195000000,
-      "winningPrice": 0,
+      "winningPrice": 7195000000,
       "reason": "",
-      "submittedAt": "2026-10-30T08:17:20.904",
+      "submittedAt": "2026-11-05T14:47:27.037",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "61b66a68-a479-4d5b-b64a-92f382e89374",
+      "name": "Hệ thống máy CT Scanner 32 lát cắt/vòng quay",
+      "model": "Model/ Ký mã hiệu máy chính: Whole Body X-ray CT System Supria",
+      "brand": "Fujifilm",
+      "manufacturer": "Hãng sản xuất máy chính: FUJIFILM Healthcare Manufacturing Corporation Kashiwa Office (Hãng, nước chủ sở hữu máy chính: FUJIFILM Corporation, Nhật Bản)",
+      "origin": "Xuất xứ máy chính: Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chi tiết tại Bảng đáp ứng về kỹ thuật của Hàng hóa dự thầu (đính kèm E-HSDT)",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 7195000000,
+      "winnerNames": [
+        "CÔNG TY TNHH AVH"
+      ],
+      "decisionNo": "388/QĐ-TTYT",
+      "decisionDate": "2026-11-05T23:59:59",
+      "resultPublishedDate": "2026-11-05T14:47:33"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:18:31.431Z"
+  "fetchedAt": "2026-11-08T21:19:39.445Z"
 }

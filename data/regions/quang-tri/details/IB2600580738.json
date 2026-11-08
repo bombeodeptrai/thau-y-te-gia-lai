@@ -1,9 +1,110 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "9e0bfbd1-c0cf-49e2-bad5-ed2b41fcc7a9",
+      "contractorCode": "vn0101760825",
+      "taxCode": "0101760825",
+      "contractorName": "CÔNG TY CỔ PHẦN CUNG ỨNG Y TẾ NHA PHONG",
+      "status": "lost",
+      "lotNo": "BP2600877694",
+      "lotName": "Gói thầu mua tay khoan phẫu thuật thẳng 1:1 cho khoa Răng Hàm Mặt",
+      "bidPrice": 146500000,
+      "finalPrice": 146500000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 2",
+      "submittedAt": "2026-11-05T13:54:57.648",
+      "models": []
+    },
+    {
+      "id": "a8009725-6978-4ac8-b115-6f912363890d",
+      "contractorCode": "vn0109409168",
+      "taxCode": "0109409168",
+      "contractorName": "CÔNG TY TNHH TM&DV TÙNG BÁCH NHẬT",
+      "status": "lost",
+      "lotNo": "BP2600877694",
+      "lotName": "Gói thầu mua tay khoan phẫu thuật thẳng 1:1 cho khoa Răng Hàm Mặt",
+      "bidPrice": 163140000,
+      "finalPrice": 163140000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 4",
+      "submittedAt": "2026-11-05T13:54:57.649",
+      "models": []
+    },
+    {
+      "id": "c5cd7088-af9a-4765-8493-f3f33326c945",
+      "contractorCode": "vn0311373893",
+      "taxCode": "0311373893",
+      "contractorName": "CÔNG TY CỔ PHẦN SEADENT",
+      "status": "won",
+      "lotNo": "BP2600877694",
+      "lotName": "Gói thầu mua tay khoan phẫu thuật thẳng 1:1 cho khoa Răng Hàm Mặt",
+      "bidPrice": 133456500,
+      "finalPrice": 133456500,
+      "winningPrice": 133456500,
+      "reason": "",
+      "submittedAt": "2026-11-05T13:54:57.649",
+      "models": [
+        "X-SG65L"
+      ]
+    },
+    {
+      "id": "b5adebfd-0fca-4640-9b93-50e122fc62b8",
+      "contractorCode": "vn3101015777",
+      "taxCode": "3101015777",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ TN",
+      "status": "lost",
+      "lotNo": "BP2600877694",
+      "lotName": "Gói thầu mua tay khoan phẫu thuật thẳng 1:1 cho khoa Răng Hàm Mặt",
+      "bidPrice": 163875000,
+      "finalPrice": 163875000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 5",
+      "submittedAt": "2026-11-05T13:54:57.649",
+      "models": []
+    },
+    {
+      "id": "a3f25c5c-b6a3-40df-8edc-376b9ae31a7c",
+      "contractorCode": "vn3200239256",
+      "taxCode": "3200239256",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN DƯỢC PHẨM LAN TIẾN",
+      "status": "lost",
+      "lotNo": "BP2600877694",
+      "lotName": "Gói thầu mua tay khoan phẫu thuật thẳng 1:1 cho khoa Răng Hàm Mặt",
+      "bidPrice": 162630000,
+      "finalPrice": 162630000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng 3",
+      "submittedAt": "2026-11-05T13:54:57.649",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "19a9ffd0-2fe3-45b3-89cf-e5b6d35cc23d",
+      "name": "Tay khoan phẫu thuật thẳng 1:1",
+      "model": "X-SG65L",
+      "brand": "NSK",
+      "manufacturer": "Nakanishi Inc.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "- Hàng mới 100%.\n- Tháo lắp mũi khoan bằng vòng khóa xoay.\n- Có vòi phun nước làm mát bên ngoài.\n- Sử dụng mũi khoan phẫu thuật có đường kính ≥ 2.35 mm.\n- Tốc độ motor: tối đa ≥ 40.000 vòng/phút \n- Hấp khử khuẩn, tiệt trùng ở nhiệt độ: ≥134°C.\n- Bề mặt tay khoan được phủ lớp chống trầy xước.\n- Tay khoan được làm bằng chất liệu Titanium.",
+      "unit": "Cái",
+      "quantity": 5,
+      "unitPrice": 26691300,
+      "amount": 133456500,
+      "contractorCode": "vn0311373893",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN SEADENT"
+      ],
+      "lotNo": "",
+      "decisionNo": "4321/QĐ-BVCB",
+      "decisionDate": "2026-11-05T11:34:08",
+      "resultPublishedDate": "2026-11-05T13:55:13"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +159,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:15:09.491Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:15:08.744Z"
 }

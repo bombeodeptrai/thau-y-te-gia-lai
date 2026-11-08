@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "d35abc0c-2452-43a0-bc6e-15275631e942",
+      "contractorCode": "vn0110983803",
+      "taxCode": "0110983803",
+      "contractorName": "CÔNG TY TNHH TBYT VIỆT NAM CBN",
+      "status": "lost",
+      "lotNo": "BP2600859022",
+      "lotName": "Mua sắm phim X-quang phục vụ công tác khám bệnh, chữa bệnh tại Trung tâm Y tế khu vực Ngũ Hành Sơn năm 2026",
+      "bidPrice": 930000000,
+      "finalPrice": 930000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu từ chối chấp thuận được trao hợp đồng",
+      "submittedAt": "2026-11-03T14:59:19.592",
+      "models": []
+    },
+    {
+      "id": "f8dd201c-c456-4483-9024-7eab82654ccd",
+      "contractorCode": "vn0302635278",
+      "taxCode": "0302635278",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VĨNH PHÁT",
+      "status": "won",
+      "lotNo": "BP2600859022",
+      "lotName": "Mua sắm phim X-quang phục vụ công tác khám bệnh, chữa bệnh tại Trung tâm Y tế khu vực Ngũ Hành Sơn năm 2026",
+      "bidPrice": 960000000,
+      "finalPrice": 960000000,
+      "winningPrice": 960000000,
+      "reason": "",
+      "submittedAt": "2026-11-03T14:59:19.592",
+      "models": [
+        "DRYVIEW DVE Laser Imaging Film"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "a130646a-e7b4-4323-a063-5da73e1fdfbb",
+      "name": "Phim X-Quang khô laser (25x30cm)",
+      "model": "DRYVIEW DVE Laser Imaging Film",
+      "brand": "DRYVIEW DVE Laser Imaging Film",
+      "manufacturer": "Hãng/nước chủ sở hữu: Carestream Health, Inc. / USA \r\nHãng/nước sản xuất: Rayco (Xiamen) Medical Products Company Limited/ China",
+      "origin": "China",
+      "manufactureYear": "Từ năm 2026 trở về sau",
+      "specification": "Phim khô laser kích thước 25x30cm -10x12inch\r\nTương thích với máy in phim khô laser hãng Carestream\r\nĐộ tương phản: 0.60 và 2.00, phim có màu xanh, nền polyester dày 7-mil\r\nĐạt tiêu chuẩn: FDA (Mỹ), ISO 13485",
+      "unit": "Tấm",
+      "quantity": 30000,
+      "unitPrice": 32000,
+      "amount": 960000000,
+      "contractorCode": "vn0302635278",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VĨNH PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "477/QĐ-TTYT",
+      "decisionDate": "2026-11-03T14:58:13",
+      "resultPublishedDate": "2026-11-03T14:59:24"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +114,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:18:36.640Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:19:41.505Z"
 }

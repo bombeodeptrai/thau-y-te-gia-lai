@@ -1,9 +1,169 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "15ea7dd6-98c9-43c9-808a-0956fd88189a",
+      "contractorCode": "vn2801694240",
+      "taxCode": "2801694240",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM HÀM RỒNG",
+      "status": "won",
+      "lotNo": "PP2600435108",
+      "lotName": "Paracetamol",
+      "bidPrice": 3000000,
+      "finalPrice": 3000000,
+      "winningPrice": 3000000,
+      "reason": "",
+      "submittedAt": "2026-11-02T09:18:52.033",
+      "models": [
+        "893110024724",
+        "893100156725 (VD-23978-15)"
+      ]
+    },
+    {
+      "id": "7591263c-fa4f-430b-8d96-661ce431d43b",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600435112",
+      "lotName": "Fexofenadine hydrochloride",
+      "bidPrice": 80280000,
+      "finalPrice": 80280000,
+      "winningPrice": 80280000,
+      "reason": "",
+      "submittedAt": "2026-11-02T09:18:52.033",
+      "models": [
+        "893100314023"
+      ]
+    },
+    {
+      "id": "46897161-2baa-4f53-8192-c3805ad8d748",
+      "contractorCode": "vn3002069274",
+      "taxCode": "3002069274",
+      "contractorName": "CÔNG TY TNHH LIFECARE VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600435113",
+      "lotName": "Actiso, Rau đắng đất, Bìm bìm",
+      "bidPrice": 72000000,
+      "finalPrice": 72000000,
+      "winningPrice": 72000000,
+      "reason": "",
+      "submittedAt": "2026-11-02T09:18:52.033",
+      "models": [
+        "VD-19791-13 (QĐ gia hạn SĐK số 818/QĐ-QLD ngày 19/12/2022)"
+      ]
+    },
+    {
+      "id": "a1b4dc97-7256-4b8e-b999-7ab6275d5fb1",
+      "contractorCode": "vn2801694240",
+      "taxCode": "2801694240",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM HÀM RỒNG",
+      "status": "won",
+      "lotNo": "PP2600435115",
+      "lotName": "Mifepristone",
+      "bidPrice": 28275000,
+      "finalPrice": 28275000,
+      "winningPrice": 28275000,
+      "reason": "",
+      "submittedAt": "2026-11-02T09:18:52.033",
+      "models": [
+        "893110024724",
+        "893100156725 (VD-23978-15)"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "f0bf6469-d426-43be-877e-787a534ccf51",
+      "name": "Mifepristone 200",
+      "model": "893110024724",
+      "brand": "Không yêu cầu",
+      "manufacturer": "CN Cty CPDP Agimexpharm - Nhà máy SX DP Agimexpharm",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Mifepriston\n200mg\nViên nén; Uống",
+      "unit": "Viên",
+      "quantity": 500,
+      "unitPrice": 56550,
+      "amount": 28275000,
+      "contractorCode": "vn2801694240",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM HÀM RỒNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "426/QĐ-KSBT",
+      "decisionDate": "2026-11-02T08:14:15",
+      "resultPublishedDate": "2026-11-02T09:30:20"
+    },
+    {
+      "id": "1760c3e4-24ec-4065-a0e7-f3cef08fd298",
+      "name": "Telfast HD",
+      "model": "893100314023",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Công ty Cổ phần Sanofi",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Fexofenadine hydrochloride\n180mg\nViên nén bao phim; Uống",
+      "unit": "Viên",
+      "quantity": 10000,
+      "unitPrice": 8028,
+      "amount": 80280000,
+      "contractorCode": "vn0301140748",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC"
+      ],
+      "lotNo": "",
+      "decisionNo": "426/QĐ-KSBT",
+      "decisionDate": "2026-11-02T08:14:15",
+      "resultPublishedDate": "2026-11-02T09:30:20"
+    },
+    {
+      "id": "648d0166-6730-4d44-9a6d-8f58d397f615",
+      "name": "Boganic Forte",
+      "model": "VD-19791-13 (QĐ gia hạn SĐK số 818/QĐ-QLD ngày 19/12/2022)",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Công ty cổ phần công nghệ cao Traphaco",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Cao khô Actisô EP (Extractum Cynarae siccus) + Cao khô Rau đắng đất 8:1 (Extractum Herba Glini oppositifolii siccus) + Cao khô Bìm bìm (Extractum Semen Pharbitidis siccus) (Hàm lượng acid chlorogenic ≥ 0,8%)\n170mg + 128mg + 13,6mg\nViên nang mềm; Uống",
+      "unit": "Viên",
+      "quantity": 40000,
+      "unitPrice": 1800,
+      "amount": 72000000,
+      "contractorCode": "vn3002069274",
+      "winnerNames": [
+        "CÔNG TY TNHH LIFECARE VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "426/QĐ-KSBT",
+      "decisionDate": "2026-11-02T08:14:15",
+      "resultPublishedDate": "2026-11-02T09:30:20"
+    },
+    {
+      "id": "6ec6cb45-ccff-4770-b30e-53892fc6674a",
+      "name": "Partamol Tab.",
+      "model": "893100156725 (VD-23978-15)",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Công ty TNHH Liên doanh Stellapharm - Chi nhánh 1",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Paracetamol\n500mg\nViên nén; Uống",
+      "unit": "Viên",
+      "quantity": 5000,
+      "unitPrice": 600,
+      "amount": 3000000,
+      "contractorCode": "vn2801694240",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM HÀM RỒNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "426/QĐ-KSBT",
+      "decisionDate": "2026-11-02T08:14:15",
+      "resultPublishedDate": "2026-11-02T09:30:20"
+    }
+  ],
   "requirements": {
     "total": 8,
     "items": [
@@ -283,5 +443,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:12:43.058Z"
+  "fetchedAt": "2026-11-08T21:11:45.737Z"
 }

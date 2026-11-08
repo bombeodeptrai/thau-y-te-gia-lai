@@ -1,9 +1,136 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "d11350e4-16bb-41ac-aeb4-59fd10a4f9da",
+      "contractorCode": "vn0106294423",
+      "taxCode": "0106294423",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ TN VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600472033",
+      "lotName": "Máy đo đường huyết mao mạch.",
+      "bidPrice": 3500000,
+      "finalPrice": 3500000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu xếp thứ nhất",
+      "submittedAt": "2026-11-06T20:23:56.8",
+      "models": []
+    },
+    {
+      "id": "4f06fa38-db2d-40f3-90a5-146620b04cbb",
+      "contractorCode": "vn2902219749",
+      "taxCode": "2902219749",
+      "contractorName": "CÔNG TY TNHH VẬT TƯ Y TẾ HỒNG PHÁT",
+      "status": "won",
+      "lotNo": "PP2600472033",
+      "lotName": "Máy đo đường huyết mao mạch.",
+      "bidPrice": 3450000,
+      "finalPrice": 3450000,
+      "winningPrice": 3450000,
+      "reason": "",
+      "submittedAt": "2026-11-06T20:23:56.8",
+      "models": [
+        "On Call Plus"
+      ]
+    },
+    {
+      "id": "23cc5f31-3bc2-43b1-a6d1-318009b2cf16",
+      "contractorCode": "vn0110214734",
+      "taxCode": "0110214734",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á",
+      "status": "won",
+      "lotNo": "PP2600472034",
+      "lotName": "Que thử cho máy đo đường huyết",
+      "bidPrice": 16533000,
+      "finalPrice": 16533000,
+      "winningPrice": 16533000,
+      "reason": "",
+      "submittedAt": "2026-11-06T20:23:56.8",
+      "models": [
+        "G133 111"
+      ]
+    },
+    {
+      "id": "67bdbfe5-0009-47ee-bafd-ee9f2f709309",
+      "contractorCode": "vn2902219749",
+      "taxCode": "2902219749",
+      "contractorName": "CÔNG TY TNHH VẬT TƯ Y TẾ HỒNG PHÁT",
+      "status": "lost",
+      "lotNo": "PP2600472034",
+      "lotName": "Que thử cho máy đo đường huyết",
+      "bidPrice": 18050000,
+      "finalPrice": 18050000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu xếp thứ nhất",
+      "submittedAt": "2026-11-06T20:23:56.8",
+      "models": [
+        "On Call Plus"
+      ]
+    },
+    {
+      "id": "3176d32e-58de-40be-9ad6-0d30fd56ea9f",
+      "contractorCode": "vn3604062734",
+      "taxCode": "3604062734",
+      "contractorName": "CÔNG TY TNHH GIẢI PHÁP TOÀN DIỆN NGỌC PHÁT",
+      "status": "lost",
+      "lotNo": "PP2600472034",
+      "lotName": "Que thử cho máy đo đường huyết",
+      "bidPrice": 20370000,
+      "finalPrice": 20370000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu cao hơn nhà thầu xếp thứ nhất",
+      "submittedAt": "2026-11-06T20:23:56.8",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "162490f7-77b6-45e1-b403-38548214e5a0",
+      "name": "Máy đo đường huyết mao mạch",
+      "model": "On Call Plus",
+      "brand": "On Call Plus",
+      "manufacturer": "Acon Biotech (Hangzh ou) Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Công nghệ cảm ứng sinh học. Men que thử GOD, tự động cài mã que thử bằng chíp. Khoảng đo 1.1 – 33.3mmol/L (20 – 600mg/dL). Chỉ 1µL mẫu máu toàn phần từ đầu ngón tay, gan bàn tay và trên cánh tay. Bộ nhớ 300 kết quả kèm ngày tháng và thời gian đo. Phân biệt kết quả trước bữa ăn hoặc sau bữa ăn và tính trung bình 7, 14, 30 ngày.",
+      "unit": "cái",
+      "quantity": 5,
+      "unitPrice": 690000,
+      "amount": 3450000,
+      "contractorCode": "vn2902219749",
+      "winnerNames": [
+        "CÔNG TY TNHH VẬT TƯ Y TẾ HỒNG PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "705/QĐ-BVQH",
+      "decisionDate": "2026-11-06T20:22:02",
+      "resultPublishedDate": "2026-11-06T20:24:03"
+    },
+    {
+      "id": "f2cf1e0c-c0cf-4112-a413-0471a45062dd",
+      "name": "Que thử cho máy đo đường huyết",
+      "model": "G133 111",
+      "brand": "On Call Plus",
+      "manufacturer": "Acon Biotech (Hangzh ou) Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Que đường huyết tương thích máy On Call Plus Hãng sản xuất: Acon Biotech (Hangzhou) Co.,Ltd / Trung Quốc",
+      "unit": "Test",
+      "quantity": 4200,
+      "unitPrice": 3936.4286,
+      "amount": 16533000,
+      "contractorCode": "vn0110214734",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á"
+      ],
+      "lotNo": "",
+      "decisionNo": "705/QĐ-BVQH",
+      "decisionDate": "2026-11-06T20:22:02",
+      "resultPublishedDate": "2026-11-06T20:24:03"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +217,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:12:31.821Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:11:41.672Z"
 }

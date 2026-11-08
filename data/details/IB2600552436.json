@@ -1,40 +1,79 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "96aa0c05-c550-49d0-beee-0c349508ef58",
+      "id": "772b4fde-8629-49fd-b098-8ac992897a2c",
       "contractorCode": "vn0105203913",
-      "taxCode": "",
+      "taxCode": "0105203913",
       "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN KINH DOANH Ô TÔ THANH XUÂN",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600737859",
       "lotName": "Mua sắm tập trung cấp quốc gia đối với xe ô tô phục vụ công tác chung của các cơ quan, tổ chức hành chính và các đơn vị sự nghiệp trực thuộc Bộ Y tế năm 2026",
       "bidPrice": 6168800000,
       "finalPrice": 6168800000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-10-13T09:24:10.747",
+      "reason": "Xếp hạng thứ 02",
+      "submittedAt": "2026-11-03T16:17:41.304",
       "models": []
     },
     {
-      "id": "87bd300e-ce2a-426f-a545-5a5c2095a47c",
+      "id": "2e86a598-87a1-4463-b7be-c83b82facb7d",
       "contractorCode": "vn0302030265",
-      "taxCode": "",
+      "taxCode": "0302030265",
       "contractorName": "CÔNG TY CỔ PHẦN DỊCH VỤ SÀI GÒN Ô TÔ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600737859",
       "lotName": "Mua sắm tập trung cấp quốc gia đối với xe ô tô phục vụ công tác chung của các cơ quan, tổ chức hành chính và các đơn vị sự nghiệp trực thuộc Bộ Y tế năm 2026",
       "bidPrice": 5912000000,
       "finalPrice": 5912000000,
-      "winningPrice": 0,
+      "winningPrice": 5912000000,
       "reason": "",
-      "submittedAt": "2026-10-13T09:24:10.954",
+      "submittedAt": "2026-11-03T16:17:41.304",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "695fb434-b666-428a-83e3-de51ab2900f1",
+      "name": "Xe ô tô 16 chỗ",
+      "model": "JX6606TB-N6",
+      "brand": "Ford",
+      "manufacturer": "Ford",
+      "origin": "lắp ráp tại Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "- Tên thương mại: TRANSIT - Năm sản xuất: 2026 - Chất lượng: Mới 100% - Động cơ: Turbo Diesel 2.3L - TDCi - Hộp số: 6 cấp số sàn - Màu xe: Đen",
+      "unit": "Chiếc",
+      "quantity": 3,
+      "unitPrice": 904000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DỊCH VỤ SÀI GÒN Ô TÔ"
+      ],
+      "decisionNo": "271/QĐ-VPB1",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-03T16:17:55"
+    },
+    {
+      "id": "7d55d8b3-55e1-4a4a-8fb3-fac90303cdff",
+      "name": "Xe ô tô 7 chỗ - 2 cầu",
+      "model": "TEKfb041716",
+      "brand": "Ford",
+      "manufacturer": "Ford",
+      "origin": "Nhập khẩu Thái Lan",
+      "manufactureYear": "2026",
+      "specification": "Tên thương mại: EVEREST - Năm sản xuất: 2026 - Chất lượng: Mới 100% - Động cơ: Xăng Ecoboost 2.3 i4 GTDi - Hộp số: Số tự động 10 cấp điện tử - Màu xe: Đen",
+      "unit": "Chiếc",
+      "quantity": 2,
+      "unitPrice": 1600000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DỊCH VỤ SÀI GÒN Ô TÔ"
+      ],
+      "decisionNo": "271/QĐ-VPB1",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-03T16:17:55"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +98,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:22:37.218Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:26:19.043Z"
 }

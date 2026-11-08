@@ -1,25 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "ad3c7ec8-b9f2-4072-b18d-a550db3bb6a4",
+      "id": "fbf838f8-6238-444c-9170-1a3b141e729d",
       "contractorCode": "vn0301934892",
-      "taxCode": "",
+      "taxCode": "0301934892",
       "contractorName": "Công ty TNHH Hoa Ý",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600768470",
       "lotName": "Mua sắm máy phân tích nhiệt lượng",
       "bidPrice": 1098000000,
       "finalPrice": 1098000000,
-      "winningPrice": 0,
+      "winningPrice": 1098000000,
       "reason": "",
-      "submittedAt": "2026-10-27T10:38:24.884",
+      "submittedAt": "2026-11-04T17:17:39.991",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "f607c8ff-6500-482a-9f16-94bea1913406",
+      "name": "Máy phân tích nhiệt lượng",
+      "model": "6400",
+      "brand": "Parr",
+      "manufacturer": "Parr Instrument",
+      "origin": "Mỹ",
+      "manufactureYear": "Năm nhập khẩu: 2026",
+      "specification": "Tính năng: Đáp ứng tiêu chuẩn ASTM D240, D4809, … Máy phân tích nhiệt lượng tự động. Bơm oxy 250ml, áp suất làm việc đến 3000psi. Màn hình màu cảm ứng (touch screen) khi sử dụng chỉ cần bấm vào biểu tượng trên màn hình. Hệ thống làm lạnh được thiết kế theo máy thành một hệ kín bên trong. Hệ thống này sử dụng nguồn nước và nguồn Nitơ để làm lạnh từ bên ngoài. Trang bị khe cắm sử dụng thẻ nhớ Compact Flash Memory Card. Các thông số hiệu chỉnh nhiệt tạo thành acid dễ dàng thay đổi khi vận hành theo các tiêu chuẩn ASTM, BS, DIN và ISO. Tính năng kỹ thuật: Loại máy đo nhiệt lượng: Isoperibol. Hệ thống tích hợp bộ làm mát bên trong. Lưu lượng test mẫu: 6-7 test/giờ. Thời gian vận hành: 1 phút/mẫu Độ lặp lại: 0.10% Số lượng bình: Có thể lên tới 4 bình. Loại bom và xô: Thiết kế bom và xô cố định, đầu bơm có thể tháo rời. Độ phân giải nhiệt độ: 0.00010C. Nạp oxy tự động. Làm đầy xô (bucket) tự động. Rửa bom đốt mẫu tự động. Cổng kết nối máy in: USB. Cổng kết nối cân: USB Cổng kết nối mạng: Ethernet Bộ nhớ: Lưu trữ được 1000 phép thử. Bom 1138CL, thể tích 250ml Alloy G30 kháng Halogen. Nguồn điện: 230V, 50/60Hz.",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 1098000000,
+      "winnerNames": [
+        "Công ty TNHH Hoa Ý"
+      ],
+      "decisionNo": "5098/QĐ-XMBS",
+      "decisionDate": "2026-11-04T23:59:59",
+      "resultPublishedDate": "2026-11-04T17:17:49"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:12:45.226Z"
+  "fetchedAt": "2026-11-08T21:11:46.176Z"
 }

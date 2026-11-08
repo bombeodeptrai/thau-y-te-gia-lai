@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "c0cba9a5-00e8-43b0-9f66-4fe01b5fd558",
+      "contractorCode": "vn0303923529",
+      "taxCode": "0303923529",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI",
+      "status": "won",
+      "lotNo": "BP2600941562",
+      "lotName": "Mua sắm thuốc có chứa hoạt chất Tenofovir (TDF) phục vụ công tác khám chữa bệnh tại Bệnh viện Đa khoa khu vực Quảng Nam",
+      "bidPrice": 142000000,
+      "finalPrice": 142000000,
+      "winningPrice": 142000000,
+      "reason": "",
+      "submittedAt": "2026-11-06T11:39:23.773",
+      "models": [
+        "."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "20041148-e737-4a7d-98b9-4345515d9dc4",
+      "name": "Tenofovir (TDF)",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": "Công ty Cổ phần Dược phẩm SaVi",
+      "origin": "Việt Nam",
+      "manufactureYear": "Hạn sử dụng còn lại của thuốc trúng thầu tính từ thời điểm thuốc cung ứng cho cơ sở y tế phải bảo đảm tối thiểu còn 03 tháng đối với thuốc có hạn dùng từ 01 năm trở lên, 1/4 hạn dùng đối với thuốc có hạn dùng dưới 01 năm",
+      "specification": "Tên thuốc: SaVi Tenofovir 300, Tên hoạt chất: Tenofovir (TDF), Nồng độ-hàm lượng: 300mg, Đường dùng: Uống, Dạng bào chế: Viên nén dài bao phim, Quy cách: Hộp 3 vỉ x 10 viên, Số đăng ký: VD-35348-21, Nhóm TCKT: Nhóm 2",
+      "unit": "Viên",
+      "quantity": 100000,
+      "unitPrice": 1420,
+      "amount": 142000000,
+      "contractorCode": "vn0303923529",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM SAVI"
+      ],
+      "lotNo": "",
+      "decisionNo": "1033/QĐ-BV",
+      "decisionDate": "2026-11-06T11:38:07",
+      "resultPublishedDate": "2026-11-06T11:39:39"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:18:23.197Z"
+  "fetchedAt": "2026-11-08T21:19:36.936Z"
 }

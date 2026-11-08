@@ -1,40 +1,98 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "92315669-0a00-43a6-ba74-c2ff786ba021",
+      "id": "74d291c9-4d56-4d44-b612-a157bd27a1cf",
       "contractorCode": "vn0107918480",
-      "taxCode": "",
+      "taxCode": "0107918480",
       "contractorName": "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI NAM ĐẠT",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600802222",
       "lotName": "Mua bơm kim tiêm phục vụ tiêm chủng mở rộng năm 2026",
       "bidPrice": 245800000,
       "finalPrice": 245800000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-10-12T15:35:56.022",
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-11-06T08:40:05.318",
       "models": []
     },
     {
-      "id": "9a40e9a1-bbc0-4490-b3f7-0ae91d002d2f",
+      "id": "6ddf4ed7-1a5e-4b47-8d88-3339f4ce9bc0",
       "contractorCode": "vn0101486019",
-      "taxCode": "",
+      "taxCode": "0101486019",
       "contractorName": "Công ty TNHH Đầu tư và phát triển công nghệ cao Ngôi Sao Xanh",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600802222",
       "lotName": "Mua bơm kim tiêm phục vụ tiêm chủng mở rộng năm 2026",
       "bidPrice": 162860000,
       "finalPrice": 162860000,
-      "winningPrice": 0,
+      "winningPrice": 162860000,
       "reason": "",
-      "submittedAt": "2026-10-12T15:35:56.272",
+      "submittedAt": "2026-11-06T08:40:05.318",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "617f56a3-7e4a-4c57-a05a-e34addc07a8e",
+      "name": "Bơm kim tiêm 0,5ml",
+      "model": "TKADS03-003-2525",
+      "brand": "Tkmd (Anhui Tiankang Medical Technology Co., Ltd)",
+      "manufacturer": "Anhui Tiankang Medical Technology Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Theo TCKT tại Chương V của E- HSMT và TCKT của E-HSDT",
+      "unit": "Cái",
+      "quantity": 160000,
+      "unitPrice": 905,
+      "winnerNames": [
+        "Công ty TNHH Đầu tư và phát triển công nghệ cao Ngôi Sao Xanh"
+      ],
+      "decisionNo": "512/QĐ-KSBT",
+      "decisionDate": "2026-11-06T23:59:59",
+      "resultPublishedDate": "2026-11-06T08:40:10"
+    },
+    {
+      "id": "c4679554-0772-446a-9761-2facc54115b0",
+      "name": "Bơm kim tiêm 0,1ml",
+      "model": "TKADS03-050-2710",
+      "brand": "Tkmd (Anhui Tiankang Medical Technology Co., Ltd)",
+      "manufacturer": "Anhui Tiankang Medical Technology Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Theo TCKT tại Chương V của E- HSMT và TCKT của E-HSDT",
+      "unit": "Cái",
+      "quantity": 8000,
+      "unitPrice": 1950,
+      "winnerNames": [
+        "Công ty TNHH Đầu tư và phát triển công nghệ cao Ngôi Sao Xanh"
+      ],
+      "decisionNo": "512/QĐ-KSBT",
+      "decisionDate": "2026-11-06T23:59:59",
+      "resultPublishedDate": "2026-11-06T08:40:10"
+    },
+    {
+      "id": "f2634f07-9831-4e3a-8ad6-9c43233bc4d7",
+      "name": "Bơm kim tiêm 5ml",
+      "model": "BT5.TNP",
+      "brand": "Tanaphar ( Công ty Cổ phần Tanaphar)",
+      "manufacturer": "Công ty Cổ phần Tanaphar",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Theo TCKT tại Chương V của E- HSMT và TCKT của E-HSDT",
+      "unit": "Cái",
+      "quantity": 4000,
+      "unitPrice": 615,
+      "winnerNames": [
+        "Công ty TNHH Đầu tư và phát triển công nghệ cao Ngôi Sao Xanh"
+      ],
+      "decisionNo": "512/QĐ-KSBT",
+      "decisionDate": "2026-11-06T23:59:59",
+      "resultPublishedDate": "2026-11-06T08:40:10"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,6 +117,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:25:18.961Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-08T21:28:10.216Z"
 }

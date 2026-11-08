@@ -1,9 +1,89 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "a98b0510-b9f6-4193-8255-96876fda3da2",
+      "contractorCode": "vn0103053042",
+      "taxCode": "0103053042",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2",
+      "status": "won",
+      "lotNo": "PP2600445148",
+      "lotName": "Crestor 20mg hoặc tương đương",
+      "bidPrice": 74515000,
+      "finalPrice": 74515000,
+      "winningPrice": 74515000,
+      "reason": "",
+      "submittedAt": "2026-11-04T15:46:39.969",
+      "models": [
+        "Theo thông số kỹ thuật"
+      ]
+    },
+    {
+      "id": "475a92af-98eb-4ed6-919a-1847238e58bd",
+      "contractorCode": "vn0103053042",
+      "taxCode": "0103053042",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2",
+      "status": "won",
+      "lotNo": "PP2600445149",
+      "lotName": "Ventolin Inhaler hoặc tương đương",
+      "bidPrice": 105000000,
+      "finalPrice": 105000000,
+      "winningPrice": 105000000,
+      "reason": "",
+      "submittedAt": "2026-11-04T15:46:39.969",
+      "models": [
+        "Theo thông số kỹ thuật"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "dcf40519-a8f6-4000-9d69-bef25ac0ff89",
+      "name": "Crestor 20mg hoặc tương đương",
+      "model": "Theo thông số kỹ thuật",
+      "brand": "Theo thông số kỹ thuật",
+      "manufacturer": "CSSX: IPR Pharmaceuticals Inc., CSĐG: AstraZeneca UK Limited",
+      "origin": "CSSX: Mỹ, CSĐG: Anh",
+      "manufactureYear": "Theo thông số kỹ thuật",
+      "specification": "Tên thuốc: Crestor 20mg,Tên hoạt chất: Rosuvastatin (dưới dạng Rosuvastatin calci), Nồng độ: 20mg, Đường dùng: Uống, Dạng bào Chế: Viên nén bao phim, Quy cách: Hộp 2 vỉ x 14 viên, Hạn dùng: 36 tháng",
+      "unit": "Viên",
+      "quantity": 5000,
+      "unitPrice": 14903,
+      "amount": 74515000,
+      "contractorCode": "vn0103053042",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2"
+      ],
+      "lotNo": "",
+      "decisionNo": "426/QĐ-BVHT",
+      "decisionDate": "2026-11-04T15:41:38",
+      "resultPublishedDate": "2026-11-04T15:46:44"
+    },
+    {
+      "id": "376e6e0f-89f7-489c-89a4-213608f622c6",
+      "name": "Ventolin Inhaler hoặc tương đương",
+      "model": "Theo thông số kỹ thuật",
+      "brand": "Theo thông số kỹ thuật",
+      "manufacturer": "Glaxo Wellcome S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "Theo thông số kỹ thuật",
+      "specification": "Tên thuốc: Ventolin Inhaler,Tên hoạt chất: Salbutamol (dưới dạng Salbutamol sulfate), Nồng độ: 100mcg/liều xịt, Đường dùng: Xịt theo đường miệng, Dạng bào Chế: Hỗn dịch xịt qua bình định liều điều áp, Quy cách: Hộp 1 bình xịt 200 liều, Hạn dùng: 24 tháng",
+      "unit": "Bình",
+      "quantity": 1000,
+      "unitPrice": 105000,
+      "amount": 105000000,
+      "contractorCode": "vn0103053042",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2"
+      ],
+      "lotNo": "",
+      "decisionNo": "426/QĐ-BVHT",
+      "decisionDate": "2026-11-04T15:41:38",
+      "resultPublishedDate": "2026-11-04T15:46:44"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -91,5 +171,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:12:39.868Z"
+  "fetchedAt": "2026-11-08T21:11:43.716Z"
 }
