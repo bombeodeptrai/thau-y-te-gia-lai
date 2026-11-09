@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-09T03:07:03.388Z",
+  "rescuedAt": "2026-11-09T04:33:13.575Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 116,
+      "count": 115,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 437,
+      "count": 439,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 34,
+      "count": 33,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 55,
+      "count": 54,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 36,
+      "count": 37,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 22,
+      "count": 25,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -281,14 +281,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 844,
-  "acceptedCount": 32,
-  "rejectedCount": 812,
+  "candidateCount": 847,
+  "acceptedCount": 33,
+  "rejectedCount": 814,
   "rejectedReasons": {
     "insufficient-medical-context": 277,
     "excluded:tu van": 221,
-    "excluded:xay dung": 184,
-    "excluded:xay lap": 55,
+    "excluded:xay dung": 187,
+    "excluded:xay lap": 54,
     "excluded:sua chua": 24,
     "excluded:cai tao": 15,
     "excluded:bao hiem": 5,
@@ -744,6 +744,21 @@
       ]
     },
     {
+      "notifyNo": "DC2600102459",
+      "name": "Mua sắm thuốc, vật tư y tế phục vụ công tác chăm sức khoẻ ban đầu theo chế độ BHYT cho cán bộ, chiến sĩ tại Bộ CHQS tỉnh Gia Lai",
+      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
+      "accepted": true,
+      "score": 110,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "vat tu y te",
+        "thuoc",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "DC2600107766",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026",
       "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
@@ -819,6 +834,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600604479",
+      "name": "Tư vấn khảo sát, lập Báo cáo nghiên cứu khả thi",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "IB2600601653",
       "name": "Đầu tư hạ tầng internet công cộng tại nhà văn hóa thôn đặc biệt khó khăn",
@@ -1238,23 +1264,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600597655",
-      "name": "Cung cấp 07 xe nâng/hạ phục vụ hành khách cần sự trợ giúp đặc biệt.",
-      "investor": "TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1193,
-  "afterCount": 1194,
+  "beforeCount": 1194,
+  "afterCount": 1195,
   "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
