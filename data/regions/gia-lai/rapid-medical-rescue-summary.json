@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-09T04:33:13.575Z",
+  "rescuedAt": "2026-11-09T05:45:16.288Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 115,
+      "count": 114,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 439,
+      "count": 437,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 847,
+  "candidateCount": 845,
   "acceptedCount": 33,
-  "rejectedCount": 814,
+  "rejectedCount": 812,
   "rejectedReasons": {
-    "insufficient-medical-context": 277,
+    "insufficient-medical-context": 276,
     "excluded:tu van": 221,
-    "excluded:xay dung": 187,
+    "excluded:xay dung": 186,
     "excluded:xay lap": 54,
     "excluded:sua chua": 24,
     "excluded:cai tao": 15,
@@ -1268,8 +1268,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1194,
+  "beforeCount": 1195,
   "afterCount": 1195,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
