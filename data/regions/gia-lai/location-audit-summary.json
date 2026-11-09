@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-08T20:30:26.663Z",
+  "auditedAt": "2026-11-09T06:25:46.433Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 777,
+      "count": 765,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 26,
+      "count": 28,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 36,
+      "count": 38,
       "error": ""
     },
     {
@@ -110,7 +110,7 @@
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 98,
+      "count": 99,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 32,
+      "count": 35,
       "error": ""
     },
     {
@@ -206,7 +206,7 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 36,
+      "count": 37,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 54,
+      "count": 49,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1512,
-  "acceptedCount": 50,
-  "rejectedCount": 1462,
+  "candidateCount": 1502,
+  "acceptedCount": 52,
+  "rejectedCount": 1450,
   "rejectedReasons": {
-    "excluded:tu van": 477,
+    "excluded:tu van": 467,
     "insufficient-medical-context": 409,
-    "excluded:xay dung": 362,
+    "excluded:xay dung": 361,
     "excluded:xay lap": 70,
-    "excluded:sua chua": 43,
+    "excluded:sua chua": 42,
     "excluded:cai tao": 21,
     "excluded:thuc pham": 15,
     "excluded:bao ve": 10,
@@ -306,6 +306,21 @@
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "DC2600102459",
+      "name": "Mua sắm thuốc, vật tư y tế phục vụ công tác chăm sức khoẻ ban đầu theo chế độ BHYT cho cán bộ, chiến sĩ tại Bộ CHQS tỉnh Gia Lai",
+      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
+      "accepted": true,
+      "score": 110,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "vat tu y te",
+        "thuoc",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600596310",
       "name": "Gói thầu 1: Mua sắm vật tư, hóa chất, sinh phẩm y tế phục vụ công tác khám, chữa bệnh và dự phòng năm 2026",
@@ -920,29 +935,107 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600583748",
-      "name": "Gói thầu số 2: Mua sắm hóa chất y tế và sinh phẩm chẩn đoán in vitro",
-      "investor": "Bệnh viện Y học cổ truyền và Phục hồi chức năng Quy Nhơn",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "hoa chat y te",
-        "sinh pham chan doan",
-        "chan doan in vitro",
-        "benh vien",
-        "hoa chat",
-        "sinh pham",
-        "chan doan",
-        "in vitro",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "DC2600111340",
+      "name": "Lập Thiết kế bản vẽ thi công và dự toán",
+      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600604479",
+      "name": "Tư vấn khảo sát, lập Báo cáo nghiên cứu khả thi",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600114260",
+      "name": "Tư vấn lập HSMT & đánh giá hồ sơ dự thầu gói thi công xây dựng",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600107605",
+      "name": "Tư vấn thẩm định giá",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600107566",
+      "name": "Tư vấn thẩm tra báo cáo nghiên cứu khả thi",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600107555",
+      "name": "Tư vấn giám sát khảo sát bước lập báo cáo nghiên cứu khả thi",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600107528",
+      "name": "Tư vấn khảo sát, lập báo cáo nghiên cứu khả thi",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600601653",
+      "name": "Đầu tư hạ tầng internet công cộng tại nhà văn hóa thôn đặc biệt khó khăn",
+      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600100152",
+      "name": "Thuê tư vấn xây dựng “Đề án thành lập Quỹ đầu tư mạo hiểm tỉnh Gia Lai”",
+      "investor": "Trung tâm Khám phá khoa học và đổi mới sáng tạo",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "DC2600113970",
       "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Võ Giữ. Hạng mục: Nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn; nhà để xe học sinh; mở rộng cổng chính; các hạng mục phụ trợ và trang thiết bị.",
@@ -1319,115 +1412,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "DC2600112431",
-      "name": "Trồng và chăm sóc cây xanh",
-      "investor": "Phòng Kinh tế xã Tơ Tung, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cay xanh",
-      "matched": [
-        "cay xanh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600111801",
-      "name": "Lắp đặt, kết nối hệ thống khí oxy trung tâm phục vụ công tác khám, chữa bệnh Đơn vị điều trị dịch vụ-Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": 55,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "kham chua benh",
-        "chua benh",
-        "dieu tri"
-      ]
-    },
-    {
-      "notifyNo": "DC2600111756",
-      "name": "Gói thầu số 01: Cung cấp dịch vụ giảng viên, báo cáo viên, cung cấp giáo trình tập huấn, bài thu hoạch, chứng chỉ.",
-      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600111762",
-      "name": "Tư vấn lập báo cáo nghiên cứu khả thi và áp dụng mô hình thông tin công trình (BIM) giai đoạn lập báo cáo nghiên cứu khả thi",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600111684",
-      "name": "Tư vấn lập báo cáo nghiên cứu khả thi và áp dụng mô hình thông tin công trình (BIM) giai đoạn lập báo cáo nghiên cứu khả thi",
-      "investor": "Viện kiểm sát nhân dân tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600111337",
-      "name": "Gói thầu số 02: Cung cấp dịch vụ tổ chức 01 lớp bồi dưỡng kiến thức công tác dân tộc đối tượng 4 tại cụm phường Quy Nhơn (Hội trường, maket, giải khát giữa giờ, phòng ngủ)",
-      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600105882",
-      "name": "Thẩm định giá thiết bị",
-      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tham dinh",
-      "matched": [
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600015365",
-      "name": "Sửa chữa xe ô tô cứu thương biển kiểm soát 81M-000.44",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "DC2600098926",
-      "name": "Mua sách c hương trình Mục tiêu quốc gia xây dựng kho tài liệu luân chuyển xe thư viện lưu động",
-      "investor": "Thư viện tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1193,
-  "afterCount": 1193,
+  "beforeCount": 1195,
+  "afterCount": 1195,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
