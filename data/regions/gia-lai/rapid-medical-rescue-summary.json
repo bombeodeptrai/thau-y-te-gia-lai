@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-09T05:45:16.288Z",
+  "rescuedAt": "2026-11-09T10:02:59.039Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 114,
+      "count": 129,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 437,
+      "count": 438,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 33,
+      "count": 30,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 7,
+      "count": 9,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 54,
+      "count": 53,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 40,
+      "count": 45,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 37,
+      "count": 40,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 25,
+      "count": 23,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 21,
+      "count": 23,
       "error": ""
     },
     {
@@ -222,25 +222,25 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 6,
+      "count": 4,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 25,
+      "count": 24,
       "error": ""
     },
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 9,
+      "count": 6,
       "error": ""
     },
     {
@@ -281,37 +281,74 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 845,
-  "acceptedCount": 33,
-  "rejectedCount": 812,
+  "candidateCount": 859,
+  "acceptedCount": 35,
+  "rejectedCount": 824,
   "rejectedReasons": {
-    "insufficient-medical-context": 276,
-    "excluded:tu van": 221,
-    "excluded:xay dung": 186,
-    "excluded:xay lap": 54,
-    "excluded:sua chua": 24,
-    "excluded:cai tao": 15,
+    "insufficient-medical-context": 280,
+    "excluded:tu van": 213,
+    "excluded:xay dung": 196,
+    "excluded:xay lap": 55,
+    "excluded:sua chua": 26,
+    "excluded:cai tao": 14,
     "excluded:bao hiem": 5,
+    "excluded:may tinh": 4,
     "excluded:tham dinh": 4,
     "excluded:bao ve": 3,
-    "excluded:may tinh": 3,
+    "excluded:bao tri": 3,
     "excluded:cay xanh": 2,
-    "excluded:bao tri": 2,
     "excluded:giam sat thi cong": 2,
+    "excluded:trang phuc": 2,
     "excluded:cong nghe thong tin": 2,
     "excluded:may in": 2,
     "excluded:quan ly du an": 2,
     "excluded:in an": 1,
     "excluded:cap dien": 1,
     "excluded:may chu": 1,
+    "excluded:xang dau": 1,
     "excluded:tram bien ap": 1,
     "excluded:duong day": 1,
-    "excluded:trang phuc": 1,
     "excluded:thuc pham": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600603307",
+      "name": "Mua sắm vật tư y tế, hóa chất y tế, vật tư nha khoa và sinh phẩm chẩn đoán in vitro",
+      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
+      "accepted": true,
+      "score": 280,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle+medical-laboratory-supply-bundle",
+      "matched": [
+        "vat tu y te",
+        "hoa chat y te",
+        "sinh pham chan doan",
+        "chan doan in vitro",
+        "nha khoa",
+        "benh vien",
+        "da khoa",
+        "hoa chat",
+        "sinh pham",
+        "chan doan",
+        "in vitro",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604485",
+      "name": "Gói thầu thuốc generic",
+      "investor": "Trung tâm Y tế Tuy Phước",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "trung tam y te",
+        "thuoc"
+      ]
+    },
     {
       "notifyNo": "IB2600603402",
       "name": "Thu gom, vận chuyển và xử lý chất thải y tế nguy hại năm 2027 của Trung tâm Y tế Tây Sơn",
@@ -725,25 +762,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600589867",
-      "name": "Mua sắm vật tư y tế, hóa chất, sinh phẩm phục vụ công tác khám bệnh, chữa bệnh tại Trung tâm Y tế An Lão giai đoạn 2027-2028",
-      "investor": "Trung tâm Y tế An Lão",
-      "accepted": true,
-      "score": 245,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+medical-supply-bundle+medical-laboratory-supply-bundle",
-      "matched": [
-        "vat tu y te",
-        "trung tam y te",
-        "hoa chat",
-        "sinh pham",
-        "vat tu",
-        "mua",
-        "mua sam",
-        "kham benh",
-        "chua benh"
-      ]
-    },
-    {
       "notifyNo": "DC2600102459",
       "name": "Mua sắm thuốc, vật tư y tế phục vụ công tác chăm sức khoẻ ban đầu theo chế độ BHYT cho cán bộ, chiến sĩ tại Bộ CHQS tỉnh Gia Lai",
       "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
@@ -801,6 +819,18 @@
       ]
     },
     {
+      "notifyNo": "DC2600109366",
+      "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026 cho viên chức và người lao động",
+      "investor": "Bảo hiểm xã hội cơ sở Pleiku",
+      "accepted": true,
+      "score": 100,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "kham suc khoe",
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "DC2600106155",
       "name": "Mua sắm thuốc Lao hàng 1 bổ sung phục vụ khám bệnh, chữa bệnh năm 2026 - lần 2",
       "investor": "Bệnh viện Lao và Bệnh phổi Pleiku",
@@ -834,6 +864,191 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600604207",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Pleime, hạng mục: Dãy nhà 03 tầng 10 phòng học lý thuyết, 02 phòng học bộ môn; các hạng mục phụ và thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604219",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Anh Hùng Núp (nay là Trường trung học cơ sở và trung học phổ thông Anh Hùng Núp), hạng mục: Dãy nhà 02 tầng 06 phòng học bộ môn; nhà ở học sinh 04 phòng 01 tầng; nhà bếp, nhà ăn 01 tầng; cải tạo dãy nhà 02 tầng 04 phòng thành khu hành chính quản trị; các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "cai tao"
+      ]
+    },
+    {
+      "notifyNo": "IB2600598680",
+      "name": "Cung cấp xi măng thực hiện Chương trình bê tông hóa giao thông nông thôn và kiên cố hóa kênh mương trên địa bàn phường Hoài Nhơn Tây năm 2026",
+      "investor": "Ban Quản lý phường Hoài Nhơn Tây",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604230",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án Trường THPT Số 2 An Nhơn. Hạng mục: Xây mới nhà 02 tầng gồm 05 phòng học bộ môn và 01 thư viện; khu vệ sinh học sinh; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604242",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT An Lương. Hạng mục: Xây mới nhà hành chính quản trị; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604244",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Tăng Bạt Hổ. Hạng mục: Xây mới dãy nhà 2 tầng; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604247",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Võ Giữ. Hạng mục: Nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn; nhà để xe học sinh; mở rộng cổng chính; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604253",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Lê Thánh Tông, hạng mục: Xây mới khối nhà 03 tầng, gồm 13 phòng và các hạng mục phụ, trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604255",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Võ Văn Kiệt. Hạng mục: Xây mới khối nhà 02 tầng, gồm 04 phòng lý thuyết, 03 phòng bộ môn và các hạng mục phụ trợ.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604257",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Trần Phú. Hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604382",
+      "name": "Mua sắm máy vi tính để bàn, máy tính xách tay, máy photocopy, máy tính bảng, màn hình tương tác và thiết bị công nghệ thông tin tương đương cho các cơ sở giáo dục trên địa bàn tỉnh Gia Lai.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may tinh",
+      "matched": [
+        "may tinh",
+        "cong nghe thong tin"
+      ]
+    },
+    {
+      "notifyNo": "IB2600589665",
+      "name": "Toàn bộ khối lượng xây trình",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600604630",
+      "name": "Xây lắp",
+      "investor": "Ban quản lý phường Bình Định",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600600661",
+      "name": "26-48/SC: thi công Sửa chữa lớn xe ô tô tải gắn cẩu có rổ Hino, biển số 81C-163.39",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604099",
+      "name": "Toàn bộ khối lượng xây lắp, đảm bảo an toàn giao thông phục vụ thi công và nhà tạm để ở điều hành thi công",
+      "investor": "Ban Quản Lý xã Bình Phú",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604103",
+      "name": "Toàn bộ khối lượng xây lắp và nhà tạm để ở điều hành thi công",
+      "investor": "Ban Quản Lý xã Bình Phú",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600601662",
+      "name": "Gói 50/SX2026/PTC3 “Chuyển hệ thống giám sát nhiệt độ sứ xuyên máy biến áp, kháng điện từ mạng Internet vào mạng WAN nội bộ của PTC3”",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600604479",
       "name": "Tư vấn khảo sát, lập Báo cáo nghiên cứu khả thi",
@@ -1081,195 +1296,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600594105",
-      "name": "Xây dựng công trình và Cung cấp lắp đặt thiết bị",
-      "investor": "Phòng Kinh tế xã Ia Boòng",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600594011",
-      "name": "Gói thầu 62/2027/VT-02 - Cung cấp Cần bích hợp kim nhôm cao 20m",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600597558",
-      "name": "26-47/SC: thi công Sửa chữa lớn xe ôtô 7 chỗ TOYOTA FORTUNER (81A-027.76)",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600597482",
-      "name": "26-46/SC: thi công Sửa chữa lớn xe ô tô tải có gắn cẩu 3 tấn (81C-095.69)",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600593213",
-      "name": "Cung cấp và lắp đặt hệ thống mạng LAN và thiết bị lưu trữ",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600600544",
-      "name": "Triển khai, lắp đặt phát sóng thiết bị reuse cho các trạm bổ sung dung lượng mạng 4G",
-      "investor": "Trung tâm Mạng lưới MobiFone - Chi nhánh Tổng công ty Viễn thông MobiFone",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600594295",
-      "name": "Toàn bộ khối lượng xây dựng và lắp đặt thiết bị công trình",
-      "investor": "Ban quản lý xã Phù Mỹ Bắc",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600584771",
-      "name": "Mua sắm xi măng PCB40",
-      "investor": "Ban Quản lý xã Phù Mỹ Tây",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600599599",
-      "name": "In ấn các sản phẩm truyền thông",
-      "investor": "Ban quản lý chương trình đầu tư phát triển mạng lưới y tế cơ sở vùng khó khăn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:in an",
-      "matched": [
-        "in an"
-      ]
-    },
-    {
-      "notifyNo": "IB2600592532",
-      "name": "Gói 36/SCL2027/PTC3: Cung cấp máy cắt 500kV và phụ kiện",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600597570",
-      "name": "Thi công xây dựng, thiết bị công trình",
-      "investor": "Ban Quản lý xã Đức Cơ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600580658",
-      "name": "Gói thầu MS-01",
-      "investor": "Binh đoàn 15",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600598602",
-      "name": "Xây lắp",
-      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600598308",
-      "name": "Trang bị thiết bị cho 15 câu lạc bộ tại 15 trường trung học cơ sở",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600598298",
-      "name": "Trang bị thiết bị cho 25 câu lạc bộ tại 25 trường trung học phổ thông",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600589678",
-      "name": "Gói 38/SCL2027/PTC3: Cung cấp biến dòng điện, biến điện áp, dao cách ly, tủ truyền động cho dao cách ly và dao tiếp địa, kèm phụ kiện liên quan",
-      "investor": "Công ty Truyền tải điện 3",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600595199",
-      "name": "Mua sắm xi măng PCP40 thực hiện Chương trình bê tông hóa giao thông nông thôn năm 2026 trên địa bàn xã Phù Cát",
-      "investor": "Ban Quản lý xã Phù Cát",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1195,
-  "afterCount": 1195,
-  "newCount": 0,
+  "beforeCount": 1197,
+  "afterCount": 1198,
+  "newCount": 1,
   "filterStrategy": "unified-medical-scope-v18"
 }
