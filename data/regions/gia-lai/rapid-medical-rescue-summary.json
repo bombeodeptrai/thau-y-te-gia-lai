@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-10T12:52:32.703Z",
+  "rescuedAt": "2026-11-10T21:01:13.402Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 133,
+      "count": 134,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 418,
+      "count": 420,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 858,
+  "candidateCount": 860,
   "acceptedCount": 40,
-  "rejectedCount": 818,
+  "rejectedCount": 820,
   "rejectedReasons": {
     "insufficient-medical-context": 272,
     "excluded:tu van": 213,
-    "excluded:xay dung": 201,
+    "excluded:xay dung": 203,
     "excluded:xay lap": 53,
     "excluded:sua chua": 28,
     "excluded:cai tao": 8,
@@ -941,6 +941,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600604879",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600605614",
       "name": "Xây dựng các hạng mục công trình và hệ thống phòng cháy chữa cháy",
       "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
@@ -1357,19 +1368,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600601697",
-      "name": "Mua sắm bàn, ghế và vách chắn phục vụ công tác cho Trung tâm Y tế Hoài Ân",
-      "investor": "TRUNG TÂM Y TẾ HOÀI ÂN",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te",
-        "mua",
-        "mua sam"
       ]
     }
   ],
