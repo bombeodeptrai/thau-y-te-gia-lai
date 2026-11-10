@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-09T18:49:26.596Z",
+  "rescuedAt": "2026-11-10T02:46:00.097Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 244,
+      "count": 245,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 784,
+      "count": 794,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 104,
+      "count": 105,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 57,
+      "count": 59,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 51,
+      "count": 52,
       "error": ""
     },
     {
@@ -281,22 +281,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1609,
+  "candidateCount": 1626,
   "acceptedCount": 57,
-  "rejectedCount": 1552,
+  "rejectedCount": 1569,
   "rejectedReasons": {
-    "excluded:tu van": 480,
-    "insufficient-medical-context": 445,
-    "excluded:xay dung": 389,
+    "excluded:tu van": 488,
+    "insufficient-medical-context": 446,
+    "excluded:xay dung": 394,
     "excluded:xay lap": 78,
     "excluded:sua chua": 48,
     "excluded:cai tao": 21,
     "excluded:thuc pham": 15,
     "excluded:bao ve": 10,
+    "excluded:tham dinh": 10,
     "excluded:bao tri": 8,
-    "excluded:tham dinh": 8,
+    "excluded:may tinh": 7,
     "excluded:bao hiem": 7,
-    "excluded:may tinh": 6,
     "excluded:trang phuc": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
@@ -959,6 +959,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600604012",
+      "name": "Mua sắm",
+      "investor": "Sư đoàn 320/Quân đoàn 34",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600604207",
       "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Pleime, hạng mục: Dãy nhà 03 tầng 10 phòng học lý thuyết, 02 phòng học bộ môn; các hạng mục phụ và thiết bị.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1379,23 +1391,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600596439",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1198,
-  "afterCount": 1198,
+  "beforeCount": 1197,
+  "afterCount": 1197,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }

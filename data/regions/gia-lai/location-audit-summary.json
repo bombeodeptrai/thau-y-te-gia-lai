@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-09T18:48:42.556Z",
+  "auditedAt": "2026-11-10T02:45:07.966Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 784,
+      "count": 794,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 38,
+      "count": 39,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 104,
+      "count": 105,
       "error": ""
     },
     {
@@ -194,13 +194,13 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 35,
+      "count": 36,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 57,
+      "count": 59,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 51,
+      "count": 52,
       "error": ""
     },
     {
@@ -271,21 +271,21 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1544,
+  "candidateCount": 1560,
   "acceptedCount": 54,
-  "rejectedCount": 1490,
+  "rejectedCount": 1506,
   "rejectedReasons": {
-    "excluded:tu van": 478,
+    "excluded:tu van": 486,
     "insufficient-medical-context": 414,
-    "excluded:xay dung": 378,
+    "excluded:xay dung": 383,
     "excluded:xay lap": 70,
     "excluded:sua chua": 44,
     "excluded:cai tao": 21,
     "excluded:thuc pham": 15,
+    "excluded:tham dinh": 10,
     "excluded:bao ve": 10,
-    "excluded:tham dinh": 8,
     "excluded:bao tri": 8,
-    "excluded:may tinh": 6,
+    "excluded:may tinh": 7,
     "excluded:bao hiem": 6,
     "excluded:trang phuc": 4,
     "excluded:cong nghe thong tin": 4,
@@ -937,6 +937,121 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600117944",
+      "name": "Tư vấn lập Báo cáo kinh tế kỹ thuật",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600112617",
+      "name": "Tư vấn lập HSMT và đánh giá HSDT gói thầu thi công",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600605799",
+      "name": "Tư vấn lập điều chỉnh quy hoạch phân khu tỷ lệ 1/2000 khu vực cảng cá Tam Quan và khu neo đậu tránh trú bão Tam Quan",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600113832",
+      "name": "Tư vấn thẩm định HSMT và KQLCNT gói thầu thi công",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600107454",
+      "name": "Tư vấn thẩm định hồ sơ mời thầu và kết quả lựa chọn nhà thầu gói thầu Thi công xây dựng và thiết bị công trình",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600112765",
+      "name": "Tư vấn lập HSMT và đánh giá HSDT gói thầu thi công xây dựng và lắp đặt thiết bị công trình",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600107813",
+      "name": "Thẩm định giá",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tham dinh",
+      "matched": [
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600107833",
+      "name": "Thẩm định giá",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tham dinh",
+      "matched": [
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600113830",
+      "name": "Tư vấn thẩm định HSMT và kết quả LCNT gói thầu thi công và lắp đặt thiết bị công trình",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600108688",
+      "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "IB2600604207",
       "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Pleime, hạng mục: Dãy nhà 03 tầng 10 phòng học lý thuyết, 02 phòng học bộ môn; các hạng mục phụ và thiết bị.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1268,132 +1383,12 @@
         "xay dung",
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "DC2600113970",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Võ Giữ. Hạng mục: Nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn; nhà để xe học sinh; mở rộng cổng chính; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600113905",
-      "name": "Tư vấn giám sát thi công xây dựng",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600603776",
-      "name": "Gói thầu MS01",
-      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600113895",
-      "name": "Tư vấn giám sát thi công xây dựng",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600113859",
-      "name": "Tư vấn khảo sát, lập Quy hoạch tổng mặt bằng xây dựng tỷ lệ 1/500",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600112285",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Tăng Bạt Hổ. Hạng mục: Xây mới dãy nhà 2 tầng; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600112698",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Lê Thánh Tông, hạng mục: Xây mới khối nhà 03 tầng, gồm 13 phòng và các hạng mục phụ, trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600112755",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu.Dự án: Trường THPT Pleime, hạng mục: Dãy nhà 03 tầng 10 phòng học lý thuyết, 02 phòng học bộ môn; các hạng mục phụ và thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600112342",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu.Dự án: Trường THPT Anh Hùng Núp (nay là Trường trung học cơ sở và trung học phổ thông Anh Hùng Núp), hạng mục: Dãy nhà 02 tầng 06 phòng học bộ môn; nhà ở học sinh 04 phòng 01 tầng; nhà bếp, nhà ăn 01 tầng; cải tạo dãy nhà 02 tầng 04 phòng thành khu hành chính quản trị; các hạng mục phụ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:cai tao",
-      "matched": [
-        "cai tao",
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600112469",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án Trường THPT Số 2 An Nhơn. Hạng mục: Xây mới nhà 02 tầng gồm 05 phòng học bộ môn và 01 thư viện; khu vệ sinh học sinh; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1198,
-  "afterCount": 1198,
+  "beforeCount": 1197,
+  "afterCount": 1197,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v18"
 }
