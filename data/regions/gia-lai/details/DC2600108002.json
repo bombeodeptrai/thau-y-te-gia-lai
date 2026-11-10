@@ -1,9 +1,113 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "d5b3239b-fba1-457d-8cb2-d8d8790c9100",
+      "contractorCode": "vn0107482451",
+      "taxCode": "0107482451",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ VẬT TƯ KHOA HỌC KỸ THUẬT THÀNH DANH",
+      "status": "won",
+      "lotNo": "PP2600483564",
+      "lotName": "Kim tiêm nhựa dùng 1 lần",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 175000,
+      "reason": "",
+      "submittedAt": "2026-11-10T14:30:38.317",
+      "models": []
+    },
+    {
+      "id": "aa07e6e8-fd70-497f-83b8-0c1b1052207a",
+      "contractorCode": "vn0302531991",
+      "taxCode": "0302531991",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VINH KHANG",
+      "status": "won",
+      "lotNo": "PP2600483565",
+      "lotName": "Phim dùng trong hệ thống xạ trị",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 87000000,
+      "reason": "",
+      "submittedAt": "2026-11-10T14:30:38.317",
+      "models": []
+    },
+    {
+      "id": "292a17b1-ad38-4a7c-bff4-7cd15c09b345",
+      "contractorCode": "vn0107482451",
+      "taxCode": "0107482451",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ VẬT TƯ KHOA HỌC KỸ THUẬT THÀNH DANH",
+      "status": "won",
+      "lotNo": "PP2600483566",
+      "lotName": "Nước cất 2 lần",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 3600000,
+      "reason": "",
+      "submittedAt": "2026-11-10T14:30:38.317",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "31b6bada-7396-4b77-ab6f-856e73e2007f",
+      "name": "Phim dùng trong hệ thống xạ trị / Phim Grafchromic RTQA2-1010",
+      "model": "828217",
+      "brand": "-",
+      "manufacturer": "Ashland Specialty Ingredients G.P",
+      "origin": "Mỹ",
+      "manufactureYear": "-",
+      "specification": "Ứng dụng: QA hệ thống xạ trị: Kiểm tra vị trí trường ánh sáng và trường xạ, Kiểm tra tâm xạ trị, Kiểm tra picket fence, Kiểm tra độ phẳng và đối xứng.\n- Phạm vi liều: 0,2 Gy đến 10 Gy\n- Phạm vi năng lượng: 100keV đến năng lượng MV\n- Hộp gồm 25 tấm: kích thước 10 x 10 in",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 87000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI ĐẦU TƯ VINH KHANG"
+      ],
+      "decisionNo": "1711/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-10T23:59:59",
+      "resultPublishedDate": "2026-11-10T14:39:00"
+    },
+    {
+      "id": "02aa497c-5531-4727-a1e6-f04f24221c43",
+      "name": "Nước cất 2 lần/Nước cất",
+      "model": "-",
+      "brand": "Thuận Phát",
+      "manufacturer": "Thuận Phát",
+      "origin": "Việt Nam",
+      "manufactureYear": "-",
+      "specification": "Nước cất 2 lần, tinh khiết, trong suốt, không màu, không mùi, không vị",
+      "unit": "Lít",
+      "quantity": 300,
+      "unitPrice": 12000,
+      "winnerNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ VẬT TƯ KHOA HỌC KỸ THUẬT THÀNH DANH"
+      ],
+      "decisionNo": "1711/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-10T23:59:59",
+      "resultPublishedDate": "2026-11-10T14:39:00"
+    },
+    {
+      "id": "74671e80-b60e-4b75-914d-ef6682cc4708",
+      "name": "Kim tiêm nhựa dùng 1 lần/Kim tiêm tanaphar",
+      "model": "KT23.TNP",
+      "brand": "Tanaphar",
+      "manufacturer": "Tanaphar",
+      "origin": "Việt Nam",
+      "manufactureYear": "-",
+      "specification": "Kim tiêm nhựa dùng 1 lần 23G x 1.1/2",
+      "unit": "Cái",
+      "quantity": 500,
+      "unitPrice": 350,
+      "winnerNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ VẬT TƯ KHOA HỌC KỸ THUẬT THÀNH DANH"
+      ],
+      "decisionNo": "1711/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-10T23:59:59",
+      "resultPublishedDate": "2026-11-10T14:39:00"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -56,5 +160,5 @@
     "bidForm": "CDTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-10T11:33:41.804Z"
+  "fetchedAt": "2026-11-10T12:47:01.090Z"
 }
