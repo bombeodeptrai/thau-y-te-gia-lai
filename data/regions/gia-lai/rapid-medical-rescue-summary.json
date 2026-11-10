@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-09T20:57:29.955Z",
+  "rescuedAt": "2026-11-10T04:18:01.896Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 129,
+      "count": 128,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 429,
+      "count": 430,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 19,
+      "count": 20,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 15,
+      "count": 14,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 30,
+      "count": 31,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
@@ -120,7 +120,7 @@
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 12,
+      "count": 8,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 49,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 40,
+      "count": 36,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 23,
+      "count": 24,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
@@ -285,20 +285,19 @@
   "acceptedCount": 35,
   "rejectedCount": 825,
   "rejectedReasons": {
-    "insufficient-medical-context": 280,
-    "excluded:tu van": 216,
-    "excluded:xay dung": 198,
+    "insufficient-medical-context": 279,
+    "excluded:tu van": 214,
+    "excluded:xay dung": 201,
     "excluded:xay lap": 53,
-    "excluded:sua chua": 26,
-    "excluded:cai tao": 11,
+    "excluded:sua chua": 25,
+    "excluded:cai tao": 10,
+    "excluded:tham dinh": 6,
+    "excluded:may tinh": 5,
     "excluded:bao hiem": 5,
-    "excluded:may tinh": 4,
-    "excluded:tham dinh": 4,
     "excluded:bao ve": 3,
     "excluded:bao tri": 3,
     "excluded:cong nghe thong tin": 3,
     "excluded:cay xanh": 2,
-    "excluded:giam sat thi cong": 2,
     "excluded:trang phuc": 2,
     "excluded:may in": 2,
     "excluded:quan ly du an": 2,
@@ -307,6 +306,7 @@
     "excluded:may chu": 1,
     "excluded:xang dau": 1,
     "excluded:tram bien ap": 1,
+    "excluded:giam sat thi cong": 1,
     "excluded:duong day": 1,
     "excluded:thuc pham": 1,
     "excluded:thu y": 1,
@@ -865,6 +865,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600604012",
+      "name": "Mua sắm",
+      "investor": "Sư đoàn 320/Quân đoàn 34",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600604207",
       "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Pleime, hạng mục: Dãy nhà 03 tầng 10 phòng học lý thuyết, 02 phòng học bộ môn; các hạng mục phụ và thiết bị.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1279,17 +1291,6 @@
       "notifyNo": "IB2600601181",
       "name": "Toàn bộ khối lượng thi công xây dựng",
       "investor": "Ban Quản lý phường Quy Nhơn Đông",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600596439",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",
