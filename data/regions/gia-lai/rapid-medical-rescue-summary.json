@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-10T05:42:47.210Z",
+  "rescuedAt": "2026-11-10T11:33:38.007Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 128,
+      "count": 133,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 429,
+      "count": 417,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 14,
+      "count": 12,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -114,13 +114,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 12,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -132,19 +132,19 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 1,
+      "count": 2,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 54,
+      "count": 60,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 51,
+      "count": 50,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 30,
+      "count": 31,
       "error": ""
     },
     {
@@ -240,7 +240,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 6,
+      "count": 3,
       "error": ""
     },
     {
@@ -281,26 +281,26 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 862,
-  "acceptedCount": 36,
-  "rejectedCount": 826,
+  "candidateCount": 858,
+  "acceptedCount": 40,
+  "rejectedCount": 818,
   "rejectedReasons": {
-    "insufficient-medical-context": 278,
-    "excluded:tu van": 217,
+    "insufficient-medical-context": 272,
+    "excluded:tu van": 213,
     "excluded:xay dung": 201,
     "excluded:xay lap": 53,
-    "excluded:sua chua": 25,
-    "excluded:cai tao": 9,
+    "excluded:sua chua": 28,
+    "excluded:cai tao": 8,
+    "excluded:bao hiem": 6,
     "excluded:tham dinh": 6,
     "excluded:may tinh": 5,
-    "excluded:bao hiem": 5,
     "excluded:bao ve": 3,
-    "excluded:bao tri": 3,
     "excluded:cong nghe thong tin": 3,
     "excluded:cay xanh": 2,
-    "excluded:trang phuc": 2,
     "excluded:may in": 2,
+    "excluded:bao tri": 2,
     "excluded:quan ly du an": 2,
+    "excluded:may phat dien": 1,
     "excluded:in an": 1,
     "excluded:cap dien": 1,
     "excluded:may chu": 1,
@@ -308,11 +308,70 @@
     "excluded:tram bien ap": 1,
     "excluded:giam sat thi cong": 1,
     "excluded:duong day": 1,
+    "excluded:trang phuc": 1,
     "excluded:thuc pham": 1,
     "excluded:thu y": 1,
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600606477",
+      "name": "Mua sắm thuốc Generic bổ sung lần 1 năm 2026",
+      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "benh vien",
+        "thuoc",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600605993",
+      "name": "Mua sắm Trocar dùng cho phẫu thuật",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 155,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "phau thuat",
+        "trung tam y te",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600605743",
+      "name": "Mua sắm vật tư y tế năm 2026-2027",
+      "investor": "Trung tâm y tế Ia Grai",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "trung tam y te",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600605710",
+      "name": "Mua sắm vật tư y tế cho Trung tâm Y tế Chư Prông",
+      "investor": "Trung tâm Y tế Chư Prông",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "trung tam y te",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600603307",
       "name": "Mua sắm vật tư y tế, hóa chất y tế, vật tư nha khoa và sinh phẩm chẩn đoán in vitro",
@@ -762,18 +821,20 @@
       ]
     },
     {
-      "notifyNo": "IB2600591803",
-      "name": "Mua sắm vật tư y tế năm 2026-2027",
-      "investor": "Trung tâm Y tế Đak Đoa",
+      "notifyNo": "DC2600108002",
+      "name": "Mua sắm một số vật tư phục vụ bệnh nhân Khu xạ trị của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
       "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
+      "score": 65,
+      "reason": "medical-investor",
       "matched": [
-        "vat tu y te",
-        "trung tam y te",
+        "benh vien",
+        "da khoa",
         "vat tu",
         "mua",
-        "mua sam"
+        "mua sam",
+        "xa tri",
+        "benh nhan"
       ]
     },
     {
@@ -879,6 +940,61 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600605157",
+      "name": "Gói thầu xây lắp: Toàn bộ khối lượng xây dựng công trình",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap",
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600605220",
+      "name": "Mua sắm thiết bị Hiện đại hóa hệ thống truyền thanh xã Kông Chro năm 2026",
+      "investor": "Trung tâm Dịch vụ sự nghiệp công xã Kông Chro",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600603051",
+      "name": "Gói thầu XL7.1: Thi công xây dựng hạng mục công trình: Hệ thống giao thông, thoát nước tuyến đường D6, D7, D8",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ SÊ.",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600603983",
+      "name": "Gói thầu số 61/2027/MSMF: Mua sắm Máy phát điện dung lượng 700kVA 3 pha - 380/220V, Chạy bằng dầu diesel",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:may phat dien",
+      "matched": [
+        "may phat dien"
+      ]
+    },
+    {
+      "notifyNo": "IB2600600368",
+      "name": "Dịch vụ rà quét lỗ hổng bảo mật, đánh giá xâm nhập và gỡ bỏ mã độc cho các hệ thống thông tin năm 2026",
+      "investor": "CÔNG TY PHÁT TRIỂN THỦY ĐIỆN SÊ SAN - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600604012",
       "name": "Mua sắm",
@@ -1256,65 +1372,12 @@
         "mua",
         "mua sam"
       ]
-    },
-    {
-      "notifyNo": "IB2600597574",
-      "name": "Thi công xây dựng công trình và hệ thống điện chiếu sáng (GĐ 02)",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600601267",
-      "name": "Toàn bộ khối lượng thi công xây dựng",
-      "investor": "Ban Quản lý phường Quy Nhơn Đông",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600597671",
-      "name": "26.63.HH Trang bị thiết bị CNTT",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600601181",
-      "name": "Toàn bộ khối lượng thi công xây dựng",
-      "investor": "Ban Quản lý phường Quy Nhơn Đông",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600596439",
-      "name": "Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban Quản lý phường Hoài Nhơn Bắc",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1197,
-  "afterCount": 1198,
-  "newCount": 1,
+  "beforeCount": 1198,
+  "afterCount": 1203,
+  "newCount": 5,
   "filterStrategy": "unified-medical-scope-v19"
 }
