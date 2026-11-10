@@ -233,6 +233,19 @@ test("nhận gói test ma túy tại trung tâm y tế", () => {
   assert.ok(result.matched.includes("test ma tuy"));
 });
 
+test("nhận khí dùng trong y tế: IB2600597692", () => {
+  const result = classifyMedicalTender({
+    notifyNo: "IB2600597692-00",
+    bidName: ["Mua sắm khí dùng trong y tế"],
+    investorName: "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+  });
+
+  assert.equal(result.accepted, true, result.reason);
+  assert.equal(result.category, "Vật tư & hóa chất");
+  assert.ok(result.reason.includes("explicit-medical-title"), result.reason);
+  assert.ok(result.matched.includes("khi dung trong y te"));
+});
+
 test("nhận gói túi máu của bệnh viện", () => {
   const result = classifyMedicalTender({
     notifyNo: "IB2600463157-00",
