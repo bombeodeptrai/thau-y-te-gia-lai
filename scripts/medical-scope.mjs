@@ -352,6 +352,7 @@ export function medicalCategory(name) {
     "vat tu", "hoa chat", "sinh pham", "dung cu", "kit", "test", "gac", "gang",
     "kim", "stent", "catheter", "reagent", "thuoc thu", "dung dich", "gioang", "dem",
     "tui mau", "thuoc bo",
+    "khi y te", "khi dung trong y te", "oxy y te",
     "thuoc", "duoc pham", "duoc lieu", "duoc chat",
     "chat boi tron", "bao cao su",
     "hoa chat khu trung", "diet muoi", "diet con trung",
