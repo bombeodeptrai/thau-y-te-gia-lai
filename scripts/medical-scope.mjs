@@ -1,5 +1,5 @@
 // Quét bù toàn bộ phạm vi sau hồi quy IB2600573048.
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v18";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v19";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -38,7 +38,7 @@ const EXPLICIT_MEDICAL_TITLE_TERMS = [
   "vat tu phau thuat", "vat tu xet nghiem", "hoa chat xet nghiem", "hoa chat y te",
   "hoa chat khu khuan", "sinh pham y te", "sinh pham xet nghiem",
   "sinh pham chan doan", "chan doan in vitro", "dung cu y te", "y cu",
-  "khi y te", "oxy y te", "may xet nghiem", "may sieu am", "may tho",
+  "khi y te", "khi dung trong y te", "oxy y te", "may xet nghiem", "may sieu am", "may tho",
   "may dien tim", "may theo doi benh nhan", "may loc mau", "may chay than",
   "giuong benh", "giuong y te", "giuong hoi suc", "giuong cap cuu",
   "may chup", "x quang", "noi soi", "phau thuat", "catheter", "stent",
@@ -352,6 +352,7 @@ export function medicalCategory(name) {
     "vat tu", "hoa chat", "sinh pham", "dung cu", "kit", "test", "gac", "gang",
     "kim", "stent", "catheter", "reagent", "thuoc thu", "dung dich", "gioang", "dem",
     "tui mau", "thuoc bo",
+    "khi y te", "khi dung trong y te", "oxy y te",
     "thuoc", "duoc pham", "duoc lieu", "duoc chat",
     "chat boi tron", "bao cao su",
     "hoa chat khu trung", "diet muoi", "diet con trung",
