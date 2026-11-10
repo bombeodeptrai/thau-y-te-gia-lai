@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-10T12:39:15.747Z",
+  "auditedAt": "2026-11-10T21:49:08.502Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 800,
+      "count": 802,
       "error": ""
     },
     {
@@ -122,7 +122,7 @@
     {
       "term": "Kbang",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1593,
+  "candidateCount": 1595,
   "acceptedCount": 60,
-  "rejectedCount": 1533,
+  "rejectedCount": 1535,
   "rejectedReasons": {
     "excluded:tu van": 495,
     "insufficient-medical-context": 417,
-    "excluded:xay dung": 391,
+    "excluded:xay dung": 393,
     "excluded:xay lap": 71,
     "excluded:sua chua": 47,
     "excluded:cai tao": 22,
@@ -935,6 +935,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600120834",
+      "name": "Gói thầu thi công xây dựng Công trình",
+      "investor": "Trường Tiểu học Lý Tự Trọng, xã Kbang, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604879",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600605614",
       "name": "Xây dựng các hạng mục công trình và hệ thống phòng cháy chữa cháy",
       "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
@@ -1358,26 +1380,6 @@
       "reason": "excluded:xang dau",
       "matched": [
         "xang dau"
-      ]
-    },
-    {
-      "notifyNo": "DC2600111340",
-      "name": "Lập Thiết kế bản vẽ thi công và dự toán",
-      "investor": "Trung tâm Nước sạch nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600604479",
-      "name": "Tư vấn khảo sát, lập Báo cáo nghiên cứu khả thi",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
       ]
     }
   ],
