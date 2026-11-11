@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "7d662290-e7c7-47f6-b4c8-03423112e6f1",
+      "contractorCode": "vn0317656552",
+      "taxCode": "0317656552",
+      "contractorName": "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC",
+      "status": "lost",
+      "lotNo": "BP2600959545",
+      "lotName": "Mua sắm máy điện tim 3 cần",
+      "bidPrice": 83900000,
+      "finalPrice": 83900000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-11-11T09:54:09.712",
+      "models": []
+    },
+    {
+      "id": "928b7183-30f7-4ef5-a490-c0599c2f68e2",
+      "contractorCode": "vn4101623671",
+      "taxCode": "4101623671",
+      "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DỊCH VỤ THIẾT BỊ Y TẾ LÂN NGUYỄN",
+      "status": "won",
+      "lotNo": "BP2600959545",
+      "lotName": "Mua sắm máy điện tim 3 cần",
+      "bidPrice": 82000000,
+      "finalPrice": 82000000,
+      "winningPrice": 82000000,
+      "reason": "",
+      "submittedAt": "2026-11-11T09:54:09.712",
+      "models": [
+        "ECG-3150"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "f30d66a1-89ab-4e37-8018-9ba7a118a50b",
+      "name": "Máy điện tim 3 cần",
+      "model": "ECG-3150",
+      "brand": "Cardiofax C",
+      "manufacturer": "Shanghai Kohden Medical Electronic Instrument Corp.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Chi tiết tại Phụ lục đính kèm",
+      "unit": "Máy",
+      "quantity": 2,
+      "unitPrice": 41000000,
+      "amount": 82000000,
+      "contractorCode": "vn4101623671",
+      "winnerNames": [
+        "CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DỊCH VỤ THIẾT BỊ Y TẾ LÂN NGUYỄN"
+      ],
+      "lotNo": "",
+      "decisionNo": "477/QĐ-TTTP",
+      "decisionDate": "2026-11-11T09:54:09",
+      "resultPublishedDate": "2026-11-11T09:54:09"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,7 +114,7 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
+  "modelDisclosure": "winning-bidders-only",
   "sourceIdentity": {
     "notifyNo": "IB2600595955",
     "notifyId": "a95b2506-354f-4edd-a74e-ec2761ee13bf",
@@ -66,5 +122,5 @@
     "bidForm": "CGTTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-11T01:59:41.021Z"
+  "fetchedAt": "2026-11-11T09:35:03.330Z"
 }
