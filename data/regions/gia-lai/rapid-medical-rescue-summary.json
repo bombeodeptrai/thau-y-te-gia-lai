@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-11T09:40:54.930Z",
+  "rescuedAt": "2026-11-11T18:03:17.519Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 144,
+      "count": 146,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 434,
+      "count": 436,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 21,
+      "count": 23,
       "error": ""
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 60,
+      "count": 59,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 48,
+      "count": 47,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 28,
+      "count": 31,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 33,
+      "count": 26,
       "error": ""
     },
     {
@@ -285,14 +285,14 @@
   "acceptedCount": 35,
   "rejectedCount": 854,
   "rejectedReasons": {
-    "insufficient-medical-context": 287,
-    "excluded:tu van": 222,
-    "excluded:xay dung": 210,
-    "excluded:xay lap": 52,
-    "excluded:sua chua": 29,
+    "insufficient-medical-context": 283,
+    "excluded:tu van": 219,
+    "excluded:xay dung": 214,
+    "excluded:xay lap": 55,
+    "excluded:sua chua": 28,
+    "excluded:bao hiem": 7,
     "excluded:tham dinh": 7,
     "excluded:cai tao": 7,
-    "excluded:bao hiem": 6,
     "excluded:may tinh": 5,
     "excluded:bao tri": 4,
     "excluded:trang phuc": 3,
@@ -857,6 +857,39 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600607399",
+      "name": "Xây lắp và đảm bảo an toàn giao thông",
+      "investor": "Ban quản lý phường An Phú",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607631",
+      "name": "Xây lắp và đảm bảo an toàn giao thông",
+      "investor": "Ban quản lý phường An Phú",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607731",
+      "name": "Xây lắp và đảm bảo an toàn giao thông",
+      "investor": "Ban quản lý phường An Phú",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
       "notifyNo": "IB2600603575",
       "name": "Thi công xây dựng công trình và lắp đặt thiết bị",
       "investor": "Ban Quản lý phường Quy Nhơn",
@@ -1256,37 +1289,6 @@
       "matched": [
         "may tinh",
         "cong nghe thong tin"
-      ]
-    },
-    {
-      "notifyNo": "IB2600589665",
-      "name": "Toàn bộ khối lượng xây trình",
-      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600604630",
-      "name": "Xây lắp",
-      "investor": "Ban quản lý phường Bình Định",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600600661",
-      "name": "26-48/SC: thi công Sửa chữa lớn xe ô tô tải gắn cẩu có rổ Hino, biển số 81C-163.39",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
       ]
     }
   ],
