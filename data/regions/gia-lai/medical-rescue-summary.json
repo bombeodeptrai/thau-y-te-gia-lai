@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-11T16:11:43.477Z",
+  "rescuedAt": "2026-11-11T22:43:22.480Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -959,6 +959,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600607731",
+      "name": "Xây lắp và đảm bảo an toàn giao thông",
+      "investor": "Ban quản lý phường An Phú",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
       "notifyNo": "IB2600607399",
       "name": "Xây lắp và đảm bảo an toàn giao thông",
       "investor": "Ban quản lý phường An Phú",
@@ -971,17 +982,6 @@
     },
     {
       "notifyNo": "IB2600607631",
-      "name": "Xây lắp và đảm bảo an toàn giao thông",
-      "investor": "Ban quản lý phường An Phú",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607731",
       "name": "Xây lắp và đảm bảo an toàn giao thông",
       "investor": "Ban quản lý phường An Phú",
       "accepted": false,
