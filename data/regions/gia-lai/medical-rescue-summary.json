@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-10T21:49:58.010Z",
+  "rescuedAt": "2026-11-11T06:18:21.205Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 256,
+      "count": 261,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 802,
+      "count": 808,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 37,
+      "count": 38,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 40,
+      "count": 39,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 14,
+      "count": 18,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 44,
+      "count": 42,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 3,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 114,
+      "count": 112,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 110,
+      "count": 111,
       "error": ""
     },
     {
@@ -210,13 +210,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 60,
+      "count": 68,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 39,
+      "count": 42,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 44,
+      "count": 46,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 53,
+      "count": 56,
       "error": ""
     },
     {
@@ -281,19 +281,19 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1662,
-  "acceptedCount": 63,
-  "rejectedCount": 1599,
+  "candidateCount": 1694,
+  "acceptedCount": 61,
+  "rejectedCount": 1633,
   "rejectedReasons": {
-    "excluded:tu van": 497,
-    "insufficient-medical-context": 450,
-    "excluded:xay dung": 404,
-    "excluded:xay lap": 79,
+    "excluded:tu van": 510,
+    "insufficient-medical-context": 461,
+    "excluded:xay dung": 413,
+    "excluded:xay lap": 78,
     "excluded:sua chua": 51,
     "excluded:cai tao": 22,
     "excluded:thuc pham": 15,
+    "excluded:tham dinh": 11,
     "excluded:bao ve": 10,
-    "excluded:tham dinh": 10,
     "excluded:bao hiem": 8,
     "excluded:bao tri": 8,
     "excluded:may tinh": 7,
@@ -308,6 +308,7 @@
     "excluded:cay xanh": 2,
     "excluded:lap e hsmt": 2,
     "excluded:quan ly du an": 2,
+    "excluded:chat thai": 1,
     "excluded:may phat dien": 1,
     "excluded:may chu": 1,
     "excluded:van phong pham": 1,
@@ -957,6 +958,108 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600605908",
+      "name": "26.45.HH Dụng cụ an toàn, thi công, bảo hộ an toàn điện năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600605718",
+      "name": "26.43.HH Trang bị máy, thiết bị thi công - an toàn năm 2026",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600595219",
+      "name": "Gói 39/SCL2027/PTC3: Cung cấp ắc quy các loại",
+      "investor": "Công ty Truyền tải điện 3",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600587706",
+      "name": "Gói thầu số 03: Tuyển Điều phối viên kỹ thuật tại tỉnh Đắk Lắk",
+      "investor": "Ban Quản lý các Dự án Lâm nghiệp",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600587704",
+      "name": "Gói thầu số 02: Tuyển Điều phối viên kỹ thuật tại tỉnh Gia Lai",
+      "investor": "Ban Quản lý các Dự án Lâm nghiệp",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600587685",
+      "name": "Gói thầu số 01: Tuyển Điều phối viên quốc gia",
+      "investor": "Ban Quản lý các Dự án Lâm nghiệp",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600604336",
+      "name": "Cung cấp lắp đặt thiết bị",
+      "investor": "TRƯỜNG TRUNG HỌC CƠ SỞ NGUYỄN VĂN CỪ",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604208",
+      "name": "Gói thầu 62/2027/VT-01- Cung cấp trang thiết bị phục vụ quản lý vận hành - Sản xuất kinh doanh năm 2027",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600599011",
+      "name": "Xử lý chất thải nguy hại năm 2026",
+      "investor": "CÔNG TY PHÁT TRIỂN THỦY ĐIỆN SÊ SAN - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:chat thai",
+      "matched": [
+        "chat thai"
+      ]
+    },
+    {
+      "notifyNo": "IB2600602584",
+      "name": "Tư vấn giám sát thi công xây dựng công trình",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
       "notifyNo": "IB2600604879",
       "name": "Thi công xây dựng công trình",
       "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
@@ -1272,113 +1375,6 @@
       "notifyNo": "IB2600587884",
       "name": "Gói thầu XL9: Thi công xây dựng hạng mục công trình: San nền trong khu công nghiệp (San nền giai đoạn 2)",
       "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ SÊ.",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600603345",
-      "name": "Thuê dịch vụ phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh tại Trung tâm Y tế Hoài Ân;",
-      "investor": "TRUNG TÂM Y TẾ HOÀI ÂN",
-      "accepted": false,
-      "score": 90,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "trung tam y te",
-        "chan doan"
-      ]
-    },
-    {
-      "notifyNo": "IB2600601601",
-      "name": "Xây lắp + Thiết bị",
-      "investor": "Ban quản lý xã Pờ Tó",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600602138",
-      "name": "Gia hạn bản quyền phần mềm cho các thiết bị thuộc hệ thống Trung tâm tích hợp dữ liệu của tỉnh",
-      "investor": "Trung tâm Chuyển đổi số",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "thuoc"
-      ]
-    },
-    {
-      "notifyNo": "IB2600602684",
-      "name": "Cung cấp vật tư, thiết bị để khắc phục tổn thất thuộc phạm vi bảo hiểm năm 2025 cho Công ty Quản lý bay miền Trung",
-      "investor": "CÔNG TY QUẢN LÝ BAY MIỀN TRUNG - TỔNG CÔNG TY QUẢN LÝ BAY VIỆT NAM - CÔNG TY TNHH",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao hiem",
-      "matched": [
-        "bao hiem"
-      ]
-    },
-    {
-      "notifyNo": "IB2600601436",
-      "name": "Thi công xây dựng và lắp đặt thiết bị",
-      "investor": "BAN QUẢN LÝ XÃ BÌNH DƯƠNG",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600592467",
-      "name": "GL-Cs-05: Đánh giá nhu cầu nâng cao năng lực, đào tạo, làm cơ sở thiết kế, thực hiện chương trình phát triển năng lực của cán bộ nông, lâm nghiệp và các thành viên cộng đồng về QLRDVCĐ",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600596459",
-      "name": "SCL2027-09: Phục hồi Bạc cánh hướng NMTĐ Ialy",
-      "investor": "CÔNG TY THUỶ ĐIỆN IALY - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600600897",
-      "name": "GT04- Thi công xây dựng và lắp đặt thiết bị",
-      "investor": "Trường Cao đẳng Cơ điện Xây dựng và Nông Lâm Trung bộ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600600895",
-      "name": "GT04- Thi công xây dựng và lắp đặt thiết bị",
-      "investor": "Trường Cao đẳng Cơ điện Xây dựng và Nông Lâm Trung bộ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600601259",
-      "name": "Xây dựng khung giá rừng trên địa bàn tỉnh Gia Lai",
-      "investor": "Chi cục Kiểm lâm Gia Lai",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",
