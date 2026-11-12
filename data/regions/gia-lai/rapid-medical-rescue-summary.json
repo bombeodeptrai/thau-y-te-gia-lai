@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-11T18:03:17.519Z",
+  "rescuedAt": "2026-11-12T00:56:10.234Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 146,
+      "count": 145,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 436,
+      "count": 435,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 2,
+      "count": 1,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 889,
+  "candidateCount": 888,
   "acceptedCount": 35,
-  "rejectedCount": 854,
+  "rejectedCount": 853,
   "rejectedReasons": {
     "insufficient-medical-context": 283,
     "excluded:tu van": 219,
-    "excluded:xay dung": 214,
+    "excluded:xay dung": 213,
     "excluded:xay lap": 55,
     "excluded:sua chua": 28,
     "excluded:bao hiem": 7,
@@ -857,6 +857,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600607731",
+      "name": "Xây lắp và đảm bảo an toàn giao thông",
+      "investor": "Ban quản lý phường An Phú",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay lap",
+      "matched": [
+        "xay lap"
+      ]
+    },
+    {
       "notifyNo": "IB2600607399",
       "name": "Xây lắp và đảm bảo an toàn giao thông",
       "investor": "Ban quản lý phường An Phú",
@@ -869,17 +880,6 @@
     },
     {
       "notifyNo": "IB2600607631",
-      "name": "Xây lắp và đảm bảo an toàn giao thông",
-      "investor": "Ban quản lý phường An Phú",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607731",
       "name": "Xây lắp và đảm bảo an toàn giao thông",
       "investor": "Ban quản lý phường An Phú",
       "accepted": false,
