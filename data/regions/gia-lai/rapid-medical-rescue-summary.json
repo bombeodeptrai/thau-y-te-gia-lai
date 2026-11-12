@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-12T00:56:10.234Z",
+  "rescuedAt": "2026-11-12T05:39:02.184Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 145,
+      "count": 143,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 435,
+      "count": 429,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 23,
+      "count": 25,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -114,13 +114,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 59,
+      "count": 60,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 47,
+      "count": 44,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 18,
+      "count": 17,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 31,
+      "count": 45,
       "error": ""
     },
     {
@@ -281,35 +281,35 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 888,
+  "candidateCount": 894,
   "acceptedCount": 35,
-  "rejectedCount": 853,
+  "rejectedCount": 859,
   "rejectedReasons": {
-    "insufficient-medical-context": 283,
-    "excluded:tu van": 219,
-    "excluded:xay dung": 213,
-    "excluded:xay lap": 55,
-    "excluded:sua chua": 28,
+    "insufficient-medical-context": 286,
+    "excluded:tu van": 229,
+    "excluded:xay dung": 211,
+    "excluded:xay lap": 51,
+    "excluded:sua chua": 27,
     "excluded:bao hiem": 7,
     "excluded:tham dinh": 7,
     "excluded:cai tao": 7,
-    "excluded:may tinh": 5,
+    "excluded:may tinh": 4,
     "excluded:bao tri": 4,
     "excluded:trang phuc": 3,
     "excluded:bao ve": 3,
     "excluded:cong nghe thong tin": 3,
     "excluded:cay xanh": 2,
+    "excluded:thuc pham": 2,
     "excluded:may in": 2,
     "excluded:quan ly du an": 2,
     "excluded:ve sinh cong nghiep": 1,
     "excluded:chat thai": 1,
     "excluded:may phat dien": 1,
     "excluded:in an": 1,
-    "excluded:cap dien": 1,
     "excluded:xang dau": 1,
     "excluded:tram bien ap": 1,
+    "excluded:suat an": 1,
     "excluded:giam sat thi cong": 1,
-    "excluded:thuc pham": 1,
     "excluded:thu y": 1
   },
   "acceptedDiagnostics": [
@@ -857,6 +857,39 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600603575",
+      "name": "Thi công xây dựng công trình và lắp đặt thiết bị",
+      "investor": "Ban Quản lý phường Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607970",
+      "name": "26.64.HH Cung cấp Cột thép 12m",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600608347",
+      "name": "Cung cấp 02 Máy đào thủy lực bánh xích dung tích gầu 0,8-1m3",
+      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600607731",
       "name": "Xây lắp và đảm bảo an toàn giao thông",
       "investor": "Ban quản lý phường An Phú",
@@ -887,17 +920,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600603575",
-      "name": "Thi công xây dựng công trình và lắp đặt thiết bị",
-      "investor": "Ban Quản lý phường Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     },
     {
@@ -1266,29 +1288,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600604257",
-      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Trần Phú. Hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600604382",
-      "name": "Mua sắm máy vi tính để bàn, máy tính xách tay, máy photocopy, máy tính bảng, màn hình tương tác và thiết bị công nghệ thông tin tương đương cho các cơ sở giáo dục trên địa bàn tỉnh Gia Lai.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:may tinh",
-      "matched": [
-        "may tinh",
-        "cong nghe thong tin"
       ]
     }
   ],
