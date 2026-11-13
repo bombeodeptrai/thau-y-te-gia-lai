@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-12T16:48:53.000Z",
+  "auditedAt": "2026-11-13T01:05:17.395Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 789,
+      "count": 792,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -146,13 +146,13 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 15,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 115,
+      "count": 118,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 45,
+      "count": 44,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1617,
+  "candidateCount": 1627,
   "acceptedCount": 56,
-  "rejectedCount": 1561,
+  "rejectedCount": 1571,
   "rejectedReasons": {
-    "excluded:tu van": 509,
-    "insufficient-medical-context": 429,
-    "excluded:xay dung": 395,
+    "excluded:tu van": 514,
+    "insufficient-medical-context": 430,
+    "excluded:xay dung": 399,
     "excluded:xay lap": 68,
     "excluded:sua chua": 52,
     "excluded:cai tao": 22,
@@ -931,6 +931,43 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600125705",
+      "name": "Gói thầu số 01: Cung cấp dịch vụ hội trường, máy chiếu, âm thanh, ánh sáng, phòng ngủ, Maket, giải khát giữa giờ phục vụ Hội nghị tập huấn tại Pleiku",
+      "investor": "SỞ DÂN TỘC VÀ TÔN GIÁO TỈNH GIA LAI",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600124646",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật đầu tư xây dựng công trình: Cải tạo, chỉnh trang khuôn viên phía trước Trường Mẫu giáo Ngô Mây, dọc tuyến Quốc lộ 19B.",
+      "investor": "Ủy ban nhân dân xã Ngô Mây, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "cai tao",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600124637",
+      "name": "Tư vấn thẩm tra thiết kế BVTC và dự toán xây dựng công trình: Cải tạo, chỉnh trang khuôn viên phía trước Trường Mẫu giáo Ngô Mây, dọc tuyến Quốc lộ 19B",
+      "investor": "Ủy ban nhân dân xã Ngô Mây, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "cai tao",
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "DC2600120426",
       "name": "Lập Báo cáo nghiên cứu khả thi dự án Mua sắm các thiết bị chuyên dùng lĩnh vực phát thanh và truyền hình giai đoạn 2024-2027",
       "investor": "BÁO VÀ PHÁT THANH, TRUYỀN HÌNH GIA LAI",
@@ -1332,45 +1369,12 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "DC2600120834",
-      "name": "Gói thầu thi công xây dựng Công trình",
-      "investor": "Trường Tiểu học Lý Tự Trọng, xã Kbang, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600604879",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600605614",
-      "name": "Xây dựng các hạng mục công trình và hệ thống phòng cháy chữa cháy",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1207,
-  "afterCount": 1207,
+  "beforeCount": 1206,
+  "afterCount": 1206,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }

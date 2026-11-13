@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-12T16:49:42.665Z",
+  "rescuedAt": "2026-11-13T01:06:04.794Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 789,
+      "count": 792,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 48,
+      "count": 49,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 13,
+      "count": 14,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 15,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 115,
+      "count": 118,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 45,
+      "count": 44,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1690,
+  "candidateCount": 1700,
   "acceptedCount": 60,
-  "rejectedCount": 1630,
+  "rejectedCount": 1640,
   "rejectedReasons": {
-    "excluded:tu van": 511,
-    "insufficient-medical-context": 463,
-    "excluded:xay dung": 406,
+    "excluded:tu van": 516,
+    "insufficient-medical-context": 464,
+    "excluded:xay dung": 410,
     "excluded:xay lap": 79,
     "excluded:sua chua": 56,
     "excluded:cai tao": 22,
@@ -1390,8 +1390,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1207,
-  "afterCount": 1207,
+  "beforeCount": 1206,
+  "afterCount": 1206,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }

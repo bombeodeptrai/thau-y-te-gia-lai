@@ -6978,10 +6978,10 @@
       "notifyId": "95a8cd28-ab5c-4316-beb7-a182217d6204",
       "bidId": "18670404-5981-4471-9423-006d4f4ec2c7",
       "bidOpenId": "",
-      "inputResultId": "",
+      "inputResultId": "58aefdd1-54d7-4cbb-8e57-2d5d0ae9275f",
       "bidForm": "CGTTRG",
       "processApply": "LDT",
-      "stepCode": "reoffer-price-step-1",
+      "stepCode": "notify-contractor-step-4-kqlcnt",
       "notifyNo": "IB2600587565",
       "name": "Mua sắm dụng cụ y tế dùng trong phẫu thuật phục vụ công tác khám, chữa bệnh của Bệnh viện ĐKKV Bồng Sơn",
       "regionSlug": "gia-lai",
@@ -6996,16 +6996,16 @@
       "publicDate": "2026-10-28T10:33:13.624",
       "price": 101042000,
       "category": "Vật tư & hóa chất",
-      "status": "evaluating",
+      "status": "awarded",
       "sourceStatus": "01",
-      "statusForNotify": "DXT",
+      "statusForNotify": "KCNTTT",
       "bidderCount": 0,
-      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=95a8cd28-ab5c-4316-beb7-a182217d6204&notifyId=95a8cd28-ab5c-4316-beb7-a182217d6204&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600587565&planNo=PL2600364513&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
+      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=95a8cd28-ab5c-4316-beb7-a182217d6204&notifyId=95a8cd28-ab5c-4316-beb7-a182217d6204&inputResultId=58aefdd1-54d7-4cbb-8e57-2d5d0ae9275f&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600587565&planNo=PL2600364513&pno=&step=kqlcnt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
-      "decisionDate": "",
-      "resultPublishedDate": "",
-      "hasResult": false,
+      "decisionDate": "2026-11-13T08:04:04",
+      "resultPublishedDate": "2026-11-13T08:04:05",
+      "hasResult": true,
       "participantNames": [],
       "loserNames": [],
       "loserDetails": [],
@@ -9070,8 +9070,8 @@
         "MERUFA LUBE",
         "AZ F400 CH",
         "GL F400 CH",
-        " GT023-200",
-        "C.90.VP ",
+        "GT023-200",
+        "C.90.VP",
         "LD F060 CH",
         "DT F125 CH"
       ],
@@ -10160,18 +10160,9 @@
         "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN THIẾT BỊ Y TẾ CHÂU THANH",
         "CÔNG TY TNHH MEDITECH AUTOMATION"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN THIẾT BỊ Y TẾ CHÂU THANH",
-          "reason": "Từ chối chấp thuận được trao hợp đồng"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH MEDITECH AUTOMATION",
-          "reason": "Bị loại xếp hạng nhà thầu"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
-        " TC-720+",
+        "TC-720+",
         "URS-11"
       ],
       "losingModels": [
@@ -10820,23 +10811,14 @@
         "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG",
         "CÔNG TY TNHH OXY ĐỒNG NAI"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG",
-          "reason": "Xếp hạng 2"
-        },
-        {
-          "contractorName": "CÔNG TY TNHH OXY ĐỒNG NAI",
-          "reason": "Xếp hạng 3"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "LOX",
         "O2",
         "CO2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -15973,19 +15955,10 @@
         "Trung tâm Phân tích và Đo lường Chất lượng",
         "Trung tâm Nghiên cứu và Ứng dụng Khoa học Công nghệ"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "Trung tâm Phân tích và Đo lường Chất lượng",
-          "reason": "Không đạt kết quả đánh giá về năng lưc và kinh nghiệm"
-        },
-        {
-          "contractorName": "Trung tâm Nghiên cứu và Ứng dụng Khoa học Công nghệ",
-          "reason": "Giá dự thầu cao hơn giá kế hoạch được phê duyệt"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
       "sourceBidderCount": 2
     },
@@ -16727,14 +16700,9 @@
       "loserNames": [
         "Công Ty TNHH Công Nghệ Tín Khang"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "Công Ty TNHH Công Nghệ Tín Khang",
-          "reason": "từ chối"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
-        "E1000 ",
+        "E1000",
         "Commercial 14 B1MG (MS-14S1)",
         "LBP 2900",
         "Laser LBP 243dw II",
@@ -16743,7 +16711,7 @@
         "Scanjet Pro 3000S4"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -592624,7 +592592,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-12T18:31:32.837Z",
+  "fetchedAt": "2026-11-13T01:06:04.794Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5584,
   "regions": [
@@ -592748,7 +592716,7 @@
       "equipmentCount": 18754,
       "detailTenderCount": 1154,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-12T18:31:32.837Z",
+      "fetchedAt": "2026-11-13T01:06:04.794Z",
       "initialized": true,
       "source": "regional-scan"
     },
