@@ -2,7 +2,68 @@
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
   "total": 0,
-  "bidders": [],
+  "bidders": [
+    {
+      "id": "5da9e0df-8e9b-494b-b8d2-52774e43b3d1",
+      "contractorCode": "vn0111601750",
+      "taxCode": "0111601750",
+      "contractorName": "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed",
+      "status": "lost",
+      "lotNo": "PP2600459609",
+      "lotName": "Kìm kẹp clip polymer nội soi 5mm (Dụng cụ kẹp clip polymer nội soi cỡ ML)",
+      "bidPrice": 11500000,
+      "finalPrice": 11500000,
+      "winningPrice": 0,
+      "reason": "Đánh giá không đạt về kỹ thuật",
+      "submittedAt": "2026-11-13T08:04:05.815",
+      "models": []
+    },
+    {
+      "id": "92f0ed2a-0119-4f9f-ad62-0db9704d3e67",
+      "contractorCode": "vn0111601750",
+      "taxCode": "0111601750",
+      "contractorName": "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed",
+      "status": "lost",
+      "lotNo": "PP2600459610",
+      "lotName": "Kìm kẹp clip polymer nội soi 10mm (Dụng cụ kẹp clip polymer nội soi cỡ L)",
+      "bidPrice": 11500000,
+      "finalPrice": 11500000,
+      "winningPrice": 0,
+      "reason": "Đánh giá không đạt về kỹ thuật",
+      "submittedAt": "2026-11-13T08:04:05.816",
+      "models": []
+    },
+    {
+      "id": "a0c4dc73-84ac-4588-8842-e94729b998c4",
+      "contractorCode": "vn0111601750",
+      "taxCode": "0111601750",
+      "contractorName": "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed",
+      "status": "lost",
+      "lotNo": "PP2600459611",
+      "lotName": "Clip kẹp mạch máu polymer 5mm (Clip polymer kẹp mạch máu máu cỡ ML)",
+      "bidPrice": 4600000,
+      "finalPrice": 4600000,
+      "winningPrice": 0,
+      "reason": "Đánh giá không đạt về kỹ thuật",
+      "submittedAt": "2026-11-13T08:04:05.816",
+      "models": []
+    },
+    {
+      "id": "b4196513-e5e1-4439-9b06-4067d0d1fd0b",
+      "contractorCode": "vn0111601750",
+      "taxCode": "0111601750",
+      "contractorName": "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed",
+      "status": "lost",
+      "lotNo": "PP2600459612",
+      "lotName": "Clip kẹp mạch máu polymer 10mm (Clip polymer kẹp mạch máu máu cỡ ML)",
+      "bidPrice": 4600000,
+      "finalPrice": 4600000,
+      "winningPrice": 0,
+      "reason": "Đánh giá không đạt về kỹ thuật",
+      "submittedAt": "2026-11-13T08:04:05.816",
+      "models": []
+    }
+  ],
   "items": [],
   "requirements": {
     "total": 8,
@@ -282,7 +343,7 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
+  "modelDisclosure": "winning-bidders-only",
   "sourceIdentity": {
     "notifyNo": "IB2600587565",
     "notifyId": "95a8cd28-ab5c-4316-beb7-a182217d6204",
@@ -290,5 +351,5 @@
     "bidForm": "CGTTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-12T18:24:57.304Z"
+  "fetchedAt": "2026-11-13T01:12:40.699Z"
 }
