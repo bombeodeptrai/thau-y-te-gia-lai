@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-13T12:13:14.396Z",
+  "auditedAt": "2026-11-13T19:41:47.798Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 791,
+      "count": 790,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 81,
+      "count": 83,
       "error": ""
     },
     {
@@ -271,20 +271,20 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1610,
-  "acceptedCount": 58,
-  "rejectedCount": 1552,
+  "candidateCount": 1611,
+  "acceptedCount": 57,
+  "rejectedCount": 1554,
   "rejectedReasons": {
     "excluded:tu van": 522,
     "insufficient-medical-context": 407,
-    "excluded:xay dung": 393,
+    "excluded:xay dung": 394,
     "excluded:xay lap": 69,
     "excluded:sua chua": 53,
     "excluded:cai tao": 22,
     "excluded:tham dinh": 10,
     "excluded:bao ve": 10,
+    "excluded:bao hiem": 9,
     "excluded:bao tri": 9,
-    "excluded:bao hiem": 8,
     "excluded:thuc pham": 8,
     "excluded:may tinh": 6,
     "excluded:trang phuc": 5,
@@ -733,21 +733,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600573048",
-      "name": "Bảo trì, bảo dưỡng, hiệu chuẩn, hiệu chỉnh máy móc, thiết bị phục vụ công tác chuyên môn của các khoa phòng năm 2026",
-      "investor": "Trung tâm Kiểm soát bệnh tật tỉnh Gia Lai",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-equipment-service+medical-investor",
-      "matched": [
-        "trung tam kiem soat benh tat",
-        "bao tri",
-        "bao duong",
-        "hieu chuan",
-        "thiet bi phuc vu cong tac chuyen mon"
-      ]
-    },
-    {
       "notifyNo": "DC2600109366",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026 cho viên chức và người lao động",
       "investor": "Bảo hiểm xã hội cơ sở Pleiku",
@@ -930,6 +915,20 @@
         "ky sinh trung con trung",
         "hoa chat",
         "sinh pham"
+      ]
+    },
+    {
+      "notifyNo": "IB2600606477",
+      "name": "Mua sắm thuốc Generic bổ sung lần 1 năm 2026",
+      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
+      "accepted": true,
+      "score": 125,
+      "reason": "medical-investor+medical-drug-supply",
+      "matched": [
+        "benh vien",
+        "thuoc",
+        "mua",
+        "mua sam"
       ]
     }
   ],
@@ -1386,8 +1385,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1209,
-  "afterCount": 1209,
+  "beforeCount": 1208,
+  "afterCount": 1208,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }
