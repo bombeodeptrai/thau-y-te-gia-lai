@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-13T11:35:05.367Z",
+  "rescuedAt": "2026-11-13T17:59:18.953Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 45,
+      "count": 47,
       "error": ""
     },
     {
@@ -281,18 +281,18 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 897,
+  "candidateCount": 899,
   "acceptedCount": 33,
-  "rejectedCount": 864,
+  "rejectedCount": 866,
   "rejectedReasons": {
     "insufficient-medical-context": 275,
     "excluded:tu van": 241,
-    "excluded:xay dung": 217,
+    "excluded:xay dung": 218,
     "excluded:xay lap": 49,
     "excluded:sua chua": 26,
+    "excluded:bao hiem": 8,
     "excluded:tham dinh": 8,
     "excluded:cai tao": 8,
-    "excluded:bao hiem": 7,
     "excluded:bao tri": 5,
     "excluded:may tinh": 4,
     "excluded:trang phuc": 3,
@@ -1260,7 +1260,7 @@
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1208,
-  "afterCount": 1209,
-  "newCount": 1,
+  "afterCount": 1208,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }
