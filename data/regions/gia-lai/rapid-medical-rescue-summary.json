@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-13T03:41:29.701Z",
+  "rescuedAt": "2026-11-13T04:21:11.360Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 138,
+      "count": 140,
       "error": ""
     },
     {
@@ -286,10 +286,10 @@
   "rejectedCount": 886,
   "rejectedReasons": {
     "insufficient-medical-context": 286,
-    "excluded:tu van": 255,
-    "excluded:xay dung": 217,
+    "excluded:tu van": 253,
+    "excluded:xay dung": 218,
     "excluded:xay lap": 50,
-    "excluded:sua chua": 25,
+    "excluded:sua chua": 26,
     "excluded:bao hiem": 7,
     "excluded:tham dinh": 7,
     "excluded:cai tao": 7,
@@ -888,6 +888,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600606487",
+      "name": "26-92/SC: thi công Sửa chữa hệ thống camera các TBA 110kV",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600608193",
+      "name": "Thi công xây dựng và thiết bị",
+      "investor": "Ban Quản lý phường Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600608997",
       "name": "Sản xuất các chương trình truyền thông",
       "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
@@ -1294,34 +1316,12 @@
         "xay dung",
         "cai tao"
       ]
-    },
-    {
-      "notifyNo": "IB2600598680",
-      "name": "Cung cấp xi măng thực hiện Chương trình bê tông hóa giao thông nông thôn và kiên cố hóa kênh mương trên địa bàn phường Hoài Nhơn Tây năm 2026",
-      "investor": "Ban Quản lý phường Hoài Nhơn Tây",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600604230",
-      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án Trường THPT Số 2 An Nhơn. Hạng mục: Xây mới nhà 02 tầng gồm 05 phòng học bộ môn và 01 thư viện; khu vệ sinh học sinh; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1206,
+  "beforeCount": 1207,
   "afterCount": 1207,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }
