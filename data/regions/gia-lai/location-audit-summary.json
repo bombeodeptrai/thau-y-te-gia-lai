@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-14T11:28:46.932Z",
+  "auditedAt": "2026-11-14T18:01:03.758Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 765,
+      "count": 771,
       "error": ""
     },
     {
@@ -74,7 +74,7 @@
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 32,
+      "count": 35,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1604,
+  "candidateCount": 1612,
   "acceptedCount": 56,
-  "rejectedCount": 1548,
+  "rejectedCount": 1556,
   "rejectedReasons": {
-    "excluded:tu van": 523,
-    "insufficient-medical-context": 399,
-    "excluded:xay dung": 395,
+    "excluded:tu van": 525,
+    "insufficient-medical-context": 402,
+    "excluded:xay dung": 398,
     "excluded:xay lap": 71,
     "excluded:sua chua": 51,
     "excluded:cai tao": 23,
@@ -939,6 +939,75 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600114905",
+      "name": "Xây dựng mô hình xử lý ô nhiễm môi trường khu vực chăn nuôi và sản xuất nhỏ lẻ tại xã Chư Pưh, tỉnh Gia Lai năm 2026",
+      "investor": "Phòng Nông nghiệp - Hạ tầng xã Chư Pưh",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600131736",
+      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 04 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600131718",
+      "name": "Tư vấn lập E-HSMT và đánh giá E-HSDT. Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 04 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "lap e hsmt",
+        "danh gia e hsdt"
+      ]
+    },
+    {
+      "notifyNo": "DC2600120183",
+      "name": "Gói thầu số 3: Cung cấp dịch vụ tổ chức đào tạo nâng cao chất lượng lao động cho ngành nông nghiệp, hình thành nông dân số, nông dân chuyên nghiệp và đội ngũ quản trị hợp tác xã hiện đại trên địa bàn tỉnh Gia Lai năm 2026",
+      "investor": "CHI CỤC PHÁT TRIỂN NÔNG THÔN",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600120166",
+      "name": "Gói thầu số 2: Cung cấp dịch vụ tổ chức đào tạo nâng cao chất lượng lao động cho ngành nông nghiệp, hình thành nông dân số, nông dân chuyên nghiệp và đội ngũ quản trị hợp tác xã hiện đại trên địa bàn tỉnh Gia Lai năm 2026 (Khu vực phía đông Gia Lai)",
+      "investor": "CHI CỤC PHÁT TRIỂN NÔNG THÔN",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600119894",
+      "name": "Gói thầu số 1: Cung cấp dịch vụ tổ chức đào tạo nâng cao chất lượng lao động cho ngành nông nghiệp, hình thành nông dân số, nông dân chuyên nghiệp và đội ngũ quản trị hợp tác xã hiện đại trên địa bàn tỉnh Gia Lai năm 2026 (Khu vực phía tây Gia Lai)",
+      "investor": "CHI CỤC PHÁT TRIỂN NÔNG THÔN",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600610782",
       "name": "G13-VN-CSCC_GL_1121.3: Hỗ trợ việc xây dựng các giải pháp giảm nhẹ rủi ro dựa vào cộng đồng có sự tham gia và các kế hoạch hành động đáp ứng nhu cầu và ưu tiên của cả phụ nữ và nam giới để triển khai thực hiện",
       "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
@@ -1317,80 +1386,12 @@
       "matched": [
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "DC2600110921",
-      "name": "Tư vấn thẩm tra Báo cáo kinh kế kỹ thuật",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600110669",
-      "name": "Tư vấn lập Báo cáo kinh tế kỹ thuật đầu tư xây dựng",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600115034",
-      "name": "Xây dựng mô hình xử lý, tái sử dng rác thải hữu cơ từ chất thải rắn sinh hoạt tại xã Chư Pưh, tỉnh Gia Lai",
-      "investor": "Phòng Nông nghiệp - Hạ tầng xã Chư Pưh",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "rac thai",
-        "chat thai"
-      ]
-    },
-    {
-      "notifyNo": "DC2600117052",
-      "name": "Mua bò giống và thức ăn hỗn hợp thuộc Dự án hỗ trợ phát triển sản xuất cộng đồng - Hỗ trợ chăn nuôi bò cái lai sinh sản trên địa bàn xã Bình An, tỉnh Gia Lai, thuộc Chương trình mục tiêu quốc gia xây dựng nông thôn mới, giảm nghèo bền vững giai đoạn 2026 - 2035, giai đoạn I (từ năm 2026 đến năm 2030)",
-      "investor": "Phòng Kinh tế xã Bình An",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600104822",
-      "name": "Gói thầu: Mua sắm rèm sân khấu tại Trung tâm Hội nghị tỉnh phục vụ Quan chức cấp cao không chính thức (ISOM)",
-      "investor": "Trung tâm Văn hóa tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "DC2600109012",
-      "name": "Gói thầu: Thi công tháo dỡ, di chuyển sắp xếp bàn ghế, vệ sinh hiện trạng thảm trải sàn Hội trường lớn và nhỏ tại Trung tâm Hội nghị tỉnh phục vụ Hội nghị Quan chức cấp cao không chính thức (ISOM)",
-      "investor": "Trung tâm Văn hóa tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1208,
-  "afterCount": 1208,
+  "beforeCount": 1207,
+  "afterCount": 1207,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }
