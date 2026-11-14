@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-13T23:47:36.988Z",
+  "rescuedAt": "2026-11-14T06:48:22.868Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 132,
+      "count": 134,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 416,
+      "count": 408,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 47,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 29,
+      "count": 37,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 47,
+      "count": 51,
       "error": ""
     },
     {
@@ -222,7 +222,7 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -234,13 +234,13 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 28,
+      "count": 26,
       "error": ""
     },
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     },
     {
@@ -281,18 +281,18 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 899,
+  "candidateCount": 904,
   "acceptedCount": 33,
-  "rejectedCount": 866,
+  "rejectedCount": 871,
   "rejectedReasons": {
-    "insufficient-medical-context": 275,
-    "excluded:tu van": 241,
+    "insufficient-medical-context": 278,
+    "excluded:tu van": 245,
     "excluded:xay dung": 218,
-    "excluded:xay lap": 49,
-    "excluded:sua chua": 26,
+    "excluded:xay lap": 50,
+    "excluded:sua chua": 24,
     "excluded:bao hiem": 8,
     "excluded:tham dinh": 8,
-    "excluded:cai tao": 8,
+    "excluded:cai tao": 7,
     "excluded:bao tri": 5,
     "excluded:may tinh": 4,
     "excluded:trang phuc": 3,
@@ -828,6 +828,24 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600608465",
+      "name": "Dịch vụ khai thác, vận hành Mạng điện báo Hệ đặc biệt",
+      "investor": "Cục Bưu điện trung ương",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600608819",
+      "name": "Thi công toàn bộ khối lượng công trình",
+      "investor": "Ban Quản lý phường Quy Nhơn",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "IB2600609009",
       "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Lương Thế Vinh. Hạng mục: Nhà học 03 tầng, 06 phòng học lý thuyết, 02 phòng học bộ môn; khu vệ sinh học sinh; các hạng mục phụ và trang thiết bị.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1233,27 +1251,6 @@
       "reason": "excluded:may phat dien",
       "matched": [
         "may phat dien"
-      ]
-    },
-    {
-      "notifyNo": "IB2600600368",
-      "name": "Dịch vụ rà quét lỗ hổng bảo mật, đánh giá xâm nhập và gỡ bỏ mã độc cho các hệ thống thông tin năm 2026",
-      "investor": "CÔNG TY PHÁT TRIỂN THỦY ĐIỆN SÊ SAN - CHI NHÁNH TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600604012",
-      "name": "Mua sắm",
-      "investor": "Sư đoàn 320/Quân đoàn 34",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
       ]
     }
   ],
