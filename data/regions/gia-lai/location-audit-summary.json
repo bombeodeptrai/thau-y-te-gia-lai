@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-14T00:54:30.390Z",
+  "auditedAt": "2026-11-14T11:28:46.932Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 789,
+      "count": 765,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 17,
+      "count": 16,
       "error": ""
     },
     {
@@ -140,7 +140,7 @@
     {
       "term": "Mang Yang",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 111,
+      "count": 117,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 96,
+      "count": 97,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 82,
+      "count": 87,
       "error": ""
     },
     {
@@ -188,19 +188,19 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 22,
+      "count": 19,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 40,
+      "count": 42,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 83,
+      "count": 74,
       "error": ""
     },
     {
@@ -218,13 +218,13 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 46,
+      "count": 44,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 45,
+      "count": 54,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
@@ -271,23 +271,23 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1610,
-  "acceptedCount": 57,
-  "rejectedCount": 1553,
+  "candidateCount": 1604,
+  "acceptedCount": 56,
+  "rejectedCount": 1548,
   "rejectedReasons": {
-    "excluded:tu van": 520,
-    "insufficient-medical-context": 408,
-    "excluded:xay dung": 394,
-    "excluded:xay lap": 69,
-    "excluded:sua chua": 53,
-    "excluded:cai tao": 22,
+    "excluded:tu van": 523,
+    "insufficient-medical-context": 399,
+    "excluded:xay dung": 395,
+    "excluded:xay lap": 71,
+    "excluded:sua chua": 51,
+    "excluded:cai tao": 23,
     "excluded:tham dinh": 10,
     "excluded:bao ve": 10,
     "excluded:bao hiem": 9,
     "excluded:bao tri": 9,
-    "excluded:thuc pham": 8,
+    "excluded:thuc pham": 7,
     "excluded:may tinh": 6,
-    "excluded:trang phuc": 5,
+    "excluded:trang phuc": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
     "excluded:giam sat thi cong": 3,
@@ -304,6 +304,7 @@
     "excluded:duong day": 1,
     "excluded:may chu": 1,
     "excluded:thu y": 1,
+    "excluded:chat thai": 1,
     "excluded:bao duong": 1,
     "excluded:ve sinh cong nghiep": 1
   },
@@ -717,22 +718,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600054417",
-      "name": "Mua sắm vật tư tiêu hao thông dụng - Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": true,
-      "score": 105,
-      "reason": "medical-investor+medical-context-supply",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "vat tu tieu hao",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600109366",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026 cho viên chức và người lao động",
       "investor": "Bảo hiểm xã hội cơ sở Pleiku",
@@ -930,9 +915,61 @@
         "mua",
         "mua sam"
       ]
+    },
+    {
+      "notifyNo": "IB2600584097",
+      "name": "Gói thầu số 1: Vật tư, công cụ, dụng cụ y tế, sinh phẩm chẩn đoán in vitro mua sắm năm 2027-2028",
+      "investor": "Trung tâm Y tế Quy Nhơn",
+      "accepted": true,
+      "score": 255,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
+      "matched": [
+        "sinh pham chan doan",
+        "chan doan in vitro",
+        "dung cu y te",
+        "trung tam y te",
+        "sinh pham",
+        "chan doan",
+        "in vitro",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600610782",
+      "name": "G13-VN-CSCC_GL_1121.3: Hỗ trợ việc xây dựng các giải pháp giảm nhẹ rủi ro dựa vào cộng đồng có sự tham gia và các kế hoạch hành động đáp ứng nhu cầu và ưu tiên của cả phụ nữ và nam giới để triển khai thực hiện",
+      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600121131",
+      "name": "Tư vấn Lập nhiệm vụ khảo sát, Khảo sát địa hình, địa chất.Dự án: Trường THPT Quốc học Quy Nhơn, hạng mục: Xây mới nhà học 03 tầng, 18 phòng; cải tạo nhà để xe học sinh, sân bê tông; các hạng mục phụ và thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600119069",
+      "name": "Lập cơ sở dữ liệu quy hoạch theo GIS",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "DC2600127379",
       "name": "Rà phá bom mìn, vật nổ",
@@ -1348,40 +1385,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600604193",
-      "name": "Gói thầu XL01: Thi công xây dựng công trình đường Tôn Thất Thuyết",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600107583",
-      "name": "Gói thầu: Mua sắm thảm trải sàn tại Trung tâm Hội nghị tỉnh phục vụ Hội nghị Quan chức cấp cao không chính thức (ISOM)",
-      "investor": "Trung tâm Văn hóa tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600601827",
-      "name": "Gói thầu XL02: Thi công xây dựng công trình đường Ngô Quyền",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
