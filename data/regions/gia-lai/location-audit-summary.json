@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-13T19:41:47.798Z",
+  "auditedAt": "2026-11-14T00:54:30.390Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 790,
+      "count": 789,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 84,
+      "count": 82,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1611,
+  "candidateCount": 1610,
   "acceptedCount": 57,
-  "rejectedCount": 1554,
+  "rejectedCount": 1553,
   "rejectedReasons": {
-    "excluded:tu van": 522,
-    "insufficient-medical-context": 407,
+    "excluded:tu van": 520,
+    "insufficient-medical-context": 408,
     "excluded:xay dung": 394,
     "excluded:xay lap": 69,
     "excluded:sua chua": 53,
@@ -934,6 +934,27 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600127379",
+      "name": "Rà phá bom mìn, vật nổ",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600127397",
+      "name": "Tư vấn giám sát thi công rà phá bom mìn, vật nổ",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
       "notifyNo": "IB2600610496",
       "name": "Gói thầu xây dựng công trình Đường GTNT Làng Đút, xã Ia Lâu, tỉnh Gia Lai",
       "investor": "Phòng Kinh tế xã Ia Lâu",
@@ -1361,26 +1382,6 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "DC2600122670",
-      "name": "Tư vấn thẩm tra thiết kế bản vẽ thi công và dự toán",
-      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607307",
-      "name": "GL-Cs-01: Tuyên bố chính trị của tỉnh về giảm phát thải khí nhà kính (Thực hiện Nghiên cứu xác định các cam kết chính trị về kiểm soát và giảm nhẹ phát thải khí nhà kính)",
-      "investor": "BAN QUẢN LÝ DỰ ÁN GIẢM THIỂU KHÍ THẢI TẠI KHU VỰC TÂY NGUYÊN VÀ DUYÊN HẢI NAM TRUNG BỘ VIỆT NAM NHẰM GÓP PHẦN THỰC HIỆN CÁC MỤC TIÊU CHƯƠNG TRÌNH HÀNH ĐỘNG QUỐC GIA REDD+ TỈNH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
