@@ -68,7 +68,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=278a987b-0221-41eb-ab9b-691e2e36b7b0&notifyId=278a987b-0221-41eb-ab9b-691e2e36b7b0&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600599032&planNo=PL2600384613&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -80,9 +80,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "abcdc208-556c-4e37-a293-362edbea3b39",
@@ -110,7 +108,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=abcdc208-556c-4e37-a293-362edbea3b39&notifyId=abcdc208-556c-4e37-a293-362edbea3b39&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600610128&planNo=PL2600402050&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -122,9 +120,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "5053728f-019a-49d0-af36-a5864acf364d",
@@ -4731,7 +4727,7 @@
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [
-        "RQ9140A, RQ9140B, RQ9140C, RQ9140D",
+        "RQ9140A,\r\nRQ9140B,\r\nRQ9140C,\r\nRQ9140D",
         "RQ9128",
         "RQ9135",
         "RQ9138",
@@ -4745,7 +4741,7 @@
         "GM-001-012",
         "Cỡ 25;22;19/ OP",
         "GS-5010",
-        "3-26 DJSBEOW; 4-26 DJSBEOW; 5-26 DJSBEOW; 6-26 DJSBEOW; 7-26 DJSBEOW",
+        "3-26 DJSBEOW;\r\n 4-26 DJSBEOW; \r\n5-26 DJSBEOW;\r\n 6-26 DJSBEOW;\r\n7-26 DJSBEOW",
         "WS-B002",
         "GT022-300",
         "ST-UR08",
@@ -4800,12 +4796,17 @@
       "loserNames": [
         "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC",
+          "reason": "Nhà thầu xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "ECG-3150"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -5410,12 +5411,17 @@
       "loserNames": [
         "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ TRUNG THỊNH PHÁT"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN Y TẾ TRUNG THỊNH PHÁT",
+          "reason": "Xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "Không yêu cầu"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -7147,10 +7153,15 @@
       "loserNames": [
         "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed",
+          "reason": "Đánh giá không đạt về kỹ thuật"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -9209,8 +9220,8 @@
         "MERUFA LUBE",
         "AZ F400 CH",
         "GL F400 CH",
-        "GT023-200",
-        "C.90.VP",
+        " GT023-200",
+        "C.90.VP ",
         "LD F060 CH",
         "DT F125 CH"
       ],
@@ -10299,9 +10310,18 @@
         "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN THIẾT BỊ Y TẾ CHÂU THANH",
         "CÔNG TY TNHH MEDITECH AUTOMATION"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN THIẾT BỊ Y TẾ CHÂU THANH",
+          "reason": "Từ chối chấp thuận được trao hợp đồng"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH MEDITECH AUTOMATION",
+          "reason": "Bị loại xếp hạng nhà thầu"
+        }
+      ],
       "winningModels": [
-        "TC-720+",
+        " TC-720+",
         "URS-11"
       ],
       "losingModels": [
@@ -10950,14 +10970,23 @@
         "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG",
         "CÔNG TY TNHH OXY ĐỒNG NAI"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỠNG KHÍ ĐÀ NẴNG",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH OXY ĐỒNG NAI",
+          "reason": "Xếp hạng 3"
+        }
+      ],
       "winningModels": [
         "LOX",
         "O2",
         "CO2"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -592652,53 +592681,9 @@
       "winningModels": [],
       "losingModels": [],
       "losingModelDisclosure": ""
-    },
-    {
-      "id": "IB2300317227",
-      "notifyId": "IB2300317227",
-      "bidId": "f4aed345-f175-4fc9-8e82-090c15653804",
-      "bidOpenId": "",
-      "inputResultId": "1e02d777-6731-461a-bc66-a9370b6a9339",
-      "bidForm": "CDTRG",
-      "processApply": "LDT",
-      "stepCode": "notify-contractor-step-4-kqlcnt",
-      "notifyNo": "IB2300317227",
-      "name": "Sửa chữa màn hình máy siêu âm của Bệnh viện Đa khoa tỉnh Gia Lai",
-      "regionSlug": "gia-lai",
-      "region": "Gia Lai",
-      "provinceCodes": [
-        "52",
-        "64"
-      ],
-      "investor": "Bệnh viện đa khoa tỉnh Gia Lai",
-      "location": "Gia Lai",
-      "closeDate": "2024-02-20T11:35:46.548",
-      "publicDate": "2023-11-15T14:28:20",
-      "price": 88680000,
-      "category": "Thiết bị y tế",
-      "status": "awarded",
-      "sourceStatus": "IS_PUBLISH",
-      "statusForNotify": "CNTTT",
-      "bidderCount": 1,
-      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/home",
-      "winnerNames": [
-        "CÔNG TY TNHH Y TẾ VIỆT TIẾN"
-      ],
-      "winningPrice": 88680000,
-      "decisionDate": "2023-11-15T23:59:59",
-      "resultPublishedDate": "2023-11-15T14:28:20",
-      "hasResult": true,
-      "participantNames": [
-        "CÔNG TY TNHH Y TẾ VIỆT TIẾN"
-      ],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
-      "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-14T14:17:24.676Z",
+  "fetchedAt": "2026-11-14T15:11:56.407Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5587,
   "regions": [
@@ -592817,12 +592802,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 1208,
-      "bidderCount": 30521,
+      "tenderCount": 1207,
+      "bidderCount": 30520,
       "equipmentCount": 18758,
-      "detailTenderCount": 1156,
+      "detailTenderCount": 1155,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-14T14:17:24.676Z",
+      "fetchedAt": "2026-11-14T15:11:56.407Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -592881,6 +592866,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 5755
+    "scannedTenderCount": 5754
   }
 }
