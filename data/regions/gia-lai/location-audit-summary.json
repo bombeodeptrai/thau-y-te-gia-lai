@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-14T23:55:54.494Z",
+  "auditedAt": "2026-11-15T06:30:23.583Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 771,
+      "count": 763,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 42,
+      "count": 44,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 58,
+      "count": 57,
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
     {
       "term": "An Khê",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 38,
+      "count": 36,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 117,
+      "count": 116,
       "error": ""
     },
     {
@@ -188,13 +188,13 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 19,
+      "count": 21,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 42,
+      "count": 40,
       "error": ""
     },
     {
@@ -206,7 +206,7 @@
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 41,
+      "count": 40,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 54,
+      "count": 51,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1612,
+  "candidateCount": 1600,
   "acceptedCount": 56,
-  "rejectedCount": 1556,
+  "rejectedCount": 1544,
   "rejectedReasons": {
-    "excluded:tu van": 525,
-    "insufficient-medical-context": 402,
-    "excluded:xay dung": 398,
-    "excluded:xay lap": 71,
-    "excluded:sua chua": 51,
+    "excluded:tu van": 526,
+    "excluded:xay dung": 395,
+    "insufficient-medical-context": 395,
+    "excluded:xay lap": 70,
+    "excluded:sua chua": 49,
     "excluded:cai tao": 23,
     "excluded:tham dinh": 10,
     "excluded:bao ve": 10,
