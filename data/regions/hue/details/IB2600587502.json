@@ -1,25 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "863525d3-6e71-43fa-a380-4c29d61755c9",
+      "id": "d4c4d76c-0dfc-47d0-a456-c1d6ac401468",
       "contractorCode": "vn0600206147",
-      "taxCode": "",
+      "taxCode": "0600206147",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600459954",
       "lotName": "Rifampicin + Isoniazid",
       "bidPrice": 5210940000,
       "finalPrice": 5210940000,
-      "winningPrice": 0,
+      "winningPrice": 5210940000,
       "reason": "",
-      "submittedAt": "2026-11-04T10:01:39.766",
-      "models": []
+      "submittedAt": "2026-11-12T17:03:56.558",
+      "models": [
+        "Turbe"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600459954",
+      "name": "Turbe",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 2742600,
+      "unitPrice": 1900,
+      "amount": 5210940000,
+      "contractorCode": "vn0600206147",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
+      ],
+      "lotNo": "PP2600459954",
+      "decisionNo": "173/QĐ-BVP",
+      "decisionDate": "2026-11-12T17:03:55",
+      "resultPublishedDate": "2026-11-12T17:03:56"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -75,5 +100,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:18:41.306Z"
+  "fetchedAt": "2026-11-15T21:53:25.430Z"
 }

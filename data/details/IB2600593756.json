@@ -1,9 +1,119 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "a3b9b883-a002-49e0-ae96-6c8022859a83",
+      "contractorCode": "vn0301160832",
+      "taxCode": "0301160832",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM ĐÔ THÀNH",
+      "status": "won",
+      "lotNo": "PP2600471139",
+      "lotName": "Paracetamol (acetaminophen) 500mg, Nhóm 3",
+      "bidPrice": 193170000,
+      "finalPrice": 193170000,
+      "winningPrice": 193170000,
+      "reason": "",
+      "submittedAt": "2026-11-13T10:03:15.338",
+      "models": [
+        "-"
+      ]
+    },
+    {
+      "id": "e5e06627-1857-4f7d-b2f1-5e17afc9d63d",
+      "contractorCode": "vn1400460395",
+      "taxCode": "1400460395",
+      "contractorName": "CÔNG TY CP XUẤT NHẬP KHẨU Y TẾ DOMESCO",
+      "status": "lost",
+      "lotNo": "PP2600471139",
+      "lotName": "Paracetamol (acetaminophen) 500mg, Nhóm 3",
+      "bidPrice": 198924000,
+      "finalPrice": 198924000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-11-13T10:03:15.338",
+      "models": []
+    },
+    {
+      "id": "8971308c-11f3-4e11-b636-f824079e619b",
+      "contractorCode": "vn3200042637",
+      "taxCode": "3200042637",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ",
+      "status": "won",
+      "lotNo": "PP2600471140",
+      "lotName": "Cefalexin 750mg, Nhóm 2",
+      "bidPrice": 1283800000,
+      "finalPrice": 1283800000,
+      "winningPrice": 1283800000,
+      "reason": "",
+      "submittedAt": "2026-11-13T10:03:15.338",
+      "models": [
+        "-"
+      ]
+    },
+    {
+      "id": "b1dc6aba-f579-4214-907f-7b9f55cf4c56",
+      "contractorCode": "vn4401112861",
+      "taxCode": "4401112861",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ FP",
+      "status": "lost",
+      "lotNo": "PP2600471140",
+      "lotName": "Cefalexin 750mg, Nhóm 2",
+      "bidPrice": 1332800000,
+      "finalPrice": 1332800000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-11-13T10:03:15.338",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "62209ba1-ea6f-485c-ad85-652ee1fdc769",
+      "name": "Cefalexin 750mg",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Công ty Cổ phần Pymepharco",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Đường dùng: Uống; Dạng bào chế: Viên nang cứng; Nhóm 2",
+      "unit": "Viên",
+      "quantity": 490000,
+      "unitPrice": 2620,
+      "amount": 1283800000,
+      "contractorCode": "vn3200042637",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC VẬT TƯ Y TẾ QUẢNG TRỊ"
+      ],
+      "lotNo": "",
+      "decisionNo": "569/QĐ-TTYT",
+      "decisionDate": "2026-11-13T10:03:13",
+      "resultPublishedDate": "2026-11-13T10:03:15"
+    },
+    {
+      "id": "263d9a77-d828-4952-aee7-281e6c854148",
+      "name": "Paracetamol (acetaminophen) 500mg",
+      "model": "-",
+      "brand": "-",
+      "manufacturer": "Công ty Cổ phần S.P.M",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Đường dùng: Uống; Dạng bào chế: Viên nén bao phim; Nhóm 3",
+      "unit": "Viên",
+      "quantity": 822000,
+      "unitPrice": 235,
+      "amount": 193170000,
+      "contractorCode": "vn0301160832",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM ĐÔ THÀNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "569/QĐ-TTYT",
+      "decisionDate": "2026-11-13T10:03:13",
+      "resultPublishedDate": "2026-11-13T10:03:15"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +200,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:26:01.247Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-15T21:59:04.831Z"
 }

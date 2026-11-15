@@ -1,55 +1,104 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "e735a81a-f6a3-4fe8-8598-528bb7c51471",
+      "id": "114a1f39-925f-4ef3-a406-ca38d3459cd8",
       "contractorCode": "vn0400459581",
-      "taxCode": "",
+      "taxCode": "0400459581",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600444452",
       "lotName": "Vắc xin phòng cúm mùa (tam giá)",
       "bidPrice": 1584000000,
       "finalPrice": 1584000000,
-      "winningPrice": 0,
+      "winningPrice": 1584000000,
       "reason": "",
-      "submittedAt": "2026-11-02T14:19:38.896",
-      "models": []
+      "submittedAt": "2026-11-13T14:47:03.408",
+      "models": [
+        "Influvac"
+      ]
     },
     {
-      "id": "404e7b04-13e0-4244-8c10-6b946de06a50",
+      "id": "0ee338ff-6415-46f1-8cb6-13d6431c6804",
       "contractorCode": "vn0316417470",
-      "taxCode": "",
+      "taxCode": "0316417470",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM GIGAMED",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600444453",
       "lotName": "Vắc xin phòng sở, quai bị, rubella, thủy đậu",
       "bidPrice": 914156500,
       "finalPrice": 914156500,
-      "winningPrice": 0,
+      "winningPrice": 914156500,
       "reason": "",
-      "submittedAt": "2026-11-02T14:19:39.07",
-      "models": []
+      "submittedAt": "2026-11-13T14:47:03.408",
+      "models": [
+        "ProQuad"
+      ]
     },
     {
-      "id": "8e796da7-fd5d-45ad-a0c5-99a3605bc603",
+      "id": "32e9090b-4b9b-4560-a07f-27bc4122659d",
       "contractorCode": "vn0302597576",
-      "taxCode": "",
+      "taxCode": "0302597576",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600444455",
       "lotName": "Vắc xin phòng Não mô cầu nhóm huyết thanh A,C,Y,W",
       "bidPrice": 708225000,
       "finalPrice": 708225000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-11-02T14:19:38.655",
+      "reason": "Không đạt về tính hợp lệ",
+      "submittedAt": "2026-11-13T14:47:03.408",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600444452",
+      "name": "Influvac",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Hà Lan",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bơm tiêm",
+      "quantity": 6000,
+      "unitPrice": 264000,
+      "amount": 1584000000,
+      "contractorCode": "vn0400459581",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TƯỜNG KHUÊ"
+      ],
+      "lotNo": "PP2600444452",
+      "decisionNo": "3257/QĐ-BVĐKKH",
+      "decisionDate": "2026-11-13T14:47:02",
+      "resultPublishedDate": "2026-11-13T14:47:03"
+    },
+    {
+      "id": "2600444453",
+      "name": "ProQuad",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Hoa Kỳ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Hộp",
+      "quantity": 500,
+      "unitPrice": 1828313,
+      "amount": 914156500,
+      "contractorCode": "vn0316417470",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM GIGAMED"
+      ],
+      "lotNo": "PP2600444453",
+      "decisionNo": "3257/QĐ-BVĐKKH",
+      "decisionDate": "2026-11-13T14:47:02",
+      "resultPublishedDate": "2026-11-13T14:47:03"
+    }
+  ],
   "requirements": {
     "total": 8,
     "items": [
@@ -144,6 +193,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:27:59.174Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-15T22:01:51.235Z"
 }

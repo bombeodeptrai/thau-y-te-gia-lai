@@ -1,9 +1,272 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "46e3b2f3-4d85-49df-b1d2-65eb2720921a",
+      "contractorCode": "vn0110214734",
+      "taxCode": "0110214734",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á",
+      "status": "lost",
+      "lotNo": "PP2600489703",
+      "lotName": "Test thử nhanh HBsAg",
+      "bidPrice": 3150000,
+      "finalPrice": 3150000,
+      "winningPrice": 0,
+      "reason": "Không phải xếp hạng 1",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": [
+        "MD-U54-MET/THC/AMP/MOP",
+        "ITP01102-DS50"
+      ]
+    },
+    {
+      "id": "e784eacb-2ede-4784-ad8d-cf690c64625b",
+      "contractorCode": "vn0315146186",
+      "taxCode": "0315146186",
+      "contractorName": "CÔNG TY TNHH DƯỢC MỸ PHẨM LH",
+      "status": "lost",
+      "lotNo": "PP2600489703",
+      "lotName": "Test thử nhanh HBsAg",
+      "bidPrice": 3500000,
+      "finalPrice": 3500000,
+      "winningPrice": 0,
+      "reason": "Không phải xếp hạng 1",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": []
+    },
+    {
+      "id": "11bfc04e-7277-48c1-a24f-2661543086f1",
+      "contractorCode": "vn0316960510",
+      "taxCode": "0316960510",
+      "contractorName": "CÔNG TY TNHH BKS DIAGNOSTICS",
+      "status": "lost",
+      "lotNo": "PP2600489703",
+      "lotName": "Test thử nhanh HBsAg",
+      "bidPrice": 4070000,
+      "finalPrice": 4070000,
+      "winningPrice": 0,
+      "reason": "Không phải xếp hạng 1",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": []
+    },
+    {
+      "id": "230f1a96-b04d-4682-a3b9-3ce74352fc49",
+      "contractorCode": "vn2902219749",
+      "taxCode": "2902219749",
+      "contractorName": "CÔNG TY TNHH VẬT TƯ Y TẾ HỒNG PHÁT",
+      "status": "won",
+      "lotNo": "PP2600489703",
+      "lotName": "Test thử nhanh HBsAg",
+      "bidPrice": 3120000,
+      "finalPrice": 3120000,
+      "winningPrice": 3120000,
+      "reason": "",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": [
+        "ITP01003-DS50"
+      ]
+    },
+    {
+      "id": "f07006a6-a931-4445-87e9-601e13f76d8b",
+      "contractorCode": "vn4300361082",
+      "taxCode": "4300361082",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI",
+      "status": "lost",
+      "lotNo": "PP2600489703",
+      "lotName": "Test thử nhanh HBsAg",
+      "bidPrice": 3840000,
+      "finalPrice": 3840000,
+      "winningPrice": 0,
+      "reason": "Không phải xếp hạng 1",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": []
+    },
+    {
+      "id": "5507a63a-4baf-4103-8e99-a59d5557ffa0",
+      "contractorCode": "vn0110214734",
+      "taxCode": "0110214734",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á",
+      "status": "won",
+      "lotNo": "PP2600489704",
+      "lotName": "Test thử nhanh HCV",
+      "bidPrice": 4200000,
+      "finalPrice": 4200000,
+      "winningPrice": 4200000,
+      "reason": "",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": [
+        "MD-U54-MET/THC/AMP/MOP",
+        "ITP01102-DS50"
+      ]
+    },
+    {
+      "id": "10543a4e-6197-4e88-8504-5803227a608a",
+      "contractorCode": "vn0315146186",
+      "taxCode": "0315146186",
+      "contractorName": "CÔNG TY TNHH DƯỢC MỸ PHẨM LH",
+      "status": "lost",
+      "lotNo": "PP2600489704",
+      "lotName": "Test thử nhanh HCV",
+      "bidPrice": 4424000,
+      "finalPrice": 4424000,
+      "winningPrice": 0,
+      "reason": "Không phải xếp hạng 1",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": []
+    },
+    {
+      "id": "bea2c90e-6ff3-4397-9d2a-d338a2f324eb",
+      "contractorCode": "vn0316960510",
+      "taxCode": "0316960510",
+      "contractorName": "CÔNG TY TNHH BKS DIAGNOSTICS",
+      "status": "lost",
+      "lotNo": "PP2600489704",
+      "lotName": "Test thử nhanh HCV",
+      "bidPrice": 4404000,
+      "finalPrice": 4404000,
+      "winningPrice": 0,
+      "reason": "Không phải xếp hạng 1",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": []
+    },
+    {
+      "id": "b63655ca-a849-4c05-8cb1-aae393d2d27c",
+      "contractorCode": "vn4300361082",
+      "taxCode": "4300361082",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ QUẢNG NGÃI",
+      "status": "lost",
+      "lotNo": "PP2600489704",
+      "lotName": "Test thử nhanh HCV",
+      "bidPrice": 4452000,
+      "finalPrice": 4452000,
+      "winningPrice": 0,
+      "reason": "Không phải xếp hạng 1",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": []
+    },
+    {
+      "id": "cfe008ae-8b4a-4c5e-bf79-183b8d8e0a76",
+      "contractorCode": "vn0110214734",
+      "taxCode": "0110214734",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á",
+      "status": "won",
+      "lotNo": "PP2600489705",
+      "lotName": "Test phát hiện ma túy tổng hợp trong nước tiểu 4 chân",
+      "bidPrice": 7250000,
+      "finalPrice": 7250000,
+      "winningPrice": 7250000,
+      "reason": "",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": [
+        "MD-U54-MET/THC/AMP/MOP",
+        "ITP01102-DS50"
+      ]
+    },
+    {
+      "id": "abd02e41-0a50-4d2d-bc35-d54aa5a67f3b",
+      "contractorCode": "vn0316960510",
+      "taxCode": "0316960510",
+      "contractorName": "CÔNG TY TNHH BKS DIAGNOSTICS",
+      "status": "lost",
+      "lotNo": "PP2600489705",
+      "lotName": "Test phát hiện ma túy tổng hợp trong nước tiểu 4 chân",
+      "bidPrice": 7975000,
+      "finalPrice": 7975000,
+      "winningPrice": 0,
+      "reason": "Không phải xếp hạng 1",
+      "submittedAt": "2026-11-13T09:09:03.205",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "fa28dead-1e5e-41de-b5bd-e184a2668221",
+      "name": "Que thử xét nghiệm định tính kháng nguyên bề mặt virut viên gan B (HBsAg)",
+      "model": "ITP01003-DS50",
+      "brand": "One Step HBsAg Test",
+      "manufacturer": "InTec Products, Inc",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Phát hiện định tính kháng nguyên HBV trong mẫu huyết thanh, huyết tương người. Độ nhạy ≥ 99%. Độ đặc hiệu ≥ 99%.",
+      "unit": "Test",
+      "quantity": 800,
+      "unitPrice": 3900,
+      "amount": 3120000,
+      "contractorCode": "vn2902219749",
+      "winnerNames": [
+        "CÔNG TY TNHH VẬT TƯ Y TẾ HỒNG PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "357/QĐ-BVĐK",
+      "decisionDate": "2026-11-13T09:09:01",
+      "resultPublishedDate": "2026-11-13T09:09:03"
+    },
+    {
+      "id": "f00ef78a-3f8f-4310-9814-d1d6d93f469f",
+      "name": "Panel thử xét nghiệm định tính MET/THC/AMP/MOP",
+      "model": "MD-U54-MET/THC/AMP/MOP",
+      "brand": "Fastep",
+      "manufacturer": "Assure Tech. (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "* Bao gồm:\r\n1. THC-Marijuana (Cần Sa); \r\n2. MET-Methamphetamin (Ma túy đá); \r\n3. AMP- Amphetamin (Ma túy tổng hợp); \r\n4. MOP - Nhóm thuốc phiện (Heroin, Morphin, Codein).\r\ncó cốc đựng nước tiểu kèm theo",
+      "unit": "Test",
+      "quantity": 500,
+      "unitPrice": 14500,
+      "amount": 7250000,
+      "contractorCode": "vn0110214734",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á"
+      ],
+      "lotNo": "",
+      "decisionNo": "357/QĐ-BVĐK",
+      "decisionDate": "2026-11-13T09:09:01",
+      "resultPublishedDate": "2026-11-13T09:09:03"
+    },
+    {
+      "id": "10261241582894344",
+      "name": "Rapid Anti-HCV Test",
+      "model": "ITP01102-DS50",
+      "brand": "InTec",
+      "manufacturer": "InTec PRODUCTS, INC.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Phát hiện kháng thể kháng HCV trong huyết thanh, huyết tương, máu toàn phần người\r\nĐộ nhạy: ≥ 99%\r\nĐộ đặc hiệu: ≥ 99%.",
+      "unit": "Test",
+      "quantity": 700,
+      "unitPrice": 6000,
+      "amount": 4200000,
+      "contractorCode": "vn0110214734",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á"
+      ],
+      "lotNo": "",
+      "decisionNo": "357/QĐ-BVĐK",
+      "decisionDate": "2026-11-13T09:09:01",
+      "resultPublishedDate": "2026-11-13T09:09:03"
+    },
+    {
+      "id": "33635dd6-4b0d-4c8f-baa4-3b69e091ea8e",
+      "name": " Rapid Anti-HCV Test",
+      "model": " ITP01102-DS50",
+      "brand": " InTec",
+      "manufacturer": " InTec PRODUCTS, INC.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Phát hiện kháng thể kháng HCV trong huyết thanh, huyết tương, máu toàn phần người\r\nĐộ nhạy: ≥ 99%\r\nĐộ đặc hiệu: ≥ 99%.",
+      "unit": "Test",
+      "quantity": 700,
+      "unitPrice": 6000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN KỸ THUẬT THIẾT BỊ Y TẾ ĐÔNG NAM Á"
+      ],
+      "decisionNo": "357/QĐ-BVĐK",
+      "decisionDate": "2026-11-13T09:09:01",
+      "resultPublishedDate": "2026-11-13T09:09:03"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -122,6 +385,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:22:03.710Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-15T21:56:12.633Z"
 }

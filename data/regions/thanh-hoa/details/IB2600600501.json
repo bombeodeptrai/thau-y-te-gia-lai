@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "082d2c82-7c19-4848-b2b0-7d9e94444b0d",
+      "contractorCode": "vn0105001988",
+      "taxCode": "0105001988",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ VÀ CÔNG NGHỆ TÂN ĐẠI THÀNH",
+      "status": "won",
+      "lotNo": "BP2600973518",
+      "lotName": "Gói thầu số 02: Mua bổ sung Bơm truyền dịch tự động không PCA dùng một lần tại Nhà thuốc Bệnh viện Phụ sản Thanh Hóa năm 2026",
+      "bidPrice": 1914000000,
+      "finalPrice": 1914000000,
+      "winningPrice": 1914000000,
+      "reason": "",
+      "submittedAt": "2026-11-13T07:56:05.416",
+      "models": [
+        "CIA30-3050-EU"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "53d588d9-eda7-4bf8-9a2c-bcdaa1d7caed",
+      "name": "Bơm truyền dịch tự động không PCA dùng một lần",
+      "model": "CIA30-3050-EU",
+      "brand": "Bơm truyền dịch tự động COOPDECH không PCA (dùng một lần)",
+      "manufacturer": "Daiken Medical Co., Ltd.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Bơm truyền dịch được làm bằng vật liệu nhựa không Latex \r\n- Thể tích 300ml\r\n- Có khóa điều chỉnh 3 tốc độ: 3.0/5.0/8.0 ml/giờ; \r\n- Cổng bơm thuốc vào là loại van hai chiều, tạo điều kiện cho việc bổ sung hoặc hút ra dịch truyền. \r\n- Lọc khí: kích thước 0,2 µm, loại bỏ hết không chỉ không khí ra ngoài mà còn cả bọt khí và các hạt nhỏ xuất hiện trong dung dịch thuốc với sự gia tăng nhiệt độ.\r\n- Có cân để đo được lượng thuốc trong bơm. \r\n- Phụ kiện gồm: Bơm, nhãn mác để ghi thông tin, túi đựng bơm. \r\n- Sản phẩm đạt tiêu chuẩn ISO 13485",
+      "unit": "Cái",
+      "quantity": 3300,
+      "unitPrice": 580000,
+      "amount": 1914000000,
+      "contractorCode": "vn0105001988",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ VÀ CÔNG NGHỆ TÂN ĐẠI THÀNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "1024.QĐ-BVPS",
+      "decisionDate": "2026-11-13T07:56:03",
+      "resultPublishedDate": "2026-11-13T07:56:05"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:11:19.865Z"
+  "fetchedAt": "2026-11-15T21:48:42.352Z"
 }

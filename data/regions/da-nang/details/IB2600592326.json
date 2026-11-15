@@ -1,9 +1,220 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 8,
+  "bidders": [
+    {
+      "id": "8798d72e-5c11-40ab-8902-5ab0c5f80587",
+      "contractorCode": "vn0400476756",
+      "taxCode": "0400476756",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG",
+      "status": "won",
+      "lotNo": "PP2600468828",
+      "lotName": "LÔ I.Gói khẩu trang - Găng tay",
+      "bidPrice": 1457835000,
+      "finalPrice": 1457835000,
+      "winningPrice": 1457835000,
+      "reason": "",
+      "submittedAt": "2026-11-11T16:31:12.563",
+      "models": [
+        "KTY3PLYVT",
+        "TT",
+        "I-MED",
+        "GKTCB",
+        "GPT",
+        "GPTCTD"
+      ]
+    },
+    {
+      "id": "3208e154-6203-4988-b029-17165d419762",
+      "contractorCode": "vn0402154553",
+      "taxCode": "0402154553",
+      "contractorName": "CÔNG TY CỔ PHẦN KỸ THUẬT CAO MEKONG",
+      "status": "lost",
+      "lotNo": "PP2600468829",
+      "lotName": "LÔ II. Gói chỉ phẫu thuật",
+      "bidPrice": 124000000,
+      "finalPrice": 124000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-11-11T16:31:12.563",
+      "models": []
+    },
+    {
+      "id": "28eaa578-17cc-44f3-b014-dd57f59364ca",
+      "contractorCode": "vn0402163389",
+      "taxCode": "0402163389",
+      "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ KỸ THUẬT HƯNG PHÁT",
+      "status": "won",
+      "lotNo": "PP2600468829",
+      "lotName": "LÔ II. Gói chỉ phẫu thuật",
+      "bidPrice": 116330000,
+      "finalPrice": 116330000,
+      "winningPrice": 116330000,
+      "reason": "",
+      "submittedAt": "2026-11-11T16:31:12.563",
+      "models": [
+        "CC223026B0P",
+        "C0935204"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "8e910379-95e4-4bfe-a47c-29d9d7f3bdfc",
+      "name": "Khẩu trang y tế",
+      "model": "KTY3PLYVT",
+      "brand": "Khẩu trang y tế 3 lớp, vô trùng",
+      "manufacturer": "Tổng công ty Cổ phần y tế Danameco",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Khẩu trang y tế 3 lớp dùng trong y tế . Sản phẩm vô trùng\r\nChứng chỉ:\r\n1/ ISO 9001:2015\r\n2/ ISO 13485:2016\r\n3/ ISO 11135:2014.",
+      "unit": "Cái",
+      "quantity": 20000,
+      "unitPrice": 833,
+      "amount": 16660000,
+      "contractorCode": "vn0400476756",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1014/QĐ-BV",
+      "decisionDate": "2026-11-11T16:31:11",
+      "resultPublishedDate": "2026-11-11T16:31:12"
+    },
+    {
+      "id": "dbff7093-7535-424d-8c22-f61fb7cb6484",
+      "name": "Tấm lót nilong tiệt trùng",
+      "model": "TT",
+      "brand": "Tấm trải nylon",
+      "manufacturer": "Công ty TNHH Thiết bị y tế Damedco",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Tấm trải nylon 60cm x 80cm, tiệt trùng bằng khí EO\r\nDùng để lót, trải bàn phẫu thuật, bàn đẻ, thủ thuật\r\nQuy cách: 60 × 80cm\r\nTiêu chuẩn ISO",
+      "unit": "Miếng",
+      "quantity": 700,
+      "unitPrice": 4400,
+      "amount": 3080000,
+      "contractorCode": "vn0400476756",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1014/QĐ-BV",
+      "decisionDate": "2026-11-11T16:31:11",
+      "resultPublishedDate": "2026-11-11T16:31:12"
+    },
+    {
+      "id": "4dfa1a63-b0c6-4fe5-8c60-e646e415d0a3",
+      "name": "Găng tay khám y tế",
+      "model": "GKTCB",
+      "brand": "Găng kiểm tra dùng\r\n trong y tế",
+      "manufacturer": "Công ty cổ phần Merufa",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Được sản xuất từ cao su thiên nhiên chất lượng cao, có phủ bột chống dính - Chiều dài 240 mm ±5mm - Chiều dày 1 lớp (min): 0.10mm - Các cỡ: S,M,L,XL - Tiêu chuẩn chất lượng: CE; CFS - Xuất xứ:Việt Nam",
+      "unit": "Đôi",
+      "quantity": 600000,
+      "unitPrice": 1275,
+      "amount": 765000000,
+      "contractorCode": "vn0400476756",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1014/QĐ-BV",
+      "decisionDate": "2026-11-11T16:31:11",
+      "resultPublishedDate": "2026-11-11T16:31:12"
+    },
+    {
+      "id": "929575de-f268-471a-aaba-bdba3f7fde76",
+      "name": "Găng tay vô trùng",
+      "model": "GPT",
+      "brand": "Găng phẫu thuật tiệt trùng các số",
+      "manufacturer": "Công ty cổ phần Merufa",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Găng tay được sản xuất từ cao su thiên nhiên, tiệt trùng từng đôi, có phủ bột hoặc không phủ bột - Chiều dài (min): 280 mm. - Chiều dày: 1 lớp: 0,15±0,03 mm. - Cường lực kéo đứt: trước già hóa ≥ 14N; sau già hóa ≥ 12.5N. - Sản phẩm được tiệt trùng từng đôi. - Tiêu chuẩn chất lượng: CE; CFS - Xuất xứ:Việt Nam",
+      "unit": "Đôi",
+      "quantity": 120000,
+      "unitPrice": 4189,
+      "amount": 502680000,
+      "contractorCode": "vn0400476756",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1014/QĐ-BV",
+      "decisionDate": "2026-11-11T16:31:11",
+      "resultPublishedDate": "2026-11-11T16:31:12"
+    },
+    {
+      "id": "e58a4c3d-b01b-4633-aaac-ee9a10dfdd0b",
+      "name": "Găng tay sản khoa vô trùng",
+      "model": "GPTCTD",
+      "brand": "Găng phẫu thuật cổ tay dài tiệt trùng",
+      "manufacturer": "Công ty cổ phần Merufa",
+      "origin": "Việt Nam",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Được sản xuất từ cao su thiên nhiên chất lượng cao, có phủ bột, chống dính, thẩm thấu được, không gây kích ứng da tay. - Chiều dài (min): 490mm - 500mm. - Tiệt trùng từng đôi một. - Tiêu chuẩn chất lượng: CE; CFS",
+      "unit": "Đôi",
+      "quantity": 1000,
+      "unitPrice": 15735,
+      "amount": 15735000,
+      "contractorCode": "vn0400476756",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ QUANG TRUNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1014/QĐ-BV",
+      "decisionDate": "2026-11-11T16:31:11",
+      "resultPublishedDate": "2026-11-11T16:31:12"
+    },
+    {
+      "id": "fe70fbed-8ef4-40ea-bb16-d74c362e9244",
+      "name": "Chỉ phẫu thuật tự tiêu 3/0",
+      "model": "CC223026B0P",
+      "brand": "Chỉ DemeGut số 3/0 dài 75cm",
+      "manufacturer": "DemeTECH Corp.",
+      "origin": "Mỹ",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Chỉ tiêu Catgut Chromic số 3/0, chỉ dài 75 cm.  Kim tròn phủ silicon, độ cong 1/2 vòng tròn, kim dài 26 mm. Là chỉ tự tiêu được cấu tạo từ muối Chrom và collagen có nguồn gốc từ bò hoặc ruột cừu. Chỉ vẫn còn sức căng sau 21 ngày cấy ghép, và tự tiêu hoàn toàn trong vòng 52 đến 76 ngày. \r\n 'ISO 13485:2016 ; FDA .\r\nXuất xứ: G7",
+      "unit": "Tép",
+      "quantity": 300,
+      "unitPrice": 38000,
+      "amount": 11400000,
+      "contractorCode": "vn0402163389",
+      "winnerNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ KỸ THUẬT HƯNG PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "1014/QĐ-BV",
+      "decisionDate": "2026-11-11T16:31:11",
+      "resultPublishedDate": "2026-11-11T16:31:12"
+    },
+    {
+      "id": "e3af979d-4a48-4a26-8ec6-81bbce3b07f7",
+      "name": "Chỉ tổng hợp đơn sợi không tan 4/0",
+      "model": "C0935204",
+      "brand": "DAFILON BLUE 4/0 (1,5) 75CM DGMP19 DDP",
+      "manufacturer": "B. Braun Surgical S.A.",
+      "origin": "Tây Ban Nha",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Chỉ không tan tổng hợp đơn sợi Polyamid 6/66 Copper Phtalocyanine, số 4/0, dài 75cm, kim tam giác, 3/8 vòng tròn dài 19mm, kim Easyslide  làm bằng hợp kim AISI 300 series (304) Niken 11% theo tiêu chuẩn ASTM f899-20,  đạt độ nhám bề mặt ≤0,4 Ra, phủ silicon. Lực căng kéo nút thắt 9.81N. Đóng gói trực tiếp 2 lớp: lá nhôm bên trong, vỏ nhựa bên ngoài. Tiêu chuẩn FDA, EC, ISO.",
+      "unit": "Tép",
+      "quantity": 3500,
+      "unitPrice": 29980,
+      "amount": 104930000,
+      "contractorCode": "vn0402163389",
+      "winnerNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ KỸ THUẬT HƯNG PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "1014/QĐ-BV",
+      "decisionDate": "2026-11-11T16:31:11",
+      "resultPublishedDate": "2026-11-11T16:31:12"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -222,6 +433,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:19:19.948Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-15T21:55:02.170Z"
 }

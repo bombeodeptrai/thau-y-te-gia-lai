@@ -1,9 +1,145 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "a5756588-2c75-42c2-b8d8-1e054cff3618",
+      "contractorCode": "vn0310631333",
+      "taxCode": "0310631333",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG",
+      "status": "won",
+      "lotNo": "PP2600460214",
+      "lotName": "Metoprolol tartrat",
+      "bidPrice": 22700000,
+      "finalPrice": 22700000,
+      "winningPrice": 22700000,
+      "reason": "",
+      "submittedAt": "2026-11-11T08:19:21.621",
+      "models": [
+        "-"
+      ]
+    },
+    {
+      "id": "745bf644-c291-4cb8-9372-2134ef5113e2",
+      "contractorCode": "vn0310631333",
+      "taxCode": "0310631333",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG",
+      "status": "won",
+      "lotNo": "PP2600460215",
+      "lotName": "Metoprolol tartrat",
+      "bidPrice": 16000000,
+      "finalPrice": 16000000,
+      "winningPrice": 16000000,
+      "reason": "",
+      "submittedAt": "2026-11-11T08:19:21.621",
+      "models": [
+        "-"
+      ]
+    },
+    {
+      "id": "eb21824c-4f66-4b64-bade-9905c7d62a9f",
+      "contractorCode": "vn0105383141",
+      "taxCode": "0105383141",
+      "contractorName": "CÔNG TY TNHH BENEPHAR",
+      "status": "won",
+      "lotNo": "PP2600460217",
+      "lotName": "Hydrocortison",
+      "bidPrice": 115000000,
+      "finalPrice": 115000000,
+      "winningPrice": 115000000,
+      "reason": "",
+      "submittedAt": "2026-11-11T08:19:21.621",
+      "models": [
+        "-"
+      ]
+    },
+    {
+      "id": "86281949-8c91-4916-b9b7-0b9f1f0e5d6e",
+      "contractorCode": "vn0108092479",
+      "taxCode": "0108092479",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM SEN VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600460218",
+      "lotName": "Insulin analog tác dụng chậm, kéo dài",
+      "bidPrice": 125400000,
+      "finalPrice": 125400000,
+      "winningPrice": 125400000,
+      "reason": "",
+      "submittedAt": "2026-11-11T08:19:21.621",
+      "models": [
+        "-"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "a3b97bdc-efcd-40d3-851c-b3c558ce8557",
+      "name": "Hydrocortison",
+      "model": "-",
+      "brand": "Hydrocortisone 10 mg",
+      "manufacturer": "Công ty Cổ phần Asta Healthcare USA",
+      "origin": "Việt Nam",
+      "manufactureYear": "-",
+      "specification": "Nồng độ, Hàm lượng10mg/Đường dùngUống/Dạng bào chếViên nén/Nhóm 4",
+      "unit": "Viên nén",
+      "quantity": 25000,
+      "unitPrice": 4600,
+      "amount": 115000000,
+      "contractorCode": "vn0105383141",
+      "winnerNames": [
+        "CÔNG TY TNHH BENEPHAR"
+      ],
+      "lotNo": "",
+      "decisionNo": "553/QĐ-BVĐKNL",
+      "decisionDate": "2026-11-11T08:19:20",
+      "resultPublishedDate": "2026-11-11T08:19:21"
+    },
+    {
+      "id": "4f6f6aa2-2528-4df1-a216-ae21727714e7",
+      "name": "Metoprolol tartrat",
+      "model": "-",
+      "brand": "Carmotop 25 mg",
+      "manufacturer": "Magistra C&C S.R.L.",
+      "origin": "Romania",
+      "manufactureYear": "-",
+      "specification": "Nồng độ, Hàm lượng25mg/Đường dùngUống/Dạng bào chếViên nén/Nhóm 1",
+      "unit": "Viên nén",
+      "quantity": 10000,
+      "unitPrice": 1600,
+      "amount": 16000000,
+      "contractorCode": "vn0310631333",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "553/QĐ-BVĐKNL",
+      "decisionDate": "2026-11-11T08:19:20",
+      "resultPublishedDate": "2026-11-11T08:19:21"
+    },
+    {
+      "id": "d68a19bb-328f-4b74-bf5a-eb68b7740c94",
+      "name": "Insulin analog tác dụng chậm, kéo dài",
+      "model": "-",
+      "brand": "Glaritus",
+      "manufacturer": "Wockhardt Limited",
+      "origin": "Ấn độ",
+      "manufactureYear": "-",
+      "specification": "Nồng độ, Hàm lượng100IU/ml x 3ml/Đường dùngTiêm/Tiêm truyền/Dạng bào chếDung dịch tiêm/Nhóm 5",
+      "unit": "Dung dịch tiêm",
+      "quantity": 600,
+      "unitPrice": 209000,
+      "amount": 125400000,
+      "contractorCode": "vn0108092479",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM SEN VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "553/QĐ-BVĐKNL",
+      "decisionDate": "2026-11-11T08:19:20",
+      "resultPublishedDate": "2026-11-11T08:19:21"
+    }
+  ],
   "requirements": {
     "total": 5,
     "items": [
@@ -187,5 +323,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:11:13.859Z"
+  "fetchedAt": "2026-11-15T21:48:22.549Z"
 }

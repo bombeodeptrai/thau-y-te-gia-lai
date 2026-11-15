@@ -1,25 +1,102 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 4,
   "bidders": [
     {
-      "id": "fd1ec3a9-0539-401f-8dca-ca98001d7510",
+      "id": "33573b01-94d6-43ed-92b0-9f5afb7d361b",
       "contractorCode": "vn0101442741",
-      "taxCode": "",
+      "taxCode": "0101442741",
       "contractorName": "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600755878",
       "lotName": "Gói thầu số 3: Mua sắm thiết bị Y tế cho Trung tâm Y tế khu vực Lâm Hà năm 2026, bao gồm 4 mặt hàng",
       "bidPrice": 734000000,
       "finalPrice": 734000000,
-      "winningPrice": 0,
+      "winningPrice": 734000000,
       "reason": "",
-      "submittedAt": "2026-10-19T10:15:33.277",
+      "submittedAt": "2026-11-10T16:47:49.246",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "847538e4-97b2-4e61-b8e4-bc3abf9c4cb4",
+      "name": "Sinh hiển vi phẫu thuật mắt",
+      "model": "OM-6",
+      "brand": "OM-6",
+      "manufacturer": "Takagi Seiko Co., Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Từ năm 2025 trở về sau.",
+      "specification": "Chi tiết theo Bảng đáp ứng kỹ thuật của hàng hóa dự thầu",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 295000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "decisionNo": "252/QĐ-TTYT",
+      "decisionDate": "2026-11-10T16:47:47",
+      "resultPublishedDate": "2026-11-10T16:47:49"
+    },
+    {
+      "id": "34264547-6e10-4b20-8999-27bf46b8e70e",
+      "name": "Giường hồi sức điều khiển điện",
+      "model": "HK-9018",
+      "brand": "HK-9018",
+      "manufacturer": "Công ty TNHH Hong Ky Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "Từ năm 2025 trở về sau.",
+      "specification": "Chi tiết theo Bảng đáp ứng kỹ thuật của hàng hóa dự thầu",
+      "unit": "Máy",
+      "quantity": 2,
+      "unitPrice": 33000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "decisionNo": "252/QĐ-TTYT",
+      "decisionDate": "2026-11-10T16:47:47",
+      "resultPublishedDate": "2026-11-10T16:47:49"
+    },
+    {
+      "id": "02864ba8-af40-4498-9396-7d1d5a39dc2d",
+      "name": "Máy đo nhãn áp",
+      "model": "2418-P-2000",
+      "brand": "2418-P-2000",
+      "manufacturer": "Keeler Ltd",
+      "origin": "Anh",
+      "manufactureYear": "Từ năm 2025 trở về sau.",
+      "specification": "Chi tiết theo Bảng đáp ứng kỹ thuật của hàng hóa dự thầu",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 145000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "decisionNo": "252/QĐ-TTYT",
+      "decisionDate": "2026-11-10T16:47:47",
+      "resultPublishedDate": "2026-11-10T16:47:49"
+    },
+    {
+      "id": "1b4b598a-64a0-4f20-8a93-55c52710c612",
+      "name": "Sinh hiển vi khám mắt",
+      "model": "L-0189-LED",
+      "brand": "L-0189-LED",
+      "manufacturer": "Inami & Co., Ltd",
+      "origin": "Nhật Bản",
+      "manufactureYear": "Từ năm 2025 trở về sau.",
+      "specification": "Chi tiết theo Bảng đáp ứng kỹ thuật của hàng hóa dự thầu",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 228000000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIÊN TRƯỜNG"
+      ],
+      "decisionNo": "252/QĐ-TTYT",
+      "decisionDate": "2026-11-10T16:47:47",
+      "resultPublishedDate": "2026-11-10T16:47:49"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +122,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:30:03.307Z"
+  "fetchedAt": "2026-11-15T22:02:43.616Z"
 }

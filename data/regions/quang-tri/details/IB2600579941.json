@@ -1,25 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "fb6df2f0-dff8-4f98-8b3d-5d2ca1e81243",
+      "id": "05ac1ba3-b6c0-4b24-954c-d5ee4ff68b03",
       "contractorCode": "vn0600206147",
-      "taxCode": "",
+      "taxCode": "0600206147",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600846148",
-      "lotName": "Thuốc điều trị lao năm 2026-2027 của Bệnh viện Phổi tỉnh Quảng Trị",
+      "lotName": "Rifampicin + Isoniazid + Pyrazinamid",
       "bidPrice": 167880000,
       "finalPrice": 167880000,
-      "winningPrice": 0,
+      "winningPrice": 167880000,
       "reason": "",
-      "submittedAt": "2026-10-26T14:03:21.806",
-      "models": []
+      "submittedAt": "2026-11-09T17:07:15.058",
+      "models": [
+        "Turbezid"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600846148",
+      "name": "Turbezid",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 60000,
+      "unitPrice": 2798,
+      "amount": 167880000,
+      "contractorCode": "vn0600206147",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
+      ],
+      "lotNo": "BP2600846148",
+      "decisionNo": "180/QĐ-BVP",
+      "decisionDate": "2026-11-09T17:07:13",
+      "resultPublishedDate": "2026-11-09T17:07:15"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +70,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:15:01.203Z"
+  "fetchedAt": "2026-11-15T21:51:19.804Z"
 }

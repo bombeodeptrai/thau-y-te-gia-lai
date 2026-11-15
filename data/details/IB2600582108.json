@@ -1,9 +1,104 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "7ecadad3-a517-4833-a23d-c317435388e3",
+      "contractorCode": "vn0400101404",
+      "taxCode": "0400101404",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG",
+      "status": "won",
+      "lotNo": "PP2600444473",
+      "lotName": "Dây truyền dịch",
+      "bidPrice": 55896000,
+      "finalPrice": 55896000,
+      "winningPrice": 55896000,
+      "reason": "",
+      "submittedAt": "2026-11-13T15:41:13.219",
+      "models": [
+        "PMH: KT"
+      ]
+    },
+    {
+      "id": "55156ec0-623c-4662-bb8d-10ec06059586",
+      "contractorCode": "vn0102072003",
+      "taxCode": "0102072003",
+      "contractorName": "CÔNG TY CỔ PHẦN ĐÔNG NAM Á - VIỆT NAM",
+      "status": "lost",
+      "lotNo": "PP2600444474",
+      "lotName": "Phim X-quang khô Laser 25x30cm",
+      "bidPrice": 971250000,
+      "finalPrice": 971250000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xếp hạng 1",
+      "submittedAt": "2026-11-13T15:41:13.219",
+      "models": []
+    },
+    {
+      "id": "2808f026-f629-48bb-88ef-40dd05b2cc47",
+      "contractorCode": "vn0110983803",
+      "taxCode": "0110983803",
+      "contractorName": "CÔNG TY TNHH TBYT VIỆT NAM CBN",
+      "status": "won",
+      "lotNo": "PP2600444474",
+      "lotName": "Phim X-quang khô Laser 25x30cm",
+      "bidPrice": 951825000,
+      "finalPrice": 951825000,
+      "winningPrice": 951825000,
+      "reason": "",
+      "submittedAt": "2026-11-13T15:41:13.219",
+      "models": [
+        "8629347"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "66c6ef51-d330-4653-b522-0b1db78bb17f",
+      "name": "Bộ dây truyền dịch PMH sử dụng một lần kim thường",
+      "model": "PMH: KT",
+      "brand": "Bộ dây truyền dịch PMH sử dụng một lần kim thường",
+      "manufacturer": "MPV",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Dây truyền dịch 20 giọt/ml, Màng lọc vị trí cuối đường dây giúp lọc hầu hết các cặn thuốc, mảnh vỡ thủy tinh, an toàn cho bệnh nhân. Đầu nối Luer lock có cơ chế xoay giúp cho việc gắn kết với kim luồn chắc chắn và dễ thao tác khi sử dụng. Cung cấp kèm theo kim 21G x 1 1/2, dài ≥ 180cm. Chất liệu nhựa y tế, không có chất gây ung thư DEHP.",
+      "unit": "Cái",
+      "quantity": 17000,
+      "unitPrice": 3288,
+      "amount": 55896000,
+      "contractorCode": "vn0400101404",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC - THIẾT BỊ Y TẾ ĐÀ NẴNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "603/QĐ-TTYT",
+      "decisionDate": "2026-11-13T15:41:12",
+      "resultPublishedDate": "2026-11-13T15:41:13"
+    },
+    {
+      "id": "8372ec8c-563c-4ab2-896a-c1e142a91a4f",
+      "name": "TRIMAX TXE Laser Imaging Film (25x30cm)",
+      "model": "8629347",
+      "brand": "TRIMAX TXE Laser Imaging Film ",
+      "manufacturer": "Carestream Health, Inc ",
+      "origin": "Mỹ",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Là loại phim khô Laser. Kích thước 25x30 cm.\r\nCó thể lưu trữ phim được ≥ 30 năm trong điều kiện phù hợp (đáp ứng yêu cầu về thời hạn bảo quản hồ sơ bệnh án tại Thông tư 53/2017/TT-BYT của Bộ Y tế).\r\nTương thích máy in phim Trimax TX55.\r\nĐơn vị cung cấp chịu trách nhiệm cài đặt cấu hình và thiết lập khay phim trên máy in phim Trimax TX55 để phù hợp với kích thước phim.",
+      "unit": "Tấm",
+      "quantity": 38850,
+      "unitPrice": 24500,
+      "amount": 951825000,
+      "contractorCode": "vn0110983803",
+      "winnerNames": [
+        "CÔNG TY TNHH TBYT VIỆT NAM CBN"
+      ],
+      "lotNo": "",
+      "decisionNo": "603/QĐ-TTYT",
+      "decisionDate": "2026-11-13T15:41:12",
+      "resultPublishedDate": "2026-11-13T15:41:13"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -90,6 +185,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:19:23.471Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-15T21:55:05.240Z"
 }

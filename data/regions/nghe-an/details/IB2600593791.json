@@ -1,9 +1,136 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "9a3ba0c0-7462-4974-9eda-bf91ed4edd5b",
+      "contractorCode": "vn0310631333",
+      "taxCode": "0310631333",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG",
+      "status": "won",
+      "lotNo": "PP2600462979",
+      "lotName": "Cetuximab",
+      "bidPrice": 2540313600,
+      "finalPrice": 2540313600,
+      "winningPrice": 2540313600,
+      "reason": "",
+      "submittedAt": "2026-11-13T17:58:12.786",
+      "models": [
+        "Erbitux",
+        "Mabthera"
+      ]
+    },
+    {
+      "id": "97af07da-98dc-4ea1-8284-84d2c8a7407c",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600462980",
+      "lotName": "Goserelin acetate",
+      "bidPrice": 2203320000,
+      "finalPrice": 2203320000,
+      "winningPrice": 2203320000,
+      "reason": "",
+      "submittedAt": "2026-11-12T17:39:56.92",
+      "models": []
+    },
+    {
+      "id": "4968bafb-4ecd-4827-ae53-895a36285c3e",
+      "contractorCode": "vn0301140748",
+      "taxCode": "0301140748",
+      "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ TRANG THIẾT BỊ Y TẾ HOÀNG ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600462981",
+      "lotName": "Olaparib",
+      "bidPrice": 492156000,
+      "finalPrice": 492156000,
+      "winningPrice": 492156000,
+      "reason": "",
+      "submittedAt": "2026-11-12T17:39:56.92",
+      "models": []
+    },
+    {
+      "id": "f44d89c1-6b12-40ae-9c5c-8ed1c005445a",
+      "contractorCode": "vn0310631333",
+      "taxCode": "0310631333",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG",
+      "status": "won",
+      "lotNo": "PP2600462982",
+      "lotName": "Rituximab",
+      "bidPrice": 124845740,
+      "finalPrice": 124845740,
+      "winningPrice": 124845740,
+      "reason": "",
+      "submittedAt": "2026-11-13T17:58:12.787",
+      "models": [
+        "Erbitux",
+        "Mabthera"
+      ]
+    },
+    {
+      "id": "d362f2d8-4fe0-4112-95f8-ec1c2dfa349f",
+      "contractorCode": "vn0103053042",
+      "taxCode": "0103053042",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC LIỆU TW2",
+      "status": "won",
+      "lotNo": "PP2600462983",
+      "lotName": "Trastuzumab",
+      "bidPrice": 1178716800,
+      "finalPrice": 1178716800,
+      "winningPrice": 1178716800,
+      "reason": "",
+      "submittedAt": "2026-11-12T17:39:56.92",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "2600462979",
+      "name": "Erbitux",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Đức",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 440,
+      "unitPrice": 5773440,
+      "amount": 2540313600,
+      "contractorCode": "vn0310631333",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG"
+      ],
+      "lotNo": "PP2600462979",
+      "decisionNo": "3503/QĐ-BVUB",
+      "decisionDate": "2026-11-12T17:39:55",
+      "resultPublishedDate": "2026-11-12T17:39:56"
+    },
+    {
+      "id": "2600462982",
+      "name": "Mabthera",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Thụy Sỹ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 5,
+      "unitPrice": 24969148,
+      "amount": 124845740,
+      "contractorCode": "vn0310631333",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG"
+      ],
+      "lotNo": "PP2600462982",
+      "decisionNo": "3503/QĐ-BVUB",
+      "decisionDate": "2026-11-12T17:39:55",
+      "resultPublishedDate": "2026-11-12T17:39:56"
+    }
+  ],
   "requirements": {
     "total": 5,
     "items": [
@@ -69,5 +196,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-08T21:11:10.869Z"
+  "fetchedAt": "2026-11-15T21:48:20.753Z"
 }
