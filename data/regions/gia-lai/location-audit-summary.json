@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-15T06:30:23.583Z",
+  "auditedAt": "2026-11-15T15:40:37.665Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 763,
+      "count": 756,
       "error": ""
     },
     {
@@ -56,25 +56,25 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 39,
+      "count": 37,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 35,
+      "count": 34,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 36,
+      "count": 33,
       "error": ""
     },
     {
@@ -116,7 +116,7 @@
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 116,
+      "count": 114,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 97,
+      "count": 94,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 87,
+      "count": 86,
       "error": ""
     },
     {
@@ -194,19 +194,19 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 40,
+      "count": 38,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 74,
+      "count": 72,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 40,
+      "count": 38,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 44,
+      "count": 43,
       "error": ""
     },
     {
@@ -266,27 +266,27 @@
     {
       "term": "Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1600,
-  "acceptedCount": 56,
-  "rejectedCount": 1544,
+  "candidateCount": 1573,
+  "acceptedCount": 55,
+  "rejectedCount": 1518,
   "rejectedReasons": {
-    "excluded:tu van": 526,
-    "excluded:xay dung": 395,
-    "insufficient-medical-context": 395,
-    "excluded:xay lap": 70,
+    "excluded:tu van": 516,
+    "excluded:xay dung": 390,
+    "insufficient-medical-context": 388,
+    "excluded:xay lap": 69,
     "excluded:sua chua": 49,
-    "excluded:cai tao": 23,
+    "excluded:cai tao": 21,
     "excluded:tham dinh": 10,
     "excluded:bao ve": 10,
     "excluded:bao hiem": 9,
     "excluded:bao tri": 9,
-    "excluded:thuc pham": 7,
     "excluded:may tinh": 6,
+    "excluded:thuc pham": 6,
     "excluded:trang phuc": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
@@ -704,20 +704,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600580813",
-      "name": "Mua sắm một số y dụng cụ, tài sản của Bệnh viện Sản - Nhi tỉnh Gia Lai quý IV năm 2026",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": true,
-      "score": 105,
-      "reason": "medical-investor+medical-context-supply",
-      "matched": [
-        "benh vien",
-        "y dung cu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600109366",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026 cho viên chức và người lao động",
       "investor": "Bảo hiểm xã hội cơ sở Pleiku",
@@ -935,9 +921,58 @@
         "mua",
         "mua sam"
       ]
+    },
+    {
+      "notifyNo": "IB2600589465",
+      "name": "Gói thầu số 2: Hóa chất, vật tư dùng trong xét nghiệm mua sắm năm 2027-2028",
+      "investor": "Trung tâm Y tế Quy Nhơn",
+      "accepted": true,
+      "score": 155,
+      "reason": "medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
+      "matched": [
+        "trung tam y te",
+        "hoa chat",
+        "xet nghiem",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600610968",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 04 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600611154",
+      "name": "Toàn bộ khối lượng thi công xây dựng phần thô (cọc, móng, thân)",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600123718",
+      "name": "Gói thầu số 06: Tư vấn giám sát",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
     {
       "notifyNo": "DC2600114905",
       "name": "Xây dựng mô hình xử lý ô nhiễm môi trường khu vực chăn nuôi và sản xuất nhỏ lẻ tại xã Chư Pưh, tỉnh Gia Lai năm 2026",
@@ -1351,47 +1386,12 @@
         "xay dung",
         "tu van"
       ]
-    },
-    {
-      "notifyNo": "DC2600124538",
-      "name": "Tư vấn thẩm định hồ sơ mời thầu (E-HSMT) và thẩm định kết quả lựa chọn nhà thầu",
-      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600124519",
-      "name": "Tư vấn lập hồ sơ mời thầu (E-HSMT), đánh giá E-HSDT",
-      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "danh gia e hsdt"
-      ]
-    },
-    {
-      "notifyNo": "DC2600117561",
-      "name": "Tư vấn thẩm tra Báo cáo kinh kế kỹ thuật",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1204,
-  "afterCount": 1204,
+  "beforeCount": 1203,
+  "afterCount": 1203,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }
