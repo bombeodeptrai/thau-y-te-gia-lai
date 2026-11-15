@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-15T09:42:43.754Z",
+  "rescuedAt": "2026-11-15T22:18:37.391Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 131,
+      "count": 133,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 413,
+      "count": 415,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 16,
+      "count": 17,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 66,
+      "count": 67,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 38,
+      "count": 51,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 929,
+  "candidateCount": 945,
   "acceptedCount": 33,
-  "rejectedCount": 896,
+  "rejectedCount": 912,
   "rejectedReasons": {
-    "insufficient-medical-context": 280,
-    "excluded:tu van": 263,
-    "excluded:xay dung": 224,
+    "insufficient-medical-context": 279,
+    "excluded:tu van": 273,
+    "excluded:xay dung": 231,
     "excluded:xay lap": 50,
     "excluded:sua chua": 21,
     "excluded:bao hiem": 8,
@@ -828,6 +828,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600610968",
+      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 04 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600611154",
+      "name": "Toàn bộ khối lượng thi công xây dựng phần thô (cọc, móng, thân)",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600610782",
       "name": "G13-VN-CSCC_GL_1121.3: Hỗ trợ việc xây dựng các giải pháp giảm nhẹ rủi ro dựa vào cộng đồng có sự tham gia và các kế hoạch hành động đáp ứng nhu cầu và ưu tiên của cả phụ nữ và nam giới để triển khai thực hiện",
       "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
@@ -1227,29 +1249,6 @@
       "reason": "excluded:xay lap",
       "matched": [
         "xay lap",
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600605220",
-      "name": "Mua sắm thiết bị Hiện đại hóa hệ thống truyền thanh xã Kông Chro năm 2026",
-      "investor": "Trung tâm Dịch vụ sự nghiệp công xã Kông Chro",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600603051",
-      "name": "Gói thầu XL7.1: Thi công xây dựng hạng mục công trình: Hệ thống giao thông, thoát nước tuyến đường D6, D7, D8",
-      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ SÊ.",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
         "xay dung"
       ]
     }
