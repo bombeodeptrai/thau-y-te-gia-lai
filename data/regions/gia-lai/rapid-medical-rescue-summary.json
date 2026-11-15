@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-15T02:06:14.057Z",
+  "rescuedAt": "2026-11-15T09:42:43.754Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 134,
+      "count": 131,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 416,
+      "count": 413,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 68,
+      "count": 66,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 10,
+      "count": 12,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 51,
+      "count": 50,
       "error": ""
     },
     {
@@ -281,15 +281,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 932,
+  "candidateCount": 929,
   "acceptedCount": 33,
-  "rejectedCount": 899,
+  "rejectedCount": 896,
   "rejectedReasons": {
-    "insufficient-medical-context": 282,
-    "excluded:tu van": 262,
+    "insufficient-medical-context": 280,
+    "excluded:tu van": 263,
     "excluded:xay dung": 224,
     "excluded:xay lap": 50,
-    "excluded:sua chua": 23,
+    "excluded:sua chua": 21,
     "excluded:bao hiem": 8,
     "excluded:cai tao": 8,
     "excluded:tham dinh": 8,
@@ -1256,8 +1256,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1204,
-  "afterCount": 1204,
+  "beforeCount": 1203,
+  "afterCount": 1203,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }
