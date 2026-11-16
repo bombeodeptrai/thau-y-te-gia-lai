@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-15T22:18:37.391Z",
+  "rescuedAt": "2026-11-16T08:08:13.727Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 133,
+      "count": 131,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 415,
+      "count": 381,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 41,
+      "count": 50,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -72,13 +72,13 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 0,
+      "count": 2,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 67,
+      "count": 66,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 47,
+      "count": 45,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 37,
+      "count": 34,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 29,
+      "count": 37,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 51,
+      "count": 49,
       "error": ""
     },
     {
@@ -270,7 +270,7 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 6,
+      "count": 4,
       "error": ""
     },
     {
@@ -281,18 +281,18 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 945,
-  "acceptedCount": 33,
-  "rejectedCount": 912,
+  "candidateCount": 919,
+  "acceptedCount": 32,
+  "rejectedCount": 887,
   "rejectedReasons": {
-    "insufficient-medical-context": 279,
-    "excluded:tu van": 273,
-    "excluded:xay dung": 231,
-    "excluded:xay lap": 50,
-    "excluded:sua chua": 21,
-    "excluded:bao hiem": 8,
+    "excluded:tu van": 283,
+    "insufficient-medical-context": 274,
+    "excluded:xay dung": 228,
+    "excluded:xay lap": 25,
+    "excluded:sua chua": 20,
     "excluded:cai tao": 8,
-    "excluded:tham dinh": 8,
+    "excluded:bao hiem": 7,
+    "excluded:tham dinh": 7,
     "excluded:bao tri": 5,
     "excluded:may tinh": 4,
     "excluded:trang phuc": 3,
@@ -301,6 +301,7 @@
     "excluded:cay xanh": 2,
     "excluded:bao ve": 2,
     "excluded:thuc pham": 2,
+    "excluded:giam sat thi cong": 2,
     "excluded:may in": 2,
     "excluded:quan ly du an": 2,
     "excluded:ve sinh cong nghiep": 1,
@@ -308,8 +309,7 @@
     "excluded:in an": 1,
     "excluded:xang dau": 1,
     "excluded:tram bien ap": 1,
-    "excluded:suat an": 1,
-    "excluded:giam sat thi cong": 1
+    "excluded:suat an": 1
   },
   "acceptedDiagnostics": [
     {
@@ -748,21 +748,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600090627",
-      "name": "Cung cấp, lắp đặt giường inox, tủ đầu giường inox phục vụ bệnh nhân khoa Nhi thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": true,
-      "score": 145,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "thuoc",
-        "cung cap",
-        "benh nhan"
-      ]
-    },
-    {
       "notifyNo": "DC2600109366",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026 cho viên chức và người lao động",
       "investor": "Bảo hiểm xã hội cơ sở Pleiku",
@@ -827,6 +812,29 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600605769",
+      "name": "Thi công xây dựng và thiết bị kỹ thuật công trình",
+      "investor": "Ban Quản lý phường Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600609864",
+      "name": "Mua sắm nguồn 48VDC và Accu Lithium 48V 100Ah",
+      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600610968",
       "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 04 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
@@ -1226,29 +1234,6 @@
       "score": -100,
       "reason": "excluded:xay dung",
       "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600605614",
-      "name": "Xây dựng các hạng mục công trình và hệ thống phòng cháy chữa cháy",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600605157",
-      "name": "Gói thầu xây lắp: Toàn bộ khối lượng xây dựng công trình",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap",
         "xay dung"
       ]
     }
