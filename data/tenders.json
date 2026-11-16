@@ -1,6 +1,48 @@
 {
   "tenders": [
     {
+      "id": "7ae3f7cb-ad00-4272-9b2e-53c1c63edc02",
+      "notifyId": "7ae3f7cb-ad00-4272-9b2e-53c1c63edc02",
+      "bidId": "00707050-2116-4c16-a78e-30782e183f93",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "CGTTRG",
+      "processApply": "LDT",
+      "stepCode": "reoffer-price-step-1",
+      "notifyNo": "IB2600611966",
+      "name": "Sửa chữa Máy siêu âm và Hệ thống nội soi chẩn đoán phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Gia Lai",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "location": "Phường Pleiku",
+      "closeDate": "2026-11-23T09:00:00",
+      "publicDate": "2026-11-16T17:00:22.856",
+      "price": 1457000000,
+      "category": "Thiết bị y tế",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceBidderCount": null,
+      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=7ae3f7cb-ad00-4272-9b2e-53c1c63edc02&notifyId=7ae3f7cb-ad00-4272-9b2e-53c1c63edc02&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600611966&planNo=PL2600405123&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "5cccae1b-597b-4f89-bb8d-7174bcf5e63e",
       "notifyId": "5cccae1b-597b-4f89-bb8d-7174bcf5e63e",
       "bidId": "dd86f78b-aa5f-4c97-92ec-07a06329c5e5",
@@ -602367,9 +602409,9 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-16T08:08:13.727Z",
+  "fetchedAt": "2026-11-16T11:53:14.664Z",
   "source": "muasamcong-public-api-central-region",
-  "detailTenderCount": 5692,
+  "detailTenderCount": 5693,
   "regions": [
     {
       "slug": "thanh-hoa",
@@ -602486,12 +602528,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 1203,
+      "tenderCount": 1204,
       "bidderCount": 30529,
       "equipmentCount": 18765,
-      "detailTenderCount": 1150,
+      "detailTenderCount": 1151,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-16T08:08:13.727Z",
+      "fetchedAt": "2026-11-16T11:53:14.664Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -602550,6 +602592,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 5856
+    "scannedTenderCount": 5857
   }
 }
