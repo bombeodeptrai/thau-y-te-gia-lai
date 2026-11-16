@@ -1,9 +1,218 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 7,
+  "bidders": [
+    {
+      "id": "8d816cf3-e8b8-4b0a-b1fc-2879adbfb90a",
+      "contractorCode": "vn0107934108",
+      "taxCode": "0107934108",
+      "contractorName": "CÔNG TY CỔ PHẦN BIOMED TECH",
+      "status": "lost",
+      "lotNo": "BP2600980671",
+      "lotName": "Mua sắm hóa chất xét nghiệm lần 2 phục vụ hoạt động thường xuyên năm 2026 của Trung tâm y tế An Lão",
+      "bidPrice": 926296000,
+      "finalPrice": 926296000,
+      "winningPrice": 0,
+      "reason": "nhà thầu không xếp hạng thứ 1",
+      "submittedAt": "2026-11-16T09:32:17.684",
+      "models": []
+    },
+    {
+      "id": "84448be7-626c-448e-8ea0-f6431f8b30b1",
+      "contractorCode": "vn0110365500",
+      "taxCode": "0110365500",
+      "contractorName": "Công ty TNHH Công nghệ B2K",
+      "status": "lost",
+      "lotNo": "BP2600980671",
+      "lotName": "Mua sắm hóa chất xét nghiệm lần 2 phục vụ hoạt động thường xuyên năm 2026 của Trung tâm y tế An Lão",
+      "bidPrice": 838500000,
+      "finalPrice": 838500000,
+      "winningPrice": 0,
+      "reason": "nhà thầu không xếp hạng thứ 1",
+      "submittedAt": "2026-11-16T09:32:17.684",
+      "models": []
+    },
+    {
+      "id": "51684b82-4846-466c-b85d-6d2d4e45308e",
+      "contractorCode": "vn0200423732",
+      "taxCode": "0200423732",
+      "contractorName": "CÔNG TY TNHH HOÀNG OÁNH",
+      "status": "won",
+      "lotNo": "BP2600980671",
+      "lotName": "Mua sắm hóa chất xét nghiệm lần 2 phục vụ hoạt động thường xuyên năm 2026 của Trung tâm y tế An Lão",
+      "bidPrice": 794405000,
+      "finalPrice": 794405000,
+      "winningPrice": 794405000,
+      "reason": "",
+      "submittedAt": "2026-11-16T09:32:17.684",
+      "models": [
+        "105-012283-00",
+        "105-012298-00",
+        "105-002424-00",
+        "105-002225-00",
+        "105-012288-00",
+        "W-31D",
+        "W-31L"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "36926334-17b0-47d5-9838-53491506e614",
+      "name": "Hóa chất pha loãng dùng cho máy xét nghiệm huyết học",
+      "model": "105-012283-00",
+      "brand": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "origin": "Trung Quốc ",
+      "manufactureYear": "Năm 2026 trở đi ",
+      "specification": "Hóa chất  tham gia đo các thông\r\n số liên quan đến RBC, PLT, WBC, RET và NRBC. \r\n*Thành phần:\r\nTris Buffer: ≤ 0.5%\r\nSodium Chloride: ≤ 0.1%\r\nThùng: 20 lít\r\nĐạt tiêu chuẩn ISO 13485",
+      "unit": "Thùng",
+      "quantity": 42,
+      "unitPrice": 2800000,
+      "amount": 117600000,
+      "contractorCode": "vn0200423732",
+      "winnerNames": [
+        "CÔNG TY TNHH HOÀNG OÁNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "580/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:32:17",
+      "resultPublishedDate": "2026-11-16T09:32:17"
+    },
+    {
+      "id": "e2d7054d-c537-4b70-8dcf-94725adab44e",
+      "name": "Hóa chất nhuộm tế bào dùng cho máy xét nghiệm huyết học",
+      "model": "105-012298-00",
+      "brand": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "origin": "Trung Quốc ",
+      "manufactureYear": "Năm 2026 trở đi ",
+      "specification": "Dung dịch nhuộm các tế bào bạch cầu.\r\n*Thành phần:\r\nFluorochrome: ≤ 0.01%\r\nEthylene Glycol: 94-99 %\r\nHộp: (4x12ml)\r\nĐạt tiêu chuẩn ISO 13485",
+      "unit": "Hộp",
+      "quantity": 60,
+      "unitPrice": 8000000,
+      "amount": 480000000,
+      "contractorCode": "vn0200423732",
+      "winnerNames": [
+        "CÔNG TY TNHH HOÀNG OÁNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "580/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:32:17",
+      "resultPublishedDate": "2026-11-16T09:32:17"
+    },
+    {
+      "id": "fbbe46c7-402a-4910-b8ad-17a148424bd0",
+      "name": "Chất kiểm chuẩn xét nghiệm định lượng các thông số huyết học",
+      "model": "105-002424-00",
+      "brand": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "origin": "Trung Quốc ",
+      "manufactureYear": "Năm 2026 trở đi ",
+      "specification": "*Thành phần: hồng cầu người, bạch cầu và tiểu cầu động vật có vú, chất ổn định và bảo quản trong một dung dịch tương tự huyết tương. \r\nHộp: (6 x 4,5ml)\r\nĐạt tiêu chuẩn ISO 13485",
+      "unit": "Hộp",
+      "quantity": 5,
+      "unitPrice": 17000000,
+      "amount": 85000000,
+      "contractorCode": "vn0200423732",
+      "winnerNames": [
+        "CÔNG TY TNHH HOÀNG OÁNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "580/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:32:17",
+      "resultPublishedDate": "2026-11-16T09:32:17"
+    },
+    {
+      "id": "b1b163eb-bb31-4688-94e4-187fc2961d5a",
+      "name": "Hóa chất rửa dùng cho máy phân tích huyết học",
+      "model": "105-002225-00",
+      "brand": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "origin": "Trung Quốc ",
+      "manufactureYear": "Năm 2026 trở đi ",
+      "specification": "Thành phần tối thiểu gồm: Surfactant: ≤ 0.2% Sodium hypochlorite: ≤ 12% Sodium hydroxide: ≤ 5%  \r\nChai: 50ml \r\nĐạt tiêu chuẩn ISO 13485",
+      "unit": "Lọ",
+      "quantity": 4,
+      "unitPrice": 551250,
+      "amount": 2205000,
+      "contractorCode": "vn0200423732",
+      "winnerNames": [
+        "CÔNG TY TNHH HOÀNG OÁNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "580/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:32:17",
+      "resultPublishedDate": "2026-11-16T09:32:17"
+    },
+    {
+      "id": "be3a76d1-8706-4604-8ab6-cbce00377fd7",
+      "name": "Dung dịch ly giải",
+      "model": "105-012288-00",
+      "brand": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "manufacturer": "Shenzhen Mindray Bio-medical Electronics Co., Ltd",
+      "origin": "Trung Quốc ",
+      "manufactureYear": "Năm 2026 trở đi ",
+      "specification": "Dung dịch ly giải\r\n*Thành phần: \r\nSurfactant: ≤ 0.5%\r\nHepes Buffer: ≤ 0.5%\r\nHộp: 4L\r\nĐạt tiêu chuẩn ISO 13485",
+      "unit": "Lít",
+      "quantity": 20,
+      "unitPrice": 2900000,
+      "amount": 58000000,
+      "contractorCode": "vn0200423732",
+      "winnerNames": [
+        "CÔNG TY TNHH HOÀNG OÁNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "580/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:32:17",
+      "resultPublishedDate": "2026-11-16T09:32:17"
+    },
+    {
+      "id": "15aeec30-487a-4b3a-bd91-3f7f89c56e3c",
+      "name": "Diluent",
+      "model": "W-31D",
+      "brand": "Wheisman Medical Technology Co.Ltd",
+      "manufacturer": "Wheisman Medical Technology Co.Ltd",
+      "origin": "Trung Quốc ",
+      "manufactureYear": "Năm 2026 trở đi ",
+      "specification": "Chất pha loãng được sử dụng làm thuốc thử pha loãng mẫu máu toàn phần.\r\nThành phần: Sodium Chloride;  Sodium    Sulphate; Buffer Stabiliser\r\nThùng: 20L; \r\nĐạt tiêu chuẩn ISO 13485",
+      "unit": "Thùng",
+      "quantity": 12,
+      "unitPrice": 2100000,
+      "amount": 25200000,
+      "contractorCode": "vn0200423732",
+      "winnerNames": [
+        "CÔNG TY TNHH HOÀNG OÁNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "580/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:32:17",
+      "resultPublishedDate": "2026-11-16T09:32:17"
+    },
+    {
+      "id": "6f6fb2de-26f2-48f8-93ba-0c046c7b4ea3",
+      "name": "Lyse",
+      "model": "W-31L",
+      "brand": "Wheisman Medical Technology Co.Ltd",
+      "manufacturer": "Wheisman Medical Technology Co.Ltd",
+      "origin": "Trung Quốc ",
+      "manufactureYear": "Năm 2026 trở đi ",
+      "specification": "Sử dụng làm thuốc thử ly giải máu để xét nghiệm số lượng bạch cầu, số lượng tế bào lympho, tế bào giữa, số lượng bạch cầu hạt. \r\nThành phần: Quaterner;  Ammonium Salt Buffer\r\nLọ : 500ml. \r\nĐạt tiêu chuẩn ISO 13485",
+      "unit": "Lọ",
+      "quantity": 12,
+      "unitPrice": 2200000,
+      "amount": 26400000,
+      "contractorCode": "vn0200423732",
+      "winnerNames": [
+        "CÔNG TY TNHH HOÀNG OÁNH"
+      ],
+      "lotNo": "",
+      "decisionNo": "580/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:32:17",
+      "resultPublishedDate": "2026-11-16T09:32:17"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -190,7 +399,7 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
+  "modelDisclosure": "winning-bidders-only",
   "sourceIdentity": {
     "notifyNo": "IB2600601494",
     "notifyId": "4c029ec5-fbb3-47c8-95ba-e2a988beab3a",
@@ -198,5 +407,5 @@
     "bidForm": "CGTTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-15T21:59:10.695Z"
+  "fetchedAt": "2026-11-16T06:47:57.844Z"
 }
