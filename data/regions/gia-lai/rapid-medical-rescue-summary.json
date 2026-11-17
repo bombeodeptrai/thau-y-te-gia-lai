@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-17T03:11:23.279Z",
+  "rescuedAt": "2026-11-17T10:19:52.979Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 145,
+      "count": 152,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 397,
+      "count": 377,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 26,
+      "count": 30,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 6,
+      "count": 8,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 1,
+      "count": 11,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
@@ -114,13 +114,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 16,
+      "count": 11,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 6,
+      "count": 8,
       "error": ""
     },
     {
@@ -138,7 +138,7 @@
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 10,
+      "count": 8,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 66,
+      "count": 72,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 49,
+      "count": 51,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 29,
+      "count": 34,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 26,
+      "count": 23,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 58,
+      "count": 59,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 36,
+      "count": 38,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 48,
+      "count": 47,
       "error": ""
     },
     {
@@ -281,34 +281,33 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 942,
+  "candidateCount": 944,
   "acceptedCount": 33,
-  "rejectedCount": 909,
+  "rejectedCount": 911,
   "rejectedReasons": {
-    "excluded:tu van": 284,
-    "insufficient-medical-context": 265,
-    "excluded:xay dung": 256,
-    "excluded:xay lap": 25,
+    "excluded:tu van": 298,
+    "excluded:xay dung": 266,
+    "insufficient-medical-context": 239,
+    "excluded:xay lap": 30,
     "excluded:sua chua": 20,
     "excluded:bao hiem": 8,
     "excluded:cai tao": 8,
     "excluded:tham dinh": 6,
-    "excluded:bao tri": 5,
+    "excluded:may tinh": 5,
     "excluded:trang phuc": 4,
-    "excluded:may tinh": 4,
     "excluded:cong nghe thong tin": 4,
+    "excluded:bao tri": 4,
+    "excluded:bao ve": 3,
     "excluded:thuc pham": 3,
     "excluded:chat thai": 2,
     "excluded:cay xanh": 2,
-    "excluded:bao ve": 2,
     "excluded:giam sat thi cong": 2,
     "excluded:may in": 2,
-    "excluded:quan ly du an": 2,
     "excluded:ve sinh cong nghiep": 1,
     "excluded:may phat dien": 1,
-    "excluded:in an": 1,
     "excluded:xang dau": 1,
-    "excluded:suat an": 1
+    "excluded:suat an": 1,
+    "excluded:quan ly du an": 1
   },
   "acceptedDiagnostics": [
     {
@@ -832,6 +831,157 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600608974",
+      "name": "27.08.HH Cung cấp cáp nhôm bọc các loại",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600610388",
+      "name": "Mua sắm phần mềm",
+      "investor": "Trường Đại học Quy Nhơn",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600608879",
+      "name": "27.07.HH Cung cấp cáp nhôm trần, cáp thép các loại",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600613181",
+      "name": "Cung cấp 02 xe xúc lật bánh lốp",
+      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607918",
+      "name": "27.03.HH Cung cấp cột bê tông ly tâm, móng cột khu vực Tây Gia Lai",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600612943",
+      "name": "Mua sắm mới xe ô tô phục vụ công tác chung",
+      "investor": "Văn phòng Đoàn ĐBQH và HĐND tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600605067",
+      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
+      "investor": "Ban Quản lý phường Bồng Sơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607600",
+      "name": "Gói thầu số 14/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 14",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607589",
+      "name": "Gói thầu số 13/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 13",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607575",
+      "name": "Gói thầu số 12/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 12",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "IB2600609741",
+      "name": "Trồng và chăm sóc bảo vệ rừng trồng sản xuất",
+      "investor": "Ban quản lý rừng phòng hộ Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ve",
+      "matched": [
+        "bao ve"
+      ]
+    },
+    {
+      "notifyNo": "IB2600597338",
+      "name": "Toàn bộ khối lượng thi công xây dựng",
+      "investor": "Ban Quản lý xã Cát Tiến",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604216",
+      "name": "Toàn bộ khối lượng thi công xây dựng và thiết bị Dự án: Chỉnh trang vỉa hè tuyến đường Hoàng sa; Hạng mục: Đoạn từ cầu suối Đá đến cầu suối Ông Sung",
+      "investor": "Ban Quản lý xã Cát Tiến",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600607073",
       "name": "Toàn bộ khối lượng thi công xây dựng",
       "investor": "Ban Quản lý xã Cát Tiến",
@@ -1154,145 +1304,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600609009",
-      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Lương Thế Vinh. Hạng mục: Nhà học 03 tầng, 06 phòng học lý thuyết, 02 phòng học bộ môn; khu vệ sinh học sinh; các hạng mục phụ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600609455",
-      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Hà Huy Tập.Hạng mục: Nhà 03 tầng gồm 12 phòng học lý thuyết, 02 phòng học bộ môn;nhà vệ sinh; sân bê tông; hệ thống phòng cháy, chữa cháy; thiết bị phòng cháy, chữa cháy, thiết bị dạy học.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600606487",
-      "name": "26-92/SC: thi công Sửa chữa hệ thống camera các TBA 110kV",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608193",
-      "name": "Thi công xây dựng và thiết bị",
-      "investor": "Ban Quản lý phường Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608997",
-      "name": "Sản xuất các chương trình truyền thông",
-      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600605914",
-      "name": "Gói thầu số 01: Thi công xây dựng + Thiết bị",
-      "investor": "Ban quản lý phường Pleiku",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608614",
-      "name": "Xây dựng hồ sơ thuyết minh Chương trình nghiên cứu tổng thể, toàn diện di tích Rộc Tưng - Gò Đá, đá cũ An Khê, tỉnh Gia Lai giai đoạn 2026-2030",
-      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600604109",
-      "name": "Thi công xây dựng công trình",
-      "investor": "Ban Quản lý xã Đức Cơ",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600606802",
-      "name": "Quan trắc môi trường lao động tại Tổng công ty Quản lý bay Việt Nam",
-      "investor": "TỔNG CÔNG TY QUẢN LÝ BAY VIỆT NAM - CÔNG TY TNHH",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "IB2600603575",
-      "name": "Thi công xây dựng công trình và lắp đặt thiết bị",
-      "investor": "Ban Quản lý phường Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607970",
-      "name": "26.64.HH Cung cấp Cột thép 12m",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608347",
-      "name": "Cung cấp 02 Máy đào thủy lực bánh xích dung tích gầu 0,8-1m3",
-      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607731",
-      "name": "Xây lắp và đảm bảo an toàn giao thông",
-      "investor": "Ban quản lý phường An Phú",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
     }
   ],
   "removedManualCount": 0,
