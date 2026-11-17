@@ -36,10 +36,29 @@
       "decisionDate": "2026-11-12T23:59:59",
       "resultPublishedDate": "2026-11-17T08:32:30",
       "hasResult": true,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY TNHH DƯỢC AN KHANG KT"
+      ],
       "loserNames": [],
       "loserDetails": [],
-      "winningModels": [],
+      "winningModels": [
+        "PT-2000",
+        "KCB-16",
+        "GPT-10X10X12",
+        "BCN-WINGO",
+        "PO100",
+        "NG-10C",
+        "BTC-100",
+        "Sulfa",
+        "YDC-1A10",
+        "DAYGR_01",
+        "Nẹp cổ mềm",
+        "BT-3M-VIDUGO",
+        "PT-16CM",
+        "CRW-23",
+        "BKL-VITASGO-2.5x4",
+        "BCX-10x5"
+      ],
       "losingModels": [],
       "losingModelDisclosure": "",
       "sourceStage": "official-public-search"
@@ -71,7 +90,6 @@
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": 0,
-      "sourceBidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=21002c5b-0b4a-4c6e-86a7-19d4b9d2135c&notifyId=21002c5b-0b4a-4c6e-86a7-19d4b9d2135c&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600609403&planNo=PL2600387454&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -84,6 +102,7 @@
       "winningModels": [],
       "losingModels": [],
       "losingModelDisclosure": "",
+      "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
     {
@@ -112,7 +131,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=7ae3f7cb-ad00-4272-9b2e-53c1c63edc02&notifyId=7ae3f7cb-ad00-4272-9b2e-53c1c63edc02&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600611966&planNo=PL2600405123&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -124,9 +143,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "5cccae1b-597b-4f89-bb8d-7174bcf5e63e",
@@ -6471,7 +6488,16 @@
         "CÔNG TY CỔ PHẦN BIOMED TECH",
         "Công ty TNHH Công nghệ B2K"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN BIOMED TECH",
+          "reason": "nhà thầu không xếp hạng thứ 1"
+        },
+        {
+          "contractorName": "Công ty TNHH Công nghệ B2K",
+          "reason": "nhà thầu không xếp hạng thứ 1"
+        }
+      ],
       "winningModels": [
         "105-012283-00",
         "105-012298-00",
@@ -6482,7 +6508,7 @@
         "W-31L"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -9508,7 +9534,7 @@
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [
-        "RQ9140A, RQ9140B, RQ9140C, RQ9140D",
+        "RQ9140A,\r\nRQ9140B,\r\nRQ9140C,\r\nRQ9140D",
         "RQ9128",
         "RQ9135",
         "RQ9138",
@@ -9522,13 +9548,15 @@
         "GM-001-012",
         "Cỡ 25;22;19/ OP",
         "GS-5010",
-        "3-26 DJSBEOW; 4-26 DJSBEOW; 5-26 DJSBEOW; 6-26 DJSBEOW; 7-26 DJSBEOW",
+        "3-26 DJSBEOW;\r\n 4-26 DJSBEOW; \r\n5-26 DJSBEOW;\r\n 6-26 DJSBEOW;\r\n7-26 DJSBEOW",
         "WS-B002",
         "GT022-300",
         "ST-UR08",
         "GT020-100",
         "1 way",
-        "TB*PU300L"
+        "TB*PU300L",
+        "RQ9140A, RQ9140B, RQ9140C, RQ9140D",
+        "3-26 DJSBEOW; 4-26 DJSBEOW; 5-26 DJSBEOW; 6-26 DJSBEOW; 7-26 DJSBEOW"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -14862,10 +14890,12 @@
         "MERUFA LUBE",
         "AZ F400 CH",
         "GL F400 CH",
-        "GT023-200",
-        "C.90.VP",
+        " GT023-200",
+        "C.90.VP ",
         "LD F060 CH",
-        "DT F125 CH"
+        "DT F125 CH",
+        "GT023-200",
+        "C.90.VP"
       ],
       "losingModels": [],
       "losingModelDisclosure": "",
@@ -16257,8 +16287,9 @@
       ],
       "loserDetails": [],
       "winningModels": [
-        "TC-720+",
-        "URS-11"
+        " TC-720+",
+        "URS-11",
+        "TC-720+"
       ],
       "losingModels": [
         "TC-720+"
@@ -602462,7 +602493,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-17T02:59:04.140Z",
+  "fetchedAt": "2026-11-17T03:01:29.768Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5695,
   "regions": [
@@ -602582,11 +602613,11 @@
         "64"
       ],
       "tenderCount": 1205,
-      "bidderCount": 30533,
-      "equipmentCount": 18774,
+      "bidderCount": 30534,
+      "equipmentCount": 18790,
       "detailTenderCount": 1152,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-17T02:59:04.140Z",
+      "fetchedAt": "2026-11-17T03:01:29.768Z",
       "initialized": true,
       "source": "regional-scan"
     },
