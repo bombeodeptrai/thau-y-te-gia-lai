@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-17T13:26:32.175Z",
+  "auditedAt": "2026-11-17T23:33:20.686Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 775,
+      "count": 783,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 66,
+      "count": 67,
       "error": ""
     },
     {
@@ -104,7 +104,7 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 34,
+      "count": 26,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 92,
+      "count": 93,
       "error": ""
     },
     {
@@ -218,13 +218,13 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 58,
+      "count": 59,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 63,
+      "count": 68,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1681,
+  "candidateCount": 1686,
   "acceptedCount": 58,
-  "rejectedCount": 1623,
+  "rejectedCount": 1628,
   "rejectedReasons": {
-    "excluded:tu van": 530,
-    "excluded:xay dung": 438,
-    "insufficient-medical-context": 417,
+    "excluded:tu van": 540,
+    "excluded:xay dung": 431,
+    "insufficient-medical-context": 419,
     "excluded:xay lap": 77,
     "excluded:sua chua": 49,
     "excluded:cai tao": 20,
@@ -939,6 +939,94 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600131870",
+      "name": "Kiểm tra, nghiệm thu",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600131866",
+      "name": "Trích đo địa chính thửa đất",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "DC2600096567",
+      "name": "Tư vấn Quản lý dự án. Dự án: Trường THPT số 2 Phan Bội Châu. Hạng mục: Xây mới nhà học 04 tầng, 18 phòng học, 03 phòng học bộ môn; các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600096650",
+      "name": "Tư vấn kiểm định chất lượng công trình. Dự án: Trường THPT số 2 Phan Bội Châu. Hạng mục: Xây mới nhà học 04 tầng, 18 phòng học, 03 phòng học bộ môn; các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "kiem dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600096644",
+      "name": "Tư vấn kiểm định chất lượng công trình. Dự án: Trường THPT Pleiku. Hạng mục: Nhà học 04 tầng, 20 phòng học lý thuyết, 04 phòng học bộ môn; các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "kiem dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600085301",
+      "name": "Tư vấn Lập nhiệm vụ khảo sát và Khảo sát địa hình, địa chất. Dự án: Trường Trung học phổ thông Lê Lợi. Hạng mục: khối nhà học, hành chính quản trị 4 tầng; các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600096659",
+      "name": "Tư vấn Lập nhiệm vụ khảo sát. Dự án: Trường phổ thông dân tộc nội trú THCS và THPT An Lão. Hạng mục: Xây dựng mới nhà ở học sinh nội trú 03 tầng, 27 phòng; các hạng mục phụ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600085334",
+      "name": "Tư vấn Lập nhiệm vụ khảo sát, Khảo sát địa hình, địa chất. Dự án: Trường PTDTNT THCS và THPT Vĩnh Thạnh. Hạng mục: Xây mới Nhà hỗ trợ học tập 2 tầng; nhà ở nội trú học sinh 3 tầng; nhà vệ sinh; hệ thống phòng cháy chữa cháy; các hạng mục phụ và thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
       "notifyNo": "DC2600096582",
       "name": "Tư vấn Giám sát khảo sát. Dự án: Dự án Trường THPT Số 3 An Nhơn. Hạng mục: Nhà 02 tầng 04 phòng học, 01 phòng khoa học xã hội, 01 Thư viện, 01 phòng STEM; nhà 02 tầng 04 phòng học, 02 phòng hỗ trợ học tập; hệ thống PCCC và sân đường nội bộ; thiết bị PCCC và thiết bị dạy học.",
       "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
@@ -1303,108 +1391,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600611514",
-      "name": "Gói thầu 01: Thi công xây dựng công trình",
-      "investor": "Ban Quản lý xã Mang Yang, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607648",
-      "name": "Gói thầu số 17/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 17",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607634",
-      "name": "Gói thầu số 16/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 16",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607617",
-      "name": "Gói thầu số 15/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 15",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607561",
-      "name": "Gói thầu số 11/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 11",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607538",
-      "name": "Gói thầu số 10/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 10",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600605040",
-      "name": "Gói thầu số 09/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Tây Gia Lai - Số 9",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600605027",
-      "name": "Gói thầu số 08/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Tây Gia Lai - Số 8",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
       ]
     }
   ],
