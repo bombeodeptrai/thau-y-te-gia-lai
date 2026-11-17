@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-16T18:33:44.155Z",
+  "auditedAt": "2026-11-17T02:58:17.829Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 763,
+      "count": 750,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 65,
+      "count": 66,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 96,
+      "count": 95,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 83,
+      "count": 84,
       "error": ""
     },
     {
@@ -188,19 +188,19 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 38,
+      "count": 41,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 73,
+      "count": 74,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 54,
+      "count": 55,
       "error": ""
     },
     {
@@ -271,31 +271,31 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1623,
-  "acceptedCount": 56,
-  "rejectedCount": 1567,
+  "candidateCount": 1619,
+  "acceptedCount": 58,
+  "rejectedCount": 1561,
   "rejectedReasons": {
-    "excluded:tu van": 519,
+    "excluded:tu van": 510,
     "excluded:xay dung": 422,
-    "insufficient-medical-context": 399,
+    "insufficient-medical-context": 401,
     "excluded:xay lap": 70,
     "excluded:sua chua": 49,
-    "excluded:cai tao": 21,
+    "excluded:cai tao": 20,
     "excluded:bao hiem": 10,
     "excluded:bao ve": 10,
     "excluded:tham dinh": 9,
     "excluded:bao tri": 9,
     "excluded:thuc pham": 7,
     "excluded:may tinh": 6,
+    "excluded:cong nghe thong tin": 5,
     "excluded:trang phuc": 4,
     "excluded:giam sat thi cong": 4,
-    "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
+    "excluded:quan ly du an": 3,
     "excluded:cay xanh": 2,
     "excluded:cap dien": 2,
     "excluded:lap e hsmt": 2,
     "excluded:suat an": 2,
-    "excluded:quan ly du an": 2,
     "excluded:may phat dien": 1,
     "excluded:xang dau": 1,
     "excluded:tram bien ap": 1,
@@ -309,6 +309,21 @@
     "excluded:ve sinh cong nghiep": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "DC2600121909",
+      "name": "Mua sắm thuốc, thiết bị, vật tư y tế bảo đảm quân y cho 135 Ban CHQS xã, phường trên địa bàn tỉnh Gia Lai",
+      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
+      "accepted": true,
+      "score": 110,
+      "reason": "explicit-medical-title",
+      "matched": [
+        "vat tu y te",
+        "thuoc",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600611966",
       "name": "Sửa chữa Máy siêu âm và Hệ thống nội soi chẩn đoán phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Gia Lai",
@@ -722,6 +737,21 @@
       ]
     },
     {
+      "notifyNo": "IB2600609403",
+      "name": "Gói thầu số 1: Mua sắm Vật tư y tế giai đoạn 2027-2028 (Gồm 205 mặt hàng tương ứng 205 phần)",
+      "investor": "TRUNG TÂM Y TẾ PLEIKU",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "trung tam y te",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "DC2600109366",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026 cho viên chức và người lao động",
       "investor": "Bảo hiểm xã hội cơ sở Pleiku",
@@ -905,43 +935,31 @@
         "hoa chat",
         "sinh pham"
       ]
-    },
-    {
-      "notifyNo": "IB2600606477",
-      "name": "Mua sắm thuốc Generic bổ sung lần 1 năm 2026",
-      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "benh vien",
-        "thuoc",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600584097",
-      "name": "Gói thầu số 1: Vật tư, công cụ, dụng cụ y tế, sinh phẩm chẩn đoán in vitro mua sắm năm 2027-2028",
-      "investor": "Trung tâm Y tế Quy Nhơn",
-      "accepted": true,
-      "score": 255,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
-      "matched": [
-        "sinh pham chan doan",
-        "chan doan in vitro",
-        "dung cu y te",
-        "trung tam y te",
-        "sinh pham",
-        "chan doan",
-        "in vitro",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "DC2600128972",
+      "name": "Tư vấn xác lập quyền sở hữu trí tuệ; tư vấn quản lý và phát triển các sản phẩm, dịch vụ được bảo hộ quyền sở hữu trí tuệ của doanh nghiệp, đợt 1",
+      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600108131",
+      "name": "Thẩm tra Báo cáo Kinh tế - Kỹ thuật “Thuê hạ tầng công nghệ thông tin và hệ thống phần mềm cơ sở dữ liệu đất đai tỉnh Gia Lai”",
+      "investor": "Sở Nông nghiệp và Môi trường tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cong nghe thong tin",
+      "matched": [
+        "cong nghe thong tin"
+      ]
+    },
     {
       "notifyNo": "DC2600131339",
       "name": "Bảo hiểm công trình",
@@ -1391,34 +1409,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600611154",
-      "name": "Toàn bộ khối lượng thi công xây dựng phần thô (cọc, móng, thân)",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600123718",
-      "name": "Gói thầu số 06: Tư vấn giám sát",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1204,
-  "afterCount": 1204,
+  "beforeCount": 1205,
+  "afterCount": 1205,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }

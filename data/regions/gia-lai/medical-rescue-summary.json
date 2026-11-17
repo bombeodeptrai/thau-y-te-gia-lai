@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-16T18:34:29.626Z",
+  "rescuedAt": "2026-11-17T02:59:04.140Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 263,
+      "count": 265,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 763,
+      "count": 750,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 65,
+      "count": 66,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 96,
+      "count": 95,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 83,
+      "count": 84,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 16,
+      "count": 15,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 38,
+      "count": 41,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 73,
+      "count": 74,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 54,
+      "count": 55,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1684,
-  "acceptedCount": 60,
-  "rejectedCount": 1624,
+  "candidateCount": 1680,
+  "acceptedCount": 62,
+  "rejectedCount": 1618,
   "rejectedReasons": {
-    "excluded:tu van": 520,
+    "excluded:tu van": 511,
+    "insufficient-medical-context": 431,
     "excluded:xay dung": 431,
-    "insufficient-medical-context": 429,
     "excluded:xay lap": 79,
     "excluded:sua chua": 51,
-    "excluded:cai tao": 21,
+    "excluded:cai tao": 20,
     "excluded:bao hiem": 11,
     "excluded:bao ve": 10,
     "excluded:bao tri": 9,
@@ -298,16 +298,16 @@
     "excluded:thuc pham": 7,
     "excluded:may tinh": 6,
     "excluded:trang phuc": 5,
+    "excluded:cong nghe thong tin": 5,
     "excluded:giam sat thi cong": 4,
-    "excluded:cong nghe thong tin": 4,
     "excluded:may in": 3,
+    "excluded:quan ly du an": 3,
     "excluded:chat thai": 2,
     "excluded:in an": 2,
     "excluded:cap dien": 2,
     "excluded:cay xanh": 2,
     "excluded:lap e hsmt": 2,
     "excluded:suat an": 2,
-    "excluded:quan ly du an": 2,
     "excluded:ve sinh cong nghiep": 1,
     "excluded:may phat dien": 1,
     "excluded:may chu": 1,
@@ -321,6 +321,21 @@
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600609403",
+      "name": "Gói thầu số 1: Mua sắm Vật tư y tế giai đoạn 2027-2028 (Gồm 205 mặt hàng tương ứng 205 phần)",
+      "investor": "TRUNG TÂM Y TẾ PLEIKU",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "vat tu y te",
+        "trung tam y te",
+        "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600611966",
       "name": "Sửa chữa Máy siêu âm và Hệ thống nội soi chẩn đoán phục vụ công tác khám, chữa bệnh của Bệnh viện Đa khoa Gia Lai",
@@ -939,24 +954,21 @@
         "kham chua benh",
         "chua benh"
       ]
-    },
-    {
-      "notifyNo": "IB2600591803",
-      "name": "Mua sắm vật tư y tế năm 2026-2027",
-      "investor": "Trung tâm Y tế Đak Đoa",
-      "accepted": true,
-      "score": 145,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "vat tu y te",
-        "trung tam y te",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600611616",
+      "name": "Gói thầu số 01: Thuê phần mềm quản lý bệnh viện, phần mềm quản lý bệnh án điện tử, phần mềm quản lý chẩn đoán hình ảnh cho Trung tâm Y tế An Lão",
+      "investor": "Trung tâm Y tế An Lão",
+      "accepted": false,
+      "score": 90,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te",
+        "chan doan"
+      ]
+    },
     {
       "notifyNo": "IB2600611975",
       "name": "Sản xuất ấn phẩm năm 2027 cho Tổng công ty Cảng hàng không Việt Nam - CTCP",
@@ -1407,23 +1419,12 @@
       "matched": [
         "xay lap"
       ]
-    },
-    {
-      "notifyNo": "IB2600607631",
-      "name": "Xây lắp và đảm bảo an toàn giao thông",
-      "investor": "Ban quản lý phường An Phú",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay lap",
-      "matched": [
-        "xay lap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1204,
-  "afterCount": 1204,
+  "beforeCount": 1205,
+  "afterCount": 1205,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v19"
 }
