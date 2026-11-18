@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-18T05:51:48.450Z",
+  "rescuedAt": "2026-11-18T06:17:34.368Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 321,
+      "count": 317,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 884,
+  "candidateCount": 880,
   "acceptedCount": 33,
-  "rejectedCount": 851,
+  "rejectedCount": 847,
   "rejectedReasons": {
     "excluded:tu van": 314,
-    "excluded:xay dung": 254,
+    "excluded:xay dung": 250,
     "insufficient-medical-context": 175,
     "excluded:xay lap": 30,
     "excluded:sua chua": 20,
@@ -1299,8 +1299,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1207,
-  "afterCount": 1207,
+  "beforeCount": 1209,
+  "afterCount": 1209,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v20"
 }
