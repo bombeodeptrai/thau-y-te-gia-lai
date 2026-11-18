@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-18T05:39:09.808Z",
+  "auditedAt": "2026-11-18T07:28:23.300Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 769,
+      "count": 767,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 22,
+      "count": 10,
       "error": ""
     },
     {
@@ -271,15 +271,15 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1684,
+  "candidateCount": 1670,
   "acceptedCount": 60,
-  "rejectedCount": 1624,
+  "rejectedCount": 1610,
   "rejectedReasons": {
     "excluded:tu van": 528,
-    "excluded:xay dung": 434,
-    "insufficient-medical-context": 421,
+    "insufficient-medical-context": 420,
+    "excluded:xay dung": 420,
     "excluded:xay lap": 78,
-    "excluded:sua chua": 50,
+    "excluded:sua chua": 51,
     "excluded:cai tao": 19,
     "excluded:bao ve": 13,
     "excluded:bao hiem": 10,
@@ -940,6 +940,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600607921",
+      "name": "27.05.HH Cung cấp dây cáp vặn xoắn hạ thế ABC các loại",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "DC2600129437",
+      "name": "XL-01: thuê máy thi công sửa chữa, san ủi đường nội vùng Khu vực Gia Lai",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CÀ PHÊ 15",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
       "notifyNo": "DC2600140284",
       "name": "Mua máy móc, thiết bị phục vụ công tác",
       "investor": "Công an tỉnh Gia Lai",
@@ -1363,38 +1385,12 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "IB2600607589",
-      "name": "Gói thầu số 13/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 13",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607575",
-      "name": "Gói thầu số 12/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 12",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1205,
-  "afterCount": 1207,
-  "newCount": 2,
+  "beforeCount": 1209,
+  "afterCount": 1209,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v20"
 }

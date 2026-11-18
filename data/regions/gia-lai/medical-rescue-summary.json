@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-18T05:39:59.558Z",
+  "rescuedAt": "2026-11-18T07:29:10.905Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 285,
+      "count": 286,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 769,
+      "count": 767,
       "error": ""
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 22,
+      "count": 10,
       "error": ""
     },
     {
@@ -281,15 +281,15 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1747,
+  "candidateCount": 1734,
   "acceptedCount": 64,
-  "rejectedCount": 1683,
+  "rejectedCount": 1670,
   "rejectedReasons": {
-    "excluded:tu van": 529,
-    "insufficient-medical-context": 449,
-    "excluded:xay dung": 447,
+    "excluded:tu van": 530,
+    "insufficient-medical-context": 448,
+    "excluded:xay dung": 433,
     "excluded:xay lap": 86,
-    "excluded:sua chua": 52,
+    "excluded:sua chua": 53,
     "excluded:cai tao": 19,
     "excluded:bao ve": 13,
     "excluded:bao hiem": 11,
@@ -950,6 +950,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600607921",
+      "name": "27.05.HH Cung cấp dây cáp vặn xoắn hạ thế ABC các loại",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600613810",
       "name": "Vệ sinh công nghiệp tại các đơn vị thuộc Công ty Quản lý bay miền Trung",
       "investor": "CÔNG TY QUẢN LÝ BAY MIỀN TRUNG - TỔNG CÔNG TY QUẢN LÝ BAY VIỆT NAM - CÔNG TY TNHH",
@@ -1408,25 +1419,12 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "IB2600604340",
-      "name": "Gói thầu số 01/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Tây Gia Lai - Số 1",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1207,
-  "afterCount": 1207,
+  "beforeCount": 1209,
+  "afterCount": 1209,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v20"
 }
