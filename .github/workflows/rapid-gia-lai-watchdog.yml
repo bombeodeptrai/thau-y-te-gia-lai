@@ -47,8 +47,27 @@ jobs:
               return;
             }
 
-            const latest = runs[0];
-            const latestAt = latest ? new Date(latest.run_started_at || latest.created_at).getTime() : 0;
+            // Push/workflow_run có thể kết thúc skipped mà không đọc nguồn.
+            // Lấy giờ hoàn tất của chính bước đọc nguồn, kể cả lượt chạy lại.
+            const latest = runs.filter(run => run.conclusion === "success")
+              .sort((a, b) => Date.parse(b.updated_at) - Date.parse(a.updated_at))[0];
+            let latestAt = 0;
+            if (latest) {
+              const { data } = await github.rest.actions.listJobsForWorkflowRun({
+                owner, repo, run_id: latest.id, filter: "latest", per_page: 100,
+              });
+              const scanSteps = new Set([
+                "Quét toàn bộ gói 7 ngày gần nhất bằng nguồn thật",
+                "Quét lại danh sách Gia Lai trên dữ liệu mới nhất",
+              ]);
+              for (const job of data.jobs) {
+                for (const step of job.steps || []) {
+                  if (scanSteps.has(step.name) && step.conclusion === "success") {
+                    latestAt = Math.max(latestAt, Date.parse(step.completed_at) || 0);
+                  }
+                }
+              }
+            }
             const ageMinutes = latestAt ? (Date.now() - latestAt) / 60_000 : Number.POSITIVE_INFINITY;
             if (ageMinutes <= 25) {
               core.info(`Quét nhanh gần nhất cách đây ${ageMinutes.toFixed(1)} phút; chưa cần chạy bù.`);
