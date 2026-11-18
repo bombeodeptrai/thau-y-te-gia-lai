@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "f5d287e7-f01c-4040-bd40-063e8f44b65b",
+      "contractorCode": "vn0104089394",
+      "taxCode": "0104089394",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+      "status": "won",
+      "lotNo": "BP2600977118",
+      "lotName": "Mua thuốc Generic bổ sung lần 2 sử dụng tại Bệnh viện đa khoa Ngọc lặc năm 2026",
+      "bidPrice": 33600000,
+      "finalPrice": 33600000,
+      "winningPrice": 33600000,
+      "reason": "",
+      "submittedAt": "2026-11-17T14:14:46.125",
+      "models": [
+        "."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "a3557e0b-6c65-4e54-bcfb-1e7512490f23",
+      "name": "Propofol",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": ".Công ty cổ phần dược phẩm CPC1 Hà Nội",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": ".Thuốc có nhóm TCKT:4, Nồng độ/hàm lượng: (10mg/ml) x 10ml, Đường dùng: Tiêm, Dạng bào chế: Thuốc tiêm",
+      "unit": "Lọ/ Ống",
+      "quantity": 1000,
+      "unitPrice": 33600,
+      "amount": 33600000,
+      "contractorCode": "vn0104089394",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI"
+      ],
+      "lotNo": "",
+      "decisionNo": "832/QĐ-BVNL",
+      "decisionDate": "2026-11-17T14:14:44",
+      "resultPublishedDate": "2026-11-17T14:14:46"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-15T21:48:27.203Z"
+  "fetchedAt": "2026-11-18T05:40:14.691Z"
 }

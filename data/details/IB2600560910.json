@@ -1,25 +1,45 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 1,
   "bidders": [
     {
-      "id": "6609e437-4609-4b5e-80fd-3cf7a9a008a0",
+      "id": "9050c17d-f7e1-43fd-85cc-806a86bf040a",
       "contractorCode": "vn6000195906",
-      "taxCode": "",
+      "taxCode": "6000195906",
       "contractorName": "CÔNG TY TNHH TM&DV KHÍ ÔXY LONG PHÁT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600818393",
       "lotName": "Mua khí Oxy Y tế phục vụ công tác khám chữa bệnh năm 2026 của Trung tâm Y tế Krông Năng",
       "bidPrice": 144000000,
       "finalPrice": 144000000,
-      "winningPrice": 0,
+      "winningPrice": 144000000,
       "reason": "",
-      "submittedAt": "2026-10-15T09:11:59.6",
+      "submittedAt": "2026-11-16T16:48:39.366",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "cb1249bc-8352-4ed8-aae7-5de0193d2f8c",
+      "name": "Khí Oxy y tế (Oxy dược dụng)",
+      "model": "O2",
+      "brand": "Long Phát",
+      "manufacturer": "Long Phát",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Đạt tiêu chuẩn ISO (9001:2015/ ISO 13485:2017), Khí Oxy y tế theo tiêu chuẩn Dược điển Việt Nam.",
+      "unit": "Lít",
+      "quantity": 5760000,
+      "unitPrice": 25,
+      "winnerNames": [
+        "CÔNG TY TNHH TM&DV KHÍ ÔXY LONG PHÁT"
+      ],
+      "decisionNo": "409/QĐ-TTYT",
+      "decisionDate": "2026-11-16T16:48:38",
+      "resultPublishedDate": "2026-11-16T16:48:39"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +65,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-15T21:59:00.131Z"
+  "fetchedAt": "2026-11-18T05:55:23.398Z"
 }

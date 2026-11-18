@@ -1,55 +1,130 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "989bc011-0151-464d-9374-b16305f9c1f2",
+      "id": "e24fe9cc-f6c4-483b-beec-15208cdcc72c",
       "contractorCode": "vn6000449389",
-      "taxCode": "",
+      "taxCode": "6000449389",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600435270",
       "lotName": "Lá sen, Lá vông nem, Lạc tiên, Bình vôi, Trinh nữ",
-      "bidPrice": 143640000,
+      "bidPrice": 56700000,
       "finalPrice": 56700000,
-      "winningPrice": 0,
+      "winningPrice": 56700000,
       "reason": "",
-      "submittedAt": "2026-10-22T10:14:35.379",
-      "models": []
+      "submittedAt": "2026-11-16T09:18:29.246",
+      "models": [
+        "Hoastex-S",
+        "Mimosa viên an thần"
+      ]
     },
     {
-      "id": "74d389db-87c4-4626-8168-58cc5489d51f",
+      "id": "85021747-416e-423d-bfc7-82c7b3cdb80c",
       "contractorCode": "vn0304068867",
-      "taxCode": "",
+      "taxCode": "0304068867",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM KIM LONG MIỀN NAM",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600435271",
       "lotName": "Hoàng kỳ, Đương quy, Kỷ tử.",
       "bidPrice": 107500000,
       "finalPrice": 107500000,
-      "winningPrice": 0,
+      "winningPrice": 107500000,
       "reason": "",
-      "submittedAt": "2026-10-22T10:14:35.578",
-      "models": []
+      "submittedAt": "2026-11-16T09:18:29.246",
+      "models": [
+        "Đương Quy bổ huyết P/H"
+      ]
     },
     {
-      "id": "d8360066-ff79-4937-82a7-fb8ebcc065fb",
+      "id": "60373783-6a9b-4e77-be79-dd38a794e2b3",
       "contractorCode": "vn6000449389",
-      "taxCode": "",
+      "taxCode": "6000449389",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600435272",
       "lotName": "Húng chanh, Núc nác, Tinh dầu Bạch đàn (Cineol).",
-      "bidPrice": 143640000,
+      "bidPrice": 86940000,
       "finalPrice": 86940000,
-      "winningPrice": 0,
+      "winningPrice": 86940000,
       "reason": "",
-      "submittedAt": "2026-10-22T10:14:35.379",
-      "models": []
+      "submittedAt": "2026-11-16T09:18:29.246",
+      "models": [
+        "Hoastex-S",
+        "Mimosa viên an thần"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600435272",
+      "name": "Hoastex-S",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Chai",
+      "quantity": 2000,
+      "unitPrice": 43470,
+      "amount": 86940000,
+      "contractorCode": "vn6000449389",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK"
+      ],
+      "lotNo": "PP2600435272",
+      "decisionNo": "452/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:18:28",
+      "resultPublishedDate": "2026-11-16T09:18:29"
+    },
+    {
+      "id": "2600435271",
+      "name": "Đương Quy bổ huyết P/H",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "viên",
+      "quantity": 86000,
+      "unitPrice": 1250,
+      "amount": 107500000,
+      "contractorCode": "vn0304068867",
+      "winnerNames": [
+        "CÔNG TY TNHH DƯỢC PHẨM KIM LONG MIỀN NAM "
+      ],
+      "lotNo": "PP2600435271",
+      "decisionNo": "452/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:18:28",
+      "resultPublishedDate": "2026-11-16T09:18:29"
+    },
+    {
+      "id": "2600435270",
+      "name": "Mimosa viên an thần",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Việt Nam",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Viên",
+      "quantity": 45000,
+      "unitPrice": 1260,
+      "amount": 56700000,
+      "contractorCode": "vn6000449389",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC – VẬT TƯ Y TẾ ĐẮK LẮK"
+      ],
+      "lotNo": "PP2600435270",
+      "decisionNo": "452/QĐ-TTYT",
+      "decisionDate": "2026-11-16T09:18:28",
+      "resultPublishedDate": "2026-11-16T09:18:29"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -95,5 +170,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-15T21:58:58.459Z"
+  "fetchedAt": "2026-11-18T05:55:22.028Z"
 }

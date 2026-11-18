@@ -1,9 +1,167 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "f7c7633f-a5c4-4713-a70f-1b00878707b3",
+      "contractorCode": "vn2500228415",
+      "taxCode": "2500228415",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC",
+      "status": "won",
+      "lotNo": "PP2600485490",
+      "lotName": "Levobupivacain",
+      "bidPrice": 84000000,
+      "finalPrice": 84000000,
+      "winningPrice": 84000000,
+      "reason": "",
+      "submittedAt": "2026-11-17T11:20:45.975",
+      "models": [
+        "."
+      ]
+    },
+    {
+      "id": "be0ac8dd-46f9-4b10-a5eb-92f4645e9226",
+      "contractorCode": "vn0101386261",
+      "taxCode": "0101386261",
+      "contractorName": "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN",
+      "status": "won",
+      "lotNo": "PP2600485491",
+      "lotName": "Paracetamol",
+      "bidPrice": 32079000,
+      "finalPrice": 32079000,
+      "winningPrice": 32079000,
+      "reason": "",
+      "submittedAt": "2026-11-17T11:20:45.975",
+      "models": [
+        "."
+      ]
+    },
+    {
+      "id": "e11e3745-eb31-4e3b-a061-09e0ff1e1f4d",
+      "contractorCode": "vn2801804334",
+      "taxCode": "2801804334",
+      "contractorName": "Công ty Cổ phần Vinamed",
+      "status": "won",
+      "lotNo": "PP2600485494",
+      "lotName": "Ringerlatac",
+      "bidPrice": 71550000,
+      "finalPrice": 71550000,
+      "winningPrice": 71550000,
+      "reason": "",
+      "submittedAt": "2026-11-17T11:20:45.975",
+      "models": [
+        "."
+      ]
+    },
+    {
+      "id": "5ca580b5-86c1-4651-8778-30dd871e4365",
+      "contractorCode": "vn2801906015",
+      "taxCode": "2801906015",
+      "contractorName": "CÔNG TY CỔ PHẦN THANH DƯỢC",
+      "status": "won",
+      "lotNo": "PP2600485495",
+      "lotName": "Vitamin A + D",
+      "bidPrice": 8294000,
+      "finalPrice": 8294000,
+      "winningPrice": 8294000,
+      "reason": "",
+      "submittedAt": "2026-11-17T11:20:45.975",
+      "models": [
+        "."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "734e9d60-0680-4644-8856-43e73088a6ff",
+      "name": "Ringerlatac",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": "Công ty cổ phần kỹ thuật Dược Bình Định",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Tên thuốc: Lactated Ringer's, \r\ntên hoạt chất: Mỗi 500ml dung dịch chứa: Natri clorid 3g, Natri lactat 1,55g, Kali clorid 0,15g, Calci clorid dihydrat 0,1g, \r\nNồng độ- hàm lượng: 500ml, \r\nĐường dùng: Tiêm truyền, \r\nDạng bào chế: Dung dịch tiêm truyền, \r\nQuy cách: Thùng 20 chai x 500ml, \r\nGĐKLH hoặc GPNK: 893110118323, \r\nNhóm thuốc: 4",
+      "unit": "Chai/lọ/ống/túi/gói",
+      "quantity": 10000,
+      "unitPrice": 7155,
+      "amount": 71550000,
+      "contractorCode": "vn2801804334",
+      "winnerNames": [
+        "Công ty Cổ phần Vinamed"
+      ],
+      "lotNo": "",
+      "decisionNo": "1181/QĐ-BVCT",
+      "decisionDate": "2026-11-17T11:20:45",
+      "resultPublishedDate": "2026-11-17T11:20:46"
+    },
+    {
+      "id": "8a48cc12-cc42-48de-8ef1-745b61805119",
+      "name": "Vitamin A + D",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": "Công ty cổ phần \r\nDược vật tư y tế Hải Dương",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Tên thuốc: Vitamin A-D, \r\ntên hoạt chất: Vitamin A + \r\nD2(Vitamin A + D3), \r\nNồng độ- hàm lượng: 2500IU; \r\n200IU, \r\nĐường dùng: Uống , \r\nDạng bào chế: Viên nang mềm, \r\nQuy cách: Hộp 5 vỉ x 10 viên; Hộp 10 vỉ x 10 viên, \r\nGĐKLH hoặc GPNK: 893100341124, \r\nNhóm thuốc: 4",
+      "unit": "viên",
+      "quantity": 26000,
+      "unitPrice": 319,
+      "amount": 8294000,
+      "contractorCode": "vn2801906015",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THANH DƯỢC"
+      ],
+      "lotNo": "",
+      "decisionNo": "1181/QĐ-BVCT",
+      "decisionDate": "2026-11-17T11:20:45",
+      "resultPublishedDate": "2026-11-17T11:20:46"
+    },
+    {
+      "id": "b0c7f740-d5d3-46d9-8926-6d76dd832f53",
+      "name": "Levobupivacain",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": "Công ty Cổ phần Dược phẩm Vĩnh Phúc",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Tên thuốc: Levocin, \r\ntên hoạt chất: Levobupivacain (dưới dạng levobupivacain hydroclorid),\r\nNồng độ- hàm lượng: 50 mg/10ml,\r\nĐường dùng: Tiêm/Tiêm truyền,\r\nDạng bào chế: Dung dịch tiêm,\r\nQuy cách: Hộp 2 vỉ x 5 ống x 10ml,\r\nGĐKLH hoặc GPNK: 893114219323,\r\nNhóm thuốc: 4",
+      "unit": "Chai/lọ/ống/túi/gói",
+      "quantity": 1000,
+      "unitPrice": 84000,
+      "amount": 84000000,
+      "contractorCode": "vn2500228415",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM VĨNH PHÚC"
+      ],
+      "lotNo": "",
+      "decisionNo": "1181/QĐ-BVCT",
+      "decisionDate": "2026-11-17T11:20:45",
+      "resultPublishedDate": "2026-11-17T11:20:46"
+    },
+    {
+      "id": "c7491971-5fec-42bd-8d8b-7a42e2c37350",
+      "name": "Paracetamol",
+      "model": ".",
+      "brand": ".",
+      "manufacturer": "Công ty Cổ phần Dược phẩm Minh Dân",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Tên thuốc: Paracetamol 1g/100ml, \r\ntên hoạt chất: Paracetamol, \r\nNồng độ- hàm lượng: 1000mg/100ml, \r\nĐường dùng: Tiêm truyền, \r\nDạng bào chế: Dung dịch tiêm truyền , \r\nQuy cách: Hộp 20 lọ x 100ml, Hộp 60 lọ x 100ml, \r\nGĐKLH hoặc GPNK: 893110069625, \r\nNhóm thuốc: 4",
+      "unit": "Chai/lọ/ống/túi/gói",
+      "quantity": 3000,
+      "unitPrice": 10693,
+      "amount": 32079000,
+      "contractorCode": "vn0101386261",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI MINH DÂN"
+      ],
+      "lotNo": "",
+      "decisionNo": "1181/QĐ-BVCT",
+      "decisionDate": "2026-11-17T11:20:45",
+      "resultPublishedDate": "2026-11-17T11:20:46"
+    }
+  ],
   "requirements": {
     "total": 6,
     "items": [
@@ -219,5 +377,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-15T21:48:26.191Z"
+  "fetchedAt": "2026-11-18T05:40:13.696Z"
 }

@@ -1,55 +1,196 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 6,
   "bidders": [
     {
-      "id": "2f4ad5d6-0cd5-4d3f-926a-fc90d42c4c94",
+      "id": "b295a59f-af28-49ca-8c3f-058c126004fd",
       "contractorCode": "vn0103657372",
-      "taxCode": "",
+      "taxCode": "0103657372",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ HAMEMY",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600389317",
       "lotName": "Cung cấp hóa chất xét nghiệm cho máy xét nghiệm huyết học MEK-6510",
       "bidPrice": 283304070,
       "finalPrice": 283304070,
-      "winningPrice": 0,
+      "winningPrice": 283304070,
       "reason": "",
-      "submittedAt": "2026-09-29T14:32:17.405",
-      "models": []
+      "submittedAt": "2026-10-29T15:22:27.299",
+      "models": [
+        "HNKD320",
+        "HNKL302",
+        "HNKG005",
+        "HNKG305",
+        "3D506"
+      ]
     },
     {
-      "id": "ae01dd8e-16ec-415c-ab7a-ca7e9376a314",
+      "id": "b89ba97c-1906-48a1-a0e1-01f953b4c603",
       "contractorCode": "vn4401044795",
-      "taxCode": "",
+      "taxCode": "4401044795",
       "contractorName": "CÔNG TY TNHH DƯỢC PHẨM VÀ VẬT TƯ Y TẾ QUANG MINH",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600389317",
       "lotName": "Cung cấp hóa chất xét nghiệm cho máy xét nghiệm huyết học MEK-6510",
       "bidPrice": 179992323,
       "finalPrice": 179992323,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-29T14:32:17.625",
+      "reason": "E-HSDT của Nhà thầu không đáp ứng đầy đủ yêu cầu của E-HSMT về kinh nghiệm thực hiện hợp đồng tương tự và yêu cầu kỹ thuật của hàng hóa dự thầu. Nhà thầu chưa cung cấp đầy đủ tài liệu làm rõ để chứng minh đáp ứng các yêu cầu liên quan theo E-HSMT",
+      "submittedAt": "2026-10-29T15:22:27.299",
       "models": []
     },
     {
-      "id": "0a2ab510-9067-4b81-a864-57d2799427d9",
+      "id": "0c5f176f-2a6f-4e54-8973-11e4585650c4",
       "contractorCode": "vn0402163389",
-      "taxCode": "",
+      "taxCode": "0402163389",
       "contractorName": "CÔNG TY TNHH MTV THIẾT BỊ KỸ THUẬT HƯNG PHÁT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600389318",
       "lotName": "Cung cấp hóa chất Thuốc thử xét nghiệm định lượng Na, K, Cl",
       "bidPrice": 165165000,
       "finalPrice": 165165000,
-      "winningPrice": 0,
+      "winningPrice": 165165000,
       "reason": "",
-      "submittedAt": "2026-09-29T14:32:17.789",
-      "models": []
+      "submittedAt": "2026-10-29T15:22:27.299",
+      "models": [
+        "R04S001"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "524bcc43-cd20-492f-8c14-96e81e752c64",
+      "name": "Hóa chất pha loãng",
+      "model": "HNKD320",
+      "brand": "Diluant LMG",
+      "manufacturer": "SFRI SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Dùng làm chất pha loãng cho máy phân tích huyết học: Chất lỏng, không màu, không mùi Độ PH: 6.95 ± 0.10 Thành phần: - Organic buffer < 0,1 % - Sodium salts < 1,0 % - Natrium azide < 0,05 % Độ ổn định sau khi mở nắp: 3 tháng Đạt tiêu chuẩn ISO 13485, CE và có 01 CFS Quy cách: can 20 lít Tương thích hệ thống máy: MEK-6510K Celltacα (Nihon Kohden)",
+      "unit": "can 20 lít",
+      "quantity": 50,
+      "unitPrice": 2500050,
+      "amount": 125002500,
+      "contractorCode": "vn0103657372",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HAMEMY"
+      ],
+      "lotNo": "",
+      "decisionNo": "345/QĐ-BVPNT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:23:01"
+    },
+    {
+      "id": "c0ee8103-8071-48f4-9450-443966c6cb38",
+      "name": "Hóa chất ly giải hồng cầu",
+      "model": "HNKL302",
+      "brand": "Agent de lyse LMG",
+      "manufacturer": "SFRI SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Dung dịch dùng để ly cho máy phân tích huyết học Chất lỏng, không màu, không mùi Độ PH: 8.00 ± 0.50 Thành Phần: - Ammonium salts < 3,0 % - Ammonium oxalate < 3,0 % - Potassium cyanide < 0,1 % Độ ổn định sau khi mở nắp: 2 tháng Đạt tiêu chuẩn ISO 13485, CE và có 01 CFS Quy cách: can 500ml Tương thích hệ thống máy: MEK-6510K Celltacα (Nihon Kohden)",
+      "unit": "can 500ml",
+      "quantity": 30,
+      "unitPrice": 2300025,
+      "amount": 69000750,
+      "contractorCode": "vn0103657372",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HAMEMY"
+      ],
+      "lotNo": "",
+      "decisionNo": "345/QĐ-BVPNT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:23:01"
+    },
+    {
+      "id": "e957c2e5-49cb-4519-9855-9c803c83c20b",
+      "name": "Hóa chất rửa máy huyết học",
+      "model": "HNKG005",
+      "brand": "Détergent Enzymatique",
+      "manufacturer": "SFRI SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Dùng làm chất rửa cho máy phân tích huyết học Chất lỏng, màu xanh nhạt, dạng dung dịch Độ pH: 7.20 ± 0.30 Thành phần: - Organic bufer < 0,5% - Sodium salts < 2,0 % - Proteolytic enzyme < 0,5 % - Preservative < 0,05% Độ ổn định sau khi mở nắp: 2 tháng Đạt tiêu chuẩn ISO 13485, CE và có 01 CFS Quy cách: can 5 lít Tương thích hệ thống máy: MEK-6510K Celltacα (Nihon Kohden)",
+      "unit": "can 5 lít",
+      "quantity": 20,
+      "unitPrice": 3100020,
+      "amount": 62000400,
+      "contractorCode": "vn0103657372",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HAMEMY"
+      ],
+      "lotNo": "",
+      "decisionNo": "345/QĐ-BVPNT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:23:01"
+    },
+    {
+      "id": "afcd84fa-e385-485d-addc-73d9d59ff1f5",
+      "name": "Hóa chất rửa đậm đặc máy huyết học",
+      "model": "HNKG305",
+      "brand": "Détergent Chloré",
+      "manufacturer": "SFRI SAS",
+      "origin": "Pháp",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Dùng làm chất rửa cho máy phân tích huyết học Chất lỏng; Màu: Vàng nhạt Độ pH: 12.50 ± 0.50 Thành phần: Dung dịch Natri hypoclorit < 4% Độ ổn định sau khi mở nắp: 2 tháng Đạt tiêu chuẩn ISO 13485, CE và có 01 CFS Quy cách: can 5L Tương thích hệ thống máy: MEK-6510K Celltacα (Nihon Kohden)",
+      "unit": "can 5 lít",
+      "quantity": 3,
+      "unitPrice": 3100020,
+      "amount": 9300060,
+      "contractorCode": "vn0103657372",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HAMEMY"
+      ],
+      "lotNo": "",
+      "decisionNo": "345/QĐ-BVPNT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:23:01"
+    },
+    {
+      "id": "56dcfdc7-97f7-4e63-a405-a95b1c2679d3",
+      "name": "Hóa chất nội kiểm máy huyết học (3 mức)",
+      "model": "3D506",
+      "brand": "R&D CBC-3D for Mindray",
+      "manufacturer": "R&D Systems Inc",
+      "origin": "Mỹ",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Dùng để kiểm chuẩn máy phân tích huyết học: Chất lỏng; Màu: Đỏ sẫm Độ pH: 6-8 Thành phần: Hồng cầu của người, bạch cầu mô phỏng, tiểu cầu của động vật có vú lơ lửng trong huyết tương như chất lỏng với chất bảo quản. Độ ổn định sau khi mở nắp: 14 ngày Đạt tiêu chuẩn ISO 13485, CE (DoC) và có 01 CFS (CFG của FDA cấp). Quy cách: Bộ 3 mức: 3x3ml Tương thích hệ thống máy: MEK-6510K Celltacα (Nihon Kohden)",
+      "unit": "Bộ 3 mức: 3x3ml",
+      "quantity": 4,
+      "unitPrice": 4500090,
+      "amount": 18000360,
+      "contractorCode": "vn0103657372",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HAMEMY"
+      ],
+      "lotNo": "",
+      "decisionNo": "345/QĐ-BVPNT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:23:01"
+    },
+    {
+      "id": "0fee1c6c-9b99-4523-9521-b7e14d809ff6",
+      "name": "Thuốc thử xét nghiệm định lượng Na, K, Cl",
+      "model": "R04S001",
+      "brand": "SFRI SAS",
+      "manufacturer": "SFRI SAS (tên viết tắt là SFRI),",
+      "origin": "Pháp",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "- Dùng trong xét nghiệm xác định nồng độ Na, K, Cl trong mẫu huyết thanh trên máy điện giải ISE 3000 hiện có tại Bệnh viện. - Thành phần: Buffer, Inorganic salts, Preservative. - Quy cách đóng gói: Std A ≥ 650 mL; Std B ≥ 350 mL.",
+      "unit": "Hộp (Std A ≥ 650 mL; Std B ≥ 350 mL.)",
+      "quantity": 20,
+      "unitPrice": 8258250,
+      "amount": 165165000,
+      "contractorCode": "vn0402163389",
+      "winnerNames": [
+        "CÔNG TY TNHH MTV THIẾT BỊ KỸ THUẬT HƯNG PHÁT"
+      ],
+      "lotNo": "",
+      "decisionNo": "345/QĐ-BVPNT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T15:23:01"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -84,6 +225,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:45:55.610Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-18T05:49:41.011Z"
 }

@@ -1,40 +1,91 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 2,
   "bidders": [
     {
-      "id": "0ec74377-b080-41fc-8bc6-57330ba1d253",
+      "id": "c39996bb-7009-4a95-9847-7189c330932b",
       "contractorCode": "vn0100109699",
-      "taxCode": "",
+      "taxCode": "0100109699",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600422287",
       "lotName": "Carbetocin",
-      "bidPrice": 427570800,
+      "bidPrice": 211085000,
       "finalPrice": 211085000,
-      "winningPrice": 0,
+      "winningPrice": 211085000,
       "reason": "",
-      "submittedAt": "2026-10-26T09:30:30.048",
-      "models": []
+      "submittedAt": "2026-11-16T10:42:54.338",
+      "models": [
+        "Duratocin",
+        "Tractocile"
+      ]
     },
     {
-      "id": "b58d8386-307e-4901-8072-e61d16eb146f",
+      "id": "0e526485-975b-47b9-8497-27fe39c0df14",
       "contractorCode": "vn0100109699",
-      "taxCode": "",
+      "taxCode": "0100109699",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600422288",
       "lotName": "Atosiban",
-      "bidPrice": 427570800,
+      "bidPrice": 216485800,
       "finalPrice": 216485800,
-      "winningPrice": 0,
+      "winningPrice": 216485800,
       "reason": "",
-      "submittedAt": "2026-10-26T09:30:30.048",
-      "models": []
+      "submittedAt": "2026-11-16T10:42:54.338",
+      "models": [
+        "Duratocin",
+        "Tractocile"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600422287",
+      "name": "Duratocin",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Cơ sở sản xuất: Đức; Cơ sở đóng gói: Thụy Sĩ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 815,
+      "unitPrice": 259000,
+      "amount": 211085000,
+      "contractorCode": "vn0100109699",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI"
+      ],
+      "lotNo": "PP2600422287",
+      "decisionNo": "1029/QĐ-BVPS",
+      "decisionDate": "2026-11-16T10:42:53",
+      "resultPublishedDate": "2026-11-16T10:42:54"
+    },
+    {
+      "id": "2600422288",
+      "name": "Tractocile",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Cơ sở sản xuất và đóng gói sơ cấp: Đức; Cơ sở đóng gói thứ cấp và xuất xưởng: Thụy Sĩ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 100,
+      "unitPrice": 2164858,
+      "amount": 216485800,
+      "contractorCode": "vn0100109699",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM THIẾT BỊ Y TẾ HÀ NỘI"
+      ],
+      "lotNo": "PP2600422288",
+      "decisionNo": "1029/QĐ-BVPS",
+      "decisionDate": "2026-11-16T10:42:53",
+      "resultPublishedDate": "2026-11-16T10:42:54"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -70,5 +121,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-15T21:48:34.277Z"
+  "fetchedAt": "2026-11-18T05:40:16.795Z"
 }

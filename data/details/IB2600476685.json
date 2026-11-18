@@ -1,25 +1,102 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 4,
   "bidders": [
     {
-      "id": "e885601c-470d-46a2-805a-87110a810b6d",
+      "id": "4c8918c7-95f0-48be-b028-f9bfad72d8e7",
       "contractorCode": "vn0309537713",
-      "taxCode": "",
+      "taxCode": "0309537713",
       "contractorName": "CÔNG TY TNHH Y TẾ SONG BẢO",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600497187",
       "lotName": "Mua sắm hóa chất, vật tư xét nghiệm theo máy CLOVER A1C, SELEXON, DRY FLUOROIMMUNOASSAY ANALYZER năm 2026 - 2027 của Bệnh viện Đa khoa khu vực phía Nam",
       "bidPrice": 1512840000,
       "finalPrice": 1512840000,
-      "winningPrice": 0,
+      "winningPrice": 1512840000,
       "reason": "",
-      "submittedAt": "2026-09-04T09:15:14.892",
+      "submittedAt": "2026-11-05T13:49:11.194",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "5e813488-83d9-4e86-b5c7-d31116d1aa9a",
+      "name": "Cartridge xét nghiệm định lượng HbA1c",
+      "model": "INFHS01AS2",
+      "brand": "CLOVER-A1c SELF Test Cartridge",
+      "manufacturer": "Osang",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025",
+      "specification": "Dùng để xét nghiệm định lượng HbA1c Sử dụng cho máy Clover A1c Self",
+      "unit": "Test",
+      "quantity": 12000,
+      "unitPrice": 84000,
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ SONG BẢO"
+      ],
+      "decisionNo": "688/QĐ-BVPN",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-05T13:49:44"
+    },
+    {
+      "id": "8270ad54-fd90-498e-baa4-b27562031447",
+      "name": "Cartridge kiểm tra hàng tháng HbA1c",
+      "model": "INFHMC01AS2",
+      "brand": "CLOVER-A1c SELF Monthly Check Cartridge",
+      "manufacturer": "Osang",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025",
+      "specification": "Dùng để kiểm tra hàng tháng HbA1c Sử dụng cho máy Clover A1c Self",
+      "unit": "Test",
+      "quantity": 5,
+      "unitPrice": 84000,
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ SONG BẢO"
+      ],
+      "decisionNo": "688/QĐ-BVPN",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-05T13:49:44"
+    },
+    {
+      "id": "922e4294-e0f8-45d3-83e7-7bdb4776987c",
+      "name": "Cartridge kiểm tra hàng ngày HbA1c",
+      "model": "INFHDC01AS2",
+      "brand": "CLOVER-A1c SELF Daily Check Cartridge",
+      "manufacturer": "Osang",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2026",
+      "specification": "Dùng để kiểm tra hàng ngày HbA1c Sử dụng cho máy Clover A1c Self",
+      "unit": "Test",
+      "quantity": 5,
+      "unitPrice": 84000,
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ SONG BẢO"
+      ],
+      "decisionNo": "688/QĐ-BVPN",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-05T13:49:44"
+    },
+    {
+      "id": "c12067a5-cc83-4cb4-9264-e75a4c93597c",
+      "name": "Test định lượng Troponin I",
+      "model": "CP003.Z2",
+      "brand": "Diagnostic Kit for cTnI (Immunochromatographic assay)",
+      "manufacturer": "WWHS Biotech",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026",
+      "specification": "Dùng để định lượng Troponin I Sử dụng được cho máy SELEXON hoặc máy DRY FLUOROIMMUNOASSAY ANALYZER",
+      "unit": "Test",
+      "quantity": 8000,
+      "unitPrice": 63000,
+      "winnerNames": [
+        "CÔNG TY TNHH Y TẾ SONG BẢO"
+      ],
+      "decisionNo": "688/QĐ-BVPN",
+      "decisionDate": "2026-11-03T23:59:59",
+      "resultPublishedDate": "2026-11-05T13:49:44"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -45,5 +122,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-01T21:26:13.507Z"
+  "fetchedAt": "2026-11-18T06:00:00.683Z"
 }

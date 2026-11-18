@@ -1,55 +1,130 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "a52168e1-8ad2-45aa-84f1-860e8516477a",
+      "id": "1da31d07-1ab6-4d27-8956-f3c3a157b0dd",
       "contractorCode": "vn0100108536",
-      "taxCode": "",
+      "taxCode": "0100108536",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600422279",
       "lotName": "Iobitridol",
-      "bidPrice": 4382900000,
+      "bidPrice": 185900000,
       "finalPrice": 185900000,
-      "winningPrice": 0,
+      "winningPrice": 185900000,
       "reason": "",
-      "submittedAt": "2026-10-26T09:31:12.311",
-      "models": []
+      "submittedAt": "2026-11-16T10:44:24.05",
+      "models": [
+        "Curosurf",
+        "Xenetix 300"
+      ]
     },
     {
-      "id": "7bbbbd69-133d-454a-8708-a54585a1b7ad",
+      "id": "a3de6dda-ca07-431b-a09e-062f05cc46fd",
       "contractorCode": "vn0310631333",
-      "taxCode": "",
+      "taxCode": "0310631333",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600422280",
       "lotName": "Surfactant (Phospholipid chiết xuất từ phổi lợn hoặc phổi bò; hoặc chất diện hoạt chiết xuất từ phổi bò (Bovine lung surfactant)",
       "bidPrice": 1320330000,
       "finalPrice": 1320330000,
-      "winningPrice": 0,
+      "winningPrice": 1320330000,
       "reason": "",
-      "submittedAt": "2026-10-26T09:31:12.075",
-      "models": []
+      "submittedAt": "2026-11-16T10:44:24.05",
+      "models": [
+        "Survanta"
+      ]
     },
     {
-      "id": "c38001bd-4bac-4e4d-a630-a5db23a4d777",
+      "id": "50fe6e41-6d05-4665-adda-b8d36471de13",
       "contractorCode": "vn0100108536",
-      "taxCode": "",
+      "taxCode": "0100108536",
       "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600422281",
       "lotName": "Surfactant (Phospholipid chiết xuất từ phổi lợn hoặc phổi bò; hoặc chất diện hoạt chiết xuất từ phổi bò (Bovine lung surfactant)",
-      "bidPrice": 4382900000,
+      "bidPrice": 4197000000,
       "finalPrice": 4197000000,
-      "winningPrice": 0,
+      "winningPrice": 4197000000,
       "reason": "",
-      "submittedAt": "2026-10-26T09:31:12.311",
-      "models": []
+      "submittedAt": "2026-11-16T10:44:24.05",
+      "models": [
+        "Curosurf",
+        "Xenetix 300"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600422280",
+      "name": "Survanta",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Mỹ",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 150,
+      "unitPrice": 8802200,
+      "amount": 1320330000,
+      "contractorCode": "vn0310631333",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DƯỢC PHẨM SANG"
+      ],
+      "lotNo": "PP2600422280",
+      "decisionNo": "1028/QĐ-BVPS",
+      "decisionDate": "2026-11-16T10:44:22",
+      "resultPublishedDate": "2026-11-16T10:44:24"
+    },
+    {
+      "id": "2600422281",
+      "name": "Curosurf",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Ý",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 300,
+      "unitPrice": 13990000,
+      "amount": 4197000000,
+      "contractorCode": "vn0100108536",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "lotNo": "PP2600422281",
+      "decisionNo": "1028/QĐ-BVPS",
+      "decisionDate": "2026-11-16T10:44:22",
+      "resultPublishedDate": "2026-11-16T10:44:24"
+    },
+    {
+      "id": "2600422279",
+      "name": "Xenetix 300",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "Pháp",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Lọ",
+      "quantity": 550,
+      "unitPrice": 338000,
+      "amount": 185900000,
+      "contractorCode": "vn0100108536",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CPC1"
+      ],
+      "lotNo": "PP2600422279",
+      "decisionNo": "1028/QĐ-BVPS",
+      "decisionDate": "2026-11-16T10:44:22",
+      "resultPublishedDate": "2026-11-16T10:44:24"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -95,5 +170,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-15T21:48:34.286Z"
+  "fetchedAt": "2026-11-18T05:40:17.045Z"
 }

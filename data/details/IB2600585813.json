@@ -1,9 +1,145 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 3,
+  "bidders": [
+    {
+      "id": "b3c744f3-1a4a-4e5a-a9f8-eae2444c8af2",
+      "contractorCode": "vn0402226744",
+      "taxCode": "0402226744",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ ĐIỆN NGỌC",
+      "status": "won",
+      "lotNo": "PP2600453173",
+      "lotName": "Ống nội khí quản cong miệng có bóng các số",
+      "bidPrice": 10000000,
+      "finalPrice": 10000000,
+      "winningPrice": 10000000,
+      "reason": "",
+      "submittedAt": "2026-11-18T08:53:47.214",
+      "models": [
+        "IC61213075"
+      ]
+    },
+    {
+      "id": "c4944f1f-89cd-4265-982f-06f3e8d39a5f",
+      "contractorCode": "vn0402226744",
+      "taxCode": "0402226744",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ ĐIỆN NGỌC",
+      "status": "lost",
+      "lotNo": "PP2600453174",
+      "lotName": "Ống nội khí quản cong lò xo các số",
+      "bidPrice": 6000000,
+      "finalPrice": 6000000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu xếp hạng 2",
+      "submittedAt": "2026-11-18T08:53:47.214",
+      "models": [
+        "IC61213075"
+      ]
+    },
+    {
+      "id": "affb7985-88ad-47b5-8078-ce4dede9f4e9",
+      "contractorCode": "vn6001817483",
+      "taxCode": "6001817483",
+      "contractorName": "CÔNG TY TNHH PHƯỚC PHÁT EAKAO",
+      "status": "won",
+      "lotNo": "PP2600453174",
+      "lotName": "Ống nội khí quản cong lò xo các số",
+      "bidPrice": 5632080,
+      "finalPrice": 5632080,
+      "winningPrice": 5632080,
+      "reason": "",
+      "submittedAt": "2026-11-18T08:53:47.214",
+      "models": [
+        "2007001"
+      ]
+    },
+    {
+      "id": "4bbaf4f6-58ab-483a-83d7-ef3a81341c15",
+      "contractorCode": "vn0401895647",
+      "taxCode": "0401895647",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG GIA HUY",
+      "status": "won",
+      "lotNo": "PP2600453175",
+      "lotName": "Lưới phẫu thuật (surgical mesh)",
+      "bidPrice": 69600000,
+      "finalPrice": 69600000,
+      "winningPrice": 69600000,
+      "reason": "",
+      "submittedAt": "2026-11-18T08:53:47.214",
+      "models": [
+        "DM1015"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "0dfb4e45-a56b-4f2a-832b-440a9ac4dccf",
+      "name": "Ống nội khí quản cong miệng có bóng các số",
+      "model": "IC61213075",
+      "brand": "IDEALCARE",
+      "manufacturer": "IDEALCARE",
+      "origin": "Malaysia",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Được làm từ chất liệu PP\r\n(Polypropylene) mềm dẻo\r\nhoặc silicon, có cản quang.\r\nMiệng ống cong. Đã tiệt trùng.\r\nSize: 2; 3; 4; 5; 5.5; 6; 6.5; 7\r\nTiêu chuẩn ISO 13485",
+      "unit": "Cái",
+      "quantity": 100,
+      "unitPrice": 100000,
+      "amount": 10000000,
+      "contractorCode": "vn0402226744",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ ĐIỆN NGỌC"
+      ],
+      "lotNo": "",
+      "decisionNo": "1052/QĐ-BV",
+      "decisionDate": "2026-11-18T08:53:46",
+      "resultPublishedDate": "2026-11-18T08:53:47"
+    },
+    {
+      "id": "19acf562-a508-4984-9374-8d31877b5c53",
+      "name": "Ống nội khí quản cong lò xo các số",
+      "model": "2007001",
+      "brand": "Suzhou Yudu Medical Co.,Ltd",
+      "manufacturer": "Suzhou Yudu Medical Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Được làm từ chất liệu PP\r\ntráng silicon có thể tích bóng ≥\r\n30ml, có cản quang. Miệng\r\nống cong. Đã tiệt trùng. Ống\r\nnội khí quản lò xo có cốt kim\r\nloại, chống gãy. Size: 4.5; 5;\r\n5.5; 6; 6.5; 7 Tiêu chuẩn ISO\r\n13485",
+      "unit": "Cái",
+      "quantity": 60,
+      "unitPrice": 93868,
+      "amount": 5632080,
+      "contractorCode": "vn6001817483",
+      "winnerNames": [
+        "CÔNG TY TNHH PHƯỚC PHÁT EAKAO"
+      ],
+      "lotNo": "",
+      "decisionNo": "1052/QĐ-BV",
+      "decisionDate": "2026-11-18T08:53:46",
+      "resultPublishedDate": "2026-11-18T08:53:47"
+    },
+    {
+      "id": "34d4cfbe-aea2-4be7-879f-0ca22562944b",
+      "name": "Lưới phẫu thuật (surgical mesh)",
+      "model": "DM1015",
+      "brand": "Duzey Medikal",
+      "manufacturer": "Duzey Medikal",
+      "origin": "Thổ Nhĩ Kỳ",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Chất liệu Polypropylene, kích\r\nthước 10 x 15cm\r\nKích thước lỗ: 1,2* 0,9mm,\r\nđường kính sợi 0,15mm *\r\nTrọng lượng: 57(g/m2) * Độ\r\nbền: 750kPa\r\nLực căng: warrp/275N,\r\nweft/250N\r\nĐộ dày: 0,5mm\r\nLinh hoạt, chắn chắn và trong\r\nsuất\r\nTiêu chuẩn chất lượng ISO\r\n13485, CE\r\nXuất xứ: OECD",
+      "unit": "Miếng",
+      "quantity": 120,
+      "unitPrice": 580000,
+      "amount": 69600000,
+      "contractorCode": "vn0401895647",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ HOÀNG GIA HUY"
+      ],
+      "lotNo": "",
+      "decisionNo": "1052/QĐ-BV",
+      "decisionDate": "2026-11-18T08:53:46",
+      "resultPublishedDate": "2026-11-18T08:53:47"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -122,6 +258,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-15T21:54:49.187Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-18T05:49:32.698Z"
 }

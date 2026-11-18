@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 3,
+  "resultItemParserVersion": 3,
+  "total": 1,
+  "bidders": [
+    {
+      "id": "5b8b383f-b411-485d-a92a-4eb325434165",
+      "contractorCode": "vn0316127549",
+      "taxCode": "0316127549",
+      "contractorName": "CÔNG TY TNHH DIOP HEALTHCARE",
+      "status": "lost",
+      "lotNo": "BP2600004276",
+      "lotName": "Mua máy gây mê kèm thở",
+      "bidPrice": 2455500000,
+      "finalPrice": 2455500000,
+      "winningPrice": 0,
+      "reason": "Không đáp ứng yêu cầu về kỹ thuật",
+      "submittedAt": "2026-03-11T10:50:56.652",
+      "models": []
+    },
+    {
+      "id": "b5dad379-5320-40bf-ae9a-8e0c3281db0e",
+      "contractorCode": "vn0107898996",
+      "taxCode": "0107898996",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI TOPLINE",
+      "status": "won",
+      "lotNo": "BP2600004276",
+      "lotName": "Mua máy gây mê kèm thở",
+      "bidPrice": 2850000000,
+      "finalPrice": 2850000000,
+      "winningPrice": 2850000000,
+      "reason": "",
+      "submittedAt": "2026-03-11T10:50:56.652",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "242f6671-d037-4f57-9467-0dfd8bf8840b",
+      "name": "Máy gây mê kèm thở",
+      "model": "Carestation 620 (Carestation 620 A1)",
+      "brand": "Carestation 620 (Carestation 620 A1)",
+      "manufacturer": "Datex-Ohmeda, Inc (GE Healthcare)",
+      "origin": "Mỹ",
+      "manufactureYear": "năm 2025 trở đi",
+      "specification": "Theo bảng đáp ứng thông số kỹ thuật đính kèm",
+      "unit": "Máy",
+      "quantity": 3,
+      "unitPrice": 950000000,
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI TOPLINE"
+      ],
+      "decisionNo": "612/QĐ-BVYD",
+      "decisionDate": "2026-03-11T23:59:59",
+      "resultPublishedDate": "2026-03-11T10:51:11"
+    }
+  ],
+  "requirements": {
+    "total": 1,
+    "items": [
+      {
+        "id": "de4c6ef9-77cc-4972-b7ec-0f98f2930253",
+        "lotNo": "BP2600004276",
+        "name": "Mua máy gây mê kèm thở",
+        "quantity": 0,
+        "unit": "",
+        "plannedPrice": 2850000000,
+        "specification": "",
+        "sourceStage": "invitation"
+      }
+    ],
+    "summary": "Mua 03 máy gây mê kèm thở",
+    "disclosure": "public-plan-lots"
+  },
+  "technicalRequirements": {
+    "total": 0,
+    "items": [],
+    "chapters": [],
+    "files": [],
+    "disclosure": "official-captcha-required"
+  },
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-18T05:47:20.510Z"
+}

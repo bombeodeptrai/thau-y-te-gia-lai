@@ -1,9 +1,157 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 5,
+  "bidders": [
+    {
+      "id": "eb7775aa-d527-476d-8acb-54c3a5de29b2",
+      "contractorCode": "vn0111154855",
+      "taxCode": "0111154855",
+      "contractorName": "CÔNG TY TNHH TM VÀ DV KỸ THUẬT ĐỨC ANH",
+      "status": "lost",
+      "lotNo": "BP2600926026",
+      "lotName": "Bảo dưỡng, sửa chữa Hệ thống máy chụp cắt lớp vi tính 2 lát cắt, Model: Somatom Spirit, hãng sản xuất: Siemens Healthcare tại Bệnh viện đa khoa Vĩnh Lộc",
+      "bidPrice": 444680000,
+      "finalPrice": 444680000,
+      "winningPrice": 0,
+      "reason": "Giá cao hơn",
+      "submittedAt": "2026-11-16T14:56:00.578",
+      "models": []
+    },
+    {
+      "id": "98521c3a-4491-4c6a-b1ac-c10de9b88552",
+      "contractorCode": "vn2902059076",
+      "taxCode": "2902059076",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM",
+      "status": "won",
+      "lotNo": "BP2600926026",
+      "lotName": "Bảo dưỡng, sửa chữa Hệ thống máy chụp cắt lớp vi tính 2 lát cắt, Model: Somatom Spirit, hãng sản xuất: Siemens Healthcare tại Bệnh viện đa khoa Vĩnh Lộc",
+      "bidPrice": 420000000,
+      "finalPrice": 420000000,
+      "winningPrice": 420000000,
+      "reason": "",
+      "submittedAt": "2026-11-16T14:56:00.578",
+      "models": [
+        "BO NGUỒN POWERBOOK",
+        "HỆ THỐNG NGUỒN BẢO VỆ SOMATOM SPIRI",
+        "NGUỒN TÍN HIỆU VÀ HỆ THỐNG TRỔI THAN",
+        "HỆ THỐNG LƯU TRỮ VÀ ỨNG DỤNG",
+        "BẢO TRÌ BẢO DƯỠNG TỔNG THỂ MÁY SOMATOM SPIRI"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "12258205481842830",
+      "name": "BO NGUỒN POWERBOOK",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 131250000.00000001,
+      "amount": 131250000.00000001,
+      "contractorCode": "vn2902059076",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1212/QĐ-BVVL",
+      "decisionDate": "2026-11-16T14:55:59",
+      "resultPublishedDate": "2026-11-16T14:56:00"
+    },
+    {
+      "id": "10070854162922944",
+      "name": "HỆ THỐNG NGUỒN BẢO VỆ SOMATOM SPIRI",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "HT",
+      "quantity": 1,
+      "unitPrice": 87500000,
+      "amount": 87500000,
+      "contractorCode": "vn2902059076",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1212/QĐ-BVVL",
+      "decisionDate": "2026-11-16T14:55:59",
+      "resultPublishedDate": "2026-11-16T14:56:00"
+    },
+    {
+      "id": "10449205956915718",
+      "name": "NGUỒN TÍN HIỆU VÀ HỆ THỐNG TRỔI THAN",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 131250000.00000001,
+      "amount": 131250000.00000001,
+      "contractorCode": "vn2902059076",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1212/QĐ-BVVL",
+      "decisionDate": "2026-11-16T14:55:59",
+      "resultPublishedDate": "2026-11-16T14:56:00"
+    },
+    {
+      "id": "10494195750030476",
+      "name": "HỆ THỐNG LƯU TRỮ VÀ ỨNG DỤNG",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 35000000,
+      "amount": 35000000,
+      "contractorCode": "vn2902059076",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1212/QĐ-BVVL",
+      "decisionDate": "2026-11-16T14:55:59",
+      "resultPublishedDate": "2026-11-16T14:56:00"
+    },
+    {
+      "id": "7623843685828275",
+      "name": "BẢO TRÌ BẢO DƯỠNG TỔNG THỂ MÁY SOMATOM SPIRI",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Gói",
+      "quantity": 1,
+      "unitPrice": 35000000,
+      "amount": 35000000,
+      "contractorCode": "vn2902059076",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ SÔNG LAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1212/QĐ-BVVL",
+      "decisionDate": "2026-11-16T14:55:59",
+      "resultPublishedDate": "2026-11-16T14:56:00"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -152,6 +300,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-15T21:48:32.113Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-18T05:40:16.712Z"
 }

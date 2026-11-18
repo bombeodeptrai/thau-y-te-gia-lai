@@ -1,55 +1,322 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 14,
   "bidders": [
     {
-      "id": "9c4940c3-d2ca-4b2a-96d4-bd805c990554",
+      "id": "2610db48-2d24-47e5-b565-fac3f9de2cb0",
       "contractorCode": "vn0312692797",
-      "taxCode": "",
+      "taxCode": "0312692797",
       "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TRANG THIẾT BỊ Y TẾ PHÚ AN",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600444032",
       "lotName": "Mua sắm test nhanh của Bệnh viện Đa khoa Ninh Thuận",
       "bidPrice": 1883059500,
       "finalPrice": 1883059500,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-30T15:56:55.667",
+      "reason": "không đáp ứng yêu cầu về kỹ thuật theo E-HSMT",
+      "submittedAt": "2026-10-28T16:10:17.244",
       "models": []
     },
     {
-      "id": "dffe4f14-641e-479b-a584-70d1d191f3e9",
+      "id": "171f11e8-157e-45f8-9190-1ec729d7425b",
       "contractorCode": "vn6001614229",
-      "taxCode": "",
+      "taxCode": "6001614229",
       "contractorName": "CÔNG TY TNHH XÉT NGHIỆM VÀ CHẨN ĐOÁN HÌNH ẢNH PHÚC AN",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "BP2600444032",
       "lotName": "Mua sắm test nhanh của Bệnh viện Đa khoa Ninh Thuận",
       "bidPrice": 2350760000,
       "finalPrice": 2350760000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-07-30T15:56:55.91",
+      "reason": "không đáp ứng yêu cầu về kỹ thuật theo E-HSMT",
+      "submittedAt": "2026-10-28T16:10:17.244",
       "models": []
     },
     {
-      "id": "6ca8c800-eb6e-4d9e-b74a-12444ef953d3",
+      "id": "8fa0e9e1-d755-46d2-8a55-65fc31aee421",
       "contractorCode": "vn0302634813",
-      "taxCode": "",
+      "taxCode": "0302634813",
       "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN",
-      "status": "participating",
+      "status": "won",
       "lotNo": "BP2600444032",
       "lotName": "Mua sắm test nhanh của Bệnh viện Đa khoa Ninh Thuận",
       "bidPrice": 3307770500,
       "finalPrice": 3307770500,
-      "winningPrice": 0,
+      "winningPrice": 3307770500,
       "reason": "",
-      "submittedAt": "2026-07-30T15:56:56.118",
+      "submittedAt": "2026-10-28T16:10:17.244",
       "models": []
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "9673db5e-2082-4358-bc51-348402540280",
+      "name": "Test sốt rét",
+      "model": "05FK80",
+      "brand": "Bioline™ MALARIA Ag P.f/P.v",
+      "manufacturer": "Abbott Diagnostics Korea Inc.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện kháng nguyên Plasmodium falciparum (Pf) HRP2 và Plasmodium vivax (Pv) pLDH trong máu toàn phần của người. - Độ nhạy: 99.7% (P.f), 95.5% (P.v). Độ đặc hiệu: 99.5%.",
+      "unit": "Test",
+      "quantity": 600,
+      "unitPrice": 48090,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "07ac8fc8-b4c9-410f-815d-177f39a5b9ea",
+      "name": "Test thử sốt xuất huyết phát hiện các kháng thể IgM/IgG",
+      "model": "11FK10",
+      "brand": "Bioline™ Dengue IgG/IgM",
+      "manufacturer": "Abbott Diagnostics Korea Inc.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện các kháng thể IgM/IgG kháng Dengue trong huyết thanh hoặc huyết tương. - Độ nhạy 94,6% , Độ đặc hiệu 96,5%",
+      "unit": "Test",
+      "quantity": 7000,
+      "unitPrice": 57078,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "3468b499-2371-412b-b24a-759970c5d66f",
+      "name": "Test nhanh xét nghiệm chất gây nghiện 5 chân",
+      "model": "GBDUA-154-006",
+      "brand": "One Step Multi-Drug Screen Test Dip Card (Urine) AMP300/COD300/MOP300/THC50/HER10",
+      "manufacturer": "Zhejiang Orient Gene Biotech Co.,Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Test nhanh xét nghiệm định tính, đồng thời 5 chất gây nghiện MOP/Codein/Heroin/AMP/Marijuana trong nước tiểu. - AMP300: Độ nhạy 96.7%, Độ đặc hiệu: 100% - COD300: Độ nhạy 97.5%, Độ đặc hiệu:100% - THC50: Độ nhạy 95.8%, Độ đặc hiệu:100% - HER10: Độ nhạy 92.5%, Độ đặc hiệu:100% - MOP300: Độ nhạy 96.7%, Độ đặc hiệu:100%",
+      "unit": "Test",
+      "quantity": 9000,
+      "unitPrice": 30000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "484a79b1-e09b-429f-a7f4-b6ffcc468e87",
+      "name": "Test chẩn đoán H.Pylori",
+      "model": "04FK20",
+      "brand": "Bioline™ H.Pylori Ag",
+      "manufacturer": "Abbott Diagnostics Korea Inc.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện kháng nguyên H.Pylori trong phân. - Độ nhạy 98.4%; Độ đặc hiệu 100%",
+      "unit": "Test",
+      "quantity": 700,
+      "unitPrice": 82950,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "45ea272e-afd8-4874-8085-556b1774e7b7",
+      "name": "Test chẩn đoán viêm gan C",
+      "model": "IHC-301",
+      "brand": "HCV Hepatitis C Virus Rapid Test Strip(Serum/Plasma)",
+      "manufacturer": "ABON Biopharm (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện kháng thể kháng vi rút HCV trong huyết thanh hoặc huyết tương. - Độ nhạy tương đối: > 99.53% - Độ đặc hiệu: 99.64%",
+      "unit": "Test",
+      "quantity": 8000,
+      "unitPrice": 8190,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "187ee2f0-a20b-41b7-b477-cf995d2b2b31",
+      "name": "Test thử dạ dày",
+      "model": "EA0126",
+      "brand": "LABONE HP TEST",
+      "manufacturer": "CÔNG TY TNHH THIẾT BỊ KHOA HỌC LABONE",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Dùng để phát hiện nhanh vi khuẩn H.Pylori có trong mẫu nội soi dạ dày. - Độ nhạy: ≥ 100% , Độ đặc hiệu: ≥ 99.5%.",
+      "unit": "Test",
+      "quantity": 15000,
+      "unitPrice": 9800,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "5086e6cf-1056-4457-b11d-cfba6693ee9a",
+      "name": "Test thử sốt xuất huyết phát hiện kháng nguyên",
+      "model": "11FK50",
+      "brand": "Bioline™ Dengue NS1 Ag",
+      "manufacturer": "Abbott Diagnostics Korea Inc.",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện kháng nguyên Dengue trong huyết thanh, huyết tương hoặc máu toàn phần của người. - Độ nhạy 92,4% và độ đặc hiệu 98,4%",
+      "unit": "Test",
+      "quantity": 26000,
+      "unitPrice": 56251,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "49c81c6b-8cfc-4438-a0f5-3918a6c55bd2",
+      "name": "Test nhanh xét nghiệm chất gây nghiện Heroin",
+      "model": "THER40AM",
+      "brand": "Quick test Heroin (Strip 4.0)",
+      "manufacturer": "CN Công Ty Cổ Phần Sản Xuất Kinh Doanh Sinh Phẩm Chẩn Đoán Y Tế Việt Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Xét nghiệm sắc ký miễn dịch định tính phát hiện Heroin trong nước tiểu của người. - Độ nhạy ≥ 99.8% , Độ đặc hiệu ≥ 99.6%",
+      "unit": "Test",
+      "quantity": 1000,
+      "unitPrice": 25500,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "c078b0ac-b03c-4fda-ab9c-e7f37236de52",
+      "name": "Test nhanh xét nghiệm chất gây nghiện Morphine",
+      "model": "DMO-101(05003K1)",
+      "brand": "Trueline™ MOP Morphine Rapid Test Strip",
+      "manufacturer": "Công ty TNHH Medicon",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Xét nghiệm chuẩn đoán In-vitro định tính phát hiện Morphin trong nước tiểu của người. - Độ nhạy : 100% , Độ đặc hiệu : 100%",
+      "unit": "Test",
+      "quantity": 1000,
+      "unitPrice": 5400,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "4d950634-a1fb-4bc4-9673-9238589ce315",
+      "name": "Test chẩn đoán viêm gan B",
+      "model": "IHBsg-302",
+      "brand": "HBsAg One Step Hepatitis B Surface Antigen Test Device (Serum/Plasma)",
+      "manufacturer": "ABON Biopharm (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện kháng nguyên bề mặt viêm gan B (HBsAg) trong huyết thanh hoặc huyết tương. - Độ nhạy 100%, độ đặc hiệu: 96.8%",
+      "unit": "Test",
+      "quantity": 28000,
+      "unitPrice": 8925,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "d7a32d34-feba-41a2-87aa-3a904778d7cb",
+      "name": "Test chẩn đoán HIV",
+      "model": "7D2343",
+      "brand": "Determine™ HIV-1/2",
+      "manufacturer": "Abbott Diagnostics Medical Co., Ltd.",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính để phát hiện kháng thể kháng HIV-1 và HIV-2 ở huyết thanh, huyết tương hay máu toàn phần người. - Độ nhạy 100% , độ đặc hiệu ≥ 99,75%, - Được ban hành trong khuyến cáo phương cách xét nghiệm chẩn đoán HIV quốc gia của Viện Vệ sinh Dịch tễ Trung ương năm 2020. - Sản xuất tại nước thuộc G7.",
+      "unit": "Test",
+      "quantity": 11000,
+      "unitPrice": 43407,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "38584959-f82e-4832-822d-a874a151ad99",
+      "name": "Test chẩn đoán giang mai",
+      "model": "ISY-U401",
+      "brand": "Syphilis Ultra Rapid Test Strip (Whole Blood/ Serum/ Plasma)",
+      "manufacturer": "ABON Biopharm (Hangzhou) Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện kháng thể IgG&IgM anti-TP kháng Syphilis trong máu toàn phần, huyết thanh hoặc huyết tương. - Độ nhạy 99.5%, độ đặc hiệu 99.8%,",
+      "unit": "Test",
+      "quantity": 12000,
+      "unitPrice": 6300,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "23dce06c-13e6-4f8c-818a-46888ee8a8fc",
+      "name": "Test chẩn đoán lao",
+      "model": "R0053C",
+      "brand": "OnSite TB IgG/IgM Combo Rapid Test",
+      "manufacturer": "Beijing Genesee Biotech, Inc.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện kháng thể IgM, IgG kháng lao Mycobacterium tuberculosis trong huyết thanh, huyết tương hoặc máu toàn phần của người. - Độ nhạy: 87.2%, Độ đặc hiệu: 94.6%",
+      "unit": "Test",
+      "quantity": 1800,
+      "unitPrice": 22000,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    },
+    {
+      "id": "43ba7c3d-8417-4315-a77a-6b78c229dd71",
+      "name": "Test nhanh chẩn đoán tay chân miệng",
+      "model": "W141-C",
+      "brand": "Wondfo Diagnostic Kit for IgM Antibody to Human Enterovirus71 (Immunochromatographic Assay)",
+      "manufacturer": "Guangzhou Wondfo Biotech Co., Ltd.",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Định tính phát hiện kháng thể IgM kháng EV71 trong huyết thanh, huyết tương hoặc máu toàn phần của người. - Độ nhạy: 97.07% , Độ đặc hiệu: 99.06%",
+      "unit": "Test",
+      "quantity": 50,
+      "unitPrice": 55650,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ SÀI GÒN"
+      ],
+      "decisionNo": "2004",
+      "decisionDate": "2026-10-28T23:59:59",
+      "resultPublishedDate": "2026-10-28T16:10:59"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -74,6 +341,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:54:15.407Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-18T05:59:07.550Z"
 }

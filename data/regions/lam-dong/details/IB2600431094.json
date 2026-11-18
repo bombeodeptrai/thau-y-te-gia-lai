@@ -1,70 +1,336 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 11,
   "bidders": [
     {
-      "id": "32d8c8cc-5867-46ce-a770-aa7af3c55fdb",
+      "id": "173c8e72-acd7-4f85-9de6-fb6888b69556",
       "contractorCode": "vn0101348114",
-      "taxCode": "",
+      "taxCode": "0101348114",
       "contractorName": "CÔNG TY CỔ PHẦN HOÁ CHẤT - THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600324973",
       "lotName": "HOÁ CHẤT SOI NHUỘM",
-      "bidPrice": 106410000,
+      "bidPrice": 82167500,
       "finalPrice": 82167500,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-09T09:18:14.177",
-      "models": []
+      "reason": "Không đạt kỹ thuật",
+      "submittedAt": "2026-10-29T10:56:55.535",
+      "models": [
+        "Bóp cao su",
+        "Đồng hồ",
+        "C0001243",
+        "GSWG047S6",
+        "1822-047",
+        "Giấy lau",
+        "5353",
+        "5352",
+        "Giấy thấm"
+      ]
     },
     {
-      "id": "a4dcb6ea-12eb-4968-8050-9b074ea65f8e",
+      "id": "e7d89404-7b34-4b07-87e6-8ff9a1377b03",
       "contractorCode": "vn8136548817",
-      "taxCode": "",
+      "taxCode": "010190008599",
       "contractorName": "HỘ KINH DOANH TÊN CỬA HÀNG DỤNG CỤ Y KHOA THIÊN TRANG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600324974",
       "lotName": "TEST MA TUÝ",
       "bidPrice": 11600000,
       "finalPrice": 11600000,
-      "winningPrice": 0,
+      "winningPrice": 11600000,
       "reason": "",
-      "submittedAt": "2026-09-09T09:18:13.962",
-      "models": []
+      "submittedAt": "2026-10-29T10:56:55.535",
+      "models": [
+        "MD-U55 (MOP/COD/HER/THC/AMP)",
+        "MET-U11"
+      ]
     },
     {
-      "id": "2463bdfc-db4f-4ba6-8152-21fc1de33555",
+      "id": "3453c9da-d919-4914-bb09-5351e6f608f1",
       "contractorCode": "vn0309075240",
-      "taxCode": "",
+      "taxCode": "096168009020",
       "contractorName": "HỘ KINH DOANH NGUYỄN KIM LIÊN CỬA HÀNG TRANG THIẾT BỊ Y TẾ HUY HOÀNG",
-      "status": "participating",
+      "status": "lost",
       "lotNo": "PP2600324974",
       "lotName": "TEST MA TUÝ",
       "bidPrice": 16640000,
       "finalPrice": 16640000,
       "winningPrice": 0,
-      "reason": "",
-      "submittedAt": "2026-09-09T09:18:14.363",
+      "reason": "Xếp hạng II",
+      "submittedAt": "2026-10-29T10:56:55.535",
       "models": []
     },
     {
-      "id": "7c92f718-e9ae-4499-a5ef-b0baf2b0b1ba",
+      "id": "b35d48f0-4f33-4d8f-9201-39d61f163798",
       "contractorCode": "vn0101348114",
-      "taxCode": "",
+      "taxCode": "0101348114",
       "contractorName": "CÔNG TY CỔ PHẦN HOÁ CHẤT - THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600324975",
       "lotName": "CÔNG CỤ DỤNG CỤ",
-      "bidPrice": 106410000,
+      "bidPrice": 24242500,
       "finalPrice": 24242500,
-      "winningPrice": 0,
+      "winningPrice": 24242500,
       "reason": "",
-      "submittedAt": "2026-09-09T09:18:14.177",
-      "models": []
+      "submittedAt": "2026-10-29T10:56:55.535",
+      "models": [
+        "Bóp cao su",
+        "Đồng hồ",
+        "C0001243",
+        "GSWG047S6",
+        "1822-047",
+        "Giấy lau",
+        "5353",
+        "5352",
+        "Giấy thấm"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "ce5fee83-cf07-49b6-8782-3d03492e4915",
+      "name": "Bóp cao su 1 chấu",
+      "model": "Bóp cao su",
+      "brand": "Onelab",
+      "manufacturer": "Onelab",
+      "origin": "Trung Quốc",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Cái",
+      "quantity": 5,
+      "unitPrice": 50000,
+      "amount": 250000,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "5859836c-3b0f-4744-b0b2-184e1a02028b",
+      "name": "Đồng hồ bấm giây",
+      "model": "Đồng hồ",
+      "brand": "Trung quốc",
+      "manufacturer": "Trung quốc",
+      "origin": "Trung Quốc",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 135000,
+      "amount": 135000,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "c3df807c-0a9f-4382-aa2a-4867fa2ad6c5",
+      "name": "Màng lọc Mixed Cellulose Ester 47mm - 0.45μm",
+      "model": "C0001243",
+      "brand": "ALWSCI",
+      "manufacturer": "ALWSCI",
+      "origin": "Trung Quốc",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Cái",
+      "quantity": 2000,
+      "unitPrice": 5400,
+      "amount": 10800000,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "35a63e64-4454-4f51-82e5-ede609c5722f",
+      "name": "Màng lọc Mixed Cellulose Ester 47mm - 0.22μm",
+      "model": "GSWG047S6",
+      "brand": "Merck Millipore",
+      "manufacturer": "Merck Millipore",
+      "origin": "Mỹ",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Cái",
+      "quantity": 500,
+      "unitPrice": 14800,
+      "amount": 7400000,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "a2f57114-9dc6-4f08-a12b-084e7b811ad5",
+      "name": "Giấy lọc size 47 mm; Hộp ≥ 100 tờ",
+      "model": "1822-047",
+      "brand": "Whatman",
+      "manufacturer": "Whatman",
+      "origin": "Trung Quốc",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 1026000,
+      "amount": 1026000,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "f3de0aab-6d4d-4048-8bd9-98a914c7de69",
+      "name": "Giấy lau kính hiển vi; Hộp ≥ 100 tờ",
+      "model": "Giấy lau",
+      "brand": "Newstar",
+      "manufacturer": "Newstar",
+      "origin": "Trung Quốc",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Hộp",
+      "quantity": 5,
+      "unitPrice": 34000,
+      "amount": 170000,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "163738f0-f5d5-4ecd-8e61-7fdcdf429482",
+      "name": "Băng keo chỉ thị nhiệt sấy khô",
+      "model": "5353",
+      "brand": "Aptaca",
+      "manufacturer": "Aptaca",
+      "origin": "Ý",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Cuộn",
+      "quantity": 7,
+      "unitPrice": 511000,
+      "amount": 3577000,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "58a774ae-f760-41ce-b71d-d12b5c66ae83",
+      "name": "Băng keo chỉ thị nhiệt hấp ướt",
+      "model": "5352",
+      "brand": "Aptaca",
+      "manufacturer": "Aptaca",
+      "origin": "Ý",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Cuộn",
+      "quantity": 3,
+      "unitPrice": 121500,
+      "amount": 364500,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "a1ff5131-94ed-4756-8722-aede2aa57199",
+      "name": "Giấy thấm; Gói ≥ 100 tờ",
+      "model": "Giấy thấm",
+      "brand": "Fairy NAPKIN",
+      "manufacturer": "Fairy NAPKIN",
+      "origin": "Việt Nam",
+      "manufactureYear": ".",
+      "specification": "Theo bảng \" Đặc tính thông số kỹ thuật",
+      "unit": "Gói",
+      "quantity": 26,
+      "unitPrice": 20000,
+      "amount": 520000,
+      "contractorCode": "vn0101348114",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN HOÁ CHẤT -  THIẾT BỊ PHÒNG THÍ NGHIỆM VÀ CÔNG NGHỆ"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "7b8e7784-22ff-4de6-9824-9081002aefb1",
+      "name": "Test nhanh chẩn đoán chất gây nghiện 5 chân",
+      "model": "MD-U55 (MOP/COD/HER/THC/AMP)",
+      "brand": "Fastep",
+      "manufacturer": "Assure Tech. (Hangzhou) Co., Ltd.;",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Xét nghiệm nước tiểu miễn dịch sắc ký nhanh để phát hiện định tính và đồng thời các chất MOP/COD/HER/THC/AMP trong nước tiểu người - Điểm ngưỡng giới hạn (ng/mL): AMP: 300, COD: 100, HER: 5, MOP: 100, THC: 25 - Độ nhạy tương đối: 100% - Độ đặc hiệu tương đối: 100% - Độ chính xác: 100%",
+      "unit": "Test",
+      "quantity": 500,
+      "unitPrice": 16800,
+      "amount": 8400000,
+      "contractorCode": "vn8136548817",
+      "winnerNames": [
+        "HỘ KINH DOANH TÊN CỬA HÀNG DỤNG CỤ Y KHOA THIÊN TRANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    },
+    {
+      "id": "1b3979a3-6dd4-4425-97fb-23d7b300903d",
+      "name": "Test nhanh chẩn đoán Methamphetamin",
+      "model": "MET-U11",
+      "brand": "Fastep",
+      "manufacturer": "Assure Tech. (Hangzhou) Co., Ltd.;",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "- Xét nghiệm sắc ký miễn dịch định tính, giả định phát hiện sự có mặt của Methamphetamine trong mẫu nước tiểu ở người. - Điểm ngưỡng giới hạn (ng/mL): 1.000 - Độ nhạy tương đối: >99.9% - Độ đặc hiệu tương đối: >99.9% - Độ chính xác: >99.9%",
+      "unit": "Test",
+      "quantity": 500,
+      "unitPrice": 6400,
+      "amount": 3200000,
+      "contractorCode": "vn8136548817",
+      "winnerNames": [
+        "HỘ KINH DOANH TÊN CỬA HÀNG DỤNG CỤ Y KHOA THIÊN TRANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "715/QĐ-KSBT",
+      "decisionDate": "2026-10-29T23:59:59",
+      "resultPublishedDate": "2026-10-29T10:57:26"
+    }
+  ],
   "requirements": {
     "total": 12,
     "items": [
@@ -199,6 +465,6 @@
     "files": [],
     "disclosure": "official-captcha-required"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-10-25T19:55:14.214Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-18T06:00:02.482Z"
 }
