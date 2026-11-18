@@ -1,6 +1,48 @@
 {
   "tenders": [
     {
+      "id": "a8b05ca9-9695-43b0-bb11-c614f15eedf1",
+      "notifyId": "a8b05ca9-9695-43b0-bb11-c614f15eedf1",
+      "bidId": "1edfa51d-1a7d-4f39-a937-dc0011a57156",
+      "bidOpenId": "",
+      "inputResultId": "",
+      "bidForm": "CGTTRG",
+      "processApply": "LDT",
+      "stepCode": "reoffer-price-step-1",
+      "notifyNo": "IB2600613795",
+      "name": "Mua sắm Que test nhanh ma túy 6 chân phục vụ Chương trình MTQG phòng, chống ma túy năm 2026 khu vực phía Tây tỉnh Gia Lai",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "BỆNH VIỆN TÂM THẦN KINH PLEIKU",
+      "location": "Phường Pleiku",
+      "closeDate": "2026-11-26T10:00:00",
+      "publicDate": "2026-11-18T10:29:24.435",
+      "price": 70000000,
+      "category": "Vật tư & hóa chất",
+      "status": "open",
+      "sourceStatus": "01",
+      "statusForNotify": "",
+      "bidderCount": null,
+      "sourceBidderCount": null,
+      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=a8b05ca9-9695-43b0-bb11-c614f15eedf1&notifyId=a8b05ca9-9695-43b0-bb11-c614f15eedf1&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600613795&planNo=PL2600410361&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
+      "winnerNames": [],
+      "winningPrice": 0,
+      "decisionDate": "",
+      "resultPublishedDate": "",
+      "hasResult": false,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "DC2600121909",
       "notifyId": "DC2600121909",
       "bidId": "796429a8-da58-46ba-bde3-e6c9da82a770",
@@ -92036,7 +92078,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-17T23:34:10.961Z",
+  "fetchedAt": "2026-11-18T05:37:49.418Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -92044,7 +92086,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 1152,
+  "detailTenderCount": 1153,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
