@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-17T23:34:10.961Z",
+  "rescuedAt": "2026-11-18T05:39:59.558Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 280,
+      "count": 285,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 783,
+      "count": 769,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 67,
+      "count": 69,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 7,
+      "count": 8,
       "error": ""
     },
     {
@@ -114,13 +114,13 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 26,
+      "count": 27,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 17,
+      "count": 18,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 118,
+      "count": 119,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 93,
+      "count": 81,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 41,
+      "count": 42,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 79,
+      "count": 85,
       "error": ""
     },
     {
@@ -234,13 +234,13 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 68,
+      "count": 71,
       "error": ""
     },
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -281,17 +281,17 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1750,
-  "acceptedCount": 62,
-  "rejectedCount": 1688,
+  "candidateCount": 1747,
+  "acceptedCount": 64,
+  "rejectedCount": 1683,
   "rejectedReasons": {
-    "excluded:tu van": 541,
+    "excluded:tu van": 529,
     "insufficient-medical-context": 449,
-    "excluded:xay dung": 444,
-    "excluded:xay lap": 85,
-    "excluded:sua chua": 51,
-    "excluded:cai tao": 20,
-    "excluded:bao ve": 12,
+    "excluded:xay dung": 447,
+    "excluded:xay lap": 86,
+    "excluded:sua chua": 52,
+    "excluded:cai tao": 19,
+    "excluded:bao ve": 13,
     "excluded:bao hiem": 11,
     "excluded:bao tri": 9,
     "excluded:tham dinh": 9,
@@ -299,16 +299,16 @@
     "excluded:thuc pham": 7,
     "excluded:trang phuc": 5,
     "excluded:cong nghe thong tin": 5,
+    "excluded:quan ly du an": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:may in": 3,
-    "excluded:quan ly du an": 3,
+    "excluded:ve sinh cong nghiep": 2,
     "excluded:chat thai": 2,
     "excluded:in an": 2,
     "excluded:cap dien": 2,
     "excluded:cay xanh": 2,
     "excluded:lap e hsmt": 2,
     "excluded:suat an": 2,
-    "excluded:ve sinh cong nghiep": 1,
     "excluded:may phat dien": 1,
     "excluded:may chu": 1,
     "excluded:van phong pham": 1,
@@ -321,6 +321,20 @@
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600613795",
+      "name": "Mua sắm Que test nhanh ma túy 6 chân phục vụ Chương trình MTQG phòng, chống ma túy năm 2026 khu vực phía Tây tỉnh Gia Lai",
+      "investor": "BỆNH VIỆN TÂM THẦN KINH PLEIKU",
+      "accepted": true,
+      "score": 135,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "test nhanh",
+        "benh vien",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600609403",
       "name": "Gói thầu số 1: Mua sắm Vật tư y tế giai đoạn 2027-2028 (Gồm 205 mặt hàng tương ứng 205 phần)",
@@ -352,6 +366,21 @@
         "chan doan",
         "kham chua benh",
         "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600611995",
+      "name": "Mua sắm phụ tùng thay thế cho máy gây mê của Bệnh viện Đa khoa Gia Lai",
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "accepted": true,
+      "score": 145,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "may gay me",
+        "benh vien",
+        "da khoa",
+        "mua",
+        "mua sam"
       ]
     },
     {
@@ -917,46 +946,73 @@
         "benh vien",
         "thuoc"
       ]
-    },
-    {
-      "notifyNo": "IB2600590767",
-      "name": "Mua sắm vật tư y tế và hóa chất xét nghiệm của Bệnh viện y dược cổ truyền và Phục hồi chức năng Pleiku năm 2026",
-      "investor": "BỆNH VIỆN Y DƯỢC CỔ TRUYỀN VÀ PHỤC HỒI CHỨC NĂNG PLEIKU",
-      "accepted": true,
-      "score": 255,
-      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context+medical-supply-bundle",
-      "matched": [
-        "vat tu y te",
-        "hoa chat xet nghiem",
-        "benh vien",
-        "y duoc",
-        "hoa chat",
-        "xet nghiem",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600587565",
-      "name": "Mua sắm dụng cụ y tế dùng trong phẫu thuật phục vụ công tác khám, chữa bệnh của Bệnh viện ĐKKV Bồng Sơn",
-      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
-      "accepted": true,
-      "score": 165,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "dung cu y te",
-        "phau thuat",
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam",
-        "kham chua benh",
-        "chua benh"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600613810",
+      "name": "Vệ sinh công nghiệp tại các đơn vị thuộc Công ty Quản lý bay miền Trung",
+      "investor": "CÔNG TY QUẢN LÝ BAY MIỀN TRUNG - TỔNG CÔNG TY QUẢN LÝ BAY VIỆT NAM - CÔNG TY TNHH",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:ve sinh cong nghiep",
+      "matched": [
+        "ve sinh cong nghiep"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607309",
+      "name": "Thay mới thảm vải cho 2 cầu ống lồng hành khách - Cảng hàng không Phù Cát",
+      "investor": "Cảng hàng không Phù Cát - Chi nhánh Tổng công ty Cảng hàng không Việt Nam-CTCP",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600612426",
+      "name": "Thuê phần mềm HIS/LIS, EMR, PACS",
+      "investor": "Trung tâm Y tế Đak Đoa",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "trung tam y te"
+      ]
+    },
+    {
+      "notifyNo": "IB2600608600",
+      "name": "Toàn bộ khối lượng xây dựng và lắp đặt thiết bị",
+      "investor": "Sở Y tế tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600610451",
+      "name": "27.02/PTV: Cung cấp Dịch vụ bảo vệ 30 TBA 110kV (Có cả khu vực nhà cửa của Công ty sát bên TBA 110kV) Công ty Điện lực Gia Lai năm 2027",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ve",
+      "matched": [
+        "bao ve"
+      ]
+    },
+    {
+      "notifyNo": "IB2600611773",
+      "name": "Thi công xây dựng toàn bộ khối lượng công trình",
+      "investor": "Ban Quản lý phường Quy Nhơn",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600607803",
       "name": "27.10.HH Cung cấp kẹp răng các loại",
@@ -1174,20 +1230,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600611995",
-      "name": "Mua sắm phụ tùng thay thế cho máy gây mê của Bệnh viện Đa khoa Gia Lai",
-      "investor": "Bệnh viện Đa khoa Gia Lai",
-      "accepted": false,
-      "score": 45,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "benh vien",
-        "da khoa",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "IB2600611514",
       "name": "Gói thầu 01: Thi công xây dựng công trình",
       "investor": "Ban Quản lý xã Mang Yang, tỉnh Gia Lai",
@@ -1379,68 +1421,12 @@
         "tu van",
         "giam sat thi cong"
       ]
-    },
-    {
-      "notifyNo": "IB2600605769",
-      "name": "Thi công xây dựng và thiết bị kỹ thuật công trình",
-      "investor": "Ban Quản lý phường Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600609864",
-      "name": "Mua sắm nguồn 48VDC và Accu Lithium 48V 100Ah",
-      "investor": "VIỄN THÔNG GIA LAI - TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600610968",
-      "name": "Toàn bộ khối lượng xây dựng công trình. Dự án: Trường THPT Huỳnh Thúc Kháng, hạng mục: Nhà 04 tầng gồm phòng hội đồng, phòng thiết bị, phòng họp tổ chuyên môn, 04 phòng học bộ môn và 12 phòng học lý thuyết; các hạng mục phụ trợ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600611154",
-      "name": "Toàn bộ khối lượng thi công xây dựng phần thô (cọc, móng, thân)",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600610782",
-      "name": "G13-VN-CSCC_GL_1121.3: Hỗ trợ việc xây dựng các giải pháp giảm nhẹ rủi ro dựa vào cộng đồng có sự tham gia và các kế hoạch hành động đáp ứng nhu cầu và ưu tiên của cả phụ nữ và nam giới để triển khai thực hiện",
-      "investor": "Ban quản lý Dự án VN-CSCC Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1205,
-  "afterCount": 1205,
+  "beforeCount": 1207,
+  "afterCount": 1207,
   "newCount": 0,
-  "filterStrategy": "unified-medical-scope-v19"
+  "filterStrategy": "unified-medical-scope-v20"
 }

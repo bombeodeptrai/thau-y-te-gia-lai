@@ -27,7 +27,6 @@
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": 0,
-      "sourceBidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=a8b05ca9-9695-43b0-bb11-c614f15eedf1&notifyId=a8b05ca9-9695-43b0-bb11-c614f15eedf1&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600613795&planNo=PL2600410361&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -40,7 +39,8 @@
       "winningModels": [],
       "losingModels": [],
       "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "sourceStage": "official-public-search",
+      "sourceBidderCount": null
     },
     {
       "id": "DC2600121909",
@@ -216,7 +216,6 @@
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": null,
-      "sourceBidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=395e9df8-aac4-41b7-bcf0-2af3a5a5319c&notifyId=395e9df8-aac4-41b7-bcf0-2af3a5a5319c&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600611995&planNo=PL2600405039&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -229,7 +228,8 @@
       "winningModels": [],
       "losingModels": [],
       "losingModelDisclosure": "",
-      "sourceStage": "official-public-search"
+      "sourceStage": "official-public-search",
+      "sourceBidderCount": null
     },
     {
       "id": "979040a5-8db4-449d-9f0d-44615b54edb2",
@@ -92120,7 +92120,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-18T05:42:20.052Z",
+  "fetchedAt": "2026-11-18T05:39:59.558Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -92154,19 +92154,19 @@
       "máy siêu âm",
       "máy thở"
     ],
-    "filterStrategy": "unified-medical-scope-v19",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v19",
-    "lastMedicalRescueAt": "2026-11-17T23:34:10.961Z",
+    "filterStrategy": "unified-medical-scope-v20",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v20",
+    "lastMedicalRescueAt": "2026-11-18T05:39:59.558Z",
     "lastMedicalRescueDays": 30,
-    "lastMedicalRescueCandidateCount": 1750,
-    "lastMedicalRescueMedicalCount": 62,
+    "lastMedicalRescueCandidateCount": 1747,
+    "lastMedicalRescueMedicalCount": 64,
     "lastMedicalRescueNewCount": 0,
     "lastRemovedManualTenderCount": 0,
     "lastRemovedRejectedStoredCount": 0,
-    "lastLocationAuditAt": "2026-11-17T23:33:20.686Z",
+    "lastLocationAuditAt": "2026-11-18T05:39:09.808Z",
     "lastLocationAuditDays": 30,
-    "lastLocationAuditCandidateCount": 1686,
-    "lastLocationAuditMedicalCount": 58,
-    "lastLocationAuditNewCount": 0
+    "lastLocationAuditCandidateCount": 1684,
+    "lastLocationAuditMedicalCount": 60,
+    "lastLocationAuditNewCount": 2
   }
 }
