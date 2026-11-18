@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=4bb578fe-9fce-492f-a799-f082ea9fadf8&notifyId=4bb578fe-9fce-492f-a799-f082ea9fadf8&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600610823&planNo=PL2600404681&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,7 +38,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "a8b05ca9-9695-43b0-bb11-c614f15eedf1",
@@ -66,7 +68,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=a8b05ca9-9695-43b0-bb11-c614f15eedf1&notifyId=a8b05ca9-9695-43b0-bb11-c614f15eedf1&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600613795&planNo=PL2600410361&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -78,7 +80,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "24624b7e-7794-4d68-8b57-f8930c136852",
@@ -725,7 +729,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=21002c5b-0b4a-4c6e-86a7-19d4b9d2135c&notifyId=21002c5b-0b4a-4c6e-86a7-19d4b9d2135c&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600609403&planNo=PL2600387454&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -737,7 +741,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "4f40f609-6fbc-4c9c-a95f-b9d9ad24fc17",
@@ -7704,16 +7710,7 @@
         "CÔNG TY CỔ PHẦN BIOMED TECH",
         "Công ty TNHH Công nghệ B2K"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY CỔ PHẦN BIOMED TECH",
-          "reason": "nhà thầu không xếp hạng thứ 1"
-        },
-        {
-          "contractorName": "Công ty TNHH Công nghệ B2K",
-          "reason": "nhà thầu không xếp hạng thứ 1"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "105-012283-00",
         "105-012298-00",
@@ -7724,7 +7721,7 @@
         "W-31L"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -609264,7 +609261,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-18T17:23:06.053Z",
+  "fetchedAt": "2026-11-18T17:32:31.999Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5738,
   "regions": [
@@ -609388,7 +609385,7 @@
       "equipmentCount": 18790,
       "detailTenderCount": 1157,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-18T17:23:06.053Z",
+      "fetchedAt": "2026-11-18T17:32:31.999Z",
       "initialized": true,
       "source": "regional-scan"
     },
