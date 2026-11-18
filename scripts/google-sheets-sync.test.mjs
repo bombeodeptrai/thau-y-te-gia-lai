@@ -12,6 +12,21 @@ const coreSource = await readFile(
   "utf8",
 );
 
+test("IB2600610823: không điền giá 0 hoặc ngày 1970 khi chưa có kết quả", () => {
+  const ctx = {};
+  vm.runInNewContext(source, ctx);
+  let rows;
+  ctx.mtWriteTable_ = (_sheet, _title, _headers, values) => { rows = values; };
+  ctx.mtManagedSheet_ = () => ({ setColumnWidth() {}, setColumnWidths() {} });
+  ctx.mtWriteTenderSheet_({}, {}, [
+    { notifyNo: "IB2600610823", hasResult: false, winningPrice: 0, decisionDate: 0 },
+    { hasResult: true, winningPrice: 125000, decisionDate: "2026-11-18T09:00:00+07:00" }
+  ], "");
+  assert.deepEqual(Array.from(rows[0].slice(15, 18)), ["", "", "Chưa"]);
+  assert.equal(rows[1][15], 125000);
+  assert.equal(rows[1][16].toISOString(), "2026-11-18T02:00:00.000Z");
+});
+
 test("bản xem Gói thầu không mất 10 gói khi tham chiếu bị dịch xuống A13", () => {
   let formula = '=FILTER(\'DBMT - Gia Lai\'!A13:T;\'DBMT - Gia Lai\'!A13:A<>"")';
   const context = {};

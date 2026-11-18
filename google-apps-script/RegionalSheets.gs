@@ -237,8 +237,8 @@ function mtWriteTenderSheet_(ss, region, tenders, fetchedAt) {
       mtCell_(item.investor, 1500), mtCell_(item.location, 800), Number(item.price) || 0, mtDate_(item.closeDate),
       mtStatus_(item.status), item.bidderCount == null ? "" : Number(item.bidderCount),
       mtList_(item.participantNames), mtList_(item.winnerNames), mtList_(item.loserNames),
-      mtList_(item.winningModels), mtList_(item.losingModels), Number(item.winningPrice) || 0,
-      mtDate_(item.decisionDate), item.hasResult ? "Có" : "Chưa", mtCell_(mtOfficialTenderUrl_(item.sourceUrl), 3000), mtDate_(fetchedAt)
+      mtList_(item.winningModels), mtList_(item.losingModels), item.hasResult ? mtNumber_(item.winningPrice) : "",
+      mtDate_(item.decisionDate || ""), item.hasResult ? "Có" : "Chưa", mtCell_(mtOfficialTenderUrl_(item.sourceUrl), 3000), mtDate_(fetchedAt)
     ];
   });
   const sheet = mtManagedSheet_(ss, region.shortName || region.name);
