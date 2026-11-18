@@ -9,6 +9,14 @@ import {
 
 const hospital = "Bệnh viện Đa khoa tỉnh";
 
+test("IB2600611995: phụ tùng và bảo trì máy gây mê, không nhận phụ tùng chung", () => {
+  for (const name of ["Mua sắm phụ tùng thay thế cho máy gây mê của Bệnh viện Đa khoa Gia Lai",
+    "Bảo trì hệ thống gây mê", "Replacement parts for anaesthesia workstation"]) {
+    assert.equal(classifyMedicalTender({ name, investor: hospital }).accepted, true, name);
+  }
+  assert.equal(classifyMedicalTender({ name: "Mua sắm phụ tùng thay thế", investor: hospital }).accepted, false);
+});
+
 test("DC2600063405 xuất hiện dưới bộ lọc Dược phẩm", () => {
   const result = classifyMedicalTender({
     notifyNo: "DC2600063405",

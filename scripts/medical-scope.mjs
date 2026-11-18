@@ -1,5 +1,5 @@
 // Quét bù toàn bộ phạm vi sau hồi quy IB2600573048.
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v19";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v20";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -33,7 +33,13 @@ const HARD_EXCLUDED_TITLE_TERMS = [
   "hoa chat phong chay", "hoa chat cong nghiep", "may giat", "may say",
 ];
 
+const ANESTHESIA_DEVICE_TERMS = [
+  "may gay me", "he thong gay me", "anesthesia machine", "anaesthesia machine",
+  "anesthesia workstation", "anaesthesia workstation",
+];
+
 const EXPLICIT_MEDICAL_TITLE_TERMS = [
+  ...ANESTHESIA_DEVICE_TERMS,
   "thiet bi y te", "trang thiet bi y te", "vat tu y te", "vat tu tieu hao y te",
   "vat tu phau thuat", "vat tu xet nghiem", "hoa chat xet nghiem", "hoa chat y te",
   "hoa chat khu khuan", "sinh pham y te", "sinh pham xet nghiem",
@@ -63,6 +69,7 @@ const MEDICAL_EQUIPMENT_SERVICE_TERMS = [
 // Dịch vụ chỉ được nhận khi tiêu đề nêu đúng đối tượng là thiết bị y tế.
 // Điều kiện này ngăn tên bệnh viện kéo nhầm sửa chữa xây dựng, điện hoặc CNTT.
 const MEDICAL_EQUIPMENT_OBJECT_TERMS = [
+  ...ANESTHESIA_DEVICE_TERMS,
   "thiet bi y te", "trang thiet bi y te", "dung cu y te", "y cu",
   "may xet nghiem", "may sieu am", "may tho", "may dien tim",
   "may theo doi benh nhan", "may loc mau", "may chay than", "may chup",
