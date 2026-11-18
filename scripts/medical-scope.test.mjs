@@ -9,6 +9,15 @@ import {
 
 const hospital = "Bệnh viện Đa khoa tỉnh";
 
+for (const [notifyNo, name, investor] of [
+  ["IB2600031965", "Sửa chữa và kiểm định máy gây mê kèm thở + máy nén khí năm 2026", "Trung Tâm Y Tế Ayun Pa"],
+  ["IB2400262248", "Sửa chữa máy gây mê kèm thở Maquet”", "TRUNG TÂM Y TẾ HUYỆN PHÚ THIỆN"],
+]) {
+  test(`${notifyNo}: giữ dịch vụ máy gây mê khi quét lại lịch sử`, () => {
+    assert.equal(classifyMedicalTender({ notifyNo, name, investor }).accepted, true);
+  });
+}
+
 test("IB2600611995: phụ tùng và bảo trì máy gây mê, không nhận phụ tùng chung", () => {
   for (const name of ["Mua sắm phụ tùng thay thế cho máy gây mê của Bệnh viện Đa khoa Gia Lai",
     "Bảo trì hệ thống gây mê", "Replacement parts for anaesthesia workstation"]) {
