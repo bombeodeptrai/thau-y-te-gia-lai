@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-19T10:41:41.802Z",
+  "rescuedAt": "2026-11-19T21:00:44.644Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 171,
+      "count": 169,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 334,
+      "count": 336,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 21,
+      "count": 22,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 62,
+      "count": 61,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 67,
+      "count": 65,
       "error": ""
     },
     {
@@ -240,7 +240,7 @@
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -281,19 +281,19 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 913,
+  "candidateCount": 911,
   "acceptedCount": 29,
-  "rejectedCount": 884,
+  "rejectedCount": 882,
   "rejectedReasons": {
-    "excluded:tu van": 321,
-    "excluded:xay dung": 271,
+    "excluded:tu van": 322,
+    "excluded:xay dung": 267,
     "insufficient-medical-context": 163,
     "excluded:xay lap": 27,
     "excluded:sua chua": 26,
     "excluded:thuc pham": 18,
     "excluded:bao hiem": 7,
+    "excluded:tham dinh": 7,
     "excluded:cai tao": 7,
-    "excluded:tham dinh": 6,
     "excluded:bao tri": 6,
     "excluded:trang phuc": 5,
     "excluded:bao ve": 4,
@@ -765,6 +765,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600615541",
+      "name": "Toàn bộ khối lượng xây dựng nền, mặt đường, công trình thoát nước và hệ thống chiếu sáng toàn tuyến",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600615378",
       "name": "Sản xuất ấn phẩm năm 2027 cho Tổng công ty Cảng hàng không Việt Nam - CTCP",
       "investor": "TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
@@ -1183,17 +1194,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608090",
-      "name": "27.09.HH Cung cấp hộp bảo vệ công tơ các loại",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ve",
-      "matched": [
-        "bao ve"
       ]
     }
   ],
