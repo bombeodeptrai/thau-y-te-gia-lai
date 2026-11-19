@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-18T17:17:04.857Z",
+  "auditedAt": "2026-11-19T01:54:46.726Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 16,
+      "count": 14,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 99,
+      "count": 100,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 83,
+      "count": 85,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 96,
+      "count": 101,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 61,
+      "count": 62,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1715,
+  "candidateCount": 1722,
   "acceptedCount": 60,
-  "rejectedCount": 1655,
+  "rejectedCount": 1662,
   "rejectedReasons": {
     "excluded:tu van": 542,
-    "excluded:xay dung": 448,
+    "excluded:xay dung": 454,
     "insufficient-medical-context": 419,
     "excluded:xay lap": 75,
     "excluded:sua chua": 57,
@@ -288,9 +288,9 @@
     "excluded:may tinh": 7,
     "excluded:thuc pham": 7,
     "excluded:cong nghe thong tin": 5,
+    "excluded:trang phuc": 5,
     "excluded:may in": 4,
     "excluded:quan ly du an": 4,
-    "excluded:trang phuc": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:may phat dien": 2,
     "excluded:cay xanh": 2,
