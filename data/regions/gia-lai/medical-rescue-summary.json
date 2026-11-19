@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-19T01:55:38.582Z",
+  "rescuedAt": "2026-11-19T13:06:39.815Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 303,
+      "count": 301,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 795,
+      "count": 801,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 53,
+      "count": 49,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 71,
+      "count": 74,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 27,
+      "count": 26,
       "error": ""
     },
     {
@@ -144,7 +144,7 @@
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 123,
+      "count": 120,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 100,
+      "count": 110,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 85,
+      "count": 92,
       "error": ""
     },
     {
@@ -198,19 +198,19 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 43,
+      "count": 47,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 101,
+      "count": 97,
       "error": ""
     },
     {
@@ -228,19 +228,19 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 62,
+      "count": 63,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 72,
+      "count": 79,
       "error": ""
     },
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -270,38 +270,38 @@
     {
       "name": "Địa danh Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 18,
+      "count": 19,
       "error": ""
     },
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 3,
+      "count": 2,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1786,
-  "acceptedCount": 64,
-  "rejectedCount": 1722,
+  "candidateCount": 1815,
+  "acceptedCount": 63,
+  "rejectedCount": 1752,
   "rejectedReasons": {
-    "excluded:tu van": 544,
-    "excluded:xay dung": 467,
-    "insufficient-medical-context": 447,
+    "excluded:tu van": 541,
+    "excluded:xay dung": 479,
+    "insufficient-medical-context": 450,
     "excluded:xay lap": 83,
-    "excluded:sua chua": 58,
-    "excluded:cai tao": 20,
-    "excluded:bao ve": 13,
+    "excluded:sua chua": 59,
+    "excluded:thuc pham": 23,
+    "excluded:cai tao": 21,
+    "excluded:bao ve": 12,
     "excluded:bao hiem": 11,
-    "excluded:bao tri": 9,
-    "excluded:tham dinh": 9,
+    "excluded:tham dinh": 10,
+    "excluded:bao tri": 10,
     "excluded:may tinh": 7,
-    "excluded:thuc pham": 7,
     "excluded:trang phuc": 6,
     "excluded:cong nghe thong tin": 5,
     "excluded:may in": 4,
     "excluded:quan ly du an": 4,
-    "excluded:giam sat thi cong": 4,
+    "excluded:giam sat thi cong": 3,
     "excluded:ve sinh cong nghiep": 2,
     "excluded:chat thai": 2,
     "excluded:may phat dien": 2,
@@ -309,16 +309,15 @@
     "excluded:cap dien": 2,
     "excluded:cay xanh": 2,
     "excluded:suat an": 2,
+    "excluded:bao duong": 2,
     "excluded:kiem dinh": 1,
     "excluded:may chu": 1,
     "excluded:van phong pham": 1,
-    "excluded:thiet bi tuong lua": 1,
     "excluded:xang dau": 1,
     "excluded:tram bien ap": 1,
     "excluded:rac thai": 1,
     "excluded:duong day": 1,
-    "excluded:thu y": 1,
-    "excluded:bao duong": 1
+    "excluded:thu y": 1
   },
   "acceptedDiagnostics": [
     {
@@ -953,6 +952,114 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600615378",
+      "name": "Sản xuất ấn phẩm năm 2027 cho Tổng công ty Cảng hàng không Việt Nam - CTCP",
+      "investor": "TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
+      "notifyNo": "IB2600607926",
+      "name": "27.11.HH Cung cấp Modem kết nối scada",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600606203",
+      "name": "Gói thầu số 43/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600606424",
+      "name": "Gói thầu số: 51/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607070",
+      "name": "Gói thầu số: 24/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607562",
+      "name": "Gói thầu số 25/2027/XL01 - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604193",
+      "name": "Gói thầu XL01: Thi công xây dựng công trình đường Tôn Thất Thuyết",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600601827",
+      "name": "Gói thầu XL02: Thi công xây dựng công trình đường Ngô Quyền",
+      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600608763",
+      "name": "27.06.HH Cung cấp cáp đồng bọc các loại",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600597655",
+      "name": "Cung cấp 07 xe nâng/hạ phục vụ hành khách cần sự trợ giúp đặc biệt.",
+      "investor": "TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600607716",
       "name": "Gói thầu số 27/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1275,130 +1382,12 @@
       "matched": [
         "bao ve"
       ]
-    },
-    {
-      "notifyNo": "IB2600608974",
-      "name": "27.08.HH Cung cấp cáp nhôm bọc các loại",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600610388",
-      "name": "Mua sắm phần mềm",
-      "investor": "Trường Đại học Quy Nhơn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608879",
-      "name": "27.07.HH Cung cấp cáp nhôm trần, cáp thép các loại",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600613181",
-      "name": "Cung cấp 02 xe xúc lật bánh lốp",
-      "investor": "Công ty Cổ phần Cảng Quy Nhơn",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607918",
-      "name": "27.03.HH Cung cấp cột bê tông ly tâm, móng cột khu vực Tây Gia Lai",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600612943",
-      "name": "Mua sắm mới xe ô tô phục vụ công tác chung",
-      "investor": "Văn phòng Đoàn ĐBQH và HĐND tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600605067",
-      "name": "Toàn bộ khối lượng thi công xây dựng công trình",
-      "investor": "Ban Quản lý phường Bồng Sơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607600",
-      "name": "Gói thầu số 14/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 14",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607589",
-      "name": "Gói thầu số 13/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 13",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607575",
-      "name": "Gói thầu số 12/2027/TVGS: Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị các công trình ĐTXD năm 2027 khu vực Đông Gia Lai - Số 12",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "giam sat thi cong"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1210,
-  "afterCount": 1210,
+  "beforeCount": 1211,
+  "afterCount": 1211,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v20"
 }
