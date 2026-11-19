@@ -1,6 +1,50 @@
 {
   "tenders": [
     {
+      "id": "DC2600144324",
+      "notifyId": "DC2600144324",
+      "bidId": "4262ab85-8ba1-4924-963c-1180ead2b3ff",
+      "bidOpenId": "",
+      "inputResultId": "fe7acfdb-a84f-45ea-bb6b-e26f667517bd",
+      "bidForm": "CDTRG",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-4-kqlcnt",
+      "notifyNo": "DC2600144324",
+      "name": "Dịch vụ sửa chữa bao gồm thay thế linh kiện 01 máy thở Savina 300",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "location": "Gia Lai",
+      "closeDate": "2026-11-19T15:06:41.218",
+      "publicDate": "2026-11-19T15:06:39",
+      "price": 118973987,
+      "category": "Thiết bị y tế",
+      "status": "awarded",
+      "sourceStatus": "IS_PUBLISH",
+      "statusForNotify": "CNTTT",
+      "bidderCount": 0,
+      "sourceBidderCount": 0,
+      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/home",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HUDOPHA"
+      ],
+      "winningPrice": 118973987,
+      "decisionDate": "2026-11-18T23:59:59",
+      "resultPublishedDate": "2026-11-19T15:06:39",
+      "hasResult": true,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "4bb578fe-9fce-492f-a799-f082ea9fadf8",
       "notifyId": "4bb578fe-9fce-492f-a799-f082ea9fadf8",
       "bidId": "d8567014-9dbb-4c58-b888-a0598a18edee",
@@ -4696,11 +4740,11 @@
       "id": "f7b43482-585b-468c-a5d8-8a72c763e739",
       "notifyId": "f7b43482-585b-468c-a5d8-8a72c763e739",
       "bidId": "840ea53d-4b5f-433a-b526-e55256fa408d",
-      "bidOpenId": "",
+      "bidOpenId": "edf58f03-16e6-40ab-943d-b975a9447302",
       "inputResultId": "",
       "bidForm": "DTRR",
       "processApply": "LDT",
-      "stepCode": "notify-contractor-step-1-tbmt",
+      "stepCode": "notify-contractor-step-2-kqmt",
       "notifyNo": "IB2600605710",
       "name": "Mua sắm vật tư y tế cho Trung tâm Y tế Chư Prông",
       "regionSlug": "gia-lai",
@@ -4715,11 +4759,11 @@
       "publicDate": "2026-11-10T13:48:45.053",
       "price": 1055005950,
       "category": "Vật tư & hóa chất",
-      "status": "urgent",
-      "sourceStatus": "01",
-      "statusForNotify": "",
-      "bidderCount": 0,
-      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=f7b43482-585b-468c-a5d8-8a72c763e739&notifyId=f7b43482-585b-468c-a5d8-8a72c763e739&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600605710&planNo=PL2600388921&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
+      "status": "evaluating",
+      "sourceStatus": "OPEN_BID",
+      "statusForNotify": "DXT",
+      "bidderCount": 1,
+      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=f7b43482-585b-468c-a5d8-8a72c763e739&notifyId=f7b43482-585b-468c-a5d8-8a72c763e739&inputResultId=&bidOpenId=edf58f03-16e6-40ab-943d-b975a9447302&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600605710&planNo=PL2600388921&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
       "decisionDate": "",
@@ -4731,7 +4775,7 @@
       "winningModels": [],
       "losingModels": [],
       "losingModelDisclosure": "",
-      "sourceBidderCount": null,
+      "sourceBidderCount": 1,
       "sourceStage": "official-public-search"
     },
     {
@@ -610124,9 +610168,9 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-19T01:55:38.582Z",
+  "fetchedAt": "2026-11-19T08:18:59.239Z",
   "source": "muasamcong-public-api-central-region",
-  "detailTenderCount": 5738,
+  "detailTenderCount": 5739,
   "regions": [
     {
       "slug": "thanh-hoa",
@@ -610243,12 +610287,12 @@
         "52",
         "64"
       ],
-      "tenderCount": 1210,
+      "tenderCount": 1211,
       "bidderCount": 30884,
       "equipmentCount": 19594,
-      "detailTenderCount": 1157,
+      "detailTenderCount": 1158,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-19T01:55:38.582Z",
+      "fetchedAt": "2026-11-19T08:18:59.239Z",
       "initialized": true,
       "source": "regional-scan"
     },
@@ -610307,6 +610351,6 @@
     "strategy": "merged-current-central-region-provinces",
     "configuredRegionCount": 11,
     "initializedRegionCount": 11,
-    "scannedTenderCount": 5903
+    "scannedTenderCount": 5904
   }
 }
