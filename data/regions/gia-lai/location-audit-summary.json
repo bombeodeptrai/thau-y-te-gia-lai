@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-19T13:05:56.161Z",
+  "auditedAt": "2026-11-19T23:05:36.378Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 801,
+      "count": 802,
       "error": ""
     },
     {
@@ -146,7 +146,7 @@
     {
       "term": "Phú Thiện",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1752,
+  "candidateCount": 1753,
   "acceptedCount": 59,
-  "rejectedCount": 1693,
+  "rejectedCount": 1694,
   "rejectedReasons": {
     "excluded:tu van": 539,
-    "excluded:xay dung": 467,
+    "excluded:xay dung": 468,
     "insufficient-medical-context": 421,
     "excluded:xay lap": 75,
     "excluded:sua chua": 58,
@@ -935,6 +935,26 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600615541",
+      "name": "Toàn bộ khối lượng xây dựng nền, mặt đường, công trình thoát nước và hệ thống chiếu sáng toàn tuyến",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600145782",
+      "name": "Đo đạc, chỉnh lý bản đồ địa chính phục vụ công tác quản lý nhà nước về quỹ đất chưa sử dụng, đất nông nghiệp sử dụng vào mục đích công ích trên địa bàn xã Phú Thiện, tỉnh Gia Lai",
+      "investor": "Phòng Kinh tế xã Phú Thiện",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
+    {
       "notifyNo": "DC2600145554",
       "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
       "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
@@ -1350,29 +1370,6 @@
       "score": -100,
       "reason": "excluded:tu van",
       "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600138973",
-      "name": "Tư vấn Thẩm tra Báo cáo kinh tế - kỹ thuật. Dự án: Trường Trung học phổ thông Hoài Ân. Hạng mục: Xây mới nhà học 03 tầng 15 phòng học lý thuyết; nhà thi đấu đa năng; các hạng mục phụ và trang thiết bị.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600139093",
-      "name": "Tư vấn Thẩm tra Báo cáo kinh tế - kỹ thuật.Dự án: Trường Trung học phổ thông chuyên Lê Quý Đôn. Hạng mục: sửa chữa dãy nhà học A, B, D, E; nhà đa năng; nhà xe giáo viên.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
         "tu van"
       ]
     }

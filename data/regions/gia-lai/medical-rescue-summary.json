@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-19T13:06:39.815Z",
+  "rescuedAt": "2026-11-19T23:06:17.968Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 801,
+      "count": 802,
       "error": ""
     },
     {
@@ -156,7 +156,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 22,
+      "count": 23,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1815,
+  "candidateCount": 1816,
   "acceptedCount": 63,
-  "rejectedCount": 1752,
+  "rejectedCount": 1753,
   "rejectedReasons": {
     "excluded:tu van": 541,
-    "excluded:xay dung": 479,
+    "excluded:xay dung": 480,
     "insufficient-medical-context": 450,
     "excluded:xay lap": 83,
     "excluded:sua chua": 59,
@@ -952,6 +952,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600615541",
+      "name": "Toàn bộ khối lượng xây dựng nền, mặt đường, công trình thoát nước và hệ thống chiếu sáng toàn tuyến",
+      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600615378",
       "name": "Sản xuất ấn phẩm năm 2027 cho Tổng công ty Cảng hàng không Việt Nam - CTCP",
       "investor": "TỔNG CÔNG TY CẢNG HÀNG KHÔNG VIỆT NAM - CTCP",
@@ -1370,17 +1381,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608090",
-      "name": "27.09.HH Cung cấp hộp bảo vệ công tơ các loại",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:bao ve",
-      "matched": [
-        "bao ve"
       ]
     }
   ],
