@@ -1,5 +1,4 @@
-// Quét bù toàn bộ phạm vi sau hồi quy IB2600573048.
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v20";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v21";
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -90,6 +89,8 @@ const MEDICAL_MEASUREMENT_SERVICE_OBJECT_TERMS = [
 // hao" mà không lặp lại hậu tố "y tế". Chỉ dùng nhóm này khi bên mua là cơ sở
 // y tế để không kéo nhầm vật tư công nghiệp, hàng không hay giáo dục.
 const MEDICAL_CONTEXT_SUPPLY_TERMS = [
+  "o dau ra khi oxy", "o dau ra khi oxi", "o dau ra khi nen", "o dau ra khi hut",
+  "oxygen outlet", "medical air outlet", "medical vacuum outlet", "medical gas terminal unit",
   "vat tu tieu hao", "vat tu than nieu", "vat tu tim mach",
   "vat tu chan thuong", "vat tu can thiep", "dinh nep vit",
   "nep chan thuong", "khop goi", "khop hang", "dao sieu am",
