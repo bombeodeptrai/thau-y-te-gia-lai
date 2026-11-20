@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-20T03:40:14.903Z",
+  "rescuedAt": "2026-11-20T04:12:29.664Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -18,7 +18,7 @@
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 333,
+      "count": 332,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 12,
+      "count": 14,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 45,
+      "count": 44,
       "error": ""
     },
     {
@@ -282,18 +282,18 @@
   ],
   "successfulStrategyCount": 45,
   "candidateCount": 906,
-  "acceptedCount": 30,
-  "rejectedCount": 876,
+  "acceptedCount": 29,
+  "rejectedCount": 877,
   "rejectedReasons": {
-    "excluded:tu van": 318,
+    "excluded:tu van": 320,
     "excluded:xay dung": 273,
     "insufficient-medical-context": 152,
     "excluded:xay lap": 27,
     "excluded:sua chua": 26,
     "excluded:thuc pham": 18,
     "excluded:tham dinh": 8,
-    "excluded:bao hiem": 7,
     "excluded:cai tao": 7,
+    "excluded:bao hiem": 6,
     "excluded:bao tri": 6,
     "excluded:trang phuc": 5,
     "excluded:bao ve": 4,
@@ -737,18 +737,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600107766",
-      "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026",
-      "investor": "BẢO HIỂM XÃ HỘI TỈNH GIA LAI",
-      "accepted": true,
-      "score": 100,
-      "reason": "explicit-medical-title",
-      "matched": [
-        "kham suc khoe",
-        "cung cap"
-      ]
-    },
-    {
       "notifyNo": "DC2600109366",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026 cho viên chức và người lao động",
       "investor": "Bảo hiểm xã hội cơ sở Pleiku",
@@ -781,6 +769,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600615559",
+      "name": "Thi công xây dựng và thiết bị công trình",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600614759",
       "name": "Pallet sắt thùng vuông",
@@ -1205,21 +1204,12 @@
       "matched": [
         "kiem dinh"
       ]
-    },
-    {
-      "notifyNo": "IB2600608272",
-      "name": "Gói thầu số 10: Hỗ trợ máy kéo nông nghiệp cho 03 hợp tác xã/tổ hợp tác (Hoạt động: 2.1.2)",
-      "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": []
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1211,
+  "beforeCount": 1212,
   "afterCount": 1212,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v20"
 }
