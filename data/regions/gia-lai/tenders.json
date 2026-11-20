@@ -1,6 +1,51 @@
 {
   "tenders": [
     {
+      "id": "DC2600137626",
+      "notifyId": "DC2600137626",
+      "bidId": "2cc89008-a7ec-4ee5-9756-358a37216469",
+      "bidOpenId": "",
+      "inputResultId": "ff542fef-6e1f-48c5-9135-046f1466312a",
+      "bidForm": "CDTRG",
+      "processApply": "LDT",
+      "stepCode": "notify-contractor-step-4-kqlcnt",
+      "notifyNo": "DC2600137626",
+      "name": "Mua sắm hóa chất định lượng ProBNP II, định lượng Cortisol, định lượng Troponin T hs, test nhanh chẩn đoán Dengue IgG/IgM trong khi chờ kết quả đấu thầu năm 2026-2027 của Bệnh viện Đa khoa Gia Lai",
+      "regionSlug": "gia-lai",
+      "region": "Gia Lai",
+      "provinceCodes": [
+        "52",
+        "64"
+      ],
+      "investor": "Bệnh viện Đa khoa Gia Lai",
+      "location": "Gia Lai",
+      "closeDate": "2026-11-20T10:38:27.078",
+      "publicDate": "2026-11-20T10:38:24",
+      "price": 105311000,
+      "category": "Vật tư & hóa chất",
+      "status": "awarded",
+      "sourceStatus": "IS_PUBLISH",
+      "statusForNotify": "CNTTT",
+      "bidderCount": 0,
+      "sourceBidderCount": 0,
+      "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/home",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH",
+        "CÔNG TY CỔ PHẦN Y SINH THIỆN ĐỨC"
+      ],
+      "winningPrice": 105311000,
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T10:38:24",
+      "hasResult": true,
+      "participantNames": [],
+      "loserNames": [],
+      "loserDetails": [],
+      "winningModels": [],
+      "losingModels": [],
+      "losingModelDisclosure": "",
+      "sourceStage": "official-public-search"
+    },
+    {
       "id": "DC2600144324",
       "notifyId": "DC2600144324",
       "bidId": "4262ab85-8ba1-4924-963c-1180ead2b3ff",
@@ -72,7 +117,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=4bb578fe-9fce-492f-a799-f082ea9fadf8&notifyId=4bb578fe-9fce-492f-a799-f082ea9fadf8&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600610823&planNo=PL2600404681&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -84,7 +129,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "a8b05ca9-9695-43b0-bb11-c614f15eedf1",
@@ -93311,7 +93358,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-20T03:31:02.793Z",
+  "fetchedAt": "2026-11-20T03:40:14.903Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -93319,7 +93366,7 @@
     "52",
     "64"
   ],
-  "detailTenderCount": 1158,
+  "detailTenderCount": 1159,
   "collection": {
     "days": 1095,
     "strategy": "regional-province-codes-unified-filter",
@@ -93344,6 +93391,15 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "filterStrategy": "unified-medical-scope-v20",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v20",
+    "lastMedicalRescueAt": "2026-11-20T03:40:14.903Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 906,
+    "lastMedicalRescueMedicalCount": 30,
+    "lastMedicalRescueNewCount": 1,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
