@@ -1,9 +1,117 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "a61c87a9-115a-4aca-aa72-cab641aaffa4",
+      "contractorCode": "vn0309781158",
+      "taxCode": "0309781158",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH",
+      "status": "won",
+      "lotNo": "PP2600507466",
+      "lotName": "Hóa chất miễn dịch sử dụng trên máy miễn dịch phương pháp điện hóa phát quang",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 92081000,
+      "reason": "",
+      "submittedAt": "2026-11-20T10:31:51.879",
+      "models": []
+    },
+    {
+      "id": "cffaa789-0c95-4f16-bd5e-fc02c8eb5e92",
+      "contractorCode": "vn0110487724",
+      "taxCode": "0110487724",
+      "contractorName": "CÔNG TY CỔ PHẦN Y SINH THIỆN ĐỨC",
+      "status": "won",
+      "lotNo": "PP2600507467",
+      "lotName": "Test nhanh chẩn đoán Dengue IgG/IgM",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 13230000,
+      "reason": "",
+      "submittedAt": "2026-11-20T10:31:51.879",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "43f5dc9f-025b-4ce5-b9db-d6d83c754db2",
+      "name": "Hóa chất định lượng ProBNP II",
+      "model": "09315268190",
+      "brand": "Elecsys proBNP II",
+      "manufacturer": "Roche Diagnostics GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng để định lượng peptide lợi niệu loại B pro đầu N trong huyết thanh và huyết tương người. Gồm 3 loại: M Vi hạt phủ Streptavidin, R1 Kháng thể đơn dòng kháng NT‑proBNP đánh dấu biotin và R2 Kháng thể đơn dòng kháng NT‑proBNP đánh dấu phức hợp ruthenium.",
+      "unit": "Test",
+      "quantity": 200,
+      "unitPrice": 255780,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "1757/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T10:38:24"
+    },
+    {
+      "id": "854d7b49-ef5f-42f6-8202-8c233bf24d07",
+      "name": "Hóa chất định lượng Cortisol",
+      "model": "06687733190",
+      "brand": "Elecsys Cortisol II",
+      "manufacturer": "Roche Diagnostics GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng để định lượng cortisol trong huyết thanh, huyết tương và nước bọt người. Gồm 3 loại: M Vi hạt phủ Streptavidin, R1 Kháng thể đơn dòng kháng cortisol đánh dấu biotin và R2 Dẫn xuất cortisol, đánh dấu phức hợp ruthenium.",
+      "unit": "Test",
+      "quantity": 100,
+      "unitPrice": 39650,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "1757/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T10:38:24"
+    },
+    {
+      "id": "bec17ad7-15f0-482b-bc8e-3ed9fa025ca9",
+      "name": "Test nhanh chẩn đoán Dengue IgG/IgM",
+      "model": "H142-21W",
+      "brand": "-",
+      "manufacturer": "Qingdao Hightop Biotech Co.,Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "Từ 2024 trở về sau",
+      "specification": "- Khay thử xét nghiệm miễn dịch sắc ký nhanh để phát hiện định tính kháng thể IgG và IgM sốt xuất huyết\n- Mẫu: huyết thanh, huyết tương và máu toàn phần\nSo với phương pháp ELISA:\n- Kháng thể Dengue IgM có độ nhạy 97,80%, độ đặc hiệu 98,11%, và độ chính xác 98,02% \n- Kháng thể Dengue IgG có độ nhạy 98,10%, độ đặc hiệu 97,98% và độ chính xác 98,02%.\n- Tiêu chuẩn: ISO 13485",
+      "unit": "Test",
+      "quantity": 700,
+      "unitPrice": 18900,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN Y SINH THIỆN ĐỨC"
+      ],
+      "decisionNo": "1757/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T10:38:24"
+    },
+    {
+      "id": "05cf9733-a444-48b7-a4c7-d1f4b9327728",
+      "name": "Hóa chất định lượng Troponin T hs (Elecsys Troponin T hs)",
+      "model": "09315322190",
+      "brand": "Elecsys Troponin T hs",
+      "manufacturer": "Roche Diagnostics GmbH",
+      "origin": "Đức",
+      "manufactureYear": "Năm 2025 trở về sau",
+      "specification": "Dùng để định lượng troponin T tim trong huyết thanh và huyết tương người. Gồm 3 loại: M Vi hạt phủ Streptavidin, R1 Kháng thể đơn dòng kháng troponin T tim và R2 Kháng thể đơn dòng kháng troponin T tim  đánh dấu phức hợp ruthenium.",
+      "unit": "Test",
+      "quantity": 800,
+      "unitPrice": 46200,
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÌNH MINH"
+      ],
+      "decisionNo": "1757/QĐ-BVĐKGL",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T10:38:24"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -46,5 +154,5 @@
     "bidForm": "CDTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-20T03:40:17.178Z"
+  "fetchedAt": "2026-11-20T21:54:33.188Z"
 }

@@ -1,9 +1,804 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 37,
+  "bidders": [
+    {
+      "id": "6a6831bc-6000-4352-9e35-ea99e471c7a9",
+      "contractorCode": "vn0313417031",
+      "taxCode": "0313417031",
+      "contractorName": "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH",
+      "status": "won",
+      "lotNo": "PP2600505454",
+      "lotName": "Phần 1: Sinh phẩm xét nghiệm",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 113555000,
+      "reason": "",
+      "submittedAt": "2026-11-20T15:47:20.107",
+      "models": []
+    },
+    {
+      "id": "897f4213-4e8d-49c1-9a5e-f3e60875d340",
+      "contractorCode": "vn0102756236",
+      "taxCode": "0102756236",
+      "contractorName": "CÔNG TY CỔ PHẦN Y TẾ AMVGROUP",
+      "status": "won",
+      "lotNo": "PP2600505455",
+      "lotName": "Phần 2: Sinh Phẩm xét nghiệm HbA1C",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 7035000,
+      "reason": "",
+      "submittedAt": "2026-11-20T15:47:20.107",
+      "models": []
+    },
+    {
+      "id": "f671e396-0f8a-46b9-a8bd-39fa74c916de",
+      "contractorCode": "vn0313417031",
+      "taxCode": "0313417031",
+      "contractorName": "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH",
+      "status": "won",
+      "lotNo": "PP2600505456",
+      "lotName": "Phần 3: Hóa chất huyết học",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 17210000,
+      "reason": "",
+      "submittedAt": "2026-11-20T15:47:20.107",
+      "models": []
+    },
+    {
+      "id": "f9d2b316-c494-4fda-8f53-08cfe0ba524a",
+      "contractorCode": "vn0312466808",
+      "taxCode": "0312466808",
+      "contractorName": "Công ty TNHH Thiết Bị Y Tế Nhất Tâm",
+      "status": "won",
+      "lotNo": "PP2600505457",
+      "lotName": "Phần 4: Hóa chất sinh hóa",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 70750000,
+      "reason": "",
+      "submittedAt": "2026-11-20T15:47:20.107",
+      "models": []
+    },
+    {
+      "id": "6a0ba185-37a3-4241-89cf-71a674ebf2f5",
+      "contractorCode": "vn0313417031",
+      "taxCode": "0313417031",
+      "contractorName": "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH",
+      "status": "won",
+      "lotNo": "PP2600505458",
+      "lotName": "phần 5: Hóa chất sát khuẩn và vật tư dùng cho xét nghiệm",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 22983300,
+      "reason": "",
+      "submittedAt": "2026-11-20T15:47:20.107",
+      "models": []
+    },
+    {
+      "id": "0605a7cf-4bb6-49eb-b7a9-af774fa756d3",
+      "contractorCode": "vn0313417031",
+      "taxCode": "0313417031",
+      "contractorName": "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH",
+      "status": "won",
+      "lotNo": "PP2600505752",
+      "lotName": "Phần 6 vật tư y tế",
+      "bidPrice": 0,
+      "finalPrice": 0,
+      "winningPrice": 21930000,
+      "reason": "",
+      "submittedAt": "2026-11-20T15:47:20.107",
+      "models": []
+    }
+  ],
+  "items": [
+    {
+      "id": "6e8e1d56-73de-44a1-bda4-ec7666a8a4cb",
+      "name": "Dung dịch rửa cuvet  hệ thống máy sinh hóa",
+      "model": "3930",
+      "brand": "WASHING SOLUTION",
+      "manufacturer": "Giesse Diagnostics srl",
+      "origin": "Ý",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "4X250ML (1000 mL/Hộp)",
+      "unit": "Hộp",
+      "quantity": 3,
+      "unitPrice": 2680000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "6509fca8-b7a0-4045-bfcc-de1c085a7c9b",
+      "name": "Dung dịch rửa tính axit dùng cho máy phân tích sinh hóa Biolis 30i",
+      "model": "SP2209",
+      "brand": "Acid Washing Solution",
+      "manufacturer": "Tokyo Boeki Medisys Inc",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chai 500ml",
+      "unit": "Chai",
+      "quantity": 3,
+      "unitPrice": 2500000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "c60d23d2-d7b2-4dab-82f0-1aea90b355f9",
+      "name": "Gel siêu âm",
+      "model": "USGEL",
+      "brand": "Gel siêu âm",
+      "manufacturer": "Công ty TNHH USASEN Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Can 5 lít Thùng 4 can",
+      "unit": "Thùng",
+      "quantity": 6,
+      "unitPrice": 640000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "f1603a46-0be3-4dad-94ec-e58c01e5830f",
+      "name": "Ống nghiệm nhựa có nắp",
+      "model": "ONG_35MLNON3P7N0",
+      "brand": "Ống nghiệm nhựa PS 5ml nắp trắng, không nhãn",
+      "manufacturer": "Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "500 cái/ Bịch",
+      "unit": "Cái",
+      "quantity": 1000,
+      "unitPrice": 700,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "4c24f7e4-693c-4721-ac7c-addeec532554",
+      "name": "Sample Cup",
+      "model": "GT202-211",
+      "brand": "Cốc đựng mẫu Hitachi",
+      "manufacturer": "Ningbo Greetmed Medical Instruments Co, Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Gói 500 cái",
+      "unit": "Cái",
+      "quantity": 1000,
+      "unitPrice": 468,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "9302bc14-c25f-4c00-8dd9-76567a3727d4",
+      "name": "Anti D ( Rh )",
+      "model": "822001 822002",
+      "brand": "Anti D (IgM+IgG)",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) – Spectrum Diagnostic",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Lọ 10 ml",
+      "unit": "Lọ",
+      "quantity": 3,
+      "unitPrice": 195000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "f478b7ec-a06a-4e62-a18f-029d188efaf2",
+      "name": "Anti B",
+      "model": "814001 814002",
+      "brand": "Anti-B (IgM)",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) – Spectrum Diagnostic",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Lọ 10 ml",
+      "unit": "Lọ",
+      "quantity": 3,
+      "unitPrice": 130000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "9d6e147c-301b-4252-9f65-ec3283ed92b3",
+      "name": "Thuốc thử xét nghiệm định lượngUREA",
+      "model": "UR8334",
+      "brand": "UREA",
+      "manufacturer": "Randox Laboratories Limited",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp (R1 4 x 20ml + R2 4 x 7 ml)",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 1710000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "ac4fbdea-3b36-4337-a29a-2086bd08c82b",
+      "name": "Dung dịch sát khuẩn tay nhanh",
+      "model": "AF200005",
+      "brand": "ALFASEPT HANDRUB",
+      "manufacturer": "Lavitec",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chai 500 ml",
+      "unit": "Chai",
+      "quantity": 10,
+      "unitPrice": 132030,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "74aa6a76-d2ea-419c-8068-939099557997",
+      "name": "Giấy đo điện tim",
+      "model": "SM6330/16R4",
+      "brand": "Giấy ghi kết quả đo điện tim Size: 63mm x 30m",
+      "manufacturer": "Tele-Paper (M) Sdn Bhd",
+      "origin": "Malaysia",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hôp 10 cuộn",
+      "unit": "Hộp",
+      "quantity": 100,
+      "unitPrice": 28800,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "33e0f67e-9c34-41bd-a248-fbaf92772fc4",
+      "name": "Lam kính XN 7102",
+      "model": "GT201-7102-2",
+      "brand": "Lam kính xét nghiệm ( 7102)",
+      "manufacturer": "Ningbo Greetmed Medical Instruments Co, Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp 72 cái",
+      "unit": "Hộp",
+      "quantity": 14,
+      "unitPrice": 27000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "bd0663ec-8bb7-493e-94c3-0d1c798cc737",
+      "name": "Ống nghiệm ETDA",
+      "model": "EDT_22MLOK23P1L1",
+      "brand": "Ống nghiệm EDTA K2 HTM 2ml nắp xanh dương, mous thấp",
+      "manufacturer": "Hồng Thiện Mỹ",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thùng/2400 ống",
+      "unit": "Ống",
+      "quantity": 1000,
+      "unitPrice": 1134,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "78c37a73-94cf-436b-8338-cd74c99646a5",
+      "name": "Cồn sát khuẩn 70 độ",
+      "model": "70VP30",
+      "brand": "CỒN 70 ĐỘ VP",
+      "manufacturer": "Vĩnh Phúc",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Can 30 lít",
+      "unit": "Lít",
+      "quantity": 4,
+      "unitPrice": 50000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "feaa16fe-8aa0-4fc7-b306-5c2043d93a84",
+      "name": "Thuốc thử xét nghiệm định lượng CREATININE (CREA)",
+      "model": "CR8316",
+      "brand": "CREATININE (CREA)",
+      "manufacturer": "Randox Laboratories Limited",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp (R1 4 x 20ml + R2 4 x 7 ml)",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 1250000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "f702271d-f20b-41d7-af70-d0f45907884c",
+      "name": "Dung dịch rửa hệ thống máy sinh hóa ",
+      "model": "3973",
+      "brand": "SYSTEMIC SOLUTION - \"RINSE\"",
+      "manufacturer": "Giesse Diagnostics srl",
+      "origin": "Ý",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "2X100mL (200 mL/Hộp)",
+      "unit": "Hộp",
+      "quantity": 1,
+      "unitPrice": 2000000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "bf1bcac4-bf0d-48e1-af8e-45c4345405c2",
+      "name": "Test HIV",
+      "model": "L031-10121",
+      "brand": "HIV 1/2/O Rapid Test Strip (Serum/Plasma/Whole Blood)",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "50 Test/Hộp",
+      "unit": "Test",
+      "quantity": 1100,
+      "unitPrice": 27000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "e768ce31-3bd1-4c8e-9a4b-2a2e0c4c3a2f",
+      "name": "Hóa chất rửa dùng cho máy phân tích huyết học",
+      "model": "T438",
+      "brand": "Cleanac / MEK-520",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thùng 5lít",
+      "unit": "Thùng",
+      "quantity": 1,
+      "unitPrice": 3810000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "444fdd3e-fef3-4e81-89cd-07c13772952d",
+      "name": "Hóa chất rửa dùng cho máy phân tích huyết học loại đậm đặc",
+      "model": "T438D",
+      "brand": "Cleanac•3 / MEK-620",
+      "manufacturer": "Nihon Kohden Tomioka Corporation",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thùng 5lít",
+      "unit": "Thùng",
+      "quantity": 1,
+      "unitPrice": 3810000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "5433d7ec-f27a-48e8-80e9-4d8aac29a46c",
+      "name": "Test nước tiểu 10 thông số",
+      "model": "10UK10",
+      "brand": "Urocolor 10",
+      "manufacturer": "Abbott Diagnostics Korea Inc",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp 100 test",
+      "unit": "Test",
+      "quantity": 1100,
+      "unitPrice": 7900,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "963ebccc-de69-4194-be1a-19309abd1507",
+      "name": "Test HCV",
+      "model": "L031-10321",
+      "brand": "HCV Rapid Test Strip (Serum/Plasma/Whole Blood)",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "50 Test/Hộp",
+      "unit": "Test",
+      "quantity": 1100,
+      "unitPrice": 19500,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "8504abaa-77c9-42ab-a5ea-8f691a198fd7",
+      "name": "Thuốc thử xét nghiệm định lượngASPARTATE AMINOTRANSFERASE (AST)",
+      "model": "AS8306",
+      "brand": "ASPARTATE AMINOTRANSFERASE (AST",
+      "manufacturer": "Randox Laboratories Limited",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp R1 4 x 20ml + R2 4 x 7 ml",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 1750000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "d27291d7-61ed-4167-8d67-103a14cddefa",
+      "name": "Bóng đèn sinh hoá Biolis 30i",
+      "model": "BXC0172A",
+      "brand": "Halogen lamp",
+      "manufacturer": "Fortress Diagnostics",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp 1 Cái",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 6350000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "f645b4b0-d06a-459b-8e05-57a6411ce310",
+      "name": "Găng tay cao su y tế có bột",
+      "model": "GKTCB",
+      "brand": "Găng kiểm tra dùng trong y tế, có bột",
+      "manufacturer": "Merufa",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp /50 đôi",
+      "unit": "Đôi",
+      "quantity": 1000,
+      "unitPrice": 1590,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "8353d788-9b22-4fa3-84df-48a1e51c5370",
+      "name": "Đầu Col xanh",
+      "model": "GT205-401",
+      "brand": "Đầu Col xanh có khía",
+      "manufacturer": "Ningbo Greetmed Medical Instruments Co, Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Gói 500 cái",
+      "unit": "Cái",
+      "quantity": 1000,
+      "unitPrice": 108,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "232aa496-3202-42a3-b967-1c3546968e02",
+      "name": "Test HBsAg",
+      "model": "L031-10221",
+      "brand": "HBsAg Rapid Test Strip (Serum/Plasma/Whole Blood)",
+      "manufacturer": "ACON Biotech (Hangzhou) Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "50 Test/Hộp",
+      "unit": "Test",
+      "quantity": 1100,
+      "unitPrice": 18500,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "365cbcb1-cde6-420a-b7a8-d7fddf749863",
+      "name": "Bông y tế",
+      "model": "1538PA",
+      "brand": "Bông y tế (không tiệt trùng)",
+      "manufacturer": "Châu Ngọc Thạch",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Bì/ kg",
+      "unit": "kg",
+      "quantity": 2,
+      "unitPrice": 225000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "f12c3f7f-a7ad-443f-8e10-2a2d5c93e88a",
+      "name": "Hóa chất pha loãng dùng cho máy phân tích huyết học",
+      "model": "MEK-640",
+      "brand": "Isotonac•3/ MEK-640",
+      "manufacturer": "Shanghai Kohden Medical Electronic Instrument Corp",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Thùng 18lít",
+      "unit": "Thùng",
+      "quantity": 3,
+      "unitPrice": 2420000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "5b966a80-8909-4dcf-bbf5-229c5821c1ba",
+      "name": "Hóa chất ly giải hồng cầu dùng cho máy phân tích huyết học",
+      "model": "MEK-680",
+      "brand": "Hemolynac 3N/MEK-680",
+      "manufacturer": "Shanghai Kohden Medical Electronic Instrument Corp",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Chai 500 ml",
+      "unit": "Chai",
+      "quantity": 1,
+      "unitPrice": 2330000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "270849dc-2cc7-47e1-83a8-a6ca8ad28453",
+      "name": "Bơm tiêm vô trùng sử dụng một lần 5 ml/cc, kim các cỡ",
+      "model": "BTK5: MPV",
+      "brand": "Bơm tiêm MPV sử dụng một lần 5ml",
+      "manufacturer": "Công ty Cổ phần Nhựa Y tế Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp/100 cái",
+      "unit": "cái",
+      "quantity": 1000,
+      "unitPrice": 990,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "f3e01b84-b10c-458b-9653-c3436a4b2c1e",
+      "name": "Phim X - Quang số hóa",
+      "model": "6707863",
+      "brand": "Phim in Laser 25x30cm AERMEI AMV",
+      "manufacturer": "Rayco (Xiamen) Medical Products Company Limited",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Kích thước: 25cm x 30cm hộp/100 tấm",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 3150000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "7bd42169-72a9-4193-9724-e2f6a5d6f174",
+      "name": "Test Ma túy tổng hợp 5 CHÂN",
+      "model": "MD -U55 (MOP/COD/HER/THC/AMP)",
+      "brand": "Multi-drug Urine Test Panel MD-U55(MOP/COD/HER/THC/AMP",
+      "manufacturer": "Assure Tech. (Hangzhou) Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp 25 test",
+      "unit": "Test",
+      "quantity": 1000,
+      "unitPrice": 32000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "98310946-c673-439c-9d7d-8379f1b04185",
+      "name": "Anti A",
+      "model": "810001; 810002",
+      "brand": "Anti-A (IgM)",
+      "manufacturer": "Egyptian Company for Biotechnology (S.A.E) – Spectrum Diagnostic",
+      "origin": "Ai Cập",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Lọ 10 ml",
+      "unit": "Lọ",
+      "quantity": 3,
+      "unitPrice": 130000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "b58ff3dd-397e-4b96-aca6-089c8c25c65c",
+      "name": "Giấy in Siêu âm",
+      "model": "UPP-110S",
+      "brand": "Giấy in siêu âm UPP-110S",
+      "manufacturer": "Tianjin Grand Paper Industry Co, Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp 10 cuộn",
+      "unit": "Hộp",
+      "quantity": 10,
+      "unitPrice": 1188000,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "d6a46359-da88-4ab6-97de-be8386a47997",
+      "name": "Đầu Col vàng",
+      "model": "GT205-403",
+      "brand": "Đầu Col vàng có khía",
+      "manufacturer": "Ningbo Greetmed Medical Instruments Co, Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Gói 1000 cái",
+      "unit": "Cái",
+      "quantity": 1000,
+      "unitPrice": 75,
+      "winnerNames": [
+        "CÔNG TY TNHH XUẤT NHẬP KHẨU VẬT TƯ THIẾT BỊ Y TẾ TRANG MINH HẠNH"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "fe8f90e8-b691-416f-a903-bca7be41bb7d",
+      "name": "Thuốc thử xét nghiệm định lượng GLUCOSE",
+      "model": "GL8318",
+      "brand": "GLUCOSE (GLUC-PAP)",
+      "manufacturer": "Randox Laboratories Limited",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp (4 x 20 ml)",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 1350000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "628a50bb-32cc-4848-95f6-f762b51f9024",
+      "name": "Thuốc thử xét nghiệm định lượngALANINEAMINOTRANSFERASE (ALT)",
+      "model": "AL8304",
+      "brand": "ALANINE AMINOTRANSFERASE (ALT)",
+      "manufacturer": "Randox Laboratories Limited",
+      "origin": "Anh",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Hộp (R1 4 x 20, R2 4 x 7)",
+      "unit": "Hộp",
+      "quantity": 6,
+      "unitPrice": 1750000,
+      "winnerNames": [
+        "Công ty TNHH Thiết Bị Y Tế Nhất Tâm"
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    },
+    {
+      "id": "b277908d-1f59-4de8-80b1-db1ca527c9c9",
+      "name": "Hóa chất xét nghiệm HbA1C",
+      "model": "F-A1C",
+      "brand": "Standard™ F HbA1c",
+      "manufacturer": "SD Biosensor, InC",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "Từ năm 2025 trở đi",
+      "specification": "Hộp 20 test",
+      "unit": "Test",
+      "quantity": 100,
+      "unitPrice": 70350,
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN Y TẾ AMVGROUP "
+      ],
+      "decisionNo": "1424/QĐ-TTYT",
+      "decisionDate": "2026-11-20T23:59:59",
+      "resultPublishedDate": "2026-11-20T15:55:14"
+    }
+  ],
   "requirements": {
     "total": 6,
     "items": [
@@ -86,5 +881,5 @@
     "bidForm": "CDTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-20T09:04:44.751Z"
+  "fetchedAt": "2026-11-20T21:54:33.081Z"
 }
