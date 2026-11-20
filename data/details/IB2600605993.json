@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "8d2570fc-df87-44e7-b621-0377556d43bd",
+      "contractorCode": "vn0316845557",
+      "taxCode": "0316845557",
+      "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN",
+      "status": "won",
+      "lotNo": "BP2600992196",
+      "lotName": "Mua sắm Trocar dùng cho phẫu thuật",
+      "bidPrice": 20500000,
+      "finalPrice": 20500000,
+      "winningPrice": 20500000,
+      "reason": "",
+      "submittedAt": "2026-11-20T07:43:08.637",
+      "models": [
+        "8923.014/8923.103"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "02f93958-ab63-438f-9a2b-6b61e61ec084",
+      "name": "Trocar dùng mổ nội soi",
+      "model": "8923.014/8923.103",
+      "brand": "-",
+      "manufacturer": "Richard Wolf",
+      "origin": "Đức ",
+      "manufactureYear": "2025",
+      "specification": "Bộ gồm\n1. Vỏ Trocar 10 mm: 01 cái\n- Loại trơn, thẳng\n- Đường kính 10 mm, chiều dài\nlàm việc 100 mm\n- Van dạng bi từ\n- Có van bơm khí có khóa vặn\n2. Nòng Trocar 10 mm: 01 cái\n- Loại đầu tù\n- Dùng cho vỏ Trocar 10 mm",
+      "unit": "Bộ",
+      "quantity": 1,
+      "unitPrice": 20500000,
+      "amount": 20500000,
+      "contractorCode": "vn0316845557",
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI KỸ THUẬT TÂM NGUYÊN"
+      ],
+      "lotNo": "",
+      "decisionNo": "857/QĐ-TTYT",
+      "decisionDate": "2026-11-20T07:43:07",
+      "resultPublishedDate": "2026-11-20T07:43:08"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -66,5 +107,5 @@
     "bidForm": "CGTTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-19T20:49:32.294Z"
+  "fetchedAt": "2026-11-20T03:30:54.875Z"
 }

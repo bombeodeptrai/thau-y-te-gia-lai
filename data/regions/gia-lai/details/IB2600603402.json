@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "340f5687-4b55-4d7a-9853-fccd102952ac",
+      "contractorCode": "vn4100824110",
+      "taxCode": "4100824110",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ MÔI TRƯỜNG HẬU SANH",
+      "status": "won",
+      "lotNo": "BP2600970952",
+      "lotName": "Thu gom, vận chuyển và xử lý chất thải y tế nguy hại năm 2027 của Trung tâm Y tế Tây Sơn",
+      "bidPrice": 123500000,
+      "finalPrice": 123500000,
+      "winningPrice": 123500000,
+      "reason": "",
+      "submittedAt": "2026-11-20T09:03:19.412",
+      "models": [
+        "Thu gom, vận chuyển và xử lý chất thải y tế nguy hại"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "9867726739316322",
+      "name": "Thu gom, vận chuyển và xử lý chất thải y tế nguy hại",
+      "model": "",
+      "brand": "",
+      "manufacturer": "",
+      "origin": "",
+      "manufactureYear": "",
+      "specification": "",
+      "unit": "Kg",
+      "quantity": 6500,
+      "unitPrice": 19000,
+      "amount": 123500000,
+      "contractorCode": "vn4100824110",
+      "winnerNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ MÔI TRƯỜNG HẬU SANH"
+      ],
+      "lotNo": "",
+      "decisionNo": "836/QĐ-TTTS",
+      "decisionDate": "2026-11-20T09:03:18",
+      "resultPublishedDate": "2026-11-20T09:03:19"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -72,5 +113,5 @@
     "bidForm": "CGTTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-19T20:49:33.369Z"
+  "fetchedAt": "2026-11-20T03:30:55.564Z"
 }
