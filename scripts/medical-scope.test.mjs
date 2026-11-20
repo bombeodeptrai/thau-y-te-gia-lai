@@ -9,6 +9,14 @@ import {
 
 const hospital = "Bệnh viện Đa khoa tỉnh";
 
+test("IB2600616318: ổ khí chuyên dụng tại bệnh viện, không phải thiết bị khí công nghiệp", () => {
+  const name = "Lắp đặt Ổ đầu ra khí oxy (chuẩn BS), Ổ đầu ra khí nén 4 bar (chuẩn BS), Ổ đầu ra khí hút (chuẩn BS) cho khoa Sơ sinh và khoa Phụ của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026";
+  for (const title of [name, "Thay ổ đầu ra khí hút", "Supply medical gas terminal unit", "Install medical vacuum outlet"]) {
+    assert.equal(isMedicalTender({ name: title, investorName: hospital }), true);
+  }
+  assert.equal(isMedicalTender({ name: "Lắp ổ đầu ra khí nén 4 bar", investorName: "Nhà máy cơ khí" }), false);
+});
+
 for (const [notifyNo, name, investor] of [
   ["IB2600031965", "Sửa chữa và kiểm định máy gây mê kèm thở + máy nén khí năm 2026", "Trung Tâm Y Tế Ayun Pa"],
   ["IB2400262248", "Sửa chữa máy gây mê kèm thở Maquet”", "TRUNG TÂM Y TẾ HUYỆN PHÚ THIỆN"],
