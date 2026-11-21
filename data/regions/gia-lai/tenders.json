@@ -114,7 +114,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=ed6947f9-779c-4e58-8386-0a200196dc28&notifyId=ed6947f9-779c-4e58-8386-0a200196dc28&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600616318&planNo=PL2600417116&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -126,9 +126,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "DC2600137626",
@@ -1909,7 +1907,7 @@
       "publicDate": "2026-11-04T08:34:45.608",
       "price": 23946406109,
       "category": "Vật tư & hóa chất",
-      "status": "open",
+      "status": "urgent",
       "sourceStatus": "01",
       "statusForNotify": "",
       "bidderCount": 0,
@@ -4533,10 +4531,76 @@
         "CÔNG TY CỔ PHẦN ĐẦU TƯ LIÊN DOANH VIỆT ANH",
         "Công ty TNHH Hóa Chất Á Đông"
       ],
-      "loserNames": [],
-      "loserDetails": [],
-      "winningModels": [],
-      "losingModels": [],
+      "loserNames": [
+        "CÔNG TY TNHH CHANU",
+        "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ VẠN YÊN",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ & PHÁT TRIỂN TM QUỐC TẾ NHẬT MINH",
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP",
+        "CÔNG TY TNHH HÓA CHẤT VÀ THIẾT BỊ VẬT TƯ HOÀNG HÀ",
+        "CÔNG TY TNHH KỸ THƯƠNG MINH LONG",
+        "CÔNG TY CỔ PHẦN ĐẦU TƯ LIÊN DOANH VIỆT ANH",
+        "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ THÚ Y",
+        "HỘ KINH DOANH NGUYỄN KIM LIÊN CỬA HÀNG TRANG THIẾT BỊ Y TẾ HUY HOÀNG"
+      ],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH CHANU",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ VẠN YÊN",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ & PHÁT TRIỂN TM QUỐC TẾ NHẬT MINH",
+          "reason": "Không đạt năng lực kinh nghiệm theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH CHANU",
+          "reason": "Xếp hạng 4"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ BÁCH HỢP",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH HÓA CHẤT VÀ THIẾT BỊ VẬT TƯ HOÀNG HÀ",
+          "reason": "Không đạt năng lực kinh nghiệm theo yêu cầu của E-HSMT"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH KỸ THƯƠNG MINH LONG",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH KỸ THƯƠNG MINH LONG",
+          "reason": "Xếp hạng 7"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN ĐẦU TƯ LIÊN DOANH VIỆT ANH",
+          "reason": "Xếp hạng 2"
+        },
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC VÀ VẬT TƯ THÚ Y",
+          "reason": "Xếp hạng 3"
+        },
+        {
+          "contractorName": "CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ VẠN YÊN",
+          "reason": "Xếp hạng 5"
+        },
+        {
+          "contractorName": "HỘ KINH DOANH NGUYỄN KIM LIÊN CỬA HÀNG TRANG THIẾT BỊ Y TẾ HUY HOÀNG",
+          "reason": "Xếp hạng 6"
+        }
+      ],
+      "winningModels": [
+        "BOXER PERMETHRIN 50EC",
+        "VNDP-HC-714-01-14",
+        "SODIUM N-CHLORO BENZENESULFONAMIDE"
+      ],
+      "losingModels": [
+        "VNDP-HC-714-01-14",
+        "SODIUM N-CHLORO BENZENESULFONAMIDE"
+      ],
       "losingModelDisclosure": ""
     },
     {
@@ -93477,7 +93541,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-21T03:27:32.465Z",
+  "fetchedAt": "2026-11-21T20:37:28.204Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -93492,8 +93556,8 @@
     "refreshDays": 2,
     "statusSchemaVersion": 4,
     "lastScanDays": 2,
-    "lastScanTenderCount": 37,
-    "lastProvinceTenderCount": 37,
+    "lastScanTenderCount": 30,
+    "lastProvinceTenderCount": 30,
     "lastHistoricalFallbackTenderCount": 0,
     "lastHistoricalFallbackFailureCount": 0,
     "lastHistoricalFallbackComplete": true,
@@ -93510,15 +93574,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v21",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v21",
-    "lastMedicalRescueAt": "2026-11-21T03:27:32.465Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 879,
-    "lastMedicalRescueMedicalCount": 27,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    ]
   }
 }
