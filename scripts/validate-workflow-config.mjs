@@ -100,6 +100,11 @@ if (!fullScan.includes("for attempt in 1 2 3")
 }
 
 const highFrequencyFiles = [quickPath, auditPath, detailPath];
+if (/id: regional_scan\s+continue-on-error: true/.test(fullScan)
+  || !fullScan.includes("needs.scan.result == 'failure'")
+  || !/Không có dữ liệu tỉnh đã xác thực[^\n]*\n\s*exit 1/.test(fullScan)) {
+  throw new Error("Quét sâu phải báo lỗi thật, chỉ ghép các tỉnh có dữ liệu đã xác thực");
+}
 for (const file of highFrequencyFiles) {
   const text = await readFile(file, "utf8");
   if (!text.includes("- gia-lai")) {
