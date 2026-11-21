@@ -114,7 +114,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=ed6947f9-779c-4e58-8386-0a200196dc28&notifyId=ed6947f9-779c-4e58-8386-0a200196dc28&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600616318&planNo=PL2600417116&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -126,7 +126,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "DC2600137626",
@@ -610393,7 +610395,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-21T00:46:14.976Z",
+  "fetchedAt": "2026-11-21T00:58:22.550Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5742,
   "regions": [
@@ -610517,7 +610519,7 @@
       "equipmentCount": 19731,
       "detailTenderCount": 1160,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-21T00:46:14.976Z",
+      "fetchedAt": "2026-11-21T00:58:22.550Z",
       "initialized": true,
       "source": "regional-scan"
     },
