@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-20T16:59:40.215Z",
+  "auditedAt": "2026-11-21T01:32:54.336Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 809,
+      "count": 807,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 114,
+      "count": 113,
       "error": ""
     },
     {
@@ -271,19 +271,19 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1746,
+  "candidateCount": 1743,
   "acceptedCount": 62,
-  "rejectedCount": 1684,
+  "rejectedCount": 1681,
   "rejectedReasons": {
     "excluded:tu van": 537,
-    "excluded:xay dung": 479,
+    "excluded:xay dung": 478,
     "insufficient-medical-context": 402,
     "excluded:xay lap": 76,
-    "excluded:sua chua": 58,
+    "excluded:sua chua": 57,
     "excluded:cai tao": 21,
     "excluded:thuc pham": 20,
     "excluded:bao ve": 12,
-    "excluded:tham dinh": 11,
+    "excluded:tham dinh": 10,
     "excluded:bao hiem": 10,
     "excluded:bao tri": 10,
     "excluded:may tinh": 7,
@@ -1390,8 +1390,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1214,
-  "afterCount": 1214,
+  "beforeCount": 1212,
+  "afterCount": 1212,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v21"
 }
