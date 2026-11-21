@@ -49,7 +49,6 @@ jobs:
       # địa danh Gia Lai và Bình Định cũ vì nhiều hồ sơ lịch sử thiếu mã tỉnh.
       - name: Quét nền toàn bộ 3 năm
         id: regional_scan
-        continue-on-error: true
         env:
           SCAN_DAYS: "1095"
           INCREMENTAL_DAYS: "14"
@@ -80,7 +79,7 @@ jobs:
           STAGING_ROOT="artifacts/staging"
           STAGING_DIR="$STAGING_ROOT/$SOURCE_DIR"
           mkdir -p "$SOURCE_DIR" "$STAGING_DIR"
-          node -e 'const fs=require("node:fs"); const s=JSON.parse(fs.readFileSync(process.argv[1],"utf8")); process.stdout.write(String(s.status || "success")+"\\n")' \
+          node -e 'const fs=require("node:fs"); const s=JSON.parse(fs.readFileSync(process.argv[1],"utf8")); console.log(s.status || "success")' \
             "$SOURCE_DIR/scan-summary.json" > "$SOURCE_DIR/last-full-scan-status.txt"
           date -u +'%Y-%m-%dT%H:%M:%SZ' > "$SOURCE_DIR/last-full-scan-at.txt"
           # Quét nền không được ghi lùi các báo cáo audit/rapid đã mới hơn.
@@ -108,7 +107,7 @@ jobs:
           if-no-files-found: error
 
   merge-data:
-    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[central-full-scan]')
+    if: ${{ !cancelled() && (needs.scan.result == 'success' || needs.scan.result == 'failure') }}
     needs: scan
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -143,7 +142,6 @@ jobs:
           fi
 
       - name: Tải dữ liệu các tỉnh quét thành công
-        continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           pattern: full-region-*
@@ -157,7 +155,8 @@ jobs:
               tar -xzf "$archive"
             done
           else
-            echo "Không có tỉnh nào quét thành công; giữ dữ liệu gần nhất."
+            echo "::error::Không có dữ liệu tỉnh đã xác thực để hợp nhất; giữ nguyên main."
+            exit 1
           fi
           node scripts/merge-concurrent-tenders.mjs artifacts/concurrent/base-tenders.json artifacts/concurrent/current-tenders.json
           node scripts/merge-regions.mjs
