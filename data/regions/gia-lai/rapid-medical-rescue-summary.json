@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-21T03:27:32.465Z",
+  "rescuedAt": "2026-11-21T20:45:28.068Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 183,
+      "count": 184,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 326,
+      "count": 316,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 29,
+      "count": 28,
       "error": ""
     },
     {
@@ -72,7 +72,7 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 4,
+      "count": 5,
       "error": ""
     },
     {
@@ -132,7 +132,7 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 7,
+      "count": 5,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 55,
+      "count": 54,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 6,
+      "count": 7,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 77,
+      "count": 74,
       "error": ""
     },
     {
@@ -281,14 +281,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 879,
+  "candidateCount": 869,
   "acceptedCount": 27,
-  "rejectedCount": 852,
+  "rejectedCount": 842,
   "rejectedReasons": {
-    "excluded:tu van": 310,
-    "excluded:xay dung": 274,
-    "insufficient-medical-context": 142,
-    "excluded:sua chua": 26,
+    "excluded:tu van": 303,
+    "excluded:xay dung": 268,
+    "insufficient-medical-context": 146,
+    "excluded:sua chua": 25,
     "excluded:xay lap": 25,
     "excluded:thuc pham": 18,
     "excluded:trang phuc": 6,
@@ -738,6 +738,42 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600614809",
+      "name": "Mua sắm thiết bị phục vụ triển khai hệ thống Phần mềm Quản lý nghiệp vụ ngoại tuyến",
+      "investor": "Công an tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607918",
+      "name": "27.03.HH Cung cấp cột bê tông ly tâm, móng cột khu vực Tây Gia Lai",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600616827",
+      "name": "Mua sắm phân hữu cơ vi sinh",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
+      "accepted": false,
+      "score": 35,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "vi sinh",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600614670",
       "name": "Mua vật tư điện, vật tư thông tin, vách nhôm kính, bàn ghế và các vật tư khác",
       "investor": "LỮ ĐOÀN 132-BINH CHỦNG THÔNG TIN LIÊN LẠC",
@@ -1139,39 +1175,6 @@
       "reason": "insufficient-medical-context",
       "matched": [
         "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607716",
-      "name": "Gói thầu số 27/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600604327",
-      "name": "Gói thầu số: 36/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607524",
-      "name": "Gói thầu số 17/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
