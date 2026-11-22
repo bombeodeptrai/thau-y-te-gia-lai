@@ -1,9 +1,104 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "b7f12774-b930-4a59-815e-7687d86ab103",
+      "contractorCode": "vn0106294423",
+      "taxCode": "0106294423",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ TN VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600482509",
+      "lotName": "Băng dính",
+      "bidPrice": 175000000,
+      "finalPrice": 175000000,
+      "winningPrice": 175000000,
+      "reason": "",
+      "submittedAt": "2026-11-19T14:47:42.127",
+      "models": [
+        "BDL2.91.UGT"
+      ]
+    },
+    {
+      "id": "c72bc7f6-d6e6-4df9-a818-2656288c9582",
+      "contractorCode": "vn0111272915",
+      "taxCode": "0111272915",
+      "contractorName": "CÔNG TY TNHH SẢN XUẤT VÀ THƯƠNG MẠI HẢI NINH MEDTECH",
+      "status": "lost",
+      "lotNo": "PP2600482509",
+      "lotName": "Băng dính",
+      "bidPrice": 189000000,
+      "finalPrice": 189000000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ Hai",
+      "submittedAt": "2026-11-19T14:47:42.127",
+      "models": []
+    },
+    {
+      "id": "5348b867-0931-4b2b-a050-1385be9e055d",
+      "contractorCode": "vn2800588271",
+      "taxCode": "2800588271",
+      "contractorName": "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA",
+      "status": "won",
+      "lotNo": "PP2600482511",
+      "lotName": "Ống nghiệm EDTA K2",
+      "bidPrice": 24075000,
+      "finalPrice": 24075000,
+      "winningPrice": 24075000,
+      "reason": "",
+      "submittedAt": "2026-11-19T14:47:42.127",
+      "models": [
+        "ON-04: MPV"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "539e747e-1ad9-4fc0-90fa-8aa3efaef102",
+      "name": "Băng dính",
+      "model": "BDL2.91.UGT",
+      "brand": "Urgotana",
+      "manufacturer": "Công ty Cổ phần Tanaphar",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Băng dính vải đa dụng: - Nền vải lụa acetate taffeta mịn, mềm, không đàn hồi với độ bền kéo mạnh. - Nền Aceta teffeta 30 - 60%; Keo Acrylate 20-40%  (không chứa mủ cao su), độ dính tốt, ít gây dị ứng và không sót keo khi tháo băng ra. - Xé theo 2 chiều - Kích thước: 2,5cm x 9.1m - Chống thấm nước. TCCL: ISO 13485; CE; FDA",
+      "unit": "Cuộn",
+      "quantity": 5000,
+      "unitPrice": 35000,
+      "amount": 175000000,
+      "contractorCode": "vn0106294423",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ TN VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1374/QĐ-BVTT",
+      "decisionDate": "2026-11-19T14:47:41",
+      "resultPublishedDate": "2026-11-19T14:47:42"
+    },
+    {
+      "id": "10dbd67e-756e-4202-a877-571d2a85fff8",
+      "name": "Ống nghiệm EDTA K2",
+      "model": "ON-04: MPV",
+      "brand": "MPV",
+      "manufacturer": "Công ty cổ phẩn nhựa y tế Việt Nam",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở về sau",
+      "specification": "Chất liệu: Ống được làm bằng nhựa y tế PP, kích thước ống 12x75mm, Nắp bằng nhựa LDPE màu xanh dương. Hóa chất bên trong là Dipotassium Ethylenediaminetetra Acid (EDTA K2) với nồng độ tiêu chuẩn để giữ các tế bào trong máu nhất là tiểu cầu luôn ở trạng thái tách rời tối đa từ 6 - 8 giờ. Dùng trong xét nghiệm huyết học (công thức máu, xét nghiệm HbA1c..).Hóa chất bên trong dùng kháng đông cho 2ml máu với vạch lấy mẫu 2ml riêng biệt trên nhãn ống. Ống nghiệm không bị nứt vỡ, rò rỉ khi ly tâm với tốc độ 6000 vòng/phút Đạt tiêu chuẩn EN ISO 13485, CE",
+      "unit": "Ống",
+      "quantity": 45000,
+      "unitPrice": 535,
+      "amount": 24075000,
+      "contractorCode": "vn2800588271",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN THIẾT BỊ VẬT TƯ Y TẾ THANH HÓA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1374/QĐ-BVTT",
+      "decisionDate": "2026-11-19T14:47:41",
+      "resultPublishedDate": "2026-11-19T14:47:42"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -122,6 +217,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:40:01.547Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-22T22:31:40.247Z"
 }

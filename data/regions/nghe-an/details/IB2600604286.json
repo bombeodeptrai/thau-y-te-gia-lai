@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "779d5937-18f0-4624-9d9c-c077e1a09997",
+      "contractorCode": "vn0312836512",
+      "taxCode": "0312836512",
+      "contractorName": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ KỸ THUẬT TÂM VIỆT",
+      "status": "won",
+      "lotNo": "BP2600990783",
+      "lotName": "Mua sắm bóng phát tia X cho hệ thống máy chụp cắt lớp vi tính CTScanner tại cơ sở 2 Bệnh viện Đa khoa thành phố Vinh năm 2026",
+      "bidPrice": 1400000000,
+      "finalPrice": 1400000000,
+      "winningPrice": 1400000000,
+      "reason": "",
+      "submittedAt": "2026-11-18T15:05:37.106",
+      "models": [
+        "RS35035"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "a8674b09-a245-4789-b0f1-317d6eb5bfae",
+      "name": "Bóng phát tia X",
+      "model": "RS35035",
+      "brand": "Raymemo Vacuum",
+      "manufacturer": "Raymemo Vacuum Technology Wuxi Co., Ltd",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Tương thích với hệ thống máy chụp cắt lớp vi tính CT Scanner 16 lát cắt Access CT, Philips hiện có tại Bệnh viện.\nYêu cầu kỹ thuật\n Trữ nhiệt lớn nhất của Anode: 2.5MJ(3.5MHU).\nĐiện áp qua bóng phát tia X-quang: 140KV\nCông suất tản nhiệt của khối làm mát: 5kW\nĐiện áp qua sợi tối đa (tóc nhỏ/ tóc lớn): 12.5 V/ 16.5V\nCông suất định danh đầu vào anode: \n- Tiêu điểm nhỏ: - 28 kW\n- Tiêu điểm lớn:  - 42 kW\nNhiệt độ tối đa vỏ bóng phát tia: 105 độ C",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 1400000000,
+      "amount": 1400000000,
+      "contractorCode": "vn0312836512",
+      "winnerNames": [
+        "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ KỸ THUẬT TÂM VIỆT"
+      ],
+      "lotNo": "",
+      "decisionNo": "18/11/2026",
+      "decisionDate": "2026-11-18T15:05:36",
+      "resultPublishedDate": "2026-11-18T15:05:37"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:40:24.527Z"
+  "fetchedAt": "2026-11-22T22:31:18.773Z"
 }

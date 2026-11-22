@@ -1,55 +1,191 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 6,
   "bidders": [
     {
-      "id": "1b589734-5123-4748-b6c6-89df49caece8",
+      "id": "afbc8a17-daee-4af4-b731-7d2692672c7f",
       "contractorCode": "vn0108492727",
-      "taxCode": "",
+      "taxCode": "0108492727",
       "contractorName": "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600355993",
       "lotName": "Lõi lọc thô",
-      "bidPrice": 66916000,
+      "bidPrice": 8100000,
       "finalPrice": 8100000,
-      "winningPrice": 0,
+      "winningPrice": 8100000,
       "reason": "",
-      "submittedAt": "2026-10-15T09:44:51.321",
-      "models": []
+      "submittedAt": "2026-11-20T10:51:16.538",
+      "models": [
+        "PP 30inch",
+        "Viqua S410RL",
+        "ePore IPC02B2E"
+      ]
     },
     {
-      "id": "03196dbf-2f7c-4475-b95a-33bc141c2ca9",
+      "id": "fa918c69-1059-4c0a-a6ff-0a73dcdc62e6",
       "contractorCode": "vn0108492727",
-      "taxCode": "",
+      "taxCode": "0108492727",
       "contractorName": "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600355994",
       "lotName": "Lõi lọc xác khuẩn",
-      "bidPrice": 66916000,
+      "bidPrice": 14000000,
       "finalPrice": 14000000,
-      "winningPrice": 0,
+      "winningPrice": 14000000,
       "reason": "",
-      "submittedAt": "2026-10-15T09:44:51.321",
-      "models": []
+      "submittedAt": "2026-11-20T10:51:16.538",
+      "models": [
+        "PP 30inch",
+        "Viqua S410RL",
+        "ePore IPC02B2E"
+      ]
     },
     {
-      "id": "d35d30ca-c17c-497b-a51e-dae0176d7cb1",
+      "id": "014b50e1-1922-4962-9d72-b37b15d82899",
       "contractorCode": "vn0108492727",
-      "taxCode": "",
+      "taxCode": "0108492727",
       "contractorName": "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600355995",
       "lotName": "Bóng đèn UV",
-      "bidPrice": 66916000,
+      "bidPrice": 44816000,
       "finalPrice": 44816000,
-      "winningPrice": 0,
+      "winningPrice": 44816000,
       "reason": "",
-      "submittedAt": "2026-10-15T09:44:51.321",
-      "models": []
+      "submittedAt": "2026-11-20T10:51:16.538",
+      "models": [
+        "PP 30inch",
+        "Viqua S410RL",
+        "ePore IPC02B2E"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "2600355993",
+      "name": "Lõi lọc thô",
+      "model": "PP 30inch",
+      "brand": "Toàn Á",
+      "manufacturer": "Chi nhánh Công ty cổ phần công nghệ môi trường Toàn Á",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Kích thước lỗ 5 micromet; Chiều dài 30 inch, chất liệu PP",
+      "unit": "Cái",
+      "quantity": 90,
+      "unitPrice": 0,
+      "amount": 8100000,
+      "contractorCode": "vn0108492727",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT"
+      ],
+      "lotNo": "PP2600355993",
+      "decisionNo": "3276 /QĐ-BVĐKKH",
+      "decisionDate": "2026-11-20T10:51:14",
+      "resultPublishedDate": "2026-11-20T10:51:16"
+    },
+    {
+      "id": "2600355995",
+      "name": "Bóng đèn UV",
+      "model": "Viqua S410RL",
+      "brand": "Viqua",
+      "manufacturer": "HomePlus Products Inc.",
+      "origin": "Canada",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Dài 510mm; Công suất 46W; Kết nối 4 chân lệch; 9000 giờ;",
+      "unit": "Cái",
+      "quantity": 8,
+      "unitPrice": 0,
+      "amount": 44816000,
+      "contractorCode": "vn0108492727",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT"
+      ],
+      "lotNo": "PP2600355995",
+      "decisionNo": "3276 /QĐ-BVĐKKH",
+      "decisionDate": "2026-11-20T10:51:14",
+      "resultPublishedDate": "2026-11-20T10:51:16"
+    },
+    {
+      "id": "2600355994",
+      "name": "Lõi lọc xác khuẩn",
+      "model": "ePore IPC02B2E",
+      "brand": "ePore",
+      "manufacturer": "ePore Co.,Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Kích thước lỗ 0.2 micromet; Chiều dài 20 inch; chất liệu Polypropyle",
+      "unit": "Cái",
+      "quantity": 8,
+      "unitPrice": 0,
+      "amount": 14000000,
+      "contractorCode": "vn0108492727",
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT"
+      ],
+      "lotNo": "PP2600355994",
+      "decisionNo": "3276 /QĐ-BVĐKKH",
+      "decisionDate": "2026-11-20T10:51:14",
+      "resultPublishedDate": "2026-11-20T10:51:16"
+    },
+    {
+      "id": "3d844c0f-d347-459b-8033-9e008da94d12",
+      "name": "Bóng đèn UV",
+      "model": "Viqua S410RL",
+      "brand": "Viqua",
+      "manufacturer": "HomePlus Products Inc.",
+      "origin": "Canada",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Dài 510mm; Công suất 46W; Kết nối 4 chân lệch; 9000 giờ;",
+      "unit": "Cái",
+      "quantity": 8,
+      "unitPrice": 5602000,
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT"
+      ],
+      "decisionNo": "3276 /QĐ-BVĐKKH",
+      "decisionDate": "2026-11-20T10:51:14",
+      "resultPublishedDate": "2026-11-20T10:51:16"
+    },
+    {
+      "id": "811a9368-54cb-4211-8aa6-b68dcdbcc39a",
+      "name": "Lõi lọc thô",
+      "model": "PP 30inch",
+      "brand": "Toàn Á",
+      "manufacturer": "Chi nhánh Công ty cổ phần công nghệ môi trường Toàn Á",
+      "origin": "Việt Nam",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Kích thước lỗ 5 micromet; Chiều dài 30 inch, chất liệu PP",
+      "unit": "Cái",
+      "quantity": 90,
+      "unitPrice": 90000,
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT"
+      ],
+      "decisionNo": "3276 /QĐ-BVĐKKH",
+      "decisionDate": "2026-11-20T10:51:14",
+      "resultPublishedDate": "2026-11-20T10:51:16"
+    },
+    {
+      "id": "92762349-f192-404b-b53f-feb65f433725",
+      "name": "Lõi lọc xác khuẩn",
+      "model": "ePore IPC02B2E",
+      "brand": "ePore",
+      "manufacturer": "ePore Co.,Ltd",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Kích thước lỗ 0.2 micromet; Chiều dài 20 inch; chất liệu Polypropyle",
+      "unit": "Cái",
+      "quantity": 8,
+      "unitPrice": 1750000,
+      "winnerNames": [
+        "CÔNG TY TNHH CÔNG NGHỆ Y TẾ HDT"
+      ],
+      "decisionNo": "3276 /QĐ-BVĐKKH",
+      "decisionDate": "2026-11-20T10:51:14",
+      "resultPublishedDate": "2026-11-20T10:51:16"
+    }
+  ],
   "requirements": {
     "total": 8,
     "items": [
@@ -145,5 +281,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:58:54.895Z"
+  "fetchedAt": "2026-11-22T22:50:00.421Z"
 }

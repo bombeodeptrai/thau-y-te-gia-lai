@@ -1,55 +1,131 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 3,
   "bidders": [
     {
-      "id": "da767e11-dd2d-4dda-9b14-cac70f6c5439",
+      "id": "b747c674-b061-41b4-983a-6ff4527ebcc9",
       "contractorCode": "vn2901952456",
-      "taxCode": "",
+      "taxCode": "2901952456",
       "contractorName": "CÔNG TY TNHH OXY TỨ HẠ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600437625",
       "lotName": "Khí Oxy y tế (Chứa trong bình chịu áp lực 6m3)",
-      "bidPrice": 108800000,
+      "bidPrice": 95000000,
       "finalPrice": 95000000,
-      "winningPrice": 0,
+      "winningPrice": 95000000,
       "reason": "",
-      "submittedAt": "2026-10-30T14:21:32.866",
-      "models": []
+      "submittedAt": "2026-11-18T15:43:44.992",
+      "models": [
+        "OXY",
+        "CO2"
+      ]
     },
     {
-      "id": "b0dd021a-0d46-4c63-8eba-1aef4c37dcc6",
+      "id": "8f0bd0e9-6403-469e-975e-c06552af2d66",
       "contractorCode": "vn2901952456",
-      "taxCode": "",
+      "taxCode": "2901952456",
       "contractorName": "CÔNG TY TNHH OXY TỨ HẠ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600437626",
       "lotName": "Khí Oxy y tế (Chứa trong bình chịu áp lực 1,5m3)",
-      "bidPrice": 108800000,
+      "bidPrice": 8000000,
       "finalPrice": 8000000,
-      "winningPrice": 0,
+      "winningPrice": 8000000,
       "reason": "",
-      "submittedAt": "2026-10-30T14:21:32.866",
-      "models": []
+      "submittedAt": "2026-11-18T15:43:44.992",
+      "models": [
+        "OXY",
+        "CO2"
+      ]
     },
     {
-      "id": "5f09d394-454c-46cf-a53b-50ec1a7f2738",
+      "id": "1225dc6f-084d-4a7f-895e-4416cd8dc4db",
       "contractorCode": "vn2901952456",
-      "taxCode": "",
+      "taxCode": "2901952456",
       "contractorName": "CÔNG TY TNHH OXY TỨ HẠ",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600437627",
       "lotName": "Khí CO2 (Chứa trong bình chịu áp lực 6m3)",
-      "bidPrice": 108800000,
+      "bidPrice": 5800000,
       "finalPrice": 5800000,
-      "winningPrice": 0,
+      "winningPrice": 5800000,
       "reason": "",
-      "submittedAt": "2026-10-30T14:21:32.866",
-      "models": []
+      "submittedAt": "2026-11-18T15:43:44.992",
+      "models": [
+        "OXY",
+        "CO2"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "bcb1de68-41d9-4a68-b3f1-bbbd60030691",
+      "name": "Khí Oxy y tế (Chứa trong bình chịu áp lực 6m3)",
+      "model": "OXY",
+      "brand": "OXY",
+      "manufacturer": "Công ty TNHH Oxy Tứ Hạ",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở đi",
+      "specification": "Độ tinh khiết ≥ 99,6%;Sản phẩm được chứa trong bình thép chịu áp lực Bình 6m3, áp suất nạp khí ≥ 130 kg/cm2",
+      "unit": "Bình",
+      "quantity": 1000,
+      "unitPrice": 95000,
+      "amount": 95000000,
+      "contractorCode": "vn2901952456",
+      "winnerNames": [
+        "CÔNG TY TNHH OXY TỨ HẠ"
+      ],
+      "lotNo": "",
+      "decisionNo": "546/QĐ-BVĐKKVVL",
+      "decisionDate": "2026-11-18T15:43:42",
+      "resultPublishedDate": "2026-11-18T15:43:45"
+    },
+    {
+      "id": "dcf1fa0f-6dc2-4070-bb70-d221494d16ca",
+      "name": "Khí Oxy y tế (Chứa trong bình chịu áp lực 1,5m3)",
+      "model": "OXY",
+      "brand": "OXY",
+      "manufacturer": "Công ty TNHH Oxy Tứ Hạ",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở đi",
+      "specification": "Độ tinh khiết ≥ 99,6%;Sản phẩm được chứa trong bình thép chịu áp lực Bình 1,5m3 áp suất nạp khí ≥ 130 kg/cm2",
+      "unit": "Bình",
+      "quantity": 200,
+      "unitPrice": 40000,
+      "amount": 8000000,
+      "contractorCode": "vn2901952456",
+      "winnerNames": [
+        "CÔNG TY TNHH OXY TỨ HẠ"
+      ],
+      "lotNo": "",
+      "decisionNo": "546/QĐ-BVĐKKVVL",
+      "decisionDate": "2026-11-18T15:43:42",
+      "resultPublishedDate": "2026-11-18T15:43:45"
+    },
+    {
+      "id": "53c78ab7-9d94-4abf-b8ac-2270cdccf558",
+      "name": "Khí CO2 (Chứa trong bình chịu áp lực 6m3)",
+      "model": "CO2",
+      "brand": "CO2",
+      "manufacturer": "Công ty CP khí công nghiệp Bắc Hà",
+      "origin": "Việt Nam",
+      "manufactureYear": "Năm 2026 trở đi",
+      "specification": "Chứa trong bình chịu áp lực, trọng lượng 20kg/40L , chất lương > 99,5%",
+      "unit": "Bình",
+      "quantity": 20,
+      "unitPrice": 290000,
+      "amount": 5800000,
+      "contractorCode": "vn2901952456",
+      "winnerNames": [
+        "CÔNG TY TNHH OXY TỨ HẠ"
+      ],
+      "lotNo": "",
+      "decisionNo": "546/QĐ-BVĐKKVVL",
+      "decisionDate": "2026-11-18T15:43:42",
+      "resultPublishedDate": "2026-11-18T15:43:45"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -95,5 +171,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:44:28.191Z"
+  "fetchedAt": "2026-11-22T22:35:36.523Z"
 }

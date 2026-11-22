@@ -1,40 +1,204 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
+  "total": 7,
   "bidders": [
     {
-      "id": "05f26a7a-9c23-4df8-bd91-138fd07a534a",
+      "id": "dd9acfb1-405f-403c-b914-19db5bd0b206",
       "contractorCode": "vn0106350389",
-      "taxCode": "",
+      "taxCode": "0106350389",
       "contractorName": "CÔNG TY TNHH TRANG THIẾT BỊ THỊNH QUANG",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600435683",
       "lotName": "Lô 1: Thiết bị y tế Chẩn đoán hình ảnh",
       "bidPrice": 4370000000,
       "finalPrice": 4370000000,
-      "winningPrice": 0,
+      "winningPrice": 4370000000,
       "reason": "",
-      "submittedAt": "2026-11-02T09:03:53.055",
-      "models": []
+      "submittedAt": "2026-11-18T15:47:46.61",
+      "models": [
+        "Model ( Máy chính): EP-6000",
+        "Model ( Máy chính): ARIETTA 650"
+      ]
     },
     {
-      "id": "891c64fb-b50f-40e9-9e20-6afbac11610c",
+      "id": "ae3fe632-5001-4cc4-9d96-901957a6ca50",
       "contractorCode": "vn0109126579",
-      "taxCode": "",
+      "taxCode": "0109126579",
       "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ MINH QUYẾT",
-      "status": "participating",
+      "status": "won",
       "lotNo": "PP2600435684",
       "lotName": "Lô 2: Thiết bị y tế Phục hồi chức năng",
       "bidPrice": 3262500000,
       "finalPrice": 3262500000,
-      "winningPrice": 0,
+      "winningPrice": 3262500000,
       "reason": "",
-      "submittedAt": "2026-11-02T09:03:52.846",
-      "models": []
+      "submittedAt": "2026-11-18T15:47:46.61",
+      "models": [
+        "BTL-6000 Shortwave 400",
+        "BTL - 5940 Magnet",
+        "BTL-6000 Lymphastim 12 Topline",
+        "BTL - 4110 Premium",
+        "Biomix HSP-601"
+      ]
     }
   ],
-  "items": [],
+  "items": [
+    {
+      "id": "72ea0a6a-a586-472a-a740-6e6952e336db",
+      "name": "Hệ thống nội soi tiêu hoá (Dạ dày, đại tràng)",
+      "model": "Model ( Máy chính): EP-6000",
+      "brand": "FUJIFILM",
+      "manufacturer": "FUJIFILM Healthcare Manufacturing Corporation Sano Office",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 Trở về sau",
+      "specification": "Chi tiết kèm theo bảng tổng hợp kê khai về mặt kỹ thuật của hàng hóa",
+      "unit": "Hệ thống",
+      "quantity": 1,
+      "unitPrice": 2240000000,
+      "amount": 2240000000,
+      "contractorCode": "vn0106350389",
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ THỊNH QUANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "0748/QĐ-BVYHCT",
+      "decisionDate": "2026-11-18T15:47:44",
+      "resultPublishedDate": "2026-11-18T15:47:46"
+    },
+    {
+      "id": "dc87fa88-1137-4cad-93ce-4636e4ace8f5",
+      "name": "Máy siêu âm Doppler ≥ 3 đầu dò",
+      "model": "Model ( Máy chính): ARIETTA 650",
+      "brand": "FUJIFILM",
+      "manufacturer": "FUJIFILM Healthcare Manufacturing Corporation Kashiwa Office",
+      "origin": "Nhật Bản",
+      "manufactureYear": "2026 Trở về sau",
+      "specification": "Chi tiết kèm theo bảng tổng hợp kê khai về mặt kỹ thuật của hàng hóa",
+      "unit": "Máy",
+      "quantity": 1,
+      "unitPrice": 2130000000,
+      "amount": 2130000000,
+      "contractorCode": "vn0106350389",
+      "winnerNames": [
+        "CÔNG TY TNHH TRANG THIẾT BỊ THỊNH QUANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "0748/QĐ-BVYHCT",
+      "decisionDate": "2026-11-18T15:47:44",
+      "resultPublishedDate": "2026-11-18T15:47:46"
+    },
+    {
+      "id": "531a5ee3-0116-4d5d-b626-dab885a913a4",
+      "name": "Máy sóng ngắn điều trị",
+      "model": "BTL-6000 Shortwave 400",
+      "brand": "BTL-6000 Shortwave 400",
+      "manufacturer": "BTL Industries JSC",
+      "origin": "Bulgaria",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Chi tiết theo Bảng biểu tổng hợp kê khai về mặt kỹ thuật các mặt hàng dự thầu đính kèm",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 420000000,
+      "amount": 840000000,
+      "contractorCode": "vn0109126579",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ MINH QUYẾT"
+      ],
+      "lotNo": "",
+      "decisionNo": "0748/QĐ-BVYHCT",
+      "decisionDate": "2026-11-18T15:47:44",
+      "resultPublishedDate": "2026-11-18T15:47:46"
+    },
+    {
+      "id": "d99c28ca-bba2-42b9-b911-124d4f762612",
+      "name": "Máy từ trường",
+      "model": "BTL - 5940 Magnet",
+      "brand": "BTL - 5940 Magnet",
+      "manufacturer": "BTL Industries JSC",
+      "origin": "Bulgaria",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Chi tiết theo Bảng biểu tổng hợp kê khai về mặt kỹ thuật các mặt hàng dự thầu đính kèm",
+      "unit": "Cái",
+      "quantity": 2,
+      "unitPrice": 398000000,
+      "amount": 796000000,
+      "contractorCode": "vn0109126579",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ MINH QUYẾT"
+      ],
+      "lotNo": "",
+      "decisionNo": "0748/QĐ-BVYHCT",
+      "decisionDate": "2026-11-18T15:47:44",
+      "resultPublishedDate": "2026-11-18T15:47:46"
+    },
+    {
+      "id": "8f701ae5-d7ae-44fa-addb-588fcbae2acf",
+      "name": "Máy xoa bóp áp lực hơi",
+      "model": "BTL-6000 Lymphastim 12 Topline",
+      "brand": "BTL-6000 Lymphastim 12 Topline",
+      "manufacturer": "BTL Industries JSC",
+      "origin": "Bulgaria",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Chi tiết theo Bảng biểu tổng hợp kê khai về mặt kỹ thuật các mặt hàng dự thầu đính kèm",
+      "unit": "Cái",
+      "quantity": 3,
+      "unitPrice": 280000000,
+      "amount": 840000000,
+      "contractorCode": "vn0109126579",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ MINH QUYẾT"
+      ],
+      "lotNo": "",
+      "decisionNo": "0748/QĐ-BVYHCT",
+      "decisionDate": "2026-11-18T15:47:44",
+      "resultPublishedDate": "2026-11-18T15:47:46"
+    },
+    {
+      "id": "a17aaf79-b71c-42fd-814b-7938ef5cf0a3",
+      "name": "Máy laser điều trị",
+      "model": "BTL - 4110 Premium",
+      "brand": "BTL - 4110 Premium",
+      "manufacturer": "BTL Industries JSC",
+      "origin": "Bulgaria",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Chi tiết theo Bảng biểu tổng hợp kê khai về mặt kỹ thuật các mặt hàng dự thầu đính kèm",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 339000000,
+      "amount": 339000000,
+      "contractorCode": "vn0109126579",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ MINH QUYẾT"
+      ],
+      "lotNo": "",
+      "decisionNo": "0748/QĐ-BVYHCT",
+      "decisionDate": "2026-11-18T15:47:44",
+      "resultPublishedDate": "2026-11-18T15:47:46"
+    },
+    {
+      "id": "617f4576-c28f-4720-be2a-5df46e2a314c",
+      "name": "Máy điện châm (Không kim)",
+      "model": "Biomix HSP-601",
+      "brand": "Biomix HSP-601",
+      "manufacturer": "HANIL-TM CO.,LTD",
+      "origin": "Hàn Quốc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Chi tiết theo Bảng biểu tổng hợp kê khai về mặt kỹ thuật các mặt hàng dự thầu đính kèm",
+      "unit": "Cái",
+      "quantity": 5,
+      "unitPrice": 89500000,
+      "amount": 447500000,
+      "contractorCode": "vn0109126579",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ MINH QUYẾT"
+      ],
+      "lotNo": "",
+      "decisionNo": "0748/QĐ-BVYHCT",
+      "decisionDate": "2026-11-18T15:47:44",
+      "resultPublishedDate": "2026-11-18T15:47:46"
+    }
+  ],
   "requirements": {
     "total": 2,
     "items": [
@@ -70,5 +234,5 @@
     "disclosure": "official-captcha-required"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:55:14.750Z"
+  "fetchedAt": "2026-11-22T22:46:20.082Z"
 }

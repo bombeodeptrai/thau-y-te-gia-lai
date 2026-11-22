@@ -1,9 +1,171 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 4,
+  "bidders": [
+    {
+      "id": "22ed423b-92e9-4676-af01-c3c92ba3c9be",
+      "contractorCode": "vn0104089394",
+      "taxCode": "0104089394",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+      "status": "won",
+      "lotNo": "PP2600495692",
+      "lotName": "Salbutamol",
+      "bidPrice": 22913100,
+      "finalPrice": 22913100,
+      "winningPrice": 22913100,
+      "reason": "",
+      "submittedAt": "2026-11-20T10:01:33.393",
+      "models": [
+        "893110327600",
+        "893115270324"
+      ]
+    },
+    {
+      "id": "8d5de054-b031-4700-aafc-1046cd9205db",
+      "contractorCode": "vn0104089394",
+      "taxCode": "0104089394",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI",
+      "status": "won",
+      "lotNo": "PP2600495693",
+      "lotName": "Fenoterol hydrobromid + Ipratropium bromid",
+      "bidPrice": 130200000,
+      "finalPrice": 130200000,
+      "winningPrice": 130200000,
+      "reason": "",
+      "submittedAt": "2026-11-20T10:01:33.393",
+      "models": [
+        "893110327600",
+        "893115270324"
+      ]
+    },
+    {
+      "id": "9d8ea4b3-a8a8-4618-a560-84c21d8cf9bf",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "won",
+      "lotNo": "PP2600495694",
+      "lotName": "Budesonid + Glycopyrronium + Formoterol fumarat dihydrat",
+      "bidPrice": 521774000,
+      "finalPrice": 521774000,
+      "winningPrice": 521774000,
+      "reason": "",
+      "submittedAt": "2026-11-20T10:01:33.393",
+      "models": [
+        "300110445423",
+        "VN-20379-17"
+      ]
+    },
+    {
+      "id": "08702475-2892-4e58-9a93-4000811635d0",
+      "contractorCode": "vn0302597576",
+      "taxCode": "0302597576",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+      "status": "won",
+      "lotNo": "PP2600495695",
+      "lotName": "Budesonid + Formoterol",
+      "bidPrice": 1314000000,
+      "finalPrice": 1314000000,
+      "winningPrice": 1314000000,
+      "reason": "",
+      "submittedAt": "2026-11-20T10:01:33.393",
+      "models": [
+        "300110445423",
+        "VN-20379-17"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "1c277bcd-2e97-4715-b507-20b6dffed2a5",
+      "name": "BREZTRI AEROSPHERE 160/7.2/5MCG 120DOSES",
+      "model": "300110445423",
+      "brand": "Không yêu cầu",
+      "manufacturer": "AstraZeneca Dunkerque Production",
+      "origin": "Pháp",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Tên hoạt chất: Mỗi liều phóng thích chứa: Budesonid 160mcg, Glycopyrronium 7,2mcg, Formoterol fumarat dihydrat 5mcg\nNồng độ, hàm lượng: 160mcg + 7,2mcg + 5mcg\nĐường dùng: Hít\nDạng bào chế: Hỗn dịch nén dưới áp suất dùng để hít\nQuy cách: Hộp gồm 1 túi nhôm chứa 1 bình xịt 120 liều\nNhóm thuốc: N1\nHạn dùng (Tuổi thọ): 24 tháng",
+      "unit": "Túi/bình/chai/lọ/ống/hộp",
+      "quantity": 550,
+      "unitPrice": 948680,
+      "amount": 521774000,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "",
+      "decisionNo": "511/QĐ-BVP",
+      "decisionDate": "2026-11-20T10:01:32",
+      "resultPublishedDate": "2026-11-20T10:01:33"
+    },
+    {
+      "id": "e9090be4-a69c-49f8-84e7-05fdbf077019",
+      "name": "Prafeno Inhaler",
+      "model": "893110327600",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Công ty cổ phần dược phẩm CPC1 Hà Nội",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Tên hoạt chất: Fenoterol hydrobromid; Ipratropium bromid\nNồng độ, hàm lượng: 0,05mg + 0,02mg\nĐường dùng: Xịt họng\nDạng bào chế: Dung dịch để khí dung qua bình xịt định liều\nQuy cách: Hộp 1 bình x 200 liều\nNhóm thuốc: N4\nHạn dùng (Tuổi thọ): 24 tháng",
+      "unit": "Túi/bình/chai/lọ/ống/hộp",
+      "quantity": 1000,
+      "unitPrice": 130200,
+      "amount": 130200000,
+      "contractorCode": "vn0104089394",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI"
+      ],
+      "lotNo": "",
+      "decisionNo": "511/QĐ-BVP",
+      "decisionDate": "2026-11-20T10:01:32",
+      "resultPublishedDate": "2026-11-20T10:01:33"
+    },
+    {
+      "id": "90971e14-b116-46b4-9edb-4426ec1c7429",
+      "name": "Zensalbu inhaler",
+      "model": "893115270324",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Công ty cổ phần dược phẩm CPC1 Hà Nội",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Tên hoạt chất: Salbutamol (dưới dạng salbutamol sulfate)\nNồng độ, hàm lượng: 100µg (mcg)\nĐường dùng: Đường hô hấp\nDạng bào chế: Hỗn dịch xịt chứa trong bình định liều\nQuy cách: Hộp 1 bình x 200 liều\nNhóm thuốc: N4\nHạn dùng (Tuổi thọ): 24 tháng",
+      "unit": "Túi/bình/chai/lọ/ống/hộp",
+      "quantity": 300,
+      "unitPrice": 76377,
+      "amount": 22913100,
+      "contractorCode": "vn0104089394",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI"
+      ],
+      "lotNo": "",
+      "decisionNo": "511/QĐ-BVP",
+      "decisionDate": "2026-11-20T10:01:32",
+      "resultPublishedDate": "2026-11-20T10:01:33"
+    },
+    {
+      "id": "8de6497a-1427-48d3-bd0b-0d96a026dc4b",
+      "name": "Symbicort Turbuhaler 60 Dose 160/4.5",
+      "model": "VN-20379-17",
+      "brand": "Không yêu cầu",
+      "manufacturer": "AstraZeneca AB",
+      "origin": "Thụy Điển",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Tên hoạt chất: Budesonid, Formoterol fumarate dihydrate\nNồng độ, hàm lượng: Mỗi liều phóng thích chứa: Budesonid 160mcg; Formoterol fumarate dihydrate 4,5mcg; 60 liều\nĐường dùng: Hít/Dạng hít\nDạng bào chế: Thuốc bột để hít\nQuy cách: Hộp 1 ống hít 60 liều\nNhóm thuốc: N1\nHạn dùng (Tuổi thọ): 24 tháng",
+      "unit": "Túi/bình/chai/lọ/ống/hộp",
+      "quantity": 6000,
+      "unitPrice": 219000,
+      "amount": 1314000000,
+      "contractorCode": "vn0302597576",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2"
+      ],
+      "lotNo": "",
+      "decisionNo": "511/QĐ-BVP",
+      "decisionDate": "2026-11-20T10:01:32",
+      "resultPublishedDate": "2026-11-20T10:01:33"
+    }
+  ],
   "requirements": {
     "total": 4,
     "items": [
@@ -155,5 +317,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:49:19.937Z"
+  "fetchedAt": "2026-11-22T22:40:12.718Z"
 }

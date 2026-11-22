@@ -1,9 +1,157 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 5,
+  "bidders": [
+    {
+      "id": "37964b1f-df49-4ae7-9c67-db6165844585",
+      "contractorCode": "vn6000586498",
+      "taxCode": "6000586498",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ HƯNG VIỆT",
+      "status": "lost",
+      "lotNo": "PP2600453177",
+      "lotName": "Hóa chất dùng cho máy sinh hóa, tương thích với máy sinh hóa tự động Erba XL200",
+      "bidPrice": 12320000,
+      "finalPrice": 12320000,
+      "winningPrice": 0,
+      "reason": "Xếp thứ hai",
+      "submittedAt": "2026-11-20T17:03:07.736",
+      "models": []
+    },
+    {
+      "id": "cdae64b2-1b3d-4dbd-b929-7d62e939d148",
+      "contractorCode": "vn3101117916",
+      "taxCode": "3101117916",
+      "contractorName": "CÔNG TY TNHH TM VÀ DV LONG CHÂU",
+      "status": "won",
+      "lotNo": "PP2600453177",
+      "lotName": "Hóa chất dùng cho máy sinh hóa, tương thích với máy sinh hóa tự động Erba XL200",
+      "bidPrice": 12250000,
+      "finalPrice": 12250000,
+      "winningPrice": 12250000,
+      "reason": "",
+      "submittedAt": "2026-11-20T17:03:07.736",
+      "models": [
+        "XSYS0016",
+        "XSYS0017",
+        "XSYS0020",
+        "XSYS0024",
+        "XSYS0012"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "805499a4-c84e-4d72-825f-e0072fa47774",
+      "name": "ASAT (GOT)",
+      "model": "XSYS0016",
+      "brand": "Erba",
+      "manufacturer": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "origin": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Sử dụng để định lượng ALT/GPT (Alanine Aminotransferase) trong huyết thanh và huyết tương người - Thành phần: R1 Tris buffer (pH 7.5) 137.5 mmol/l L-Alanine 709 mmol/l LDH (microbial) ≥ 2000 U/l R2: CAPSO 20 mmol/l 2-oxoglutarate 85 mmol/l NADH 1.05 mmol/l; Quy cách: R1: 6x44ml, R2: 6x11ml",
+      "unit": "ml",
+      "quantity": 1320,
+      "unitPrice": 1604.8035,
+      "amount": 2118340.6114,
+      "contractorCode": "vn3101117916",
+      "winnerNames": [
+        "CÔNG TY TNHH TM VÀ DV LONG CHÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "192/QĐ-BVP",
+      "decisionDate": "2026-11-20T17:03:07",
+      "resultPublishedDate": "2026-11-20T17:03:07"
+    },
+    {
+      "id": "e4d7abfa-3a74-4a7d-88e3-91a10820ed47",
+      "name": "ALAT (GPT)",
+      "model": "XSYS0017",
+      "brand": "Erba",
+      "manufacturer": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "origin": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Sử dụng để định lượng AST/GOT (Aspartate Aminotransferase) trong huyết thanh và huyết tương người. Thành phần: R1 Tris buffer (pH 7.8) 110 mmol/l L-aspartic acid 340 mmol/l LDH ≥ 4000 U/l MDH ≥ 750 U/l R2 CAPSO 20 mmol/l 2-oxoglutarate 85 mmol/l NADH 1.05 mmol/l Quy cách: R1: 6x44ml, R2: 6x11ml",
+      "unit": "ml",
+      "quantity": 1320,
+      "unitPrice": 1604.8035,
+      "amount": 2118340.6114,
+      "contractorCode": "vn3101117916",
+      "winnerNames": [
+        "CÔNG TY TNHH TM VÀ DV LONG CHÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "192/QĐ-BVP",
+      "decisionDate": "2026-11-20T17:03:07",
+      "resultPublishedDate": "2026-11-20T17:03:07"
+    },
+    {
+      "id": "73acf27a-170f-4bb8-a03d-b149c4cc4b06",
+      "name": "Thuốc thử xét nghiệm định lượng Urea",
+      "model": "XSYS0020",
+      "brand": "Erba",
+      "manufacturer": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "origin": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Thành phần: Tris Buffer: 100 mmol/l α-Ketoglutarate: 5,49 mmol/l Urease (Jack Bean) ≥ 10 KU/l GLDH (Microorganism) ≥ 3,8 KU/l R2 NADH: 1,66 mmol/l. đóng gói: R1: 5*44ml+ R2: 5*11ml",
+      "unit": "ml",
+      "quantity": 1375,
+      "unitPrice": 1993.8468,
+      "amount": 2741539.3013,
+      "contractorCode": "vn3101117916",
+      "winnerNames": [
+        "CÔNG TY TNHH TM VÀ DV LONG CHÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "192/QĐ-BVP",
+      "decisionDate": "2026-11-20T17:03:07",
+      "resultPublishedDate": "2026-11-20T17:03:07"
+    },
+    {
+      "id": "10a6236f-3f92-43d5-ac21-6eb9d789b451",
+      "name": "Creatinin",
+      "model": "XSYS0024",
+      "brand": "Erba",
+      "manufacturer": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "origin": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Thành phần: Picric Acid: 26mmol/l; Sodium Hydroxide: 240 mmol/l. Đóng gói 1 hộp (R1:5 x 44 ml, R2:5 x 11ml )",
+      "unit": "ml",
+      "quantity": 1375,
+      "unitPrice": 1313.021,
+      "amount": 1805403.9301,
+      "contractorCode": "vn3101117916",
+      "winnerNames": [
+        "CÔNG TY TNHH TM VÀ DV LONG CHÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "192/QĐ-BVP",
+      "decisionDate": "2026-11-20T17:03:07",
+      "resultPublishedDate": "2026-11-20T17:03:07"
+    },
+    {
+      "id": "496d45f8-d16c-4241-953c-a10fc793c738",
+      "name": "Thuốc thử xét nghiệm định lượng Glucose",
+      "model": "XSYS0012",
+      "brand": "Erba",
+      "manufacturer": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "origin": "Erba Lachema S.R.O- Cộng Hòa Séc",
+      "manufactureYear": "Từ năm 2025 trở về sau",
+      "specification": "Thành phần: Phosphate buffer: 250 mmol/l Glucose oxidase > 25 U/ml Peroxidase > 2 U/ml Phenol 5 mmol/l 4-aminoantipyrine: 0,5 mmol/l Đóng gói 1 hộp R1: 10 x 44ml.",
+      "unit": "ml",
+      "quantity": 2640,
+      "unitPrice": 1313.021,
+      "amount": 3466375.5459,
+      "contractorCode": "vn3101117916",
+      "winnerNames": [
+        "CÔNG TY TNHH TM VÀ DV LONG CHÂU"
+      ],
+      "lotNo": "",
+      "decisionNo": "192/QĐ-BVP",
+      "decisionDate": "2026-11-20T17:03:07",
+      "resultPublishedDate": "2026-11-20T17:03:07"
+    }
+  ],
   "requirements": {
     "total": 3,
     "items": [
@@ -672,6 +820,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:44:27.906Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-22T22:35:35.497Z"
 }

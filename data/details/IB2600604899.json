@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "cca43ed2-5529-481d-aa87-ad37cdae6ce2",
+      "contractorCode": "vn0304708309",
+      "taxCode": "0304708309",
+      "contractorName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT MINH KHANG",
+      "status": "won",
+      "lotNo": "BP2600990973",
+      "lotName": "Thiết bị y tế 07",
+      "bidPrice": 3373000000,
+      "finalPrice": 3373000000,
+      "winningPrice": 3373000000,
+      "reason": "",
+      "submittedAt": "2026-11-20T14:31:11.748",
+      "models": [
+        "BOND-MAX"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "a78d8d4a-01a1-483c-9b6d-bde420a6a153",
+      "name": "Máy nhuộm hóa mô miễn dịch",
+      "model": "BOND-MAX ",
+      "brand": "BOND-MAX",
+      "manufacturer": "Leica Biosystems Melbourne Pty Ltd ",
+      "origin": "Úc",
+      "manufactureYear": "2026 trở về sau",
+      "specification": "Đáp ứng cơ bản cấu hình, tính năng kỹ thuật theo yêu cầu TBMT",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 3373000000,
+      "amount": 3373000000,
+      "contractorCode": "vn0304708309",
+      "winnerNames": [
+        "CÔNG TY TNHH  THƯƠNG MẠI DỊCH VỤ KỸ THUẬT MINH KHANG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1733/QĐ-BV",
+      "decisionDate": "2026-11-20T14:31:10",
+      "resultPublishedDate": "2026-11-20T14:31:11"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:49:19.872Z"
+  "fetchedAt": "2026-11-22T22:40:12.016Z"
 }

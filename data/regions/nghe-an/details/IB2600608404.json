@@ -1,9 +1,50 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "de48dcca-f9db-488d-97e9-6275d3ebfd76",
+      "contractorCode": "vn0101088272",
+      "taxCode": "0101088272",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ Y TẾ PHƯƠNG ĐÔNG",
+      "status": "won",
+      "lotNo": "BP2600935237",
+      "lotName": "Mua sắm bộ nguồn thay thế cho hệ thống thiết bị gạn tách tế bào tự động Optia Spectra tại Bệnh viện Hữu nghị Đa khoa Nghệ An năm 2026",
+      "bidPrice": 108510000,
+      "finalPrice": 108510000,
+      "winningPrice": 108510000,
+      "reason": "",
+      "submittedAt": "2026-11-19T15:24:12.845",
+      "models": [
+        "Mã hàng hóa: 703125005"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "dcc48dcb-2256-4020-ad8a-ea1f383b5164",
+      "name": "Bộ nguồn (Bộ nguồn của máy tách phần máu tự động)",
+      "model": "Mã hàng hóa: 703125005",
+      "brand": "-",
+      "manufacturer": "ARTESYN",
+      "origin": "Trung Quốc",
+      "manufactureYear": "2025 trở về sau",
+      "specification": "Tương thích với hệ thống thiết bị gạn tách tế bào máu tự động Optia Spectra tại Bệnh viện Hữu nghị Đa khoa Nghệ An.",
+      "unit": "Cái",
+      "quantity": 1,
+      "unitPrice": 108510000,
+      "amount": 108510000,
+      "contractorCode": "vn0101088272",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ PHƯƠNG ĐÔNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "4510/QĐ-BV",
+      "decisionDate": "2026-11-19T15:24:11",
+      "resultPublishedDate": "2026-11-19T15:24:12"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -59,5 +100,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:40:20.000Z"
+  "fetchedAt": "2026-11-22T22:31:17.741Z"
 }

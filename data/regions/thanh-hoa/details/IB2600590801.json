@@ -1,9 +1,89 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 2,
+  "bidders": [
+    {
+      "id": "0cb396cc-f981-441a-afd9-9285c4305500",
+      "contractorCode": "vn0101403090",
+      "taxCode": "0101403090",
+      "contractorName": "CÔNG TY CỔ PHẦN VẬT TƯ KỸ THUẬT ĐÔNG DƯƠNG",
+      "status": "won",
+      "lotNo": "PP2600465878",
+      "lotName": "Thuốc thử Colilert-18",
+      "bidPrice": 36000000,
+      "finalPrice": 36000000,
+      "winningPrice": 36000000,
+      "reason": "",
+      "submittedAt": "2026-11-20T14:55:42.122",
+      "models": [
+        "98-08877-00"
+      ]
+    },
+    {
+      "id": "7a83f1b4-998a-4acf-80ef-54433f742055",
+      "contractorCode": "vn0105950954",
+      "taxCode": "0105950954",
+      "contractorName": "CÔNG TY TNHH THIẾT BỊ HÓA CHẤT VẬT TƯ Y TẾ TRUNG SƠN",
+      "status": "won",
+      "lotNo": "PP2600465880",
+      "lotName": "Dung dịch chuẩn Nitrite (NO2-) 1000 mg/L",
+      "bidPrice": 11940000,
+      "finalPrice": 11940000,
+      "winningPrice": 11940000,
+      "reason": "",
+      "submittedAt": "2026-11-20T14:55:42.122",
+      "models": [
+        "1046590500"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "18f90326-cb7f-472c-bfe7-54d96a3116c8",
+      "name": "Colilert-18",
+      "model": "98-08877-00",
+      "brand": "Không yêu cầu",
+      "manufacturer": "IDEXX",
+      "origin": "Đa quốc gia",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Thông số kỹ thuật cơ bản: Tối thiểu có các thành phần: Chỉ thị dinh dưỡng Ortho-nitrophenyl-β-D-galactopyranoside (ONPG) và 4-methylumbelliferyl-β-D-glucuronide (MUG).",
+      "unit": "Test",
+      "quantity": 200,
+      "unitPrice": 180000,
+      "amount": 36000000,
+      "contractorCode": "vn0101403090",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN VẬT TƯ  KỸ THUẬT ĐÔNG DƯƠNG"
+      ],
+      "lotNo": "",
+      "decisionNo": "479/QĐ-KSBT",
+      "decisionDate": "2026-11-20T14:55:41",
+      "resultPublishedDate": "2026-11-20T14:55:42"
+    },
+    {
+      "id": "b6a92c0d-1474-4da6-a0c0-7a318c82cb60",
+      "name": "Dung dịch chuẩn Nitrite (NO2-) 1000 mg/L",
+      "model": "1046590500",
+      "brand": "Không yêu cầu",
+      "manufacturer": "Merck",
+      "origin": "Đức",
+      "manufactureYear": "Không yêu cầu",
+      "specification": "Thông số kỹ thuật cơ bản:Nồng độ danh định: 1000 mg/L NO2-; nồng độ được chứng nhận trong khoảng (995,0–1005,0) mg/L; có giá trị chứng nhận và độ không đảm bảo đo ghi trên Certificate/COA của nhà sản xuất.",
+      "unit": "ml",
+      "quantity": 500,
+      "unitPrice": 23880,
+      "amount": 11940000,
+      "contractorCode": "vn0105950954",
+      "winnerNames": [
+        "CÔNG TY TNHH THIẾT BỊ HÓA CHẤT VẬT TƯ Y TẾ TRUNG SƠN "
+      ],
+      "lotNo": "",
+      "decisionNo": "479/QĐ-KSBT",
+      "decisionDate": "2026-11-20T14:55:41",
+      "resultPublishedDate": "2026-11-20T14:55:42"
+    }
+  ],
   "requirements": {
     "total": 7,
     "items": [
@@ -273,5 +353,5 @@
     "disclosure": "public-structured-hsmt"
   },
   "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:40:03.947Z"
+  "fetchedAt": "2026-11-22T22:31:43.182Z"
 }

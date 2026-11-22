@@ -1,9 +1,65 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 1,
+  "bidders": [
+    {
+      "id": "16e34260-c2bf-4b3c-8920-22d6fca0c1cb",
+      "contractorCode": "vn0302408317",
+      "taxCode": "0302408317",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM 3/2",
+      "status": "lost",
+      "lotNo": "BP2600989389",
+      "lotName": "Gói thầu mua sắm găng tay phẫu thuật",
+      "bidPrice": 149950000,
+      "finalPrice": 149950000,
+      "winningPrice": 0,
+      "reason": "Giá dự thầu xếp hạng thứ 2",
+      "submittedAt": "2026-11-20T10:12:28.456",
+      "models": []
+    },
+    {
+      "id": "9a823a17-44d5-499a-a1e1-350eb8fc817c",
+      "contractorCode": "vn5800000047",
+      "taxCode": "5800000047",
+      "contractorName": "CÔNG TY CP DƯỢC LÂM ĐỒNG (LADOPHAR)",
+      "status": "won",
+      "lotNo": "BP2600989389",
+      "lotName": "Gói thầu mua sắm găng tay phẫu thuật",
+      "bidPrice": 145900000,
+      "finalPrice": 145900000,
+      "winningPrice": 145900000,
+      "reason": "",
+      "submittedAt": "2026-11-20T10:12:28.456",
+      "models": [
+        "GPTGLOVES"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "7439cd0f-4866-4328-ba92-00789c9c5826",
+      "name": "Găng tay phẫu thuật, các số",
+      "model": "GPTGLOVES",
+      "brand": "I-MED",
+      "manufacturer": "Công ty TNHH Công nghệ Y tế I-Med",
+      "origin": "Việt Nam",
+      "manufactureYear": "_",
+      "specification": "Găng tay tiệt khuẩn dùng trong các thủ\nthuật/ phẫu thuậtChất liệu được sản xuất\ntừ Latex cao su tự nhiên, có lớp phủ bột\ntiệt trùng chống dính. Tiệt trùng, đóng\ngói từng đôi Bề mặt: nhám ở ngoài, trơn\nở trong. Kích thước: 6.0, 6.5, 7.0, 7.5\nChứng nhận ISO 13485 hoặc tương\nđương",
+      "unit": "Đôi",
+      "quantity": 50000,
+      "unitPrice": 2918,
+      "amount": 145900000,
+      "contractorCode": "vn5800000047",
+      "winnerNames": [
+        "CÔNG TY CP DƯỢC LÂM ĐỒNG (LADOPHAR)"
+      ],
+      "lotNo": "",
+      "decisionNo": "470/QĐ-BVSN",
+      "decisionDate": "2026-11-20T10:12:27",
+      "resultPublishedDate": "2026-11-20T10:12:28"
+    }
+  ],
   "requirements": {
     "total": 1,
     "items": [
@@ -58,6 +114,6 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
-  "fetchedAt": "2026-11-18T05:59:39.867Z"
+  "modelDisclosure": "winning-bidders-only",
+  "fetchedAt": "2026-11-22T22:50:42.947Z"
 }
