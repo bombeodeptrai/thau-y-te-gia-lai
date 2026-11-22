@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-22T06:48:52.430Z",
+  "rescuedAt": "2026-11-22T16:18:23.925Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,25 +12,25 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 311,
+      "count": 303,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 788,
+      "count": 779,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 74,
+      "count": 73,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 15,
+      "count": 14,
       "error": ""
     },
     {
@@ -96,7 +96,7 @@
     {
       "name": "Địa danh Đăk Đoa",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 29,
+      "count": 28,
       "error": ""
     },
     {
@@ -126,19 +126,19 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 8,
+      "count": 7,
       "error": ""
     },
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 6,
+      "count": 5,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 96,
+      "count": 98,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 86,
+      "count": 85,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 18,
+      "count": 20,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 32,
+      "count": 31,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 63,
+      "count": 62,
       "error": ""
     },
     {
@@ -276,20 +276,20 @@
     {
       "name": "Địa danh Bệnh viện Sản Nhi tỉnh Gia Lai",
       "success": true,
-      "count": 4,
+      "count": 3,
       "error": ""
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1761,
-  "acceptedCount": 61,
-  "rejectedCount": 1700,
+  "candidateCount": 1747,
+  "acceptedCount": 59,
+  "rejectedCount": 1688,
   "rejectedReasons": {
     "excluded:tu van": 532,
-    "excluded:xay dung": 473,
-    "insufficient-medical-context": 425,
-    "excluded:xay lap": 81,
-    "excluded:sua chua": 54,
+    "excluded:xay dung": 468,
+    "insufficient-medical-context": 424,
+    "excluded:xay lap": 80,
+    "excluded:sua chua": 50,
     "excluded:cai tao": 22,
     "excluded:thuc pham": 20,
     "excluded:bao hiem": 11,
@@ -298,8 +298,8 @@
     "excluded:bao ve": 8,
     "excluded:trang phuc": 7,
     "excluded:may tinh": 7,
+    "excluded:giam sat thi cong": 5,
     "excluded:may in": 4,
-    "excluded:giam sat thi cong": 4,
     "excluded:quan ly du an": 4,
     "excluded:cong nghe thong tin": 4,
     "excluded:ve sinh cong nghiep": 2,
@@ -308,14 +308,13 @@
     "excluded:in an": 2,
     "excluded:xang dau": 2,
     "excluded:cay xanh": 2,
-    "excluded:suat an": 2,
     "excluded:bao duong": 2,
     "excluded:tu dien": 1,
     "excluded:kiem dinh": 1,
     "excluded:cap dien": 1,
     "excluded:may chu": 1,
     "excluded:tram bien ap": 1,
-    "excluded:rac thai": 1,
+    "excluded:suat an": 1,
     "excluded:duong day": 1,
     "excluded:thu y": 1
   },
@@ -949,6 +948,18 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600617207",
+      "name": "26.65.HH Mua sắm quà tặng kỷ niệm",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600616792",
       "name": "Thi công xây dựng và lắp đặt thiết bị công trình",
       "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
@@ -1375,17 +1386,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608763",
-      "name": "27.06.HH Cung cấp cáp đồng bọc các loại",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
       ]
     }
   ],
