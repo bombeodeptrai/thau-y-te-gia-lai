@@ -114,7 +114,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": 0,
+      "bidderCount": null,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=reoffer-price-step-1&id=ed6947f9-779c-4e58-8386-0a200196dc28&notifyId=ed6947f9-779c-4e58-8386-0a200196dc28&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600616318&planNo=PL2600417116&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CGTTRG",
       "winnerNames": [],
       "winningPrice": 0,
@@ -126,9 +126,7 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
-      "sourceBidderCount": null,
-      "sourceStage": "official-public-search"
+      "losingModelDisclosure": ""
     },
     {
       "id": "DC2600137626",
@@ -7965,7 +7963,16 @@
         "CÔNG TY CỔ PHẦN BIOMED TECH",
         "Công ty TNHH Công nghệ B2K"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY CỔ PHẦN BIOMED TECH",
+          "reason": "nhà thầu không xếp hạng thứ 1"
+        },
+        {
+          "contractorName": "Công ty TNHH Công nghệ B2K",
+          "reason": "nhà thầu không xếp hạng thứ 1"
+        }
+      ],
       "winningModels": [
         "105-012283-00",
         "105-012298-00",
@@ -7976,7 +7983,7 @@
         "W-31L"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -11548,7 +11555,7 @@
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [
-        "RQ9140A, RQ9140B, RQ9140C, RQ9140D",
+        "RQ9140A,\r\nRQ9140B,\r\nRQ9140C,\r\nRQ9140D",
         "RQ9128",
         "RQ9135",
         "RQ9138",
@@ -11562,7 +11569,7 @@
         "GM-001-012",
         "Cỡ 25;22;19/ OP",
         "GS-5010",
-        "3-26 DJSBEOW; 4-26 DJSBEOW; 5-26 DJSBEOW; 6-26 DJSBEOW; 7-26 DJSBEOW",
+        "3-26 DJSBEOW;\r\n 4-26 DJSBEOW; \r\n5-26 DJSBEOW;\r\n 6-26 DJSBEOW;\r\n7-26 DJSBEOW",
         "WS-B002",
         "GT022-300",
         "ST-UR08",
@@ -11617,12 +11624,17 @@
       "loserNames": [
         "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC",
+          "reason": "Nhà thầu xếp hạng 2"
+        }
+      ],
       "winningModels": [
         "ECG-3150"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -12626,12 +12638,17 @@
       "loserNames": [
         "Công ty TNHH Thiết Bị Hoàng Long"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "Công ty TNHH Thiết Bị Hoàng Long",
+          "reason": "Không đáp ứng yêu cầu của thông báo mời thầu"
+        }
+      ],
       "winningModels": [
         "Không yêu cầu"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -15145,10 +15162,15 @@
       "loserNames": [
         "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed"
       ],
-      "loserDetails": [],
+      "loserDetails": [
+        {
+          "contractorName": "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed",
+          "reason": "Đánh giá không đạt về kỹ thuật"
+        }
+      ],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "",
+      "losingModelDisclosure": "Nguồn công khai chưa công bố",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -18052,8 +18074,8 @@
         "MERUFA LUBE",
         "AZ F400 CH",
         "GL F400 CH",
-        "GT023-200",
-        "C.90.VP",
+        " GT023-200",
+        "C.90.VP ",
         "LD F060 CH",
         "DT F125 CH"
       ],
@@ -610487,7 +610509,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-21T21:41:31.204Z",
+  "fetchedAt": "2026-11-22T02:21:37.321Z",
   "source": "muasamcong-public-api-central-region",
   "detailTenderCount": 5742,
   "regions": [
@@ -610611,7 +610633,7 @@
       "equipmentCount": 19734,
       "detailTenderCount": 1160,
       "coverageDays": 1095,
-      "fetchedAt": "2026-11-21T21:41:31.204Z",
+      "fetchedAt": "2026-11-22T02:21:37.321Z",
       "initialized": true,
       "source": "regional-scan"
     },
