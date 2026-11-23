@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-23T13:31:35.373Z",
+  "rescuedAt": "2026-11-23T14:02:03.485Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 35,
+      "count": 30,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 884,
+  "candidateCount": 879,
   "acceptedCount": 26,
-  "rejectedCount": 858,
+  "rejectedCount": 853,
   "rejectedReasons": {
-    "excluded:tu van": 308,
-    "excluded:xay dung": 278,
+    "excluded:tu van": 304,
+    "excluded:xay dung": 277,
     "insufficient-medical-context": 147,
     "excluded:xay lap": 24,
     "excluded:sua chua": 24,
@@ -727,6 +727,15 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600608272",
+      "name": "Gói thầu số 10: Hỗ trợ máy kéo nông nghiệp cho 03 hợp tác xã/tổ hợp tác (Hoạt động: 2.1.2)",
+      "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": []
+    },
     {
       "notifyNo": "IB2600618340",
       "name": "Thi công xây dựng công trình",
@@ -1169,23 +1178,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600608444",
-      "name": "27.01.HH Cung cấp áp tô mát, biến áp đo lường, chì niêm các loại",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1214,
+  "beforeCount": 1216,
   "afterCount": 1216,
-  "newCount": 2,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v21"
 }
