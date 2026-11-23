@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-22T21:51:46.756Z",
+  "auditedAt": "2026-11-23T07:37:01.319Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 779,
+      "count": 803,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 45,
+      "count": 47,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 73,
+      "count": 76,
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
     {
       "term": "Ayun Pa",
       "success": true,
-      "count": 14,
+      "count": 16,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 43,
+      "count": 44,
       "error": ""
     },
     {
@@ -128,7 +128,7 @@
     {
       "term": "Kông Chro",
       "success": true,
-      "count": 11,
+      "count": 14,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 113,
+      "count": 116,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 98,
+      "count": 99,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 85,
+      "count": 84,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 20,
+      "count": 21,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 97,
+      "count": 100,
       "error": ""
     },
     {
@@ -260,7 +260,7 @@
     {
       "term": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
       "success": true,
-      "count": 11,
+      "count": 12,
       "error": ""
     },
     {
@@ -271,23 +271,23 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1686,
-  "acceptedCount": 55,
-  "rejectedCount": 1631,
+  "candidateCount": 1723,
+  "acceptedCount": 57,
+  "rejectedCount": 1666,
   "rejectedReasons": {
-    "excluded:tu van": 530,
-    "excluded:xay dung": 458,
-    "insufficient-medical-context": 395,
-    "excluded:xay lap": 72,
+    "excluded:tu van": 543,
+    "excluded:xay dung": 472,
+    "insufficient-medical-context": 401,
+    "excluded:xay lap": 73,
     "excluded:sua chua": 49,
-    "excluded:cai tao": 22,
+    "excluded:cai tao": 23,
     "excluded:thuc pham": 20,
     "excluded:tham dinh": 10,
     "excluded:bao hiem": 10,
     "excluded:bao tri": 10,
-    "excluded:bao ve": 8,
-    "excluded:may tinh": 7,
+    "excluded:bao ve": 9,
     "excluded:trang phuc": 6,
+    "excluded:may tinh": 6,
     "excluded:giam sat thi cong": 5,
     "excluded:may in": 4,
     "excluded:quan ly du an": 4,
@@ -742,6 +742,22 @@
       ]
     },
     {
+      "notifyNo": "IB2600613584",
+      "name": "Gói thầu số 1: Mua sắm Hoá chất xét nghiệm giai đoạn 2027-2028 (Gồm 06 phần)",
+      "investor": "TRUNG TÂM Y TẾ PLEIKU",
+      "accepted": true,
+      "score": 230,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
+      "matched": [
+        "hoa chat xet nghiem",
+        "trung tam y te",
+        "hoa chat",
+        "xet nghiem",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
       "notifyNo": "IB2600609403",
       "name": "Gói thầu số 1: Mua sắm Vật tư y tế giai đoạn 2027-2028 (Gồm 205 mặt hàng tương ứng 205 phần)",
       "investor": "TRUNG TÂM Y TẾ PLEIKU",
@@ -825,6 +841,21 @@
       ]
     },
     {
+      "notifyNo": "IB2600606705",
+      "name": "Dịch vụ sửa chữa máy xét nghiệm sinh hoá",
+      "investor": "Trung Tâm Y Tế Ayun Pa",
+      "accepted": true,
+      "score": 280,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor+laboratory-analyzer-context",
+      "matched": [
+        "may xet nghiem",
+        "trung tam y te",
+        "sua chua",
+        "xet nghiem",
+        "sinh hoa"
+      ]
+    },
+    {
       "notifyNo": "IB2600594830",
       "name": "Mua sắm thiết bị và dụng cụ y tế phục vụ chuyên môn năm 2026",
       "investor": "Trung Tâm Y Tế Ayun Pa",
@@ -896,37 +927,324 @@
         "vat tu tieu hao",
         "vat tu"
       ]
-    },
-    {
-      "notifyNo": "IB2600608594",
-      "name": "Gói 1: Hóa chất, sinh phẩm dùng cho hoạt động labo",
-      "investor": "Viện Sốt rét - Ký sinh trùng - Côn trùng Quy Nhơn",
-      "accepted": true,
-      "score": 100,
-      "reason": "medical-investor+laboratory-supply+medical-laboratory-supply-bundle",
-      "matched": [
-        "vien sot ret",
-        "ky sinh trung con trung",
-        "hoa chat",
-        "sinh pham"
-      ]
-    },
-    {
-      "notifyNo": "IB2600606477",
-      "name": "Mua sắm thuốc Generic bổ sung lần 1 năm 2026",
-      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "benh vien",
-        "thuoc",
-        "mua",
-        "mua sam"
-      ]
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600607234",
+      "name": "Gói thầu số: 10/2026/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600144794",
+      "name": "Tư vấn khảo sát, lập Báo cáo kinh tế - kỹ thuật công trình: Kè suối Bình Trị (đoạn hạ lưu đập Cây Kê), giai đoạn 2",
+      "investor": "Ủy ban nhân dân xã Phù Mỹ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600013507",
+      "name": "Tư vấn Lập nhiệm vụ khảo sát.Trường THPT Trần Phú, hạng mục: Nhà 02 tầng gồm 06 phòng lý thuyết, 02 phòng bộ môn, 01 phòng hội đồng, 01 thư viện, 01 văn phòng, 01 phòng hiệu trưởng, 02 phòng phó hiệu trưởng, 01 phòng y tế, 01 phòng truyền thống - đoàn đội; các hạng mục phụ trợ và trang thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600143831",
+      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Bình Dương (nay là Trường THPT số 2 Phù Mỹ), hạng mục: Dãy nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn, phòng y tế và phòng Đoàn Thanh niên; nhà để xe; các hạng mục phụ và thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600143790",
+      "name": "Tư vấn lập E-HSMT và đánh giá E-HSDT. Dự án: Trường THPT Bình Dương (nay là Trường THPT số 2 Phù Mỹ), hạng mục: Dãy nhà 02 tầng gồm 04 phòng học lý thuyết, 02 phòng học bộ môn, phòng y tế và phòng Đoàn Thanh niên; nhà để xe; các hạng mục phụ và thiết bị.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "lap e hsmt",
+        "danh gia e hsdt"
+      ]
+    },
+    {
+      "notifyNo": "IB2600613925",
+      "name": "SCL2027-XL/11: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZHA khu vực Ayun Pa năm 2027",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600616804",
+      "name": "Mua sắm, lắp đặt trang thiết bị",
+      "investor": "Trường Cao đẳng Y tế Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "DC2600151025",
+      "name": "Tư vấn giám sát thi công xây dựng",
+      "investor": "Sở Tài chính Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600150970",
+      "name": "Thi công xây dựng",
+      "investor": "Sở Tài chính Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600150966",
+      "name": "Tư vấn thẩm định HSMT và kết quả LCNT thi công xây dựng và thiết bị",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600150911",
+      "name": "Tư vấn lập HSMT và đánh giá HSDT thi công xây dựng và thiết bị",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600150902",
+      "name": "Tư vấn Quản lý dự án",
+      "investor": "Sở Tài chính Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "quan ly du an"
+      ]
+    },
+    {
+      "notifyNo": "DC2600150880",
+      "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600149634",
+      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Số 3 An Nhơn, hạng mục: Nhà 02 tầng 04 phòng học, 01 phòng KHXH, 01 Thư viện, 01 phòng STEM; nhà 02 tầng 04 phòng học, 02 phòng hỗ trợ học tập; hệ thống PCCC và sân đường nội bộ; thiết bị PCCC và thiết bị dạy học.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van",
+        "tham dinh"
+      ]
+    },
+    {
+      "notifyNo": "DC2600150793",
+      "name": "Tư vấn lập Báo cáo nghiên cứu khả thi",
+      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600143483",
+      "name": "Tư vấn khảo sát, lập Báo cáo nghiên cứu khả thi",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607121",
+      "name": "Gói thầu số: 50/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600607049",
+      "name": "Gói thầu số 47/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604648",
+      "name": "Gói thầu số: 08/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "DC2600150774",
+      "name": "Tư vấn lập nhiệm vụ khảo sát, khảo sát xây dựng, lập Báo cáo kinh tế - kỹ thuật",
+      "investor": "Sở Tài chính Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600144902",
+      "name": "Tư vấn giám sát công tác khảo sát",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "DC2600144916",
+      "name": "Tư vấn thẩm tra báo cáo nghiên cứu khả thi",
+      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:tu van",
+      "matched": [
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600614844",
+      "name": "SCL2027-XL/09: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Phú Phong năm 2027",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600614668",
+      "name": "SCL2027-XL/10: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Kông Chro năm 2027",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600128466",
+      "name": "Cung cấp vé máy bay cho cán bộ thuộc diện bảo vệ, chăm sóc sức khỏe cán bộ của tỉnh Gia Lai đi khám sức khỏe định kỳ đợt 2 năm 2026",
+      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:bao ve",
+      "matched": [
+        "bao ve"
+      ]
+    },
+    {
+      "notifyNo": "DC2600150218",
+      "name": "Tư vấn Thẩm tra Báo cáo kinh tế - kỹ thuật.Dự án: Trường PTDTNT THPT số 1 tỉnh Gia Lai, Hạng mục: Sửa chữa, cải tạo ký túc xá nữ, nhà đa năng; nâng cấp hệ thống phòng cháy, chữa cháy.",
+      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:cai tao",
+      "matched": [
+        "cai tao",
+        "sua chua",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600612852",
+      "name": "Gói thầu số 01/MSPT/2027: Mua sắm Xe ô tô tải cabin kép 6 chỗ ngồi 2 cầu có bàn nâng hạ sức nâng 300kg",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": 0,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600617207",
       "name": "26.65.HH Mua sắm quà tặng kỷ niệm",
@@ -957,18 +1275,6 @@
       "reason": "excluded:giam sat thi cong",
       "matched": [
         "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600149634",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Số 3 An Nhơn, hạng mục: Nhà 02 tầng 04 phòng học, 01 phòng KHXH, 01 Thư viện, 01 phòng STEM; nhà 02 tầng 04 phòng học, 02 phòng hỗ trợ học tập; hệ thống PCCC và sân đường nội bộ; thiết bị PCCC và thiết bị dạy học.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
       ]
     },
     {
@@ -1085,302 +1391,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "DC2600105438",
-      "name": "Thi công xây dựng công trình: Đường nội thôn đoạn nhà ông Trí Mẫn, thôn 12, xã Kông Bơ La",
-      "investor": "Phòng Kinh tế xã Kông Bơ La, tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600604208",
-      "name": "Gói thầu 62/2027/VT-01- Cung cấp trang thiết bị phục vụ quản lý vận hành - Sản xuất kinh doanh năm 2027",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600149920",
-      "name": "Biểu diễn nghệ thuật cồng chiêng của các nghệ nhân, nghệ sĩ đến từ Gia Lai - Chương trình nghệ thuật phục vụ các hoạt động Ngày Văn hóa Việt Nam năm 2026 (Ngày 23 tháng 11)",
-      "investor": "NHÀ HÁT CA MÚA NHẠC DÂN TỘC BÔNG SEN",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600144338",
-      "name": "Tư vấn Thẩm tra thiết kế bản vẽ thi công và dự toán điều chỉnh",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600144353",
-      "name": "Tư vấn Thẩm định giá",
-      "investor": "Ban Quản lý các dự án đầu tư xây dựng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "IB2600614809",
-      "name": "Mua sắm thiết bị phục vụ triển khai hệ thống Phần mềm Quản lý nghiệp vụ ngoại tuyến",
-      "investor": "Công an tỉnh Gia Lai",
-      "accepted": false,
-      "score": 10,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607918",
-      "name": "27.03.HH Cung cấp cột bê tông ly tâm, móng cột khu vực Tây Gia Lai",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607097",
-      "name": "Gói thầu số 49/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607024",
-      "name": "Gói thầu số 45/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600144319",
-      "name": "Lập Báo cáo nghiên cứu khả thi",
-      "investor": "Sở Y tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 35,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "so y te"
-      ]
-    },
-    {
-      "notifyNo": "DC2600145933",
-      "name": "Tư vấn lập hồ sơ mời thầu, đánh giá hồ sơ dự thầu",
-      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600135143",
-      "name": "Mua hàng hoá là trang phục cho Người quản lý doanh nghiệp, Kiểm soát viên, Ban điều hành và Người lao động của Công ty TNHH Xổ số kiến thiết tỉnh Gia Lai",
-      "investor": "CÔNG TY TNHH XỔ SỐ KIẾN THIẾT TỈNH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:trang phuc",
-      "matched": [
-        "trang phuc"
-      ]
-    },
-    {
-      "notifyNo": "DC2600131160",
-      "name": "Tư vấn thẩm tra an toàn giao thông",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600131163",
-      "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
-      "investor": "Sở Xây dựng Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600611744",
-      "name": "SCL2027-XL/02: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Pleiku năm 2027",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608759",
-      "name": "Gói thầu số 77/2026/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600132519",
-      "name": "Tư vấn Quản lý dự án. Dự án: Dự án Trường THPT Số 3 An Nhơn. Hạng mục: Nhà 02 tầng 04 phòng học, 01 phòng khoa học xã hội, 01 Thư viện, 01 phòng STEM; nhà 02 tầng 04 phòng học, 02 phòng hỗ trợ học tập; hệ thống PCCC và sân đường nội bộ; thiết bị PCCC và thiết bị dạy học.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "IB2600603240",
-      "name": "Gói thầu số 48/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600600424",
-      "name": "Gói thầu số 37/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "DC2600139367",
-      "name": "Tư vấn Quản lý dự án. Dự án: Trường Trung học phổ thông chuyên Lê Quý Đôn. Hạng mục: sửa chữa dãy nhà học A, B, D, E; nhà đa năng; nhà xe giáo viên.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua",
-        "tu van",
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "DC2600142798",
-      "name": "Sửa chữa mặt tiền Khoa Nội trung cao, phòng khám Nội tim mạch và hành lang cầu nối thuộc Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "investor": "Bệnh viện Đa khoa Trung tâm tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:sua chua",
-      "matched": [
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608444",
-      "name": "27.01.HH Cung cấp áp tô mát, biến áp đo lường, chì niêm các loại",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": [
-        "cung cap"
-      ]
-    },
-    {
-      "notifyNo": "DC2600144150",
-      "name": "Tư vấn xác lập quyền sở hữu trí tuệ; tư vấn quản lý và phát triển các sản phẩm, dịch vụ được bảo hộ quyền sở hữu trí tuệ của doanh nghiệp, đợt 2",
-      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607175",
-      "name": "Gói thầu số 52/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600606544",
-      "name": "Gói thầu số 28/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600615559",
-      "name": "Thi công xây dựng và thiết bị công trình",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1212,
-  "afterCount": 1212,
+  "beforeCount": 1214,
+  "afterCount": 1214,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v21"
 }
