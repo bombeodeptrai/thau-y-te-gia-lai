@@ -1,9 +1,236 @@
 {
   "schemaVersion": 3,
   "resultItemParserVersion": 3,
-  "total": 0,
-  "bidders": [],
-  "items": [],
+  "total": 5,
+  "bidders": [
+    {
+      "id": "741f7e6c-65f6-4f75-8d44-3031b0f0dcfc",
+      "contractorCode": "vn3502542298",
+      "taxCode": "3502542298",
+      "contractorName": "CÔNG TY TNHH SANDILA",
+      "status": "lost",
+      "lotNo": "PP2600495664",
+      "lotName": "Insulin người trộn, hỗn hợp",
+      "bidPrice": 13650000,
+      "finalPrice": 13650000,
+      "winningPrice": 0,
+      "reason": "Nhà thầu không xác nhận chấp thuận được trao hợp đồng trên hệ thống mạng đấu thầu Quốc gia.",
+      "submittedAt": "2026-11-23T11:24:32.461",
+      "models": []
+    },
+    {
+      "id": "fe27ee1e-16c8-4389-a0a3-99cb6a1608c8",
+      "contractorCode": "vn2901722773",
+      "taxCode": "2901722773",
+      "contractorName": "CÔNG TY CỔ PHẦN KINH DOANH DƯỢC VIỆT NAM",
+      "status": "won",
+      "lotNo": "PP2600495666",
+      "lotName": "Methyl prednisolon",
+      "bidPrice": 192000000,
+      "finalPrice": 192000000,
+      "winningPrice": 192000000,
+      "reason": "",
+      "submittedAt": "2026-11-23T11:24:32.461",
+      "models": [
+        "Vinsolon"
+      ]
+    },
+    {
+      "id": "ba9e36f6-64fd-4636-a956-7f254ba33bd4",
+      "contractorCode": "vn1500202535",
+      "taxCode": "1500202535",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CỬU LONG",
+      "status": "won",
+      "lotNo": "PP2600495667",
+      "lotName": "Terpin hydrat + Codein phosphat",
+      "bidPrice": 46800000,
+      "finalPrice": 46800000,
+      "winningPrice": 46800000,
+      "reason": "",
+      "submittedAt": "2026-11-23T11:24:32.461",
+      "models": [
+        "Terpin codein 10"
+      ]
+    },
+    {
+      "id": "d50b88f4-b279-4bef-991b-e8d8bd025b91",
+      "contractorCode": "vn0317678387",
+      "taxCode": "0317678387",
+      "contractorName": "Công ty TNHH Meliorem",
+      "status": "won",
+      "lotNo": "PP2600495669",
+      "lotName": "Pyrazinamide",
+      "bidPrice": 21573000,
+      "finalPrice": 21573000,
+      "winningPrice": 21573000,
+      "reason": "",
+      "submittedAt": "2026-11-23T11:24:32.461",
+      "models": [
+        "Pyrazinamide 500mg"
+      ]
+    },
+    {
+      "id": "fa4e3627-f3ac-42eb-8585-a222aa9062be",
+      "contractorCode": "vn0600206147",
+      "taxCode": "0600206147",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
+      "status": "lost",
+      "lotNo": "PP2600495669",
+      "lotName": "Pyrazinamide",
+      "bidPrice": 21600000,
+      "finalPrice": 21600000,
+      "winningPrice": 0,
+      "reason": "Xếp hạng thứ 2; giá chào cao hơn nhà thầu xếp hạng thứ nhất đạt yêu cầu.",
+      "submittedAt": "2026-11-23T11:24:32.461",
+      "models": []
+    },
+    {
+      "id": "14b74951-7cf1-4f56-83f2-bb8d80350e44",
+      "contractorCode": "vn0300483319",
+      "taxCode": "0300483319",
+      "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+      "status": "won",
+      "lotNo": "PP2600495672",
+      "lotName": "Morphin",
+      "bidPrice": 2448400,
+      "finalPrice": 2448400,
+      "winningPrice": 2448400,
+      "reason": "",
+      "submittedAt": "2026-11-23T11:24:32.461",
+      "models": [
+        "Opiphine"
+      ]
+    },
+    {
+      "id": "9bcc0767-5f3d-41d1-8d19-77d43c732437",
+      "contractorCode": "vn0300523385",
+      "taxCode": "0300523385",
+      "contractorName": "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC SÀI GÒN",
+      "status": "won",
+      "lotNo": "PP2600495673",
+      "lotName": "Pethidin",
+      "bidPrice": 6589800,
+      "finalPrice": 6589800,
+      "winningPrice": 6589800,
+      "reason": "",
+      "submittedAt": "2026-11-23T11:24:32.461",
+      "models": [
+        "Hebetapine"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "75e63030-4fd0-4572-97e4-eaa875af66d0",
+      "name": "Methyl prednisolon 40mg",
+      "model": "Vinsolon",
+      "brand": "Công ty cổ phần Dược phẩm Vĩnh Phúc",
+      "manufacturer": "Công ty cổ phần Dược phẩm Vĩnh Phúc",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Nhóm TCKT: 4; Nồng độ, hàm lượng: 40mg; Đường dùng: Tiêm/tiêm truyền; Dạng bào chế: Thuốc tiêm đông khô",
+      "unit": "Lọ",
+      "quantity": 12000,
+      "unitPrice": 16000,
+      "amount": 192000000,
+      "contractorCode": "vn2901722773",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN KINH DOANH DƯỢC VIỆT NAM"
+      ],
+      "lotNo": "",
+      "decisionNo": "1622/QĐ-BVLPQN",
+      "decisionDate": "2026-11-23T11:24:30",
+      "resultPublishedDate": "2026-11-23T11:24:32"
+    },
+    {
+      "id": "04828311-8599-400b-8420-5f103f92a9ba",
+      "name": "Pyrazinamide 500mg",
+      "model": "Pyrazinamide 500mg",
+      "brand": "Công ty Cổ phần Hóa - Dược phẩm Mekophar",
+      "manufacturer": "Công ty Cổ phần Hóa - Dược phẩm Mekophar",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Nhóm TCKT: 4; Nồng độ, hàm lượng: 500mg; Đường dùng: Uống; Dạng bào chế: Viên",
+      "unit": "Viên",
+      "quantity": 27000,
+      "unitPrice": 799,
+      "amount": 21573000,
+      "contractorCode": "vn0317678387",
+      "winnerNames": [
+        "Công ty TNHH Meliorem"
+      ],
+      "lotNo": "",
+      "decisionNo": "1622/QĐ-BVLPQN",
+      "decisionDate": "2026-11-23T11:24:30",
+      "resultPublishedDate": "2026-11-23T11:24:32"
+    },
+    {
+      "id": "6ae99a55-b1b6-4c01-b86f-4f6f5a8a3beb",
+      "name": "Pethidin 100mg/ 2ml",
+      "model": "Hebetapine",
+      "brand": "Panpharma GmbH",
+      "manufacturer": "Panpharma GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2026",
+      "specification": "Nhóm TCKT: 1; Nồng độ, hàm lượng: 100mg/2ml; Đường dùng: Tiêm/tiêm truyền; Dạng bào chế: Dung dịch tiêm",
+      "unit": "Lọ/Ống",
+      "quantity": 200,
+      "unitPrice": 32949,
+      "amount": 6589800,
+      "contractorCode": "vn0300523385",
+      "winnerNames": [
+        "CÔNG TY TNHH MỘT THÀNH VIÊN DƯỢC SÀI GÒN"
+      ],
+      "lotNo": "",
+      "decisionNo": "1622/QĐ-BVLPQN",
+      "decisionDate": "2026-11-23T11:24:30",
+      "resultPublishedDate": "2026-11-23T11:24:32"
+    },
+    {
+      "id": "4f09f1d4-5c6d-4dfe-b056-c874a843ca14",
+      "name": "Morphin 10mg/1ml",
+      "model": "Opiphine",
+      "brand": "Siegfried Hameln GmbH",
+      "manufacturer": "Siegfried Hameln GmbH",
+      "origin": "Đức",
+      "manufactureYear": "2026",
+      "specification": "Nhóm TCKT: 1; Nồng độ, hàm lượng: 10mg/1ml; Đường dùng: Tiêm/tiêm truyền; Dạng bào chế: Dung dịch tiêm",
+      "unit": "Lọ/Ống",
+      "quantity": 50,
+      "unitPrice": 48968,
+      "amount": 2448400,
+      "contractorCode": "vn0300483319",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA"
+      ],
+      "lotNo": "",
+      "decisionNo": "1622/QĐ-BVLPQN",
+      "decisionDate": "2026-11-23T11:24:30",
+      "resultPublishedDate": "2026-11-23T11:24:32"
+    },
+    {
+      "id": "9e1623f8-5699-4db1-8c23-0422a6f98e8a",
+      "name": "Terpin hydrat + Codein phosphat 100mg + 10mg",
+      "model": "Terpin codein 10",
+      "brand": "Công ty cổ phần dược phẩm Cửu Long",
+      "manufacturer": "Công ty cổ phần dược phẩm Cửu Long",
+      "origin": "Việt Nam",
+      "manufactureYear": "2026",
+      "specification": "Nhóm TCKT: 4; Nồng độ, hàm lượng: 100mg + 10mg; Đường dùng: Uống; Dạng bào chế: Viên nén",
+      "unit": "Viên",
+      "quantity": 60000,
+      "unitPrice": 780,
+      "amount": 46800000,
+      "contractorCode": "vn1500202535",
+      "winnerNames": [
+        "CÔNG TY CỔ PHẦN DƯỢC PHẨM CỬU LONG"
+      ],
+      "lotNo": "",
+      "decisionNo": "1622/QĐ-BVLPQN",
+      "decisionDate": "2026-11-23T11:24:30",
+      "resultPublishedDate": "2026-11-23T11:24:32"
+    }
+  ],
   "requirements": {
     "total": 11,
     "items": [
@@ -378,7 +605,7 @@
     "files": [],
     "disclosure": "public-structured-hsmt"
   },
-  "modelDisclosure": "as-published",
+  "modelDisclosure": "winning-bidders-only",
   "sourceIdentity": {
     "notifyNo": "IB2600606477",
     "notifyId": "20275db6-94b1-4c5d-b8bc-34518adfa499",
@@ -386,5 +613,5 @@
     "bidForm": "CGTTRG",
     "sourceStage": "official-public-search"
   },
-  "fetchedAt": "2026-11-23T02:54:51.625Z"
+  "fetchedAt": "2026-11-23T14:55:04.810Z"
 }
