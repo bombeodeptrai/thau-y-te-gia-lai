@@ -703,7 +703,19 @@
       "decisionDate": "",
       "resultPublishedDate": "",
       "hasResult": false,
-      "participantNames": [],
+      "participantNames": [
+        "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ LƯƠNG GIA",
+        "CÔNG TY TNHH THIẾT BỊ Y TẾ NGUYÊN PHÚ VNM",
+        "CÔNG TY TNHH KỸ THUẬT THƯƠNG MẠI ĐƯỜNG VIỆT",
+        "CÔNG TY CỔ PHẦN THƯƠNG MẠI CÔNG NGHỆ TÂM Y",
+        "CÔNG TY CỔ PHẦN ACCUTECH VIỆT NAM",
+        "CÔNG TY TNHH KHẢ LỘC",
+        "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI THĂNG LONG QUỐC TẾ",
+        "CÔNG TY TNHH DỊCH VỤ KỸ THUẬT PNC",
+        "CÔNG TY TNHH Y TẾ HÙNG VĨ",
+        "CÔNG TY TNHH THIẾT BỊ Y KHOA TÂM AN",
+        "CÔNG TY CỔ PHẦN THIẾT BỊ Y TẾ DƯƠNG SINH"
+      ],
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [],
@@ -93482,7 +93494,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-23T02:16:53.907Z",
+  "fetchedAt": "2026-11-23T02:55:20.168Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -93497,8 +93509,8 @@
     "refreshDays": 2,
     "statusSchemaVersion": 4,
     "lastScanDays": 2,
-    "lastScanTenderCount": 9,
-    "lastProvinceTenderCount": 9,
+    "lastScanTenderCount": 15,
+    "lastProvinceTenderCount": 15,
     "lastHistoricalFallbackTenderCount": 0,
     "lastHistoricalFallbackFailureCount": 0,
     "lastHistoricalFallbackComplete": true,
@@ -93515,15 +93527,6 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ],
-    "filterStrategy": "unified-medical-scope-v21",
-    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v21",
-    "lastMedicalRescueAt": "2026-11-23T02:16:53.907Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 896,
-    "lastMedicalRescueMedicalCount": 27,
-    "lastMedicalRescueNewCount": 0,
-    "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    ]
   }
 }
