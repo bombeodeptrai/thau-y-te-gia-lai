@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-23T02:16:53.907Z",
+  "rescuedAt": "2026-11-23T04:16:56.650Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 192,
+      "count": 194,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 342,
+      "count": 341,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 58,
+      "count": 57,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 12,
+      "count": 14,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 12,
+      "count": 10,
       "error": ""
     },
     {
@@ -120,7 +120,7 @@
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 9,
+      "count": 8,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 53,
+      "count": 54,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 28,
+      "count": 25,
       "error": ""
     },
     {
@@ -216,7 +216,7 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 896,
+  "candidateCount": 888,
   "acceptedCount": 27,
-  "rejectedCount": 869,
+  "rejectedCount": 861,
   "rejectedReasons": {
-    "excluded:tu van": 309,
-    "excluded:xay dung": 282,
+    "excluded:tu van": 302,
+    "excluded:xay dung": 281,
     "insufficient-medical-context": 149,
     "excluded:xay lap": 26,
     "excluded:sua chua": 25,
@@ -312,6 +312,22 @@
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
+    {
+      "notifyNo": "IB2600613584",
+      "name": "Gói thầu số 1: Mua sắm Hoá chất xét nghiệm giai đoạn 2027-2028 (Gồm 06 phần)",
+      "investor": "TRUNG TÂM Y TẾ PLEIKU",
+      "accepted": true,
+      "score": 230,
+      "reason": "explicit-medical-title+medical-investor+laboratory-supply+laboratory-analyzer-context",
+      "matched": [
+        "hoa chat xet nghiem",
+        "trung tam y te",
+        "hoa chat",
+        "xet nghiem",
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600616318",
       "name": "Lắp đặt Ổ đầu ra khí oxy (chuẩn BS), Ổ đầu ra khí nén 4 bar (chuẩn BS), Ổ đầu ra khí hút (chuẩn BS) cho khoa Sơ sinh và khoa Phụ của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
@@ -499,6 +515,21 @@
       ]
     },
     {
+      "notifyNo": "IB2600606705",
+      "name": "Dịch vụ sửa chữa máy xét nghiệm sinh hoá",
+      "investor": "Trung Tâm Y Tế Ayun Pa",
+      "accepted": true,
+      "score": 280,
+      "reason": "explicit-medical-title+medical-equipment-service+medical-investor+laboratory-analyzer-context",
+      "matched": [
+        "may xet nghiem",
+        "trung tam y te",
+        "sua chua",
+        "xet nghiem",
+        "sinh hoa"
+      ]
+    },
+    {
       "notifyNo": "IB2600606477",
       "name": "Mua sắm thuốc Generic bổ sung lần 1 năm 2026",
       "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
@@ -593,18 +624,6 @@
       ]
     },
     {
-      "notifyNo": "IB2600603402",
-      "name": "Thu gom, vận chuyển và xử lý chất thải y tế nguy hại năm 2027 của Trung tâm Y tế Tây Sơn",
-      "investor": "Trung tâm Y tế Tây Sơn",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-investor+medical-waste-supply",
-      "matched": [
-        "trung tam y te",
-        "chat thai y te"
-      ]
-    },
-    {
       "notifyNo": "DC2600137626",
       "name": "Mua sắm hóa chất định lượng ProBNP II, định lượng Cortisol, định lượng Troponin T hs, test nhanh chẩn đoán Dengue IgG/IgM trong khi chờ kết quả đấu thầu năm 2026-2027 của Bệnh viện Đa khoa Gia Lai",
       "investor": "Bệnh viện Đa khoa Gia Lai",
@@ -668,21 +687,6 @@
       ]
     },
     {
-      "notifyNo": "DC2600102459",
-      "name": "Mua sắm thuốc, vật tư y tế phục vụ công tác chăm sức khoẻ ban đầu theo chế độ BHYT cho cán bộ, chiến sĩ tại Bộ CHQS tỉnh Gia Lai",
-      "investor": "Bộ Chỉ huy Quân Sự tỉnh Gia Lai",
-      "accepted": true,
-      "score": 110,
-      "reason": "explicit-medical-title",
-      "matched": [
-        "vat tu y te",
-        "thuoc",
-        "vat tu",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
       "notifyNo": "DC2600109366",
       "name": "Cung cấp dịch vụ khám sức khỏe định kỳ năm 2026 cho viên chức và người lao động",
       "investor": "Bảo hiểm xã hội cơ sở Pleiku",
@@ -736,6 +740,30 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600613925",
+      "name": "SCL2027-XL/11: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZHA khu vực Ayun Pa năm 2027",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "IB2600616804",
+      "name": "Mua sắm, lắp đặt trang thiết bị",
+      "investor": "Trường Cao đẳng Y tế Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
     {
       "notifyNo": "IB2600607121",
       "name": "Gói thầu số: 50/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
@@ -1159,34 +1187,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600607025",
-      "name": "Gói thầu số 40/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600615541",
-      "name": "Toàn bộ khối lượng xây dựng nền, mặt đường, công trình thoát nước và hệ thống chiếu sáng toàn tuyến",
-      "investor": "Ban Quản lý dự án các công trình Giao thông và Dân dụng tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
   "beforeCount": 1212,
-  "afterCount": 1212,
-  "newCount": 0,
+  "afterCount": 1214,
+  "newCount": 2,
   "filterStrategy": "unified-medical-scope-v21"
 }
