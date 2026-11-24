@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-23T15:01:01.047Z",
+  "rescuedAt": "2026-11-24T03:04:19.031Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 191,
+      "count": 192,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 347,
+      "count": 338,
       "error": ""
     },
     {
@@ -72,13 +72,13 @@
     {
       "name": "Địa danh Chư Prông",
       "success": true,
-      "count": 5,
+      "count": 6,
       "error": ""
     },
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 11,
+      "count": 10,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 60,
+      "count": 59,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 51,
+      "count": 50,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 26,
+      "count": 25,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 75,
+      "count": 73,
       "error": ""
     },
     {
@@ -228,13 +228,13 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 29,
+      "count": 28,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 49,
+      "count": 47,
       "error": ""
     },
     {
@@ -281,24 +281,24 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 878,
+  "candidateCount": 860,
   "acceptedCount": 26,
-  "rejectedCount": 852,
+  "rejectedCount": 834,
   "rejectedReasons": {
-    "excluded:tu van": 303,
-    "excluded:xay dung": 277,
-    "insufficient-medical-context": 147,
+    "excluded:tu van": 294,
+    "excluded:xay dung": 272,
+    "insufficient-medical-context": 146,
     "excluded:xay lap": 24,
     "excluded:sua chua": 24,
     "excluded:thuc pham": 18,
     "excluded:bao ve": 7,
-    "excluded:tham dinh": 7,
     "excluded:cai tao": 7,
     "excluded:trang phuc": 5,
+    "excluded:tham dinh": 5,
     "excluded:bao hiem": 5,
     "excluded:bao tri": 5,
-    "excluded:may tinh": 3,
     "excluded:giam sat thi cong": 3,
+    "excluded:may tinh": 2,
     "excluded:may in": 2,
     "excluded:ve sinh cong nghiep": 2,
     "excluded:chat thai": 2,
@@ -728,6 +728,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600618261",
+      "name": "Gói thầu XL-01: Thi công xây dựng công trình",
+      "investor": "Ban chỉ huy bộ đội biên phòng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600618360",
+      "name": "Gói thầu TT - 02.1: Thi công xây dựng và lắp đặt thiết bị hệ thống tưới tiêu",
+      "investor": "CÔNG TY TNHH MỘT THÀNH VIÊN CAO SU CHƯ PRÔNG",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600608272",
       "name": "Gói thầu số 10: Hỗ trợ máy kéo nông nghiệp cho 03 hợp tác xã/tổ hợp tác (Hoạt động: 2.1.2)",
       "investor": "Ban Quản lý dự án Làng Hòa bình Việt Nam - Hàn Quốc (KVPVP) tại tỉnh Bình Định",
@@ -1149,28 +1171,6 @@
     {
       "notifyNo": "IB2600608759",
       "name": "Gói thầu số 77/2026/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600603240",
-      "name": "Gói thầu số 48/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600600424",
-      "name": "Gói thầu số 37/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": -100,

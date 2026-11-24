@@ -26,7 +26,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=bd31a99c-e3dd-4e4f-bbe0-b00f79e68c19&notifyId=bd31a99c-e3dd-4e4f-bbe0-b00f79e68c19&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600613074&planNo=PL2600404674&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
@@ -38,7 +38,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "5688cf5a-6845-4aa2-ad9d-d3a24a083877",
@@ -66,7 +68,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=5688cf5a-6845-4aa2-ad9d-d3a24a083877&notifyId=5688cf5a-6845-4aa2-ad9d-d3a24a083877&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600613281&planNo=PL2600404674&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=CHCT",
       "winnerNames": [],
       "winningPrice": 0,
@@ -78,7 +80,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "b39147e2-d788-48d7-b741-1313e9294358",
@@ -106,7 +110,7 @@
       "status": "open",
       "sourceStatus": "01",
       "statusForNotify": "",
-      "bidderCount": null,
+      "bidderCount": 0,
       "sourceUrl": "https://muasamcong.mof.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail-v2&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=b39147e2-d788-48d7-b741-1313e9294358&notifyId=b39147e2-d788-48d7-b741-1313e9294358&inputResultId=&bidOpenId=&techReqId=&bidPreNotifyResultId=&bidPreOpenId=&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2600613584&planNo=PL2600391498&pno=&step=tbmt&isInternet=1&caseKHKQ=&bidForm=DTRR",
       "winnerNames": [],
       "winningPrice": 0,
@@ -118,7 +122,9 @@
       "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": ""
+      "losingModelDisclosure": "",
+      "sourceBidderCount": null,
+      "sourceStage": "official-public-search"
     },
     {
       "id": "DC2600136407",
@@ -1044,16 +1050,7 @@
         "CÔNG TY TNHH SANDILA",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY TNHH SANDILA",
-          "reason": "Nhà thầu không xác nhận chấp thuận được trao hợp đồng trên hệ thống mạng đấu thầu Quốc gia."
-        },
-        {
-          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
-          "reason": "Xếp hạng thứ 2; giá chào cao hơn nhà thầu xếp hạng thứ nhất đạt yêu cầu."
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "Vinsolon",
         "Pyrazinamide 500mg",
@@ -1062,7 +1059,7 @@
         "Terpin codein 10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -93617,7 +93614,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-24T02:58:15.104Z",
+  "fetchedAt": "2026-11-24T03:04:19.031Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -93650,6 +93647,15 @@
       "máy xét nghiệm",
       "máy siêu âm",
       "máy thở"
-    ]
+    ],
+    "filterStrategy": "unified-medical-scope-v21",
+    "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v21",
+    "lastMedicalRescueAt": "2026-11-24T03:04:19.031Z",
+    "lastMedicalRescueDays": 14,
+    "lastMedicalRescueCandidateCount": 860,
+    "lastMedicalRescueMedicalCount": 26,
+    "lastMedicalRescueNewCount": 0,
+    "lastRemovedManualTenderCount": 0,
+    "lastRemovedRejectedStoredCount": 0
   }
 }
