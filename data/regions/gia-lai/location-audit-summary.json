@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-23T20:13:45.382Z",
+  "auditedAt": "2026-11-24T04:48:09.191Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -62,7 +62,7 @@
     {
       "term": "Chư Prông",
       "success": true,
-      "count": 15,
+      "count": 16,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 120,
+      "count": 119,
       "error": ""
     },
     {
@@ -224,7 +224,7 @@
     {
       "term": "An Lão",
       "success": true,
-      "count": 78,
+      "count": 85,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1749,
+  "candidateCount": 1756,
   "acceptedCount": 59,
-  "rejectedCount": 1690,
+  "rejectedCount": 1697,
   "rejectedReasons": {
-    "excluded:tu van": 547,
-    "excluded:xay dung": 482,
-    "insufficient-medical-context": 405,
+    "excluded:tu van": 553,
+    "excluded:xay dung": 484,
+    "insufficient-medical-context": 404,
     "excluded:xay lap": 74,
     "excluded:sua chua": 50,
     "excluded:cai tao": 23,
@@ -931,6 +931,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600618261",
+      "name": "Gói thầu XL-01: Thi công xây dựng công trình",
+      "investor": "Ban chỉ huy bộ đội biên phòng tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "DC2600137722",
       "name": "Thẩm định giá",
       "investor": "Sở Nông nghiệp và Môi trường tỉnh Gia Lai",
@@ -1377,17 +1388,6 @@
       "reason": "excluded:tu van",
       "matched": [
         "tu van"
-      ]
-    },
-    {
-      "notifyNo": "IB2600607121",
-      "name": "Gói thầu số: 50/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
       ]
     }
   ],
