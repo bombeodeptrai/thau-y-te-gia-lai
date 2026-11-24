@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-24T04:48:52.835Z",
+  "rescuedAt": "2026-11-24T19:31:56.036Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 330,
+      "count": 332,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 824,
+      "count": 816,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 77,
+      "count": 76,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 98,
+      "count": 97,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 52,
+      "count": 51,
       "error": ""
     },
     {
@@ -222,25 +222,25 @@
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 62,
+      "count": 61,
       "error": ""
     },
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 85,
+      "count": 86,
       "error": ""
     },
     {
       "name": "Địa danh Hoài Ân",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -281,16 +281,16 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1816,
+  "candidateCount": 1810,
   "acceptedCount": 63,
-  "rejectedCount": 1753,
+  "rejectedCount": 1747,
   "rejectedReasons": {
-    "excluded:tu van": 555,
-    "excluded:xay dung": 493,
+    "excluded:tu van": 549,
+    "excluded:xay dung": 495,
     "insufficient-medical-context": 433,
     "excluded:xay lap": 82,
-    "excluded:sua chua": 51,
-    "excluded:cai tao": 23,
+    "excluded:sua chua": 50,
+    "excluded:cai tao": 22,
     "excluded:thuc pham": 20,
     "excluded:bao hiem": 11,
     "excluded:tham dinh": 11,
@@ -947,6 +947,28 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600605717",
+      "name": "Gói thầu số 14/2027/XL: Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604922",
+      "name": "Gói thầu số: 10/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600618261",
       "name": "Gói thầu XL-01: Thi công xây dựng công trình",
       "investor": "Ban chỉ huy bộ đội biên phòng tỉnh Gia Lai",
@@ -1374,29 +1396,6 @@
       "score": 0,
       "reason": "insufficient-medical-context",
       "matched": []
-    },
-    {
-      "notifyNo": "IB2600611744",
-      "name": "SCL2027-XL/02: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Pleiku năm 2027",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
-    },
-    {
-      "notifyNo": "IB2600608759",
-      "name": "Gói thầu số 77/2026/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,

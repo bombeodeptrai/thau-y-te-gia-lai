@@ -1,14 +1,14 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-24T04:48:09.191Z",
+  "auditedAt": "2026-11-24T19:31:08.690Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 824,
+      "count": 816,
       "error": ""
     },
     {
@@ -20,7 +20,7 @@
     {
       "term": "Pleiku",
       "success": true,
-      "count": 77,
+      "count": 76,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 98,
+      "count": 97,
       "error": ""
     },
     {
@@ -194,7 +194,7 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 52,
+      "count": 51,
       "error": ""
     },
     {
@@ -212,25 +212,25 @@
     {
       "term": "Vân Canh",
       "success": true,
-      "count": 10,
+      "count": 9,
       "error": ""
     },
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 62,
+      "count": 61,
       "error": ""
     },
     {
       "term": "An Lão",
       "success": true,
-      "count": 85,
+      "count": 86,
       "error": ""
     },
     {
       "term": "Hoài Ân",
       "success": true,
-      "count": 12,
+      "count": 11,
       "error": ""
     },
     {
@@ -271,16 +271,16 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1756,
+  "candidateCount": 1750,
   "acceptedCount": 59,
-  "rejectedCount": 1697,
+  "rejectedCount": 1691,
   "rejectedReasons": {
-    "excluded:tu van": 553,
-    "excluded:xay dung": 484,
+    "excluded:tu van": 547,
+    "excluded:xay dung": 486,
     "insufficient-medical-context": 404,
     "excluded:xay lap": 74,
-    "excluded:sua chua": 50,
-    "excluded:cai tao": 23,
+    "excluded:sua chua": 49,
+    "excluded:cai tao": 22,
     "excluded:thuc pham": 20,
     "excluded:tham dinh": 11,
     "excluded:bao ve": 10,
@@ -931,6 +931,40 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600144086",
+      "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi đầu tư xây dựng",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van"
+      ]
+    },
+    {
+      "notifyNo": "IB2600605717",
+      "name": "Gói thầu số 14/2027/XL: Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600604922",
+      "name": "Gói thầu số: 10/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "IB2600618261",
       "name": "Gói thầu XL-01: Thi công xây dựng công trình",
       "investor": "Ban chỉ huy bộ đội biên phòng tỉnh Gia Lai",
@@ -1349,40 +1383,6 @@
       "notifyNo": "DC2600150880",
       "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
       "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600149634",
-      "name": "Tư vấn thẩm định E-HSMT và kết quả lựa chọn nhà thầu. Dự án: Trường THPT Số 3 An Nhơn, hạng mục: Nhà 02 tầng 04 phòng học, 01 phòng KHXH, 01 Thư viện, 01 phòng STEM; nhà 02 tầng 04 phòng học, 02 phòng hỗ trợ học tập; hệ thống PCCC và sân đường nội bộ; thiết bị PCCC và thiết bị dạy học.",
-      "investor": "Sở Giáo dục và Đào tạo tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "tham dinh"
-      ]
-    },
-    {
-      "notifyNo": "DC2600150793",
-      "name": "Tư vấn lập Báo cáo nghiên cứu khả thi",
-      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600143483",
-      "name": "Tư vấn khảo sát, lập Báo cáo nghiên cứu khả thi",
-      "investor": "Ban Quản lý dự án đầu tư xây dựng các công trình nông nghiệp và phát triển nông thôn tỉnh Gia Lai",
       "accepted": false,
       "score": -100,
       "reason": "excluded:tu van",
