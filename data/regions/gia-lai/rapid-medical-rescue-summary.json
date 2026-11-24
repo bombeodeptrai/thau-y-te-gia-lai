@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-24T08:31:57.246Z",
+  "rescuedAt": "2026-11-24T15:05:41.315Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 189,
+      "count": 182,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 337,
+      "count": 331,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -132,19 +132,19 @@
     {
       "name": "Địa danh Kbang",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
       "name": "Địa danh Kông Chro",
       "success": true,
-      "count": 5,
+      "count": 4,
       "error": ""
     },
     {
       "name": "Địa danh Krông Pa",
       "success": true,
-      "count": 1,
+      "count": 0,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 54,
+      "count": 51,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 46,
+      "count": 45,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 73,
+      "count": 72,
       "error": ""
     },
     {
@@ -281,22 +281,22 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 848,
-  "acceptedCount": 23,
-  "rejectedCount": 825,
+  "candidateCount": 835,
+  "acceptedCount": 20,
+  "rejectedCount": 815,
   "rejectedReasons": {
     "excluded:tu van": 294,
-    "excluded:xay dung": 271,
-    "insufficient-medical-context": 141,
-    "excluded:xay lap": 24,
-    "excluded:sua chua": 23,
+    "excluded:xay dung": 267,
+    "insufficient-medical-context": 139,
+    "excluded:xay lap": 23,
+    "excluded:sua chua": 21,
     "excluded:thuc pham": 18,
     "excluded:bao ve": 7,
     "excluded:cai tao": 6,
     "excluded:trang phuc": 5,
     "excluded:tham dinh": 5,
-    "excluded:bao hiem": 5,
     "excluded:bao tri": 5,
+    "excluded:bao hiem": 4,
     "excluded:giam sat thi cong": 3,
     "excluded:may tinh": 2,
     "excluded:may in": 2,
@@ -547,49 +547,6 @@
         "ky sinh trung con trung",
         "hoa chat",
         "sinh pham"
-      ]
-    },
-    {
-      "notifyNo": "IB2600606705",
-      "name": "Dịch vụ sửa chữa máy xét nghiệm sinh hoá",
-      "investor": "Trung Tâm Y Tế Ayun Pa",
-      "accepted": true,
-      "score": 280,
-      "reason": "explicit-medical-title+medical-equipment-service+medical-investor+laboratory-analyzer-context",
-      "matched": [
-        "may xet nghiem",
-        "trung tam y te",
-        "sua chua",
-        "xet nghiem",
-        "sinh hoa"
-      ]
-    },
-    {
-      "notifyNo": "IB2600606477",
-      "name": "Mua sắm thuốc Generic bổ sung lần 1 năm 2026",
-      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
-      "accepted": true,
-      "score": 125,
-      "reason": "medical-investor+medical-drug-supply",
-      "matched": [
-        "benh vien",
-        "thuoc",
-        "mua",
-        "mua sam"
-      ]
-    },
-    {
-      "notifyNo": "IB2600605993",
-      "name": "Mua sắm Trocar dùng cho phẫu thuật",
-      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
-      "accepted": true,
-      "score": 155,
-      "reason": "explicit-medical-title+medical-investor",
-      "matched": [
-        "phau thuat",
-        "trung tam y te",
-        "mua",
-        "mua sam"
       ]
     },
     {
