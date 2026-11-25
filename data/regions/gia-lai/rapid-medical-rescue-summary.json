@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-25T08:31:44.345Z",
+  "rescuedAt": "2026-11-25T09:01:53.119Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 184,
+      "count": 182,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 339,
+      "count": 340,
       "error": ""
     },
     {
@@ -30,7 +30,7 @@
     {
       "name": "Địa danh Pleiku",
       "success": true,
-      "count": 59,
+      "count": 56,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 10,
+      "count": 12,
       "error": ""
     },
     {
@@ -156,7 +156,7 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 13,
+      "count": 12,
       "error": ""
     },
     {
@@ -210,13 +210,13 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 63,
+      "count": 62,
       "error": ""
     },
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 8,
+      "count": 6,
       "error": ""
     },
     {
@@ -281,29 +281,29 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 823,
+  "candidateCount": 819,
   "acceptedCount": 22,
-  "rejectedCount": 801,
+  "rejectedCount": 797,
   "rejectedReasons": {
-    "excluded:tu van": 285,
-    "excluded:xay dung": 271,
-    "insufficient-medical-context": 131,
+    "excluded:tu van": 288,
+    "excluded:xay dung": 270,
+    "insufficient-medical-context": 129,
     "excluded:xay lap": 24,
-    "excluded:sua chua": 21,
+    "excluded:sua chua": 19,
     "excluded:thuc pham": 18,
     "excluded:bao ve": 7,
     "excluded:cai tao": 6,
     "excluded:bao hiem": 5,
     "excluded:bao tri": 5,
-    "excluded:trang phuc": 4,
     "excluded:tham dinh": 4,
+    "excluded:trang phuc": 3,
     "excluded:giam sat thi cong": 3,
     "excluded:may tinh": 2,
     "excluded:may in": 2,
-    "excluded:ve sinh cong nghiep": 2,
     "excluded:quan ly du an": 2,
     "excluded:tu dien": 1,
     "excluded:kiem dinh": 1,
+    "excluded:ve sinh cong nghiep": 1,
     "excluded:xang dau": 1,
     "excluded:cong nghe thong tin": 1,
     "excluded:in an": 1,
@@ -1115,8 +1115,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1214,
+  "beforeCount": 1215,
   "afterCount": 1215,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v21"
 }
