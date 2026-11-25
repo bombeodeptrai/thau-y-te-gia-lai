@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-25T11:34:50.752Z",
+  "rescuedAt": "2026-11-25T21:56:17.717Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -24,7 +24,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 25,
+      "count": 23,
       "error": ""
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 2,
+      "count": 3,
       "error": ""
     },
     {
@@ -114,7 +114,7 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 11,
+      "count": 21,
       "error": ""
     },
     {
@@ -281,14 +281,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 818,
+  "candidateCount": 827,
   "acceptedCount": 23,
-  "rejectedCount": 795,
+  "rejectedCount": 804,
   "rejectedReasons": {
-    "excluded:tu van": 291,
-    "excluded:xay dung": 267,
-    "insufficient-medical-context": 133,
-    "excluded:xay lap": 23,
+    "excluded:tu van": 290,
+    "excluded:xay dung": 277,
+    "insufficient-medical-context": 134,
+    "excluded:xay lap": 22,
     "excluded:thuc pham": 18,
     "excluded:sua chua": 17,
     "excluded:bao ve": 7,
@@ -688,6 +688,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600619870",
+      "name": "Mua các loại trang thiết bị dùng chung, bàn ghế cho giáo viên và học viên bảo đảm cho nhiệm vụ giáo dục đào tạo",
+      "investor": "Trường quân sự quân đoàn 34",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua"
+      ]
+    },
     {
       "notifyNo": "IB2600619330",
       "name": "Mua sắm xe ô tô phục vụ công tác chung",
@@ -1114,17 +1125,6 @@
     {
       "notifyNo": "IB2600607049",
       "name": "Gói thầu số 47/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600604648",
-      "name": "Gói thầu số: 08/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": -100,
