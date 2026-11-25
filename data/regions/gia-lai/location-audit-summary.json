@@ -1,26 +1,26 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-24T19:31:08.690Z",
+  "auditedAt": "2026-11-25T03:33:03.282Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 816,
+      "count": 812,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 48,
+      "count": 47,
       "error": ""
     },
     {
       "term": "Pleiku",
       "success": true,
-      "count": 76,
+      "count": 74,
       "error": ""
     },
     {
@@ -68,7 +68,7 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 45,
+      "count": 46,
       "error": ""
     },
     {
@@ -104,13 +104,13 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 28,
+      "count": 26,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 20,
+      "count": 22,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 119,
+      "count": 118,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 97,
+      "count": 99,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 84,
+      "count": 85,
       "error": ""
     },
     {
@@ -194,19 +194,19 @@
     {
       "term": "Phù Cát",
       "success": true,
-      "count": 51,
+      "count": 52,
       "error": ""
     },
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 100,
+      "count": 99,
       "error": ""
     },
     {
       "term": "Tây Sơn",
       "success": true,
-      "count": 29,
+      "count": 28,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 61,
+      "count": 58,
       "error": ""
     },
     {
@@ -271,21 +271,21 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1750,
-  "acceptedCount": 59,
-  "rejectedCount": 1691,
+  "candidateCount": 1744,
+  "acceptedCount": 60,
+  "rejectedCount": 1684,
   "rejectedReasons": {
-    "excluded:tu van": 547,
-    "excluded:xay dung": 486,
+    "excluded:tu van": 546,
+    "excluded:xay dung": 485,
     "insufficient-medical-context": 404,
     "excluded:xay lap": 74,
     "excluded:sua chua": 49,
     "excluded:cai tao": 22,
-    "excluded:thuc pham": 20,
+    "excluded:thuc pham": 19,
     "excluded:tham dinh": 11,
     "excluded:bao ve": 10,
-    "excluded:bao hiem": 10,
-    "excluded:bao tri": 10,
+    "excluded:bao hiem": 9,
+    "excluded:bao tri": 8,
     "excluded:may tinh": 7,
     "excluded:trang phuc": 6,
     "excluded:giam sat thi cong": 5,
@@ -295,10 +295,10 @@
     "excluded:xang dau": 2,
     "excluded:may phat dien": 2,
     "excluded:cay xanh": 2,
-    "excluded:in an": 2,
     "excluded:bao duong": 2,
     "excluded:tram bien ap": 1,
     "excluded:cap dien": 1,
+    "excluded:in an": 1,
     "excluded:suat an": 1,
     "excluded:duong day": 1,
     "excluded:may chu": 1,
@@ -931,6 +931,41 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600150201",
+      "name": "Mua sắm máy vi tính xách tay",
+      "investor": "Sở Khoa học và Công nghệ tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600615461",
+      "name": "SCL2027-XL/01: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Ia Grai năm 2027",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua"
+      ]
+    },
+    {
+      "notifyNo": "DC2600144458",
+      "name": "Xây dựng mô hình chuyển đổi số, ứng dụng và hướng dẫn tiến bộ khoa học kỹ thuật, công nghệ cho cây sầu riêng tại xã Ia Nan, tỉnh Gia Lai năm 2026",
+      "investor": "ỦY BAN NHÂN DÂN XÃ IA NAN TỈNH GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
+    {
       "notifyNo": "DC2600144086",
       "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi đầu tư xây dựng",
       "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
@@ -1354,47 +1389,12 @@
         "tu van",
         "tham dinh"
       ]
-    },
-    {
-      "notifyNo": "DC2600150911",
-      "name": "Tư vấn lập HSMT và đánh giá HSDT thi công xây dựng và thiết bị",
-      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600150902",
-      "name": "Tư vấn Quản lý dự án",
-      "investor": "Sở Tài chính Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van",
-        "quan ly du an"
-      ]
-    },
-    {
-      "notifyNo": "DC2600150880",
-      "name": "Tư vấn thẩm tra Báo cáo nghiên cứu khả thi",
-      "investor": "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:tu van",
-      "matched": [
-        "tu van"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1213,
-  "afterCount": 1213,
+  "beforeCount": 1214,
+  "afterCount": 1214,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v21"
 }
