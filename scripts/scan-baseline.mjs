@@ -18,6 +18,8 @@ export function shouldRetainStoredTender(item, {
   const publishedAt = new Date(item?.publicDate || 0).getTime();
   if (!publishedAt || publishedAt < coverageCutoff) return false;
   return isMedicalTender({
+    notifyNo: item?.notifyNo,
+    goodsNames: item?.goodsNames,
     bidName: [item?.name],
     investorName: item?.investor,
   });

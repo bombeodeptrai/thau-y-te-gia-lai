@@ -371,6 +371,29 @@ if (!sourceUnique.size) {
   throw new Error(`Nguồn trả 0 ứng viên cho ${region.name}; giữ nguyên dữ liệu gần nhất`);
 }
 
+// One bounded, paginated migration for both historical province codes. Only
+// verified positive rows may supplement the normal scan; a historical search
+// never removes stored rows or replaces the 30-day audit.
+const historyVersion = "clinical-goods-1";
+const runClinicalHistory = slug === "gia-lai" && summaryFileName === "rapid-medical-rescue-summary.json"
+  && previous.collection?.clinicalGoodsHistoryVersion !== historyVersion;
+if (runClinicalHistory) {
+  const dates = muasamcongDateRange(now, 1095 * 86400000);
+  for (const term of ["đồ vải", "khăn mổ", "khăn trải bàn mổ", "gói đồ hấp", "thiết bị đào tạo",
+    "mô hình giải phẫu", "mô phỏng đỡ đẻ", "mô phỏng nghe tim phổi", "surgical drape", "patient simulator",
+    "Trường Cao đẳng Y tế Gia Lai", "Trường Cao đẳng Y tế Bình Định"]) {
+    const rows = await fetchAllPages(page => {
+      const payload = provincePayload(page, dates.from, dates.to, provinceCodes);
+      Object.assign(payload[0].query[0], {keyWord: term, matchFields: ["bidName", "investorName"]});
+      return payload;
+    }, `Đối chiếu lịch sử lâm sàng: ${term}`);
+    for (const row of rows) {
+      const key = canonicalNotifyNo(row.notifyNo);
+      if (key && !sourceUnique.has(key) && classifyMedicalTender(row).accepted) sourceUnique.set(key, row);
+    }
+  }
+}
+
 const accepted = new Map();
 const acceptedDiagnostics = [];
 const rejectedDiagnostics = [];
@@ -433,6 +456,7 @@ const tenders = [...merged.values()].map(tender =>
 const fetchedAt = new Date().toISOString();
 
 const collection = { ...(previous.collection || {}) };
+if (runClinicalHistory) collection.clinicalGoodsHistoryVersion = historyVersion;
 delete collection.manualTenderOverrideCount;
 delete collection.lastManualTenderOverrideAt;
 if (shouldReplaceRescueCollectionMetadata(collection, RESCUE_DAYS)) {

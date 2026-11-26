@@ -1,4 +1,15 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v21";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v22";
+
+// The public search index omits the goods table. Keep only substantiated item
+// names keyed by the official notice; never generate a tender from this table.
+const publishedGoods = new Map([
+  // https://dauthau.asia/en/notice/tender/purchase-medical-supplies-mattresses-and-bedding-at-the-an-nhon-hospital-center-1829029.html (items 13, 15)
+  ["IB2600615954", ["Khăn trải bàn mổ", "Khăn gói đồ hấp"]],
+  // https://dauthau.asia/thongbao/moithau/mua-sam-lap-dat-trang-thiet-bi-1828945.html (items 13, 17)
+  ["IB2600616804", ["Hệ thống mô phỏng nghe tim phổi", "Hệ thống mô phỏng đỡ đẻ"]],
+]);
+const clinicalLinen = ["khăn trải bàn mổ", "khăn gói đồ hấp", "surgical drape", "sterilization wrap"];
+const clinicalModels = ["mô phỏng nghe tim phổi", "mô phỏng đỡ đẻ", "mô hình giải phẫu", "patient simulator", "birth simulator"];
 
 export function normalizeMedicalText(value) {
   return String(value ?? "")
@@ -199,6 +210,10 @@ export function classifyMedicalTender(item) {
 
   const excluded = matchedTerms(title, HARD_EXCLUDED_TITLE_TERMS);
   const explicit = matchedTerms(title, EXPLICIT_MEDICAL_TITLE_TERMS);
+  const goods = [...(publishedGoods.get(canonicalNotifyNo(item.notifyNo)) || []),
+    ...(Array.isArray(item.goodsNames) ? item.goodsNames.filter(x => typeof x === "string") : [])];
+  const clinicalGoods = goods.flatMap(name => matchedTerms(name, [...clinicalLinen, ...clinicalModels]));
+  explicit.push(...matchedTerms(title, [...clinicalLinen, ...clinicalModels, "đào tạo ngành điều dưỡng", "đồ vải phục vụ khám chữa bệnh"]), ...clinicalGoods);
   const medicalInvestor = matchedTerms(investor, MEDICAL_INVESTOR_TERMS);
   const equipmentService = matchedTerms(title, MEDICAL_EQUIPMENT_SERVICE_TERMS);
   const equipmentObject = matchedTerms(title, MEDICAL_EQUIPMENT_OBJECT_TERMS);
@@ -210,15 +225,20 @@ export function classifyMedicalTender(item) {
   const medicalDrugSupply = medicalInvestor.length > 0 && medicalDrugTitle.length > 0;
   const medicalWaste = medicalWasteTitle.length > 0
     && (explicitMedicalWaste.length > 0 || medicalInvestor.length > 0);
+  const clinicalTextileBundle = medicalInvestor.length > 0 && (
+    matchedTerms(title, ["đồ vải chuyên môn", "đồ vải phục vụ chuyên môn"]).length > 0 ||
+    (matchedTerms(title, ["trang phục y tế"]).length > 0 && matchedTerms(title, ["đồ vải"]).length > 0)
+  );
   const contextualMedicalSupplies = medicalInvestor.length > 0
-    && contextualSupply.length > 0;
+    && (contextualSupply.length > 0 || clinicalTextileBundle);
   const nonServiceExcluded = excluded.filter((term) => !equipmentService.includes(term));
   const medicalEquipmentService = equipmentService.length > 0
     && (equipmentObject.length > 0
       || (medicalInvestor.length > 0 && measurementServiceObject.length > 0))
     && nonServiceExcluded.length === 0;
   const contextualAllowedExcluded = contextualMedicalSupplies
-    && excluded.every((term) => term === "hoa chat tay rua");
+    && excluded.every((term) => term === "hoa chat tay rua" ||
+      (clinicalTextileBundle && ["trang phuc", "bao ho lao dong"].includes(term)));
   const medicalWasteAllowedExcluded = medicalWaste
     && excluded.every((term) => term === "rac thai" || term === "chat thai");
   const medicalDrugAllowedExcluded = medicalDrugSupply
@@ -320,7 +340,7 @@ export function classifyMedicalTender(item) {
 
   return {
     accepted,
-    category: accepted ? medicalCategory(title) : "",
+    category: accepted ? medicalCategory([title, ...goods].join(" ")) : "",
     score,
     reason: accepted ? reasons.join("+") : "insufficient-medical-context",
     matched: [...new Set([
@@ -364,7 +384,7 @@ export function medicalCategory(name) {
     "thuoc", "duoc pham", "duoc lieu", "duoc chat",
     "chat boi tron", "bao cao su",
     "hoa chat khu trung", "diet muoi", "diet con trung",
-    "do vai nguoi benh", "quan ao nguoi benh",
+    "do vai nguoi benh", "quan ao nguoi benh", "đồ vải", ...clinicalLinen,
     ...MEDICAL_WASTE_TITLE_TERMS,
   ]).length
     ? "Vật tư & hóa chất"
