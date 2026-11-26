@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-26T02:02:11.247Z",
+  "rescuedAt": "2026-11-26T02:31:54.964Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,7 +12,7 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 183,
+      "count": 184,
       "error": ""
     },
     {
@@ -24,7 +24,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 22,
+      "count": 20,
       "error": ""
     },
     {
@@ -42,7 +42,7 @@
     {
       "name": "Địa danh An Khê",
       "success": true,
-      "count": 8,
+      "count": 9,
       "error": ""
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "Địa danh Chư Păh",
       "success": true,
-      "count": 3,
+      "count": 4,
       "error": ""
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 9,
+      "count": 10,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 58,
+      "count": 54,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 826,
+  "candidateCount": 821,
   "acceptedCount": 24,
-  "rejectedCount": 802,
+  "rejectedCount": 797,
   "rejectedReasons": {
-    "excluded:tu van": 289,
-    "excluded:xay dung": 278,
+    "excluded:tu van": 285,
+    "excluded:xay dung": 277,
     "insufficient-medical-context": 133,
     "excluded:xay lap": 22,
     "excluded:sua chua": 17,
@@ -701,6 +701,17 @@
     }
   ],
   "rejectedDiagnostics": [
+    {
+      "notifyNo": "IB2600619799",
+      "name": "Thi công xây dựng công trình",
+      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung"
+      ]
+    },
     {
       "notifyNo": "IB2600619870",
       "name": "Mua các loại trang thiết bị dùng chung, bàn ghế cho giáo viên và học viên bảo đảm cho nhiệm vụ giáo dục đào tạo",
@@ -1134,23 +1145,12 @@
       "matched": [
         "xay dung"
       ]
-    },
-    {
-      "notifyNo": "IB2600607049",
-      "name": "Gói thầu số 47/2027/XL - Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1216,
+  "beforeCount": 1217,
   "afterCount": 1217,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v21"
 }
