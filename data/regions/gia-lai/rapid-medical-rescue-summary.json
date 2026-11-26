@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-26T04:01:38.613Z",
+  "rescuedAt": "2026-11-26T04:19:07.610Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 188,
+      "count": 189,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 333,
+      "count": 334,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 4,
+      "count": 2,
       "error": ""
     },
     {
@@ -281,14 +281,14 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 821,
+  "candidateCount": 820,
   "acceptedCount": 27,
-  "rejectedCount": 794,
+  "rejectedCount": 793,
   "rejectedReasons": {
     "excluded:tu van": 280,
     "excluded:xay dung": 279,
     "insufficient-medical-context": 133,
-    "excluded:xay lap": 22,
+    "excluded:xay lap": 21,
     "excluded:sua chua": 17,
     "excluded:thuc pham": 17,
     "excluded:bao ve": 8,
@@ -756,6 +756,19 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600616455",
+      "name": "SCL2027-XL/14: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa lớn đường dây hạ áp khu vực Bồng Sơn năm 2027",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "sua chua",
+        "duong day"
+      ]
+    },
+    {
       "notifyNo": "IB2600620176",
       "name": "Cung cấp xi măng thực hiện Chương trình Bê tông hóa giao thông nông thôn và Kiên cố hóa kênh mương trên địa bàn phường Bình Định năm 2026",
       "investor": "Ban quản lý phường Bình Định",
@@ -1188,24 +1201,12 @@
       "matched": [
         "vat tu"
       ]
-    },
-    {
-      "notifyNo": "IB2600613925",
-      "name": "SCL2027-XL/11: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình: Sửa chữa ĐZHA khu vực Ayun Pa năm 2027",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
-      ]
     }
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1219,
+  "beforeCount": 1220,
   "afterCount": 1220,
-  "newCount": 1,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v21"
 }
