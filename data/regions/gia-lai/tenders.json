@@ -1182,16 +1182,7 @@
         "CÔNG TY TNHH SANDILA",
         "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY TNHH SANDILA",
-          "reason": "Nhà thầu không xác nhận chấp thuận được trao hợp đồng trên hệ thống mạng đấu thầu Quốc gia."
-        },
-        {
-          "contractorName": "CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",
-          "reason": "Xếp hạng thứ 2; giá chào cao hơn nhà thầu xếp hạng thứ nhất đạt yêu cầu."
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "Vinsolon",
         "Pyrazinamide 500mg",
@@ -1200,7 +1191,7 @@
         "Terpin codein 10"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -2140,16 +2131,7 @@
         "CÔNG TY CỔ PHẦN BIOMED TECH",
         "Công ty TNHH Công nghệ B2K"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY CỔ PHẦN BIOMED TECH",
-          "reason": "nhà thầu không xếp hạng thứ 1"
-        },
-        {
-          "contractorName": "Công ty TNHH Công nghệ B2K",
-          "reason": "nhà thầu không xếp hạng thứ 1"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "105-012283-00",
         "105-012298-00",
@@ -2160,7 +2142,7 @@
         "W-31L"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -2868,7 +2850,7 @@
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [
-        "RQ9140A,\r\nRQ9140B,\r\nRQ9140C,\r\nRQ9140D",
+        "RQ9140A, RQ9140B, RQ9140C, RQ9140D",
         "RQ9128",
         "RQ9135",
         "RQ9138",
@@ -2882,7 +2864,7 @@
         "GM-001-012",
         "Cỡ 25;22;19/ OP",
         "GS-5010",
-        "3-26 DJSBEOW;\r\n 4-26 DJSBEOW; \r\n5-26 DJSBEOW;\r\n 6-26 DJSBEOW;\r\n7-26 DJSBEOW",
+        "3-26 DJSBEOW; 4-26 DJSBEOW; 5-26 DJSBEOW; 6-26 DJSBEOW; 7-26 DJSBEOW",
         "WS-B002",
         "GT022-300",
         "ST-UR08",
@@ -2937,17 +2919,12 @@
       "loserNames": [
         "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "CÔNG TY TNHH DỊCH VỤ THIẾT BỊ Y TẾ GIA PHÚC",
-          "reason": "Nhà thầu xếp hạng 2"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "ECG-3150"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -3040,17 +3017,12 @@
       "loserNames": [
         "Công ty TNHH Thiết Bị Hoàng Long"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "Công ty TNHH Thiết Bị Hoàng Long",
-          "reason": "Không đáp ứng yêu cầu của thông báo mời thầu"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [
         "Không yêu cầu"
       ],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceStage": "official-public-search",
       "sourceBidderCount": null
     },
@@ -3375,15 +3347,10 @@
       "loserNames": [
         "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed"
       ],
-      "loserDetails": [
-        {
-          "contractorName": "Công Ty TNHH Xuất Nhập Khẩu Thiết Bị Y Tế Endomed",
-          "reason": "Đánh giá không đạt về kỹ thuật"
-        }
-      ],
+      "loserDetails": [],
       "winningModels": [],
       "losingModels": [],
-      "losingModelDisclosure": "Nguồn công khai chưa công bố",
+      "losingModelDisclosure": "",
       "sourceBidderCount": null,
       "sourceStage": "official-public-search"
     },
@@ -93802,7 +93769,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-25T21:56:17.717Z",
+  "fetchedAt": "2026-11-26T00:21:19.579Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -93838,12 +93805,17 @@
     ],
     "filterStrategy": "unified-medical-scope-v21",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v21",
-    "lastMedicalRescueAt": "2026-11-25T21:56:17.717Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 827,
-    "lastMedicalRescueMedicalCount": 23,
+    "lastMedicalRescueAt": "2026-11-26T00:21:19.579Z",
+    "lastMedicalRescueDays": 30,
+    "lastMedicalRescueCandidateCount": 1824,
+    "lastMedicalRescueMedicalCount": 65,
     "lastMedicalRescueNewCount": 0,
     "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    "lastRemovedRejectedStoredCount": 0,
+    "lastLocationAuditAt": "2026-11-26T00:20:28.561Z",
+    "lastLocationAuditDays": 30,
+    "lastLocationAuditCandidateCount": 1763,
+    "lastLocationAuditMedicalCount": 61,
+    "lastLocationAuditNewCount": 0
   }
 }
