@@ -592,3 +592,26 @@ test("không dùng tên bệnh viện làm điều kiện duy nhất", () => {
 test("chuẩn hóa mã TBMT có hậu tố -00", () => {
   assert.equal(canonicalNotifyNo("IB2600349751-00"), "IB2600349751");
 });
+
+for (const [notifyNo, name, category] of [
+  ["IB2600615954","Mua sắm chiếu, nệm, đồ vải tại Trung tâm Y tế An Nhơn","Vật tư & hóa chất"],
+  ["IB2600616804","Mua sắm, lắp đặt trang thiết bị","Thiết bị y tế"],
+  ["IB2600394945","Mua sắm chiếu, nệm, đồ vải phục vụ khám chữa bệnh","Vật tư & hóa chất"],
+  ...["IB2500358338","IB2600022902"].map(id => [id,"Mua sắm trang thiết bị đào tạo ngành Điều dưỡng, Dược và Kỹ thuật Xét nghiệm Y học","Thiết bị y tế"]),
+]) test(`phạm vi hàng hóa lâm sàng công khai: ${notifyNo}`, () => {
+  assert.equal(classifyMedicalTender({notifyNo: notifyNo + "-00", name}).category, category);
+});
+test("chỉ nhận gói tên chung nếu có hàng hóa lâm sàng", () => {
+  const item = { name: "Mua sắm lắp đặt trang thiết bị", investorName: hospital };
+  assert.equal(classifyMedicalTender({...item, goodsNames:["Máy in", "Bàn ghế"]}).accepted, false);
+  assert.equal(classifyMedicalTender({...item, goodsNames:["Hệ thống mô phỏng đỡ đẻ"]}).accepted, true);
+});
+
+for (const [notifyNo, name] of [
+  ["IB2600388994","Mua sắm trang phục y tế và đồ vải"],
+  ["IB2600384423","Cung ứng đồ vải chuyên môn"],
+  ["IB2600237961","Mua sắm trang phục bảo hộ lao động cho viên chức, quần áo người bệnh và đồ vải phục vụ chuyên môn"],
+]) test(`đồ vải lâm sàng đã xác minh: ${notifyNo}`, () => {
+  assert.equal(classifyMedicalTender({notifyNo,name,investorName:hospital}).category,"Vật tư & hóa chất");
+  assert.equal(classifyMedicalTender({name:"Mua trang phục bảo hộ lao động cho nhân viên",investorName:hospital}).accepted,false);
+});
