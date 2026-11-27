@@ -280,6 +280,8 @@ function mergeTender(previous, current) {
   const merged = {
     ...previous,
     ...current,
+    loserDetails: previous.loserDetails || current.loserDetails,
+    losingModelDisclosure: previous.losingModelDisclosure || current.losingModelDisclosure,
     notifyNo: canonicalNotifyNo(current.notifyNo || previous.notifyNo),
     winnerNames: unique([...(previous.winnerNames || []), ...(current.winnerNames || [])]),
     participantNames: unique([...(previous.participantNames || []), ...(current.participantNames || [])]),

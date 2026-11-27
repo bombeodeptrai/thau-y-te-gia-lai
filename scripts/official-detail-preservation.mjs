@@ -103,6 +103,21 @@ export function normalizeTenderDisclosedNames(tender, bidders = []) {
   const rawNames = new Set([...(tender.winnerNames || []), ...(tender.participantNames || [])].filter(Boolean));
   const names = uniqueDisclosedNames([...rawNames]);
   const normalized = { ...tender };
+  // Public search carries no award detail. Rebuild an empty summary only
+  // from the published bidder rows for this exact notice.
+  if (!normalized.loserDetails?.length) {
+    const rows = bidders.filter(b => b.notifyNo === tender.notifyNo && b.status === "lost" && b.contractorName);
+    if (rows.length) {
+      normalized.loserDetails = [...new Map(rows.map(b => {
+        const row = { contractorName: b.contractorName, reason: b.reason || "" };
+        return [JSON.stringify(row), row];
+      })).values()];
+      if (!normalized.losingModels?.length) {
+        normalized.losingModels = [...new Set(rows.flatMap(b => b.models || []).filter(Boolean))];
+        if (!normalized.losingModels.length) normalized.losingModelDisclosure = "Nguồn công khai chưa công bố";
+      }
+    }
+  }
   for (const field of ["winnerNames", "participantNames", "loserNames"]) {
     if (Array.isArray(tender[field])) normalized[field] = uniqueDisclosedNames(tender[field]);
   }
