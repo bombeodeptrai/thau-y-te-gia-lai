@@ -9,6 +9,15 @@ import {
 
 const hospital = "Bệnh viện Đa khoa tỉnh";
 
+test("IB2600621134: accept patient linen purchases, not staff uniforms or laundry services", () => {
+  const investorName = "Trung Tâm Y Tế Ayun Pa";
+  const name = "Mua sắm đồ vải năm 2026 của Trung tâm Y tế Ayun Pa";
+  assert.ok(isMedicalTender({notifyNo:"IB2600621134", name, investorName}));
+  for (const other of ["Thuê dịch vụ giặt đồ vải", "Mua sắm đồ vải cho nhân viên hành chính"])
+    assert.equal(isMedicalTender({name:other, investorName}),false);
+  assert.equal(isMedicalTender({name:"Mua sắm đồ vải năm 2026", investorName:"Trường tiểu học"}),false);
+});
+
 test("IB2600616318: ổ khí chuyên dụng tại bệnh viện, không phải thiết bị khí công nghiệp", () => {
   const name = "Lắp đặt Ổ đầu ra khí oxy (chuẩn BS), Ổ đầu ra khí nén 4 bar (chuẩn BS), Ổ đầu ra khí hút (chuẩn BS) cho khoa Sơ sinh và khoa Phụ của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026";
   for (const title of [name, "Thay ổ đầu ra khí hút", "Supply medical gas terminal unit", "Install medical vacuum outlet"]) {
