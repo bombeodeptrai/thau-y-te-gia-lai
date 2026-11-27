@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-27T09:32:28.703Z",
+  "rescuedAt": "2026-11-27T10:02:44.277Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -24,7 +24,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 21,
+      "count": 20,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 54,
+      "count": 50,
       "error": ""
     },
     {
@@ -228,7 +228,7 @@
     {
       "name": "Địa danh Vĩnh Thạnh",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
@@ -281,12 +281,12 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 843,
+  "candidateCount": 837,
   "acceptedCount": 26,
-  "rejectedCount": 817,
+  "rejectedCount": 811,
   "rejectedReasons": {
-    "excluded:xay dung": 285,
-    "excluded:tu van": 269,
+    "excluded:xay dung": 282,
+    "excluded:tu van": 266,
     "insufficient-medical-context": 153,
     "excluded:sua chua": 26,
     "excluded:xay lap": 20,
@@ -1195,8 +1195,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1223,
+  "beforeCount": 1225,
   "afterCount": 1225,
-  "newCount": 2,
+  "newCount": 0,
   "filterStrategy": "unified-medical-scope-v22"
 }
