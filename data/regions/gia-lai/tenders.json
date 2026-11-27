@@ -3276,7 +3276,7 @@
       "loserNames": [],
       "loserDetails": [],
       "winningModels": [
-        "RQ9140A,\r\nRQ9140B,\r\nRQ9140C,\r\nRQ9140D",
+        "RQ9140A, RQ9140B, RQ9140C, RQ9140D",
         "RQ9128",
         "RQ9135",
         "RQ9138",
@@ -3290,7 +3290,7 @@
         "GM-001-012",
         "Cỡ 25;22;19/ OP",
         "GS-5010",
-        "3-26 DJSBEOW;\r\n 4-26 DJSBEOW; \r\n5-26 DJSBEOW;\r\n 6-26 DJSBEOW;\r\n7-26 DJSBEOW",
+        "3-26 DJSBEOW; 4-26 DJSBEOW; 5-26 DJSBEOW; 6-26 DJSBEOW; 7-26 DJSBEOW",
         "WS-B002",
         "GT022-300",
         "ST-UR08",
@@ -94216,7 +94216,7 @@
       "losingModelDisclosure": ""
     }
   ],
-  "fetchedAt": "2026-11-27T12:16:55.326Z",
+  "fetchedAt": "2026-11-27T13:53:00.321Z",
   "source": "muasamcong-public-api",
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
@@ -94253,12 +94253,17 @@
     "clinicalGoodsHistoryVersion": "clinical-goods-2",
     "filterStrategy": "unified-medical-scope-v23",
     "rescueStrategy": "province-codes-plus-all-location-terms-unified-medical-scope-v23",
-    "lastMedicalRescueAt": "2026-11-27T12:16:55.326Z",
-    "lastMedicalRescueDays": 14,
-    "lastMedicalRescueCandidateCount": 842,
-    "lastMedicalRescueMedicalCount": 25,
+    "lastMedicalRescueAt": "2026-11-27T13:53:00.321Z",
+    "lastMedicalRescueDays": 30,
+    "lastMedicalRescueCandidateCount": 1877,
+    "lastMedicalRescueMedicalCount": 68,
     "lastMedicalRescueNewCount": 0,
     "lastRemovedManualTenderCount": 0,
-    "lastRemovedRejectedStoredCount": 0
+    "lastRemovedRejectedStoredCount": 0,
+    "lastLocationAuditAt": "2026-11-27T13:52:17.084Z",
+    "lastLocationAuditDays": 30,
+    "lastLocationAuditCandidateCount": 1811,
+    "lastLocationAuditMedicalCount": 61,
+    "lastLocationAuditNewCount": 0
   }
 }
