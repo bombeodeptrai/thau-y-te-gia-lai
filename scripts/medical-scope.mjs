@@ -1,4 +1,4 @@
-export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v22";
+export const MEDICAL_SCOPE_VERSION = "unified-medical-scope-v23";
 
 // The public search index omits the goods table. Keep only substantiated item
 // names keyed by the official notice; never generate a tender from this table.
@@ -8,7 +8,7 @@ const publishedGoods = new Map([
   // https://dauthau.asia/thongbao/moithau/mua-sam-lap-dat-trang-thiet-bi-1828945.html (items 13, 17)
   ["IB2600616804", ["Hệ thống mô phỏng nghe tim phổi", "Hệ thống mô phỏng đỡ đẻ"]],
 ]);
-const clinicalLinen = ["khăn trải bàn mổ", "khăn gói đồ hấp", "surgical drape", "sterilization wrap"];
+const clinicalLinen = ["khăn trải bàn mổ", "khăn gói đồ hấp", "surgical drape", "sterilization wrap", "quần áo bệnh nhân", "patient gowns", "patient linen"];
 const clinicalModels = ["mô phỏng nghe tim phổi", "mô phỏng đỡ đẻ", "mô hình giải phẫu", "patient simulator", "birth simulator"];
 
 export function normalizeMedicalText(value) {
@@ -226,6 +226,11 @@ export function classifyMedicalTender(item) {
   const medicalWaste = medicalWasteTitle.length > 0
     && (explicitMedicalWaste.length > 0 || medicalInvestor.length > 0);
   const clinicalTextileBundle = medicalInvestor.length > 0 && (
+    // A plain linen purchase named after the care facility itself. Strip
+    // only the exact buyer name: laundry services and staff uniforms differ.
+    /^(?:mua(?: sam)?|cung cap) do vai(?: nam 20\d{2})?$/.test(
+      investor && title.endsWith(" cua " + investor) ? title.slice(0, -(5 + investor.length)) : title
+    ) && /\b(?:benh vien|trung tam y te)\b/.test(investor) ||
     matchedTerms(title, ["đồ vải chuyên môn", "đồ vải phục vụ chuyên môn"]).length > 0 ||
     (matchedTerms(title, ["trang phục y tế"]).length > 0 && matchedTerms(title, ["đồ vải"]).length > 0)
   );

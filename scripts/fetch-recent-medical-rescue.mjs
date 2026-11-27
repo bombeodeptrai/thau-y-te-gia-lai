@@ -376,14 +376,15 @@ if (!sourceUnique.size) {
 // One bounded, paginated migration for both historical province codes. Only
 // verified positive rows may supplement the normal scan; a historical search
 // never removes stored rows or replaces the 30-day audit.
-const historyVersion = "clinical-goods-1";
+const historyVersion = "clinical-goods-2";
 const runClinicalHistory = slug === "gia-lai" && summaryFileName === "rapid-medical-rescue-summary.json"
   && previous.collection?.clinicalGoodsHistoryVersion !== historyVersion;
 if (runClinicalHistory) {
   const dates = muasamcongDateRange(now, 1095 * 86400000);
   for (const term of ["đồ vải", "khăn mổ", "khăn trải bàn mổ", "gói đồ hấp", "thiết bị đào tạo",
     "mô hình giải phẫu", "mô phỏng đỡ đẻ", "mô phỏng nghe tim phổi", "surgical drape", "patient simulator",
-    "Trường Cao đẳng Y tế Gia Lai", "Trường Cao đẳng Y tế Bình Định"]) {
+    "Trường Cao đẳng Y tế Gia Lai", "Trường Cao đẳng Y tế Bình Định",
+    "quần áo bệnh nhân", "patient gowns", "patient linen"]) {
     const rows = await fetchAllPages(page => {
       const payload = provincePayload(page, dates.from, dates.to, provinceCodes);
       Object.assign(payload[0].query[0], {keyWord: term, matchFields: ["bidName", "investorName"]});
