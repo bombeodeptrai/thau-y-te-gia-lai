@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-27T12:16:55.326Z",
+  "rescuedAt": "2026-11-27T19:39:22.987Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -24,7 +24,7 @@
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 24,
+      "count": 25,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 28,
+      "count": 44,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 52,
+      "count": 50,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 842,
-  "acceptedCount": 25,
-  "rejectedCount": 817,
+  "candidateCount": 865,
+  "acceptedCount": 33,
+  "rejectedCount": 832,
   "rejectedReasons": {
-    "excluded:xay dung": 288,
-    "excluded:tu van": 264,
-    "insufficient-medical-context": 154,
+    "excluded:xay dung": 292,
+    "excluded:tu van": 275,
+    "insufficient-medical-context": 155,
     "excluded:sua chua": 26,
     "excluded:xay lap": 20,
     "excluded:thuc pham": 18,
@@ -296,9 +296,9 @@
     "excluded:may tinh": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:trang phuc": 3,
-    "excluded:bao hiem": 3,
     "excluded:tham dinh": 3,
     "excluded:may in": 2,
+    "excluded:bao hiem": 2,
     "excluded:quan ly du an": 2,
     "excluded:bao tri": 2,
     "excluded:tu dien": 1,
@@ -708,6 +708,118 @@
         "sinh pham",
         "xet nghiem",
         "vat tu",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600566906",
+      "name": "Cung cấp đồ vải, quần áo người bệnh tại Trung tâm Y tế Phù Cát năm 2026",
+      "investor": "Trung tâm Y tế Phù Cát",
+      "accepted": true,
+      "score": 95,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "trung tam y te",
+        "quan ao nguoi benh",
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600388994",
+      "name": "Mua sắm Trang phục y tế và đồ vải của Bệnh viện Sản - Nhi tỉnh Gia Lai năm 2026",
+      "investor": "BỆNH VIỆN SẢN - NHI TỈNH GIA LAI",
+      "accepted": true,
+      "score": 95,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "benh vien",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600384423",
+      "name": "Cung ứng đồ vải chuyên môn của Bệnh viện ĐKKV Bồng Sơn",
+      "investor": "Bệnh Viện Đa Khoa Khu Vực Bồng Sơn",
+      "accepted": true,
+      "score": 95,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "benh vien",
+        "da khoa",
+        "cung ung"
+      ]
+    },
+    {
+      "notifyNo": "IB2600394945",
+      "name": "Mua sắm chiếu, nệm, đồ vải phục vụ khám chữa bệnh năm 2026 tại Trung tâm Y tế An Nhơn",
+      "investor": "TRUNG TÂM Y TẾ AN NHƠN",
+      "accepted": true,
+      "score": 155,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "đồ vải phục vụ khám chữa bệnh",
+        "trung tam y te",
+        "mua",
+        "mua sam",
+        "kham chua benh",
+        "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600237961",
+      "name": "Mua sắm trang phục bảo hộ lao động cho viên chức người lao động, quần áo người bệnh, áo người nhà bệnh nhân và Drap trải giường, đồ vải phục vụ chuyên môn tại Bệnh viện Lao và Bệnh phổi Quy Nhơn năm 2026",
+      "investor": "Bệnh viện Lao và Bệnh phổi Quy Nhơn",
+      "accepted": true,
+      "score": 115,
+      "reason": "medical-investor+medical-context-supply",
+      "matched": [
+        "benh vien",
+        "quan ao nguoi benh",
+        "mua",
+        "mua sam",
+        "benh nhan"
+      ]
+    },
+    {
+      "notifyNo": "IB2600097481",
+      "name": "May đồ vải cho các khoa, phòng để phục vụ công tác khám chữa bệnh, làm thủ thuật và phẫu thuật của Trung tâm Y tế Quy Nhơn 2026.",
+      "investor": "Trung tâm Y tế Quy Nhơn",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+medical-investor",
+      "matched": [
+        "phau thuat",
+        "trung tam y te",
+        "kham chua benh",
+        "chua benh"
+      ]
+    },
+    {
+      "notifyNo": "IB2600022902",
+      "name": "Mua sắm trang thiết bị đào tạo ngành Điều dưỡng, Dược và Kỹ thuật Xét nghiệm Y học năm 2025 (đợt 2)",
+      "investor": "Trường Cao đẳng Y tế Gia Lai",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+laboratory-analyzer-context",
+      "matched": [
+        "đào tạo ngành điều dưỡng",
+        "xet nghiem",
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2500358338",
+      "name": "Mua sắm trang thiết bị đào tạo ngành Điều dưỡng, Dược và Kỹ thuật Xét nghiệm Y học năm 2025",
+      "investor": "Trường Cao đẳng Y tế Gia Lai",
+      "accepted": true,
+      "score": 165,
+      "reason": "explicit-medical-title+laboratory-analyzer-context",
+      "matched": [
+        "đào tạo ngành điều dưỡng",
+        "xet nghiem",
         "mua",
         "mua sam"
       ]
