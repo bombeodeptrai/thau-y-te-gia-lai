@@ -13,6 +13,14 @@ import {
   mergeDisclosedBidders,
 } from "./official-detail-preservation.mjs";
 
+test("IB2600606477 rebuilds missing loss reasons from the same official notice only", () => {
+  const t = {notifyNo:"IB2600606477",loserDetails:[]};
+  const row = {notifyNo:t.notifyNo,status:"lost",contractorName:"CÔNG TY CỔ PHẦN DƯỢC PHẨM NAM HÀ",reason:"Xếp hạng thứ 2"};
+  const res = normalizeTenderDisclosedNames(t,[row,row,{...row,status:"won",contractorName:"Winner"},{...row,notifyNo:"IB2600601494",contractorName:"Other"}]);
+  assert.deepEqual(res.loserDetails,[{contractorName:row.contractorName,reason:row.reason}]);
+  assert.deepEqual(normalizeTenderDisclosedNames(res,[row]),res);
+});
+
 test("IB2600313612 giữ 223 dòng mở thầu khi kết quả chỉ trả 167 dòng", () => {
   const opening = Array.from({length:223}, (_, i) => ({contractorCode:`vn${i}`,lotNo:`PP${i}`,status:"participating",bidPrice:i+1}));
   const result = opening.slice(0,167).map(row => ({...row,status:"won",winningPrice:row.bidPrice}));
