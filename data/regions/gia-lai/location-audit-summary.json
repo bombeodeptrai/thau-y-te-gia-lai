@@ -1,7 +1,7 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-26T13:54:55.063Z",
+  "auditedAt": "2026-11-27T00:35:38.749Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
@@ -140,7 +140,7 @@
     {
       "term": "Mang Yang",
       "success": true,
-      "count": 2,
+      "count": 4,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 102,
+      "count": 104,
       "error": ""
     },
     {
@@ -271,13 +271,13 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1765,
+  "candidateCount": 1769,
   "acceptedCount": 63,
-  "rejectedCount": 1702,
+  "rejectedCount": 1706,
   "rejectedReasons": {
     "excluded:tu van": 544,
-    "excluded:xay dung": 504,
-    "insufficient-medical-context": 413,
+    "excluded:xay dung": 506,
+    "insufficient-medical-context": 415,
     "excluded:xay lap": 71,
     "excluded:sua chua": 51,
     "excluded:thuc pham": 19,
@@ -1378,8 +1378,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1228,
-  "afterCount": 1228,
+  "beforeCount": 1224,
+  "afterCount": 1224,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v22"
 }

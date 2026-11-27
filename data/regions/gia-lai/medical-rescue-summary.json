@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-26T13:55:38.059Z",
+  "rescuedAt": "2026-11-27T00:36:23.893Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -150,7 +150,7 @@
     {
       "name": "Địa danh Mang Yang",
       "success": true,
-      "count": 2,
+      "count": 4,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 102,
+      "count": 104,
       "error": ""
     },
     {
@@ -281,13 +281,13 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1829,
+  "candidateCount": 1833,
   "acceptedCount": 70,
-  "rejectedCount": 1759,
+  "rejectedCount": 1763,
   "rejectedReasons": {
     "excluded:tu van": 546,
-    "excluded:xay dung": 514,
-    "insufficient-medical-context": 441,
+    "excluded:xay dung": 516,
+    "insufficient-medical-context": 443,
     "excluded:xay lap": 79,
     "excluded:sua chua": 53,
     "excluded:thuc pham": 19,
@@ -1408,8 +1408,8 @@
   ],
   "removedManualCount": 0,
   "removedRejectedStoredCount": 0,
-  "beforeCount": 1228,
-  "afterCount": 1228,
+  "beforeCount": 1224,
+  "afterCount": 1224,
   "newCount": 0,
   "filterStrategy": "unified-medical-scope-v22"
 }
