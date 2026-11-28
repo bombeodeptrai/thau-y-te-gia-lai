@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-28T02:54:29.516Z",
+  "rescuedAt": "2026-11-28T13:20:48.583Z",
   "rescueDays": 14,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 196,
+      "count": 194,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 350,
+      "count": 352,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 50,
+      "count": 49,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 55,
+      "count": 47,
       "error": ""
     },
     {
@@ -204,13 +204,13 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 31,
+      "count": 28,
       "error": ""
     },
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 47,
+      "count": 46,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 52,
+      "count": 40,
       "error": ""
     },
     {
@@ -281,18 +281,18 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 862,
+  "candidateCount": 840,
   "acceptedCount": 33,
-  "rejectedCount": 829,
+  "rejectedCount": 807,
   "rejectedReasons": {
-    "excluded:xay dung": 290,
-    "excluded:tu van": 276,
-    "insufficient-medical-context": 154,
+    "excluded:xay dung": 289,
+    "excluded:tu van": 256,
+    "insufficient-medical-context": 152,
     "excluded:sua chua": 27,
+    "excluded:xay lap": 21,
     "excluded:thuc pham": 18,
-    "excluded:xay lap": 18,
     "excluded:bao ve": 8,
-    "excluded:cai tao": 7,
+    "excluded:cai tao": 6,
     "excluded:may tinh": 4,
     "excluded:giam sat thi cong": 4,
     "excluded:trang phuc": 3,
@@ -308,7 +308,6 @@
     "excluded:cong nghe thong tin": 1,
     "excluded:in an": 1,
     "excluded:may phat dien": 1,
-    "excluded:chat thai": 1,
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
@@ -827,6 +826,17 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600613936",
+      "name": "Gói thầu số 6: Cung cấp và vận chuyển VTTB nhị thứ, thiết bị thông tin và Scada (bao gồm lắp đặt và TNHC thiết bị thông tin, Scada)",
+      "investor": "TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
       "notifyNo": "IB2600617473",
       "name": "Gói thầu số 79/2026/GS - Tư vấn giám sát thi công xây dựng công trình",
       "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
@@ -1259,17 +1269,6 @@
       "notifyNo": "IB2600617325",
       "name": "Thi công xây dựng và lắp đặt thiết bị công trình",
       "investor": "Ban Quản lý phường Quy Nhơn",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600606811",
-      "name": "Gói thầu số 33/2027/XL: Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
       "accepted": false,
       "score": -100,
       "reason": "excluded:xay dung",
