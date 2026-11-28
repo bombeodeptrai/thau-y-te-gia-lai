@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-28T07:48:33.925Z",
+  "rescuedAt": "2026-11-28T16:54:29.213Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,13 +12,13 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 351,
+      "count": 344,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 796,
+      "count": 797,
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
     {
       "name": "Địa danh Ayun Pa",
       "success": true,
-      "count": 20,
+      "count": 19,
       "error": ""
     },
     {
@@ -78,7 +78,7 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 36,
+      "count": 34,
       "error": ""
     },
     {
@@ -156,13 +156,13 @@
     {
       "name": "Địa danh Phú Thiện",
       "success": true,
-      "count": 23,
+      "count": 22,
       "error": ""
     },
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 128,
+      "count": 125,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 91,
+      "count": 90,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 94,
+      "count": 93,
       "error": ""
     },
     {
@@ -204,7 +204,7 @@
     {
       "name": "Địa danh Phù Cát",
       "success": true,
-      "count": 55,
+      "count": 54,
       "error": ""
     },
     {
@@ -216,13 +216,13 @@
     {
       "name": "Địa danh Tây Sơn",
       "success": true,
-      "count": 27,
+      "count": 25,
       "error": ""
     },
     {
       "name": "Địa danh Vân Canh",
       "success": true,
-      "count": 7,
+      "count": 6,
       "error": ""
     },
     {
@@ -234,7 +234,7 @@
     {
       "name": "Địa danh An Lão",
       "success": true,
-      "count": 81,
+      "count": 80,
       "error": ""
     },
     {
@@ -281,20 +281,20 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1852,
-  "acceptedCount": 68,
-  "rejectedCount": 1784,
+  "candidateCount": 1837,
+  "acceptedCount": 65,
+  "rejectedCount": 1772,
   "rejectedReasons": {
     "excluded:tu van": 546,
-    "excluded:xay dung": 528,
-    "insufficient-medical-context": 452,
-    "excluded:xay lap": 77,
-    "excluded:sua chua": 58,
+    "excluded:xay dung": 526,
+    "insufficient-medical-context": 446,
+    "excluded:xay lap": 76,
+    "excluded:sua chua": 57,
     "excluded:thuc pham": 20,
     "excluded:cai tao": 15,
-    "excluded:bao hiem": 11,
     "excluded:tham dinh": 11,
     "excluded:bao ve": 10,
+    "excluded:bao hiem": 10,
     "excluded:may tinh": 8,
     "excluded:bao tri": 7,
     "excluded:trang phuc": 6,
@@ -312,7 +312,6 @@
     "excluded:kiem dinh": 1,
     "excluded:tram bien ap": 1,
     "excluded:suat an": 1,
-    "excluded:thu y": 1,
     "excluded:bao duong": 1
   },
   "acceptedDiagnostics": [
