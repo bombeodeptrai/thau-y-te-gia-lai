@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-27T13:52:17.084Z",
+  "auditedAt": "2026-11-28T00:03:14.349Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 811,
+      "count": 810,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 53,
+      "count": 54,
       "error": ""
     },
     {
@@ -56,7 +56,7 @@
     {
       "term": "Chư Păh",
       "success": true,
-      "count": 14,
+      "count": 13,
       "error": ""
     },
     {
@@ -218,7 +218,7 @@
     {
       "term": "Vĩnh Thạnh",
       "success": true,
-      "count": 52,
+      "count": 50,
       "error": ""
     },
     {
@@ -271,11 +271,11 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1811,
+  "candidateCount": 1809,
   "acceptedCount": 61,
-  "rejectedCount": 1750,
+  "rejectedCount": 1748,
   "rejectedReasons": {
-    "excluded:tu van": 559,
+    "excluded:tu van": 557,
     "excluded:xay dung": 519,
     "insufficient-medical-context": 426,
     "excluded:xay lap": 71,
