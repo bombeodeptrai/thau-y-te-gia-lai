@@ -2,7 +2,7 @@
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
   "region": "Gia Lai",
-  "rescuedAt": "2026-11-28T00:04:06.183Z",
+  "rescuedAt": "2026-11-28T07:48:33.925Z",
   "rescueDays": 30,
   "pageSize": 10,
   "maxAttempts": 3,
@@ -12,19 +12,19 @@
     {
       "name": "Mã tỉnh 52,64",
       "success": true,
-      "count": 356,
+      "count": 351,
       "error": ""
     },
     {
       "name": "Địa danh Gia Lai",
       "success": true,
-      "count": 810,
+      "count": 796,
       "error": ""
     },
     {
       "name": "Địa danh Bình Định",
       "success": true,
-      "count": 54,
+      "count": 52,
       "error": ""
     },
     {
@@ -78,19 +78,19 @@
     {
       "name": "Địa danh Chư Sê",
       "success": true,
-      "count": 37,
+      "count": 36,
       "error": ""
     },
     {
       "name": "Địa danh Chư Pưh",
       "success": true,
-      "count": 25,
+      "count": 16,
       "error": ""
     },
     {
       "name": "Địa danh Đak Đoa",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
@@ -102,7 +102,7 @@
     {
       "name": "Địa danh Đak Pơ",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -114,19 +114,19 @@
     {
       "name": "Địa danh Đức Cơ",
       "success": true,
-      "count": 42,
+      "count": 41,
       "error": ""
     },
     {
       "name": "Địa danh Ia Grai",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
       "name": "Địa danh Ia Pa",
       "success": true,
-      "count": 11,
+      "count": 9,
       "error": ""
     },
     {
@@ -162,7 +162,7 @@
     {
       "name": "Địa danh Quy Nhơn",
       "success": true,
-      "count": 121,
+      "count": 128,
       "error": ""
     },
     {
@@ -174,7 +174,7 @@
     {
       "name": "Địa danh An Nhơn",
       "success": true,
-      "count": 95,
+      "count": 91,
       "error": ""
     },
     {
@@ -186,7 +186,7 @@
     {
       "name": "Địa danh Hoài Nhơn",
       "success": true,
-      "count": 90,
+      "count": 94,
       "error": ""
     },
     {
@@ -198,7 +198,7 @@
     {
       "name": "Địa danh Tuy Phước",
       "success": true,
-      "count": 56,
+      "count": 55,
       "error": ""
     },
     {
@@ -210,7 +210,7 @@
     {
       "name": "Địa danh Phù Mỹ",
       "success": true,
-      "count": 99,
+      "count": 97,
       "error": ""
     },
     {
@@ -281,21 +281,21 @@
     }
   ],
   "successfulStrategyCount": 45,
-  "candidateCount": 1875,
+  "candidateCount": 1852,
   "acceptedCount": 68,
-  "rejectedCount": 1807,
+  "rejectedCount": 1784,
   "rejectedReasons": {
-    "excluded:tu van": 559,
-    "excluded:xay dung": 530,
-    "insufficient-medical-context": 455,
-    "excluded:xay lap": 79,
+    "excluded:tu van": 546,
+    "excluded:xay dung": 528,
+    "insufficient-medical-context": 452,
+    "excluded:xay lap": 77,
     "excluded:sua chua": 58,
     "excluded:thuc pham": 20,
     "excluded:cai tao": 15,
-    "excluded:bao ve": 11,
     "excluded:bao hiem": 11,
     "excluded:tham dinh": 11,
-    "excluded:may tinh": 9,
+    "excluded:bao ve": 10,
+    "excluded:may tinh": 8,
     "excluded:bao tri": 7,
     "excluded:trang phuc": 6,
     "excluded:giam sat thi cong": 5,
@@ -310,7 +310,6 @@
     "excluded:cay xanh": 2,
     "excluded:tu dien": 1,
     "excluded:kiem dinh": 1,
-    "excluded:cap dien": 1,
     "excluded:tram bien ap": 1,
     "excluded:suat an": 1,
     "excluded:thu y": 1,
@@ -950,6 +949,30 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "IB2600613936",
+      "name": "Gói thầu số 6: Cung cấp và vận chuyển VTTB nhị thứ, thiết bị thông tin và Scada (bao gồm lắp đặt và TNHC thiết bị thông tin, Scada)",
+      "investor": "TỔNG CÔNG TY TRUYỀN TẢI ĐIỆN QUỐC GIA",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "cung cap"
+      ]
+    },
+    {
+      "notifyNo": "IB2600617473",
+      "name": "Gói thầu số 79/2026/GS - Tư vấn giám sát thi công xây dựng công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
       "notifyNo": "IB2600622331",
       "name": "Mua lương thực, thực phẩm, gia vị cho đối tượng năm 2027",
       "investor": "Trung tâm Nuôi dưỡng Người tâm thần Hoài Nhơn",
@@ -1374,29 +1397,6 @@
       "reason": "excluded:xay dung",
       "matched": [
         "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600606811",
-      "name": "Gói thầu số 33/2027/XL: Thi công xây dựng và xử lý hành lang tuyến công trình",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung"
-      ]
-    },
-    {
-      "notifyNo": "IB2600615461",
-      "name": "SCL2027-XL/01: Thi công xây dựng và lắp đặt vật tư, thiết bị công trình Sửa chữa ĐZHA khu vực Ia Grai năm 2027",
-      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "sua chua"
       ]
     }
   ],

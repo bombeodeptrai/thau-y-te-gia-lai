@@ -1,20 +1,20 @@
 {
   "schemaVersion": 5,
   "regionSlug": "gia-lai",
-  "auditedAt": "2026-11-28T00:03:14.349Z",
+  "auditedAt": "2026-11-28T07:47:30.828Z",
   "auditDays": 30,
   "pageSize": 10,
   "termResults": [
     {
       "term": "Gia Lai",
       "success": true,
-      "count": 810,
+      "count": 796,
       "error": ""
     },
     {
       "term": "Bình Định",
       "success": true,
-      "count": 54,
+      "count": 52,
       "error": ""
     },
     {
@@ -68,19 +68,19 @@
     {
       "term": "Chư Sê",
       "success": true,
-      "count": 37,
+      "count": 36,
       "error": ""
     },
     {
       "term": "Chư Pưh",
       "success": true,
-      "count": 25,
+      "count": 16,
       "error": ""
     },
     {
       "term": "Đak Đoa",
       "success": true,
-      "count": 5,
+      "count": 3,
       "error": ""
     },
     {
@@ -92,7 +92,7 @@
     {
       "term": "Đak Pơ",
       "success": true,
-      "count": 10,
+      "count": 11,
       "error": ""
     },
     {
@@ -104,19 +104,19 @@
     {
       "term": "Đức Cơ",
       "success": true,
-      "count": 42,
+      "count": 41,
       "error": ""
     },
     {
       "term": "Ia Grai",
       "success": true,
-      "count": 19,
+      "count": 18,
       "error": ""
     },
     {
       "term": "Ia Pa",
       "success": true,
-      "count": 11,
+      "count": 9,
       "error": ""
     },
     {
@@ -152,7 +152,7 @@
     {
       "term": "Quy Nhơn",
       "success": true,
-      "count": 121,
+      "count": 128,
       "error": ""
     },
     {
@@ -164,7 +164,7 @@
     {
       "term": "An Nhơn",
       "success": true,
-      "count": 95,
+      "count": 91,
       "error": ""
     },
     {
@@ -176,7 +176,7 @@
     {
       "term": "Hoài Nhơn",
       "success": true,
-      "count": 90,
+      "count": 94,
       "error": ""
     },
     {
@@ -188,7 +188,7 @@
     {
       "term": "Tuy Phước",
       "success": true,
-      "count": 56,
+      "count": 55,
       "error": ""
     },
     {
@@ -200,7 +200,7 @@
     {
       "term": "Phù Mỹ",
       "success": true,
-      "count": 99,
+      "count": 97,
       "error": ""
     },
     {
@@ -271,21 +271,21 @@
     }
   ],
   "successfulTermCount": 44,
-  "candidateCount": 1809,
+  "candidateCount": 1787,
   "acceptedCount": 61,
-  "rejectedCount": 1748,
+  "rejectedCount": 1726,
   "rejectedReasons": {
-    "excluded:tu van": 557,
-    "excluded:xay dung": 519,
-    "insufficient-medical-context": 426,
-    "excluded:xay lap": 71,
+    "excluded:tu van": 545,
+    "excluded:xay dung": 517,
+    "insufficient-medical-context": 423,
+    "excluded:xay lap": 69,
     "excluded:sua chua": 56,
     "excluded:thuc pham": 20,
     "excluded:cai tao": 15,
-    "excluded:bao ve": 11,
     "excluded:tham dinh": 11,
+    "excluded:bao ve": 10,
     "excluded:bao hiem": 10,
-    "excluded:may tinh": 9,
+    "excluded:may tinh": 8,
     "excluded:bao tri": 7,
     "excluded:giam sat thi cong": 5,
     "excluded:trang phuc": 5,
@@ -296,7 +296,6 @@
     "excluded:may phat dien": 2,
     "excluded:cay xanh": 2,
     "excluded:tram bien ap": 1,
-    "excluded:cap dien": 1,
     "excluded:in an": 1,
     "excluded:suat an": 1,
     "excluded:thu y": 1,
@@ -920,6 +919,42 @@
   ],
   "rejectedDiagnostics": [
     {
+      "notifyNo": "DC2600165545",
+      "name": "Gói thầu mua sắm thiết bị dụng cụ thể dục ngoài trời",
+      "investor": "Phòng Văn hóa - Xã hội xã Cửu An, tỉnh Gia Lai",
+      "accepted": false,
+      "score": 10,
+      "reason": "insufficient-medical-context",
+      "matched": [
+        "mua",
+        "mua sam"
+      ]
+    },
+    {
+      "notifyNo": "IB2600617473",
+      "name": "Gói thầu số 79/2026/GS - Tư vấn giám sát thi công xây dựng công trình",
+      "investor": "CÔNG TY ĐIỆN LỰC GIA LAI",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:xay dung",
+      "matched": [
+        "xay dung",
+        "tu van",
+        "giam sat thi cong"
+      ]
+    },
+    {
+      "notifyNo": "DC2600165905",
+      "name": "Sửa chữa hạng mục 98tr",
+      "investor": "Trường tiểu học Đinh Tiên Hoàng, huyện Đak Pơ, tỉnh Gia Lai",
+      "accepted": false,
+      "score": -100,
+      "reason": "excluded:sua chua",
+      "matched": [
+        "sua chua"
+      ]
+    },
+    {
       "notifyNo": "IB2600617671",
       "name": "Mua sắm máy tính, thiết bị công nghệ thông tin, bản quyền phần mềm phục vụ công tác chuyên môn năm 2026 của Sở Tài chính",
       "investor": "Sở Tài chính Gia Lai",
@@ -1319,40 +1354,6 @@
         "xay dung",
         "tu van",
         "giam sat thi cong"
-      ]
-    },
-    {
-      "notifyNo": "DC2600155552",
-      "name": "Tư vấn lập hồ sơ yêu cầu và đánh giá hồ sơ đề xuất gói thầu Thi công xây dựng và lắp đặt thiết bị công trình",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van"
-      ]
-    },
-    {
-      "notifyNo": "DC2600158717",
-      "name": "Khảo sát địa hình, lập Quy hoạch tổng mặt bằng tỷ lệ 1/500 Khu cải táng xã Bình Hiệp",
-      "investor": "Ban Quản lý Khu kinh tế tỉnh Gia Lai",
-      "accepted": false,
-      "score": 0,
-      "reason": "insufficient-medical-context",
-      "matched": []
-    },
-    {
-      "notifyNo": "DC2600155465",
-      "name": "Tư vấn thẩm định hồ sơ yêu cầu và kết quả lựa chọn nhà thầu gói thầu Thi công xây dựng và lắp đặt thiết bị công trình",
-      "investor": "Trung tâm Phát triển Quỹ đất tỉnh Gia Lai",
-      "accepted": false,
-      "score": -100,
-      "reason": "excluded:xay dung",
-      "matched": [
-        "xay dung",
-        "tu van",
-        "tham dinh"
       ]
     }
   ],
